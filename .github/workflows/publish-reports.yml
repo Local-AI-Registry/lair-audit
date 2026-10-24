@@ -1,0 +1,45 @@
+name: Publish client reports
+
+# Bridgette proposes a report as a pull request (GitHub does this automatically when
+# someone without write access adds a file). This workflow merges it by itself when
+# the PR only adds or changes files inside client folders. Anything touching the
+# root files or .github is left open for Steve to review.
+
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const allowed = ['Bridgette-lair', 'LocalAIRegistry-com', 'SEO-Platform-X'];
+            const pr = context.payload.pull_request;
+            const base = { owner: context.repo.owner, repo: context.repo.repo };
+            const say = (body) => github.rest.issues.createComment({ ...base, issue_number: pr.number, body });
+
+            if (!allowed.includes(pr.user.login)) {
+              await say(`Thanks. Reports are only published automatically for the Local AI Registry team. Steve will review this.`);
+              return;
+            }
+
+            const files = await github.paginate(github.rest.pulls.listFiles, { ...base, pull_number: pr.number, per_page: 100 });
+            const ok = /^[a-z0-9][a-z0-9-]*\/[^\/]+(\/[^\/]+)*$/;
+            const bad = files.map(f => f.filename).filter(n => !ok.test(n) || n.startsWith('.github/'));
+
+            if (bad.length) {
+              await say(`Not publishing automatically. Only files inside a client folder (for example \`sunrise-aesthetics/index.html\`) are merged on their own. These paths need Steve to review:\n\n- ${bad.join('\n- ')}`);
+              return;
+            }
+
+            const folders = [...new Set(files.map(f => f.filename.split('/')[0]))];
+            await github.rest.pulls.merge({ ...base, pull_number: pr.number, merge_method: 'squash', commit_title: `Publish report: ${folders.join(', ')}` });
+            const links = folders.map(f => `https://audit.localairegistry.com/${f}/`).join('\n');
+            await say(`Published. Live in about a minute at:\n\n${links}`);
