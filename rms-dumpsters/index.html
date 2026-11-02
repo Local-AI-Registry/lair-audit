@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RMS Dumpsters Results Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,400;0,500;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1F4FE0;--blue-700:#1840B8;--ink:#0B1A2E;--coral:#FF5A3C;--paper:#F4F1EA;--paper-deep:#ECE6D6;--blue-tint:#E7EDFC;
+  --bg:var(--paper);--bg-alt:var(--paper-deep);--card:#FFFFFF;--text:#0B1A2E;--body:#556070;--hair:rgba(11,26,46,.10);--accent:var(--blue);
+  --chart-area:rgba(31,79,224,.12);--zone:rgba(31,79,224,.05);--mute:rgba(11,26,46,.18);--mute-strong:rgba(11,26,46,.42);
+  --serif:'Cormorant',Georgia,'Times New Roman',serif;--loud:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;--sans:'Hanken Grotesk','Helvetica Neue',Arial,sans-serif;
+  color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0B1A2E;--bg-alt:#11233C;--card:#13284A;--text:#F4F1EA;--body:#A8B2C1;--hair:rgba(244,241,234,.12);--accent:#5B7DF0;
+  --chart-area:rgba(91,125,240,.18);--zone:rgba(91,125,240,.07);--mute:rgba(244,241,234,.2);--mute-strong:rgba(244,241,234,.5);color-scheme:dark;}}
+:root[data-theme="dark"]{--bg:#0B1A2E;--bg-alt:#11233C;--card:#13284A;--text:#F4F1EA;--body:#A8B2C1;--hair:rgba(244,241,234,.12);--accent:#5B7DF0;--chart-area:rgba(91,125,240,.18);--zone:rgba(91,125,240,.07);--mute:rgba(244,241,234,.2);--mute-strong:rgba(244,241,234,.5);color-scheme:dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--body);font-family:var(--sans);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,72px)}
+section{padding:clamp(56px,8vw,120px) 0}
+.alt{background:var(--bg-alt)}
+.eyebrow{font-family:var(--loud);font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 18px}
+h1,h2{font-family:var(--serif);font-weight:500;color:var(--text);line-height:1.06;margin:0;letter-spacing:-.01em}
+h2{font-size:clamp(36px,5.2vw,60px);max-width:18ch}
+p{max-width:66ch;margin:16px 0 0}
+.lede{font-size:19px}
+
+
+.chart .s{font-size:12px}
+.chart .axis{stroke:var(--text);stroke-width:1;opacity:.35}
+.chart .lab.avgt{fill:var(--coral)}
+.chart .avg{stroke:var(--coral);stroke-width:2;stroke-dasharray:5 4}
+.chart .nm{font-family:var(--sans);font-size:13px;fill:var(--text)}
+.chart .nm.me,.chart .rk.me{font-family:var(--loud);font-weight:800;fill:var(--accent)}
+.chart .val{font-family:var(--loud);font-weight:700;font-size:13px;fill:var(--body)}
+.chart .val.me{fill:var(--accent);font-weight:800}
+.chart .bme,.mini .bme{fill:var(--accent)}
+.chart .bo,.mini .bo{fill:var(--mute)}
+.chart .linem{fill:none;stroke:var(--mute-strong);stroke-width:2.5;stroke-dasharray:6 5;stroke-linecap:round}
+.chart .dotm,.mini .dotm{fill:var(--card);stroke:var(--mute-strong);stroke-width:2.5}
+.chart .dotme,.mini .dotme{fill:var(--accent)}
+.chart .gapl{stroke:var(--coral);stroke-width:2.5}
+.chart .gapt{font-family:var(--loud);font-weight:800;font-size:14px;fill:var(--coral)}
+.chart .row{fill:transparent;stroke:var(--hair)}
+.chart .rowme{fill:var(--chart-area);stroke:var(--accent)}
+.chart .rk{font-family:var(--loud);font-weight:700;font-size:14px;fill:var(--body)}
+.chart .db,.mini .db{stroke:var(--accent);stroke-width:2.5;opacity:.45}
+.chart .g2,.mini .g2{stroke:var(--hair);stroke-width:2}
+.chart .sq{fill:var(--text)}
+.mini{width:100%;height:auto;display:block;margin-top:14px}
+.mini .ax{font-family:var(--sans);font-size:12px;fill:var(--body)}
+.mini .lab{font-family:var(--loud);font-weight:700;font-size:13px;fill:var(--text)}
+.chartcard.solo{max-width:640px}
+.chartcard .note{font-size:13px;margin:6px 6px 10px}
+.legend span.dm::before{border-radius:50%;background:transparent;border:2.5px solid var(--mute-strong);width:8px;height:8px}
+.legend span.dme::before{border-radius:50%}
+
+/* cover */
+.cover{background:var(--ink);color:#A8B2C1;padding:clamp(28px,4vw,44px) 0 clamp(64px,9vw,120px)}
+.cover .top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{height:26px;width:auto;display:block}
+.cover .meta{font-family:var(--loud);font-weight:600;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#A8B2C1}
+.cover .eyebrow{color:var(--coral);margin-top:clamp(56px,9vw,120px)}
+.cover h1{color:#F4F1EA;font-size:clamp(44px,7.4vw,92px);max-width:15ch}
+.cover p.lede{color:#C9D0DA;margin-top:24px}
+.prepared{margin-top:28px;font-size:14px;color:#A8B2C1}
+.prepared b{color:#F4F1EA;font-weight:600}
+
+/* big stats */
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:16px;overflow:hidden;margin-top:48px}
+.stat{background:var(--card);padding:28px 26px 26px}
+.num{font-family:var(--loud);font-weight:800;line-height:.86;letter-spacing:-.03em;color:var(--text);font-size:clamp(54px,7vw,86px)}
+.num .up{color:var(--text)}
+.stat h3{font-family:var(--loud);font-weight:700;font-size:15px;color:var(--text);margin:18px 0 4px;letter-spacing:.01em}
+.stat p{margin:0;font-size:15px;line-height:1.5}
+.src{font-size:13px;color:var(--body);opacity:.85;margin-top:18px}
+@media (min-width:900px){.stats{grid-template-columns:repeat(4,1fr)}}
+
+/* charts */
+.chartcard{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px 18px 10px;margin-top:36px}
+.chartcard h3{font-family:var(--loud);font-weight:700;font-size:16px;color:var(--text);margin:0 6px 4px}
+.chartcard .sub{margin:0 6px 8px;font-size:14px}
+.chart{width:100%;height:auto;display:block}
+.chart .g{stroke:var(--hair);stroke-width:1}
+.chart .ax{font-family:var(--sans);font-size:12px;fill:var(--body)}
+.chart .lab{font-family:var(--loud);font-weight:700;font-size:13px;fill:var(--text)}
+.chart .line{fill:none;stroke:var(--accent);stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.chart .area{fill:var(--chart-area)}
+.chart .zone{fill:var(--zone)}
+.chart .mark{stroke:var(--text);stroke-width:1.5;stroke-dasharray:4 4;opacity:.6}
+.chart .dot{fill:var(--card);stroke:var(--accent);stroke-width:3}
+.chart .dot.c{stroke:var(--coral)}
+.chart .b1{fill:var(--accent)}
+.chart .b2{fill:var(--accent);opacity:.32}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin:6px 6px 8px;font-size:13px}
+.legend span::before{content:"";display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--accent);margin-right:7px;vertical-align:-1px}
+.legend span.l2::before{opacity:.32}
+.chartcard.solo .legend span.l2::before{opacity:1;background:var(--mute)}
+.two{display:grid;gap:24px}
+@media (min-width:980px){.two{grid-template-columns:1fr 1fr}}
+
+/* table */
+.tablewrap{overflow-x:auto;margin-top:36px;border:1px solid var(--hair);border-radius:16px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+.vol{display:block;font-size:13px;color:var(--body);margin-top:2px}
+th{white-space:nowrap;font-family:var(--loud);font-weight:700;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--body);text-align:left;padding:16px 16px;border-bottom:1px solid var(--hair)}
+td{padding:14px 16px;border-bottom:1px solid var(--hair);color:var(--text)}
+tr:last-child td{border-bottom:0}
+td.n,th.n{text-align:right;white-space:nowrap}
+td.was{color:var(--body);white-space:normal;width:84px}
+@media (max-width:520px){td,th{padding-left:10px!important;padding-right:10px!important}th{letter-spacing:.08em}}
+td.now{font-family:var(--loud);font-weight:800;font-size:18px;color:var(--accent)}
+
+/* page wins */
+.wins{display:grid;gap:16px;margin-top:36px}
+@media (min-width:760px){.wins{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1080px){.wins{grid-template-columns:repeat(3,1fr)}}
+.win{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:24px}
+.win .big{font-family:var(--loud);font-weight:800;font-size:44px;line-height:.9;letter-spacing:-.03em;color:var(--text)}
+.win .big small{font-size:16px;font-weight:700;letter-spacing:0;color:var(--body);margin-left:6px}
+.win h3{font-family:var(--loud);font-weight:700;font-size:16px;color:var(--text);margin:16px 0 6px}
+.win p{margin:0;font-size:15px;line-height:1.55}
+.win .url{font-size:13px;color:var(--body);margin-top:12px;word-break:break-all}
+
+/* AI */
+.ai{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:36px}
+@media (min-width:900px){.ai{grid-template-columns:repeat(4,1fr)}}
+.aic{background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:22px}
+.aic .plat{font-family:var(--loud);font-weight:700;font-size:15px;color:var(--text)}
+.aic .from{font-size:14px;margin-top:14px}
+.aic .to{font-family:var(--loud);font-weight:800;font-size:46px;line-height:.9;letter-spacing:-.03em;color:var(--text);margin-top:4px}
+.aic .x{font-size:14px;margin-top:8px}
+.answer{margin-top:36px;background:var(--card);border:1px solid var(--hair);border-radius:16px;padding:26px;max-width:760px}
+.answer .q{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--text);line-height:1.2}
+.answer .a{margin-top:12px;font-size:16px}
+
+/* work list */
+.work{display:grid;gap:0;margin-top:36px;border-top:1px solid var(--hair)}
+.item{display:grid;grid-template-columns:1fr;gap:6px;padding:22px 0;border-bottom:1px solid var(--hair)}
+@media (min-width:820px){.item{grid-template-columns:280px 1fr;gap:32px}}
+.item h3{font-family:var(--loud);font-weight:700;font-size:17px;color:var(--text);margin:0;line-height:1.35}
+.item p{margin:0;font-size:16px}
+.item .tag{display:inline-block;margin-top:8px;font-family:var(--loud);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--blue-tint);color:var(--blue)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .item .tag{background:rgba(91,125,240,.18);color:#C9D4FA}}
+:root[data-theme="dark"] .item .tag{background:rgba(91,125,240,.18);color:#C9D4FA}
+
+/* next */
+.next{background:var(--ink);color:#A8B2C1}
+.next h2{color:#F4F1EA}
+.next .eyebrow{color:var(--coral)}
+.next .list{display:grid;gap:16px;margin-top:40px}
+@media (min-width:820px){.next .list{grid-template-columns:repeat(3,1fr)}}
+.nx{border:1px solid rgba(244,241,234,.14);border-radius:16px;padding:24px}
+.nx .k{font-family:var(--loud);font-weight:800;font-size:44px;line-height:.9;letter-spacing:-.03em;color:#F4F1EA}
+.nx h3{font-family:var(--loud);font-weight:700;font-size:16px;color:#F4F1EA;margin:14px 0 6px}
+.nx p{margin:0;font-size:15px;color:#A8B2C1}
+.cta{margin-top:48px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.btn{display:inline-block;font-family:var(--loud);font-weight:700;font-size:15px;text-decoration:none;padding:15px 22px;border-radius:12px;background:var(--blue);color:#fff;transition:background 140ms cubic-bezier(.2,.6,.2,1)}
+.btn:hover{background:var(--blue-700)}
+.btn.ghost{background:transparent;border:1px solid rgba(244,241,234,.3);color:#F4F1EA}
+.btn:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+footer{background:var(--ink);color:#A8B2C1;border-top:1px dashed rgba(244,241,234,.18);padding:32px 0 40px;font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .logo{height:20px}
+.method{font-size:14px}
+</style>
+
+<style>
+.chartcard .sub b{color:var(--text)}
+.ranktable td.now{font-size:18px}
+.flag{display:inline-block;font-family:var(--loud);font-weight:700;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--blue-tint);color:var(--blue);margin-top:10px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .flag{background:rgba(91,125,240,.18);color:#C9D4FA}}
+:root[data-theme="dark"] .flag{background:rgba(91,125,240,.18);color:#C9D4FA}
+.phone{font-family:var(--loud);font-weight:700;color:#F4F1EA;font-size:15px;user-select:all}
+</style>
+</head>
+<body>
+
+<header class="cover">
+  <div class="wrap">
+    <div class="top">
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87"  role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#FFFFFF"></path>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FFFFFF"></path>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#FFFFFF"></path>
+</svg>
+      <div class="meta">Results report &middot; October 2025 to November 2026</div>
+    </div>
+    <p class="eyebrow">RMS Dumpsters &middot; Omaha and Council Bluffs</p>
+    <h1>Omaha search is finding RMS.</h1>
+    <p class="lede">Compared with a year ago, RMS gets twice the visits from Google, shows up for three times as many searches, and has the strongest website of any local dumpster company in Omaha. While most of your competitors lost ground this year, you gained it. Here is what changed, what we did, and what is next.</p>
+    <p class="prepared">Prepared for <b>Michael Nawojski</b> by Steve Lee, CEO, Local AI Registry. 2 November 2026.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Your note from November 2</p>
+    <h2>Your questions, answered.</h2>
+    <p class="lede">You searched Google this morning, saw your ad and your Places listing, but could not find RMS in the regular results. Here is what you were looking at, and where RMS actually sits.</p>
+    <div class="two">
+      <div class="chartcard">
+        <h3>One Google results page, four different parts</h3>
+        <p class="sub">"dumpster rental omaha ne," checked live on 2 November 2026.</p>
+        <svg viewBox="0 0 420 470" class="chart" role="img" aria-label="A Google results page for dumpster rental omaha ne. RMS appears in the sponsored ad, appears in Places only near its own location, and its website ranks number 17 at the top of page 2."><rect x="0" y="4" width="200" height="26" rx="13" class="row"/><text x="14" y="21" class="ax">dumpster rental omaha ne</text><rect x="0" y="40" width="200" height="62" rx="8" class="rowme"/><text x="12" y="60" class="rk me" style="font-size:12px">Sponsored</text><rect x="12" y="68" width="176" height="13" rx="3" class="bme" opacity="1"/><text x="16" y="78" class="ax" style="font-size:10px;fill:#fff">RMS Dumpsters, your ad</text><line x1="204" x2="218" y1="70" y2="70" class="db"/><text x="224" y="74" class="lab s" style="fill:var(--accent)">Your ad: showing</text><text x="224" y="92" class="ax">You pay per click.</text><text x="224" y="107" class="ax">Shows to everyone.</text><rect x="0" y="112" width="200" height="62" rx="8" class="row"/><text x="12" y="132" class="rk" style="font-size:12px">AI Overview</text><rect x="12" y="140" width="176" height="13" rx="3" class="bo" opacity="0.55"/><rect x="12" y="158" width="176" height="13" rx="3" class="bo" opacity="0.55"/><line x1="204" x2="218" y1="140" y2="140" class="g2"/><text x="224" y="144" class="lab s" style="fill:var(--text)">Google's AI answer</text><text x="224" y="162" class="ax">Names businesses whose</text><text x="224" y="177" class="ax">pages describe the service.</text><rect x="0" y="184" width="200" height="98" rx="8" class="rowme"/><text x="12" y="204" class="rk me" style="font-size:12px">Places</text><rect x="12" y="212" width="176" height="13" rx="3" class="bo" opacity="0.55"/><text x="16" y="222" class="ax" style="font-size:10px;fill:var(--body)">Bin There Dump That</text><rect x="12" y="230" width="176" height="13" rx="3" class="bo" opacity="0.55"/><text x="16" y="240" class="ax" style="font-size:10px;fill:var(--body)">Can It Dumpster Rental</text><rect x="12" y="248" width="176" height="13" rx="3" class="bo" opacity="0.55"/><text x="16" y="258" class="ax" style="font-size:10px;fill:var(--body)">Dumpster Dudez</text><line x1="204" x2="218" y1="212" y2="212" class="db"/><text x="224" y="216" class="lab s" style="fill:var(--accent)">Your Google profile</text><text x="224" y="234" class="ax">Sorted by distance.</text><text x="224" y="249" class="ax">You show near your yard;</text><text x="224" y="264" class="ax">across town, others show.</text><rect x="0" y="292" width="200" height="80" rx="8" class="row"/><text x="12" y="312" class="rk" style="font-size:12px">Web results, page 1</text><rect x="12" y="320" width="176" height="13" rx="3" class="bo" opacity="0.55"/><rect x="12" y="338" width="176" height="13" rx="3" class="bo" opacity="0.55"/><rect x="12" y="356" width="176" height="13" rx="3" class="bo" opacity="0.55"/><line x1="204" x2="218" y1="318" y2="318" class="g2"/><text x="224" y="322" class="lab s" style="fill:var(--text)">Positions 1 to 10</text><text x="224" y="340" class="ax">Local competitors, Yelp</text><text x="224" y="355" class="ax">and national chains.</text><rect x="0" y="382" width="200" height="80" rx="8" class="rowme"/><text x="12" y="402" class="rk me" style="font-size:12px">Page 2</text><rect x="12" y="410" width="176" height="13" rx="3" class="bo" opacity="0.55"/><rect x="12" y="428" width="176" height="13" rx="3" class="bme" opacity="1"/><text x="16" y="438" class="ax" style="font-size:10px;fill:#fff">#17 rmsdumpsters.com</text><rect x="12" y="446" width="176" height="13" rx="3" class="bo" opacity="0.55"/><line x1="204" x2="218" y1="420" y2="420" class="db"/><text x="224" y="424" class="lab s" style="fill:var(--accent)">Your website: #17</text><text x="224" y="442" class="ax">Top of page 2.</text><text x="224" y="457" class="ax">Page 1 is the next goal.</text></svg>
+      </div>
+      <div class="work" style="margin-top:36px">
+        <div class="item" style="grid-template-columns:1fr"><h3>"I searched to page 6 and gave up."</h3><p>Checked live on 2 November from outside Omaha, rmsdumpsters.com is <b>#17</b> for "dumpster rental omaha ne," near the top of page 2. Google changes results by device, location and past searches, so one person's page 6 can be another's page 2. Page 1 is the goal, and the next 30 days below are aimed at it.</p></div>
+        <div class="item" style="grid-template-columns:1fr"><h3>"I see my ad and Places on page 1, but nothing else."</h3><p>They come from different places. Your ad is paid. Places comes from your Google profile and is sorted largely by distance, so you show near your yard and other companies show in other parts of town. The regular results come from your website, and Google is still re-checking the new site that went live on 13 October.</p></div>
+        <div class="item" style="grid-template-columns:1fr"><h3>"Google AI did not show us for concrete washout."</h3><p>AI answers only name businesses whose pages describe the service. Concrete washout was not one of the focus areas we set together (large contractors, home builders and residential customers), so it is not on your website yet. If you want it to be a focus, tell Caron and we will build the page and point posts at it.</p></div>
+        <div class="item" style="grid-template-columns:1fr"><h3>"Other SEO companies are calling me."</h3><p>That is normal right now. Those companies run tools that flag businesses with a new website or with addresses that do not match across the web, then they cold call. Your old address was listed in many places for years, so a few directories still show it. We are cleaning them up and they correct over time as each site updates.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">The headline</p>
+    <h2>A year of compounding gains.</h2>
+    <div class="stats">
+      <div class="stat"><div class="num">2&times;</div><h3>Monthly visits from Google</h3><p>97 a year ago. 193 today, after a peak of 213 in July.</p></div>
+      <div class="stat"><div class="num">3&times;</div><h3>Searches you show up for</h3><p>100 a year ago. 300 today in Google's top 100.</p></div>
+      <div class="stat"><div class="num">31</div><h3>Website authority</h3><p>Ahrefs Domain Rating, up from 1. The highest of any local Omaha competitor.</p></div>
+      <div class="stat"><div class="num">$498</div><h3>Monthly value of your Google clicks</h3><p>What the same visits would cost in Google Ads. Up from $159.</p></div>
+    </div>
+    <p class="src">Sources: Semrush, United States, October 2025 compared with October 2026 (visits, searches, traffic value). Ahrefs, November 2026 (authority).</p>
+
+    <div class="two">
+      <div class="chartcard">
+        <h3>Estimated monthly visits from Google</h3>
+        <p class="sub">Two years of growth. The shaded area is the last 12 months.</p>
+        <svg viewBox="0 0 420 230" class="chart" role="img" aria-label="Estimated monthly Google visits rose from 21 in September 2024 to 97 in October 2025 and 193 in October 2026"><line x1="40" x2="406" y1="200.0" y2="200.0" class="g"/><text x="34" y="204.0" class="ax" text-anchor="end">0</text><line x1="40" x2="406" y1="164.4" y2="164.4" class="g"/><text x="34" y="168.4" class="ax" text-anchor="end">50</text><line x1="40" x2="406" y1="128.8" y2="128.8" class="g"/><text x="34" y="132.8" class="ax" text-anchor="end">100</text><line x1="40" x2="406" y1="93.2" y2="93.2" class="g"/><text x="34" y="97.2" class="ax" text-anchor="end">150</text><line x1="40" x2="406" y1="57.6" y2="57.6" class="g"/><text x="34" y="61.6" class="ax" text-anchor="end">200</text><line x1="40" x2="406" y1="22.0" y2="22.0" class="g"/><text x="34" y="26.0" class="ax" text-anchor="end">250</text><rect x="230.3" y="22" width="175.7" height="178" class="zone"/><polygon points="40.0,200 40.0,185.0 54.6,160.8 69.3,178.6 83.9,170.1 98.6,170.1 113.2,159.4 127.8,157.3 142.5,159.4 157.1,149.4 171.8,141.6 186.4,145.2 201.0,131.6 215.7,130.9 230.3,130.9 245.0,130.9 259.6,83.9 274.2,79.0 288.9,103.9 303.5,105.3 318.2,105.3 332.8,101.0 347.4,56.2 362.1,48.3 376.7,73.3 391.4,54.8 406.0,62.6 406.0,200" class="area"/><polyline points="40.0,185.0 54.6,160.8 69.3,178.6 83.9,170.1 98.6,170.1 113.2,159.4 127.8,157.3 142.5,159.4 157.1,149.4 171.8,141.6 186.4,145.2 201.0,131.6 215.7,130.9 230.3,130.9 245.0,130.9 259.6,83.9 274.2,79.0 288.9,103.9 303.5,105.3 318.2,105.3 332.8,101.0 347.4,56.2 362.1,48.3 376.7,73.3 391.4,54.8 406.0,62.6" class="line"/><line x1="406.0" x2="406.0" y1="22" y2="200" class="mark"/><text x="401.0" y="34" class="lab s" text-anchor="end">New site</text><circle cx="230.3" cy="130.9" r="4" class="dot"/><text x="230.3" y="120.9" class="lab s" text-anchor="middle">97</text><circle cx="362.1" cy="48.3" r="4" class="dot"/><text x="362.1" y="38.3" class="lab s" text-anchor="middle">213</text><circle cx="406.0" cy="62.6" r="4" class="dot"/><text x="406.0" y="52.6" class="lab s" text-anchor="end">193</text><text x="40.0" y="222" class="ax" text-anchor="start">Sep 2024</text><text x="230.3" y="222" class="ax" text-anchor="middle">Oct 2025</text><text x="406.0" y="222" class="ax" text-anchor="end">Oct 2026</text></svg>
+      </div>
+      <div class="chartcard">
+        <h3>Website authority, Domain Rating</h3>
+        <p class="sub">Authority is what lets a new page rank. It took a year to build and it is holding at <b>31</b>.</p>
+        <svg viewBox="0 0 420 230" class="chart" role="img" aria-label="Ahrefs Domain Rating rose from 1 in September 2025 to 31 in November 2026"><line x1="40" x2="406" y1="200.0" y2="200.0" class="g"/><text x="34" y="204.0" class="ax" text-anchor="end">0</text><line x1="40" x2="406" y1="155.5" y2="155.5" class="g"/><text x="34" y="159.5" class="ax" text-anchor="end">10</text><line x1="40" x2="406" y1="111.0" y2="111.0" class="g"/><text x="34" y="115.0" class="ax" text-anchor="end">20</text><line x1="40" x2="406" y1="66.5" y2="66.5" class="g"/><text x="34" y="70.5" class="ax" text-anchor="end">30</text><line x1="40" x2="406" y1="22.0" y2="22.0" class="g"/><text x="34" y="26.0" class="ax" text-anchor="end">40</text><polygon points="40.0,200 40.0,195.6 66.1,195.1 92.3,196.0 118.4,177.8 144.6,133.2 170.7,133.2 196.9,133.2 223.0,137.7 249.1,128.8 275.3,79.8 301.4,30.9 327.6,62.1 353.7,62.1 379.9,62.1 406.0,62.1 406.0,200" class="area"/><polyline points="40.0,195.6 66.1,195.1 92.3,196.0 118.4,177.8 144.6,133.2 170.7,133.2 196.9,133.2 223.0,137.7 249.1,128.8 275.3,79.8 301.4,30.9 327.6,62.1 353.7,62.1 379.9,62.1 406.0,62.1" class="line"/><circle cx="40.0" cy="195.6" r="4" class="dot"/><text x="40.0" y="185.6" class="lab s" text-anchor="start">1</text><circle cx="301.4" cy="30.9" r="4" class="dot"/><text x="301.4" y="20.9" class="lab s" text-anchor="middle">38</text><circle cx="406.0" cy="62.1" r="4" class="dot"/><text x="406.0" y="52.1" class="lab s" text-anchor="end">31</text><text x="40.0" y="222" class="ax" text-anchor="start">Sep 2025</text><text x="223.0" y="222" class="ax" text-anchor="middle">Apr 2026</text><text x="406.0" y="222" class="ax" text-anchor="end">Nov 2026</text></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The neighborhood</p>
+    <h2>Growing while your competitors shrink.</h2>
+    <p class="lede">We tracked the Omaha dumpster companies that compete with RMS for the same searches. Over the last year RMS doubled its Google visits. Three of the four others lost traffic, including the Bin There Dump That franchise and Can It, the biggest local site.</p>
+    <div class="two">
+      <div class="chartcard">
+        <h3>Change in Google visits, October 2025 to October 2026</h3>
+        <p class="sub">RMS against local competitors ranking for "dumpster rental omaha."</p>
+        <svg viewBox="0 0 420 194" class="chart" role="img" aria-label="Change in estimated Google visits, October 2025 to October 2026: Gretna Containers up 338 percent, RMS up 99 percent, Can It down 36 percent, Bin There Omaha down 55 percent, Eagle Services down 93 percent"><line x1="200.0" x2="200.0" y1="14" y2="170" class="axis"/><text x="140" y="35" class="nm " text-anchor="end">Gretna Containers</text><rect x="200.0" y="22" width="169.0" height="17" rx="3" class="bo"/><text x="375.0" y="35" class="val " text-anchor="start">+338%</text><text x="140" y="65" class="nm me" text-anchor="end">RMS Dumpsters</text><rect x="200.0" y="52" width="49.5" height="17" rx="3" class="bme"/><text x="255.5" y="65" class="val me" text-anchor="start">+99%</text><text x="140" y="95" class="nm " text-anchor="end">Can It Dumpster</text><rect x="182.0" y="82" width="18.0" height="17" rx="3" class="bo"/><text x="176.0" y="95" class="val " text-anchor="end">−36%</text><text x="140" y="125" class="nm " text-anchor="end">Bin There (Omaha)</text><rect x="172.5" y="112" width="27.5" height="17" rx="3" class="bo"/><text x="166.5" y="125" class="val " text-anchor="end">−55%</text><text x="140" y="155" class="nm " text-anchor="end">Eagle Services</text><rect x="153.5" y="142" width="46.5" height="17" rx="3" class="bo"/><text x="147.5" y="155" class="val " text-anchor="end">−93%</text><text x="200.0" y="188" class="ax" text-anchor="middle">No change</text></svg>
+      </div>
+      <div class="chartcard">
+        <h3>Strongest website in the market</h3>
+        <p class="sub">Ahrefs Domain Rating, 0 to 100. Every local independent competitor sits near zero.</p>
+        <svg viewBox="0 0 420 166" class="chart" role="img" aria-label="Domain Rating: RMS 31, Can It 1, Gretna Containers 1, Eagle Services 1, TAGS Omaha 0"><text x="160" y="23" class="nm me" text-anchor="end">RMS Dumpsters</text><rect x="170" y="10" width="186.0" height="17" rx="3" class="bme"/><text x="362.0" y="23" class="val me">31</text><text x="160" y="53" class="nm " text-anchor="end">Can It Dumpster</text><rect x="170" y="40" width="7.8" height="17" rx="3" class="bo"/><text x="183.8" y="53" class="val ">1</text><text x="160" y="83" class="nm " text-anchor="end">Gretna Containers</text><rect x="170" y="70" width="6.0" height="17" rx="3" class="bo"/><text x="182.0" y="83" class="val ">1</text><text x="160" y="113" class="nm " text-anchor="end">Eagle Services</text><rect x="170" y="100" width="5.4" height="17" rx="3" class="bo"/><text x="181.4" y="113" class="val ">1</text><text x="160" y="143" class="nm " text-anchor="end">TAGS Omaha</text><rect x="170" y="130" width="2.0" height="17" rx="3" class="bo"/><text x="178.0" y="143" class="val ">0</text></svg>
+        <p class="note">Bin There Dump That's Omaha pages sit on its national franchise site (Domain Rating 57), so it is shown separately from the local companies.</p>
+      </div>
+    </div>
+    <p class="src">Source: Semrush, United States, estimated monthly Google visits. Ahrefs Domain Rating, 2 November 2026. Gretna Containers grew from a small base of 48 visits. TAGS Omaha is left out because it gets fewer than 10 visits a month.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Authority</p>
+    <h2>1,207 websites now point to RMS.</h2>
+    <p class="lede">Every directory listing, press mention and citation that links to your site tells Google and AI assistants that RMS is a real, established business. A year ago 66 websites linked to you.</p>
+    <div class="chartcard solo">
+      <h3>Websites linking to rmsdumpsters.com</h3>
+      <svg viewBox="0 0 420 230" class="chart" role="img" aria-label="Websites linking to RMS rose from 66 in October 2025 to 1,207 in November 2026"><line x1="40" x2="406" y1="200.0" y2="200.0" class="g"/><text x="34" y="204.0" class="ax" text-anchor="end">0</text><line x1="40" x2="406" y1="149.1" y2="149.1" class="g"/><text x="34" y="153.1" class="ax" text-anchor="end">400</text><line x1="40" x2="406" y1="98.3" y2="98.3" class="g"/><text x="34" y="102.3" class="ax" text-anchor="end">800</text><line x1="40" x2="406" y1="47.4" y2="47.4" class="g"/><text x="34" y="51.4" class="ax" text-anchor="end">1,200</text><polygon points="40.0,200 40.0,191.9 66.1,191.6 92.3,191.1 118.4,189.6 144.6,189.1 170.7,189.8 196.9,191.4 223.0,189.1 249.1,161.2 275.3,148.9 301.4,129.7 327.6,125.6 353.7,44.8 379.9,46.4 406.0,46.5 406.0,200" class="area"/><polyline points="40.0,191.9 66.1,191.6 92.3,191.1 118.4,189.6 144.6,189.1 170.7,189.8 196.9,191.4 223.0,189.1 249.1,161.2 275.3,148.9 301.4,129.7 327.6,125.6 353.7,44.8 379.9,46.4 406.0,46.5" class="line"/><circle cx="66.1" cy="191.6" r="4" class="dot"/><text x="66.1" y="181.6" class="lab s" text-anchor="middle">66</text><circle cx="406.0" cy="46.5" r="4" class="dot"/><text x="406.0" y="36.5" class="lab s" text-anchor="end">1,207</text><text x="40.0" y="222" class="ax" text-anchor="start">Sep 2025</text><text x="223.0" y="222" class="ax" text-anchor="middle">Apr 2026</text><text x="406.0" y="222" class="ax" text-anchor="end">Nov 2026</text></svg>
+    </div>
+    <p class="src">Source: Ahrefs, unique referring domains, September 2025 to November 2026. 2,734 live links in total.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">AI answers</p>
+    <h2>AI assistants have started naming RMS.</h2>
+    <p class="lede">More people now ask an assistant instead of scrolling a results page. When an assistant answers, it names the businesses it trusts and cites the sites it read. RMS is now in those answers.</p>
+    <div class="answer">
+      <div class="q">"What is the best dumpster rental service in Omaha, NE?"</div>
+      <div class="a">ChatGPT now recommends RMS Dumpsters by name. Before we started, RMS was not named in this answer.</div>
+      <span class="flag">Recorded 30 September 2026</span>
+    </div>
+    <div class="chartcard solo">
+      <h3>Times AI assistants cite your website</h3>
+      <p class="sub">Six citations across three platforms, drawing on five of your pages.</p>
+      <svg viewBox="0 0 420 106" class="chart" role="img" aria-label="AI citations of rmsdumpsters.com: Perplexity 3, Microsoft Copilot 2, Google Gemini 1"><text x="110" y="23" class="nm " text-anchor="end">Perplexity</text><rect x="120" y="10" width="195.0" height="17" rx="3" class="bo"/><text x="321.0" y="23" class="val ">3</text><text x="110" y="53" class="nm " text-anchor="end">Copilot</text><rect x="120" y="40" width="130.0" height="17" rx="3" class="bo"/><text x="256.0" y="53" class="val ">2</text><text x="110" y="83" class="nm " text-anchor="end">Gemini</text><rect x="120" y="70" width="65.0" height="17" rx="3" class="bo"/><text x="191.0" y="83" class="val ">1</text></svg>
+    </div>
+    <p class="src">Sources: your Local AI Registry monthly report (ChatGPT answer, with screenshot in your dashboard). Ahrefs AI citations, 2 November 2026. Google also shows a business knowledge panel when people search your name.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Google rankings</p>
+    <h2>Where you rank today.</h2>
+    <p class="lede">You own your name, and you are on page 1 or 2 for the searches that bring in jobs across Omaha, Council Bluffs and Bellevue. "Dumpster rental omaha ne" alone is searched 880 times a month.</p>
+    <div class="tablewrap">
+      <table class="ranktable">
+        <thead><tr><th>Search</th><th class="n">Position</th><th class="n">Page</th></tr></thead>
+        <tbody><tr><td>rms dumpsters<span class="vol">170 searches a month</span></td><td class="n now">#1</td><td class="n was">Page 1</td></tr><tr><td>rms dumpster<span class="vol">50 searches a month</span></td><td class="n now">#1</td><td class="n was">Page 1</td></tr><tr><td>dumpster rental bennington ne<span class="vol">40 searches a month</span></td><td class="n now">#8</td><td class="n was">Page 1</td></tr><tr><td>dumpster rental council bluffs<span class="vol">170 searches a month</span></td><td class="n now">#11</td><td class="n was">Page 2</td></tr><tr><td>dumpsters omaha ne<span class="vol">110 searches a month</span></td><td class="n now">#14</td><td class="n was">Page 2</td></tr><tr><td>cheapest dumpster rental omaha<span class="vol">90 searches a month</span></td><td class="n now">#15</td><td class="n was">Page 2</td></tr><tr><td>dumpster rental in omaha ne<span class="vol">30 searches a month</span></td><td class="n now">#15</td><td class="n was">Page 2</td></tr><tr><td>dumpster rental bellevue ne<span class="vol">140 searches a month</span></td><td class="n now">#16</td><td class="n was">Page 2</td></tr><tr><td>dumpsters omaha<span class="vol">140 searches a month</span></td><td class="n now">#17</td><td class="n was">Page 2</td></tr><tr><td>dumpster rental omaha ne<span class="vol">880 searches a month</span></td><td class="n now">#18</td><td class="n was">Page 2</td></tr><tr><td>rent a dumpster omaha<span class="vol">70 searches a month</span></td><td class="n now">#18</td><td class="n was">Page 2</td></tr><tr><td>local roll off companies near me<span class="vol">90 searches a month</span></td><td class="n now">#19</td><td class="n was">Page 2</td></tr></tbody>
+      </table>
+    </div>
+    <p class="src">Source: Semrush, United States, 2 November 2026. Checked by hand on Google the same day for "dumpster rental omaha ne" (#17).</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">The October dip</p>
+    <h2>October was a down month for all of Omaha. RMS held up better than most.</h2>
+    <p class="lede">Your new website went live on October 13. When a site moves to new pages, Google re-checks each one before it trusts it again, so the number of searches you show up for dipped. Most of those were small searches that send few visits. Your actual visits barely moved, and the numbers have held flat since mid-October. That is what the bottom of a relaunch dip looks like.</p>
+    <div class="two">
+      <div class="chartcard">
+        <h3>Searches dipped, visits held</h3>
+        <div class="legend"><span class="l2">Searches you rank for</span><span>Monthly visits</span></div>
+        <svg viewBox="0 0 420 230" class="chart" role="img" aria-label="August to October: searches ranked fell from 624 to 300 while monthly visits held between 178 and 204"><line x1="30" x2="410" y1="190" y2="190" class="g"/><rect x="52.3" y="47.4" width="38.0" height="142.6" rx="3" class="bo"/><rect x="96.3" y="149.3" width="38.0" height="40.7" rx="3" class="bme"/><text x="71.3" y="41.4" class="ax" text-anchor="middle">624</text><text x="115.3" y="143.3" class="lab s" text-anchor="middle">178</text><text x="93.3" y="210" class="nm" text-anchor="middle">Aug</text><rect x="179.0" y="62.2" width="38.0" height="127.8" rx="3" class="bo"/><rect x="223.0" y="143.4" width="38.0" height="46.6" rx="3" class="bme"/><text x="198.0" y="56.2" class="ax" text-anchor="middle">559</text><text x="242.0" y="137.4" class="lab s" text-anchor="middle">204</text><text x="220.0" y="210" class="nm" text-anchor="middle">Sep</text><rect x="305.7" y="121.4" width="38.0" height="68.6" rx="3" class="bo"/><rect x="349.7" y="145.9" width="38.0" height="44.1" rx="3" class="bme"/><text x="324.7" y="115.4" class="ax" text-anchor="middle">300</text><text x="368.7" y="139.9" class="lab s" text-anchor="middle">193</text><text x="346.7" y="210" class="nm" text-anchor="middle">Oct</text></svg>
+      </div>
+      <div class="chartcard">
+        <h3>Change in Google visits, September to October</h3>
+        <p class="sub">Every local competitor also fell in October. Only Bin There dipped less.</p>
+        <svg viewBox="0 0 420 194" class="chart" role="img" aria-label="Change in Google visits from September to October 2026: Bin There down 2 percent, RMS down 5 percent, Can It down 19 percent, Gretna Containers down 26 percent, Eagle Services down 42 percent"><line x1="348.0" x2="348.0" y1="14" y2="170" class="axis"/><text x="140" y="35" class="nm " text-anchor="end">Bin There (Omaha)</text><rect x="339.2" y="22" width="8.8" height="17" rx="3" class="bo"/><text x="333.2" y="35" class="val " text-anchor="end">−2%</text><text x="140" y="65" class="nm me" text-anchor="end">RMS Dumpsters</text><rect x="326.0" y="52" width="22.0" height="17" rx="3" class="bme"/><text x="320.0" y="65" class="val me" text-anchor="end">−5%</text><text x="140" y="95" class="nm " text-anchor="end">Can It Dumpster</text><rect x="264.4" y="82" width="83.6" height="17" rx="3" class="bo"/><text x="258.4" y="95" class="val " text-anchor="end">−19%</text><text x="140" y="125" class="nm " text-anchor="end">Gretna Containers</text><rect x="233.6" y="112" width="114.4" height="17" rx="3" class="bo"/><text x="227.6" y="125" class="val " text-anchor="end">−26%</text><text x="140" y="155" class="nm " text-anchor="end">Eagle Services</text><rect x="163.2" y="142" width="184.8" height="17" rx="3" class="bo"/><text x="157.2" y="155" class="val " text-anchor="end">−42%</text><text x="348.0" y="188" class="ax" text-anchor="middle">No change</text></svg>
+      </div>
+    </div>
+    <p class="src">Source: Semrush, United States, monthly snapshots for August, September and October 2026.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">What we did</p>
+    <h2>The work behind the numbers.</h2>
+    <div class="work">
+      <div class="item"><div><h3>A new website</h3><span class="tag">Live Oct 13</span></div><p>32 pages and 16 how-to articles: every service, 11 service-area cities, size and price guides, a permit guide and a materials guide. Every page leads with Omaha.</p></div>
+      <div class="item"><div><h3>Real prices on every size</h3><span class="tag">Live</span></div><p>Starting prices for all seven boxes, 10 to 40 yards, so Google and AI assistants can quote you correctly instead of guessing.</p></div>
+      <div class="item"><div><h3>Answers Google can read</h3><span class="tag">Live Oct 19</span></div><p>Question and answer markup on your pages, office hours on every page, and a helpful page for anyone who lands on an old link.</p></div>
+      <div class="item"><div><h3>Your Google profile, kept active</h3><span class="tag">Weekly</span></div><p>Weekly posts, replies to reviews in your voice and fresh photos. 4.8 stars on 375 reviews and 248 photos.</p></div>
+      <div class="item"><div><h3>21 directory listings</h3><span class="tag">12 live, rest publishing</span></div><p>Submitted with your Omaha name, address and phone so every source tells the same story.</p></div>
+      <div class="item"><div><h3>A content plan and a real author</h3><span class="tag">Approved</span></div><p>A plan around the 10 searches that bring contractors, home builders and homeowners, with your bio on every article. Google and AI weigh advice from a named person more heavily.</p></div>
+    </div>
+    <p class="src">Our September 22 to October 22 report counted 80 pieces of work published for RMS.</p>
+  </div>
+</section>
+
+<section class="next">
+  <div class="wrap">
+    <p class="eyebrow">Next 30 days</p>
+    <h2>The next wins are already lined up.</h2>
+    <p class="lede">With the relaunch dip behind us, these three pieces turn the new site into rankings.</p>
+    <div class="list">
+      <div class="nx"><div class="k">10</div><h3>Focus searches</h3><p>New pages and posts aimed at the searches that bring large contractors, home builders and residential customers. Concrete washout gets added if you want it.</p></div>
+      <div class="nx"><div class="k">11</div><h3>Old page addresses to forward</h3><p>Old city pages Google already knows will point to their new versions, so their rankings carry over.</p></div>
+      <div class="nx"><div class="k">1</div><h3>Address everywhere</h3><p>Every listing online will show the same name, address and phone. That is what moves you up in the map results.</p></div>
+    </div>
+    <div class="cta">
+      <a class="btn" href="https://calendly.com/steve-localairegistry" target="_blank" rel="noopener">Book a call with Steve</a>
+      <span class="phone">Call or text 347-292-9294</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87"  role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#FFFFFF"></path>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FFFFFF"></path>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#FFFFFF"></path>
+</svg>
+    <div class="method">Visits, searches, rankings and traffic value measured with Semrush for rmsdumpsters.com in the United States. Authority, links and AI citations measured with Ahrefs. Visit counts are estimates. Local AI Registry &middot; 9891 Irvine Center Dr, Irvine, CA 92618</div>
+  </div>
+</footer>
+</body>
+</html>
