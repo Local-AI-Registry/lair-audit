@@ -1,2 +1,3 @@
 User-agent: *
+Allow: /med-spa/linda-rank-turnaround/
 Disallow: /
