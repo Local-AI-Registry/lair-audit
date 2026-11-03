@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex">
+<title>Rivkin Aesthetics AEO Program</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Cormorant:ital,wght@0,400;0,500;1,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: ink masthead with a live AI answer; paper sections, each concept as illustration + two readings (plain English for the doctor, under the hood for the technical reader). Single committed light look from the LAIR brand kit. */
+:root{
+  --blue:#1F4FE0; --blue-700:#183EB0; --blue-050:#E7EDFC; --blue-200:#B6C7F7;
+  --ink:#0B1A2E; --ink-600:#556070; --ink-500:#6E7887; --ink-300:#C3C7CE;
+  --coral:#FF5A3C; --coral-050:#FFEDE8;
+  --paper:#F4F1EA; --paper-deep:#ECE6D6; --white:#FFFFFF;
+  --green:#0E8A5F; --green-bg:#E2F4EC;
+  --on-ink:#A8B2C1; --hair:rgba(11,26,46,.12);
+  --f-display:"Cormorant",Georgia,"Times New Roman",serif;
+  --f-label:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+  --f-text:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink-600);font-family:var(--f-text);font-size:1rem;line-height:1.62;-webkit-font-smoothing:antialiased}
+svg text.ft{font-family:var(--f-text)} svg text.fl{font-family:var(--f-label)}
+svg{display:block;width:100%;height:auto;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{color:var(--ink);text-wrap:balance;margin:0}
+h2{font-family:var(--f-display);font-weight:500;font-size:clamp(2rem,3.8vw,3rem);line-height:1.05;letter-spacing:-.005em}
+h3{font-family:var(--f-label);font-weight:700;font-size:1.08rem;line-height:1.25;letter-spacing:-.01em}
+p{margin:0;max-width:66ch}
+.eyebrow{font-family:var(--f-label);font-weight:700;font-size:.8125rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+a{color:var(--blue)}
+
+.mast{background:var(--ink)}
+.mast .wrap{padding-block:clamp(24px,4vw,44px) clamp(40px,6vw,72px);display:grid;gap:clamp(24px,4vw,40px)}
+.lockup{width:200px;max-width:58%;height:auto;display:block}
+.mast-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:center}
+.mast-grid>*{min-width:0}
+.mast .eyebrow{color:#7F9CF5}
+.mast h1{color:var(--white);font-family:var(--f-display);font-weight:400;font-size:clamp(2.6rem,5.6vw,4.8rem);line-height:1.02;letter-spacing:-.01em;margin-top:14px}
+.mast h1 em{font-style:italic;color:#C9D5FA}
+.mast .lead{color:var(--on-ink);font-size:clamp(1.05rem,1.5vw,1.25rem);line-height:1.5;margin-top:18px}
+.mast-meta{display:flex;flex-wrap:wrap;gap:8px 26px;font-family:var(--f-label);font-size:.85rem;color:var(--on-ink);border-top:1px solid rgba(255,255,255,.14);padding-top:16px}
+.mast-meta b{color:var(--white)}
+
+.readers{background:var(--blue-050)}
+.readers .wrap{padding-block:22px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 36px}
+.readers div{display:flex;gap:12px;align-items:flex-start;min-width:0}
+.readers p{font-size:.95rem}
+.tag{flex:none;font-family:var(--f-label);font-weight:800;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;margin-top:2px}
+.tag.pl{background:var(--white);color:var(--blue-700);border:1px solid var(--blue-200)}
+.tag.uh{background:var(--ink);color:var(--white)}
+
+section{padding-block:clamp(52px,7vw,92px)}
+section+section{border-top:1px solid var(--hair)}
+.head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px)}
+.head p{font-size:1.08rem}
+
+.base{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--hair);background:var(--white)}
+.base div{padding:22px 20px;display:grid;gap:6px;min-width:0}
+.base div+div{border-left:1px solid var(--hair)}
+.n{font-family:var(--f-label);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums;line-height:.9}
+.base .n{font-size:clamp(1.9rem,3.4vw,2.6rem);color:var(--ink)}
+.base .l{font-size:.88rem;line-height:1.4}
+
+
+/* phases */
+.phases{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;position:relative}
+.phases::before{content:"";position:absolute;left:0;right:0;top:15px;height:3px;background:var(--ink-300)}
+.phases::after{content:"";position:absolute;left:0;top:15px;height:3px;width:100%;background:var(--blue);transform-origin:left;animation:grow3 7s ease-out infinite}
+@keyframes grow3{0%{transform:scaleX(0)}55%,100%{transform:scaleX(1)}}
+.phases li{position:relative;z-index:1;display:grid;gap:10px;align-content:start;padding-right:28px;min-width:0}
+.phases .pdot{width:32px;height:32px;border-radius:50%;background:var(--blue);display:grid;place-items:center;color:var(--white);font-family:var(--f-label);font-weight:800;font-size:.9rem}
+.phases li.now .pdot{background:var(--coral);box-shadow:0 0 0 7px var(--coral-050);animation:pulse 2s ease-in-out infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 12px rgba(255,90,60,.12)}}
+.phases .when{font-family:var(--f-label);font-weight:800;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-500)}
+.phases h3{font-family:var(--f-display);font-weight:500;font-size:1.7rem;line-height:1.05}
+.phases ul{margin:0;padding-left:1.1em;display:grid;gap:5px;font-size:.92rem}
+.phases .st{justify-self:start;font-family:var(--f-label);font-weight:800;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--green-bg);color:var(--green)}
+.phases li.now .st{background:var(--coral-050);color:var(--coral)}
+@media (max-width:900px){.phases{grid-template-columns:minmax(0,1fr);row-gap:30px}.phases::before,.phases::after{display:none}}
+@media (prefers-reduced-motion:reduce){.phases::after,.phases li.now .pdot{animation:none}}
+
+
+.agreed{margin-top:clamp(36px,5vw,56px);display:grid;gap:16px}
+.ag{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.ag div{background:var(--white);border:1px solid var(--hair);border-top:3px solid var(--blue);border-radius:4px 4px 12px 12px;padding:18px;display:grid;gap:10px;align-content:start;min-width:0}
+.ag .src{font-family:var(--f-label);font-weight:800;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+.ag .q{font-size:.94rem;color:var(--ink);line-height:1.5}
+.agnote{font-size:.95rem}
+@media (max-width:900px){.ag{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:600px){.ag{grid-template-columns:minmax(0,1fr)}}
+
+/* concept block */
+.concept{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.concept+.concept{margin-top:clamp(52px,7vw,84px)}
+.concept.flip>.fig{order:2}
+.concept>*{min-width:0}
+.fig{background:var(--white);border:1px solid var(--hair);border-radius:16px;padding:clamp(12px,2vw,22px)}
+.fig.bare{background:none;border:0;padding:0}
+.fig-scroll{overflow-x:auto}
+@media (max-width:600px){.fig-scroll svg{min-width:560px}}
+.reads{display:grid;gap:18px}
+.reads h3{font-size:1.35rem}
+.read{display:grid;gap:8px}
+.read p{font-size:.98rem}
+.read.uh{border-left:3px solid var(--ink);padding-left:14px}
+.read.uh p{font-size:.93rem;color:var(--ink-600)}
+.pair{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:16px}
+.pair>*{min-width:0}
+
+/* method band */
+.band{background:var(--ink);color:var(--on-ink)}
+.band h2,.band h3{color:var(--white)}
+.band .eyebrow{color:#7F9CF5}
+.band .head p{color:var(--on-ink)}
+.band .fig{background:var(--white)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);margin-top:36px}
+.steps div{background:var(--ink);padding:20px;display:grid;gap:8px;align-content:start;min-width:0}
+.steps .k{font-family:var(--f-label);font-weight:800;font-size:1.8rem;color:var(--coral);line-height:.9}
+.steps p{font-size:.88rem;line-height:1.5}
+.steps .how{color:var(--white);border-top:1px solid rgba(255,255,255,.14);padding-top:8px}
+.band .reads .read p{color:var(--on-ink)}
+.band .read.uh{border-left-color:var(--coral)}
+
+/* assets */
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);margin-bottom:clamp(36px,5vw,56px)}
+.tiles div{background:var(--paper);padding:22px 20px;display:grid;gap:8px;align-content:start;min-width:0}
+.tiles .n{font-size:clamp(2.6rem,5vw,3.8rem);color:var(--blue)}
+.tiles .t{font-family:var(--f-label);font-weight:700;color:var(--ink);line-height:1.25}
+.tiles .d{font-size:.9rem;line-height:1.45}
+.assets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.asset{background:var(--white);border:1px solid var(--hair);border-radius:16px;padding:22px;display:grid;gap:14px;align-content:start;min-width:0}
+.asset .ill{background:var(--paper);border-radius:12px;padding:10px}
+.asset .vol{font-family:var(--f-label);font-weight:800;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue)}
+.asset ul{margin:0;padding-left:1.1em;display:grid;gap:6px;font-size:.93rem}
+.asset .read.uh p{font-size:.88rem}
+.ops{margin-top:22px;background:var(--paper-deep);padding:20px 22px;border-radius:12px;display:grid;gap:6px}
+.ops p{font-size:.94rem;max-width:84ch}
+
+/* compare */
+.cmp-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:600px;font-size:.95rem}
+th,td{text-align:left;vertical-align:middle;padding:13px 14px;border-bottom:1px solid var(--hair)}
+th{font-family:var(--f-label);font-weight:700;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-500);border-bottom:1px solid var(--ink)}
+td.c{text-align:center;font-family:var(--f-label);font-weight:700;white-space:nowrap}
+th.c{text-align:center}
+.yes{color:var(--green)} .no{color:var(--ink-500)} .part{color:#B5822A}
+td.prog{background:var(--blue-050);color:var(--blue-700)}
+th.prog{background:var(--blue-050);color:var(--blue-700)}
+
+/* milestones */
+.ms{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));position:relative}
+.ms::before{content:"";position:absolute;left:0;right:0;top:39px;height:3px;background:var(--ink-300)}
+.ms::after{content:"";position:absolute;left:0;top:39px;height:3px;background:var(--blue);width:100%;transform-origin:left;animation:grow 6s ease-out infinite}
+@keyframes grow{0%{transform:scaleX(0)}70%,100%{transform:scaleX(1)}}
+.ms li{position:relative;z-index:1;display:grid;gap:8px;align-content:start;padding-right:14px;min-width:0}
+.ms .m{font-family:var(--f-label);font-weight:800;font-size:.8rem;letter-spacing:.1em;color:var(--ink-500)}
+.ms .dot{width:22px;height:22px;border-radius:50%;background:var(--white);border:4px solid var(--blue);margin-block:4px}
+.ms li.big .dot{background:var(--coral);border-color:var(--coral);box-shadow:0 0 0 6px var(--coral-050)}
+.ms .o{font-family:var(--f-display);font-size:1.6rem;line-height:1;color:var(--ink);font-weight:500}
+.ms p{font-size:.88rem;line-height:1.45}
+
+.team{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.team div{background:var(--white);border:1px solid var(--hair);border-radius:12px;padding:18px;display:grid;gap:6px;align-content:start;min-width:0}
+.team p{font-size:.9rem}
+
+/* founder */
+.founder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(28px,5vw,64px);align-items:start}
+.founder>*{min-width:0}
+.founder .quote{font-family:var(--f-display);font-size:clamp(1.6rem,2.6vw,2.1rem);line-height:1.15;color:var(--ink);font-style:italic}
+.career{display:grid;gap:0;border-top:1px solid var(--ink)}
+.career div{display:grid;grid-template-columns:minmax(0,9rem) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--hair)}
+.career b{font-family:var(--f-label);color:var(--ink);font-weight:800}
+.career span{font-size:.94rem}
+
+/* credentials */
+.creds{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.cred{background:var(--white);border:1px solid var(--hair);border-radius:14px;padding:20px;display:grid;gap:10px;align-content:start;min-width:0}
+.cred svg{width:44px;height:44px}
+.cred .big{font-family:var(--f-label);font-weight:800;font-size:1.5rem;color:var(--ink);line-height:1.05;letter-spacing:-.02em}
+.cred p{font-size:.9rem;line-height:1.45}
+.cred.hi{background:var(--ink);border-color:var(--ink)}
+.cred.hi .big{color:var(--white)} .cred.hi p{color:var(--on-ink)}
+
+.guard{background:var(--blue-050)}
+.guard ul{margin:0;padding-left:1.1em;display:grid;gap:10px;max-width:76ch}
+
+footer{background:var(--ink);color:var(--on-ink)}
+footer .wrap{padding-block:34px 42px;display:flex;flex-wrap:wrap;gap:16px 40px;align-items:center;justify-content:space-between}
+footer .lockup{width:160px}
+footer p{font-size:.88rem}
+
+@media (max-width:900px){
+  .mast-grid,.concept,.founder{grid-template-columns:minmax(0,1fr)}
+  .concept.flip>.fig{order:0}
+  .steps,.tiles,.team,.creds{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .assets{grid-template-columns:minmax(0,1fr)}
+  .ms{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:28px}
+  .ms::before,.ms::after{display:none}
+}
+@media (max-width:600px){
+  .readers .wrap,.pair{grid-template-columns:minmax(0,1fr)}
+  .base{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .base div:nth-child(3){border-left:0}
+  .base div:nth-child(n+3){border-top:1px solid var(--hair)}
+  .steps,.tiles,.team,.creds{grid-template-columns:minmax(0,1fr)}
+  .ms{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .career div{grid-template-columns:minmax(0,1fr);gap:2px}
+}
+@media (prefers-reduced-motion:reduce){.ms::after{animation:none}}
+</style>
+</head><body>
+
+
+<header class="mast">
+  <div class="wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87" class="lockup" role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#FFFFFF"></path>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FFFFFF"></path>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#FFFFFF"></path>
+</svg>
+    <div class="mast-grid">
+      <div>
+        <span class="eyebrow">Local AI Registry · AEO program for Rivkin Aesthetics</span>
+        <h1>When a patient asks AI, the answer should be <em>Dr. Rivkin</em></h1>
+        <p class="lead">Local AI Registry built rivkinaesthetics.com as the foundation for a monthly answer engine optimization (AEO) program. This is what we do every month, how AI engines pick who to recommend, and why the work cannot be replaced by a listings tool.</p>
+      </div>
+      <div class="fig"><svg viewBox="0 0 520 380" role="img" aria-label="An AI assistant answering a patient question by naming and citing Dr. Rivkin"><defs><clipPath id="hc"><rect x="60" y="150" height="100" width="450"><animate attributeName="width" values="0;0;450;450;0" keyTimes="0;0.06;0.38;0.93;1" dur="10s" repeatCount="indefinite"/></rect></clipPath></defs><rect x="8" y="8" width="504" height="364" rx="16" fill="#FFFFFF"/><circle cx="34" cy="34" r="5" fill="#FF5A3C"/><circle cx="52" cy="34" r="5" fill="#F5B83D"/><circle cx="70" cy="34" r="5" fill="#0E8A5F"/><text x="96" y="39" font-size="13" fill="#6E7887" font-weight="600" text-anchor="start" class="ft" >AI assistant</text><line x1="8" y1="56" x2="512" y2="56" stroke="#C3C7CE" stroke-width="1"/><rect x="150" y="72" width="344" height="60" rx="14" fill="#E7EDFC"/><text x="168" y="97" font-size="15" fill="#0B1A2E" font-weight="500" text-anchor="start" class="ft" >Who is the best doctor for a non-surgical</text><text x="168" y="117" font-size="15" fill="#0B1A2E" font-weight="500" text-anchor="start" class="ft" >nose job in Los Angeles?</text><circle cx="38" cy="166" r="15" fill="#0B1A2E"/><path d="M38 156 L46 172 L30 172 Z" fill="#FFFFFF"/><g clip-path="url(#hc)"><text x="66" y="170" font-size="15" fill="#0B1A2E" font-weight="400" text-anchor="start" class="ft" >Dr. Alexander Rivkin pioneered and popularized</text><text x="66" y="192" font-size="15" fill="#0B1A2E" font-weight="400" text-anchor="start" class="ft" >the modern non-surgical nose job in the U.S.,</text><text x="66" y="214" font-size="15" fill="#0B1A2E" font-weight="400" text-anchor="start" class="ft" >beginning in 2003. He is the sole author of the</text><text x="66" y="236" font-size="15" fill="#0B1A2E" font-weight="400" text-anchor="start" class="ft" >largest published safety review: 2,488 procedures.</text></g><text x="66" y="272" font-size="11" fill="#6E7887" font-weight="700" text-anchor="start" class="ft" letter-spacing="1.5">SOURCES</text><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.400;0.440;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="66" y="282" width="166" height="30" rx="15" fill="#F4F1EA" stroke="#B6C7F7"/><text x="149.0" y="302" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >rivkinaesthetics.com</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.460;0.500;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="240" y="282" width="80" height="30" rx="15" fill="#F4F1EA" stroke="#B6C7F7"/><text x="280.0" y="302" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >PubMed</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.520;0.560;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="328" y="282" width="86" height="30" rx="15" fill="#F4F1EA" stroke="#B6C7F7"/><text x="371.0" y="302" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >RealSelf</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.660;0.700;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="66" y="326" width="176" height="30" rx="15" fill="#E2F4EC"/><path d="M80 341 l6 6 l11 -12" stroke="#0E8A5F" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="104" y="346" font-size="13" fill="#0E8A5F" font-weight="700" text-anchor="start" class="ft" >Named and cited</text></g></svg></div>
+    </div>
+    <div class="mast-meta">
+      <span>Client <b>Rivkin Aesthetics, West Los Angeles</b></span>
+      <span>Program by <b>Local AI Registry</b></span>
+    </div>
+  </div>
+</header>
+
+<div class="readers">
+  <div class="wrap">
+    <div><span class="tag pl">Plain English</span><p>The short version of each idea, written for Dr. Rivkin and his team.</p></div>
+    <div><span class="tag uh">Under the hood</span><p>The mechanism behind it, for anyone who wants the technical detail.</p></div>
+  </div>
+</div>
+
+<main>
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Starting point</span>
+      <h2>Where the program begins</h2>
+      <p>Baseline at kickoff, before westsideaesthetics.com and thenonsurgicalnosejob.com consolidate into rivkinaesthetics.com. Ahrefs US estimates.</p>
+    </div>
+    <div class="base">
+      <div><span class="n">4,500</span><span class="l">organic visits per month</span></div>
+      <div><span class="n">13</span><span class="l">Google AI Overview citations</span></div>
+      <div><span class="n">356</span><span class="l">keywords those citations span</span></div>
+      <div><span class="n">#1</span><span class="l">for non surgical nose job, 5,800 searches a month</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">The timeline</span>
+      <h2>Strategy, then the website, then the program</h2>
+      <p>Each step is built to carry the next. The topical map sets the structure, the website makes it real, and the program fills it every month after.</p>
+    </div>
+    <ol class="phases">
+      <li><span class="pdot">1</span><span class="when">Month 1</span><h3>Strategy</h3>
+        <ul><li>Search and AI visibility analysis</li><li>Ten priority areas expanded into 20 money keywords</li><li>Topical SEO map: 11 tiers and the prerequisite chain for every money page</li><li>Navigation map approved by Dr. Rivkin</li></ul></li>
+      <li><span class="pdot">2</span><span class="when">Month 2</span><h3>Website build and delivery</h3>
+        <ul><li>351-page URL map with templates, links and gates</li><li>138 legacy redirects and 3 removals mapped</li><li>Menu, homepage copy and publishing specs</li><li>Website delivered</li></ul></li>
+      <li class="now"><span class="pdot">3</span><span class="when">Month 3 onward</span><h3>The AEO program</h3>
+        <ul><li>The monthly assets below begin</li><li>Program milestones counted from this start</li><li>Built on everything from months 1 and 2</li></ul></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">How AI decides</span>
+      <h2>One question becomes six searches</h2>
+    </div>
+    <div class="concept">
+      <div class="fig fig-scroll"><svg viewBox="0 0 660 330" role="img" aria-label="One patient question splits into six sub-questions, each answered by a page in the same cluster"><rect x="6" y="128" width="168" height="74" rx="12" fill="#0B1A2E"/><text x="90" y="156" font-size="14" fill="#FFFFFF" font-weight="600" text-anchor="middle" class="ft" >How much is a</text><text x="90" y="176" font-size="14" fill="#FFFFFF" font-weight="600" text-anchor="middle" class="ft" >non-surgical nose job?</text><path d="M174 165 C 210 165, 220 40, 250 40" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.05;0.3;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="22" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="45" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >What does it cost?</text><path d="M426 40 L470 40" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.4;0.5;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.450;0.490;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="22" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="45" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Cost page (tier 4)</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="0.0s" repeatCount="indefinite" path="M174 165 C 210 165, 220 40, 250 40 L470 40"/></circle><path d="M174 165 C 210 165, 220 90, 250 90" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.08;0.32999999999999996;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="72" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="95" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >Is it safe?</text><path d="M426 90 L470 90" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.43000000000000005;0.53;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.483;0.523;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="72" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="95" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Risk page (tier 9)</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="0.35s" repeatCount="indefinite" path="M174 165 C 210 165, 220 90, 250 90 L470 90"/></circle><path d="M174 165 C 210 165, 220 140, 250 140" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.11;0.36;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="122" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="145" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >Am I a candidate?</text><path d="M426 140 L470 140" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.46;0.56;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.517;0.557;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="122" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="145" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Candidacy (tier 2)</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="0.7s" repeatCount="indefinite" path="M174 165 C 210 165, 220 140, 250 140 L470 140"/></circle><path d="M174 165 C 210 165, 220 190, 250 190" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.14;0.39;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="172" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="195" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >Filler or surgery?</text><path d="M426 190 L470 190" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.49;0.59;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.550;0.590;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="172" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="195" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Comparison (tier 5)</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="1.0499999999999998s" repeatCount="indefinite" path="M174 165 C 210 165, 220 190, 250 190 L470 190"/></circle><path d="M174 165 C 210 165, 220 240, 250 240" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.16999999999999998;0.42;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="222" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="245" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >How long does it last?</text><path d="M426 240 L470 240" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.52;0.62;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.583;0.623;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="222" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="245" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Longevity (tier 6)</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="1.4s" repeatCount="indefinite" path="M174 165 C 210 165, 220 240, 250 240 L470 240"/></circle><path d="M174 165 C 210 165, 220 290, 250 290" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="140" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="140;140;0;0;140" keyTimes="0;0.2;0.44999999999999996;0.93;1" dur="10s" repeatCount="indefinite"/></path><rect x="250" y="272" width="176" height="36" rx="18" fill="#E7EDFC"/><text x="338" y="295" font-size="13" fill="#183EB0" font-weight="600" text-anchor="middle" class="ft" >Who pioneered it?</text><path d="M426 290 L470 290" stroke="#1F4FE0" stroke-width="2" stroke-dasharray="44" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="44;44;0;0;44" keyTimes="0;0.55;0.65;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.617;0.657;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="470" y="272" width="184" height="36" rx="8" fill="#FFFFFF" stroke="#1F4FE0"/><text x="562" y="295" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Expert page</text></g><circle r="4" fill="#FF5A3C"><animateMotion dur="2.6s" begin="1.75s" repeatCount="indefinite" path="M174 165 C 210 165, 220 290, 250 290 L470 290"/></circle></svg></div>
+      <div class="reads">
+        <div class="read"><span class="tag pl" style="justify-self:start">Plain English</span><p>When a patient asks ChatGPT about a non-surgical nose job, it quietly looks up cost, safety, candidacy and more before it answers. If your site has a strong page for each of those, you show up in every lookup.</p></div>
+        <div class="read uh"><span class="tag uh" style="justify-self:start">Under the hood</span><p>Retrieval-augmented generation (RAG) engines run query fan-out. The 11-tier topical map mirrors the sub-queries, and each money page only publishes once its prerequisite chain is live, so every branch resolves inside one interlinked cluster.</p></div>
+      </div>
+    </div>
+    <div class="steps">
+      <div><span class="k">1</span><h3>Fan-out</h3><p>Split into sub-questions.</p><p class="how">11 tiers mirror them.</p></div>
+      <div><span class="k">2</span><h3>Retrieve</h3><p>Pull pages, videos, threads.</p><p class="how">Three surfaces per question.</p></div>
+      <div><span class="k">3</span><h3>Chunk</h3><p>Cut pages into passages.</p><p class="how">Every passage stands alone.</p></div>
+      <div><span class="k">4</span><h3>Match</h3><p>Compare meaning to the question.</p><p class="how">Written into embedding gaps.</p></div>
+      <div><span class="k">5</span><h3>Rerank</h3><p>Weigh authority and agreement.</p><p class="how">Physician bylines, national press.</p></div>
+      <div><span class="k">6</span><h3>Cite</h3><p>Credit the passages used.</p><p class="how">Facts only we publish.</p></div>
+      <div><span class="k">7</span><h3>Resolve entity</h3><p>Decide who a fact belongs to.</p><p class="how">One entity graph everywhere.</p></div>
+      <div><span class="k">8</span><h3>Remember</h3><p>Model training data.</p><p class="how">Press and Wikipedia track.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">The moat</span>
+      <h2>Entity-semantic RAG: why a $10 tool cannot do this</h2>
+      <p>Listing tools push the same name, address and phone to the same directories for every business. Every competitor already has that. What gets a physician named is a corroborated entity sitting inside the meaning-space an engine searches, and that is built from assets software cannot produce.</p>
+    </div>
+
+    <div class="concept">
+      <div class="pair">
+        <div class="fig"><svg viewBox="0 0 600 430" role="img" aria-label="An entity graph: Dr. Rivkin at the center, connected to his credentials, studies, trials, press, video, community and site"><line x1="300" y1="215" x2="300.0" y2="47.0" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="452.0" y2="96.2" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="515.0" y2="215.0" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="452.0" y2="333.8" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="300.0" y2="383.0" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="148.0" y2="333.8" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="85.0" y2="215.0" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><line x1="300" y1="215" x2="148.0" y2="96.2" stroke="#1F4FE0" stroke-opacity=".45" stroke-width="2" stroke-dasharray="6 6"><animate attributeName="stroke-dashoffset" values="0;-24" dur="1.2s" repeatCount="indefinite"/></line><g><rect x="254.3" y="28.0" width="91.4" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.000;0.040;0.100;1" dur="10s" repeatCount="indefinite"/></rect><text x="300.0" y="52.0" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Yale MD</text></g><g><rect x="377.6" y="77.2" width="148.8" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.125;0.165;0.225;1" dur="10s" repeatCount="indefinite"/></rect><text x="452.0279579551077" y="101.20606076066002" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >PubMed studies</text></g><g><rect x="436.5" y="196.0" width="157.0" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.250;0.290;0.350;1" dur="10s" repeatCount="indefinite"/></rect><text x="515.0" y="220.0" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Clinical trials</text></g><g><rect x="377.6" y="314.8" width="148.8" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.375;0.415;0.475;1" dur="10s" repeatCount="indefinite"/></rect><text x="452.0279579551077" y="338.79393923934" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >National press</text></g><g><rect x="209.2" y="364.0" width="181.6" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.500;0.540;0.600;1" dur="10s" repeatCount="indefinite"/></rect><text x="300.0" y="388.0" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >YouTube explainers</text></g><g><rect x="73.6" y="314.8" width="148.8" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.625;0.665;0.725;1" dur="10s" repeatCount="indefinite"/></rect><text x="147.9720420448923" y="338.79393923934" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >Reddit threads</text></g><g><rect x="35.2" y="196.0" width="99.6" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.750;0.790;0.850;1" dur="10s" repeatCount="indefinite"/></rect><text x="85.0" y="220.00000000000003" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >RealSelf</text></g><g><rect x="49.0" y="77.2" width="198.0" height="38" rx="19" fill="#FFFFFF" stroke="#B6C7F7" stroke-width="1.5"><animate attributeName="stroke" values="#B6C7F7;#B6C7F7;#FF5A3C;#B6C7F7;#B6C7F7" keyTimes="0;0.875;0.915;0.975;1" dur="10s" repeatCount="indefinite"/></rect><text x="147.97204204489225" y="101.20606076066002" font-size="13" fill="#0B1A2E" font-weight="600" text-anchor="middle" class="ft" >rivkinaesthetics.com</text></g><circle cx="300" cy="215" r="74" fill="#1F4FE0" fill-opacity=".14"><animate attributeName="r" values="66;84;66" dur="3s" repeatCount="indefinite"/></circle><circle cx="300" cy="215" r="62" fill="#1F4FE0"/><text x="300" y="211" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle" class="fl" >Dr. Alexander</text><text x="300" y="231" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle" class="fl" >Rivkin</text></svg></div>
+        <div class="fig" style="background:var(--paper)"><svg viewBox="0 0 300 430" role="img" aria-label="A listings tool copies the same name, address and phone to many directories"><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.050;0.090;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="20" y="30" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="36" y="52" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="36" y="70" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="36" y="86" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.117;0.157;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="26" y="86" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="42" y="108" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="42" y="126" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="42" y="142" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.183;0.223;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="32" y="142" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="48" y="164" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="48" y="182" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="48" y="198" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.250;0.290;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="38" y="198" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="54" y="220" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="54" y="238" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="54" y="254" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.317;0.357;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="44" y="254" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="60" y="276" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="60" y="294" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="60" y="310" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.383;0.423;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="50" y="310" width="230" height="64" rx="8" fill="#FFFFFF" stroke="#C3C7CE"/><text x="66" y="332" font-size="13" fill="#556070" font-weight="700" text-anchor="start" class="ft" >Rivkin Aesthetics</text><text x="66" y="350" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >11645 Wilshire Blvd</text><text x="66" y="366" font-size="12" fill="#6E7887" font-weight="400" text-anchor="start" class="ft" >Phone · Hours</text></g><text x="150" y="400" font-size="14" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >Same three facts,</text><text x="150" y="420" font-size="14" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >copied to 50 directories</text></svg></div>
+      </div>
+      <div class="reads">
+        <h3>An entity graph, not a listing</h3>
+        <div class="read"><span class="tag pl" style="justify-self:start">Plain English</span><p>AI checks whether the same facts about you appear in many trusted places: journals, trial records, news, video. A listings tool only repeats your address. The program builds every one of those connections.</p></div>
+        <div class="read uh"><span class="tag uh" style="justify-self:start">Under the hood</span><p>Entity resolution keys on corroborated triples (Rivkin, authored, PMMA rhinoplasty study; Rivkin, PI, Volux trial). The sameAs graph, research hub, syndication and press each add an independent edge. NAP consistency is necessary and nowhere near sufficient.</p></div>
+      </div>
+    </div>
+
+    <div class="concept flip">
+      <div class="fig"><svg viewBox="0 0 600 330" role="img" aria-label="Patient questions plotted by meaning, with Dr. Rivkin passages filling the gaps month by month"><rect x="4" y="4" width="592" height="322" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="150" y="78" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Nose questions</text><text x="430" y="48" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Eyes and face</text><text x="300" y="183" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Jaw and neck</text><circle cx="232.6" cy="279.8" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.050;0.090;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="212.6" cy="179.5" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.077;0.117;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="316.4" cy="232.9" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.103;0.143;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="406.1" cy="156.6" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.130;0.170;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="392.8" cy="127.3" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.157;0.197;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="138.2" cy="165.3" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.183;0.223;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="248.5" cy="284.3" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.210;0.250;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="255.5" cy="239.1" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.237;0.277;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="366.4" cy="272.4" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.263;0.303;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="449.6" cy="75.3" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.290;0.330;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="73.4" cy="175.7" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.317;0.357;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="174.0" cy="130.7" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.343;0.383;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="414.2" cy="116.8" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.370;0.410;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="409.4" cy="91.3" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.397;0.437;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="330.8" cy="283.4" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.423;0.463;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="359.3" cy="194.0" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.450;0.490;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="366.3" cy="265.9" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.477;0.517;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="72.2" cy="97.7" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.503;0.543;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="459.1" cy="127.5" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.530;0.570;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="328.3" cy="236.6" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.557;0.597;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="455.6" cy="155.9" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.583;0.623;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="168.2" cy="155.6" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.610;0.650;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="107.2" cy="143.6" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.637;0.677;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="401.5" cy="97.8" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.663;0.703;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="452.9" cy="118.1" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.690;0.730;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="164.2" cy="161.8" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.717;0.757;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="232.9" cy="262.2" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.743;0.783;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="337.3" cy="110.4" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.770;0.810;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="197.7" cy="157.5" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.797;0.837;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="109.1" cy="136.0" r="15" fill="#1F4FE0" fill-opacity=".18"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.823;0.863;0.93;1" dur="10s" repeatCount="indefinite"/></circle><circle cx="138.2" cy="165.3" r="4.5" fill="#0B1A2E"/><circle cx="139.6" cy="140.5" r="4.5" fill="#0B1A2E"/><circle cx="107.2" cy="143.6" r="4.5" fill="#0B1A2E"/><circle cx="201.1" cy="162.7" r="4.5" fill="#0B1A2E"/><circle cx="197.7" cy="157.5" r="4.5" fill="#0B1A2E"/><circle cx="168.2" cy="155.6" r="4.5" fill="#0B1A2E"/><circle cx="73.4" cy="175.7" r="4.5" fill="#0B1A2E"/><circle cx="173.3" cy="165.0" r="4.5" fill="#0B1A2E"/><circle cx="72.2" cy="97.7" r="4.5" fill="#0B1A2E"/><circle cx="109.1" cy="136.0" r="4.5" fill="#0B1A2E"/><circle cx="164.1" cy="148.6" r="4.5" fill="#0B1A2E"/><circle cx="174.0" cy="130.7" r="4.5" fill="#0B1A2E"/><circle cx="164.2" cy="161.8" r="4.5" fill="#0B1A2E"/><circle cx="399.6" cy="171.5" r="4.5" fill="#0B1A2E"/><circle cx="455.6" cy="155.9" r="4.5" fill="#0B1A2E"/><circle cx="401.5" cy="97.8" r="4.5" fill="#0B1A2E"/><circle cx="414.2" cy="116.8" r="4.5" fill="#0B1A2E"/><circle cx="459.1" cy="127.5" r="4.5" fill="#0B1A2E"/><circle cx="409.4" cy="91.3" r="4.5" fill="#0B1A2E"/><circle cx="406.1" cy="156.6" r="4.5" fill="#0B1A2E"/><circle cx="392.8" cy="127.3" r="4.5" fill="#0B1A2E"/><circle cx="449.6" cy="75.3" r="4.5" fill="#0B1A2E"/><circle cx="432.2" cy="159.2" r="4.5" fill="#0B1A2E"/><circle cx="337.3" cy="110.4" r="4.5" fill="#0B1A2E"/><circle cx="425.1" cy="95.5" r="4.5" fill="#0B1A2E"/><circle cx="452.9" cy="118.1" r="4.5" fill="#0B1A2E"/><circle cx="232.6" cy="279.8" r="4.5" fill="#0B1A2E"/><circle cx="330.8" cy="283.4" r="4.5" fill="#0B1A2E"/><circle cx="366.3" cy="265.9" r="4.5" fill="#0B1A2E"/><circle cx="305.5" cy="216.0" r="4.5" fill="#0B1A2E"/><circle cx="328.3" cy="236.6" r="4.5" fill="#0B1A2E"/><circle cx="279.2" cy="217.1" r="4.5" fill="#0B1A2E"/><circle cx="255.5" cy="239.1" r="4.5" fill="#0B1A2E"/><circle cx="359.3" cy="194.0" r="4.5" fill="#0B1A2E"/><circle cx="232.9" cy="262.2" r="4.5" fill="#0B1A2E"/><circle cx="366.4" cy="272.4" r="4.5" fill="#0B1A2E"/><circle cx="212.6" cy="179.5" r="4.5" fill="#0B1A2E"/><circle cx="316.4" cy="232.9" r="4.5" fill="#0B1A2E"/><circle cx="248.5" cy="284.3" r="4.5" fill="#0B1A2E"/><circle cx="34" cy="304" r="4.5" fill="#0B1A2E"/><text x="46" y="309" font-size="12" fill="#556070" font-weight="600" text-anchor="start" class="ft" >A patient question</text><circle cx="190" cy="304" r="11" fill="#1F4FE0" fill-opacity=".25"/><text x="208" y="309" font-size="12" fill="#556070" font-weight="600" text-anchor="start" class="ft" >A Rivkin passage covering it</text></svg></div>
+      <div class="reads">
+        <h3>Semantic coverage, measured</h3>
+        <div class="read"><span class="tag pl" style="justify-self:start">Plain English</span><p>Every question patients ask sits somewhere on a map of meaning. Each month we write into the empty spots where nobody, including you, has a good answer yet.</p></div>
+        <div class="read uh"><span class="tag uh" style="justify-self:start">Under the hood</span><p>The 300-question panel is embedded and clustered. Every published passage is embedded too, and nearest-neighbor distance shows which questions have no Rivkin passage within retrieval range. That gap list sets the next month's articles and videos.</p></div>
+      </div>
+    </div>
+
+    <div class="concept">
+      <div class="fig"><svg viewBox="0 0 620 300" role="img" aria-label="Four independent sources state the same fact, so the AI engine treats it as consensus"><path d="M262 42 C 340 42, 360 150, 420 150" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="200;200;0;0;200" keyTimes="0;0.1;0.25;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><rect x="8" y="14" width="254" height="56" rx="10" fill="#FFFFFF" stroke="#C3C7CE"><animate attributeName="stroke" values="#C3C7CE;#C3C7CE;#1F4FE0;#1F4FE0;#C3C7CE" keyTimes="0;0.10;0.14;0.93;1" dur="10s" repeatCount="indefinite"/></rect><text x="24" y="36" font-size="13" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >Practice website</text><text x="24" y="56" font-size="12" fill="#556070" font-weight="400" text-anchor="start" class="ft" >Pioneered the modern nose job, 2003</text></g><path d="M262 112 C 340 112, 360 150, 420 150" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="200;200;0;0;200" keyTimes="0;0.2;0.35;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><rect x="8" y="84" width="254" height="56" rx="10" fill="#FFFFFF" stroke="#C3C7CE"><animate attributeName="stroke" values="#C3C7CE;#C3C7CE;#1F4FE0;#1F4FE0;#C3C7CE" keyTimes="0;0.20;0.24;0.93;1" dur="10s" repeatCount="indefinite"/></rect><text x="24" y="106" font-size="13" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >Google profile</text><text x="24" y="126" font-size="12" fill="#556070" font-weight="400" text-anchor="start" class="ft" >Pioneered the modern nose job, 2003</text></g><path d="M262 182 C 340 182, 360 150, 420 150" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="200;200;0;0;200" keyTimes="0;0.30000000000000004;0.45;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><rect x="8" y="154" width="254" height="56" rx="10" fill="#FFFFFF" stroke="#C3C7CE"><animate attributeName="stroke" values="#C3C7CE;#C3C7CE;#1F4FE0;#1F4FE0;#C3C7CE" keyTimes="0;0.30;0.34;0.93;1" dur="10s" repeatCount="indefinite"/></rect><text x="24" y="176" font-size="13" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >RealSelf</text><text x="24" y="196" font-size="12" fill="#556070" font-weight="400" text-anchor="start" class="ft" >Pioneered the modern nose job, 2003</text></g><path d="M262 252 C 340 252, 360 150, 420 150" fill="none" stroke="#B6C7F7" stroke-width="2" stroke-dasharray="200" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="200;200;0;0;200" keyTimes="0;0.4;0.55;0.93;1" dur="10s" repeatCount="indefinite"/></path><g><rect x="8" y="224" width="254" height="56" rx="10" fill="#FFFFFF" stroke="#C3C7CE"><animate attributeName="stroke" values="#C3C7CE;#C3C7CE;#1F4FE0;#1F4FE0;#C3C7CE" keyTimes="0;0.40;0.44;0.93;1" dur="10s" repeatCount="indefinite"/></rect><text x="24" y="246" font-size="13" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >National press</text><text x="24" y="266" font-size="12" fill="#556070" font-weight="400" text-anchor="start" class="ft" >Pioneered the modern nose job, 2003</text></g><circle cx="480" cy="150" r="60" fill="#0B1A2E"/><text x="480" y="146" font-size="15" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="fl" >AI</text><text x="480" y="166" font-size="13" fill="#A8B2C1" font-weight="600" text-anchor="middle" class="ft" >engine</text><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.600;0.640;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="400" y="236" width="160" height="34" rx="17" fill="#E2F4EC"/><path d="M416 253 l6 6 l11 -12" stroke="#0E8A5F" stroke-width="2.5" fill="none" stroke-linecap="round"/><text x="438" y="258" font-size="13" fill="#0E8A5F" font-weight="700" text-anchor="start" class="ft" >Facts agree: cited</text></g></svg></div>
+      <div class="reads">
+        <h3>Source agreement</h3>
+        <div class="read"><span class="tag pl" style="justify-self:start">Plain English</span><p>When your website, Google profile, RealSelf and the news all say the same thing about you, AI trusts it and repeats it.</p></div>
+        <div class="read uh"><span class="tag uh" style="justify-self:start">Under the hood</span><p>Rerankers weight agreement across unrelated domains. The approved credential sentence is used verbatim on every surface, and syndication plus milestone press supply the independent domains a single site cannot.</p></div>
+      </div>
+    </div>
+
+    <div class="concept flip">
+      <div class="fig fig-scroll"><svg viewBox="0 0 640 210" role="img" aria-label="Timeline: podium talk, our white paper three days later, consumer articles weeks later citing it"><line x1="30" y1="110" x2="610" y2="110" stroke="#C3C7CE" stroke-width="3"/><line x1="30" y1="110" x2="610" y2="110" stroke="#1F4FE0" stroke-width="3" stroke-dasharray="580" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="580;580;0;0;580" keyTimes="0;0.05;0.75;0.93;1" dur="10s" repeatCount="indefinite"/></line><circle cx="60" cy="110" r="9" fill="#556070" stroke="#FFFFFF" stroke-width="3"/><text x="60" y="80" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Day 0</text><text x="60" y="146" font-size="13" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >Podium talk</text><circle cx="170" cy="110" r="13" fill="#1F4FE0" stroke="#FFFFFF" stroke-width="3"/><text x="170" y="80" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Day 3</text><text x="170" y="146" font-size="13" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Our white paper</text><circle cx="440" cy="110" r="9" fill="#556070" stroke="#FFFFFF" stroke-width="3"/><text x="440" y="80" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Week 6</text><text x="440" y="146" font-size="13" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >First consumer article</text><circle cx="570" cy="110" r="9" fill="#556070" stroke="#FFFFFF" stroke-width="3"/><text x="570" y="80" font-size="12" fill="#6E7887" font-weight="700" text-anchor="middle" class="fl" letter-spacing="1">Week 8</text><text x="570" y="146" font-size="13" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >AI answers</text><path d="M440 96 C 400 30, 220 30, 178 94" fill="none" stroke="#FF5A3C" stroke-width="2" stroke-dasharray="5 5"><animate attributeName="stroke-dashoffset" values="0;-20" dur="1s" repeatCount="indefinite"/></path><text x="310" y="38" font-size="12" fill="#FF5A3C" font-weight="700" text-anchor="middle" class="ft" >cites the white paper</text><path d="M570 96 C 520 50, 240 50, 182 98" fill="none" stroke="#FF5A3C" stroke-width="1.5" stroke-opacity=".5"/><text x="370" y="186" font-size="13" fill="#183EB0" font-weight="700" text-anchor="middle" class="ft" >For weeks, the practice is the only retrievable source.</text></svg></div>
+      <div class="reads">
+        <h3>First-source advantage</h3>
+        <div class="read"><span class="tag pl" style="justify-self:start">Plain English</span><p>We publish on new techniques days after they are presented at conferences, weeks before anyone else writes about them. Later articles end up pointing back to you.</p></div>
+        <div class="read uh"><span class="tag uh" style="justify-self:start">Under the hood</span><p>With no competing passages in the index, retrieval has one candidate. Fresh, primary-sourced white papers also earn the inbound citations that compound authority after the topic gets crowded.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Every month</span>
+      <h2>What Local AI Registry delivers every month</h2>
+      <p>Each asset is built to be retrieved, trusted and cited by AI answer engines.</p>
+    </div>
+    <div class="tiles">
+      <div><span class="n">21</span><span class="t">Physician-bylined articles</span><span class="d">Dr. Rivkin's byline or an independent medical director's reviewed byline.</span></div>
+      <div><span class="n">1</span><span class="t">Original white paper</span><span class="d">Published before consumer coverage of the topic exists.</span></div>
+      <div><span class="n">1</span><span class="t">National syndicated story</span><span class="d">Hundreds of news sites from one placement.</span></div>
+      <div><span class="n">4+</span><span class="t">Motion explainer videos</span><span class="d">Plus same-day videos on Google Trends spikes.</span></div>
+    </div>
+    <div class="assets">
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="An article with a physician byline and a medically reviewed stamp"><rect x="20" y="14" width="210" height="192" rx="10" fill="#FFFFFF" stroke="#C3C7CE"/><rect x="38" y="34" width="150" height="12" rx="3" fill="#0B1A2E"/><rect x="38" y="52" width="110" height="12" rx="3" fill="#0B1A2E"/><circle cx="48" cy="88" r="10" fill="#1F4FE0"/><text x="64" y="86" font-size="10" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >By Dr. Alexander Rivkin, MD</text><text x="64" y="99" font-size="9.5" fill="#6E7887" font-weight="500" text-anchor="start" class="ft" >Reviewed by an independent MD</text><rect x="38" y="116" width="170" height="6" rx="3" fill="#ECE6D6"/><rect x="38" y="130" width="160" height="6" rx="3" fill="#ECE6D6"/><rect x="38" y="144" width="172" height="6" rx="3" fill="#ECE6D6"/><rect x="38" y="158" width="140" height="6" rx="3" fill="#ECE6D6"/><rect x="38" y="172" width="166" height="6" rx="3" fill="#ECE6D6"/><rect x="38" y="186" width="120" height="6" rx="3" fill="#ECE6D6"/><g transform="translate(232 150)"><g><animateTransform attributeName="transform" type="scale" values="0;0;1.15;1;1;0" keyTimes="0;0.2;0.26;0.3;0.93;1" dur="10s" repeatCount="indefinite"/><circle r="44" fill="#FF5A3C" fill-opacity=".1" stroke="#FF5A3C" stroke-width="2"/><circle r="36" fill="none" stroke="#FF5A3C" stroke-width="1"/><text x="0" y="-6" font-size="9" fill="#FF5A3C" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">MEDICALLY</text><text x="0" y="6" font-size="9" fill="#FF5A3C" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">REVIEWED</text><path d="M-9 16 l5 5 l12 -11" stroke="#FF5A3C" stroke-width="2.4" fill="none" stroke-linecap="round"/></g></g></svg></div>
+        <span class="vol">21 a month</span>
+        <h3>Bylined medical articles that go further</h3>
+        <ul>
+          <li>About 1,800 words each, under Dr. Rivkin's byline or a rotating, independent medical director's reviewed byline</li>
+          <li>Every clinical claim linked to the journal, trial registry or FDA document behind it</li>
+          <li>Covers what ranking pages skip: complication rates, cost per year, when surgery is the better choice</li>
+        </ul>
+        <div class="read uh"><p>Third-party physician review and Person schema on every byline give YMYL pages the expertise signals rerankers weight on health topics.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="A podium talk becomes a white paper that is cited first"><path d="M30 190 L50 120 L90 120 L110 190 Z" fill="#0B1A2E"/><rect x="44" y="108" width="52" height="14" rx="3" fill="#0B1A2E"/><circle cx="70" cy="86" r="14" fill="#6E7887"/><text x="70" y="210" font-size="11" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >Podium talk</text><path d="M118 130 L160 130" stroke="#1F4FE0" stroke-width="2.5" stroke-dasharray="42" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="42;42;0;0;42" keyTimes="0;0.1;0.25;0.93;1" dur="10s" repeatCount="indefinite"/></path><path d="M156 124 l8 6 l-8 6" stroke="{BLUE}" stroke-width="2.5" fill="none"/><rect x="178" y="40" width="96" height="128" rx="6" fill="#FFFFFF" stroke="#B6C7F7"/><rect x="186" y="48" width="96" height="128" rx="6" fill="#FFFFFF" stroke="#B6C7F7"/><rect x="194" y="56" width="96" height="128" rx="6" fill="#FFFFFF" stroke="#B6C7F7"/><text x="242" y="80" font-size="9" fill="#183EB0" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">WHITE PAPER</text><rect x="206" y="94" width="70" height="5" rx="2.5" fill="#ECE6D6"/><rect x="206" y="106" width="62" height="5" rx="2.5" fill="#ECE6D6"/><rect x="206" y="118" width="72" height="5" rx="2.5" fill="#ECE6D6"/><rect x="206" y="130" width="54" height="5" rx="2.5" fill="#ECE6D6"/><rect x="206" y="142" width="66" height="5" rx="2.5" fill="#ECE6D6"/><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.400;0.440;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="168" y="186" width="118" height="26" rx="13" fill="#E2F4EC"/><text x="227" y="203" font-size="12" fill="#0E8A5F" font-weight="700" text-anchor="middle" class="ft" >Cited first</text></g></svg></div>
+        <span class="vol">1 a month</span>
+        <h3>Original research white papers</h3>
+        <ul>
+          <li>A podium talk from AAFPRS, ASDS, AMWC or Vegas Cosmetic Surgery, turned into a white paper</li>
+          <li>Combined with AI-powered synthesis of the newest trials, FDA filings and preprints</li>
+          <li>Published with methodology and ScholarlyArticle schema before consumer content exists</li>
+        </ul>
+        <div class="read uh"><p>Creates facts no other source holds yet, so synthesis has to credit the practice, and feeds the month's syndicated story.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="One story distributed to hundreds of news sites"><circle cx="150" cy="110" r="30" fill="none" stroke="#1F4FE0" stroke-width="1.5"><animate attributeName="r" values="30;105" dur="3s" begin="0s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="3s" begin="0s" repeatCount="indefinite"/></circle><circle cx="150" cy="110" r="30" fill="none" stroke="#1F4FE0" stroke-width="1.5"><animate attributeName="r" values="30;105" dur="3s" begin="1s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="3s" begin="1s" repeatCount="indefinite"/></circle><circle cx="150" cy="110" r="30" fill="none" stroke="#1F4FE0" stroke-width="1.5"><animate attributeName="r" values="30;105" dur="3s" begin="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".6;0" dur="3s" begin="2s" repeatCount="indefinite"/></circle><line x1="150" y1="110" x2="248.0" y2="110.0" stroke="#B6C7F7" stroke-width="1"/><rect x="241.0" y="105.0" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.050;0.090;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="224.8" y2="128.9" stroke="#B6C7F7" stroke-width="1"/><rect x="217.8" y="123.9" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.073;0.113;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="232.4" y2="155.6" stroke="#B6C7F7" stroke-width="1"/><rect x="225.4" y="150.6" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.095;0.135;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="201.1" y2="160.7" stroke="#B6C7F7" stroke-width="1"/><rect x="194.1" y="155.7" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.118;0.158;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="190.7" y2="186.7" stroke="#B6C7F7" stroke-width="1"/><rect x="183.7" y="181.7" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.141;0.181;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="161.1" y2="176.4" stroke="#B6C7F7" stroke-width="1"/><rect x="154.1" y="171.4" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.164;0.204;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="136.1" y2="193.4" stroke="#B6C7F7" stroke-width="1"/><rect x="129.1" y="188.4" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.186;0.226;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="117.6" y2="171.0" stroke="#B6C7F7" stroke-width="1"/><rect x="110.6" y="166.0" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.209;0.249;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="85.8" y2="173.7" stroke="#B6C7F7" stroke-width="1"/><rect x="78.8" y="168.7" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.232;0.272;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="84.4" y2="146.3" stroke="#B6C7F7" stroke-width="1"/><rect x="77.4" y="141.3" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.255;0.295;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="56.0" y2="133.7" stroke="#B6C7F7" stroke-width="1"/><rect x="49.0" y="128.7" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.277;0.317;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="72.0" y2="110.0" stroke="#B6C7F7" stroke-width="1"/><rect x="65.0" y="105.0" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.300;0.340;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="56.0" y2="86.3" stroke="#B6C7F7" stroke-width="1"/><rect x="49.0" y="81.3" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.323;0.363;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="84.4" y2="73.7" stroke="#B6C7F7" stroke-width="1"/><rect x="77.4" y="68.7" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.345;0.385;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="85.8" y2="46.3" stroke="#B6C7F7" stroke-width="1"/><rect x="78.8" y="41.3" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.368;0.408;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="117.6" y2="49.0" stroke="#B6C7F7" stroke-width="1"/><rect x="110.6" y="44.0" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.391;0.431;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="136.1" y2="26.6" stroke="#B6C7F7" stroke-width="1"/><rect x="129.1" y="21.6" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.414;0.454;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="161.1" y2="43.6" stroke="#B6C7F7" stroke-width="1"/><rect x="154.1" y="38.6" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.436;0.476;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="190.7" y2="33.3" stroke="#B6C7F7" stroke-width="1"/><rect x="183.7" y="28.3" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.459;0.499;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="201.1" y2="59.3" stroke="#B6C7F7" stroke-width="1"/><rect x="194.1" y="54.3" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.482;0.522;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="232.4" y2="64.4" stroke="#B6C7F7" stroke-width="1"/><rect x="225.4" y="59.4" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.505;0.545;0.93;1" dur="10s" repeatCount="indefinite"/></rect><line x1="150" y1="110" x2="224.8" y2="91.1" stroke="#B6C7F7" stroke-width="1"/><rect x="217.8" y="86.1" width="14" height="10" rx="2" fill="#0B1A2E"><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.527;0.567;0.93;1" dur="10s" repeatCount="indefinite"/></rect><rect x="114" y="92" width="72" height="36" rx="8" fill="#1F4FE0"/><text x="150" y="115" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="fl" >1 story</text></svg></div>
+        <span class="vol">1 a month</span>
+        <h3>National syndication</h3>
+        <ul>
+          <li>One data-led story a month through a national newswire content network</li>
+          <li>Republished across hundreds of news sites, built on that month's white paper</li>
+        </ul>
+        <div class="read uh"><p>Hundreds of independent domains stating the same facts is the corroboration rerankers and training corpora weight most.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="A Google Trends spike triggers an explainer video published to YouTube the same day"><text x="16" y="26" font-size="9.5" fill="#6E7887" font-weight="800" text-anchor="start" class="ft" letter-spacing="1">GOOGLE TRENDS</text><path d="M16 96 L40 92 L60 95 L78 90 L94 93 L104 40 L114 88 L134 86" fill="none" stroke="#FF5A3C" stroke-width="2.5" stroke-linejoin="round" stroke-dasharray="220" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="220;220;0;0;220" keyTimes="0;0.02;0.22;0.93;1" dur="10s" repeatCount="indefinite"/></path><path d="M140 70 L168 70" stroke="#1F4FE0" stroke-width="2.5" stroke-dasharray="28" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="28;28;0;0;28" keyTimes="0;0.24;0.32;0.93;1" dur="10s" repeatCount="indefinite"/></path><path d="M164 64 l8 6 l-8 6" stroke="{BLUE}" stroke-width="2.5" fill="none"/><rect x="176" y="22" width="112" height="96" rx="10" fill="#0B1A2E"/><circle cx="208" cy="62" r="12" fill="#1F4FE0"/><path d="M236 52 L262 52 L249 74 Z" fill="#FF5A3C"/><circle cx="232" cy="100" r="11" fill="#FFFFFF" fill-opacity=".9"/><path d="M229 94 L238 100 L229 106 Z" fill="#0B1A2E"/><text x="232" y="140" font-size="11" fill="#556070" font-weight="700" text-anchor="middle" class="ft" >Illustrated explainer</text><rect x="16" y="166" width="272" height="10" rx="5" fill="#ECE6D6"/><rect x="16" y="166" height="10" rx="5" fill="#0E8A5F" width="272"><animate attributeName="width" values="0;0;272;272;0" keyTimes="0;0.35;0.7;0.93;1" dur="10s" repeatCount="indefinite"/></rect><text x="16" y="200" font-size="12" fill="#0E8A5F" font-weight="700" text-anchor="start" class="ft" >Published to YouTube · same day</text></svg></div>
+        <span class="vol">4+ a month, plus same day</span>
+        <h3>Motion explainer videos</h3>
+        <ul>
+          <li>Illustrated motion explainers with professional voiceover, one per priority treatment</li>
+          <li>When a treatment term spikes on Google Trends, an explainer is made and auto-published to YouTube that day</li>
+          <li>Captions, chapters and transcripts, embedded on the matching page</li>
+        </ul>
+        <div class="read uh"><p>YouTube is among the most cited domains in AI answers on treatments. Transcripts and VideoObject schema make every video retrievable as text.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="A Reddit thread with a helpful answer from a disclosed practice account"><rect x="14" y="14" width="272" height="192" rx="10" fill="#FFFFFF" stroke="#C3C7CE"/><text x="30" y="38" font-size="11" fill="#6E7887" font-weight="700" text-anchor="start" class="ft" >r/PlasticSurgery</text><text x="30" y="60" font-size="12" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >Liquid rhinoplasty: worth it, or just</text><text x="30" y="76" font-size="12" fill="#0B1A2E" font-weight="700" text-anchor="start" class="ft" >get the surgery?</text><line x1="30" y1="92" x2="270" y2="92" stroke="#ECE6D6"/><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.150;0.190;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="40" y="104" width="232" height="88" rx="8" fill="#F4F1EA"/><rect x="52" y="114" width="96" height="18" rx="9" fill="#FF5A3C" fill-opacity=".15"/><text x="100" y="127" font-size="9.5" fill="#FF5A3C" font-weight="800" text-anchor="middle" class="ft" >Practice account</text><text x="156" y="127" font-size="9.5" fill="#6E7887" font-weight="700" text-anchor="start" class="ft" >Disclosed</text><rect x="52" y="142" width="200" height="5" rx="2.5" fill="#C3C7CE"/><rect x="52" y="155" width="184" height="5" rx="2.5" fill="#C3C7CE"/><rect x="52" y="168" width="150" height="5" rx="2.5" fill="#C3C7CE"/><path d="M30 160 l8 -10 l8 10 Z" fill="#FF5A3C"><animateTransform attributeName="transform" type="translate" values="0 0;0 -4;0 0" dur="1.4s" repeatCount="indefinite"/></path></g></svg></div>
+        <span class="vol">1 a week</span>
+        <h3>Community presence</h3>
+        <ul>
+          <li>One helpful contribution a week in the threads patients use to research these treatments</li>
+          <li>Posted from a disclosed practice account</li>
+          <li>A monthly map of the threads AI engines cite for the 300 monitored questions</li>
+        </ul>
+        <div class="read uh"><p>Reddit is a top-cited source in AI answers. Disclosed participation keeps the threads standing; undisclosed promotion gets removed.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="An old Westside Aesthetics listing corrected to Rivkin Aesthetics"><rect x="20" y="24" width="260" height="172" rx="12" fill="#FFFFFF" stroke="#C3C7CE"/><text x="40" y="52" font-size="9.5" fill="#6E7887" font-weight="800" text-anchor="start" class="ft" letter-spacing="1">DIRECTORY LISTING</text><text x="40" y="84" font-size="17" fill="#6E7887" font-weight="700" text-anchor="start" class="ft" >Westside Aesthetics</text><line x1="38" y1="78" x2="214" y2="78" stroke="#FF5A3C" stroke-width="2.5" stroke-dasharray="180" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="180;180;0;0;180" keyTimes="0;0.1;0.25;0.93;1" dur="10s" repeatCount="indefinite"/></line><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.300;0.340;0.93;1" dur="10s" repeatCount="indefinite"/><text x="40" y="116" font-size="17" fill="#0B1A2E" font-weight="800" text-anchor="start" class="ft" >Rivkin Aesthetics</text><path d="M232 106 l6 6 l11 -12" stroke="#0E8A5F" stroke-width="2.6" fill="none" stroke-linecap="round"/></g><rect x="40" y="134" width="170" height="7" rx="3.5" fill="#ECE6D6"/><rect x="40" y="150" width="130" height="7" rx="3.5" fill="#ECE6D6"/><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.420;0.460;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="40" y="168" width="128" height="20" rx="10" fill="#E2F4EC"/><text x="104" y="182" font-size="10.5" fill="#0E8A5F" font-weight="800" text-anchor="middle" class="ft" >Matches the site</text></g></svg></div>
+        <span class="vol">Ongoing, by hand</span>
+        <h3>Citation cleanup and paid directories</h3>
+        <ul>
+          <li>Existing citations found and corrected one by one, including every listing still under the Westside Aesthetics name</li>
+          <li>Paid, non-automated directory placements such as Crunchbase, with full profiles</li>
+        </ul>
+        <div class="read uh"><p>The brand change splits the entity until every legacy citation points to one name, address and phone.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="Secondary listings around the practice record"><rect x="100" y="90" width="100" height="40" rx="8" fill="#1F4FE0"/><text x="150" y="115" font-size="13" fill="#FFFFFF" font-weight="800" text-anchor="middle" class="fl" >Practice</text><line x1="150" y1="110" x2="52" y2="30" stroke="#B6C7F7" stroke-width="1.5" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" values="0;-16" dur="1s" repeatCount="indefinite"/></line><line x1="150" y1="110" x2="150" y2="30" stroke="#B6C7F7" stroke-width="1.5" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" values="0;-16" dur="1s" repeatCount="indefinite"/></line><line x1="150" y1="110" x2="250" y2="30" stroke="#B6C7F7" stroke-width="1.5" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" values="0;-16" dur="1s" repeatCount="indefinite"/></line><line x1="150" y1="110" x2="82" y2="192" stroke="#B6C7F7" stroke-width="1.5" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" values="0;-16" dur="1s" repeatCount="indefinite"/></line><line x1="150" y1="110" x2="220" y2="192" stroke="#B6C7F7" stroke-width="1.5" stroke-dasharray="4 4"><animate attributeName="stroke-dashoffset" values="0;-16" dur="1s" repeatCount="indefinite"/></line><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.050;0.090;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="6.0" y="16" width="92" height="28" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="52.0" y="35" font-size="11" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Job boards</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.150;0.190;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="104.0" y="16" width="92" height="28" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="150.0" y="35" font-size="11" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Crunchbase</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.250;0.290;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="207.5" y="16" width="85" height="28" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="250.0" y="35" font-size="11" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Charities</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.350;0.390;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="22.0" y="178" width="120" height="28" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="82.0" y="197" font-size="11" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Research sites</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.450;0.490;0.93;1" dur="10s" repeatCount="indefinite"/><rect x="167.0" y="178" width="106" height="28" rx="14" fill="#FFFFFF" stroke="#C3C7CE"/><text x="220.0" y="197" font-size="11" fill="#0B1A2E" font-weight="700" text-anchor="middle" class="ft" >Associations</text></g></svg></div>
+        <span class="vol">Ongoing</span>
+        <h3>Secondary listings</h3>
+        <ul>
+          <li>Medical job boards for open roles</li>
+          <li>Charity and community directories, research facility and clinical investigator directories, association member directories</li>
+        </ul>
+        <div class="read uh"><p>Each is a distinct, non-commercial source type that corroborates the entity beyond review sites.</p></div>
+      </article>
+      <article class="asset">
+        <div class="ill"><svg viewBox="0 0 300 220" role="img" aria-label="Milestone press: USA Today at month 3, Forbes at 9, Time at 18, Wikipedia at 24"><line x1="20" y1="110" x2="280" y2="110" stroke="#C3C7CE" stroke-width="3"/><line x1="20" y1="110" x2="280" y2="110" stroke="#1F4FE0" stroke-width="3" stroke-dasharray="260" stroke-dashoffset="0"><animate attributeName="stroke-dashoffset" values="260;260;0;0;260" keyTimes="0;0.05;0.7;0.93;1" dur="10s" repeatCount="indefinite"/></line><circle cx="30" cy="146" r="3" fill="#B6C7F7"/><circle cx="64" cy="146" r="3" fill="#B6C7F7"/><circle cx="98" cy="146" r="3" fill="#B6C7F7"/><circle cx="132" cy="146" r="3" fill="#B6C7F7"/><circle cx="166" cy="146" r="3" fill="#B6C7F7"/><circle cx="200" cy="146" r="3" fill="#B6C7F7"/><circle cx="234" cy="146" r="3" fill="#B6C7F7"/><circle cx="268" cy="146" r="3" fill="#B6C7F7"/><text x="150" y="172" font-size="10.5" fill="#6E7887" font-weight="700" text-anchor="middle" class="ft" >quarterly national features after</text><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.100;0.140;0.93;1" dur="10s" repeatCount="indefinite"/><circle cx="40" cy="110" r="9" fill="#FF5A3C" stroke="#FFFFFF" stroke-width="3"/><text x="40" y="88" font-size="13" fill="#0B1A2E" font-weight="800" text-anchor="middle" class="fl" >USA Today</text><text x="40" y="70" font-size="10.5" fill="#6E7887" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">M3</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.238;0.278;0.93;1" dur="10s" repeatCount="indefinite"/><circle cx="110" cy="110" r="9" fill="#FF5A3C" stroke="#FFFFFF" stroke-width="3"/><text x="110" y="88" font-size="13" fill="#0B1A2E" font-weight="800" text-anchor="middle" class="fl" >Forbes</text><text x="110" y="70" font-size="10.5" fill="#6E7887" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">M9</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.375;0.415;0.93;1" dur="10s" repeatCount="indefinite"/><circle cx="190" cy="110" r="9" fill="#FF5A3C" stroke="#FFFFFF" stroke-width="3"/><text x="190" y="88" font-size="13" fill="#0B1A2E" font-weight="800" text-anchor="middle" class="fl" >Time</text><text x="190" y="70" font-size="10.5" fill="#6E7887" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">M18</text></g><g><animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.513;0.553;0.93;1" dur="10s" repeatCount="indefinite"/><circle cx="260" cy="110" r="9" fill="#FF5A3C" stroke="#FFFFFF" stroke-width="3"/><text x="260" y="88" font-size="13" fill="#0B1A2E" font-weight="800" text-anchor="middle" class="fl" >Wikipedia</text><text x="260" y="70" font-size="10.5" fill="#6E7887" font-weight="800" text-anchor="middle" class="fl" letter-spacing="1">M24</text></g></svg></div>
+        <span class="vol">Milestone press</span>
+        <h3>National features on a schedule</h3>
+        <ul>
+          <li>USA Today at program month 3, Forbes at month 9, Time at month 18</li>
+          <li>Wikipedia article submitted at month 24, sourced from two years of independent coverage</li>
+          <li>Then a USA Today-tier national feature every 3 months</li>
+        </ul>
+        <div class="read uh"><p>Tier-one outlets are the sources language models learn from, which moves the entity from retrieved to remembered.</p></div>
+      </article>
+    </div>
+    <div class="ops">
+      <h3>Included operations, tool-assisted</h3>
+      <p>Weekly AI visibility tracking of about 300 patient questions across 7 engines, Google Business Profile posts and review replies, schema deployment, a monthly crawl of 351+ URLs and 138 redirects, and the monthly report and strategy call.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">For the skeptic</span>
+      <h2>What a $10 a month tool does, and what this program does</h2>
+    </div>
+    <div class="cmp-wrap">
+      <table>
+        <thead><tr><th>Work</th><th class="c">Listings tool</th><th class="c prog">This program</th></tr></thead>
+        <tbody>
+          <tr><td>Push name, address and phone to directories</td><td class="c yes">Yes</td><td class="c prog">Yes, by hand, incl. paid</td></tr>
+          <tr><td>Track AI visibility</td><td class="c yes">Yes</td><td class="c prog">Yes, 300 questions, 7 engines</td></tr>
+          <tr><td>Fix every legacy Westside Aesthetics citation</td><td class="c part">Partly</td><td class="c prog">Yes</td></tr>
+          <tr><td>Physician-bylined, independently reviewed articles</td><td class="c no">No</td><td class="c prog">21 a month</td></tr>
+          <tr><td>Original white papers from podium talks</td><td class="c no">No</td><td class="c prog">1 a month</td></tr>
+          <tr><td>National syndication</td><td class="c no">No</td><td class="c prog">1 a month</td></tr>
+          <tr><td>Same-day explainer video on Google Trends spikes</td><td class="c no">No</td><td class="c prog">4+ a month</td></tr>
+          <tr><td>Entity graph across journals, trial registries and press</td><td class="c no">No</td><td class="c prog">Yes</td></tr>
+          <tr><td>Embedding gap map of patient questions</td><td class="c no">No</td><td class="c prog">Monthly</td></tr>
+          <tr><td>Milestone national press and Wikipedia track</td><td class="c no">No</td><td class="c prog">M3, M9, M18, M24</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Twenty-four months</span>
+      <h2>Milestones</h2>
+    </div>
+    <ol class="ms">
+      <li><span class="m">PROGRAM MONTH 1</span><span class="dot"></span><span class="o">Foundation</span><p>Migration checked, hub pages live, first white paper and syndicated story.</p></li>
+      <li class="big"><span class="m">PROGRAM MONTH 3</span><span class="dot"></span><span class="o">USA Today</span><p>First national feature. Canonical claim identical on every surface.</p></li>
+      <li><span class="m">PROGRAM MONTH 6</span><span class="dot"></span><span class="o">Money pages</span><p>Chin, under eye and nasolabial pages moving. 25+ explainers live.</p></li>
+      <li class="big"><span class="m">PROGRAM MONTH 9</span><span class="dot"></span><span class="o">Forbes</span><p>AI citations rising against the 13-citation baseline.</p></li>
+      <li class="big"><span class="m">PROGRAM MONTH 18</span><span class="dot"></span><span class="o">Time</span><p>Full map live and through its first refresh cycle.</p></li>
+      <li class="big"><span class="m">PROGRAM MONTH 24</span><span class="dot"></span><span class="o">Wikipedia</span><p>Article submitted on two years of independent coverage. Quarterly national features continue.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Staffing</span>
+      <h2>The Local AI Registry team on the program</h2>
+    </div>
+    <div class="team">
+      <div><h3>AEO strategist</h3><p>Entity graph, question panel, embedding gap map, monthly priorities.</p></div>
+      <div><h3>Medical writers</h3><p>21 long-form articles a month in each byline's voice.</p></div>
+      <div><h3>Physician reviewer network</h3><p>Rotating, independent board-certified reviewers.</p></div>
+      <div><h3>Research analyst</h3><p>Podium talks and new trial data into a monthly white paper.</p></div>
+      <div><h3>Press and syndication lead</h3><p>Monthly syndication, milestone features, Wikipedia track.</p></div>
+      <div><h3>Motion designer</h3><p>Illustrated explainers and the same-day trend pipeline.</p></div>
+      <div><h3>Community manager</h3><p>Weekly contributions and the monthly thread map.</p></div>
+      <div><h3>Citations and schema specialist</h3><p>Paid directories, NAP fixes, secondary listings, structured data.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="founder">
+      <div style="display:grid;gap:18px">
+        <span class="eyebrow">About the founder</span>
+        <h2>Steve Lee</h2>
+        <p class="quote">Built by someone who has worked inside both search and aesthetics.</p>
+        <p>Founder and CEO of Local AI Registry. More than 20 years in digital, starting in search at Google and Microsoft, then leading digital for consumer brands and two aesthetics companies. He also owns a med spa, so he has run the practice side of this work.</p>
+      </div>
+      <div class="career">
+        <div><b>Google</b><span>Executive in Search</span></div>
+        <div><b>Microsoft</b><span>Executive, including HoloLens</span></div>
+        <div><b>Evolus</b><span>Head of Digital through the 2018 Nasdaq IPO</span></div>
+        <div><b>Revance</b><span>Executive, aesthetics pharma</span></div>
+        <div><b>Spotify</b><span>Head of Digital</span></div>
+        <div><b>Chase</b><span>VP Digital</span></div>
+        <div><b>Razorfish</b><span>Amazon and Google Glass work; also Kaplan</span></div>
+        <div><b>UX Laboratory</b><span>Founded, acquired. First company built and sold at 14</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Credentials</span>
+      <h2>How Local AI Registry runs its programs</h2>
+    </div>
+    <div class="creds">
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6c-7 0-12 5-12 12 0 9 12 24 12 24s12-15 12-24c0-7-5-12-12-12z" fill="#1F4FE0"/><circle cx="24" cy="18" r="5" fill="#FFFFFF"/></svg><span class="big">US-based team</span><p>Headquartered in Irvine, CA, with team members in Washington, New York and Florida.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z" fill="#1F4FE0"/><path d="M17 24l5 5 9-10" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span class="big">$750K insured</span><p>Hiscox: $500K professional liability and $250K cyber liability, with 24/7 breach coach access.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="20" width="28" height="22" rx="4" fill="#1F4FE0"/><path d="M16 20v-6a8 8 0 0 1 16 0v6" stroke="#1F4FE0" stroke-width="4" fill="none"/><circle cx="24" cy="30" r="3" fill="#FFFFFF"/></svg><span class="big">HIPAA compliant</span><p>We sign a Business Associate Agreement. Patient data is encrypted with AES-256.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="10" width="32" height="30" rx="4" fill="#1F4FE0"/><rect x="8" y="10" width="32" height="8" fill="#0B1A2E"/><path d="M17 29l5 5 9-10" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span class="big">Month to month</span><p>Cancel any time. No fees, no notice period, no annual contract.</p></div>
+      <div class="cred hi"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20" fill="#FF5A3C"/><circle cx="24" cy="24" r="15" fill="none" stroke="#FFFFFF" stroke-width="1.5"/><text x="24" y="29" font-size="14" font-weight="800" fill="#FFFFFF" text-anchor="middle" class="fl">90</text></svg><span class="big">90-day guarantee</span><p>Mentioned in AI within 90 days, or we work for free until you are. Applies to the top-tier program.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="24" r="9" fill="#1F4FE0"/><circle cx="16" cy="24" r="3.5" fill="#FFFFFF"/><path d="M24 24h18M36 24v7M41 24v5" stroke="#1F4FE0" stroke-width="4" stroke-linecap="round"/></svg><span class="big">You own it all</span><p>Every page, video, listing and account is created in the practice's name.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="18" fill="#1F4FE0"/><path d="M24 13v12l8 5" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span class="big">Under 24 hours</span><p>Average response time, with a 3-business-day guarantee.</p></div>
+      <div class="cred"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 4l16 6v12c0 10-7 18-16 22C15 40 8 32 8 22V10z" fill="#1F4FE0"/><path d="M17 24l5 5 9-10" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/></svg><span class="big">Physician-led</span><p>Medical Director and Medical Advisor on staff review clinical content standards.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="guard">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Guardrails</span>
+      <h2>Rules the program keeps</h2>
+    </div>
+    <ul>
+      <li>No hidden text, cloaking or instructions written for AI crawlers. Engines treat these as manipulation and can drop the source.</li>
+      <li>Every reviewer named on a page actually reviewed it. Sponsored placements are labeled as the outlet requires.</li>
+      <li>Community participation comes from a disclosed account, in line with Reddit's rules and FTC endorsement guidance.</li>
+      <li>Off-label uses are described as the practice performs them, with Dr. Rivkin's approval, never with implied FDA approval.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87" class="lockup" role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#FFFFFF"></path>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FFFFFF"></path>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#FFFFFF"></path>
+</svg>
+    <p>Prepared by Local AI Registry for Rivkin Aesthetics. Baseline figures are Ahrefs US estimates taken at kickoff.</p>
+  </div>
+</footer>
+<script>
+(function(){
+  try{
+    if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches){
+      document.querySelectorAll('svg').forEach(function(s){ if(s.pauseAnimations){ try{ s.setCurrentTime(8.5); s.pauseAnimations(); }catch(e){} } });
+    }
+  }catch(e){}
+})();
+</script>
+
+</body></html>
