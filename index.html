@@ -792,6 +792,37 @@ body.hasbar.onexp .w{max-width:1140px!important}
 .tmg{grid-template-columns:repeat(3,minmax(0,1fr))}
 #s-steve>.cta:last-child{max-width:320px;margin:0 auto}}
 @media (min-width:1100px){.tmg{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.rvc-top{display:grid;grid-template-columns:1fr;gap:18px;align-items:start}
+.rvc-l .rev-s b{color:var(--ink)}
+.calc{background:var(--bg);border-radius:16px;padding:14px 16px}
+.calc label{display:block;font:700 12px var(--fu);color:var(--ink);margin-bottom:8px}
+.calc-in{display:flex;align-items:center;gap:4px;background:var(--card);border:1.5px solid var(--rule2);border-radius:12px;padding:0 12px}
+.calc-in span{font:800 20px var(--fu);color:var(--muted)}
+.calc-in input{flex:1;min-width:0;border:0!important;background:transparent!important;padding:10px 0!important;font:800 22px var(--fu)!important;color:var(--ink);outline:none}
+.calc input[type=range]{width:100%;margin:12px 0 4px;accent-color:var(--ok)}
+.calc small{font:500 12px var(--fb);color:var(--muted)}
+.rvc-be{margin-top:20px;padding-top:18px;border-top:1px solid var(--rule)}
+.rvc-be #ben{font:800 40px/1 var(--fu);color:var(--ink)}.rvc-be .bebig{font:700 18px var(--fu);color:var(--ink)}
+.besub{display:block;margin-top:4px;font:500 14px var(--fb);color:var(--muted)}.besub b{color:var(--ok)}
+.bestr.short{background:var(--red)!important}
+#roi text.ms{font:800 10px var(--fu)}#roi.px text.ms{font:800 12px var(--fu)}
+.sf i svg{width:20px;height:20px}
+.sf i{display:flex!important;align-items:center;justify-content:center;color:var(--blue)}
+.pk2 li{display:flex;align-items:center;gap:10px}
+.pki{flex:none;width:30px;height:30px;border-radius:9px;background:var(--card);color:var(--ok);display:flex;align-items:center;justify-content:center}
+.pki svg{width:18px;height:18px}
+.pk2 li::before{display:none!important;content:none!important}
+.shr{all:unset;box-sizing:border-box;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;width:100%;margin-top:12px;padding:12px;border-radius:999px;border:1.5px solid var(--rule2);font:700 14px var(--fu);color:var(--ink)}
+.shr:hover{border-color:var(--ink)}.shr svg{width:18px;height:18px}
+.shr-m{margin:6px 0 0;text-align:center;font:500 12px var(--fb);color:var(--ok);min-height:0}
+.inf:hover::after,.inf:focus::after,.inf.op::after{right:-4px!important;left:auto!important;width:230px!important}
+@media (min-width:720px){.rvc-top{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}}
+@media (min-width:960px){
+body.hasbar.onprop .w{max-width:1180px!important;margin-left:auto!important;margin-right:auto!important}
+#s-proposal:not([hidden]){display:grid!important;grid-template-columns:minmax(0,1fr) 330px!important;column-gap:24px;align-items:start}
+#s-proposal>*{grid-column:1}
+#s-proposal>.co{position:sticky!important;right:auto!important;top:84px!important;grid-column:2!important;grid-row:1/span 30!important;width:auto!important;max-height:none!important;overflow:visible!important;align-self:start}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -953,45 +984,38 @@ body.hasbar.onexp .w{max-width:1140px!important}
 <!-- PROPOSAL -->
 <main class="scr" id="s-proposal" hidden>
 <div class="sh"><p class="k">Proposal</p><h2 class="sh2">Eternyl Beauty × Steve Lee</h2><p class="sub">Prepared Nov 9, 2026 · Everything you need to decide, in one&nbsp;page.</p></div>
-<section class="card rev"><p class="k">Estimated added revenue</p><p class="rev-n">$15,106<small>/mo</small></p><p class="rev-s">About 34 new customers a month from the 7 searches on the Value page, at $450 each. First visits only, so this is the conservative&nbsp;case.</p></section>
-<section class="card be"><p class="k">When it pays for itself</p>
-<p class="bebig"><b id="ben">16</b> new customers a month</p>
-<p class="mm"><span class="g"><span class="pv">$3,000</span><i>÷</i><span>$450 per new customer</span></span><span class="g"><i>=</i><span id="bex">15.1, rounded up to 16</span></span></p>
-<div class="bebar"><div class="bez" style="left:0;width:100%"></div><i class="bemk" id="bemk" style="left:40%"><span id="bemkt">Pays for itself: 16</span></i><div class="bestr" style="left:0;width:85%"></div></div>
-<div class="belab"><span>0</span><span>Estimate: 34 a month</span><span>40</span></div>
-<p class="sub" style="margin:8px 0 0">That's about 1 in 530 of the 3,730 people searching these each month. Every customer who comes back again is extra.</p></section>
+<section class="card rvc"><div class="rvc-top"><div class="rvc-l"><p class="k">Estimated added revenue</p><p class="rev-n"><span id="rvn">$15,106</span><small>/mo</small></p><p class="rev-s">About <b id="rvc">34</b> new customers a month from 3,730 searches, at <b id="rvp">$450</b> each. First visits only, so this is the conservative&nbsp;case.</p></div>
+<div class="calc"><label for="rpc">Revenue per new customer</label><div class="calc-in"><span>$</span><input id="rpc" type="number" inputmode="numeric" min="25" max="20000" step="25" value="450"></div><input type="range" id="rpcr" min="50" max="2500" step="10" value="450" aria-label="Revenue per new customer"><small>Drag to match your business. The math below<small>Drag to match your business. Everything below updates.</small>nbsp;updates.</small></div></div>
+<div class="rvc-be"><p class="k">When it pays for itself</p>
+<p class="bebig"><b id="ben">7</b> new customers a month <span class="besub">covers the plan. You're estimated to get <b id="bee">34</b>.</span></p>
+<p class="mm"><span class="g"><span class="pv">$3,000</span><i>÷</i><span><span id="bepc">$450</span> per new customer</span></span><span class="g"><i>=</i><span id="bex">6.7, rounded up to 7</span></span></p>
+<div class="bebar"><div class="bez" style="left:0;width:100%"></div><div class="bestr" id="bestr" style="left:0;width:85%"></div><i class="bemk" id="bemk" style="left:20%"><span id="bemkt">Pays for itself: 7</span></i></div>
+<div class="belab"><span>0</span><span id="beest">Estimate: 34 a month</span><span id="bemax">40</span></div></div></section>
+
 <section class="card"><p class="k">When to expect results</p>
 <svg id="roi" viewBox="0 0 340 200" role="img" aria-label="Projected monthly value rising from zero in months 1 and 2 to $3,600 to $7,300 by month 8, crossing the $3,000 monthly cost between months 5 and 7"></svg>
 <div class="lg2"><span><i class="b"></i>Projected value range</span><span><i class="c"></i>Your monthly cost</span></div>
 
-<p class="src">Projection, not a promise. Assumes value ramps from month 3 to full by month 8, using the value estimate on the Value page.</p></section>
+<p class="src">Projection, not a promise. You typically start showing up in AI answers in month 3, break even once monthly value passes your cost, and reach full value by month&nbsp;8.</p></section>
 <section class="card bld" id="bld"><p class="k">Build your plan</p>
 <p class="bld-t">Everything we do, priced on its own. Pick what you want and we bundle it for&nbsp;you.</p>
 <div class="tiers" id="tiers"></div>
 <div id="bitems"></div>
 <div class="bsum"><div><span>Regular price</span><s id="breg">$0</s></div><div class="bb"><span>Your bundle</span><b id="bprice">$0<small>/mo</small></b></div><p class="bsave" id="bsave"></p></div></section>
 <section class="card pl2"><p class="k">Your 12-month plan</p><h3 class="pl2-h">We do more and more as time goes&nbsp;on.</h3><p class="pl2-s">Not the same playbook every month.</p><div class="pl2-w"><table class="pl2-t"><thead><tr><th></th><th><b>1</b><span>Dec</span></th><th><b>2</b><span>Jan</span></th><th><b>3</b><span>Feb</span></th><th><b>4</b><span>Mar</span></th><th><b>5</b><span>Apr</span></th><th><b>6</b><span>May</span></th><th><b>7</b><span>Jun</span></th><th><b>8</b><span>Jul</span></th><th><b>9</b><span>Aug</span></th><th><b>10</b><span>Sep</span></th><th><b>11</b><span>Oct</span></th><th><b>12</b><span>Nov</span></th></tr></thead><tbody><tr><th>Registry record and AI tracking</th><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Listings fixed and synced</th><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Google profile and review replies</th><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Website code and indexing</th><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Photos renamed and geotagged</th><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Best-of guide placement</th><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>4 articles on the latest news</th><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Press release and pitches</th><td><i></i></td><td><i class=on></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i></i></td></tr><tr><th>Answer and area pages</th><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>2 explainer videos on trends</th><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Vetted backlinks</th><td><i></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Refresh top pages</th><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td><td><i class=on></i></td></tr><tr><th>Year-in-review and year 2 plan</th><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i></i></td><td><i class=on></i></td></tr></tbody><tfoot><tr><th>Work streams running</th><td><b>4</b></td><td><b>8</b></td><td><b>9</b></td><td><b>10</b></td><td><b>11</b></td><td><b>10</b></td><td><b>11</b></td><td><b>12</b></td><td><b>11</b></td><td><b>11</b></td><td><b>12</b></td><td><b>12</b></td></tr></tfoot></table></div><p class="src">Starts the month after you sign. Every item waits for your&nbsp;approval.</p></section>
-<section class="card qs"><p class="k">Questions before you start?</p>
-<p class="qs-t">Text or call Steve directly. He usually replies in under 24&nbsp;hours.</p>
-<div class="qs-b"><a class="qs-a" href="sms:+12139315633">Text Steve</a><a class="qs-a" href="tel:+12139315633">Call (213) 931-5633</a></div>
-<details class="qs-d"><summary>Or email me a copy of this proposal</summary><form id="lf" novalidate><label>Email<input type="email" name="email" autocomplete="email" required placeholder="you@eternylbeauty.com"></label>
-<label>Phone<input type="tel" name="phone" autocomplete="tel" required placeholder="(949) 555-0100"></label>
-<button class="cta sec" type="submit">Send me a copy</button>
-<p class="fm" id="fm" role="status"></p></form></details></section>
 <section class="card safe"><p class="k">You're safe with us</p><ul class="sf">
-<li><i>$</i><b>$750K insured</b><span>Professional liability and cyber coverage</span></li>
-<li><i>H</i><b>HIPAA</b><span>We sign a BAA with every healthcare client</span></li>
-<li><i>A</i><b>Accessibility</b><span>Pages built to accessibility standards</span></li>
-<li><i>256</i><b>Bank-level security</b><span>Encrypted data, two-factor access</span></li>
-<li><i>US</i><b>US-based team</b><span>Florida, New York, Washington and California</span></li></ul></section>
+<li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 12v6a2.5 2.5 0 0 1-5 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></i><b>$750K insured</b><span>Professional liability and cyber coverage</span></li>
+<li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 8v7M8.5 11.5h7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></i><b>HIPAA</b><span>We sign a BAA with every healthcare client</span></li>
+<li><i><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="4.5" r="2" fill="currentColor"/><path d="M5 8.5l7 1.5 7-1.5M12 10v5l-3 6M12 15l3 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></i><b>Accessibility</b><span>Pages built to accessibility standards</span></li>
+<li><i><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="11" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/></svg></i><b>Bank-level security</b><span>Encrypted data, two-factor access</span></li>
+<li><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></i><b>US-based team</b><span>Florida, New York, Washington and California</span></li></ul></section>
 <section class="card co" id="pay"><p class="k co-k">Price lock ends in</p>
 <div class="cd4" id="cd"><div><b id="cd-d">--</b><span>Days</span></div><div><b id="cd-h">--</b><span>Hours</span></div><div><b id="cd-m">--</b><span>Min</span></div><div><b id="cd-s">--</b><span>Sec</span></div></div>
 <div class="co-p"><p class="payp"><span id="payamt">$3,000</span><small>/mo</small></p><p class="co-was"><s id="cowas">$3,750/mo</s> from Dec 1</p></div>
-<ul class="perk"><li><b>Grandfathered pricing</b><button type="button" class="inf" aria-label="About grandfathered pricing" data-tip="Start by Nov 30 and keep this rate for as long as you stay, even when prices go up. Includes Upper East Side exclusivity: Steve won't take on a direct competitor near you.">i</button></li>
-<li><b>90-day AI guarantee</b><button type="button" class="inf" aria-label="About the guarantee" data-tip="Named by AI within 90 days, or Steve keeps working for free until you are.">i</button></li></ul>
+<ul class="perk pk2"><li><i class="pki"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 10h16M8 3v4M16 3v4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M9 15l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></i><b>Grandfathered pricing</b><button type="button" class="inf" aria-label="About grandfathered pricing" data-tip="Start by Nov 30 and keep this rate for as long as you stay, even when prices go up.">i</button></li><li><i class="pki"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l8 3v6c0 5-3.4 9.3-8 11-4.6-1.7-8-6-8-11V5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></i><b>90-day AI guarantee</b><button type="button" class="inf" aria-label="About the guarantee" data-tip="Named by AI within 90 days, or Steve keeps working for free until you are.">i</button></li><li><i class="pki"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="1.3" fill="currentColor"/></svg></i><b>Area exclusivity</b><button type="button" class="inf" aria-label="About area exclusivity" data-tip="We work with one business like yours within 15 miles of you. Your competitors nearby can't hire us.">i</button></li></ul>
 <p id="pays" hidden></p><div id="stripe-el" class="co-el"></div>
 <a class="cta paybtn" id="paybtn" href="#lead">Start for $3,000/mo</a>
-<p class="co-f">Month-to-month, no long-term contract <button type="button" class="inf" aria-label="About contracts" data-tip="Annual contracts are available at a reduced rate. The lower rate applies to annual terms only.">i</button></p></section>
+<p class="co-f">Month-to-month, no&nbsp;contract&nbsp;<button type="button" class="inf" aria-label="About contracts" data-tip="Annual contracts are available at a reduced rate. The lower rate applies to annual terms only.">i</button></p><button type="button" class="shr" id="shr"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Share it with your team</button><p class="shr-m" id="shrm" role="status"></p></section>
 </main>
 
 </div>
@@ -1462,7 +1486,7 @@ window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[
  const M=n=>'$'+n.toLocaleString('en-US');
  const C={status:['19/100 AI Score','12 issues found','See what to fix','solution'],solution:['12 issues','One team fixes all of them','See what it\'s worth','value'],value:['$15,106/mo','Estimated added revenue','See who does the work','experts'],experts:['Steve Lee','Best verified results','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
  window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
-  if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Start for '+M(p)+'/mo';const pb=document.getElementById('paybtn');B.href=pb&&pb.getAttribute('href')!=='#lead'?pb.href:'#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
+  if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Get started';const pb=document.getElementById('paybtn');B.href=pb&&pb.getAttribute('href')!=='#lead'?pb.href:'#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
  setInterval(()=>{const cur=(location.hash||'#find').slice(1);if(cur==='proposal')CTA('proposal')},30000);
  CTA((location.hash||'#find').slice(1))})();
@@ -1510,6 +1534,17 @@ document.getElementById('hub').innerHTML=HUB();
  document.getElementById('vrng').addEventListener('click',e=>{const b=e.target.closest('button[data-d]');if(!b)return;R=+b.dataset.d;document.querySelectorAll('#vrng button').forEach(z=>z.setAttribute('aria-pressed',z===b?'true':'false'));render()});
  const mb=document.getElementById('vmore');mb.textContent='See all '+C.length+' clients';mb.addEventListener('click',()=>{ALL=!ALL;mb.textContent=ALL?'Show fewer':'See all '+C.length+' clients';render()})})();
 
+window.SRCH=3730;window.RPC=450;window.RATE=0.009;
+window.BE=()=>{const cur=window.CUR||3000,r=window.RPC,c=window.SRCH*window.RATE,rv=Math.floor(c*r),M=n=>'$'+Math.round(n).toLocaleString('en-US'),n=Math.ceil(cur/r);window.REVN=rv;
+ const g=id=>document.getElementById(id);if(!g('rvn'))return;
+ g('rvn').textContent=M(rv);g('rvc').textContent=Math.round(c);g('rvp').textContent=M(r);g('bepc').textContent=M(r);g('ben').textContent=n;g('bee').textContent=Math.round(c);
+ g('bex').textContent=(cur/r).toFixed(1)+', rounded up to '+n;const mx=Math.max(10,Math.ceil(Math.max(c,n)*1.25/5)*5);
+ g('bestr').style.width=Math.min(c/mx*100,100)+'%';g('bemk').style.left=Math.min(n/mx*100,100)+'%';g('bemkt').textContent='Pays for itself: '+n;g('beest').textContent='Estimate: '+Math.round(c)+' a month';g('bemax').textContent=mx;
+ g('bestr').classList.toggle('short',c<n);
+ if(window.drawROI)drawROI(cur)};
+document.addEventListener('input',e=>{if(e.target.id==='rpc'||e.target.id==='rpcr'){const v=Math.max(1,+e.target.value||0);window.RPC=v;const o=document.getElementById(e.target.id==='rpc'?'rpcr':'rpc');if(o)o.value=v;BE()}});
+document.addEventListener('click',async e=>{if(!e.target.closest('#shr'))return;const u=location.href.split('#')[0]+'#proposal',m=document.getElementById('shrm');
+ try{if(navigator.share){await navigator.share({title:document.title,url:u});return}await navigator.clipboard.writeText(u);m.textContent='Link copied. Paste it to your team.'}catch(err){m.textContent=u}});
 /* --- plan builder + pricing + Stripe links --- */
 const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''} */};
 (()=>{const T=[{n:'Registry',p:500},{n:'Authority',p:1500},{n:'Growth',p:3000},{n:'Platinum',p:5000}];
@@ -1526,10 +1561,8 @@ const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''
   document.getElementById('bsave').textContent=reg>cur?('You save '+M(reg-cur)+' a month'+(t>=0&&p===T[t].p?' with the '+T[t].n+' bundle':'')):'';
   tw.innerHTML=T.map((x,i)=>'<button type="button" class="tb2'+(t===i&&I.every((it,j)=>it[0]<=i?sel.has(j):!sel.has(j))?' on':'')+'" data-t="'+i+'"><b>'+x.n+'</b><span>'+M(x.p)+'</span></button>').join('');
   document.querySelectorAll('.pv').forEach(e=>e.textContent=M(cur));
-  const n=Math.ceil(cur/450);document.getElementById('ben').textContent=n;document.getElementById('bex').textContent=(cur/450).toFixed(1)+', rounded up to '+n;
-  document.getElementById('bemk').style.left=Math.min(n/40*100,100)+'%';document.getElementById('bemkt').textContent='Pays for itself: '+n;
-  document.getElementById('payamt').textContent=M(cur);document.getElementById('cowas').textContent=M(Math.round(p*1.25/50)*50)+'/mo';
-  const b=document.getElementById('paybtn');b.textContent=p?'Start for '+M(cur)+'/mo':'Pick at least one item';
+  window.CUR=cur;if(window.BE)BE();document.getElementById('payamt').textContent=M(cur);document.getElementById('cowas').textContent=M(Math.round(p*1.25/50)*50)+'/mo';
+  const b=document.getElementById('paybtn');b.textContent=p?'Get started':'Pick at least one item';
   if(late)document.getElementById('pays').textContent='No contract, cancel anytime.';
   const L=PAY[p]&&(late?PAY[p].after:PAY[p].lock);if(L){b.href=L;b.target='_blank';b.rel='noopener'}else{b.href='#lead';b.removeAttribute('target')}
   window.CUR=cur;if(window.drawROI)drawROI(cur);if(window.CTA&&(location.hash||'').slice(1)==='proposal')CTA('proposal')}
@@ -1545,7 +1578,7 @@ const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''
  t();setInterval(t,1000)})();
 
 /* --- lead form --- */
-(()=>{const f=document.getElementById('lf'),m=document.getElementById('fm');let db=null;
+(()=>{const f=document.getElementById('lf'),m=document.getElementById('fm');if(!f)return;let db=null;
  let uid=null;if(window.claude&&claude.use){claude.use('db').then(x=>db=x).catch(()=>{});claude.use('user').then(u=>u&&u.id()).then(i=>uid=i).catch(()=>{})}
  f.addEventListener('submit',async e=>{e.preventDefault();
   const email=f.email.value.trim(),phone=f.phone.value.trim();
@@ -1558,14 +1591,17 @@ const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''
    m.className='fm ok';m.textContent='Opening your email app to send the request.'}
  })})();
 
-window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;window._roiC=cost;const cw=el.clientWidth||340,big=cw>=520,VW=big?cw:340,VH=big?260:200;el.setAttribute('viewBox','0 0 '+VW+' '+VH);el.classList.toggle('px',big);const ramp=[0,0,.25,.4,.55,.7,.85,1,1,1,1,1],lo=10070,hi=20140,max=24000;
- const L=big?52:34,R=VW-8,T=10,B=VH-28,x=i=>L+i*(R-L)/11,y=v=>B-v/max*(B-T);let h='';
- [0,6000,12000,18000,24000].forEach(v=>h+=`<line class="gl" x1="${L}" x2="${R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-6}" y="${y(v)+3}" text-anchor="end">${v?('$'+v/1000+'K'):'$0'}</text>`);
+window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;window._roiC=cost;const cw=el.clientWidth||340,big=cw>=520,VW=big?cw:340,VH=big?260:200;el.setAttribute('viewBox','0 0 '+VW+' '+VH);el.classList.toggle('px',big);const ramp=[0,0,.25,.4,.55,.7,.85,1,1,1,1,1],REV=window.REVN||15106,lo=REV*2/3,hi=REV*4/3,max=Math.max(4000,Math.ceil(Math.max(hi,cost)*1.15/4000)*4000);
+ const L=big?52:34,R=VW-8,T=50,B=VH-28,x=i=>L+i*(R-L)/11,y=v=>B-v/max*(B-T);let h='';
+ [0,max/4,max/2,max*3/4,max].forEach(v=>h+=`<line class="gl" x1="${L}" x2="${R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-6}" y="${y(v)+3}" text-anchor="end">${v?('$'+(v/1000).toFixed(v%1000?1:0)+'K'):'$0'}</text>`);
  const top=ramp.map((r,i)=>x(i).toFixed(1)+' '+y(hi*r).toFixed(1)),bot=ramp.map((r,i)=>x(i).toFixed(1)+' '+y(lo*r).toFixed(1)).reverse();
  h+=`<path d="M${top.join(' L')} L${bot.join(' L')}Z" fill="var(--ok)" opacity=".28"/>`;
  h+=`<path d="M${ramp.map((r,i)=>x(i).toFixed(1)+' '+y((lo+hi)/2*r).toFixed(1)).join(' L')}" fill="none" stroke="var(--ok)" stroke-width="2.5"/>`;
  h+=`<line x1="${L}" x2="${R}" y1="${y(cost)}" y2="${y(cost)}" stroke="var(--red)" stroke-width="2" stroke-dasharray="5 4"/><text x="${R}" y="${y(cost)-5}" text-anchor="end" style="fill:var(--red)">$${cost.toLocaleString('en-US')} cost</text>`;
  for(let i=0;i<12;i++)h+=`<text x="${x(i)}" y="${VH-10}" text-anchor="middle">${i+1}</text>`;
+ const mid=i=>(lo+hi)/2*ramp[i];let bx=null;for(let i=1;i<12;i++){if(mid(i)>=cost&&mid(i-1)<cost){const t=(cost-mid(i-1))/(mid(i)-mid(i-1));bx=i-1+t;break}}
+ const ms=[[2,'Shows up in AI','var(--blue)'],[bx,'Breaks even','var(--red)'],[7,'Full ROI','var(--ok)']].filter(z=>z[0]!==null);
+ ms.forEach((z,k)=>{const xx=x(z[0]);h+=`<line x1="${xx}" x2="${xx}" y1="${z[1]==='Breaks even'?T-8:T-28}" y2="${B}" stroke="${z[2]}" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="${xx}" cy="${z[1]==='Breaks even'?T-8:T-28}" r="3.5" fill="${z[2]}"/><text class="ms" x="${xx+(z[0]>=9?-6:6)}" y="${z[1]==='Breaks even'?T-4:T-24}" text-anchor="${z[0]>=9?'end':'start'}" style="fill:${z[2]};font-weight:800">${z[1]}${z[0]===bx?' · mo '+(Math.ceil(bx)+1):' · mo '+(z[0]+1)}</text>`});
  el.innerHTML=h};drawROI(window.CUR||3000);(()=>{const t=document.getElementById('roi');if(!t||!window.ResizeObserver)return;let w=0;new ResizeObserver(()=>{const n=t.clientWidth;if(n&&n!==w){w=n;drawROI(window._roiC||3000)}}).observe(t)})();
 
 /* --- prompts list --- */
