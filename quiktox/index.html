@@ -675,6 +675,9 @@ body.hasbar .w{padding-bottom:110px}
 }
 #tc.px{height:300px}#tc.px text{font:600 12px var(--fu);fill:var(--muted)}#tc.px text.end{font:800 13px var(--fu)}
 @media (min-width:960px){#s-solution>.rsol{grid-row:2;grid-column:2;align-self:start}#s-solution>.vend{grid-column:1}#s-solution>.qx-card{grid-row:2}}
+.shx{display:flex;flex-direction:column;gap:12px}.shx .sub{margin:6px 0 0}.shx .hw-add{width:auto;align-self:flex-start;padding:12px 18px;border:0;background:var(--ink);color:#fff;border-radius:999px}
+.hw-f.card{display:flex;gap:10px;flex-wrap:wrap}.hw-f input{flex:1;min-width:200px}.hw-f .cta{width:auto;padding:13px 20px}
+@media (min-width:960px){.shx{flex-direction:row;align-items:flex-end;justify-content:space-between;grid-column:1/-1}.shx .hw-add{align-self:flex-end;flex:none}#s-experts>.hw-f{grid-column:1/-1}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -799,11 +802,8 @@ body.hasbar .w{padding-bottom:110px}
 
 <!-- EXPERTS -->
 <main class="scr" id="s-experts" hidden>
-<div class="sh"><p class="k">Who does the work</p><h2 class="sh2">Compare specialists, apples to&nbsp;apples</h2></div>
-<section class="card hw"><p class="hw-t">Every specialist on Local AI Registry is audited the same way. We track each client's AI Score, retention and response time on the registry every month, so you compare <b>verified work</b>, not sales&nbsp;pitches.</p>
-<ul class="hw-l"><li><b>Same audit</b><span>One scoring method for every agency</span></li><li><b>Tracked monthly</b><span>Results come from the registry</span></li><li><b>Can't be edited</b><span>Agencies can't change their numbers</span></li></ul>
-<button class="hw-add" id="addag" type="button">+ Add your current agency to compare</button>
-<form class="hw-f" id="agf" hidden><input id="agn" type="text" placeholder="Agency name" aria-label="Agency name"><button class="cta" type="submit">Add to the list</button></form></section>
+<div class="sh shx"><div><p class="k">Who does the work</p><h2 class="sh2">Compare specialists, apples to&nbsp;apples</h2><p class="sub">Every specialist is audited the same way and tracked monthly on the registry. Agencies can't edit their&nbsp;numbers.</p></div><button class="hw-add" id="addag" type="button">+ Add your current agency</button></div>
+<form class="hw-f card" id="agf" hidden><input id="agn" type="text" placeholder="Agency name" aria-label="Agency name"><button class="cta" type="submit">Add to compare</button></form>
 <div class="az-bar"><button class="az-fb" id="azopen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Filters<span id="azn"></span></button>
 <label class="az-sort"><span>Sort by</span><select id="azsort"><option value="f">Featured</option><option value="r">Best verified results</option><option value="c">Most verified customers</option><option value="s">Highest rated</option></select></label></div>
 <div class="az-q" id="azq"></div>
