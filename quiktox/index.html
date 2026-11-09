@@ -735,6 +735,21 @@ body.onsol .ctab{display:none}
 body.hasbar.onsol .w{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important}}
 .qx-card{overflow:hidden}.qx-card .qx-row:last-of-type{border-bottom:0}
 #s-solution>.vend{padding:0!important}
+.lgx.lgb{width:46px;height:46px;border-radius:12px}
+.lgx{flex:none;width:24px;height:24px;border-radius:6px}
+.mtcta{display:none}
+@media (min-width:960px){
+body.onval .ctab{display:none}
+body.hasbar.onval .w{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important}
+#s-value .mth li{padding:7px 0}
+#s-value .mtr{display:flex;align-items:center;gap:16px}
+#s-value .mtr span{margin-right:auto;white-space:nowrap}
+.mtcta{display:inline-flex;width:auto!important;margin:0!important;padding:12px 20px!important;font-size:15px!important;white-space:nowrap}
+#s-value .asl{margin:12px 0 0}
+#s-value .vv{max-height:250px;width:100%}
+#s-value .asl small{font-size:10.5px}#s-value .asl b{font-size:18px}
+#s-value>section{align-self:start}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -749,359 +764,7 @@ body.hasbar.onsol .w{max-width:1140px!important;margin-left:auto!important;margi
 <p class="when">Costa Mesa, CA · Updated Nov 8, 2026</p>
 <div class="fl" id="fl" hidden><div class="flt2"><button class="bk go" data-go="status">Dashboard</button><span id="fls">Step 1 of 4</span></div><nav class="stp" aria-label="Steps"><button data-go="solution">1 Fix</button><button data-go="value">2 Value</button><button data-go="experts">3 Expert</button><button data-go="proposal">4 Proposal</button></nav></div>
 <main class="scr" id="s-find" hidden>
-<iframe class="fd-map" title="Animated street map" aria-hidden="true" tabindex="-1" loading="eager" srcdoc="&lt;!doctype html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;meta charset=&quot;utf-8&quot;&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, viewport-fit=cover&quot;&gt;
-&lt;title&gt;Map&lt;/title&gt;
-&lt;meta name=&quot;robots&quot; content=&quot;noindex&quot;&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&amp;family=IM+Fell+English+SC&amp;family=Hanken+Grotesk:wght@400;600;700&amp;display=swap&quot;&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css&quot;&gt;
-&lt;script src=&quot;https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js&quot;&gt;&lt;/script&gt;
-&lt;style&gt;
-/* Layout: a full-screen real map (OpenStreetMap via OpenFreeMap) restyled as an old parchment map,
-   with a canvas on top where simulated footsteps walk the real streets to real shops. */
-:root{
-  --paper:#EEDDB8; --ink:#4A2F1B; --blue:#1F4FE0; --chrome:#F6EBD0;
-  --f-map:&quot;IM Fell English&quot;,Georgia,&quot;Times New Roman&quot;,serif;
-  --f-sc:&quot;IM Fell English SC&quot;,Georgia,serif;
-  --f-ui:&quot;Hanken Grotesk&quot;,&quot;Helvetica Neue&quot;,Arial,sans-serif;
-  color-scheme:light;
-}
-html,body{height:100%;margin:0}
-body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:hidden}
-#map{position:fixed;inset:0}
-#steps{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:2}
-.paper{position:fixed;inset:0;pointer-events:none;z-index:3;mix-blend-mode:multiply;
-  background:
-    radial-gradient(ellipse at center,rgba(0,0,0,0) 55%,rgba(74,47,27,.38) 100%),
-    url(&quot;data:image/svg+xml,%3Csvg xmlns=&#x27;http://www.w3.org/2000/svg&#x27; width=&#x27;300&#x27; height=&#x27;300&#x27;%3E%3Cfilter id=&#x27;n&#x27;%3E%3CfeTurbulence type=&#x27;fractalNoise&#x27; baseFrequency=&#x27;.85&#x27; numOctaves=&#x27;2&#x27; seed=&#x27;4&#x27;/%3E%3CfeColorMatrix values=&#x27;0 0 0 0 .45 0 0 0 0 .3 0 0 0 0 .15 0 0 0 .22 0&#x27;/%3E%3C/filter%3E%3Crect width=&#x27;300&#x27; height=&#x27;300&#x27; filter=&#x27;url(%23n)&#x27;/%3E%3C/svg%3E&quot;);}
-.top{position:fixed;z-index:4;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
-  padding:calc(10px + env(safe-area-inset-top,0px)) max(12px,env(safe-area-inset-right,0px)) 0 max(12px,env(safe-area-inset-left,0px));pointer-events:none}
-.cart{pointer-events:auto;background:var(--chrome);border:1.5px solid var(--ink);box-shadow:inset 0 0 0 4px var(--chrome),inset 0 0 0 5px rgba(74,47,27,.6),0 6px 18px rgba(74,47,27,.25);padding:10px 16px 9px;text-align:center;max-width:72vw}
-.cart h1{margin:0;font-family:var(--f-sc);font-weight:400;font-size:clamp(17px,4.6vw,22px);letter-spacing:.08em;line-height:1.1}
-.cart p{margin:3px 0 0;font-family:var(--f-map);font-style:italic;font-size:13px}
-.live{pointer-events:auto;display:inline-flex;align-items:center;gap:6px;background:rgba(246,235,208,.92);border:1px solid rgba(74,47,27,.4);border-radius:999px;padding:6px 10px;font-size:12px;font-weight:600;white-space:nowrap}
-.dot{width:8px;height:8px;border-radius:999px;background:#2E9E62;animation:pulse 1.8s infinite}
-.bottom{position:fixed;z-index:4;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:8px;
-  padding:0 max(12px,env(safe-area-inset-right,0px)) calc(10px + env(safe-area-inset-bottom,0px)) max(12px,env(safe-area-inset-left,0px));pointer-events:none}
-.panel{pointer-events:auto;background:rgba(246,235,208,.94);border:1px solid rgba(74,47,27,.45);border-radius:10px;padding:8px 12px;font-size:12.5px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
-.panel b{font-variant-numeric:tabular-nums}
-.leg{display:inline-flex;align-items:center;gap:6px}
-.night{position:fixed;inset:0;pointer-events:none;z-index:3;background:#1B1640;mix-blend-mode:multiply;opacity:0;transition:opacity .6s}
-.time{pointer-events:auto;width:100%;background:rgba(246,235,208,.96);border:1px solid rgba(74,47,27,.45);border-radius:12px;padding:8px 10px 6px;display:flex;flex-direction:column;gap:4px;box-shadow:0 6px 18px rgba(74,47,27,.18)}
-.time-top{display:flex;align-items:center;gap:10px}
-.play{flex:none;width:36px;height:36px;border-radius:999px;border:0;background:var(--ink);color:#F6EBD0;display:flex;align-items:center;justify-content:center;cursor:pointer}
-.when{font-family:var(--f-sc);font-size:17px;letter-spacing:.03em;line-height:1.1}
-.when small{display:block;font-family:var(--f-ui);font-size:11.5px;letter-spacing:0;color:rgba(74,47,27,.8)}
-.qkhour{margin-left:auto;text-align:right;font-size:11.5px;line-height:1.25}
-.qkhour b{font-family:var(--f-sc);font-weight:400;font-size:18px;color:var(--blue)}
-.track{position:relative;height:40px}
-.track svg{position:absolute;inset:0;width:100%;height:28px}
-.track input{position:absolute;left:0;right:0;top:0;width:100%;height:28px;margin:0;opacity:0;cursor:pointer}
-.head{position:absolute;top:-2px;width:2px;height:32px;background:var(--blue);pointer-events:none}
-.head::after{content:&quot;&quot;;position:absolute;left:-5px;top:-6px;width:12px;height:12px;border-radius:999px;background:var(--blue);border:2px solid #fff}
-.days{position:absolute;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(7,1fr);font-size:10.5px;color:rgba(74,47,27,.8);text-align:center}
-.credit{pointer-events:auto;font-size:10.5px;background:rgba(246,235,208,.85);border-radius:6px;padding:3px 6px}
-.credit a{color:var(--ink)}
-.pin{display:flex;flex-direction:column;align-items:center;transform:translateY(-6px)}
-.pin .tag{display:inline-flex;align-items:center;gap:6px;background:#FFFFFF;border:1.5px solid var(--blue);border-radius:999px;padding:4px 10px 4px 6px;color:var(--blue);font-family:var(--f-ui);font-weight:700;font-size:12px;white-space:nowrap;box-shadow:0 4px 12px rgba(31,79,224,.25)}
-.pin .tag span{font-family:var(--f-sc);font-weight:400;font-size:15px;color:var(--blue);letter-spacing:.04em}
-.pin .tag small{font-size:10.5px;font-weight:600;opacity:.85}
-.pin .stem{width:2px;height:16px;background:var(--blue)}
-.pin .base{width:12px;height:12px;border-radius:999px;background:var(--blue);border:2.5px solid #FFFFFF;box-shadow:0 0 0 1.5px var(--blue)}
-.maplibregl-ctrl-attrib{display:none}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,158,98,.5)}70%{box-shadow:0 0 0 7px rgba(46,158,98,0)}100%{box-shadow:0 0 0 0 rgba(46,158,98,0)}}
-@media (prefers-reduced-motion:reduce){.dot{animation:none}}
-&lt;/style&gt;
-
-&lt;div id=&quot;map&quot; role=&quot;img&quot; aria-label=&quot;Old parchment-style street map with your business marked and footsteps walking to nearby shops.&quot;&gt;&lt;/div&gt;
-&lt;canvas id=&quot;steps&quot; aria-hidden=&quot;true&quot;&gt;&lt;/canvas&gt;
-&lt;div class=&quot;paper&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-&lt;div class=&quot;night&quot; id=&quot;night&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
-
-&lt;script&gt;
-(function(){
-  var INK=&#x27;#4A2F1B&#x27;, PAPER=&#x27;#EEDDB8&#x27;, BLUE=&#x27;#1F4FE0&#x27;;
-  var ADDRESS=&#x27;1815 Newport Blvd, Costa Mesa, CA 92627&#x27;;
-  var FALLBACK=[-117.9178,33.6431]; // approximate; replaced by a geocode of the address
-  var still=window.matchMedia(&#x27;(prefers-reduced-motion: reduce)&#x27;).matches;
-
-  /* ---------- restyle OpenFreeMap &quot;liberty&quot; as a parchment map ---------- */
-  function has(id,words){return words.some(function(w){return id.indexOf(w)&gt;-1;});}
-  function parchment(style){
-    style.layers.forEach(function(l){ if(l.type===&#x27;fill-extrusion&#x27;){ l.minzoom=15; l.paint={
-        &#x27;fill-extrusion-color&#x27;:[&#x27;interpolate&#x27;,[&#x27;linear&#x27;],[&#x27;coalesce&#x27;,[&#x27;get&#x27;,&#x27;render_height&#x27;],7],0,&#x27;#F2E3BE&#x27;,30,&#x27;#E9D3A2&#x27;],
-        &#x27;fill-extrusion-height&#x27;:[&#x27;*&#x27;,[&#x27;coalesce&#x27;,[&#x27;get&#x27;,&#x27;render_height&#x27;],7],1.15],
-        &#x27;fill-extrusion-base&#x27;:[&#x27;coalesce&#x27;,[&#x27;get&#x27;,&#x27;render_min_height&#x27;],0],
-        &#x27;fill-extrusion-opacity&#x27;:.96,&#x27;fill-extrusion-vertical-gradient&#x27;:true}; } });
-    style.layers.forEach(function(l){
-      var id=l.id; l.paint=l.paint||{}; l.layout=l.layout||{};
-      if(l.type===&#x27;background&#x27;){l.paint[&#x27;background-color&#x27;]=PAPER;}
-      else if(l.type===&#x27;fill&#x27;){
-        delete l.paint[&#x27;fill-pattern&#x27;];
-        if(has(id,[&#x27;water&#x27;])){l.paint[&#x27;fill-color&#x27;]=&#x27;#D6C394&#x27;;l.paint[&#x27;fill-outline-color&#x27;]=INK;}
-        else if(has(id,[&#x27;park&#x27;,&#x27;wood&#x27;,&#x27;grass&#x27;,&#x27;landcover&#x27;,&#x27;landuse&#x27;])){l.paint[&#x27;fill-color&#x27;]=&#x27;#E6D3A6&#x27;;l.paint[&#x27;fill-opacity&#x27;]=.55;}
-        else if(id===&#x27;building&#x27;){l.paint={&#x27;fill-pattern&#x27;:&#x27;hatch&#x27;,&#x27;fill-opacity&#x27;:1};}
-        else {l.paint[&#x27;fill-color&#x27;]=&#x27;#E9D7AE&#x27;;l.paint[&#x27;fill-opacity&#x27;]=.6;}
-      }
-      else if(l.type===&#x27;line&#x27;){
-        delete l.paint[&#x27;line-pattern&#x27;];
-        if(has(id,[&#x27;casing&#x27;])){l.paint[&#x27;line-color&#x27;]=INK;l.paint[&#x27;line-opacity&#x27;]=.85;}
-        else if(has(id,[&#x27;road&#x27;,&#x27;highway&#x27;,&#x27;bridge&#x27;,&#x27;tunnel&#x27;,&#x27;street&#x27;,&#x27;motorway&#x27;,&#x27;trunk&#x27;,&#x27;primary&#x27;,&#x27;secondary&#x27;,&#x27;tertiary&#x27;,&#x27;minor&#x27;,&#x27;service&#x27;,&#x27;link&#x27;])){l.paint[&#x27;line-color&#x27;]=&#x27;#F3E5C0&#x27;;}
-        else if(has(id,[&#x27;path&#x27;,&#x27;footway&#x27;,&#x27;pedestrian&#x27;,&#x27;track&#x27;,&#x27;steps&#x27;])){l.paint[&#x27;line-color&#x27;]=INK;l.paint[&#x27;line-opacity&#x27;]=.45;l.paint[&#x27;line-dasharray&#x27;]=[1,2];}
-        else if(has(id,[&#x27;water&#x27;])){l.paint[&#x27;line-color&#x27;]=&#x27;#B8A06E&#x27;;}
-        else {l.paint[&#x27;line-color&#x27;]=INK;l.paint[&#x27;line-opacity&#x27;]=.4;}
-      }
-      else if(l.type===&#x27;symbol&#x27;){
-        if(l.layout[&#x27;text-field&#x27;]){
-          l.layout[&#x27;text-font&#x27;]=[&#x27;Noto Sans Italic&#x27;];
-          l.paint[&#x27;text-color&#x27;]=INK; l.paint[&#x27;text-halo-color&#x27;]=PAPER; l.paint[&#x27;text-halo-width&#x27;]=1.6;
-        }
-        if(l.layout[&#x27;icon-image&#x27;]){l.paint[&#x27;icon-opacity&#x27;]=0;}
-      }
-    });
-    // ink outline around every building
-    var i=style.layers.findIndex(function(l){return l.id===&#x27;building&#x27;;});
-    if(i&gt;-1){
-      var src=style.layers[i];
-      style.layers.splice(i+1,0,{id:&#x27;building-ink&#x27;,type:&#x27;line&#x27;,source:src.source,&#x27;source-layer&#x27;:src[&#x27;source-layer&#x27;],minzoom:src.minzoom||13,
-        paint:{&#x27;line-color&#x27;:INK,&#x27;line-width&#x27;:[&#x27;interpolate&#x27;,[&#x27;linear&#x27;],[&#x27;zoom&#x27;],15,.6,19,1.6],&#x27;line-opacity&#x27;:.9}});
-    }
-    return style;
-  }
-  function hatchImage(){
-    var c=document.createElement(&#x27;canvas&#x27;); c.width=c.height=12; var g=c.getContext(&#x27;2d&#x27;);
-    g.fillStyle=&#x27;#F1E2BC&#x27;; g.fillRect(0,0,12,12);
-    g.strokeStyle=&#x27;rgba(74,47,27,.55)&#x27;; g.lineWidth=1;
-    g.beginPath(); g.moveTo(-3,15); g.lineTo(15,-3); g.moveTo(-3,3); g.lineTo(3,-3); g.moveTo(9,15); g.lineTo(15,9); g.stroke();
-    return g.getImageData(0,0,12,12);
-  }
-
-  function geocode(){
-    return fetch(&#x27;https://nominatim.openstreetmap.org/search?format=json&amp;limit=1&amp;countrycodes=us&amp;q=&#x27;+encodeURIComponent(ADDRESS))
-      .then(function(r){return r.json();}).then(function(j){return j&amp;&amp;j[0]?[+j[0].lon,+j[0].lat]:FALLBACK;}).catch(function(){return FALLBACK;});
-  }
-
-  function ready(){return new Promise(function(res){(function chk(){var el=document.getElementById(&#x27;map&#x27;);if(el&amp;&amp;el.clientWidth&gt;50&amp;&amp;el.clientHeight&gt;50)res();else setTimeout(chk,150);})();});}
-  Promise.all([ready(),fetch(&#x27;https://tiles.openfreemap.org/styles/liberty&#x27;).then(function(r){return r.json();}),Promise.resolve(FALLBACK)]).then(function(res){
-    res.shift();var style=parchment(res[0]), center=res[1];
-    var map=new maplibregl.Map({container:&#x27;map&#x27;,style:style,center:center,zoom:18.2,pitch:55,bearing:-35,maxPitch:65,maxZoom:20,minZoom:14,attributionControl:false,interactive:false});
-    var BOT=function(){return Math.round(innerHeight*(innerWidth&lt;720?.52:.42));};map.setPadding({top:0,bottom:BOT(),left:0,right:0});addEventListener(&#x27;resize&#x27;,function(){map.setPadding({top:0,bottom:BOT(),left:0,right:0});});
-    if(!still){var br=-35;setInterval(function(){br-=.6;map.easeTo({bearing:br,duration:1000,easing:function(t){return t}});},1000);}
-    addEventListener(&#x27;resize&#x27;,function(){map.resize();});setInterval(function(){var c=map.getCanvas();if(c&amp;&amp;Math.abs(c.clientWidth-innerWidth)&gt;4)map.resize();},700);
-    map.on(&#x27;load&#x27;,function(){ try{ map.setLight({anchor:&#x27;map&#x27;,position:[1.4,210,35],color:&#x27;#FFF4DC&#x27;,intensity:.45}); }catch(e){} });
-    var view3d=true, tb={addEventListener:function(){}};
-    tb.addEventListener(&#x27;click&#x27;,function(){view3d=!view3d; tb.textContent=view3d?&#x27;Flat map&#x27;:&#x27;3D view&#x27;;
-      map.easeTo({pitch:view3d?55:0,bearing:view3d?-35:0,duration:900}); if(map.getLayer(&#x27;building-3d&#x27;))map.setLayoutProperty(&#x27;building-3d&#x27;,&#x27;visibility&#x27;,view3d?&#x27;visible&#x27;:&#x27;none&#x27;);});
-    map.on(&#x27;styleimagemissing&#x27;,function(e){if(e.id===&#x27;hatch&#x27;&amp;&amp;!map.hasImage(&#x27;hatch&#x27;))map.addImage(&#x27;hatch&#x27;,hatchImage());});
-
-    var el=document.createElement(&#x27;div&#x27;); el.className=&#x27;pin&#x27;;
-    el.innerHTML=&#x27;&lt;span class=&quot;tag&quot;&gt;&lt;svg width=&quot;16&quot; height=&quot;16&quot; viewBox=&quot;0 0 100 100&quot; aria-hidden=&quot;true&quot;&gt;&lt;path d=&quot;M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z&quot; fill=&quot;#1F4FE0&quot;/&gt;&lt;path d=&quot;M50 10 L61 30 L39 30 Z&quot; fill=&quot;#FF5A3C&quot;/&gt;&lt;/svg&gt;&lt;span&gt;Your business&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;stem&quot;&gt;&lt;/span&gt;&lt;span class=&quot;base&quot;&gt;&lt;/span&gt;&#x27;;
-    new maplibregl.Marker({element:el,anchor:&#x27;bottom&#x27;}).setLngLat(center).addTo(map);
-
-    map.once(&#x27;idle&#x27;,function(){ startWalking(map,center); });
-  }).catch(function(err){
-    document.getElementById(&#x27;map&#x27;).innerHTML=&#x27;&lt;p style=&quot;padding:120px 24px;font-family:Georgia,serif;text-align:center&quot;&gt;The map could not load. Please refresh.&lt;/p&gt;&#x27;;
-    console.error(err);
-  });
-
-  /* ---------- footsteps on real streets ---------- */
-  function startWalking(map,home){
-    var _d=function(){return {style:{},textContent:&#x27;&#x27;,innerHTML:&#x27;&#x27;,value:0,addEventListener:function(){},setAttribute:function(){}}};[&#x27;hist&#x27;,&#x27;head&#x27;,&#x27;scrub&#x27;,&#x27;whenDay&#x27;,&#x27;whenTime&#x27;,&#x27;qkToday&#x27;,&#x27;play&#x27;,&#x27;playIcon&#x27;,&#x27;qk&#x27;,&#x27;aiNamed&#x27;].forEach(function(id){if(!document.getElementById(id)){window[&#x27;_&#x27;+id]=_d();}});var $=function(id){return document.getElementById(id)||window[&#x27;_&#x27;+id];};
-    
-    var cv=document.getElementById(&#x27;steps&#x27;), ctx=cv.getContext(&#x27;2d&#x27;), dpr=1;
-    function size(){dpr=window.devicePixelRatio||1;cv.width=Math.round(innerWidth*dpr);cv.height=Math.round(innerHeight*dpr);cv.style.width=innerWidth+&#x27;px&#x27;;cv.style.height=innerHeight+&#x27;px&#x27;;}
-    addEventListener(&#x27;resize&#x27;,size); size();
-
-    var nodes={}, keys=[], shops=[];
-    function key(c){return c[0].toFixed(5)+&#x27;,&#x27;+c[1].toFixed(5);}
-    function build(){
-      nodes={}; keys=[];
-      var WALK=[&#x27;minor&#x27;,&#x27;service&#x27;,&#x27;tertiary&#x27;,&#x27;secondary&#x27;,&#x27;primary&#x27;,&#x27;path&#x27;,&#x27;track&#x27;,&#x27;pedestrian&#x27;,&#x27;footway&#x27;,&#x27;living_street&#x27;,&#x27;residential&#x27;,&#x27;unclassified&#x27;];
-      map.querySourceFeatures(&#x27;openmaptiles&#x27;,{sourceLayer:&#x27;transportation&#x27;}).forEach(function(f){
-        if(WALK.indexOf(f.properties.class)&lt;0) return;
-        var lines=f.geometry.type===&#x27;LineString&#x27;?[f.geometry.coordinates]:f.geometry.type===&#x27;MultiLineString&#x27;?f.geometry.coordinates:[];
-        lines.forEach(function(line){
-          for(var i=0;i&lt;line.length;i++){var k=key(line[i]); if(!nodes[k]){nodes[k]={c:line[i],adj:{}};keys.push(k);}
-            if(i&gt;0){var p=key(line[i-1]); if(p!==k){nodes[k].adj[p]=1;nodes[p].adj[k]=1;}}}
-        });
-      });
-      shops=[];
-      map.querySourceFeatures(&#x27;openmaptiles&#x27;,{sourceLayer:&#x27;poi&#x27;}).forEach(function(f){
-        if(f.geometry.type===&#x27;Point&#x27;&amp;&amp;f.properties.name) shops.push({name:f.properties.name,c:f.geometry.coordinates});
-      });
-      shops.push({name:&#x27;Your business&#x27;,c:home,q:true});
-    }
-    function dist(a,b){var dx=(a[0]-b[0])*Math.cos(b[1]*Math.PI/180),dy=a[1]-b[1];return Math.sqrt(dx*dx+dy*dy)*111320;}
-    function nearest(c){var best=null,bd=1e9;keys.forEach(function(k){var d=dist(nodes[k].c,c);if(d&lt;bd){bd=d;best=k;}});return best;}
-    function route(a,b){var prev={},seen={},q=[a];seen[a]=1;
-      while(q.length){var u=q.shift();if(u===b)break;for(var v in nodes[u].adj){if(!seen[v]){seen[v]=1;prev[v]=u;q.push(v);}}}
-      if(!seen[b])return null; var p=[b];while(p[0]!==a)p.unshift(prev[p[0]]);return p.map(function(k){return nodes[k].c;});}
-
-    var NAMES=[&#x27;Dana&#x27;,&#x27;Marco&#x27;,&#x27;Mrs. Alvarez&#x27;,&#x27;Priya&#x27;,&#x27;Tom&#x27;,&#x27;Jess&#x27;,&#x27;Kenji&#x27;,&#x27;Ana&#x27;,&#x27;Mr. Reyes&#x27;,&#x27;Lola&#x27;,&#x27;Sam&#x27;,&#x27;Grace&#x27;,&#x27;Omar&#x27;,&#x27;Nina&#x27;,&#x27;Bea&#x27;,&#x27;Luis&#x27;];
-    var ROLES=[&#x27;lunch break&#x27;,&#x27;regular&#x27;,&#x27;new in town&#x27;,&#x27;after the gym&#x27;,&#x27;picking up dinner&#x27;,&#x27;first visit&#x27;];
-    function pick(a){return a[Math.floor(Math.random()*a.length)];}
-    var walkers=[], prints=[], qk=0, qkEl=$(&#x27;qk&#x27;), now=0, last=0, nextSpawn=0;
-    /* ---- simulated week: minutes since Monday 00:00 ---- */
-    var simMin=9*60, playing=!still, MIN_PER_SEC=12, qkToday=0, lastDay=0;
-    var DAYS=[&#x27;Monday&#x27;,&#x27;Tuesday&#x27;,&#x27;Wednesday&#x27;,&#x27;Thursday&#x27;,&#x27;Friday&#x27;,&#x27;Saturday&#x27;,&#x27;Sunday&#x27;], DATES=[&#x27;Nov 9&#x27;,&#x27;Nov 10&#x27;,&#x27;Nov 11&#x27;,&#x27;Nov 12&#x27;,&#x27;Nov 13&#x27;,&#x27;Nov 14&#x27;,&#x27;Nov 15&#x27;];
-    function bump(h,c,w){return Math.exp(-Math.pow((h-c)/w,2));}
-    function streetBusy(m){ // whole block, 0..1, guessed from typical strip-center patterns
-      var d=Math.floor(m/1440)%7, h=(m%1440)/60;
-      var v=.05+.55*bump(h,12.5,1.6)+.65*bump(h,18,2)+.25*bump(h,9,1.5)+.2*bump(h,15,1.5);
-      if(h&lt;6||h&gt;23)v=.02;
-      return Math.min(1,v*(d===5?1.25:d===6?.85:1));
-    }
-    function aiBusy(m){ // people ask AI a little before they show up
-      return Math.min(1,streetBusy(m+50)*.85+.06*bump(((m%1440)/60),22,2));
-    }
-    function quiktoxBusy(m){ // med spa: lunch and after-work weekdays, Saturday late morning, closed Sunday
-      var d=Math.floor(m/1440)%7, h=(m%1440)/60;
-      if(d===6||h&lt;9||h&gt;19.5) return 0;
-      if(d===5) return h&gt;17?0:.9*bump(h,12,2.2);
-      return .85*bump(h,12.3,1.1)+1*bump(h,17.3,1.2)+.25*bump(h,10,1);
-    }
-    var hist=$(&#x27;hist&#x27;), head=$(&#x27;head&#x27;), scrub=$(&#x27;scrub&#x27;),
-        whenDay=$(&#x27;whenDay&#x27;), whenTime=$(&#x27;whenTime&#x27;), qkTodayEl=$(&#x27;qkToday&#x27;),
-        night=document.getElementById(&#x27;night&#x27;), playBtn=$(&#x27;play&#x27;), playIcon=$(&#x27;playIcon&#x27;);
-    (function(){var s=&#x27;&#x27;;for(var i=0;i&lt;168;i++){var m=i*60+30,b=streetBusy(m),q=quiktoxBusy(m);
-      s+=&#x27;&lt;rect x=&quot;&#x27;+(i+.1)+&#x27;&quot; y=&quot;&#x27;+(28-b*26)+&#x27;&quot; width=&quot;.8&quot; height=&quot;&#x27;+(b*26)+&#x27;&quot; fill=&quot;#4A2F1B&quot; opacity=&quot;.28&quot;/&gt;&#x27;;
-}
-      var pl=&#x27;&#x27;;for(var j=0;j&lt;=168*2;j++){var mm=j*30;pl+=(j?&#x27; &#x27;:&#x27;&#x27;)+(j/2).toFixed(1)+&#x27;,&#x27;+(28-aiBusy(mm)*25).toFixed(1);}
-      s+=&#x27;&lt;polyline points=&quot;&#x27;+pl+&#x27;&quot; fill=&quot;none&quot; stroke=&quot;#1F4FE0&quot; stroke-width=&quot;1.1&quot; vector-effect=&quot;non-scaling-stroke&quot;/&gt;&#x27;;
-      for(var d=1;d&lt;7;d++)s+=&#x27;&lt;line x1=&quot;&#x27;+(d*24)+&#x27;&quot; x2=&quot;&#x27;+(d*24)+&#x27;&quot; y1=&quot;0&quot; y2=&quot;28&quot; stroke=&quot;#4A2F1B&quot; stroke-width=&quot;.4&quot; opacity=&quot;.5&quot;/&gt;&#x27;;
-      hist.innerHTML=s;})();
-    function fmt(m){var h=Math.floor((m%1440)/60),mm=Math.floor(m%60),ap=h&lt;12?&#x27;AM&#x27;:&#x27;PM&#x27;,hh=h%12||12;return hh+&#x27;:&#x27;+(mm&lt;10?&#x27;0&#x27;:&#x27;&#x27;)+mm+&#x27; &#x27;+ap;}
-    function label(b){return b&gt;.75?&#x27;very busy&#x27;:b&gt;.45?&#x27;busy&#x27;:b&gt;.2?&#x27;a little busy&#x27;:b&gt;.06?&#x27;quiet&#x27;:&#x27;closed for the night&#x27;;}
-    function syncClock(){
-      var d=Math.floor(simMin/1440)%7;
-      if(d!==lastDay){lastDay=d;qkToday=0;qkTodayEl.textContent=&#x27;0&#x27;;}
-      whenDay.textContent=DAYS[d]+&#x27;, &#x27;+DATES[d];
-      whenTime.textContent=fmt(simMin)+&#x27; · &#x27;+label(streetBusy(simMin));
-      head.style.left=&#x27;calc(&#x27;+(simMin/10080*100)+&#x27;% - 1px)&#x27;; scrub.value=Math.round(simMin);
-      var h=(simMin%1440)/60, dark=h&lt;6||h&gt;20.5?.42:h&lt;7.5?(7.5-h)/1.5*.42:h&gt;18.5?(h-18.5)/2*.42:0; night.style.opacity=dark;
-    }
-    scrub.addEventListener(&#x27;input&#x27;,function(){simMin=+scrub.value;syncClock();});
-    playBtn.addEventListener(&#x27;click&#x27;,function(){playing=!playing;playBtn.setAttribute(&#x27;aria-label&#x27;,playing?&#x27;Pause&#x27;:&#x27;Play&#x27;);
-      playIcon.innerHTML=playing?&#x27;&lt;rect x=&quot;2&quot; y=&quot;1&quot; width=&quot;3.5&quot; height=&quot;12&quot; fill=&quot;currentColor&quot;/&gt;&lt;rect x=&quot;8.5&quot; y=&quot;1&quot; width=&quot;3.5&quot; height=&quot;12&quot; fill=&quot;currentColor&quot;/&gt;&#x27;:&#x27;&lt;path d=&quot;M3 1 L12 7 L3 13z&quot; fill=&quot;currentColor&quot;/&gt;&#x27;;});
-    syncClock();
-
-    function spawn(target,why){
-      if(keys.length&lt;5) return;
-      var b=map.getBounds(), inView=keys.filter(function(k){return b.contains(nodes[k].c);});
-      if(inView.length&lt;5) return;
-      var ai=false, others=shops.slice(0,-1).length?shops.slice(0,-1):shops;
-      var shop=target||(quiktoxBusy(simMin)&gt;0&amp;&amp;Math.random()&lt;.08?shops[shops.length-1]:pick(others));
-      var start=pick(inView), end=nearest(shop.c), pts=route(start,end);
-      if(!pts||pts.length&lt;2){ // no connected route: wander along the streets
-        pts=[nodes[start].c]; var k=start;
-        for(var i=0;i&lt;30;i++){var nb=Object.keys(nodes[k].adj); if(!nb.length)break; k=pick(nb); pts.push(nodes[k].c);} shop=null;
-      } else pts.push(shop.c);
-      walkers.push({ai:ai,shop:shop,path:pts,seg:0,t:0,dist:0,lastStep:0,foot:1,speed:ai?40:18,
-        label:pick(NAMES)+(why?&#x27;, &#x27;+why:(Math.random()&lt;.4?&#x27;, &#x27;+pick(ROLES):&#x27;&#x27;))});
-    }
-    function step(w,dt){
-      var a=w.path[w.seg], b=w.path[w.seg+1]; if(!b) return false;
-      var L=Math.max(.01,dist(a,b)); w.t+=w.speed*dt/L; w.dist+=w.speed*dt;
-      while(w.t&gt;=1){w.seg++;w.t-=1;a=w.path[w.seg];b=w.path[w.seg+1];if(!b)return false;}
-      w.c=[a[0]+(b[0]-a[0])*w.t,a[1]+(b[1]-a[1])*w.t];
-      var gap=w.ai?6:4.5;
-      if(w.dist-w.lastStep&gt;=gap){w.lastStep=w.dist;w.foot*=-1;prints.push({c:w.c.slice(),a:a,b:b,ai:w.ai,foot:w.foot,born:now});}
-      return true;
-    }
-    var pings=[], hourKey=-1, hourAsked=0, hourNamed=0, aiNamedEl=$(&#x27;aiNamed&#x27;), nextAsk=0;
-    var ENGINES=[&#x27;ChatGPT&#x27;,&#x27;Gemini&#x27;,&#x27;Perplexity&#x27;,&#x27;Claude&#x27;,&#x27;Google AI&#x27;];
-    var MEDQ=[&#x27;best one near me&#x27;,&#x27;open now near me?&#x27;,&#x27;who has the best reviews?&#x27;,&#x27;top rated nearby&#x27;,&#x27;who can see me today?&#x27;,&#x27;best in town&#x27;];
-    var OTHERQ=[&#x27;coffee near me&#x27;,&#x27;lunch spot nearby&#x27;,&#x27;pet store open now?&#x27;,&#x27;quick dinner nearby&#x27;,&#x27;acai near me&#x27;];
-    function ask(){
-      var hk=Math.floor(simMin/60); if(hk!==hourKey){hourKey=hk;hourAsked=0;hourNamed=0;}
-      var med=Math.random()&lt;.55, eng=pick(ENGINES);
-      if(med){
-        hourAsked++;
-        var open=quiktoxBusy(simMin)&gt;0, named=open&amp;&amp;Math.random()&lt;.42;
-        if(named){hourNamed++;
-          var q=shops[shops.length-1]; pings.push({c:q.c,born:now,text:eng+&#x27;: &#x27;+pick(MEDQ),hit:true});
-          if(Math.random()&lt;.6) queue.push({at:now+.7+Math.random()*1.3,shop:q,why:&#x27;asked &#x27;+eng});
-        } else {
-          var b=map.getBounds(), side=Math.floor(Math.random()*4), r=Math.random();
-          var c=side===0?[b.getWest()+(b.getEast()-b.getWest())*r,b.getNorth()]:side===1?[b.getEast(),b.getSouth()+(b.getNorth()-b.getSouth())*r]:side===2?[b.getWest()+(b.getEast()-b.getWest())*r,b.getSouth()]:[b.getWest(),b.getSouth()+(b.getNorth()-b.getSouth())*r];
-          pings.push({c:c,born:now,text:eng+&#x27; named someone else&#x27;,hit:false,edge:true});
-        }
-        aiNamedEl.textContent=hourNamed+&#x27; of &#x27;+hourAsked;
-      } else {
-        var others=shops.slice(0,-1); if(!others.length) return; var s=pick(others);
-        pings.push({c:s.c,born:now,text:eng+&#x27;: &#x27;+pick(OTHERQ),hit:true,minor:true});
-        if(Math.random()&lt;.5) queue.push({at:now+.7+Math.random()*1.3,shop:s,why:&#x27;asked &#x27;+eng});
-      }
-    }
-    function drawPings(){
-      ctx.font=&#x27;600 11.5px &quot;Hanken Grotesk&quot;, Arial, sans-serif&#x27;; ctx.textAlign=&#x27;center&#x27;; ctx.textBaseline=&#x27;middle&#x27;;
-      pings.forEach(function(p){
-        var age=now-p.born, life=3.2; if(age&gt;life)return; var P=map.project(p.c), k=age/life;
-        if(p.edge){P.x=Math.max(70,Math.min(innerWidth-70,P.x));P.y=Math.max(150,Math.min(innerHeight-230,P.y));}
-        ctx.save(); ctx.globalAlpha=Math.min(1,(1-k)*1.6);
-        ctx.strokeStyle=BLUE; ctx.lineWidth=2; ctx.setLineDash(p.hit?[]:[3,3]);
-        ctx.beginPath(); ctx.arc(P.x,P.y,6+k*(p.minor?18:30),0,Math.PI*2); ctx.stroke(); ctx.setLineDash([]);
-        if(!p.minor||age&lt;1.6){ ctx.fillStyle=p.hit?BLUE:&#x27;rgba(31,79,224,.45)&#x27;; ctx.beginPath(); ctx.arc(P.x,P.y,4,0,Math.PI*2); ctx.fill();
-          var tw=ctx.measureText(p.text).width, bw=tw+16, bx=Math.max(8,Math.min(innerWidth-8-bw,P.x-bw/2)), by=P.y+12;
-          ctx.fillStyle=&#x27;#FFFFFF&#x27;; ctx.strokeStyle=p.hit?BLUE:&#x27;rgba(31,79,224,.5)&#x27;; ctx.lineWidth=1.1;
-          ctx.beginPath(); if(ctx.roundRect)ctx.roundRect(bx,by,bw,20,10); else ctx.rect(bx,by,bw,20); ctx.fill(); ctx.stroke();
-          ctx.fillStyle=p.hit?BLUE:&#x27;rgba(31,79,224,.75)&#x27;; ctx.fillText(p.text,bx+bw/2,by+10.5); }
-        ctx.restore();
-      });
-    }
-    function draw(){
-      ctx.setTransform(1,0,0,1,0,0); ctx.clearRect(0,0,cv.width,cv.height); ctx.setTransform(dpr,0,0,dpr,0,0);
-      var z=map.getZoom(), s=Math.max(.35,Math.min(.9,.7*Math.pow(2,z-18)));
-      prints.forEach(function(p){
-        var age=now-p.born, al=Math.max(0,.85*(1-age/8)); if(al&lt;=0)return;
-        var P=map.project(p.c), A=map.project(p.a), B=map.project(p.b), ang=Math.atan2(B.y-A.y,B.x-A.x);
-        ctx.save(); ctx.translate(P.x+Math.cos(ang+Math.PI/2)*4*s*p.foot,P.y+Math.sin(ang+Math.PI/2)*4*s*p.foot); ctx.rotate(ang+Math.PI/2); ctx.scale(s,s); ctx.globalAlpha=al;
-        if(p.ai){ctx.fillStyle=BLUE;ctx.beginPath();ctx.arc(0,0,2.6,0,Math.PI*2);ctx.fill();}
-        else{ctx.fillStyle=INK;ctx.scale(p.foot,1);ctx.beginPath();ctx.ellipse(0,-2.2,2.5,3.6,.12,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(.3,3.4,1.8,2,0,0,Math.PI*2);ctx.fill();}
-        ctx.restore();
-      });
-      ctx.font=&#x27;italic 13px &quot;IM Fell English&quot;, Georgia, serif&#x27;; ctx.textAlign=&#x27;center&#x27;; ctx.textBaseline=&#x27;middle&#x27;;
-      walkers.forEach(function(w){ if(!w.c)return; var P=map.project(w.c);
-        var tw=ctx.measureText(w.label).width, bw=tw+18, bx=P.x-bw/2, by=P.y-28;
-        ctx.fillStyle=w.ai?&#x27;#FFFFFF&#x27;:&#x27;#F6EBD0&#x27;; ctx.strokeStyle=w.ai?BLUE:INK; ctx.lineWidth=1.1;
-        ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(bx+bw,by);ctx.lineTo(bx+bw-6,by+10);ctx.lineTo(bx+bw,by+20);ctx.lineTo(bx,by+20);ctx.lineTo(bx+6,by+10);ctx.closePath();ctx.fill();ctx.stroke();
-        ctx.fillStyle=w.ai?BLUE:INK; ctx.fillText(w.label,bx+bw/2,by+10.5);
-      });
-      drawPings();
-    }
-    var queue=[], prevSim=simMin, simClock=0, speed=1;
-    function frame(t){
-      t/=1000; var dt=Math.min(.05,t-(last||t)); last=t;
-      if(playing){simMin=(simMin+dt*MIN_PER_SEC)%10080;syncClock();}
-      // how fast simulated time moved this frame (dragging the timeline = fast-forward)
-      var moved=Math.abs(simMin-prevSim); if(moved&gt;5040)moved=10080-moved; prevSim=simMin;
-      var want=dt&gt;0?Math.max(1,Math.min(40,moved/(dt*MIN_PER_SEC))):1;
-      speed+= (want-speed)*(want&gt;speed?.5:.08);           // ramp up fast, settle back gently
-      var sdt=dt*speed; simClock+=sdt; now=simClock;
-      var busy=streetBusy(simMin), cap=Math.round((2+busy*14)*(speed&gt;3?2.2:1));
-      for(var n=0;n&lt;6&amp;&amp;now&gt;nextSpawn&amp;&amp;walkers.length&lt;cap&amp;&amp;busy&gt;.03;n++){spawn();nextSpawn=now+(.6+Math.random()*.9)/Math.max(.08,busy);}
-      if(busy&lt;=.03) nextSpawn=now;
-      var ab=aiBusy(simMin);
-      for(var m=0;m&lt;6&amp;&amp;now&gt;nextAsk&amp;&amp;ab&gt;.04;m++){ask();nextAsk=now+(.6+Math.random()*1.2)/Math.max(.1,ab);}
-      if(ab&lt;=.04) nextAsk=now;
-      queue=queue.filter(function(q){ if(now&gt;=q.at){spawn(q.shop,q.why);return false;} return true; });
-      pings=pings.filter(function(p){return now-p.born&lt;3.4;});
-      walkers=walkers.filter(function(w){var ok=step(w,sdt); if(!ok&amp;&amp;w.shop&amp;&amp;w.shop.q){qk++;qkEl.textContent=qk;qkToday++;qkTodayEl.textContent=qkToday;} return ok;});
-      prints=prints.filter(function(p){return now-p.born&lt;8;});
-      draw(); requestAnimationFrame(frame);
-    }
-    build(); map.on(&#x27;moveend&#x27;,build);
-    if(still){ for(var i=0;i&lt;6;i++)spawn(); walkers.forEach(function(w){for(var j=0;j&lt;120;j++){now+=.05;step(w,.05);}}); prints.forEach(function(p){p.born=now-2;}); draw(); map.on(&#x27;move&#x27;,draw); }
-    else requestAnimationFrame(frame);
-  }
-})();
-&lt;/script&gt;
-&lt;/html&gt;
-"></iframe><div class="fd-veil" aria-hidden="true"></div>
+<iframe class="fd-map" title="Animated street map" aria-hidden="true" tabindex="-1" loading="eager" src="map-bg.html"></iframe><div class="fd-veil" aria-hidden="true"></div>
 <section class="fd fdm">
 
 <h2 class="fd-h">See what AI says about <em>your&nbsp;business</em>.</h2>
@@ -1206,11 +869,11 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
 <circle class="dot1" cx="196" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="209" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="222" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="235" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="248" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="261" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="274" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="287" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="300" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="313" cy="100.0" r="3.2" fill="var(--rule)"/><circle cx="196" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="209" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="222" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="235" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="248" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="261" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="274" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="287" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="300" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="313" cy="110.5" r="3.2" fill="var(--rule)"/><circle cx="196" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="209" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="222" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="235" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="248" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="261" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="274" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="287" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="300" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="313" cy="121.0" r="3.2" fill="var(--rule)"/><circle cx="196" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="209" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="222" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="235" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="248" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="261" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="274" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="287" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="300" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="313" cy="131.5" r="3.2" fill="var(--rule)"/><circle cx="196" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="209" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="222" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="235" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="248" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="261" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="274" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="287" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="300" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="313" cy="142.0" r="3.2" fill="var(--rule)"/><circle cx="196" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="209" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="222" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="235" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="248" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="261" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="274" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="287" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="300" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="313" cy="152.5" r="3.2" fill="var(--rule)"/><circle cx="196" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="209" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="222" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="235" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="248" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="261" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="274" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="287" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="300" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="313" cy="163.0" r="3.2" fill="var(--rule)"/><circle cx="196" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="209" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="222" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="235" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="248" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="261" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="274" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="287" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="300" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="313" cy="173.5" r="3.2" fill="var(--rule)"/><circle cx="196" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="209" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="222" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="235" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="248" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="261" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="274" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="287" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="300" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="313" cy="184.0" r="3.2" fill="var(--rule)"/><circle cx="196" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="209" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="222" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="235" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="248" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="261" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="274" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="287" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="300" cy="194.5" r="3.2" fill="var(--rule)"/><circle cx="313" cy="194.5" r="3.2" fill="var(--rule)"/>
 <text class="mt" x="192" y="214">Now: 1 answer out of 100.</text></g>
 </svg>
-<p class="sub" style="margin-top:10px">Search used to be a list. Even at spot 7 or 9, some customers still found you. AI gives one answer, picked from about a hundred local options. If that answer isn't you, the customer never sees&nbsp;you.</p></section>
+<p class="sub" style="margin-top:10px">Search used to be a list. Even at spot 7 or 9, some customers still found you. AI gives one answer, picked from about a hundred local options. If that answer isn't you, the customer never sees&nbsp;you.</p><div class="asm asl"><div><b>0.9%</b><span>of searchers become customers</span><small>Out of every 1,000 searchers, about 60 get you as AI's answer and about 9 of them book (6% × 15% =&nbsp;0.9%)</small></div><div><b>$199</b><span>revenue per new customer</span><small>Your average first purchase</small></div></div></section>
 <section class="card"><p class="k">Prompts you'd start showing up for</p>
-<div class="asm"><div><b>0.9%</b><span>of searchers become customers</span><small>Out of every 1,000 searchers, about 60 get you as AI's answer and about 9 of them book (6% × 15% =&nbsp;0.9%)</small></div><div><b>$199</b><span>revenue per new customer</span><small>Your average first purchase</small></div></div>
+
 <ul class="mth"><li><p class="mq">Best Botox in Newport Beach</p><p class="mm"><span class="g"><span>1,600 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>14.4 customers</span><i>×</i><span>$199</span></span></p><p class="mr">$2,866<small>/mo</small></p></li><li><p class="mq">Where to get Botox in Orange County</p><p class="mm"><span class="g"><span>1,000 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>9.0 customers</span><i>×</i><span>$199</span></span></p><p class="mr">$1,791<small>/mo</small></p></li><li><p class="mq">Botox in Costa Mesa</p><p class="mm"><span class="g"><span>260 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>2.3 customers</span><i>×</i><span>$199</span></span></p><p class="mr">$466<small>/mo</small></p></li><li><p class="mq">Botox in Santa Ana</p><p class="mm"><span class="g"><span>100 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>0.9 customers</span><i>×</i><span>$199</span></span></p><p class="mr">$179<small>/mo</small></p></li><li><p class="mq">Best med spa in Costa Mesa</p><p class="mm"><span class="g"><span>90 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>0.8 customers</span><i>×</i><span>$199</span></span></p><p class="mr">$161<small>/mo</small></p></li></ul>
-<div class="mtot"><p class="mm"><span class="g"><span>3,050 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>27 customers</span><i>×</i><span>$199</span></span></p><p class="mtr"><span>Added revenue</span><b>$5,463<small>/mo</small></b></p></div>
+<div class="mtot"><p class="mm"><span class="g"><span>3,050 searches</span><i>×</i><span>0.9%</span></span><span class="g"><i>=</i><span>27 customers</span><i>×</i><span>$199</span></span></p><p class="mtr"><span>Added revenue</span><b>$5,463<small>/mo</small></b><button class="cta coral go mtcta" data-go="experts" type="button">See who does the work &rarr;</button></p></div>
 <p class="src">Volume: Semrush US, Nov 2026. Reach and booking rates are estimates. First visits only; repeat visits and memberships not counted, so this is the conservative case.</p></section>
 <button class="cta go" data-go="experts">See who does the work</button>
 </main>
@@ -1640,6 +1303,28 @@ window.SPK=(v,up)=>{const W=88,H=30,mn=Math.min(...v),mx=Math.max(...v),pad=(mx-
 window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;r>>>=0;r^=r>>17;r^=r<<5;r>>>=0;return r/4294967296};
  let w=[0];for(let i=1;i<n;i++)w.push(w[i-1]+(rnd()-.5)*2);const end=w[n-1];
  const span=Math.max(Math.abs(b-a),a*.15);return w.map((z,i)=>{const t=i/(n-1);return Math.max(1,a+(b-a)*(t*t*.4+t*.6)+(z-end*t)*span*vol)})};
+window.SHAPE=(a,b,seed,n=40)=>{let r=(seed*2654435761)>>>0||7;const rnd=()=>{r^=r<<13;r>>>=0;r^=r>>17;r^=r<<5;r>>>=0;return r/4294967296};
+ const k=Math.floor(rnd()*6),vol=.03+rnd()*.09,d=b-a,o=[];let w=0;
+ for(let i=0;i<n;i++){const t=i/(n-1);let f;
+  if(k===0)f=t;                                   // steady climb
+  else if(k===1)f=t<.45?t*.15:.07+(t-.45)/.55*.93; // flat, then takes off
+  else if(k===2)f=Math.min(1,Math.floor(t*4.2)/4+t*.05); // stair steps
+  else if(k===3)f=t<.25?-t*.6:(-.15+(t-.25)/.75*1.15);  // dips, then recovers
+  else if(k===4)f=1-Math.pow(1-t,2.6);            // fast start, plateau
+  else f=t*t;                                     // slow, accelerating
+  w+=(rnd()-.5)*2;o.push(a+d*f+w*Math.abs(d)*vol*.35)}
+ o[0]=a;o[n-1]=b;return o.map(v=>Math.max(1,v))};
+window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[0]).join('').slice(0,2).toUpperCase(),one=ini[0];
+ const P=[['#1F4FE0','#E8EEFF'],['#0E8A5F','#E3F5EC'],['#D97757','#FCEDE6'],['#6F4FD8','#EFEAFD'],['#B5822A','#FAF1E0'],['#137C8B','#E1F4F6'],['#C2410C','#FDEBE3'],['#0B1A2E','#E9ECF1'],['#BE185D','#FCE7F1'],['#4D7C0F','#EEF6E2']];
+ let h=0;for(const c of name)h=(h*31+c.charCodeAt(0))>>>0;h=(h+seed)>>>0;const [c,bg]=P[h%P.length],st=(h>>4)%7;let g;
+ if(st===0)g='<rect width="24" height="24" rx="6" fill="'+c+'"/><text x="12" y="16" text-anchor="middle" font-size="10" font-weight="800" fill="#fff" font-family="var(--fu)">'+ini+'</text>';
+ else if(st===1)g='<circle cx="12" cy="12" r="12" fill="'+bg+'"/><circle cx="12" cy="12" r="11" fill="none" stroke="'+c+'" stroke-width="1.2"/><text x="12" y="16.5" text-anchor="middle" font-size="12" font-style="italic" fill="'+c+'" font-family="Georgia,serif">'+one+'</text>';
+ else if(st===2)g='<rect width="24" height="24" rx="12" fill="'+bg+'"/><path d="M12 5c4 3 5 7 0 14C7 12 8 8 12 5z" fill="'+c+'"/>';
+ else if(st===3)g='<path d="M12 1l10 5.5v11L12 23 2 17.5v-11z" fill="'+c+'"/><text x="12" y="15.5" text-anchor="middle" font-size="9" font-weight="800" fill="#fff" font-family="var(--fu)">'+ini+'</text>';
+ else if(st===4)g='<rect width="24" height="24" rx="5" fill="'+bg+'"/><circle cx="9" cy="12" r="5" fill="'+c+'" opacity=".85"/><circle cx="15" cy="12" r="5" fill="'+c+'" opacity=".5"/>';
+ else if(st===5)g='<defs><linearGradient id="lg'+h+'" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="'+c+'"/><stop offset="1" stop-color="'+bg+'"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#lg'+h+')"/><path d="M4 18l5-6 4 4 3-3 4 5z" fill="#fff" opacity=".85"/><circle cx="17" cy="7" r="2.2" fill="#fff" opacity=".9"/>';
+ else g='<rect width="24" height="24" rx="6" fill="#fff" stroke="'+c+'" stroke-width="1.2"/><text x="12" y="16" text-anchor="middle" font-size="11" font-weight="700" letter-spacing="-.5" fill="'+c+'" font-family="Georgia,serif">'+ini.toLowerCase()+'</text>';
+ return '<svg class="lgx" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">'+g+'</svg>'};
 /* --- specialist marketplace (Amazon-style filters) --- */
 (()=>{const spark=(v,c)=>{const mn=Math.min(...v),mx=Math.max(...v),W=72,H=26,x=i=>i*W/(v.length-1),y=n=>H-2-(n-mn)/((mx-mn)||1)*(H-4);return '<svg class="spk" viewBox="0 0 '+W+' '+H+'" aria-hidden="true"><path d="'+v.map((n,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(n).toFixed(1)).join(' ')+'" fill="none" stroke="'+c+'" stroke-width="1.8" stroke-linejoin="round"/></svg>'};
  const gen=(a,b,seed)=>{let r=seed,o=[];for(let i=0;i<12;i++){r=(r*9301+49297)%233280;o.push(a+(b-a)*i/11+((r/233280)-.5)*Math.abs(b-a)*.25)}o[0]=a;o[11]=b;return o};
@@ -1698,9 +1383,9 @@ window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;
  const mono=(n,c)=>'<span class="mono" style="--m:'+c+'">'+esc(n.split(/[\s&]+/).filter(Boolean).map(w=>w[0]).join('').slice(0,2).toUpperCase())+'</span>';
  const AVK={steve:'steve',lp:'leo',bd:'bd',sg:'sg',ns:'ns',ap:'ap',km:'km',od:'od'};
  function card(s){if(s.custom)return '<article class="bh cu"><div class="bh-p"><div class="bh-h">'+mono(s.name,'#8B95A5')+'<div><h3>'+esc(s.name)+'</h3><p class="bh-sub">Your current agency</p></div></div><p class="bh-v none">0 verified customers</p><p class="cu-n">Not on the registry, so there are no verified results to compare.</p></div><div class="bh-s empty"><span>No tracked client results</span></div></article>';
-  const tiles=s.pf.map((p,i)=>{const d=p[2]-p[1];return '<div class="bh-t"><div class="bh-tc">'+SPK(WALK(p[1],p[2],p[1]*97+i*31+p[2],40),d>=0)+'</div><div class="bh-tn">'+mono(p[0],['#1F4FE0','#0E8A5F','#D97757','#6F4FD8','#B5822A','#137C8B','#C2410C','#0B1A2E'][i%8])+'<span><b>'+esc(p[0])+'</b><small>AI Score '+p[1]+' → '+p[2]+'</small></span><em class="'+(d>=0?'up':'dn')+'">'+(d>=0?'+':'−')+Math.abs(d)+'</em></div></div>'}).join('');
+  const tiles=s.pf.map((p,i)=>{const d=p[2]-p[1];return '<div class="bh-t"><div class="bh-tc">'+SPK(SHAPE(p[1],p[2],p[1]*97+i*31+p[2]*13+s.name.length*7),d>=0)+'</div><div class="bh-tn">'+LG(p[0],i)+'<span><b>'+esc(p[0])+'</b><small>Score '+p[1]+' → '+p[2]+'</small></span><em class="'+(d>=0?'up':'dn')+'">'+(d>=0?'+':'−')+Math.abs(d)+'</em></div></div>'}).join('');
   return '<article class="bh'+(s.id==='steve'?' best5':'')+'"><div class="bh-p">'+(s.id==='steve'?'<p class="bm4">Best verified results</p>':'')+
-  '<div class="bh-h">'+(AVK[s.id]?'<img class="av4" src="'+AV[AVK[s.id]]+'" alt="">':mono(s.name,['#1F4FE0','#0E8A5F','#D97757','#6F4FD8','#B5822A','#137C8B','#C2410C','#0B1A2E'][s.name.length%8]).replace('class="mono"','class="mono lgm"'))+'<div><h3>'+esc(s.name)+(s.id==='steve'?' <span class="vfb">✓</span>':'')+'</h3><p class="bh-sub">'+esc(s.sub)+'</p></div></div>'+
+  '<div class="bh-h">'+(AVK[s.id]?'<img class="av4" src="'+AV[AVK[s.id]]+'" alt="">':LG(s.name,3).replace('class="lgx"','class="lgx lgb"'))+'<div><h3>'+esc(s.name)+(s.id==='steve'?' <span class="vfb">✓</span>':'')+'</h3><p class="bh-sub">'+esc(s.sub)+'</p></div></div>'+
   '<p class="rtg"><span class="stars">'+stars(s.rate)+'</span><b>'+s.rate.toFixed(1)+'</b><span>('+s.rv+' reviews)</span></p>'+
   '<p class="bh-v"><b>'+s.cl+(s.id==='steve'?'+':'')+'</b> verified customers</p>'+
   '<div class="bh-m"><span><b class="'+(s.ret>=90?'up':'dn')+'">'+s.ret+'%</b> retention</span><span><b class="'+(s.lift>=0?'up':'dn')+'">'+(s.lift>=0?'+':'−')+Math.abs(s.lift)+'</b> avg AI Score</span><span><b>'+s.resp+'%</b> response</span></div>'+
@@ -1744,7 +1429,7 @@ window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
  const C={status:['22/100 AI Score','15 issues found','See what to fix','solution'],solution:['15 issues','One team fixes all of them','See what it\'s worth','value'],value:['$5,463/mo','Estimated added revenue','See who does the work','experts'],experts:['Steve Lee','Best verified results','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
- window.CTA=id=>{document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
+ window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Start for '+M(p)+'/mo';const pb=document.getElementById('paybtn');B.href=pb&&pb.getAttribute('href')!=='#lead'?pb.href:'#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
  setInterval(()=>{const cur=(location.hash||'#find').slice(1);if(cur==='proposal')CTA('proposal')},30000);
