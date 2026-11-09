@@ -693,6 +693,7 @@ body.hasbar .w{padding-bottom:110px}
 }
 .hero-art{position:absolute;right:-10px;top:-6px;width:min(52%,260px);height:auto;mix-blend-mode:multiply;opacity:.9;pointer-events:none;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);mask-image:radial-gradient(closest-side,#000 55%,transparent 100%)}
 .hero .sc-ax{position:relative;z-index:1}
+@media (min-width:960px){body.onexp .ctab{display:none}body.hasbar.onexp .w{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -821,7 +822,7 @@ body.hasbar .w{padding-bottom:110px}
 <form class="hw-f card" id="agf" hidden><input id="agn" type="text" placeholder="Agency name" aria-label="Agency name"><button class="cta" type="submit">Add to compare</button></form>
 <div class="az-bar"><button class="az-fb" id="azopen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Filters<span id="azn"></span></button>
 <label class="az-sort"><span>Sort by</span><select id="azsort"><option value="f">Featured</option><option value="r">Best verified results</option><option value="c">Most verified customers</option><option value="s">Highest rated</option></select></label></div>
-<div class="az-q" id="azq"></div>
+<div class="az-q" id="azq" hidden></div>
 <div class="az-applied" id="azap"></div>
 <p class="smeta"><span id="scount"></span></p>
 <div class="az-sheet" id="azsheet" hidden role="dialog" aria-modal="true" aria-label="Filters"><div class="az-in"><div class="az-h"><b>Filters</b><button type="button" class="az-x" id="azclose" aria-label="Close">✕</button></div><div class="az-body" id="azbody"></div><div class="az-ft"><button type="button" class="az-clr" id="azclr">Clear all</button><button type="button" class="az-go" id="azgo">Show results</button></div></div></div>
@@ -1338,7 +1339,7 @@ window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
  const C={status:['22/100 AI Score','15 issues found','See what to fix','solution'],solution:['15 issues','One team fixes all of them','See what it\'s worth','value'],value:['$5,463/mo','Estimated added revenue','See who does the work','experts'],experts:['Steve Lee','Best verified results','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
- window.CTA=id=>{document.body.classList.toggle('onprop',id==='proposal');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
+ window.CTA=id=>{document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Start for '+M(p)+'/mo';const pb=document.getElementById('paybtn');B.href=pb&&pb.getAttribute('href')!=='#lead'?pb.href:'#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
  setInterval(()=>{const cur=(location.hash||'#find').slice(1);if(cur==='proposal')CTA('proposal')},30000);
