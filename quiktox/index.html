@@ -693,7 +693,9 @@ body.hasbar .w{padding-bottom:110px}
 }
 .hero-art{position:absolute;right:-10px;top:-6px;width:min(52%,260px);height:auto;mix-blend-mode:multiply;opacity:.9;pointer-events:none;-webkit-mask-image:radial-gradient(closest-side,#000 55%,transparent 100%);mask-image:radial-gradient(closest-side,#000 55%,transparent 100%)}
 .hero .sc-ax{position:relative;z-index:1}
-@media (min-width:960px){body.onexp .ctab{display:none}body.hasbar.onexp .w{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important}}
+@media (min-width:960px){body.onexp .ctab{display:none}body.hasbar.onst .w,body.hasbar.onexp .w{max-width:1140px!important;margin-left:auto!important;margin-right:auto!important}}
+.gr2{font:800 11px var(--fu);color:var(--blue);margin-left:2px}
+@media (min-width:960px){body.onst .ctab{display:none}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -1339,7 +1341,7 @@ window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
  const C={status:['22/100 AI Score','15 issues found','See what to fix','solution'],solution:['15 issues','One team fixes all of them','See what it\'s worth','value'],value:['$5,463/mo','Estimated added revenue','See who does the work','experts'],experts:['Steve Lee','Best verified results','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
- window.CTA=id=>{document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
+ window.CTA=id=>{document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Start for '+M(p)+'/mo';const pb=document.getElementById('paybtn');B.href=pb&&pb.getAttribute('href')!=='#lead'?pb.href:'#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
  setInterval(()=>{const cur=(location.hash||'#find').slice(1);if(cur==='proposal')CTA('proposal')},30000);
@@ -1428,19 +1430,19 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;co
  const types=[...new Set(rows.map(r=>r.t))];
  function draw(){const m=rows.filter(hit).length;
   const D=DK.matches;let h='<p class="psum">You show up for <b>'+m+'</b> prompts</p>';
-  if(D){h='<div class="pfd"><p class="psum">You show up for <b>'+m+'</b> prompts</p><label>Type<select id="pf-t">'+['All',...types].map(f=>'<option'+(f===filt?' selected':'')+' value="'+f+'">'+(f==='All'?'All types':f)+'</option>').join('')+'</select></label><label>Platform<select id="pf-p"><option value="all">All platforms</option>'+PL.map((p,i)=>'<option value="'+i+'"'+(String(i)===plat?' selected':'')+'>'+p[1]+'</option>').join('')+'</select></label><label>Sort<select id="pf-s"><option value="v"'+(sortk==='v'?' selected':'')+'>Search volume</option><option value="n"'+(sortk==='n'?' selected':'')+'>Most platforms</option><option value="g"'+(sortk==='g'?' selected':'')+'>Google rank</option></select></label></div>'}
+  if(D){h='<div class="pfd"><p class="psum">You show up for <b>'+m+'</b> prompts</p><label>Type<select id="pf-t">'+['All',...types].map(f=>'<option'+(f===filt?' selected':'')+' value="'+f+'">'+(f==='All'?'All types':f)+'</option>').join('')+'</select></label><label>Platform<select id="pf-p"><option value="all">All platforms</option>'+PL.map((p,i)=>'<option value="'+i+'"'+(String(i)===plat?' selected':'')+'>'+p[1]+'</option>').join('')+'</select></label><label>Sort<select id="pf-s"><option value="v"'+(sortk==='v'?' selected':'')+'>Search volume</option><option value="n"'+(sortk==='n'?' selected':'')+'>Most platforms</option></select></label></div>'}
   else if(rows.length>LIM){h+='<div class="pch">'+['All',...types].map(f=>'<button class="pc'+(f===filt?' on':'')+'" data-f="'+f+'">'+(f==='Informational'?'Info':f)+'</button>').join('')+'</div>'}
   top.innerHTML=h;
-  document.getElementById('pcg').innerHTML=D?'<col style="width:30%"><col style="width:13%"><col style="width:10%"><col style="width:10%"><col style="width:37%">':'<col style="width:44%"><col style="width:15%"><col style="width:41%">';
-  document.getElementById('pth').innerHTML=D?'<tr><th scope="col">Prompt</th><th scope="col">Type</th><th scope="col" class="r">Searches/mo</th><th scope="col" class="r">Google rank</th><th scope="col">Mentioned by</th></tr>':'<tr><th scope="col">Prompt</th><th scope="col" class="r" style="padding-right:8px">Vol</th><th scope="col">Mentioned by</th></tr>';
+  document.getElementById('pcg').innerHTML=D?'<col style="width:34%"><col style="width:14%"><col style="width:12%"><col style="width:40%">':'<col style="width:44%"><col style="width:15%"><col style="width:41%">';
+  document.getElementById('pth').innerHTML=D?'<tr><th scope="col">Prompt</th><th scope="col">Type</th><th scope="col" class="r">Searches/mo</th><th scope="col" style="padding-left:24px">Mentioned by</th></tr>':'<tr><th scope="col">Prompt</th><th scope="col" class="r" style="padding-right:8px">Vol</th><th scope="col">Mentioned by</th></tr>';
   let list=rows.filter(hit).filter(r=>filt==='All'||r.t===filt).filter(r=>plat==='all'||r.r[+plat]===1);
   if(D&&sortk!=='v'){list=[...list].sort(sortk==='n'?(a,b)=>b.r.filter(v=>v===1).length-a.r.filter(v=>v===1).length:(a,b)=>(parseInt((a.g||'#99').slice(1)))-(parseInt((b.g||'#99').slice(1))))}
   const show=open?list:list.slice(0,LIM);
   tb.innerHTML=show.map(r=>{const hits=r.r.map((v,ci)=>v===1?ci:-1).filter(i=>i>=0);
    const av=hits.map(ci=>'<button class="avb" data-r="'+r.i+'" data-c="'+ci+'" aria-label="'+PL[ci][1]+'"><i class="av3" style="--c:'+PL[ci][3]+'">'+PL[ci][2]+'</i>'+(ci===0?'<small>'+r.g+'</small>':'')+'</button>').join('');
    const lab=!scn(r)?'<span class="mby u">Not scanned</span>':hits.length?av:'<span class="mby n">None</span>';
-   if(D){const names=hits.map(ci=>'<button class="pn2" data-r="'+r.i+'" data-c="'+ci+'"><i class="lg3">'+LOGO[PL[ci][0]]+'</i>'+PL[ci][1]+'</button>').join('');
-    return '<tr><th scope="row">'+esc(r.q)+'</th><td><span class="ty2 '+tc[r.t]+'">'+(r.t==='Informational'?'Info':r.t)+'</span></td><td class="r">'+r.v.toLocaleString()+'</td><td class="r">'+(r.g?'<b class="gr">'+r.g+'</b>':'<span class="mut">Not ranked</span>')+'</td><td><div class="pnw">'+(names||'<span class="mut">None</span>')+'</div></td></tr>'}
+   if(D){const names=hits.map(ci=>'<button class="pn2" data-r="'+r.i+'" data-c="'+ci+'"><i class="lg3">'+LOGO[PL[ci][0]]+'</i>'+PL[ci][1]+(ci===0&&r.g?' <b class="gr2">'+r.g+'</b>':'')+'</button>').join('');
+    return '<tr><th scope="row">'+esc(r.q)+'</th><td><span class="ty2 '+tc[r.t]+'">'+(r.t==='Informational'?'Info':r.t)+'</span></td><td class="r">'+r.v.toLocaleString()+'</td><td style="padding-left:24px"><div class="pnw">'+(names||'<span class="mut">None</span>')+'</div></td></tr>'}
    return '<tr><th scope="row">'+esc(r.q)+'<span class="ty '+tc[r.t]+'">'+(r.t==='Informational'?'Info':r.t)+'</span></th><td class="r">'+r.v.toLocaleString()+'</td><td><div class="pa">'+lab+'</div></td></tr>'}).join('')||'<tr><td colspan="5" class="pempty">No prompts here</td></tr>';
   more.hidden=list.length<=LIM;more.textContent=open?'Show fewer':'Show all '+list.length+' prompts'}
  top.addEventListener('click',e=>{const c=e.target.closest('.pc');if(!c)return;filt=c.dataset.f;open=false;draw()});
