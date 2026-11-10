@@ -170,7 +170,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       center[0]=center[0]+spot[0]/kx;center[1]=lat0+spot[1]/ky;mk.setLngLat(center);map.jumpTo({center:center});
       var h=3.6,dx=h/kx,dy=h/ky,ring=[[center[0]-dx,center[1]-dy],[center[0]+dx,center[1]-dy],[center[0]+dx,center[1]+dy],[center[0]-dx,center[1]+dy],[center[0]-dx,center[1]-dy]];
       map.addSource('home-bld',{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[ring]}}});
-      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#FF5A3C','fill-extrusion-opacity':1,'fill-extrusion-height':4.5,'fill-extrusion-vertical-gradient':true}});
+      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#1F4FE0','fill-extrusion-opacity':1,'fill-extrusion-height':4.5,'fill-extrusion-vertical-gradient':true}});
     }
     map.once('idle',go);map.once('load',function(){setTimeout(go,700);});setTimeout(go,5000);
   }).catch(function(err){
