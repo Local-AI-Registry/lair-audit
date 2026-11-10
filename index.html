@@ -1017,6 +1017,34 @@ th.r .sth{flex-direction:row}
 .gapc-k{margin:0;font:600 12px var(--fb);color:var(--ink)}.gapc-n{margin:4px 0 0;font:800 34px/1 var(--fu);color:var(--red)}.gapc-n small{font:600 14px var(--fu);color:var(--muted)}
 .gapc-s{margin:4px 0 12px;font:500 11.5px var(--fb);color:var(--muted)}.gapc .cta{width:100%;padding:12px 14px!important;font-size:14px!important}
 .sctip b small.est{margin-left:6px;padding:1px 6px;border-radius:999px;background:rgba(255,255,255,.15);font:600 10px var(--fb);color:#fff}
+#s-solution.sol2:not([hidden]){display:block!important;max-width:1280px}
+.sol2>*{grid-column:auto!important;grid-row:auto!important}
+.solh{display:grid;gap:14px;align-items:end;margin-bottom:18px}.solh .sh{margin:0}
+.solcta{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px!important;margin:0!important}
+.solcta b{display:block;font:800 26px/1 var(--fu);color:var(--ink)}.solcta div>span{font:500 13px var(--fb);color:var(--muted)}
+.solcta .cta{width:auto;flex:none;margin:0;padding:13px 20px}
+.inb{display:grid;gap:16px;align-items:start}
+.inb .card{margin:0!important}
+.inb-r{display:grid;gap:16px}
+.sol2 .rsol{position:static!important}
+.qx-ic.cst{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:4px;background:var(--ink);color:#fff;font:800 11px/1 var(--fu)}
+.qx-cost .qx-s{color:var(--ink)!important;font-weight:700}
+.qx-cost{border-top:6px solid var(--bg)}
+.vend-ok{margin:0 0 14px;padding:12px 14px;border-radius:12px;background:var(--ok-t);font:500 14px/1.5 var(--fb);color:var(--body)}.vend-ok b{color:var(--ink)}
+.vcmp{display:flex;justify-content:space-between;align-items:baseline;margin-top:12px;padding:12px 14px;border-radius:12px;background:var(--blue-t);font:700 14px var(--fu);color:var(--ink)}.vcmp b{font:800 20px var(--fu);color:var(--blue)}.vcmp small{font-size:12px;color:var(--muted)}
+.qxp-x{flex:none;width:32px;height:32px;border:0;border-radius:50%;background:var(--bg);font:400 20px/1 var(--fb);color:var(--ink);cursor:pointer}
+.sol2 .qx-pane[hidden]{display:none!important}
+@media (min-width:960px){
+.solh{grid-template-columns:minmax(0,1fr) auto}
+.inb{grid-template-columns:minmax(260px,1fr) minmax(0,3fr)}
+.inb-r{position:sticky;top:80px}
+.sol2 .qx-pane{display:block;max-height:calc(100vh - 110px);overflow:auto;padding:22px 26px!important}
+.sol2 .qx-btn{padding-top:12px!important;padding-bottom:12px!important}
+.sol2 .qx-c{font-size:14px!important}.sol2 .qx-s{font-size:12px!important}
+.solmob{display:none!important}
+.sol2 .qx-pane .stage{max-width:620px;margin-left:auto;margin-right:auto}
+}
+@media (max-width:959px){.sol2 .qx-pane{display:none!important}.solcta .cta{padding:12px 14px;font-size:14px}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -1086,12 +1114,11 @@ th.r .sth{flex-direction:row}
 </main>
 
 <!-- SOLUTION -->
-<main class="scr" id="s-solution" hidden>
-<div class="sh"><p class="k">Audit results</p><h2 class="sh2">We ran 13&nbsp;checks</h2><p class="sub" id="qx-sum"></p></div>
-<section class="card qx-card"><div class="qx-hd"><span>Check</span><span>Result</span></div><div id="qx-list"></div></section>
-
-<details class="card vend"><summary class="vsum"><span>Cost analysis <em>(traditional agencies)</em></span><i>+</i></summary><p class="vend-t">How most businesses would cover these 13 fixes today: a separate vendor for each&nbsp;piece.</p>
-<table class="vt"><thead><tr><th>Who you'd hire</th><th>Fixes</th><th>Per month</th></tr></thead><tbody>
+<main class="scr sol2" id="s-solution" hidden>
+<div class="solh"><div class="sh"><p class="k">Audit results</p><h2 class="sh2">We ran a <span id="qx-n">17</span>-point&nbsp;check</h2><p class="sub" id="qx-sum"></p></div><div class="card solcta"><div><b><span id="qx-bad">13</span>/<span id="qx-tot">17</span></b><span>need fixing</span></div><button class="cta coral go" data-go="value" type="button">See if it's worth fixing &rarr;</button></div></div>
+<div class="inb"><section class="card qx-card"><div class="qx-hd"><span>Check</span><span>Result</span></div><div id="qx-list"></div></section>
+<div class="inb-r"><section class="card qx-pane" id="qxp" hidden aria-live="polite"></section><section class="card rsol"><p class="k" style="color:var(--ok)">What makes us different</p><h3 class="h3s">A verified record AI can&nbsp;trust</h3><p class="sub" style="margin:0 0 6px">Agencies post content and hope AI notices. We verify your license, services and hours, publish them as one public record on the Local AI Registry, and connect it to your website, Google profile and reviews. AI checks the facts against your record before it names you. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div></div>
+<template id="vendt"><p class="vend-t vend-ok"><b>Don't worry, Local AI Registry doesn't cost this much.</b> This is what it would cost to hire a separate vendor for each fix. We do all of it as one team, on one plan, for a fraction of the&nbsp;cost.</p><table class="vt"><thead><tr><th>Who you'd hire</th><th>Fixes</th><th>Per month</th></tr></thead><tbody>
 <tr><td><b>AEO agency</b><small class="vex">e.g. Profound</small></td><td>Record, answer pages, AI monitoring</td><td>$5,000</td></tr>
 <tr><td><b>PR firm</b><small class="vex">e.g. OtterPR</small></td><td>Press, best-of guides, mentions</td><td>$3,000</td></tr>
 <tr><td><b>Video agency</b></td><td>YouTube explainer videos</td><td>$2,500</td></tr>
@@ -1103,10 +1130,8 @@ th.r .sth{flex-direction:row}
 <tr><td><b>Content writer</b><small class="vex">e.g. Copy.ai</small></td><td>Monthly articles</td><td>$250</td></tr>
 </tbody>
 <tfoot><tr><td colspan="2"><b>9 vendors to hire and manage</b></td><td><b class="vtot">$14,250</b></td></tr></tfoot></table>
-<p class="src">Typical monthly costs. Example companies are for reference only; their actual pricing&nbsp;varies.</p></details>
-<div class="fxr"><section class="card fxcta"><div><b>13 issues</b><span>One team fixes all of them</span></div><button class="cta coral go" data-go="value" type="button">See what it's worth &rarr;</button></section><section class="card qx-pane" id="qxp" aria-live="polite"></section>
-<section class="card rsol"><p class="k" style="color:var(--ok)">What makes us different</p><h3 class="h3s">A verified record AI can&nbsp;trust</h3><p class="sub" style="margin:0 0 6px">Agencies post content and hope AI notices. We verify your license, services and hours, publish them as one public record on the Local AI Registry, and connect it to your website, Google profile and reviews. AI checks the facts against your record before it names you. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div>
-<button class="cta go" data-go="value">See what it's worth</button>
+<p class="src">Typical monthly costs. Example companies are for reference only; their actual pricing&nbsp;varies.</p><div class="vcmp"><span>Local AI Registry, one team</span><b>$5,000<small>/mo</small></b></div></template>
+<button class="cta go solmob" data-go="value">See if it's worth fixing</button>
 </main>
 
 <!-- VALUE -->
@@ -1671,7 +1696,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('.sc [data-go]');
  const end=Date.parse('2026-12-01T07:59:00Z');
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
- const C={status:['19/100 AI Score','13 issues found','See what to fix','solution'],solution:['13 issues','One team fixes all of them','See what it\'s worth','value'],value:['$15,106/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
+ const C={status:['19/100 AI Score','13 issues found','See what to fix','solution'],solution:['13 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$15,106/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
  window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Get started';B.href='#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
@@ -1870,15 +1895,17 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  const ICO={'Failed':'tri','Not found':'tri','Weak':'sq','Needs work':'sq','Passed':'dot','Not checked':'ring'};
  const TONE={'tri':'bad','sq':'warn','dot':'ok','ring':'na'};
  const bad=CT.filter(e=>ICO[e.st]==='tri'||ICO[e.st]==='sq').length,ok=CT.filter(e=>e.st==='Passed').length,na=CT.filter(e=>e.st==='Not checked').length;
- document.getElementById('qx-sum').innerHTML=bad+' need fixing &middot; '+ok+'&nbsp;passed';
+ document.getElementById('qx-sum').innerHTML=bad+' need fixing &middot; '+ok+'&nbsp;passed';{const g=i=>document.getElementById(i);if(g('qx-n'))g('qx-n').textContent=CT.length;if(g('qx-tot'))g('qx-tot').textContent=CT.length;if(g('qx-bad'))g('qx-bad').textContent=bad}
  const ev=e=>{if(!EVS[e.c])return '';return '<div class="qx-ev2"><div class="stage">'+EVS[e.c]()+'</div></div>'};
  document.getElementById('qx-list').innerHTML=CT.map((e,k)=>{const ic=ICO[e.st],t=TONE[ic];return '<div class="qx-row"><button class="qx-btn" aria-expanded="false"><span class="qx-ic '+ic+'"></span><span class="qx-c">'+esc(e.c)+'</span><span class="qx-s '+t+'">'+e.st+'</span><span class="qx-ch">›</span></button><div class="qx-body" hidden><p class="qx-i">'+nb(e.i)+'</p>'+ev(e)+'<div class="qx-fix"><p class="qx-l good">How we fix it</p><p class="qx-d">'+nb(e.d)+'</p><div class="stage">'+ILL[e.t]()+'</div>'+(e.u?'<a class="qx-ex" href="'+e.u+'" target="_blank" rel="noopener">See example ↗</a>':'')+'</div></div></div>'}).join('');
+ {const vt=document.getElementById('vendt'),ql=document.getElementById('qx-list');if(vt&&ql){const tot=(vt.content.querySelector('.vtot')||{}).textContent||'';ql.insertAdjacentHTML('beforeend','<div class="qx-row qx-cost"><button class="qx-btn" aria-expanded="false"><span class="qx-ic cst">$</span><span class="qx-c">Cost analysis</span><span class="qx-s">'+tot+'/mo</span><span class="qx-ch">›</span></button><div class="qx-body" hidden>'+vt.innerHTML+'</div></div>')}}
  const QD=matchMedia('(min-width:960px)'),pane=document.getElementById('qxp'),rs=document.querySelector('#s-solution .rsol'),qc=document.querySelector('#s-solution .qx-card');
- if(rs&&qc)qc.after(rs);
+
  const pick=b=>{document.querySelectorAll('.qx-btn').forEach(x=>{x.classList.toggle('sel',x===b);x.setAttribute('aria-expanded',x===b?'true':'false');x.nextElementSibling.hidden=true});
-  const row=b.closest('.qx-row');pane.innerHTML='<div class="qxp-h">'+b.querySelector('.qx-ic').outerHTML+'<h3>'+b.querySelector('.qx-c').textContent+'</h3>'+b.querySelector('.qx-s').outerHTML+'</div>'+row.querySelector('.qx-body').innerHTML};
+  const row=b.closest('.qx-row');pane.innerHTML='<div class="qxp-h">'+b.querySelector('.qx-ic').outerHTML+'<h3>'+b.querySelector('.qx-c').textContent+'</h3>'+b.querySelector('.qx-s').outerHTML+'<button type="button" class="qxp-x" aria-label="Close">×</button></div>'+row.querySelector('.qx-body').innerHTML;pane.hidden=false;if(rs)rs.hidden=true;pane.scrollTop=0};
+ const unpick=()=>{pane.hidden=true;pane.innerHTML='';if(rs)rs.hidden=false;document.querySelectorAll('.qx-btn.sel').forEach(x=>x.classList.remove('sel'))};pane.addEventListener('click',e=>{if(e.target.closest('.qxp-x'))unpick()});
  document.querySelectorAll('.qx-btn').forEach(b=>b.addEventListener('click',()=>{if(QD.matches){pick(b);return}const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.nextElementSibling.hidden=o}));
- const init=()=>{if(QD.matches){const f=document.querySelector('.qx-btn');if(f)pick(f)}else{pane.innerHTML='';document.querySelectorAll('.qx-btn.sel').forEach(x=>x.classList.remove('sel'))}};QD.addEventListener('change',init);init();
+ const init=()=>{unpick()};QD.addEventListener('change',init);init();
 })();
 })();
 </script>
