@@ -61,7 +61,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
 .pin .tag small{font-size:10.5px;font-weight:600;opacity:.85}
 .pin .stem{width:2px;height:16px;background:var(--blue)}
 .pin .base{width:12px;height:12px;border-radius:999px;background:var(--blue);border:2.5px solid #FFFFFF;box-shadow:0 0 0 1.5px var(--blue)}
-.maplibregl-ctrl-attrib{display:none}
+.maplibregl-ctrl-attrib{font-size:9px!important;opacity:.6;background:rgba(255,255,255,.6)!important}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(46,158,98,.5)}70%{box-shadow:0 0 0 7px rgba(46,158,98,0)}100%{box-shadow:0 0 0 0 rgba(46,158,98,0)}}
 @media (prefers-reduced-motion:reduce){.dot{animation:none}}
 </style>
@@ -137,7 +137,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
   function ready(){return new Promise(function(res){(function chk(){var el=document.getElementById('map');if(el&&el.clientWidth>50&&el.clientHeight>50)res();else setTimeout(chk,150);})();});}
   Promise.all([ready(),fetch('https://tiles.openfreemap.org/styles/liberty').then(function(r){return r.json();}),Promise.resolve(FALLBACK)]).then(function(res){
     res.shift();var style=parchment(res[0]), center=res[1];
-    var map=new maplibregl.Map({container:'map',style:style,center:center,zoom:18.2,pitch:55,bearing:-35,maxPitch:65,maxZoom:20,minZoom:14,attributionControl:false,interactive:false});
+    var map=new maplibregl.Map({container:'map',style:style,center:center,zoom:18.2,pitch:55,bearing:-35,maxPitch:65,maxZoom:20,minZoom:14,attributionControl:{compact:true},interactive:false});
     var BOT=function(){return Math.round(innerHeight*(innerWidth<720?.52:.42));};map.setPadding({top:0,bottom:BOT(),left:0,right:0});addEventListener('resize',function(){map.setPadding({top:0,bottom:BOT(),left:0,right:0});});
     if(!still){var br=-35;setInterval(function(){br-=.45;map.easeTo({bearing:br,duration:1000,easing:function(t){return t}});},1000);}
     addEventListener('resize',function(){map.resize();});setInterval(function(){var c=map.getCanvas();if(c&&Math.abs(c.clientWidth-innerWidth)>4)map.resize();},700);
