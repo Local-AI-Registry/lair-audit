@@ -1203,6 +1203,9 @@ body{overflow-x:clip}
 #s-experts .sc-b .btn{width:100%!important;justify-content:center!important;text-align:center!important;text-decoration:none!important;border:1.5px solid var(--ink)!important;border-radius:999px!important;padding:11px 16px!important;font:700 14px var(--fu)!important}
 #s-experts .sc-b .btn:hover{background:var(--ink)!important;color:#fff!important}
 /* mobile fixes */
+.kwm-l{display:none!important}
+.cg2 .cty-m{display:none}
+@media (max-width:600px){.cg2 td.cty{display:none}.cg2 .cty-m{display:table;margin-top:5px}}
 body.onfind .top{display:none!important}.fd .fd-logo{display:block;height:20px;width:auto;margin:0 auto 14px;color:var(--ink)}
 #s-experts .az-bar,#s-experts .az-bar *{white-space:nowrap}
 .g9s{margin:12px 0 8px;font:500 13px var(--fb);color:var(--muted)}.g9s b{font:800 15px var(--fu)}.g9s b.up{color:var(--ok)}.g9s b.dn{color:var(--red)}
@@ -1345,7 +1348,7 @@ strong.bw{font-weight:800;color:var(--ink)}
 <!-- COMPETITOR GAPS -->
 <section class="card cgc"><div class="wsh2"><div><h3 class="cgt">Competitors</h3><p class="cgsub">Searches where AI names them, not&nbsp;you.</p></div><div class="gap2" title="Sum of the monthly searches in this table"><div><b id="gapn">--</b><span>searches a month you're&nbsp;missing</span></div><button class="cta coral go" data-go="solution" type="button">Close the gap &rarr;</button></div></div>
 <div class="pfd cgf" id="cgf"></div>
-<table class="pt4 cg cg2"><colgroup><col style="width:38%"><col style="width:22%"><col style="width:40%"></colgroup><thead id="cgh"></thead><tbody id="cgb"></tbody></table>
+<table class="pt4 cg cg2"><colgroup><col style="width:32%"><col style="width:14%"><col style="width:20%"><col style="width:34%"></colgroup><thead id="cgh"></thead><tbody id="cgb"></tbody></table>
 </section>
 
 
@@ -2117,14 +2120,14 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
 (()=>{const CR=[{"q": "botox newport beach", "t": "Commercial", "v": 1900, "c": ["Iconique", "Solaire", "LYVE"]}, {"q": "dysport near me", "t": "Transaction", "v": 1600, "c": ["MySkin", "Belle Vie", "Solaire"]}, {"q": "best med spa costa mesa", "t": "Commercial", "v": 880, "c": ["MySkin", "Iconique", "Belle Vie"]}, {"q": "lip filler costa mesa", "t": "Commercial", "v": 590, "c": ["MySkin", "Beauty With A Mission"]}, {"q": "best botox injector orange county", "t": "Commercial", "v": 480, "c": ["Iconique", "TIEV", "MySkin"]}, {"q": "botox for men near me", "t": "Transaction", "v": 390, "c": ["Gold Coast", "LYVE"]}, {"q": "med spa open sunday near me", "t": "Transaction", "v": 320, "c": ["Beauty With A Mission", "Gold Coast"]}, {"q": "lip flip costa mesa", "t": "Commercial", "v": 210, "c": ["TIEV", "Belle Vie"]}],tc={Transaction:'tt-t',Commercial:'tt-c',Informational:'tt-i',Brand:'tt-b'},CH='<svg class="chv" viewBox="0 0 10 14" aria-hidden="true"><path class="u" d="M5 1L9 5H1z"/><path class="d" d="M5 13L1 9h8z"/></svg>';
  let ft='All',fc='All',sk='v',sd=-1;const types=[...new Set(CR.map(r=>r.t))],comps=[...new Set(CR.flatMap(r=>r.c))].sort();
  const F=document.getElementById('cgf'),H=document.getElementById('cgh'),B=document.getElementById('cgb');if(!F)return;{const gn=document.getElementById('gapn');if(gn)gn.textContent=CR.reduce((a,r)=>a+r.v,0).toLocaleString('en-US')}
- const CDK=matchMedia('(min-width:960px)');function FB(){F.innerHTML=CDK.matches?'<p class="psum"><b>'+CR.length+'</b>&nbsp;searches</p><label>Type<select id="cg-t"><option value="All">All types</option>'+types.map(t=>'<option>'+t+'</option>').join('')+'</select></label><label>Competitor<select id="cg-c"><option value="All">All competitors</option>'+comps.map(c=>'<option>'+esc(c)+'</option>').join('')+'</select></label>':'<p class="psum"><b>'+CR.length+'</b>&nbsp;searches</p><div class="pch">'+['All',...types].map(t=>'<button type="button" class="pc'+(t===ft?' on':'')+'" data-f="'+t+'">'+(t==='Informational'?'Info':t)+'</button>').join('')+'</div>';}FB();CDK.addEventListener('change',()=>{fc='All';FB();draw()});
+ const CDK=matchMedia('(min-width:960px)');function FB(){F.hidden=true;return;F.innerHTML=CDK.matches?'<p class="psum"><b>'+CR.length+'</b>&nbsp;searches</p><label>Type<select id="cg-t"><option value="All">All types</option>'+types.map(t=>'<option>'+t+'</option>').join('')+'</select></label><label>Competitor<select id="cg-c"><option value="All">All competitors</option>'+comps.map(c=>'<option>'+esc(c)+'</option>').join('')+'</select></label>':'<p class="psum"><b>'+CR.length+'</b>&nbsp;searches</p><div class="pch">'+['All',...types].map(t=>'<button type="button" class="pc'+(t===ft?' on':'')+'" data-f="'+t+'">'+(t==='Informational'?'Info':t)+'</button>').join('')+'</div>';}FB();CDK.addEventListener('change',()=>{fc='All';FB();draw()});
  F.addEventListener('click',e=>{const b=e.target.closest('.pc');if(!b)return;ft=b.dataset.f;FB();draw()});
  const SH=(k,l,c)=>'<th scope="col"'+(c?' class="'+c+'"':'')+' aria-sort="'+(sk===k?(sd>0?'ascending':'descending'):'none')+'"><button type="button" class="sth'+(sk===k?(sd>0?' asc':' desc'):'')+'" data-k="'+k+'">'+l+CH+'</button></th>';
  let ALLC=false;const CM=document.createElement('button');CM.type='button';CM.className='pmore';B.closest('table').after(CM);CM.addEventListener('click',()=>{ALLC=!ALLC;draw()});
- function draw(){H.innerHTML='<tr>'+SH('q','Prompt')+SH('v','Searches/mo','r')+'<th scope="col">Who AI names instead</th></tr>';
+ function draw(){H.innerHTML='<tr>'+SH('q','Prompt')+SH('t','Type')+SH('v','Searches/mo','r')+'<th scope="col">Who AI names instead</th></tr>';
   const kf={q:r=>r.q,t:r=>r.t,v:r=>r.v}[sk];const L=CR.filter(r=>(ft==='All'||r.t===ft)&&(fc==='All'||r.c.includes(fc))).sort((a,b)=>{const x=kf(a),y=kf(b);return (x>y?1:x<y?-1:0)*sd});
-  F.querySelector('.psum').innerHTML='<b>'+L.length+'</b>&nbsp;searches';const mv=Math.max(...CR.map(r=>r.v)),V=ALLC?L:L.slice(0,6);
-  B.innerHTML=V.map(r=>'<tr><th scope="row">'+esc(r.q)+'</th><td class="r"><span class="cvb"><i style="width:'+Math.max(6,r.v/mv*100)+'%"></i></span>'+r.v.toLocaleString()+'</td><td><span class="cnm">'+r.c.map(n=>'<span'+(n===fc?' class="on"':'')+'>'+esc(n).replace(/ /g,'&nbsp;')+'</span>').join('<i>·</i>')+'</span></td></tr>').join('')||'<tr><td colspan="3" class="pempty">No searches match</td></tr>';
+  const mv=Math.max(...CR.map(r=>r.v)),V=ALLC?L:L.slice(0,6);
+  const TL=t=>t==='Informational'?'Info':t;B.innerHTML=V.map(r=>'<tr><th scope="row">'+esc(r.q)+'<span class="ty2 cty-m '+tc[r.t]+'">'+TL(r.t)+'</span></th><td class="cty"><span class="ty2 '+tc[r.t]+'">'+TL(r.t)+'</span></td><td class="r"><span class="cvb"><i style="width:'+Math.max(6,r.v/mv*100)+'%"></i></span>'+r.v.toLocaleString()+'</td><td><span class="cnm">'+r.c.map(n=>'<span'+(n===fc?' class="on"':'')+'>'+esc(n).replace(/ /g,'&nbsp;')+'</span>').join('<i>·</i>')+'</span></td></tr>').join('')||'<tr><td colspan="4" class="pempty">No searches match</td></tr>';
   CM.hidden=L.length<=6;CM.textContent=ALLC?'Show fewer':'Show all '+L.length+' searches'}
  F.addEventListener('change',e=>{if(e.target.id==='cg-t')ft=e.target.value;if(e.target.id==='cg-c')fc=e.target.value;draw()});
  H.addEventListener('click',e=>{const b=e.target.closest('.sth');if(!b)return;const k=b.dataset.k;if(sk===k)sd=-sd;else{sk=k;sd=k==='v'?-1:1}draw()});
