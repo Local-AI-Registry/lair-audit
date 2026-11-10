@@ -875,6 +875,16 @@ th.r .sth{flex-direction:row}
 @media (min-width:960px){#s-experts #splist{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
 @media (min-width:1240px){#s-experts #splist{grid-template-columns:repeat(4,minmax(0,1fr))!important}}
 .svcr .lgt{width:60px;height:40px;flex:none}.svcr .lgt img{width:48px;height:24px}
+.qx-pane{display:none}
+@media (min-width:960px){
+#s-solution>.fxr{position:sticky!important;top:80px!important;align-self:start!important;gap:14px!important}
+.qx-pane{display:block;padding:22px 24px!important;max-height:calc(100vh - 200px);overflow:auto;overscroll-behavior:contain}
+.qxp-h{display:flex;align-items:center;gap:10px;margin:0 0 12px;padding-bottom:12px;border-bottom:1px solid var(--rule)}
+.qxp-h h3{margin:0;flex:1;font:800 20px/1.2 var(--fu);color:var(--ink)}
+.qx-btn.sel{background:var(--blue-t)}.qx-btn.sel .qx-ch{transform:none;color:var(--blue)}
+#s-solution .qx-btn .qx-ch{transform:none}
+#s-solution>.rsol{grid-column:1;grid-row:3}
+}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -964,7 +974,7 @@ th.r .sth{flex-direction:row}
 </tbody>
 <tfoot><tr><td colspan="2"><b>9 vendors to hire and manage</b></td><td><b class="vtot">$14,250</b></td></tr></tfoot></table>
 <p class="src">Typical monthly costs. Example companies are for reference only; their actual pricing&nbsp;varies.</p></details>
-<div class="fxr"><section class="card fxcta"><div><b>13 issues</b><span>One team fixes all of them</span></div><button class="cta coral go" data-go="value" type="button">See what it's worth &rarr;</button></section>
+<div class="fxr"><section class="card fxcta"><div><b>13 issues</b><span>One team fixes all of them</span></div><button class="cta coral go" data-go="value" type="button">See what it's worth &rarr;</button></section><section class="card qx-pane" id="qxp" aria-live="polite"></section>
 <section class="card rsol"><p class="k" style="color:var(--ok)">What makes us different</p><h3 class="h3s">A verified record AI can&nbsp;trust</h3><p class="sub" style="margin:0 0 6px">Agencies post content and hope AI notices. We verify your license, services and hours, publish them as one public record on the Local AI Registry, and connect it to your website, Google profile and reviews. AI checks the facts against your record before it names you. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div>
 <button class="cta go" data-go="value">See what it's worth</button>
 </main>
@@ -1722,7 +1732,12 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  document.getElementById('qx-sum').innerHTML=bad+' need fixing &middot; '+ok+'&nbsp;passed';
  const ev=e=>{if(!EVS[e.c])return '';return '<div class="qx-ev2"><div class="stage">'+EVS[e.c]()+'</div></div>'};
  document.getElementById('qx-list').innerHTML=CT.map((e,k)=>{const ic=ICO[e.st],t=TONE[ic];return '<div class="qx-row"><button class="qx-btn" aria-expanded="false"><span class="qx-ic '+ic+'"></span><span class="qx-c">'+esc(e.c)+'</span><span class="qx-s '+t+'">'+e.st+'</span><span class="qx-ch">›</span></button><div class="qx-body" hidden><p class="qx-i">'+nb(e.i)+'</p>'+ev(e)+'<div class="qx-fix"><p class="qx-l good">How we fix it</p><p class="qx-d">'+nb(e.d)+'</p><div class="stage">'+ILL[e.t]()+'</div>'+(e.u?'<a class="qx-ex" href="'+e.u+'" target="_blank" rel="noopener">See example ↗</a>':'')+'</div></div></div>'}).join('');
- document.querySelectorAll('.qx-btn').forEach(b=>b.addEventListener('click',()=>{const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.nextElementSibling.hidden=o}));
+ const QD=matchMedia('(min-width:960px)'),pane=document.getElementById('qxp'),rs=document.querySelector('#s-solution .rsol'),qc=document.querySelector('#s-solution .qx-card');
+ if(rs&&qc)qc.after(rs);
+ const pick=b=>{document.querySelectorAll('.qx-btn').forEach(x=>{x.classList.toggle('sel',x===b);x.setAttribute('aria-expanded',x===b?'true':'false');x.nextElementSibling.hidden=true});
+  const row=b.closest('.qx-row');pane.innerHTML='<div class="qxp-h">'+b.querySelector('.qx-ic').outerHTML+'<h3>'+b.querySelector('.qx-c').textContent+'</h3>'+b.querySelector('.qx-s').outerHTML+'</div>'+row.querySelector('.qx-body').innerHTML};
+ document.querySelectorAll('.qx-btn').forEach(b=>b.addEventListener('click',()=>{if(QD.matches){pick(b);return}const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.nextElementSibling.hidden=o}));
+ const init=()=>{if(QD.matches){const f=document.querySelector('.qx-btn');if(f)pick(f)}else{pane.innerHTML='';document.querySelectorAll('.qx-btn.sel').forEach(x=>x.classList.remove('sel'))}};QD.addEventListener('change',init);init();
 })();
 })();
 </script>
