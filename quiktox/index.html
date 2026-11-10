@@ -1116,6 +1116,7 @@ body{overflow-x:clip}
 #s-experts::before{content:"";position:absolute;z-index:-1;left:calc(50% - 50vw);right:calc(50% - 50vw);top:0;bottom:-80px;background:#E8E2D4}
 @media (min-width:960px){.sol2 .inb-r{position:static!important}
 .vrec{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px 20px;align-items:center}.vrec>*{grid-column:1}.vrec>:last-child{grid-column:2;grid-row:1/span 3}.vrec svg{max-height:230px;width:100%}.vrec .sub{font-size:13px!important}}
+.sc-ax{height:70px}
 [hidden]{display:none!important}
 @media (min-width:960px){
 .solh{grid-template-columns:minmax(0,1fr) auto}
@@ -1172,7 +1173,7 @@ body{overflow-x:clip}
 <section class="card nudge"><p class="k">Top issues</p>
 <p class="nudge-t">You're doing <b>1 thing</b> well. Fixing the other <b>15</b> could get AI recommending&nbsp;you.</p>
 <ul class="ti"><li><i class="tri"></i><b>Business record</b><span>4 different names online</span></li><li><i class="tri"></i><b>AI monitoring</b><span>Only 1 of 4 AI tools names you</span></li><li><i class="tri"></i><b>Directory listings</b><span>Listed on 2 of 24</span></li></ul>
-<button class="cta coral go" data-go="solution">See all 16 issues</button></section>
+<button class="cta coral go" data-go="solution">See all 15 issues</button></section>
 
 <!-- TRAFFIC -->
 <section class="card"><div class="ch2"><p class="k">Monthly website visits from Google</p></div>
@@ -1561,7 +1562,7 @@ function fmt(n){return n>=1000?(n/1000).toFixed(n%1000?1:0)+'k':String(n)}
 const MO=['Nov','Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct'],ML=[...MO.map(m=>m+' 2024'),...MO.map(m=>m+' 2025')].map((m,i)=>i<2?m:m.replace(/202([45])$/,(z,d)=>'202'+(+d+(i>=2&&i<14?1:1)))),MLAB=[];
 for(let i=0;i<24;i++){const mi=(10+i)%12,yr=2024+Math.floor((10+i)/12);MLAB.push(['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][mi]+' '+yr)}
 S.forEach((s,si)=>{if(s.v.length===12){let seed=si*97+13;const rnd=()=>{seed=(seed*9301+49297)%233280;return seed/233280};const b=s.v[0];const pre=[];for(let k=12;k>=1;k--){pre.push(Math.max(0,Math.round(b*(1-k*.022)*(0.94+rnd()*.12))))}s.v=[...pre,...s.v]}});
-let SPAN=12;const TEND=23.97,MN3=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+let SPAN=12;const TEND=23,MN3=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 function MONO(ys){const n=ys.length,dl=[],m=[];for(let i=0;i<n-1;i++)dl.push(ys[i+1]-ys[i]);m[0]=dl[0]||0;m[n-1]=dl[n-2]||0;for(let i=1;i<n-1;i++)m[i]=dl[i-1]*dl[i]<=0?0:(dl[i-1]+dl[i])/2;
  for(let i=0;i<n-1;i++){if(!dl[i]){m[i]=m[i+1]=0;continue}const a=m[i]/dl[i],b=m[i+1]/dl[i],h=a*a+b*b;if(h>9){const t=3/Math.sqrt(h);m[i]=t*a*dl[i];m[i+1]=t*b*dl[i]}}
  return t=>{if(t<=0)return ys[0];if(t>=n-1)return ys[n-1];const i=Math.floor(t),u=t-i,u2=u*u,u3=u2*u;return Math.max(0,(2*u3-3*u2+1)*ys[i]+(u3-2*u2+u)*m[i]+(-2*u3+3*u2)*ys[i+1]+(u3-u2)*m[i+1])}}
@@ -1790,6 +1791,9 @@ document.addEventListener('click',e=>{const b=e.target.closest('.sc [data-go]');
  $('ccpa').addEventListener('click',()=>{const c=$('ccp').value.trim();$('ccpm').textContent=c?'Code '+c.toUpperCase()+' will be checked at payment.':''});
  f.addEventListener('submit',e=>{e.preventDefault();const ok=$('ccn').value.replace(/\s/g,'').length>=15&&$('cce').value.length===7&&$('ccv').value.length>=3&&$('ccz').value.length>=5;
   $('ckm').textContent=ok?'Card checkout is not live yet. We will reach out to finish setup.':'Please fill in your card details.';$('ckm').className='ckm'+(ok?'':' er')})})();
+(()=>{const sv=document.querySelector('.sc-ax');if(!sv)return;const els=[...sv.querySelectorAll('*')];els.forEach(e=>['x','cx','x1','x2'].forEach(a=>{if(e.hasAttribute(a))e.dataset['o'+a]=e.getAttribute(a)}));
+ const fit=()=>{const W=Math.max(300,Math.round(sv.clientWidth||340));sv.setAttribute('viewBox','0 0 '+W+' 70');els.forEach(e=>['x','cx','x1','x2'].forEach(a=>{const o=e.dataset['o'+a];if(o!=null)e.setAttribute(a,(20+(+o-20)*(W-40)/300).toFixed(1))}))};
+ fit();addEventListener('resize',fit);if(window.ResizeObserver)new ResizeObserver(fit).observe(sv)})();
 /* --- portal: avatars, logos, count-up, bottom CTA --- */
 (()=>{['stav','sdav'].forEach(i=>{const e=document.getElementById(i);if(e)e.src=STEVE_IMG});AV.steve=STEVE_IMG;
  document.querySelectorAll('.lgt[data-l]').forEach(e=>e.innerHTML=LOGO[e.dataset.l]||'');
@@ -1798,7 +1802,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('.sc [data-go]');
  const end=Date.parse('2026-12-01T07:59:00Z');
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
- const C={status:['22/100 AI Score','16 issues found','See what to fix','solution'],solution:['16 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$5,463/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
+ const C={status:['22/100 AI Score','16 issues found','See what to fix','solution'],solution:['15 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$5,463/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
  window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Get started';B.href='#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
