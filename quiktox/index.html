@@ -1203,6 +1203,7 @@ body{overflow-x:clip}
 #s-experts .sc-b .btn{width:100%!important;justify-content:center!important;text-align:center!important;text-decoration:none!important;border:1.5px solid var(--ink)!important;border-radius:999px!important;padding:11px 16px!important;font:700 14px var(--fu)!important}
 #s-experts .sc-b .btn:hover{background:var(--ink)!important;color:#fff!important}
 /* mobile fixes */
+body.azopen #s-experts{position:relative;z-index:500!important;transform:none!important}body.azopen .ctab{display:none!important}
 strong.bw{font-weight:800;color:var(--ink)}
 .avb,.pn2{cursor:default!important}
 @media (max-width:959px){.ctab{background:#fff;-webkit-backdrop-filter:none;backdrop-filter:none}.ctab::after{content:"";position:absolute;left:0;right:0;top:100%;height:200px;background:#fff}}
@@ -1890,8 +1891,8 @@ window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[
    return '<details class="azg"'+(gi<6?' open':'')+'><summary>'+esc(g.t)+'</summary>'+g.o.map(o=>{const c=cnt(o[0]),d=!draft.has(o[0])&&c===0;return '<label class="azo'+(d?' dis':'')+'"><input type="checkbox" data-k="'+o[0]+'"'+(draft.has(o[0])?' checked':'')+(d?' disabled':'')+'><span class="bx"></span><span>'+esc(o[1])+'</span><em>('+c+')</em></label>'}).join('')+'</details>'}).join('');
   const n=SP.filter(s=>match(s,draft)).length;document.getElementById('azgo').textContent='Show '+n+' result'+(n===1?'':'s')}
  const sh=document.getElementById('azsheet');
- document.getElementById('azopen').addEventListener('click',()=>{draft=new Set(on);sheet();sh.hidden=false;document.body.style.overflow='hidden'});
- const close=()=>{if(DESK.matches)return;sh.hidden=true;document.body.style.overflow=''};
+ document.getElementById('azopen').addEventListener('click',()=>{draft=new Set(on);sheet();sh.hidden=false;document.body.style.overflow='hidden';document.body.classList.add('azopen')});
+ const close=()=>{if(DESK.matches)return;sh.hidden=true;document.body.style.overflow='';document.body.classList.remove('azopen')};
  const syncDesk=()=>{if(DESK.matches){sh.hidden=false;document.body.style.overflow='';draft=new Set(on);sheet()}else{sh.hidden=true}};DESK.addEventListener('change',syncDesk);
  document.getElementById('azclose').addEventListener('click',close);
  sh.addEventListener('click',e=>{if(e.target===sh)close()});
