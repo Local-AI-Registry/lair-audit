@@ -139,7 +139,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     res.shift();var style=parchment(res[0]), center=res[1];
     var map=new maplibregl.Map({container:'map',style:style,center:center,zoom:18.2,pitch:55,bearing:-35,maxPitch:65,maxZoom:20,minZoom:14,attributionControl:false,interactive:false});
     var BOT=function(){return Math.round(innerHeight*(innerWidth<720?.52:.42));};map.setPadding({top:0,bottom:BOT(),left:0,right:0});addEventListener('resize',function(){map.setPadding({top:0,bottom:BOT(),left:0,right:0});});
-    if(!still){var br=-35;setInterval(function(){br-=1.4;map.easeTo({bearing:br,duration:1000,easing:function(t){return t}});},1000);}
+    if(!still){var br=-35;setInterval(function(){br-=.45;map.easeTo({bearing:br,duration:1000,easing:function(t){return t}});},1000);}
     addEventListener('resize',function(){map.resize();});setInterval(function(){var c=map.getCanvas();if(c&&Math.abs(c.clientWidth-innerWidth)>4)map.resize();},700);
     map.on('load',function(){ try{ map.setLight({anchor:'map',position:[1.4,210,35],color:'#FFF4DC',intensity:.45}); }catch(e){} });
     var view3d=true, tb={addEventListener:function(){}};
@@ -250,7 +250,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         pts=[nodes[start].c]; var k=start;
         for(var i=0;i<30;i++){var nb=Object.keys(nodes[k].adj); if(!nb.length)break; k=pick(nb); pts.push(nodes[k].c);} shop=null;
       } else pts.push(shop.c);
-      walkers.push({ai:ai,shop:shop,path:pts,seg:0,t:0,dist:0,lastStep:0,foot:1,speed:ai?40:18,
+      walkers.push({ai:ai,shop:shop,path:pts,seg:0,t:0,dist:0,lastStep:0,foot:1,speed:ai?14:9,
         label:pick(NAMES)+(why?', '+why:(Math.random()<.4?', '+pick(ROLES):''))});
     }
     function convert(eng){
@@ -259,7 +259,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       if(!c.length) return false;
       var w=pick(c); eng=eng||pick(ENGINES);
       var st=nearest(w.c), en=nearest(q.c), pts=route(st,en); if(!pts) pts=[nodes[st].c];
-      w.path=[w.c.slice()].concat(pts).concat([q.c]); w.seg=0; w.t=0; w.shop=q; w.ai=true; w.speed=30; w.wait=1.1;
+      w.path=[w.c.slice()].concat(pts).concat([q.c]); w.seg=0; w.t=0; w.shop=q; w.ai=true; w.speed=12; w.wait=1.6;
       w.label=w.label.split(',')[0]+', asked '+eng;
       pings.push({c:w.c.slice(),born:now,text:eng+': '+pick(MEDQ),hit:true,follow:w});
       return true;
@@ -289,7 +289,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         } else {
           var b=map.getBounds(), side=Math.floor(Math.random()*4), r=Math.random();
           var c=side===0?[b.getWest()+(b.getEast()-b.getWest())*r,b.getNorth()]:side===1?[b.getEast(),b.getSouth()+(b.getNorth()-b.getSouth())*r]:side===2?[b.getWest()+(b.getEast()-b.getWest())*r,b.getSouth()]:[b.getWest(),b.getSouth()+(b.getNorth()-b.getSouth())*r];
-          pings.push({c:c,born:now,text:eng+' named someone else',hit:false,edge:true});
+          
         }
         aiNamedEl.textContent=hourNamed+' of '+hourAsked;
       } else {
@@ -326,8 +326,9 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         ctx.restore();
       });
       ctx.font='italic 13px "IM Fell English", Georgia, serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
-      walkers.forEach(function(w){ if(!w.c)return; var P=map.project(w.c);
+      var boxes=[];[].concat(walkers.filter(function(w){return w.ai;}),walkers.filter(function(w){return !w.ai;})).forEach(function(w){ if(!w.c)return; var P=map.project(w.c);
         var tw=ctx.measureText(w.label).width, bw=tw+18, bx=P.x-bw/2, by=P.y-28;
+        if(boxes.some(function(b){return bx<b[0]+b[2]+6&&bx+bw+6>b[0]&&by<b[1]+26&&by+26>b[1];}))return; boxes.push([bx,by,bw]);
         ctx.fillStyle=w.ai?'#FFFFFF':'#F6EBD0'; ctx.strokeStyle=w.ai?BLUE:INK; ctx.lineWidth=1.1;
         ctx.beginPath();ctx.moveTo(bx,by);ctx.lineTo(bx+bw,by);ctx.lineTo(bx+bw-6,by+10);ctx.lineTo(bx+bw,by+20);ctx.lineTo(bx,by+20);ctx.lineTo(bx+6,by+10);ctx.closePath();ctx.fill();ctx.stroke();
         ctx.fillStyle=w.ai?BLUE:INK; ctx.fillText(w.label,bx+bw/2,by+10.5);
@@ -344,13 +345,13 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       var want=dt>0?Math.max(1,Math.min(40,moved/(dt*MIN_PER_SEC))):1;
       speed+= (want-speed)*(want>speed?.5:.08);           // ramp up fast, settle back gently
       var sdt=dt*speed; simClock+=sdt; now=simClock;
-      var busy=.9, cap=24;
+      var busy=.9, cap=12;
       for(var n=0;n<6&&now>nextSpawn&&walkers.length<cap&&busy>.03;n++){spawn();nextSpawn=now+(.6+Math.random()*.9)/Math.max(.08,busy);}
       if(busy<=.03) nextSpawn=now;
-      var ab=.9;
+      var ab=.35;
       for(var m=0;m<6&&now>nextAsk&&ab>.04;m++){ask();nextAsk=now+(.6+Math.random()*1.2)/Math.max(.1,ab);}
       if(ab<=.04) nextAsk=now;
-      if(now>nextConv){ if(convert()) nextConv=now+1.4+Math.random()*1.2; else nextConv=now+.4; }
+      if(now>nextConv){ if(walkers.filter(function(w){return w.ai;}).length<4&&convert()) nextConv=now+3.5+Math.random()*2; else nextConv=now+.8; }
       queue=queue.filter(function(q){ if(now>=q.at){spawn(q.shop,q.why);return false;} return true; });
       pings=pings.filter(function(p){return now-p.born<3.4;});
       walkers=walkers.filter(function(w){var ok=step(w,sdt); if(!ok&&w.shop&&w.shop.q){qk++;qkEl.textContent=qk;qkToday++;qkTodayEl.textContent=qkToday;} return ok;});
@@ -358,7 +359,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       draw(); requestAnimationFrame(frame);
     }
     var seeded=false;function seed(){if(seeded||still||keys.length<5)return;seeded=true;
-      for(var i=0;i<18;i++)spawn(); walkers.forEach(function(w){var k=Math.random()*60;for(var j=0;j<k;j++){now+=.05;step(w,.05);}});
+      for(var i=0;i<10;i++)spawn(); walkers.forEach(function(w){var k=Math.random()*60;for(var j=0;j<k;j++){now+=.05;step(w,.05);}});
       prints.forEach(function(p){p.born=now-Math.random()*4;}); nextSpawn=now; nextAsk=now; simClock=now; nextConv=now+.8; try{for(var a=0;a<3;a++)ask();}catch(e){}}
     build(); seed(); map.on('moveend',function(){build();seed();}); map.on('idle',function(){if(!seeded){build();seed();}});
     if(still){ for(var i=0;i<6;i++)spawn(); walkers.forEach(function(w){for(var j=0;j<120;j++){now+=.05;step(w,.05);}}); prints.forEach(function(p){p.born=now-2;}); draw(); map.on('move',draw); }
