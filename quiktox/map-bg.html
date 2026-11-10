@@ -153,19 +153,24 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
 
     var started=false;function go(){if(started)return;started=true;try{pickBuilding();}catch(e){console.error(e);}startWalking(map,center);}
     function pickBuilding(){
+      /* our own tiny standalone shop on an empty lot near the address; never overlaps a real footprint (no flicker) */
       var lat0=center[1],kx=111320*Math.cos(lat0*Math.PI/180),ky=110540,list=[],seen={};
       map.querySourceFeatures('openmaptiles',{sourceLayer:'building'}).forEach(function(f){
-        var g=f.geometry;if(!g||g.type!=='Polygon')return;var r=g.coordinates[0];if(!r||r.length<4)return;
-        var A=0,cx=0,cy=0;for(var i=0;i<r.length-1;i++){var x1=(r[i][0]-center[0])*kx,y1=(r[i][1]-lat0)*ky,x2=(r[i+1][0]-center[0])*kx,y2=(r[i+1][1]-lat0)*ky,c=x1*y2-x2*y1;A+=c;cx+=(x1+x2)*c;cy+=(y1+y2)*c;}
-        A/=2;if(!A)return;cx/=6*A;cy/=6*A;A=Math.abs(A);var key=Math.round(cx)+','+Math.round(cy)+','+Math.round(A);if(seen[key])return;seen[key]=1;
-        list.push({x:cx,y:cy,a:A,ring:r,h:(f.properties&&f.properties.render_height)||9});});
-      var best=null,bd=1e9;list.forEach(function(b){if(b.a<160||b.a>1400)return;var d=Math.hypot(b.x,b.y);if(d>380)return;
-        for(var j=0;j<list.length;j++){var o=list[j];if(o!==b&&Math.hypot(o.x-b.x,o.y-b.y)<Math.sqrt(b.a)/2+Math.sqrt(o.a)/2+8)return;}
-        if(d<bd){bd=d;best=b;}});
-      if(!best)return;
-      center[0]=center[0]+best.x/kx;center[1]=lat0+best.y/ky;mk.setLngLat(center);map.jumpTo({center:center});
-      map.addSource('home-bld',{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[best.ring]}}});
-      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#1F4FE0','fill-extrusion-opacity':.55,'fill-extrusion-height':Math.max(best.h*1.15,8)}});
+        var g=f.geometry,polys=g&&g.type==='Polygon'?[g.coordinates]:g&&g.type==='MultiPolygon'?g.coordinates:[];
+        polys.forEach(function(p){var r=p[0];if(!r||r.length<4)return;var pts=r.map(function(q){return [(q[0]-center[0])*kx,(q[1]-lat0)*ky];});
+          var key=pts.length+':'+Math.round(pts[0][0])+','+Math.round(pts[0][1]);if(seen[key])return;seen[key]=1;list.push(pts);});});
+      var roads=[];map.querySourceFeatures('openmaptiles',{sourceLayer:'transportation'}).forEach(function(f){var g=f.geometry,ls=g&&g.type==='LineString'?[g.coordinates]:g&&g.type==='MultiLineString'?g.coordinates:[];ls.forEach(function(l){roads.push(l.map(function(q){return [(q[0]-center[0])*kx,(q[1]-lat0)*ky];}));});});
+      function inside(x,y,r){var c=false;for(var i=0,j=r.length-1;i<r.length;j=i++){var a=r[i],b=r[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])c=!c;}return c;}
+      function segd(x,y,a,b){var dx=b[0]-a[0],dy=b[1]-a[1],L=dx*dx+dy*dy,t=L?Math.max(0,Math.min(1,((x-a[0])*dx+(y-a[1])*dy)/L)):0;return Math.hypot(x-a[0]-t*dx,y-a[1]-t*dy);}
+      function clear(x,y,m){for(var k=0;k<list.length;k++){var r=list[k];if(inside(x,y,r))return false;for(var i=0;i<r.length-1;i++)if(segd(x,y,r[i],r[i+1])<m)return false;}for(var k2=0;k2<roads.length;k2++){var L2=roads[k2];for(var i2=0;i2<L2.length-1;i2++)if(segd(x,y,L2[i2],L2[i2+1])<9)return false;}return true;}
+      var spot=null;
+      if(clear(0,0,14))spot=[0,0];
+      for(var R=6;!spot&&R<=260;R+=6){var n=Math.max(8,Math.round(2*Math.PI*R/6));for(var a=0;a<n;a++){var t=a/n*2*Math.PI,x=R*Math.cos(t),y=R*Math.sin(t);if(clear(x,y,14)){spot=[x,y];break;}}}
+      if(!spot)return;
+      center[0]=center[0]+spot[0]/kx;center[1]=lat0+spot[1]/ky;mk.setLngLat(center);map.jumpTo({center:center});
+      var h=3.6,dx=h/kx,dy=h/ky,ring=[[center[0]-dx,center[1]-dy],[center[0]+dx,center[1]-dy],[center[0]+dx,center[1]+dy],[center[0]-dx,center[1]+dy],[center[0]-dx,center[1]-dy]];
+      map.addSource('home-bld',{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[ring]}}});
+      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#1F4FE0','fill-extrusion-opacity':1,'fill-extrusion-height':4.5,'fill-extrusion-vertical-gradient':true}});
     }
     map.once('idle',go);map.once('load',function(){setTimeout(go,700);});setTimeout(go,5000);
   }).catch(function(err){
