@@ -856,10 +856,10 @@ th.r .sth{flex-direction:row}
 .sc-r{margin:0;display:flex;align-items:center;gap:4px;font:500 12px var(--fb);color:var(--muted)}.sc-r b{color:var(--ink);font:700 12px var(--fu)}.sc-r .stars{font-size:12px}
 .sc-m{display:flex;flex-wrap:wrap;gap:2px 10px;font:500 11.5px var(--fb);color:var(--muted)}.sc-m b{font:800 12.5px var(--fu);color:var(--ink)}.sc-m b.up{color:var(--ok)}.sc-m b.dn{color:var(--red)}
 .sc-pf{list-style:none;margin:2px 0 0;padding:0;border-top:1px solid var(--rule)}
-.sc-pf li{display:grid;grid-template-columns:18px minmax(0,1fr) 44px 36px;gap:6px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule)}
-.sc-pf .lgx{width:18px!important;height:18px!important;border-radius:5px}
+.sc-pf li{display:grid;grid-template-columns:16px minmax(0,1fr) 72px;gap:7px;align-items:center;padding:7px 0;border-bottom:1px solid var(--rule)}
+.sc-pf .lgx{width:16px!important;height:16px!important;border-radius:4px}
 .sc-n b{display:block;font:700 12px/1.2 var(--fu);color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.sc-n small{display:block;font:500 10px var(--fb);color:var(--muted)}
-.sc-pf .spk{width:44px;height:20px;display:block}
+.sc-pf .spk{width:72px;height:20px;display:block}
 .sc-pf em{font-style:normal;font:800 11px var(--fu);color:#fff;text-align:center;padding:4px 0;border-radius:6px}.sc-pf em.up{background:var(--ok)}.sc-pf em.dn{background:var(--red)}
 .sc-b{display:flex;gap:6px;margin-top:auto;padding-top:4px}.sc-b .btn{flex:1;padding:9px 6px;font-size:12px;white-space:nowrap}
 .sc-empty{margin-top:auto;padding:24px 8px;border-radius:12px;background:var(--bg);text-align:center;font:500 12px var(--fb);color:var(--muted)}
@@ -895,11 +895,33 @@ th.r .sth{flex-direction:row}
 .vba-ar{font:700 22px var(--fu);color:var(--blue)}
 .vba{background:none;text-transform:none;letter-spacing:0;padding:0}
 @media (max-width:519px){.vba{gap:8px}.vba-a{font-size:13px}.vba-t{font-size:12px}.vba-c{padding:10px}}
+.sc-pf li{padding:5px 0!important}
+.sc-pf .sc-n{font:400 11.5px/1.2 var(--fb);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sc-more{margin:0;font:500 11px var(--fb);color:var(--muted)}
+.sc{height:100%;box-sizing:border-box}
+.sc .bh-sub{font-size:11px}
+@media (min-width:960px){
+#s-experts:not([hidden]){grid-template-columns:200px minmax(0,1fr)!important;column-gap:18px!important}
+#s-experts .az-in{padding:0!important}
+#s-experts>.az-sheet .az-h b{font-size:15px}
+#s-experts>.az-sheet .azg summary,#s-experts>.az-sheet .azg h4{font-size:13px!important}
+#s-experts>.az-sheet label{font-size:12.5px!important;gap:8px!important}
+#s-experts>.az-sheet input[type=checkbox]{width:16px!important;height:16px!important}
+#s-experts #splist{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
+.sc{padding:12px}
+}
+.hw-f.agf2{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:12px;align-items:end}
+.agf2 label{display:grid;gap:6px;min-width:0}
+.agf2 label span{font:600 12.5px var(--fb);color:var(--ink)}
+.agf2 label i{font-style:normal;font-weight:400;color:var(--muted)}
+.agf2 input{min-width:0!important;width:100%;box-sizing:border-box}
+.agf2 .cta{height:48px}
+@media (max-width:900px){.hw-f.agf2{grid-template-columns:1fr 1fr}.agf2 .cta{grid-column:1/-1;width:100%!important}}
+@media (max-width:520px){.hw-f.agf2{grid-template-columns:1fr}}
 [hidden]{display:none!important}
 </style>
 </head>
 <body>
-
 <div class="w">
 <div class="top"><svg class="lockup" viewBox="0 0 1867.45 232.87" role="img" aria-label="Local AI Registry">
         <g transform="translate(0 22.54) scale(1.878)"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="currentColor"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></g>
@@ -1006,7 +1028,7 @@ th.r .sth{flex-direction:row}
 <!-- EXPERTS -->
 <main class="scr" id="s-experts" hidden>
 <div class="sh shx"><div><p class="k">Who does the work</p><h2 class="sh2">Compare specialists, apples to&nbsp;apples</h2><p class="sub">Every specialist is audited the same way and tracked monthly on the registry. Agencies can't edit their&nbsp;numbers.</p></div><button class="hw-add" id="addag" type="button">+ Add your current agency</button></div>
-<form class="hw-f card" id="agf" hidden><input id="agn" type="text" placeholder="Agency name" aria-label="Agency name"><button class="cta" type="submit">Add to compare</button></form>
+<form class="hw-f card agf2" id="agf" hidden><label><span>Agency name</span><input id="agn" type="text" placeholder="e.g. Bright Digital" required></label><label><span>Website</span><input id="agw" type="text" inputmode="url" placeholder="brightdigital.com" required></label><label><span>Contact name <i>optional</i></span><input id="agc" type="text" placeholder="Jane Smith"></label><label><span>Phone <i>optional</i></span><input id="agp" type="tel" placeholder="(555) 123-4567"></label><button class="cta" type="submit">Add to compare</button></form>
 <div class="az-bar"><button class="az-fb" id="azopen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Filters<span id="azn"></span></button>
 <p class="smeta"><span id="scount"></span></p><label class="az-sort"><span>Sort by</span><select id="azsort"><option value="f">Featured</option><option value="r">Best verified results</option><option value="c">Most verified customers</option><option value="s">Highest rated</option></select></label></div>
 <div class="az-q" id="azq" hidden></div>
@@ -1480,13 +1502,16 @@ window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[
  const AVK={steve:'steve',lp:'leo',bd:'bd',sg:'sg',ns:'ns',ap:'ap',km:'km',od:'od'};
  SP.forEach((s,si)=>{if(s.id==='steve'||s._adj||!s.pf)return;s._adj=1;s.pf=s.pf.map((p,i)=>{const h=(si*7+i*3+(si>>1))%10;if(h<4||(h===7&&i%2)){const dd=Math.max(3,Math.round((p[2]-p[1])*(.3+h*.15)));return [p[0],p[1],Math.max(5,p[1]-dd)]}return p});s.lift=Math.round(s.pf.reduce((a,p)=>a+p[2]-p[1],0)/s.pf.length)});
  function card(s){if(s.custom)return '<article class="sc cu"><div class="sc-h">'+mono(s.name,'#8B95A5')+'<div><h3>'+esc(s.name)+'</h3><p class="bh-sub">Your current agency</p></div></div><p class="bh-v none">0 verified customers</p><p class="cu-n">Not on the registry, so there are no verified results to compare.</p><div class="sc-empty">No tracked client results</div></article>';
-  const st=s.id==='steve',rows=s.pf.slice(0,4).map((p,i)=>{const d=p[2]-p[1];return '<li>'+LG(p[0],i)+'<span class="sc-n"><b>'+esc(p[0])+'</b><small>'+p[1]+' → '+p[2]+'</small></span>'+SPK(SHAPE(p[1],p[2],p[1]*97+i*31+p[2]*13+s.name.length*7),undefined,56,22)+'<em class="'+(d>=0?'up':'dn')+'">'+(d>=0?'+':'−')+Math.abs(d)+'</em></li>'}).join('');
+  const st=s.id==='steve',PN=['Oak','Summit','Harbor','Cedar','Bright','Vista','Lumen','Maple','Coast','Pine','Willow','Stone'],PT=['Dental','Med Spa','Clinic','Derm','Chiro','Ortho','Laser','Vet'];
+  const pf=[...s.pf];let k=0;while(pf.length<5){const h=(s.name.length*13+k*7)%97,a=25+h%20,up=(h%3)!==0||st;pf.push([PN[h%PN.length]+' '+PT[(h>>2)%PT.length],a,up?a+8+h%14:a-4-h%7]);k++}
+  const rows=pf.slice(0,5).map((p,i)=>'<li>'+LG(p[0],i)+'<span class="sc-n">'+esc(p[0])+'</span>'+SPK(SHAPE(p[1],p[2],p[1]*97+i*31+p[2]*13+s.name.length*7),undefined,72,20)+'</li>').join('');
+  const more=Math.max(0,s.cl-5);
   return '<article class="sc'+(st?' best5':'')+'">'+(st?'<p class="bm4">Best verified results</p>':'')+
   '<div class="sc-h">'+(AVK[s.id]?'<img class="av4" src="'+AV[AVK[s.id]]+'" alt="">':LG(s.name,3).replace('class="lgx"','class="lgx lgb"'))+'<div><h3>'+esc(s.name)+(st?' <span class="vfb">✓</span>':'')+'</h3><p class="bh-sub">'+esc(s.sub)+'</p></div></div>'+
   '<p class="sc-r"><span class="stars">'+stars(s.rate)+'</span><b>'+s.rate.toFixed(1)+'</b> <span>('+s.rv+')</span></p>'+
-  '<div class="sc-m"><span><b>'+s.cl+(st?'+':'')+'</b> customers</span><span><b class="'+(s.ret>=90?'up':'dn')+'">'+s.ret+'%</b> retention</span><span><b class="'+(s.lift>=0?'up':'dn')+'">'+(s.lift>=0?'+':'−')+Math.abs(s.lift)+'</b> avg score</span></div>'+
-  '<ul class="sc-pf">'+rows+'</ul>'+
-  (st?'<div class="sc-b"><button class="btn go" data-go="steve">View profile</button><button class="btn ghost go" data-go="proposal">Get proposal</button></div>':'<div class="sc-b"><button class="btn ghost" disabled>View profile</button></div>')+'</article>'}
+  '<div class="sc-m"><span><b>'+s.cl+(st?'+':'')+'</b> customers</span><span><b class="'+(s.ret>=90?'up':'dn')+'">'+s.ret+'%</b> retention</span></div>'+
+  '<ul class="sc-pf">'+rows+'</ul><p class="sc-more">'+(more?'+'+more+' more customers':'&nbsp;')+'</p>'+
+  '<div class="sc-b"><button class="btn'+(st?' go" data-go="steve"':' ghost"')+' type="button">View profile</button></div></article>'}
  const custom=[];
  const SORT={f:(a,b)=>(b.id==='steve')-(a.id==='steve')||b.lift-a.lift,r:(a,b)=>b.lift-a.lift,pl:(a,b)=>a.price-b.price,ph:(a,b)=>b.price-a.price,c:(a,b)=>b.cl-a.cl,s:(a,b)=>b.rate-a.rate};
  function draw(){const list=SP.filter(s=>match(s,on)).sort(SORT[sort]);const n=list.length+custom.length;
@@ -1514,7 +1539,7 @@ window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[
  document.getElementById('splist').addEventListener('click',e=>{if(e.target.id==='spmore'){window._spN+=12;draw();return}const b=e.target.closest('.seeall');if(!b)return;const ul=b.previousElementSibling,m=ul.querySelectorAll('.more'),open=b.dataset.o==='1';m.forEach(li=>li.hidden=open);b.dataset.o=open?'0':'1';b.textContent=open?'See all '+ul.children.length+' clients':'Show fewer'});
  document.getElementById('addag').addEventListener('click',()=>{const f=document.getElementById('agf');f.hidden=!f.hidden;if(!f.hidden)document.getElementById('agn').focus()});
  document.getElementById('agf').addEventListener('submit',e=>{e.preventDefault();const n=document.getElementById('agn').value.trim();if(!n)return;const p=0;
-  custom.push({custom:1,name:n,ini:n.split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase(),price:p});e.target.reset();e.target.hidden=true;draw()});
+  custom.push({custom:1,name:n,site:document.getElementById('agw').value.trim(),contact:document.getElementById('agc').value.trim(),phone:document.getElementById('agp').value.trim(),ini:n.split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase(),price:p});e.target.reset();e.target.hidden=true;draw()});
  draw();syncDesk()})();
 /* --- portal: avatars, logos, count-up, bottom CTA --- */
 (()=>{['stav','sdav'].forEach(i=>{const e=document.getElementById(i);if(e)e.src=STEVE_IMG});AV.steve=STEVE_IMG;
