@@ -289,7 +289,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     function drawPings(){
       ctx.font='600 11.5px "Hanken Grotesk", Arial, sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
       pings.forEach(function(p){
-        var age=now-p.born, life=3.2; if(age>life)return; var P=map.project(p.c), k=age/life;
+        var age=now-p.born, life=3.2; if(age>life||age<0)return; var P=map.project(p.c), k=age/life;
         if(p.edge){P.x=Math.max(70,Math.min(innerWidth-70,P.x));P.y=Math.max(150,Math.min(innerHeight-230,P.y));}
         ctx.save(); ctx.globalAlpha=Math.min(1,(1-k)*1.6);
         ctx.strokeStyle=BLUE; ctx.lineWidth=2; ctx.setLineDash(p.hit?[]:[3,3]);
@@ -346,7 +346,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     }
     var seeded=false;function seed(){if(seeded||still||keys.length<5)return;seeded=true;
       for(var i=0;i<10;i++)spawn(); walkers.forEach(function(w){var k=Math.random()*60;for(var j=0;j<k;j++){now+=.05;step(w,.05);}});
-      prints.forEach(function(p){p.born=now-Math.random()*4;}); nextSpawn=now; nextAsk=now; for(var a=0;a<3;a++)ask();}
+      prints.forEach(function(p){p.born=now-Math.random()*4;}); nextSpawn=now; nextAsk=now; simClock=now; try{for(var a=0;a<3;a++)ask();}catch(e){}}
     build(); seed(); map.on('moveend',function(){build();seed();}); map.on('idle',function(){if(!seeded){build();seed();}});
     if(still){ for(var i=0;i<6;i++)spawn(); walkers.forEach(function(w){for(var j=0;j<120;j++){now+=.05;step(w,.05);}}); prints.forEach(function(p){p.born=now-2;}); draw(); map.on('move',draw); }
     else requestAnimationFrame(frame);
