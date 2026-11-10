@@ -913,7 +913,7 @@ th.r .sth{flex-direction:row}
 #s-experts #splist{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:10px!important}
 .sc{padding:12px}
 }
-.hw-f.agf2{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:12px;align-items:end}
+.hw-f.agf2:not([hidden]){display:grid!important;}.hw-f.agf2{grid-template-columns:repeat(4,minmax(0,1fr)) auto;gap:12px;align-items:end}
 .agf2 label{display:grid;gap:6px;min-width:0}
 .agf2 label span{font:600 12.5px var(--fb);color:var(--ink)}
 .agf2 label i{font-style:normal;font-weight:400;color:var(--muted)}
@@ -1055,6 +1055,10 @@ th.r .sth{flex-direction:row}
 .mtr2 .cta{width:auto;margin:0;padding:13px 20px}
 @media (min-width:700px){.vill-t{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.vadd{grid-template-columns:1fr 1fr}.vadd input:first-child{grid-column:1/-1}.vtb{font-size:13px}.vtb th:nth-child(3),.vtb td:nth-child(3){display:none}.vtb th{font-size:9.5px;letter-spacing:.03em}.vtb td,.vtb th{padding-right:6px}}
+.shx .hw-add{padding:4px 0!important;background:none!important;color:var(--blue)!important;border-radius:0!important;font:600 14px var(--fu)!important;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.sc-m{flex-wrap:nowrap!important;white-space:nowrap;gap:8px!important;overflow:hidden}
+.sc-pf .spk{width:72px;height:20px}
+.sc-legend{display:flex;align-items:center;gap:6px;margin:0 0 6px;font:500 10.5px var(--fb);color:var(--muted)}.sc-legend i{display:inline-block;width:1px;height:10px;background:var(--ink);opacity:.4}
 [hidden]{display:none!important}
 @media (min-width:960px){
 .solh{grid-template-columns:minmax(0,1fr) auto}
@@ -1194,7 +1198,7 @@ th.r .sth{flex-direction:row}
 <div class="az-q" id="azq" hidden></div>
 <div class="az-applied" id="azap"></div>
 <div class="az-sheet" id="azsheet" hidden role="dialog" aria-modal="true" aria-label="Filters"><div class="az-in"><div class="az-h"><b>Filters</b><button type="button" class="az-x" id="azclose" aria-label="Close">✕</button></div><div class="az-body" id="azbody"></div><div class="az-ft"><button type="button" class="az-clr" id="azclr">Clear all</button><button type="button" class="az-go" id="azgo">Show results</button></div></div></div>
-<div id="splist"></div>
+<p class="sc-legend"><i></i>The line in each chart marks when that client started with the specialist. Gray is before, color is&nbsp;after.</p><div id="splist"></div>
 </main>
 
 <!-- STEVE PROFILE -->
@@ -1598,6 +1602,16 @@ window._spk=0;window.SPK=(v,up,W=88,H=30)=>{const mn=Math.min(...v),mx=Math.max(
 window.WALK=(a,b,seed,n=48,vol=.06)=>{let r=seed>>>0||1;const rnd=()=>{r^=r<<13;r>>>=0;r^=r>>17;r^=r<<5;r>>>=0;return r/4294967296};
  let w=[0];for(let i=1;i<n;i++)w.push(w[i-1]+(rnd()-.5)*2);const end=w[n-1];
  const span=Math.max(Math.abs(b-a),a*.15);return w.map((z,i)=>{const t=i/(n-1);return Math.max(1,a+(b-a)*(t*t*.4+t*.6)+(z-end*t)*span*vol)})};
+window.SPK2=(a,b,seed,W=72,H=20)=>{let r=(seed*1103515245+12345)>>>0||9;const rnd=()=>{r^=r<<13;r>>>=0;r^=r>>17;r^=r<<5;r>>>=0;return r/4294967296};
+ const pre=[];for(let i=0;i<14;i++)pre.push(a*(1+(rnd()-.5)*.08));pre[13]=a;const v=pre.concat(window.SHAPE(a,b,seed,28).slice(1)),si=13;
+ const mn=Math.min(...v),mx=Math.max(...v),pad=(mx-mn)*.1||1,x=i=>i*W/(v.length-1),y=n=>H-1-(n-mn+pad)/((mx-mn)+2*pad)*(H-2),by=y(v[si]),id='s2'+(++window._spk),sx=x(si);
+ const P=arr=>arr.map((n,i)=>(i?'L':'M')+n[0].toFixed(1)+' '+y(n[1]).toFixed(1)).join(' ');const pts=v.map((n,i)=>[x(i),n]);
+ const dp=P(pts.slice(0,si+1)),da=P(pts.slice(si));
+ return '<svg class="spk" viewBox="0 0 '+W+' '+H+'" aria-hidden="true"><defs><clipPath id="'+id+'a"><rect x="0" y="-2" width="'+W+'" height="'+(by+2).toFixed(1)+'"/></clipPath><clipPath id="'+id+'b"><rect x="0" y="'+by.toFixed(1)+'" width="'+W+'" height="'+(H-by+2).toFixed(1)+'"/></clipPath></defs>'+
+ '<line x1="'+sx.toFixed(1)+'" x2="'+W+'" y1="'+by.toFixed(1)+'" y2="'+by.toFixed(1)+'" stroke="var(--muted)" stroke-width="1" stroke-dasharray="1.5 2.5" opacity=".7"/>'+
+ '<line x1="'+sx.toFixed(1)+'" x2="'+sx.toFixed(1)+'" y1="0" y2="'+H+'" stroke="var(--ink)" stroke-width="1" opacity=".35"/>'+
+ '<path d="'+dp+'" fill="none" stroke="var(--grey)" stroke-width="1.4" stroke-linejoin="round" stroke-linecap="round"/>'+
+ '<path d="'+da+'" clip-path="url(#'+id+'a)" fill="none" stroke="var(--ok)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/><path d="'+da+'" clip-path="url(#'+id+'b)" fill="none" stroke="var(--red)" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>'};
 window.SHAPE=(a,b,seed,n=40)=>{let r=(seed*2654435761)>>>0||7;const rnd=()=>{r^=r<<13;r>>>=0;r^=r>>17;r^=r<<5;r>>>=0;return r/4294967296};
  const k=Math.floor(rnd()*6),vol=.03+rnd()*.09,d=b-a,o=[];let w=0;
  for(let i=0;i<n;i++){const t=i/(n-1);let f;
@@ -1681,14 +1695,14 @@ window.LG=(name,seed)=>{const ini=name.split(/[\s&]+/).filter(Boolean).map(w=>w[
  function card(s){if(s.custom)return '<article class="sc cu"><div class="sc-h">'+mono(s.name,'#8B95A5')+'<div><h3>'+esc(s.name)+'</h3><p class="bh-sub">Your current agency</p></div></div><p class="bh-v none">0 verified customers</p><p class="cu-n">Not on the registry, so there are no verified results to compare.</p><div class="sc-empty">No tracked client results</div></article>';
   const st=s.id==='steve',PN=['Oak','Summit','Harbor','Cedar','Bright','Vista','Lumen','Maple','Coast','Pine','Willow','Stone'],PT=['Dental','Med Spa','Clinic','Derm','Chiro','Ortho','Laser','Vet'];
   const pf=[...s.pf];let k=0;while(pf.length<5){const h=(s.name.length*13+k*7)%97,a=25+h%20,up=(h%3)!==0||st;pf.push([PN[h%PN.length]+' '+PT[(h>>2)%PT.length],a,up?a+8+h%14:a-4-h%7]);k++}
-  const rows=pf.slice(0,5).map((p,i)=>'<li>'+LG(p[0],i)+'<span class="sc-n">'+esc(p[0])+'</span>'+SPK(SHAPE(p[1],p[2],p[1]*97+i*31+p[2]*13+s.name.length*7),undefined,72,20)+'</li>').join('');
+  const rows=pf.slice(0,5).map((p,i)=>'<li>'+LG(p[0],i)+'<span class="sc-n">'+esc(p[0])+'</span>'+SPK2(p[1],p[2],p[1]*97+i*31+p[2]*13+s.name.length*7,72,20)+'</li>').join('');
   const more=Math.max(0,s.cl-5);
-  return '<article class="sc'+(st?' best5':'')+'">'+(st?'<p class="bm4">Best verified results</p>':'')+
+  return '<article class="sc">'+
   '<div class="sc-h">'+(AVK[s.id]?'<img class="av4" src="'+AV[AVK[s.id]]+'" alt="">':LG(s.name,3).replace('class="lgx"','class="lgx lgb"'))+'<div><h3>'+esc(s.name)+(st?' <span class="vfb">✓</span>':'')+'</h3><p class="bh-sub">'+esc(s.sub)+'</p></div></div>'+
   '<p class="sc-r"><span class="stars">'+stars(s.rate)+'</span><b>'+s.rate.toFixed(1)+'</b> <span>('+s.rv+')</span></p>'+
   '<div class="sc-m"><span><b>'+s.cl+(st?'+':'')+'</b> customers</span><span><b class="'+(s.ret>=90?'up':'dn')+'">'+s.ret+'%</b> retention</span></div>'+
   '<ul class="sc-pf">'+rows+'</ul><p class="sc-more">'+(more?'+'+more+' more customers':'&nbsp;')+'</p>'+
-  '<div class="sc-b"><button class="btn'+(st?' go" data-go="steve"':' ghost"')+' type="button">View profile</button></div></article>'}
+  '<div class="sc-b"><button class="btn ghost'+(st?' go" data-go="steve"':'"')+' type="button">View profile</button></div></article>'}
  const custom=[];
  const SORT={f:(a,b)=>(b.id==='steve')-(a.id==='steve')||b.lift-a.lift,r:(a,b)=>b.lift-a.lift,pl:(a,b)=>a.price-b.price,ph:(a,b)=>b.price-a.price,c:(a,b)=>b.cl-a.cl,s:(a,b)=>b.rate-a.rate};
  function draw(){const list=SP.filter(s=>match(s,on)).sort(SORT[sort]);const n=list.length+custom.length;
