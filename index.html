@@ -1610,38 +1610,42 @@ let SPAN=11;const TEND=23,MN3=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','
 function MONO(ys){const n=ys.length,dl=[],m=[];for(let i=0;i<n-1;i++)dl.push(ys[i+1]-ys[i]);m[0]=dl[0]||0;m[n-1]=dl[n-2]||0;for(let i=1;i<n-1;i++)m[i]=dl[i-1]*dl[i]<=0?0:(dl[i-1]+dl[i])/2;
  for(let i=0;i<n-1;i++){if(!dl[i]){m[i]=m[i+1]=0;continue}const a=m[i]/dl[i],b=m[i+1]/dl[i],h=a*a+b*b;if(h>9){const t=3/Math.sqrt(h);m[i]=t*a*dl[i];m[i+1]=t*b*dl[i]}}
  return t=>{if(t<=0)return ys[0];if(t>=n-1)return ys[n-1];const i=Math.floor(t),u=t-i,u2=u*u,u3=u2*u;return Math.max(0,(2*u3-3*u2+1)*ys[i]+(u3-2*u2+u)*m[i]+(-2*u3+3*u2)*ys[i+1]+(u3-u2)*m[i+1])}}
-function TD(t){const i=Math.max(0,Math.min(23,Math.floor(t))),p=MLAB[i].split(' '),mo=MN3.indexOf(p[0]),yr=+p[1],dim=new Date(yr,mo+1,0).getDate(),fr=Math.max(0,t-i),dd=fr*dim,day=Math.min(dim,Math.floor(dd)+1),hr=Math.min(23,Math.floor((dd-Math.floor(dd))*24));return{mo,yr,day,hr}}
+function TD(t){const i=Math.max(0,Math.floor(t)),mo=(10+i)%12,yr=2024+Math.floor((10+i)/12),dim=new Date(yr,mo+1,0).getDate(),fr=Math.max(0,t-i),dd=fr*dim,day=Math.min(dim,Math.floor(dd)+1),hr=Math.min(23,Math.floor((dd-Math.floor(dd))*24));return{mo,yr,day,hr}}
+function LAB(i){return MN3[(10+i)%12]+' '+(2024+Math.floor((10+i)/12))}
+function FC(s){if(s._fc)return s._fc;const n=s.v.length,k=Math.min(6,n),xs=[],ys=[];for(let i=n-k;i<n;i++){xs.push(i);ys.push(s.v[i])}const mx=xs.reduce((a,b)=>a+b)/k,my=ys.reduce((a,b)=>a+b)/k;let num=0,den=0;xs.forEach((x,j)=>{num+=(x-mx)*(ys[j]-my);den+=(x-mx)*(x-mx)});const sl=den?num/den:0,last=s.v[n-1];s._fc=t=>Math.max(0,last+sl*(t-(n-1)));return s._fc}
+function VAL(s,t){return t<=TEND?s._F(t):FC(s)(t)}
 function draw(){
- const t1=TEND,t0=Math.max(0,TEND-SPAN),on=S.filter(s=>s.on),NS=160;S.forEach(s=>{if(!s._F)s._F=MONO(s.v)});
+ const t1=TEND,t0=Math.max(0,TEND-SPAN),FW=SPAN>=3?Math.max(2,Math.round(SPAN*.25)):SPAN*.25,tE=t1+FW,on=S.filter(s=>s.on),NS=160;S.forEach(s=>{if(!s._F)s._F=MONO(s.v)});
  const cw=svg.clientWidth||340,big=cw>=520,VW=big?cw:340,VH=big?300:190;svg.setAttribute('viewBox','0 0 '+VW+' '+VH);svg.classList.toggle('px',big);
- const ts=[];for(let k=0;k<=NS;k++)ts.push(t0+(t1-t0)*k/NS);
- const max=nice(Math.max(...on.flatMap(s=>ts.map(t=>s._F(t))),120));
- const L=big?44:34,R=VW-(big?88:10),T=10,B=VH-24,x=t=>L+(t-t0)/(t1-t0)*(R-L),y=v=>B-(v/max)*(B-T);
- let h='';const DV=(max/4)%(max>=1000?500:50)===0?4:5;for(let k=0;k<=DV;k++){const v=max*k/DV,yy=y(v);h+=`<line class="gl" x1="${L}" x2="${R}" y1="${yy}" y2="${yy}"/><text x="${L-6}" y="${yy+3}" text-anchor="end">${fmt(v)}</text>`}
+ const ts=[],tf=[];for(let k=0;k<=NS;k++)ts.push(t0+(t1-t0)*k/NS);for(let k=0;k<=40;k++)tf.push(t1+FW*k/40);
+ const max=nice(Math.max(...on.flatMap(s=>ts.concat(tf).map(t=>VAL(s,t))),120));
+ const L=big?44:34,R=VW-(big?112:10),T=14,B=VH-24,x=t=>L+(t-t0)/(tE-t0)*(R-L),y=v=>B-(v/max)*(B-T);
+ let h=`<rect x="${x(t1)}" y="${T-4}" width="${R-x(t1)}" height="${B-T+4}" fill="var(--blue-t)" opacity=".45"/><line x1="${x(t1)}" x2="${x(t1)}" y1="${T-4}" y2="${B}" stroke="var(--muted)" stroke-dasharray="2 3" opacity=".6"/><text x="${x(t1)+6}" y="${T+6}" style="font-weight:700;fill:var(--muted)">Forecast</text>`;
+ const DV=(max/4)%(max>=1000?500:50)===0?4:5;for(let k=0;k<=DV;k++){const v=max*k/DV,yy=y(v);h+=`<line class="gl" x1="${L}" x2="${R}" y1="${yy}" y2="${yy}"/><text x="${L-6}" y="${yy+3}" text-anchor="end">${fmt(v)}</text>`}
  h+=`<line x1="${L}" x2="${R}" y1="${B}" y2="${B}" stroke="var(--rule2,#ccc)" stroke-width="1"/>`;
- let tk=[];if(SPAN>=3){const st=SPAN>12?3:SPAN>6?(big?1:2):1;for(let i=Math.ceil(t0);i<=23;i++)if((23-i)%st===0)tk.push([i,SPAN>12?MLAB[i].slice(0,3)+' ’'+MLAB[i].slice(-2):MLAB[i].slice(0,3)])}
- else{for(let k=0;k<5;k++){const t=t0+(t1-t0)*k/4,d=TD(t);tk.push([t,SPAN<.1?((d.hr%12)||12)+(d.hr<12?'a':'p'):MN3[d.mo]+' '+d.day])}}
+ let tk=[];if(SPAN>=3){const st=SPAN>12?3:SPAN>6?(big?1:2):1;for(let i=Math.ceil(t0);i<=Math.floor(tE);i++)if(((i-23)%st+st)%st===0){const l=LAB(i);tk.push([i,SPAN>12?l.slice(0,3)+' ’'+l.slice(-2):l.slice(0,3)])}}
+ else{for(let k=0;k<5;k++){const t=t0+(tE-t0)*k/4,d=TD(t);tk.push([t,SPAN<.1?((d.hr%12)||12)+(d.hr<12?'a':'p'):MN3[d.mo]+' '+d.day])}}
  tk.forEach(([t,lab],k)=>{const xx=x(t),an=k===0&&SPAN<3?'start':k===tk.length-1&&SPAN<3?'end':'middle';h+=`<line x1="${xx}" x2="${xx}" y1="${B}" y2="${B+4}" stroke="var(--muted)" opacity=".5"/><text x="${xx}" y="${VH-4}" text-anchor="${an}">${lab}</text>`});
  [...on].sort((a,b)=>(a.me?1:0)-(b.me?1:0)).forEach(s=>{
-  const d=ts.map((t,k)=>(k?'L':'M')+x(t).toFixed(1)+' '+y(s._F(t)).toFixed(1)).join(' ');s._f=s._F;
-  if(s.me)h+=`<defs><linearGradient id="megr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${s.c}" stop-opacity=".18"/><stop offset="1" stop-color="${s.c}" stop-opacity="0"/></linearGradient></defs><path d="${d}L${R} ${B}L${L} ${B}Z" fill="url(#megr)"/>`;
-  h+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="${s.me?3:2}" stroke-linejoin="round" stroke-linecap="round"/>`;
-  if(s.me){const lv=Math.round(s._F(t1));h+=`<circle cx="${x(t1)}" cy="${y(lv)}" r="4" fill="${s.c}"/><text class="end" x="${big?x(t1)+8:x(t1)-6}" y="${big?y(lv)+4:y(lv)-8}" text-anchor="${big?'start':'end'}" style="fill:${s.c}">You ${lv.toLocaleString()}/mo</text>`}
+  const d=ts.map((t,k)=>(k?'L':'M')+x(t).toFixed(1)+' '+y(s._F(t)).toFixed(1)).join(' '),df=tf.map((t,k)=>(k?'L':'M')+x(t).toFixed(1)+' '+y(VAL(s,t)).toFixed(1)).join(' ');s._f=s._F;
+  if(s.me)h+=`<defs><linearGradient id="megr" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${s.c}" stop-opacity=".18"/><stop offset="1" stop-color="${s.c}" stop-opacity="0"/></linearGradient></defs><path d="${d}L${x(t1)} ${B}L${L} ${B}Z" fill="url(#megr)"/>`;
+  h+=`<path d="${d}" fill="none" stroke="${s.c}" stroke-width="${s.me?3:2}" stroke-linejoin="round" stroke-linecap="round"/><path d="${df}" fill="none" stroke="${s.c}" stroke-width="${s.me?2.5:1.8}" stroke-dasharray="4 4" stroke-linecap="round" opacity=".8"/>`;
+  if(s.me){const lv=Math.round(s._F(t1)),fv=Math.round(VAL(s,tE));h+=`<circle cx="${x(t1)}" cy="${y(lv)}" r="4" fill="${s.c}"/><circle cx="${x(tE)}" cy="${y(fv)}" r="3.5" fill="#fff" stroke="${s.c}" stroke-width="2"/><text class="end" x="${big?x(tE)+8:x(tE)-6}" y="${big?y(fv)+4:y(fv)-8}" text-anchor="${big?'start':'end'}" style="fill:${s.c}">You ~${fv.toLocaleString()}/mo</text>`}
  });
  svg.innerHTML=h+'<g id="scrub" style="display:none"><line id="scl" y1="'+T+'" y2="'+B+'" stroke="var(--ink)" stroke-width="1" stroke-dasharray="2 3"/><g id="scd"></g></g>';
- svg._g={L,R,x,y,on,VW,t0,t1};
+ svg._g={L,R,x,y,on,VW,t0,t1:tE,tn:t1};
 }
 document.getElementById('rng').addEventListener('click',e=>{const b=e.target.closest('button[data-n]');if(!b)return;{const n=+b.dataset.n;SPAN=Math.min(TEND,n>=3?n-1:n)};document.querySelectorAll('#rng button').forEach(z=>z.setAttribute('aria-pressed',z===b?'true':'false'));draw()});
 draw();addEventListener('resize',()=>{clearTimeout(window._rt);window._rt=setTimeout(draw,150)});(()=>{const t=document.getElementById('tc');if(!t||!window.ResizeObserver)return;let w=0;new ResizeObserver(()=>{const n=t.clientWidth;if(n&&n!==w){w=n;draw()}}).observe(t)})();document.addEventListener('click',e=>{if(e.target.closest('[data-go="status"]'))setTimeout(draw,50)});
 (()=>{const MN=['Nov 2025','Dec 2025','Jan 2026','Feb 2026','Mar 2026','Apr 2026','May 2026','Jun 2026','Jul 2026','Aug 2026','Sep 2026','Oct 2026'];
  const wrap=svg.parentNode;wrap.style.position='relative';const tip=document.createElement('div');tip.className='sctip';tip.hidden=true;wrap.appendChild(tip);
  function at(ev){const g=svg._g;const r=svg.getBoundingClientRect();const px=(ev.clientX-r.left)/r.width*g.VW;let t=g.t0+(px-g.L)/(g.R-g.L)*(g.t1-g.t0);t=Math.max(g.t0,Math.min(g.t1,t));
-  const ti=Math.round(t),exact=SPAN>=3&&Math.abs(t-ti)<(g.t1-g.t0)/90&&ti<=23;if(exact)t=ti;
+  const ti=Math.round(t),exact=SPAN>=3&&Math.abs(t-ti)<(g.t1-g.t0)/90&&ti<=TEND;if(exact)t=ti;
   const sc=document.getElementById('scrub'),xx=g.x(t);sc.style.display='';document.getElementById('scl').setAttribute('x1',xx);document.getElementById('scl').setAttribute('x2',xx);
-  const on=S.filter(s=>s.on).map(s=>({s,v:Math.round(s._F(t))})).sort((a,b)=>b.v-a.v);
+  const on=S.filter(s=>s.on).map(s=>({s,v:Math.round(VAL(s,t))})).sort((a,b)=>b.v-a.v);const fut=t>g.tn+1e-6;
   document.getElementById('scd').innerHTML=on.map(z=>'<circle cx="'+xx+'" cy="'+g.y(z.v)+'" r="'+(z.s.me?5:3.5)+'" fill="'+z.s.c+'" stroke="#fff" stroke-width="1.5"/>').join('');
-  const d=TD(t),head=exact?MLAB[ti]:(MN3[d.mo]+' '+d.day+', '+d.yr+(SPAN<.1?' · '+((d.hr%12)||12)+(d.hr<12?' AM':' PM'):''));
-  tip.innerHTML='<b>'+head+(exact?'':' <small class="est">estimate</small>')+'</b>'+on.map(z=>'<span'+(z.s.me?' class="me"':'')+'><i style="background:'+z.s.c+'"></i>'+esc(z.s.n)+'<em>'+z.v.toLocaleString()+'/mo</em></span>').join('');
+  const d=TD(t),head=exact?LAB(ti):(MN3[d.mo]+' '+d.day+', '+d.yr+(SPAN<.1?' · '+((d.hr%12)||12)+(d.hr<12?' AM':' PM'):''));
+  tip.innerHTML='<b>'+head+(fut?' <small class="est">forecast</small>':exact?'':' <small class="est">estimate</small>')+'</b>'+on.map(z=>'<span'+(z.s.me?' class="me"':'')+'><i style="background:'+z.s.c+'"></i>'+esc(z.s.n)+'<em>'+z.v.toLocaleString()+'/mo</em></span>').join('');
   tip.hidden=false;const left=(r.left-wrap.getBoundingClientRect().left)+xx/g.VW*r.width;const w=tip.offsetWidth;let lx=t>(g.t0+g.t1)/2?left-w-12:left+12;tip.style.left=Math.max(4,Math.min(wrap.clientWidth-w-4,lx))+'px';tip.style.top=(r.top-wrap.getBoundingClientRect().top+4)+'px'}
  const hide=()=>{tip.hidden=true;const sc=document.getElementById('scrub');if(sc)sc.style.display='none'};
  svg.addEventListener('pointermove',at);svg.addEventListener('pointerdown',at);svg.addEventListener('pointerleave',hide);svg.style.touchAction='pan-y';svg.style.cursor='crosshair'})();
@@ -1846,7 +1850,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('.sc [data-go]');
  const end=Date.parse('2026-12-01T07:59:00Z');
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
- const C={status:['19/100 AI Score','13 issues found','See what to fix','solution'],solution:['12 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$15,106/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
+ const C={status:['19/100 AI Score','12 issues found','See what to fix','solution'],solution:['12 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$15,106/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
  window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Get started';B.href='#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
