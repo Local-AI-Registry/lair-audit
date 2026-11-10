@@ -820,7 +820,7 @@ body.hasbar.onexp .w{max-width:1140px!important}
 body.hasbar.onprop .w{max-width:1180px!important;margin-left:auto!important;margin-right:auto!important}
 #s-proposal:not([hidden]){display:grid!important;grid-template-columns:minmax(0,1fr) 330px!important;column-gap:24px;align-items:start}
 #s-proposal>*{grid-column:1}
-#s-proposal>.co{position:sticky!important;right:auto!important;top:84px!important;grid-column:2!important;grid-row:1/span 30!important;width:auto!important;max-height:none!important;overflow:visible!important;align-self:start}
+#s-proposal>.co{position:sticky!important;right:auto!important;top:84px!important;grid-column:2!important;grid-row:1/span 5!important;width:auto!important;max-height:none!important;overflow:visible!important;align-self:start}
 }
 .fd-n:empty{display:none}
 .fdm .fd-s{font:600 17px var(--fb);color:var(--ink)}
@@ -940,7 +940,7 @@ th.r .sth{flex-direction:row}
 .pl3 td{height:24px}
 .pl3 i.bar{display:flex;align-items:center;height:22px;border-radius:6px;padding:0 8px;font:600 10.5px var(--fb);color:#fff;white-space:nowrap;overflow:hidden;background:var(--blue)}
 .pl3 tr.ph-a i.bar{background:#0E8A5F}.pl3 tr.ph-g i.bar{background:var(--ink)}
-.pl3 .phr th{padding:0 0 6px!important}.pl3 .phr em{display:block;font:700 10.5px var(--fu);font-style:normal;letter-spacing:.06em;text-transform:uppercase;text-align:left;padding:0 0 5px 2px;border-bottom:3px solid var(--blue);color:var(--blue)}
+.pl3 .phr th{padding:0 3px 6px 0!important}.pl3 .phr em{display:block;font:700 11px var(--fu);font-style:normal;white-space:nowrap;overflow:hidden;text-overflow:clip;text-transform:none!important;letter-spacing:0!important;text-align:left;padding:0 0 5px 2px;border-bottom:3px solid var(--blue);color:var(--blue)}
 .pl3 .phr .ph-a em{border-color:#0E8A5F;color:#0E8A5F}.pl3 .phr .ph-g em{border-color:var(--ink);color:var(--ink)}
 .pl3 tfoot td{vertical-align:bottom;height:64px}.pl3 .wsb{display:block;margin:0 auto;width:60%;border-radius:4px 4px 0 0;background:var(--blue)}.pl3 .wsb.ph-a{background:#0E8A5F}.pl3 .wsb.ph-g{background:var(--ink)}
 .pl3 tfoot td b{color:var(--ink)!important;padding-top:4px!important}
@@ -1137,7 +1137,7 @@ th.r .sth{flex-direction:row}
 <svg id="roi" viewBox="0 0 340 200" role="img" aria-label="Projected monthly value rising from zero in months 1 and 2 to $3,600 to $7,300 by month 8, crossing the $3,000 monthly cost between months 5 and 7"></svg>
 <div class="lg2"><span><i class="b"></i>Projected value range</span><span><i class="c"></i>Your monthly cost</span></div>
 
-<p class="src">Projection, not a promise. <b>In AI:</b> you start showing up in AI answers. <b>Pays for itself:</b> each month brings in more than it costs. <b>Full results:</b> growth levels off at its peak, usually by month&nbsp;8.</p></section>
+<p class="src">Projection, not a promise. <b>In AI:</b> you start showing up in AI answers. <b>Pays for itself:</b> each month brings in more than it costs. <b>Full results:</b> everything is running by month 9, and growth keeps going from&nbsp;there.</p></section>
 <section class="card bld" id="bld" hidden><p class="k">Build your plan</p>
 <p class="bld-t">Everything we do, priced on its own. Pick what you want and we bundle it for&nbsp;you.</p>
 <div class="tiers" id="tiers"></div>
@@ -1747,7 +1747,7 @@ const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''
    m.className='fm ok';m.textContent='Opening your email app to send the request.'}
  })})();
 
-window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;window._roiC=cost;const cw=el.clientWidth||340,big=cw>=520,VW=big?cw:340,VH=big?260:200;el.setAttribute('viewBox','0 0 '+VW+' '+VH);el.classList.toggle('px',big);const ramp=[0,0,.25,.4,.55,.7,.85,1,1,1,1,1],REV=window.REVN||5463,lo=REV*2/3,hi=REV*4/3,max=Math.max(4000,Math.ceil(Math.max(hi,cost)*1.15/4000)*4000);
+window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;window._roiC=cost;const cw=el.clientWidth||340,big=cw>=520,VW=big?cw:340,VH=big?260:200;el.setAttribute('viewBox','0 0 '+VW+' '+VH);el.classList.toggle('px',big);const ramp=[0,0,.22,.36,.5,.63,.76,.88,1,1.1,1.2,1.3],REV=window.REVN||5463,lo=REV*2/3,hi=REV*4/3,max=Math.max(4000,Math.ceil(Math.max(hi*1.3,cost)*1.15/4000)*4000);
  const L=big?52:34,R=VW-8,T=50,B=VH-28,x=i=>L+i*(R-L)/11,y=v=>B-v/max*(B-T);let h='';
  [0,max/4,max/2,max*3/4,max].forEach(v=>h+=`<line class="gl" x1="${L}" x2="${R}" y1="${y(v)}" y2="${y(v)}"/><text x="${L-6}" y="${y(v)+3}" text-anchor="end">${v?('$'+(v/1000).toFixed(v%1000?1:0)+'K'):'$0'}</text>`);
  const top=ramp.map((r,i)=>x(i).toFixed(1)+' '+y(hi*r).toFixed(1)),bot=ramp.map((r,i)=>x(i).toFixed(1)+' '+y(lo*r).toFixed(1)).reverse();
@@ -1756,7 +1756,7 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  h+=`<line x1="${L}" x2="${R}" y1="${y(cost)}" y2="${y(cost)}" stroke="var(--red)" stroke-width="2" stroke-dasharray="5 4"/><text x="${L+6}" y="${y(cost)-6}" text-anchor="start" style="fill:var(--red)">$${cost.toLocaleString('en-US')} cost</text>`;
  for(let i=0;i<12;i++)h+=`<text x="${x(i)}" y="${VH-10}" text-anchor="middle">${i+1}</text>`;
  const mid=i=>(lo+hi)/2*ramp[i];let bx=null;for(let i=1;i<12;i++){if(mid(i)>=cost&&mid(i-1)<cost){const t=(cost-mid(i-1))/(mid(i)-mid(i-1));bx=i-1+t;break}}
- const ms=[[2,'In AI','var(--blue)'],[bx,'Pays for itself','var(--red)'],[7,'Full results','var(--ok)']].filter(z=>z[0]!==null);
+ const ms=[[2,'In AI','var(--blue)'],[bx,'Pays for itself','var(--red)'],[8,'Full results','var(--ok)']].filter(z=>z[0]!==null);
  ms.forEach((z,k)=>{const xx=x(z[0]);h+=`<line x1="${xx}" x2="${xx}" y1="${z[1]==='Pays for itself'?T-8:T-28}" y2="${B}" stroke="${z[2]}" stroke-width="1.4" stroke-dasharray="3 3"/><circle cx="${xx}" cy="${z[1]==='Pays for itself'?T-8:T-28}" r="3.5" fill="${z[2]}"/><text class="ms" x="${xx+(z[0]>=9?-6:6)}" y="${z[1]==='Pays for itself'?T-4:T-24}" text-anchor="${z[0]>=9?'end':'start'}" style="fill:${z[2]};font-weight:800">${z[1]}${z[0]===bx?' · mo '+(Math.ceil(bx)+1):' · mo '+(z[0]+1)}</text>`});
  el.innerHTML=h};drawROI(window.CUR||3000);(()=>{const t=document.getElementById('roi');if(!t||!window.ResizeObserver)return;let w=0;new ResizeObserver(()=>{const n=t.clientWidth;if(n&&n!==w){w=n;drawROI(window._roiC||3000)}}).observe(t)})();
 
