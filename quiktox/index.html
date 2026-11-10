@@ -1203,6 +1203,26 @@ body{overflow-x:clip}
 #s-experts .sc-b .btn{width:100%!important;justify-content:center!important;text-align:center!important;text-decoration:none!important;border:1.5px solid var(--ink)!important;border-radius:999px!important;padding:11px 16px!important;font:700 14px var(--fu)!important}
 #s-experts .sc-b .btn:hover{background:var(--ink)!important;color:#fff!important}
 /* mobile fixes */
+@media (min-width:960px){
+#s-solution .qx-hd{padding:12px 16px 10px!important;border-bottom:0!important}
+#s-solution .qxh-m{display:none}
+#s-solution .qxh-d{display:flex;gap:14px;text-transform:none;letter-spacing:0;font:600 11.5px var(--fu);color:var(--muted)}
+#s-solution .qxh-d span{display:inline-flex;align-items:center;gap:5px}
+.qd{display:inline-block;width:7px;height:7px;border-radius:50%;background:currentColor}.qd.bad{color:var(--red)}.qd.warn{color:var(--amber)}.qd.ok{color:var(--ok)}
+#s-solution .qx-row,#s-solution .qx-row+.qx-row,#s-solution .qx-btn{border:0!important;box-shadow:none}#s-solution #qxp .qx-s.bad,#s-solution #qxp .qx-s.warn,#s-solution #qxp .qx-s.ok{font:700 13px/1 var(--fu)!important;width:auto!important;height:auto!important;background:none!important;border-radius:0!important}
+#s-solution .qx-list,#s-solution #qx-list{padding:0 6px 6px}
+#s-solution .qx-btn{padding:5px 10px!important;gap:10px!important;border-radius:9px;min-height:0!important}
+#s-solution .qx-btn:hover{background:var(--bg)}
+#s-solution .qx-c{font:500 13.5px/1.2 var(--fb)!important;color:var(--body)!important}
+#s-solution .qx-ti{background:none!important;box-shadow:none!important;color:var(--muted)!important;opacity:.8}
+#s-solution .qx-ch{display:none!important}
+#s-solution .qx-s.bad,#s-solution .qx-s.warn,#s-solution .qx-s.ok{font-size:0!important;width:8px;height:8px;padding:0!important;border-radius:50%;background:currentColor;flex:none}
+#s-solution .qx-s.na{font:600 11px var(--fu)!important;color:var(--muted)!important}
+#s-solution .qx-btn[aria-expanded=true],#s-solution .qx-btn.on,#s-solution .qx-row.on .qx-btn{background:var(--blue-t)!important}
+#s-solution .qx-btn[aria-expanded=true] .qx-c,#s-solution .qx-row.on .qx-c{color:var(--ink)!important;font-weight:700!important}
+#s-solution .qx-btn[aria-expanded=true] .qx-ti{color:var(--blue)!important;opacity:1}
+}
+@media (max-width:959px){.qxh-d{display:none}}
 .tmk-t .tmk-np{margin-top:2px;font:800 22px/1.05 var(--fu)!important;color:var(--ink)!important;letter-spacing:-.01em}.tmk-np em{font-weight:800}.tmk-np small{font:700 13px var(--fu);color:var(--body)}
 .tml{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:10px!important}.tml img{display:block;width:104px!important;max-width:100%!important;height:18px!important;object-fit:contain!important;object-position:left center!important;filter:brightness(0)!important;opacity:.72;background:none!important;padding:0!important;border-radius:0!important}
 body.onexp:not(.onstv) .ctab{display:none!important}
@@ -1324,7 +1344,7 @@ strong.bw{font-weight:800;color:var(--ink)}
 <!-- SOLUTION -->
 <main class="scr sol2" id="s-solution" hidden>
 <div class="solh"><div class="sh"><p class="k">Audit results</p><h2 class="sh2">We ran a <span id="qx-n">16</span>-point&nbsp;check</h2><p class="sub" id="qx-sum"></p></div><div class="card solcta"><div><b><span id="qx-bad" class="qx-red">15</span>/<span id="qx-tot">16</span></b><span>need fixing</span></div><button class="cta coral go" data-go="value" type="button">See if it's worth fixing &rarr;</button></div></div>
-<div class="inb"><section class="card qx-card"><div class="qx-hd"><span>Check</span><span>Result</span></div><div id="qx-list"></div></section>
+<div class="inb"><section class="card qx-card"><div class="qx-hd"><span class="qxh-m">Check</span><span class="qxh-m">Result</span><span class="qxh-d"><span><i class="qd bad"></i>Failed</span><span><i class="qd warn"></i>Weak</span><span><i class="qd ok"></i>Passed</span></span></div><div id="qx-list"></div></section>
 <div class="inb-r"><section class="card qx-pane" id="qxp" hidden aria-live="polite"></section><section class="card rsol"><p class="k" style="color:var(--ok)">What makes us different</p><h3 class="h3s">A verified record AI can&nbsp;trust</h3><p class="sub" style="margin:0 0 6px">Agencies post content and hope AI notices. We verify your license, services and hours, publish them as one public record on the Local AI Registry, and connect it to your website, Google profile and reviews. AI checks the facts against your record before it names you. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div></div>
 <template id="vendt"><table class="vt"><thead><tr><th>Who you'd hire</th><th>Fixes</th><th>Per month</th></tr></thead><tbody>
 <tr><td><b>AEO agency</b><small class="vex">e.g. Profound</small></td><td>Record, answer pages, AI monitoring</td><td>$5,000</td></tr>
