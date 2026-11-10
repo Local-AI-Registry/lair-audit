@@ -1,0 +1,869 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Clinton Work Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<style>
+:root {
+  color-scheme: light;
+  --color-fg: #0B1A2E; --color-fg-muted: #5b6474; --color-bg: #F4F1EA; --color-panel: #FFFFFF; --color-border-line: #E3DDCF;
+  --color-ok: #1d7a4a; --color-warn: #a8640c; --color-bad: #D8402A;
+  --font-anthropic-sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-anthropic-serif: "Cormorant", Georgia, serif;
+  --cds-font-size-caption: 12.5px; --cds-font-size-body: 15px; --cds-font-size-heading: 19px; --cds-font-size-title: 34px; --cds-font-weight-medium: 600;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 18px; --cds-gap-xl: 28px;
+  --cds-pad-sm: 6px; --cds-pad-md: 12px; --cds-pad-lg: 18px; --cds-radius: 10px;
+  --cds-chart-muted: #cfc8b8; --cds-chart-grid: #ECE6D6; --cds-chart-axis: #d7d0c0; --cds-chart-reference: #9a937f;
+  --cds-text-secondary: #5b6474; --cds-surface-popover: #FFFFFF; --cds-border: #E3DDCF; --cds-shadow-popover: 0 6px 24px rgba(11,26,46,.12);
+}
+html, body { margin: 0; background: var(--color-bg); color: var(--color-fg); }
+body { font-family: var(--font-anthropic-sans); -webkit-font-smoothing: antialiased; }
+#dash-root { max-width: 1180px; margin: 0 auto; padding: 28px 16px 64px; }
+.cw h1 { font-weight: 600 !important; letter-spacing: -0.01em; }
+.cw-tile .cw-v { font-weight: 600 !important; }
+</style>
+<script>
+(function(){
+  var D = {"daily":[{"day":"2026-07-01","weekday":"Wed","human_hours":4.5,"code_hours":4.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":2,"bot_pushes":0,"releases":2,"slack_available":false},{"day":"2026-07-02","weekday":"Thu","human_hours":2.5,"code_hours":2.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":6,"bot_pushes":0,"releases":4,"slack_available":false},{"day":"2026-07-03","weekday":"Fri","human_hours":8.5,"code_hours":8.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":19,"bot_pushes":0,"releases":5,"slack_available":false},{"day":"2026-07-04","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-05","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-06","weekday":"Mon","human_hours":13.5,"code_hours":13.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":17,"bot_pushes":0,"releases":12,"slack_available":false},{"day":"2026-07-07","weekday":"Tue","human_hours":2.5,"code_hours":2.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":5,"bot_pushes":0,"releases":5,"slack_available":false},{"day":"2026-07-08","weekday":"Wed","human_hours":1.5,"code_hours":1.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":3,"bot_pushes":0,"releases":5,"slack_available":false},{"day":"2026-07-09","weekday":"Thu","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":4,"slack_available":false},{"day":"2026-07-10","weekday":"Fri","human_hours":6.0,"code_hours":6.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":9,"bot_pushes":0,"releases":9,"slack_available":false},{"day":"2026-07-11","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-12","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-13","weekday":"Mon","human_hours":6.0,"code_hours":6.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":14,"bot_pushes":0,"releases":1,"slack_available":false},{"day":"2026-07-14","weekday":"Tue","human_hours":8.5,"code_hours":8.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":30,"bot_pushes":0,"releases":4,"slack_available":false},{"day":"2026-07-15","weekday":"Wed","human_hours":3.0,"code_hours":3.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":5,"bot_pushes":0,"releases":1,"slack_available":false},{"day":"2026-07-16","weekday":"Thu","human_hours":17.5,"code_hours":17.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":71,"bot_pushes":0,"releases":17,"slack_available":false},{"day":"2026-07-17","weekday":"Fri","human_hours":8.0,"code_hours":8.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":45,"bot_pushes":0,"releases":16,"slack_available":false},{"day":"2026-07-18","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-19","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-20","weekday":"Mon","human_hours":10.0,"code_hours":10.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":58,"bot_pushes":0,"releases":17,"slack_available":false},{"day":"2026-07-21","weekday":"Tue","human_hours":8.0,"code_hours":8.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":54,"bot_pushes":0,"releases":21,"slack_available":false},{"day":"2026-07-22","weekday":"Wed","human_hours":12.0,"code_hours":12.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":48,"bot_pushes":0,"releases":14,"slack_available":false},{"day":"2026-07-23","weekday":"Thu","human_hours":7.5,"code_hours":7.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":11,"bot_pushes":0,"releases":11,"slack_available":false},{"day":"2026-07-24","weekday":"Fri","human_hours":1.0,"code_hours":1.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":3,"bot_pushes":0,"releases":2,"slack_available":false},{"day":"2026-07-25","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-26","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-07-27","weekday":"Mon","human_hours":4.5,"code_hours":4.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":4,"bot_pushes":0,"releases":4,"slack_available":false},{"day":"2026-07-28","weekday":"Tue","human_hours":8.0,"code_hours":8.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":3,"bot_pushes":0,"releases":3,"slack_available":false},{"day":"2026-07-29","weekday":"Wed","human_hours":6.0,"code_hours":6.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":2,"bot_pushes":0,"releases":2,"slack_available":false},{"day":"2026-07-30","weekday":"Thu","human_hours":7.5,"code_hours":7.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":4,"bot_pushes":0,"releases":4,"slack_available":false},{"day":"2026-07-31","weekday":"Fri","human_hours":12.0,"code_hours":12.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":7,"bot_pushes":0,"releases":7,"slack_available":false},{"day":"2026-08-01","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-08-02","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":false},{"day":"2026-08-03","weekday":"Mon","human_hours":21.0,"code_hours":21.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":9,"first_slack":"1:10 PM","last_slack":"6:56 PM","first_slack_h":13.17,"last_slack_h":18.93,"own_pushes":25,"bot_pushes":0,"releases":25,"slack_available":true},{"day":"2026-08-04","weekday":"Tue","human_hours":13.0,"code_hours":11.0,"slack_hours":2.0,"bot_hours":10.0,"slack_msgs":18,"first_slack":"12:24 AM","last_slack":"7:32 PM","first_slack_h":0.4,"last_slack_h":19.53,"own_pushes":14,"bot_pushes":47,"releases":11,"slack_available":true},{"day":"2026-08-05","weekday":"Wed","human_hours":17.0,"code_hours":17.0,"slack_hours":0.0,"bot_hours":8.5,"slack_msgs":10,"first_slack":"10:00 AM","last_slack":"4:35 PM","first_slack_h":10.0,"last_slack_h":16.58,"own_pushes":36,"bot_pushes":36,"releases":6,"slack_available":true},{"day":"2026-08-06","weekday":"Thu","human_hours":9.5,"code_hours":5.0,"slack_hours":4.5,"bot_hours":0.0,"slack_msgs":30,"first_slack":"7:00 AM","last_slack":"4:50 PM","first_slack_h":7.0,"last_slack_h":16.83,"own_pushes":28,"bot_pushes":0,"releases":1,"slack_available":true},{"day":"2026-08-07","weekday":"Fri","human_hours":3.5,"code_hours":1.0,"slack_hours":2.5,"bot_hours":0.0,"slack_msgs":15,"first_slack":"12:26 PM","last_slack":"7:32 PM","first_slack_h":12.43,"last_slack_h":19.53,"own_pushes":1,"bot_pushes":0,"releases":1,"slack_available":true},{"day":"2026-08-08","weekday":"Sat","human_hours":0.5,"code_hours":0.0,"slack_hours":0.5,"bot_hours":0.0,"slack_msgs":1,"first_slack":"10:29 AM","last_slack":"10:29 AM","first_slack_h":10.48,"last_slack_h":10.48,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-08-09","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-08-10","weekday":"Mon","human_hours":9.5,"code_hours":6.0,"slack_hours":3.5,"bot_hours":6.0,"slack_msgs":12,"first_slack":"5:12 AM","last_slack":"4:05 PM","first_slack_h":5.2,"last_slack_h":16.08,"own_pushes":4,"bot_pushes":27,"releases":1,"slack_available":true},{"day":"2026-08-11","weekday":"Tue","human_hours":10.5,"code_hours":9.0,"slack_hours":1.5,"bot_hours":6.0,"slack_msgs":15,"first_slack":"6:09 AM","last_slack":"7:30 PM","first_slack_h":6.15,"last_slack_h":19.5,"own_pushes":18,"bot_pushes":31,"releases":1,"slack_available":true},{"day":"2026-08-12","weekday":"Wed","human_hours":13.5,"code_hours":9.5,"slack_hours":4.0,"bot_hours":7.5,"slack_msgs":19,"first_slack":"6:26 AM","last_slack":"3:22 PM","first_slack_h":6.43,"last_slack_h":15.37,"own_pushes":10,"bot_pushes":23,"releases":9,"slack_available":true},{"day":"2026-08-13","weekday":"Thu","human_hours":9.0,"code_hours":8.0,"slack_hours":1.0,"bot_hours":7.5,"slack_msgs":8,"first_slack":"8:29 AM","last_slack":"3:37 PM","first_slack_h":8.48,"last_slack_h":15.62,"own_pushes":9,"bot_pushes":38,"releases":9,"slack_available":true},{"day":"2026-08-14","weekday":"Fri","human_hours":9.5,"code_hours":9.0,"slack_hours":0.5,"bot_hours":8.0,"slack_msgs":23,"first_slack":"12:09 AM","last_slack":"6:35 PM","first_slack_h":0.15,"last_slack_h":18.58,"own_pushes":8,"bot_pushes":45,"releases":8,"slack_available":true},{"day":"2026-08-15","weekday":"Sat","human_hours":7.0,"code_hours":7.0,"slack_hours":0.0,"bot_hours":5.5,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":4,"bot_pushes":23,"releases":3,"slack_available":true},{"day":"2026-08-16","weekday":"Sun","human_hours":11.5,"code_hours":11.0,"slack_hours":0.5,"bot_hours":10.0,"slack_msgs":19,"first_slack":"9:31 AM","last_slack":"9:03 PM","first_slack_h":9.52,"last_slack_h":21.05,"own_pushes":4,"bot_pushes":51,"releases":4,"slack_available":true},{"day":"2026-08-17","weekday":"Mon","human_hours":10.5,"code_hours":8.5,"slack_hours":2.0,"bot_hours":7.5,"slack_msgs":4,"first_slack":"2:10 PM","last_slack":"10:37 PM","first_slack_h":14.17,"last_slack_h":22.62,"own_pushes":12,"bot_pushes":20,"releases":5,"slack_available":true},{"day":"2026-08-18","weekday":"Tue","human_hours":12.0,"code_hours":7.5,"slack_hours":4.5,"bot_hours":8.5,"slack_msgs":38,"first_slack":"12:10 PM","last_slack":"9:40 PM","first_slack_h":12.17,"last_slack_h":21.67,"own_pushes":6,"bot_pushes":20,"releases":2,"slack_available":true},{"day":"2026-08-19","weekday":"Wed","human_hours":8.5,"code_hours":5.0,"slack_hours":3.5,"bot_hours":6.0,"slack_msgs":18,"first_slack":"2:06 AM","last_slack":"9:01 PM","first_slack_h":2.1,"last_slack_h":21.02,"own_pushes":2,"bot_pushes":26,"releases":2,"slack_available":true},{"day":"2026-08-20","weekday":"Thu","human_hours":15.0,"code_hours":11.5,"slack_hours":3.5,"bot_hours":4.5,"slack_msgs":28,"first_slack":"6:23 AM","last_slack":"8:27 PM","first_slack_h":6.38,"last_slack_h":20.45,"own_pushes":10,"bot_pushes":21,"releases":1,"slack_available":true},{"day":"2026-08-21","weekday":"Fri","human_hours":9.0,"code_hours":9.0,"slack_hours":0.0,"bot_hours":1.0,"slack_msgs":6,"first_slack":"9:33 AM","last_slack":"4:47 PM","first_slack_h":9.55,"last_slack_h":16.78,"own_pushes":22,"bot_pushes":4,"releases":7,"slack_available":true},{"day":"2026-08-22","weekday":"Sat","human_hours":14.0,"code_hours":12.0,"slack_hours":2.0,"bot_hours":7.0,"slack_msgs":5,"first_slack":"8:56 PM","last_slack":"9:04 PM","first_slack_h":20.93,"last_slack_h":21.07,"own_pushes":17,"bot_pushes":14,"releases":10,"slack_available":true},{"day":"2026-08-23","weekday":"Sun","human_hours":6.0,"code_hours":6.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":6,"bot_pushes":0,"releases":6,"slack_available":true},{"day":"2026-08-24","weekday":"Mon","human_hours":8.5,"code_hours":4.0,"slack_hours":4.5,"bot_hours":0.0,"slack_msgs":13,"first_slack":"10:48 AM","last_slack":"8:34 PM","first_slack_h":10.8,"last_slack_h":20.57,"own_pushes":5,"bot_pushes":0,"releases":5,"slack_available":true},{"day":"2026-08-25","weekday":"Tue","human_hours":7.5,"code_hours":2.5,"slack_hours":5.0,"bot_hours":0.0,"slack_msgs":13,"first_slack":"12:29 AM","last_slack":"7:29 PM","first_slack_h":0.48,"last_slack_h":19.48,"own_pushes":4,"bot_pushes":0,"releases":4,"slack_available":true},{"day":"2026-08-26","weekday":"Wed","human_hours":3.5,"code_hours":1.5,"slack_hours":2.0,"bot_hours":0.5,"slack_msgs":5,"first_slack":"7:53 AM","last_slack":"3:45 PM","first_slack_h":7.88,"last_slack_h":15.75,"own_pushes":4,"bot_pushes":5,"releases":2,"slack_available":true},{"day":"2026-08-27","weekday":"Thu","human_hours":7.5,"code_hours":5.5,"slack_hours":2.0,"bot_hours":4.5,"slack_msgs":4,"first_slack":"2:19 AM","last_slack":"10:18 PM","first_slack_h":2.32,"last_slack_h":22.3,"own_pushes":7,"bot_pushes":6,"releases":0,"slack_available":true},{"day":"2026-08-28","weekday":"Fri","human_hours":9.0,"code_hours":9.0,"slack_hours":0.0,"bot_hours":6.0,"slack_msgs":11,"first_slack":"5:31 PM","last_slack":"11:25 PM","first_slack_h":17.52,"last_slack_h":23.42,"own_pushes":14,"bot_pushes":21,"releases":0,"slack_available":true},{"day":"2026-08-29","weekday":"Sat","human_hours":3.5,"code_hours":3.5,"slack_hours":0.0,"bot_hours":3.0,"slack_msgs":1,"first_slack":"6:40 PM","last_slack":"6:40 PM","first_slack_h":18.67,"last_slack_h":18.67,"own_pushes":7,"bot_pushes":9,"releases":0,"slack_available":true},{"day":"2026-08-30","weekday":"Sun","human_hours":4.5,"code_hours":3.0,"slack_hours":1.5,"bot_hours":2.0,"slack_msgs":4,"first_slack":"2:30 PM","last_slack":"5:51 PM","first_slack_h":14.5,"last_slack_h":17.85,"own_pushes":4,"bot_pushes":10,"releases":0,"slack_available":true},{"day":"2026-08-31","weekday":"Mon","human_hours":12.0,"code_hours":9.0,"slack_hours":3.0,"bot_hours":1.0,"slack_msgs":20,"first_slack":"8:38 AM","last_slack":"11:54 PM","first_slack_h":8.63,"last_slack_h":23.9,"own_pushes":21,"bot_pushes":2,"releases":0,"slack_available":true},{"day":"2026-09-01","weekday":"Tue","human_hours":9.0,"code_hours":7.0,"slack_hours":2.0,"bot_hours":1.5,"slack_msgs":25,"first_slack":"12:00 AM","last_slack":"7:30 PM","first_slack_h":0.0,"last_slack_h":19.5,"own_pushes":12,"bot_pushes":14,"releases":0,"slack_available":true},{"day":"2026-09-02","weekday":"Wed","human_hours":9.0,"code_hours":5.0,"slack_hours":4.0,"bot_hours":8.0,"slack_msgs":11,"first_slack":"1:53 AM","last_slack":"10:44 PM","first_slack_h":1.88,"last_slack_h":22.73,"own_pushes":10,"bot_pushes":22,"releases":7,"slack_available":true},{"day":"2026-09-03","weekday":"Thu","human_hours":7.5,"code_hours":6.0,"slack_hours":1.5,"bot_hours":7.0,"slack_msgs":23,"first_slack":"8:41 AM","last_slack":"10:23 PM","first_slack_h":8.68,"last_slack_h":22.38,"own_pushes":5,"bot_pushes":19,"releases":5,"slack_available":true},{"day":"2026-09-04","weekday":"Fri","human_hours":7.0,"code_hours":6.0,"slack_hours":1.0,"bot_hours":4.5,"slack_msgs":5,"first_slack":"12:46 PM","last_slack":"5:43 PM","first_slack_h":12.77,"last_slack_h":17.72,"own_pushes":4,"bot_pushes":25,"releases":3,"slack_available":true},{"day":"2026-09-05","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-06","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-07","weekday":"Mon","human_hours":1.5,"code_hours":1.0,"slack_hours":0.5,"bot_hours":1.5,"slack_msgs":6,"first_slack":"12:46 PM","last_slack":"12:55 PM","first_slack_h":12.77,"last_slack_h":12.92,"own_pushes":2,"bot_pushes":8,"releases":0,"slack_available":true},{"day":"2026-09-08","weekday":"Tue","human_hours":13.5,"code_hours":7.5,"slack_hours":6.0,"bot_hours":6.0,"slack_msgs":32,"first_slack":"1:10 PM","last_slack":"10:38 PM","first_slack_h":13.17,"last_slack_h":22.63,"own_pushes":15,"bot_pushes":35,"releases":4,"slack_available":true},{"day":"2026-09-09","weekday":"Wed","human_hours":3.0,"code_hours":0.5,"slack_hours":2.5,"bot_hours":7.0,"slack_msgs":15,"first_slack":"7:33 AM","last_slack":"7:15 PM","first_slack_h":7.55,"last_slack_h":19.25,"own_pushes":1,"bot_pushes":24,"releases":2,"slack_available":true},{"day":"2026-09-10","weekday":"Thu","human_hours":0.5,"code_hours":0.0,"slack_hours":0.5,"bot_hours":0.0,"slack_msgs":1,"first_slack":"3:17 PM","last_slack":"3:17 PM","first_slack_h":15.28,"last_slack_h":15.28,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-11","weekday":"Fri","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-12","weekday":"Sat","human_hours":0.5,"code_hours":0.0,"slack_hours":0.5,"bot_hours":0.0,"slack_msgs":1,"first_slack":"9:24 AM","last_slack":"9:24 AM","first_slack_h":9.4,"last_slack_h":9.4,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-13","weekday":"Sun","human_hours":3.5,"code_hours":3.0,"slack_hours":0.5,"bot_hours":14.5,"slack_msgs":1,"first_slack":"2:32 PM","last_slack":"2:32 PM","first_slack_h":14.53,"last_slack_h":14.53,"own_pushes":5,"bot_pushes":42,"releases":4,"slack_available":true},{"day":"2026-09-14","weekday":"Mon","human_hours":8.5,"code_hours":4.5,"slack_hours":4.0,"bot_hours":13.5,"slack_msgs":19,"first_slack":"6:40 AM","last_slack":"10:36 PM","first_slack_h":6.67,"last_slack_h":22.6,"own_pushes":6,"bot_pushes":58,"releases":3,"slack_available":true},{"day":"2026-09-15","weekday":"Tue","human_hours":12.0,"code_hours":6.5,"slack_hours":5.5,"bot_hours":15.0,"slack_msgs":24,"first_slack":"3:56 AM","last_slack":"5:24 PM","first_slack_h":3.93,"last_slack_h":17.4,"own_pushes":10,"bot_pushes":43,"releases":6,"slack_available":true},{"day":"2026-09-16","weekday":"Wed","human_hours":10.5,"code_hours":8.0,"slack_hours":2.5,"bot_hours":12.5,"slack_msgs":19,"first_slack":"4:38 AM","last_slack":"5:08 PM","first_slack_h":4.63,"last_slack_h":17.13,"own_pushes":13,"bot_pushes":45,"releases":4,"slack_available":true},{"day":"2026-09-17","weekday":"Thu","human_hours":13.0,"code_hours":13.0,"slack_hours":0.0,"bot_hours":14.5,"slack_msgs":10,"first_slack":"2:04 PM","last_slack":"9:02 PM","first_slack_h":14.07,"last_slack_h":21.03,"own_pushes":15,"bot_pushes":53,"releases":0,"slack_available":true},{"day":"2026-09-18","weekday":"Fri","human_hours":14.5,"code_hours":13.5,"slack_hours":1.0,"bot_hours":16.0,"slack_msgs":17,"first_slack":"12:19 AM","last_slack":"5:27 PM","first_slack_h":0.32,"last_slack_h":17.45,"own_pushes":17,"bot_pushes":60,"releases":2,"slack_available":true},{"day":"2026-09-19","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-20","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-21","weekday":"Mon","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-09-22","weekday":"Tue","human_hours":14.5,"code_hours":12.0,"slack_hours":2.5,"bot_hours":15.0,"slack_msgs":23,"first_slack":"1:12 AM","last_slack":"11:26 PM","first_slack_h":1.2,"last_slack_h":23.43,"own_pushes":9,"bot_pushes":43,"releases":1,"slack_available":true},{"day":"2026-09-23","weekday":"Wed","human_hours":10.5,"code_hours":7.5,"slack_hours":3.0,"bot_hours":3.5,"slack_msgs":35,"first_slack":"5:38 AM","last_slack":"10:54 PM","first_slack_h":5.63,"last_slack_h":22.9,"own_pushes":16,"bot_pushes":12,"releases":1,"slack_available":true},{"day":"2026-09-24","weekday":"Thu","human_hours":1.0,"code_hours":0.5,"slack_hours":0.5,"bot_hours":2.5,"slack_msgs":1,"first_slack":"3:53 AM","last_slack":"3:53 AM","first_slack_h":3.88,"last_slack_h":3.88,"own_pushes":2,"bot_pushes":5,"releases":1,"slack_available":true},{"day":"2026-09-25","weekday":"Fri","human_hours":9.0,"code_hours":2.5,"slack_hours":6.5,"bot_hours":5.0,"slack_msgs":34,"first_slack":"4:18 AM","last_slack":"11:58 PM","first_slack_h":4.3,"last_slack_h":23.97,"own_pushes":5,"bot_pushes":16,"releases":2,"slack_available":true},{"day":"2026-09-26","weekday":"Sat","human_hours":2.5,"code_hours":0.0,"slack_hours":2.5,"bot_hours":1.5,"slack_msgs":11,"first_slack":"12:11 AM","last_slack":"5:40 AM","first_slack_h":0.18,"last_slack_h":5.67,"own_pushes":0,"bot_pushes":10,"releases":0,"slack_available":true},{"day":"2026-09-27","weekday":"Sun","human_hours":1.0,"code_hours":0.0,"slack_hours":1.0,"bot_hours":2.0,"slack_msgs":5,"first_slack":"4:17 AM","last_slack":"4:38 AM","first_slack_h":4.28,"last_slack_h":4.63,"own_pushes":0,"bot_pushes":14,"releases":0,"slack_available":true},{"day":"2026-09-28","weekday":"Mon","human_hours":11.0,"code_hours":9.0,"slack_hours":2.0,"bot_hours":10.5,"slack_msgs":18,"first_slack":"1:48 AM","last_slack":"12:16 PM","first_slack_h":1.8,"last_slack_h":12.27,"own_pushes":7,"bot_pushes":24,"releases":2,"slack_available":true},{"day":"2026-09-29","weekday":"Tue","human_hours":10.5,"code_hours":7.5,"slack_hours":3.0,"bot_hours":3.5,"slack_msgs":27,"first_slack":"4:58 AM","last_slack":"11:53 PM","first_slack_h":4.97,"last_slack_h":23.88,"own_pushes":13,"bot_pushes":23,"releases":1,"slack_available":true},{"day":"2026-09-30","weekday":"Wed","human_hours":11.0,"code_hours":7.5,"slack_hours":3.5,"bot_hours":1.0,"slack_msgs":28,"first_slack":"7:47 AM","last_slack":"7:59 PM","first_slack_h":7.78,"last_slack_h":19.98,"own_pushes":23,"bot_pushes":3,"releases":1,"slack_available":true},{"day":"2026-10-01","weekday":"Thu","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-10-02","weekday":"Fri","human_hours":14.5,"code_hours":14.5,"slack_hours":0.0,"bot_hours":3.0,"slack_msgs":1,"first_slack":"2:42 AM","last_slack":"2:42 AM","first_slack_h":2.7,"last_slack_h":2.7,"own_pushes":42,"bot_pushes":13,"releases":5,"slack_available":true},{"day":"2026-10-03","weekday":"Sat","human_hours":8.0,"code_hours":8.0,"slack_hours":0.0,"bot_hours":4.5,"slack_msgs":20,"first_slack":"2:28 AM","last_slack":"5:54 AM","first_slack_h":2.47,"last_slack_h":5.9,"own_pushes":26,"bot_pushes":9,"releases":2,"slack_available":true},{"day":"2026-10-04","weekday":"Sun","human_hours":4.0,"code_hours":3.5,"slack_hours":0.5,"bot_hours":0.5,"slack_msgs":11,"first_slack":"10:02 AM","last_slack":"7:56 PM","first_slack_h":10.03,"last_slack_h":19.93,"own_pushes":3,"bot_pushes":1,"releases":1,"slack_available":true},{"day":"2026-10-05","weekday":"Mon","human_hours":11.5,"code_hours":10.0,"slack_hours":1.5,"bot_hours":2.5,"slack_msgs":13,"first_slack":"9:53 AM","last_slack":"2:39 PM","first_slack_h":9.88,"last_slack_h":14.65,"own_pushes":17,"bot_pushes":7,"releases":2,"slack_available":true},{"day":"2026-10-06","weekday":"Tue","human_hours":6.0,"code_hours":3.0,"slack_hours":3.0,"bot_hours":2.5,"slack_msgs":23,"first_slack":"1:20 AM","last_slack":"11:59 AM","first_slack_h":1.33,"last_slack_h":11.98,"own_pushes":5,"bot_pushes":5,"releases":0,"slack_available":true},{"day":"2026-10-07","weekday":"Wed","human_hours":13.5,"code_hours":13.5,"slack_hours":0.0,"bot_hours":11.5,"slack_msgs":30,"first_slack":"5:39 AM","last_slack":"9:56 PM","first_slack_h":5.65,"last_slack_h":21.93,"own_pushes":21,"bot_pushes":38,"releases":1,"slack_available":true},{"day":"2026-10-08","weekday":"Thu","human_hours":3.5,"code_hours":3.5,"slack_hours":0.0,"bot_hours":3.5,"slack_msgs":4,"first_slack":"11:34 AM","last_slack":"12:29 PM","first_slack_h":11.57,"last_slack_h":12.48,"own_pushes":4,"bot_pushes":6,"releases":0,"slack_available":true},{"day":"2026-10-09","weekday":"Fri","human_hours":10.5,"code_hours":10.5,"slack_hours":0.0,"bot_hours":7.5,"slack_msgs":13,"first_slack":"3:54 AM","last_slack":"11:20 AM","first_slack_h":3.9,"last_slack_h":11.33,"own_pushes":15,"bot_pushes":30,"releases":1,"slack_available":true},{"day":"2026-10-10","weekday":"Sat","human_hours":0.5,"code_hours":0.0,"slack_hours":0.5,"bot_hours":0.0,"slack_msgs":1,"first_slack":"3:21 AM","last_slack":"3:21 AM","first_slack_h":3.35,"last_slack_h":3.35,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-10-11","weekday":"Sun","human_hours":2.5,"code_hours":2.0,"slack_hours":0.5,"bot_hours":2.0,"slack_msgs":1,"first_slack":"5:45 AM","last_slack":"5:45 AM","first_slack_h":5.75,"last_slack_h":5.75,"own_pushes":1,"bot_pushes":13,"releases":0,"slack_available":true},{"day":"2026-10-12","weekday":"Mon","human_hours":12.0,"code_hours":10.0,"slack_hours":2.0,"bot_hours":12.0,"slack_msgs":12,"first_slack":"4:29 AM","last_slack":"1:28 PM","first_slack_h":4.48,"last_slack_h":13.47,"own_pushes":9,"bot_pushes":44,"releases":0,"slack_available":true},{"day":"2026-10-13","weekday":"Tue","human_hours":7.5,"code_hours":6.5,"slack_hours":1.0,"bot_hours":7.0,"slack_msgs":14,"first_slack":"4:08 AM","last_slack":"11:00 PM","first_slack_h":4.13,"last_slack_h":23.0,"own_pushes":6,"bot_pushes":23,"releases":2,"slack_available":true},{"day":"2026-10-14","weekday":"Wed","human_hours":16.0,"code_hours":12.5,"slack_hours":3.5,"bot_hours":6.5,"slack_msgs":30,"first_slack":"4:48 AM","last_slack":"5:30 PM","first_slack_h":4.8,"last_slack_h":17.5,"own_pushes":16,"bot_pushes":17,"releases":4,"slack_available":true},{"day":"2026-10-15","weekday":"Thu","human_hours":5.0,"code_hours":4.5,"slack_hours":0.5,"bot_hours":2.0,"slack_msgs":21,"first_slack":"12:06 AM","last_slack":"3:19 PM","first_slack_h":0.1,"last_slack_h":15.32,"own_pushes":5,"bot_pushes":8,"releases":1,"slack_available":true},{"day":"2026-10-16","weekday":"Fri","human_hours":8.5,"code_hours":6.5,"slack_hours":2.0,"bot_hours":5.0,"slack_msgs":16,"first_slack":"2:29 AM","last_slack":"10:56 AM","first_slack_h":2.48,"last_slack_h":10.93,"own_pushes":6,"bot_pushes":20,"releases":2,"slack_available":true},{"day":"2026-10-17","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-10-18","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-10-19","weekday":"Mon","human_hours":12.0,"code_hours":11.0,"slack_hours":1.0,"bot_hours":9.0,"slack_msgs":17,"first_slack":"6:41 AM","last_slack":"3:34 PM","first_slack_h":6.68,"last_slack_h":15.57,"own_pushes":11,"bot_pushes":29,"releases":0,"slack_available":true},{"day":"2026-10-20","weekday":"Tue","human_hours":3.5,"code_hours":1.0,"slack_hours":2.5,"bot_hours":4.5,"slack_msgs":10,"first_slack":"5:33 AM","last_slack":"7:54 AM","first_slack_h":5.55,"last_slack_h":7.9,"own_pushes":2,"bot_pushes":14,"releases":0,"slack_available":true},{"day":"2026-10-21","weekday":"Wed","human_hours":8.0,"code_hours":3.0,"slack_hours":5.0,"bot_hours":9.0,"slack_msgs":33,"first_slack":"8:58 AM","last_slack":"10:35 PM","first_slack_h":8.97,"last_slack_h":22.58,"own_pushes":3,"bot_pushes":32,"releases":2,"slack_available":true},{"day":"2026-10-22","weekday":"Thu","human_hours":11.0,"code_hours":10.0,"slack_hours":1.0,"bot_hours":12.0,"slack_msgs":11,"first_slack":"7:38 AM","last_slack":"10:53 PM","first_slack_h":7.63,"last_slack_h":22.88,"own_pushes":3,"bot_pushes":59,"releases":0,"slack_available":true},{"day":"2026-10-23","weekday":"Fri","human_hours":2.5,"code_hours":2.0,"slack_hours":0.5,"bot_hours":7.5,"slack_msgs":7,"first_slack":"2:44 AM","last_slack":"2:38 PM","first_slack_h":2.73,"last_slack_h":14.63,"own_pushes":8,"bot_pushes":42,"releases":2,"slack_available":true},{"day":"2026-10-24","weekday":"Sat","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-10-25","weekday":"Sun","human_hours":2.0,"code_hours":2.0,"slack_hours":0.0,"bot_hours":19.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":1,"bot_pushes":93,"releases":0,"slack_available":true},{"day":"2026-10-26","weekday":"Mon","human_hours":7.0,"code_hours":0.5,"slack_hours":6.5,"bot_hours":14.5,"slack_msgs":17,"first_slack":"8:32 AM","last_slack":"7:32 PM","first_slack_h":8.53,"last_slack_h":19.53,"own_pushes":1,"bot_pushes":75,"releases":0,"slack_available":true},{"day":"2026-10-27","weekday":"Tue","human_hours":5.5,"code_hours":2.5,"slack_hours":3.0,"bot_hours":15.5,"slack_msgs":30,"first_slack":"1:28 AM","last_slack":"10:55 PM","first_slack_h":1.47,"last_slack_h":22.92,"own_pushes":4,"bot_pushes":55,"releases":1,"slack_available":true},{"day":"2026-10-28","weekday":"Wed","human_hours":6.5,"code_hours":2.0,"slack_hours":4.5,"bot_hours":21.5,"slack_msgs":11,"first_slack":"8:58 AM","last_slack":"3:58 PM","first_slack_h":8.97,"last_slack_h":15.97,"own_pushes":2,"bot_pushes":87,"releases":0,"slack_available":true},{"day":"2026-10-29","weekday":"Thu","human_hours":4.5,"code_hours":2.5,"slack_hours":2.0,"bot_hours":11.5,"slack_msgs":24,"first_slack":"2:33 AM","last_slack":"12:35 PM","first_slack_h":2.55,"last_slack_h":12.58,"own_pushes":4,"bot_pushes":42,"releases":1,"slack_available":true},{"day":"2026-10-30","weekday":"Fri","human_hours":14.5,"code_hours":9.5,"slack_hours":5.0,"bot_hours":13.0,"slack_msgs":25,"first_slack":"6:59 AM","last_slack":"7:39 PM","first_slack_h":6.98,"last_slack_h":19.65,"own_pushes":20,"bot_pushes":59,"releases":4,"slack_available":true},{"day":"2026-10-31","weekday":"Sat","human_hours":2.0,"code_hours":2.0,"slack_hours":0.0,"bot_hours":1.5,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":3,"releases":0,"slack_available":true},{"day":"2026-11-01","weekday":"Sun","human_hours":0.0,"code_hours":0.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":0,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-11-02","weekday":"Mon","human_hours":7.0,"code_hours":2.5,"slack_hours":4.5,"bot_hours":6.5,"slack_msgs":12,"first_slack":"7:05 AM","last_slack":"1:37 PM","first_slack_h":7.08,"last_slack_h":13.62,"own_pushes":6,"bot_pushes":10,"releases":2,"slack_available":true},{"day":"2026-11-03","weekday":"Tue","human_hours":2.0,"code_hours":0.5,"slack_hours":1.5,"bot_hours":0.0,"slack_msgs":13,"first_slack":"3:32 AM","last_slack":"3:46 PM","first_slack_h":3.53,"last_slack_h":15.77,"own_pushes":1,"bot_pushes":0,"releases":0,"slack_available":true},{"day":"2026-11-04","weekday":"Wed","human_hours":3.5,"code_hours":3.0,"slack_hours":0.5,"bot_hours":0.0,"slack_msgs":6,"first_slack":"6:48 AM","last_slack":"9:24 AM","first_slack_h":6.8,"last_slack_h":9.4,"own_pushes":6,"bot_pushes":0,"releases":3,"slack_available":true},{"day":"2026-11-05","weekday":"Thu","human_hours":3.5,"code_hours":1.0,"slack_hours":2.5,"bot_hours":0.0,"slack_msgs":24,"first_slack":"7:51 AM","last_slack":"5:01 PM","first_slack_h":7.85,"last_slack_h":17.02,"own_pushes":4,"bot_pushes":0,"releases":1,"slack_available":true},{"day":"2026-11-06","weekday":"Fri","human_hours":5.0,"code_hours":0.0,"slack_hours":5.0,"bot_hours":11.5,"slack_msgs":9,"first_slack":"3:13 AM","last_slack":"5:05 PM","first_slack_h":3.22,"last_slack_h":17.08,"own_pushes":0,"bot_pushes":42,"releases":0,"slack_available":true},{"day":"2026-11-07","weekday":"Sat","human_hours":1.5,"code_hours":1.5,"slack_hours":0.0,"bot_hours":11.0,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":5,"bot_pushes":74,"releases":0,"slack_available":true},{"day":"2026-11-08","weekday":"Sun","human_hours":0.5,"code_hours":0.5,"slack_hours":0.0,"bot_hours":8.5,"slack_msgs":0,"first_slack":"","last_slack":"","first_slack_h":null,"last_slack_h":null,"own_pushes":1,"bot_pushes":34,"releases":0,"slack_available":true},{"day":"2026-11-09","weekday":"Mon","human_hours":6.0,"code_hours":5.0,"slack_hours":1.0,"bot_hours":0.0,"slack_msgs":14,"first_slack":"2:41 PM","last_slack":"3:29 PM","first_slack_h":14.68,"last_slack_h":15.48,"own_pushes":10,"bot_pushes":0,"releases":1,"slack_available":true}],"weekly":[{"week":"2026-06-29","human_hours":15.5,"code_hours":15.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"own_commits":41,"bot_commits":0,"releases":11,"active_days":3,"days":5,"kind":"actual"},{"week":"2026-07-06","human_hours":23.5,"code_hours":23.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"own_commits":23,"bot_commits":0,"releases":35,"active_days":4,"days":7,"kind":"actual"},{"week":"2026-07-13","human_hours":43.0,"code_hours":43.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"own_commits":82,"bot_commits":0,"releases":39,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-07-20","human_hours":38.5,"code_hours":38.5,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"own_commits":160,"bot_commits":0,"releases":65,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-07-27","human_hours":38.0,"code_hours":38.0,"slack_hours":0.0,"bot_hours":0.0,"slack_msgs":0,"own_commits":324,"bot_commits":0,"releases":20,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-08-03","human_hours":64.5,"code_hours":55.0,"slack_hours":9.5,"bot_hours":18.5,"slack_msgs":83,"own_commits":216,"bot_commits":555,"releases":44,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-08-10","human_hours":70.5,"code_hours":59.5,"slack_hours":11.0,"bot_hours":50.5,"slack_msgs":96,"own_commits":406,"bot_commits":141,"releases":35,"active_days":7,"days":7,"kind":"actual"},{"week":"2026-08-17","human_hours":75.0,"code_hours":59.5,"slack_hours":15.5,"bot_hours":34.5,"slack_msgs":99,"own_commits":374,"bot_commits":405,"releases":33,"active_days":7,"days":7,"kind":"actual"},{"week":"2026-08-24","human_hours":44.0,"code_hours":29.0,"slack_hours":15.0,"bot_hours":16.0,"slack_msgs":51,"own_commits":181,"bot_commits":1,"releases":11,"active_days":7,"days":7,"kind":"actual"},{"week":"2026-08-31","human_hours":44.5,"code_hours":33.0,"slack_hours":11.5,"bot_hours":22.0,"slack_msgs":84,"own_commits":333,"bot_commits":108,"releases":15,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-09-07","human_hours":22.5,"code_hours":12.0,"slack_hours":10.5,"bot_hours":29.0,"slack_msgs":56,"own_commits":57,"bot_commits":147,"releases":10,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-09-14","human_hours":58.5,"code_hours":45.5,"slack_hours":13.0,"bot_hours":71.5,"slack_msgs":89,"own_commits":322,"bot_commits":529,"releases":15,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-09-21","human_hours":38.5,"code_hours":22.5,"slack_hours":16.0,"bot_hours":29.5,"slack_msgs":109,"own_commits":306,"bot_commits":180,"releases":5,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-09-28","human_hours":59.0,"code_hours":50.0,"slack_hours":9.0,"bot_hours":23.0,"slack_msgs":105,"own_commits":539,"bot_commits":153,"releases":12,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-10-05","human_hours":48.0,"code_hours":42.5,"slack_hours":5.5,"bot_hours":29.5,"slack_msgs":85,"own_commits":156,"bot_commits":45,"releases":4,"active_days":7,"days":7,"kind":"actual"},{"week":"2026-10-12","human_hours":49.0,"code_hours":40.0,"slack_hours":9.0,"bot_hours":32.5,"slack_msgs":93,"own_commits":302,"bot_commits":33,"releases":9,"active_days":5,"days":7,"kind":"actual"},{"week":"2026-10-19","human_hours":39.0,"code_hours":29.0,"slack_hours":10.0,"bot_hours":61.0,"slack_msgs":78,"own_commits":238,"bot_commits":85,"releases":4,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-10-26","human_hours":40.0,"code_hours":19.0,"slack_hours":21.0,"bot_hours":77.5,"slack_msgs":107,"own_commits":41,"bot_commits":1671,"releases":6,"active_days":6,"days":7,"kind":"actual"},{"week":"2026-11-02","human_hours":23.0,"code_hours":9.0,"slack_hours":14.0,"bot_hours":37.5,"slack_msgs":64,"own_commits":75,"bot_commits":61,"releases":6,"active_days":7,"days":7,"kind":"actual"},{"week":"2026-11-09","human_hours":6.0,"code_hours":5.0,"slack_hours":1.0,"bot_hours":0.0,"slack_msgs":14,"own_commits":61,"bot_commits":0,"releases":1,"active_days":1,"days":1,"kind":"actual"}],"forecast":[{"week":"2026-11-16","forecast":34.3,"low":23.2,"high":45.4,"code_forecast":21.1,"code_low":7.5,"code_high":34.7},{"week":"2026-11-23","forecast":33.1,"low":22.0,"high":44.2,"code_forecast":19.9,"code_low":6.3,"code_high":33.5},{"week":"2026-11-30","forecast":32.0,"low":20.9,"high":43.1,"code_forecast":18.7,"code_low":5.1,"code_high":32.3},{"week":"2026-12-07","forecast":30.8,"low":19.7,"high":41.9,"code_forecast":17.5,"code_low":3.9,"code_high":31.1}],"hours":[{"hour":0,"pt":"12 AM","lagos":"8 AM","clinton_hours":18.5,"bot_hours":12.5,"slack_msgs":31},{"hour":1,"pt":"1 AM","lagos":"9 AM","clinton_hours":12.0,"bot_hours":8.5,"slack_msgs":34},{"hour":2,"pt":"2 AM","lagos":"10 AM","clinton_hours":10.5,"bot_hours":8.5,"slack_msgs":42},{"hour":3,"pt":"3 AM","lagos":"11 AM","clinton_hours":15.0,"bot_hours":9.5,"slack_msgs":21},{"hour":4,"pt":"4 AM","lagos":"12 PM","clinton_hours":19.0,"bot_hours":12.0,"slack_msgs":33},{"hour":5,"pt":"5 AM","lagos":"1 PM","clinton_hours":18.0,"bot_hours":18.0,"slack_msgs":24},{"hour":6,"pt":"6 AM","lagos":"2 PM","clinton_hours":23.5,"bot_hours":16.5,"slack_msgs":48},{"hour":7,"pt":"7 AM","lagos":"3 PM","clinton_hours":32.5,"bot_hours":19.5,"slack_msgs":83},{"hour":8,"pt":"8 AM","lagos":"4 PM","clinton_hours":31.5,"bot_hours":19.0,"slack_msgs":64},{"hour":9,"pt":"9 AM","lagos":"5 PM","clinton_hours":30.0,"bot_hours":22.5,"slack_msgs":58},{"hour":10,"pt":"10 AM","lagos":"6 PM","clinton_hours":36.0,"bot_hours":21.0,"slack_msgs":78},{"hour":11,"pt":"11 AM","lagos":"7 PM","clinton_hours":37.5,"bot_hours":23.0,"slack_msgs":66},{"hour":12,"pt":"12 PM","lagos":"8 PM","clinton_hours":32.5,"bot_hours":23.0,"slack_msgs":65},{"hour":13,"pt":"1 PM","lagos":"9 PM","clinton_hours":31.5,"bot_hours":25.0,"slack_msgs":54},{"hour":14,"pt":"2 PM","lagos":"10 PM","clinton_hours":31.0,"bot_hours":19.5,"slack_msgs":81},{"hour":15,"pt":"3 PM","lagos":"11 PM","clinton_hours":35.0,"bot_hours":23.5,"slack_msgs":60},{"hour":16,"pt":"4 PM","lagos":"12 AM","clinton_hours":35.5,"bot_hours":23.0,"slack_msgs":55},{"hour":17,"pt":"5 PM","lagos":"1 AM","clinton_hours":43.5,"bot_hours":25.0,"slack_msgs":75},{"hour":18,"pt":"6 PM","lagos":"2 AM","clinton_hours":37.5,"bot_hours":22.5,"slack_msgs":31},{"hour":19,"pt":"7 PM","lagos":"3 AM","clinton_hours":42.5,"bot_hours":21.0,"slack_msgs":53},{"hour":20,"pt":"8 PM","lagos":"4 AM","clinton_hours":36.5,"bot_hours":19.0,"slack_msgs":40},{"hour":21,"pt":"9 PM","lagos":"5 AM","clinton_hours":26.0,"bot_hours":20.0,"slack_msgs":32},{"hour":22,"pt":"10 PM","lagos":"6 AM","clinton_hours":26.0,"bot_hours":16.5,"slack_msgs":62},{"hour":23,"pt":"11 PM","lagos":"7 AM","clinton_hours":21.5,"bot_hours":14.0,"slack_msgs":23}],"topics":[{"week":"2026-06-29","who":"Clinton","area":"Owner app and signup","pushes":3},{"week":"2026-06-29","who":"Clinton","area":"Email and inbox","pushes":2},{"week":"2026-06-29","who":"Clinton","area":"Marketing site and SEO","pushes":2},{"week":"2026-06-29","who":"Clinton","area":"Infrastructure","pushes":2},{"week":"2026-07-06","who":"Clinton","area":"Owner app and signup","pushes":10},{"week":"2026-07-06","who":"Clinton","area":"Staff tools and CRM","pushes":6},{"week":"2026-07-06","who":"Clinton","area":"Marketing site and SEO","pushes":3},{"week":"2026-07-13","who":"Clinton","area":"Staff tools and CRM","pushes":44},{"week":"2026-07-13","who":"Clinton","area":"Owner app and signup","pushes":7},{"week":"2026-07-13","who":"Clinton","area":"Infrastructure","pushes":6},{"week":"2026-07-13","who":"Clinton","area":"Google posts, reviews, press","pushes":6},{"week":"2026-07-20","who":"Clinton","area":"Owner app and signup","pushes":41},{"week":"2026-07-20","who":"Clinton","area":"Staff tools and CRM","pushes":25},{"week":"2026-07-20","who":"Clinton","area":"Google posts, reviews, press","pushes":10},{"week":"2026-07-27","who":"Clinton","area":"Reports and AI score","pushes":4},{"week":"2026-07-27","who":"Clinton","area":"Infrastructure","pushes":2},{"week":"2026-07-27","who":"Clinton","area":"Marketing site and SEO","pushes":2},{"week":"2026-08-03","who":"Bots","area":"Staff tools and CRM","pushes":10},{"week":"2026-08-03","who":"Bots","area":"Owner app and signup","pushes":5},{"week":"2026-08-03","who":"Bots","area":"Marketing site and SEO","pushes":3},{"week":"2026-08-03","who":"Clinton","area":"Staff tools and CRM","pushes":28},{"week":"2026-08-03","who":"Clinton","area":"Infrastructure","pushes":7},{"week":"2026-08-03","who":"Clinton","area":"Email and inbox","pushes":3},{"week":"2026-08-10","who":"Bots","area":"Google posts, reviews, press","pushes":20},{"week":"2026-08-10","who":"Bots","area":"Testing and screenshots","pushes":18},{"week":"2026-08-10","who":"Bots","area":"Infrastructure","pushes":18},{"week":"2026-08-10","who":"Bots","area":"Email and inbox","pushes":17},{"week":"2026-08-10","who":"Clinton","area":"Testing and screenshots","pushes":5},{"week":"2026-08-10","who":"Clinton","area":"Google posts, reviews, press","pushes":7},{"week":"2026-08-10","who":"Clinton","area":"Infrastructure","pushes":3},{"week":"2026-08-17","who":"Bots","area":"Reports and AI score","pushes":21},{"week":"2026-08-17","who":"Bots","area":"Infrastructure","pushes":14},{"week":"2026-08-17","who":"Bots","area":"Staff tools and CRM","pushes":7},{"week":"2026-08-17","who":"Bots","area":"Email and inbox","pushes":7},{"week":"2026-08-17","who":"Clinton","area":"Reports and AI score","pushes":37},{"week":"2026-08-17","who":"Clinton","area":"Owner app and signup","pushes":9},{"week":"2026-08-17","who":"Clinton","area":"Infrastructure","pushes":5},{"week":"2026-08-24","who":"Bots","area":"Public profile page","pushes":20},{"week":"2026-08-24","who":"Bots","area":"Owner app and signup","pushes":8},{"week":"2026-08-24","who":"Clinton","area":"Owner app and signup","pushes":9},{"week":"2026-08-24","who":"Clinton","area":"Public profile page","pushes":7},{"week":"2026-08-24","who":"Clinton","area":"Infrastructure","pushes":5},{"week":"2026-08-24","who":"Clinton","area":"Reports and AI score","pushes":4},{"week":"2026-08-31","who":"Bots","area":"Owner app and signup","pushes":42},{"week":"2026-08-31","who":"Bots","area":"Staff tools and CRM","pushes":4},{"week":"2026-08-31","who":"Clinton","area":"Owner app and signup","pushes":37},{"week":"2026-08-31","who":"Clinton","area":"Marketing site and SEO","pushes":6},{"week":"2026-08-31","who":"Clinton","area":"Infrastructure","pushes":3},{"week":"2026-09-07","who":"Bots","area":"Public profile page","pushes":7},{"week":"2026-09-07","who":"Bots","area":"Google posts, reviews, press","pushes":7},{"week":"2026-09-07","who":"Bots","area":"Staff tools and CRM","pushes":5},{"week":"2026-09-07","who":"Bots","area":"Reports and AI score","pushes":4},{"week":"2026-09-07","who":"Clinton","area":"Google posts, reviews, press","pushes":6},{"week":"2026-09-07","who":"Clinton","area":"Infrastructure","pushes":4},{"week":"2026-09-07","who":"Clinton","area":"Owner app and signup","pushes":2},{"week":"2026-09-14","who":"Bots","area":"Public profile page","pushes":31},{"week":"2026-09-14","who":"Bots","area":"Testing and screenshots","pushes":10},{"week":"2026-09-14","who":"Bots","area":"Other","pushes":6},{"week":"2026-09-14","who":"Clinton","area":"Testing and screenshots","pushes":16},{"week":"2026-09-14","who":"Clinton","area":"Public profile page","pushes":3},{"week":"2026-09-21","who":"Bots","area":"Testing and screenshots","pushes":21},{"week":"2026-09-21","who":"Bots","area":"Other","pushes":5},{"week":"2026-09-21","who":"Bots","area":"Owner app and signup","pushes":4},{"week":"2026-09-21","who":"Bots","area":"Staff tools and CRM","pushes":4},{"week":"2026-09-21","who":"Clinton","area":"Marketing site and SEO","pushes":4},{"week":"2026-09-21","who":"Clinton","area":"Google posts, reviews, press","pushes":4},{"week":"2026-09-21","who":"Clinton","area":"Testing and screenshots","pushes":4},{"week":"2026-09-21","who":"Clinton","area":"Infrastructure","pushes":3},{"week":"2026-09-28","who":"Bots","area":"Owner app and signup","pushes":24},{"week":"2026-09-28","who":"Bots","area":"Google posts, reviews, press","pushes":7},{"week":"2026-09-28","who":"Bots","area":"Testing and screenshots","pushes":7},{"week":"2026-09-28","who":"Clinton","area":"Testing and screenshots","pushes":22},{"week":"2026-09-28","who":"Clinton","area":"Owner app and signup","pushes":32},{"week":"2026-09-28","who":"Clinton","area":"Infrastructure","pushes":11},{"week":"2026-10-05","who":"Bots","area":"Email and inbox","pushes":15},{"week":"2026-10-05","who":"Bots","area":"Google posts, reviews, press","pushes":8},{"week":"2026-10-05","who":"Bots","area":"Owner app and signup","pushes":7},{"week":"2026-10-05","who":"Clinton","area":"Marketing site and SEO","pushes":14},{"week":"2026-10-05","who":"Clinton","area":"Infrastructure","pushes":11},{"week":"2026-10-05","who":"Clinton","area":"Google posts, reviews, press","pushes":4},{"week":"2026-10-05","who":"Clinton","area":"Reports and AI score","pushes":4},{"week":"2026-10-12","who":"Bots","area":"Testing and screenshots","pushes":14},{"week":"2026-10-12","who":"Bots","area":"Google posts, reviews, press","pushes":17},{"week":"2026-10-12","who":"Bots","area":"Reports and AI score","pushes":9},{"week":"2026-10-12","who":"Clinton","area":"Testing and screenshots","pushes":5},{"week":"2026-10-12","who":"Clinton","area":"Marketing site and SEO","pushes":8},{"week":"2026-10-12","who":"Clinton","area":"Staff tools and CRM","pushes":3},{"week":"2026-10-19","who":"Bots","area":"Public profile page","pushes":37},{"week":"2026-10-19","who":"Bots","area":"Testing and screenshots","pushes":35},{"week":"2026-10-19","who":"Bots","area":"Email and inbox","pushes":15},{"week":"2026-10-19","who":"Bots","area":"Reports and AI score","pushes":11},{"week":"2026-10-19","who":"Clinton","area":"Google posts, reviews, press","pushes":8},{"week":"2026-10-19","who":"Clinton","area":"Marketing site and SEO","pushes":4},{"week":"2026-10-19","who":"Clinton","area":"Testing and screenshots","pushes":3},{"week":"2026-10-26","who":"Bots","area":"Testing and screenshots","pushes":47},{"week":"2026-10-26","who":"Bots","area":"Reports and AI score","pushes":28},{"week":"2026-10-26","who":"Bots","area":"Public profile page","pushes":22},{"week":"2026-10-26","who":"Bots","area":"Google posts, reviews, press","pushes":14},{"week":"2026-10-26","who":"Clinton","area":"Reports and AI score","pushes":12},{"week":"2026-10-26","who":"Clinton","area":"Public profile page","pushes":5},{"week":"2026-10-26","who":"Clinton","area":"Infrastructure","pushes":5},{"week":"2026-10-26","who":"Clinton","area":"Google posts, reviews, press","pushes":4},{"week":"2026-11-02","who":"Bots","area":"Public profile page","pushes":54},{"week":"2026-11-02","who":"Bots","area":"Testing and screenshots","pushes":29},{"week":"2026-11-02","who":"Clinton","area":"Reports and AI score","pushes":6},{"week":"2026-11-02","who":"Clinton","area":"Public profile page","pushes":4},{"week":"2026-11-02","who":"Clinton","area":"Marketing site and SEO","pushes":6},{"week":"2026-11-09","who":"Clinton","area":"Public profile page","pushes":2},{"week":"2026-11-09","who":"Clinton","area":"Owner app and signup","pushes":1},{"week":"2026-11-09","who":"Clinton","area":"Email and inbox","pushes":1}],"promises":[{"id":"p1","said":"2026-08-04","item":"Good chunk of pending fixes done (by ~6 AM Lagos)","group":"Aug 4-6 deploy batch","size":"feature","due":"2026-08-04","delivered":"2026-08-06","status":"late","days_late":2},{"id":"p2","said":"2026-08-04","item":"Deploy latest changes (in 3-4 hours)","group":"Aug 4-6 deploy batch","size":"feature","due":"2026-08-04","delivered":"2026-08-06","status":"late","days_late":2},{"id":"p3","said":"2026-08-06","item":"Deploy end-to-end flow fixes (in a few hours)","group":"end-to-end flow fixes","size":"small","due":"2026-08-06","delivered":"2026-08-06","status":"on time","days_late":0},{"id":"p4","said":"2026-08-06","item":"AES conference preload deploy live (within a few hours)","group":"AES conference preload","size":"small","due":"2026-08-06","delivered":"2026-08-06","status":"on time","days_late":0},{"id":"p5","said":"2026-08-07","item":"Page-by-page staging fixes batch (through the weekend)","group":"weekend fix batches (Aug)","size":"feature","due":"2026-08-09","delivered":"2026-08-13","status":"late","days_late":4},{"id":"p6","said":"2026-08-11","item":"Updated monthly report (ETA next week Wednesday)","group":"monthly reports rebuild","size":"feature","due":"2026-08-19","delivered":"","status":"no evidence","days_late":null},{"id":"p7","said":"2026-08-11","item":"Updated monthly report (restated ETA next week Wednesday)","group":"monthly reports rebuild","size":"feature","due":"2026-08-19","delivered":"","status":"no evidence","days_late":null},{"id":"p8","said":"2026-08-13","item":"Bigger batch of done work after working through the weekend","group":"weekend fix batches (Aug)","size":"feature","due":"2026-08-16","delivered":"2026-08-17","status":"late","days_late":1},{"id":"p9","said":"2026-08-13","item":"Updated monthly report (reconfirmed next week Wednesday)","group":"monthly reports rebuild","size":"feature","due":"2026-08-19","delivered":"","status":"no evidence","days_late":null},{"id":"p10","said":"2026-08-13","item":"La Grazia item goes out on the 21st","group":"La Grazia report","size":"small","due":"2026-08-21","delivered":"2026-08-22","status":"late","days_late":1},{"id":"p11","said":"2026-08-14","item":"Unspecified item asked about in #aiors-field-activity (next week Friday)","group":"Unspecified item asked about in #aiors-field-activity (next ","size":"small","due":"2026-08-21","delivered":"","status":"no evidence","days_late":null},{"id":"p12","said":"2026-08-14","item":"Switch to new priority from tomorrow, wrap current work today","group":"Switch to new priority from tomorrow, wrap current work toda","size":"small","due":"2026-08-15","delivered":"","status":"no evidence","days_late":null},{"id":"p13","said":"2026-08-14","item":"Let admins set approvers directly from backend (change it now)","group":"Let admins set approvers directly from backend (change it no","size":"small","due":"2026-08-14","delivered":"","status":"no evidence","days_late":null},{"id":"p14","said":"2026-08-17","item":"Complete requested marketing items (later today)","group":"Complete requested marketing items (later today)","size":"small","due":"2026-08-17","delivered":"2026-08-18","status":"late","days_late":1},{"id":"p15","said":"2026-08-18","item":"Scarless Nose monthly report goes out end of month","group":"Scarless Nose monthly report","size":"small","due":"2026-08-31","delivered":"","status":"no evidence","days_late":null},{"id":"p16","said":"2026-08-18","item":"Scarless Nose requested change (doing now)","group":"Scarless Nose requested change (doing now)","size":"small","due":"2026-08-18","delivered":"","status":"no evidence","days_late":null},{"id":"p17","said":"2026-08-18","item":"Team page requested change (today)","group":"Team page requested change (today)","size":"small","due":"2026-08-18","delivered":"","status":"no evidence","days_late":null},{"id":"p18","said":"2026-08-18","item":"Item asked about in group DM (end of week)","group":"Item asked about in group DM (end of week)","size":"small","due":"2026-08-21","delivered":"","status":"no evidence","days_late":null},{"id":"p19","said":"2026-08-18","item":"Make access-request list editable for admin (today)","group":"Make access-request list editable for admin (today)","size":"feature","due":"2026-08-18","delivered":"","status":"no evidence","days_late":null},{"id":"p20","said":"2026-08-18","item":"Deploy delayed-billing / trial setup in admin (twenty minutes)","group":"delayed billing / trial in admin","size":"small","due":"2026-08-18","delivered":"2026-08-18","status":"on time","days_late":0},{"id":"p21","said":"2026-08-19","item":"Extend payment-link feature to admin dashboard (end of day)","group":"admin payment links","size":"feature","due":"2026-08-19","delivered":"2026-08-19","status":"on time","days_late":0},{"id":"p22","said":"2026-08-19","item":"Rework the audit again (next week)","group":"onboarding/audit rebuild v1 (Aug-Sep)","size":"feature","due":"2026-08-28","delivered":"2026-09-02","status":"late","days_late":5},{"id":"p23","said":"2026-08-19","item":"Rebuild onboarding flow per Steve's vision (next week)","group":"onboarding/audit rebuild v1 (Aug-Sep)","size":"feature","due":"2026-08-28","delivered":"2026-09-02","status":"late","days_late":5},{"id":"p24","said":"2026-08-20","item":"Customer transfer from SEOA to LAIR with Eric (today)","group":"SEOA to LAIR customer transfer","size":"small","due":"2026-08-20","delivered":"2026-08-20","status":"on time","days_late":0},{"id":"p25","said":"2026-08-21","item":"v1 of sales/onboarding rework alongside new profile (next week Thursday)","group":"onboarding/audit rebuild v1 (Aug-Sep)","size":"feature","due":"2026-08-27","delivered":"2026-09-02","status":"late","days_late":6},{"id":"p26","said":"2026-08-21","item":"Set up thelocalairegistry.org sending domain (over the weekend, if list provided)","group":"Set up thelocalairegistry.org sending domain (over the weeke","size":"small","due":"2026-08-23","delivered":"","status":"no evidence","days_late":null},{"id":"p27","said":"2026-08-24","item":"GoldFluff and MDConsult items done (tonight)","group":"GoldFluff + MDConsult","size":"small","due":"2026-08-24","delivered":"2026-08-25","status":"late","days_late":1},{"id":"p28","said":"2026-08-24","item":"New onboarding flow and new profile page done (this week)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-08-28","delivered":"2026-09-14","status":"late","days_late":17},{"id":"p29","said":"2026-08-25","item":"Ship a version of the new profile page (early morning tomorrow Lagos)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-08-25","delivered":"2026-08-27","status":"late","days_late":2},{"id":"p30","said":"2026-08-25","item":"Ship new onboarding (by early Friday)","group":"onboarding/audit rebuild v1 (Aug-Sep)","size":"feature","due":"2026-08-28","delivered":"2026-09-02","status":"late","days_late":5},{"id":"p31","said":"2026-08-25","item":"QA new profile and onboarding (during the weekend)","group":"profile page v1 (Aug-Sep)","size":"small","due":"2026-08-30","delivered":"2026-09-01","status":"late","days_late":2},{"id":"p32","said":"2026-08-26","item":"Requested item in group DM (before end of day)","group":"Requested item in group DM (before end of day)","size":"small","due":"2026-08-26","delivered":"","status":"no evidence","days_late":null},{"id":"p33","said":"2026-08-26","item":"Send staging link for review (next few hours, before bed)","group":"profile page v1 (Aug-Sep)","size":"small","due":"2026-08-26","delivered":"2026-08-27","status":"late","days_late":1},{"id":"p34","said":"2026-08-27","item":"New profile/flow still on track (today)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-08-27","delivered":"2026-09-14","status":"late","days_late":18},{"id":"p35","said":"2026-08-27","item":"Finish current task (an hour or two after waking)","group":"profile page v1 (Aug-Sep)","size":"small","due":"2026-08-28","delivered":"2026-08-28","status":"on time","days_late":0},{"id":"p36","said":"2026-08-28","item":"Finish new profile and new onboarding (by Sunday)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-08-30","delivered":"2026-09-14","status":"late","days_late":15},{"id":"p37","said":"2026-09-01","item":"Much closer version of onboarding/audit (by evening meeting)","group":"onboarding/audit rebuild v1 (Aug-Sep)","size":"feature","due":"2026-09-01","delivered":"2026-09-02","status":"late","days_late":1},{"id":"p38","said":"2026-09-01","item":"Requested fix in group DM (twenty to thirty minutes)","group":"Requested fix in group DM (twenty to thirty minutes)","size":"small","due":"2026-09-01","delivered":"","status":"no evidence","days_late":null},{"id":"p39","said":"2026-09-02","item":"Concrete details on onboarding Luxurecovery (till EOD Lagos)","group":"Luxurecovery onboarding","size":"small","due":"2026-09-03","delivered":"","status":"no evidence","days_late":null},{"id":"p40","said":"2026-09-03","item":"Fix issues from Bridgette's feedback (today)","group":"Fix issues from Bridgette's feedback (today)","size":"small","due":"2026-09-03","delivered":"","status":"no evidence","days_late":null},{"id":"p41","said":"2026-09-03","item":"Push change plus Eric's ability to edit all email templates (today)","group":"editable email templates","size":"small","due":"2026-09-03","delivered":"2026-09-03","status":"on time","days_late":0},{"id":"p42","said":"2026-09-08","item":"Consumer side of new profile (today/tomorrow)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-09-09","delivered":"2026-09-14","status":"late","days_late":5},{"id":"p43","said":"2026-09-08","item":"One Sunday pause functionality (today)","group":"One Sunday pause","size":"feature","due":"2026-09-08","delivered":"2026-09-09","status":"late","days_late":1},{"id":"p44","said":"2026-09-08","item":"All open issues plus consumer app done (before bed)","group":"profile page v1 (Aug-Sep)","size":"feature","due":"2026-09-08","delivered":"2026-09-14","status":"late","days_late":6},{"id":"p45","said":"2026-09-10","item":"Back to work and make up lost time over the weekend","group":"catch-up sprint (Sep)","size":"small","due":"2026-09-13","delivered":"2026-09-13","status":"on time","days_late":0},{"id":"p46","said":"2026-09-13","item":"Complete 30-hour catch-up sprint on backlog tickets","group":"catch-up sprint (Sep)","size":"feature","due":"2026-09-14","delivered":"2026-09-14","status":"on time","days_late":0},{"id":"p47","said":"2026-09-14","item":"Ship logout/search/OTP fixes with new profile (30-45 minutes)","group":"profile v1 launch fixes","size":"small","due":"2026-09-14","delivered":"2026-09-14","status":"on time","days_late":0},{"id":"p48","said":"2026-09-15","item":"Resolve reported profile issues (before Steve wakes / the show)","group":"profile v1 launch fixes","size":"small","due":"2026-09-15","delivered":"2026-09-15","status":"on time","days_late":0},{"id":"p49","said":"2026-09-15","item":"Last feature push (tonight)","group":"Last feature push (tonight)","size":"feature","due":"2026-09-15","delivered":"","status":"no evidence","days_late":null},{"id":"p50","said":"2026-09-16","item":"Charge Savage Serenity card (today)","group":"Savage Serenity billing/report","size":"small","due":"2026-09-16","delivered":"","status":"no evidence","days_late":null},{"id":"p51","said":"2026-09-16","item":"Savage Serenity first report ready (17th October)","group":"Savage Serenity billing/report","size":"small","due":"2026-10-17","delivered":"","status":"no evidence","days_late":null},{"id":"p52","said":"2026-09-16","item":"Switch consumer sign-up to OTP codes (now)","group":"Switch consumer sign-up to OTP codes (now)","size":"small","due":"2026-09-16","delivered":"","status":"no evidence","days_late":null},{"id":"p53","said":"2026-09-17","item":"Fix Luxe Concierge related autopilot bugs (through Saturday)","group":"autopilot/GBP posting bugs","size":"feature","due":"2026-09-19","delivered":"2026-09-23","status":"late","days_late":4},{"id":"p54","said":"2026-09-18","item":"Autopilot / review-reply fixes (through Friday and tomorrow)","group":"autopilot/GBP posting bugs","size":"feature","due":"2026-09-19","delivered":"2026-09-23","status":"late","days_late":4},{"id":"p55","said":"2026-09-22","item":"Send out held-back Scarless Nose item (till Friday)","group":"Send out held-back Scarless Nose item (till Friday)","size":"small","due":"2026-09-25","delivered":"","status":"no evidence","days_late":null},{"id":"p56","said":"2026-09-22","item":"Fix Luxe Concierge issue (till Friday)","group":"Fix Luxe Concierge issue (till Friday)","size":"small","due":"2026-09-25","delivered":"","status":"no evidence","days_late":null},{"id":"p57","said":"2026-09-23","item":"Caron's access and home page issues (when he wakes, ~11 PM Lagos)","group":"Caron access + home page","size":"small","due":"2026-09-23","delivered":"2026-09-24","status":"late","days_late":1},{"id":"p58","said":"2026-09-23","item":"Unblock Eric (tonight)","group":"Unblock Eric (tonight)","size":"small","due":"2026-09-23","delivered":"2026-09-23","status":"on time","days_late":0},{"id":"p59","said":"2026-09-25","item":"Send requested items (today)","group":"Send requested items (today)","size":"small","due":"2026-09-25","delivered":"","status":"no evidence","days_late":null},{"id":"p60","said":"2026-09-25","item":"Set up Zoyya billing/sync (now)","group":"Zoyya billing/report","size":"small","due":"2026-09-25","delivered":"2026-09-25","status":"on time","days_late":0},{"id":"p61","said":"2026-09-25","item":"Keywords work across the board plus bug fix (today)","group":"keywords rework","size":"feature","due":"2026-09-25","delivered":"2026-09-29","status":"late","days_late":4},{"id":"p62","said":"2026-09-25","item":"Zoyya first report (25th October)","group":"Zoyya billing/report","size":"small","due":"2026-10-25","delivered":"","status":"no evidence","days_late":null},{"id":"p63","said":"2026-09-25","item":"Handle Steve's flagged items (12-14:00 Lagos next day)","group":"Handle Steve's flagged items (12-14:00 Lagos next day)","size":"small","due":"2026-09-26","delivered":"","status":"no evidence","days_late":null},{"id":"p64","said":"2026-09-26","item":"Onboarding rework for Define Clinic meeting (tomorrow/early Monday)","group":"audit/onboarding rebuild v2 (late Sep)","size":"feature","due":"2026-09-28","delivered":"2026-09-30","status":"late","days_late":2},{"id":"p65","said":"2026-09-26","item":"Riverway final report (Oct 2nd)","group":"Riverway final report","size":"small","due":"2026-10-02","delivered":"","status":"no evidence","days_late":null},{"id":"p66","said":"2026-09-27","item":"App-wide QA / bug sweep done (by Wednesday/Thursday)","group":"bug sweep (late Sep)","size":"feature","due":"2026-10-01","delivered":"2026-10-03","status":"late","days_late":2},{"id":"p67","said":"2026-09-28","item":"Page-by-page bug sweep and UI redo ready (end of the week)","group":"bug sweep (late Sep)","size":"feature","due":"2026-10-02","delivered":"2026-10-03","status":"late","days_late":1},{"id":"p68","said":"2026-09-29","item":"Wrap up audit/onboarding rebuild to test with Jeff (today)","group":"audit/onboarding rebuild v2 (late Sep)","size":"feature","due":"2026-09-29","delivered":"2026-09-29","status":"on time","days_late":0},{"id":"p69","said":"2026-09-29","item":"Set up Xhibition account access (two hours)","group":"Xhibition account","size":"small","due":"2026-09-29","delivered":"2026-09-29","status":"on time","days_late":0},{"id":"p70","said":"2026-09-29","item":"New audit done before the Lisiecki call","group":"audit/onboarding rebuild v2 (late Sep)","size":"feature","due":"2026-09-29","delivered":"2026-09-29","status":"on time","days_late":0},{"id":"p71","said":"2026-09-29","item":"Savage Serenity request (tomorrow)","group":"Savage Serenity request (tomorrow)","size":"small","due":"2026-09-30","delivered":"2026-09-30","status":"on time","days_late":0},{"id":"p72","said":"2026-09-29","item":"Audit/onboarding requested change (till end of day)","group":"audit/onboarding rebuild v2 (late Sep)","size":"small","due":"2026-09-30","delivered":"2026-09-30","status":"on time","days_late":0},{"id":"p73","said":"2026-09-30","item":"NutriChem request (on Friday)","group":"NutriChem request (on Friday)","size":"small","due":"2026-10-02","delivered":"2026-10-07","status":"late","days_late":5},{"id":"p74","said":"2026-09-30","item":"Send video walkthrough of Jeff's audit (in about an hour)","group":"Send video walkthrough of Jeff's audit (in about an hour)","size":"small","due":"2026-09-30","delivered":"","status":"no evidence","days_late":null},{"id":"p75","said":"2026-09-30","item":"New audit (ETA today)","group":"audit/onboarding rebuild v2 (late Sep)","size":"feature","due":"2026-09-30","delivered":"2026-09-30","status":"on time","days_late":0},{"id":"p76","said":"2026-09-30","item":"New profile (next week ending)","group":"profile page v2 (Oct)","size":"feature","due":"2026-10-09","delivered":"2026-10-21","status":"late","days_late":12},{"id":"p77","said":"2026-09-30","item":"New dashboard (the week after next)","group":"new dashboard (Oct)","size":"feature","due":"2026-10-16","delivered":"2026-10-14","status":"on time","days_late":-2},{"id":"p78","said":"2026-10-03","item":"Run through High Tide flow and send screen recording (tomorrow, Sunday)","group":"Run through High Tide flow and send screen recording (tomorr","size":"small","due":"2026-10-04","delivered":"","status":"no evidence","days_late":null},{"id":"p79","said":"2026-10-03","item":"Send drafted Collagen Bar item (today)","group":"Send drafted Collagen Bar item (today)","size":"small","due":"2026-10-03","delivered":"2026-10-06","status":"late","days_late":3},{"id":"p80","said":"2026-10-03","item":"New dashboard (4th to 11th October)","group":"new dashboard (Oct)","size":"feature","due":"2026-10-11","delivered":"2026-10-14","status":"late","days_late":3},{"id":"p81","said":"2026-10-03","item":"New profile page (11th to 17th October)","group":"profile page v2 (Oct)","size":"feature","due":"2026-10-17","delivered":"2026-10-21","status":"late","days_late":4},{"id":"p82","said":"2026-10-03","item":"New report design (17th to 20th October)","group":"monthly reports rebuild","size":"feature","due":"2026-10-20","delivered":"2026-10-27","status":"late","days_late":7},{"id":"p83","said":"2026-10-04","item":"Review Steve's DM item (tomorrow, Monday)","group":"Review Steve's DM item (tomorrow, Monday)","size":"small","due":"2026-10-05","delivered":"2026-10-07","status":"late","days_late":2},{"id":"p84","said":"2026-10-06","item":"Website marketing item that slipped (handling today)","group":"Website marketing item that slipped (handling today)","size":"small","due":"2026-10-06","delivered":"","status":"no evidence","days_late":null},{"id":"p85","said":"2026-10-06","item":"Atrium Topanga report drafted and released (Oct 17th)","group":"Atrium Topanga report","size":"small","due":"2026-10-17","delivered":"","status":"no evidence","days_late":null},{"id":"p86","said":"2026-10-06","item":"Savage Serenity 8 review replies go live (Oct 8)","group":"Savage Serenity 8 review replies go live (Oct 8)","size":"small","due":"2026-10-08","delivered":"","status":"no evidence","days_late":null},{"id":"p87","said":"2026-10-07","item":"Feedback from dev friends on junior hire (by end of the week)","group":"Feedback from dev friends on junior hire (by end of the week","size":"small","due":"2026-10-09","delivered":"","status":"no evidence","days_late":null},{"id":"p88","said":"2026-10-07","item":"Unclaim The Grove and Stripe sync (close out the day)","group":"Unclaim The Grove and Stripe sync (close out the day)","size":"small","due":"2026-10-07","delivered":"2026-10-07","status":"on time","days_late":0},{"id":"p89","said":"2026-10-07","item":"Permanent fix to poll Google for address data (by tomorrow)","group":"Permanent fix to poll Google for address data (by tomorrow)","size":"small","due":"2026-10-08","delivered":"","status":"no evidence","days_late":null},{"id":"p90","said":"2026-10-07","item":"Switch to company Claude org plan (next month)","group":"Switch to company Claude org plan (next month)","size":"small","due":"2026-11-01","delivered":"","status":"no evidence","days_late":null},{"id":"p91","said":"2026-10-09","item":"New dashboard ~90% done (by EOD today)","group":"new dashboard (Oct)","size":"feature","due":"2026-10-09","delivered":"2026-10-14","status":"late","days_late":5},{"id":"p92","said":"2026-10-09","item":"QA new dashboard (over the weekend)","group":"new dashboard (Oct)","size":"small","due":"2026-10-11","delivered":"2026-10-14","status":"late","days_late":3},{"id":"p93","said":"2026-10-09","item":"QA new dashboard with High Tide locations (over the weekend)","group":"new dashboard (Oct)","size":"small","due":"2026-10-11","delivered":"2026-10-14","status":"late","days_late":3},{"id":"p94","said":"2026-10-12","item":"Requested item for Illume group, slotted with profile page work (end of the week)","group":"Requested item for Illume group, slotted with profile page w","size":"small","due":"2026-10-16","delivered":"","status":"no evidence","days_late":null},{"id":"p95","said":"2026-10-13","item":"Push pending change (now)","group":"Push pending change (now)","size":"small","due":"2026-10-13","delivered":"","status":"no evidence","days_late":null},{"id":"p96","said":"2026-10-13","item":"New \"skip the line\" marketing page (end of the week)","group":"skip the line page","size":"feature","due":"2026-10-16","delivered":"","status":"no evidence","days_late":null},{"id":"p97","said":"2026-10-14","item":"Jeff Lisiecki fix (in about three hours)","group":"Jeff Lisiecki fix (in about three hours)","size":"small","due":"2026-10-14","delivered":"2026-10-14","status":"on time","days_late":0},{"id":"p98","said":"2026-10-14","item":"Fix placeholder address text in press releases (by Friday latest)","group":"NutriChem press release","size":"small","due":"2026-10-16","delivered":"2026-10-15","status":"on time","days_late":-1},{"id":"p99","said":"2026-10-15","item":"Deploy Grove Pahrump fix (later today, ~4 PM Lagos)","group":"Grove deploy fix","size":"small","due":"2026-10-15","delivered":"2026-10-16","status":"late","days_late":1},{"id":"p100","said":"2026-10-15","item":"New profile page ready (by 17th)","group":"profile page v2 (Oct)","size":"feature","due":"2026-10-17","delivered":"2026-10-21","status":"late","days_late":4},{"id":"p101","said":"2026-10-15","item":"Deploy Grove Las Vegas fix (~4 PM Lagos today)","group":"Grove deploy fix","size":"small","due":"2026-10-15","delivered":"","status":"no evidence","days_late":null},{"id":"p102","said":"2026-10-15","item":"Injection Artistry report wording fix (at the latest tomorrow, Friday)","group":"Injection Artistry report wording fix (at the latest tomorro","size":"small","due":"2026-10-16","delivered":"","status":"no evidence","days_late":null},{"id":"p103","said":"2026-10-15","item":"BrightLocal / LuXe orders answer and next steps (by 7 AM Lagos)","group":"BrightLocal / LuXe orders answer and next steps (by 7 AM Lag","size":"small","due":"2026-10-15","delivered":"","status":"no evidence","days_late":null},{"id":"p104","said":"2026-10-16","item":"Fix text falling off images (over weekend, by Monday)","group":"Fix text falling off images (over weekend, by Monday)","size":"small","due":"2026-10-19","delivered":"2026-10-20","status":"late","days_late":1},{"id":"p105","said":"2026-10-16","item":"Review-based image spec (come back in November)","group":"reviews-to-images","size":"feature","due":"2026-11-30","delivered":"2026-10-27","status":"on time","days_late":-34},{"id":"p106","said":"2026-10-16","item":"Savage Serenity feedback fix (over weekend, by Monday)","group":"Savage Serenity feedback fix (over weekend, by Monday)","size":"small","due":"2026-10-19","delivered":"2026-10-21","status":"late","days_late":2},{"id":"p107","said":"2026-10-16","item":"Manually regenerate NutriChem press release (before 3 AM Lagos)","group":"NutriChem press release","size":"small","due":"2026-10-16","delivered":"2026-10-19","status":"late","days_late":3},{"id":"p108","said":"2026-10-19","item":"Detailed feedback on Grove Pahrump issue (four to five hours)","group":"Detailed feedback on Grove Pahrump issue (four to five hours","size":"small","due":"2026-10-19","delivered":"2026-10-19","status":"on time","days_late":0},{"id":"p109","said":"2026-10-19","item":"Bridgette marketing request (end of day, ~2 AM Lagos)","group":"Bridgette marketing request (end of day, ~2 AM Lagos)","size":"small","due":"2026-10-19","delivered":"","status":"no evidence","days_late":null},{"id":"p110","said":"2026-10-19","item":"Attend to all Bridgette's queries and send update (before end of day)","group":"Attend to all Bridgette's queries and send update (before en","size":"small","due":"2026-10-19","delivered":"","status":"no evidence","days_late":null},{"id":"p111","said":"2026-10-19","item":"Ship new profile page (today ~9 PM Lagos)","group":"profile page v2 (Oct)","size":"feature","due":"2026-10-19","delivered":"2026-10-21","status":"late","days_late":2},{"id":"p112","said":"2026-10-19","item":"New report finished (next week Monday)","group":"monthly reports rebuild","size":"feature","due":"2026-10-26","delivered":"2026-10-27","status":"late","days_late":1},{"id":"p113","said":"2026-10-19","item":"Build requested pricing/view feature (end of week, Friday)","group":"Build requested pricing/view feature (end of week, Friday)","size":"feature","due":"2026-10-23","delivered":"","status":"no evidence","days_late":null},{"id":"p114","said":"2026-10-19","item":"Investigate bug and revert (before end of day Lagos)","group":"Investigate bug and revert (before end of day Lagos)","size":"small","due":"2026-10-19","delivered":"2026-10-21","status":"late","days_late":2},{"id":"p115","said":"2026-10-20","item":"Push new profile then run ~8-hour backfill","group":"profile page v2 (Oct)","size":"feature","due":"2026-10-20","delivered":"2026-10-21","status":"late","days_late":1},{"id":"p116","said":"2026-10-20","item":"Client caption editing feature (by end of the week)","group":"R.Ve captions","size":"feature","due":"2026-10-23","delivered":"2026-10-26","status":"late","days_late":3},{"id":"p117","said":"2026-10-20","item":"Manually edit R.Ve captions (before end of day)","group":"R.Ve captions","size":"small","due":"2026-10-20","delivered":"","status":"no evidence","days_late":null},{"id":"p118","said":"2026-10-21","item":"Grove Las Vegas request (end of next week, 31st)","group":"Grove Las Vegas request (end of next week, 31st)","size":"small","due":"2026-10-31","delivered":"2026-10-27","status":"on time","days_late":-4},{"id":"p119","said":"2026-10-21","item":"Bugs and new reports done (on the 26th)","group":"monthly reports rebuild","size":"feature","due":"2026-10-26","delivered":"2026-10-27","status":"late","days_late":1},{"id":"p120","said":"2026-10-21","item":"Redo audit to Bridgette's spec (next week)","group":"audit redo to Bridgette spec","size":"feature","due":"2026-10-30","delivered":"","status":"no evidence","days_late":null},{"id":"p121","said":"2026-10-22","item":"Ability to change account ownership levels (till next week Wednesday)","group":"Grove account roles","size":"feature","due":"2026-10-28","delivered":"2026-10-27","status":"on time","days_late":-1},{"id":"p122","said":"2026-10-23","item":"Review link message update (maybe next month)","group":"Review link message update (maybe next month)","size":"small","due":"2026-11-30","delivered":"","status":"open","days_late":null},{"id":"p123","said":"2026-10-26","item":"Ship new report format (this week)","group":"monthly reports rebuild","size":"feature","due":"2026-10-30","delivered":"2026-10-27","status":"on time","days_late":-3},{"id":"p124","said":"2026-10-26","item":"Citations work (early next week)","group":"citations API","size":"feature","due":"2026-11-03","delivered":"","status":"open","days_late":null},{"id":"p125","said":"2026-10-26","item":"Push reports matching Steve's design 1:1 plus bug fixes (live by Steve's Tuesday morning)","group":"monthly reports rebuild","size":"feature","due":"2026-10-27","delivered":"2026-10-27","status":"on time","days_late":0},{"id":"p126","said":"2026-10-27","item":"Reviews-to-images feature live (today)","group":"reviews-to-images","size":"feature","due":"2026-10-27","delivered":"2026-10-27","status":"on time","days_late":0},{"id":"p127","said":"2026-10-27","item":"RMS Dumpsters new-format report (today ~7 PM Lagos)","group":"monthly reports rebuild","size":"small","due":"2026-10-27","delivered":"2026-10-27","status":"on time","days_late":0},{"id":"p128","said":"2026-10-27","item":"Jeff Lisiecki press release resend feature (before 7 PM Lagos)","group":"Jeff Lisiecki press release","size":"feature","due":"2026-10-27","delivered":"2026-10-27","status":"on time","days_late":0},{"id":"p129","said":"2026-10-27","item":"New citations API work (delivery late November)","group":"citations API","size":"feature","due":"2026-11-30","delivered":"","status":"open","days_late":null},{"id":"p130","said":"2026-10-27","item":"Resized images feature (next month)","group":"resized images","size":"feature","due":"2026-11-30","delivered":"","status":"open","days_late":null},{"id":"p131","said":"2026-10-27","item":"Fix Qvita-only issue (by 7 PM Lagos)","group":"Fix Qvita-only issue (by 7 PM Lagos)","size":"small","due":"2026-10-28","delivered":"","status":"no evidence","days_late":null},{"id":"p132","said":"2026-10-28","item":"Fix new-report data issues (before end of this week)","group":"monthly reports rebuild","size":"small","due":"2026-10-30","delivered":"","status":"open","days_late":null},{"id":"p133","said":"2026-10-29","item":"Send Jeff Lisiecki new press release topics (today)","group":"Jeff Lisiecki press release","size":"small","due":"2026-10-29","delivered":"","status":"no evidence","days_late":null},{"id":"p134","said":"2026-10-29","item":"Answer on profile data question (by leadership meeting next week)","group":"Answer on profile data question (by leadership meeting next ","size":"small","due":"2026-11-02","delivered":"","status":"no evidence","days_late":null},{"id":"p135","said":"2026-10-30","item":"Onboarding change per agreed direction (before Monday)","group":"Oct 30 release (onboarding/LeadAR/reports)","size":"feature","due":"2026-11-01","delivered":"","status":"no evidence","days_late":null},{"id":"p136","said":"2026-10-30","item":"Fine-tune LuXe Concierge report before sending (about four hours)","group":"LuXe Concierge Sept report","size":"small","due":"2026-10-30","delivered":"2026-10-30","status":"on time","days_late":0},{"id":"p137","said":"2026-10-30","item":"Change email button link via code (today)","group":"Change email button link via code (today)","size":"small","due":"2026-10-30","delivered":"","status":"no evidence","days_late":null},{"id":"p138","said":"2026-10-30","item":"Ship LeadAR, new onboarding/sign-up flow, fixed reports and port old reports (today)","group":"Oct 30 release (onboarding/LeadAR/reports)","size":"feature","due":"2026-10-30","delivered":"","status":"open","days_late":null},{"id":"p139","said":"2026-10-30","item":"Bridgette marketing request after profile page (end of second week of November)","group":"Bridgette marketing page (Nov)","size":"feature","due":"2026-11-13","delivered":"","status":"open","days_late":null},{"id":"p140","said":"2026-10-30","item":"Send LuXe Concierge report (in thirty minutes)","group":"LuXe Concierge Sept report","size":"small","due":"2026-10-30","delivered":"2026-10-30","status":"on time","days_late":0},{"id":"p141","said":"2026-10-30","item":"Deploy held-back app changes (over the weekend)","group":"Oct 30 release (onboarding/LeadAR/reports)","size":"feature","due":"2026-11-01","delivered":"","status":"no evidence","days_late":null},{"id":"p142","said":"2026-11-02","item":"Website marketing request (by second week of November)","group":"Bridgette marketing page (Nov)","size":"feature","due":"2026-11-13","delivered":"","status":"open","days_late":null},{"id":"p143","said":"2026-11-02","item":"New profile page delivered (by Friday)","group":"profile page v3 (Nov)","size":"feature","due":"2026-11-06","delivered":"","status":"open","days_late":null},{"id":"p144","said":"2026-11-02","item":"Contact BrightLocal support about RMS duplicates (tomorrow)","group":"Contact BrightLocal support about RMS duplicates (tomorrow)","size":"small","due":"2026-11-03","delivered":"","status":"no evidence","days_late":null},{"id":"p145","said":"2026-11-03","item":"Page goes live (later this month)","group":"Bridgette marketing page (Nov)","size":"feature","due":"2026-11-30","delivered":"","status":"open","days_late":null},{"id":"p146","said":"2026-11-03","item":"Requested change for team group DM (today)","group":"Requested change for team group DM (today)","size":"small","due":"2026-11-03","delivered":"2026-11-04","status":"late","days_late":1},{"id":"p147","said":"2026-11-03","item":"NutriChem pharmacy item (ETA Friday)","group":"NutriChem pharmacy item (ETA Friday)","size":"small","due":"2026-11-06","delivered":"","status":"no evidence","days_late":null},{"id":"p148","said":"2026-11-03","item":"Push Rivkin removal and price guessing for Bridgette's show (tomorrow morning)","group":"price guessing","size":"feature","due":"2026-11-04","delivered":"2026-11-05","status":"late","days_late":1},{"id":"p149","said":"2026-11-04","item":"Deploy new profile page (Friday as promised)","group":"profile page v3 (Nov)","size":"feature","due":"2026-11-06","delivered":"","status":"open","days_late":null},{"id":"p150","said":"2026-11-05","item":"Price guessing feature live (in a few hours)","group":"price guessing","size":"feature","due":"2026-11-05","delivered":"2026-11-05","status":"on time","days_late":0},{"id":"p151","said":"2026-11-05","item":"New review-reply prompt system live (end of day Friday next week)","group":"review-reply prompt system","size":"feature","due":"2026-11-13","delivered":"","status":"open","days_late":null},{"id":"p152","said":"2026-11-05","item":"NutriChem bundled change (end of workday Friday)","group":"NutriChem bundled change (end of workday Friday)","size":"small","due":"2026-11-06","delivered":"","status":"no evidence","days_late":null},{"id":"p153","said":"2026-11-05","item":"Pricing change live (thirty to forty-five minutes)","group":"price guessing","size":"small","due":"2026-11-05","delivered":"2026-11-05","status":"on time","days_late":0},{"id":"p154","said":"2026-11-05","item":"Finish and ship profile page (end of his workday tomorrow)","group":"profile page v3 (Nov)","size":"feature","due":"2026-11-06","delivered":"","status":"open","days_late":null},{"id":"p155","said":"2026-11-06","item":"Push new profile version with fix (later today)","group":"profile page v3 (Nov)","size":"feature","due":"2026-11-06","delivered":"","status":"open","days_late":null},{"id":"p156","said":"2026-11-06","item":"Savage Serenity fix (by end of day)","group":"Savage Serenity fix (by end of day)","size":"small","due":"2026-11-06","delivered":"","status":"no evidence","days_late":null},{"id":"p157","said":"2026-11-06","item":"Profile page push (end of day, ~3 AM Lagos)","group":"profile page v3 (Nov)","size":"feature","due":"2026-11-06","delivered":"","status":"open","days_late":null}],"slip":[{"size":"small","n":40,"p50":0,"p80":2,"late_share":42},{"size":"feature","n":47,"p50":2,"p80":5,"late_share":72}],"open":[{"item":"monthly reports rebuild","size":"feature","times_promised":10,"promised_due":"2026-10-30","est_likely":"2026-11-15","est_late_case":"2026-11-16","overdue_days":10},{"item":"review-reply prompt system","size":"feature","times_promised":1,"promised_due":"2026-11-13","est_likely":"2026-11-17","est_late_case":"2026-11-18","overdue_days":0},{"item":"Review link message update (maybe next month)","size":"small","times_promised":1,"promised_due":"2026-11-30","est_likely":"2026-12-02","est_late_case":"2026-12-03","overdue_days":0},{"item":"citations API","size":"feature","times_promised":2,"promised_due":"2026-11-30","est_likely":"2026-12-04","est_late_case":"2026-12-05","overdue_days":0},{"item":"resized images","size":"feature","times_promised":1,"promised_due":"2026-11-30","est_likely":"2026-12-04","est_late_case":"2026-12-05","overdue_days":0}],"featurelist":[{"id":"reports","feature":"Rebuilt monthly client reports","times_promised":10,"promised_for":"2026-08-19","live":"2026-10-27","open":true,"note":"Promised 10 times. New design went live Oct 27; data fixes he promised for Oct 30 are still open."},{"id":"profile1","feature":"New business profile page (first version)","times_promised":9,"promised_for":"2026-08-25","live":"2026-09-14","open":false,"note":"Promised 9 times over three weeks."},{"id":"onboard1","feature":"New onboarding and audit flow","times_promised":5,"promised_for":"2026-08-27","live":"2026-09-02","open":false,"note":"Promised 5 times."},{"id":"access","feature":"Admins can edit the access-request list","times_promised":1,"promised_for":"2026-08-18","live":"","open":false,"note":"Promised for the same day. Nothing matching it reached GitHub."},{"id":"paylinks","feature":"Payment links in the admin dashboard","times_promised":1,"promised_for":"2026-08-19","live":"2026-08-19","open":false,"note":"Live the day he promised."},{"id":"onesunday","feature":"Pause feature for One Sunday","times_promised":1,"promised_for":"2026-09-08","live":"2026-09-09","open":false,"note":""},{"id":"autopilot","feature":"Fix automatic Google posting and review replies","times_promised":2,"promised_for":"2026-09-19","live":"2026-09-23","open":false,"note":""},{"id":"keywords","feature":"Keywords rework across the app","times_promised":1,"promised_for":"2026-09-25","live":"2026-09-29","open":false,"note":""},{"id":"onboard2","feature":"Onboarding and audit rework (second round)","times_promised":5,"promised_for":"2026-09-28","live":"2026-09-30","open":false,"note":"Ready in time for the Lisiecki call."},{"id":"bugsweep","feature":"App-wide bug sweep and page clean-up","times_promised":2,"promised_for":"2026-10-01","live":"2026-10-03","open":false,"note":""},{"id":"dashboard","feature":"New client dashboard","times_promised":5,"promised_for":"2026-10-09","live":"2026-10-14","open":false,"note":"Promised 5 times."},{"id":"profile2","feature":"Profile page redesign (October)","times_promised":5,"promised_for":"2026-10-09","live":"2026-10-21","open":false,"note":"Promised 5 times."},{"id":"skipline","feature":"“Skip the line” marketing page","times_promised":1,"promised_for":"2026-10-16","live":"","open":false,"note":"Nothing matching it reached GitHub."},{"id":"pricingview","feature":"Pricing view feature you asked for","times_promised":1,"promised_for":"2026-10-23","live":"","open":false,"note":"Nothing matching it reached GitHub."},{"id":"captions","feature":"Client photo captions (R.Ve)","times_promised":2,"promised_for":"2026-10-23","live":"2026-10-26","open":false,"note":""},{"id":"reviewimages","feature":"Turn reviews into images","times_promised":2,"promised_for":"2026-10-27","live":"2026-10-27","open":false,"note":""},{"id":"pressrelease","feature":"Resend press release (Jeff Lisiecki)","times_promised":1,"promised_for":"2026-10-27","live":"2026-10-27","open":false,"note":""},{"id":"roles","feature":"Account owner roles (The Grove)","times_promised":1,"promised_for":"2026-10-28","live":"2026-10-27","open":false,"note":"Live a day early."},{"id":"leadar","feature":"LeadAR, new sign-up flow and report fixes","times_promised":3,"promised_for":"2026-10-30","live":"2026-11-02","open":false,"note":"Held over the weekend and released Nov 2."},{"id":"auditbridgette","feature":"Redo the audit to Bridgette’s spec","times_promised":1,"promised_for":"2026-10-30","live":"","open":false,"note":"Nothing matching it reached GitHub."},{"id":"citations","feature":"Create the missing citations","times_promised":2,"promised_for":"2026-11-03","live":"","open":true,"note":"He later said late November for the full version."},{"id":"prices","feature":"Best-guess prices on every service","times_promised":3,"promised_for":"2026-11-04","live":"2026-11-05","open":false,"note":"Shipped with the Rivkin removal for Bridgette’s show."},{"id":"profile3","feature":"Profile page redesign (November)","times_promised":5,"promised_for":"2026-11-06","live":"2026-11-09","open":false,"note":"Promised 5 times for Friday Nov 6. Released to the live site Nov 9."},{"id":"marketing","feature":"Website marketing pages for Bridgette","times_promised":3,"promised_for":"2026-11-13","live":"2026-11-09","open":false,"note":"The plastic surgeon page went live Nov 9."},{"id":"reviewprompt","feature":"New review-reply prompt system","times_promised":1,"promised_for":"2026-11-13","live":"","open":true,"note":""},{"id":"resized","feature":"Resized images","times_promised":1,"promised_for":"2026-11-30","live":"","open":true,"note":""}]};
+  var calcs = {}, cache = {}, draws = {}, ods = [];
+  function get(id){
+    if (D[id]) return {status:'ok', data:D[id], columns: D[id][0] ? Object.keys(D[id][0]) : []};
+    if (calcs[id]) { if (!(id in cache)) { var c = calcs[id]; cache[id] = c.fn.apply(null, c.inputs.map(function(i){ return get(i).data; })); } return {status:'ok', data:cache[id]}; }
+    return {status:'missing', data:[]};
+  }
+  function run(name){ document.querySelectorAll('[data-draw="'+name+'"]').forEach(function(el){ try { var d = draws[name]; if (typeof d === 'function') d(el); else if (d) { if (!el.__m) { el.replaceChildren(); el.__m = d.mount ? d.mount(el) : true; } d.update && d.update(el, el.__m); } } catch(e){ console.error(name, e); } }); }
+  window.dash = {
+    colors: ['#1F4FE0','#6a665c','#7E97F2','#FF5A3C','#0B1A2E','#bfb9a9','#4a463e','#c9b98f'],
+    data: get, calc: function(id,o){ calcs[id]=o; }, loader: function(){},
+    draw: function(name, fn){ if (fn === undefined) { run(name); return; } draws[name] = fn; },
+    onData: function(fn){ ods.push(fn); },
+    params: function(){ return {}; }, setParams: function(){}, resetParams: function(){}, setLink: function(){}, refresh: function(){}
+  };
+  window.__dashRunAll = function(){ ods.forEach(function(f){ try{ f(); }catch(e){ console.error(e); } }); Object.keys(draws).forEach(run); };
+  var w = 0, t;
+  window.addEventListener('resize', function(){ var nw = document.documentElement.clientWidth; if (nw === w) return; w = nw; clearTimeout(t); t = setTimeout(window.__dashRunAll, 150); });
+  document.addEventListener('DOMContentLoaded', function(){ w = document.documentElement.clientWidth; window.__dashRunAll(); });
+})();
+</script>
+</head>
+<body>
+<div id="dash-root">
+<style>
+.cw { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: grid; gap: var(--cds-gap-xl); }
+.cw h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.cw h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0 0 var(--cds-gap-xs); }
+.cw h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: var(--cds-gap-md) 0 var(--cds-gap-xs); }
+.cw-sub { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: 0; }
+.cw-lede { font-size: var(--cds-font-size-body); line-height: 1.55; margin: var(--cds-gap-sm) 0 0; max-width: 68ch; }
+.cw-lede b, .cw-note b { font-variant-numeric: tabular-nums; }
+.cw-note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.5; margin: var(--cds-gap-xs) 0 0; max-width: 72ch; }
+.cw-tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: var(--cds-gap-md); }
+.cw-tile { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); }
+.cw-tile .cw-k { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.cw-tile .cw-v { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; margin-top: var(--cds-gap-xs); }
+.cw-tile .cw-s { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin-top: var(--cds-gap-xs); }
+.cw-bad { color: var(--color-bad); }
+.cw-sec { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.cw-num { display: inline-block; min-width: 1ch; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-right: var(--cds-gap-xs); }
+.cw-chart { position: relative; min-height: 240px; width: 100%; margin-top: var(--cds-gap-sm); }
+.cw-chart.cw-tall { min-height: 300px; }
+.cw-chart.cw-short { min-height: 200px; }
+.cw-chart svg { display: block; overflow: visible; }
+.cw-chart .cw-axis text { fill: var(--cds-text-secondary); font-size: var(--cds-font-size-caption); font-family: var(--font-anthropic-sans); }
+.cw-chart .cw-axis line, .cw-chart .cw-axis path { stroke: var(--cds-chart-axis); }
+.cw-chart .cw-grid line { stroke: var(--cds-chart-grid); }
+.cw-chart .cw-lbl { fill: var(--cds-text-secondary); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.cw-chart .cw-ref { stroke: var(--cds-chart-reference); stroke-dasharray: 3 3; }
+.cw-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md) 0; }
+.cw-tip { position: absolute; z-index: 5; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); box-shadow: var(--cds-shadow-popover); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); font-size: var(--cds-font-size-caption); line-height: 1.45; max-width: 260px; color: var(--color-fg); }
+.cw-tip .cw-tip-h { font-weight: var(--cds-font-weight-medium); }
+.cw-tip div:not(.cw-tip-h) { color: var(--cds-text-secondary); font-variant-numeric: tabular-nums; }
+.cw-legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-top: var(--cds-gap-sm); }
+.cw-legend span { display: inline-flex; align-items: center; gap: 6px; }
+.cw-legend i { width: 10px; height: 10px; border-radius: 2px; display: inline-block; }
+.cw-two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--cds-gap-lg); }
+.cw-tablewrap { overflow-x: auto; margin-top: var(--cds-gap-sm); }
+.cw table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.cw th { text-align: left; color: var(--color-fg-muted); font-weight: var(--cds-font-weight-medium); padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.cw td { padding: 6px 8px; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.cw td.cw-r, .cw th.cw-r { text-align: right; }
+.cw details { font-size: var(--cds-font-size-caption); }
+.cw summary { cursor: pointer; color: var(--color-fg-muted); }
+.cw details ul { padding-left: 1.2em; line-height: 1.55; color: var(--color-fg-muted); }
+.cw-pill { display: inline-block; padding: 1px 6px; border-radius: 999px; border: 1px solid var(--color-border-line); white-space: nowrap; }
+.cw-pill.late { color: var(--color-bad); }
+.cw-pill.on { color: var(--color-ok); }
+.cw-pill.none, .cw-pill.open { color: var(--color-warn); }
+
+.cw-range { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); overflow: hidden; margin-top: var(--cds-gap-md); }
+.cw-range button { font: inherit; font-size: var(--cds-font-size-caption); padding: 7px 14px; background: var(--color-panel); color: var(--color-fg); border: 0; border-right: 1px solid var(--color-border-line); cursor: pointer; }
+.cw-range button:last-child { border-right: 0; }
+.cw-mini .cw-tile { padding: var(--cds-pad-md); }
+.cw-mini .cw-v { font-size: var(--cds-font-size-heading); }
+#featurelist-table td:first-child { font-weight: var(--cds-font-weight-medium); min-width: 180px; }
+#featurelist-table td:last-child { color: var(--color-fg-muted); min-width: 220px; }
+.cw-pill.done { color: var(--color-ok); }
+.cw-pill.part { color: var(--color-bad); }
+.cw-range button[aria-pressed=true] { background: var(--color-fg); color: var(--color-bg); }
+</style>
+
+<div class="cw">
+
+<header id="top">
+  <h1>Clinton work dashboard</h1>
+  <p class="cw-sub">Snapshot as of November 9, 2026 at 6:30 PM PT, built from GitHub (from July 1) and Slack (from August 3). Times in Pacific unless noted.</p>
+</header>
+
+<section class="cw-sec" id="features">
+  <h2>Everything you asked for, and where it stands</h2>
+  <p class="cw-note">Every feature he gave you a date for since August, in plain words. Days late counts from the first date he promised.</p>
+  <div class="cw-tiles cw-mini" style="margin-top: var(--cds-gap-sm)">
+    <div class="cw-tile"><div class="cw-k">Done on time</div><div class="cw-v" data-draw="f_on" data-source="featsum" data-field="on_time" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Done late</div><div class="cw-v cw-bad" data-draw="f_late" data-source="featsum" data-field="late" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Overdue or only partly done</div><div class="cw-v cw-bad" data-draw="f_over" data-source="featsum" data-field="overdue" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Not due yet</div><div class="cw-v" data-draw="f_notdue" data-source="featsum" data-field="not_due" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Can’t find it shipped</div><div class="cw-v" data-draw="f_none" data-source="featsum" data-field="not_found" data-row="0">—</div></div>
+  </div>
+  <div class="cw-tablewrap">
+    <table id="featurelist-table" data-source="featurestatus" data-row-key="id">
+      <thead><tr><th data-field="feature">What you asked for</th><th data-field="promised_for">Promised for</th><th data-field="live">Went live</th><th data-field="status">Where it stands</th><th class="cw-r" data-field="days_late">Days late</th><th class="cw-r" data-field="times_promised">Times promised</th><th data-field="note">Notes</th></tr></thead>
+      <tbody data-draw="featurelist"></tbody>
+    </table>
+  </div>
+</section>
+
+<header id="work">
+  <h2>His working time</h2>
+  <div class="cw-range" id="range" role="group" aria-label="Time window"><button type="button" data-r="7" aria-pressed="true">Last 7 days</button><button type="button" data-r="30" aria-pressed="false">30 days</button><button type="button" data-r="90" aria-pressed="false">90 days</button><button type="button" data-r="all" aria-pressed="false">Since July</button></div>
+  <p class="cw-sub" style="margin-top: var(--cds-gap-xs)">Showing <span data-draw="l_window">—</span></p>
+  <p class="cw-lede">Over the <span data-draw="l_label">—</span>, Clinton coded about <b data-draw="l_code">—</b> hours a week himself and spent another <b data-draw="l_slack">—</b> hours a week on Slack only. His agents ran <b data-draw="l_bot">—</b> hours a week and made <b data-draw="l_share">—</b> of all code pushes.</p>
+</header>
+
+<div class="cw-tiles" id="tiles">
+  <div class="cw-tile"><div class="cw-k">Clinton coding hours / week</div><div class="cw-v" data-draw="t_code">—</div><div class="cw-s">Time around pushes he made himself</div></div>
+  <div class="cw-tile"><div class="cw-k">Slack-only hours / week</div><div class="cw-v" data-draw="t_slack">—</div><div class="cw-s">Messaging with no code of his own</div></div>
+  <div class="cw-tile"><div class="cw-k">Agent hours / week</div><div class="cw-v" data-draw="t_bot">—</div><div class="cw-s">Agent bays running</div></div>
+  <div class="cw-tile"><div class="cw-k">Share of pushes made by agents</div><div class="cw-v" data-draw="t_share">—</div><div class="cw-s"><span data-draw="t_bp">—</span> agent vs <span data-draw="t_op">—</span> his own</div></div>
+  <div class="cw-tile"><div class="cw-k">Days with no Slack and no own push</div><div class="cw-v" data-draw="t_silent">—</div><div class="cw-s">Out of <span data-draw="t_days">—</span> days with Slack data</div></div>
+  <div class="cw-tile"><div class="cw-k">Coding forecast, week of <span data-draw="t_fcw" data-source="kfix" data-field="next_week" data-row="0">—</span></div><div class="cw-v" data-draw="t_fc" data-source="kfix" data-field="code_fc" data-row="0">—</div><div class="cw-s">Likely <span data-draw="t_fcr">—</span>. With Slack: <span data-draw="t_fct" data-source="kfix" data-field="total_fc" data-row="0">—</span> h</div></div>
+  <div class="cw-tile"><div class="cw-k">Features delivered late</div><div class="cw-v cw-bad" data-draw="t_late" data-source="slip" data-field="late_share" data-where="size=feature">—</div><div class="cw-s">All time, of features with a delivery date</div></div>
+  <div class="cw-tile"><div class="cw-k">Days since last release to live site</div><div class="cw-v" data-draw="t_rel" data-source="kfix" data-field="days_since_release" data-row="0">—</div><div class="cw-s">Last release <span data-draw="t_reld" data-source="kfix" data-field="last_release" data-row="0">—</span></div></div>
+</div>
+<p class="cw-note" id="range-note">The time window changes the headline, the first five figures, both hours charts, sections 2 and 3, and the daily Slack chart. The forecast and the deadlines always cover the whole period. He claims 65+ hour weeks.</p>
+
+<section class="cw-sec" id="hours">
+  <h2><span class="cw-num">1</span>Hours he is working</h2>
+  <p class="cw-note">Coding hours are 30-minute windows in which he wrote a commit or made a push himself (commit times, not just push times), gaps of an hour or less filled in. Slack-only hours are extra windows where he only posted on Slack. Agent pushes count for neither. Calls, Linear and offline work are not visible, so these are a floor.</p>
+  <h3 id="weekly-h">Hours per week, selected window, with a four-week forecast</h3>
+  <div class="cw-chart cw-tall" id="weekly-chart" data-draw="weekly" data-source="weekly forecast daily"></div>
+  <div class="cw-legend"><span><i style="background: var(--cw-c0)"></i>Clinton coding</span><span><i style="background: var(--cw-c2)"></i>Clinton Slack only</span><span><i style="background: var(--cw-c1)"></i>Agents running</span><span><i style="background: var(--cw-c0); opacity: .3"></i>Coding forecast with likely range</span></div>
+  <h3 id="daily-h">Day by day, selected window</h3>
+  <div class="cw-chart" id="daily-chart" data-draw="daily" data-source="daily"></div>
+  <div class="cw-legend"><span><i style="background: var(--cw-c0)"></i>Clinton coding</span><span><i style="background: var(--cw-c2)"></i>Clinton Slack only</span><span><i style="background: var(--cw-c1); opacity: .35"></i>Agent hours</span></div>
+  <div class="cw-two">
+    <div>
+      <h3 id="dow-h">Average Clinton coding hours by weekday, since Aug 3</h3>
+      <div class="cw-chart cw-short" id="dow-chart" data-draw="dow" data-source="dow"></div>
+    </div>
+    <div>
+      <h3 id="hod-h">When in the day he works (total hours, Jul 1 to now)</h3>
+      <div class="cw-chart cw-short" id="hod-chart" data-draw="hod" data-source="hours"></div>
+      <p class="cw-note">Shaded band is a normal Lagos workday, 9 AM to 6 PM Lagos.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cw-sec" id="bots">
+  <h2><span class="cw-num">2</span>What his bots are doing</h2>
+  <p class="cw-note">Pushes from the agent build bays (branches named bay/...), grouped by product area, for the weeks in the selected window. A push is a unit of activity, not a unit of finished work.</p>
+  <div class="cw-chart cw-tall" id="bots-chart" data-draw="bots" data-source="topics daily"></div>
+  <div class="cw-legend" data-draw="legend1" data-source="topics"></div>
+</section>
+
+<section class="cw-sec" id="personal">
+  <h2><span class="cw-num">3</span>What he is personally doing</h2>
+  <p class="cw-note">Pushes Clinton made himself, outside the agent bays and excluding automatic merges and releases, grouped the same way.</p>
+  <div class="cw-chart cw-tall" id="me-chart" data-draw="me" data-source="topics daily"></div>
+  <div class="cw-legend" data-draw="legend2" data-source="topics"></div>
+  <h3 id="areas-h">Where the activity goes, selected window</h3>
+  <div class="cw-tablewrap">
+    <table id="areas-table" data-source="areas" data-row-key="range,area">
+      <thead><tr><th data-field="area">Area</th><th class="cw-r" data-field="clinton">Clinton pushes</th><th class="cw-r" data-field="bots">Agent pushes</th><th class="cw-r" data-field="clinton_share">Clinton share</th></tr></thead>
+      <tbody data-draw="areas"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="cw-sec" id="slack">
+  <h2><span class="cw-num">4</span>When he responds on Slack</h2>
+  <h3 id="slackday-h">First and last Slack message each day, selected window</h3>
+  <div class="cw-chart cw-tall" id="slackday-chart" data-draw="slackday" data-source="daily"></div>
+  <p class="cw-note">Each line runs from his first to his last message that day. Left axis is Pacific, right axis is Lagos (Lagos is 8 hours ahead until Nov 1, then 9). Marks along the bottom are days with no Slack message from him. Shaded band is a Lagos workday.</p>
+  <h3 id="slackhour-h">Messages by hour of day, since Aug 3</h3>
+  <div class="cw-chart cw-short" id="slackhour-chart" data-draw="slackhour" data-source="hours"></div>
+</section>
+
+<section class="cw-sec" id="deadlines">
+  <h2><span class="cw-num">5</span>Deadlines and realistic dates</h2>
+  <p class="cw-note">Every dated promise Clinton made in Slack since Aug 3, checked against when the work actually reached GitHub or the live site.</p>
+  <div class="cw-tiles" style="margin-top: var(--cds-gap-sm)">
+    <div class="cw-tile"><div class="cw-k">On time</div><div class="cw-v" data-draw="o_on" data-source="outcomes" data-field="on_time" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Late</div><div class="cw-v cw-bad" data-draw="o_late" data-source="outcomes" data-field="late" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">No evidence it shipped</div><div class="cw-v" data-draw="o_none" data-source="outcomes" data-field="none" data-row="0">—</div></div>
+    <div class="cw-tile"><div class="cw-k">Still open</div><div class="cw-v" data-draw="o_open" data-source="outcomes" data-field="open" data-row="0">—</div></div>
+  </div>
+  <h3 id="open-h">Open items: what he promised vs. what to expect</h3>
+  <div class="cw-chart cw-tall" id="open-chart" data-draw="openchart" data-source="open daily"></div>
+  <div class="cw-legend"><span><i style="background: transparent; border: 1.5px solid var(--cw-c0); border-radius: 50%"></i>Date he promised</span><span><i style="background: var(--cw-c0); border-radius: 50%"></i>Likely date</span><span><i style="background: var(--cw-c0); opacity: .3"></i>Out to late case (4 in 5 done by here)</span></div>
+  <div class="cw-tablewrap">
+    <table id="open-table" data-source="open" data-row-key="item">
+      <thead><tr><th data-field="item">Item</th><th class="cw-r" data-field="times_promised">Times promised</th><th data-field="promised_due">Promised</th><th class="cw-r" data-field="overdue_days">Days overdue</th><th data-field="est_likely">Likely</th><th data-field="est_late_case">Late case</th></tr></thead>
+      <tbody data-draw="opentable"></tbody>
+    </table>
+  </div>
+  <p class="cw-note">Estimates apply his own track record. Features slip a median of <b data-draw="s_f50" data-source="slip" data-field="p50" data-where="size=feature">—</b> days and 4 in 5 land within <b data-draw="s_f80" data-source="slip" data-field="p80" data-where="size=feature">—</b> days. For an item already overdue, only his late features that ran at least that late are used. The profile page alone has been promised <b data-draw="o_prof" data-source="outcomes" data-field="profile" data-row="0">—</b> times across three rounds.</p>
+  <div class="cw-two">
+    <div>
+      <h3 id="slip-h">Slip by size of work</h3>
+      <div class="cw-tablewrap">
+        <table id="slip-table" data-source="slip" data-row-key="size">
+          <thead><tr><th data-field="size">Size</th><th class="cw-r" data-field="n">Delivered</th><th class="cw-r" data-field="late_share">Late share</th><th class="cw-r" data-field="p50">Median slip (days)</th><th class="cw-r" data-field="p80">80% within (days)</th></tr></thead>
+          <tbody data-draw="sliptable"></tbody>
+        </table>
+      </div>
+    </div>
+    <div>
+      <h3 id="slipdots-h">Days late per delivered promise, over time</h3>
+      <div class="cw-chart cw-short" id="slipdots-chart" data-draw="slipdots" data-source="promises"></div>
+      <div class="cw-legend"><span><i style="background: var(--cw-c0); border-radius: 50%"></i>Feature</span><span><i style="background: var(--cw-c2); border-radius: 50%"></i>Small item</span></div>
+    </div>
+  </div>
+  <details id="all-promises">
+    <summary>Every promise, one row each</summary>
+    <div class="cw-tablewrap">
+      <table id="promises-table" data-source="promises" data-row-key="id">
+        <thead><tr><th data-field="said">Said</th><th data-field="item">Promise</th><th data-field="size">Size</th><th data-field="due">Due</th><th data-field="delivered">Delivered</th><th data-field="status">Status</th><th class="cw-r" data-field="days_late">Days late</th></tr></thead>
+        <tbody data-draw="promises"></tbody>
+      </table>
+    </div>
+  </details>
+</section>
+
+<details id="method">
+  <summary>How these numbers are worked out</summary>
+  <ul>
+    <li>GitHub activity is every push by htmlHxcker to the LAIR web repo since July 1. His GitHub profile shows almost all of his commits in this repo, plus a few dozen contributions a month in private repos outside LAIR that cannot be seen. Pushes to bay/... branches are agents. Merges, syncs and releases are pipeline and counted for neither side. Everything else is Clinton.</li>
+    <li>Coding hours: 30-minute windows containing a commit he authored (by its own timestamp, so work pushed later still counts) or a push he made, gaps of one hour or less filled. Slack-only hours: the extra windows added when his Slack messages are included. Both count visible work only, so they can undercount, but neither counts agents' time as his. His own pushes may still be written with Claude's help in his own session.</li>
+    <li>Agent hours: the same method applied to bay pushes. Agents can run many bays at once, so this is time running, not work volume.</li>
+    <li>Slack exists only from Aug 3, so July hours are from GitHub alone and read low.</li>
+    <li>Forecast: the average of the last four full weeks blended with the trend since Aug 3, for coding hours and for coding plus Slack. The range is one standard deviation of the last eight weeks.</li>
+    <li>Promise dates: each dated commitment in Slack, matched to the GitHub release or live page that delivered it. "No evidence" means nothing matching was found, not that it never happened.</li>
+  </ul>
+</details>
+
+</div>
+
+<script>
+window.cw = (() => {
+  const parse = d3.utcParse('%Y-%m-%d');
+  const fmtD = d3.utcFormat('%b %-d');
+  const fmtDW = d3.utcFormat('%a %b %-d');
+  const c = (i) => (dash.colors && dash.colors.length ? dash.colors[i % dash.colors.length] : 'currentColor');
+  const hr = (h) => { const H = Math.floor(h) % 24, m = Math.round((h % 1) * 60) % 60; return `${H % 12 || 12}${m ? ':' + String(m).padStart(2, '0') : ''} ${H < 12 ? 'AM' : 'PM'}`; };
+  const need = (el, ids) => {
+    const r = ids.map((id) => dash.data(id));
+    const bad = r.find((x) => x.status !== 'ok');
+    if (bad) {
+      const s = document.createElement('div');
+      s.className = 'cw-empty';
+      s.textContent = bad.status === 'error' ? 'Failed to load' : '—';
+      el.replaceChildren(s);
+      return null;
+    }
+    return r.map((x) => x.data);
+  };
+  const tip = (el) => {
+    const t = document.createElement('div');
+    t.className = 'cw-tip';
+    t.hidden = true;
+    el.append(t);
+    return {
+      show(ev, lines) {
+        t.replaceChildren(...lines.map((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 'cw-tip-h'; d.textContent = l; return d; }));
+        t.hidden = false;
+        const r = el.getBoundingClientRect();
+        let x = ev.clientX - r.left + 12, y = ev.clientY - r.top + 12;
+        if (x + t.offsetWidth > el.clientWidth) x = Math.max(0, ev.clientX - r.left - t.offsetWidth - 12);
+        if (y + t.offsetHeight > el.clientHeight + 40) y = Math.max(0, ev.clientY - r.top - t.offsetHeight - 12);
+        t.style.left = x + 'px'; t.style.top = y + 'px';
+      },
+      hide() { t.hidden = true; },
+    };
+  };
+  const frame = (el, H, label, y, o = {}) => {
+    el.replaceChildren();
+    const W = Math.max(el.clientWidth || 600, 280);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', label);
+    const ticks = o.ticks || 5;
+    const tv = o.tickValues || y.ticks(ticks);
+    const gy = svg.append('g').attr('class', 'cw-axis');
+    gy.call(d3.axisLeft(y).tickValues(tv).tickSize(0).tickFormat(o.yFmt || d3.format('~s')));
+    gy.select('.domain').remove();
+    const ml = Math.ceil(gy.node().getBBox().width) + 10;
+    gy.attr('transform', `translate(${ml - 6},0)`);
+    const mr = o.mr || 8;
+    svg.insert('g', ':first-child').attr('class', 'cw-grid').selectAll('line').data(tv).join('line')
+      .attr('x1', ml).attr('x2', W - mr).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+    return { svg, W, ml, mr, H };
+  };
+  const xLabels = (svg, items, xpos, yv, text, minGap = 46) => {
+    const g = svg.append('g').attr('class', 'cw-axis');
+    let last = -1e9;
+    items.forEach((d) => {
+      const x = xpos(d);
+      if (x - last < minGap) return;
+      last = x;
+      g.append('text').attr('x', x).attr('y', yv).attr('text-anchor', 'middle').text(text(d));
+    });
+    return g;
+  };
+  // area colors: top 7 areas overall keep their own color, rest are Other
+  const areaKeys = (rows) => {
+    const tot = d3.rollups(rows, (v) => d3.sum(v, (r) => +r.pushes), (r) => r.area).filter((d) => d[0] !== 'Other').sort((a, b) => b[1] - a[1]);
+    return [...tot.slice(0, 7).map((d) => d[0]), 'Other'];
+  };
+  let current = '7';
+  const range = () => current;
+  const setRange = (r) => { if (['7', '30', '90', 'all'].includes(r)) current = r; };
+  const startOf = (days, r) => (r === 'all' ? days[0] : d3.utcFormat('%Y-%m-%d')(d3.utcDay.offset(parse(days[days.length - 1]), -(+r - 1))));
+  return { parse, fmtD, fmtDW, c, hr, need, tip, frame, xLabels, areaKeys, range, setRange, startOf };
+})();
+document.querySelectorAll('.cw').forEach((e) => (dash.colors || []).forEach((col, i) => e.style.setProperty('--cw-c' + i, col)));
+
+dash.calc('kpi', {
+  title: 'Headline numbers by window',
+  description: 'Per-week Clinton coding, Slack-only and agent hours, push counts and silent days for the last 7, 30, 90 days and since July.',
+  inputs: ['daily'],
+  fn: (daily) => {
+    const days = daily.map((d) => d.day).sort();
+    const windows = [['7', 'last 7 days'], ['30', 'last 30 days'], ['90', 'last 90 days'], ['all', 'period since July 1']];
+    return windows.map(([range, label]) => {
+      const start = cw.startOf(days, range);
+      const w = daily.filter((d) => d.day >= start);
+      const perWeek = (f) => Math.round(d3.sum(w, (d) => +d[f]) / w.length * 7 * 10) / 10;
+      const own = d3.sum(w, (d) => +d.own_pushes), agent = d3.sum(w, (d) => +d.bot_pushes);
+      const withSlack = w.filter((d) => d.slack_available === true || d.slack_available === 'true');
+      return {
+        range, label, start, days: w.length,
+        code_wk: perWeek('code_hours'), slack_wk: perWeek('slack_hours'), bot_wk: perWeek('bot_hours'),
+        own_pushes: own, bot_pushes: agent, bot_share: Math.round(100 * agent / Math.max(1, own + agent)),
+        silent_days: withSlack.filter((d) => +d.slack_msgs === 0 && +d.own_pushes === 0).length, slack_days: withSlack.length,
+      };
+    });
+  },
+});
+
+dash.calc('kfix', {
+  title: 'Forecast and last release',
+  description: 'Next week coding forecast with range, and days since the last release to the live site.',
+  inputs: ['forecast', 'daily'],
+  fn: (forecast, daily) => {
+    const rel = daily.filter((d) => +d.releases > 0).map((d) => d.day).sort();
+    const last = rel[rel.length - 1] || null;
+    const today = daily.map((d) => d.day).sort().pop();
+    const f = forecast[0] || {};
+    return [{
+      next_week: f.week || null, code_fc: f.code_forecast == null ? null : +f.code_forecast,
+      code_lo: f.code_low == null ? null : +f.code_low, code_hi: f.code_high == null ? null : +f.code_high,
+      total_fc: f.forecast == null ? null : +f.forecast,
+      last_release: last, days_since_release: last ? Math.round((Date.parse(today) - Date.parse(last)) / 864e5) : null,
+    }];
+  },
+});
+
+dash.calc('dow', {
+  title: 'Clinton hours by weekday',
+  description: 'Average Clinton coding hours for each weekday since Aug 3.',
+  inputs: ['daily'],
+  fn: (daily) => {
+    const order = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    const since = daily.filter((d) => d.slack_available === true || d.slack_available === 'true');
+    return order.map((wd) => {
+      const v = since.filter((d) => d.weekday === wd);
+      return { weekday: wd, avg_hours: Math.round(d3.mean(v, (d) => +d.code_hours) * 10) / 10, days: v.length };
+    });
+  },
+});
+
+dash.calc('areas', {
+  title: 'Pushes by area, Clinton vs agents',
+  description: 'Pushes per product area for the weeks in each time window, split by who made them.',
+  inputs: ['topics', 'daily'],
+  fn: (topics, daily) => {
+    const days = daily.map((d) => d.day).sort();
+    return ['7', '30', '90', 'all'].flatMap((range) => {
+      const start = cw.startOf(days, range);
+      const inWin = topics.filter((r) => d3.utcFormat('%Y-%m-%d')(d3.utcDay.offset(cw.parse(r.week), 6)) >= start);
+      return d3.rollups(inWin, (v) => ({
+        clinton: d3.sum(v.filter((r) => r.who === 'Clinton'), (r) => +r.pushes),
+        bots: d3.sum(v.filter((r) => r.who === 'Bots'), (r) => +r.pushes),
+      }), (r) => r.area)
+        .map(([area, x]) => ({ range, area, clinton: x.clinton, bots: x.bots, clinton_share: Math.round(100 * x.clinton / Math.max(1, x.clinton + x.bots)) }))
+        .sort((a, b) => (b.clinton + b.bots) - (a.clinton + a.bots));
+    });
+  },
+});
+
+dash.calc('featurestatus', {
+  title: 'Where each requested feature stands',
+  description: 'Each requested feature with its status and days late, measured from the first date promised.',
+  inputs: ['featurelist', 'daily'],
+  fn: (featurelist, daily) => {
+    const today = daily.map((d) => d.day).sort().pop();
+    const days = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
+    const open = (f) => f.open === true || f.open === 'true';
+    return featurelist.map((f) => {
+      let status, late = null;
+      if (f.live && !open(f)) { late = Math.max(0, days(f.promised_for, f.live)); status = late > 0 ? 'Done late' : 'Done on time'; }
+      else if (f.live) { late = Math.max(0, days(f.promised_for, today)); status = 'Partly done'; }
+      else if (open(f) && f.promised_for > today) status = 'Not due yet';
+      else if (open(f)) { late = days(f.promised_for, today); status = 'Overdue'; }
+      else status = 'Can\u2019t find it';
+      return { id: f.id, feature: f.feature, promised_for: f.promised_for, live: f.live || '', status, days_late: late, times_promised: +f.times_promised, note: f.note || '' };
+    }).sort((a, b) => (a.promised_for < b.promised_for ? 1 : -1));
+  },
+});
+
+dash.calc('featsum', {
+  title: 'Requested features by status',
+  description: 'Counts of requested features that are on time, late, overdue, not due yet or not found.',
+  inputs: ['featurestatus'],
+  fn: (rows) => {
+    const n = (...s) => rows.filter((r) => s.includes(r.status)).length;
+    return [{ on_time: n('Done on time'), late: n('Done late'), overdue: n('Overdue', 'Partly done'), not_due: n('Not due yet'), not_found: n('Can\u2019t find it'), total: rows.length }];
+  },
+});
+
+dash.calc('outcomes', {
+  title: 'Promise outcomes',
+  description: 'How many dated promises were on time, late, unverified or still open.',
+  inputs: ['promises'],
+  fn: (promises) => {
+    const n = (s) => promises.filter((p) => p.status === s).length;
+    return [{ on_time: n('on time'), late: n('late'), none: n('no evidence'), open: n('open'), total: promises.length, profile: promises.filter((p) => String(p.group).startsWith('profile page')).length }];
+  },
+});
+</script>
+
+<script>
+// time window control and headline figures
+const rangeDrawings = ['weekly', 'l_window', 'l_label', 'l_code', 'l_slack', 'l_bot', 'l_share', 't_code', 't_slack', 't_bot', 't_share', 't_bp', 't_op', 't_silent', 't_days', 'daily', 'bots', 'me', 'areas', 'slackday'];
+document.querySelectorAll('.cw-range button').forEach((b) => b.addEventListener('click', () => {
+  cw.setRange(b.dataset.r);
+  document.querySelectorAll('.cw-range button').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.r === cw.range())));
+  rangeDrawings.forEach((n) => dash.draw(n));
+}));
+const rv = (el, f, fmt) => {
+  const k = dash.data('kpi');
+  const r = cw.range();
+  const row = k.status === 'ok' && k.data ? k.data.find((x) => x.range === r) : null;
+  const s = document.createElement('span');
+  if (row && row[f] != null) {
+    s.dataset.source = 'kpi'; s.dataset.field = f; s.dataset.where = 'range=' + r;
+    s.textContent = fmt(row[f], row);
+  } else s.textContent = '—';
+  el.replaceChildren(s);
+};
+const h1 = (v) => d3.format('.1f')(v);
+const pct = (v) => v + '%';
+const cnt = (v) => d3.format(',')(v);
+dash.draw('l_label', (el) => rv(el, 'label', String));
+dash.draw('l_window', (el) => {
+  const k = dash.data('kpi');
+  const row = k.status === 'ok' && k.data ? k.data.find((x) => x.range === cw.range()) : null;
+  const d = dash.data('daily');
+  const end = d.status === 'ok' ? d3.max(d.data, (r) => r.day) : null;
+  el.textContent = row && end ? `${cw.fmtD(cw.parse(row.start))} to ${cw.fmtD(cw.parse(end))}` : '—';
+});
+dash.draw('l_code', (el) => rv(el, 'code_wk', h1));
+dash.draw('l_slack', (el) => rv(el, 'slack_wk', h1));
+dash.draw('l_bot', (el) => rv(el, 'bot_wk', h1));
+dash.draw('l_share', (el) => rv(el, 'bot_share', pct));
+dash.draw('t_code', (el) => rv(el, 'code_wk', h1));
+dash.draw('t_slack', (el) => rv(el, 'slack_wk', h1));
+dash.draw('t_bot', (el) => rv(el, 'bot_wk', h1));
+dash.draw('t_share', (el) => rv(el, 'bot_share', pct));
+dash.draw('t_bp', (el) => rv(el, 'bot_pushes', cnt));
+dash.draw('t_op', (el) => rv(el, 'own_pushes', cnt));
+dash.draw('t_silent', (el) => rv(el, 'silent_days', String));
+dash.draw('t_days', (el) => rv(el, 'slack_days', String));
+const kf = (el, f, fmt) => {
+  const k = dash.data('kfix');
+  const row = k.status === 'ok' && k.data ? k.data[0] : null;
+  el.textContent = row && row[f] != null ? fmt(row[f], row) : '—';
+};
+dash.draw('t_fcw', (el) => kf(el, 'next_week', (v) => cw.fmtD(cw.parse(v))));
+dash.draw('t_fc', (el) => kf(el, 'code_fc', h1));
+dash.draw('t_fcr', (el) => kf(el, 'code_fc', (v, r) => `${d3.format('.0f')(r.code_lo)} to ${d3.format('.0f')(r.code_hi)} h`));
+dash.draw('t_fct', (el) => kf(el, 'total_fc', h1));
+dash.draw('t_rel', (el) => kf(el, 'days_since_release', String));
+dash.draw('t_reld', (el) => kf(el, 'last_release', (v) => cw.fmtD(cw.parse(v))));
+const slipVal = (el, f, suffix) => {
+  const s = dash.data('slip');
+  const row = s.status === 'ok' ? s.data.find((r) => r.size === 'feature') : null;
+  el.textContent = row ? `${row[f]}${suffix}` : '—';
+};
+dash.draw('t_late', (el) => slipVal(el, 'late_share', '%'));
+dash.draw('s_f50', (el) => slipVal(el, 'p50', ''));
+dash.draw('s_f80', (el) => slipVal(el, 'p80', ''));
+const outVal = (el, f) => {
+  const o = dash.data('outcomes');
+  el.textContent = o.status === 'ok' && o.data && o.data[0] ? String(o.data[0][f]) : '—';
+};
+dash.draw('o_on', (el) => outVal(el, 'on_time'));
+dash.draw('o_late', (el) => outVal(el, 'late'));
+dash.draw('o_none', (el) => outVal(el, 'none'));
+dash.draw('o_open', (el) => outVal(el, 'open'));
+dash.draw('o_prof', (el) => outVal(el, 'profile'));
+</script>
+
+<script>
+// 1. weekly hours with forecast
+dash.draw('weekly', (el) => {
+  const d = cw.need(el, ['weekly', 'forecast', 'daily']);
+  if (!d) return;
+  const wStart = cw.startOf(d[2].map((r) => r.day).sort(), cw.range());
+  const rows = d[0].filter((r) => d3.utcFormat('%Y-%m-%d')(d3.utcDay.offset(cw.parse(r.week), 6)) >= wStart).map((r) => ({ key: r.week, w: cw.parse(r.week), c: +r.code_hours, s: +r.slack_hours, b: +r.bot_hours, days: +r.days, msgs: +r.slack_msgs, rel: +r.releases }));
+  const fc = d[1].map((r) => ({ key: r.week, w: cw.parse(r.week), c: +r.code_forecast, lo: +r.code_low, hi: +r.code_high, t: +r.forecast }));
+  const keys = [...rows.map((r) => r.key), ...fc.map((r) => r.key)];
+  const H = 300, mb = 26;
+  const y = d3.scaleLinear().domain([0, d3.max([...rows.map((r) => Math.max(r.c + r.s, r.b)), ...fc.map((r) => r.hi)])]).nice().range([H - mb, 10]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Weekly hours for the selected window: Clinton coding and Slack-only hours stacked, agent hours as a line, and a four-week coding forecast', y, { yFmt: (v) => v + ' h' });
+  const x = d3.scaleBand().domain(keys).range([ml, W - mr]).padding(0.22);
+  const g = svg.append('g');
+  const op = (r) => (r.days < 7 ? 0.45 : 1);
+  g.selectAll('rect.c').data(rows).join('rect').attr('x', (r) => x(r.key)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.c)).attr('height', (r) => y(0) - y(r.c)).style('fill', cw.c(0)).style('fill-opacity', op);
+  g.selectAll('rect.s').data(rows).join('rect').attr('x', (r) => x(r.key)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.c + r.s)).attr('height', (r) => y(r.c) - y(r.c + r.s)).style('fill', cw.c(2)).style('fill-opacity', op);
+  g.selectAll('rect.f').data(fc).join('rect').attr('x', (r) => x(r.key)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.c)).attr('height', (r) => y(0) - y(r.c)).style('fill', cw.c(0)).style('fill-opacity', 0.3).style('stroke', cw.c(0)).style('stroke-dasharray', '3 2');
+  g.selectAll('line.whisk').data(fc).join('line').attr('x1', (r) => x(r.key) + x.bandwidth() / 2).attr('x2', (r) => x(r.key) + x.bandwidth() / 2)
+    .attr('y1', (r) => y(r.lo)).attr('y2', (r) => y(r.hi)).style('stroke', cw.c(0)).style('stroke-width', 1.5);
+  g.selectAll('line.cap').data(fc.flatMap((r) => [{ r, v: r.lo }, { r, v: r.hi }])).join('line')
+    .attr('x1', (o) => x(o.r.key) + x.bandwidth() * 0.3).attr('x2', (o) => x(o.r.key) + x.bandwidth() * 0.7)
+    .attr('y1', (o) => y(o.v)).attr('y2', (o) => y(o.v)).style('stroke', cw.c(0)).style('stroke-width', 1.5);
+  const full = rows.filter((r, i) => !(i === rows.length - 1 && r.days < 7));
+  g.append('path').datum(full).attr('d', d3.line().x((r) => x(r.key) + x.bandwidth() / 2).y((r) => y(r.b))).style('fill', 'none').style('stroke', cw.c(1)).style('stroke-width', 2);
+  g.selectAll('circle.b').data(full).join('circle').attr('cx', (r) => x(r.key) + x.bandwidth() / 2).attr('cy', (r) => y(r.b)).attr('r', 2.5).style('fill', cw.c(1));
+  if (x.bandwidth() >= 18) {
+    g.selectAll('text.v').data(rows).join('text').attr('class', 'cw-lbl').attr('text-anchor', 'middle')
+      .attr('x', (r) => x(r.key) + x.bandwidth() / 2).attr('y', (r) => y(r.c) + 12).style('fill', 'var(--color-bg)').text((r) => (y(0) - y(r.c) > 16 ? d3.format('.0f')(r.c) : ''));
+    g.selectAll('text.fv').data(fc).join('text').attr('class', 'cw-lbl').attr('text-anchor', 'middle')
+      .attr('x', (r) => x(r.key) + x.bandwidth() / 2).attr('y', (r) => y(r.hi) - 4).text((r) => d3.format('.0f')(r.c));
+  }
+  const all = [...rows, ...fc];
+  cw.xLabels(svg, all, (r) => x(r.key) + x.bandwidth() / 2, H - 6, (r) => cw.fmtD(r.w), 48);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(all).join('rect').attr('x', (r) => x(r.key) - x.step() * x.paddingInner() / 2).attr('width', x.step())
+    .attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, r.hi != null
+      ? [`Week of ${cw.fmtD(r.w)} (forecast)`, `Coding: about ${d3.format('.1f')(r.c)} h (likely ${r.lo} to ${r.hi})`, `Coding plus Slack: about ${d3.format('.1f')(r.t)} h`]
+      : [`Week of ${cw.fmtD(r.w)}${r.days < 7 ? ` (${r.days} day${r.days > 1 ? 's' : ''} so far)` : ''}`, `Clinton coding: ${d3.format('.1f')(r.c)} h`, `Clinton Slack only: ${d3.format('.1f')(r.s)} h`, `Agents: ${d3.format('.1f')(r.b)} h`, `Slack messages: ${r.msgs}`, `Releases to live: ${r.rel}`]))
+    .on('pointerleave', () => t.hide());
+});
+
+// 1b. daily, selected window
+dash.draw('daily', (el) => {
+  const d = cw.need(el, ['daily']);
+  if (!d) return;
+  const r0 = cw.range();
+  const start = cw.startOf(d[0].map((r) => r.day).sort(), r0);
+  const rows = d[0].filter((r) => r.day >= start).map((r) => ({ key: r.day, dt: cw.parse(r.day), c: +r.code_hours, s: +r.slack_hours, b: +r.bot_hours, n: +r.slack_msgs, op: +r.own_pushes, bp: +r.bot_pushes, rel: +r.releases, sa: r.slack_available === true || r.slack_available === 'true' }));
+  const H = 240, mb = 24;
+  const y = d3.scaleLinear().domain([0, Math.max(12, d3.max(rows, (r) => Math.max(r.c + r.s, r.b)))]).nice().range([H - mb, 8]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Daily Clinton coding and Slack-only hours, with agent hours behind, for the selected window', y, { ticks: 4, yFmt: (v) => v + ' h' });
+  const x = d3.scaleBand().domain(rows.map((r) => r.key)).range([ml, W - mr]).paddingInner(0.15);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.key)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.b)).attr('height', (r) => y(0) - y(r.b)).style('fill', cw.c(1)).style('fill-opacity', 0.35);
+  const inner = (r) => x(r.key) + x.bandwidth() * 0.15;
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', inner).attr('width', x.bandwidth() * 0.7)
+    .attr('y', (r) => y(r.c)).attr('height', (r) => y(0) - y(r.c)).style('fill', cw.c(0));
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', inner).attr('width', x.bandwidth() * 0.7)
+    .attr('y', (r) => y(r.c + r.s)).attr('height', (r) => y(r.c) - y(r.c + r.s)).style('fill', cw.c(2));
+  if (rows.length > 45) {
+    const months = rows.filter((r) => r.dt.getUTCDate() === 1);
+    svg.append('g').selectAll('line').data(months).join('line').attr('class', 'cw-ref').attr('x1', (r) => x(r.key)).attr('x2', (r) => x(r.key)).attr('y1', 8).attr('y2', H - mb);
+    cw.xLabels(svg, months, (r) => x(r.key) + 14, H - 6, (r) => d3.utcFormat('%b')(r.dt), 30);
+  } else {
+    cw.xLabels(svg, rows, (r) => x(r.key) + x.bandwidth() / 2, H - 6, (r) => (rows.length <= 7 ? d3.utcFormat('%a %-d')(r.dt) : cw.fmtD(r.dt)), 50);
+  }
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.key)).attr('width', x.step()).attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [cw.fmtDW(r.dt), `Clinton coding: ${r.c} h (${r.op} own pushes)`, `Clinton Slack only: ${r.s} h${r.sa ? ` (${r.n} msgs)` : ''}`, `Agents: ${r.b} h (${r.bp} pushes)`, `Releases to live: ${r.rel}`]))
+    .on('pointerleave', () => t.hide());
+});
+
+// 1c. weekday averages
+dash.draw('dow', (el) => {
+  const d = cw.need(el, ['dow']);
+  if (!d) return;
+  const rows = d[0];
+  const H = 200, mb = 22;
+  const y = d3.scaleLinear().domain([0, Math.max(4, d3.max(rows, (r) => r.avg_hours))]).nice().range([H - mb, 14]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Average Clinton coding hours by weekday since Aug 3', y, { ticks: 4, yFmt: (v) => v + ' h' });
+  const x = d3.scaleBand().domain(rows.map((r) => r.weekday)).range([ml, W - mr]).padding(0.25);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.weekday)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.avg_hours)).attr('height', (r) => y(0) - y(r.avg_hours)).attr('rx', 2).style('fill', cw.c(0));
+  svg.append('g').selectAll('text').data(rows).join('text').attr('class', 'cw-lbl').attr('text-anchor', 'middle')
+    .attr('x', (r) => x(r.weekday) + x.bandwidth() / 2).attr('y', (r) => y(r.avg_hours) - 4).text((r) => d3.format('.1f')(r.avg_hours));
+  cw.xLabels(svg, rows, (r) => x(r.weekday) + x.bandwidth() / 2, H - 5, (r) => r.weekday, 20);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.weekday)).attr('width', x.bandwidth()).attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [r.weekday, `Average: ${r.avg_hours} h`, `Across ${r.days} days`])).on('pointerleave', () => t.hide());
+});
+
+// 1d. hour of day, Clinton vs agents
+dash.draw('hod', (el) => {
+  const d = cw.need(el, ['hours']);
+  if (!d) return;
+  const rows = d[0].map((r) => ({ hour: +r.hour, pt: r.pt, lagos: r.lagos, c: +r.clinton_hours, b: +r.bot_hours }));
+  const H = 200, mb = 34;
+  const y = d3.scaleLinear().domain([0, d3.max(rows, (r) => Math.max(r.c, r.b))]).nice().range([H - mb, 10]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Total hours active by hour of day, Clinton as bars and agents as a line', y, { ticks: 4, yFmt: (v) => v + ' h' });
+  const x = d3.scaleBand().domain(rows.map((r) => r.hour)).range([ml, W - mr]).padding(0.15);
+  svg.append('rect').attr('x', x(1)).attr('width', x(10) - x(1)).attr('y', 10).attr('height', H - mb - 10).style('fill', 'var(--cds-chart-muted)').style('fill-opacity', 0.25);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.hour)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.c)).attr('height', (r) => y(0) - y(r.c)).style('fill', cw.c(0));
+  svg.append('path').datum(rows).attr('d', d3.line().x((r) => x(r.hour) + x.bandwidth() / 2).y((r) => y(r.b))).style('fill', 'none').style('stroke', cw.c(1)).style('stroke-width', 2);
+  const tk = rows.filter((r) => r.hour % 6 === 0);
+  cw.xLabels(svg, tk, (r) => x(r.hour) + x.bandwidth() / 2, H - 18, (r) => r.pt + ' PT', 20);
+  cw.xLabels(svg, tk, (r) => x(r.hour) + x.bandwidth() / 2, H - 4, (r) => r.lagos + ' Lagos', 20);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.hour)).attr('width', x.step()).attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [`${r.pt} PT / ${r.lagos} Lagos`, `Clinton: ${r.c} h total`, `Agents: ${r.b} h total`])).on('pointerleave', () => t.hide());
+});
+</script>
+
+<script>
+// 2 and 3. weekly area mix
+const drawStack = (el, who, label) => {
+  const d = cw.need(el, ['topics', 'daily']);
+  if (!d) return;
+  const all = d[0];
+  const start = cw.startOf(d[1].map((r) => r.day).sort(), cw.range());
+  const keys = cw.areaKeys(all);
+  const color = (k) => cw.c(keys.indexOf(k));
+  const mine = all.filter((r) => r.who === who);
+  const weeks = Array.from(new Set(all.map((r) => r.week))).sort().filter((w) => d3.utcFormat('%Y-%m-%d')(d3.utcDay.offset(cw.parse(w), 6)) >= start);
+  const table = weeks.map((w) => {
+    const o = { week: w };
+    keys.forEach((k) => (o[k] = 0));
+    mine.filter((r) => r.week === w).forEach((r) => { const k = keys.includes(r.area) ? r.area : 'Other'; o[k] += +r.pushes; });
+    return o;
+  });
+  const series = d3.stack().keys(keys)(table);
+  const H = 280, mb = 24;
+  const y = d3.scaleLinear().domain([0, Math.max(5, d3.max(series, (s) => d3.max(s, (p) => p[1])))]).nice().range([H - mb, 8]);
+  const { svg, W, ml, mr } = cw.frame(el, H, label, y, { ticks: 5 });
+  const x = d3.scaleBand().domain(weeks).range([ml, W - mr]).padding(0.2);
+  svg.append('g').selectAll('g').data(series).join('g').style('fill', (s) => color(s.key))
+    .selectAll('rect').data((s) => s.map((p) => Object.assign(p, { key: s.key }))).join('rect')
+    .attr('x', (p) => x(p.data.week)).attr('width', x.bandwidth()).attr('y', (p) => y(p[1])).attr('height', (p) => Math.max(0, y(p[0]) - y(p[1])));
+  cw.xLabels(svg, weeks, (w) => x(w) + x.bandwidth() / 2, H - 6, (w) => cw.fmtD(cw.parse(w)), 48);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(table).join('rect').attr('x', (r) => x(r.week)).attr('width', x.step()).attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => {
+      const parts = keys.filter((k) => r[k] > 0).sort((a, b) => r[b] - r[a]).map((k) => `${k}: ${r[k]}`);
+      t.show(ev, [`Week of ${cw.fmtD(cw.parse(r.week))}`, `${d3.sum(keys, (k) => r[k])} pushes`, ...(parts.length ? parts : ['No pushes'])]);
+    })
+    .on('pointerleave', () => t.hide());
+};
+dash.draw('bots', (el) => drawStack(el, 'Bots', 'Agent pushes per week by product area'));
+dash.draw('me', (el) => drawStack(el, 'Clinton', 'Clinton own pushes per week by product area'));
+const legend = (el) => {
+  const s = dash.data('topics');
+  if (s.status !== 'ok') { el.replaceChildren(); return; }
+  const keys = cw.areaKeys(s.data);
+  el.replaceChildren(...keys.map((k, i) => {
+    const sp = document.createElement('span');
+    const sw = document.createElement('i');
+    sw.style.background = cw.c(i);
+    sp.append(sw, document.createTextNode(k));
+    return sp;
+  }));
+};
+dash.draw('legend1', legend);
+dash.draw('legend2', legend);
+
+dash.draw('areas', (tb) => {
+  const a = dash.data('areas');
+  if (a.status !== 'ok' || !a.data) { tb.replaceChildren(); return; }
+  const rg = cw.range();
+  tb.replaceChildren(...a.data.filter((r) => r.range === rg).map((r) => {
+    const tr = document.createElement('tr');
+    tr.dataset.key = encodeURIComponent(r.range) + ',' + encodeURIComponent(r.area);
+    [[r.area, ''], [d3.format(',')(r.clinton), 'cw-r'], [d3.format(',')(r.bots), 'cw-r'], [r.clinton_share + '%', 'cw-r']].forEach(([v, c]) => {
+      const td = document.createElement('td'); td.textContent = v; if (c) td.className = c; tr.append(td);
+    });
+    return tr;
+  }));
+});
+</script>
+
+<script>
+// 4. Slack
+dash.draw('slackday', (el) => {
+  const d = cw.need(el, ['daily']);
+  if (!d) return;
+  const start = cw.startOf(d[0].map((r) => r.day).sort(), cw.range());
+  const rows = d[0].filter((r) => (r.slack_available === true || r.slack_available === 'true') && r.day >= start)
+    .map((r) => ({ key: r.day, dt: cw.parse(r.day), n: +r.slack_msgs, f: r.first_slack_h == null ? null : +r.first_slack_h, l: r.last_slack_h == null ? null : +r.last_slack_h, fs: r.first_slack, ls: r.last_slack, op: +r.own_pushes }));
+  const H = 320, mb = 34;
+  const y = d3.scaleLinear().domain([0, 24]).range([10, H - mb]);
+  const tv = [0, 3, 6, 9, 12, 15, 18, 21, 24];
+  const { svg, W, ml } = cw.frame(el, H, 'First and last Slack message each day since Aug 3, in Pacific and Lagos time', y, { tickValues: tv, yFmt: (v) => cw.hr(v) + ' PT', mr: 70 });
+  const mr = 70;
+  const ga = svg.append('g').attr('class', 'cw-axis');
+  tv.forEach((v) => ga.append('text').attr('x', W - mr + 6).attr('y', y(v)).attr('dy', '0.32em').text(cw.hr((v + 8) % 24) + ' Lagos'));
+  const x = d3.scaleBand().domain(rows.map((r) => r.key)).range([ml, W - mr]).paddingInner(0.2);
+  svg.append('rect').attr('x', ml).attr('width', W - mr - ml).attr('y', y(1)).attr('height', y(10) - y(1)).style('fill', 'var(--cds-chart-muted)').style('fill-opacity', 0.22);
+  const on = rows.filter((r) => r.n > 0);
+  const cx = (r) => x(r.key) + x.bandwidth() / 2;
+  svg.append('g').selectAll('line').data(on).join('line').attr('x1', cx).attr('x2', cx).attr('y1', (r) => y(r.f)).attr('y2', (r) => y(Math.max(r.l, r.f + 0.15)))
+    .style('stroke', cw.c(0)).style('stroke-width', Math.max(1.5, Math.min(4, x.bandwidth() * 0.6))).style('stroke-linecap', 'round').style('stroke-opacity', 0.85);
+  const off = rows.filter((r) => r.n === 0);
+  svg.append('g').selectAll('text').data(off).join('text').attr('x', cx).attr('y', H - mb + 12).attr('text-anchor', 'middle')
+    .style('fill', 'var(--color-bad)').style('font-size', '10px').text('×');
+  if (rows.length > 45) {
+    const months = rows.filter((r) => r.dt.getUTCDate() === 1 || r === rows[0]);
+    cw.xLabels(svg, months, (r) => x(r.key) + 12, H - 4, (r) => d3.utcFormat('%b')(r.dt), 30);
+  } else {
+    cw.xLabels(svg, rows, (r) => x(r.key) + x.bandwidth() / 2, H - 4, (r) => (rows.length <= 7 ? d3.utcFormat('%a %-d')(r.dt) : cw.fmtD(r.dt)), 50);
+  }
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.key)).attr('width', x.step()).attr('y', 0).attr('height', H - mb + 16).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, r.n
+      ? [cw.fmtDW(r.dt), `${r.n} Slack message${r.n > 1 ? 's' : ''}`, `First: ${r.fs} PT (${cw.hr((r.f + 8) % 24)} Lagos)`, `Last: ${r.ls} PT (${cw.hr((r.l + 8) % 24)} Lagos)`]
+      : [cw.fmtDW(r.dt), 'No Slack messages', `${r.op} own pushes`]))
+    .on('pointerleave', () => t.hide());
+});
+
+dash.draw('slackhour', (el) => {
+  const d = cw.need(el, ['hours']);
+  if (!d) return;
+  const rows = d[0].map((r) => ({ hour: +r.hour, pt: r.pt, lagos: r.lagos, n: +r.slack_msgs }));
+  const H = 200, mb = 34;
+  const y = d3.scaleLinear().domain([0, d3.max(rows, (r) => r.n)]).nice().range([H - mb, 10]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Clinton Slack messages by hour of day', y, { ticks: 4 });
+  const x = d3.scaleBand().domain(rows.map((r) => r.hour)).range([ml, W - mr]).padding(0.15);
+  svg.append('rect').attr('x', x(1)).attr('width', x(10) - x(1)).attr('y', 10).attr('height', H - mb - 10).style('fill', 'var(--cds-chart-muted)').style('fill-opacity', 0.25);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.hour)).attr('width', x.bandwidth())
+    .attr('y', (r) => y(r.n)).attr('height', (r) => y(0) - y(r.n)).style('fill', cw.c(0));
+  const tk = rows.filter((r) => r.hour % 6 === 0);
+  cw.xLabels(svg, tk, (r) => x(r.hour) + x.bandwidth() / 2, H - 18, (r) => r.pt + ' PT', 20);
+  cw.xLabels(svg, tk, (r) => x(r.hour) + x.bandwidth() / 2, H - 4, (r) => r.lagos + ' Lagos', 20);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', (r) => x(r.hour)).attr('width', x.step()).attr('y', 0).attr('height', H - mb).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [`${r.pt} PT / ${r.lagos} Lagos`, `${r.n} messages`])).on('pointerleave', () => t.hide());
+});
+</script>
+
+<script>
+// 5. Deadlines
+dash.draw('openchart', (el) => {
+  const d = cw.need(el, ['open', 'daily']);
+  if (!d) return;
+  const rows = d[0].map((r) => ({ item: r.item, p: cw.parse(r.promised_due), l: cw.parse(r.est_likely), lc: cw.parse(r.est_late_case), n: +r.times_promised, od: +r.overdue_days }));
+  const today = cw.parse(d3.max(d[1], (r) => r.day));
+  el.replaceChildren();
+  const W = Math.max(el.clientWidth || 600, 280);
+  const rowH = W < 520 ? 40 : 30, H = rows.length * rowH + 30;
+  const svg = d3.select(el).append('svg').attr('width', '100%').attr('height', H).attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Open items: promised date versus likely and late-case dates');
+  const narrow = W < 520;
+  const lw = narrow ? 0 : Math.min(240, W * 0.36);
+  const x = d3.scaleUtc().domain([d3.utcDay.offset(d3.min(rows, (r) => r.p), -3), d3.utcDay.offset(d3.max(rows, (r) => r.lc), 3)]).range([lw + 8, W - 12]);
+  const ty = (i) => 8 + i * rowH + (narrow ? 18 : rowH / 2);
+  const gx = svg.append('g').attr('class', 'cw-grid');
+  const ticks = x.ticks(narrow ? 4 : 7);
+  gx.selectAll('line').data(ticks).join('line').attr('x1', (t) => x(t)).attr('x2', (t) => x(t)).attr('y1', 4).attr('y2', H - 22);
+  cw.xLabels(svg, ticks, (t) => x(t), H - 6, (t) => cw.fmtD(t), 44);
+  svg.append('line').attr('class', 'cw-ref').attr('x1', x(today)).attr('x2', x(today)).attr('y1', 0).attr('y2', H - 22);
+  svg.append('text').attr('class', 'cw-lbl').attr('x', x(today) + 4).attr('y', 10).text('Today');
+  rows.forEach((r, i) => {
+    const g = svg.append('g');
+    const yy = ty(i);
+    g.append('text').attr('class', 'cw-lbl').attr('x', narrow ? x.range()[0] : 0).attr('y', narrow ? yy - 12 : yy).attr('dy', '0.32em')
+      .style('fill', 'var(--color-fg)').text(r.item.length > 44 ? r.item.slice(0, 42) + '…' : r.item);
+    g.append('line').attr('x1', x(r.p)).attr('x2', x(r.l)).attr('y1', yy).attr('y2', yy).style('stroke', 'var(--cds-chart-muted)').style('stroke-width', 1.5);
+    g.append('rect').attr('x', x(r.l)).attr('width', Math.max(2, x(r.lc) - x(r.l))).attr('y', yy - 5).attr('height', 10).attr('rx', 3).style('fill', cw.c(0)).style('fill-opacity', 0.3);
+    g.append('circle').attr('cx', x(r.p)).attr('cy', yy).attr('r', 5).style('fill', 'var(--color-panel)').style('stroke', cw.c(0)).style('stroke-width', 1.5);
+    g.append('circle').attr('cx', x(r.l)).attr('cy', yy).attr('r', 5).style('fill', cw.c(0));
+  });
+  const t = cw.tip(el);
+  svg.append('g').selectAll('rect').data(rows).join('rect').attr('x', 0).attr('width', W).attr('y', (r, i) => 8 + i * rowH).attr('height', rowH).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [r.item, `Promised: ${cw.fmtD(r.p)}${r.od > 0 ? ` (${r.od} days overdue)` : ''}`, `Likely: ${cw.fmtD(r.l)}`, `Late case: ${cw.fmtD(r.lc)}`, `Promised ${r.n} time${r.n > 1 ? 's' : ''}`]))
+    .on('pointerleave', () => t.hide());
+});
+
+const tableRows = (tb, id, cols, key) => {
+  const s = dash.data(id);
+  if (s.status !== 'ok') { tb.replaceChildren(); return; }
+  tb.replaceChildren(...s.data.map((r) => {
+    const tr = document.createElement('tr');
+    if (key) tr.dataset.key = encodeURIComponent(String(r[key]));
+    cols.forEach(([f, cls, fmt]) => {
+      const td = document.createElement('td');
+      const v = r[f];
+      if (cls) td.className = cls;
+      if (f === 'status' || f === 'result') { const sp = document.createElement('span'); sp.className = 'cw-pill ' + ({ 'on time': 'on', late: 'late', 'no evidence': 'none', open: 'open', 'On time': 'on', Late: 'late', 'Not verified': 'none', 'Still open': 'open', 'Done on time': 'on', 'Done late': 'late', 'Overdue': 'part', 'Partly done': 'part', 'Not due yet': 'open', 'Can\u2019t find it': 'none' }[v] || ''); sp.textContent = v; td.append(sp); }
+      else td.textContent = fmt ? fmt(v, r) : (v == null || v === '' ? '' : String(v));
+      tr.append(td);
+    });
+    return tr;
+  }));
+};
+const dfmt = (v) => (v ? cw.fmtD(cw.parse(v)) : '');
+const fsum = (el, f) => {
+  const o = dash.data('featsum');
+  el.textContent = o.status === 'ok' && o.data && o.data[0] ? String(o.data[0][f]) : '—';
+};
+dash.draw('f_on', (el) => fsum(el, 'on_time'));
+dash.draw('f_late', (el) => fsum(el, 'late'));
+dash.draw('f_over', (el) => fsum(el, 'overdue'));
+dash.draw('f_notdue', (el) => fsum(el, 'not_due'));
+dash.draw('f_none', (el) => fsum(el, 'not_found'));
+dash.draw('featurelist', (tb) => tableRows(tb, 'featurestatus', [['feature'], ['promised_for', '', dfmt], ['live', '', (v) => (v ? cw.fmtD(cw.parse(v)) : 'Not yet')], ['status'], ['days_late', 'cw-r'], ['times_promised', 'cw-r'], ['note']], 'id'));
+dash.draw('opentable', (tb) => tableRows(tb, 'open', [['item'], ['times_promised', 'cw-r'], ['promised_due', '', dfmt], ['overdue_days', 'cw-r'], ['est_likely', '', dfmt], ['est_late_case', '', dfmt]], 'item'));
+dash.draw('sliptable', (tb) => tableRows(tb, 'slip', [['size', '', (v) => (v === 'feature' ? 'Feature' : 'Small item')], ['n', 'cw-r'], ['late_share', 'cw-r', (v) => v + '%'], ['p50', 'cw-r'], ['p80', 'cw-r']], 'size'));
+dash.draw('promises', (tb) => tableRows(tb, 'promises', [['said', '', dfmt], ['item'], ['size'], ['due', '', dfmt], ['delivered', '', dfmt], ['status'], ['days_late', 'cw-r']], 'id'));
+
+dash.draw('slipdots', (el) => {
+  const d = cw.need(el, ['promises']);
+  if (!d) return;
+  const rows = d[0].filter((r) => r.days_late != null && r.days_late !== '' && r.due).map((r) => ({ id: r.id, item: r.item, due: cw.parse(r.due), dl: +r.days_late, size: r.size, delivered: r.delivered }));
+  const H = 200, mb = 22;
+  const y = d3.scaleLinear().domain([0, Math.max(5, d3.max(rows, (r) => r.dl))]).nice().range([H - mb, 8]);
+  const { svg, W, ml, mr } = cw.frame(el, H, 'Days late for each delivered promise by due date', y, { ticks: 4, yFmt: (v) => v + 'd' });
+  const x = d3.scaleUtc().domain(d3.extent(rows, (r) => r.due)).range([ml + 6, W - mr - 6]);
+  const jitter = (r) => (parseInt(r.id.slice(1), 10) % 5 - 2) * 1.2;
+  svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', (r) => x(r.due)).attr('cy', (r) => y(r.dl) + jitter(r)).attr('r', 3.5)
+    .style('fill', (r) => (r.size === 'feature' ? cw.c(0) : cw.c(2))).style('fill-opacity', 0.75);
+  const mt = x.ticks(d3.utcMonth.every(1));
+  cw.xLabels(svg, mt, (t) => x(t), H - 5, (t) => d3.utcFormat('%b')(t), 30);
+  const t = cw.tip(el);
+  svg.append('g').selectAll('circle').data(rows).join('circle').attr('cx', (r) => x(r.due)).attr('cy', (r) => y(r.dl) + jitter(r)).attr('r', 8).style('fill', 'transparent')
+    .on('pointermove', (ev, r) => t.show(ev, [r.item, `Due ${cw.fmtD(r.due)}, delivered ${dfmt(r.delivered)}`, `${r.dl} day${r.dl === 1 ? '' : 's'} late`])).on('pointerleave', () => t.hide());
+});
+</script>
+
+</div>
+</body>
+</html>
