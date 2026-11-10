@@ -325,6 +325,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     var queue=[], prevSim=simMin, simClock=0, speed=1;
     function frame(t){
       t/=1000; var dt=Math.min(.05,t-(last||t)); last=t;
+      if(cv.width!==Math.round(innerWidth*(window.devicePixelRatio||1))||cv.height!==Math.round(innerHeight*(window.devicePixelRatio||1)))size();
       if(playing){simMin=(simMin+dt*MIN_PER_SEC)%10080;syncClock();}
       // how fast simulated time moved this frame (dragging the timeline = fast-forward)
       var moved=Math.abs(simMin-prevSim); if(moved>5040)moved=10080-moved; prevSim=simMin;
