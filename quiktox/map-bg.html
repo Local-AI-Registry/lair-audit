@@ -217,7 +217,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       if(!seen[b])return null; var p=[b];while(p[0]!==a)p.unshift(prev[p[0]]);return p.map(function(k){return nodes[k].c;});}
 
     var NAMES=['Dana','Marco','Mrs. Alvarez','Priya','Tom','Jess','Kenji','Ana','Mr. Reyes','Lola','Sam','Grace','Omar','Nina','Bea','Luis'];
-    var ROLES=['lunch break','regular','new in town','after the gym','picking up dinner','first visit'];
+    var ROLES=['on a lunch break','heading to the gym','grabbing coffee','running errands','new in town','picking up dinner','walking the dog','after work'];
     function pick(a){return a[Math.floor(Math.random()*a.length)];}
     var walkers=[], prints=[], qk=0, qkEl=$('qk'), now=0, last=0, nextSpawn=0;
     /* ---- simulated week: minutes since Monday 00:00 ---- */
@@ -276,7 +276,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         for(var i=0;i<30;i++){var nb=Object.keys(nodes[k].adj); if(!nb.length)break; k=pick(nb); pts.push(nodes[k].c);} shop=null;
       } else if(shop.q) pts.push(shop.c);
       walkers.push({ai:ai,shop:shop,path:pts,seg:0,t:0,dist:0,lastStep:0,foot:1,speed:ai?14:9,
-        label:pick(NAMES)+(why?', '+why:(Math.random()<.4?', '+pick(ROLES):''))});
+        label:pick(NAMES)+(why?', '+why:(Math.random()<.8?', '+pick(ROLES):''))});
     }
     function convert(eng){
       var q=shops[shops.length-1], b=map.getBounds();
@@ -310,7 +310,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         hourAsked++;
         var open=quiktoxBusy(simMin)>0, named=open&&Math.random()<.42;
         if(named){hourNamed++;
-          if(!convert(eng)){var q=shops[shops.length-1]; queue.push({at:now+.5,shop:q,why:'asked '+eng});}
+          if(!convert(eng)){var q=shops[shops.length-1]; }
         } else {
           var b=map.getBounds(), side=Math.floor(Math.random()*4), r=Math.random();
           var c=side===0?[b.getWest()+(b.getEast()-b.getWest())*r,b.getNorth()]:side===1?[b.getEast(),b.getSouth()+(b.getNorth()-b.getSouth())*r]:side===2?[b.getWest()+(b.getEast()-b.getWest())*r,b.getSouth()]:[b.getWest(),b.getSouth()+(b.getNorth()-b.getSouth())*r];
@@ -320,7 +320,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       } else {
         var others=shops.slice(0,-1); if(!others.length) return; var s=pick(others);
         pings.push({c:s.c,born:now,text:eng+': '+pick(OTHERQ),hit:true,minor:true});
-        if(Math.random()<.5) queue.push({at:now+.7+Math.random()*1.3,shop:s,why:'asked '+eng});
+        if(Math.random()<.5) queue.push({at:now+.7+Math.random()*1.3,shop:s});
       }
     }
     function drawPings(){
@@ -369,13 +369,13 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       var want=dt>0?Math.max(1,Math.min(40,moved/(dt*MIN_PER_SEC))):1;
       speed+= (want-speed)*(want>speed?.5:.08);           // ramp up fast, settle back gently
       var sdt=dt*speed; simClock+=sdt; now=simClock;
-      var busy=.9, cap=12;
+      var busy=.9, cap=16;
       for(var n=0;n<6&&now>nextSpawn&&walkers.length<cap&&busy>.03;n++){spawn();nextSpawn=now+(.6+Math.random()*.9)/Math.max(.08,busy);}
       if(busy<=.03) nextSpawn=now;
       var ab=.35;
       for(var m=0;m<6&&now>nextAsk&&ab>.04;m++){ask();nextAsk=now+(.6+Math.random()*1.2)/Math.max(.1,ab);}
       if(ab<=.04) nextAsk=now;
-      if(now>nextConv){ if(walkers.filter(function(w){return w.ai;}).length<4&&convert()) nextConv=now+3.5+Math.random()*2; else nextConv=now+.8; }
+      if(now>nextConv){ if(walkers.filter(function(w){return w.ai;}).length<2&&convert()) nextConv=now+6+Math.random()*4; else nextConv=now+.8; }
       queue=queue.filter(function(q){ if(now>=q.at){spawn(q.shop,q.why);return false;} return true; });
       pings=pings.filter(function(p){return now-p.born<3.4;});
       walkers=walkers.filter(function(w){var ok=step(w,sdt); if(!ok&&w.shop&&w.shop.q){qk++;qkEl.textContent=qk;qkToday++;qkTodayEl.textContent=qkToday;} return ok;});
