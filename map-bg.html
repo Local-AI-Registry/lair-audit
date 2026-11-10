@@ -153,7 +153,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
 
     map.once('idle',function(){ startWalking(map,center); });
   }).catch(function(err){
-    document.getElementById('map').innerHTML='<p style="padding:120px 24px;font-family:Georgia,serif;text-align:center">The map could not load. Please refresh.</p>';
+    /* stay as plain paper if the map can't load */
     console.error(err);
   });
 
