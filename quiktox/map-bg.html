@@ -159,10 +159,10 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         var g=f.geometry,polys=g&&g.type==='Polygon'?[g.coordinates]:g&&g.type==='MultiPolygon'?g.coordinates:[];
         polys.forEach(function(p){var r=p[0];if(!r||r.length<4)return;var pts=r.map(function(q){return [(q[0]-center[0])*kx,(q[1]-lat0)*ky];});
           var key=pts.length+':'+Math.round(pts[0][0])+','+Math.round(pts[0][1]);if(seen[key])return;seen[key]=1;list.push(pts);});});
-      var roads=[];map.querySourceFeatures('openmaptiles',{sourceLayer:'transportation'}).forEach(function(f){var g=f.geometry,ls=g&&g.type==='LineString'?[g.coordinates]:g&&g.type==='MultiLineString'?g.coordinates:[];ls.forEach(function(l){roads.push(l.map(function(q){return [(q[0]-center[0])*kx,(q[1]-lat0)*ky];}));});});
+      var roads=[],RW=['minor','tertiary','secondary','primary','living_street','residential','unclassified'];map.querySourceFeatures('openmaptiles',{sourceLayer:'transportation'}).forEach(function(f){if(RW.indexOf(f.properties.class)<0)return;var g=f.geometry,ls=g&&g.type==='LineString'?[g.coordinates]:g&&g.type==='MultiLineString'?g.coordinates:[];ls.forEach(function(l){roads.push(l.map(function(q){return [(q[0]-center[0])*kx,(q[1]-lat0)*ky];}));});});
       function inside(x,y,r){var c=false;for(var i=0,j=r.length-1;i<r.length;j=i++){var a=r[i],b=r[j];if((a[1]>y)!==(b[1]>y)&&x<(b[0]-a[0])*(y-a[1])/(b[1]-a[1])+a[0])c=!c;}return c;}
       function segd(x,y,a,b){var dx=b[0]-a[0],dy=b[1]-a[1],L=dx*dx+dy*dy,t=L?Math.max(0,Math.min(1,((x-a[0])*dx+(y-a[1])*dy)/L)):0;return Math.hypot(x-a[0]-t*dx,y-a[1]-t*dy);}
-      function clear(x,y,m){for(var k=0;k<list.length;k++){var r=list[k];if(inside(x,y,r))return false;for(var i=0;i<r.length-1;i++)if(segd(x,y,r[i],r[i+1])<m)return false;}for(var k2=0;k2<roads.length;k2++){var L2=roads[k2];for(var i2=0;i2<L2.length-1;i2++)if(segd(x,y,L2[i2],L2[i2+1])<9)return false;}return true;}
+      function clear(x,y,m){for(var k=0;k<list.length;k++){var r=list[k];if(inside(x,y,r))return false;for(var i=0;i<r.length-1;i++)if(segd(x,y,r[i],r[i+1])<m)return false;}var md=1e9;for(var k2=0;k2<roads.length;k2++){var L2=roads[k2];for(var i2=0;i2<L2.length-1;i2++)md=Math.min(md,segd(x,y,L2[i2],L2[i2+1]));}return md>=9&&md<=24;}
       var spot=null;
       if(clear(0,0,14))spot=[0,0];
       for(var R=6;!spot&&R<=260;R+=6){var n=Math.max(8,Math.round(2*Math.PI*R/6));for(var a=0;a<n;a++){var t=a/n*2*Math.PI,x=R*Math.cos(t),y=R*Math.sin(t);if(clear(x,y,14)){spot=[x,y];break;}}}
@@ -170,7 +170,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       center[0]=center[0]+spot[0]/kx;center[1]=lat0+spot[1]/ky;mk.setLngLat(center);map.jumpTo({center:center});
       var h=3.6,dx=h/kx,dy=h/ky,ring=[[center[0]-dx,center[1]-dy],[center[0]+dx,center[1]-dy],[center[0]+dx,center[1]+dy],[center[0]-dx,center[1]+dy],[center[0]-dx,center[1]-dy]];
       map.addSource('home-bld',{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[ring]}}});
-      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#1F4FE0','fill-extrusion-opacity':1,'fill-extrusion-height':4.5,'fill-extrusion-vertical-gradient':true}});
+      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#FF5A3C','fill-extrusion-opacity':1,'fill-extrusion-height':4.5,'fill-extrusion-vertical-gradient':true}});
     }
     map.once('idle',go);map.once('load',function(){setTimeout(go,700);});setTimeout(go,5000);
   }).catch(function(err){
@@ -190,7 +190,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     function key(c){return c[0].toFixed(5)+','+c[1].toFixed(5);}
     function build(){
       nodes={}; keys=[];
-      var WALK=['minor','service','tertiary','secondary','primary','path','track','pedestrian','footway','living_street','residential','unclassified'];
+      var WALK=['minor','tertiary','secondary','primary','living_street','residential','unclassified'];
       map.querySourceFeatures('openmaptiles',{sourceLayer:'transportation'}).forEach(function(f){
         if(WALK.indexOf(f.properties.class)<0) return;
         var lines=f.geometry.type==='LineString'?[f.geometry.coordinates]:f.geometry.type==='MultiLineString'?f.geometry.coordinates:[];
@@ -204,7 +204,12 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         if(f.geometry.type==='Point'&&f.properties.name) shops.push({name:f.properties.name,c:f.geometry.coordinates});
       });
       shops.push({name:'Your business',c:home,q:true});
+      var kx=Math.cos(home[1]*Math.PI/180),bd=1e9,door=null;
+      keys.forEach(function(k){var A=nodes[k].c;for(var j in nodes[k].adj){var B=nodes[j].c,ax=(A[0]-home[0])*kx,ay=A[1]-home[1],bx=(B[0]-home[0])*kx,by=B[1]-home[1],dx=bx-ax,dy=by-ay,L=dx*dx+dy*dy,t=L?Math.max(0,Math.min(1,-(ax*dx+ay*dy)/L)):0,px=ax+t*dx,py=ay+t*dy,d=px*px+py*py;
+        if(d<bd){bd=d;door={c:[home[0]+px/kx,home[1]+py],a:k,b:j};}}});
+      if(door){nodes.door={c:door.c,adj:{}};nodes.door.adj[door.a]=1;nodes.door.adj[door.b]=1;nodes[door.a].adj.door=1;nodes[door.b].adj.door=1;keys.push('door');}
     }
+    function endKey(s){return s&&s.q&&nodes.door?'door':nearest(s.c);}
     function dist(a,b){var dx=(a[0]-b[0])*Math.cos(b[1]*Math.PI/180),dy=a[1]-b[1];return Math.sqrt(dx*dx+dy*dy)*111320;}
     function nearest(c){var best=null,bd=1e9;keys.forEach(function(k){var d=dist(nodes[k].c,c);if(d<bd){bd=d;best=k;}});return best;}
     function route(a,b){var prev={},seen={},q=[a];seen[a]=1;
@@ -265,11 +270,11 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       if(inView.length<5) return;
       var ai=false, others=shops.slice(0,-1).length?shops.slice(0,-1):shops;
       var shop=target||(quiktoxBusy(simMin)>0&&Math.random()<.08?shops[shops.length-1]:pick(others));
-      var start=pick(inView), end=nearest(shop.c), pts=route(start,end);
+      var start=pick(inView), end=endKey(shop), pts=route(start,end);
       if(!pts||pts.length<2){ // no connected route: wander along the streets
         pts=[nodes[start].c]; var k=start;
         for(var i=0;i<30;i++){var nb=Object.keys(nodes[k].adj); if(!nb.length)break; k=pick(nb); pts.push(nodes[k].c);} shop=null;
-      } else pts.push(shop.c);
+      } else if(shop.q) pts.push(shop.c);
       walkers.push({ai:ai,shop:shop,path:pts,seg:0,t:0,dist:0,lastStep:0,foot:1,speed:ai?14:9,
         label:pick(NAMES)+(why?', '+why:(Math.random()<.4?', '+pick(ROLES):''))});
     }
@@ -278,7 +283,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       var c=walkers.filter(function(w){return !w.ai&&w.c&&b.contains(w.c)&&dist(w.c,q.c)>40;});
       if(!c.length) return false;
       var w=pick(c); eng=eng||pick(ENGINES);
-      var st=nearest(w.c), en=nearest(q.c), pts=route(st,en); if(!pts) pts=[nodes[st].c];
+      var st=nearest(w.c), en=endKey(q), pts=route(st,en); if(!pts) return false;
       w.path=[w.c.slice()].concat(pts).concat([q.c]); w.seg=0; w.t=0; w.shop=q; w.ai=true; w.speed=12; w.wait=1.6;
       w.label=w.label.split(',')[0]+', asked '+eng;
       pings.push({c:w.c.slice(),born:now,text:eng+': '+pick(MEDQ),hit:true,follow:w});
@@ -341,8 +346,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
         var age=now-p.born, al=Math.max(0,.85*(1-age/8)); if(al<=0)return;
         var P=map.project(p.c), A=map.project(p.a), B=map.project(p.b), ang=Math.atan2(B.y-A.y,B.x-A.x);
         ctx.save(); ctx.translate(P.x+Math.cos(ang+Math.PI/2)*4*s*p.foot,P.y+Math.sin(ang+Math.PI/2)*4*s*p.foot); ctx.rotate(ang+Math.PI/2); ctx.scale(s,s); ctx.globalAlpha=al;
-        if(p.ai){ctx.fillStyle=BLUE;ctx.beginPath();ctx.arc(0,0,2.6,0,Math.PI*2);ctx.fill();}
-        else{ctx.fillStyle=INK;ctx.scale(p.foot,1);ctx.beginPath();ctx.ellipse(0,-2.2,2.5,3.6,.12,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(.3,3.4,1.8,2,0,0,Math.PI*2);ctx.fill();}
+        {ctx.fillStyle=p.ai?BLUE:INK;ctx.scale(p.foot,1);ctx.beginPath();ctx.ellipse(0,-2.2,2.5,3.6,.12,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.ellipse(.3,3.4,1.8,2,0,0,Math.PI*2);ctx.fill();}
         ctx.restore();
       });
       ctx.font='italic 13px "IM Fell English", Georgia, serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
