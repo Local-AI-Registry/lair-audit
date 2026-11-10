@@ -21,7 +21,7 @@
 }
 html,body{height:100%;margin:0}
 body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:hidden}
-#map{position:fixed;inset:0}
+#map{position:fixed;inset:0;opacity:0;transition:opacity .6s ease}#map.on{opacity:1}
 #steps{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:2}
 .paper{position:fixed;inset:0;pointer-events:none;z-index:3;mix-blend-mode:multiply;
   background:
@@ -151,7 +151,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     el.innerHTML='<span class="tag"><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg><span>Your business</span></span><span class="stem"></span><span class="base"></span>';
     var mk=new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat(center).addTo(map);
 
-    var started=false;function go(){if(started)return;started=true;try{pickBuilding();}catch(e){console.error(e);}startWalking(map,center);}
+    var started=false;function go(){if(started)return;started=true;try{pickBuilding();}catch(e){console.error(e);}startWalking(map,center);map.once('idle',function(){document.getElementById('map').classList.add('on');});setTimeout(function(){document.getElementById('map').classList.add('on');},1500);}
     function pickBuilding(){
       /* our own tiny standalone shop on an empty lot near the address; never overlaps a real footprint (no flicker) */
       var lat0=center[1],kx=111320*Math.cos(lat0*Math.PI/180),ky=110540,list=[],seen={};
