@@ -1801,16 +1801,17 @@ document.addEventListener('click',e=>{const g=e.target.closest('[data-go]');if(g
 show((location.hash||'#find').slice(1),false);
 
 /* --- find your business: Google Business Profile search --- */
-const GKEY=''; /* Google Places API key, restricted to proposals.localairegistry.com */
+const GKEY='AIzaSyAM_oWtpPy_P8I__Os1wxe9Koyd2Ma30k4'; /* browser key: Places API (New) only, restricted to audit. and proposals.localairegistry.com */
+let GTOK=(crypto.randomUUID?crypto.randomUUID():String(Date.now()));
 const AUDITS=[{name:'Eternyl Beauty',sub:'14 E 60th St, Suite 1001, New York, NY',match:/etern[yi]l/i,go:'status',url:'/eternyl/'},{name:'QUIKTOX™ Aesthetic Med Spa',sub:'1815 Newport Blvd #12, Costa Mesa, CA',match:/quik\s*tox/i,go:'status',url:'/quiktox/',self:1}];
 (()=>{const q=document.getElementById('fq'),ul=document.getElementById('fdl'),box=document.getElementById('fbox');let t,items=[],act=-1;
  const pin='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z" fill="var(--red)"/><circle cx="12" cy="10" r="2.6" fill="#fff"/></svg>';
  function render(){if(!items.length){ul.hidden=true;q.setAttribute('aria-expanded','false');return}
-  ul.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+(r.typed?' ty':'')+'">'+(r.typed?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round"/></svg>':pin)+'<span><b>'+(r.typed?'Use &ldquo;'+esc(r.name)+'&rdquo;':esc(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':esc(r.sub))+'</small></span></li>').join('')+(GKEY?'<li class="fd-pb" aria-hidden="true">Powered by Google</li>':'');
+  ul.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+(r.typed?' ty':'')+'">'+(r.typed?'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round"/></svg>':pin)+'<span><b>'+(r.typed?'Use &ldquo;'+esc(r.name)+'&rdquo;':esc(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':esc(r.sub))+'</small></span></li>').join('')+(items.some(x=>x.id)?'<li class="fd-pb">Google Maps</li>':'');
   ul.hidden=false;q.setAttribute('aria-expanded','true')}
  async function search(v){if(v.length<2){items=[];return render()}
   let res=[];
-  if(GKEY){try{const r=await fetch('https://places.googleapis.com/v1/places:autocomplete',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY},body:JSON.stringify({input:v,includedRegionCodes:['us']})});const j=await r.json();
+  if(GKEY){try{const r=await fetch('https://places.googleapis.com/v1/places:autocomplete',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY},body:JSON.stringify({input:v,includedRegionCodes:['us'],sessionToken:GTOK})});const j=await r.json();
    res=(j.suggestions||[]).filter(x=>x.placePrediction).slice(0,5).map(x=>({name:x.placePrediction.structuredFormat.mainText.text,sub:(x.placePrediction.structuredFormat.secondaryText||{}).text||'',id:x.placePrediction.placeId}))}catch(e){}}
   if(!res.length){res=AUDITS.filter(a=>a.match.test(v)||a.name.toLowerCase().includes(v.toLowerCase()));
    try{const r=await fetch('https://photon.komoot.io/api/?limit=12&lang=en&q='+encodeURIComponent(v));const j=await r.json();
@@ -1821,7 +1822,8 @@ const AUDITS=[{name:'Eternyl Beauty',sub:'14 E 60th St, Suite 1001, New York, NY
    res=res.slice(0,5)}
   res.push({name:v,sub:'Use this name',typed:true});
   items=res;act=-1;render()}
- function pick(r){ul.hidden=true;q.value=r.name;q.blur();const hit=AUDITS.find(a=>a.match.test(r.name));if(r.typed)r={name:r.name,sub:'location not given'};
+ async function gdet(r){if(!GKEY||!r.id)return r;try{const d=await fetch('https://places.googleapis.com/v1/places/'+encodeURIComponent(r.id)+'?sessionToken='+encodeURIComponent(GTOK),{headers:{'X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'id,displayName,formattedAddress'}}).then(x=>x.json());GTOK=(crypto.randomUUID?crypto.randomUUID():String(Date.now()));if(d&&d.formattedAddress)return {...r,name:(d.displayName&&d.displayName.text)||r.name,sub:d.formattedAddress}}catch(e){}return r}
+ async function pick(r){ul.hidden=true;q.value=r.name;q.blur();if(r.id&&!AUDITS.find(a=>a.match.test(r.name)))r=await gdet(r);const hit=AUDITS.find(a=>a.match.test(r.name));if(r.typed)r={name:r.name,sub:'location not given'};
   const L=document.getElementById('fload'),M=document.getElementById('fmiss');M.hidden=true;
   if(hit){L.hidden=false;document.getElementById('fload-t').textContent='Opening the audit for '+r.name;setTimeout(()=>{L.hidden=true;const u=hit.url?new URL(hit.url,location.href):null;if(u&&u.pathname!==location.pathname&&!hit.self)location.href=u.pathname+'#status';else show(hit.go)},1500)}
   else{M.hidden=false;M.innerHTML='<p><b>'+esc(r.name)+'</b> doesn\'t have an audit yet. We can run one for&nbsp;you.</p><a class="cta coral" href="sms:+12139315633?body='+encodeURIComponent('Please run an AI visibility audit for '+r.name+' ('+r.sub+')')+'">Text us to run my audit</a>'}}
