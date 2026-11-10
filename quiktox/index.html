@@ -1203,6 +1203,8 @@ body{overflow-x:clip}
 #s-experts .sc-b .btn{width:100%!important;justify-content:center!important;text-align:center!important;text-decoration:none!important;border:1.5px solid var(--ink)!important;border-radius:999px!important;padding:11px 16px!important;font:700 14px var(--fu)!important}
 #s-experts .sc-b .btn:hover{background:var(--ink)!important;color:#fff!important}
 /* mobile fixes */
+.tml{display:flex!important;flex-direction:column!important;align-items:flex-start!important;gap:10px!important}.tml img{display:block;width:104px!important;max-width:100%!important;height:18px!important;object-fit:contain!important;object-position:left center!important;filter:brightness(0)!important;opacity:.72;background:none!important;padding:0!important;border-radius:0!important}
+body.onexp:not(.onstv) .ctab{display:none!important}
 body.azopen #s-experts{position:relative;z-index:500!important;transform:none!important}body.azopen .ctab{display:none!important}
 strong.bw{font-weight:800;color:var(--ink)}
 .avb,.pn2{cursor:default!important}
@@ -1930,7 +1932,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('.sc [data-go]');
  const left=()=>{const ms=Math.max(0,end-Date.now()),d=Math.floor(ms/864e5),h=Math.floor(ms%864e5/36e5);return d+'d '+h+'h left at this price'};
  const M=n=>'$'+n.toLocaleString('en-US');
  const C={status:['22/100 AI Score','15 issues found','See what to fix','solution'],solution:['15 issues','One team fixes all of them','See if it\'s worth fixing','value'],value:['$5,462/mo','Estimated added revenue','See who does the work','experts'],experts:['Compare specialists','Verified results, side by side','Get proposal','proposal'],steve:['Steve Lee','128+ verified customers · 96% retention','Get proposal','proposal']};
- window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
+ window.CTA=id=>{document.body.classList.toggle('onval',id==='value');document.body.classList.toggle('onsol',id==='solution');document.body.classList.toggle('onprop',id==='proposal');document.body.classList.toggle('onst',id==='status');document.body.classList.toggle('onexp',id==='experts'||id==='steve');document.body.classList.toggle('onstv',id==='steve');if(id==='find'){bar.hidden=true;document.body.classList.remove('hasbar');return}bar.hidden=false;document.body.classList.add('hasbar');
   if(id==='proposal'){const p=window.CUR||3000;A.textContent=M(p)+'/mo';Sb.textContent=left();B.textContent='Get started';B.href='#pay';B.onclick=e=>{if(B.getAttribute('href')==='#pay'){e.preventDefault();document.getElementById('pay').scrollIntoView({behavior:'smooth',block:'center'})}};return}
   const x=C[id]||C.status;A.textContent=x[0];Sb.textContent=x[1];B.textContent=x[2];B.href='#'+x[3];B.onclick=e=>{e.preventDefault();e.stopPropagation();show(x[3])}};
  setInterval(()=>{const cur=(location.hash||'#find').slice(1);if(cur==='proposal')CTA('proposal')},30000);
