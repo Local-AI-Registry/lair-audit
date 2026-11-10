@@ -151,7 +151,8 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     el.innerHTML='<span class="tag"><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg><span>Your business</span></span><span class="stem"></span><span class="base"></span>';
     new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat(center).addTo(map);
 
-    map.once('idle',function(){ startWalking(map,center); });
+    var started=false;function go(){if(started)return;started=true;startWalking(map,center);}
+    map.once('idle',go);map.once('load',function(){setTimeout(go,700);});setTimeout(go,5000);
   }).catch(function(err){
     /* stay as plain paper if the map can't load */
     console.error(err);
@@ -231,7 +232,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       whenDay.textContent=DAYS[d]+', '+DATES[d];
       whenTime.textContent=fmt(simMin)+' · '+label(streetBusy(simMin));
       head.style.left='calc('+(simMin/10080*100)+'% - 1px)'; scrub.value=Math.round(simMin);
-      var h=(simMin%1440)/60, dark=h<6||h>20.5?.42:h<7.5?(7.5-h)/1.5*.42:h>18.5?(h-18.5)/2*.42:0; night.style.opacity=dark;
+      var h=(simMin%1440)/60, dark=h<6||h>20.5?.42:h<7.5?(7.5-h)/1.5*.42:h>18.5?(h-18.5)/2*.42:0; night.style.opacity=0;
     }
     scrub.addEventListener('input',function(){simMin=+scrub.value;syncClock();});
     playBtn.addEventListener('click',function(){playing=!playing;playBtn.setAttribute('aria-label',playing?'Pause':'Play');
@@ -343,13 +344,13 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       var want=dt>0?Math.max(1,Math.min(40,moved/(dt*MIN_PER_SEC))):1;
       speed+= (want-speed)*(want>speed?.5:.08);           // ramp up fast, settle back gently
       var sdt=dt*speed; simClock+=sdt; now=simClock;
-      var busy=streetBusy(simMin), cap=Math.round((2+busy*14)*(speed>3?2.2:1));
+      var busy=.9, cap=24;
       for(var n=0;n<6&&now>nextSpawn&&walkers.length<cap&&busy>.03;n++){spawn();nextSpawn=now+(.6+Math.random()*.9)/Math.max(.08,busy);}
       if(busy<=.03) nextSpawn=now;
-      var ab=aiBusy(simMin);
+      var ab=.9;
       for(var m=0;m<6&&now>nextAsk&&ab>.04;m++){ask();nextAsk=now+(.6+Math.random()*1.2)/Math.max(.1,ab);}
       if(ab<=.04) nextAsk=now;
-      if(now>nextConv){ if(convert()) nextConv=now+3+Math.random()*2.5; else nextConv=now+.5; }
+      if(now>nextConv){ if(convert()) nextConv=now+1.4+Math.random()*1.2; else nextConv=now+.4; }
       queue=queue.filter(function(q){ if(now>=q.at){spawn(q.shop,q.why);return false;} return true; });
       pings=pings.filter(function(p){return now-p.born<3.4;});
       walkers=walkers.filter(function(w){var ok=step(w,sdt); if(!ok&&w.shop&&w.shop.q){qk++;qkEl.textContent=qk;qkToday++;qkTodayEl.textContent=qkToday;} return ok;});
@@ -357,7 +358,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
       draw(); requestAnimationFrame(frame);
     }
     var seeded=false;function seed(){if(seeded||still||keys.length<5)return;seeded=true;
-      for(var i=0;i<10;i++)spawn(); walkers.forEach(function(w){var k=Math.random()*60;for(var j=0;j<k;j++){now+=.05;step(w,.05);}});
+      for(var i=0;i<18;i++)spawn(); walkers.forEach(function(w){var k=Math.random()*60;for(var j=0;j<k;j++){now+=.05;step(w,.05);}});
       prints.forEach(function(p){p.born=now-Math.random()*4;}); nextSpawn=now; nextAsk=now; simClock=now; nextConv=now+.8; try{for(var a=0;a<3;a++)ask();}catch(e){}}
     build(); seed(); map.on('moveend',function(){build();seed();}); map.on('idle',function(){if(!seeded){build();seed();}});
     if(still){ for(var i=0;i<6;i++)spawn(); walkers.forEach(function(w){for(var j=0;j<120;j++){now+=.05;step(w,.05);}}); prints.forEach(function(p){p.born=now-2;}); draw(); map.on('move',draw); }
