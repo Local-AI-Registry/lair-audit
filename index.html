@@ -994,9 +994,10 @@ th.r .sth{flex-direction:row}
 .rvs .calc-in{background:#fff}
 .rvs input[type=range]{width:100%;margin:12px 0 2px;accent-color:var(--blue)}
 .rvs small{font:500 12px var(--fb);color:var(--muted)}
-.rv2 .rev-n{font-size:38px}
+.rv2 .rev-n{font-size:38px;white-space:nowrap}.rv2 .rev-n #rvn{font-size:38px!important}.rv2 .rev-n.lg #rvn{font-size:30px!important}.rv2 .rev-n.lg small{font-size:12px}.rv2 .rev-n small{display:inline!important;font-size:14px}
+.rvs small{display:block;line-height:1.4}
 .rv2 .rev-s{margin-top:8px;font-size:13px}
-.rv2 .bebig{margin:0;font:700 16px var(--fu);color:var(--ink)}.rv2 .bebig #ben{font:800 38px/1 var(--fu);color:var(--ink);margin-right:4px}.bemo{font:600 16px var(--fu);color:var(--muted)}
+.rv2 .bebig{margin:0;font:700 16px var(--fu);color:var(--ink)}.rv2 .bebig #ben{font:800 38px/1 var(--fu);color:var(--ink);margin-right:4px}.bemo{font:600 16px var(--fu);color:var(--muted);margin-left:6px}
 .okb{color:var(--ok)!important}
 .rv2 .bebar{margin-top:34px}
 @media (min-width:900px){.rv2 .rv3{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -1138,7 +1139,7 @@ th.r .sth{flex-direction:row}
 <!-- PROPOSAL -->
 <main class="scr" id="s-proposal" hidden>
 <div class="sh"><p class="k">Proposal</p><h2 class="sh2">Eternyl Beauty × <span id="pkn">Steve Lee</span></h2><p class="sub">Prepared Nov 9, 2026 · Everything you need to decide, in one&nbsp;page.</p></div>
-<section class="card rvc rv2"><p class="k">What this is worth</p><div class="rv3"><div class="rvs"><p class="rvq"><i>1</i>If each customer brings&nbsp;in</p><div class="calc-in"><span>$</span><input id="rpc" type="number" inputmode="numeric" min="25" max="20000" step="25" value="450"></div><input type="range" id="rpcr" min="50" max="2500" step="10" value="450" aria-label="Revenue per new customer"><small>Your average. Drag to&nbsp;change.</small></div><div class="rvs"><p class="rvq"><i>2</i>you could add about</p><p class="rev-n"><span id="rvn">$5,463</span><small>/mo</small></p><p class="rev-s">From about <b id="rvc">27</b> new customers a month, out of 3,730&nbsp;searches.<b id="rvp" hidden></b></p></div><div class="rvs"><p class="rvq"><i>3</i>and the plan pays for itself at</p><p class="bebig"><b id="ben">7</b> customers<span class="bemo">/mo</span></p><p class="rev-s">You're estimated to get <b class="okb" id="bee">27</b>.</p><p hidden><span class="pv">$5,000</span><span id="bepc"></span><span id="bex"></span></p></div></div><div class="bebar"><div class="bez" style="left:0;width:100%"></div><div class="bestr" id="bestr" style="left:0;width:85%"></div><i class="bemk" id="bemk" style="left:20%"><span id="bemkt">Pays for itself: 7</span></i></div><div class="belab"><span>0</span><span id="beest">Estimate: 27 a month</span><span id="bemax">40</span></div></section>
+<section class="card rvc rv2"><p class="k">What this is worth</p><div class="rv3"><div class="rvs"><p class="rvq"><i>1</i>If each customer brings&nbsp;in</p><div class="calc-in"><span>$</span><input id="rpc" type="number" inputmode="numeric" min="25" max="20000" step="25" value="450"></div><input type="range" id="rpcr" min="50" max="2500" step="10" value="450" aria-label="Revenue per new customer"><small>Your average. Drag to&nbsp;change.</small></div><div class="rvs"><p class="rvq"><i>2</i>you could add about</p><p class="rev-n"><span id="rvn">$5,463</span><small>/mo</small></p><p class="rev-s">From about <b id="rvc">27</b> new customers a month, out of 3,730&nbsp;searches.<b id="rvp" hidden></b></p></div><div class="rvs"><p class="rvq"><i>3</i>and to cover the plan, you only&nbsp;need</p><p class="bebig"><b id="ben">7</b><span class="bemo">of the <span class="okb" id="bee">27</span></span></p><p class="rev-s">new customers a month. The rest is&nbsp;profit.</p><p hidden><span class="pv">$5,000</span><span id="bepc"></span><span id="bex"></span></p></div></div><div class="bebar"><div class="bez" style="left:0;width:100%"></div><div class="bestr" id="bestr" style="left:0;width:85%"></div><i class="bemk" id="bemk" style="left:20%"><span id="bemkt">Pays for itself: 7</span></i></div><div class="belab"><span>0</span><span id="beest">Estimate: 27 a month</span><span id="bemax">40</span></div></section>
 
 <section class="card"><p class="k">When to expect results</p>
 <svg id="roi" viewBox="0 0 340 200" role="img" aria-label="Projected monthly value rising from zero in months 1 and 2 to $3,600 to $7,300 by month 8, crossing the $3,000 monthly cost between months 5 and 7"></svg>
@@ -1706,7 +1707,7 @@ window.BE=()=>{if(window.VUP)VUP();const cur=window.CUR||3000,r=window.RPC,c=win
  const g=id=>document.getElementById(id);if(!g('rvn'))return;
  g('rvn').textContent=M(rv);g('rvc').textContent=Math.round(c);g('rvp').textContent=M(r);g('bepc').textContent=M(r);g('ben').textContent=n;g('bee').textContent=Math.round(c);
  g('bex').textContent=(cur/r).toFixed(1)+', rounded up to '+n;const mx=Math.max(10,Math.ceil(Math.max(c,n)*1.25/5)*5);
- g('bestr').style.width=Math.min(c/mx*100,100)+'%';g('bemk').style.left=Math.min(n/mx*100,100)+'%';g('bemkt').textContent='Pays for itself: '+n;g('beest').textContent='Estimate: '+Math.round(c)+' a month';g('bemax').textContent=mx;
+ g('bestr').style.width=Math.min(c/mx*100,100)+'%';g('bemk').style.left=Math.min(n/mx*100,100)+'%';g('bemkt').textContent='Pays for itself: '+n;{const pc=Math.min(n/mx*100,100);g('bemkt').style.transform=pc<15?'translateX(-2px)':pc>85?'translateX(-100%)':''}g('rvn').parentElement.classList.toggle('lg',M(rv).length>6);g('beest').textContent='Estimate: '+Math.round(c)+' a month';g('bemax').textContent=mx;
  g('bestr').classList.toggle('short',c<n);
  if(window.drawROI)drawROI(cur)};
 document.addEventListener('input',e=>{if(['rpc','rpcr','vrpc'].includes(e.target.id)){const v=Math.max(1,+e.target.value||0);window.RPC=v;['rpc','rpcr','vrpc'].forEach(id=>{const o=document.getElementById(id);if(o&&o!==e.target)o.value=v});BE()}});
