@@ -2275,7 +2275,7 @@ const ev=e=>{const k=e.sc||e.c;if(!EVS[k]||e.st==='Not checked')return '';return
 
  const pick=b=>{document.querySelectorAll('.qx-btn').forEach(x=>{x.classList.toggle('sel',x===b);x.setAttribute('aria-expanded',x===b?'true':'false');x.nextElementSibling.hidden=true});
   const row=b.closest('.qx-row');pane.innerHTML='<div class="qxp-h">'+b.querySelector('.qx-ti').outerHTML+'<h3>'+b.querySelector('.qx-c').textContent+'</h3>'+b.querySelector('.qx-s').outerHTML+'<button type="button" class="qxp-x" aria-label="Close">×</button></div>'+row.querySelector('.qx-body').innerHTML;pane.classList.toggle('two',!row.classList.contains('qx-cost'));const vr=pane.querySelector('.vrec');if(vr&&rs)vr.innerHTML=rs.innerHTML.replace(/id="[^"]*"/g,'');pane.hidden=false;if(rs)rs.hidden=true;pane.scrollTop=0};
- const unpick=()=>{pane.hidden=true;pane.innerHTML='';if(rs)rs.hidden=false;document.querySelectorAll('.qx-btn.sel').forEach(x=>x.classList.remove('sel'))};pane.addEventListener('click',e=>{if(e.target.closest('.qxp-x'))unpick()});
+ const unpick=()=>{pane.hidden=true;pane.innerHTML='';pane.classList.remove('two');if(QD.matches)document.querySelectorAll('.qx-btn[aria-expanded=true]').forEach(x=>x.setAttribute('aria-expanded','false'));if(rs)rs.hidden=false;document.querySelectorAll('.qx-btn.sel').forEach(x=>x.classList.remove('sel'))};pane.addEventListener('click',e=>{if(e.target.closest('.qxp-x'))unpick()});
  document.querySelectorAll('.qx-btn').forEach(b=>b.addEventListener('click',()=>{if(QD.matches){pick(b);return}const o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));b.nextElementSibling.hidden=o}));
  const init=()=>{unpick()};QD.addEventListener('change',init);init();
 })();
