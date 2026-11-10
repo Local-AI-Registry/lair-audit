@@ -1203,6 +1203,7 @@ body{overflow-x:clip}
 #s-experts .sc-b .btn{width:100%!important;justify-content:center!important;text-align:center!important;text-decoration:none!important;border:1.5px solid var(--ink)!important;border-radius:999px!important;padding:11px 16px!important;font:700 14px var(--fu)!important}
 #s-experts .sc-b .btn:hover{background:var(--ink)!important;color:#fff!important}
 /* mobile fixes */
+.pfx .psum{display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px}.pfx .psum .kwm{margin:0!important}.pfx .psum>b{margin-right:-8px}
 @media (max-width:600px){.kwm svg{display:none!important}.kwm{white-space:normal!important;padding:6px 10px!important}.kwm em{white-space:nowrap}
 #s-experts .az-bar select{max-width:150px}}
 .okt{color:var(--ok)!important}.svr{font:500 14px var(--fb);color:var(--muted)}.svr .stars{color:#E8A33A;letter-spacing:1px}.svr b{color:var(--ink)}
@@ -1231,7 +1232,7 @@ body{overflow-x:clip}
 .cg2 td.r{grid-column:2;grid-row:1;text-align:right}.cg2 .cvb{display:none}
 .cg2 td:last-child{grid-column:1/-1}.cnm{font-size:12.5px}
 .vtb td,.vtb th{padding-right:0!important}.vtb th:nth-child(2),.vtb td:nth-child(2){padding-right:12px!important}
-.kwm{margin-top:6px}
+.kwm{margin-top:0}
 }
 [hidden]{display:none!important}
 @media (min-width:960px){
@@ -2068,7 +2069,7 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  el.innerHTML=h};drawROI(window.CUR||3000);(()=>{const t=document.getElementById('roi');if(!t||!window.ResizeObserver)return;let w=0;new ResizeObserver(()=>{const n=t.clientWidth;if(n&&n!==w){w=n;drawROI(window._roiC||3000)}}).observe(t)})();
 
 /* --- ranking keywords mini chart (Semrush US) --- */
-(()=>{const K=[['Nov',66],['Dec',57],['Jan',61],['Feb',70],['Mar',65],['Apr',75],['May',69],['Jun',70],['Jul',59],['Aug',51],['Sep',40],['Oct',36]];const KM=document.createElement('div');KM.className='kwm';KM.title='Google, via Semrush US, monthly';KM.innerHTML='<span class="kwm-l">Google rankings</span><b id="kwn" hidden>--</b><svg id="kws" viewBox="0 0 260 64" preserveAspectRatio="none" aria-hidden="true"></svg><em id="kwd"></em>';document.body.appendChild(KM);KM.hidden=true;window.KWPUT=()=>{const p=document.querySelector('.pfx .psum');if(p){p.after(KM);KM.hidden=false}};const sv=document.getElementById('kws');if(!sv)return;const v=K.map(z=>z[1]),mx=Math.max(...v)*1.12||1,W=260,H=64,x=i=>4+i*(W-8)/(v.length-1),y=n=>H-4-n/mx*(H-10);
+(()=>{const K=[['Nov',66],['Dec',57],['Jan',61],['Feb',70],['Mar',65],['Apr',75],['May',69],['Jun',70],['Jul',59],['Aug',51],['Sep',40],['Oct',36]];const KM=document.createElement('div');KM.className='kwm';KM.title='Google, via Semrush US, monthly';KM.innerHTML='<span class="kwm-l">Google rankings</span><b id="kwn" hidden>--</b><svg id="kws" viewBox="0 0 260 64" preserveAspectRatio="none" aria-hidden="true"></svg><em id="kwd"></em>';document.body.appendChild(KM);KM.hidden=true;window.KWPUT=()=>{const p=document.querySelector('.pfx .psum');if(p){p.appendChild(KM);KM.hidden=false}};const sv=document.getElementById('kws');if(!sv)return;const v=K.map(z=>z[1]),mx=Math.max(...v)*1.12||1,W=260,H=64,x=i=>4+i*(W-8)/(v.length-1),y=n=>H-4-n/mx*(H-10);
  let d=v.map((n,i)=>(i?'L':'M')+x(i).toFixed(1)+' '+y(n).toFixed(1)).join(' '),last=v[v.length-1],prev=v[v.length-4],ch=prev?Math.round((last-prev)/prev*100):0,dn=ch<0,c=dn?'var(--red)':'var(--ok)';
  sv.innerHTML='<path d="'+d+' L'+x(v.length-1)+' '+H+' L'+x(0)+' '+H+'Z" fill="'+c+'" opacity=".12"/><path d="'+d+'" fill="none" stroke="'+c+'" stroke-width="2" vector-effect="non-scaling-stroke" stroke-linejoin="round"/>';
  document.getElementById('kwn').textContent=last+' prompts';const e=document.getElementById('kwd');e.textContent=(dn?'▼ down ':'▲ up ')+Math.abs(last-prev)+' ('+Math.abs(ch)+'%) in 3 months';e.className=dn?'dn':'up';

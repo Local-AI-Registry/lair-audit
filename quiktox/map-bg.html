@@ -149,9 +149,24 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
 
     var el=document.createElement('div'); el.className='pin';
     el.innerHTML='<span class="tag"><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg><span>Your business</span></span><span class="stem"></span><span class="base"></span>';
-    new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat(center).addTo(map);
+    var mk=new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat(center).addTo(map);
 
-    var started=false;function go(){if(started)return;started=true;startWalking(map,center);}
+    var started=false;function go(){if(started)return;started=true;try{pickBuilding();}catch(e){console.error(e);}startWalking(map,center);}
+    function pickBuilding(){
+      var lat0=center[1],kx=111320*Math.cos(lat0*Math.PI/180),ky=110540,list=[],seen={};
+      map.querySourceFeatures('openmaptiles',{sourceLayer:'building'}).forEach(function(f){
+        var g=f.geometry;if(!g||g.type!=='Polygon')return;var r=g.coordinates[0];if(!r||r.length<4)return;
+        var A=0,cx=0,cy=0;for(var i=0;i<r.length-1;i++){var x1=(r[i][0]-center[0])*kx,y1=(r[i][1]-lat0)*ky,x2=(r[i+1][0]-center[0])*kx,y2=(r[i+1][1]-lat0)*ky,c=x1*y2-x2*y1;A+=c;cx+=(x1+x2)*c;cy+=(y1+y2)*c;}
+        A/=2;if(!A)return;cx/=6*A;cy/=6*A;A=Math.abs(A);var key=Math.round(cx)+','+Math.round(cy)+','+Math.round(A);if(seen[key])return;seen[key]=1;
+        list.push({x:cx,y:cy,a:A,ring:r,h:(f.properties&&f.properties.render_height)||9});});
+      var best=null,bd=1e9;list.forEach(function(b){if(b.a<160||b.a>1400)return;var d=Math.hypot(b.x,b.y);if(d>380)return;
+        for(var j=0;j<list.length;j++){var o=list[j];if(o!==b&&Math.hypot(o.x-b.x,o.y-b.y)<Math.sqrt(b.a)/2+Math.sqrt(o.a)/2+8)return;}
+        if(d<bd){bd=d;best=b;}});
+      if(!best)return;
+      center[0]=center[0]+best.x/kx;center[1]=lat0+best.y/ky;mk.setLngLat(center);map.jumpTo({center:center});
+      map.addSource('home-bld',{type:'geojson',data:{type:'Feature',properties:{},geometry:{type:'Polygon',coordinates:[best.ring]}}});
+      map.addLayer({id:'home-bld',type:'fill-extrusion',source:'home-bld',paint:{'fill-extrusion-color':'#1F4FE0','fill-extrusion-opacity':.55,'fill-extrusion-height':Math.max(best.h*1.15,8)}});
+    }
     map.once('idle',go);map.once('load',function(){setTimeout(go,700);});setTimeout(go,5000);
   }).catch(function(err){
     /* stay as plain paper if the map can't load */
