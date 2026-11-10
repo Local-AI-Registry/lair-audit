@@ -826,6 +826,12 @@ body.hasbar.onprop .w{max-width:1180px!important;margin-left:auto!important;marg
 .fd-n:empty{display:none}
 .fdm .fd-s{font:600 17px var(--fb);color:var(--ink)}
 .tcbar{display:flex;justify-content:flex-end;margin:4px 0 -4px}
+.fdm .fd-s{font:500 16px/1.5 var(--fb)!important;color:var(--muted)!important;max-width:470px;margin:10px auto 0}
+.fd-ask{margin:18px 0 10px;font:700 15px var(--fu);color:var(--ink)}
+.fd-box{padding-right:6px!important}
+.fd-go{all:unset;cursor:pointer;flex:none;background:var(--coral);color:#fff;font:800 15px var(--fu);padding:12px 18px;border-radius:999px;white-space:nowrap}
+.fd-go:hover{filter:brightness(.95)}.fd-go:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media (max-width:519px){.fd-go{padding:11px 16px;font-size:14px}.fgx{display:none}.fdm .fd-s{font-size:15px!important}}
 [hidden]{display:none!important}
 </style>
 </head>
@@ -843,11 +849,12 @@ body.hasbar.onprop .w{max-width:1180px!important;margin-left:auto!important;marg
 <iframe class="fd-map" title="Animated street map" aria-hidden="true" tabindex="-1" loading="eager" src="map-bg.html"></iframe><div class="fd-veil" aria-hidden="true"></div>
 <section class="fd fdm">
 
-<h2 class="fd-h">Guaranteed in <em>AI&nbsp;answers</em>.</h2>
-<p class="fd-s">Let's see where you are&nbsp;today.</p>
+<h2 class="fd-h">Get recommended by <em>ChatGPT</em>. Guaranteed.</h2>
+<p class="fd-s">When customers ask AI who's best near them, we make sure it names your business. If it doesn't within 90 days, we work for&nbsp;free.</p>
+<p class="fd-ask">Is AI recommending you today? Find your business for a free&nbsp;report.</p>
 <div class="fd-box" id="fbox"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-<input id="fq" type="text" placeholder="Your business name" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="fdl" aria-label="Business name">
-<ul id="fdl" role="listbox" hidden></ul></div>
+<input id="fq" type="text" placeholder="Type your business name" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="fdl" aria-label="Business name">
+<button type="button" class="fd-go" id="fgo">Check<span class="fgx"> my business</span></button><ul id="fdl" role="listbox" hidden></ul></div>
 <p class="fd-n" id="fdn"></p>
 <div class="fd-load" id="fload" hidden><p id="fload-t">Opening your audit</p><div class="fd-bar"><i></i></div></div>
 <div class="fd-miss" id="fmiss" hidden></div>
@@ -1550,6 +1557,7 @@ window.BE=()=>{const cur=window.CUR||3000,r=window.RPC,c=window.SRCH*window.RATE
 document.addEventListener('input',e=>{if(e.target.id==='rpc'||e.target.id==='rpcr'){const v=Math.max(1,+e.target.value||0);window.RPC=v;const o=document.getElementById(e.target.id==='rpc'?'rpcr':'rpc');if(o)o.value=v;BE()}});
 document.addEventListener('click',async e=>{if(!e.target.closest('#shr'))return;const u=location.href.split('#')[0]+'#proposal',m=document.getElementById('shrm');
  try{if(navigator.share){await navigator.share({title:document.title,url:u});return}await navigator.clipboard.writeText(u);m.textContent='Link copied. Paste it to your team.'}catch(err){m.textContent=u}});
+document.addEventListener('click',e=>{if(!e.target.closest('#fgo'))return;const q=document.getElementById('fq'),l=document.getElementById('fdl'),first=l&&!l.hidden&&l.querySelector('li[data-i]');if(first){first.click();return}q.focus();if(q.value.trim())q.dispatchEvent(new Event('input',{bubbles:true}))});
 /* --- plan builder + pricing + Stripe links --- */
 const PAY={/* paste Stripe payment links per bundle price: 500:{lock:'',after:''} */};
 (()=>{const T=[{n:'Registry',p:500},{n:'Authority',p:1500},{n:'Growth',p:3000},{n:'Platinum',p:5000}];
