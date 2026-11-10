@@ -148,7 +148,8 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     map.on('styleimagemissing',function(e){if(e.id==='hatch'&&!map.hasImage('hatch'))map.addImage('hatch',hatchImage());});
 
     var el=document.createElement('div'); el.className='pin';
-    el.innerHTML='<span class="tag"><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg><span>Your business</span></span><span class="stem"></span><span class="base"></span>';
+    el.innerHTML='<span class="tag"><svg width="16" height="16" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg><span id="pinlab">Your business</span></span><span class="stem"></span><span class="base"></span>';
+    addEventListener('message',function(e){if(!e.data||e.data.t!=='name')return;var l=document.getElementById('pinlab');if(l)l.textContent=String(e.data.v||'').trim().slice(0,40)||'Your business';});
     var mk=new maplibregl.Marker({element:el,anchor:'bottom'}).setLngLat(center).addTo(map);
 
     var started=false;function go(){if(started)return;started=true;try{pickBuilding();}catch(e){console.error(e);}startWalking(map,center);map.once('idle',function(){document.getElementById('map').classList.add('on');});setTimeout(function(){document.getElementById('map').classList.add('on');},1500);}
