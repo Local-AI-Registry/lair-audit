@@ -1141,13 +1141,33 @@ body{overflow-x:clip}
 #s-experts #splist{gap:8px 18px!important}
 #s-experts .az-bar select,#s-experts .az-bar .sortw select{border:0!important;border-bottom:1px solid var(--rule2)!important;border-radius:0!important;background-color:transparent!important;padding-left:0!important}
 #s-experts .smeta,#s-experts #scount{font:500 12px var(--fb)!important;color:var(--muted)!important}
+.cg2 th[scope=row]{font:500 14px var(--fb)!important;color:var(--ink)}
+.cg2 td,.cg2 th{padding-top:11px!important;padding-bottom:11px!important}
+.cg2 td.r{font:600 13px var(--fu);color:var(--ink);white-space:nowrap;font-variant-numeric:tabular-nums}
+.cvb{display:inline-block;vertical-align:middle;width:70px;height:6px;margin-right:10px;border-radius:3px;background:var(--bg);overflow:hidden}.cvb i{display:block;height:100%;background:var(--red);opacity:.55;border-radius:3px}
+.cnm{font:500 13px var(--fb);color:var(--body)}.cnm i{font-style:normal;margin:0 6px;color:var(--grey)}.cnm .on{color:var(--red);font-weight:700}
+.cgc .pmore{margin-top:10px}
+/* fix page: fit above the fold */
+@media (min-width:960px){.sol2 .solh{margin-bottom:12px}.sol2 .sh2{font-size:40px!important}
+.sol2 .qx-hd{padding:8px 14px!important}
+.sol2 .qx-btn{padding:6px 12px!important;min-height:0!important;gap:8px!important;line-height:1.2!important}
+.sol2 .qx-ti{width:22px;height:22px;border-radius:6px}.sol2 .qx-ti svg{width:14px;height:14px}
+.sol2 .qx-c{font-size:13px!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sol2 .qx-s{font-size:11px!important}
+.sol2 .qx-cost{border-top-width:3px}
+.qx-s.ring,.qx-s.na{color:var(--blue)!important}}
+@media (min-width:960px){.sol2 .qx-btn{padding:2px 12px!important;height:30px}.sol2 .qx-hd{padding:6px 14px!important}.sol2 .qx-row{border-width:0!important}.sol2 .qx-row+.qx-row{border-top:1px solid var(--rule)!important}
+.sol2 .qx-ti{width:20px!important;height:20px!important}.sol2 .qx-c{font-size:12.5px!important}
+.sol2 .inb{grid-template-columns:minmax(300px,1fr) minmax(0,2.7fr)!important;gap:14px!important}
+.sol2 .rsol #hub svg,.sol2 .rsol .stage svg{max-height:340px}
+.sol2 .sh .k{margin-bottom:0!important}.sol2 .sh2{margin:2px 0 0!important}}
 [hidden]{display:none!important}
 @media (min-width:960px){
 .solh{grid-template-columns:minmax(0,1fr) auto}
 .inb{grid-template-columns:minmax(260px,1fr) minmax(0,3fr)}
 .inb-r{position:sticky;top:80px}
 .sol2 .qx-pane{display:block;max-height:calc(100vh - 110px);overflow:auto;padding:22px 26px!important}
-.sol2 .qx-btn{padding-top:12px!important;padding-bottom:12px!important}
+
 .sol2 .qx-c{font-size:14px!important}.sol2 .qx-s{font-size:12px!important}
 .solmob{display:none!important}
 .sol2 .qx-pane .stage{max-width:620px;margin-left:auto;margin-right:auto}
@@ -1213,7 +1233,7 @@ body{overflow-x:clip}
 <!-- COMPETITOR GAPS -->
 <section class="card cgc"><div class="wsh2"><div><h3 class="cgt">Competitors</h3><p class="cgsub">Searches where AI names them, not&nbsp;you.</p></div><div class="gap2" title="Sum of the monthly searches in this table"><div><b id="gapn">--</b><span>searches a month you're&nbsp;missing</span></div><button class="cta coral go" data-go="solution" type="button">Close the gap &rarr;</button></div></div>
 <div class="pfd cgf" id="cgf"></div>
-<table class="pt4 cg"><colgroup><col class="c1"><col class="c2"><col class="c3"><col class="c4"></colgroup><thead id="cgh"></thead><tbody id="cgb"></tbody></table>
+<table class="pt4 cg cg2"><colgroup><col style="width:38%"><col style="width:22%"><col style="width:40%"></colgroup><thead id="cgh"></thead><tbody id="cgb"></tbody></table>
 </section>
 
 
@@ -1985,10 +2005,12 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  const F=document.getElementById('cgf'),H=document.getElementById('cgh'),B=document.getElementById('cgb');if(!F)return;{const gn=document.getElementById('gapn');if(gn)gn.textContent=CR.reduce((a,r)=>a+r.v,0).toLocaleString('en-US')}
  F.innerHTML='<p class="psum"><b>'+CR.length+'</b>&nbsp;searches</p><label>Type<select id="cg-t"><option value="All">All types</option>'+types.map(t=>'<option>'+t+'</option>').join('')+'</select></label><label>Competitor<select id="cg-c"><option value="All">All competitors</option>'+comps.map(c=>'<option>'+esc(c)+'</option>').join('')+'</select></label>';
  const SH=(k,l,c)=>'<th scope="col"'+(c?' class="'+c+'"':'')+' aria-sort="'+(sk===k?(sd>0?'ascending':'descending'):'none')+'"><button type="button" class="sth'+(sk===k?(sd>0?' asc':' desc'):'')+'" data-k="'+k+'">'+l+CH+'</button></th>';
- function draw(){H.innerHTML='<tr>'+SH('q','Prompt')+SH('t','Type','ct')+SH('v','Searches/mo','r')+'<th scope="col" style="padding-left:24px">Who AI names instead</th></tr>';
+ let ALLC=false;const CM=document.createElement('button');CM.type='button';CM.className='pmore';B.closest('table').after(CM);CM.addEventListener('click',()=>{ALLC=!ALLC;draw()});
+ function draw(){H.innerHTML='<tr>'+SH('q','Prompt')+SH('v','Searches/mo','r')+'<th scope="col">Who AI names instead</th></tr>';
   const kf={q:r=>r.q,t:r=>r.t,v:r=>r.v}[sk];const L=CR.filter(r=>(ft==='All'||r.t===ft)&&(fc==='All'||r.c.includes(fc))).sort((a,b)=>{const x=kf(a),y=kf(b);return (x>y?1:x<y?-1:0)*sd});
-  F.querySelector('.psum').innerHTML='<b>'+L.length+'</b>&nbsp;searches';
-  B.innerHTML=L.map(r=>'<tr><th scope="row">'+esc(r.q)+'</th><td class="ct"><span class="ty2 '+(tc[r.t]||'tt-c')+'">'+r.t+'</span></td><td class="r">'+r.v.toLocaleString()+'</td><td style="padding-left:24px"><div class="pnw">'+r.c.map(n=>'<span class="cpn'+(n===fc?' on':'')+'">'+esc(n).replace(/ /g,'&nbsp;')+'</span>').join('')+'</div></td></tr>').join('')||'<tr><td colspan="4" class="pempty">No searches match</td></tr>'}
+  F.querySelector('.psum').innerHTML='<b>'+L.length+'</b>&nbsp;searches';const mv=Math.max(...CR.map(r=>r.v)),V=ALLC?L:L.slice(0,6);
+  B.innerHTML=V.map(r=>'<tr><th scope="row">'+esc(r.q)+'</th><td class="r"><span class="cvb"><i style="width:'+Math.max(6,r.v/mv*100)+'%"></i></span>'+r.v.toLocaleString()+'</td><td><span class="cnm">'+r.c.map(n=>'<span'+(n===fc?' class="on"':'')+'>'+esc(n).replace(/ /g,'&nbsp;')+'</span>').join('<i>·</i>')+'</span></td></tr>').join('')||'<tr><td colspan="3" class="pempty">No searches match</td></tr>';
+  CM.hidden=L.length<=6;CM.textContent=ALLC?'Show fewer':'Show all '+L.length+' searches'}
  F.addEventListener('change',e=>{if(e.target.id==='cg-t')ft=e.target.value;if(e.target.id==='cg-c')fc=e.target.value;draw()});
  H.addEventListener('click',e=>{const b=e.target.closest('.sth');if(!b)return;const k=b.dataset.k;if(sk===k)sd=-sd;else{sk=k;sd=k==='v'?-1:1}draw()});
  draw()})();
@@ -2037,8 +2059,8 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  const TONE={'tri':'bad','sq':'warn','dot':'ok','ring':'na'};ICO['Included']='ring';
  CT.forEach(e=>{if(e.c==='Website upkeep'){e.st='Included';e.t='upkeep';e.i='Every website needs regular care to stay fast, safe and trusted by\u00a0AI.';e.d='Every month we handle plugin updates, security, backups, uptime checks and content\u00a0edits.'}});
  const bad=CT.filter(e=>ICO[e.st]==='tri'||ICO[e.st]==='sq').length,ok=CT.filter(e=>e.st==='Passed').length,na=CT.filter(e=>e.st==='Not checked').length;
- document.getElementById('qx-sum').innerHTML=bad+' need fixing &middot; '+ok+'&nbsp;passed';{const g=i=>document.getElementById(i);if(g('qx-n'))g('qx-n').textContent=CT.filter(e=>e.st!=='Included').length;if(g('qx-tot'))g('qx-tot').textContent=CT.filter(e=>e.st!=='Included').length;if(g('qx-bad'))g('qx-bad').textContent=bad}
- const ev=e=>{if(!EVS[e.c]||e.st==='Included')return '';return '<div class="qx-ev2"><div class="stage">'+EVS[e.c]()+'</div></div>'};
+ document.getElementById('qx-sum').innerHTML=bad+' need fixing &middot; '+ok+'&nbsp;passed';{const g=i=>document.getElementById(i);{const run=CT.filter(e=>e.st!=='Included'&&e.st!=='Not checked').length;if(g('qx-n'))g('qx-n').textContent=run;if(g('qx-tot'))g('qx-tot').textContent=run}if(g('qx-bad'))g('qx-bad').textContent=bad}
+ const ev=e=>{if(!EVS[e.c]||e.st==='Included'||e.st==='Not checked')return '';return '<div class="qx-ev2"><div class="stage">'+EVS[e.c]()+'</div></div>'};
  document.getElementById('qx-list').innerHTML=CT.map((e,k)=>{const ic=ICO[e.st],t=TONE[ic];return '<div class="qx-row"><button class="qx-btn" aria-expanded="false"><span class="qx-ti '+t+'">'+(TI[e.t]||TI.record)+'</span><span class="qx-c">'+esc(e.c)+'</span><span class="qx-s '+t+'">'+e.st+'</span><span class="qx-ch">›</span></button><div class="qx-body" hidden><div class="qx-lc">'+(e.st==='Included'?'<p class="qx-l">Why it matters</p>':'<p class="qx-l bad">What we found</p>')+'<p class="qx-i">'+nb(e.i)+'</p>'+ev(e)+'</div><div class="qx-fix"><p class="qx-l good">'+(e.st==='Included'?'What\'s included':'How we fix it')+'</p><p class="qx-d">'+nb(e.d)+'</p><div class="stage">'+ILL[e.t]()+'</div>'+(e.u?'<a class="qx-ex" href="'+e.u+'" target="_blank" rel="noopener">See example ↗</a>':'')+'</div></div></div>'}).join('');
  {const vt=document.getElementById('vendt'),ql=document.getElementById('qx-list');if(vt&&ql){const tot=(vt.content.querySelector('.vtot')||{}).textContent||'';ql.insertAdjacentHTML('beforeend','<div class="qx-row qx-cost"><button class="qx-btn" aria-expanded="false"><span class="qx-ti na">'+TI.cost+'</span><span class="qx-c">Cost analysis</span><span class="qx-s">Compare</span><span class="qx-ch">›</span></button><div class="qx-body" hidden>'+vt.innerHTML+'</div></div>')}}
  const QD=matchMedia('(min-width:960px)'),pane=document.getElementById('qxp'),rs=document.querySelector('#s-solution .rsol'),qc=document.querySelector('#s-solution .qx-card');
