@@ -912,7 +912,7 @@ body.hasbar.onprop .w{max-width:1180px!important;margin-left:auto!important;marg
 <tfoot><tr><td colspan="2"><b>9 vendors to hire and manage</b></td><td><b class="vtot">$15,500</b></td></tr></tfoot></table>
 <p class="src">Typical market rates for each service. Prices vary by provider.</p></details>
 <div class="fxr"><section class="card fxcta"><div><b>16 issues</b><span>One team fixes all of them</span></div><button class="cta coral go" data-go="value" type="button">See what it's worth &rarr;</button></section>
-<section class="card rsol"><p class="k" style="color:var(--ok)">How we solve them</p><h3 class="h3s">One record that keeps working, even as AI changes</h3><p class="sub" style="margin:0 0 6px">We build your verified record and use it to fix every issue above. Then we keep them fixed every month. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div>
+<section class="card rsol"><p class="k" style="color:var(--ok)">What makes us different</p><h3 class="h3s">A verified record AI can&nbsp;trust</h3><p class="sub" style="margin:0 0 6px">Agencies post content and hope AI notices. We verify your license, services and hours, publish them as one public record on the Local AI Registry, and connect it to your website, Google profile and reviews. AI checks the facts against your record before it names you. When AI changes how it picks businesses, our research team updates the playbook and your record adapts. You don't lift a&nbsp;finger.</p><div id="hub"></div></section></div>
 <button class="cta go" data-go="value">See what it's worth</button>
 </main>
 
@@ -1042,7 +1042,7 @@ const BIZ={name:'QUIKTOX',city:'your city',area:'Nearby town',service:'Your serv
  topics:['Cost','Near you','First visit','Reviews','FAQs'],dirs:['Google','Bing','Apple','Yelp','Facebook','+20 more']};
 const X=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const MARK=(x,y,s)=>`<g transform="translate(${x} ${y}) scale(${s})"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="var(--ink)"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></g>`;
-function REC(x,y,k=1,F=['Services','Prices','Hours']){const B=BIZ,H=62+F.length*14;return `<g class="rec" transform="translate(${x} ${y}) scale(${k})">
+function REC(x,y,k=1,F=['License','Services','Hours']){const B=BIZ,H=62+F.length*14;return `<g class="rec" transform="translate(${x} ${y}) scale(${k})">
 <rect width="112" height="${H}" rx="10" fill="var(--card)" stroke="var(--blue)" stroke-width="1.6"/>
 ${MARK(8,7,.13)}<text x="24" y="17" font-size="7" font-weight="800" letter-spacing=".9" fill="var(--blue)">YOUR RECORD</text>
 <text x="9" y="36" font-size="12" font-weight="800" fill="var(--ink)">${X(B.name)}</text>
