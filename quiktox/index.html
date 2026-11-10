@@ -1636,8 +1636,8 @@ window.drawROI=(cost)=>{const el=document.getElementById('roi');if(!el)return;wi
  const more=document.createElement('button');more.className='pmore';wrap.after(more);
  const types=[...new Set(rows.map(r=>r.t))];
  function draw(){const m=rows.filter(hit).length;
-  const D=DK.matches;let h='<p class="psum">You show up for <b>'+m+'</b> prompts</p>';
-  if(D){h='<div class="pfd"><p class="psum">You show up for <b>'+m+'</b> prompts</p><label>Type<select id="pf-t">'+['All',...types].map(f=>'<option'+(f===filt?' selected':'')+' value="'+f+'">'+(f==='All'?'All types':f)+'</option>').join('')+'</select></label><label>Platform<select id="pf-p"><option value="all">All platforms</option>'+PL.map((p,i)=>'<option value="'+i+'"'+(String(i)===plat?' selected':'')+'>'+p[1]+'</option>').join('')+'</select></label></div>'}
+  const D=DK.matches;let h='<p class="psum"><b>'+m+'</b>&nbsp;searches</p>';
+  if(D){h='<div class="pfd"><p class="psum"><b>'+m+'</b>&nbsp;searches</p><label>Type<select id="pf-t">'+['All',...types].map(f=>'<option'+(f===filt?' selected':'')+' value="'+f+'">'+(f==='All'?'All types':f)+'</option>').join('')+'</select></label><label>Platform<select id="pf-p"><option value="all">All platforms</option>'+PL.map((p,i)=>'<option value="'+i+'"'+(String(i)===plat?' selected':'')+'>'+p[1]+'</option>').join('')+'</select></label></div>'}
   else if(rows.length>LIM){h+='<div class="pch">'+['All',...types].map(f=>'<button class="pc'+(f===filt?' on':'')+'" data-f="'+f+'">'+(f==='Informational'?'Info':f)+'</button>').join('')+'</div>'}
   top.innerHTML=h;
   document.getElementById('pcg').innerHTML=D?'<col style="width:34%"><col style="width:14%"><col style="width:12%"><col style="width:40%">':'<col style="width:44%"><col style="width:15%"><col style="width:41%">';
