@@ -1837,6 +1837,9 @@ const AUDITS=[{name:'Sneak A Baby Peek',sub:'8545 S Eastern Ave #106, Las Vegas,
      const sub=[[p.housenumber,p.street].filter(Boolean).join(' '),p.city||p.town||p.district,p.state].filter(Boolean).join(', ');
      const k=(p.name+sub).toLowerCase();if(!seen.has(k)&&!res.some(x=>AUDITS.some(a=>a.match.test(p.name))&&a===x)){seen.add(k);if(!(AUDITS.some(a=>a.match.test(p.name))&&res.length))res.push({name:p.name,sub:sub||'United States'})}})}catch(e){}
    res=res.slice(0,5)}
+  {const W=x=>x.toLowerCase().replace(/[^a-z0-9 ]/g,' ').split(/\s+/).filter(Boolean),tw=W(v);
+   const mine=AUDITS.filter(a=>a.match.test(v)||(tw.length&&tw.every(t=>W(a.name).some(n=>n.startsWith(t)))));
+   if(mine.length){res=res.filter(x=>!mine.some(a=>a.match.test(x.name)));res=[...mine,...res].slice(0,5)}}
   res.push({name:v,sub:'Use this name',typed:true});
   items=res;act=-1;render()}
  async function gdet(r){if(!GKEY||!r.id)return r;try{const d=await fetch('https://places.googleapis.com/v1/places/'+encodeURIComponent(r.id)+'?sessionToken='+encodeURIComponent(GTOK),{headers:{'X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'id,displayName,formattedAddress'}}).then(x=>x.json());GTOK=(crypto.randomUUID?crypto.randomUUID():String(Date.now()));if(d&&d.formattedAddress)return {...r,name:(d.displayName&&d.displayName.text)||r.name,sub:d.formattedAddress}}catch(e){}return r}
