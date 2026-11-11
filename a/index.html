@@ -80,6 +80,7 @@ function fill(T,D){
  all("business:'QUIKTOX'","business:"+J(D.name).replace(/'/g,"\\'").replace(/^"|"$/g,"'"));
  all('QUIKTOX proposal',D.name.replace(/['\\]/g,'')+' proposal');all('proposal for QUIKTOX','proposal for '+D.name.replace(/['\\]/g,''));
  all('src="map-bg.html','src="/map-bg.html');
+ if(D.priceNote)all('<small>Drag to match your&nbsp;business.</small>','<small>'+esc(D.priceNote)+'. Drag to match your&nbsp;business.</small>');
  all('Your top 5 prompts','Your '+D.vp.length+' prompts');all('||window.VP.length>=10){','){');all('q=null;if(q){','q=null;if(0){');all("(location.hash||'#find')","(location.hash||'#status')");
  all('Volume: Semrush US, Nov 2026','Volume: '+(D.volSrc||'Google Ads data')+', '+esc(D.updated.replace(/ \d+,/,'')));all('via Semrush US','via DataForSEO');
  all(",url:'/quiktox/',self:1}",",url:'/quiktox/'}");
