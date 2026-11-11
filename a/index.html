@@ -78,8 +78,9 @@ function fill(T,D){
  all("value=\"199\"",'value="'+D.rpc+'"');all('id="vrpv">$199<','id="vrpv">$'+N(D.rpc)+'<');
  all("business:'QUIKTOX'","business:"+J(D.name).replace(/'/g,"\\'").replace(/^"|"$/g,"'"));
  all('QUIKTOX proposal',D.name.replace(/['\\]/g,'')+' proposal');all('proposal for QUIKTOX','proposal for '+D.name.replace(/['\\]/g,''));
- all('src="map-bg.html','src="/map-bg.html');all("(location.hash||'#find')","(location.hash||'#status')");
- all('Volume: Semrush US, Nov 2026','Volume: Google Ads data, '+esc(D.updated.replace(/ \d+,/,'')));all('via Semrush US','via DataForSEO');
+ all('src="map-bg.html','src="/map-bg.html');
+ all('Your top 5 prompts','Your top '+D.vp.length+' prompts');all('window.VP.length>=10','window.VP.length>=15');all('q.disabled=n>=10','q.disabled=n>=15');all("(location.hash||'#find')","(location.hash||'#status')");
+ all('Volume: Semrush US, Nov 2026','Volume: '+(D.volSrc||'Google Ads data')+', '+esc(D.updated.replace(/ \d+,/,'')));all('via Semrush US','via DataForSEO');
  all(",url:'/quiktox/',self:1}",",url:'/quiktox/'}");
  /* chart months: series start month (m0, 0-based) and year (y0) */
  all('(10+i)','('+D.m0+'+i)');all('2024+Math.floor(','('+D.y0+')+Math.floor(');
