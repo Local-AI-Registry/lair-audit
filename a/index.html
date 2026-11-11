@@ -49,6 +49,7 @@ const J=v=>JSON.stringify(v).replace(/</g,'\\u003c');
 
 /* ---------- fill the template regions from audit data ---------- */
 function fill(T,D){
+ {const pr=D.vp.filter(p=>p[3]),pc=pr.reduce((a,p)=>a+p[1],0);if(pc)D.rpc=Math.round(pr.reduce((a,p)=>a+p[1]*p[3],0)/pc)}
  const reg=(k,v,js)=>{const a=js?'/*@'+k+'*/':'<!--@'+k+'-->',b=js?'/*@/'+k+'*/':'<!--@/'+k+'-->';const i=T.indexOf(a),j=T.indexOf(b);if(i<0||j<0)throw new Error('template region missing: '+k);T=T.slice(0,i)+v+T.slice(j+b.length)};
  const all=(a,b)=>{T=T.split(a).join(b)};
  const N=n=>Math.round(n).toLocaleString('en-US'),nm=esc(D.name),sc=D.score,X=v=>20+3*Math.max(0,Math.min(100,v));

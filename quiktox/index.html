@@ -1037,7 +1037,8 @@ th.r .sth{flex-direction:row}
 .vtb{width:100%;border-collapse:collapse;font:500 14px var(--fb);color:var(--body)}
 .vtb th{font:700 10.5px var(--fu);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:8px 8px 8px 0;border-bottom:1px solid var(--rule)}.vtb th small{display:block;font-weight:600;letter-spacing:0;text-transform:none}
 .vtb td{padding:11px 8px 11px 0;border-bottom:1px solid var(--rule);font-variant-numeric:tabular-nums}.vtb td:first-child{color:var(--ink);font-weight:600}
-.vtb .r{text-align:right}.vtb td b{color:var(--ok)}
+.vtb .r{text-align:right}
+.vtb .vpc{color:var(--muted)}@media (max-width:520px){.vtb th{white-space:normal;vertical-align:bottom}.vtb th.vpc{width:64px}.vtb td:first-child{min-width:0;word-break:normal}.vtb th:last-child{width:62px;padding-left:8px}.vtb th.vpc{padding-left:6px}}.vtb td b{color:var(--ok)}
 .vtb tfoot th,.vtb tfoot td{border-bottom:0;border-top:2px solid var(--ink);padding-top:12px;font:800 14px var(--fu);color:var(--ink);letter-spacing:0;text-transform:none}.vtb tfoot b{color:var(--ok);font-size:16px}
 .vtb td:last-child,.vtb th:last-child{width:28px;padding-right:0}
 .vrm{width:24px;height:24px;border:0;border-radius:50%;background:var(--bg);color:var(--muted);cursor:pointer;font-size:15px;line-height:1}
@@ -1421,7 +1422,7 @@ strong.bw{font-weight:800;color:var(--ink)}
 <p class="k vk2">What we assume</p>
 <div class="asm asl"><div><b>0.9%</b><span>of searchers become customers</span><small>Out of every 1,000 searchers, about 60 get you as AI's answer and about 9 of them book (6% × 15% =&nbsp;0.9%)</small></div><div><b id="vrpv">$199</b><span>average revenue per customer</span><input type="range" id="vrpc" min="50" max="2500" step="10" value="199" aria-label="Revenue per new customer"><small>Drag to match your&nbsp;business.</small></div></div></section>
 <section class="card"><p class="k">Your top 5 prompts and what they're worth</p>
-<div class="vtw"><table class="vtb"><thead><tr><th>Prompt</th><th class="r">Searches/mo</th><th class="r">Customers<small>× 0.9%</small></th><th class="r">Revenue/mo<small id="vth">× $199</small></th></tr></thead><tbody id="vtb"></tbody><tfoot><tr><th>Total</th><td class="r" id="vts">0</td><td class="r" id="vtc">0</td><td class="r"><b id="vtr">$0</b></td></tr></tfoot></table></div>
+<div class="vtw"><table class="vtb"><thead><tr><th>Prompt</th><th class="r">Searches/mo</th><th class="r">Customers<small>× 0.9%</small></th><th class="r vpc">Per customer<small>avg <span id="vth">$199</span></small></th><th class="r">Revenue/&#8203;mo</th></tr></thead><tbody id="vtb"></tbody><tfoot><tr><th>Total</th><td class="r" id="vts">0</td><td class="r" id="vtc">0</td><td class="r vpc" id="vtp">$0</td><td class="r"><b id="vtr">$0</b></td></tr></tfoot></table></div>
 
 <div class="mtr2"><div><span>Added revenue</span><b id="vtr2">$0<small>/mo</small></b></div><button class="cta coral go" data-go="experts" type="button">See who does the work &rarr;</button></div>
 <p class="src">Volume: Semrush US, Nov 2026. Reach and booking rates are estimates. Uses your average revenue per customer, so this is the average&nbsp;case.</p></section>
@@ -2048,8 +2049,11 @@ document.getElementById('hub').innerHTML=HUB();
 
 window.RPC=199;window.RATE=0.009;
 window.VP=[["Best Botox in Newport Beach", 1600], ["Where to get Botox in Orange County", 1000], ["Botox in Costa Mesa", 260], ["Botox in Santa Ana", 100], ["Best med spa in Costa Mesa", 90]];window.SRCH=window.VP.reduce((a,p)=>a+p[1],0);
-window.VUP=()=>{const r=window.RPC,M=n=>'$'+Math.round(n).toLocaleString('en-US'),g=id=>document.getElementById(id);const pv=g('vrpv');if(pv)pv.textContent=M(r);const sl=g('vrpc');if(sl&&+sl.value!==r)sl.value=r;if(g('vth'))g('vth').textContent='× '+M(r);
- const tb=g('vtb');if(!tb)return;let ts=0,tc=0,tr=0;tb.innerHTML=window.VP.map((p,k)=>{const c=p[1]*window.RATE,v=c*r;ts+=p[1];tc+=c;tr+=v;return '<tr><td>'+esc(p[0])+'</td><td class="r">'+p[1].toLocaleString('en-US')+'</td><td class="r">'+c.toFixed(1)+'</td><td class="r"><b>'+M(v)+'</b></td></tr>'}).join('');
+window.VUP=()=>{const r=window.RPC,M=n=>'$'+Math.round(n).toLocaleString('en-US'),g=id=>document.getElementById(id);const pv=g('vrpv');if(pv)pv.textContent=M(r);const sl=g('vrpc');if(sl&&+sl.value!==r)sl.value=r;if(g('vth'))g('vth').textContent=M(r);
+ const tb=g('vtb');if(!tb)return;let ts=0,tc=0,tr=0;
+ /* each search can carry its own price (p[3]); prices scale together so the customer-weighted average always equals the average above */
+ const pr=window.VP.filter(p=>p[3]),pc=pr.reduce((a,p)=>a+p[1],0),A0=pc?pr.reduce((a,p)=>a+p[1]*p[3],0)/pc:r,kf=r/A0,PER=p=>p[3]?p[3]*kf:r;
+ tb.innerHTML=window.VP.map((p,k)=>{const c=p[1]*window.RATE,v=c*PER(p);ts+=p[1];tc+=c;tr+=v;return '<tr><td>'+esc(p[0])+'</td><td class="r">'+p[1].toLocaleString('en-US')+'</td><td class="r">'+c.toFixed(1)+'</td><td class="r vpc">'+M(PER(p))+'</td><td class="r"><b>'+M(v)+'</b></td></tr>'}).join('');if(g('vtp'))g('vtp').textContent=M(r);
  g('vts').textContent=ts.toLocaleString('en-US');g('vtc').textContent=Math.round(tc);tr=Math.floor(ts*window.RATE*r);g('vtr').textContent=M(tr);g('vtr2').innerHTML=M(tr)+'<small>/mo</small>';
  const n=window.VP.length,q=null;if(q){q.disabled=n>=10;g('van').disabled=n>=10;g('vadm').textContent=n>=10?'You\'ve added the most prompts (10).':(10-n)+' more prompts can be added.'}};
 (()=>{const f=document.getElementById('vadd');if(!f)return;const g=id=>document.getElementById(id);
