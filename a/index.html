@@ -49,6 +49,7 @@ const J=v=>JSON.stringify(v).replace(/</g,'\\u003c');
 
 /* ---------- fill the template regions from audit data ---------- */
 function fill(T,D){
+ {const pr=D.vp.filter(p=>p[3]),pc=pr.reduce((a,p)=>a+p[1],0);if(pc)D.rpc=Math.round(pr.reduce((a,p)=>a+p[1]*p[3],0)/pc)}
  const reg=(k,v,js)=>{const a=js?'/*@'+k+'*/':'<!--@'+k+'-->',b=js?'/*@/'+k+'*/':'<!--@/'+k+'-->';const i=T.indexOf(a),j=T.indexOf(b);if(i<0||j<0)throw new Error('template region missing: '+k);T=T.slice(0,i)+v+T.slice(j+b.length)};
  const all=(a,b)=>{T=T.split(a).join(b)};
  const N=n=>Math.round(n).toLocaleString('en-US'),nm=esc(D.name),sc=D.score,X=v=>20+3*Math.max(0,Math.min(100,v));
@@ -78,8 +79,9 @@ function fill(T,D){
  all("value=\"199\"",'value="'+D.rpc+'"');all('id="vrpv">$199<','id="vrpv">$'+N(D.rpc)+'<');
  all("business:'QUIKTOX'","business:"+J(D.name).replace(/'/g,"\\'").replace(/^"|"$/g,"'"));
  all('QUIKTOX proposal',D.name.replace(/['\\]/g,'')+' proposal');all('proposal for QUIKTOX','proposal for '+D.name.replace(/['\\]/g,''));
- all('src="map-bg.html','src="/map-bg.html');all("(location.hash||'#find')","(location.hash||'#status')");
- all('Volume: Semrush US, Nov 2026','Volume: Google Ads data, '+esc(D.updated.replace(/ \d+,/,'')));all('via Semrush US','via DataForSEO');
+ all('src="map-bg.html','src="/map-bg.html');
+ all('Your top 5 prompts','Your '+D.vp.length+' prompts');all('||window.VP.length>=10){','){');all('q=null;if(q){','q=null;if(0){');all("(location.hash||'#find')","(location.hash||'#status')");
+ all('Volume: Semrush US, Nov 2026','Volume: '+(D.volSrc||'Google Ads data')+', '+esc(D.updated.replace(/ \d+,/,'')));all('via Semrush US','via DataForSEO');
  all(",url:'/quiktox/',self:1}",",url:'/quiktox/'}");
  /* chart months: series start month (m0, 0-based) and year (y0) */
  all('(10+i)','('+D.m0+'+i)');all('2024+Math.floor(','('+D.y0+')+Math.floor(');
