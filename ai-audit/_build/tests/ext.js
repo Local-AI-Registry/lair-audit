@@ -1,0 +1,6 @@
+const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({args:['--use-gl=swiftshader']});const errs=[];const D=__dirname+'/shots/';
+for(const s of ['esthetixmd-bend','elevate-cannabis-belton','quiktox']){const p=await b.newPage({viewport:{width:1440,height:900}});p.on('pageerror',e=>errs.push(s+': '+e.message));
+await p.goto('http://localhost:9314/ai-audit/?b='+s+'#status');await p.waitForTimeout(1800);await p.screenshot({path:D+'st_'+s.slice(0,5)+'.png'});
+await p.goto('http://localhost:9314/ai-audit/?b='+s+'#value');await p.waitForTimeout(1200);console.log(s,await p.evaluate(()=>[Math.round(window.VALUE()),Math.round(window.CUST())]));
+await p.goto('http://localhost:9314/ai-audit/?b='+s+'#audit');await p.waitForTimeout(1200);const n=await p.$$eval('#au-l li[data-i]',e=>e.length);let o=[];for(let i=0;i<n;i++){await p.evaluate(i=>document.querySelector('#au-l li[data-i="'+i+'"]').click(),i);o.push(await p.evaluate(()=>{const r=document.querySelector('#au-r');return [r.querySelectorAll('.fch').length,(r.innerText.match(/closest competitors/ig)||[]).length]}))}console.log(JSON.stringify(o));await p.close()}
+console.log('errors',errs.join(';')||'none');await b.close()})();
