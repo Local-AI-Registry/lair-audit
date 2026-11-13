@@ -465,11 +465,11 @@ addEventListener('resize',()=>scenes.forEach(s=>s.resize()));
 const _v=new THREE.Vector3();
 function lab(o,html){const d=document.createElement('div');d.className='lab';d.innerHTML='<span>'+html+'</span>';o.wrap.appendChild(d);d.s=d.firstChild;d.wd=0;o.labs.push(d);return d}
 function setLab(d,html){if(d.html===html)return;d.html=html;d.s.innerHTML=html;d.wd=0}
-function put(o,d,v,show=true){
+function put(o,d,v,show=true,minX=0){
   if(!show){d.style.visibility='hidden';return}
   _v.copy(v).project(o.cam);if(_v.z>1){d.style.visibility='hidden';return}
   if(!d.wd)d.wd=d.s.offsetWidth||120;
-  let x=(_v.x*.5+.5)*o.w,y=(-_v.y*.5+.5)*o.h;const hw=d.wd/2+10;x=Math.max(hw,Math.min(o.w-hw,x));
+  let x=(_v.x*.5+.5)*o.w,y=(-_v.y*.5+.5)*o.h;if(minX&&x<o.w*minX){d.style.visibility='hidden';return}const hw=d.wd/2+10;x=Math.max(hw,Math.min(o.w-hw,x));
   d.style.visibility='';d.style.transform=`translate(${x}px,${y}px)`;
 }
 
@@ -629,7 +629,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
       }
     }
   };
-  o.labels=()=>{put(o,spaL,V(0,4.4,0));comps.forEach(c=>put(o,c.l,c.v,!o.mob));pool.forEach(d=>{if(d.p)put(o,d,V(d.p.position.x,1.9,d.p.position.z))})};
+  o.labels=()=>{put(o,spaL,V(0,4.4,0));comps.forEach(c=>put(o,c.l,c.v,!o.mob,.46));pool.forEach(d=>{if(d.p)put(o,d,V(d.p.position.x,1.9,d.p.position.z),true,o.mob?0:.46)})};
 })();
 
 /* ===================== 2. DEMAND MAP (hex columns) ===================== */
