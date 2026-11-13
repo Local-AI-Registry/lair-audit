@@ -1,0 +1,139 @@
+{
+ "truth": {
+  "name": "Spiritleaf Salisbury",
+  "address": "115 Tisbury St #130, Sherwood Park, AB T8B 0B7",
+  "phone": "(587) 269-5153",
+  "hours": "10am-10pm daily"
+ },
+ "dirs": [
+  {
+   "d": "Cannabis Promotions",
+   "found": true,
+   "url": "https://cannabispromotions.com",
+   "name": "Spiritleaf Salisbury",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": true,
+   "note": "115 Tisbury St #130; Tuesday 10am-10pm shown. Phone not visible."
+  },
+  {
+   "d": "Maptons",
+   "found": true,
+   "url": "https://cg.maptons.com",
+   "name": "Spiritleaf Salisbury (Sherwood Park)",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "115 Tisbury St #130, +1 587-269-5153. Hours not visible."
+  },
+  {
+   "d": "Leafly",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Salisbury listing found; Leafly only shows the Brentwood Blvd store."
+  },
+  {
+   "d": "Weedmaps",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Yelp",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Salisbury listing found; Yelp only shows the Brentwood Blvd store."
+  },
+  {
+   "d": "Facebook",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Facebook page for this store found in Google searches."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "MapQuest",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Where's Weed",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Best Bang for Your Bud",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  }
+ ],
+ "summary": {
+  "found": 2,
+  "checked": 11,
+  "exact_match": 2,
+  "mismatches": 0
+ },
+ "status": "Failed",
+ "issue": "This store is missing from 9 of 11 directories, including Leafly, Weedmaps and Yelp, so AI has little to confirm it exists."
+}

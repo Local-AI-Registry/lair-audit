@@ -1,0 +1,1250 @@
+{
+ "slug": "spiritleaf-sherwood-park",
+ "biz": {
+  "name": "SPIRITLEAF",
+  "full": "Spiritleaf",
+  "short": "Spiritleaf Sherwood Park",
+  "city": "Sherwood Park, AB",
+  "addr": "52 Brentwood Blvd #7, Sherwood Park, AB T8A 2H6",
+  "phone": "(780) 449-5180",
+  "site": "spiritleaf.ca/locations/sherwood-park-south/",
+  "domain": "spiritleaf.ca",
+  "rating": 4.9,
+  "reviews": 275,
+  "lat": 53.515,
+  "lng": -113.294,
+  "place_id": "ChIJQTBJ2G4XoFMRba_tgEBmZHQ",
+  "svc": "dispensary",
+  "area": [
+   "Sherwood Park",
+   "Strathcona County, Alberta"
+  ],
+  "hours": [
+   [
+    600,
+    1320
+   ],
+   [
+    2040,
+    2760
+   ],
+   [
+    3480,
+    4200
+   ],
+   [
+    4920,
+    5640
+   ],
+   [
+    6360,
+    7080
+   ],
+   [
+    7800,
+    8520
+   ],
+   [
+    9240,
+    9960
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "Pop's Cannabis Co.",
+   "d": "popscannabis.ca",
+   "rating": 4.8,
+   "reviews": 144
+  },
+  {
+   "n": "Plantlife Cannabis",
+   "d": "plantlifecannabis.com",
+   "rating": 4.7,
+   "reviews": 159
+  },
+  {
+   "n": "Canna Cabana",
+   "d": "cannacabana.com",
+   "rating": 4.0,
+   "reviews": 67
+  }
+ ],
+ "rd": [
+  {
+   "q": "dispensary sherwood park",
+   "v": 480,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "weed store",
+   "v": 12100,
+   "t": "Transaction",
+   "g": "#9",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "v": 140,
+   "t": "Transaction",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "weed sherwood park",
+   "v": 20,
+   "t": "Transaction",
+   "g": "#9",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "sherwood park dispensary",
+   "v": 110,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary",
+   "v": 9900,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "spiritleaf sherwood park",
+   "v": 210,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 26,
+  "answers_total": 35,
+  "brand_searches": 1
+ },
+ "traffic": [
+  {
+   "n": "SPIRITLEAF",
+   "me": true,
+   "v": [
+    30055,
+    29757,
+    29470,
+    29931,
+    33140,
+    30796,
+    31234,
+    31659,
+    31865,
+    36814,
+    42302,
+    39660
+   ]
+  },
+  {
+   "n": "Pop's Cannabis Co.",
+   "v": [
+    7969,
+    8393,
+    9532,
+    10210,
+    15451,
+    13446,
+    11759,
+    30510,
+    30374,
+    25491,
+    16457,
+    15901
+   ]
+  },
+  {
+   "n": "Plantlife Cannabis",
+   "v": [
+    11191,
+    11375,
+    11388,
+    11331,
+    11623,
+    11146,
+    10904,
+    9130,
+    8012,
+    7451,
+    6701,
+    9691
+   ]
+  },
+  {
+   "n": "Canna Cabana",
+   "v": [
+    146985,
+    151066,
+    150848,
+    156462,
+    162310,
+    182192,
+    174277,
+    174737,
+    172903,
+    168415,
+    168338,
+    135344
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 67,
+  "avg": 34,
+  "top": 50
+ },
+ "price": {
+  "value": 22.31,
+  "currency": "CAD",
+  "label": "average cannabis item price, Alberta (Oct 2026)",
+  "source": "Headset",
+  "url": "https://www.headset.io/markets/ab"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Google name, address and phone match the store; 1 category only"
+    ],
+    [
+     "Directory listings",
+     "Leafly page for this store is not claimed"
+    ]
+   ],
+   "issue": "Your Google profile links to a store page that answers search engines and AI crawlers with a page not found error, and your Leafly listing is unclaimed.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google name",
+      "Spiritleaf (matches the store)",
+      "ok"
+     ],
+     [
+      "Google categories",
+      "1 (Cannabis store). Plantlife lists 3",
+      "warn"
+     ],
+     [
+      "Google description",
+      "Yes, but it opens with an email address",
+      "warn"
+     ],
+     [
+      "Website link on Google",
+      "spiritleaf.ca/locations/sherwood-park-south/ returns error 404 before a script redirects",
+      "bad"
+     ],
+     [
+      "Leafly listing",
+      "5.0 stars from 11 reviews, shows 'claim your store'",
+      "warn"
+     ],
+     [
+      "Yelp listing",
+      "Found, 5.0 from 2 reviews, ranks on Google",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "CATEGORIES ON GOOGLE PROFILE",
+     "d": [
+      [
+       "SPIRITLEAF",
+       1
+      ],
+      [
+       "POP'S",
+       1
+      ],
+      [
+       "PLANTLIFE",
+       3
+      ],
+      [
+       "CANNA CABANA",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Needs work",
+   "parts": [
+    [
+     "News coverage",
+     "1 local article found, from 2019"
+    ]
+   ],
+   "issue": "The only news story we found about this store is its 2019 grand opening in Sherwood Park News.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Sherwood Park News",
+      "'Fifth cannabis store opens in the Park', Sep 10, 2019",
+      "ok"
+     ],
+     [
+      "Alberta Living Wage Network",
+      "Story on the store's living wage policy (nonprofit site, not a news outlet)",
+      "warn"
+     ],
+     [
+      "News since 2020",
+      "None found",
+      "bad"
+     ],
+     [
+      "Competitors",
+      "No local news found for Pop's, Plantlife or Canna Cabana Sherwood Park stores",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Needs work",
+   "parts": [
+    [
+     "YouTube",
+     "1 third party video mentions the store"
+    ]
+   ],
+   "issue": "YouTube has no video made by or about this store except a 2020 local shopping roundup.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Search 'Spiritleaf Sherwood Park'",
+      "Top results are chain videos from other cities (Kingston, Scarborough, Penticton)",
+      "warn"
+     ],
+     [
+      "Store video",
+      "'Shop Local Sherwood Park, July 2020' (103 views) mentions Spiritleaf",
+      "warn"
+     ],
+     [
+      "Store's own channel",
+      "None found",
+      "bad"
+     ],
+     [
+      "Competitors",
+      "0 videos found for the 3 competitor stores",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Store website",
+     "spiritleafsherwoodpark.ca ranks for 31 searches"
+    ],
+    [
+     "Local map results",
+     "Not in the map pack for any of 6 non-brand searches; #2 for 'best dispensary sherwood park'"
+    ]
+   ],
+   "issue": "Spiritleaf is missing from the Google map pack on all 6 everyday searches we checked, like 'weed store' and 'dispensary sherwood park', even with the most reviews in town.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Map pack, 6 non-brand searches",
+      "Not shown on any of them",
+      "bad"
+     ],
+     [
+      "Map pack, 'best dispensary sherwood park'",
+      "#2",
+      "ok"
+     ],
+     [
+      "Organic, 'weed store'",
+      "#9 (spiritleaf.ca menu page)",
+      "warn"
+     ],
+     [
+      "Organic, 'weed sherwood park'",
+      "#9 (spiritleafsherwoodpark.ca)",
+      "warn"
+     ],
+     [
+      "Store site spiritleafsherwoodpark.ca",
+      "31 ranking searches, 3 in the top 10, about 30 visits a month",
+      "bad"
+     ],
+     [
+      "Chain site spiritleaf.ca",
+      "2,262 ranking searches across all Canadian stores",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NON-BRAND SEARCHES WITH A MAP PACK SPOT (OF 6)",
+     "d": [
+      [
+       "SPIRITLEAF",
+       0
+      ],
+      [
+       "POP'S",
+       2
+      ],
+      [
+       "PLANTLIFE",
+       2
+      ],
+      [
+       "CANNA CABANA",
+       3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Location page",
+     "Error 404 to crawlers"
+    ],
+    [
+     "Store website",
+     "Page title is just 'Home'"
+    ]
+   ],
+   "issue": "The page Google sends shoppers to returns an error to crawlers, and the store's own site has no page description, a one word title and an old CBD 'new year' post on the homepage.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google profile link",
+      "HTTP 404, then a script redirect to the menu page",
+      "bad"
+     ],
+     [
+      "spiritleaf.ca load time",
+      "1.25 s largest paint (Lighthouse desktop)",
+      "ok"
+     ],
+     [
+      "spiritleafsherwoodpark.ca load time",
+      "1.10 s largest paint (Lighthouse desktop)",
+      "ok"
+     ],
+     [
+      "spiritleafsherwoodpark.ca title",
+      "'Home' (4 characters), no meta description",
+      "bad"
+     ],
+     [
+      "Footer copyright",
+      "Store site shows no year; chain site shows 2026",
+      "warn"
+     ],
+     [
+      "Server",
+      "spiritleaf.ca on Shopify behind Cloudflare; store site on a website builder (nginx)",
+      "ok"
+     ],
+     [
+      "Business schema",
+      "Chain homepage has Organization schema only; store site has none",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (LARGEST PAINT)",
+     "d": [
+      [
+       "SPIRITLEAF",
+       1.25
+      ],
+      [
+       "CANNA CABANA",
+       7.84
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google reviews",
+     "275 reviews, 4.9 stars"
+    ]
+   ],
+   "issue": "Your 275 reviews at 4.9 stars beat every nearby competitor, which is the best asset to build AI visibility on.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google rating",
+      "4.9 from 275 reviews",
+      "ok"
+     ],
+     [
+      "Rating split",
+      "258 five star, 5 one star",
+      "ok"
+     ],
+     [
+      "Leafly",
+      "5.0 from 11 reviews",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "5.0 from 2 reviews",
+      "warn"
+     ],
+     [
+      "Top review themes",
+      "Fun team, customer loyalty, strains, passionate staff",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "SPIRITLEAF",
+       275
+      ],
+      [
+       "POP'S",
+       144
+      ],
+      [
+       "PLANTLIFE",
+       159
+      ],
+      [
+       "CANNA CABANA",
+       67
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Photos",
+     "50"
+    ],
+    [
+     "Profile details",
+     "14 attributes filled"
+    ]
+   ],
+   "issue": "The profile is fuller than competitors, but it has only one category and its website link points to a broken URL.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos",
+      "50 (Pop's 77, Plantlife 17, Canna Cabana 10)",
+      "ok"
+     ],
+     [
+      "Attributes",
+      "14: delivery, curbside, pickup, accessibility, payments, parking",
+      "ok"
+     ],
+     [
+      "Hours",
+      "10am to 10pm daily",
+      "ok"
+     ],
+     [
+      "Categories",
+      "1",
+      "warn"
+     ],
+     [
+      "Claimed",
+      "Yes",
+      "ok"
+     ],
+     [
+      "Website link",
+      "Points to a URL that returns 404 to crawlers",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "SPIRITLEAF",
+       50
+      ],
+      [
+       "POP'S",
+       77
+      ],
+      [
+       "PLANTLIFE",
+       17
+      ],
+      [
+       "CANNA CABANA",
+       10
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Failed",
+   "parts": [
+    [
+     "Chain homepage",
+     "1 of 9 images has useful alt text"
+    ],
+    [
+     "Store website",
+     "0 of 7 images have alt text"
+    ]
+   ],
+   "issue": "Almost no images describe what they show, so search engines and AI cannot read them.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "spiritleaf.ca homepage",
+      "1 of 9 images with alt text (11%)",
+      "bad"
+     ],
+     [
+      "spiritleafsherwoodpark.ca",
+      "0 of 7 images with alt text",
+      "bad"
+     ],
+     [
+      "Example file names",
+      "img_1.jpg, card_3.jpg, U6I2505-1-4-2400x16132.jpg",
+      "bad"
+     ],
+     [
+      "Canna Cabana homepage",
+      "185 of 314 images with alt text (59%)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 1,
+     "b": 8,
+     "la": "WITH ALT TEXT",
+     "lb": "MISSING",
+     "cap": "SPIRITLEAF.CA HOMEPAGE IMAGES"
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Chain site",
+     "1,200 linking websites"
+    ],
+    [
+     "Store site",
+     "No links found"
+    ]
+   ],
+   "issue": "Links point to the national chain site, and 37% of them come from spammy sites; the store's own site has no links in the index.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "spiritleaf.ca linking websites",
+      "1,200",
+      "ok"
+     ],
+     [
+      "spiritleaf.ca spam score of links",
+      "37%",
+      "bad"
+     ],
+     [
+      "spiritleafsherwoodpark.ca",
+      "No backlink data found",
+      "bad"
+     ],
+     [
+      "Competitor domains",
+      "Pop's 488, Plantlife 542, Canna Cabana 2,088",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "WEBSITES LINKING TO EACH DOMAIN",
+     "d": [
+      [
+       "SPIRITLEAF",
+       1200
+      ],
+      [
+       "POP'S",
+       488
+      ],
+      [
+       "PLANTLIFE",
+       542
+      ],
+      [
+       "CANNA CABANA",
+       2088
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Passed",
+   "parts": [
+    [
+     "Best of search",
+     "Shows for 'best dispensary sherwood park'"
+    ]
+   ],
+   "issue": "Spiritleaf is #2 in the map pack and on Yelp and Leafly results for 'best dispensary sherwood park'.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Map pack",
+      "#2 for 'best dispensary sherwood park'",
+      "ok"
+     ],
+     [
+      "Yelp page",
+      "#1 organic result",
+      "ok"
+     ],
+     [
+      "Leafly page",
+      "#2 organic result, 5.0 from 11 reviews",
+      "ok"
+     ],
+     [
+      "Yelp 'best' lists AI uses",
+      "Named in Yelp lists cited by Claude",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Passed",
+   "parts": [
+    [
+     "AI answers",
+     "22 of 24 non-brand answers name you"
+    ],
+    [
+     "Accuracy",
+     "Some answers give wrong Sunday hours"
+    ]
+   ],
+   "issue": "AI already recommends Spiritleaf often, but ChatGPT gave Sunday hours of 11am or 12pm to 6pm, which do not match the 10am to 10pm on Google.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "ChatGPT",
+      "Named in 6 of 6 non-brand answers",
+      "ok"
+     ],
+     [
+      "Claude",
+      "Named in 6 of 6",
+      "ok"
+     ],
+     [
+      "Gemini",
+      "Named in 5 of 6",
+      "ok"
+     ],
+     [
+      "Perplexity",
+      "Named in 5 of 6",
+      "ok"
+     ],
+     [
+      "Google AI Overview",
+      "Shown on 2 searches; content could not be read",
+      "warn"
+     ],
+     [
+      "Hours accuracy",
+      "ChatGPT listed Sunday 11am to 10pm and 12pm to 6pm",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH STORE (OF 24)",
+     "d": [
+      [
+       "SPIRITLEAF",
+       22
+      ],
+      [
+       "POP'S",
+       7
+      ],
+      [
+       "PLANTLIFE",
+       16
+      ],
+      [
+       "CANNA CABANA",
+       6
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     1,
+     1,
+     3,
+     1
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     1,
+     0,
+     0,
+     0
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     2262,
+     1794,
+     508,
+     3194
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     549,
+     294,
+     92,
+     1176
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     1.25,
+     null,
+     null,
+     7.84
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     93.41,
+     null,
+     null,
+     93.41
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     275,
+     144,
+     159,
+     67
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.9,
+     4.8,
+     4.7,
+     4.0
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     50,
+     77,
+     17,
+     10
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     14,
+     2,
+     10,
+     7
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     11,
+     null,
+     null,
+     59
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     1200,
+     488,
+     542,
+     2088
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     37,
+     52,
+     14,
+     15
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best dispensary Sherwood Park”",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     22,
+     7,
+     16,
+     6
+    ],
+    "good": 18,
+    "ok": 12,
+    "src": "Our AI scan"
+   }
+  ]
+ },
+ "notes": [
+  "Listing data last updated 2026-09-25 (272 reviews); live Google SERP on 2026-11-12 shows 4.9 stars and 275 reviews, used here. Competitor ratings and review counts also from the live SERP (Canna Cabana listing data showed 3.8/55, SERP shows 4.0/67).",
+  "All four domains are chain domains: spiritleaf.ca, popscannabis.ca, plantlifecannabis.com and cannacabana.com traffic, ranking and backlink numbers cover every store in the chain, not the Sherwood Park location. The store also runs its own site, spiritleafsherwoodpark.ca: 31 ranking searches, 3 in top 10, estimated 30 visits/month, no backlinks in the index.",
+  "Traffic is DataForSEO estimated monthly organic visits in Canada, Nov 2025 to Oct 2026. The live overview for spiritleaf.ca shows 18,052 for the current month, lower than the Oct 2026 historical figure of 39,660.",
+  "The Google profile website URL (spiritleaf.ca/locations/sherwood-park-south/) returned HTTP 404 in a plain fetch; with JavaScript on it lands on spiritleaf.ca/collections/spiritleaf-sherwood-park (200). Not checked in a human browser session; our egress proxy blocked direct fetches, so this came from DataForSEO's crawler.",
+  "Search volumes are Google Ads, Alberta level. 'weed store' (12,100) and 'dispensary' (9,900) are province-wide volumes, not Sherwood Park only. Google Ads returned no volume for 'near me' cannabis searches (likely restricted), so they were not used.",
+  "Google SERPs were run with location 'Sherwood Park, Alberta, Canada' (the SERP tool has no coordinate option) and returned about 10 organic results despite depth 20. 'dispensary' searches in Sherwood Park also surface Dispensaries Ltd., a pharmacy.",
+  "Google AI Overviews appeared on 'dispensary sherwood park', 'dispensary open now' and 'best dispensary sherwood park', but the tool returned them as asynchronous with no content, so all AI Overview slots are scored 0 (not measured, not confirmed absent). answers_naming_you = 22 non-brand LLM answers + 4 brand answers.",
+  "Sherwood Park has 2 other Spiritleaf stores named in AI answers (Salisbury at 115 Tisbury St; Baseline Rd). We counted an answer only when it named Spiritleaf in Sherwood Park; most cited 52 Brentwood Blvd. Claude's answers cited a Yelp 'Spiritleaf - Sherwood Park' page that is this store.",
+  "Competitor Google top 20 counts: Canna Cabana's 'weed store' organic hit is cannacabana.com/pages/store/sherwood-park, which may be its Fir St store rather than the Sherwood Dr store. Some AI answers named Canna Cabana's Fir St store; counted as Canna Cabana mentions.",
+  "Pop's and Plantlife homepages blocked the DataForSEO crawler (HTTP 403), so their load time, on-page score and alt text are null. Load times are Lighthouse desktop largest contentful paint.",
+  "Competitors chosen by local pack appearances across the 6 non-brand searches: Canna Cabana (Sherwood Dr) 3, Pop's 2, Plantlife 2, Fire & Flower Baseline 2, Kurve 2, Value Buds Baseline 2. Plantlife chosen over Fire & Flower on review count (159 vs 121). FOUR20 appeared in 1 pack.",
+  "Price: no cited average spend per visit for Alberta or Canada was found. Closest figure: Headset reports the Alberta average cannabis item price at $22.31 in October 2026 (headset.io/markets/ab), which is per item, not per visit, so price is left null.",
+  "PR count is news outlets only. Canna Cabana Sherwood Park had a High Tide press release on newswire.ca (not counted as news)."
+ ],
+ "vp_keywords": [
+  {
+   "q": "dispensary sherwood park",
+   "v": 480
+  },
+  {
+   "q": "weed sherwood park",
+   "v": 20
+  }
+ ],
+ "priceNote": "DRAG TO MATCH YOUR STORE. STARTS AT THE AVERAGE PRICE OF ONE CANNABIS ITEM IN ALBERTA, C$22.31 (<a href=\"https://www.headset.io/markets/ab\" target=\"_blank\" rel=\"noopener\">HEADSET, OCT 2026</a>). MOST VISITS BUY MORE THAN ONE ITEM.",
+ "volNote": "VOLUME: GOOGLE ADS AND DATAFORSEO, NOV 2026, SHERWOOD PARK SEARCHES ONLY, WITH 45% COUNTED AS AI SEARCHES (BRIGHTLOCAL 2026).",
+ "match": "spirit\\s*leaf",
+ "cq": "cannabis store",
+ "movie_qs": [
+  "best dispensary in sherwood park",
+  "weed store open now",
+  "dispensary near me with deals",
+  "who has the best reviews?"
+ ]
+}

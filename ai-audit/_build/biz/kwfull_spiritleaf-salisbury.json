@@ -1,0 +1,562 @@
+{
+ "locations_used": [
+  "Sherwood Park,Alberta,Canada"
+ ],
+ "rows": [
+  {
+   "q": "dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 110
+  },
+  {
+   "q": "dispensaries",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 110
+  },
+  {
+   "q": "weed dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "marijuana dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "recreational dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed store",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 210
+  },
+  {
+   "q": "weed shop",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "pot shop",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "cannabis store",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis shop",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "marijuana store",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "marijuana",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "thc",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 20
+  },
+  {
+   "q": "cbd",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensaries near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed store near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis store near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "pot shop near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 20
+  },
+  {
+   "q": "best dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "best dispensary near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cheap dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cheap weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary deals",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary specials",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary deals near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "dispensary open late",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "dispensary hours",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "24 hour dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "weed delivery",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis delivery",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary delivery",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary pickup",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary menu",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "online dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "first time dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary rewards",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "edibles",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "edibles near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thc gummies",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "gummies near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thc chocolate",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "thc drinks",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thc seltzer",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "pre rolls",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "pre rolls near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "joints",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 20
+  },
+  {
+   "q": "blunts",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "flower",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 480
+  },
+  {
+   "q": "weed flower",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis flower",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "ounce of weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "eighth of weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "vape",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 320
+  },
+  {
+   "q": "thc vape",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "vape pen",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "carts",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 30
+  },
+  {
+   "q": "thc carts",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "disposable vape",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cartridges",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "concentrates",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "wax",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 30
+  },
+  {
+   "q": "shatter",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "live resin",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "rosin",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 20
+  },
+  {
+   "q": "hash",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "dabs",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thc tincture",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "topicals",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thc lotion",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "cbd gummies",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cbd oil",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 20
+  },
+  {
+   "q": "delta 8",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "delta 9",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "thca",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "thca flower",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "hemp",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "kratom",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "smoke shop",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "smoke shop near me",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 70
+  },
+  {
+   "q": "head shop",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "bongs",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "glass pipes",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "rolling papers",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 210
+  },
+  {
+   "q": "sherwood park dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 40
+  },
+  {
+   "q": "dispensaries sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 210
+  },
+  {
+   "q": "weed sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "weed store sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "sherwood park weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": 10
+  },
+  {
+   "q": "edibles sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "smoke shop sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary near sherwood park",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "strathcona county dispensary",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensaries strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "weed store strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "cannabis strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "strathcona county weed",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "edibles strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "smoke shop strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  },
+  {
+   "q": "dispensary near strathcona county",
+   "loc": "Sherwood Park,Alberta,Canada",
+   "v": null
+  }
+ ],
+ "notes": [
+  "Source: DataForSEO Google Ads search volume (kw_data_google_ads_search_volume), language en, location_code 1001841 (Sherwood Park, AB). Last 12 months Nov 2025 to Oct 2026; v = Google's reported average monthly search_volume.",
+  "Strathcona County,Alberta,Canada was REJECTED by the tool (Invalid Field: location_name, code 40501). No county-level rows recorded. Strathcona County town-modified keywords were sent under the Sherwood Park location instead; all returned null.",
+  "null = Google returned no volume (common for cannabis terms under Google Ads cannabis policy, e.g. weed, cannabis, dispensary near me, weed near me all null). Not zero, just hidden.",
+  "Likely double count: Google groups close variants. 'dispensary' and 'dispensaries' return identical 110 series; 'dispensary sherwood park' and 'dispensaries sherwood park' return identical 210 series. Do not add both of each pair when totaling.",
+  "'flower' (480) and 'vape' (320) are broad terms with mostly non-cannabis intent (florists, nicotine vapes); 'wax', 'hash', 'cartridges', 'carts' also ambiguous. Treat as context, not cannabis demand.",
+  "Several 10s are sparse (only 1 to 4 months with data, e.g. best dispensary, online dispensary, pre rolls near me, thc lotion, thca flower); Google still reports search_volume 10.",
+  "'rosin' 20 avg is driven by a one-month spike to 170 in Sep 2026.",
+  "DataForSEO account was hitting a shared 12 requests/minute limit; some calls were retried. Tool output shows max 10 keywords per call, so all batches were 10 or fewer."
+ ]
+}

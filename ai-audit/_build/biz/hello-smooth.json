@@ -1,0 +1,1361 @@
+{
+ "slug": "hello-smooth",
+ "match": "hello\\s*smooth",
+ "cq": "med spa",
+ "movie_qs": [
+  "best med spa in st johns fl",
+  "botox st johns fl",
+  "laser hair removal st johns fl",
+  "who has the best reviews?"
+ ],
+ "priceNote": "",
+ "volNote": "",
+ "biz": {
+  "name": "HELLO SMOOTH",
+  "full": "Hello Smooth Med Spa",
+  "short": "Hello Smooth",
+  "city": "St Johns, FL",
+  "addr": "155 Bartram Market Dr Ste 125, St Johns, FL 32259",
+  "phone": "(904) 342-2383",
+  "site": "hellosmooth.com",
+  "domain": "hellosmooth.com",
+  "rating": 4.9,
+  "reviews": 613,
+  "lat": 30.1015761,
+  "lng": -81.5226982,
+  "place_id": "ChIJn1UyGHXN5YgR_IUcAhqEICQ",
+  "svc": "med spa",
+  "area": [
+   "St Johns",
+   "Bartram Market Drive, in the County of St. Johns"
+  ],
+  "hours": [
+   [
+    660,
+    780
+   ],
+   [
+    840,
+    1140
+   ],
+   [
+    2040,
+    2220
+   ],
+   [
+    2280,
+    2520
+   ],
+   [
+    3480,
+    3660
+   ],
+   [
+    3720,
+    3960
+   ],
+   [
+    4920,
+    5100
+   ],
+   [
+    5160,
+    5400
+   ],
+   [
+    6300,
+    6540
+   ],
+   [
+    6600,
+    6780
+   ],
+   [
+    7740,
+    7980
+   ],
+   [
+    8040,
+    8220
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "Modern Aesthetic Centers",
+   "d": "macflorida.com",
+   "rating": 5.0,
+   "reviews": 445
+  },
+  {
+   "n": "Amason Aesthetics",
+   "d": "amasonaesthetics.com",
+   "rating": 5.0,
+   "reviews": 335
+  },
+  {
+   "n": "New Beauty Company Aesthetics",
+   "d": "newbeautycompany.com",
+   "rating": 5.0,
+   "reviews": 333
+  }
+ ],
+ "rd": [
+  {
+   "q": "med spa st johns fl",
+   "v": 30,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "botox st johns fl",
+   "v": 50,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    0,
+    null,
+    1
+   ]
+  },
+  {
+   "q": "laser hair removal st johns",
+   "v": 70,
+   "t": "Commercial",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "lip filler st johns fl",
+   "v": 40,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    0,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "hydrafacial st johns",
+   "v": 50,
+   "t": "Commercial",
+   "g": "#2",
+   "r": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "hello smooth med spa",
+   "v": 320,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [
+  {
+   "q": "microneedling st johns",
+   "v": 40,
+   "t": "Commercial",
+   "c": [
+    "Modern Aesthetic Centers",
+    "Amason Aesthetics",
+    "Effect Med Spa"
+   ]
+  }
+ ],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 17,
+  "answers_total": 34,
+  "brand_searches": 1
+ },
+ "vp_keywords": [
+  {
+   "q": "st johns spa",
+   "v": 260
+  },
+  {
+   "q": "laser hair removal st johns",
+   "v": 70
+  },
+  {
+   "q": "botox st johns fl",
+   "v": 50
+  },
+  {
+   "q": "botox st johns",
+   "v": 50
+  },
+  {
+   "q": "hydrafacial st johns",
+   "v": 50
+  },
+  {
+   "q": "botox st. johns fl",
+   "v": 40
+  },
+  {
+   "q": "lip filler st johns fl",
+   "v": 40
+  },
+  {
+   "q": "microneedling st johns",
+   "v": 40
+  },
+  {
+   "q": "facials st johns",
+   "v": 40
+  },
+  {
+   "q": "botox nocatee",
+   "v": 40
+  },
+  {
+   "q": "lip filler nocatee",
+   "v": 40
+  },
+  {
+   "q": "med spa st johns fl",
+   "v": 30
+  },
+  {
+   "q": "med spa st. johns fl",
+   "v": 30
+  },
+  {
+   "q": "laser hair removal st. johns fl",
+   "v": 30
+  },
+  {
+   "q": "microneedling st johns fl",
+   "v": 30
+  },
+  {
+   "q": "med spa st johns",
+   "v": 20
+  },
+  {
+   "q": "spa st johns",
+   "v": 20
+  },
+  {
+   "q": "tattoo removal st johns",
+   "v": 20
+  },
+  {
+   "q": "laser hair removal nocatee",
+   "v": 20
+  },
+  {
+   "q": "spa nocatee",
+   "v": 20
+  },
+  {
+   "q": "nocatee spa",
+   "v": 20
+  },
+  {
+   "q": "botox saint johns",
+   "v": 10
+  },
+  {
+   "q": "botox fruit cove",
+   "v": 10
+  },
+  {
+   "q": "med spa nocatee",
+   "v": 10
+  },
+  {
+   "q": "laser hair removal fruit cove",
+   "v": 10
+  }
+ ],
+ "traffic": [
+  {
+   "n": "HELLO SMOOTH",
+   "me": true,
+   "v": [
+    566,
+    652,
+    602,
+    719,
+    782,
+    2874,
+    2888,
+    2753,
+    2644,
+    2132,
+    1955,
+    1853
+   ]
+  },
+  {
+   "n": "Modern Aesthetic Centers",
+   "v": [
+    806,
+    860,
+    997,
+    1554,
+    1414,
+    1555,
+    1341,
+    710,
+    662,
+    717,
+    686,
+    570
+   ]
+  },
+  {
+   "n": "Amason Aesthetics",
+   "v": [
+    800,
+    818,
+    938,
+    1504,
+    1963,
+    991,
+    1139,
+    1405,
+    1288,
+    5805,
+    5570,
+    5545
+   ]
+  },
+  {
+   "n": "New Beauty Company Aesthetics",
+   "v": [
+    293,
+    294,
+    407,
+    683,
+    688,
+    390,
+    318,
+    453,
+    431,
+    368,
+    352,
+    402
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 43,
+  "avg": 45,
+  "top": 74
+ },
+ "price": {
+  "value": 527,
+  "currency": "USD",
+  "label": "average spend per US med spa visit (2024)",
+  "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
+  "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Failed",
+   "parts": [
+    [
+     "Business record",
+     "Google says Hello Smooth Med Spa with a 1 to 2 PM break every day. Your website and Yelp show no break, Apple Maps and RealSelf drop \"Med Spa\" from the name, and your site code uses three names."
+    ],
+    [
+     "Directory listings",
+     "Found on 5 of 9 directories, and none matches Google exactly. RealSelf still shows an old address, 112 Bartram Oaks Walk."
+    ]
+   ],
+   "issue": "Your name, address or hours differ on every directory we could read, so AI can't tell which details are right.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google",
+      "Hello Smooth Med Spa, 155 Bartram Market Dr Ste 125",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "Name, address and phone match, hours have no lunch break",
+      "warn"
+     ],
+     [
+      "Apple Maps",
+      "Listed as \"Hello Smooth\"",
+      "warn"
+     ],
+     [
+      "RealSelf",
+      "\"Hello Smooth\" at 112 Bartram Oaks Walk Ste 103 (old address)",
+      "bad"
+     ],
+     [
+      "MapQuest",
+      "No phone or hours shown",
+      "warn"
+     ],
+     [
+      "Yellow Pages, Foursquare, BBB",
+      "No listing found",
+      "bad"
+     ],
+     [
+      "Your site code",
+      "\"Hello Smooth Medical Spa\", \"Hello Smooth Med Spa\" and \"Hello Smooth\"",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 5,
+     "b": 4,
+     "la": "FOUND",
+     "lb": "NOT FOUND OR UNREADABLE",
+     "cap": "9 DIRECTORIES CHECKED"
+    }
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Failed",
+   "issue": "We found no independent news article about Hello Smooth. Your only TV spot, on First Coast News about a year ago, promoted your annual sale event.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "News websites",
+      "No articles found",
+      "bad"
+     ],
+     [
+      "First Coast News (YouTube)",
+      "Annual event segment, about 1 year ago",
+      "warn"
+     ],
+     [
+      "Void Magazine",
+      "#1 in the 904 for laser hair removal, 2016, 2017 and 2020",
+      "warn"
+     ],
+     [
+      "Modern Aesthetic Centers",
+      "Ponte Vedra Recorder and Jacksonville Daily Record stories",
+      "warn"
+     ],
+     [
+      "New Beauty Company",
+      "St. Johns Citizen feature, January 2026",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       0
+      ],
+      [
+       "MODERN",
+       2
+      ],
+      [
+       "AMASON",
+       0
+      ],
+      [
+       "NEW BEAUTY",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Needs work",
+   "issue": "Eleven videos about you show up on YouTube, but your own newest upload is about four years old and your videos sit on two different channels.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "YouTube search, top 20",
+      "11 videos about you",
+      "ok"
+     ],
+     [
+      "Newest video from your channel",
+      "About 4 years old (2022)",
+      "bad"
+     ],
+     [
+      "Channels",
+      "@HellosmoothLaserHairRemoval and an old \"Hello Smooth Laser Studio\" channel",
+      "warn"
+     ],
+     [
+      "Modern Aesthetic Centers",
+      "19 videos, newest 1 month ago",
+      "warn"
+     ],
+     [
+      "Amason Aesthetics",
+      "16 videos, newest 2 months ago",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "VIDEOS IN TOP 20 YOUTUBE RESULTS",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       11
+      ],
+      [
+       "MODERN",
+       19
+      ],
+      [
+       "AMASON",
+       16
+      ],
+      [
+       "NEW BEAUTY",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Google rankings",
+     "You rank for 534 searches, 76 of them in the top 10, the most of the four."
+    ],
+    [
+     "Answer and area pages",
+     "Blog posts target Fruit Cove, but your homepage title says Jacksonville, not St Johns."
+    ],
+    [
+     "Fresh articles",
+     "The blog lists posts like \"How Long Does Botox Last?\" but shows no dates."
+    ]
+   ],
+   "issue": "You lead the area in Google rankings, but the number of searches you rank for fell from 997 in January to 557 in October.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google searches you rank for",
+      "534",
+      "ok"
+     ],
+     [
+      "Searches in the top 10",
+      "76",
+      "ok"
+     ],
+     [
+      "Searches you ranked for, Jan vs Oct 2026",
+      "997 down to 557",
+      "bad"
+     ],
+     [
+      "Homepage title",
+      "\"Medical Spa Jacksonville FL\"",
+      "warn"
+     ],
+     [
+      "Blog post dates",
+      "Not shown",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE SEARCHES EACH SITE RANKS FOR",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       534
+      ],
+      [
+       "MODERN",
+       247
+      ],
+      [
+       "AMASON",
+       260
+      ],
+      [
+       "NEW BEAUTY",
+       128
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Passed",
+   "parts": [
+    [
+     "Page speed",
+     "Homepage loaded in 1.2 seconds with a 0.2 second server wait."
+    ],
+    [
+     "Website upkeep",
+     "Footer reads Copyright 2015 to 2026."
+    ]
+   ],
+   "issue": "Your homepage is fast and up to date, though a second test took 3.6 seconds, so speed can vary.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage load time",
+      "1.2 seconds (second test 3.6)",
+      "ok"
+     ],
+     [
+      "On-page health score",
+      "100 of 100 (second test 90)",
+      "ok"
+     ],
+     [
+      "Footer year",
+      "2015 to 2026",
+      "ok"
+     ],
+     [
+      "Scripts loaded",
+      "51, 12 of them slow the first view",
+      "warn"
+     ],
+     [
+      "Amason Aesthetics",
+      "2.7 seconds",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (SECONDS)",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       1.19
+      ],
+      [
+       "MODERN",
+       1.14
+      ],
+      [
+       "AMASON",
+       2.7
+      ],
+      [
+       "NEW BEAUTY",
+       1.44
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Passed",
+   "issue": "You have the most Google reviews of the four, but your Yelp rating is only 4.0.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google rating",
+      "4.9",
+      "ok"
+     ],
+     [
+      "Google reviews",
+      "613",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "4.0 from 52 reviews",
+      "warn"
+     ],
+     [
+      "Competitors",
+      "All three at 5.0 on Google",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       613
+      ],
+      [
+       "MODERN",
+       445
+      ],
+      [
+       "AMASON",
+       335
+      ],
+      [
+       "NEW BEAUTY",
+       333
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Needs work",
+   "issue": "Your Google profile uses 4 categories while Modern Aesthetic Centers and Amason use 10, and it shows a lunch break your website does not.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Categories",
+      "4 (Medical spa, Laser hair removal, Plastic surgery clinic, Skin care clinic)",
+      "warn"
+     ],
+     [
+      "Modern Aesthetic Centers and Amason",
+      "10 categories each",
+      "warn"
+     ],
+     [
+      "Photos on Google",
+      "90",
+      "ok"
+     ],
+     [
+      "Hours on Google",
+      "Closed 1 to 2 PM every day",
+      "warn"
+     ],
+     [
+      "Hours on website",
+      "No lunch break",
+      "warn"
+     ],
+     [
+      "Profile details filled in",
+      "18",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "CATEGORIES ON GOOGLE PROFILE",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       4
+      ],
+      [
+       "MODERN",
+       10
+      ],
+      [
+       "AMASON",
+       10
+      ],
+      [
+       "NEW BEAUTY",
+       5
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Passed",
+   "issue": "7 of 8 homepage images have labels, but they are logos and badges, and file names never mention a treatment or St Johns.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Images with useful labels",
+      "7 of 8 (88%)",
+      "ok"
+     ],
+     [
+      "What the images are",
+      "Logos, an award badge and app store buttons",
+      "warn"
+     ],
+     [
+      "File names",
+      "logo-teal.svg, white-logo.svg, void-white-blue.png",
+      "warn"
+     ],
+     [
+      "Amason Aesthetics",
+      "6 of 24 labeled (25%)",
+      "ok"
+     ],
+     [
+      "New Beauty Company",
+      "0 of 61 labeled",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "%",
+     "cap": "HOMEPAGE IMAGES WITH USEFUL LABELS",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       88
+      ],
+      [
+       "MODERN",
+       99
+      ],
+      [
+       "AMASON",
+       25
+      ],
+      [
+       "NEW BEAUTY",
+       0
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "issue": "264 websites link to you, but their spam score is 28%, the highest of the four, with many links from free blog sites.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Other websites linking to you",
+      "264",
+      "ok"
+     ],
+     [
+      "Spam score of linking sites",
+      "28%",
+      "bad"
+     ],
+     [
+      "Links from free blogspot sites",
+      "54",
+      "bad"
+     ],
+     [
+      "Amason Aesthetics",
+      "320 sites, 8% spam score",
+      "warn"
+     ],
+     [
+      "St Johns Moms",
+      "Feature article on Hello Smooth",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "WEBSITES LINKING TO EACH BUSINESS",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       264
+      ],
+      [
+       "MODERN",
+       163
+      ],
+      [
+       "AMASON",
+       320
+      ],
+      [
+       "NEW BEAUTY",
+       99
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Needs work",
+   "issue": "You are missing from Google's top 20 for best med spa in St Johns, while all three competitors hold the map spots.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google: best med spa st johns fl",
+      "Not in the top 20",
+      "bad"
+     ],
+     [
+      "Map pack for that search",
+      "Modern, Amason, New Beauty Company",
+      "warn"
+     ],
+     [
+      "Medical Spa Locator",
+      "#3 top-rated med spa in St Johns",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "Listed in Best Botox in St. Johns County",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Needs work",
+   "issue": "No AI tool named Hello Smooth for HydraFacial or microneedling in St Johns, and AI named Amason Aesthetics 20 times to your 13.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "ChatGPT",
+      "Named you in 3 of 6 searches",
+      "warn"
+     ],
+     [
+      "Gemini",
+      "3 of 6",
+      "warn"
+     ],
+     [
+      "Perplexity",
+      "3 of 6",
+      "warn"
+     ],
+     [
+      "Claude",
+      "4 of 6",
+      "ok"
+     ],
+     [
+      "Google AI Overview",
+      "Showed only for botox and did not load in our test",
+      "warn"
+     ],
+     [
+      "HydraFacial and microneedling",
+      "Named by no AI tool",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH (6 SEARCHES)",
+     "d": [
+      [
+       "HELLO SMOOTH",
+       13
+      ],
+      [
+       "MODERN",
+       11
+      ],
+      [
+       "AMASON",
+       20
+      ],
+      [
+       "NEW BEAUTY",
+       1
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     4,
+     10,
+     10,
+     5
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     0,
+     2,
+     0,
+     1
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     11,
+     19,
+     16,
+     1
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     534,
+     247,
+     260,
+     128
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     76,
+     39,
+     66,
+     25
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     1.19,
+     1.14,
+     2.7,
+     1.44
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     100,
+     97.44,
+     93.41,
+     95.24
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     613,
+     445,
+     335,
+     333
+    ],
+    "good": 400,
+    "ok": 200,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.9,
+     5.0,
+     5.0,
+     5.0
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     90,
+     118,
+     101,
+     178
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     18,
+     16,
+     13,
+     20
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     88,
+     99,
+     25,
+     0
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     264,
+     163,
+     320,
+     99
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     28,
+     16,
+     8,
+     25
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best med spa st johns fl”",
+    "t": "bool",
+    "v": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     13,
+     11,
+     20,
+     1
+    ],
+    "good": 18,
+    "ok": 9,
+    "src": "Our AI scan, Nov 12 2026"
+   }
+  ]
+ },
+ "notes": [
+  "Only one Florida business matched: Hello Smooth Med Spa, 155 Bartram Market Dr Ste 125, St Johns, FL 32259 (Google place ChIJn1UyGHXN5YgR_IUcAhqEICQ, one location). Older directory pages still use the former name Hello Smooth Laser Studio.",
+  "Google listing data was last updated Sep 11 2026 (593 reviews then); the live Google results on Nov 12 2026 show 4.9 from 613 reviews, which we use. Coordinates come from the Google Maps link on hellosmooth.com.",
+  "hours follow the Google listing, which shows a 1 to 2 PM break every day (Mon 11-7, Tue to Thu 10-6, Fri and Sat 9-5, Sun closed). The website footer and Yelp show the same days and times with no break.",
+  "Google searches ran with location Saint Johns, Florida (the search tool takes a place name, not coordinates). Laser hair removal St Johns also showed a paid Hello Smooth map ad above the free results; the #2 we record is the free map spot.",
+  "Lip filler st johns fl: Hello Smooth's own site and map listing were not in the top 20, but its Yelp page ranked #5. We counted only the business's own listing or site, so Google is 0 for that search.",
+  "Google AI Overview appeared only for botox st johns fl and its text did not load in our test, so that slot is null. No other search showed an AI Overview, so those are 0. answers_total is 34, not 35.",
+  "Score uses 35 slots (6 non-brand searches x 6 sources, minus the one unreadable AI Overview) for every business. Hello Smooth 15 of 35 (43), Modern Aesthetic Centers 17 (49), Amason Aesthetics 26 (74), New Beauty Company Aesthetics 4 (11).",
+  "Competitor names in AI answers count only exact business names; Effect Med Spa, Relive Health, Coastal Cosmetic Center and others were also named often but did not appear in the Google map packs as consistently as the three chosen competitors.",
+  "Modern Aesthetic Centers (St Johns, Gate Parkway, Fleming Island) and Amason Aesthetics (County Rd 210, Durbin Pavilion, World Golf Village and Spa Me) run several locations on one domain, so their traffic, rankings, links and videos cover all locations. Amason's 335 reviews are for the County Rd 210 location shown in the map packs.",
+  "Traffic is DataForSEO's monthly organic estimate (etv) for Nov 2025 to Oct 2026, United States. Hello Smooth jumped in April 2026 (782 to 2,874) and has slid since (1,853 in October).",
+  "Homepage page test ran twice for Hello Smooth: 1.19 s and score 100, then 3.65 s and score 90.02. The first run is used to match the single run for each competitor.",
+  "News counts come from web searches on Nov 12 2026 and are items found, not a full census. The First Coast News segment (YouTube, about 1 year ago) promoted Hello Smooth's annual event and looks like sponsored lifestyle TV, so it is not counted as a news article.",
+  "An Instagram video on @hellosmoothmedspa (about Aug 2026) says 'Now open, come visit me in my new location' with #wintergarden #orlando and a (407) 795-8556 number. Google shows one location; worth confirming with the owner.",
+  "A competitor, New Day Medspa, published a blog post on Oct 23 2026 comparing itself to Hello Smooth for Botox.",
+  "Bing Places could not be read by our tools for any business, so Bing is marked unknown in the directory checks.",
+  "vp_keywords are Semrush US volumes for St Johns searches, including the St Johns communities of Nocatee and Fruit Cove named in the Google profile. 'st johns spa' may include searches for other places named St. John's."
+ ]
+}

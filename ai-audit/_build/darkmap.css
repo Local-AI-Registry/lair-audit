@@ -1,0 +1,74 @@
+
+/* HUD skin for the map */
+:root{--f-map:"JetBrains Mono",monospace;--f-sc:"JetBrains Mono",monospace;--f-ui:"Inter",system-ui,sans-serif;--ink:#D7E2F2;--blue:#5B8CFF;color-scheme:dark}
+html,body,#map{background:#050B15!important}
+body{color:#AFC0D6}
+*{font-family:"Inter",system-ui,sans-serif}
+/* every label, tag and name plate reads like an instrument readout */
+#fxtop .cart,.fxkey,.cpin b,.tag,.lw,.mvb-q,.mvb-h,.ld-ms,.ld-k,.ld-note,.iv-skip,.fxctl,.fxback,.nightbadge,.fxdock,[class*="label"],[class*="pill"]{
+ font-family:"JetBrains Mono",ui-monospace,monospace!important;letter-spacing:.08em!important}
+#fxtop .cart{background:rgba(6,14,26,.86)!important;border:1px solid rgba(110,150,220,.3)!important;border-radius:2px!important;box-shadow:none!important;outline:none!important}
+#fxtop .cart h1{font:500 15px/1.2 "JetBrains Mono",monospace!important;letter-spacing:.24em!important;text-transform:uppercase;color:#E3ECF8!important}
+#fxtop .cart p{font:400 11px/1.4 "JetBrains Mono",monospace!important;letter-spacing:.1em!important;color:#6F84A3!important;font-style:normal!important}
+.fxkey{background:rgba(6,14,26,.86)!important;border:1px solid rgba(110,150,220,.25)!important;border-radius:2px!important;box-shadow:none!important;color:#AFC0D6!important;font-size:10.5px!important}
+.fxkey b,.fxkey h3,.fxkey .kh{font-family:"JetBrains Mono",monospace!important;letter-spacing:.22em!important;text-transform:uppercase;color:#6F84A3!important}
+/* people on the street: thin mono tags with an amber tick */
+.tag,.lw{background:rgba(6,14,26,.82)!important;border:1px solid rgba(255,181,71,.35)!important;border-radius:1px!important;color:#C9D6EA!important;font-style:normal!important;font-size:10px!important;text-transform:uppercase;box-shadow:none!important}
+.cpin b{background:rgba(6,14,26,.9)!important;border:1px solid rgba(91,140,255,.55)!important;border-radius:1px!important;color:#C9D6EA!important;box-shadow:0 0 14px rgba(91,140,255,.25)!important;text-transform:uppercase;font-size:10px!important}
+/* intro: dark, mono kicker, light title */
+#mvveil{background:#050B15!important;background-image:linear-gradient(rgba(91,140,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(91,140,255,.04) 1px,transparent 1px)!important;background-size:48px 48px!important}
+.iv-c h2{font:300 clamp(28px,4.4vw,52px)/1.1 "Inter",sans-serif!important;color:#E9F0FB!important;letter-spacing:-.01em!important}
+.iv-c mark{background:none!important;color:#FFB547!important;text-shadow:0 0 18px rgba(255,181,71,.45)}
+.iv-c p{font:400 12.5px/1.6 "JetBrains Mono",monospace!important;letter-spacing:.06em;color:#7F93B5!important}
+.iv-c svg{filter:invert(.88) hue-rotate(180deg) saturate(1.4) brightness(1.1)}
+.iv-skip{color:#6F84A3!important;text-transform:uppercase;font-size:11px!important}
+/* loader rail: match the HUD */
+#ldr{background:rgba(5,11,21,.94)!important;border-right:1px solid rgba(110,150,220,.18)}
+#ldr .ld-biz{font:300 26px/1.15 "Inter",sans-serif!important;letter-spacing:.04em!important;text-transform:uppercase}
+#ldr .ld-now{border-radius:2px!important;border-color:rgba(110,150,220,.22)!important;background:rgba(17,34,58,.4)!important}
+#ldr .ld-now b{font:500 12.5px/1.4 "JetBrains Mono",monospace!important;letter-spacing:.04em}
+#ldr .ld-ms li{font-size:11px!important;text-transform:uppercase;letter-spacing:.16em!important}
+#ldr .ld-pct b{font:200 64px/1 "JetBrains Mono",monospace!important;letter-spacing:-.04em!important}
+#ldr .ld-bar i{background:#FFB547!important;box-shadow:0 0 12px rgba(255,181,71,.6)}
+#ldr #fxgo{border-radius:2px!important;font:600 12px/1 "JetBrains Mono",monospace!important;letter-spacing:.16em!important;text-transform:uppercase}
+#ldr #fxgo.on{background:#FFB547!important;color:#0A1220!important;box-shadow:0 0 24px rgba(255,181,71,.45)!important}
+/* map controls */
+.fxctl,.fxctl button,.fxback{background:rgba(6,14,26,.86)!important;border:1px solid rgba(110,150,220,.25)!important;border-radius:2px!important;color:#AFC0D6!important;box-shadow:none!important}
+.maplibregl-ctrl-attrib{background:rgba(5,11,21,.6)!important;color:#4B5D78!important}.maplibregl-ctrl-attrib a{color:#6F84A3!important}
+
+/* HUD scale: everything small and even */
+.pin .tag{background:rgba(6,14,26,.9)!important;border:1px solid rgba(91,140,255,.6)!important;border-radius:1px!important;color:#C9D6EA!important;font:500 10px "JetBrains Mono",monospace!important;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 0 14px rgba(91,140,255,.25)!important;padding:3px 8px!important}
+.pin .tag span{font:500 11px "JetBrains Mono",monospace!important;letter-spacing:.14em!important;color:#E3ECF8!important}
+.pin.me .tag{border-color:#FFB547!important;box-shadow:0 0 18px rgba(255,181,71,.35)!important}.pin.me .tag span{color:#FFB547!important}
+.pin .base{border-color:#050B15!important}
+#ldr{width:300px!important;padding:22px 22px 20px!important}
+#ldr .ld-top{font:600 11px "JetBrains Mono",monospace!important;letter-spacing:.18em;text-transform:uppercase}
+#ldr .ld-k{font-size:9.5px!important;letter-spacing:.22em!important}
+#ldr .ld-biz{font:300 18px/1.2 "Inter",sans-serif!important;margin:4px 0 0!important}
+#ldr .ld-now{padding:10px 12px!important;margin-top:16px!important}
+#ldr .ld-now b{font-size:11px!important}
+#ldr .ld-ms li{font-size:10px!important;padding:6px 0!important}
+#ldr .ld-pct b{font-size:40px!important}
+#ldr .ld-pct span,#ldr .ld-pct em{font:400 10px "JetBrains Mono",monospace!important;letter-spacing:.12em;text-transform:uppercase}
+#ldr #fxgo{padding:12px!important;font-size:10.5px!important}
+#ldr .ld-note{font-size:9.5px!important;line-height:1.5!important}
+.iv-c h2{font-size:clamp(20px,2.6vw,32px)!important;max-width:620px!important}
+.iv-c p{font-size:11px!important}
+.iv-c svg{width:min(220px,50vw)!important;margin-bottom:18px!important}
+#mvveil{left:300px!important}
+#fxtop{left:320px!important}
+.mvcap,.mvb,.mvb *{font-family:"Inter",system-ui,sans-serif!important;letter-spacing:normal!important;text-transform:none!important}
+.mvb{width:270px!important}.mva1{min-width:0}.mva1 b{background:none!important;height:auto!important;width:auto!important;color:#E3ECF8!important;font:600 12.5px/1.3 "Inter",sans-serif!important;white-space:normal!important;overflow-wrap:anywhere}.mva>span{background:rgba(140,170,230,.22)!important}.mvb-q{white-space:normal!important;overflow-wrap:anywhere}
+/* cartouche and key: fit the mono text, never overflow */
+#fxtop .cart,#fxtop .fxkey{width:auto!important;min-width:0!important;max-width:min(360px,calc(100vw - 340px))!important;box-sizing:border-box!important;overflow:hidden}
+#fxtop .cart h1{font-size:12px!important;letter-spacing:.22em!important;white-space:normal!important}
+#fxtop .cart p{font-size:9.5px!important;letter-spacing:.06em!important;white-space:normal!important;overflow-wrap:anywhere;line-height:1.45!important}
+.fxkey,.fxkey *{font-size:9.5px!important;letter-spacing:.06em!important;white-space:normal!important}
+.fxkey li{gap:7px!important;padding:2px 0!important;align-items:flex-start!important}
+.fxkey li>*:first-child{flex:none;margin-top:1px}
+.fxkey>b,.fxkey>h3,.fxkey>p:first-child,.fxkey .kh{font-size:9px!important;letter-spacing:.24em!important;text-transform:uppercase}
+@media (max-width:899px){#fxtop .cart,#fxtop .fxkey{max-width:calc(100vw - 32px)!important}}
+.mvb-b{min-width:0!important}
+.mvb-q{max-width:100%!important;box-sizing:border-box!important;justify-self:stretch!important;white-space:normal!important;overflow-wrap:anywhere!important;word-break:break-word!important;font-size:12.5px!important;line-height:1.4!important}
+.mvb-q span{white-space:normal!important}
+.mvb-q{background:rgba(120,160,230,.14)!important;color:#E3ECF8!important;border-radius:12px 12px 3px 12px!important;padding:7px 10px!important}

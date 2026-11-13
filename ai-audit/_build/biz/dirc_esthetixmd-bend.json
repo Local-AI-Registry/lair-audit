@@ -1,0 +1,316 @@
+{
+ "comps": [
+  {
+   "n": "Elite Medi Spa",
+   "truth": {
+    "name": "Elite Medi Spa",
+    "address": "2225 NW Shevlin Park Rd #100, Bend, OR 97703",
+    "phone": "(541) 797-6306",
+    "hours": "Mon-Fri 9 AM-5 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": true,
+     "note": "Yelp shows Elite Medi Spa, 2225 NW Shevlin Park Rd Ste 100, Bend, OR 97703, (541) 797-6306, Mon/Tue 9-5 (from Yelp search snippet)."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page shows 2225 NW Shevlin Park Rd, Suite 100, Bend 97703; phone not visible to us."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps pages could not be opened by our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": true,
+     "url": "https://www.yellowpages.com/bend-or/mip/elite-medi-spa-561443957",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Name and phone match; address shown without the #100 suite. No hours seen."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": false,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Several MapQuest entries: one in 97703, one 'Elite Medi Spa, LLC' in 97702, and one at an old address (1693 SW Chandler Ave). No phone seen."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Foursquare listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": true,
+     "url": "https://www.bbb.org/us/or/bend/profile/medical-spa/elite-medi-spa-laser-institute-llc-1296-1000038102",
+     "name_ok": false,
+     "addr_ok": false,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Listed as 'Elite Medi Spa & Laser Institute LLC' at 2215 (not 2225) NW Shevlin Park Rd Ste 100; phone matches."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No RealSelf profile turned up in search."
+    }
+   ],
+   "match": 2,
+   "listed": 5,
+   "checked": 9
+  },
+  {
+   "n": "Salt Medical Aesthetics",
+   "truth": {
+    "name": "Salt Medical Aesthetics",
+    "address": "222 SE Urania Ln Ste 3, Bend, OR 97702",
+    "phone": "(541) 527-8452",
+    "hours": "Mon-Thu 9 AM-6 PM; Fri 9 AM-3 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Bend Yelp listing turned up in search (only unrelated 'Salt' businesses in other states)."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page 'Salt Medical Aesthetics | Bend OR' exists; address and phone not visible to us."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps pages could not be opened by our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": true,
+     "url": "https://www.yellowpages.com/bend-or/mip/salt-medical-aesthetics-578188918",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Name, address and phone match (Yellow Pages' Bend med spa list). No hours seen."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/oregon/salt-aesthetics-673294082",
+     "name_ok": false,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Listed as 'Salt Aesthetics'; address matches; no phone or hours shown."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Foursquare listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": true,
+     "url": "https://www.bbb.org/us/or/bend/profile/medical-spa/salt-aesthetics-1296-1000165184",
+     "name_ok": false,
+     "addr_ok": true,
+     "phone_ok": false,
+     "hours_ok": null,
+     "note": "Listed as 'Salt Aesthetics' at 222 SE Urania Ln (no suite) with phone (509) 703-8339."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No RealSelf profile turned up in search."
+    }
+   ],
+   "match": 1,
+   "listed": 4,
+   "checked": 9
+  },
+  {
+   "n": "Juniper Dermatology",
+   "truth": {
+    "name": "Juniper Dermatology",
+    "address": "2450 NE Mary Rose Pl Ste 201, Bend, OR 97701",
+    "phone": "(541) 585-7546",
+    "hours": "Mon-Thu 7:30 AM-5 PM; Fri 8 AM-5 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Appears in Yelp's Bend dermatologist list (4.4 stars, 39 reviews); the page itself could not be opened, so address and phone are unconfirmed."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "A Facebook page is linked from the Google profile; details not visible to us."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps pages could not be opened by our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not in Yellow Pages' Bend med spa list and the dermatologist list could not be opened; a listing exists on sister site Superpages."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/oregon/juniper-dermatology-514431473",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Name and address match; no phone or hours shown."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Foursquare listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not in BBB's Bend medical spa list; BBB's dermatologist list could not be opened."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No RealSelf profile turned up in search."
+    }
+   ],
+   "match": 0,
+   "listed": 3,
+   "checked": 9
+  }
+ ]
+}
