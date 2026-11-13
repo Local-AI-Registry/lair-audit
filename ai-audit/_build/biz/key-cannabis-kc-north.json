@@ -1,0 +1,1414 @@
+{
+ "slug": "key-cannabis-kc-north",
+ "biz": {
+  "name": "KEY KC NORTH",
+  "full": "Key Cannabis Dispensary KC North",
+  "short": "Key Cannabis KC North",
+  "city": "Kansas City, MO",
+  "addr": "4716 NE Vivion Rd, Kansas City, MO 64119",
+  "phone": "(816) 831-3871",
+  "site": "keycannabis.com/shop/kc-north-mo/",
+  "domain": "keycannabis.com",
+  "rating": 4.8,
+  "reviews": 2273,
+  "lat": 39.189,
+  "lng": -94.524,
+  "place_id": "ChIJhct1T9X5wIcRBc1eTcw_ygg",
+  "svc": "dispensary",
+  "area": [
+   "Kansas City",
+   "Northeast Vivion Road, in the County of Clay"
+  ],
+  "hours": [
+   [
+    480,
+    1305
+   ],
+   [
+    1920,
+    2745
+   ],
+   [
+    3360,
+    4185
+   ],
+   [
+    4800,
+    5625
+   ],
+   [
+    6240,
+    7065
+   ],
+   [
+    7680,
+    8505
+   ],
+   [
+    9120,
+    9945
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "NatureMed Dispensary",
+   "d": "naturemedmo.com",
+   "rating": 4.8,
+   "reviews": 1800
+  },
+  {
+   "n": "Kansas City Cannabis Company - Dispensary",
+   "d": "kccannabis.com",
+   "rating": 4.9,
+   "reviews": 689
+  },
+  {
+   "n": "SWADE Dispensary North KC",
+   "d": "swadecannabis.com",
+   "rating": 4.7,
+   "reviews": 1600
+  }
+ ],
+ "rd": [
+  {
+   "q": "dispensary kansas city",
+   "v": 1900,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "best dispensary in kansas city",
+   "v": 390,
+   "t": "Commercial",
+   "g": "#2",
+   "r": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "dispensary north kansas city",
+   "v": 30,
+   "t": "Transaction",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "drive thru dispensary kansas city",
+   "v": 30,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "v": null,
+   "t": "Transaction",
+   "g": "#3",
+   "r": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "key cannabis kc north",
+   "v": 110,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ]
+  }
+ ],
+ "cr": [
+  {
+   "q": "gladstone dispensary",
+   "v": 140,
+   "t": "Transaction",
+   "c": [
+    "NatureMed Dispensary",
+    "The Wellness Connect"
+   ]
+  }
+ ],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 12,
+  "answers_total": 35,
+  "brand_searches": 1
+ },
+ "traffic": [
+  {
+   "n": "KEY KC NORTH",
+   "me": true,
+   "v": [
+    24839,
+    25274,
+    28288,
+    33379,
+    32655,
+    28774,
+    28795,
+    30752,
+    33222,
+    37264,
+    36854,
+    37535
+   ]
+  },
+  {
+   "n": "NatureMed",
+   "v": [
+    25742,
+    25674,
+    30069,
+    27053,
+    26718,
+    22337,
+    21272,
+    23285,
+    23924,
+    21453,
+    19469,
+    19864
+   ]
+  },
+  {
+   "n": "Kansas City Cannabis Co.",
+   "v": [
+    5993,
+    7857,
+    6403,
+    6423,
+    6628,
+    5261,
+    5097,
+    4332,
+    4235,
+    4311,
+    4099,
+    4072
+   ]
+  },
+  {
+   "n": "SWADE",
+   "v": [
+    43009,
+    47004,
+    38717,
+    34398,
+    33014,
+    25762,
+    26119,
+    30676,
+    31429,
+    39286,
+    37911,
+    36784
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 33,
+  "avg": 28,
+  "top": 44
+ },
+ "price": {
+  "value": 47.03,
+  "currency": "USD",
+  "label": "average US dispensary basket (12 months to Sep 2026)",
+  "source": "Headset",
+  "url": "https://www.headset.io/data/cannabis-industry-statistics"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Key Cannabis Dispensary KC North, 4716 NE Vivion Rd, is claimed on Google with a description and 1 category (Cannabis store)."
+    ],
+    [
+     "Directory listings",
+     "Leafly still files the store under an Elevate web address with a different phone number, and Weedmaps search results still show the old name Elevate Missouri - KC North."
+    ]
+   ],
+   "issue": "The store's name and phone number are not the same everywhere: Leafly and Weedmaps still carry the old Elevate name, and one of your own website pages lists a wrong phone number.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google",
+      "Claimed, 4716 NE Vivion Rd, (816) 831-3871, 4.8 stars, 2,273 reviews",
+      "ok"
+     ],
+     [
+      "Google categories",
+      "1 category only (Cannabis store)",
+      "warn"
+     ],
+     [
+      "Leafly",
+      "Web address is leafly.com/dispensary-info/elevate-kc-north and phone is (816) 648-6402",
+      "bad"
+     ],
+     [
+      "Weedmaps",
+      "Search results still show Elevate Missouri - KC North; no active Key KC North page found",
+      "bad"
+     ],
+     [
+      "keycannabis.com/kc-north/",
+      "Shows phone (802) 831-3871, the wrong area code",
+      "bad"
+     ],
+     [
+      "MapQuest",
+      "Two listings at the same address (Key Cannabis Dispensary KC North and Key Cannabis)",
+      "warn"
+     ],
+     [
+      "Yellow Pages",
+      "Name, address, phone and hours all match Google",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Needs work",
+   "parts": [
+    [
+     "News coverage",
+     "2 articles about the Key Cannabis chain (Missouri Independent, MoGreenway), none about the KC North store."
+    ],
+    [
+     "Competitors",
+     "NatureMed says it won The Pitch KC's Best Dispensary award in 2025 and 2026, and AI tools repeat it."
+    ]
+   ],
+   "issue": "We found no news coverage of the KC North store itself, while NatureMed's two Best Dispensary wins are quoted by Perplexity as the reason to shop there.",
+   "found": {
+    "h": [
+     "Business",
+     "News and trade articles found"
+    ],
+    "r": [
+     [
+      "Key Cannabis",
+      "2 (chain only)",
+      "warn"
+     ],
+     [
+      "NatureMed",
+      "2 (incl. The Pitch Best Dispensary 2025 and 2026)",
+      "ok"
+     ],
+     [
+      "Kansas City Cannabis Co.",
+      "3",
+      "ok"
+     ],
+     [
+      "SWADE",
+      "0 articles (1 TV clip)",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "KEY",
+       2
+      ],
+      [
+       "NATUREMED",
+       2
+      ],
+      [
+       "KC CANNABIS",
+       3
+      ],
+      [
+       "SWADE",
+       0
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Failed",
+   "parts": [
+    [
+     "YouTube",
+     "No video about Key Cannabis KC North in the top 20 YouTube results for its name."
+    ],
+    [
+     "Competitors",
+     "The first result for your store's name is a Kansas City Cannabis Co. video from its own channel."
+    ]
+   ],
+   "issue": "There is no video about the KC North store on YouTube, and a competitor's video shows up first when people search your store's name.",
+   "found": {
+    "h": [
+     "Business",
+     "Videos about them on YouTube"
+    ],
+    "r": [
+     [
+      "Key Cannabis KC North",
+      "0",
+      "bad"
+     ],
+     [
+      "Kansas City Cannabis Co.",
+      "2, including its own channel",
+      "ok"
+     ],
+     [
+      "SWADE",
+      "2 (Overland news clip, St. Peters walk-through)",
+      "ok"
+     ],
+     [
+      "NatureMed",
+      "Own channel found, video count not confirmed",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Google maps results",
+     "In the top 3 map results for 5 of 6 local searches, #1 for 2 of them."
+    ],
+    [
+     "Website rankings",
+     "keycannabis.com ranks for 4,042 searches, 888 in the top 10 (all locations combined)."
+    ]
+   ],
+   "issue": "The Google profile carries the store, but the website itself did not show up in the regular results for any of the 6 local searches, and the store is missing for \"gladstone dispensary\".",
+   "found": {
+    "h": [
+     "Search",
+     "Where Key shows on Google"
+    ],
+    "r": [
+     [
+      "dispensary kansas city",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "drive thru dispensary kansas city",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "dispensary north kansas city",
+      "#2 in map results (SWADE #1)",
+      "ok"
+     ],
+     [
+      "best dispensary in kansas city",
+      "#2 in map results",
+      "ok"
+     ],
+     [
+      "dispensary open now",
+      "#3 in map results, behind two NatureMed stores",
+      "warn"
+     ],
+     [
+      "gladstone dispensary",
+      "Not in top 20",
+      "bad"
+     ],
+     [
+      "Searches in top 10 (domain)",
+      "888 vs 693 for SWADE",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE SEARCHES IN THE TOP 10",
+     "d": [
+      [
+       "KEY",
+       888
+      ],
+      [
+       "NATUREMED",
+       281
+      ],
+      [
+       "KC CANNABIS",
+       174
+      ],
+      [
+       "SWADE",
+       693
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Speed",
+     "The KC North menu page took 3.19 s to load and the homepage 3.99 s."
+    ],
+    [
+     "Upkeep",
+     "Two store pages show different phone numbers, the footer still says 2025, and the menu page still has an Elevate heading."
+    ]
+   ],
+   "issue": "The store has two pages on the website that do not agree on the phone number, and the main store page is slow and still says 2025 in the footer.",
+   "found": {
+    "h": [
+     "Check",
+     "What we found"
+    ],
+    "r": [
+     [
+      "KC North menu page load time",
+      "3.19 s (server wait 295 ms)",
+      "warn"
+     ],
+     [
+      "Homepage load time",
+      "3.99 s (NatureMed 1.11 s, SWADE 4.54 s)",
+      "warn"
+     ],
+     [
+      "On-page health score",
+      "88.19 menu page, 92.68 /kc-north/ page",
+      "warn"
+     ],
+     [
+      "Two store pages",
+      "/shop/kc-north-mo/ says (816) 831-3871, /kc-north/ says (802) 831-3871",
+      "bad"
+     ],
+     [
+      "Footer copyright",
+      "2025",
+      "warn"
+     ],
+     [
+      "Old brand on page",
+      "Heading \"Shop Fresh Premium Products from Elevate\"",
+      "warn"
+     ],
+     [
+      "Server",
+      "Cloudflare, WordPress with Elementor",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (SECONDS)",
+     "d": [
+      [
+       "KEY",
+       3.99
+      ],
+      [
+       "NATUREMED",
+       1.11
+      ],
+      [
+       "SWADE",
+       4.54
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google",
+     "4.8 stars from 2,273 reviews, the most in the group."
+    ],
+    [
+     "Other sites",
+     "Yelp shows 3.1 stars from 9 reviews and Leafly 4.6 from 19, and AI tools quote both."
+    ]
+   ],
+   "issue": "Google reviews are a clear strength, but the weak Yelp score is what Perplexity quotes, and one Yelp review says the store is now Swade.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google",
+      "4.8 stars, 2,273 reviews",
+      "ok"
+     ],
+     [
+      "1-star Google reviews",
+      "51 of 2,247 in Sep 2026 listing data",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "3.1 stars, 9 reviews; one review says \"They are now Swade dispensary\"",
+      "bad"
+     ],
+     [
+      "Leafly",
+      "4.6 stars, 19 reviews, on the Elevate web address",
+      "warn"
+     ],
+     [
+      "Review link on website",
+      "None found on the KC North menu page",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "KEY",
+       2273
+      ],
+      [
+       "NATUREMED",
+       1800
+      ],
+      [
+       "KC CANNABIS",
+       689
+      ],
+      [
+       "SWADE",
+       1600
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Passed",
+   "parts": [
+    [
+     "Photos",
+     "204 photos, the most in the group."
+    ],
+    [
+     "Details",
+     "14 profile details filled in, description and hours set."
+    ]
+   ],
+   "issue": "The Google profile is well filled in, but it lists only one category.",
+   "found": {
+    "h": [
+     "Item",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos",
+      "204 (NatureMed 31, KC Cannabis 43, SWADE 131)",
+      "ok"
+     ],
+     [
+      "Profile details",
+      "14 attributes",
+      "ok"
+     ],
+     [
+      "Description",
+      "Present",
+      "ok"
+     ],
+     [
+      "Hours",
+      "8:00 AM to 9:45 PM, 7 days; drive-thru to 9:30 PM",
+      "ok"
+     ],
+     [
+      "Categories",
+      "1",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "KEY",
+       204
+      ],
+      [
+       "NATUREMED",
+       31
+      ],
+      [
+       "KC CANNABIS",
+       43
+      ],
+      [
+       "SWADE",
+       131
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Failed",
+   "parts": [
+    [
+     "KC North page",
+     "5 of 27 images have useful alt text (19%)."
+    ],
+    [
+     "Homepage",
+     "4 of 19 images have useful alt text (21%)."
+    ]
+   ],
+   "issue": "Most images have no description and generic file names, so Google and AI cannot tell what they show, while NatureMed and SWADE describe most of theirs.",
+   "found": {
+    "h": [
+     "Check",
+     "What we found"
+    ],
+    "r": [
+     [
+      "KC North page images with alt text",
+      "5 of 27 (19%)",
+      "bad"
+     ],
+     [
+      "Homepage images with alt text",
+      "4 of 19 (21%)",
+      "bad"
+     ],
+     [
+      "Example file names",
+      "phone-1-1.png, clock-1-1.png, kc-logo-os.png",
+      "bad"
+     ],
+     [
+      "NatureMed homepage",
+      "13 of 18 (72%)",
+      "ok"
+     ],
+     [
+      "SWADE homepage",
+      "14 of 15 (93%)",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 5,
+     "b": 22,
+     "la": "WITH ALT TEXT",
+     "lb": "MISSING",
+     "cap": "KC NORTH PAGE IMAGES"
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Links",
+     "889 websites link to keycannabis.com."
+    ],
+    [
+     "Quality",
+     "Spam score of linking sites is 50%, and 983 links point to broken pages."
+    ]
+   ],
+   "issue": "Many sites link to the chain, but half of the linking sites look spammy and nearly 1,000 links hit broken pages.",
+   "found": {
+    "h": [
+     "Business",
+     "Linking websites / spam score"
+    ],
+    "r": [
+     [
+      "Key Cannabis",
+      "889 / 50%",
+      "warn"
+     ],
+     [
+      "NatureMed",
+      "362 / 37%",
+      "warn"
+     ],
+     [
+      "Kansas City Cannabis Co.",
+      "489 / 33%",
+      "warn"
+     ],
+     [
+      "SWADE",
+      "1,348 / 50%",
+      "warn"
+     ],
+     [
+      "Key broken backlinks",
+      "983",
+      "bad"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google",
+     "#2 in the map results for \"best dispensary in kansas city\"."
+    ],
+    [
+     "Guides",
+     "Herb.co lists Key KC North for the Northland and Leafly's North Kansas City drive-thru list ranks it #3."
+    ]
+   ],
+   "issue": "Key shows up in the Kansas City guides, but every Gladstone guide and AI answer points to NatureMed instead.",
+   "found": {
+    "h": [
+     "Guide",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google \"best dispensary in kansas city\"",
+      "#2 in map results",
+      "ok"
+     ],
+     [
+      "Herb.co Kansas City guide",
+      "Listed for the Northland with NatureMed",
+      "ok"
+     ],
+     [
+      "Leafly North Kansas City drive-thru list",
+      "Listed #3",
+      "ok"
+     ],
+     [
+      "Gladstone guides (JointCommerce, MunchMakers)",
+      "Not listed; NatureMed only",
+      "bad"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Needs work",
+   "parts": [
+    [
+     "AI answers",
+     "ChatGPT, Gemini, Perplexity and Claude named Key KC North in 7 of 30 local answers; NatureMed was named in 13."
+    ],
+    [
+     "Gaps",
+     "AI tools mix up Key stores, quote wrong review counts, and still use the Elevate name and web address."
+    ]
+   ],
+   "issue": "AI tools often recommend other Key stores or NatureMed instead of KC North, and they still draw on Elevate-era pages.",
+   "found": {
+    "h": [
+     "Business",
+     "AI answers naming them (of 30)"
+    ],
+    "r": [
+     [
+      "Key KC North",
+      "7",
+      "warn"
+     ],
+     [
+      "NatureMed",
+      "13",
+      "ok"
+     ],
+     [
+      "SWADE",
+      "6",
+      "warn"
+     ],
+     [
+      "Kansas City Cannabis Co.",
+      "1",
+      "bad"
+     ],
+     [
+      "Wrong facts in AI answers",
+      "ChatGPT: 4.9 stars from 350 reviews (that is KC East); Gemini: \"Elevate (also known as Key Cannabis)\"",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH BUSINESS",
+     "d": [
+      [
+       "KEY",
+       7
+      ],
+      [
+       "NATUREMED",
+       13
+      ],
+      [
+       "KC CANNABIS",
+       1
+      ],
+      [
+       "SWADE",
+       6
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     false,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     2,
+     2,
+     3,
+     0
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Web news search"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     0,
+     null,
+     2,
+     2
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     4042,
+     1423,
+     1010,
+     2979
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     888,
+     281,
+     174,
+     693
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     3.99,
+     1.11,
+     null,
+     4.54
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     88.19,
+     94.15,
+     null,
+     85.27
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     2273,
+     1800,
+     689,
+     1600
+    ],
+    "good": 1500,
+    "ok": 700,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.8,
+     4.8,
+     4.9,
+     4.7
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     204,
+     31,
+     43,
+     131
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     14,
+     10,
+     15,
+     10
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     21,
+     72,
+     null,
+     93
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     889,
+     362,
+     489,
+     1348
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     50,
+     37,
+     33,
+     50
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best dispensary Kansas City”",
+    "t": "bool",
+    "v": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     7,
+     13,
+     1,
+     6
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Our AI scan"
+   }
+  ]
+ },
+ "notes": [
+  "This store was an Elevate dispensary and now trades as Key Cannabis Dispensary KC North (Key is Elevate's retail brand). Google, Yelp, Yellow Pages and the website use the Key name. Leafly still uses the address leafly.com/dispensary-info/elevate-kc-north (shown name Key Cannabis - KC North) with phone (816) 648-6402, and Weedmaps search results still show \"Elevate Missouri - KC North\" (weedmaps.com/dispensaries/elevate-mo-2), which now opens a general Kansas City list. The storefront photo still showing \"Elevate\" was reported by the client and not checked by us.",
+  "keycannabis.com has two KC North pages: /shop/kc-north-mo/ (menu, linked from Google, phone (816) 831-3871) and /kc-north/ (phone and click-to-call link (802) 831-3871, wrong area code; DataForSEO page test, Nov 12, 2026). Perplexity's search results also picked up the (802) number. The Google profile link carries a tracking tag (utm_source=terrayn_gbp).",
+  "Competitors were picked from the live Google map packs run from Gladstone, MO on Nov 12, 2026: NatureMed Dispensary at 2631 NE Vivion Rd (about 1.2 miles west; in 3 packs, its Gladstone sister store in 2 more), Kansas City Cannabis Company - Dispensary at 8170 NW Prairie View Rd (2 packs) and SWADE Dispensary North KC at 1041 Burlington St (1 pack). Other Key stores were excluded.",
+  "Kansas City Cannabis Company's Google name was \"Kansas City Cannabis Co.\" in Sep 2026 listing data and \"Kansas City Cannabis Company - Dispensary\" in the Nov 12 map pack, so it is marked as not matching the real name. Its Google hours in Sep data were 10 AM to 9 PM, while Leafly, Weedmaps and the Nov 12 map pack show it closing at 10 PM.",
+  "Review counts for NatureMed (1,800) and SWADE (1,600) are the rounded figures Google showed in the Nov 12 map pack; Sep 2026 listing data showed 1,735 and 1,579. Key's 2,273 is exact (Google knowledge panel, Nov 12). Photo and profile detail counts come from DataForSEO listing data last updated Sep 2026.",
+  "Search volumes are Semrush US (phrase_these, Nov 2026). Local phrases use the town name; \"dispensary open now\" (3,600) is a nationwide figure because Google hides city-level volume for it. \"kansas city cannabis\" (2,900) was left out of vp_keywords because it is mostly people looking for the Kansas City Cannabis Co. brand.",
+  "Google results were run with location \"Gladstone,Missouri,United States\" (the SERP tool has no coordinate option); the store sits on the Kansas City / Gladstone line. An AI Overview appeared only for \"best dispensary in kansas city\", but its text did not load, so it is counted as not naming the store. The brand search showed an AI Overview built from the Google profile and keycannabis.com.",
+  "AI scan prompts: North Kansas City best dispensary, which dispensary in Kansas City, good dispensary in Gladstone, best dispensary in Kansas City, drive thru dispensary in Kansas City, dispensary open now in Gladstone, plus the brand question. Competitor mentions are counted at brand level (for example \"NatureMed\" or \"Nature Med - Gladstone\" counts for NatureMed). AI answers named other Key stores (KC East, KC South, Belton) in 4 answers instead of KC North.",
+  "Key domain numbers (rankings 4,042 / 888, homepage load 3.99 s, health 88.19, homepage alt text 4 of 19, 12 months of traffic) are the same keycannabis.com measurements taken Nov 12, 2026 for the Belton audit; backlinks (889 sites, 50% spam, 983 broken) were re-checked today and match. All four domains serve several stores, so domain numbers are not store-level.",
+  "Kansas City Cannabis Co.'s homepage blocked our page test (403 from Cloudflare), so its load time, health score and alt text are null. NatureMed's YouTube channel exists but we could not confirm a video count, so it is null.",
+  "Traffic months are Nov 2025 to Oct 2026 (DataForSEO estimated organic visits, United States).",
+  "PR counts come from one web search per brand. NatureMed's Pitch KC Best Dispensary wins (2025, 2026) are taken from NatureMed's own site and repeated by Perplexity; we did not open The Pitch's page.",
+  "Price: Headset publishes a US average basket ($47.03, 12 months to Sep 2026) but no Missouri basket, so the US figure is used, as in the Belton file.",
+  "Yelp shows the store as Key Cannabis Dispensary KC North with categories Cannabis Clinics, Vitamins & Supplements and Vape Shops; a Yelp review quoted in Google results says \"They are now Swade dispensary\" (SWADE took over the former BesaMe Wellness store at 1041 Burlington St, not this address)."
+ ],
+ "vp_keywords": [
+  {
+   "q": "dispensary kansas city",
+   "v": 1900
+  },
+  {
+   "q": "kansas city dispensary",
+   "v": 1300
+  },
+  {
+   "q": "dispensary kansas city mo",
+   "v": 880
+  },
+  {
+   "q": "marijuana dispensary kansas city",
+   "v": 480
+  },
+  {
+   "q": "kc dispensaries",
+   "v": 480
+  },
+  {
+   "q": "best dispensary in kansas city",
+   "v": 390
+  },
+  {
+   "q": "dispensaries in kansas city",
+   "v": 320
+  },
+  {
+   "q": "kansas city mo dispensary",
+   "v": 320
+  },
+  {
+   "q": "dispensary kc",
+   "v": 260
+  },
+  {
+   "q": "kc dispensary",
+   "v": 260
+  },
+  {
+   "q": "recreational dispensary kansas city",
+   "v": 260
+  },
+  {
+   "q": "24 hour dispensary kansas city",
+   "v": 260
+  },
+  {
+   "q": "weed delivery kansas city",
+   "v": 260
+  },
+  {
+   "q": "dispensary in kansas city",
+   "v": 170
+  },
+  {
+   "q": "dispensary near kansas city",
+   "v": 170
+  },
+  {
+   "q": "dispensaries near kansas city",
+   "v": 170
+  },
+  {
+   "q": "cannabis kansas city",
+   "v": 140
+  },
+  {
+   "q": "gladstone dispensary",
+   "v": 140
+  },
+  {
+   "q": "best dispensary kansas city",
+   "v": 90
+  },
+  {
+   "q": "weed kansas city",
+   "v": 90
+  },
+  {
+   "q": "dispensary gladstone mo",
+   "v": 90
+  },
+  {
+   "q": "kansas city weed",
+   "v": 70
+  },
+  {
+   "q": "kansas city weed dispensary",
+   "v": 70
+  },
+  {
+   "q": "cheap dispensary kansas city",
+   "v": 50
+  },
+  {
+   "q": "pot shop kansas city",
+   "v": 50
+  },
+  {
+   "q": "dispensaries kansas city mo",
+   "v": 40
+  },
+  {
+   "q": "dispensaries north kansas city",
+   "v": 40
+  },
+  {
+   "q": "dispensary deals kansas city",
+   "v": 40
+  },
+  {
+   "q": "drive thru dispensary kansas city",
+   "v": 30
+  },
+  {
+   "q": "dispensary north kansas city",
+   "v": 30
+  },
+  {
+   "q": "north kansas city dispensary",
+   "v": 30
+  },
+  {
+   "q": "weed store kansas city",
+   "v": 20
+  },
+  {
+   "q": "kansas city dispensary deals",
+   "v": 20
+  },
+  {
+   "q": "dispensary gladstone",
+   "v": 20
+  },
+  {
+   "q": "dispensary gladstone missouri",
+   "v": 20
+  },
+  {
+   "q": "dispensary near gladstone mo",
+   "v": 20
+  },
+  {
+   "q": "edibles kansas city",
+   "v": 10
+  },
+  {
+   "q": "dispensary in north kansas city",
+   "v": 10
+  },
+  {
+   "q": "kc north dispensary",
+   "v": 10
+  },
+  {
+   "q": "dispensary vivion rd",
+   "v": 10
+  },
+  {
+   "q": "smoke shop kansas city",
+   "v": 10
+  },
+  {
+   "q": "cannabis store kansas city",
+   "v": 10
+  }
+ ],
+ "priceNote": "",
+ "volNote": "",
+ "match": "key\\s*cannabis.*(kc\\s*north|vivion)|kc\\s*north",
+ "cq": "dispensary",
+ "movie_qs": [
+  "dispensary near north kansas city",
+  "drive thru dispensary near me",
+  "best dispensary in kansas city",
+  "who has the best reviews?"
+ ]
+}

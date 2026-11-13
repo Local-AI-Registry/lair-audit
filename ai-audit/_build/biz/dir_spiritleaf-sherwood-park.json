@@ -1,0 +1,117 @@
+{
+ "truth": {
+  "name": "Spiritleaf",
+  "address": "52 Brentwood Blvd #7, Sherwood Park, AB T8A 2H6",
+  "phone": "(780) 449-5180",
+  "hours": "10am-10pm daily"
+ },
+ "dirs": [
+  {
+   "d": "Leafly",
+   "found": true,
+   "url": "https://www.leafly.ca/cannabis-store/spiritleaf-sherwood-park",
+   "name": "Spiritleaf - Brentwood Blvd - Sherwood Park",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": false,
+   "note": "Sunday shown as 12pm-6pm instead of 10am-10pm. Listing is unclaimed."
+  },
+  {
+   "d": "Yelp",
+   "found": true,
+   "url": "https://www.yelp.ca/biz/spiritleaf-sherwood-park-sherwood-park",
+   "name": "Spiritleaf - Sherwood Park",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "Name, address and phone match (seen in Google snippet). Hours not visible."
+  },
+  {
+   "d": "Where's Weed",
+   "found": true,
+   "url": "https://wheresweed.com",
+   "name": "Spiritleaf - Sherwood Park",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "7 - 52 Brentwood Boulevard, T8A 2H6, (780) 449-5180. Hours not visible."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": true,
+   "url": "https://www.yellowpages.ca",
+   "name": "Spirit Leaf",
+   "name_ok": false,
+   "addr_ok": false,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Name spelled 'Spirit Leaf' and address shown as '7 Brentwood Blvd, T8A 1W4' (missing 52, wrong postal code)."
+  },
+  {
+   "d": "MapQuest",
+   "found": true,
+   "url": "https://www.mapquest.com",
+   "name": "Spiritleaf - Sherwood Park",
+   "name_ok": true,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Listing exists (Strathcona County, T8A); address, phone and hours not visible."
+  },
+  {
+   "d": "Weedmaps",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Facebook",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Facebook page for this store found in Google searches."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  },
+  {
+   "d": "Best Bang for Your Bud",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in Google searches for the store name and town."
+  }
+ ],
+ "summary": {
+  "found": 5,
+  "checked": 9,
+  "exact_match": 2,
+  "mismatches": 2
+ },
+ "status": "Needs work",
+ "issue": "Yellow Pages shows the wrong address and Leafly shows the wrong Sunday hours, and 4 of 9 directories have no listing, so AI gets mixed signals."
+}

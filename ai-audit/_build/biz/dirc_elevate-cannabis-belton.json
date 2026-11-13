@@ -1,0 +1,38 @@
+{"comps":[
+{"n":"Blue Sage Cannabis Deli - Belton","truth":{"name":"Blue Sage Cannabis Deli - Belton","address":"17011 Bel-Ray Blvd, Belton, MO 64012","phone":"(816) 888-8660","hours":"Daily 8:00 AM - 10:00 PM"},
+"dirs":[
+{"d":"Leafly","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Leafly search shows Blue Sage Carthage and Lebanon only; no Belton listing ('blue-sage' slug is an unrelated Vermont store)"},
+{"d":"Weedmaps","found":true,"url":"https://weedmaps.com/dispensaries/blue-sage-belton","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"Name 'Blue Sage Belton'; address and phone match; only 'open until 10:00pm' shown"},
+{"d":"Yelp","found":true,"url":"https://www.yelp.com/biz/blue-sage-cannabis-deli-belton","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"Page blocks fetch; name/address/phone from Yelp search snippet. Second stale listing exists (yelp.com/biz/blue-sage-belton, filed as Vitamins & Supplements)"},
+{"d":"Facebook","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Belton store page surfaced; Facebook pages not readable"},
+{"d":"Yellow Pages","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in YP Belton or Raymore cannabis dispensary lists; not found by address search"},
+{"d":"MapQuest","found":true,"url":"https://www.mapquest.com/us/missouri/blue-sage-788310400","name_ok":true,"addr_ok":true,"phone_ok":false,"hours_ok":null,"note":"Listed as 'Blue Sage'; no phone number or hours on listing. Duplicate listing 429351527 also exists (unreadable)"},
+{"d":"Foursquare","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Belton venue surfaced in search; site blocks fetch"},
+{"d":"Where's Weed","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No listing surfaced in search; site not readable"},
+{"d":"Bing Places / Bing Maps","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps not readable with available tools"}
+],"match":2,"listed":3,"checked":9},
+{"n":"ReLeaf Resources Marijuana Dispensary Grandview","truth":{"name":"ReLeaf Resources Marijuana Dispensary Grandview","address":"13836 S U.S. 71 Hwy, Grandview, MO 64030","phone":"(816) 597-4768","hours":"Open 24 hours, 7 days"},
+"dirs":[
+{"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/releaf-resources","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":false,"note":"Phone shown as 816-597-4POT (= 4768). Hours wrong: Mon-Sat 8AM-10PM, Sun 8AM-6PM vs 24/7 on Google. Unclaimed"},
+{"d":"Weedmaps","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not on Weedmaps Grandview dispensary page or in Weedmaps search"},
+{"d":"Yelp","found":true,"url":"https://www.yelp.com/biz/releaf-resources-dispensary-grandview-3","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"'ReLeaf Resources Dispensary', 13836 South US 71 Hwy (from title); categorized as Cannabis Clinics; page blocks fetch so phone/hours unverified"},
+{"d":"Facebook","found":true,"url":"https://www.facebook.com/ReLeafMo/","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Page 'ReLeafResources'; snippet shows 13836 S US 71 Highway Grandview, MO 64030; phone/hours not readable"},
+{"d":"Yellow Pages","found":true,"url":"https://www.yellowpages.com/grandview-mo/mip/releaf-resources-558824196","name_ok":true,"addr_ok":true,"phone_ok":false,"hours_ok":false,"note":"Wrong phone (816) 597-4762; stale hours Mon-Sat 12-8PM, Sun 12-4PM and 'opening soon' text"},
+{"d":"MapQuest","found":true,"url":"https://www.mapquest.com/us/missouri/releaf-resources-dispensary-428720601","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Address 13836 South US 71 Hwy from title; page blocks fetch, phone unverified"},
+{"d":"Foursquare","found":true,"url":"https://foursquare.com/v/releaf-resources-dispensary/5f8df32c93cd5847fc11b5c7","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Address 13836 S US Highway 71 from title; page blocks fetch"},
+{"d":"Where's Weed","found":true,"url":"https://wheresweed.com/missouri/grandview/marijuana-dispensaries/releaf-resources-llc","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Listed as 'Releaf Resources, LLC'; page not readable"},
+{"d":"Bing Places / Bing Maps","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps not readable with available tools"}
+],"match":0,"listed":7,"checked":9},
+{"n":"Codes Dispensary Raymore","truth":{"name":"Codes Dispensary Raymore","address":"1905 W Foxwood Dr, Raymore, MO 64083","phone":"(816) 745-0772","hours":"Mon-Sat 9:00 AM - 10:00 PM; Sun 9:00 AM - 8:00 PM"},
+"dirs":[
+{"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/codes-raymore","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"'CODES - Raymore (Med/Rec)'; address lacks ZIP; hours match"},
+{"d":"Weedmaps","found":true,"url":"https://weedmaps.com/dispensaries/codes-raymore","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"'Codes - Raymore'; no daily hours shown"},
+{"d":"Yelp","found":true,"url":"https://www.yelp.com/biz/codes-dispensary-raymore","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Address from title; filed under Vitamins & Supplements; page blocks fetch, phone unverified"},
+{"d":"Facebook","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Only a brand-level 'Codes' page surfaced; no Raymore store page confirmed"},
+{"d":"Yellow Pages","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in YP Raymore or Belton cannabis dispensary lists; not found by address search"},
+{"d":"MapQuest","found":true,"url":"https://www.mapquest.com/us/missouri/codes-dispensary-432079010","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Two listings at same address (also /codes-780199959, a duplicate); pages block fetch, phone unverified"},
+{"d":"Foursquare","found":true,"url":"https://foursquare.com/v/codes/64dcfe391d2fb51a6f5bd65b","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'Codes - Raymore, MO' venue; page blocks fetch"},
+{"d":"Where's Weed","found":true,"url":"https://wheresweed.com/missouri/raymore/marijuana-dispensaries/codes-raymore-mo","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'Codes - Raymore'; page not readable"},
+{"d":"Bing Places / Bing Maps","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps not readable with available tools"}
+],"match":2,"listed":6,"checked":9}
+]}

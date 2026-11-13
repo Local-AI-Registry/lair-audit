@@ -1,0 +1,117 @@
+{
+ "truth": {
+  "name": "Hello Smooth Med Spa",
+  "address": "155 Bartram Market Dr Ste 125, St Johns, FL 32259",
+  "phone": "(904) 342-2383",
+  "hours": "Mon 11 AM-1 PM, 2-7 PM; Tue-Thu 10 AM-1 PM, 2-6 PM; Fri-Sat 9 AM-1 PM, 2-5 PM; Sun closed"
+ },
+ "dirs": [
+  {
+   "d": "Yelp",
+   "found": true,
+   "url": "https://www.yelp.com/biz/hello-smooth-med-spa-st-johns",
+   "name": "Hello Smooth Med Spa",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": false,
+   "note": "Shows 155 Bartram Market Dr, Ste 125, St Johns, FL 32259 and (904) 342-2383 (seen in Google and AI search snippets). Hours Mon 11-7, Tue to Thu 10-6, Fri 9-5 with no 1 to 2 PM break. Rated 4.0 from 52 reviews."
+  },
+  {
+   "d": "Facebook",
+   "found": true,
+   "url": "https://www.facebook.com/hellosmooth/",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Page is linked from your website code, but Facebook did not return readable details to our tools."
+  },
+  {
+   "d": "Bing Places / Bing Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Bing did not return readable listing details to our tools, so this could not be checked."
+  },
+  {
+   "d": "Apple Maps",
+   "found": true,
+   "url": "https://maps.apple.com/place?place-id=I67DE5A996AC4C318",
+   "name": "Hello Smooth",
+   "name_ok": false,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Listed as \"Hello Smooth\" at 155 Bartram Market Dr, Unit 125, Saint Johns, FL 32259. Phone and hours not seen."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Yellow Pages listing turned up in search."
+  },
+  {
+   "d": "MapQuest",
+   "found": true,
+   "url": "https://startpage.mapquest.com/us/florida/hello-smooth-med-spa-441034711",
+   "name": "Hello Smooth Med Spa",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Shows 155 Bartram Market Dr, Saint Johns, FL 32259 without the suite number. No phone or hours shown."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Foursquare listing turned up in search."
+  },
+  {
+   "d": "BBB",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No BBB profile turned up in search, and you are not on BBB's St Johns beauty list."
+  },
+  {
+   "d": "RealSelf",
+   "found": true,
+   "url": "https://www.realself.com/practices/smooth-jacksonville-florida",
+   "name": "Hello Smooth",
+   "name_ok": false,
+   "addr_ok": false,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Listed as \"Hello Smooth\" at 112 Bartram Oaks Walk, Ste. 103, Jacksonville (an old address). No phone shown."
+  }
+ ],
+ "summary": {
+  "found": 5,
+  "checked": 9,
+  "exact_match": 0,
+  "mismatches": 3
+ },
+ "status": "Failed",
+ "issue": "None of the 9 directories matches your Google details exactly: Apple Maps and RealSelf use a shorter name, RealSelf shows an old address, Yelp shows different hours, and 3 directories have no listing at all."
+}

@@ -1,0 +1,55 @@
+[
+ {
+  "q": "dispensary kansas city",
+  "you": "#1",
+  "pack": [
+   "#1 Key Cannabis Dispensary KC North",
+   "#2 Kansas City Cannabis Company - Dispensary",
+   "#3 NatureMed Dispensary"
+  ]
+ },
+ {
+  "q": "dispensary north kansas city",
+  "you": "#2",
+  "pack": [
+   "#1 SWADE Dispensary North KC",
+   "#2 Key Cannabis Dispensary KC North"
+  ]
+ },
+ {
+  "q": "gladstone dispensary",
+  "you": null,
+  "pack": [
+   "#1 NatureMed Dispensary",
+   "#2 The Wellness Connect",
+   "#3 NatureMed Dispensary"
+  ]
+ },
+ {
+  "q": "best dispensary in kansas city",
+  "you": "#2",
+  "pack": [
+   "#1 Kansas City Cannabis Company - Dispensary",
+   "#2 Key Cannabis Dispensary KC North",
+   "#3 From The Earth Dispensary Westside"
+  ]
+ },
+ {
+  "q": "drive thru dispensary kansas city",
+  "you": "#1",
+  "pack": [
+   "#1 Key Cannabis Dispensary KC North",
+   "#2 Riverside Wellness",
+   "#3 Fresh Karma Midtown Dispensary"
+  ]
+ },
+ {
+  "q": "dispensary open now",
+  "you": "#3",
+  "pack": [
+   "#1 NatureMed Dispensary",
+   "#2 NatureMed Dispensary",
+   "#3 Key Cannabis Dispensary KC North"
+  ]
+ }
+]

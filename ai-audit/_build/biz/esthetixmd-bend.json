@@ -1,0 +1,1595 @@
+{
+ "slug": "esthetixmd-bend",
+ "match": "esthetix",
+ "cq": "med spa",
+ "movie_qs": [
+  "best med spa in bend oregon",
+  "botox bend oregon",
+  "lip filler bend oregon",
+  "who has the best reviews?"
+ ],
+ "priceNote": "",
+ "volNote": "",
+ "biz": {
+  "name": "ESTHETIXMD",
+  "full": "EsthetixMD Spa & Laser Center",
+  "short": "EsthetixMD",
+  "city": "Bend, OR",
+  "addr": "115 SW Allen Rd, Bend, OR 97702",
+  "phone": "(541) 208-5251",
+  "site": "esthetixmd.com",
+  "domain": "esthetixmd.com",
+  "rating": 4.9,
+  "reviews": 628,
+  "lat": 44.0497152,
+  "lng": -121.3242262,
+  "place_id": "ChIJ1d9qRAfGuFQRQwaaI9PX2hA",
+  "svc": "med spa",
+  "area": [
+   "Bend",
+   "Southwest Allen Road, in the County of Deschutes"
+  ],
+  "hours": [
+   [
+    480,
+    1080
+   ],
+   [
+    1920,
+    2520
+   ],
+   [
+    3360,
+    3960
+   ],
+   [
+    4800,
+    5400
+   ],
+   [
+    6240,
+    6840
+   ],
+   [
+    9180,
+    9600
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "Elite Medi Spa",
+   "d": "elitemedispabend.com",
+   "rating": 5.0,
+   "reviews": 550
+  },
+  {
+   "n": "Salt Medical Aesthetics",
+   "d": "saltbend.com",
+   "rating": 5.0,
+   "reviews": 360
+  },
+  {
+   "n": "Juniper Dermatology",
+   "d": "juniperdermatology.com",
+   "rating": 4.9,
+   "reviews": 779
+  }
+ ],
+ "rd": [
+  {
+   "q": "best med spa in bend oregon",
+   "v": 90,
+   "t": "Commercial",
+   "g": "#3",
+   "r": [
+    1,
+    0,
+    1,
+    1,
+    0,
+    null
+   ]
+  },
+  {
+   "q": "where should i get botox in bend oregon",
+   "v": 170,
+   "t": "Commercial",
+   "g": "#4",
+   "r": [
+    1,
+    0,
+    1,
+    null,
+    1,
+    null
+   ]
+  },
+  {
+   "q": "best lip filler in bend oregon",
+   "v": 140,
+   "t": "Commercial",
+   "g": "#1",
+   "r": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    null
+   ]
+  },
+  {
+   "q": "best laser hair removal in bend oregon",
+   "v": 210,
+   "t": "Commercial",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    null,
+    1,
+    null
+   ]
+  },
+  {
+   "q": "best hydrafacial in bend oregon",
+   "v": 140,
+   "t": "Commercial",
+   "g": "#3",
+   "r": [
+    1,
+    0,
+    1,
+    1,
+    1,
+    null
+   ]
+  },
+  {
+   "q": "best place for coolsculpting in bend oregon",
+   "v": 110,
+   "t": "Commercial",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    null,
+    1,
+    null
+   ]
+  }
+ ],
+ "cr": [
+  {
+   "q": "botox bend oregon",
+   "t": "Commercial",
+   "v": 170,
+   "c": [
+    "Juniper Dermatology",
+    "Salt Aesthetics",
+    "Refine You"
+   ]
+  },
+  {
+   "q": "lip filler bend oregon",
+   "t": "Commercial",
+   "v": 140,
+   "c": [
+    "Juniper Dermatology",
+    "Salt Medical Aesthetics",
+    "Elite Medi Spa"
+   ]
+  },
+  {
+   "q": "hydrafacial bend oregon",
+   "t": "Commercial",
+   "v": 140,
+   "c": [
+    "J Bella Modern Skin",
+    "Elite Medi Spa"
+   ]
+  },
+  {
+   "q": "best med spa in bend oregon",
+   "t": "Commercial",
+   "v": 90,
+   "c": [
+    "Elite Medi Spa",
+    "Salt Medical Aesthetics",
+    "W Aesthetics"
+   ]
+  }
+ ],
+ "scan": {
+  "searches": 6,
+  "answers_naming_you": 16,
+  "answers_total": 21,
+  "brand_searches": 0
+ },
+ "vp_keywords": [
+  {
+   "q": "Spa Bend, Oregon",
+   "v": 590
+  },
+  {
+   "q": "Spa Bend, OR",
+   "v": 480
+  },
+  {
+   "q": "Spas in Bend, Oregon",
+   "v": 320
+  },
+  {
+   "q": "Facials Bend",
+   "v": 260
+  },
+  {
+   "q": "Laser hair removal Bend, Oregon",
+   "v": 210
+  },
+  {
+   "q": "Botox Bend, OR",
+   "v": 170
+  },
+  {
+   "q": "Bend beauty spa",
+   "v": 170
+  },
+  {
+   "q": "Facials Bend, Oregon",
+   "v": 170
+  },
+  {
+   "q": "Facial Bend, Oregon",
+   "v": 170
+  },
+  {
+   "q": "Spas Bend, Oregon",
+   "v": 170
+  },
+  {
+   "q": "Botox Bend, Oregon",
+   "v": 170
+  },
+  {
+   "q": "Spa in Bend, Oregon",
+   "v": 170
+  },
+  {
+   "q": "Spa Bend",
+   "v": 140
+  },
+  {
+   "q": "Botox cost Bend",
+   "v": 140
+  },
+  {
+   "q": "Laser skin treatment Bend",
+   "v": 140
+  },
+  {
+   "q": "Lip filler Bend, Oregon",
+   "v": 140
+  },
+  {
+   "q": "Bend spas",
+   "v": 140
+  },
+  {
+   "q": "Laser hair removal Bend",
+   "v": 140
+  },
+  {
+   "q": "Pigmentation treatment Bend",
+   "v": 140
+  },
+  {
+   "q": "HydraFacial Bend, Oregon",
+   "v": 140
+  },
+  {
+   "q": "Bend Botox",
+   "v": 140
+  },
+  {
+   "q": "Best spa in Bend, Oregon",
+   "v": 140
+  },
+  {
+   "q": "Acne scar treatment Bend",
+   "v": 140
+  },
+  {
+   "q": "Botox Bend",
+   "v": 110
+  },
+  {
+   "q": "Weight loss Bend, Oregon",
+   "v": 110
+  },
+  {
+   "q": "CoolSculpting Bend, Oregon",
+   "v": 110
+  },
+  {
+   "q": "Bend or spa",
+   "v": 110
+  },
+  {
+   "q": "Age spot / sun spot removal Bend",
+   "v": 110
+  },
+  {
+   "q": "IPL photofacial Bend",
+   "v": 110
+  },
+  {
+   "q": "Microneedling Bend, Oregon",
+   "v": 110
+  },
+  {
+   "q": "Weight loss Bend",
+   "v": 110
+  },
+  {
+   "q": "Botox in Bend, Oregon",
+   "v": 110
+  },
+  {
+   "q": "Laser Bend",
+   "v": 110
+  },
+  {
+   "q": "Facial Bend",
+   "v": 110
+  },
+  {
+   "q": "Anti-aging clinic Bend",
+   "v": 90
+  },
+  {
+   "q": "Bend weight loss",
+   "v": 90
+  },
+  {
+   "q": "Med spa Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Restylane Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "IPL facial Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "RF microneedling Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Tattoo removal Bend, Oregon",
+   "v": 90
+  },
+  {
+   "q": "Skin tag removal Bend",
+   "v": 90
+  },
+  {
+   "q": "Laser hair removal Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Anti-aging medicine Bend",
+   "v": 90
+  },
+  {
+   "q": "Med spa Bend, Oregon",
+   "v": 90
+  },
+  {
+   "q": "IPL therapy Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Sculptra Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Lip fillers Bend, Oregon",
+   "v": 90
+  },
+  {
+   "q": "HydraFacial Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Xeomin Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Best spas in Bend, Oregon",
+   "v": 90
+  },
+  {
+   "q": "Best spa in Bend",
+   "v": 90
+  },
+  {
+   "q": "Zwave body sculpting Bend, OR",
+   "v": 90
+  },
+  {
+   "q": "Kybella Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Pico laser Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Dysport Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Chemical peel Bend",
+   "v": 70
+  },
+  {
+   "q": "Juvederm Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Scar removal in Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Zwave cellulite reduction Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Juvederm volbella Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Laser skin resurfacing Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Medi spa Bend, Oregon",
+   "v": 70
+  },
+  {
+   "q": "CoolSculpting Bend",
+   "v": 70
+  },
+  {
+   "q": "Laser genesis Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Bend laser hair removal",
+   "v": 70
+  },
+  {
+   "q": "Vaginal rejuvenation Bend, OR",
+   "v": 70
+  },
+  {
+   "q": "Med spa Bend",
+   "v": 70
+  }
+ ],
+ "traffic": [
+  {
+   "n": "ESTHETIXMD",
+   "me": true,
+   "v": [
+    17634,
+    19571,
+    19005,
+    15661,
+    19725,
+    17527,
+    35010,
+    25136,
+    27524,
+    29749,
+    32029,
+    12469
+   ]
+  },
+  {
+   "n": "Elite Medi Spa",
+   "v": [
+    54950,
+    76310,
+    66905,
+    27569,
+    22376,
+    34444,
+    60668,
+    35512,
+    60357,
+    84403,
+    80471,
+    19684
+   ]
+  },
+  {
+   "n": "Salt Medical Aesthetics",
+   "v": [
+    923,
+    1961,
+    2631,
+    815,
+    2145,
+    7577,
+    17081,
+    5952,
+    34339,
+    8880,
+    6653,
+    2658
+   ]
+  },
+  {
+   "n": "Juniper Dermatology",
+   "v": [
+    614,
+    986,
+    1488,
+    4185,
+    4212,
+    2143,
+    2111,
+    2545,
+    2370,
+    2496,
+    1223,
+    1203
+   ]
+  }
+ ],
+ "traffic_dfs": [
+  {
+   "n": "ESTHETIXMD",
+   "me": true,
+   "v": [
+    4429,
+    3155,
+    3050,
+    2917,
+    3098,
+    1914,
+    1817,
+    1458,
+    1426,
+    1548,
+    1213,
+    1175
+   ]
+  },
+  {
+   "n": "Elite Medi Spa",
+   "v": [
+    1592,
+    1670,
+    1989,
+    3584,
+    3605,
+    2496,
+    2493,
+    2724,
+    1889,
+    1815,
+    1825,
+    1608
+   ]
+  },
+  {
+   "n": "Salt Medical Aesthetics",
+   "v": [
+    231,
+    240,
+    224,
+    215,
+    231,
+    247,
+    321,
+    469,
+    466,
+    468,
+    503,
+    477
+   ]
+  },
+  {
+   "n": "Juniper Dermatology",
+   "v": [
+    614,
+    986,
+    1488,
+    4185,
+    4212,
+    2143,
+    2111,
+    2545,
+    2370,
+    2496,
+    1223,
+    1203
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 72,
+  "avg": 57,
+  "top": 72
+ },
+ "price": {
+  "value": 527,
+  "currency": "USD",
+  "label": "average spend per US med spa visit (2024)",
+  "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
+  "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Failed",
+   "parts": [
+    [
+     "Business record",
+     "Google lists (541) 208-5251, your website lists (541) 508-7907, and Yelp, Facebook and your site code list (541) 330-5551."
+    ],
+    [
+     "Directory listings",
+     "Older Exhale Spa names still show online, including your YouTube channel address."
+    ]
+   ],
+   "issue": "Three different phone numbers and old business names show up online, so AI can't tell which details are right.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google",
+      "(541) 208-5251",
+      "warn"
+     ],
+     [
+      "Your website",
+      "(541) 508-7907",
+      "warn"
+     ],
+     [
+      "Yelp, Facebook and site code",
+      "(541) 330-5551",
+      "warn"
+     ],
+     [
+      "YouTube channel address",
+      "@ExhaleSpaLaserCenterBend (old Exhale name)",
+      "bad"
+     ],
+     [
+      "Google categories",
+      "3 (Medical spa, Laser hair removal, Skin care clinic)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHONE NUMBERS FOUND ONLINE",
+     "d": [
+      [
+       "ESTHETIXMD",
+       3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Needs work",
+   "issue": "We found one news mention in the last year, a reader poll in The Source Weekly. No other local news outlet has written about you recently.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "The Source Weekly",
+      "Best of Central Oregon, Aug 2025",
+      "ok"
+     ],
+     [
+      "Other news sites",
+      "None found in the last year",
+      "warn"
+     ],
+     [
+      "Elite Medi Spa",
+      "2 Source Weekly first-place awards",
+      "warn"
+     ],
+     [
+      "Salt Medical Aesthetics",
+      "Feature in Cascade Business News",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "ESTHETIXMD",
+       1
+      ],
+      [
+       "ELITE",
+       2
+      ],
+      [
+       "SALT",
+       1
+      ],
+      [
+       "JUNIPER",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Needs work",
+   "issue": "You have many videos, but the newest is about four years old and your YouTube channel address still uses the old Exhale name.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "YouTube search, top 20",
+      "19 videos about you",
+      "ok"
+     ],
+     [
+      "Newest video",
+      "About 4 years old (2022)",
+      "bad"
+     ],
+     [
+      "Channel address",
+      "@ExhaleSpaLaserCenterBend",
+      "bad"
+     ],
+     [
+      "Video on your website",
+      "Found",
+      "ok"
+     ],
+     [
+      "Salt Medical Aesthetics",
+      "17 videos, several posted this year",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "VIDEOS IN TOP 20 YOUTUBE RESULTS",
+     "d": [
+      [
+       "ESTHETIXMD",
+       19
+      ],
+      [
+       "ELITE",
+       8
+      ],
+      [
+       "SALT",
+       17
+      ],
+      [
+       "JUNIPER",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Answer and area pages",
+     "Pages for La Pine, Madras, Redmond and Sisters."
+    ],
+    [
+     "Fresh articles",
+     "90 articles, but the newest is from September 2025."
+    ],
+    [
+     "Google rankings",
+     "You rank for 249 searches, 45 of them in the top 10."
+    ],
+    [
+     "Search indexing",
+     "Search Console is connected."
+    ]
+   ],
+   "issue": "You still rank well, but you rank for far fewer searches than a year ago and no new article has gone up since September 2025.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google searches you rank for",
+      "249",
+      "ok"
+     ],
+     [
+      "Searches in the top 10",
+      "45",
+      "ok"
+     ],
+     [
+      "Searches you ranked for, Nov 2025 vs Oct 2026",
+      "1,222 down to 265",
+      "bad"
+     ],
+     [
+      "Articles",
+      "90, newest Sep 2025",
+      "bad"
+     ],
+     [
+      "Area pages",
+      "La Pine, Madras, Redmond, Sisters",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE SEARCHES EACH SITE RANKS FOR",
+     "d": [
+      [
+       "ESTHETIXMD",
+       249
+      ],
+      [
+       "ELITE",
+       155
+      ],
+      [
+       "SALT",
+       62
+      ],
+      [
+       "JUNIPER",
+       955
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Page speed",
+     "Homepage took 3.2 seconds to load in our test and weighs 14.6 MB."
+    ],
+    [
+     "Website code",
+     "Your site code still says 4.8 stars from over 270 reviews."
+    ],
+    [
+     "Website upkeep",
+     "Footer still shows 2023."
+    ]
+   ],
+   "issue": "Your homepage is heavy, its review numbers are out of date, and the footer still says 2023.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage load time",
+      "3.2 seconds",
+      "warn"
+     ],
+     [
+      "On-page health score",
+      "88 of 100",
+      "warn"
+     ],
+     [
+      "Homepage size",
+      "14.6 MB",
+      "bad"
+     ],
+     [
+      "Files loaded",
+      "172",
+      "warn"
+     ],
+     [
+      "Rating in site code",
+      "4.8 from over 270 reviews (Google: 4.9 from 628)",
+      "warn"
+     ],
+     [
+      "Footer year",
+      "© 2023",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (SECONDS)",
+     "d": [
+      [
+       "ESTHETIXMD",
+       3.16
+      ],
+      [
+       "ELITE",
+       3.74
+      ],
+      [
+       "SALT",
+       1.55
+      ],
+      [
+       "JUNIPER",
+       1.54
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Passed",
+   "issue": "Your Google reviews are excellent, but your website still shows an older, lower count.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google rating",
+      "4.9",
+      "ok"
+     ],
+     [
+      "Google reviews",
+      "628",
+      "ok"
+     ],
+     [
+      "Rating on your website",
+      "4.8 from over 270 reviews",
+      "warn"
+     ],
+     [
+      "Juniper Dermatology",
+      "779 reviews (dermatology and med spa combined)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "ESTHETIXMD",
+       628
+      ],
+      [
+       "ELITE",
+       550
+      ],
+      [
+       "SALT",
+       360
+      ],
+      [
+       "JUNIPER",
+       779
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Needs work",
+   "issue": "Google and your website list different phone numbers and different weekend hours, and you use fewer categories than Elite Medi Spa.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Phone on Google",
+      "(541) 208-5251",
+      "warn"
+     ],
+     [
+      "Phone on website",
+      "(541) 508-7907",
+      "warn"
+     ],
+     [
+      "Weekend hours on Google",
+      "Sunday 9 AM to 4 PM, Saturday closed",
+      "warn"
+     ],
+     [
+      "Saturday on contact page",
+      "9 AM to 6 PM",
+      "bad"
+     ],
+     [
+      "Photos on Google",
+      "69",
+      "ok"
+     ],
+     [
+      "Categories",
+      "3 (Elite Medi Spa has 5)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "ESTHETIXMD",
+       69
+      ],
+      [
+       "ELITE",
+       11
+      ],
+      [
+       "SALT",
+       56
+      ],
+      [
+       "JUNIPER",
+       24
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Needs work",
+   "issue": "Only 52 of 130 images on your homepage have a useful label, and photo files have names like 05.jpg that never mention EsthetixMD.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Images with useful labels",
+      "52 of 130 (40%)",
+      "bad"
+     ],
+     [
+      "Photo file names",
+      "05.jpg, 06.jpg, 07.jpg",
+      "bad"
+     ],
+     [
+      "Business name in photos",
+      "Not included",
+      "bad"
+     ],
+     [
+      "Juniper Dermatology",
+      "19 of 19 labeled (100%)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "%",
+     "cap": "HOMEPAGE IMAGES WITH USEFUL LABELS",
+     "d": [
+      [
+       "ESTHETIXMD",
+       40
+      ],
+      [
+       "ELITE",
+       63
+      ],
+      [
+       "SALT",
+       90
+      ],
+      [
+       "JUNIPER",
+       100
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "issue": "270 websites link to you, but 532 of the 632 links point to pages on your site that no longer load.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Other websites linking to you",
+      "270",
+      "ok"
+     ],
+     [
+      "Links leading to pages that no longer load",
+      "532 of 632",
+      "bad"
+     ],
+     [
+      "Spam score of linking sites",
+      "18%",
+      "warn"
+     ],
+     [
+      "The Source Weekly",
+      "Best of Central Oregon",
+      "ok"
+     ],
+     [
+      "Other local articles",
+      "None found",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "WEBSITES LINKING TO EACH BUSINESS",
+     "d": [
+      [
+       "ESTHETIXMD",
+       270
+      ],
+      [
+       "ELITE",
+       110
+      ],
+      [
+       "SALT",
+       189
+      ],
+      [
+       "JUNIPER",
+       128
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Passed",
+   "issue": "You appear in local best-of guides and in Google's top three for best med spa in Bend.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "All Things Bend",
+      "2026 med spa guide",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "Best medical spas in Bend list",
+      "ok"
+     ],
+     [
+      "Google: best med spa bend oregon",
+      "#3 on the map",
+      "ok"
+     ],
+     [
+      "Juniper Dermatology",
+      "Not in the top 20 for that search",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Needs work",
+   "issue": "ChatGPT left EsthetixMD out of 4 of the 6 searches we ran and named Elite Medi Spa and Juniper Dermatology instead.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "ChatGPT",
+      "Named you in 2 of 6 searches",
+      "bad"
+     ],
+     [
+      "Gemini",
+      "6 of 6 searches",
+      "ok"
+     ],
+     [
+      "Google AI",
+      "5 of 6 searches",
+      "ok"
+     ],
+     [
+      "Perplexity",
+      "3 of 3 checked",
+      "ok"
+     ],
+     [
+      "Named by ChatGPT instead",
+      "Elite Medi Spa 4, Juniper Dermatology 4, Salt 3",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "CHATGPT ANSWERS NAMING EACH (6 SEARCHES)",
+     "d": [
+      [
+       "ESTHETIXMD",
+       2
+      ],
+      [
+       "ELITE",
+       4
+      ],
+      [
+       "SALT",
+       3
+      ],
+      [
+       "JUNIPER",
+       4
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     3,
+     5,
+     3,
+     6
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     1,
+     2,
+     1,
+     1
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     19,
+     8,
+     17,
+     1
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     249,
+     155,
+     62,
+     955
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     45,
+     34,
+     18,
+     66
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     3.16,
+     3.74,
+     1.55,
+     1.54
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     88.19,
+     86.36,
+     97.07,
+     100
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     628,
+     550,
+     360,
+     779
+    ],
+    "good": 600,
+    "ok": 300,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.9,
+     5.0,
+     5.0,
+     4.9
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     69,
+     11,
+     56,
+     24
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     16,
+     15,
+     11,
+     15
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     40,
+     63,
+     90,
+     100
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     270,
+     110,
+     189,
+     128
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     18,
+     17,
+     26,
+     32
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best med spa bend”",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "ChatGPT answers that name each business (6 non-brand searches)",
+    "t": "num",
+    "v": [
+     2,
+     4,
+     3,
+     4
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Our AI scan, ChatGPT, Nov 11 2026"
+   }
+  ]
+ },
+ "notes": [
+  "Map-pack searches ran with location Bend, Oregon (the SERP tool takes a location name, not coordinates).",
+  "Hours: Google listing (updated Oct 8 2026) shows Mon to Fri 8 AM to 6 PM and Sunday 9 AM to 4 PM, Saturday closed; the contact page says Saturday 9 AM to 6 PM. hours field follows Google.",
+  "rd, cr, score, vp_keywords, AI results and several check rows reuse the verified Nov 11 2026 scan (esthetix/data.json, ai_checks.md). That scan covered 6 non-brand searches and no brand search; Claude was not checked and Perplexity was checked on 3 searches, so answers_total is 21, not 35.",
+  "traffic: EsthetixMD, Elite and Salt use the last 12 months from esthetix/data.json; Juniper uses DataForSEO etv. These sources are on different scales (DataForSEO shows EsthetixMD at 1,175 for Oct 2026 vs 12,469 in data.json). traffic_dfs holds all four from DataForSEO for a like-for-like chart.",
+  "Juniper Dermatology is a dermatology practice with Bend and Redmond offices on one domain; its traffic, rankings and reviews (779, Bend listing as of Sep 11 2026) cover both and its medical work.",
+  "Competitor review counts for Elite and Salt come from today's live Google local pack; Juniper's from the Google listing data.",
+  "Load time and on-page score come from a DataForSEO page test with scripts running (Nov 12 2026). Without scripts EsthetixMD loads in 0.36 s with a 98.17 score; the 14.6 MB and 172 files figures come from the Nov 11 browser check.",
+  "Alt-text share counts every image tag on the homepage, including small icons; the 6 main photos were labeled per the Nov 11 check.",
+  "News article counts come from a web search on Nov 12 2026 and are counts of items found, not an exhaustive census.",
+  "AI monitoring aud compares ChatGPT only (the one engine we have answers for all four businesses).",
+  "Directory listings check is a placeholder from our own findings; it will be replaced by the directory helper."
+ ]
+}

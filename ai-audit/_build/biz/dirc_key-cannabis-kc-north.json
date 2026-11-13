@@ -1,0 +1,316 @@
+{
+ "comps": [
+  {
+   "n": "NatureMed Dispensary",
+   "truth": {
+    "name": "NatureMed Dispensary",
+    "address": "2631 NE Vivion Rd, Kansas City, MO 64119",
+    "phone": "(816) 298-7538",
+    "hours": "Mon-Sun 8:00 AM to 10:00 PM"
+   },
+   "dirs": [
+    {
+     "d": "Leafly",
+     "found": true,
+     "url": "https://www.leafly.com/dispensary-info/nature-s-med---vivion",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": true,
+     "note": "Shown as \"Nature Med - Vivion\", 2631 NE Vivion Rd #B; phone and hours (8am to 10pm daily) match."
+    },
+    {
+     "d": "Weedmaps",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Only an Arizona Nature Med listing found; no Kansas City store page."
+    },
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "https://www.yelp.com/biz/nature-med-kansas-city",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"Nature Med\" at 2631 NE Vivion Rd under Vitamins & Supplements; page could not be read for phone or hours."
+    },
+    {
+     "d": "Facebook",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No store page found in our searches; not confirmed either way."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not in the Kansas City dispensary list page we read (13 results shown); not confirmed either way."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/nature-med-779672723",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"Nature Med, 2631 NE Vivion Rd, Ste B\"; page blocked our reader."
+    },
+    {
+     "d": "Foursquare",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing found in searches."
+    },
+    {
+     "d": "Where's Weed",
+     "found": true,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "\"Nature Med - KC\" appears in Where's Weed list snippets; listing page could not be read."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be checked."
+    }
+   ],
+   "match": 1,
+   "listed": 4,
+   "checked": 9
+  },
+  {
+   "n": "Kansas City Cannabis Company - Dispensary",
+   "truth": {
+    "name": "Kansas City Cannabis Company - Dispensary",
+    "address": "8170 NW Prairie View Rd, Kansas City, MO 64151",
+    "phone": "(866) 522-2662",
+    "hours": "Closes 10 PM (Google map pack, Nov 12, 2026); Sep 2026 listing data showed 10 AM to 9 PM daily"
+   },
+   "dirs": [
+    {
+     "d": "Leafly",
+     "found": true,
+     "url": "https://www.leafly.com/dispensary-info/kansas-city-cannabis-company-kansas-city-north",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Shown as \"Kansas City Cannabis Company - Kansas City North\"; hours 8am to 10pm daily (Google opening time not confirmed)."
+    },
+    {
+     "d": "Weedmaps",
+     "found": true,
+     "url": "https://weedmaps.com/dispensaries/kansas-city-cannabis-co",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Shown as \"Kansas City Cannabis Co\"; 8 AM to 10 PM; listing is unclaimed."
+    },
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "https://www.yelp.com/biz/kansas-city-cannabis-kansas-city-2",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"Kansas City Cannabis\" at 8170 NW Prairie View Rd; page could not be read for phone or hours."
+    },
+    {
+     "d": "Facebook",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No store page found in our searches; not confirmed either way."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not in the Kansas City dispensary list page we read; not confirmed either way."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/kansas-city-cannabis-776511556",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"Kansas City Cannabis\"; page blocked our reader."
+    },
+    {
+     "d": "Foursquare",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing found in searches."
+    },
+    {
+     "d": "Where's Weed",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Site would not load for our reader."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be checked."
+    }
+   ],
+   "match": 2,
+   "listed": 4,
+   "checked": 9
+  },
+  {
+   "n": "SWADE Dispensary North KC",
+   "truth": {
+    "name": "SWADE Dispensary North KC",
+    "address": "1041 Burlington St, North Kansas City, MO 64116",
+    "phone": "(816) 775-2920",
+    "hours": "Mon-Sat 9:00 AM to 10:00 PM, Sun 9:00 AM to 9:00 PM"
+   },
+   "dirs": [
+    {
+     "d": "Leafly",
+     "found": true,
+     "url": "https://www.leafly.com/dispensary-info/swade-cannabis-north-kc",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": true,
+     "note": "Shown as \"Swade Cannabis - North KC\"; all details match; profile is unclaimed."
+    },
+    {
+     "d": "Weedmaps",
+     "found": true,
+     "url": "https://weedmaps.com/dispensaries/swade-cannabis-n-kansas-city",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"SWADE Cannabis - N Kansas City\" in search results; page did not show address or phone to our reader."
+    },
+    {
+     "d": "Yelp",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No store page found in our searches; not confirmed either way."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "https://www.facebook.com/SwadeNKC/",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page \"Swade NKC\" found; details could not be read."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": true,
+     "url": "https://www.yellowpages.com/north-kansas-city-mo/mip/swade-dispensary-north-kc-578720129",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": true,
+     "note": "Name, address, phone and hours all match Google."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/swade-dispensary-north-kc-778661544",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shown as \"SWADE Dispensary North KC, 1041 Burlington St\"; page blocked our reader."
+    },
+    {
+     "d": "Foursquare",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing found in searches."
+    },
+    {
+     "d": "Where's Weed",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Site would not load for our reader."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be checked."
+    }
+   ],
+   "match": 2,
+   "listed": 5,
+   "checked": 9
+  }
+ ]
+}

@@ -1,0 +1,1200 @@
+{
+ "slug": "spiritleaf-salisbury",
+ "biz": {
+  "name": "SPIRITLEAF",
+  "full": "Spiritleaf Salisbury",
+  "short": "Spiritleaf Salisbury",
+  "city": "Sherwood Park, AB",
+  "addr": "115 Tisbury St #130, Sherwood Park, AB T8B 0B7",
+  "phone": "(587) 269-5153",
+  "site": "spiritleaf.ca/collections/spiritleaf-salisbury",
+  "domain": "spiritleaf.ca",
+  "rating": 5.0,
+  "reviews": 15,
+  "lat": 53.512,
+  "lng": -113.303,
+  "place_id": "ChIJFT1Pv_AXoFMRmu127Abs5ck",
+  "svc": "dispensary",
+  "area": [
+   "Sherwood Park",
+   "Strathcona County, Alberta"
+  ],
+  "hours": [
+   [
+    600,
+    1320
+   ],
+   [
+    2040,
+    2760
+   ],
+   [
+    3480,
+    4200
+   ],
+   [
+    4920,
+    5640
+   ],
+   [
+    6360,
+    7080
+   ],
+   [
+    7800,
+    8520
+   ],
+   [
+    9240,
+    9960
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "Pop's Cannabis Co.",
+   "d": "popscannabis.ca",
+   "rating": 4.8,
+   "reviews": 144
+  },
+  {
+   "n": "Plantlife Cannabis",
+   "d": "plantlifecannabis.com",
+   "rating": 4.7,
+   "reviews": 159
+  },
+  {
+   "n": "Canna Cabana",
+   "d": "cannacabana.com",
+   "rating": 4.0,
+   "reviews": 67
+  }
+ ],
+ "rd": [
+  {
+   "q": "spiritleaf salisbury",
+   "v": 50,
+   "t": "Brand",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [
+  {
+   "q": "dispensary sherwood park",
+   "v": 480,
+   "t": "Commercial",
+   "c": [
+    "Canna Cabana",
+    "Plantlife Cannabis",
+    "Good Roots Cannabis"
+   ]
+  },
+  {
+   "q": "weed store",
+   "v": 12100,
+   "t": "Transaction",
+   "c": [
+    "Fire & Flower",
+    "Pop's Cannabis Co.",
+    "Plantlife Cannabis"
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "v": 140,
+   "t": "Transaction",
+   "c": [
+    "Canna Cabana",
+    "Kurve Cannabis",
+    "Value Buds"
+   ]
+  },
+  {
+   "q": "weed sherwood park",
+   "v": 20,
+   "t": "Transaction",
+   "c": [
+    "Plantlife Cannabis",
+    "Pop's Cannabis Co.",
+    "Fire & Flower"
+   ]
+  },
+  {
+   "q": "sherwood park dispensary",
+   "v": 110,
+   "t": "Commercial",
+   "c": [
+    "Canna Cabana",
+    "Plantlife Cannabis",
+    "Cannabis Discounter"
+   ]
+  },
+  {
+   "q": "dispensary",
+   "v": 9900,
+   "t": "Commercial",
+   "c": [
+    "Canna Cabana",
+    "Kurve Cannabis",
+    "Value Buds"
+   ]
+  }
+ ],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 4,
+  "answers_total": 35,
+  "brand_searches": 1
+ },
+ "traffic": [
+  {
+   "n": "SPIRITLEAF",
+   "me": true,
+   "v": [
+    30055,
+    29757,
+    29470,
+    29931,
+    33140,
+    30796,
+    31234,
+    31659,
+    31865,
+    36814,
+    42302,
+    39660
+   ]
+  },
+  {
+   "n": "Pop's Cannabis Co.",
+   "v": [
+    7969,
+    8393,
+    9532,
+    10210,
+    15451,
+    13446,
+    11759,
+    30510,
+    30374,
+    25491,
+    16457,
+    15901
+   ]
+  },
+  {
+   "n": "Plantlife Cannabis",
+   "v": [
+    11191,
+    11375,
+    11388,
+    11331,
+    11623,
+    11146,
+    10904,
+    9130,
+    8012,
+    7451,
+    6701,
+    9691
+   ]
+  },
+  {
+   "n": "Canna Cabana",
+   "v": [
+    146985,
+    151066,
+    150848,
+    156462,
+    162310,
+    182192,
+    174277,
+    174737,
+    172903,
+    168415,
+    168338,
+    135344
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 0,
+  "avg": 31,
+  "top": 42
+ },
+ "price": {
+  "value": 22.31,
+  "currency": "CAD",
+  "label": "average cannabis item price, Alberta (Oct 2026)",
+  "source": "Headset",
+  "url": "https://www.headset.io/markets/ab"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Name, address and phone match; 1 category, no description"
+    ],
+    [
+     "Directory listings",
+     "No Leafly store page found"
+    ]
+   ],
+   "issue": "Your Google profile has no business description, only one category, and its website link goes to the Spiritleaf chain homepage instead of the Salisbury store page.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google name",
+      "Spiritleaf Salisbury (matches the store)",
+      "ok"
+     ],
+     [
+      "Google categories",
+      "1 (Cannabis store). Plantlife lists 3",
+      "warn"
+     ],
+     [
+      "Google description",
+      "None",
+      "bad"
+     ],
+     [
+      "Website link on Google",
+      "www.spiritleaf.ca homepage, not the Salisbury store page",
+      "bad"
+     ],
+     [
+      "Leafly listing",
+      "No Salisbury page found (Brentwood store has one)",
+      "warn"
+     ],
+     [
+      "Other directories",
+      "Listed on Cannabis Promotions, eWeedPro, Best Bang for Your Bud, Dutchie",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "CATEGORIES ON GOOGLE PROFILE",
+     "d": [
+      [
+       "SALISBURY",
+       1
+      ],
+      [
+       "POP'S",
+       1
+      ],
+      [
+       "PLANTLIFE",
+       3
+      ],
+      [
+       "CANNA CABANA",
+       1
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Failed",
+   "parts": [
+    [
+     "News coverage",
+     "No news articles found about the Salisbury store"
+    ]
+   ],
+   "issue": "We found no news story about the Salisbury store; the only Sherwood Park Spiritleaf coverage is about the Brentwood store.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google News / web search",
+      "No articles naming Spiritleaf Salisbury",
+      "bad"
+     ],
+     [
+      "Chain press releases",
+      "Spiritleaf corporate releases only, none about this store",
+      "warn"
+     ],
+     [
+      "Competitors",
+      "No local news found for Pop's, Plantlife or Canna Cabana Sherwood Park stores",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Failed",
+   "parts": [
+    [
+     "YouTube",
+     "0 videos about the Salisbury store"
+    ]
+   ],
+   "issue": "YouTube has no video made by or about the Salisbury store; a search for it returns chain videos from other cities.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Search 'Spiritleaf Salisbury Sherwood Park'",
+      "Top 20 are chain videos (Kingston, Scarborough, Okanagan) and local real estate tours",
+      "bad"
+     ],
+     [
+      "Store's own channel",
+      "None found",
+      "bad"
+     ],
+     [
+      "Competitors",
+      "0 videos found for the 3 competitor stores",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Failed",
+   "parts": [
+    [
+     "Local map results",
+     "Not in the map pack or top 20 for any of 6 non-brand searches"
+    ],
+    [
+     "Brand search",
+     "#2 organic, plus Google knowledge panel"
+    ]
+   ],
+   "issue": "Spiritleaf Salisbury does not show in Google's top 20 or map pack for any of the 6 everyday searches we checked; it only appears when someone searches its name.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Map pack, 6 non-brand searches",
+      "Not shown on any of them",
+      "bad"
+     ],
+     [
+      "Organic top 20, 6 non-brand searches",
+      "Not shown on any of them",
+      "bad"
+     ],
+     [
+      "'best dispensary sherwood park'",
+      "Not shown; Brentwood store is #2 in the map pack",
+      "bad"
+     ],
+     [
+      "'spiritleaf salisbury'",
+      "#2 organic (Salisbury menu page), knowledge panel shown",
+      "ok"
+     ],
+     [
+      "Chain site spiritleaf.ca",
+      "2,262 ranking searches across all Canadian stores",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NON-BRAND SEARCHES WITH A MAP PACK SPOT (OF 6)",
+     "d": [
+      [
+       "SALISBURY",
+       0
+      ],
+      [
+       "POP'S",
+       2
+      ],
+      [
+       "PLANTLIFE",
+       2
+      ],
+      [
+       "CANNA CABANA",
+       4
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Store page",
+     "Fast and healthy (score 97)"
+    ],
+    [
+     "Google link",
+     "Points to chain homepage"
+    ]
+   ],
+   "issue": "The Salisbury store page is fast and healthy, but Google sends shoppers to the chain homepage instead, and the store page's description is the AGLC license line.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Salisbury store page",
+      "HTTP 200, 1.11 s largest paint (Lighthouse desktop)",
+      "ok"
+     ],
+     [
+      "On-page score, store page",
+      "97.07",
+      "ok"
+     ],
+     [
+      "Server wait, store page",
+      "217 ms",
+      "ok"
+     ],
+     [
+      "Store page description",
+      "Starts with 'AGLC license number: 807413'",
+      "warn"
+     ],
+     [
+      "Google profile link",
+      "www.spiritleaf.ca homepage, not the store page",
+      "bad"
+     ],
+     [
+      "Server",
+      "spiritleaf.ca on Shopify behind Cloudflare",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (LARGEST PAINT)",
+     "d": [
+      [
+       "SPIRITLEAF",
+       1.25
+      ],
+      [
+       "CANNA CABANA",
+       7.84
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Google reviews",
+     "15 reviews, 5.0 stars"
+    ]
+   ],
+   "issue": "Every review is 5 stars, but 15 reviews is far fewer than nearby competitors with 67 to 159.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google rating",
+      "5.0 from 15 reviews",
+      "ok"
+     ],
+     [
+      "Rating split",
+      "15 five star, 0 below",
+      "ok"
+     ],
+     [
+      "Review count vs competitors",
+      "Pop's 144, Plantlife 159, Canna Cabana 67",
+      "bad"
+     ],
+     [
+      "Top review themes",
+      "Knowledgeable staff, vibe, selection, community involvement",
+      "ok"
+     ],
+     [
+      "eWeedPro",
+      "5.0 rating listed for Salisbury",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "SALISBURY",
+       15
+      ],
+      [
+       "POP'S",
+       144
+      ],
+      [
+       "PLANTLIFE",
+       159
+      ],
+      [
+       "CANNA CABANA",
+       67
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Photos",
+     "27"
+    ],
+    [
+     "Profile details",
+     "7 attributes filled"
+    ]
+   ],
+   "issue": "The profile is claimed but thin: no description, 27 photos, 7 details and a website link to the chain homepage.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos",
+      "27 (Pop's 77, Plantlife 17, Canna Cabana 10)",
+      "warn"
+     ],
+     [
+      "Attributes",
+      "7: onsite services, accessibility, payments, quick visit",
+      "warn"
+     ],
+     [
+      "Delivery / pickup attributes",
+      "Not listed (Brentwood store lists both)",
+      "bad"
+     ],
+     [
+      "Hours",
+      "10am to 10pm daily",
+      "ok"
+     ],
+     [
+      "Description",
+      "None",
+      "bad"
+     ],
+     [
+      "Claimed",
+      "Yes",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "SALISBURY",
+       27
+      ],
+      [
+       "POP'S",
+       77
+      ],
+      [
+       "PLANTLIFE",
+       17
+      ],
+      [
+       "CANNA CABANA",
+       10
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Failed",
+   "parts": [
+    [
+     "Chain homepage",
+     "1 of 9 images has useful alt text"
+    ],
+    [
+     "Store page",
+     "Images missing alt text"
+    ]
+   ],
+   "issue": "Images on the chain homepage and the Salisbury store page do not describe what they show, so search engines and AI cannot read them.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "spiritleaf.ca homepage",
+      "1 of 9 images with alt text (11%)",
+      "bad"
+     ],
+     [
+      "Salisbury store page",
+      "6 images; crawler flags missing alt text and titles",
+      "bad"
+     ],
+     [
+      "Canna Cabana homepage",
+      "185 of 314 images with alt text (59%)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 1,
+     "b": 8,
+     "la": "WITH ALT TEXT",
+     "lb": "MISSING",
+     "cap": "SPIRITLEAF.CA HOMEPAGE IMAGES"
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Chain site",
+     "1,200 linking websites"
+    ],
+    [
+     "Salisbury",
+     "Only directory listings found"
+    ]
+   ],
+   "issue": "Links point to the national chain site, 37% of them from spammy sites, and we found no independent article about the Salisbury store.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "spiritleaf.ca linking websites",
+      "1,200 (all stores)",
+      "ok"
+     ],
+     [
+      "spiritleaf.ca spam score of links",
+      "37%",
+      "bad"
+     ],
+     [
+      "Salisbury mentions",
+      "Directory pages only (Cannabis Promotions, eWeedPro, Best Bang for Your Bud)",
+      "warn"
+     ],
+     [
+      "Competitor domains",
+      "Pop's 488, Plantlife 542, Canna Cabana 2,088",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "WEBSITES LINKING TO EACH DOMAIN",
+     "d": [
+      [
+       "SPIRITLEAF",
+       1200
+      ],
+      [
+       "POP'S",
+       488
+      ],
+      [
+       "PLANTLIFE",
+       542
+      ],
+      [
+       "CANNA CABANA",
+       2088
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Failed",
+   "parts": [
+    [
+     "Best of search",
+     "Not shown for 'best dispensary sherwood park'"
+    ]
+   ],
+   "issue": "Salisbury is missing from 'best dispensary sherwood park', where neighbour Bud N' Buddies on Salisbury Way is #1 in the map pack.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Map pack",
+      "Bud N' Buddies #1, Spiritleaf Brentwood #2, Pop's #3",
+      "bad"
+     ],
+     [
+      "Organic top 20",
+      "No Salisbury listing or guide",
+      "bad"
+     ],
+     [
+      "Leafly 'best' list",
+      "Salisbury not found; Brentwood listed",
+      "warn"
+     ],
+     [
+      "Yelp 'best' lists AI uses",
+      "Brentwood named, Salisbury not",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Failed",
+   "parts": [
+    [
+     "AI answers",
+     "0 of 24 non-brand answers name Salisbury"
+    ],
+    [
+     "Accuracy",
+     "Brand answers mix in other info"
+    ]
+   ],
+   "issue": "No AI tool named the Salisbury store for any everyday search; when asked by name, ChatGPT credited it with the Brentwood store's living wage story and Gemini said it is open until midnight on weekends, while Google shows 10pm.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "ChatGPT",
+      "0 of 6 non-brand; named Brentwood store in all 6",
+      "bad"
+     ],
+     [
+      "Gemini",
+      "0 of 6 non-brand",
+      "bad"
+     ],
+     [
+      "Perplexity",
+      "0 of 6 non-brand",
+      "bad"
+     ],
+     [
+      "Claude",
+      "0 of 6 non-brand",
+      "bad"
+     ],
+     [
+      "Google AI Overview",
+      "Shown on the brand search; content could not be read",
+      "warn"
+     ],
+     [
+      "Brand search",
+      "Named by all 4 AI tools; some details wrong (hours, living wage story)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH STORE (OF 24)",
+     "d": [
+      [
+       "SALISBURY",
+       0
+      ],
+      [
+       "POP'S",
+       7
+      ],
+      [
+       "PLANTLIFE",
+       13
+      ],
+      [
+       "CANNA CABANA",
+       5
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     1,
+     1,
+     3,
+     1
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     2262,
+     1794,
+     508,
+     3194
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     549,
+     294,
+     92,
+     1176
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     1.25,
+     null,
+     null,
+     7.84
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     93.41,
+     null,
+     null,
+     93.41
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     15,
+     144,
+     159,
+     67
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     5.0,
+     4.8,
+     4.7,
+     4.0
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     27,
+     77,
+     17,
+     10
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     7,
+     2,
+     10,
+     7
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     11,
+     null,
+     null,
+     59
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     1200,
+     488,
+     542,
+     2088
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     37,
+     52,
+     14,
+     15
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best dispensary Sherwood Park”",
+    "t": "bool",
+    "v": [
+     false,
+     true,
+     true,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     0,
+     7,
+     13,
+     5
+    ],
+    "good": 18,
+    "ok": 12,
+    "src": "Our AI scan"
+   }
+  ]
+ },
+ "notes": [
+  "Listing confirmed live 2026-11-12: Google knowledge panel for 'spiritleaf salisbury' shows 5.0 stars, 15 reviews, place_id ChIJFT1Pv_AXoFMRmu127Abs5ck. Listing data (last updated 2026-09-27): phone (587) 269-5153, 27 photos, no description, 1 category, hours 10am to 10pm daily. Google profile website is https://www.spiritleaf.ca/ (chain homepage); the store page is spiritleaf.ca/collections/spiritleaf-salisbury.",
+  "Same owner as Spiritleaf Brentwood (52 Brentwood Blvd). Competitors, the 6 non-brand searches and volumes, chain-domain traffic, rankings, backlinks, homepage load/score/alt text, and price are reused from spiritleaf-sherwood-park.json. Competitor Google profile measures (reviews, rating, photos, attributes, categories, guides) are from that file too.",
+  "All 6 non-brand Google SERPs were re-run on 2026-11-12 with location 'Sherwood Park, Alberta, Canada' (the SERP tool has no coordinate option, so results are town-level, not at the Tisbury St coordinates). Salisbury was not in the map pack or top 20 for any of them. Brand search 'spiritleaf salisbury' (Google Ads Alberta volume 50/month, spiked to 260 in Sep and 170 in Oct 2026): #2 organic (Brentwood menu page is #1) plus knowledge panel.",
+  "Google AI Overview appeared on the brand search but was returned asynchronous with no content; index 4 in r set to 0 (not measured, not confirmed absent). No AI Overview appeared on the 6 non-brand SERPs in this run.",
+  "AI scan: 28 answers (ChatGPT gpt-4.1-mini, Gemini 2.5 flash, Perplexity sonar, Claude haiku 4.5, web search on). An answer counted only if it clearly referred to the Salisbury / Tisbury St store. Non-brand: 0 of 24 (answers named Spiritleaf Brentwood / 52 Brentwood Blvd instead: ChatGPT 6, Gemini 3 plus 1 unspecified 'Spiritleaf', Perplexity 5, Claude 4). Brand: 4 of 4. Claude's 'Recommend a Sherwood Park, Alberta dispensary' answer did not use web search and named no stores.",
+  "Accuracy issues in brand answers: ChatGPT attributed the Brentwood store's living wage story and a 'Spiritleaf Sherwood Park' review quote to Salisbury; Gemini said Salisbury is open until midnight Friday and Saturday (from a Cannabis Promotions listing title), Google shows 10pm daily; Perplexity said it could not find detailed Salisbury reviews.",
+  "Competitor AI mentions in the 24 non-brand answers: Pop's 7 (Perplexity 5), Plantlife 13, Canna Cabana 5 (some refer to the Fir St / Sherwood Park Mall store). Score uses 36 slots (6 non-brand searches x 6 channels): Salisbury 0, Pop's 9 (25%), Plantlife 15 (42%), Canna Cabana 9 (25%).",
+  "Independent guides for competitors reused from the sister file; in today's re-run of 'best dispensary sherwood park' the pack was Bud N' Buddies (75 Salisbury Way, a direct neighbour of this store), Spiritleaf Brentwood, Pop's; Plantlife was not in the top 20 this time.",
+  "Salisbury store page (spiritleaf.ca/collections/spiritleaf-salisbury): HTTP 200, on-page score 97.07, 6 images with crawler flag for missing alt text, Lighthouse desktop LCP 1.11 s, server response 217 ms, served via Cloudflare on Shopify. Copyright year and schema on this page were not checked; example image file names not collected.",
+  "No Leafly page or news article for the Salisbury store was found. PR and video counts are 0.",
+  "Traffic numbers are chain-wide for spiritleaf.ca (all stores), copied from the sister file."
+ ],
+ "match": "salisbury",
+ "cq": "cannabis store",
+ "movie_qs": [
+  "best dispensary in sherwood park",
+  "weed store open now",
+  "dispensary near me with deals",
+  "who has the best reviews?"
+ ],
+ "priceNote": "DRAG TO MATCH YOUR STORE. STARTS AT THE AVERAGE PRICE OF ONE CANNABIS ITEM IN ALBERTA, C$22.31 (<a href=\"https://www.headset.io/markets/ab\" target=\"_blank\" rel=\"noopener\">HEADSET, OCT 2026</a>). MOST VISITS BUY MORE THAN ONE ITEM.",
+ "volNote": "VOLUME: GOOGLE ADS AND DATAFORSEO, NOV 2026, SHERWOOD PARK SEARCHES ONLY, WITH 45% COUNTED AS AI SEARCHES (BRIGHTLOCAL 2026).",
+ "vp_keywords": [
+  {
+   "q": "dispensary sherwood park",
+   "v": 480
+  },
+  {
+   "q": "weed sherwood park",
+   "v": 20
+  }
+ ]
+}

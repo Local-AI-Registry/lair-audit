@@ -1,0 +1,316 @@
+{
+ "comps": [
+  {
+   "n": "KC Injectables Med Spa",
+   "truth": {
+    "name": "KC Injectables Med Spa",
+    "address": "286 SW Blue Pkwy, Lee's Summit, MO 64063",
+    "phone": "(816) 301-4226",
+    "hours": "Mon-Sun 8 AM-9 PM"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "https://www.yelp.com/biz/kc-injectables-med-spa-lees-summit",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page title shows 286 SW Blue Pkwy, Lee's Summit. Page could not be opened, so phone and hours unconfirmed."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "https://www.facebook.com/kcinjectablesmedspa/",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page found; could not be opened."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Yellow Pages listing turned up in search."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/kc-injectables-med-spa-495729817",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Main listing at 286 SW Blue Pkwy matches. A second listing still shows the old 601 NW Murray Rd address. No phone seen."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": true,
+     "url": "https://www.bbb.org/us/mo/lees-summit/profile/medical-spa/kc-injectables-med-spa-0714-1000058528",
+     "name_ok": true,
+     "addr_ok": false,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Shows old address 601 NW Murray Rd Ste 608; phone matches."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not found in RealSelf search or its Lee's Summit Botox list."
+    }
+   ],
+   "match": 0,
+   "listed": 4,
+   "checked": 9
+  },
+  {
+   "n": "LIV Aesthetics + Wellness",
+   "truth": {
+    "name": "LIV Aesthetics + Wellness",
+    "address": "600 SW Jefferson St Ste 104, Lee's Summit, MO 64063",
+    "phone": "(816) 324-9214",
+    "hours": "Mon-Thu 9 AM-5 PM; Fri 9 AM-4 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No Yelp listing turned up in search."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "https://www.facebook.com/p/LIV-Aesthetics-Wellness-61559333484442/",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page 'LIV Aesthetics & Wellness' found; could not be opened."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": true,
+     "url": "https://www.yellowpages.com/lees-summit-mo/aesthetics",
+     "name_ok": true,
+     "addr_ok": false,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Listed as Liv Aesthetics & Wellness at 618 SW 3rd St (old address); phone matches."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/liv-aesthetics-wellness-791132800",
+     "name_ok": true,
+     "addr_ok": false,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Shows 618 SW 3rd St, Ste I (old address). No phone seen."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not found in BBB search."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not found in RealSelf search or its Lee's Summit Botox list."
+    }
+   ],
+   "match": 0,
+   "listed": 3,
+   "checked": 9
+  },
+  {
+   "n": "Healthylooks Med Spa & Wellness",
+   "truth": {
+    "name": "Healthylooks Med Spa & Wellness",
+    "address": "930 NW Blue Pkwy E, Lee's Summit, MO 64086",
+    "phone": "(816) 795-5262",
+    "hours": "Mon 9 AM-4 PM; Tue 9 AM-6 PM; Wed-Thu 9 AM-5 PM; Fri 9 AM-4 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "https://www.yelp.com/biz/healthylooks-medspa-and-wellness-lees-summit",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page title shows 930 NW Blue Pkwy, Lee's Summit. Page could not be opened, so phone and hours unconfirmed."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "https://www.facebook.com/healthylooksmedspa/",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page found; could not be opened."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Could not be read by our tools."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": true,
+     "url": "https://www.yellowpages.com/lees-summit-mo/mip/healthylooks-medspa-555601349",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": false,
+     "note": "Name, address and phone match, but hours differ (YP: Mon 9-5, Fri 9-5; Google: Mon 9-4, Fri 9-4). A second YP listing also exists."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://www.mapquest.com/us/missouri/healthylooks-medspa-wellness-638032965",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Address 930 NW Blue Pkwy matches, but at least 4 separate entries exist, including one under Jerome Lamb, MD. No phone seen."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not found in BBB search."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not found in RealSelf search or its Lee's Summit Botox list."
+    }
+   ],
+   "match": 0,
+   "listed": 4,
+   "checked": 9
+  }
+ ]
+}

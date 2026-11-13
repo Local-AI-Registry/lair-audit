@@ -1,0 +1,38 @@
+{"comps":[
+{"n":"nuEra East Dubuque","truth":{"name":"nuEra East Dubuque Dispensary","address":"20170 US Hwy 20 W, East Dubuque, IL 61025","phone":"(815) 888-7220","hours":"Mon-Wed 9am-8pm, Thu-Sat 9am-9pm, Sun 10am-7pm"},
+ "dirs":[
+  {"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/nuera-east-dubuque","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"'NuEra - East Dubuque', 20170 US Hwy 20 West, (815) 888-7220; no weekly hours shown, only 'open until 9:45pm'"},
+  {"d":"Weedmaps","found":true,"url":"https://weedmaps.com/dispensaries/nuera-east-dubque","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"'nuEra - East Dubuque', 20170 US Hwy 20 W 61025, (815) 888-7220; no weekly hours; URL slug misspelled 'dubque'"},
+  {"d":"Yelp","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Seen only in Yelp East Dubuque dispensary search snippet as 'nuEra East Dubuque Dispensary'; Yelp page could not be opened"},
+  {"d":"Facebook","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'NuEra East Dubuque' page (7 followers) seen in Google results; page not readable"},
+  {"d":"Yellow Pages","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a YP listing"},
+  {"d":"MapQuest","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'nuEra East Dubuque Dispensary', East Dubuque 61025 seen in Google results; page not readable for address/phone"},
+  {"d":"Foursquare","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a listing"},
+  {"d":"Where's Weed","found":true,"url":"","name_ok":true,"addr_ok":true,"phone_ok":false,"hours_ok":null,"note":"'NuEra - East Dubuque', 20170 US Highway 20 West 61025; phone field blank ('Phone -')"},
+  {"d":"Bing Places","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps page did not render business data; unverified"}
+ ],"match":2,"listed":6,"checked":9},
+{"n":"The Dispensary East Dubuque","truth":{"name":"The Dispensary East Dubuque","address":"1709 IL-35 N, East Dubuque, IL 61025","phone":"(815) 208-7701","hours":"Mon-Wed 9am-8pm, Thu-Sat 8am-10pm, Sun 9am-7pm"},
+ "dirs":[
+  {"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/the-dispensary---east-dubuque","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":false,"note":"'1709 IL-35, East Dubuque' (no N, no ZIP), 815 208 7701; Wed listed 9am-7pm vs Google 9am-8pm"},
+  {"d":"Weedmaps","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Weedmaps Galena or Dubuque city lists; only 'The Dispensary Fulton' (41 mi) appears"},
+  {"d":"Yelp","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a Yelp listing"},
+  {"d":"Facebook","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'The Dispensary East Dubuque' page seen in Google results and GBP profile links; page not readable"},
+  {"d":"Yellow Pages","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"YP East Dubuque list snippet shows 'The Dispensary - Sun Prairie', not this store; list truncated"},
+  {"d":"MapQuest","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a listing"},
+  {"d":"Foursquare","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a listing"},
+  {"d":"Where's Weed","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a listing"},
+  {"d":"Bing Places","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps page did not render business data; unverified"}
+ ],"match":0,"listed":2,"checked":9},
+{"n":"Verilife Galena","truth":{"name":"Verilife Dispensary","address":"115 Perry St, Galena, IL 61036","phone":"(815) 255-8715","hours":"Daily 8am-10pm"},
+ "dirs":[
+  {"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/verilife---galena","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"'Verilife - Galena (Adult Use)', 115 Perry St., (815) 255-8715, daily 8am-10pm"},
+  {"d":"Weedmaps","found":false,"url":"https://weedmaps.com/dispensaries/verilife-galena","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Store URL resolves to Galena city list with no Verilife listing"},
+  {"d":"Yelp","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Yelp search snippet shows 'Verilife Dispensary, 122 N Main St, Galena' (may be search anchor, not listing address); page not readable"},
+  {"d":"Facebook","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"GBP links a Facebook profile, likely brand-level; store page not verified"},
+  {"d":"Yellow Pages","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'Verilife Dispensary' in YP East Dubuque dispensary list snippet; listing details not readable"},
+  {"d":"MapQuest","found":true,"url":"https://www.mapquest.com/us/illinois/verilife-429391434","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Name 'Verilife', 115 Perry St 61036; phone and hours not displayed (call button only)"},
+  {"d":"Foursquare","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not open or find a listing"},
+  {"d":"Where's Weed","found":true,"url":"","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Galena city page snippet lists 'Verilife Galena'; listing details not readable"},
+  {"d":"Bing Places","found":null,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Bing Maps page did not render business data; unverified"}
+ ],"match":1,"listed":5,"checked":9}
+]}
