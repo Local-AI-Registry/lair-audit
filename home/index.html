@@ -420,7 +420,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
       <span class="eye">From a question to your front door</span>
       <div class="st on"><b>1</b><h3>Someone nearby asks</h3><p>"Best med spa near me?" Phone in hand, a few blocks away, they ask ChatGPT, Gemini or&nbsp;Google.</p></div>
       <div class="st"><b>2</b><h3>AI checks what it knows</h3><p>It reads every source it trusts about the businesses nearby, and compares&nbsp;them.</p><div class="srcs"><span>Listings</span><span>Reviews</span><span>Articles</span><span>Best-of guides</span><span>Photos</span><span>Video</span><span>Your site</span><span>Google profile</span><span>PR</span><span>SEO</span><span>Monitoring</span></div></div>
-      <div class="st"><b>3</b><h3>AI names one business</h3><p>When your Record is the clearest and most trusted, the answer is&nbsp;you.</p></div>
+      <div class="st"><b>3</b><h3>AI names one business</h3><p>When your Local AI Legend&trade; is the clearest and most trusted, the answer is&nbsp;you.</p></div>
       <div class="st"><b>4</b><h3>They walk in</h3><p>Not a click or an impression. A customer at your front&nbsp;desk.</p></div>
       <div class="pbar"><i id="pbar"></i></div>
     </div>
@@ -446,10 +446,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
         <span class="eye">What AI checks</span>
         <h2 class="h2">Eleven signals decide who AI&nbsp;<em>recommends</em>.</h2>
       </div>
-      <p>They all feed one place: your Record. Your free AI check grades each signal against your three closest competitors, and our plan fixes every&nbsp;gap.</p>
+      <p>They all feed one place: your Local AI Legend&trade;. Your free AI check grades each signal against your three closest competitors, and our plan fixes every&nbsp;gap.</p>
     </div>
     <div class="cgrid">
-      <div class="stage" id="map5"><canvas aria-label="3D view of eleven signals orbiting and feeding your Record"></canvas></div>
+      <div class="stage" id="map5"><canvas aria-label="3D view of eleven signals orbiting and feeding your Local AI Legend"></canvas></div>
       <div class="checks" id="g11"></div>
     </div>
   </div>
@@ -458,10 +458,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
 <section class="band" id="oldnew">
   <div class="wrap">
     <div class="secHead">
-      <div><span class="eye">The old way vs. the new way</span><h2 class="h2">Nine vendors pulling nine ways, or one&nbsp;<em>Record</em>.</h2></div>
-      <p>Most local businesses juggle agencies, tools and freelancers that never talk to each other. We replace the tangle with one Record, one team and one monthly&nbsp;report.</p>
+      <div><span class="eye">The old way vs. the new way</span><h2 class="h2">Nine vendors pulling nine ways, or one&nbsp;<em>Legend</em>&trade;.</h2></div>
+      <p>Most local businesses juggle agencies, tools and freelancers that never talk to each other. We replace the tangle with one Local AI Legend&trade;, one team and one monthly&nbsp;report.</p>
     </div>
-    <div class="stage" id="map9"><canvas aria-label="3D comparison: nine tangled vendors on the left, one Record feeding one business on the right"></canvas></div>
+    <div class="stage" id="map9"><canvas aria-label="3D comparison: nine tangled vendors on the left, one Local AI Legend feeding one business on the right"></canvas></div>
   </div>
 </section>
 
@@ -472,9 +472,9 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
     <div class="two">
       <div class="card" style="background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.05)">
         <span class="tag">Listed · Free</span>
-        <h3>Claim your Record</h3>
+        <h3>Claim your Local AI Legend&trade;</h3>
         <p>If you have a Google Business Profile, you're already in the Registry. Claim it in about a minute and get a free AI check: where you stand today, and a roadmap to fix&nbsp;it.</p>
-        <ul><li>See which AI assistants name you, and which name a competitor</li><li>See the local questions you win and the ones you miss</li><li>Keep your verified Record free, for as long as you like</li></ul>
+        <ul><li>See which AI assistants name you, and which name a competitor</li><li>See the local questions you win and the ones you miss</li><li>Keep your verified Legend free, for as long as you like</li></ul>
         <a class="btn b" href="#start">Register free</a>
       </div>
       <div class="card" style="background:var(--blueT)">
@@ -526,7 +526,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
       </div>
       <div style="display:flex;flex-direction:column;gap:14px">
         <p>I spent years inside the systems that decide what people find. Then I opened my own med spa and got stuck in a long contract with an agency whose results I couldn't verify. No proof, no&nbsp;accountability.</p>
-        <p>Local AI Registry is the opposite: a public Record you own, a team that does the work, and screenshots every month that show exactly what AI says about&nbsp;you.</p>
+        <p>Local AI Registry is the opposite: a public Local AI Legend&trade; you own, a team that does the work, and screenshots every month that show exactly what AI says about&nbsp;you.</p>
         <div><b style="font:700 17px/1.3 var(--head);color:var(--ink);display:block">Steve Lee, Founder</b><span style="font-size:15px;color:var(--mute)">Former Google Search and Microsoft executive. 20+ years in&nbsp;digital.</span></div>
       </div>
     </div>
@@ -586,7 +586,7 @@ const sm=x=>x<=0?0:x>=1?1:x*x*(3-2*x);
 /* ---------------- engine: one RAF, only visible scenes render ---------------- */
 const scenes=[];let last=performance.now(),acc=0,fr=0,PR=Math.min(devicePixelRatio,MOB()?1.6:2);
 function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;fr++;if(acc>2){if(acc/fr>1/48&&PR>1){PR=Math.max(1,PR-.25);scenes.forEach(s=>{if(s.r)s.r.setPixelRatio(PR);s.resize()})}acc=0;fr=0}
-  for(const s of scenes)if(s.vis&&s.r){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);s.r.render(s.sc,s.cam);s.labels&&s.labels()}requestAnimationFrame(loop)}
+  for(const s of scenes)if(s.vis&&s.r){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);if(!s.hold){s.r.render(s.sc,s.cam);s.labels&&s.labels()}}requestAnimationFrame(loop)}
 function base(id,{bg=PAPER,fog=[70,150],fov=30,shadow=true,sun=[18,34,14]}={}){
   const wrap=document.getElementById(id),mob=MOB();
   const sc=new THREE.Scene();if(fog)sc.fog=new THREE.Fog(lin(bg),fog[0],fog[1]);
@@ -629,13 +629,13 @@ function put(o,d,v,show=true,minX=0){
 function rounded(r,bev){
   const s=new THREE.Shape(),w=.5;
   s.moveTo(-w+r,-w);s.lineTo(w-r,-w);s.quadraticCurveTo(w,-w,w,-w+r);s.lineTo(w,w-r);s.quadraticCurveTo(w,w,w-r,w);s.lineTo(-w+r,w);s.quadraticCurveTo(-w,w,-w,w-r);s.lineTo(-w,-w+r);s.quadraticCurveTo(-w,-w,-w+r,-w);
-  const g=new THREE.ExtrudeGeometry(s,{depth:1,bevelEnabled:true,bevelThickness:bev,bevelSize:bev,bevelSegments:2,curveSegments:4});
+  const g=new THREE.ExtrudeGeometry(s,{depth:1,bevelEnabled:true,bevelThickness:bev,bevelSize:bev,bevelSegments:3,curveSegments:8});
   g.rotateX(-Math.PI/2);g.computeBoundingBox();const b=g.boundingBox;
   g.translate(-(b.min.x+b.max.x)/2,-b.min.y,-(b.min.z+b.max.z)/2);g.scale(1/(b.max.x-b.min.x),1/(b.max.y-b.min.y),1/(b.max.z-b.min.z));return g;
 }
 const RB=rounded(.16,.04),RP=rounded(.1,.03);
 const BOX=new THREE.BoxGeometry(1,1,1);BOX.translate(0,.5,0);
-const TREE=new THREE.IcosahedronGeometry(.5,1);
+const TREE=new THREE.IcosahedronGeometry(.5,2);
 const TONES=[0xFFFFFF,0xF7F5F0,0xEFEBE3,0xF0F2F6,0xE4E9F2,0xF9F7F3].map(lin);
 const mStd=(hex,o={})=>new THREE.MeshStandardMaterial(Object.assign({color:lin(hex),roughness:.82,metalness:0},o));
 
@@ -717,8 +717,8 @@ function shop(sc,{x=0,z=0,s=1,col=BLUE,mark=true}={}){
   g.pulse=t=>{rings.forEach(m=>{const p=((t*.38)+m.k/3)%1;m.scale.setScalar(1+p*3);m.material.opacity=.5*(1-p)*(1-p)});if(g.mark)g.mark.rotation.y=t*.8};
   return g;
 }
-const CSG=new THREE.CircleGeometry(.3,24),CSM=new THREE.MeshBasicMaterial({color:0x2a2418,transparent:true,opacity:.16,depthWrite:false});
-const PG={body:new THREE.CylinderGeometry(.12,.17,.52,14),head:new THREE.SphereGeometry(.13,16,12),phone:new THREE.BoxGeometry(.13,.2,.02)};PG.body.translate(0,.4,0);
+const CSG=new THREE.CircleGeometry(.3,40),CSM=new THREE.MeshBasicMaterial({color:0x2a2418,transparent:true,opacity:.16,depthWrite:false});
+const PG={body:new THREE.CylinderGeometry(.12,.17,.52,32,2),head:new THREE.SphereGeometry(.13,32,24),phone:new THREE.BoxGeometry(.13,.2,.02)};PG.body.translate(0,.4,0);
 const SKIN=[0xE7C3A0,0xC68E63,0x8D5A3B,0xF1D2B6,0xA8714A].map(lin),SHIRT=[0x0B1A2E,0x3B4D6B,0x7C8799,0xFF5A3C,0x1F4FE0,0xC9BFA8,0xffffff].map(lin);
 function person(sc,rnd,s=1.6){
   const g=new THREE.Group();
@@ -791,39 +791,46 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
 
   /* ---- her: jointed, proportioned, walking ---- */
   const W=new THREE.Group();o.sc.add(W);const body=new THREE.Group();W.add(body);
-  const skin=mStd(0xC99272,{roughness:.55}),topM=mStd(0xF06A4E,{roughness:.85}),jeanM=mStd(0x4F6E9C,{roughness:.8}),hairM=mStd(0x2B1D16,{roughness:.42,metalness:.05}),shoeM=mStd(0xFBFAF7,{roughness:.45}),soleM=mStd(0xD8D3CA),bagM=mStd(0xB4865B,{roughness:.6}),darkM=mStd(0x1B1410);
+  const skin=mStd(0xC99272,{roughness:.5}),topM=mStd(0xF06A4E,{roughness:.88}),jeanM=mStd(0x4F6E9C,{roughness:.82}),hairM=new THREE.MeshStandardMaterial({color:lin(0x2B1D16),roughness:.36,metalness:.08}),shoeM=mStd(0xFBFAF7,{roughness:.45}),soleM=mStd(0xD8D3CA),bagM=mStd(0xB4865B,{roughness:.5}),darkM=mStd(0x1B1410,{roughness:.25}),lipM=mStd(0xB0564E,{roughness:.45});
   const add=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||body).add(m);return m};
-  const lathe=(pts,seg=28)=>new THREE.LatheGeometry(pts.map(([r,y])=>new THREE.Vector2(r,y)),seg);
-  const hips=add(lathe([[0,.84],[.12,.845],[.165,.88],[.178,.95],[.168,1.0],[.14,1.04],[0,1.045]]),jeanM,0,0,0);hips.scale.z=.74;
-  const torso=add(lathe([[0,.98],[.15,.985],[.132,1.06],[.124,1.12],[.138,1.22],[.158,1.31],[.165,1.38],[.158,1.43],[.12,1.47],[.06,1.5],[0,1.505]]),topM,0,0,0);torso.scale.z=.7;
-  add(new THREE.CylinderGeometry(.044,.05,.11,14),skin,0,1.53,0);
+  const lathe=(pts,seg=64)=>new THREE.LatheGeometry(pts.map(([r,y])=>new THREE.Vector2(r,y)),seg);
+  const hips=add(lathe([[0,.86],[.1,.862],[.14,.89],[.15,.95],[.145,1.0],[.13,1.04],[0,1.045]]),jeanM,0,0,0);hips.scale.z=.8;
+  const torso=add(lathe([[0,.99],[.136,.995],[.127,1.06],[.119,1.12],[.131,1.22],[.151,1.31],[.159,1.38],[.151,1.43],[.114,1.47],[.06,1.5],[0,1.505]]),topM,0,0,0);torso.scale.z=.7;
+  add(new THREE.CylinderGeometry(.042,.048,.11,32),skin,0,1.53,0);
   const head=new THREE.Group();head.position.set(0,1.58,0);body.add(head);
-  add(new THREE.SphereGeometry(.1,32,24),skin,0,.085,0,head).scale.set(.93,1.13,1.02);
-  add(new THREE.ConeGeometry(.014,.04,10),skin,0,.08,-.103,head).rotation.x=-Math.PI/2;
-  [-.036,.036].forEach(x=>{add(new THREE.SphereGeometry(.011,10,8),darkM,x,.105,-.088,head);add(new THREE.SphereGeometry(.018,10,8),skin,x*2.75,.085,.005,head)});
-  const cap=add(new THREE.SphereGeometry(.108,32,20,0,Math.PI*2,0,Math.PI*.56),hairM,0,.1,.012,head);cap.scale.set(.99,1.1,1.07);cap.rotation.x=.14;cap.position.z=.02;
-  const back=add(new THREE.SphereGeometry(.104,24,16,0,Math.PI*2,Math.PI*.3,Math.PI*.4),hairM,0,.07,.022,head);back.scale.set(.98,1.15,1.04);
-  const tailP=new THREE.Group();tailP.position.set(0,.16,.085);head.add(tailP);
-  add(new THREE.SphereGeometry(.035,14,10),hairM,0,0,0,tailP);
-  const tail=add(lathe([[0,0],[.038,-.03],[.045,-.1],[.035,-.2],[.012,-.29],[0,-.3]],18),hairM,0,-.01,.02,tailP);
+  const HS=[.93,1.13,1.02];
+  add(new THREE.SphereGeometry(.1,64,48),skin,0,.085,0,head).scale.set(...HS);
+  add(new THREE.SphereGeometry(.016,24,16),skin,0,.075,-.103,head).scale.set(.8,1.05,1.3);
+  [-1,1].forEach(sx=>{
+    add(new THREE.SphereGeometry(.0105,20,14),darkM,sx*.034,.1,-.091,head);
+    const br=add(new THREE.SphereGeometry(.02,20,10),darkM,sx*.035,.123,-.093,head);br.scale.set(1.25,.22,.4);br.rotation.z=-sx*.12;
+    add(new THREE.SphereGeometry(.018,20,14),skin,sx*.093,.085,.004,head).scale.set(.45,1,.8)});
+  add(new THREE.SphereGeometry(.018,28,14),lipM,0,.043,-.097,head).scale.set(1.3,.42,.55);
+  const cap=add(new THREE.SphereGeometry(.1,72,40,0,Math.PI*2,0,Math.PI*.44),hairM,0,.085,0,head);cap.scale.set(HS[0]*1.075,HS[1]*1.07,HS[2]*1.075);cap.rotation.x=.42;
+  const back=add(new THREE.SphereGeometry(.1,72,40,0,Math.PI,0,Math.PI*.78),hairM,0,.085,.004,head);back.scale.set(HS[0]*1.09,HS[1]*1.08,HS[2]*1.1);
+  const tailP=new THREE.Group();tailP.position.set(0,.15,.09);head.add(tailP);
+  add(new THREE.SphereGeometry(.036,24,16),hairM,0,0,0,tailP);
+  add(lathe([[0,0],[.036,-.03],[.044,-.1],[.034,-.2],[.012,-.29],[0,-.3]],40),hairM,0,-.01,.02,tailP);
   const mkLeg=(x)=>{const hip=new THREE.Group();hip.position.set(x,.92,0);body.add(hip);
-    add(new THREE.CylinderGeometry(.074,.058,.43,16),jeanM,0,-.215,0,hip);
-    const knee=new THREE.Group();knee.position.y=-.43;hip.add(knee);add(new THREE.SphereGeometry(.058,14,10),jeanM,0,0,0,knee);
-    add(new THREE.CylinderGeometry(.056,.042,.42,16),jeanM,0,-.21,0,knee);
+    add(new THREE.CylinderGeometry(.07,.058,.43,36,4),jeanM,0,-.215,0,hip);
+    const knee=new THREE.Group();knee.position.y=-.43;hip.add(knee);add(new THREE.SphereGeometry(.058,28,18),jeanM,0,0,0,knee);
+    add(new THREE.CylinderGeometry(.058,.043,.42,36,4),jeanM,0,-.21,0,knee);
     const ank=new THREE.Group();ank.position.y=-.42;knee.add(ank);
-    const sh=add(new THREE.SphereGeometry(.07,18,12),shoeM,0,-.03,-.045,ank);sh.scale.set(.75,.55,1.45);
-    const so=add(new THREE.CylinderGeometry(.052,.056,.025,16),soleM,0,-.06,-.045,ank);so.scale.set(1,1,1.95);
+    add(new THREE.SphereGeometry(.07,32,20),shoeM,0,-.03,-.045,ank).scale.set(.75,.55,1.45);
+    add(new THREE.CylinderGeometry(.052,.056,.025,32),soleM,0,-.06,-.045,ank).scale.set(1,1,1.95);
     return {hip,knee,ank}};
-  const LL=mkLeg(-.085),LR=mkLeg(.085);
-  const mkArm=(x)=>{const sh=new THREE.Group();sh.position.set(x,1.42,0);body.add(sh);add(new THREE.SphereGeometry(.05,14,10),topM,0,0,0,sh);
-    add(new THREE.CylinderGeometry(.046,.039,.27,14),topM,0,-.135,0,sh);
-    const el=new THREE.Group();el.position.y=-.27;sh.add(el);add(new THREE.SphereGeometry(.038,12,8),skin,0,0,0,el);
-    add(new THREE.CylinderGeometry(.036,.029,.24,14),skin,0,-.12,0,el);
-    const hand=add(new THREE.SphereGeometry(.036,14,10),skin,0,-.265,0,el);hand.scale.set(.8,1.15,.55);return {sh,el}};
+  const LL=mkLeg(-.08),LR=mkLeg(.08);
+  const mkArm=(x)=>{const sh=new THREE.Group();sh.position.set(x,1.42,0);body.add(sh);add(new THREE.SphereGeometry(.052,28,18),topM,0,0,0,sh);
+    add(new THREE.CylinderGeometry(.047,.039,.27,32,3),topM,0,-.135,0,sh);
+    const el=new THREE.Group();el.position.y=-.27;sh.add(el);add(new THREE.SphereGeometry(.039,24,16),skin,0,0,0,el);
+    add(new THREE.CylinderGeometry(.038,.03,.24,32,3),skin,0,-.12,0,el);
+    add(new THREE.SphereGeometry(.036,28,18),skin,0,-.265,0,el).scale.set(.8,1.2,.55);
+    add(new THREE.SphereGeometry(.014,16,10),skin,Math.sign(x)*-.03,-.25,-.012,el).scale.set(1,1.6,1);
+    return {sh,el}};
   const AL=mkArm(-.19),AR=mkArm(.19);
-  AR.sh.rotation.set(.32,0,.1);AR.el.rotation.set(1.42,0,-.12);
-  const bag=add(new THREE.Mesh().geometry=RB,bagM,0,0,0);bag.scale.set(.06,.2,.26);bag.position.set(-.21,.92,.02);
-  const strap=add(new THREE.TorusGeometry(.2,.008,6,40,Math.PI*1.05),bagM,-.12,1.24,0);strap.rotation.set(0,Math.PI/2,-.5);strap.scale.set(1,1.3,1);
+  AR.sh.rotation.set(.38,0,.12);AR.el.rotation.set(1.5,0,-.15);
+  const bag=add(RB,bagM,-.215,.94,.03);bag.scale.set(.07,.21,.27);
+  add(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(-.215,1.14,-.07),V(-.2,1.32,-.065),V(-.155,1.48,0),V(-.2,1.32,.075),V(-.215,1.14,.11)]),72,.0075,10),bagM,0,0,0);
   /* her phone, held in the right hand, screen turned to her face */
   function phoneTex(kind){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
     const rr=(X,Y,w,h,r)=>{x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()};
@@ -843,7 +850,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
       x.fillStyle='#1F4FE0';rr(30,90,660,170,32);x.fill();x.fillStyle='#fff';x.font='700 44px '+HF;x.fillText('Glow Med Spa',70,165);x.font='500 30px '+TF;x.fillText('4 min · Walking',70,215);
     }
     const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=8;return tx}
-  const phoneG=new THREE.Group();W.add(phoneG);phoneG.position.set(.15,1.255,-.36);
+  const phoneG=new THREE.Group();W.add(phoneG);phoneG.position.set(.125,1.3,-.31);
   add(new THREE.Mesh().geometry=RB,mStd(0x0B0B0F,{roughness:.25,metalness:.5}),0,0,0,phoneG).scale.set(.084,.168,.01);
   phoneG.children[0].position.set(0,-.084,-.005);
   let texC=phoneTex(0),texN=phoneTex(1);const scr=new THREE.Mesh(new THREE.PlaneGeometry(.078,.161),new THREE.MeshBasicMaterial({map:texC}));scr.position.z=.0062;phoneG.add(scr);
@@ -876,7 +883,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const cpC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V()],false,'centripetal'),ctC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V()],false,'centripetal');
   o.onResize=()=>{o.cam.fov=o.mob?50:38};o.resize();
   o.tick=(t,dt)=>{
-    SP+=(SPt-SP)*(1-Math.exp(-dt*7));const p=SP;
+    SP+=(SPt-SP)*(1-Math.exp(-dt*7));const p=SP;o.hold=p<.3;if(o.r){o.r.shadowMap.autoUpdate=false;o.r.shadowMap.needsUpdate=(o.fr=(o.fr||0)+1)%2===0}
     /* HTML phone */
     const vw=innerWidth,vh=o.h||innerHeight,S0=Math.min(vh/716,vw/336),S1=Math.min(1,vh*(o.mob?.62:.72)/740,vw*.82/360);
     const z1=sm((p-.12)/.2),z2=sm((p-.33)/.09);
@@ -1052,7 +1059,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const beam=arc(o.sc,CORAL,{n:70,size:.9});beam.anim(0,0);
   const qL=lab(o,'<span class="bub q">best med spa near me?</span>');
   const aL=lab(o,'<span class="bub a"><i>ChatGPT</i>Glow Med Spa. Great reviews, open until 7, about 4 minutes away.</span>');
-  const rL=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>Your Record</span></span>');
+  const rL=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>Your Local AI Legend&trade;</span></span>');
   const sL=lab(o,'<span class="pin"><span class="chip"><span class="d"></span>Glow Med Spa</span></span>');
   const story=document.getElementById('story'),steps=[...document.querySelectorAll('.st')],pbar=document.getElementById('pbar');
   let SP=0,SPt=0,cur=-1;const vis=[1,0,0,0];
@@ -1290,8 +1297,8 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
   const srcs=Array.from({length:11},(_,i)=>{const a=i/11*Math.PI*2,x=10+Math.cos(a)*5.6,z=1+Math.sin(a)*4.2;const d=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.16,24),mStd(i%3?BLUE:CORAL,{roughness:.35}));d.position.set(x,.1,z);d.castShadow=true;o.sc.add(d);const A=arc(o.sc,INK,{n:40,size:.7});A.set(V(x,.3,z),V(10,7,1),1.5);return {A,off:i/11}});
   const beam=arc(o.sc,CORAL,{n:50,size:.8});beam.set(V(10,6.2,1),V(10,2.7,1),0);
   const lL=lab(o,'<span class="chip dim"><span class="d"></span>9 vendors · 9 logins · 9 invoices</span>');
-  const lR=lab(o,'<span class="chip you"><span class="d"></span>One Record · one team · one report</span>');
-  o.onResize=()=>{o.cam.fov=o.mob?62:30;setLab(lL,`<span class="chip dim"><span class="d"></span>${o.mob?'9 vendors':'9 vendors · 9 logins · 9 invoices'}</span>`);setLab(lR,`<span class="chip you"><span class="d"></span>${o.mob?'One Record':'One Record · one team · one report'}</span>`)};o.resize();
+  const lR=lab(o,'<span class="chip you"><span class="d"></span>One Legend&trade; · one team · one report</span>');
+  o.onResize=()=>{o.cam.fov=o.mob?62:30;setLab(lL,`<span class="chip dim"><span class="d"></span>${o.mob?'9 vendors':'9 vendors · 9 logins · 9 invoices'}</span>`);setLab(lR,`<span class="chip you"><span class="d"></span>${o.mob?'One Legend&trade;':'One Legend&trade; · one team · one report'}</span>`)};o.resize();
   o.tick=(t,dt)=>{L.pulse(t*.3);Rt.pulse(t);const T=MOT?t:0;
     vend.forEach(v=>wob(v.ln,v.top,shopTop,v.ph,T,.6));cross.forEach(c=>wob(c.ln,c.a.top,c.b.top,c.ph,T,.9));
     rec.rotation.y=t*.5;rec.position.y=7+Math.sin(t*1.2)*.2;srcs.forEach(s=>s.A.anim(MOT?(t*.5+s.off)%1:.6,.9));beam.anim(MOT?(t*.8)%1:.6,1);
