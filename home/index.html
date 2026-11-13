@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="AI recommends you by Day 90, guaranteed, or we stop billing. Local AI Registry makes sure that when people nearby ask ChatGPT, Gemini or Google where to go, the answer is your business.">
+<meta name="description" content="AI recommends you by Day 90, guaranteed. Local AI Registry makes sure that when people nearby ask ChatGPT, Gemini or Google where to go, the answer is your business.">
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Local AI Registry Home</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -187,6 +187,36 @@ form.go input{flex:1 1 240px;min-width:0;min-height:52px;padding:0 18px;border-r
 .rgrid>*{min-width:0}
 #map10{height:clamp(460px,44vw,620px);border-radius:28px}
 .ticks{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:10px}.ticks li{display:flex;gap:10px;align-items:flex-start}
+/* intro: scroll-driven cold open */
+#intro{height:620vh;background:#000}
+.istick{position:sticky;top:0;height:100svh;overflow:hidden;background:#000}
+#map0{position:absolute;inset:0}
+#ifade{position:absolute;inset:0;background:#000;z-index:2;pointer-events:none}
+#iphone{position:absolute;left:50%;top:50%;width:360px;height:740px;margin:-370px 0 0 -180px;border-radius:54px;background:#0E0E10;padding:12px;z-index:3;transform-origin:50% 50%;will-change:transform,opacity}
+#iphone .scr{position:relative;width:100%;height:100%;border-radius:43px;background:#0E0E10;overflow:hidden;display:flex;flex-direction:column;color:#ECECF1;font:400 16px/1.5 var(--text)}
+#iphone .isl{position:absolute;top:10px;left:50%;width:96px;height:28px;margin-left:-48px;border-radius:20px;background:#000}
+#iphone .ctop{padding:54px 0 10px;text-align:center;font:600 16px/1 var(--head);color:#fff;border-bottom:1px solid rgba(255,255,255,.06)}
+#iphone .msgs{flex:1;padding:18px 18px 0;display:flex;flex-direction:column;gap:16px;overflow:hidden}
+#iphone .m.u{align-self:flex-end;max-width:80%;background:#2F2F33;color:#fff;padding:10px 15px;border-radius:20px;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+#iphone .m.u.on{opacity:1;transform:none}
+#iphone .m.a{min-height:24px;color:#ECECF1}
+#iphone .m.a b{color:#fff}
+#iphone .dots{display:inline-flex;gap:5px}#iphone .dots i{width:8px;height:8px;border-radius:50%;background:#ECECF1;opacity:.35;animation:dt 1s infinite}#iphone .dots i:nth-child(2){animation-delay:.15s}#iphone .dots i:nth-child(3){animation-delay:.3s}
+@keyframes dt{50%{opacity:1}}
+#iphone .cin{margin:12px;padding:14px 18px;border-radius:26px;background:#2F2F33;color:#fff;min-height:50px;font:400 16px/1.4 var(--text)}
+#iphone .cin .ph{color:#8A8A90}
+#iphone .caret{display:inline-block;width:2px;height:18px;background:#fff;vertical-align:-3px;margin-left:1px;animation:blink 1s steps(1) infinite}
+.icap{position:absolute;left:0;right:0;bottom:7vh;z-index:4;text-align:center;padding-inline:20px;font:500 clamp(30px,4.2vw,58px)/1.08 var(--disp);color:#fff;text-wrap:balance;transition:opacity .45s,color .45s;pointer-events:none}
+.icap.light{color:var(--ink);text-shadow:0 0 30px rgba(244,241,234,.9),0 0 8px rgba(244,241,234,.9)}
+.icap em{font-style:italic;color:#8EA8F7}.icap.light em{color:var(--blue)}
+#iskip{position:absolute;z-index:5;top:max(18px,env(safe-area-inset-top,0px));right:max(18px,env(safe-area-inset-right,0px));border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;border-radius:999px;padding:10px 16px;font:700 13px/1 var(--head);cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .3s,color .3s,border-color .3s}
+#iskip.light{background:rgba(255,255,255,.7);color:var(--ink);border-color:var(--line)}
+.ihint{position:absolute;z-index:4;left:50%;bottom:4vh;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;font:700 11px/1 var(--head);letter-spacing:.24em;color:rgba(255,255,255,.7);opacity:0;transition:opacity .6s}
+.ihint::after{content:"";width:1px;height:34px;background:linear-gradient(rgba(255,255,255,.8),transparent);animation:hint 1.6s ease-in-out infinite}
+@keyframes hint{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.ilab .chip{font-size:14px;padding:10px 14px}
+header{transition:opacity .5s,transform .5s}
+body.introOn header{opacity:0;transform:translateY(-100%);pointer-events:none}
 /* area */
 #area{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);min-height:640px}
 #area>*{min-width:0}
@@ -221,6 +251,7 @@ footer{border-top:1px solid var(--line);padding-block:30px 46px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-size:14px;color:var(--mute)}
 
 @media (max-width:980px){
+  .icap{top:76px;bottom:auto;font-size:clamp(26px,7vw,34px)}
   .seal{right:0;top:28px;width:96px;height:96px}.seal b{font-size:36px}.seal small{bottom:24px;font-size:8.5px}.seal text{font-size:8.2px}
   .heroTx h1{padding-right:96px}
   .rgrid{grid-template-columns:minmax(0,1fr)}
@@ -261,6 +292,19 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
 
 </head>
 <body>
+<section id="intro" aria-label="Intro: someone nearby asks AI for the nearest med spa and walks to the one it names">
+  <div class="istick">
+    <div class="stage" id="map0"><canvas aria-hidden="true"></canvas></div>
+    <div id="ifade"></div>
+    <div id="iphone" aria-hidden="true"><div class="scr"><span class="isl"></span><div class="ctop">ChatGPT</div>
+      <div class="msgs"><div class="m u" id="iq">where's the nearest med spa?</div><div class="m a" id="ia"></div></div>
+      <div class="cin" id="icin"><span class="ph">Message</span></div></div></div>
+    <p class="icap" id="icap"></p>
+    <button type="button" id="iskip">Skip intro</button>
+    <div class="ihint" id="ihint">SCROLL</div>
+  </div>
+</section>
+
 <header>
   <div class="wrap">
     <a class="logo" href="#hero" aria-label="Local AI Registry home">
@@ -294,7 +338,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
     <div class="heroTx">
       <span class="eye">Be the name AI says</span>
       <h1>AI recommends you by Day&nbsp;90. <em>Guaranteed.</em></h1>
-      <div class="gline"><b>Or we stop billing</b><span>and keep working until you&nbsp;are.</span></div>
       <p class="lede">People nearby are asking ChatGPT, Gemini and Google where to go, and they walk into the one business it names. We make sure that&rsquo;s you. Month to month, no long&nbsp;contracts.</p>
       <form class="go" id="start">
         <label class="sr" for="biz1">Your business name</label>
@@ -670,6 +713,123 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const bs=new THREE.Mesh(new THREE.CylinderGeometry(.9,.9,.08,40),new THREE.MeshBasicMaterial({color:new THREE.Color(col),transparent:true,opacity:.25}));bs.position.y=.05;g.add(bs);
   sc.add(g);g.top=V(x,h,z);return g;
 }
+
+
+/* ===================== 0. INTRO: cold open, phone, her walk, the signal ===================== */
+(function(){
+  const intro=document.getElementById('intro');if(!intro)return;
+  const ph=document.getElementById('iphone'),fade=document.getElementById('ifade'),cap=document.getElementById('icap'),hint=document.getElementById('ihint'),skip=document.getElementById('iskip');
+  const iq=document.getElementById('iq'),ia=document.getElementById('ia'),cin=document.getElementById('icin');
+  const Q="where's the nearest med spa?";
+  const A=['The','closest','highly','rated','one','is','<b>Glow','Med','Spa</b>,','about','4','minutes','away','on','foot.','Great','reviews','for','Botox','and','facials,','and','they’re','open','until','7.'];
+  const ANS=A.join(' ');
+  // typing plays once on load; the scroll drives everything after
+  (function play(){
+    if(RM){iq.classList.add('on');ia.innerHTML=ANS;hint.style.opacity=1;return}
+    let i=0;const tq=setInterval(()=>{i++;cin.innerHTML=Q.slice(0,i)+'<span class="caret"></span>';if(i>=Q.length){clearInterval(tq);setTimeout(()=>{cin.innerHTML='<span class="ph">Message</span>';iq.classList.add('on');ia.innerHTML='<span class="dots"><i></i><i></i><i></i></span>';
+      setTimeout(()=>{let k=0;ia.innerHTML='';const tw=setInterval(()=>{k++;ia.innerHTML=A.slice(0,k).join(' ');if(k>=A.length){clearInterval(tw);hint.style.opacity=1}},70)},1100)},450)}},62);
+  })();
+  skip.onclick=()=>{const h=document.getElementById('hero');scrollTo({top:h.getBoundingClientRect().top+scrollY,behavior:RM?'auto':'smooth'})};
+
+  const o=base('map0',{fog:[34,105],fov:40});
+  const Cy=city(o.sc,{n:6,seed:29,hmax:3,clear:[[0,0]]});Cy.rise(100);const P=Cy.P;
+  const S=shop(o.sc);
+  // background walkers
+  const rnd=rng(61),extras=[];for(let i=0;i<10;i++){const p=person(o.sc,rnd,1.5);const ln=(((rnd()*10)|0)-5)*P+P/2+(rnd()-.5)*.6;p.ax=rnd()<.5;p.ln=ln;p.u=(rnd()*2-1)*28;p.sp=(1+rnd())*(rnd()<.5?-1:1);extras.push(p)}
+  // the woman
+  const W=new THREE.Group();o.sc.add(W);
+  const skin=mStd(0xC68E63,{roughness:.6}),topM=mStd(CORAL,{roughness:.65}),pantM=mStd(0x2B3A55,{roughness:.8}),hairM=mStd(0x2A1C14,{roughness:.55}),shoeM=mStd(0xF4F1EA,{roughness:.5});
+  const mk=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||W).add(m);return m};
+  const legs=[-.085,.085].map(x=>{const g=new THREE.Group();g.position.set(x,.86,0);W.add(g);const lg=new THREE.CylinderGeometry(.068,.056,.82,14);lg.translate(0,-.41,0);mk(lg,pantM,0,0,0,g);mk(new THREE.BoxGeometry(.1,.07,.22),shoeM,0,-.83,-.04,g);return g});
+  mk(new THREE.CylinderGeometry(.15,.165,.2,18),pantM,0,.92,0);
+  mk(new THREE.CylinderGeometry(.165,.14,.6,18),topM,0,1.18,0);
+  mk(new THREE.SphereGeometry(.165,18,12),topM,0,1.45,0).scale.set(1.15,.45,.8);
+  mk(new THREE.CylinderGeometry(.045,.05,.1,10),skin,0,1.53,0);
+  mk(new THREE.SphereGeometry(.12,24,18),skin,0,1.66,0);
+  const hr=mk(new THREE.SphereGeometry(.132,24,18),hairM,0,1.69,.03);hr.scale.set(1.04,1.02,1.02);
+  const pt=mk(new THREE.CylinderGeometry(.04,.012,.24,10),hairM,0,1.57,.15);pt.rotation.x=.22;
+  const armG=new THREE.CylinderGeometry(.046,.04,.56,10);armG.translate(0,-.28,0);
+  const armL=new THREE.Group();armL.position.set(-.2,1.44,0);W.add(armL);mk(armG,skin,0,0,0,armL);
+  const armR=new THREE.Group();armR.position.set(.2,1.44,0);armR.rotation.set(1.15,0,.25);W.add(armR);mk(armG,skin,0,0,0,armR);
+  // her phone, showing the same chat
+  function chatCanvas(){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
+    const rr=(X,Y,w,h,r)=>{x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()};
+    const HF='"Bricolage Grotesque",system-ui,sans-serif',TF='"Hanken Grotesk",system-ui,sans-serif';
+    x.fillStyle='#0E0E10';x.fillRect(0,0,720,1480);x.fillStyle='#000';rr(268,20,184,54,27);x.fill();
+    x.fillStyle='#fff';x.font='600 32px '+HF;x.textAlign='center';x.fillText('ChatGPT',360,150);x.textAlign='left';
+    x.font='500 32px '+TF;const qw=x.measureText(Q).width;x.fillStyle='#2F2F33';rr(684-qw-60,220,qw+60,84,42);x.fill();x.fillStyle='#fff';x.fillText(Q,684-qw-30,273);
+    x.font='400 34px '+TF;x.fillStyle='#ECECF1';const words=ANS.replace(/<\/?b>/g,'').split(' ');let line='',y=400;
+    words.forEach(w=>{const t=line?line+' '+w:w;if(x.measureText(t).width>620){x.fillText(line,40,y);y+=50;line=w}else line=t});x.fillText(line,40,y);
+    x.fillStyle='#2F2F33';rr(28,1340,664,96,48);x.fill();x.fillStyle='#8A8A90';x.font='400 30px '+TF;x.fillText('Message',76,1398);
+    const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=8;return tx}
+  const phoneG=new THREE.Group();phoneG.position.set(.11,1.33,-.47);phoneG.rotation.x=-.32;W.add(phoneG);
+  mk(new THREE.BoxGeometry(.088,.18,.01),mStd(0x0B0B0F,{roughness:.3,metalness:.4}),0,0,0,phoneG);
+  let ctex=chatCanvas();const scr=new THREE.Mesh(new THREE.PlaneGeometry(.082,.168),new THREE.MeshBasicMaterial({map:ctex}));scr.position.z=.0056;phoneG.add(scr);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{ctex=chatCanvas();scr.material.map=ctex;scr.material.needsUpdate=true});
+  const path=[V(P/2,.14,21),V(P/2,.14,P/2),V(0,.14,P/2),V(0,.14,2.4)];
+  const segL=[];let tot=0;for(let i=0;i<3;i++){const l=path[i].distanceTo(path[i+1]);segL.push(l);tot+=l}
+  // the Local AI Registry mark, floating above the block
+  const mark=new THREE.Group();mark.position.set(2.2,11.5,8);o.sc.add(mark);
+  const sh=new THREE.Shape();sh.moveTo(0,1);sh.lineTo(.88,-.62);sh.lineTo(.32,-.62);sh.lineTo(0,-.02);sh.lineTo(-.32,-.62);sh.lineTo(-.88,-.62);sh.closePath();
+  const mg=new THREE.ExtrudeGeometry(sh,{depth:.26,bevelEnabled:true,bevelThickness:.05,bevelSize:.05,bevelSegments:3});mg.center();
+  const mm=new THREE.Mesh(mg,mStd(BLUE,{roughness:.25,metalness:.25}));mm.scale.setScalar(1.4);mark.add(mm);
+  const ts=new THREE.Shape();ts.moveTo(0,1);ts.lineTo(.22,.6);ts.lineTo(-.22,.6);ts.closePath();
+  const tg=new THREE.ExtrudeGeometry(ts,{depth:.3,bevelEnabled:false});tg.translate(0,-.19,-.15);
+  const tip=new THREE.Mesh(tg,mStd(CORAL,{roughness:.35}));tip.scale.setScalar(1.4);mark.add(tip);
+  const halo=new THREE.Mesh(new THREE.TorusGeometry(2.1,.035,8,120),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.55}));mark.add(halo);
+  const halo2=new THREE.Mesh(new THREE.TorusGeometry(2.7,.02,8,120),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.45}));mark.add(halo2);
+  mark.scale.setScalar(.001);
+  const up=arc(o.sc,CORAL,{n:80,size:.7}),down=arc(o.sc,BLUE,{n:80,size:.8});up.anim(0,0);down.anim(0,0);
+  const rip=[0,1,2].map(k=>{const m=new THREE.Mesh(new THREE.RingGeometry(.3,.36,48),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:0,depthWrite:false,side:THREE.DoubleSide}));o.sc.add(m);m.k=k;return m});
+  const mL=lab(o,'<span class="pin ilab"><span class="chip you"><span class="d"></span>Local AI Registry</span></span>');
+  const sL=lab(o,'<span class="pin"><span class="chip"><span class="d"></span>Glow Med Spa</span></span>');
+  const CAPS=[[.0,.24,'',0],[.24,.33,'AI gives one answer. <em>Just one.</em>',0],[.33,.5,'She&rsquo;s four minutes away.',1],[.5,.68,'And already on her way.',1],[.68,.86,'Local AI Registry makes sure that answer is&nbsp;<em>you</em>.',1],[.86,1.01,'AI recommends you by Day&nbsp;90. <em>Guaranteed.</em>',1]];
+  let SPt=0,SP=0,lastCap=-1,dist=0,prevW=0;
+  function onScroll(){const r=intro.getBoundingClientRect(),t=r.height-innerHeight;SPt=Math.max(0,Math.min(1,-r.top/Math.max(1,t)));document.body.classList.toggle('introOn',r.bottom>innerHeight*.35)}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();SP=SPt;
+  const Wq=new THREE.Quaternion(),PH=new THREE.Vector3(),tmp=new THREE.Vector3();
+  const off=(v)=>v.clone().applyQuaternion(Wq);
+  o.onResize=()=>{o.cam.fov=o.mob?52:40};o.resize();
+  o.tick=(t,dt)=>{
+    SP+=(SPt-SP)*(1-Math.exp(-dt*9));const p=SP;
+    // HTML phone: full-screen chat, then pull back to reveal the phone, then hand off to 3D
+    const vw=innerWidth,vh=o.h||innerHeight,S0=Math.min(vh/716,vw/336)*1.0,S1=Math.min(1,vh*(o.mob?.62:.72)/740,vw*.82/360);
+    const z1=sm((p-.12)/.2),z2=sm((p-.33)/.09);
+    ph.style.transform=`scale(${(S0+(S1-S0)*z1)*(1-.62*z2)})`;ph.style.boxShadow=`0 0 0 2px rgba(42,42,51,${z1}),0 0 0 9px rgba(17,17,22,${z1}),0 50px 140px rgba(0,0,0,${.7*z1})`;ph.style.background=z1<.02?'#0E0E10':'#0B0B0F';ph.style.opacity=(1-z2).toFixed(3);ph.style.visibility=z2>=1?'hidden':'';
+    fade.style.opacity=(1-sm((p-.34)/.1)).toFixed(3);hint.style.display=p>.04?'none':'';
+    // caption
+    const ci=CAPS.findIndex(c=>p>=c[0]&&p<c[1]);if(ci!==lastCap){lastCap=ci;const c=CAPS[ci]||CAPS[0];cap.style.opacity=0;setTimeout(()=>{cap.innerHTML=c[2];cap.classList.toggle('light',!!c[3]);cap.style.opacity=1},220)}
+    skip.classList.toggle('light',p>.4);
+    // her walk is tied to scroll, and her steps to distance travelled
+    const w=sm((p-.4)/.44)*tot;let d=w,si=0;while(si<2&&d>segL[si]){d-=segL[si];si++}
+    const a0=path[si],b0=path[si+1];W.position.lerpVectors(a0,b0,Math.min(1,d/segL[si]));
+    const yaw=Math.atan2(-(b0.x-a0.x),-(b0.z-a0.z));W.rotation.y+=(yaw-W.rotation.y)*(1-Math.exp(-dt*6));
+    dist+=Math.abs(w-prevW);prevW=w;const st=dist*4.2;
+    legs[0].rotation.x=Math.sin(st)*.5;legs[1].rotation.x=-Math.sin(st)*.5;armL.rotation.x=-Math.sin(st)*.4;W.children[0]&&0;
+    W.position.y=.14+Math.abs(Math.cos(st))*.03;
+    W.updateMatrixWorld();Wq.copy(W.quaternion);phoneG.getWorldPosition(PH);
+    // camera: screen, over the shoulder, beside her, then up to the neighborhood
+    const q=Math.max(0,Math.min(1,(p-.33)/.62));
+    const shots=[
+      [PH.clone().add(off(V(0,.035,.34))),PH.clone()],
+      [W.position.clone().add(off(V(.5,1.92,.55))),PH.clone()],
+      [W.position.clone().add(off(V(.35,1.9,-4.6))),W.position.clone().add(V(0,1.15,0))],
+      [V(W.position.x+10,9,W.position.z+16),V(W.position.x*.5,1.5,W.position.z*.5)],
+      [V(10,26,34),V(1.5,5,5)]];
+    const ks=[0,.14,.36,.6,.86];let k=0;while(k<3&&q>ks[k+1])k++;const f=sm((q-ks[k])/(ks[k+1]-ks[k]));
+    const cp=shots[k][0].clone().lerp(shots[k+1][0],f),ct=shots[k][1].clone().lerp(shots[k+1][1],f);
+    if(q>=ks[4]){cp.copy(shots[4][0]);ct.copy(shots[4][1])}
+    o.aim(cp,ct,dt,q<.05?40:9);
+    // the signal: her phone to Local AI Registry to the med spa
+    const sg=sm((p-.66)/.12);mark.scale.setScalar(.001+ease(sg));mark.rotation.y=t*.6;halo.rotation.x=Math.PI/2+Math.sin(t)*.2;halo2.rotation.y=t*.8;
+    up.set(PH.clone(),mark.position.clone(),2.5);up.anim(MOT?(t*.7)%1:.6,sg);
+    down.set(mark.position.clone(),V(0,4,0),1.5);down.anim(MOT?(t*.6+.3)%1:.6,sm((p-.72)/.1));
+    rip.forEach(m=>{const u=((t*.8)+m.k/3)%1;m.position.copy(PH);m.scale.setScalar(1+u*7);m.lookAt(o.cam.position);m.material.opacity=sg*.6*(1-u)});
+    S.pulse(t);
+    extras.forEach(e=>{if(MOT){e.u+=e.sp*dt;if(e.u>28)e.u=-28;if(e.u<-28)e.u=28}const x=e.ax?e.ln:e.u,z=e.ax?e.u:e.ln;e.position.set(x,.14,z);e.rotation.y=e.ax?(e.sp>0?0:Math.PI):(e.sp>0?Math.PI/2:-Math.PI/2);e.body.position.y=Math.abs(Math.sin(t*9+e.ln))*.025});
+  };
+  o.labels=()=>{put(o,mL,V(mark.position.x,mark.position.y+2.4,mark.position.z),SP>.7);put(o,sL,V(0,4.6,0),SP>.52)};
+})();
 
 /* ===================== 1. HERO ===================== */
 (function(){
