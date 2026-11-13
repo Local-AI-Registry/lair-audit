@@ -1,0 +1,117 @@
+{
+ "truth": {
+  "name": "EsthetixMD Spa & Laser Center",
+  "address": "115 SW Allen Rd, Bend, OR 97702",
+  "phone": "(541) 208-5251",
+  "hours": "Sun 9 AM-4 PM; Mon-Fri 8 AM-6 PM; Sat closed"
+ },
+ "dirs": [
+  {
+   "d": "Yelp",
+   "found": true,
+   "url": "",
+   "name": "EsthetixMD Spa and Laser Center",
+   "name_ok": true,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Shows in Yelp's Bend lists as 'EsthetixMD Spa and Laser Center' (3.6 stars, 40 reviews). The Yelp page itself could not be opened, so address and phone are unconfirmed; the (541) 330-5551 number reported for Yelp was not verified."
+  },
+  {
+   "d": "Facebook",
+   "found": true,
+   "url": "https://www.facebook.com/EsthetixMD/",
+   "name": "EsthetixMD Spa & Laser Center",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "Page shows 115 SW Allen Road, Bend, OR 97702 and (541) 208-5251. Recent posts tell people to text/call (541) 330-5551 instead."
+  },
+  {
+   "d": "Bing Places / Bing Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Bing Maps did not return readable listing details to our tools, so this could not be checked."
+  },
+  {
+   "d": "Apple Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Apple Maps pages could not be opened by our tools, so this could not be checked."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": true,
+   "url": "https://www.yellowpages.com/bend-or/mip/esthetixmd-spa-laser-center-473329113",
+   "name": "EsthetixMD Spa & Laser Center",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "Name, address and (541) 208-5251 match Google (seen in Yellow Pages' Bend med spa list). No hours seen."
+  },
+  {
+   "d": "MapQuest",
+   "found": true,
+   "url": "https://startpage.mapquest.com/us/oregon/esthetixmd-spa-and-laser-center-354250569",
+   "name": "EsthetixMD Spa and Laser Center",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Address matches but no phone or hours shown. Description calls it 'EsthetixMD Medical Spa and Laser Center', and a second MapQuest entry 'Jeffrey L Scott, DO - EsthetixMD Spa & Laser Center LLC' sits at the same address."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Foursquare listing turned up in search."
+  },
+  {
+   "d": "BBB",
+   "found": true,
+   "url": "https://www.bbb.org/us/or/bend/profile/spa/esthetixmd-spa-laser-center-1296-22430801",
+   "name": "EsthetixMD Spa & Laser Center",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Name and address (115 SW Allen Rd, Bend, OR 97702-3170) match; no phone or hours shown."
+  },
+  {
+   "d": "RealSelf",
+   "found": true,
+   "url": "https://www.realself.com/practices/esthetixmd-bend-oregon",
+   "name": "EsthetixMD Spa & Laser Center - Account Suspended",
+   "name_ok": false,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Profile title reads 'Account Suspended'; address 115 SW Allen Rd., Bend, Oregon; no phone or hours shown."
+  }
+ ],
+ "summary": {
+  "found": 6,
+  "checked": 9,
+  "exact_match": 2,
+  "mismatches": 1
+ },
+ "status": "Needs work",
+ "issue": "Only 2 of 9 directories confirm your exact name, address and phone, RealSelf labels your profile 'Account Suspended', and three different phone numbers are in use online, so AI can't tell which is right."
+}

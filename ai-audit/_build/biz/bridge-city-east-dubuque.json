@@ -1,0 +1,1261 @@
+{
+ "slug": "bridge-city-east-dubuque",
+ "biz": {
+  "name": "BRIDGE CITY",
+  "full": "Bridge City Collective Dispensary East Dubuque IL",
+  "short": "Bridge City Collective",
+  "city": "East Dubuque, IL",
+  "addr": "122 Sinsinawa Ave, East Dubuque, IL 61025",
+  "phone": "(563) 207-4123",
+  "site": "bridgecitycollective.com/east-dubuque-dispensary/",
+  "domain": "bridgecitycollective.com",
+  "rating": 5.0,
+  "reviews": 6431,
+  "lat": 42.493,
+  "lng": -90.645,
+  "place_id": "ChIJ2eUIDaMr44cRKHjpPuJfDsM",
+  "svc": "dispensary",
+  "area": [
+   "East Dubuque",
+   "Tri-State area: Dubuque, IA and Galena, IL"
+  ],
+  "hours": [
+   [
+    420,
+    1320
+   ],
+   [
+    1860,
+    2760
+   ],
+   [
+    3300,
+    4200
+   ],
+   [
+    4740,
+    5640
+   ],
+   [
+    6180,
+    7080
+   ],
+   [
+    7620,
+    8520
+   ],
+   [
+    9060,
+    9960
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "nuEra East Dubuque",
+   "d": "nueracannabis.com",
+   "rating": 4.9,
+   "reviews": 1098
+  },
+  {
+   "n": "The Dispensary East Dubuque",
+   "d": "thedispensaryfulton.com",
+   "rating": 4.5,
+   "reviews": 760
+  },
+  {
+   "n": "Verilife Galena",
+   "d": "risecannabis.com",
+   "rating": 4.9,
+   "reviews": 2678
+  }
+ ],
+ "rd": [
+  {
+   "q": "east dubuque dispensary",
+   "v": 2900,
+   "t": "Transaction",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensaries in east dubuque",
+   "v": 590,
+   "t": "Commercial",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "galena dispensary",
+   "v": 590,
+   "t": "Transaction",
+   "g": null,
+   "r": [
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "dubuque dispensary",
+   "v": 320,
+   "t": "Transaction",
+   "g": "#2",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary near dubuque iowa",
+   "v": 90,
+   "t": "Commercial",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "v": 20,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "bridge city collective",
+   "v": 5400,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 24,
+  "answers_total": 35,
+  "brand_searches": 1
+ },
+ "traffic": [
+  {
+   "n": "BRIDGE CITY",
+   "me": true,
+   "v": [
+    5148,
+    5408,
+    4817,
+    6395,
+    6359,
+    5275,
+    5671,
+    5485,
+    5519,
+    6677,
+    9332,
+    8815
+   ]
+  },
+  {
+   "n": "nuEra East Dubuque",
+   "v": [
+    37718,
+    38787,
+    41029,
+    43841,
+    42694,
+    40562,
+    40203,
+    36216,
+    36124,
+    47701,
+    46983,
+    46516
+   ]
+  },
+  {
+   "n": "The Dispensary East Dubuque",
+   "v": [
+    7895,
+    8032,
+    3905,
+    55401,
+    54886,
+    27768,
+    27752,
+    45964,
+    45876,
+    44071,
+    64261,
+    62586
+   ]
+  },
+  {
+   "n": "Verilife Galena",
+   "v": [
+    628375,
+    645754,
+    664034,
+    611363,
+    602741,
+    604908,
+    597080,
+    578013,
+    554474,
+    570348,
+    561349,
+    559465
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 69,
+  "avg": 42,
+  "top": 61
+ },
+ "price": {
+  "value": 69.69,
+  "currency": "USD",
+  "label": "average Illinois dispensary basket (June 2023)",
+  "source": "Headset",
+  "url": "https://headset.io/illinois-data"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Google name adds keywords and has 1 category"
+    ],
+    [
+     "Directory listings",
+     "Hours and phone differ across Yelp and the website"
+    ]
+   ],
+   "issue": "The Google name is stuffed with extra words, the profile has only one category, and Yelp and the website show hours and phone numbers that do not match Google.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google name",
+      "Bridge City Collective Dispensary East Dubuque IL (keywords added to the real name)",
+      "warn"
+     ],
+     [
+      "Google categories",
+      "1 (Cannabis store). nuEra and Verilife each list 2",
+      "warn"
+     ],
+     [
+      "Google hours",
+      "7am to 10pm, 7 days",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "Shows Sunday as closed; 3.4 stars from 5 reviews",
+      "bad"
+     ],
+     [
+      "Location page footer",
+      "Lists Portland phone numbers and 9am to 10pm hours next to East Dubuque",
+      "bad"
+     ],
+     [
+      "Perplexity answer",
+      "Repeated the wrong 9am to 10pm hours from the website",
+      "bad"
+     ],
+     [
+      "Leafly",
+      "4.8 stars from only 15 reviews",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Needs work",
+   "parts": [
+    [
+     "News coverage",
+     "2 articles, both from before opening"
+    ],
+    [
+     "Since opening",
+     "No new news coverage found"
+    ]
+   ],
+   "issue": "We found only 2 news articles about the East Dubuque store, both written before it opened in March 2025.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "KCRG (Aug 2024)",
+      "Work starts on new East Dubuque dispensary, Bridge City Collective",
+      "ok"
+     ],
+     [
+      "Julien's Journal (Feb 2025)",
+      "Bridge City Collective announces grand opening",
+      "ok"
+     ],
+     [
+      "Since March 2025",
+      "No news articles found",
+      "bad"
+     ],
+     [
+      "Verilife Galena",
+      "4 news pages (KRNA, Q98.5, US 104.9, Illinois News Joint)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "BRIDGE CITY",
+       2
+      ],
+      [
+       "NUERA",
+       1
+      ],
+      [
+       "THE DISPENSARY",
+       1
+      ],
+      [
+       "VERILIFE",
+       4
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Needs work",
+   "parts": [
+    [
+     "YouTube",
+     "3 videos mention you"
+    ],
+    [
+     "Your own channel",
+     "No videos from the business"
+    ]
+   ],
+   "issue": "Only 3 YouTube videos mention Bridge City Collective, all made by others, and none show the East Dubuque store from the inside.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "KCRG-TV9",
+      "Work starts on new East Dubuque dispensary (2024)",
+      "ok"
+     ],
+     [
+      "The Cole Memo podcast",
+      "Interview with Portia Mittons (2023)",
+      "ok"
+     ],
+     [
+      "The Hood Collective",
+      "Owner interview, Portland (2019)",
+      "warn"
+     ],
+     [
+      "Your own videos",
+      "None found in the top 20",
+      "bad"
+     ],
+     [
+      "nuEra",
+      "5 videos, including its own channel",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "YOUTUBE VIDEOS NAMING EACH",
+     "d": [
+      [
+       "BRIDGE CITY",
+       3
+      ],
+      [
+       "NUERA",
+       5
+      ],
+      [
+       "THE DISPENSARY",
+       2
+      ],
+      [
+       "VERILIFE",
+       2
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Rankings",
+     "589 searches, 69 in the top 10"
+    ],
+    [
+     "Trend",
+     "Down from 3,565 searches in January 2026"
+    ]
+   ],
+   "issue": "The website ranks for 589 Google searches across all 4 locations, down from 3,565 in January 2026, and well behind nuEra's 2,715.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Searches you rank for",
+      "589 (all locations on one domain)",
+      "warn"
+     ],
+     [
+      "In the top 10",
+      "69",
+      "warn"
+     ],
+     [
+      "January 2026",
+      "3,565 searches",
+      "bad"
+     ],
+     [
+      "\"east dubuque dispensary\" (2,900 a month)",
+      "#2 organic, no map pack shown",
+      "ok"
+     ],
+     [
+      "nuEra",
+      "2,715 searches, 753 in the top 10",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE SEARCHES IN THE TOP 10",
+     "d": [
+      [
+       "BRIDGE CITY",
+       69
+      ],
+      [
+       "NUERA",
+       753
+      ],
+      [
+       "THE DISPENSARY",
+       231
+      ],
+      [
+       "VERILIFE",
+       3904
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Speed",
+     "Homepage 3.86s with a 0.53s server wait"
+    ],
+    [
+     "Upkeep",
+     "Footer still says 2025; location page last edited June 2025"
+    ]
+   ],
+   "issue": "The location page has no main heading, a repeated title, a 2025 copyright and has not been updated since June 2025.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage load time",
+      "3.86s (server wait 0.53s)",
+      "ok"
+     ],
+     [
+      "On-page health score",
+      "86.36 homepage, 90.85 location page",
+      "warn"
+     ],
+     [
+      "Main heading (H1)",
+      "Missing on the homepage and the location page",
+      "bad"
+     ],
+     [
+      "Location page title",
+      "East Dubuque Dispensary East Dubuque Dispensary (repeated)",
+      "bad"
+     ],
+     [
+      "Footer copyright",
+      "2025",
+      "warn"
+     ],
+     [
+      "Location page last edited",
+      "June 26, 2025",
+      "warn"
+     ],
+     [
+      "Server",
+      "Cloudflare, WordPress with Elementor",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google",
+     "5.0 stars from 6,431 reviews"
+    ],
+    [
+     "Other sites",
+     "Thin on Yelp and Leafly"
+    ]
+   ],
+   "issue": "Google reviews are a clear strength at 5.0 stars from 6,431 reviews, more than all three rivals combined, but Yelp and Leafly have very few.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google",
+      "5.0 stars, 6,431 reviews",
+      "ok"
+     ],
+     [
+      "nuEra",
+      "4.9 stars, 1,098 reviews",
+      "ok"
+     ],
+     [
+      "The Dispensary",
+      "4.5 stars, 760 reviews",
+      "ok"
+     ],
+     [
+      "Yelp",
+      "3.4 stars, 5 reviews",
+      "bad"
+     ],
+     [
+      "Leafly",
+      "4.8 stars, 15 reviews",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "BRIDGE CITY",
+       6431
+      ],
+      [
+       "NUERA",
+       1098
+      ],
+      [
+       "THE DISPENSARY",
+       760
+      ],
+      [
+       "VERILIFE",
+       2678
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Passed",
+   "parts": [
+    [
+     "Photos",
+     "167, the most nearby"
+    ],
+    [
+     "Details",
+     "15 profile details filled in"
+    ]
+   ],
+   "issue": "The Google profile is well built with 167 photos and 15 details, though it is missing the owner-written highlights the rivals use.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos",
+      "167",
+      "ok"
+     ],
+     [
+      "Profile details",
+      "15",
+      "ok"
+     ],
+     [
+      "Owner highlights section",
+      "Missing (nuEra and The Dispensary have it)",
+      "warn"
+     ],
+     [
+      "Description",
+      "Present",
+      "ok"
+     ],
+     [
+      "Claimed",
+      "Yes",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE",
+     "d": [
+      [
+       "BRIDGE CITY",
+       167
+      ],
+      [
+       "NUERA",
+       87
+      ],
+      [
+       "THE DISPENSARY",
+       13
+      ],
+      [
+       "VERILIFE",
+       95
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Failed",
+   "parts": [
+    [
+     "Alt text",
+     "1 of 35 homepage images"
+    ],
+    [
+     "File names",
+     "Random codes instead of words"
+    ]
+   ],
+   "issue": "Only 1 of 35 homepage images has useful alt text, and many files carry random code names that tell Google and AI nothing.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage images with alt text",
+      "1 of 35 (3%)",
+      "bad"
+     ],
+     [
+      "Location page images with alt text",
+      "1 of 6",
+      "bad"
+     ],
+     [
+      "Example file name",
+      "2eaa5948173266dc854494e96dd09f24.png",
+      "bad"
+     ],
+     [
+      "Example file name",
+      "26d2d69663596935763b1e55358eb4fd.png",
+      "bad"
+     ],
+     [
+      "Example file name",
+      "c657893fc7381765444538927e6e5dae.png",
+      "bad"
+     ],
+     [
+      "nuEra homepage",
+      "91 of 138 images with alt text (66%)",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 1,
+     "b": 34,
+     "la": "WITH ALT TEXT",
+     "lb": "WITHOUT",
+     "cap": "HOMEPAGE IMAGES"
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Linking sites",
+     "525 websites"
+    ],
+    [
+     "Quality",
+     "Spam score 29%"
+    ]
+   ],
+   "issue": "525 websites link to the domain, but 29% of those links score as spammy and the count covers all 4 locations, not just East Dubuque.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Websites linking to you",
+      "525 (whole domain, all locations)",
+      "ok"
+     ],
+     [
+      "Spam score of those links",
+      "29%",
+      "bad"
+     ],
+     [
+      "Broken links pointing to you",
+      "157",
+      "warn"
+     ],
+     [
+      "nuEra",
+      "1,272 linking websites, 31% spam score",
+      "warn"
+     ],
+     [
+      "The Dispensary",
+      "666 linking websites, 25% spam score",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Passed",
+   "parts": [
+    [
+     "Best-of searches",
+     "#2 in the map pack for \"best dispensary east dubuque\""
+    ],
+    [
+     "Guide sites",
+     "Listed first on Leafly and Yelp East Dubuque lists"
+    ]
+   ],
+   "issue": "Bridge City shows up for \"best dispensary east dubuque\" and is listed first on the Leafly and Yelp East Dubuque guides that Google shows.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "\"best dispensary east dubuque\"",
+      "#2 in the map pack",
+      "ok"
+     ],
+     [
+      "Leafly East Dubuque list",
+      "Listed #1",
+      "ok"
+     ],
+     [
+      "Yelp best dispensaries near East Dubuque",
+      "Listed first",
+      "ok"
+     ],
+     [
+      "Galena guides",
+      "Not listed (Verilife and Botanicanna only)",
+      "bad"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Needs work",
+   "parts": [
+    [
+     "AI answers",
+     "24 of 35 name you"
+    ],
+    [
+     "Gaps",
+     "Google AI Overview and Galena searches"
+    ]
+   ],
+   "issue": "ChatGPT, Gemini, Perplexity and Claude name Bridge City often, but Google's AI Overview names The Dispensary instead, and Galena searches go to Verilife.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "AI answers naming you",
+      "24 of 35",
+      "ok"
+     ],
+     [
+      "Google AI Overview",
+      "0 of 7; named The Dispensary for \"east dubuque dispensary\"",
+      "bad"
+     ],
+     [
+      "\"galena dispensary\"",
+      "Only Gemini named you; others named Verilife",
+      "bad"
+     ],
+     [
+      "Perplexity, \"which dispensary should I go to\"",
+      "Recommended nuEra only",
+      "warn"
+     ],
+     [
+      "\"closest dispensary to Dubuque\"",
+      "All 4 AI tools named you first",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH (6 SEARCHES)",
+     "d": [
+      [
+       "BRIDGE CITY",
+       20
+      ],
+      [
+       "NUERA",
+       17
+      ],
+      [
+       "THE DISPENSARY",
+       13
+      ],
+      [
+       "VERILIFE",
+       4
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     1,
+     2,
+     1,
+     2
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     2,
+     1,
+     1,
+     4
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Web news search"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     3,
+     5,
+     2,
+     2
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     589,
+     2715,
+     1952,
+     16006
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     69,
+     753,
+     231,
+     3904
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     3.86,
+     4.28,
+     2.28,
+     null
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     86.36,
+     84.53,
+     93.41,
+     null
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     6431,
+     1098,
+     760,
+     2678
+    ],
+    "good": 1000,
+    "ok": 500,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     5.0,
+     4.9,
+     4.5,
+     4.9
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     167,
+     87,
+     13,
+     95
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     15,
+     13,
+     10,
+     11
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     3,
+     66,
+     17,
+     null
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     525,
+     1272,
+     666,
+     3347
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     29,
+     31,
+     25,
+     24
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best dispensary East Dubuque”",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     20,
+     17,
+     13,
+     4
+    ],
+    "good": 20,
+    "ok": 10,
+    "src": "Our AI scan"
+   }
+  ]
+ },
+ "notes": [
+  "Listing confirmed live: 122 Sinsinawa Ave, (563) 207-4123, open 7am to 10pm daily. Live Google count on Nov 12, 2026 is 6,431 reviews at 5.0 (listing data from Sep 13, 2026 showed 6,036). Opened March 8, 2025.",
+  "bridgecitycollective.com serves 4 locations (2 in Portland OR, Somerset NJ, East Dubuque IL); traffic, rankings and backlinks cover the whole domain, not just East Dubuque.",
+  "Competitors: nuEra and The Dispensary appear in every East Dubuque map pack; Verilife leads the Galena map pack. RiverBluff Collective showed only in organic results. Verilife Galena's Google listing links to verilife.com but the live map pack links to risecannabis.com (Verilife is now under RISE), so risecannabis.com numbers are a multi-state chain domain. nuEra domain also covers 9+ Illinois stores and The Dispensary domain covers Fulton and East Dubuque.",
+  "Searches run on Google mobile from Dubuque, IA (desktop showed no map pack). Volumes are Iowa statewide from Google Ads; 'dispensary near me' style terms returned no data. 'dispensary open now' is 20 a month in Iowa (720 in Illinois).",
+  "Google AI Overview appeared for 'east dubuque dispensary' and named only The Dispensary. For galena, dubuque, near-dubuque and brand searches an AI Overview was present but loaded separately and its text was not captured, so those are recorded as 0.",
+  "Load time and on-page scores are from a JavaScript-rendered test. Without JavaScript the Bridge City homepage loads in 0.06s with a score of 93.41. risecannabis.com blocked the JavaScript test (403), so Verilife speed, score and alt text are null.",
+  "Bridge City's ranked searches fell from 3,565 (Jan 2026) to 601 (Oct 2026) while estimated traffic rose to 8,815 a month.",
+  "The East Dubuque location page footer shows Portland phone numbers and 9am to 10pm hours; Perplexity repeated 9am to 10pm as the store's hours. Yelp shows Sunday closed.",
+  "News counts come from web search (not a Google News API) and count only articles that name the business. Price is Headset's June 2023 Illinois average basket, the latest published basket figure we could find; Headset's Oct 2026 page gives only an average item price of $27.07."
+ ],
+ "vp_keywords": [
+  {
+   "q": "east dubuque dispensary",
+   "v": 2900
+  },
+  {
+   "q": "galena dispensary",
+   "v": 590
+  },
+  {
+   "q": "dispensary dubuque",
+   "v": 390
+  }
+ ],
+ "priceNote": "DRAG TO MATCH YOUR STORE. STARTS AT THE AVERAGE ILLINOIS DISPENSARY BASKET, $69.69 (<a href=\"https://headset.io/illinois-data\" target=\"_blank\" rel=\"noopener\">HEADSET, JUNE 2023</a>).",
+ "volNote": "VOLUME: GOOGLE ADS AND DATAFORSEO, NOV 2026, EAST DUBUQUE, DUBUQUE AND GALENA SEARCHES ONLY, WITH 45% COUNTED AS AI SEARCHES (BRIGHTLOCAL 2026).",
+ "match": "bridge[\\s\\-_]*city",
+ "cq": "dispensary",
+ "movie_qs": [
+  "best dispensary near dubuque",
+  "dispensary open now",
+  "dispensary near galena",
+  "who has the best reviews?"
+ ]
+}

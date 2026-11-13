@@ -1,0 +1,38 @@
+{"comps":[
+{"n":"Pop's Cannabis Co.","truth":{"name":"Pop's Cannabis Co. | Sherwood Park Weed Dispensary","address":"101 Granada Blvd #301, Sherwood Park, AB T8A 4W2","phone":"(780) 570-5334","hours":"Mon-Thu 9:30am-10pm, Fri-Sat 9:30am-11pm, Sun 9:30am-10pm (Google Maps hours as cited by bestbangforyourbud.com; matches popscannabis.ca)"},
+ "dirs":[
+  {"d":"Leafly","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Leafly Sherwood Park store list (pages 1-3) or site searches"},
+  {"d":"Weedmaps","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Only other Pop's locations (Pickering, New Liskeard, Sturgeon Falls) found"},
+  {"d":"Yelp","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Yelp biz page found for this store"},
+  {"d":"Facebook","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Only other Pop's location pages found"},
+  {"d":"Yellow Pages","found":true,"url":"https://www.yellowpages.ca/bus/Alberta/Sherwood-Park/Pop-s-Cannabis-Co-Sherwood-Park-Weed-Dispensary/104886565.html","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"Exact GBP name, address, phone; Mon 9:30-10, Sat 9:30-11 seen. Old Uncle Sam's listing at 304-101 Granada also still live"},
+  {"d":"MapQuest","found":true,"url":"https://www.mapquest.com/ca/alberta/pops-cannabis-co--sherwood-park-weed-dispensary-778527870","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Page blocked; phone not seen. 3 listings exist (also 500465504 'Weed Store', 738575919 'Pop's Cannabis')"},
+  {"d":"Foursquare","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No venue found; only old Uncle Sam's Cannabis venue"},
+  {"d":"Where's Weed","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Sherwood Park list; only Ontario Pop's pages"},
+  {"d":"Best Bang for Your Bud","found":true,"url":"https://bestbangforyourbud.com/en/stores/AB/Sherwood Park/101-granada-blvd","name_ok":false,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"Named 'Pop's Cannabis (WEST)'; address lacks unit #301"}
+ ],"match":1,"listed":3,"checked":9},
+{"n":"Plantlife Cannabis","truth":{"name":"Plantlife Cannabis Weed Dispensary Sherwood Park","address":"501 Emerald Dr #220, Sherwood Park, AB T8H 0W6","phone":"(780) 449-6039","hours":"Mon-Wed 9am-10pm, Thu-Sat 9am-11pm, Sun 9am-10pm (Google Maps hours as cited by bestbangforyourbud.com; plantlifecannabis.com shows different hours)"},
+ "dirs":[
+  {"d":"Leafly","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Leafly Sherwood Park list; only other Plantlife stores"},
+  {"d":"Weedmaps","found":true,"url":"https://weedmaps.com/dispensaries/plantlife-cannabis-sherwood-park","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":false,"note":"No unit #220 shown; shows 10am-10pm vs Google 9am-10/11pm"},
+  {"d":"Yelp","found":true,"url":"https://www.yelp.ca/biz/plantlife-sherwood-park","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Listed as 'Plantlife', 501 Emerald Drive; page blocked, phone/hours not seen"},
+  {"d":"Facebook","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Sherwood Park page found"},
+  {"d":"Yellow Pages","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in YP Sherwood Park cannabis results"},
+  {"d":"MapQuest","found":true,"url":"https://www.mapquest.com/ca/alberta/plantlife-cannabis-dispensary-sherwood-park-521514665","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Page blocked; phone not seen. 5 duplicate listings, one says 'Emerald Hills Dr', one calls it a houseplant store"},
+  {"d":"Foursquare","found":null,"url":"https://foursquare.com/v/plantlife-cannabis/5e3a273d846b290008ff171a","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"A Plantlife venue surfaced but page blocked; location unconfirmed"},
+  {"d":"Where's Weed","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Sherwood Park list"},
+  {"d":"Best Bang for Your Bud","found":true,"url":"https://bestbangforyourbud.com/en/stores/AB/Sherwood%20Park/501-emerald-drive","name_ok":true,"addr_ok":false,"phone_ok":true,"hours_ok":true,"note":"Postal code T8H 0L2 (Google T8H 0W6), no unit; duplicate listing also exists"}
+ ],"match":0,"listed":4,"checked":9},
+{"n":"Canna Cabana","truth":{"name":"Canna Cabana","address":"993 Fir St Unit 77, Sherwood Park, AB T8A 4N5","phone":"(780) 570-9687","hours":"10am-11pm daily"},
+ "dirs":[
+  {"d":"Leafly","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in Leafly Sherwood Park list; only Edmonton Canna Cabanas"},
+  {"d":"Weedmaps","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Sherwood Park listing found"},
+  {"d":"Yelp","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Yelp biz page found"},
+  {"d":"Facebook","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Only generic/other Canna Cabana pages"},
+  {"d":"Yellow Pages","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not in YP Sherwood Park results"},
+  {"d":"MapQuest","found":true,"url":"https://www.mapquest.com/ca/alberta/canna-cabana-521796403","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Page blocked; phone not seen. Duplicate listing 514347827"},
+  {"d":"Foursquare","found":false,"url":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"No Sherwood Park venue found"},
+  {"d":"Where's Weed","found":null,"url":"https://wheresweed.com/alberta/sherwood-park/marijuana-dispensaries/canna-cabana--sherwood-park","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"'Canna Cabana - Sherwood Park' page exists but failed to load; unclear which of 2 SP stores"},
+  {"d":"Best Bang for Your Bud","found":true,"url":"https://bestbangforyourbud.com/en/stores/AB/Sherwood%20Park/993-fir-street","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"Matches; no unit 77 shown"}
+ ],"match":1,"listed":2,"checked":9}
+]}

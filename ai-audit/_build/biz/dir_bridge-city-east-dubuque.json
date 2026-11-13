@@ -1,0 +1,21 @@
+{"truth":{"name":"Bridge City Collective (Google shows: Bridge City Collective Dispensary East Dubuque IL)","address":"122 Sinsinawa Ave, East Dubuque, IL 61025","phone":"(563) 207-4123","hours":"7am-10pm daily"},
+ "dirs":[
+  {"d":"Leafly","found":true,"url":"https://www.leafly.com/dispensary-info/bridge-city-collective-illinois","name":"Bridge City Collective - Illinois","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":true,"note":"Address, phone and 7am-10pm daily hours all match. Name says 'Illinois' instead of 'East Dubuque'."},
+  {"d":"Yelp","found":true,"url":"https://m.yelp.com/biz/bridge-city-collective-east-dubuque","name":"Bridge City Collective Dispensary East Dubuque IL","name_ok":true,"addr_ok":true,"phone_ok":true,"hours_ok":null,"note":"Name, address and phone match. Hours not visible in what we could see."},
+  {"d":"Weedmaps","found":true,"url":"https://weedmaps.com/dispensaries/bridge-city-collective-3","name":"Bridge City Collective","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Listing is live (4.9 stars, 26 reviews). Page blocked our check, so address, phone and hours not confirmed."},
+  {"d":"Dutchie","found":true,"url":"https://dutchie.com/dispensary/bridge-city-collective-east-dubuque/info","name":"Bridge City Collective - East Dubuque","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Address matches. Phone and hours not confirmed."},
+  {"d":"MapQuest","found":true,"url":"https://www.mapquest.com","name":"Bridge City Collective Dispensary East Dubuque IL","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Name and address match (shown with ZIP 61025-1219). Phone and hours not confirmed."},
+  {"d":"Yellow Pages","found":true,"url":"https://www.yellowpages.com","name":"Bridge City Collective Dispensary East Dubuque IL","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Ranked #1 on its East Dubuque dispensary list. Name and address match. Phone and hours not confirmed."},
+  {"d":"Facebook","found":true,"url":"https://www.facebook.com","name":"Bridge City Collective","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Page is linked from Google and has a grand opening event. Page details could not be checked."},
+  {"d":"Nextdoor","found":true,"url":"https://nextdoor.com","name":"Bridge City Collective Dispensary East Dubuque IL","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Listing exists with matching name. Address, phone and hours not confirmed."},
+  {"d":"CannMenus","found":true,"url":"https://legacy.cannmenus.com","name":"Bridge City Collective Dispensary East Dubuque IL","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Name and address match."},
+  {"d":"Green Tripz","found":true,"url":"https://greentripz.com","name":"Bridge City Collective","name_ok":true,"addr_ok":true,"phone_ok":null,"hours_ok":null,"note":"Address matches."},
+  {"d":"Instagram","found":true,"url":"https://www.instagram.com/bridgecitycollective_e.dubuque/","name":"Bridge City Collective East Dubuque, IL","name_ok":true,"addr_ok":null,"phone_ok":null,"hours_ok":true,"note":"Bio says open 7AM-10PM daily, which matches Google."},
+  {"d":"Own website (old blog post)","found":true,"url":"https://bridgecitycollective.com","name":"Bridge City Collective","name_ok":true,"addr_ok":true,"phone_ok":false,"hours_ok":false,"note":"An old blog post shows the East Dubuque address next to phone (503) 384-2955 and hours 9am-10pm, which conflict with Google."},
+  {"d":"Foursquare","found":false,"url":"","name":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not found in search."},
+  {"d":"Where's Weed","found":false,"url":"","name":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Not found in search."},
+  {"d":"Bing Places / Apple Maps","found":false,"url":"","name":"","name_ok":null,"addr_ok":null,"phone_ok":null,"hours_ok":null,"note":"Could not be checked with our tools."}
+ ],
+ "summary":{"found":12,"checked":15,"exact_match":2,"mismatches":1},
+ "status":"Needs work",
+ "issue":"Your listings mostly agree on name and address, but only 2 of 12 confirm your phone and hours, you are missing from Foursquare and Where's Weed, and your own site still shows an old phone number and 9am hours."}

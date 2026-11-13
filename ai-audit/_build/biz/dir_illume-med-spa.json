@@ -1,0 +1,117 @@
+{
+ "truth": {
+  "name": "Illumé Med Spa & Wellness Center",
+  "address": "817 NE Anderson Ln, Lee's Summit, MO 64064",
+  "phone": "(816) 214-5260",
+  "hours": "Tue-Wed 10 AM-6 PM; Thu 10 AM-8 PM; Fri 10 AM-4 PM; Sat-Mon closed"
+ },
+ "dirs": [
+  {
+   "d": "Yelp",
+   "found": true,
+   "url": "https://www.yelp.com/biz/illume-med-spa-lees-summit",
+   "name": "Illume Med Spa",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Yelp page title and a search snippet show 'Illume Med Spa' at 817 NE Anderson Ln. The page itself could not be opened, so phone and full hours are unconfirmed. A Google snippet of Yelp's Lee's Summit med spa list places 'Illume Med Spa' next to 296 NE Tudor Rd, which is another business's address."
+  },
+  {
+   "d": "Facebook",
+   "found": true,
+   "url": "https://www.facebook.com/illumemedicalspa/",
+   "name": "Illumé Med Spa",
+   "name_ok": true,
+   "addr_ok": null,
+   "phone_ok": true,
+   "hours_ok": null,
+   "note": "Page found. A Google snippet of the page shows (816) 214-5260. The page could not be opened, so address and hours are unconfirmed."
+  },
+  {
+   "d": "Bing Places / Bing Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Bing Maps did not return readable listing details to our tools, so this could not be checked."
+  },
+  {
+   "d": "Apple Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Apple Maps pages could not be opened by our tools, so this could not be checked."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": true,
+   "url": "https://www.yellowpages.com/lees-summit-mo/mip/illume-med-spa-472016111",
+   "name": "Illume Med Spa",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": true,
+   "note": "Address 817 NE Anderson Ln, phone (816) 214-5260 and Tue to Fri hours all match Google."
+  },
+  {
+   "d": "MapQuest",
+   "found": true,
+   "url": "https://www.mapquest.com/us/missouri/illume-med-spa-460375621",
+   "name": "Illume Med Spa",
+   "name_ok": true,
+   "addr_ok": false,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Three entries: 'Illume Med Spa' at 777 NE Anderson Ln (wrong number), 'Illume Med Spa' with no street address or phone shown, and 'Eileen N Rowe, DO - Illume Medical Spa' at 817 NE Anderson Ln."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No Foursquare listing turned up in search."
+  },
+  {
+   "d": "BBB",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Not found in BBB's Lee's Summit med spa results or in search."
+  },
+  {
+   "d": "RealSelf",
+   "found": true,
+   "url": "https://www.realself.com/practices/illume-med-spa-lees-summit-missouri",
+   "name": "Illume Med Spa",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Shows 817 NE Anderson Ln., Lees Summit. No phone or hours shown."
+  }
+ ],
+ "summary": {
+  "found": 5,
+  "checked": 9,
+  "exact_match": 1,
+  "mismatches": 1
+ },
+ "status": "Needs work",
+ "issue": "Only Yellow Pages shows all your details correctly; MapQuest lists you at the wrong address and we found no Foursquare or BBB listing."
+}

@@ -1,0 +1,1804 @@
+{
+ "locations_used": [
+  "Belton,Missouri,United States",
+  "Raymore,Missouri,United States",
+  "Peculiar,Missouri,United States"
+ ],
+ "rows": [
+  {
+   "q": "dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": 210
+  },
+  {
+   "q": "dispensaries",
+   "loc": "Belton,Missouri,United States",
+   "v": 210
+  },
+  {
+   "q": "weed dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "recreational dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed shop",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cannabis store",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis shop",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana store",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thc",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cbd",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis store near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop near me",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "best dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "best dispensary near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary deals",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary specials",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary deals near me",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensary open late",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary hours",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "24 hour dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed delivery",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis delivery",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary delivery",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary pickup",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary menu",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "online dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "first time dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary rewards",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles near me",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc gummies",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "gummies near me",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc chocolate",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc drinks",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc seltzer",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls near me",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "joints",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "blunts",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "flower",
+   "loc": "Belton,Missouri,United States",
+   "v": 140
+  },
+  {
+   "q": "weed flower",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis flower",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "ounce of weed",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "eighth of weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape",
+   "loc": "Belton,Missouri,United States",
+   "v": 40
+  },
+  {
+   "q": "thc vape",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape pen",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "carts",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc carts",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "disposable vape",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cartridges",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "concentrates",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "wax",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "shatter",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "live resin",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "rosin",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hash",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dabs",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc tincture",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "topicals",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc lotion",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cbd gummies",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cbd oil",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "delta 8",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "delta 9",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thca",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thca flower",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hemp",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "kratom",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop near me",
+   "loc": "Belton,Missouri,United States",
+   "v": 210
+  },
+  {
+   "q": "head shop",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "bongs",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "glass pipes",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "rolling papers",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary belton",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "belton dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "belton weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near belton",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensaries raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near raymore",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar dispensary",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar weed",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near peculiar",
+   "loc": "Belton,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": 140
+  },
+  {
+   "q": "dispensaries",
+   "loc": "Raymore,Missouri,United States",
+   "v": 140
+  },
+  {
+   "q": "weed dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "recreational dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed shop",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis store",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis shop",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana store",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thc",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cbd",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis store near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "best dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "best dispensary near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary deals",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary specials",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensary deals near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensary open late",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary hours",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "24 hour dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed delivery",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis delivery",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary delivery",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary pickup",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary menu",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "online dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "first time dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary rewards",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc gummies",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "gummies near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thc chocolate",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc drinks",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc seltzer",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "joints",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "blunts",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "flower",
+   "loc": "Raymore,Missouri,United States",
+   "v": 170
+  },
+  {
+   "q": "weed flower",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis flower",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "ounce of weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "eighth of weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape",
+   "loc": "Raymore,Missouri,United States",
+   "v": 30
+  },
+  {
+   "q": "thc vape",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape pen",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "carts",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc carts",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "disposable vape",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cartridges",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "concentrates",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "wax",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "shatter",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "live resin",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "rosin",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hash",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dabs",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc tincture",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "topicals",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc lotion",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cbd gummies",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cbd oil",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "delta 8",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "delta 9",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thca",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thca flower",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hemp",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "kratom",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop near me",
+   "loc": "Raymore,Missouri,United States",
+   "v": 140
+  },
+  {
+   "q": "head shop",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "bongs",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "glass pipes",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "rolling papers",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "belton dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "belton weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near belton",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": 20
+  },
+  {
+   "q": "dispensaries raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near raymore",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar dispensary",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar weed",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near peculiar",
+   "loc": "Raymore,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 70
+  },
+  {
+   "q": "dispensaries",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 70
+  },
+  {
+   "q": "weed dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "recreational dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed shop",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cannabis store",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis shop",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana store",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "marijuana",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thc",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "cbd",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis store near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pot shop near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "best dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "best dispensary near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cheap weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary deals",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary specials",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary deals near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensary open late",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary hours",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "24 hour dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "weed delivery",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis delivery",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary delivery",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary pickup",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary menu",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "online dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "first time dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary rewards",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc gummies",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "gummies near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc chocolate",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc drinks",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc seltzer",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "pre rolls near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "joints",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "blunts",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "flower",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 110
+  },
+  {
+   "q": "weed flower",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis flower",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "ounce of weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "eighth of weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc vape",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "vape pen",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "carts",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc carts",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "disposable vape",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cartridges",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "concentrates",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "wax",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "shatter",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "live resin",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "rosin",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hash",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dabs",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc tincture",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "topicals",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thc lotion",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cbd gummies",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cbd oil",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "delta 8",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "delta 9",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "thca",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "thca flower",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "hemp",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "kratom",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop near me",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 50
+  },
+  {
+   "q": "head shop",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "bongs",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "glass pipes",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "rolling papers",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "belton dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "belton weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near belton",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": 10
+  },
+  {
+   "q": "dispensaries raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "raymore weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near raymore",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar dispensary",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensaries peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "weed store peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "cannabis peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "peculiar weed",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "edibles peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "smoke shop peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  },
+  {
+   "q": "dispensary near peculiar",
+   "loc": "Peculiar,Missouri,United States",
+   "v": null
+  }
+ ],
+ "notes": [
+  "Source: DataForSEO kw_data_google_ads_search_volume (Google Ads), language en, pulled 2026-11-12; v = Google's 12-month average (Nov 2025 to Oct 2026).",
+  "All three city locations were accepted as given (location codes Belton 1020191, Raymore 1020566, Peculiar 1020539). No substitutions.",
+  "119 keywords per city (42 generic, 47 product, 30 town-modified), sent in batches of 10; the API's 12 requests/minute limit rejected some batches, which were re-sent, so every keyword has a real result.",
+  "null = Google returned no volume. Most core cannabis terms (weed, cannabis, marijuana, cbd, dispensary near me, weed dispensary, delta 8, etc.) are null, consistent with Google Ads cannabis policy hiding them; suppressed, not zero.",
+  "'dispensary' and 'dispensaries' return identical volumes and identical monthly trends in every city: Google groups close variants, so adding both double-counts the same searches.",
+  "'flower' (110-170/mo per city) is ambiguous and mostly florist intent; 'smoke shop near me' and 'vape' include tobacco/vape-shop intent. Treat as adjacent demand, not pure dispensary demand.",
+  "Many 10/mo values are Google's lowest bucket, some with only 1-3 active months in the 12-month history (e.g. 'dispensary menu', 'thc chocolate', Raymore 'best dispensary'); read 10 as 'about 10 or fewer'.",
+  "Volumes are searches from inside each city, so the same keyword in different cities is separate demand. Of 30 town-modified keywords only 'dispensary belton' (10/mo in each city) and 'raymore dispensary' (Belton 10, Raymore 20, Peculiar 10) have volume; 'belton dispensary' and all Peculiar-modified terms are null."
+ ]
+}

@@ -1,0 +1,316 @@
+{
+ "comps": [
+  {
+   "n": "Modern Aesthetic Centers",
+   "truth": {
+    "name": "Modern Aesthetic Centers - St. Johns",
+    "address": "2050 St. Johns Pkwy Ste 106, St Johns, FL 32259",
+    "phone": "(904) 526-7480",
+    "hours": "Mon-Fri 9 AM-5 PM; Sat-Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Yelp shows Modern Aesthetic Centers, 2050 St Johns Pkwy Ste 106, Saint Johns, FL 32259, (904) 526-7480, opening 9 AM Monday to Friday (from search snippet); closing times not seen."
+    },
+    {
+     "d": "Facebook",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Page shows Saint Johns Parkway Suite 106, St. Johns, FL without a street number; phone not visible to us."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "A MapQuest page for Modern Aesthetic Centers in St Johns 32259 ranks in Google; address, phone and hours not seen."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not on BBB's Saint Johns beauty list and no profile turned up in search."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    }
+   ],
+   "match": 1,
+   "listed": 3,
+   "checked": 9
+  },
+  {
+   "n": "Amason Aesthetics",
+   "truth": {
+    "name": "Amason Aesthetics",
+    "address": "1515 County Rd 210 Ste 104, St Johns, FL 32259",
+    "phone": "(904) 618-3449",
+    "hours": "Mon, Tue, Thu 9 AM-5 PM (as listed on Google)"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "Yelp shows 1515 County Rd 210 W, Ste 104, Saint Johns, FL 32259 and (904) 618-3449, Monday 9 AM to 5 PM (from search snippet); other days not seen."
+    },
+    {
+     "d": "Facebook",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No readable Facebook page details came back to our tools."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "MapQuest",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": true,
+     "url": "https://www.bbb.org/us/fl/saint-johns/category/beauty",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": true,
+     "hours_ok": null,
+     "note": "BBB lists Amason Aesthetics at 1515 County Rd 210 W Ste 104, Saint Johns, FL 32259, (904) 618-3449. No hours seen."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    }
+   ],
+   "match": 2,
+   "listed": 2,
+   "checked": 9
+  },
+  {
+   "n": "New Beauty Company Aesthetics",
+   "truth": {
+    "name": "New Beauty Company Aesthetics",
+    "address": "175 Rainier Ln Ste 9, St Johns, FL 32259",
+    "phone": "(904) 671-0899",
+    "hours": "Mon 1-6 PM; Tue 10 AM-6 PM; Wed 9 AM-5 PM; Thu 10 AM-6 PM; Fri 9 AM-5 PM; Sat 9 AM-2 PM; Sun closed"
+   },
+   "dirs": [
+    {
+     "d": "Yelp",
+     "found": true,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "MapQuest shows 2 Yelp reviews (5.0) for this business, so a Yelp listing exists, but we could not read its details."
+    },
+    {
+     "d": "Facebook",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No readable Facebook page details came back to our tools."
+    },
+    {
+     "d": "Bing Places / Bing Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Bing did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Apple Maps",
+     "found": null,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Apple Maps did not return readable listing details to our tools, so this could not be checked."
+    },
+    {
+     "d": "Yellow Pages",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "MapQuest",
+     "found": true,
+     "url": "https://startpage.mapquest.com/us/florida/new-beauty-company-aesthetics-519899110",
+     "name_ok": true,
+     "addr_ok": true,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Name and address (175 Rainier Ln, Ste 9, St. Johns, FL 32259) match; no phone or hours shown."
+    },
+    {
+     "d": "Foursquare",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    },
+    {
+     "d": "BBB",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "Not on BBB's Saint Johns beauty list and no profile turned up in search."
+    },
+    {
+     "d": "RealSelf",
+     "found": false,
+     "url": "",
+     "name_ok": null,
+     "addr_ok": null,
+     "phone_ok": null,
+     "hours_ok": null,
+     "note": "No listing turned up in search."
+    }
+   ],
+   "match": 0,
+   "listed": 2,
+   "checked": 9
+  }
+ ]
+}

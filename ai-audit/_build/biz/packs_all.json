@@ -1,0 +1,255 @@
+{
+ "spiritleaf-sherwood-park": [
+  {
+   "q": "dispensary sherwood park",
+   "you": null,
+   "pack": [
+    "#1 Dispensaries Ltd.",
+    "#2 Canna Cabana",
+    "#3 Dispensaries Ltd."
+   ]
+  },
+  {
+   "q": "weed store",
+   "you": null,
+   "pack": [
+    "#1 Fire & Flower",
+    "#2 Pop's Cannabis Co.",
+    "#3 Plantlife Cannabis"
+   ]
+  },
+  {
+   "q": "dispensary near me",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 FOUR20 Cannabis",
+    "#3 Value Buds"
+   ]
+  },
+  {
+   "q": "cannabis store sherwood park",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 Good Roots Cannabis",
+    "#3 Kurve Cannabis"
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 Kurve Cannabis",
+    "#3 Value Buds"
+   ]
+  },
+  {
+   "q": "best dispensary sherwood park",
+   "you": 2,
+   "pack": [
+    "#1 Bud N' Buddies Cannabis",
+    "#2 Spiritleaf",
+    "#3 Pop's Cannabis Co."
+   ]
+  }
+ ],
+ "spiritleaf-salisbury": [
+  {
+   "q": "dispensary sherwood park",
+   "you": null,
+   "pack": [
+    "#1 Dispensaries Ltd.",
+    "#2 Canna Cabana",
+    "#3 Dispensaries Ltd."
+   ]
+  },
+  {
+   "q": "weed store",
+   "you": null,
+   "pack": [
+    "#1 Fire & Flower",
+    "#2 Pop's Cannabis Co.",
+    "#3 Plantlife Cannabis"
+   ]
+  },
+  {
+   "q": "dispensary near me",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 FOUR20 Cannabis",
+    "#3 Value Buds"
+   ]
+  },
+  {
+   "q": "cannabis store sherwood park",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 Good Roots Cannabis",
+    "#3 Kurve Cannabis"
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "you": null,
+   "pack": [
+    "#1 Canna Cabana",
+    "#2 Kurve Cannabis",
+    "#3 Value Buds"
+   ]
+  },
+  {
+   "q": "best dispensary sherwood park",
+   "you": null,
+   "pack": [
+    "#1 Bud N' Buddies Cannabis",
+    "#2 Spiritleaf",
+    "#3 Pop's Cannabis Co."
+   ]
+  }
+ ],
+ "elevate-cannabis-belton": [
+  {
+   "q": "dispensary belton mo",
+   "loc": "Belton",
+   "you": 1,
+   "pack": [
+    "#1 Key Cannabis Dispensary Belton",
+    "#2 Blue Sage Cannabis Deli - Belton",
+    "#3 Codes Dispensary Raymore"
+   ],
+   "note": "4th pack slot was a sponsored ad (Proper Cannabis Kansas City), excluded"
+  },
+  {
+   "q": "belton dispensary",
+   "loc": "Belton",
+   "you": 1,
+   "pack": [
+    "#1 Key Cannabis Dispensary Belton",
+    "#2 Blue Sage Cannabis Deli - Belton",
+    "#3 Codes Dispensary Raymore"
+   ]
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Belton",
+   "you": 1,
+   "pack": [
+    "#1 Key Cannabis Dispensary Belton",
+    "#2 Blue Sage Cannabis Deli - Belton",
+    "#3 ReLeaf Resources Marijuana Dispensary Grandview"
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Belton",
+   "you": 1,
+   "pack": [
+    "#1 Key Cannabis Dispensary Belton",
+    "#2 Blue Sage Cannabis Deli - Belton",
+    "#3 ReLeaf Resources Marijuana Dispensary Grandview"
+   ]
+  },
+  {
+   "q": "weed store",
+   "loc": "Belton",
+   "you": null,
+   "pack": [
+    "#1 Green Releaf Weed Dispensary Lee's Summit",
+    "#2 Green Releaf Weed Dispensary Liberty",
+    "#3 Green Releaf Weed Dispensary Nevada"
+   ]
+  },
+  {
+   "q": "raymore dispensary",
+   "loc": "Belton",
+   "you": null,
+   "pack": [
+    "Google shows one store: Codes Dispensary Raymore"
+   ],
+   "note": "No local pack; knowledge panel for Codes Dispensary Raymore; Key not in organic top 10"
+  },
+  {
+   "q": "best dispensary belton mo",
+   "loc": "Belton",
+   "you": 1,
+   "pack": [
+    "#1 Key Cannabis Dispensary Belton",
+    "#2 Blue Sage Cannabis Deli - Belton"
+   ]
+  }
+ ],
+ "bridge-city-east-dubuque": [
+  {
+   "q": "east dubuque dispensary",
+   "loc": "Dubuque",
+   "you": null,
+   "pack": [
+    "Google AI and top panel: The Dispensary East Dubuque"
+   ],
+   "note": "No local pack; AI Overview + knowledge panel for The Dispensary East Dubuque; bridgecitycollective.com not in organic top 10 (named only inside Yelp/Leafly listings)"
+  },
+  {
+   "q": "dispensary near me",
+   "loc": "Dubuque",
+   "you": 1,
+   "pack": [
+    "#1 Bridge City Collective Dispensary East Dubuque IL",
+    "#2 nuEra East Dubuque Dispensary",
+    "#3 The Dispensary East Dubuque"
+   ]
+  },
+  {
+   "q": "dispensary open now",
+   "loc": "Dubuque",
+   "you": 1,
+   "pack": [
+    "#1 Bridge City Collective Dispensary East Dubuque IL",
+    "#2 The Dispensary East Dubuque",
+    "#3 nuEra East Dubuque Dispensary"
+   ]
+  },
+  {
+   "q": "dubuque dispensary",
+   "loc": "Dubuque",
+   "you": 2,
+   "pack": [
+    "#1 The Dispensary East Dubuque",
+    "#2 Bridge City Collective Dispensary East Dubuque IL",
+    "#3 nuEra East Dubuque Dispensary"
+   ]
+  },
+  {
+   "q": "best dispensary near dubuque",
+   "loc": "Dubuque",
+   "you": 1,
+   "pack": [
+    "#1 Bridge City Collective Dispensary East Dubuque IL",
+    "#2 nuEra East Dubuque Dispensary",
+    "#3 Verilife Dispensary"
+   ]
+  },
+  {
+   "q": "galena dispensary (from Galena)",
+   "loc": "Galena",
+   "you": null,
+   "pack": [
+    "#1 Verilife Dispensary",
+    "#2 Botanicanna Galena - VAPE, CBD, & THC"
+   ]
+  },
+  {
+   "q": "dispensary near me (from Galena)",
+   "loc": "Galena",
+   "you": null,
+   "pack": [
+    "#1 Verilife Dispensary",
+    "#2 nuEra East Dubuque Dispensary",
+    "#3 Botanicanna Galena - VAPE, CBD, & THC"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "truth": {
+  "name": "Key Cannabis Dispensary KC North",
+  "address": "4716 NE Vivion Rd, Kansas City, MO 64119",
+  "phone": "(816) 831-3871",
+  "hours": "Mon-Sun 8:00 AM to 9:45 PM (drive-thru to 9:30 PM)"
+ },
+ "dirs": [
+  {
+   "d": "Leafly",
+   "found": true,
+   "url": "https://www.leafly.com/dispensary-info/elevate-kc-north",
+   "name": "Key Cannabis - KC North",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": false,
+   "hours_ok": true,
+   "note": "OLD ELEVATE: web address still says elevate-kc-north. Phone shown is (816) 648-6402, not Google's (816) 831-3871. 4.6 stars, 19 reviews."
+  },
+  {
+   "d": "Weedmaps",
+   "found": false,
+   "url": "https://weedmaps.com/dispensaries/elevate-mo-2",
+   "name": "Elevate Missouri - KC North",
+   "name_ok": false,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "OLD ELEVATE: search results still show \"Elevate Missouri - KC North\"; the link now opens a general Kansas City list. No active Key KC North page found."
+  },
+  {
+   "d": "Yelp",
+   "found": true,
+   "url": "https://www.yelp.com/biz/key-cannabis-dispensary-kansas-city-8",
+   "name": "Key Cannabis Dispensary KC North",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": true,
+   "note": "Matches Google. 3.1 stars from 9 reviews; categories are Cannabis Clinics, Vitamins & Supplements, Vape Shops; one review says the store is now Swade."
+  },
+  {
+   "d": "Facebook",
+   "found": true,
+   "url": "https://www.facebook.com/people/Key-Cannabis/61563234659430/",
+   "name": "Key Cannabis",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Only a chain-wide Key Cannabis page found; no page for the KC North store. Details could not be read."
+  },
+  {
+   "d": "Yellow Pages",
+   "found": true,
+   "url": "https://www.yellowpages.com/kansas-city-mo/mip/key-cannabis-dispensary-kc-north-576655792",
+   "name": "Key Cannabis Dispensary KC North",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": true,
+   "hours_ok": true,
+   "note": "Name, address, phone and hours (8:00 am to 9:45 pm daily) all match Google."
+  },
+  {
+   "d": "MapQuest",
+   "found": true,
+   "url": "https://www.mapquest.com/us/missouri/key-cannabis-dispensary-kc-north-519903674",
+   "name": "Key Cannabis Dispensary KC North",
+   "name_ok": true,
+   "addr_ok": true,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Two listings at 4716 NE Vivion Rd: this one and a duplicate named \"Key Cannabis\" (mapquest.com/us/missouri/key-cannabis-790474844). Pages blocked our reader, so phone and hours not seen."
+  },
+  {
+   "d": "Foursquare",
+   "found": false,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "No listing found in searches."
+  },
+  {
+   "d": "Where's Weed",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Site would not load for our reader; could not confirm a listing."
+  },
+  {
+   "d": "Bing Places / Bing Maps",
+   "found": null,
+   "url": "",
+   "name": "",
+   "name_ok": null,
+   "addr_ok": null,
+   "phone_ok": null,
+   "hours_ok": null,
+   "note": "Our Bing search returned unrelated results; listing could not be checked."
+  }
+ ],
+ "summary": {
+  "found": 5,
+  "checked": 9,
+  "exact_match": 2,
+  "mismatches": 3
+ },
+ "status": "Needs work",
+ "issue": "Leafly and Weedmaps still carry the old Elevate name or web address, Leafly lists a different phone number, and MapQuest has two listings for the same store, so AI can't tell which details are right.",
+ "elevate_flags": [
+  "Leafly: leafly.com/dispensary-info/elevate-kc-north",
+  "Weedmaps: \"Elevate Missouri - KC North\" (weedmaps.com/dispensaries/elevate-mo-2) still in search results"
+ ]
+}

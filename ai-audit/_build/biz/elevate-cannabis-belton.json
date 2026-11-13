@@ -1,0 +1,1227 @@
+{
+ "slug": "elevate-cannabis-belton",
+ "biz": {
+  "name": "KEY CANNABIS",
+  "full": "Key Cannabis Dispensary Belton",
+  "short": "Key Cannabis Belton",
+  "city": "Belton, MO",
+  "addr": "225 N Cedar St, Belton, MO 64012",
+  "phone": "(816) 984-8020",
+  "site": "keycannabis.com/shop/belton-mo/",
+  "domain": "keycannabis.com",
+  "rating": 4.7,
+  "reviews": 874,
+  "lat": 38.817,
+  "lng": -94.524,
+  "place_id": "ChIJ8RllnMLbwIcRE2x1TQjBg50",
+  "svc": "dispensary",
+  "area": [
+   "Belton",
+   "Cass County, south Kansas City metro"
+  ],
+  "hours": [
+   [
+    480,
+    1305
+   ],
+   [
+    1920,
+    2745
+   ],
+   [
+    3360,
+    4185
+   ],
+   [
+    4800,
+    5625
+   ],
+   [
+    6240,
+    7065
+   ],
+   [
+    7680,
+    8505
+   ],
+   [
+    9120,
+    9945
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "Blue Sage Cannabis Deli - Belton",
+   "d": "bluesagecanna.com",
+   "rating": 4.8,
+   "reviews": 399
+  },
+  {
+   "n": "ReLeaf Resources Marijuana Dispensary Grandview",
+   "d": "releafmo.com",
+   "rating": 4.5,
+   "reviews": 1500
+  },
+  {
+   "n": "Codes Dispensary Raymore",
+   "d": "codesdispensary.com",
+   "rating": 4.8,
+   "reviews": 798
+  }
+ ],
+ "rd": [
+  {
+   "q": "dispensary open now",
+   "v": 90,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary belton mo",
+   "v": 50,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary belton",
+   "v": 10,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "dispensary near belton mo",
+   "v": 10,
+   "t": "Transaction",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "best dispensary belton mo",
+   "v": 0,
+   "t": "Commercial",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "key cannabis belton",
+   "v": 90,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [
+  {
+   "q": "dispensary raymore mo",
+   "v": 10,
+   "t": "Transaction",
+   "c": [
+    "Codes Dispensary Raymore",
+    "Blue Sage Cannabis Deli",
+    "The Source Cannabis"
+   ]
+  }
+ ],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 24,
+  "answers_total": 35,
+  "brand_searches": 1
+ },
+ "traffic": [
+  {
+   "n": "KEY CANNABIS",
+   "me": true,
+   "v": [
+    24839,
+    25274,
+    28288,
+    33379,
+    32655,
+    28774,
+    28795,
+    30752,
+    33222,
+    37264,
+    36854,
+    37535
+   ]
+  },
+  {
+   "n": "Blue Sage",
+   "v": [
+    16844,
+    16437,
+    18762,
+    28809,
+    27840,
+    14930,
+    13892,
+    17935,
+    17978,
+    14386,
+    12360,
+    11926
+   ]
+  },
+  {
+   "n": "ReLeaf Resources",
+   "v": [
+    11285,
+    13128,
+    16578,
+    18010,
+    19858,
+    7585,
+    7196,
+    9877,
+    10000,
+    12907,
+    14315,
+    13618
+   ]
+  },
+  {
+   "n": "Codes",
+   "v": [
+    58235,
+    61976,
+    61433,
+    71507,
+    62693,
+    55857,
+    55023,
+    48027,
+    49024,
+    65071,
+    62641,
+    68128
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 69,
+  "avg": 32,
+  "top": 64
+ },
+ "price": {
+  "value": 47.03,
+  "currency": "USD",
+  "label": "average US dispensary basket (12 months to Sep 2026)",
+  "source": "Headset",
+  "url": "https://www.headset.io/data/cannabis-industry-statistics"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Key Cannabis Dispensary Belton, 225 N Cedar St, is claimed on Google with a description and 1 category (Cannabis store)."
+    ],
+    [
+     "Directory listings",
+     "The old Elevate Cannabis listing at 114 E North Ave still shows on Google as permanently closed, and Leafly still files the store under an Elevate web address."
+    ]
+   ],
+   "issue": "Google, Leafly and AI tools still show the old Elevate Belton record next to the new Key Cannabis one, so customers and AI see two stores and two sets of reviews.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google (Key Cannabis)",
+      "Claimed, 225 N Cedar St, 4.7 stars, 874 reviews",
+      "ok"
+     ],
+     [
+      "Google (old Elevate listing)",
+      "Still live, marked permanently closed, 4.9 stars, 1,050 reviews",
+      "bad"
+     ],
+     [
+      "Google categories",
+      "1 category only (Cannabis store)",
+      "warn"
+     ],
+     [
+      "Leafly",
+      "Profile address is leafly.com/dispensary-info/elevate-belton, 3.4 stars from 13 reviews",
+      "bad"
+     ],
+     [
+      "Yelp and MapQuest",
+      "Same address listed as Bloc Dispensary (an older name)",
+      "warn"
+     ],
+     [
+      "Phone numbers",
+      "Google shows (816) 984-8020, JointCommerce and Leafly show (816) 648-6402",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Needs work",
+   "parts": [
+    [
+     "News coverage",
+     "1 trade article found (Cannabis Business Times, Key workers union contract), about the chain, not the Belton store."
+    ],
+    [
+     "Competitors",
+     "Blue Sage had 6 news and trade articles in the same search."
+    ]
+   ],
+   "issue": "We found almost no news coverage of the Belton store, while Blue Sage shows up in several local and trade outlets.",
+   "found": {
+    "h": [
+     "Business",
+     "News and trade articles found"
+    ],
+    "r": [
+     [
+      "Key Cannabis",
+      "1",
+      "warn"
+     ],
+     [
+      "Blue Sage",
+      "6",
+      "ok"
+     ],
+     [
+      "ReLeaf Resources",
+      "1",
+      "warn"
+     ],
+     [
+      "Codes",
+      "3",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "KEY",
+       1
+      ],
+      [
+       "BLUE SAGE",
+       6
+      ],
+      [
+       "RELEAF",
+       1
+      ],
+      [
+       "CODES",
+       3
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Failed",
+   "parts": [
+    [
+     "YouTube",
+     "No video about Key Cannabis Belton in the top 20 YouTube results for its name."
+    ],
+    [
+     "Competitors",
+     "ReLeaf has 13 videos on its own channels, Blue Sage has 6."
+    ]
+   ],
+   "issue": "There is no video about the Belton store on YouTube; the only local result is a 2023 video filmed when the building was Bloc Dispensary.",
+   "found": {
+    "h": [
+     "Business",
+     "Videos about them, YouTube top 20"
+    ],
+    "r": [
+     [
+      "Key Cannabis Belton",
+      "0",
+      "bad"
+     ],
+     [
+      "Blue Sage",
+      "6",
+      "ok"
+     ],
+     [
+      "ReLeaf Resources",
+      "13",
+      "ok"
+     ],
+     [
+      "Codes",
+      "0",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "VIDEOS ON YOUTUBE",
+     "d": [
+      [
+       "KEY",
+       0
+      ],
+      [
+       "BLUE SAGE",
+       6
+      ],
+      [
+       "RELEAF",
+       13
+      ],
+      [
+       "CODES",
+       0
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google maps results",
+     "Key Cannabis Belton is #1 in the Google map results for 5 of 6 local searches we ran."
+    ],
+    [
+     "Website rankings",
+     "keycannabis.com ranks for 4,042 searches, 888 in the top 10 (all locations combined)."
+    ]
+   ],
+   "issue": "The store wins the local Google map results in Belton, but it does not appear at all for the nearby town search \"dispensary raymore mo\".",
+   "found": {
+    "h": [
+     "Search",
+     "Where Key shows on Google"
+    ],
+    "r": [
+     [
+      "dispensary open now",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "dispensary belton mo",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "dispensary near belton mo",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "best dispensary belton mo",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "dispensary raymore mo",
+      "Not in top 20",
+      "bad"
+     ],
+     [
+      "Searches in top 10 (domain)",
+      "888 vs 458 for Codes",
+      "ok"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Speed",
+     "Homepage took 3.99 s to load and the Belton page 3.87 s, the slowest of the four."
+    ],
+    [
+     "Upkeep",
+     "Footer still says 2025, and the old Elevate Belton page returns a 404 error."
+    ]
+   ],
+   "issue": "The site is the slowest in the group, has the lowest page health score, and the old Elevate Belton page is broken.",
+   "found": {
+    "h": [
+     "Check",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage load time",
+      "3.99 s (Codes 1.21 s, ReLeaf 1.99 s, Blue Sage 2.88 s)",
+      "warn"
+     ],
+     [
+      "Server wait",
+      "290 ms homepage, 238 ms Belton page",
+      "ok"
+     ],
+     [
+      "On-page health score",
+      "88.19 (competitors 96.34 to 97.07)",
+      "warn"
+     ],
+     [
+      "Footer copyright",
+      "2025",
+      "warn"
+     ],
+     [
+      "Server",
+      "Cloudflare, WordPress with Elementor",
+      "ok"
+     ],
+     [
+      "elevatecannabis.com/shop/belton-mo/",
+      "Returns 404 (page not found)",
+      "bad"
+     ],
+     [
+      "Blog",
+      "Active, latest post November 2, 2026",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (SECONDS)",
+     "d": [
+      [
+       "KEY",
+       3.99
+      ],
+      [
+       "BLUE SAGE",
+       2.88
+      ],
+      [
+       "RELEAF",
+       1.99
+      ],
+      [
+       "CODES",
+       1.21
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Google",
+     "4.7 stars from 874 reviews on the current listing."
+    ],
+    [
+     "Lost reviews",
+     "1,050 reviews (4.9 stars) sit on the closed Elevate listing and do not count for the new store."
+    ]
+   ],
+   "issue": "More than half of the store's Google reviews are stuck on the closed Elevate listing, and AI tools quote the weak 3.4-star Leafly rating.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google (Key Cannabis)",
+      "4.7 stars, 874 reviews",
+      "ok"
+     ],
+     [
+      "Google (closed Elevate listing)",
+      "4.9 stars, 1,050 reviews not carried over",
+      "bad"
+     ],
+     [
+      "Leafly",
+      "3.4 stars from 13 reviews, quoted by Gemini and Perplexity",
+      "bad"
+     ],
+     [
+      "1-star Google reviews",
+      "35 of 861 in Sep 2026 listing data",
+      "warn"
+     ],
+     [
+      "Review link on website",
+      "None found on homepage or Belton page",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 874,
+     "b": 1050,
+     "la": "ON KEY LISTING",
+     "lb": "STUCK ON CLOSED ELEVATE LISTING",
+     "cap": "WHERE BELTON GOOGLE REVIEWS SIT"
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Passed",
+   "parts": [
+    [
+     "Photos",
+     "126 photos, the most in the group."
+    ],
+    [
+     "Details",
+     "13 profile details filled in, description and hours set."
+    ]
+   ],
+   "issue": "The Google profile is well filled in, but it lists only one category.",
+   "found": {
+    "h": [
+     "Item",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos",
+      "126 (Blue Sage 10, Codes 44, ReLeaf 73)",
+      "ok"
+     ],
+     [
+      "Profile details",
+      "13 attributes",
+      "ok"
+     ],
+     [
+      "Description",
+      "Present",
+      "ok"
+     ],
+     [
+      "Hours",
+      "8:00 AM to 9:45 PM, 7 days",
+      "ok"
+     ],
+     [
+      "Categories",
+      "1",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "KEY",
+       126
+      ],
+      [
+       "BLUE SAGE",
+       10
+      ],
+      [
+       "RELEAF",
+       73
+      ],
+      [
+       "CODES",
+       44
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Failed",
+   "parts": [
+    [
+     "Homepage",
+     "4 of 19 images have useful alt text (21%)."
+    ],
+    [
+     "Belton page",
+     "5 of 27 images have useful alt text (19%)."
+    ]
+   ],
+   "issue": "Most images have no description and generic file names, so Google and AI cannot tell what they show.",
+   "found": {
+    "h": [
+     "Check",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage images with alt text",
+      "4 of 19 (21%)",
+      "bad"
+     ],
+     [
+      "Belton page images with alt text",
+      "5 of 27 (19%)",
+      "bad"
+     ],
+     [
+      "Example file names",
+      "buds-1.png, lighter.png, 1.png",
+      "bad"
+     ],
+     [
+      "Codes homepage",
+      "14 of 25 (56%)",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 4,
+     "b": 15,
+     "la": "WITH ALT TEXT",
+     "lb": "MISSING",
+     "cap": "HOMEPAGE IMAGES"
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Links",
+     "889 websites link to keycannabis.com."
+    ],
+    [
+     "Quality",
+     "Spam score of linking sites is 50%, and 983 links point to broken pages."
+    ]
+   ],
+   "issue": "Many sites link to the chain, but half of the linking sites look spammy and nearly 1,000 links hit broken pages.",
+   "found": {
+    "h": [
+     "Business",
+     "Linking websites / spam score"
+    ],
+    "r": [
+     [
+      "Key Cannabis",
+      "889 / 50%",
+      "warn"
+     ],
+     [
+      "Blue Sage",
+      "731 / 46%",
+      "warn"
+     ],
+     [
+      "ReLeaf Resources",
+      "1,072 / 53%",
+      "warn"
+     ],
+     [
+      "Codes",
+      "913 / 37%",
+      "warn"
+     ],
+     [
+      "Key broken backlinks",
+      "983",
+      "bad"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Passed",
+   "parts": [
+    [
+     "Google",
+     "#1 in the map results for \"best dispensary belton mo\"."
+    ],
+    [
+     "Guides",
+     "MunchMakers lists Key and Blue Sage as the top Belton dispensaries; AI tools cite it."
+    ]
+   ],
+   "issue": "Key shows up in the main Belton guides, but Leafly's Belton page shows its 3.4-star Elevate-era profile.",
+   "found": {
+    "h": [
+     "Guide",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google \"best dispensary belton mo\"",
+      "#1 in map results",
+      "ok"
+     ],
+     [
+      "MunchMakers Belton guide",
+      "Listed as a top dispensary",
+      "ok"
+     ],
+     [
+      "Leafly Belton list",
+      "Listed #1 but rated 3.4 stars (13 reviews)",
+      "warn"
+     ],
+     [
+      "Weedmaps Belton page",
+      "Ranks for the search; Key not checked on page",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Passed",
+   "parts": [
+    [
+     "AI answers",
+     "ChatGPT, Gemini, Perplexity and Claude named Key in 20 of 30 local answers, more than any competitor."
+    ],
+    [
+     "Gaps",
+     "No Google AI Overview named Key, and AI tools still list the closed Elevate address and the closed Good Day Farm."
+    ]
+   ],
+   "issue": "AI tools already recommend Key in Belton, but they mix in the closed Elevate store and miss Key for Raymore searches.",
+   "found": {
+    "h": [
+     "Business",
+     "AI answers naming them (of 30)"
+    ],
+    "r": [
+     [
+      "Key Cannabis",
+      "20",
+      "ok"
+     ],
+     [
+      "Blue Sage",
+      "18",
+      "ok"
+     ],
+     [
+      "Codes",
+      "7",
+      "warn"
+     ],
+     [
+      "ReLeaf Resources",
+      "0",
+      "bad"
+     ],
+     [
+      "Old Elevate address in AI answers",
+      "Perplexity (2 answers) and Claude (1 answer)",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH BUSINESS",
+     "d": [
+      [
+       "KEY",
+       20
+      ],
+      [
+       "BLUE SAGE",
+       18
+      ],
+      [
+       "RELEAF",
+       0
+      ],
+      [
+       "CODES",
+       7
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     1,
+     6,
+     1,
+     3
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     0,
+     6,
+     13,
+     0
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     4042,
+     1568,
+     543,
+     1528
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     888,
+     226,
+     62,
+     458
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     3.99,
+     2.88,
+     1.99,
+     1.21
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     88.19,
+     97.07,
+     97.07,
+     96.34
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     874,
+     399,
+     1500,
+     798
+    ],
+    "good": 900,
+    "ok": 400,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.7,
+     4.8,
+     4.5,
+     4.8
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     126,
+     10,
+     73,
+     44
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     13,
+     10,
+     14,
+     12
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     21,
+     25,
+     null,
+     56
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     889,
+     731,
+     1072,
+     913
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     50,
+     46,
+     53,
+     37
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best dispensary Belton”",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     false,
+     false
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     20,
+     18,
+     0,
+     7
+    ],
+    "good": 20,
+    "ok": 10,
+    "src": "Our AI scan"
+   }
+  ]
+ },
+ "notes": [
+  "Elevate Cannabis Belton (114 E North Ave, place_id ChIJuU906JzbwIcRSuJ2KAQudhY) closed July 31, 2024. Google still shows that listing as permanently closed with 4.9 stars and 1,050 reviews (live SERP, Nov 12, 2026). The store now trades as Key Cannabis Dispensary Belton, 225 N Cedar St; Key is Elevate's retail brand (Belton page heading: Fresh Premium Products from Elevate). The 2024 move notice said 255 N Cedar, but Google, the website, Dutchie and JointCommerce all show 225 N Cedar St. This audit uses the Key Cannabis listing.",
+  "elevatecannabis.com/shop/belton-mo/ returns 404 (DataForSEO page test, Nov 12, 2026). Direct fetch of the Elevate site was blocked by our network proxy, so the redirect chain could not be traced; Google's AI Overview cites keycannabis.com/shop/belton-mo/?source=ELV_Redirect.",
+  "Competitors were picked from the live local packs: Blue Sage (in all 5 packs), ReLeaf Grandview (2 packs), Codes Raymore (1 pack). Good Day Farm Belton is marked permanently closed in Google listing data (Nov 2025) and CLOVR, now at the same 17211 US-71 address, did not appear in any local pack, so neither was used.",
+  "AI answers still name Good Day Farm Belton (closed on Google) and CLOVR, and Perplexity and Claude list 'Elevate Missouri / Elevate Cannabis, 114 E North Ave' as an open store.",
+  "Google Ads returned no volume for any 'near me' phrase or for 'best dispensary belton mo' at Kansas City or Missouri level, so local phrases with volume were used; 'best dispensary belton mo' is kept with volume 0. Brand volume: 'key cannabis belton' 90/month in Kansas City (480/month statewide); 'elevate cannabis belton' returned no volume.",
+  "Google results were run with location 'Belton,Missouri,United States' because the SERP tool here has no coordinate option. No Google AI Overview appeared on any of the 6 Belton searches; one appeared for 'dispensary raymore mo' (named Codes, Blue Sage, Greenlight) and one for 'elevate cannabis belton' (said the store moved to Key Cannabis).",
+  "All four domains serve several locations (Key: Missouri, Illinois, Arizona; Blue Sage: Missouri, Kentucky; Codes and ReLeaf: several Missouri stores). Traffic, keyword and backlink numbers cover the whole domain, not just one store.",
+  "Traffic months are Nov 2025 to Oct 2026 (DataForSEO estimated organic visits, United States).",
+  "Price: Headset publishes a US average basket ($47.03, Oct 2025 to Sep 2026, excludes Florida) but no Missouri basket; its Missouri page gives an average item price of $26.56 (Oct 2026).",
+  "PR counts come from one web search per brand and are brand-wide, not store-level. Video counts: a 2023 YouTube video filmed at 225 N Cedar when it was Bloc Dispensary was not counted for Key.",
+  "ReLeaf homepage rendered 0 images in the page test (likely an age gate), so its alt text share is null.",
+  "Google profile details counts come from DataForSEO listing data last updated Sep 2026; ratings and review counts come from the live Nov 12, 2026 local pack."
+ ],
+ "vp_keywords": [
+  {
+   "q": "dispensary belton",
+   "v": 70
+  },
+  {
+   "q": "raymore dispensary",
+   "v": 70
+  }
+ ],
+ "priceNote": "DRAG TO MATCH YOUR STORE. STARTS AT THE AVERAGE U.S. DISPENSARY BASKET, $47.03 (<a href=\"https://www.headset.io/data/cannabis-industry-statistics\" target=\"_blank\" rel=\"noopener\">HEADSET, 12 MONTHS TO SEP 2026</a>).",
+ "volNote": "VOLUME: GOOGLE ADS AND DATAFORSEO, NOV 2026, BELTON AND RAYMORE SEARCHES ONLY, WITH 45% COUNTED AS AI SEARCHES (BRIGHTLOCAL 2026).",
+ "match": "key[\\s\\-_]*cannabis|elev",
+ "cq": "dispensary",
+ "movie_qs": [
+  "best dispensary in belton mo",
+  "dispensary open now",
+  "dispensary near me with deals",
+  "who has the best reviews?"
+ ]
+}

@@ -1,0 +1,1332 @@
+{
+ "slug": "illume-med-spa",
+ "match": "illum[eé]",
+ "cq": "med spa",
+ "movie_qs": [
+  "best med spa in lee's summit",
+  "botox lee's summit",
+  "lip filler lee's summit",
+  "who has the best reviews?"
+ ],
+ "priceNote": "",
+ "volNote": "",
+ "biz": {
+  "name": "ILLUMÉ",
+  "full": "Illumé Med Spa & Wellness Center",
+  "short": "Illumé Med Spa",
+  "city": "Lee's Summit, MO",
+  "addr": "817 NE Anderson Ln, Lee's Summit, MO 64064",
+  "phone": "(816) 214-5260",
+  "site": "illumemedspa.com",
+  "domain": "illumemedspa.com",
+  "rating": 4.8,
+  "reviews": 110,
+  "lat": 39.003,
+  "lng": -94.359,
+  "place_id": "ChIJVwQtYMwdwYcR9cpqC8lmd0M",
+  "svc": "med spa",
+  "area": [
+   "Lee's Summit",
+   "Northeast Anderson Lane, in the County of Jackson"
+  ],
+  "hours": [
+   [
+    2040,
+    2520
+   ],
+   [
+    3480,
+    3960
+   ],
+   [
+    4920,
+    5520
+   ],
+   [
+    6360,
+    6720
+   ]
+  ]
+ },
+ "comps": [
+  {
+   "n": "KC Injectables Med Spa",
+   "d": "kcinjectablesmedspa.com",
+   "rating": 5.0,
+   "reviews": 347
+  },
+  {
+   "n": "LIV Aesthetics + Wellness",
+   "d": "livaestheticswellness.com",
+   "rating": 5.0,
+   "reviews": 188
+  },
+  {
+   "n": "Healthylooks Med Spa & Wellness",
+   "d": "healthylooks.com",
+   "rating": 4.9,
+   "reviews": 325
+  }
+ ],
+ "rd": [
+  {
+   "q": "med spa lees summit",
+   "v": 90,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "botox lees summit",
+   "v": 90,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    0,
+    null,
+    1
+   ]
+  },
+  {
+   "q": "laser hair removal lees summit",
+   "v": 50,
+   "t": "Commercial",
+   "g": null,
+   "r": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "facials lees summit",
+   "v": 70,
+   "t": "Commercial",
+   "g": "#6",
+   "r": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "lip filler lees summit",
+   "v": 20,
+   "t": "Commercial",
+   "g": "#6",
+   "r": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "q": "best med spa near me",
+   "v": null,
+   "t": "Transaction",
+   "g": "#7",
+   "r": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "q": "illume med spa lee's summit",
+   "v": 20,
+   "t": "Brand",
+   "g": "#1",
+   "r": [
+    1,
+    1,
+    1,
+    1,
+    0,
+    1
+   ]
+  }
+ ],
+ "cr": [],
+ "scan": {
+  "searches": 7,
+  "answers_naming_you": 21,
+  "answers_total": 34,
+  "brand_searches": 1
+ },
+ "vp_keywords": [
+  {
+   "q": "spas in lees summit",
+   "v": 140
+  },
+  {
+   "q": "spa lees summit mo",
+   "v": 110
+  },
+  {
+   "q": "med spa lees summit",
+   "v": 90
+  },
+  {
+   "q": "botox lees summit",
+   "v": 90
+  },
+  {
+   "q": "botox lees summit mo",
+   "v": 70
+  },
+  {
+   "q": "facials lees summit",
+   "v": 70
+  },
+  {
+   "q": "lee's summit med spa",
+   "v": 50
+  },
+  {
+   "q": "laser hair removal lees summit",
+   "v": 50
+  },
+  {
+   "q": "spa lees summit",
+   "v": 50
+  },
+  {
+   "q": "lees summit spa",
+   "v": 50
+  },
+  {
+   "q": "med spa lee's summit",
+   "v": 40
+  },
+  {
+   "q": "med spa lees summit mo",
+   "v": 40
+  },
+  {
+   "q": "iv therapy lees summit",
+   "v": 40
+  },
+  {
+   "q": "laser hair removal lees summit mo",
+   "v": 30
+  },
+  {
+   "q": "skin care lees summit",
+   "v": 30
+  },
+  {
+   "q": "lees summit med spa",
+   "v": 20
+  },
+  {
+   "q": "med spa lee's summit mo",
+   "v": 20
+  },
+  {
+   "q": "lip filler lees summit",
+   "v": 20
+  },
+  {
+   "q": "facial lees summit",
+   "v": 20
+  },
+  {
+   "q": "laser hair removal lee's summit",
+   "v": 20
+  },
+  {
+   "q": "lee's summit spa",
+   "v": 20
+  },
+  {
+   "q": "day spa lee's summit",
+   "v": 20
+  },
+  {
+   "q": "iv therapy lee's summit",
+   "v": 20
+  },
+  {
+   "q": "semaglutide lee's summit",
+   "v": 20
+  },
+  {
+   "q": "medspa lees summit",
+   "v": 20
+  },
+  {
+   "q": "medical spa lees summit",
+   "v": 20
+  },
+  {
+   "q": "spas lees summit",
+   "v": 20
+  },
+  {
+   "q": "day spa lees summit",
+   "v": 20
+  },
+  {
+   "q": "day spa lees summit mo",
+   "v": 20
+  },
+  {
+   "q": "microneedling lees summit",
+   "v": 20
+  },
+  {
+   "q": "chemical peel lees summit",
+   "v": 20
+  },
+  {
+   "q": "semaglutide lees summit",
+   "v": 20
+  },
+  {
+   "q": "esthetician lees summit",
+   "v": 20
+  },
+  {
+   "q": "botox lee's summit mo",
+   "v": 10
+  },
+  {
+   "q": "hydrafacial lee's summit",
+   "v": 10
+  },
+  {
+   "q": "ipl lee's summit",
+   "v": 10
+  }
+ ],
+ "traffic": [
+  {
+   "n": "ILLUMÉ",
+   "me": true,
+   "v": [
+    789,
+    1229,
+    1649,
+    1232,
+    820,
+    463,
+    514,
+    965,
+    866,
+    703,
+    567,
+    446
+   ]
+  },
+  {
+   "n": "KC Injectables Med Spa",
+   "v": [
+    8731,
+    8667,
+    11752,
+    4152,
+    4047,
+    2698,
+    2321,
+    1178,
+    1108,
+    943,
+    941,
+    847
+   ]
+  },
+  {
+   "n": "LIV Aesthetics + Wellness",
+   "v": [
+    191,
+    201,
+    300,
+    243,
+    214,
+    196,
+    234,
+    262,
+    335,
+    439,
+    370,
+    277
+   ]
+  },
+  {
+   "n": "Healthylooks Med Spa & Wellness",
+   "v": [
+    1331,
+    1452,
+    1523,
+    1345,
+    1347,
+    1763,
+    1600,
+    738,
+    646,
+    634,
+    490,
+    445
+   ]
+  }
+ ],
+ "months": [
+  "Nov",
+  "Dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct"
+ ],
+ "score": {
+  "you": 57,
+  "avg": 29,
+  "top": 43
+ },
+ "price": {
+  "value": 527,
+  "currency": "USD",
+  "label": "average spend per US med spa visit (2024)",
+  "source": "American Med Spa Association (AmSpa), 2024 Medical Spa State of the Industry report",
+  "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"
+ },
+ "checks": [
+  {
+   "c": "Directory listings",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Business record",
+     "Google shows Illumé Med Spa & Wellness Center, but many sites call you Illume Med Spa, Illume Medical Spa or Illume Medical Spa & Wellness Clinic."
+    ],
+    [
+     "Directory listings",
+     "Only Yellow Pages shows your full, correct details. MapQuest has a second listing at 777 NE Anderson Ln, and we found no Foursquare or BBB listing."
+    ]
+   ],
+   "issue": "Your name and address show up in several different versions online, so AI tools can't be sure which details are right.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Yellow Pages",
+      "Name, address, phone and hours all match",
+      "ok"
+     ],
+     [
+      "MapQuest",
+      "Extra listing at 777 NE Anderson Ln, plus a doctor listing",
+      "bad"
+     ],
+     [
+      "Yelp",
+      "Listed as Illume Med Spa at 817 NE Anderson Ln",
+      "warn"
+     ],
+     [
+      "Foursquare and BBB",
+      "No listing found",
+      "bad"
+     ],
+     [
+      "Other med spa sites",
+      "Use the old name Illume Medical Spa & Wellness Clinic",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "pie",
+     "a": 1,
+     "b": 8,
+     "la": "FULLY CORRECT",
+     "lb": "MISSING, WRONG OR UNCHECKED",
+     "cap": "9 DIRECTORIES CHECKED"
+    }
+   }
+  },
+  {
+   "c": "PR",
+   "st": "Failed",
+   "issue": "We found no news stories about Illumé. KC Injectables Med Spa has a feature in Healthy KC Magazine.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "News sites",
+      "No stories about Illumé found",
+      "bad"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "Feature in Healthy KC Magazine",
+      "warn"
+     ],
+     [
+      "Other Illume news online",
+      "About different companies with the same name",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "NEWS ARTICLES FOUND",
+     "d": [
+      [
+       "ILLUMÉ",
+       0
+      ],
+      [
+       "KC INJECT.",
+       1
+      ],
+      [
+       "LIV",
+       0
+      ],
+      [
+       "HEALTHYLOOKS",
+       0
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Video",
+   "st": "Failed",
+   "issue": "YouTube shows no videos about Illumé. A search for your name brings up other med spas, including one called Illume in Milwaukee.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "YouTube search, top 20",
+      "0 videos about you",
+      "bad"
+     ],
+     [
+      "Top YouTube result for your name",
+      "Illume Cosmetic Surgery & MedSpa (Milwaukee)",
+      "bad"
+     ],
+     [
+      "Healthylooks Med Spa & Wellness",
+      "18 videos in the top 20",
+      "warn"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "1 video",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "VIDEOS IN TOP 20 YOUTUBE RESULTS",
+     "d": [
+      [
+       "ILLUMÉ",
+       0
+      ],
+      [
+       "KC INJECT.",
+       1
+      ],
+      [
+       "LIV",
+       0
+      ],
+      [
+       "HEALTHYLOOKS",
+       18
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "SEO",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Fresh articles",
+     "20 articles on your news page, the newest posted today."
+    ],
+    [
+     "Google rankings",
+     "You rank for 231 searches, 18 of them in the top 10."
+    ],
+    [
+     "Trend",
+     "The searches you rank for fell from 597 in Nov 2025 to 246 in Oct 2026."
+    ]
+   ],
+   "issue": "You post articles often, but the number of Google searches you show up for has dropped by more than half in a year.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google searches you rank for",
+      "231",
+      "ok"
+     ],
+     [
+      "Searches in the top 10",
+      "18 (KC Injectables 29, LIV 25)",
+      "warn"
+     ],
+     [
+      "Searches ranked, Nov 2025 vs Oct 2026",
+      "597 down to 246",
+      "bad"
+     ],
+     [
+      "Med spa Lee's Summit",
+      "Not in Google's top results",
+      "bad"
+     ],
+     [
+      "Articles",
+      "20, newest posted today",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE SEARCHES EACH SITE RANKS FOR",
+     "d": [
+      [
+       "ILLUMÉ",
+       231
+      ],
+      [
+       "KC INJECT.",
+       149
+      ],
+      [
+       "LIV",
+       140
+      ],
+      [
+       "HEALTHYLOOKS",
+       960
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Web management",
+   "st": "Needs work",
+   "parts": [
+    [
+     "Page speed",
+     "Your homepage took 5.2 seconds to load in our first test and 1.2 seconds in a second test."
+    ],
+    [
+     "Website upkeep",
+     "Footer shows 2026. Our link check found 12 broken pages on your site."
+    ]
+   ],
+   "issue": "Your homepage loaded slowly in one of our two tests, and 12 pages on your site no longer load.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Homepage load time",
+      "5.2 seconds (second test 1.2)",
+      "warn"
+     ],
+     [
+      "On-page health score",
+      "93 of 100",
+      "ok"
+     ],
+     [
+      "Broken pages",
+      "12",
+      "bad"
+     ],
+     [
+      "Footer year",
+      "© 2026",
+      "ok"
+     ],
+     [
+      "Business details in site code",
+      "Yes, plus a FAQ section",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "s",
+     "cap": "HOMEPAGE LOAD TIME (SECONDS)",
+     "d": [
+      [
+       "ILLUMÉ",
+       5.18
+      ],
+      [
+       "KC INJECT.",
+       3.5
+      ],
+      [
+       "LIV",
+       6.58
+      ],
+      [
+       "HEALTHYLOOKS",
+       1.37
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Reputation management",
+   "st": "Needs work",
+   "issue": "Your 4.8 rating is strong, but you have about a third of the Google reviews KC Injectables Med Spa and Healthylooks have.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google rating",
+      "4.8",
+      "ok"
+     ],
+     [
+      "Google reviews",
+      "110",
+      "warn"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "347 reviews, 5.0",
+      "bad"
+     ],
+     [
+      "Healthylooks Med Spa & Wellness",
+      "325 reviews, 4.9",
+      "bad"
+     ],
+     [
+      "Perplexity",
+      "Repeats a negative weight loss review when asked about you",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "GOOGLE REVIEWS",
+     "d": [
+      [
+       "ILLUMÉ",
+       110
+      ],
+      [
+       "KC INJECT.",
+       347
+      ],
+      [
+       "LIV",
+       188
+      ],
+      [
+       "HEALTHYLOOKS",
+       325
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Google profile",
+   "st": "Needs work",
+   "issue": "Your Google profile has 12 photos and is open only 4 days a week, while nearby rivals show far more photos.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Photos on Google",
+      "12 (Healthylooks 156, KC Injectables 90)",
+      "bad"
+     ],
+     [
+      "Categories",
+      "6 (KC Injectables uses 10)",
+      "ok"
+     ],
+     [
+      "Profile details filled in",
+      "14",
+      "ok"
+     ],
+     [
+      "Hours",
+      "Tuesday to Friday only",
+      "warn"
+     ],
+     [
+      "Business description",
+      "Filled in",
+      "ok"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "PHOTOS ON GOOGLE PROFILE",
+     "d": [
+      [
+       "ILLUMÉ",
+       12
+      ],
+      [
+       "KC INJECT.",
+       90
+      ],
+      [
+       "LIV",
+       17
+      ],
+      [
+       "HEALTHYLOOKS",
+       156
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Photo codifying",
+   "st": "Needs work",
+   "issue": "Your homepage shows no treatment or clinic photos, only a logo and social icons, and those files have names like 23fd2a2be53141ed810f4d3dcdcd01fa.png.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Images with labels",
+      "6 of 6, but only the logo and social icons",
+      "warn"
+     ],
+     [
+      "Treatment or clinic photos on homepage",
+      "None",
+      "bad"
+     ],
+     [
+      "Photo file names",
+      "23fd2a2be53141ed810f4d3dcdcd01fa.png, 81af6121f84c41a5b4391d7d37fce12a.png",
+      "bad"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "22 of 22 images labeled",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "%",
+     "cap": "HOMEPAGE IMAGES WITH USEFUL LABELS",
+     "d": [
+      [
+       "ILLUMÉ",
+       100
+      ],
+      [
+       "KC INJECT.",
+       100
+      ],
+      [
+       "HEALTHYLOOKS",
+       60
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent articles",
+   "st": "Needs work",
+   "issue": "120 websites link to you, fewer than KC Injectables Med Spa (182) and Healthylooks (508), and 23% of the linking sites look spammy.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Other websites linking to you",
+      "120",
+      "warn"
+     ],
+     [
+      "Spam score of linking sites",
+      "23%",
+      "warn"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "182 sites",
+      "warn"
+     ],
+     [
+      "Healthylooks Med Spa & Wellness",
+      "508 sites, 6% spam",
+      "bad"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "WEBSITES LINKING TO EACH BUSINESS",
+     "d": [
+      [
+       "ILLUMÉ",
+       120
+      ],
+      [
+       "KC INJECT.",
+       182
+      ],
+      [
+       "LIV",
+       72
+      ],
+      [
+       "HEALTHYLOOKS",
+       508
+      ]
+     ]
+    }
+   }
+  },
+  {
+   "c": "Independent guides",
+   "st": "Needs work",
+   "issue": "You show up on Google for best med spa near me, but at #7 below the map, and med spa guides still use your old name.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "Google: best med spa near me",
+      "#7 result, not in the top 3 on the map",
+      "warn"
+     ],
+     [
+      "MedSpa Scout and ClinicCompass",
+      "Listed as Illume Medical Spa & Wellness",
+      "warn"
+     ],
+     [
+      "Yelp best medical spas list",
+      "Listed",
+      "ok"
+     ],
+     [
+      "KC Injectables Med Spa",
+      "Calls itself Voted Best Med Spa in Lee's Summit",
+      "warn"
+     ]
+    ]
+   }
+  },
+  {
+   "c": "AI monitoring",
+   "st": "Needs work",
+   "issue": "ChatGPT and Gemini name you for every search we tried, but Perplexity named you in only 1 of 6 and Claude in 4 of 6.",
+   "found": {
+    "h": [
+     "Where",
+     "What we found"
+    ],
+    "r": [
+     [
+      "ChatGPT",
+      "Named you in 6 of 6 searches",
+      "ok"
+     ],
+     [
+      "Gemini",
+      "6 of 6 searches",
+      "ok"
+     ],
+     [
+      "Claude",
+      "4 of 6 searches",
+      "warn"
+     ],
+     [
+      "Perplexity",
+      "1 of 6 searches",
+      "bad"
+     ],
+     [
+      "Google AI Overview",
+      "Did not name you (shown on 1 search)",
+      "warn"
+     ]
+    ],
+    "ch": {
+     "t": "bar",
+     "u": "",
+     "cap": "AI ANSWERS NAMING EACH (24 ANSWERS)",
+     "d": [
+      [
+       "ILLUMÉ",
+       17
+      ],
+      [
+       "KC INJECT.",
+       10
+      ],
+      [
+       "LIV",
+       4
+      ],
+      [
+       "HEALTHYLOOKS",
+       3
+      ]
+     ]
+    }
+   }
+  }
+ ],
+ "aud": {
+  "Directory listings": [
+   {
+    "m": "Google name matches the real business name",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   },
+   {
+    "m": "Categories on your Google profile",
+    "t": "num",
+    "v": [
+     6,
+     10,
+     3,
+     2
+    ],
+    "good": 5,
+    "ok": 3,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Business description on Google",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google Maps"
+   }
+  ],
+  "PR": [
+   {
+    "m": "Articles about you on real news outlets",
+    "t": "num",
+    "v": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "good": 3,
+    "ok": 1,
+    "src": "Google News"
+   }
+  ],
+  "Video": [
+   {
+    "m": "Videos about you on YouTube",
+    "t": "num",
+    "v": [
+     0,
+     1,
+     0,
+     18
+    ],
+    "good": 5,
+    "ok": 1,
+    "src": "YouTube search, top 20"
+   }
+  ],
+  "SEO": [
+   {
+    "m": "Google searches you rank for",
+    "t": "num",
+    "v": [
+     231,
+     149,
+     140,
+     960
+    ],
+    "good": 100,
+    "ok": 30,
+    "src": "DataForSEO"
+   },
+   {
+    "m": "Searches where you rank in the top 10",
+    "t": "num",
+    "v": [
+     18,
+     29,
+     25,
+     65
+    ],
+    "good": 20,
+    "ok": 5,
+    "src": "DataForSEO"
+   }
+  ],
+  "Web management": [
+   {
+    "m": "Homepage load time",
+    "t": "num",
+    "u": "s",
+    "v": [
+     5.18,
+     3.5,
+     6.58,
+     1.37
+    ],
+    "good": 2.5,
+    "ok": 4,
+    "low": 1,
+    "src": "DataForSEO page test"
+   },
+   {
+    "m": "On-page health score",
+    "t": "num",
+    "v": [
+     92.95,
+     91.12,
+     88.19,
+     95.24
+    ],
+    "good": 95,
+    "ok": 85,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Reputation management": [
+   {
+    "m": "Google reviews",
+    "t": "num",
+    "v": [
+     110,
+     347,
+     188,
+     325
+    ],
+    "good": 300,
+    "ok": 150,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Google rating",
+    "t": "num",
+    "u": "★",
+    "v": [
+     4.8,
+     5.0,
+     5.0,
+     4.9
+    ],
+    "good": 4.8,
+    "ok": 4.5,
+    "src": "Google Maps"
+   }
+  ],
+  "Google profile": [
+   {
+    "m": "Photos on your Google profile",
+    "t": "num",
+    "v": [
+     12,
+     90,
+     17,
+     156
+    ],
+    "good": 50,
+    "ok": 20,
+    "src": "Google Maps"
+   },
+   {
+    "m": "Profile details filled in",
+    "t": "num",
+    "v": [
+     14,
+     14,
+     16,
+     17
+    ],
+    "good": 15,
+    "ok": 8,
+    "src": "Google Maps attributes"
+   }
+  ],
+  "Photo codifying": [
+   {
+    "m": "Homepage images with useful alt text (%)",
+    "t": "num",
+    "u": "%",
+    "v": [
+     100,
+     100,
+     null,
+     60
+    ],
+    "good": 80,
+    "ok": 50,
+    "src": "DataForSEO page test"
+   }
+  ],
+  "Independent articles": [
+   {
+    "m": "Other websites linking to you",
+    "t": "num",
+    "v": [
+     120,
+     182,
+     72,
+     508
+    ],
+    "good": 150,
+    "ok": 75,
+    "src": "DataForSEO backlink index"
+   },
+   {
+    "m": "Spam score of the sites linking to you",
+    "t": "num",
+    "u": "%",
+    "v": [
+     23,
+     23,
+     35,
+     6
+    ],
+    "good": 10,
+    "ok": 25,
+    "low": 1,
+    "src": "DataForSEO backlink index"
+   }
+  ],
+  "Independent guides": [
+   {
+    "m": "Shows up for “best med spa lee's summit”",
+    "t": "bool",
+    "v": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "src": "Google, top 20"
+   }
+  ],
+  "AI monitoring": [
+   {
+    "m": "AI answers that name each business (non-brand searches)",
+    "t": "num",
+    "v": [
+     17,
+     10,
+     4,
+     3
+    ],
+    "good": 18,
+    "ok": 12,
+    "src": "Our AI scan (ChatGPT, Gemini, Perplexity, Claude; 6 searches each)"
+   }
+  ]
+ },
+ "notes": [
+  "Only one Missouri business matched: Illumé Med Spa & Wellness Center, 817 NE Anderson Ln, Lee's Summit, MO 64064 (single location). Other businesses named Illume (Illume Aesthetics in Cottleville MO, Illume Cosmetic Surgery & MedSpa in Milwaukee, Illumé Laser & Skin in Indiana, and the Illume software company) are different businesses.",
+  "Google listing name: the live Google panel (Nov 12 2026) shows 'Illumé Med Spa & Wellness Center' with 4.8 stars from 110 reviews; the business listing data (last updated Sep 23 2026) still says 'Illume Medical Spa & Wellness Center' with 98 reviews and 12 photos. Photos, categories and attributes come from that Sep 23 data.",
+  "Hours follow Google: Tue and Wed 10 AM to 6 PM, Thu 10 AM to 8 PM, Fri 10 AM to 4 PM, closed Sat to Mon.",
+  "County: Jackson County (Lakewood area of Lee's Summit), based on the address; not read from a tool.",
+  "Search volumes come from Semrush US (phrase_these). Town searches are national counts of searches that name Lee's Summit; 'best med spa near me' (2,400) is a national figure, not local. Brand volume uses 'illume med spa lee's summit' (20); plain 'illume med spa' (480) also covers other Illume businesses.",
+  "Google results ran with location Lee's Summit, Missouri (DataForSEO, Nov 12 2026). Google positions are organic positions below the map: facials #6, lip filler #6, best med spa near me #7. Illumé was not in the map top 3 for any of the 6 searches. For the brand search, #1 is the Google business panel; the illumemedspa.com site itself did not appear in the organic results returned.",
+  "Google AI Overview: only 'botox lees summit' showed one, and its text was not returned by the tool, so that slot is unknown (null). That is why answers_total is 34, not 35, and the score uses 35 slots instead of 36.",
+  "AI answers naming Illumé: ChatGPT 7 of 7, Gemini 7 of 7, Claude 5 of 7, Perplexity 2 of 7 (brand search included). Perplexity's brand answer called it a reasonable choice but repeated a negative weight loss review.",
+  "Competitors were picked from the Google map packs for the main searches: KC Injectables Med Spa (3 packs), LIV Aesthetics + Wellness (4 packs), Healthylooks Med Spa & Wellness (2 packs). Their ratings and review counts come from today's live map pack. KC Injectables also has an Overland Park KS location and Healthylooks has 4 locations on one domain, so their traffic, rankings, links and videos cover all locations.",
+  "Healthylooks page test used its Lee's Summit location page; the other three used homepages. Illumé's homepage loaded in 5.18 s (score 92.95) in the first test and 1.21 s (score 100) in a repeat test; the first test is used to match the single test run for each competitor.",
+  "LIV's site blocked our second page test (error 503), so its alt-text share is unknown (null); the first test flagged images without alt text.",
+  "Illumé's homepage alt-text share is 6 of 6, but all 6 images are the logo and social media icons; there are no treatment or clinic photos on the homepage.",
+  "News and video counts are items found in a web search and a YouTube top 20 search on Nov 12 2026, not a full census.",
+  "Traffic is DataForSEO estimated monthly organic visits (US), Nov 2025 to Oct 2026. KC Injectables dropped from about 11,752 (Jan 2026) to 847 (Oct 2026).",
+  "Independent guides aud uses the 'best med spa near me' search run at Lee's Summit as the closest measured stand-in for 'best med spa lee's summit'.",
+  "Directory details come from the directory helper files dir_illume-med-spa.json and dirc_illume-med-spa.json (Yelp, Facebook and MapQuest pages could not be opened directly, so some fields are unknown)."
+ ]
+}
