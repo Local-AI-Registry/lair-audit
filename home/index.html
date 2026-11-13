@@ -372,8 +372,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
   </div>
 </section>
 
-<div class="tick" aria-hidden="true"><div><span>GUARANTEED <b>·</b> AI RECOMMENDS YOU BY DAY 90 <b>·</b> OR WE STOP BILLING <b>·</b> FREE AI CHECK <b>·</b> GUARANTEED <b>·</b> AI RECOMMENDS YOU BY DAY 90 <b>·</b> OR WE STOP BILLING <b>·</b> FREE AI CHECK <b>·</b> </span><span>GUARANTEED <b>·</b> AI RECOMMENDS YOU BY DAY 90 <b>·</b> OR WE STOP BILLING <b>·</b> FREE AI CHECK <b>·</b> GUARANTEED <b>·</b> AI RECOMMENDS YOU BY DAY 90 <b>·</b> OR WE STOP BILLING <b>·</b> FREE AI CHECK <b>·</b> </span></div></div>
-
 <section id="local" class="band" style="padding-bottom:clamp(40px,5vw,72px)">
   <div class="wrap secHead">
     <div>
@@ -405,8 +403,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
 
 <section class="band ink" id="signal">
   <div class="wrap secHead">
-    <div><span class="eye">Every question is a signal</span><h2 class="h2">Questions flow in. AI routes them to one&nbsp;<em>door</em>.</h2></div>
-    <p>Each time someone near you asks an AI where to go, that question becomes a signal. AI sends it to the business it trusts most. Our job is to make sure that business is&nbsp;yours.</p>
+    <div><span class="eye">Every question is a signal</span><h2 class="h2">Questions flow in. AI recommends the one it&nbsp;<em>trusts</em>.</h2></div>
+    <p>AI trusts the business with the clearest, most consistent story across the web: listings that match, real reviews, articles and best-of guides that mention it, and a site it can read. We build that trust for you, one signal at a&nbsp;time.</p>
   </div>
   <div class="stage holoStage" id="map8"><canvas aria-label="3D overhead view of questions streaming through the streets into one business"></canvas>
     <div class="hud hudD" id="hud8"><h4>Routing questions <span class="live">LIVE</span></h4><p class="tag" style="margin-bottom:6px">Example</p><div class="row">Destination <b>Glow Med Spa</b></div><div class="row">Assistants <b>ChatGPT · Gemini · Google</b></div><div class="row">Radius <b>Your neighborhood</b></div></div>
@@ -862,7 +860,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const halo=new THREE.Mesh(new THREE.TorusGeometry(2.1,.035,8,140),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.55}));mark.add(halo);
   const halo2=new THREE.Mesh(new THREE.TorusGeometry(2.7,.02,8,140),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.45}));mark.add(halo2);
   mark.scale.setScalar(.001);
-  const up=arc(o.sc,CORAL,{n:90,size:.7}),down=arc(o.sc,BLUE,{n:90,size:.8});up.anim(0,0);down.anim(0,0);
+  const up=arc(o.sc,CORAL,{n:90,size:.7}),down=arc(o.sc,INK,{n:90,size:1.0});up.anim(0,0);down.anim(0,0);
   const rip=[0,1,2].map(k=>{const m=new THREE.Mesh(new THREE.RingGeometry(.3,.35,64),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:0,depthWrite:false,side:THREE.DoubleSide}));o.sc.add(m);m.k=k;return m});
   const mL=lab(o,'<span class="pin ilab"><span class="chip you"><span class="d"></span>Local AI Registry</span></span>');
   const sL=lab(o,'<span class="pin"><span class="chip"><span class="d"></span>Glow Med Spa</span></span>');
@@ -942,7 +940,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   for(let i=0;i<28;i++){const p=person(o.sc,rnd);spawn(p);p.id=i;
     let adv=rnd()*34;while(adv>0&&p.seg<p.path.length-1){const a=p.path[p.seg],b=p.path[p.seg+1],L=a.distanceTo(b);const st=Math.min(adv,L*(1-p.u));p.u+=st/L;adv-=st;if(p.u>=1){p.seg++;p.u=0}}
     if(p.seg>=p.path.length-1)spawn(p);
-    p.arc=arc(o.sc,BLUE,{size:.6});p.arc.anim(0,0);people.push(p)}
+    p.arc=arc(o.sc,INK,{size:.85});p.arc.anim(0,0);people.push(p)}
   const pool=[0,1,2].map(()=>{const d=lab(o,'');d.p=null;d.style.visibility='hidden';return d});
   const spaL=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>Glow Med Spa <small>Named by AI</small></span></span>');
   const comps=[[2*P,-P],[-2*P,2*P],[3*P,2*P]].map(([x,z])=>({v:V(x,3.6,z),l:lab(o,'<span class="pin"><span class="chip dim mini"><span class="d"></span>Not named</span></span>')}));
@@ -996,10 +994,10 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   biz.forEach(b=>{b.g=pinMesh(o.sc,{x:b.x,z:b.z,h:b.you?10.5:9.2,col:b.you?BLUE:0x9AA3B2,head:b.you?CORAL:0xC3C9D3,r:b.you?.55:.42});b.top=b.g.top;
     b.l=lab(o,`<span class="pin"><span class="chip ${b.you?'you':'dim'}"><span class="d"></span>${b.n}</span></span>`)});
   const hot=H.slice().sort((a,b)=>b.h-a.h).filter((h,i,arr)=>arr.slice(0,i).every(q=>Math.hypot(q.x-h.x,q.z-h.z)>2.6)).slice(0,14);
-  const arcs=hot.map((h,i)=>{const A=arc(o.sc,BLUE,{size:.7});A.h=h;A.off=i/14;return A});
+  const arcs=hot.map((h,i)=>{const A=arc(o.sc,INK,{size:1.05});A.h=h;A.off=i/14;return A});
   let mode=0,auto=true,grow=0,flip=0,hover=-1;
   const bB=document.getElementById('tBefore'),bA=document.getElementById('tAfter'),bYou=document.getElementById('bYou'),bThem=document.getElementById('bThem');
-  function setMode(m,user){mode=m;if(user)auto=false;bB.setAttribute('aria-pressed',m?'false':'true');bA.setAttribute('aria-pressed',m?'true':'false');bYou.style.width=m?'86%':'10%';bThem.style.width=m?'14%':'90%';arcs.forEach(A=>A.mat=m?BLUE:0x8A93A3);arcs.forEach(A=>A.m.uniforms.c.value.set(m?BLUE:0x8D96A6))}
+  function setMode(m,user){mode=m;if(user)auto=false;bB.setAttribute('aria-pressed',m?'false':'true');bA.setAttribute('aria-pressed',m?'true':'false');bYou.style.width=m?'86%':'10%';bThem.style.width=m?'14%':'90%';arcs.forEach(A=>A.mat=m?BLUE:0x8A93A3);arcs.forEach(A=>A.m.uniforms.c.value.set(m?INK:0x5B6577))}
   bB.onclick=()=>setMode(0,1);bA.onclick=()=>setMode(1,1);setMode(0);
   // hover tooltips
   const tip=document.getElementById('tip'),ray=new THREE.Raycaster(),pm=new THREE.Vector2();
@@ -1047,7 +1045,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     const dot=new THREE.Mesh(new THREE.CylinderGeometry(.34,.34,.18,24),mStd(i%3?BLUE:CORAL));dot.position.y=h+.02;g.add(dot);
     const base=new THREE.Mesh(new THREE.RingGeometry(.6,.9,32),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.35,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.17;g.add(base);
     g.scale.setScalar(.001);o.sc.add(g);
-    const A=arc(o.sc,BLUE,{size:.75});A.set(V(x,h,z),V(0,11,0),3);A.anim(0,0);
+    const A=arc(o.sc,INK,{size:1.05});A.set(V(x,h,z),V(0,11,0),3);A.anim(0,0);
     src.push({g,A,top:V(x,h+.6,z),l:lab(o,`<span class="chip mini">${n}</span>`),off:i/11})});
   const beam=arc(o.sc,CORAL,{n:70,size:.9});beam.anim(0,0);
   const qL=lab(o,'<span class="bub q">best med spa near me?</span>');
@@ -1105,7 +1103,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const nodes=CHECKS.map((c,i)=>{const oi=i%3,[r,tl]=orbits[oi];const sp=(.18-oi*.04)*(oi===1?-1:1);
     const m=new THREE.Mesh(new THREE.SphereGeometry(.42,28,20),mStd(i%4===0?CORAL:i%2?BLUE:0xffffff,{roughness:.3,metalness:.1}));o.sc.add(m);
     const halo=new THREE.Mesh(new THREE.RingGeometry(.55,.62,40),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:0,side:THREE.DoubleSide}));o.sc.add(halo);
-    const A=arc(o.sc,i%4===0?CORAL:BLUE,{n:40,size:.5});
+    const A=arc(o.sc,i%4===0?CORAL:INK,{n:40,size:.7});
     return {m,halo,A,r,tl,sp,ph:i/11*Math.PI*2,l:lab(o,`<span class="chip mini">${c[0]}</span>`),i}});
   let sel=-1;const btns=[...document.querySelectorAll('.ck')];
   btns.forEach(b=>{const i=+b.dataset.i;b.addEventListener('mouseenter',()=>sel=i);b.addEventListener('focus',()=>sel=i);b.addEventListener('click',()=>{sel=i;btns.forEach(x=>x.classList.toggle('on',x===b))});b.addEventListener('mouseleave',()=>{if(!b.classList.contains('on'))sel=-1})});
@@ -1132,7 +1130,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     transparent:true,side:THREE.DoubleSide,depthWrite:false}));wall.position.y=1.6;o.sc.add(wall);
   const edge=new THREE.Mesh(new THREE.RingGeometry(R-.14,R+.06,200),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.95}));edge.rotation.x=-Math.PI/2;edge.position.y=.2;o.sc.add(edge);
   const sweep=new THREE.Mesh(new THREE.CircleGeometry(R,64,0,Math.PI/4),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.12,depthWrite:false,side:THREE.DoubleSide}));sweep.rotation.x=-Math.PI/2;sweep.position.y=.22;o.sc.add(sweep);
-  const rnd=rng(8);const spokes=Array.from({length:18},(_,i)=>{const th=i/18*Math.PI*2+rnd()*.3,r=4+rnd()*(R-5);const A=arc(o.sc,BLUE,{n:40,size:.6});A.set(V(Math.cos(th)*r,.3,Math.sin(th)*r),V(0,3.2,0),1.8+r*.15);A.off=rnd();return A});
+  const rnd=rng(8);const spokes=Array.from({length:18},(_,i)=>{const th=i/18*Math.PI*2+rnd()*.3,r=4+rnd()*(R-5);const A=arc(o.sc,INK,{n:40,size:.85});A.set(V(Math.cos(th)*r,.3,Math.sin(th)*r),V(0,3.2,0),1.8+r*.15);A.off=rnd();return A});
   const ly=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>You</span></span>');
   const lr=lab(o,'<span class="chip" style="background:var(--coral);color:var(--ink)">15 miles · yours alone</span>');
   const others=[[5,-2],[-4,5],[-6,-3],[4,6],[1,-6]].map(([i,j])=>({v:V(i*4.6,3.4,j*4.6),l:lab(o,'<span class="pin"><span class="chip dim mini"><span class="d"></span>Outside your area</span></span>')}));
@@ -1287,7 +1285,7 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
   const rec=new THREE.Group();rec.position.set(10,7,1);o.sc.add(rec);
   rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(1.1,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.3,flatShading:true})));
   rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(.38,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)})));
-  const srcs=Array.from({length:11},(_,i)=>{const a=i/11*Math.PI*2,x=10+Math.cos(a)*5.6,z=1+Math.sin(a)*4.2;const d=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.16,24),mStd(i%3?BLUE:CORAL,{roughness:.35}));d.position.set(x,.1,z);d.castShadow=true;o.sc.add(d);const A=arc(o.sc,BLUE,{n:40,size:.5});A.set(V(x,.3,z),V(10,7,1),1.5);return {A,off:i/11}});
+  const srcs=Array.from({length:11},(_,i)=>{const a=i/11*Math.PI*2,x=10+Math.cos(a)*5.6,z=1+Math.sin(a)*4.2;const d=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.16,24),mStd(i%3?BLUE:CORAL,{roughness:.35}));d.position.set(x,.1,z);d.castShadow=true;o.sc.add(d);const A=arc(o.sc,INK,{n:40,size:.7});A.set(V(x,.3,z),V(10,7,1),1.5);return {A,off:i/11}});
   const beam=arc(o.sc,CORAL,{n:50,size:.8});beam.set(V(10,6.2,1),V(10,2.7,1),0);
   const lL=lab(o,'<span class="chip dim"><span class="d"></span>9 vendors · 9 logins · 9 invoices</span>');
   const lR=lab(o,'<span class="chip you"><span class="d"></span>One Record · one team · one report</span>');
