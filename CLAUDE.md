@@ -9,6 +9,11 @@ Pushes to `main` publish automatically. An existing workflow in `.github/workflo
 - Start from `_template/index.html` (replace `{{TITLE}}`, `{{HEADLINE}}`, `{{SUBTEXT}}`); extend the design freely.
 - Self-contained: inline CSS/JS, no build step, no external trackers. Must work on mobile and in dark mode.
 
+## SEO data for audits and proposals
+- Use the **DataForSEO** connector for all SEO data: rankings, keywords, live Google results (SERPs), backlinks, competitors and Lighthouse speed tests.
+- Do **not** use Ahrefs.
+- Run live Google results from the client's own city (e.g. `Stroudsburg,Pennsylvania,United States`), and cite "DataForSEO" with the date in the page's sources.
+
 ## Never touch (unless the request explicitly says so)
 - `CNAME`, root `index.html`, `404.html`, `robots.txt`, `.nojekyll`, existing workflows in `.github/workflows/`
 - Existing client folders (e.g. `atrium/`, `test-client/`) — never edit or delete them.
