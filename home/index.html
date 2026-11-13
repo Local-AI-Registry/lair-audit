@@ -84,8 +84,8 @@ h1{font:500 clamp(50px,6.4vw,94px)/.96 var(--disp);letter-spacing:-.015em}
 .seal{position:absolute;right:-150px;top:70px;width:132px;height:132px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(11,26,46,.25);transform:rotate(-8deg)}
 .seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
 .seal text{font:700 8.4px var(--head);letter-spacing:.16em;fill:#9DB3F5}
-.seal b{font:500 50px/1 var(--disp);color:#fff;margin-top:-6px}
-.seal small{position:absolute;bottom:34px;font:800 10px/1 var(--head);letter-spacing:.24em;color:var(--coral)}
+.sealc{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px}.seal b{font:500 50px/.8 var(--disp);font-variant-numeric:lining-nums;color:#fff;display:block}
+.seal small{font:800 10px/1 var(--head);letter-spacing:.24em;padding-left:.24em;color:var(--coral)}
 @keyframes spin{to{transform:rotate(360deg)}}
 h1 em{font-style:italic;color:var(--blue)}
 .lede{font-size:19px;max-width:29em}
@@ -269,7 +269,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
 @media (max-width:980px){
   .ihint{display:none}
   .icap{top:76px;bottom:auto;font-size:clamp(26px,7vw,34px)}
-  .seal{right:0;top:28px;width:96px;height:96px}.seal b{font-size:36px}.seal small{bottom:24px;font-size:8.5px}.seal text{font-size:8.2px}
+  .seal{right:0;top:28px;width:96px;height:96px}.seal b{font-size:36px}.seal small{font-size:8.5px}.seal text{font-size:8.2px}
   .heroTx h1{padding-right:96px}
   .rgrid{grid-template-columns:minmax(0,1fr)}
   .holoStage{height:600px;border-radius:20px}
@@ -387,7 +387,7 @@ footer .soc{display:flex;flex-wrap:wrap;gap:6px 14px;width:100%}footer .soc a{co
         <button class="btn b" type="submit">See where you stand</button>
       </form>
       <p class="fine">Free AI check. Takes about a minute. No tech skills&nbsp;needed.</p>
-      <div class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="sc" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#sc">GUARANTEED · AI RECOMMENDS YOU BY DAY 90 · </textPath></text></svg><b>90</b><small>DAYS</small></div>
+      <div class="seal" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="sc" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#sc">GUARANTEED · AI RECOMMENDS YOU BY DAY 90 · </textPath></text></svg><span class="sealc"><b>90</b><small>DAYS</small></span></div>
     </div>
   </div>
 </section>
@@ -583,8 +583,53 @@ footer .soc{display:flex;flex-wrap:wrap;gap:6px 14px;width:100%}footer .soc a{co
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 <script>
 (function(){
+/* her rig: Mixamo character + walk/idle + right-arm IK holding phone + head looking at it */
+function herRig(g,W,H0){
+  const m=g.scene,s=H0/1.586;m.scale.setScalar(s);m.rotation.y=Math.PI;W.add(m);
+  m.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;if(o.material){o.material.envMapIntensity=.8}}});
+  const B=n=>m.getObjectByName('mixamorig'+n);
+  const sh=B('RightArm'),el=B('RightForeArm'),ha=B('RightHand'),neck=B('Neck'),head=B('Head'),sp2=B('Spine2');
+  const mixer=new THREE.AnimationMixer(m),clip=n=>g.animations.find(a=>a.name===n);
+  const walk=mixer.clipAction(clip('walk')),idle=mixer.clipAction(clip('idle'));walk.play();idle.play();
+  const V=()=>new THREE.Vector3(),Q=()=>new THREE.Quaternion();
+  const pS=V(),pE=V(),pH=V(),tmp=V(),q=Q(),pq=Q(),wq=Q();
+  function aim(bone,childPos,target){bone.updateMatrixWorld(true);bone.getWorldPosition(tmp);
+    const a=childPos.clone().sub(tmp).normalize(),b=target.clone().sub(tmp).normalize();
+    q.setFromUnitVectors(a,b);bone.getWorldQuaternion(wq);wq.premultiply(q);
+    bone.parent.getWorldQuaternion(pq);bone.quaternion.copy(pq.invert().multiply(wq));bone.updateMatrixWorld(true)}
+  function rotW(bone,axis,ang){bone.getWorldQuaternion(wq);q.setFromAxisAngle(axis,ang);wq.premultiply(q);bone.parent.getWorldQuaternion(pq);bone.quaternion.copy(pq.invert().multiply(wq));bone.updateMatrixWorld(true)}
+  const T=V(),P=V(),right=V(),fwd=V(),up=new THREE.Vector3(0,1,0);
+  const st={walkPhase:0,idleT:0};const rest=[];m.traverse(o=>{if(o.isBone)rest.push([o,o.quaternion.clone()])});
+  return {m,mixer,update(dt,dist,amp,opt){
+    const cyc=walk.getClip().duration;
+    walk.time=((dist/(1.45*s))%1+1)%1*cyc;st.idleT+=dt;idle.time=st.idleT%idle.getClip().duration;
+    rest.forEach(([o,q])=>o.quaternion.copy(q));walk.setEffectiveWeight(amp);idle.setEffectiveWeight(1-amp);mixer.update(0);
+    W.updateMatrixWorld(true);
+    /* W-local frame: she faces -z, her right is +x */
+    const toW=v=>v.applyMatrix4(W.matrixWorld);
+    right.set(1,0,0).transformDirection(W.matrixWorld);
+    /* head/neck look down at the phone */
+    rotW(neck,right,-(opt.look||.28)*.45);rotW(head,right,-(opt.look||.28)*.55);
+    /* right arm: two-bone IK to the phone-holding point, elbow down, back and out */
+    sh.getWorldPosition(pS);el.getWorldPosition(pE);ha.getWorldPosition(pH);
+    const a=pS.distanceTo(pE),b=pE.distanceTo(pH);
+    toW(T.copy(opt.hand));toW(P.copy(opt.pole));
+    const t=T.clone().sub(pS);let d=t.length();d=Math.min(d,(a+b)*.999);t.normalize();
+    const x=(a*a-b*b+d*d)/(2*d),h=Math.sqrt(Math.max(0,a*a-x*x));
+    const pp=P.clone().sub(pS);pp.addScaledVector(t,-pp.dot(t)).normalize();
+    const E=pS.clone().addScaledVector(t,x).addScaledVector(pp,h),Ht=pS.clone().addScaledVector(t,d);
+    aim(sh,pE,E);el.getWorldPosition(pE);ha.getWorldPosition(pH);aim(el,pH,Ht);
+    /* hand continues the forearm, palm turned up toward her */
+    ha.quaternion.set(0,0,0,1);ha.rotation.set(opt.hx||0,opt.hy||0,opt.hz||0);ha.updateMatrixWorld(true);
+    /* curl fingers around the phone */
+    ['Index','Middle','Ring','Pinky'].forEach((f,i)=>[1,2,3].forEach(k=>{const bb=B('RightHand'+f+k);if(bb){bb.rotation.set(0,0,(opt.curl||.55)*(k===1?.9:1.1))}}));
+    m.updateMatrixWorld(true);
+  },hand:ha,head,el};
+}
+
 /* ---------------- copy bits ---------------- */
 const CHECKS=[["Directory listings","Same name, address, phone and hours everywhere."],["PR","Real news coverage AI can cite."],["Video","Explainer videos that answer what customers ask."],["SEO","The Google searches you rank for, and should."],["Web management","A fast site with the code AI reads."],["Reputation","Reviews, ratings and replies across sites."],["Google profile","Complete, active and posting every week."],["Photo codifying","Photos labeled so AI can read what they show."],["3rd-party articles","Features about you on independent sites."],["Best-of guides","A place on the local best-of lists AI quotes."],["AI monitoring","What every assistant says about you, each month."]];
 const g11=document.getElementById('g11');
@@ -812,47 +857,10 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
 
   /* ---- her: jointed, proportioned, walking ---- */
   const W=new THREE.Group();o.sc.add(W);const body=new THREE.Group();W.add(body);
-  const skin=mStd(0xC99272,{roughness:.5}),topM=mStd(0xF06A4E,{roughness:.88}),jeanM=mStd(0x4F6E9C,{roughness:.82}),hairM=new THREE.MeshStandardMaterial({color:lin(0x2B1D16),roughness:.36,metalness:.08}),shoeM=mStd(0xFBFAF7,{roughness:.45}),soleM=mStd(0xD8D3CA),bagM=mStd(0xB4865B,{roughness:.5}),darkM=mStd(0x1B1410,{roughness:.25}),lipM=mStd(0xB0564E,{roughness:.45});
   const add=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||body).add(m);return m};
-  const lathe=(pts,seg=64)=>new THREE.LatheGeometry(pts.map(([r,y])=>new THREE.Vector2(r,y)),seg);
-  const hips=add(lathe([[0,.86],[.1,.862],[.14,.89],[.15,.95],[.145,1.0],[.13,1.04],[0,1.045]]),jeanM,0,0,0);hips.scale.z=.8;
-  const torso=add(lathe([[0,.99],[.136,.995],[.127,1.06],[.119,1.12],[.131,1.22],[.151,1.31],[.159,1.38],[.151,1.43],[.114,1.47],[.06,1.5],[0,1.505]]),topM,0,0,0);torso.scale.z=.7;
-  add(new THREE.CylinderGeometry(.042,.048,.11,32),skin,0,1.53,0);
-  const head=new THREE.Group();head.position.set(0,1.58,0);body.add(head);
-  const HS=[.93,1.13,1.02];
-  add(new THREE.SphereGeometry(.1,64,48),skin,0,.085,0,head).scale.set(...HS);
-  add(new THREE.SphereGeometry(.016,24,16),skin,0,.075,-.103,head).scale.set(.8,1.05,1.3);
-  [-1,1].forEach(sx=>{
-    add(new THREE.SphereGeometry(.0105,20,14),darkM,sx*.034,.1,-.091,head);
-    const br=add(new THREE.SphereGeometry(.02,20,10),darkM,sx*.035,.128,-.092,head);br.scale.set(1.2,.2,.4);br.rotation.z=0;
-    add(new THREE.SphereGeometry(.018,20,14),skin,sx*.093,.085,.004,head).scale.set(.45,1,.8)});
-  const smile=add(new THREE.TorusGeometry(.022,.0048,12,48,Math.PI),lipM,0,.052,-.099,head);smile.rotation.set(-.15,0,Math.PI);
-  [-1,1].forEach(sx=>{const ck=add(new THREE.SphereGeometry(.02,20,14),mStd(0xE29A86,{roughness:.6}),sx*.05,.06,-.083,head);ck.scale.set(1,.7,.4)});
-  const cap=add(new THREE.SphereGeometry(.1,72,40,0,Math.PI*2,0,Math.PI*.44),hairM,0,.085,0,head);cap.scale.set(HS[0]*1.075,HS[1]*1.07,HS[2]*1.075);cap.rotation.x=.42;
-  const back=add(new THREE.SphereGeometry(.1,72,40,0,Math.PI,0,Math.PI*.78),hairM,0,.085,.004,head);back.scale.set(HS[0]*1.09,HS[1]*1.08,HS[2]*1.1);
-  const tailP=new THREE.Group();tailP.position.set(0,.15,.09);head.add(tailP);
-  add(new THREE.SphereGeometry(.036,24,16),hairM,0,0,0,tailP);
-  add(lathe([[0,0],[.036,-.03],[.044,-.1],[.034,-.2],[.012,-.29],[0,-.3]],40),hairM,0,-.01,.02,tailP);
-  const mkLeg=(x)=>{const hip=new THREE.Group();hip.position.set(x,.92,0);body.add(hip);
-    add(new THREE.CylinderGeometry(.07,.058,.43,36,4),jeanM,0,-.215,0,hip);
-    const knee=new THREE.Group();knee.position.y=-.43;hip.add(knee);add(new THREE.SphereGeometry(.058,28,18),jeanM,0,0,0,knee);
-    add(new THREE.CylinderGeometry(.058,.043,.42,36,4),jeanM,0,-.21,0,knee);
-    const ank=new THREE.Group();ank.position.y=-.42;knee.add(ank);
-    add(new THREE.SphereGeometry(.07,32,20),shoeM,0,-.03,-.045,ank).scale.set(.75,.55,1.45);
-    add(new THREE.CylinderGeometry(.052,.056,.025,32),soleM,0,-.06,-.045,ank).scale.set(1,1,1.95);
-    return {hip,knee,ank}};
-  const LL=mkLeg(-.08),LR=mkLeg(.08);
-  const mkArm=(x)=>{const sh=new THREE.Group();sh.position.set(x,1.42,0);body.add(sh);add(new THREE.SphereGeometry(.052,28,18),topM,0,0,0,sh);
-    add(new THREE.CylinderGeometry(.047,.039,.27,32,3),topM,0,-.135,0,sh);
-    const el=new THREE.Group();el.position.y=-.27;sh.add(el);add(new THREE.SphereGeometry(.039,24,16),skin,0,0,0,el);
-    add(new THREE.CylinderGeometry(.038,.03,.24,32,3),skin,0,-.12,0,el);
-    add(new THREE.SphereGeometry(.036,28,18),skin,0,-.265,0,el).scale.set(.8,1.2,.55);
-    add(new THREE.SphereGeometry(.014,16,10),skin,Math.sign(x)*-.03,-.25,-.012,el).scale.set(1,1.6,1);
-    return {sh,el}};
-  const AL=mkArm(-.19),AR=mkArm(.19);
-  AR.sh.rotation.set(.38,0,.12);AR.el.rotation.set(1.5,0,-.15);
-  const bag=add(RB,bagM,-.215,.94,.03);bag.scale.set(.07,.21,.27);
-  add(new THREE.TubeGeometry(new THREE.CatmullRomCurve3([V(-.215,1.14,-.07),V(-.2,1.32,-.065),V(-.155,1.48,0),V(-.2,1.32,.075),V(-.215,1.14,.11)]),72,.0075,10),bagM,0,0,0);
+  /* her: a rigged, textured character with a real walk cycle (loaded async; the intro opens on the phone screen) */
+  let HER=null;const HOPT={hand:V(.085,1.2,-.27),pole:V(.5,.7,.25),hy:1.5,curl:.5,look:.3};
+  if(THREE.GLTFLoader)new THREE.GLTFLoader().load('her.glb',g=>{HER=herRig(g,body,1.68)});
   /* her phone, held in the right hand, screen turned to her face */
   function phoneTex(kind){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
     const rr=(X,Y,w,h,r)=>{x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()};
@@ -872,7 +880,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
       x.fillStyle='#1F4FE0';rr(30,90,660,170,32);x.fill();x.fillStyle='#fff';x.font='700 44px '+HF;x.fillText('Glow Med Spa',70,165);x.font='500 30px '+TF;x.fillText('4 min · Walking',70,215);
     }
     const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=8;return tx}
-  const phoneG=new THREE.Group();W.add(phoneG);phoneG.position.set(.125,1.3,-.31);
+  const phoneG=new THREE.Group();W.add(phoneG);phoneG.position.set(.1,1.28,-.3);
   add(new THREE.Mesh().geometry=RB,mStd(0x0B0B0F,{roughness:.25,metalness:.5}),0,0,0,phoneG).scale.set(.084,.168,.01);
   phoneG.children[0].position.set(0,-.084,-.005);
   let texC=phoneTex(0),texN=phoneTex(1);const scr=new THREE.Mesh(new THREE.PlaneGeometry(.078,.161),new THREE.MeshBasicMaterial({map:texC}));scr.position.z=.0062;phoneG.add(scr);
@@ -921,20 +929,18 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     const a0=path[si],b0=path[si+1];W.position.lerpVectors(a0,b0,Math.min(1,d/segL[si]));
     let yaw=Math.atan2(-(b0.x-a0.x),-(b0.z-a0.z));W.rotation.y+=(yaw-W.rotation.y)*(1-Math.exp(-dt*5));
     const dw=prevW==null?0:Math.abs(w-prevW);prevW=w;dist+=dw;const spd=dt>0?dw/dt:0;amp+=((spd>.05?1:0)-amp)*(1-Math.exp(-dt*5));
-    const st=dist*3.3,s1=Math.sin(st),s2=Math.sin(st+Math.PI);
-    LL.hip.rotation.x=s1*.42*amp;LR.hip.rotation.x=s2*.42*amp;
-    LL.knee.rotation.x=-Math.max(0,Math.sin(st-1.2))*.85*amp;LR.knee.rotation.x=-Math.max(0,Math.sin(st+Math.PI-1.2))*.85*amp;
-    LL.ank.rotation.x=Math.max(0,-s1)*.25*amp;LR.ank.rotation.x=Math.max(0,-s2)*.25*amp;
-    AL.sh.rotation.x=-s1*.36*amp;AL.sh.rotation.z=-.06;AL.el.rotation.x=.2+Math.max(0,s1)*.25*amp;
-    body.position.y=Math.abs(Math.cos(st))*.028*amp-.012*amp;body.rotation.y=s1*.05*amp;body.rotation.z=Math.sin(st)*.015*amp;
-    head.rotation.set(-.24+Math.sin(t*.7)*.02,-body.rotation.y*.8,0);tailP.rotation.set(.25+Math.cos(st*2)*.06*amp,0,Math.sin(st)*.22*amp+Math.sin(t*1.3)*.03);
-    W.updateMatrixWorld(true);Wq.copy(W.quaternion);head.localToWorld(eye.set(0,.1,-.06));
+    W.updateMatrixWorld(true);Wq.copy(W.quaternion);
+    if(HER){HER.update(dt,dist,amp,HOPT);
+      const hp=new THREE.Vector3(),ep=new THREE.Vector3();HER.hand.getWorldPosition(hp);HER.el.getWorldPosition(ep);
+      const dir=hp.clone().sub(ep).normalize();hp.addScaledVector(dir,.03).add(V(0,.078,0));W.worldToLocal(hp);phoneG.position.copy(hp);
+      HER.head.getWorldPosition(eye);eye.add(V(0,.06,0)).add(off(V(0,0,-.09)));}
+    else{eye.copy(W.position).add(V(0,1.62,0)).add(off(V(0,0,-.08)))}
     phoneG.lookAt(eye);phoneG.updateMatrixWorld(true);phoneG.getWorldPosition(PH);phoneG.getWorldQuaternion(PQ);
     scr.material.map=p>.5?texN:texC;
     /* camera: one smooth spline through every shot */
     const n=Z.clone().applyQuaternion(PQ),Wp=W.position;
     const P0=PH.clone().addScaledVector(n,.3),T0=PH.clone();
-    const P1=Wp.clone().add(off(V(.22,1.9,.55))),T1=PH.clone();
+    const P1=Wp.clone().add(off(V(.62,1.58,.1))),T1=PH.clone();
     const PS=Wp.clone().add(off(V(.45,1.75,-1.15))),TS=PH.clone().lerp(Wp.clone().add(V(0,1.55,0)),.5);
     const P2=Wp.clone().add(off(V(-.35,1.6,-3.2))),T2=Wp.clone().add(V(0,1.4,0));
     const P3=Wp.clone().add(off(V(-.1,2.8,-7.6))),T3=Wp.clone().add(V(0,1.05,0));
