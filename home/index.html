@@ -157,9 +157,27 @@ form.go input{flex:1 1 240px;min-width:0;min-height:52px;padding:0 18px;border-r
 .card h3{font:700 26px/1.2 var(--head)}
 .card ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
 .card li{display:flex;gap:10px;align-items:flex-start}
-.card li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--blueT) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.6 2.5L13 6.5' fill='none' stroke='%231F4FE0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.card li::before,.ticks li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--blueT) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.6 2.5L13 6.5' fill='none' stroke='%231F4FE0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
 .card .btn{align-self:flex-start;margin-top:10px}
 
+.ink{background:#06101D;color:#A8B2C1}
+.ink .h2{color:#F4F1EA}.ink .h2 em{color:#8EA8F7}.ink .eye{color:#9DB3F5}
+.holoStage{height:clamp(540px,60vw,780px);margin-top:36px;border-radius:28px;margin-inline:max(12px,env(safe-area-inset-left,0px));box-shadow:inset 0 0 0 1px rgba(157,179,245,.16)}
+.hudD{background:rgba(8,18,34,.62);border:1px solid rgba(157,179,245,.22);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:14px;color:#DCE4FA}
+.hudD h4{color:#fff}.hudD .tag{color:#7F8DA8}.hudD .row{color:#C9D3E6;border-top-color:rgba(157,179,245,.14)}.hudD .row b{color:#fff;font:700 12.5px/1 var(--head)}
+.hudD .ok2{color:#5FD3A0}
+#hud7{left:20px;bottom:20px;width:300px}#hud8{left:20px;top:20px;width:290px}
+.pg{height:4px;border-radius:2px;background:rgba(157,179,245,.18);overflow:hidden;margin:4px 0 8px}.pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,#1F4FE0,#FF5A3C)}
+.toggle.dark{background:rgba(8,18,34,.72);border:1px solid rgba(157,179,245,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.toggle.dark button{color:#9DB3F5}.toggle.dark button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+.chip.holo{background:rgba(8,18,34,.72);color:#E6ECFA;box-shadow:0 0 0 1px rgba(157,179,245,.3),0 0 24px rgba(31,79,224,.35)}
+.chip.holo small{color:#9DB3F5}
+.street{font:700 10.5px/1 var(--head);letter-spacing:.22em;color:rgba(157,179,245,.75);white-space:nowrap}
+#map9{height:clamp(480px,50vw,660px);margin-top:36px;border-radius:28px;box-shadow:inset 0 0 0 1px var(--line)}
+.rgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:40px;align-items:center}
+.rgrid>*{min-width:0}
+#map10{height:clamp(460px,44vw,620px);border-radius:28px}
+.ticks{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:10px}.ticks li{display:flex;gap:10px;align-items:flex-start}
 /* area */
 #area{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);min-height:640px}
 #area>*{min-width:0}
@@ -194,6 +212,14 @@ footer{border-top:1px solid var(--line);padding-block:30px 46px}
 footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-size:14px;color:var(--mute)}
 
 @media (max-width:980px){
+  .rgrid{grid-template-columns:minmax(0,1fr)}
+  .holoStage{height:600px;border-radius:20px}
+  #hud7,#hud8{left:12px;right:12px;width:auto;padding:12px 14px}
+  #hud8{top:auto;bottom:12px}
+  #hud7 .row,#hud8 .row,#hud8 .tag{display:none}
+  #hud7 h4,#hud8 h4{margin-bottom:6px}
+  #map9{height:520px;border-radius:20px}
+  #map10{height:440px}
   .tilt{display:none}
   nav,#hud1,#hud3{display:none}
   .secHead,.two,.founder,#area,.cgrid,.final{grid-template-columns:minmax(0,1fr)}
@@ -299,6 +325,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
   </div>
 </section>
 
+<section class="band ink" id="signal">
+  <div class="wrap secHead">
+    <div><span class="eye">Every question is a signal</span><h2 class="h2">Questions flow in. AI routes them to one&nbsp;<em>door</em>.</h2></div>
+    <p>Each time someone near you asks an AI where to go, that question becomes a signal. AI sends it to the business it trusts most. Our job is to make sure that business is&nbsp;yours.</p>
+  </div>
+  <div class="stage holoStage" id="map8"><canvas aria-label="3D overhead view of questions streaming through the streets into one business"></canvas>
+    <div class="hud hudD" id="hud8"><h4>Routing questions <span class="live">LIVE</span></h4><p class="tag" style="margin-bottom:6px">Example</p><div class="row">Destination <b>Glow Med Spa</b></div><div class="row">Assistants <b>ChatGPT · Gemini · Google</b></div><div class="row">Radius <b>Your neighborhood</b></div></div>
+  </div>
+</section>
+
 <section id="story" aria-label="How it works">
   <div class="stick">
     <div class="stage" id="map3"><canvas aria-label="3D story: a question, AI reading eleven sources, AI naming one business, a customer walking in"></canvas><div class="tilt t"></div><div class="tilt b"></div></div>
@@ -310,6 +346,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
       <div class="st"><b>4</b><h3>They walk in</h3><p>Not a click or an impression. A customer at your front&nbsp;desk.</p></div>
       <div class="pbar"><i id="pbar"></i></div>
     </div>
+  </div>
+</section>
+
+<section class="band ink" id="aiview">
+  <div class="wrap secHead">
+    <div><span class="eye">How AI sees your street</span><h2 class="h2">AI doesn't see storefronts. It sees a web of&nbsp;<em>facts</em>.</h2></div>
+    <p>Every listing, review, article and photo is a point of light. AI connects them, checks that they agree, and recommends the business with the strongest web. Switch views to see your street the way AI reads&nbsp;it.</p>
+  </div>
+  <div class="stage holoStage" id="map7"><canvas aria-label="Holographic 3D street showing the web of facts AI connects between businesses"></canvas>
+    <div class="toggle dark" role="group" aria-label="View"><button type="button" id="tStreet" aria-pressed="false">Street view</button><button type="button" id="tAI" aria-pressed="true">AI view</button></div>
+    <div class="hud hudD" id="hud7"><h4>Reading sources <span class="tag">Example</span></h4><div class="pg"><i id="prog7"></i></div>
+      <div class="row">Name, address, phone <span class="ok2">Match</span></div><div class="row">Reviews <span class="ok2">Strong</span></div><div class="row">Articles and guides <span class="ok2">Found</span></div><div class="row">Photos <span class="ok2">Labeled</span></div></div>
   </div>
 </section>
 
@@ -326,6 +374,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
       <div class="stage" id="map5"><canvas aria-label="3D view of eleven signals orbiting and feeding your Record"></canvas></div>
       <div class="checks" id="g11"></div>
     </div>
+  </div>
+</section>
+
+<section class="band" id="oldnew">
+  <div class="wrap">
+    <div class="secHead">
+      <div><span class="eye">The old way vs. the new way</span><h2 class="h2">Nine vendors pulling nine ways, or one&nbsp;<em>Record</em>.</h2></div>
+      <p>Most local businesses juggle agencies, tools and freelancers that never talk to each other. We replace the tangle with one Record, one team and one monthly&nbsp;report.</p>
+    </div>
+    <div class="stage" id="map9"><canvas aria-label="3D comparison: nine tangled vendors on the left, one Record feeding one business on the right"></canvas></div>
   </div>
 </section>
 
@@ -349,6 +407,18 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-s
         <a class="btn c" href="#start">See where you stand</a>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="band" id="report" style="background:var(--paper2)">
+  <div class="wrap rgrid">
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <span class="eye">Proof, every month</span>
+      <h2 class="h2">See exactly what AI says about&nbsp;<em>you</em>.</h2>
+      <p>Every month you get a report with real screenshots from each assistant, what changed, and what we're doing next. You never have to take our word for&nbsp;it.</p>
+      <ul class="ticks"><li>Which assistants name you, and which name a competitor</li><li>Screenshots of every answer, as proof</li><li>What we fixed, and what's next</li></ul>
+    </div>
+    <div class="stage" id="map10"><canvas aria-label="3D tablet showing an example monthly AI report"></canvas></div>
   </div>
 </section>
 
@@ -437,27 +507,31 @@ const sm=x=>x<=0?0:x>=1?1:x*x*(3-2*x);
 
 /* ---------------- engine: one RAF, only visible scenes render ---------------- */
 const scenes=[];let last=performance.now(),acc=0,fr=0,PR=Math.min(devicePixelRatio,MOB()?1.6:2);
-function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;fr++;if(acc>2){if(acc/fr>1/48&&PR>1){PR=Math.max(1,PR-.25);scenes.forEach(s=>{s.r.setPixelRatio(PR);s.resize()})}acc=0;fr=0}
-  for(const s of scenes)if(s.vis){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);s.r.render(s.sc,s.cam);s.labels&&s.labels()}requestAnimationFrame(loop)}
+function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;fr++;if(acc>2){if(acc/fr>1/48&&PR>1){PR=Math.max(1,PR-.25);scenes.forEach(s=>{if(s.r)s.r.setPixelRatio(PR);s.resize()})}acc=0;fr=0}
+  for(const s of scenes)if(s.vis&&s.r){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);s.r.render(s.sc,s.cam);s.labels&&s.labels()}requestAnimationFrame(loop)}
 function base(id,{bg=PAPER,fog=[70,150],fov=30,shadow=true,sun=[18,34,14]}={}){
-  const wrap=document.getElementById(id),cv=wrap.querySelector('canvas');
-  let r;try{r=new THREE.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'})}catch(e){return null}
-  const mob=MOB();
-  r.setPixelRatio(PR);r.outputEncoding=THREE.sRGBEncoding;r.setClearColor(bg,1);
-  r.shadowMap.enabled=shadow;r.shadowMap.type=THREE.PCFSoftShadowMap;
+  const wrap=document.getElementById(id),mob=MOB();
   const sc=new THREE.Scene();if(fog)sc.fog=new THREE.Fog(lin(bg),fog[0],fog[1]);
   const cam=new THREE.PerspectiveCamera(fov,1,.1,600);
   sc.add(new THREE.HemisphereLight(lin(0xffffff),lin(0xCFC8BC),.8));
   const d=new THREE.DirectionalLight(lin(0xFFF9F0),1.0);d.position.set(...sun);d.castShadow=shadow;d.shadow.mapSize.set(mob?1024:2048,mob?1024:2048);
   const c=d.shadow.camera;c.left=c.bottom=-46;c.right=c.top=46;c.near=1;c.far=140;d.shadow.bias=-.0004;d.shadow.radius=4;sc.add(d);
   const fill=new THREE.DirectionalLight(lin(0xDCE6FF),.25);fill.position.set(-20,12,-16);sc.add(fill);
-  const o={wrap,r,sc,cam,T:0,vis:false,w:1,h:1,mx:0,my:0,sx:0,sy:0,cp:null,ct:null,tick(){},
+  const o={wrap,r:null,sc,cam,T:0,vis:false,w:1,h:1,mx:0,my:0,sx:0,sy:0,cp:null,ct:null,fz:0,tick(){},
     aim(p,t,dt,k=3){if(!o.cp){o.cp=p.clone();o.ct=t.clone()}const a=1-Math.exp(-(dt||.016)*k);o.cp.lerp(p,a);o.ct.lerp(t,a);cam.position.copy(o.cp);cam.lookAt(o.ct)},
-    freeze(){r.shadowMap.autoUpdate=false;r.shadowMap.needsUpdate=true},
-    resize(){const w=wrap.clientWidth,h=wrap.clientHeight;if(!w||!h)return;o.w=w;o.h=h;o.mob=MOB();r.setSize(w,h,false);cam.aspect=w/h;cam.clearViewOffset();if(o.onResize)o.onResize(w,h);cam.updateProjectionMatrix();o.labs.forEach(l=>l.wd=0)}};
+    freeze(){o.fz=1;if(o.r){o.r.shadowMap.autoUpdate=false;o.r.shadowMap.needsUpdate=true}},
+    // WebGL contexts are created only near the viewport and released when far away, so the page never holds more than a few at once
+    make(){if(o.r)return;const old=wrap.querySelector('canvas'),cv=document.createElement('canvas');
+      if(old){['aria-label','aria-hidden'].forEach(a=>{if(old.hasAttribute(a))cv.setAttribute(a,old.getAttribute(a))});old.replaceWith(cv)}else wrap.prepend(cv);
+      try{o.r=new THREE.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'})}catch(e){o.r=null;return}
+      const r=o.r;r.setPixelRatio(PR);r.outputEncoding=THREE.sRGBEncoding;r.setClearColor(bg,1);r.shadowMap.enabled=shadow;r.shadowMap.type=THREE.PCFSoftShadowMap;
+      if(o.fz){r.shadowMap.autoUpdate=false;r.shadowMap.needsUpdate=true}o.resize()},
+    kill(){if(!o.r)return;try{o.r.dispose();o.r.forceContextLoss()}catch(e){}o.r=null},
+    resize(){const w=wrap.clientWidth,h=wrap.clientHeight;if(!w||!h)return;o.w=w;o.h=h;o.mob=MOB();if(o.r)o.r.setSize(w,h,false);cam.aspect=w/h;cam.clearViewOffset();if(o.onResize)o.onResize(w,h);cam.updateProjectionMatrix();o.labs.forEach(l=>l.wd=0)}};
   o.labs=[];
   scenes.push(o);
-  new IntersectionObserver(e=>{o.vis=e[0].isIntersecting;if(o.vis)o.resize()},{rootMargin:'120px'}).observe(wrap);
+  new IntersectionObserver(e=>{if(e[0].isIntersecting)o.make();else o.kill()},{rootMargin:'130% 0px'}).observe(wrap);
+  new IntersectionObserver(e=>{o.vis=e[0].isIntersecting;if(o.vis){o.make();o.resize()}},{rootMargin:'120px'}).observe(wrap);
   wrap.addEventListener('pointermove',e=>{const b=wrap.getBoundingClientRect();o.mx=(e.clientX-b.left)/b.width*2-1;o.my=(e.clientY-b.top)/b.height*2-1});
   o.resize();return o;
 }
@@ -818,6 +892,196 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     o.aim(V(Math.sin(t*.1+o.sx*.2)*18,6-o.sy,Math.cos(t*.1+o.sx*.2)*18),V(0,0,0),dt);
     sat.forEach((s,i)=>{const a=s.ph+t*.18;const p=V(Math.cos(a)*s.r,Math.sin(a*2)*.8,Math.sin(a)*s.r);p.applyAxisAngle(V(1,0,0),.35);s.m.position.copy(p);s.A.set(p,V(0,0,0),1);s.A.anim(MOT?(t*.5+i/10)%1:.5,.9);s.top=V(p.x,p.y+.7,p.z)})};
   o.labels=()=>sat.forEach((s,i)=>put(o,s.l,s.top,!o.mob||i%2===0));
+})();
+
+/* ---------------- holographic helpers ---------------- */
+const B=(hex,op,add)=>new THREE.MeshBasicMaterial({color:lin(hex),transparent:true,opacity:op,blending:add?THREE.AdditiveBlending:THREE.NormalBlending,depthWrite:false,side:THREE.DoubleSide});
+const LB=(hex,op)=>new THREE.LineBasicMaterial({color:lin(hex),transparent:true,opacity:op,blending:THREE.AdditiveBlending,depthWrite:false});
+function segGeo(arr){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(arr),3));return g}
+function holo(sc,{n=6,P=4.6,seed=9,hmax=4.2,edge=0x9DB3F5,op=.5}){
+  const rnd=rng(seed),R=(n+.3)*P,seg=[],boxes=[];const L=(a,b,c,d,e,f)=>seg.push(a,b,c,d,e,f);
+  for(let i=-n;i<=n;i++)for(let j=-n;j<=n;j++){const cx=i*P,cz=j*P,dd=Math.hypot(cx,cz);if(dd>R||(i===0&&j===0))continue;
+    for(let a=0;a<2;a++)for(let b=0;b<2;b++){if(rnd()<.14)continue;const w=1.2+rnd()*.6,de=1.2+rnd()*.6,h=.5+Math.pow(rnd(),1.7)*hmax*Math.max(.3,1.2-dd/(n*P));
+      const x=cx-1+a*2,z=cz-1+b*2,x0=x-w/2,x1=x+w/2,z0=z-de/2,z1=z+de/2;boxes.push({x,z,w,d:de,h,dist:dd});
+      [[x0,z0],[x1,z0],[x1,z1],[x0,z1]].forEach(([px,pz])=>L(px,0,pz,px,h,pz));
+      const st=Math.max(.3,h/12);for(let y=0;y<=h+1e-4;y+=st){L(x0,y,z0,x1,y,z0);L(x1,y,z0,x1,y,z1);L(x1,y,z1,x0,y,z1);L(x0,y,z1,x0,y,z0)}}}
+  const lines=new THREE.LineSegments(segGeo(seg),LB(edge,op));sc.add(lines);
+  const M=new THREE.Matrix4(),faces=new THREE.InstancedMesh(BOX,B(BLUE,.06,1),boxes.length);
+  boxes.forEach((b,k)=>{M.makeScale(b.w,b.h,b.d);M.setPosition(b.x,0,b.z);faces.setMatrixAt(k,M)});sc.add(faces);
+  const gr=new THREE.Mesh(new THREE.CircleGeometry(R*2.4,80),new THREE.MeshBasicMaterial({color:lin(0x081426)}));gr.rotation.x=-Math.PI/2;gr.position.y=-.03;sc.add(gr);
+  const gl=[];const S=P/4,E=R*1.4;for(let v=-E;v<=E+1e-4;v+=S){gl.push(v,0,-E,v,0,E,-E,0,v,E,0,v)}
+  sc.add(new THREE.LineSegments(segGeo(gl),LB(0x1C3560,.55)));
+  return {lines,faces,boxes,R,P};
+}
+function roads(sc,{n,P,R,color,op=.5,w=.22}){const grp=new THREE.Group(),m=B(color,op,1);
+  for(let k=-n;k<n;k++){const c=k*P+P/2,len=2*Math.sqrt(Math.max(0,R*R-c*c));if(len<1)continue;
+    const a=new THREE.Mesh(new THREE.PlaneGeometry(w,len),m);a.rotation.x=-Math.PI/2;a.position.set(c,.02,0);grp.add(a);
+    const b=new THREE.Mesh(new THREE.PlaneGeometry(len,w),m);b.rotation.x=-Math.PI/2;b.position.set(0,.021,c);grp.add(b)}
+  sc.add(grp);grp.m=m;return grp}
+function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0;i<n;i++){const a=i/n*Math.PI*2,l=i%10?.35:.9;seg.push(Math.cos(a)*r,0,Math.sin(a)*r,Math.cos(a)*(r+l),0,Math.sin(a)*(r+l))}
+  const g=new THREE.Group();g.position.y=y;const t=new THREE.LineSegments(segGeo(seg),LB(col,op));g.add(t);
+  const ring=new THREE.Mesh(new THREE.RingGeometry(r-.05,r+.05,160),B(col,op,1));ring.rotation.x=-Math.PI/2;g.add(ring);
+  const arcm=new THREE.Mesh(new THREE.RingGeometry(r+1.2,r+1.42,96,1,0,Math.PI*.6),B(col,op*.8,1));arcm.rotation.x=-Math.PI/2;g.add(arcm);
+  sc.add(g);g.t=t;g.arc=arcm;return g}
+
+/* ===================== 7. AI VIEW: holographic street, Street view vs AI view ===================== */
+(function(){
+  const o=base('map7',{bg:0x06101D,fog:[60,125],shadow:false,fov:32});
+  const H=holo(o.sc,{n:6,P:4.6,seed:23,hmax:4.6});
+  const RD=roads(o.sc,{n:6,P:4.6,R:H.R,color:0x2E5BD8,op:.35});
+  const rnd=rng(31),art=[];
+  for(let k=0;k<4;k++){const pts=[],a0=rnd()*Math.PI;for(let i=0;i<7;i++){const t=i/6;pts.push(V(Math.cos(a0)*(H.R-2*H.R*t)+(rnd()-.5)*6,.05,Math.sin(a0)*(H.R-2*H.R*t)+(rnd()-.5)*6))}
+    const m=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),90,.22,5),B(0xFF8A3C,0,1));m.scale.y=.12;o.sc.add(m);art.push(m)}
+  const M=new THREE.Matrix4(),solid=new THREE.InstancedMesh(RB,new THREE.MeshStandardMaterial({color:lin(0x3A78FF),emissive:lin(0x0D2F9A),emissiveIntensity:.7,roughness:.35,transparent:true,opacity:0}),H.boxes.length);
+  H.boxes.forEach((b,k)=>{M.makeScale(b.w*.9,b.h,b.d*.9);M.setPosition(b.x,0,b.z);solid.setMatrixAt(k,M)});o.sc.add(solid);
+  const yb=new THREE.Mesh(BOX,B(BLUE,.35,1));yb.scale.set(2.6,6,2.6);o.sc.add(yb);
+  const ye=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2.6,6,2.6)),LB(0xffffff,.9));ye.position.y=3;o.sc.add(ye);
+  const TR=tickRing(o.sc,{r:13,col:CORAL,op:.75}),TOP=tickRing(o.sc,{r:2.4,col:CORAL,op:.9,y:7.2,n:72});
+  const nodes=[];let guard=0;while(nodes.length<15&&guard++<400){const b=H.boxes[(rnd()*H.boxes.length)|0];if(b.dist<H.R*.8&&b.dist>4)nodes.push(V(b.x,b.h+.9,b.z))}
+  nodes.push(V(0,7.2,0));const YI=nodes.length-1,edges=[];
+  nodes.forEach((p,i)=>{if(i===YI)return;edges.push([i,YI]);nodes.map((q,j)=>[q.distanceTo(p),j]).filter(x=>x[1]!==i&&x[1]!==YI).sort((a,b)=>a[0]-b[0]).slice(0,2).forEach(([,j])=>{if(i<j)edges.push([i,j])})});
+  const ew=[];edges.forEach(([i,j])=>ew.push(nodes[i].x,nodes[i].y,nodes[i].z,nodes[j].x,nodes[j].y,nodes[j].z));
+  const web=new THREE.LineSegments(segGeo(ew),LB(0xFF8A5C,.7));o.sc.add(web);
+  const marks=nodes.slice(0,YI).map(p=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.32,.6,3),B(CORAL,.95,0));m.rotation.x=Math.PI;m.position.copy(p);o.sc.add(m);return m});
+  const PN=edges.length,pg=new THREE.BufferGeometry(),pp=new Float32Array(PN*3);pg.setAttribute('position',new THREE.BufferAttribute(pp,3));pg.setAttribute('a',new THREE.BufferAttribute(new Float32Array(PN).fill(1),1));
+  const pulses=new THREE.Points(pg,ptsMat(0xFFE2D6,.8));pulses.frustumCulled=false;o.sc.add(pulses);const poff=edges.map(()=>rnd());
+  const zg=[];for(let x=-6;x<=6;x+=.7)for(let z=-6;z<=6;z+=.7){const r=Math.hypot(x,z*1.25);if(r<5.6&&r>2)zg.push(x,.1,z)}
+  const zgeo=segGeo(zg);zgeo.setAttribute('a',new THREE.BufferAttribute(new Float32Array(zg.length/3).fill(1),1));const zm=ptsMat(0xffffff,.3);o.sc.add(new THREE.Points(zgeo,zm));
+  const SN=['MAIN ST','5TH AVE','OAK ST','BROADWAY','2ND AVE','PARK BLVD'];
+  const sl=SN.map((n,i)=>({l:lab(o,`<span class="street">${n}</span>`),v:i%2?V((i-3)*4.6+2.3,.1,H.R*.6):V(H.R*.55,.1,(i-3)*4.6+2.3)}));
+  const yl=lab(o,'<span class="pin"><span class="chip holo"><span class="d"></span>Glow Med Spa <small>Strongest web of facts</small></span></span>');
+  let mode=1,m=1,auto=true,flip=0;const bS=document.getElementById('tStreet'),bAI=document.getElementById('tAI'),prog=document.getElementById('prog7');
+  const set=(k,u)=>{mode=k;if(u)auto=false;bS.setAttribute('aria-pressed',k?'false':'true');bAI.setAttribute('aria-pressed',k?'true':'false')};
+  bS.onclick=()=>set(0,1);bAI.onclick=()=>set(1,1);
+  const cA=lin(0x2E5BD8),cB=lin(0xFF7A2E);
+  o.onResize=()=>{o.cam.fov=o.mob?48:32};o.resize();
+  o.tick=(t,dt)=>{
+    if(auto&&MOT){flip+=dt;if(flip>6.5){flip=0;set(mode?0:1)}}
+    m+=(mode-m)*(1-Math.exp(-dt*2.6));
+    H.lines.material.opacity=.08+.5*m;H.faces.material.opacity=.06*m;solid.material.opacity=.96*(1-m);solid.visible=m<.985;
+    RD.m.color.copy(cA).lerp(cB,1-m);RD.m.opacity=.3+.45*(1-m);art.forEach(a=>a.material.opacity=.9*(1-m));
+    web.material.opacity=.7*m;pulses.material.uniforms.op.value=m;zm.uniforms.op.value=.9*(1-m);
+    marks.forEach((k,i)=>{k.material.opacity=.95*m;k.position.y=nodes[i].y+Math.sin(t*2+i)*.15;k.rotation.y=t});
+    edges.forEach(([i,j],k)=>{const u=MOT?(t*.35+poff[k])%1:.5,a=nodes[i],b=nodes[j];pp[k*3]=a.x+(b.x-a.x)*u;pp[k*3+1]=a.y+(b.y-a.y)*u;pp[k*3+2]=a.z+(b.z-a.z)*u});pg.attributes.position.needsUpdate=true;
+    TR.t.rotation.y=t*.05;TR.arc.rotation.z=-t*.35;TOP.t.rotation.y=-t*.3;TOP.arc.rotation.z=t*.8;yb.material.opacity=.2+.2*m;
+    if(prog)prog.style.width=((t*14)%100).toFixed(1)+'%';
+    const a=.6+t*.035+o.sx*.1,R=o.mob?54:38;o.aim(V(Math.cos(a)*R,(o.mob?36:24)-o.sy*2,Math.sin(a)*R),V(0,2,0),dt);
+  };
+  o.labels=()=>{sl.forEach(s=>put(o,s.l,s.v,!o.mob));put(o,yl,V(0,8.8,0))};
+})();
+
+/* ===================== 8. SIGNAL STREAM: questions flowing to one door ===================== */
+(function(){
+  const o=base('map8',{bg:0x06101D,fog:[50,115],shadow:false,fov:34});
+  const H=holo(o.sc,{n:6,P:4.6,seed:41,hmax:3.6,op:.26});
+  roads(o.sc,{n:6,P:4.6,R:H.R,color:0x2E5BD8,op:.3});
+  const rnd=rng(12),P=4.6,R=H.R,tgt=V(0,.6,0);
+  function stream(N,hex,size,mainFrac){const pos=new Float32Array(N*3),al=new Float32Array(N),g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('a',new THREE.BufferAttribute(al,1));
+    const pts=new THREE.Points(g,ptsMat(hex,size));pts.frustumCulled=false;o.sc.add(pts);const S=[];
+    const spawn=q=>{if(rnd()<mainFrac){q.s=V((rnd()-.5)*.9,.25,R*(.3+rnd()*.7));q.c=V((rnd()-.5)*.4,.25,q.s.z*.45)}else{const ln=(((rnd()*12)|0)-6)*P+P/2;if(rnd()<.5){q.s=V(ln,.25,(rnd()*2-1)*R*.9);q.c=V(ln,.25,0)}else{q.s=V((rnd()*2-1)*R*.9,.25,ln);q.c=V(0,.25,ln)}}q.u=0;q.sp=.1+rnd()*.2};
+    for(let i=0;i<N;i++){const q={};spawn(q);q.u=rnd();S.push(q)}
+    return {tick(dt){for(let i=0;i<N;i++){const q=S[i];q.u+=q.sp*dt*MOT;if(q.u>=1)spawn(q);const u=q.u,iu=1-u,A=iu*iu,Bq=2*iu*u,C=u*u;
+      pos[i*3]=A*q.s.x+Bq*q.c.x+C*tgt.x;pos[i*3+1]=A*q.s.y+Bq*q.c.y+C*tgt.y;pos[i*3+2]=A*q.s.z+Bq*q.c.z+C*tgt.z;al[i]=Math.sin(Math.PI*Math.min(1,u*1.04))*.95}
+      g.attributes.position.needsUpdate=true;g.attributes.a.needsUpdate=true}};
+  }
+  const S1=stream(o.mob?900:2000,0xCFDBFF,.34,.4),S2=stream(o.mob?260:560,CORAL,.46,.5);
+  const ret=new THREE.Group();o.sc.add(ret);
+  [[1.3,1.45,CORAL,.9],[2.3,2.36,0x9DB3F5,.7],[3.3,3.34,0x9DB3F5,.35]].forEach(([a,b,c,op])=>{const r=new THREE.Mesh(new THREE.RingGeometry(a,b,96),B(c,op,1));r.rotation.x=-Math.PI/2;r.position.y=.3;ret.add(r)});
+  const TK=tickRing(o.sc,{r:4.2,col:CORAL,op:.6,y:.3,n:90});
+  const cr=[];[[-7,0,-2.4,0],[2.4,0,7,0],[0,-7,0,-2.4],[0,2.4,0,7]].forEach(s=>cr.push(s[0],.3,s[1],s[2],.3,s[3]));o.sc.add(new THREE.LineSegments(segGeo(cr),LB(CORAL,.7)));
+  const beacon=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,14,8),B(CORAL,.55,1));beacon.position.y=7;o.sc.add(beacon);
+  const QS=['best med spa near me','Botox open now','lip filler near me','HydraFacial tonight','top rated injector','laser hair removal near me','med spa with good reviews'];
+  const chips=[0,1,2,3,4].map(i=>({l:lab(o,''),u:i/5,s:null,i}));
+  const dl=lab(o,'<span class="pin"><span class="chip holo"><span class="d"></span>Glow Med Spa</span></span>');
+  o.onResize=()=>{o.cam.fov=o.mob?50:34};o.resize();
+  o.tick=(t,dt)=>{S1.tick(dt);S2.tick(dt);TK.t.rotation.y=t*.2;TK.arc.rotation.z=-t*.6;ret.rotation.y=t*.3;beacon.material.opacity=.4+Math.sin(t*3)*.15;
+    chips.forEach(c=>{c.u+=dt*.2*MOT;if(!c.s||c.u>=1){if(c.s)c.u=0;const th=rnd()*Math.PI*2,r=R*(.45+rnd()*.4);c.s=V(Math.cos(th)*r,1.6,Math.sin(th)*r);setLab(c.l,`<span class="chip holo mini">"${QS[(rnd()*QS.length)|0]}"</span>`)}
+      c.p=c.s.clone().lerp(V(0,1.6,0),ease(c.u));c.l.s.style.opacity=Math.max(0,Math.min(1,c.u*5,(1-c.u)*3)).toFixed(2)});
+    const a=1.1+Math.sin(t*.08)*.35+o.sx*.08,rr=o.mob?20:16;o.aim(V(Math.cos(a)*rr,(o.mob?54:40)-o.sy*2,Math.sin(a)*rr),V(0,0,0),dt);
+  };
+  o.labels=()=>{chips.forEach(c=>c.p&&put(o,c.l,c.p,!o.mob||c.i<3));put(o,dl,V(0,3,0))};
+})();
+
+/* ===================== 9. OLD WAY vs NEW WAY ===================== */
+(function(){
+  const o=base('map9',{fog:[60,130],fov:30});
+  const fl=new THREE.Mesh(new THREE.PlaneGeometry(160,90),mStd(0xE9E2D3));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;o.sc.add(fl);
+  const L=shop(o.sc,{x:-10,z:1,s:.75,col:0x9AA6BA,mark:false}),Rt=shop(o.sc,{x:10,z:1,s:.75});
+  const dv=new THREE.Mesh(new THREE.PlaneGeometry(.05,12),new THREE.MeshBasicMaterial({color:lin(INK),transparent:true,opacity:.1}));dv.position.set(0,6,0);o.sc.add(dv);
+  const VN=['AEO agency','PR firm','Video agency','Local SEO','Web team','Review tool','Listings service','Search data','Content writer'];
+  const rnd=rng(17);
+  const mkLine=(hex,op)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(48*3),3));const ln=new THREE.Line(g,new THREE.LineBasicMaterial({color:lin(hex),transparent:true,opacity:op}));ln.frustumCulled=false;o.sc.add(ln);return ln};
+  const vend=VN.map((n,i)=>{const a=i/9*Math.PI*2+rnd()*.4,r=5+rnd()*2.2,x=-10+Math.cos(a)*r,z=1+Math.sin(a)*r*.8,h=.8+rnd()*1.4;
+    const m=new THREE.Mesh(RB,mStd([0xD7DBE3,0xE6E0D4,0xCFD5DF][i%3]));m.scale.set(1.3,h,1.3);m.position.set(x,0,z);m.castShadow=m.receiveShadow=true;o.sc.add(m);
+    return {top:V(x,h+.1,z),ln:mkLine(0x7C8799,.75),ph:rnd()*9,l:lab(o,`<span class="chip dim mini">${n}</span>`)}});
+  const cross=[];for(let k=0;k<8;k++){const a=vend[(rnd()*9)|0],b=vend[(rnd()*9)|0];if(a!==b)cross.push({a,b,ln:mkLine(0xA0A8B5,.5),ph:rnd()*9})}
+  const shopTop=V(-10,2.4,1);
+  function wob(ln,a,b,ph,t,amp){const pos=ln.geometry.attributes.position;for(let i=0;i<48;i++){const u=i/47,w=Math.sin(u*Math.PI)*amp;pos.setXYZ(i,a.x+(b.x-a.x)*u+Math.sin(u*9+t*1.7+ph)*w,a.y+(b.y-a.y)*u+Math.sin(u*Math.PI)*2.2+Math.sin(u*7+t*2.3+ph)*w*.6,a.z+(b.z-a.z)*u+Math.cos(u*8+t*1.3+ph)*w)}pos.needsUpdate=true}
+  const rec=new THREE.Group();rec.position.set(10,7,1);o.sc.add(rec);
+  rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(1.1,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.3,flatShading:true})));
+  rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(.38,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)})));
+  const srcs=Array.from({length:11},(_,i)=>{const a=i/11*Math.PI*2,x=10+Math.cos(a)*5.6,z=1+Math.sin(a)*4.2;const d=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.16,24),mStd(i%3?BLUE:CORAL,{roughness:.35}));d.position.set(x,.1,z);d.castShadow=true;o.sc.add(d);const A=arc(o.sc,BLUE,{n:40,size:.5});A.set(V(x,.3,z),V(10,7,1),1.5);return {A,off:i/11}});
+  const beam=arc(o.sc,CORAL,{n:50,size:.8});beam.set(V(10,6.2,1),V(10,2.7,1),0);
+  const lL=lab(o,'<span class="chip dim"><span class="d"></span>9 vendors · 9 logins · 9 invoices</span>');
+  const lR=lab(o,'<span class="chip you"><span class="d"></span>One Record · one team · one report</span>');
+  o.onResize=()=>{o.cam.fov=o.mob?62:30;setLab(lL,`<span class="chip dim"><span class="d"></span>${o.mob?'9 vendors':'9 vendors · 9 logins · 9 invoices'}</span>`);setLab(lR,`<span class="chip you"><span class="d"></span>${o.mob?'One Record':'One Record · one team · one report'}</span>`)};o.resize();
+  o.tick=(t,dt)=>{L.pulse(t*.3);Rt.pulse(t);const T=MOT?t:0;
+    vend.forEach(v=>wob(v.ln,v.top,shopTop,v.ph,T,.6));cross.forEach(c=>wob(c.ln,c.a.top,c.b.top,c.ph,T,.9));
+    rec.rotation.y=t*.5;rec.position.y=7+Math.sin(t*1.2)*.2;srcs.forEach(s=>s.A.anim(MOT?(t*.5+s.off)%1:.6,.9));beam.anim(MOT?(t*.8)%1:.6,1);
+    if(!o.fz&&t>1)o.freeze();
+    o.aim(V(Math.sin(t*.07)*3+o.sx*2,(o.mob?22:15)-o.sy,o.mob?36:31),V(0,2.6,1),dt);
+  };
+  o.labels=()=>{vend.forEach(v=>put(o,v.l,V(v.top.x,v.top.y+.6,v.top.z),!o.mob));put(o,lL,V(-10,9.6,1));put(o,lR,V(10,9.6,1))};
+})();
+
+/* ===================== 10. THE MONTHLY REPORT on a floating tablet ===================== */
+(function(){
+  const o=base('map10',{bg:0xECE6D6,fog:[40,95],fov:30,sun:[10,30,18]});
+  const fl=new THREE.Mesh(new THREE.CircleGeometry(50,64),mStd(0xE4DCCB));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;o.sc.add(fl);
+  function canvasTex(w,h,draw){const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');draw(x,w,h);const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=8;tx.redraw=()=>{x.clearRect(0,0,w,h);draw(x,w,h);tx.needsUpdate=true};return tx}
+  const rr=(x,X,Y,W,H,R)=>{x.beginPath();x.moveTo(X+R,Y);x.arcTo(X+W,Y,X+W,Y+H,R);x.arcTo(X+W,Y+H,X,Y+H,R);x.arcTo(X,Y+H,X,Y,R);x.arcTo(X,Y,X+W,Y,R);x.closePath()};
+  const HF='"Bricolage Grotesque",system-ui,sans-serif',TF='"Hanken Grotesk",system-ui,sans-serif';
+  function report(x,w,h){
+    x.fillStyle='#F7F5F0';x.fillRect(0,0,w,h);x.fillStyle='#0B1A2E';x.fillRect(0,0,w,110);
+    x.fillStyle='#1F4FE0';x.beginPath();x.moveTo(62,24);x.lineTo(104,88);x.lineTo(84,88);x.lineTo(62,58);x.lineTo(40,88);x.lineTo(20,88);x.closePath();x.fill();
+    x.fillStyle='#FF5A3C';x.beginPath();x.moveTo(62,24);x.lineTo(72,40);x.lineTo(52,40);x.closePath();x.fill();
+    x.fillStyle='#fff';x.font='700 34px '+HF;x.fillText('Monthly AI report',130,68);
+    x.fillStyle='#9DB3F5';x.font='600 22px '+TF;x.textAlign='right';x.fillText('Glow Med Spa · Example',w-50,68);x.textAlign='left';
+    x.fillStyle='#fff';rr(x,50,150,620,700,24);x.fill();
+    x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('Who names you',90,212);
+    [['ChatGPT',1],['Gemini',1],['Google AI Mode',1],['Perplexity',1],['Claude',1],['Microsoft Copilot',0]].forEach(([n,ok],i)=>{const y=290+i*92;x.fillStyle='#ECE7DC';x.fillRect(90,y-50,540,2);
+      x.fillStyle='#0B1A2E';x.font='500 27px '+TF;x.fillText(n,90,y);x.fillStyle=ok?'#E3F4EC':'#FFE9E4';rr(x,450,y-34,170,46,23);x.fill();
+      x.fillStyle=ok?'#2F9E6E':'#E8452A';x.font='700 21px '+HF;x.textAlign='center';x.fillText(ok?'Named':'In progress',535,y-3);x.textAlign='left'});
+    x.fillStyle='#fff';rr(x,710,150,840,430,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('How often AI names you',750,212);
+    x.fillStyle='#6E7887';x.font='500 20px '+TF;x.textAlign='right';x.fillText('Example',1510,212);x.textAlign='left';
+    const pts=[[0,.12],[.2,.2],[.4,.34],[.6,.52],[.8,.7],[1,.88]],cx=760,cy=520,cw=740,ch=260;
+    x.strokeStyle='#ECE7DC';x.lineWidth=2;for(let k=0;k<4;k++){x.beginPath();x.moveTo(cx,cy-k*ch/3);x.lineTo(cx+cw,cy-k*ch/3);x.stroke()}
+    const path=()=>{x.beginPath();pts.forEach(([u,v],k)=>{const X=cx+u*cw,Y=cy-v*ch;k?x.lineTo(X,Y):x.moveTo(X,Y)})};
+    const g=x.createLinearGradient(0,cy-ch,0,cy);g.addColorStop(0,'rgba(31,79,224,.3)');g.addColorStop(1,'rgba(31,79,224,0)');
+    path();x.lineTo(cx+cw,cy);x.lineTo(cx,cy);x.closePath();x.fillStyle=g;x.fill();path();x.strokeStyle='#1F4FE0';x.lineWidth=5;x.lineJoin='round';x.stroke();
+    pts.forEach(([u,v],k)=>{x.beginPath();x.arc(cx+u*cw,cy-v*ch,k===5?11:6,0,7);x.fillStyle=k===5?'#FF5A3C':'#1F4FE0';x.fill()});
+    x.fillStyle='#6E7887';x.font='500 19px '+TF;x.textAlign='center';for(let k=0;k<6;k++)x.fillText('Month '+(k+1),cx+k*cw/5,cy+40);x.textAlign='left';
+    x.fillStyle='#fff';rr(x,710,610,840,240,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('Screenshots, as proof',750,668);
+    for(let k=0;k<3;k++){const X=750+k*265,Y=694;x.fillStyle='#F1EEE7';rr(x,X,Y,240,132,14);x.fill();x.fillStyle='#fff';rr(x,X+16,Y+16,150,28,14);x.fill();x.fillStyle='#1F4FE0';rr(x,X+60,Y+54,164,30,14);x.fill();x.globalAlpha=.45;rr(x,X+60,Y+92,120,22,11);x.fill();x.globalAlpha=1}
+    x.fillStyle='#fff';rr(x,50,880,1500,160,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('What changed this month',90,940);
+    ['Fixed your hours across directories','Answered common questions','Labeled your photos for AI'].forEach((s,k)=>{x.fillStyle='#2F9E6E';x.beginPath();x.arc(100+k*490,990,9,0,7);x.fill();x.fillStyle='#46526A';x.font='500 24px '+TF;x.fillText(s,120+k*490,999)});
+  }
+  const tab=new THREE.Group();o.sc.add(tab);
+  const body=new THREE.Mesh(RB,mStd(INK,{roughness:.3,metalness:.25}));body.scale.set(9.5,.34,6.7);body.position.y=-.34;body.castShadow=true;tab.add(body);
+  const tex=canvasTex(1600,1080,report);
+  const scr=new THREE.Mesh(new THREE.PlaneGeometry(8.95,6.04),new THREE.MeshBasicMaterial({map:tex}));scr.rotation.x=-Math.PI/2;scr.position.y=.012;tab.add(scr);
+  tab.rotation.x=.66;tab.position.set(0,3.4,0);
+  const CARDS=[['ChatGPT','Named you this month',1,V(-4.7,6.4,2.4)],['Screenshot saved','Proof for every answer',0,V(5,5.7,1.6)],['Gemini','Named you this month',1,V(4.3,1.5,5.4)]];
+  const cards=CARDS.map(([a,b,ok,p],i)=>{const tx=canvasTex(560,180,(x,w,h)=>{x.fillStyle='#fff';rr(x,4,4,w-8,h-8,34);x.fill();x.fillStyle=ok?'#E3F4EC':'#E7EDFC';x.beginPath();x.arc(84,90,42,0,7);x.fill();
+      x.strokeStyle=ok?'#2F9E6E':'#1F4FE0';x.lineWidth=7;x.lineCap='round';x.lineJoin='round';x.beginPath();if(ok){x.moveTo(66,92);x.lineTo(80,106);x.lineTo(104,76)}else{x.rect(66,74,36,32)}x.stroke();
+      x.fillStyle='#0B1A2E';x.font='700 34px '+HF;x.fillText(a,150,82);x.fillStyle='#6E7887';x.font='500 26px '+TF;x.fillText(b,150,126)});
+    const m=new THREE.Mesh(new THREE.PlaneGeometry(4.3,1.38),new THREE.MeshBasicMaterial({map:tx,transparent:true}));m.position.copy(p);o.sc.add(m);return {m,tx,p,i}});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{tex.redraw();cards.forEach(c=>c.tx.redraw())});
+  o.onResize=()=>{o.cam.fov=o.mob?44:30};o.resize();
+  o.tick=(t,dt)=>{tab.position.y=3.4+Math.sin(t*.9)*.18;tab.rotation.y=Math.sin(t*.22)*.22;tab.rotation.z=Math.sin(t*.3)*.03;
+    cards.forEach(c=>{c.m.position.set(c.p.x,c.p.y+Math.sin(t*1.1+c.i*2)*.25,c.p.z);c.m.lookAt(o.cam.position)});
+    o.aim(V(Math.sin(t*.12)*3+o.sx*2.5,(o.mob?14:11)-o.sy,o.mob?30:21),V(0,3,0),dt);
+  };
 })();
 
 requestAnimationFrame(loop);
