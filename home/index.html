@@ -797,12 +797,26 @@ function herRig(g,W,H0){
     const pp=P.clone().sub(pS);pp.addScaledVector(t,-pp.dot(t)).normalize();
     const E=pS.clone().addScaledVector(t,x).addScaledVector(pp,h),Ht=pS.clone().addScaledVector(t,d);
     aim(sh,pE,E);el.getWorldPosition(pE);ha.getWorldPosition(pH);aim(el,pH,Ht);
-    /* hand continues the forearm, palm turned up toward her */
-    ha.quaternion.set(0,0,0,1);ha.rotation.set(opt.hx||0,opt.hy||0,opt.hz||0);ha.updateMatrixWorld(true);
-    /* curl fingers around the phone */
-    ['Index','Middle','Ring','Pinky'].forEach((f,i)=>[1,2,3].forEach(k=>{const bb=B('RightHand'+f+k);if(bb){bb.rotation.set(0,0,(opt.curl||.55)*(k===1?.9:1.1))}}));
+    /* hand: bind pose continues the forearm, then twist about the forearm so the palm faces her eyes */
+    const restQ=n=>{for(const r of rest)if(r[0]===n)return r[1];return null};
+    ha.quaternion.copy(restQ(ha));ha.updateMatrixWorld(true);
+    const i1=B('RightHandIndex1'),p1=B('RightHandPinky1'),m1=B('RightHandMiddle1');
+    const palmN=()=>{ha.getWorldPosition(pH);const a=i1.getWorldPosition(V()).sub(pH),b=p1.getWorldPosition(V()).sub(pH);return a.cross(b).normalize().multiplyScalar(opt.ps||1)};
+    el.getWorldPosition(pE);ha.getWorldPosition(pH);const fa=pH.clone().sub(pE).normalize();
+    head.getWorldPosition(tmp);const want=tmp.clone().sub(pH);want.addScaledVector(fa,-want.dot(fa)).normalize();
+    let n=palmN();n.addScaledVector(fa,-n.dot(fa)).normalize();
+    let ang=Math.acos(Math.max(-1,Math.min(1,n.dot(want))));if(fa.dot(V().crossVectors(n,want))<0)ang=-ang;
+    rotW(ha,fa,ang+(opt.tw||0));
+    /* curl fingers toward the palm around the phone */
+    const N=palmN();
+    ['Index','Middle','Ring','Pinky'].forEach(f=>[1,2,3].forEach(k=>{const bb=B('RightHand'+f+k),ch=B('RightHand'+f+(k+1));if(!bb)return;
+      const p0=bb.getWorldPosition(V()),p1x=ch?ch.getWorldPosition(V()):p0.clone().multiplyScalar(2).sub(bb.parent.getWorldPosition(V()));const fd=p1x.sub(p0).normalize();
+      const ax=V().crossVectors(fd,N).normalize();rotW(bb,ax,(opt.curl??.5)*(k===1?.7:1))}));
+    /* left arm: bring it closer to her side (the source walk was made for a wider body) */
+    const la=B('LeftArm');if(la){const fw=V().set(0,0,1).transformDirection(W.matrixWorld);rotW(la,fw,opt.adduct||0)}
+    st.palm=()=>{ha.getWorldPosition(pH);const c=m1.getWorldPosition(V()).add(pH).multiplyScalar(.5);return c.addScaledVector(palmN(),opt.pd||.03)};
     m.updateMatrixWorld(true);
-  },hand:ha,head,el};
+  },hand:ha,head,el,phonePos(v){v.copy(st.palm())},handDir(v){ha.getWorldPosition(pH);el.getWorldPosition(pE);return v.copy(pH).sub(pE).normalize().add(tmp.set(0,1.3,0)).normalize()}};
 }
 
 /* ---------------- copy bits ---------------- */
@@ -1034,7 +1048,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const W=new THREE.Group();o.sc.add(W);const body=new THREE.Group();W.add(body);
   const add=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||body).add(m);return m};
   /* her: a rigged, textured character with a real walk cycle (loaded async; the intro opens on the phone screen) */
-  let HER=null;const HOPT={hand:V(.085,1.2,-.27),pole:V(.5,.7,.25),hy:1.5,curl:.5,look:.3};
+  let HER=null;const HOPT={hand:V(.085,1.2,-.27),pole:V(.5,.7,.25),curl:-.25,look:.3,adduct:.28,ps:1,pd:.045};
   if(THREE.GLTFLoader)new THREE.GLTFLoader().load('her.glb?v=claudia',g=>{HER=herRig(g,body,1.68)});
   /* her phone, held in the right hand, screen turned to her face */
   function phoneTex(kind){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
@@ -1107,7 +1121,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     W.updateMatrixWorld(true);Wq.copy(W.quaternion);
     if(HER){HER.update(dt,dist,amp,HOPT);
       const hp=new THREE.Vector3(),ep=new THREE.Vector3();HER.hand.getWorldPosition(hp);HER.el.getWorldPosition(ep);
-      const dir=hp.clone().sub(ep).normalize();hp.addScaledVector(dir,.03).add(V(0,.078,0));W.worldToLocal(hp);phoneG.position.copy(hp);
+      HER.phonePos(hp);HER.handDir(phoneG.up);W.worldToLocal(hp);phoneG.position.copy(hp);
       HER.head.getWorldPosition(eye);eye.add(V(0,.06,0)).add(off(V(0,0,-.09)));}
     else{eye.copy(W.position).add(V(0,1.62,0)).add(off(V(0,0,-.08)))}
     phoneG.lookAt(eye);phoneG.updateMatrixWorld(true);phoneG.getWorldPosition(PH);phoneG.getWorldQuaternion(PQ);
@@ -1549,7 +1563,7 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
   const tex=canvasTex(1600,1080,report);
   const scr=new THREE.Mesh(new THREE.PlaneGeometry(8.95,6.04),new THREE.MeshBasicMaterial({map:tex}));scr.rotation.x=-Math.PI/2;scr.position.y=.012;tab.add(scr);
   tab.rotation.x=.66;tab.position.set(0,3.4,0);
-  const CARDS=[['ChatGPT','Named you this month',1,V(-4.7,6.4,2.4)],['Screenshot saved','Proof for every answer',0,V(5,5.7,1.6)],['Gemini','Named you this month',1,V(4.3,1.5,5.4)]];
+  const CARDS=[['ChatGPT','Named you this month',1,V(-3.2,6.7,2.4)],['Screenshot saved','Proof for every answer',0,V(3.4,5.9,1.6)],['Gemini','Named you this month',1,V(3,1.3,5.4)]];
   const cards=CARDS.map(([a,b,ok,p],i)=>{const tx=canvasTex(560,180,(x,w,h)=>{x.fillStyle='#fff';rr(x,4,4,w-8,h-8,34);x.fill();x.fillStyle=ok?'#E3F4EC':'#E7EDFC';x.beginPath();x.arc(84,90,42,0,7);x.fill();
       x.strokeStyle=ok?'#2F9E6E':'#1F4FE0';x.lineWidth=7;x.lineCap='round';x.lineJoin='round';x.beginPath();if(ok){x.moveTo(66,92);x.lineTo(80,106);x.lineTo(104,76)}else{x.rect(66,74,36,32)}x.stroke();
       x.fillStyle='#0B1A2E';x.font='700 34px '+HF;x.fillText(a,150,82);x.fillStyle='#6E7887';x.font='500 26px '+TF;x.fillText(b,150,126)});
@@ -1558,7 +1572,7 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
   o.onResize=()=>{o.cam.fov=o.mob?44:30};o.resize();
   o.tick=(t,dt)=>{tab.position.y=3.4+Math.sin(t*.9)*.18;tab.rotation.y=Math.sin(t*.22)*.22;tab.rotation.z=Math.sin(t*.3)*.03;
     cards.forEach(c=>{c.m.position.set(c.p.x,c.p.y+Math.sin(t*1.1+c.i*2)*.25,c.p.z);c.m.lookAt(o.cam.position)});
-    o.aim(V(Math.sin(t*.12)*3+o.sx*2.5,(o.mob?14:11)-o.sy,o.mob?30:21),V(0,3,0),dt);
+    o.aim(V(Math.sin(t*.12)*1.2+o.sx*1.2,(o.mob?14:11)-o.sy,o.mob?31:24),V(0,3,0),dt);
   };
 })();
 
