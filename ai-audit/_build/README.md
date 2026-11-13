@@ -11,10 +11,10 @@ Hello Smooth Med Spa, Illumé Med Spa.
 Screens: AI score, What it's worth, Audit (11 checks), Our system (3D record), Why us, Proposal.
 
 ## Getting set up (one time, about 10 minutes)
-1. Make sure Steve has added you to the GitHub repo `SEO-Platform-X/lair-audit`.
+1. Make sure Steve has added you to the GitHub repo `Local-AI-Registry/lair-audit`.
 2. Install Claude Code if you don't have it: https://claude.com/claude-code
 3. In a terminal:
-   git clone https://github.com/SEO-Platform-X/lair-audit.git
+   git clone https://github.com/Local-AI-Registry/lair-audit.git
    cd lair-audit
    claude
 4. Tell Claude: "Read ai-audit/CLAUDE.md and ai-audit/_build/README.md, then rebuild the audit page and run the tests."
