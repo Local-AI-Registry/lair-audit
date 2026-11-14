@@ -1137,7 +1137,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   let SPt=0,SP=0,lastCap=-1,ci2=0,dist=0,prevW=null,amp=0;
   function onScroll(){const r=intro.getBoundingClientRect(),t=r.height-innerHeight;SPt=Math.max(0,Math.min(1,-r.top/Math.max(1,t)));document.body.classList.toggle('introOn',r.bottom>innerHeight*.35)}
   addEventListener('scroll',onScroll,{passive:true});onScroll();SP=SPt;
-  const Wq=new THREE.Quaternion(),PH=new THREE.Vector3(),PQ=new THREE.Quaternion(),Z=V(0,0,1);
+  const FL=document.createElement('div');FL.style.cssText='position:absolute;inset:0;pointer-events:none;z-index:2;opacity:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,#FFFFFF 0%,#DCE7FF 35%,rgba(31,79,224,.35) 70%,rgba(31,79,224,0) 100%);mix-blend-mode:screen';ph.parentNode.appendChild(FL);const HDV=new THREE.Vector3(),Wq=new THREE.Quaternion(),PH=new THREE.Vector3(),PQ=new THREE.Quaternion(),Z=V(0,0,1);
   const off=v=>v.applyQuaternion(Wq);
   const KN=[0,.13,.21,.31,.47,.66,1];
   const cpC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V(),V()],false,'centripetal'),ctC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V(),V()],false,'centripetal');
@@ -1146,7 +1146,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     SP+=(SPt-SP)*(1-Math.exp(-dt*7));const p=SP;o.hold=p<.3;if(o.r){o.r.shadowMap.autoUpdate=false;o.r.shadowMap.needsUpdate=(o.fr=(o.fr||0)+1)%2===0}
     /* HTML phone */
     const vw=innerWidth,vh=o.h||innerHeight,S0=Math.min(vh/716,vw/336),S1=Math.min(1,vh*(o.mob?.62:.72)/740,vw*.82/360);
-    const z1=sm((p-.12)/.2),z2=sm((p-.35)/.09);
+    const z1=sm((p-.12)/.2),z2=sm((p-.35)/.07);
     ph.style.transform=`scale(${(S0+(S1-S0)*z1)*(1-.6*z2)})`;ph.style.opacity=(1-z2).toFixed(3);ph.style.visibility=z2>=1?'hidden':'';ph.style.filter=z2>0?`blur(${(z2*8).toFixed(1)}px)`:'';
     ph.style.boxShadow=`0 0 0 2px rgba(58,58,68,${z1}),0 0 0 9px rgba(20,20,26,${z1}),0 50px 140px rgba(0,0,0,${.7*z1})`;
     fade.style.opacity=(1-sm((p-.34)/.11)).toFixed(3);hint.style.display=p>.04?'none':'';
@@ -1162,7 +1162,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     W.updateMatrixWorld(true);Wq.copy(W.quaternion);
     if(HER){HER.update(dt,dist,amp,HOPT);
       const hp=new THREE.Vector3(),ep=new THREE.Vector3();HER.hand.getWorldPosition(hp);HER.el.getWorldPosition(ep);
-      HER.phonePos(hp);HER.handDir(phoneG.up);W.worldToLocal(hp);phoneG.position.copy(hp);
+      HER.phonePos(hp);HER.handDir(HDV);phoneG.up.set(0,1,0).lerp(HDV,sm((p-.5)/.08)).normalize();W.worldToLocal(hp);phoneG.position.copy(hp);
       HER.head.getWorldPosition(eye);eye.add(V(0,.06,0)).add(off(V(0,0,-.09)));}
     else{eye.copy(W.position).add(V(0,1.62,0)).add(off(V(0,0,-.08)))}
     phoneG.lookAt(eye);phoneG.updateMatrixWorld(true);phoneG.getWorldPosition(PH);phoneG.getWorldQuaternion(PQ);
@@ -1177,9 +1177,14 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
     const P4=V(Wp.x+8,12,Wp.z+15),T4=V(Wp.x*.5,1.5,Wp.z*.5);
     const P5=V(10,26,34),T5=V(1.5,5,5);
     cpC.points=[P0,P1,PS,P2,P3,P4,P5];ctC.points=[T0,T1,TS,T2,T3,T4,T5];
-    const q=Math.max(0,Math.min(1,(p-.33)/.62));let k=0;while(k<5&&q>KN[k+1])k++;const u=(k+sm((q-KN[k])/(KN[k+1]-KN[k])))/6;
-    o.aim(cpC.getPoint(u),ctC.getPoint(u),dt,q<.04?60:8);
+    const q=Math.max(0,Math.min(1,(p-.405)/.555));let k=0;while(k<5&&q>KN[k+1])k++;const u=(k+sm((q-KN[k])/(KN[k+1]-KN[k])))/6;
+    const fb=o.mob?50:38;let cP=cpC.getPoint(u),cT=ctC.getPoint(u),fv=fb,rate=q<.04?60:8;
+    if(p>.4&&p<.56){const k=Math.min(1,Math.max(0,(p-.403)/.065)),r=sm((p-.468)/.08),dP1=P1.clone().sub(PH).normalize(),dir=n.clone().lerp(dP1,sm(k)*.8).normalize(),d=.3*Math.pow(16,k*k);
+      const fz=Math.max(7,2*Math.atan(Math.tan(fb*Math.PI/360)*.3/d)*180/Math.PI);cP=PH.clone().addScaledVector(dir,d).lerp(cP,r);cT=PH.clone().lerp(cT,r);fv=fz+(fb-fz)*r;rate=60-52*r}
+    if(Math.abs(o.cam.fov-fv)>.02){o.cam.fov=fv;o.cam.updateProjectionMatrix()}
+    o.aim(cP,cT,dt,rate);
     if(Cy.occlude){const tgt=W.position.clone();tgt.y+=1.1;Cy.occlude(o.cp,[tgt,o.ct],dt)}
+    FL.style.opacity=Math.max(0,1-Math.abs(p-.403)/.022).toFixed(3);
     /* the signal */
     const sg=sm((p-.66)/.12);mark.scale.setScalar(.001+ease(sg));mark.rotation.y=t*.55;halo.rotation.x=Math.PI/2+Math.sin(t)*.2;halo2.rotation.y=t*.7;mark.position.y=11.5+Math.sin(t*1.1)*.2;
     up.set(PH.clone(),mark.position.clone(),2.5);up.anim(MOT?(t*.7)%1:.6,sg);
