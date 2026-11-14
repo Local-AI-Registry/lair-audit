@@ -1,0 +1,29 @@
+name: Publish on every push
+
+# GitHub Pages only starts a publish on its own for pushes from org members.
+# Pushes from outside collaborators (Bridgette) and from Claude never started one,
+# so their pages sat unpublished until Steve's account pushed something.
+# This asks GitHub to publish the site after every push to main, whoever made it.
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+
+concurrency:
+  group: publish-every-push
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a Pages publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 15
+          gh api -X POST "repos/${{ github.repository }}/pages/builds" --jq '.status'
