@@ -1,0 +1,14 @@
+/* "What being AI's answer is worth" section. Uses the proposal page tokens (--ink, --good, --line...). */
+.worth .w-calc{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:22px;margin:16px 0 24px}
+.worth .lab{font-size:13px;font-weight:600;color:var(--mute);margin:0 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.worth .w-big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:56px;line-height:1;color:var(--good);margin:4px 0 18px}
+.worth .w-big small{font-size:18px;font-weight:600;margin-left:4px;color:var(--mute)}
+.worth .w-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+.worth .w-row b{font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:700}
+.worth .w-row b small{font-size:15px}
+.worth .w-price{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:34px;margin:0}
+.worth input[type=range]{width:100%;margin:10px 0 6px;accent-color:var(--blue)}
+.worth .w-tbl td.ix{color:var(--mute);font-variant-numeric:tabular-nums}
+.worth .w-tbl .w-r{color:var(--good);font-weight:600}
+@media (max-width:480px){.worth .w-big{font-size:44px}.worth .w-row b{font-size:24px}}
+.worth+section,section+.worth{border-top:1px solid var(--line)}

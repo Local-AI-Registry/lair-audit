@@ -109,6 +109,20 @@ table.plans td:not(:first-child){color:var(--good);font-weight:700}
 .plans th,.plans td{white-space:normal}
 table.plans{min-width:560px}
 .offer .price{font-family:'Bricolage Grotesque',sans-serif;font-weight:700}
+/* "What being AI's answer is worth" section. Uses the proposal page tokens (--ink, --good, --line...). */
+.worth .w-calc{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:22px;margin:16px 0 24px}
+.worth .lab{font-size:13px;font-weight:600;color:var(--mute);margin:0 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.worth .w-big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:56px;line-height:1;color:var(--good);margin:4px 0 18px}
+.worth .w-big small{font-size:18px;font-weight:600;margin-left:4px;color:var(--mute)}
+.worth .w-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+.worth .w-row b{font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:700}
+.worth .w-row b small{font-size:15px}
+.worth .w-price{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:34px;margin:0}
+.worth input[type=range]{width:100%;margin:10px 0 6px;accent-color:var(--blue)}
+.worth .w-tbl td.ix{color:var(--mute);font-variant-numeric:tabular-nums}
+.worth .w-tbl .w-r{color:var(--good);font-weight:600}
+@media (max-width:480px){.worth .w-big{font-size:44px}.worth .w-row b{font-size:24px}}
+.worth+section,section+.worth{border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -166,6 +180,67 @@ table.plans{min-width:560px}
     </ol>
   </div>
 </section>
+
+<section class="worth" id="worth">
+  <div class="wrap">
+    <h2>What being AI&rsquo;s answer is worth</h2>
+    <p class="sub">Searches &times; average conversion rate &times; average price. Move the slider to your own average price.</p>
+    <div class="w-calc">
+      <p class="lab">Added revenue</p>
+      <p class="w-big"><span id="w-total">$7,394</span><small>/mo</small></p>
+      <div class="w-row">
+        <div><p class="lab">Searches a month</p><b>610</b></div>
+        <div><p class="lab">&times; Conversion</p><b>2.3<small>%</small></b></div>
+        <div><p class="lab">= Customers</p><b>14</b></div>
+      </div>
+      <p class="small">Average conversion rate. Source: <a href="https://www.ruleranalytics.com/wp-content/uploads/Lead-conversion-rates-by-industry.pdf">Ruler Analytics</a></p>
+      <p class="lab" style="margin-top:18px">Average price per customer</p>
+      <p class="w-price" id="w-price">$527</p>
+      <input type="range" id="w-slider" min="50" max="2500" step="5" value="527" aria-label="Average price per customer">
+      <p class="small">Starts at $527, the average spend per US med spa visit. Source: <a href="https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/">American Med Spa Association, 2024 Medical Spa State of the Industry report</a></p>
+    </div>
+    <div class="tw"><table class="demand w-tbl">
+      <caption>Your searches, 24 in all</caption>
+      <thead><tr><th>#</th><th>Search</th><th class="r">Searches/mo</th><th class="r">Cust</th><th class="r">Price</th><th class="r">Rev/mo</th></tr></thead>
+      <tbody>
+        <tr data-v="140"><td class="ix">01</td><td>spa stroudsburg pa</td><td class="r">140</td><td class="r">3.2</td><td class="r w-p">$527</td><td class="r w-r">$1,697</td></tr>
+        <tr data-v="70"><td class="ix">02</td><td>spa east stroudsburg pa</td><td class="r">70</td><td class="r">1.6</td><td class="r w-p">$527</td><td class="r w-r">$848</td></tr>
+        <tr data-v="70"><td class="ix">03</td><td>facial near me <span class="small">· East Stroudsburg</span></td><td class="r">70</td><td class="r">1.6</td><td class="r w-p">$527</td><td class="r w-r">$848</td></tr>
+        <tr data-v="30"><td class="ix">04</td><td>laser hair removal stroudsburg pa</td><td class="r">30</td><td class="r">0.7</td><td class="r w-p">$527</td><td class="r w-r">$364</td></tr>
+        <tr data-v="30"><td class="ix">05</td><td>day spa stroudsburg pa</td><td class="r">30</td><td class="r">0.7</td><td class="r w-p">$527</td><td class="r w-r">$364</td></tr>
+        <tr data-v="20"><td class="ix">06</td><td>botox stroudsburg pa</td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">07</td><td>med spa stroudsburg pa</td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">08</td><td>botox near me <span class="small">· Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">09</td><td>botox near me <span class="small">· East Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">10</td><td>med spa near me <span class="small">· Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">11</td><td>med spa near me <span class="small">· East Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">12</td><td>lip filler near me <span class="small">· Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="20"><td class="ix">13</td><td>lip filler near me <span class="small">· East Stroudsburg</span></td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$527</td><td class="r w-r">$242</td></tr>
+        <tr data-v="10"><td class="ix">14</td><td>facials stroudsburg pa</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">15</td><td>spa tannersville pa</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">16</td><td>dermal fillers near me <span class="small">· Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">17</td><td>dermal fillers near me <span class="small">· East Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">18</td><td>laser hair removal near me <span class="small">· Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">19</td><td>laser hair removal near me <span class="small">· East Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">20</td><td>microneedling near me <span class="small">· Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">21</td><td>microneedling near me <span class="small">· East Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">22</td><td>hydrafacial near me <span class="small">· Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">23</td><td>hydrafacial near me <span class="small">· East Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+        <tr data-v="10"><td class="ix">24</td><td>tattoo removal near me <span class="small">· East Stroudsburg</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$527</td><td class="r w-r">$121</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small">Search volumes: DataForSEO, Google Ads search volume for Pennsylvania (searches naming a town) and for Stroudsburg and East Stroudsburg (near me searches), November 13, 2026. Customers and revenue are estimates.</p>
+    <p class="small">Left out to keep this conservative: “spa poconos” (1,000 a month, mostly resort spas) and “dermatologist stroudsburg pa” (260 a month).</p>
+  </div>
+  <script>
+  (function(){var s=document.getElementById('w-slider');if(!s)return;var R=0.023,f=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+   s.addEventListener('input',function(){var p=+s.value,t=0;document.getElementById('w-price').textContent=f(p);
+    document.querySelectorAll('.w-tbl tr[data-v]').forEach(function(r){var c=+r.dataset.v*R;t+=c*p;r.querySelector('.w-p').textContent=f(p);r.querySelector('.w-r').textContent=f(c*p)});
+    document.getElementById('w-total').textContent=f(t)})})();
+  </script>
+</section>
+
+
 
 <section>
   <div class="wrap">
@@ -424,10 +499,10 @@ table.plans{min-width:560px}
     <p class="sub">You know your numbers better than we do. Here&rsquo;s the simple math.</p>
 
     <details class="acc" open>
-      <summary><span class="sh">A few new patients a month covers it</span><span class="ss">Patients, not revenue guesses.</span></summary>
+      <summary><span class="sh">Get Recommended is about a fifth of what&rsquo;s at stake</span><span class="ss">Based on the calculator near the top of this page.</span></summary>
       <div class="more">
-        <p>The Registry&rsquo;s estimates for your treatments run from about $400 for neuromodulators to $600 a syringe of filler, $800 for fractional resurfacing and $1,500 for PDO threads. At those prices, two or three new injectable patients a month pays for Get Recommended. Every one of them who comes back two or three times a year is on top.</p>
-        <p class="small">Prices are the Registry&rsquo;s estimates of typical US prices, not your price list. Swap in your own numbers; we&rsquo;ll report your real calls and booking requests every month.</p>
+        <p>At the average med spa visit of $527, being the answer for your 24 local searches is worth an estimated $7,394 a month. Get Recommended at $1,500 is about 20% of that. Own Your Market at $3,000 is about 41%, for the 90 days it takes to build.</p>
+        <p>Move the slider in &ldquo;What being AI&rsquo;s answer is worth&rdquo; to your own average price, and the numbers update. We&rsquo;ll report your real calls and booking requests every month.</p>
       </div>
     </details>
 
@@ -462,7 +537,7 @@ table.plans{min-width:560px}
 </section>
 
 <footer class="wrap src">
-  <p><strong>Sources.</strong> Local AI Registry record for Laser and Cosmetic Center, Stroudsburg PA (claimed by the owner; AI Score scored November 6, 2026; ChatGPT, Gemini and Perplexity read November 13, 2026; Google reviews read November 6, 2026; locals&rsquo; questions September 19 to November 5, 2026) and its Stroudsburg med spa leaderboard; drkipervas.net home, providers, appointments, specials, dermal fillers and hyperhidrosis pages (November 13, 2026); RealSelf Stroudsburg Botox provider listings, Superpages listing for Kipervas, Yelena, DO, Birdeye &ldquo;Best Medical Spas in Stroudsburg, PA&rdquo; and PortraitCare Stroudsburg medical spa directory (November 13, 2026); DataForSEO live Google results from Stroudsburg, ranked keywords, backlinks summary and Lighthouse test for drkipervas.net (November 13, 2026); BrightLocal Local Consumer Review Survey (March 2026); SOCi Local Visibility Index (2026); Pew Research Center. Treatment prices are the Registry&rsquo;s estimates of typical US prices. Forecasts are estimates.</p>
+  <p><strong>Sources.</strong> Local AI Registry record for Laser and Cosmetic Center, Stroudsburg PA (claimed by the owner; AI Score scored November 6, 2026; ChatGPT, Gemini and Perplexity read November 13, 2026; Google reviews read November 6, 2026; locals&rsquo; questions September 19 to November 5, 2026) and its Stroudsburg med spa leaderboard; drkipervas.net home, providers, appointments, specials, dermal fillers and hyperhidrosis pages (November 13, 2026); RealSelf Stroudsburg Botox provider listings, Superpages listing for Kipervas, Yelena, DO, Birdeye &ldquo;Best Medical Spas in Stroudsburg, PA&rdquo; and PortraitCare Stroudsburg medical spa directory (November 13, 2026); DataForSEO live Google results from Stroudsburg, ranked keywords, backlinks summary and Lighthouse test for drkipervas.net (November 13, 2026); DataForSEO Google Ads search volumes for Pennsylvania, Stroudsburg and East Stroudsburg (November 13, 2026); Ruler Analytics lead conversion rates by industry; American Med Spa Association 2024 Medical Spa State of the Industry report; BrightLocal Local Consumer Review Survey (March 2026); SOCi Local Visibility Index (2026); Pew Research Center. Treatment prices are the Registry&rsquo;s estimates of typical US prices. Forecasts are estimates.</p>
 </footer>
 
 </main>
