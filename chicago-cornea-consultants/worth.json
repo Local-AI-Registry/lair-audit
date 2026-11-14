@@ -53,3 +53,4 @@
  "vol_source": "DataForSEO, Google Ads search volume for Illinois (searches naming Chicago or a suburb) and for Chicago, Highland Park, Hoffman Estates and Arlington Heights (near me searches), November 14, 2026",
  "left_out": "Only cash-pay vision correction is counted. Left out to keep this conservative: “ophthalmologist chicago” (1,000 a month) and “eye surgery chicago” (210 a month), which are mostly insurance visits and cataract care, and blepharoplasty searches (“blepharoplasty chicago”, 170 a month; “eyelid surgery chicago”, 70 a month), which start counting when Ziplift launches in Q1 2027. Google counts “lasik eye surgery chicago” and “laser eye surgery chicago” as the same search as “lasik chicago”, and “lasik doctors near me” as the same as “lasik eye surgery near me”, so each is counted once. Searches with no measurable volume, such as “evo icl chicago” and “lasik north shore”, are not listed."
 }
+
