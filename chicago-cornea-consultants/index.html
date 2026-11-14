@@ -1,0 +1,572 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Chicago Cornea Consultants · AI Search Proposal | Local AI Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Cormorant:ital,wght@0,500;0,600;0,700;1,500&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F4F1EA; --paper2:#FBFAF6; --card:#FFFFFF; --ink:#0B1A2E; --ink2:#3D4A5C; --mute:#6F7E96;
+  --line:#D9DEE7; --blue:#1F4FE0; --blue-soft:#DCE5FF; --coral:#FF5A3C; --good:#1E7F4F; --good-soft:#DDF2E7;
+  --amb:#B86E00; --amb-soft:#FFF1D6;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#0B1220; --paper2:#101A2C; --card:#14203A; --ink:#F4F1EA; --ink2:#C3CBD9; --mute:#8E9BB3;
+  --line:#26344F; --blue:#7C9BFF; --blue-soft:#1C2A52; --good:#4FD39A; --good-soft:#123326; --amb:#FFB547; --amb-soft:#3A2C10; color-scheme:dark}
+  .lock.color{display:none!important}.lock.white{display:block!important}
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--blue)}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+section{padding:64px 0}
+section.alt{background:var(--paper2)}
+h1,h2{font-family:'Cormorant',Georgia,serif;font-weight:600;letter-spacing:-.01em;margin:0}
+h1{font-size:clamp(42px,7.4vw,70px);line-height:1;font-weight:500}
+h2{font-size:clamp(32px,5vw,44px);line-height:1.06;margin-bottom:12px}
+h3{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;line-height:1.25;margin:0 0 6px}
+.eyebrow{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin:0 0 12px}
+.lede{font-size:19px;color:var(--ink2);max-width:660px;margin:18px 0 0}
+.sub{color:var(--ink2);margin:0 0 26px;max-width:660px}
+.num{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-variant-numeric:tabular-nums}
+.small{font-size:14px;color:var(--mute)}
+.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:26px 22px 0}
+.lock{width:200px;display:block}.lock.white{display:none}
+.prepared{font-size:14px;color:var(--mute);text-align:right;line-height:1.4}
+@media (max-width:560px){.lock{width:140px}.prepared{font-size:12px}}
+.hero{padding:56px 0 64px}
+
+/* summary strip */
+.strip{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:36px}
+.strip div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.strip b{display:block;font-size:28px;line-height:1.1}
+.strip span{font-size:14px;color:var(--ink2)}
+@media (max-width:640px){.strip{grid-template-columns:1fr}}
+
+/* heard */
+.heard{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.heard article{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.heard p{margin:0;color:var(--ink2);font-size:16px}
+.heard q{display:block;font-family:'Cormorant',Georgia,serif;font-style:italic;font-size:21px;line-height:1.25;color:var(--ink);margin:0 0 10px;quotes:"\201C" "\201D"}
+@media (max-width:640px){.heard{grid-template-columns:1fr}}
+
+/* plans */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.plan{position:relative;background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:26px 24px 22px;cursor:pointer;text-align:left;font:inherit;color:inherit;display:flex;flex-direction:column;transition:border-color .15s,box-shadow .15s,transform .15s}
+.plan:hover{transform:translateY(-2px)}
+.plan[aria-pressed="true"]{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-soft)}
+.plan .badge{position:absolute;top:-13px;left:22px;background:var(--blue);color:#fff;font:700 12px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:5px 11px;border-radius:999px}
+@media (prefers-color-scheme:dark){.plan .badge{color:#0B1220}}
+.plan .tier{font:700 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.plan h3{font-size:24px;margin:4px 0 14px}
+.plan .was{color:var(--mute);text-decoration:line-through;font-size:16px}
+.plan .price{font-size:48px;line-height:1}
+.plan .price small{font:500 16px 'Hanken Grotesk',sans-serif;color:var(--mute)}
+.plan .save{display:inline-block;margin:10px 0 14px;background:var(--good-soft);color:var(--good);font:700 13px 'Bricolage Grotesque',sans-serif;padding:4px 10px;border-radius:999px}
+.plan ul{list-style:none;padding:0;margin:0 0 4px;font-size:15.5px;color:var(--ink2)}
+.plan li{padding:5px 0 5px 24px;position:relative}
+.plan li::before{content:"";position:absolute;left:2px;top:12px;width:10px;height:10px;border-radius:50%;background:var(--blue-soft);border:2px solid var(--blue)}
+.plan .pick{margin-top:auto;padding-top:16px;font:700 14px 'Bricolage Grotesque',sans-serif;color:var(--blue)}
+.plan[aria-pressed="true"] .pick::before{content:"✓ "}
+@media (max-width:700px){.plans{grid-template-columns:1fr}.plan .badge{left:18px}}
+
+/* compare */
+.ctrl{display:flex;gap:10px;align-items:center;margin:0 0 14px;flex-wrap:wrap}
+.toggle{display:inline-flex;align-items:center;gap:10px;font-size:15px;color:var(--ink2);cursor:pointer;user-select:none}
+.toggle input{appearance:none;width:42px;height:24px;border-radius:999px;background:var(--line);position:relative;cursor:pointer;margin:0;transition:background .15s}
+.toggle input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}
+.toggle input:checked{background:var(--blue)}.toggle input:checked::after{left:21px}
+.tbl{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;font-size:15px}
+.tbl th,.tbl td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.tbl thead th{font:700 13px 'Bricolage Grotesque',sans-serif;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);text-align:center;background:var(--paper2)}
+.tbl thead th:first-child{text-align:left}
+.tbl thead th.hl{color:var(--blue)}
+.tbl td:not(:first-child){text-align:center;width:22%;white-space:nowrap}
+.tbl td.hl{background:color-mix(in srgb,var(--blue-soft) 45%,transparent)}
+.tbl .y{color:var(--good);font-weight:700}.tbl .n{color:var(--mute)}.tbl .x{color:var(--blue);font-weight:700}
+.tbl tr.sec td{font:700 12px 'Bricolage Grotesque',sans-serif;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);background:var(--paper2);text-align:left!important}
+.tbl tr.same{display:table-row}
+.tbl.diff tr.same{display:none}
+.tbl td small{display:block;color:var(--mute);font-size:13px}
+@media (max-width:560px){.tbl{font-size:14px}.tbl th,.tbl td{padding:9px 8px}.tbl td:not(:first-child){white-space:normal}}
+
+/* reasons */
+.reasons{counter-reset:r;display:grid;gap:14px}
+.reasons article{display:grid;grid-template-columns:44px 1fr;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.reasons article::before{counter-increment:r;content:counter(r);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;font:800 18px 'Bricolage Grotesque',sans-serif}
+@media (prefers-color-scheme:dark){.reasons article::before{color:#0B1220}}
+.reasons p{margin:0;color:var(--ink2);font-size:16px}
+
+/* calculators */
+.calc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px}
+.calc + .calc{margin-top:18px}
+.calc label{display:flex;justify-content:space-between;gap:12px;font-weight:600;margin:0 0 8px}
+.calc label b{color:var(--blue)}
+input[type=range]{width:100%;accent-color:var(--blue);height:28px}
+.ticks{display:flex;justify-content:space-between;font-size:12px;color:var(--mute);margin-top:-2px}
+.out{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.out div{background:var(--paper2);border-radius:14px;padding:14px 16px}
+.out b{display:block;font-size:26px;line-height:1.15}
+.out span{font-size:13.5px;color:var(--ink2)}
+.out .g b{color:var(--good)}
+@media (max-width:640px){.out{grid-template-columns:1fr}}
+.bar{display:flex;height:34px;border-radius:10px;overflow:hidden;margin-top:16px;border:1px solid var(--line)}
+.bar i{display:block;height:100%;transition:flex-grow .2s}
+.bar .a{background:var(--blue)}.bar .b{background:var(--blue-soft)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:13.5px;color:var(--ink2);margin-top:8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden;margin:4px 0 14px}
+.seg button{border:0;background:transparent;color:var(--ink2);padding:7px 14px;font:700 14px 'Bricolage Grotesque',sans-serif;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--blue);color:#fff}
+@media (prefers-color-scheme:dark){.seg button[aria-pressed="true"]{color:#0B1220}}
+
+/* team / terms */
+.flow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.flow div{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px}
+.flow p{margin:0;font-size:15.5px;color:var(--ink2)}
+@media (max-width:640px){.flow{grid-template-columns:1fr}}
+.terms{display:grid;grid-template-columns:1fr 1fr;gap:10px 22px;list-style:none;padding:0;margin:0}
+.terms li{padding-left:28px;position:relative;color:var(--ink2);font-size:16px}
+.terms li::before{content:"✓";position:absolute;left:0;top:0;color:var(--good);font-weight:800}
+.terms b{color:var(--ink)}
+@media (max-width:640px){.terms{grid-template-columns:1fr}}
+
+/* checkout */
+.dark{background:#0B1A2E;color:#F4F1EA}
+@media (prefers-color-scheme:dark){.dark{background:#060B16}}
+.dark h2{color:#F4F1EA}.dark .sub{color:#C3CBD9}
+.choice{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:20px;padding:24px;display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center}
+.choice .nm{font:700 14px 'Bricolage Grotesque',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#9FB4FF}
+.choice .big{font-size:40px;line-height:1.05}
+.choice .big small{font:500 16px 'Hanken Grotesk',sans-serif;color:#C3CBD9}
+.choice p{margin:6px 0 0;color:#C3CBD9;font-size:15px}
+.paybtn{display:inline-block;background:#FF5A3C;color:#fff;text-decoration:none;font:800 17px 'Bricolage Grotesque',sans-serif;padding:16px 26px;border-radius:14px;white-space:nowrap;box-shadow:0 8px 24px rgba(255,90,60,.35)}
+.paybtn:hover{filter:brightness(1.06)}
+.alt-link{display:block;margin-top:14px;color:#9FB4FF;font-size:15px;background:none;border:0;padding:0;cursor:pointer;font-family:inherit;text-decoration:underline}
+@media (max-width:640px){.choice{grid-template-columns:1fr}.paybtn{text-align:center}}
+.codenote{margin:12px 0 0;color:#C3CBD9;font-size:15px}.codenote b{color:#fff;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(255,255,255,.1);padding:2px 8px;border-radius:6px}
+.sig{margin-top:34px;color:#C3CBD9;font-size:15px}
+.sig b{color:#F4F1EA}
+footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
+/* "What being AI's answer is worth" section. Uses the proposal page tokens (--ink, --good, --line...). */
+.worth .w-calc{background:var(--card);border:1.5px solid var(--line);border-radius:20px;padding:22px;margin:16px 0 24px}
+.worth .lab{font-size:13px;font-weight:600;color:var(--mute);margin:0 0 4px;text-transform:uppercase;letter-spacing:.04em}
+.worth .w-big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:56px;line-height:1;color:var(--good);margin:4px 0 18px}
+.worth .w-big small{font-size:18px;font-weight:600;margin-left:4px;color:var(--mute)}
+.worth .w-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding-top:16px;border-top:1px solid var(--line)}
+.worth .w-row b{font-family:'Bricolage Grotesque',sans-serif;font-size:30px;font-weight:700}
+.worth .w-row b small{font-size:15px}
+.worth .w-price{font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:34px;margin:0}
+.worth input[type=range]{width:100%;margin:10px 0 6px;accent-color:var(--blue)}
+.worth .w-tbl td.ix{color:var(--mute);font-variant-numeric:tabular-nums}
+.worth .w-tbl .w-r{color:var(--good);font-weight:600}
+@media (max-width:480px){.worth .w-big{font-size:44px}.worth .w-row b{font-size:24px}}
+.worth+section,section+.worth{border-top:1px solid var(--line)}
+.tw{overflow-x:auto;margin:16px 0 8px}
+.demand{width:100%;border-collapse:collapse;font-size:15px}
+.demand caption{text-align:left;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:16px;padding-bottom:8px}
+.demand th{text-align:left;font-weight:600;font-size:13px;color:var(--mute);padding:8px 10px 8px 0;border-bottom:1.5px solid var(--ink);vertical-align:bottom}
+.demand td{padding:10px 10px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.demand .r{text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.demand{font-size:13px}.demand th{font-size:12px}.demand td,.demand th{padding-right:6px}}
+/* chicago cornea additions */
+.bars{display:grid;gap:10px;margin:8px 0 0;position:relative}
+.brow{display:grid;grid-template-columns:150px 1fr 96px;align-items:center;gap:12px;font-size:15px}
+.brow i{display:block;height:22px;border-radius:6px;background:var(--good);width:var(--w);min-width:6px;position:relative}
+.brow b{text-align:right;font-size:16px}
+.bars::after{content:"";position:absolute;top:-4px;bottom:-4px;left:calc(162px + (100% - 270px) * .02525);border-left:2px dashed var(--coral)}
+@media (max-width:560px){.brow{grid-template-columns:104px 1fr 80px;font-size:13.5px}.bars::after{left:calc(116px + (100% - 208px) * .02525)}}
+.offices{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:720px){.offices{grid-template-columns:1fr}}
+.office{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 20px 18px;display:flex;flex-direction:column}
+.office .oh{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.office h3{font-size:22px;margin:0}
+.tag{font:700 12px 'Bricolage Grotesque',sans-serif;letter-spacing:.06em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:var(--blue-soft);color:var(--blue);white-space:nowrap}
+.tag.pick{background:var(--blue);color:#fff}
+@media (prefers-color-scheme:dark){.tag.pick{color:#0B1220}}
+.tag.ok{background:var(--good-soft);color:var(--good)}
+.addr{margin:2px 0 12px;font-size:14px;color:var(--mute)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kpis b{display:block;font-size:22px;line-height:1.1}
+.kpis span{font-size:12.5px;color:var(--mute)}
+.kpis .g b{color:var(--good)}
+.facts{list-style:none;padding:0;margin:12px 0 0;font-size:14.5px;color:var(--ink2)}
+.facts li{padding:5px 0 5px 20px;position:relative}
+.facts li::before{content:"";position:absolute;left:0;top:12px;width:9px;height:9px;border-radius:50%}
+.facts .good::before{background:var(--good)}.facts .mid::before{background:var(--amb)}.facts .bad::before{background:var(--coral)}
+.facts b{color:var(--ink)}
+.why{margin:auto 0 0;padding-top:12px;font-size:15px;color:var(--ink)}
+.pickbox{margin-top:20px;background:var(--blue-soft);border-radius:18px;padding:20px 22px}
+.pickbox p{margin:0;color:var(--ink)}
+.cmp td:first-child{font-weight:600;color:var(--ink);white-space:nowrap}
+.tbl.cmp td{color:var(--ink2);text-align:left!important;white-space:normal!important;width:auto}
+.tbl.cmp td:nth-child(2){width:36%}
+.tbl.cmp td:nth-child(3){width:44%;color:var(--ink)}
+.tbl.cmp thead th{text-align:left}
+@media (max-width:640px){.cmp{min-width:600px}}
+.planbox{display:grid;grid-template-columns:260px 1fr;gap:24px;background:var(--card);border:1.5px solid var(--blue);box-shadow:0 0 0 3px var(--blue-soft);border-radius:20px;padding:26px}
+.planbox .tier{font:700 13px 'Bricolage Grotesque',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--blue)}
+.planbox h3{font-size:26px;margin:4px 0 10px}
+.planbox .price{font-size:46px;line-height:1;display:block}
+.planbox .price small{font:500 15px 'Hanken Grotesk',sans-serif;color:var(--mute)}
+.planbox .multi{margin:16px 0 0;font-size:15px;background:var(--good-soft);color:var(--ink);padding:10px 12px;border-radius:12px}
+.planbox ul{list-style:none;padding:0;margin:0;font-size:15.5px;color:var(--ink2)}
+.planbox li{padding:5px 0 5px 24px;position:relative}
+.planbox li::before{content:"✓";position:absolute;left:0;top:5px;color:var(--good);font-weight:800}
+@media (max-width:700px){.planbox{grid-template-columns:1fr}}
+.seg.dk{border-color:rgba(255,255,255,.2);flex-wrap:wrap;border-radius:14px;margin:0 0 16px}
+.seg.dk button{color:#C3CBD9}
+.seg.dk button[aria-pressed="true"]{background:#9FB4FF;color:#0B1220}
+.src{padding:40px 0 10px}
+.src ul{padding-left:18px;margin:8px 0 0;font-size:14px;color:var(--mute)}
+.src li{margin:4px 0}
+
+</style>
+</head>
+<body>
+
+<header class="top" style="max-width:860px;margin:0 auto">
+  <a href="https://localairegistry.com" aria-label="Local AI Registry">
+    <span class="lock color"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87" style="width:100%;height:auto;display:block" role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#0B1A2E"/>
+</svg></span>
+    <span class="lock white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1867.45 232.87" style="width:100%;height:auto;display:block" role="img" aria-label="Local AI Registry">
+  <g transform="translate(0 22.54) scale(1.878)">
+    <path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#FFFFFF"/>
+    <path d="M50 10 L61 30 L39 30 Z" fill="#FFFFFF"/>
+  </g>
+  <path transform="translate(237.85 173.34)" d="M46 0L13.800 0L13.800-132L46-132L46 0ZM99.800 0L19.600 0L19.600-27L99.800-27L99.800 0ZM162.800 2.800L162.800 2.800Q146.800 2.800 134.500-3.400Q122.200-9.600 115.200-22Q108.200-34.400 108.200-53L108.200-53Q108.200-71.600 115.200-83.900Q122.200-96.200 134.600-102.300Q147-108.400 163-108.400L163-108.400Q179-108.400 191.400-102.200Q203.800-96 210.800-83.700Q217.800-71.400 217.800-52.800L217.800-52.800Q217.800-33.800 210.600-21.400Q203.400-9 190.900-3.100Q178.400 2.800 162.800 2.800ZM163.800-20.600L163.800-20.600Q171-20.600 175.800-23.900Q180.600-27.200 183-34Q185.400-40.800 185.400-50.800L185.400-50.800Q185.400-61.400 182.800-68.700Q180.200-76 175.100-79.900Q170-83.800 162-83.800L162-83.800Q155.200-83.800 150.300-80.500Q145.400-77.200 143-70.400Q140.600-63.600 140.600-53.400L140.600-53.400Q140.600-37 146.700-28.800Q152.800-20.600 163.800-20.600ZM286.400 2.800L286.400 2.800Q272.800 2.800 262.400-1Q252.000-4.800 245.000-11.900Q238.000-19 234.300-29Q230.600-39 230.600-51.400L230.600-51.400Q230.600-64.200 234.300-74.600Q238.000-85 245.000-92.600Q252.000-100.200 262.200-104.300Q272.400-108.400 285.600-108.400L285.600-108.400Q298.800-108.400 308.400-104.200Q318-100 324.100-92.400Q330.200-84.800 332.400-74.800L332.400-74.800L302.600-64.800Q302-71.400 299.400-75.600Q296.800-79.800 292.700-81.700Q288.600-83.600 283.800-83.600L283.800-83.600Q278.800-83.600 275-81.600Q271.200-79.600 268.600-75.600Q266-71.600 264.600-65.900Q263.200-60.200 263.200-52.800L263.200-52.800Q263.200-42.200 265.900-35.100Q268.600-28 273.900-24.400Q279.200-20.800 286.800-20.800L286.800-20.800Q294.600-20.800 299-24Q303.400-27.200 305.400-31.900Q307.400-36.600 307.800-41.200L307.800-41.200L335.800-35Q335-27.600 331.900-20.700Q328.800-13.800 322.800-8.500Q316.800-3.200 307.900-0.200Q299 2.800 286.400 2.800ZM375.600 2.800L375.600 2.800Q366.800 2.800 360.000-0.700Q353.200-4.200 349.400-10.900Q345.600-17.600 345.600-27.200L345.600-27.200Q345.600-36.200 349.100-42.100Q352.600-48 359.300-51.500Q366.000-55 375.400-57.300Q384.800-59.600 396.800-61.400L396.800-61.400Q402.600-62.400 406.500-63.300Q410.400-64.200 412.400-66.200Q414.400-68.200 414.400-72L414.400-72Q414.400-77 410.800-80.600Q407.200-84.200 399.200-84.200L399.200-84.200Q393.600-84.200 389.100-82.200Q384.600-80.200 381.400-76.400Q378.200-72.600 376.600-67.200L376.600-67.200L348.200-75.600Q350.800-84 355.500-90.200Q360.200-96.400 366.800-100.500Q373.400-104.600 381.900-106.500Q390.400-108.400 400.000-108.400L400.000-108.400Q416.000-108.400 426.100-103.300Q436.200-98.200 441.100-87.500Q446.000-76.800 446.000-60L446.000-60L446.000-43.800Q446.000-36.600 446.300-29.300Q446.600-22 447.100-14.700Q447.600-7.400 448.400 0L448.400 0L420.000 0Q419.200-4.600 418.400-11.100Q417.600-17.600 417.200-24.400L417.200-24.400L413.400-24.400Q410.600-16.800 405.300-10.500Q400.000-4.200 392.500-0.700Q385.000 2.800 375.600 2.800ZM390.200-20L390.200-20Q393.800-20 397.500-21.300Q401.200-22.600 404.600-24.900Q408.000-27.200 410.800-30.600Q413.600-34 415.000-38L415.000-38L414.600-53.800L419.000-52.800Q415.200-50.400 410.600-49Q406.000-47.600 401.300-46.800Q396.600-46 392.100-45.100Q387.600-44.200 384.100-42.800Q380.600-41.400 378.600-39Q376.600-36.600 376.600-32.400L376.600-32.400Q376.600-26.800 380.400-23.400Q384.200-20 390.200-20ZM501.400 0L469.800 0L469.800-144L501.400-144L501.400 0ZM596.600 0L561.400 0L606.200-132L653.400-132L698.200 0L663 0L631.400-106.800L628.200-106.800L596.600 0ZM676.400-24.800L588-24.800L588-46.400L676.400-46.400L676.400-24.800ZM747.600 0L714.800 0L714.800-132L747.600-132L747.600 0ZM852.200 0L820 0L820-132L876.200-132Q887.200-132 896.200-130.300Q905.200-128.600 912.100-125.300Q919-122 923.800-117.300Q928.600-112.600 931-106.500Q933.400-100.400 933.400-93L933.400-93Q933.400-86 931.200-80.400Q929-74.800 924.500-70.600Q920-66.400 913.200-63.800Q906.400-61.200 897.400-60L897.400-60L897.400-57Q908.800-55.800 915.100-51.900Q921.400-48 924.800-41.600Q928.200-35.200 930.800-26.200L930.800-26.200L938.400 0L902.600 0L896.800-24.200Q895-32.200 891.900-36.600Q888.800-41 884-42.700Q879.200-44.400 872-44.400L872-44.400L852.200-44.400L852.200 0ZM852.200-107.600L852.200-68.200L874-68.200Q886.200-68.200 893-73Q899.800-77.800 899.800-88L899.800-88Q899.800-98 893.600-102.800Q887.400-107.600 874.800-107.600L874.800-107.600L852.200-107.600ZM1006.400 2.800L1006.400 2.800Q993.200 2.800 982.800-0.700Q972.400-4.200 965.100-11Q957.800-17.800 954.000-27.800Q950.200-37.800 950.200-50.800L950.200-50.800Q950.200-63.400 953.900-74Q957.600-84.600 964.500-92.300Q971.400-100 981.500-104.200Q991.600-108.400 1004.200-108.400L1004.200-108.400Q1017.000-108.400 1026.700-104.300Q1036.400-100.200 1042.700-92.200Q1049-84.200 1052-72.700Q1055-61.200 1054-46.400L1054-46.400L971.400-45.800L971.400-62.600L1035.600-63.200L1024.200-55.400Q1025.600-65.400 1023.000-71.700Q1020.400-78 1015.400-80.900Q1010.400-83.800 1004.600-83.800L1004.600-83.800Q997.600-83.800 992.300-80Q987.000-76.200 984.000-69Q981.000-61.800 981.000-51.400L981.000-51.400Q981.000-35 988.100-27.600Q995.200-20.200 1006.200-20.200L1006.200-20.200Q1011.600-20.200 1015.200-21.700Q1018.800-23.200 1021.100-25.500Q1023.400-27.800 1024.700-30.600Q1026-33.400 1026.800-36L1026.800-36L1054.800-30Q1053.200-22.600 1049.700-16.600Q1046.200-10.600 1040.300-6.200Q1034.400-1.800 1026.100 0.500Q1017.800 2.800 1006.400 2.800ZM1116.200 37L1116.200 37Q1098.600 37 1087.300 34.300Q1076 31.600 1070.800 26.300Q1065.600 21 1065.600 13.400L1065.600 13.400Q1065.600 4.200 1072.900-1.600Q1080.200-7.400 1094.400-8.200L1094.400-8.200L1094.400-12.400Q1083.400-12.400 1077.500-14.600Q1071.600-16.800 1071.600-22.800L1071.600-22.800Q1071.600-28.400 1077.400-33Q1083.200-37.600 1096.600-40.200L1096.600-40.200L1096.600-44.400Q1084.400-45.400 1077.200-52.500Q1070-59.600 1070-71.200L1070-71.200Q1070-81 1075.600-89.100Q1081.200-97.200 1092.400-102.100Q1103.600-107 1120.400-107L1120.400-107L1175.200-107L1175.200-82.800L1141.800-87.200L1141.800-82.400Q1154.800-80.600 1160.400-76.400Q1166-72.200 1166-64.600L1166-64.600Q1166-56.600 1160.500-50.400Q1155-44.200 1145-40.700Q1135-37.200 1121.200-37.200L1121.200-37.200Q1118.800-37.200 1115.900-37.400Q1113-37.600 1105.200-38.400L1105.200-38.400Q1102-35.600 1100.200-33.700Q1098.400-31.800 1098.400-30.200L1098.400-30.200Q1098.400-29 1099.400-28.200Q1100.400-27.400 1102.300-27.100Q1104.200-26.800 1106.400-26.800L1106.400-26.800L1138.600-26.800Q1142.600-26.800 1149.100-26.300Q1155.600-25.800 1162.100-23.200Q1168.600-20.600 1173.100-14.800Q1177.600-9 1177.600 1.800L1177.600 1.800Q1177.600 13.600 1171 21.500Q1164.400 29.400 1150.800 33.200Q1137.200 37 1116.200 37ZM1120.400 11.400L1120.400 11.400Q1132 11.400 1138.400 10.200Q1144.800 9 1147.300 6.400Q1149.800 3.800 1149.800 0L1149.800 0Q1149.800-3.600 1148.400-5.700Q1147-7.800 1144.800-8.600Q1142.600-9.400 1140.300-9.600Q1138-9.800 1136.400-9.800L1136.400-9.800L1110.600-9.800Q1103.200-9.800 1099.700-6.300Q1096.200-2.800 1096.200 1.800L1096.200 1.800Q1096.200 5.600 1098.600 7.700Q1101 9.800 1106.300 10.600Q1111.600 11.400 1120.400 11.400ZM1119-53.200L1119-53.200Q1127.600-53.200 1131.900-57.800Q1136.200-62.400 1136.200-69.400L1136.200-69.400Q1136.200-77 1131.800-81.900Q1127.400-86.800 1119.200-86.800L1119.200-86.800Q1111-86.800 1106.400-81.900Q1101.800-77 1101.800-69.400L1101.800-69.400Q1101.800-64.800 1103.800-61.100Q1105.800-57.400 1109.600-55.300Q1113.400-53.200 1119-53.200ZM1227.200 0L1195.000 0L1195.000-105.600L1227.200-105.600L1227.200 0ZM1211.200-120.400L1211.200-120.400Q1202.000-120.400 1197.100-124.300Q1192.200-128.200 1192.200-135.400L1192.200-135.400Q1192.200-143 1197.100-146.900Q1202.000-150.800 1211.200-150.800L1211.200-150.800Q1220.600-150.800 1225.500-146.900Q1230.400-143 1230.400-135.600L1230.400-135.600Q1230.400-128.200 1225.500-124.300Q1220.600-120.400 1211.200-120.400ZM1295.400 2.800L1295.400 2.800Q1284.800 2.800 1276.200 0.900Q1267.600-1 1261.200-4.600Q1254.800-8.200 1250.700-13.300Q1246.600-18.400 1245.000-24.600L1245.000-24.600L1269.000-35.200Q1270.400-31.800 1273.900-28.300Q1277.400-24.800 1283.300-22.600Q1289.200-20.400 1297.600-20.400L1297.600-20.400Q1305.600-20.400 1310.100-22.700Q1314.600-25 1314.600-29.400L1314.600-29.400Q1314.600-32.600 1312.100-34.500Q1309.600-36.400 1304.600-37.900Q1299.600-39.400 1292.200-40.800L1292.200-40.800Q1284.600-42.400 1276.800-44.500Q1269.000-46.600 1262.200-50.300Q1255.400-54 1251.300-60.100Q1247.200-66.200 1247.200-75.600L1247.200-75.600Q1247.200-85.400 1252.400-92.700Q1257.600-100 1267.900-104.200Q1278.200-108.400 1293.000-108.400L1293.000-108.400Q1306.200-108.400 1316.200-105Q1326.200-101.600 1332.900-95.300Q1339.600-89 1342.200-80.200L1342.200-80.200L1316.400-71Q1315.400-75.400 1312.300-78.600Q1309.200-81.800 1304.500-83.500Q1299.800-85.200 1293.400-85.200L1293.400-85.200Q1285.600-85.200 1281.300-82.800Q1277.000-80.400 1277.000-76.400L1277.000-76.400Q1277.000-73.200 1279.900-71.100Q1282.800-69 1288.200-67.600Q1293.600-66.200 1301.000-64.600L1301.000-64.600Q1308.800-63 1316.500-60.900Q1324.200-58.800 1330.500-55.300Q1336.800-51.800 1340.500-46.100Q1344.200-40.400 1344.200-31.400L1344.200-31.400Q1344.200-20.800 1338.600-13.100Q1333.000-5.400 1322.100-1.300Q1311.200 2.800 1295.400 2.800ZM1403.200 2.600L1403.200 2.600Q1384.600 2.600 1375.800-7.300Q1367.000-17.200 1367.000-39L1367.000-39L1367.000-80.400L1352.000-80.400L1352.600-105.400L1363.400-105.400Q1369.800-105.600 1373.100-107.400Q1376.400-109.200 1377.200-114.200L1377.200-114.200L1379.800-129L1398.000-129L1398.000-105.600L1423.400-105.600L1423.400-79.400L1398.000-79.400L1398.000-40.400Q1398.000-33.600 1401.300-30.400Q1404.600-27.200 1411.400-27.200L1411.400-27.200Q1415.200-27.200 1418.600-28Q1422.000-28.800 1424.200-30.200L1424.200-30.200L1424.200-0.400Q1417.800 1.600 1412.500 2.100Q1407.200 2.600 1403.200 2.600ZM1475.600 0L1443.200 0L1443.200-49L1443.200-105.600L1469.600-105.600L1470.200-69.800L1474.200-69.800Q1475.600-83.800 1479.500-92.100Q1483.400-100.400 1490.700-104.200Q1498.000-108 1508.800-108L1508.800-108Q1510.400-108 1512.400-107.900Q1514.400-107.800 1517.000-107.400L1517.000-107.400L1515.800-73Q1512.600-74.600 1508.900-75.100Q1505.200-75.600 1502.400-75.600L1502.400-75.600Q1494.600-75.600 1488.900-72.600Q1483.200-69.600 1479.900-63.400Q1476.600-57.200 1475.600-47.800L1475.600-47.800L1475.600 0ZM1573.000 36.800L1573.000 36.800Q1565.000 36.800 1556.600 35.400Q1548.200 34 1540.700 31.300Q1533.200 28.600 1527.800 24.200L1527.800 24.200L1535.600-4.400Q1542.600 2.200 1552.500 5.400Q1562.400 8.600 1571.600 8.600L1571.600 8.600Q1582.200 8.600 1589.100 4.500Q1596.000 0.400 1599.700-8.100Q1603.400-16.600 1604.000-29.200L1604.000-29.200L1605.000-46.600L1600.200-46.600Q1598.400-33.600 1593.900-25.400Q1589.400-17.200 1582.500-13.300Q1575.600-9.400 1566.200-9.400L1566.200-9.400Q1554.600-9.400 1546.800-15.200Q1539.000-21 1535.100-32.700Q1531.200-44.400 1531.200-61.800L1531.200-61.800L1531.200-105.600L1563.600-105.600L1563.600-69.800Q1563.600-51.400 1567.300-43.500Q1571.000-35.600 1579.000-35.600L1579.000-35.600Q1583.200-35.600 1586.600-38Q1590.000-40.400 1592.400-44.800Q1594.800-49.200 1596.100-55.500Q1597.400-61.800 1597.400-69.600L1597.400-69.600L1597.400-105.600L1629.600-105.600L1629.600-28Q1629.600-15.400 1627.300-5Q1625.000 5.400 1620.500 13.200Q1616.000 21 1609.200 26.300Q1602.400 31.600 1593.400 34.200Q1584.400 36.800 1573.000 36.800Z" fill="#FFFFFF"/>
+</svg></span>
+  </a>
+  <div class="prepared">Prepared for Julia Jaber<br>and the partners · Nov 14, 2026</div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Chicago Cornea Consultants · 4 offices</p>
+    <h1>Be the answer for LASIK and EVO&nbsp;ICL, one office at a time.</h1>
+    <p class="lede">Julia, you asked for something you can take to Dr. Majmudar and the partners: what each office could gain, how this fits with Studio&nbsp;3, and what it costs to test one office first. It&rsquo;s all here, and every number has a date and a source.</p>
+    <div class="strip">
+      <div><b class="num">$3,000<span class="small">/mo</span></b><span>Own Your Market, for one office</span></div>
+      <div><b class="num">$153,941<span class="small">/mo</span></b><span>Estimated added revenue if AI picks you in all four areas</span></div>
+      <div><b class="num">1</b><span>LASIK patient a month covers the plan</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Part 1 · What you told us on November 13</p>
+    <h2>Built around what matters to you.</h2>
+    <p class="sub">Every recommendation below ties back to one of these.</p>
+    <div class="heard">
+      <article><q>We want to improve our refractive numbers.</q><p>So this proposal counts only cash-pay vision correction: LASIK, EVO ICL, SMILE, PRK and lens exchange. Insurance visits are left out of the math.</p></article>
+      <article><q>They&rsquo;ll say, ChatGPT, straight up, ChatGPT.</q><p>Patients already find you through AI. Today it depends on the office. ChatGPT, Gemini and Perplexity all name Highland Park, and none of them name Arlington Heights.</p></article>
+      <article><q>Each lead was probably like over $200.</q><p>Paid clicks stop when the budget stops. Advertisers pay about $86 a click for &ldquo;lasik chicago.&rdquo; Being the map pick and the AI answer is an asset you keep, with no cost per click.</p></article>
+      <article><q>I&rsquo;m also following up with leads, calling them.</q><p>We don&rsquo;t add work to your desk. We write the review replies, posts and answers, and your team only approves them. New patients reach the same phone lines and your AI receptionist.</p></article>
+      <article><q>We have Studio 3 Marketing that handles our SEO.</q><p>They stay. Studio 3 keeps the website. We cover the map, the listings and the AI answers, and we hand them briefs to publish. Part 4 shows exactly who does what.</p></article>
+      <article><q>Four offices would overwhelm them. Maybe test one first.</q><p>Agreed. Part 3 shows the value office by office and which one we&rsquo;d start with. Multi-location discounts apply if you add more.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="worth" id="worth">
+  <div class="wrap">
+    <p class="eyebrow">Part 2 · What it&rsquo;s worth</p>
+    <h2>What being AI&rsquo;s answer is worth</h2>
+    <p class="sub">Searches &times; average conversion rate &times; average price. Move the slider to your own average price.</p>
+    <div class="w-calc">
+      <p class="lab">Added revenue</p>
+      <p class="w-big"><span id="w-total">$153,941</span><small>/mo</small></p>
+      <div class="w-row">
+        <div><p class="lab">Searches a month</p><b>1,490</b></div>
+        <div><p class="lab">&times; Conversion</p><b>2.3<small>%</small></b></div>
+        <div><p class="lab">= Customers</p><b>34</b></div>
+      </div>
+      <p class="small">Average conversion rate. Source: <a href="https://www.ruleranalytics.com/wp-content/uploads/Lead-conversion-rates-by-industry.pdf">Ruler Analytics</a></p>
+      <p class="lab" style="margin-top:18px">Average price per customer</p>
+      <p class="w-price" id="w-price">$4,492</p>
+      <input type="range" id="w-slider" min="50" max="10000" step="5" value="4492" aria-label="Average price per customer">
+      <p class="small">Starts at $4,492, the national average price of LASIK for both eyes. EVO ICL and lens procedures usually cost more, so this keeps the estimate low. Source: <a href="https://americanrefractivesurgerycouncil.org/how-much-does-lasik-eye-surgery-cost/">American Refractive Surgery Council, How Much Does LASIK Cost? (June 2026)</a></p>
+    </div>
+    <div class="tw"><table class="demand w-tbl">
+      <caption>Your searches, 42 in all</caption>
+      <thead><tr><th>#</th><th>Search</th><th class="r">Searches/mo</th><th class="r">Cust</th><th class="r">Price</th><th class="r">Rev/mo</th></tr></thead>
+      <tbody>
+        <tr data-v="480"><td class="ix">01</td><td>lasik chicago</td><td class="r">480</td><td class="r">11.0</td><td class="r w-p">$4,492</td><td class="r w-r">$49,592</td></tr>
+        <tr data-v="170"><td class="ix">02</td><td>lasik eye surgery near me <span class="small">· Chicago</span></td><td class="r">170</td><td class="r">3.9</td><td class="r w-p">$4,492</td><td class="r w-r">$17,564</td></tr>
+        <tr data-v="110"><td class="ix">03</td><td>lasik cost chicago</td><td class="r">110</td><td class="r">2.5</td><td class="r w-p">$4,492</td><td class="r w-r">$11,365</td></tr>
+        <tr data-v="110"><td class="ix">04</td><td>prk near me <span class="small">· Chicago</span></td><td class="r">110</td><td class="r">2.5</td><td class="r w-p">$4,492</td><td class="r w-r">$11,365</td></tr>
+        <tr data-v="90"><td class="ix">05</td><td>lasik schaumburg</td><td class="r">90</td><td class="r">2.1</td><td class="r w-p">$4,492</td><td class="r w-r">$9,298</td></tr>
+        <tr data-v="70"><td class="ix">06</td><td>best lasik chicago</td><td class="r">70</td><td class="r">1.6</td><td class="r w-p">$4,492</td><td class="r w-r">$7,232</td></tr>
+        <tr data-v="70"><td class="ix">07</td><td>lasik near me <span class="small">· Chicago</span></td><td class="r">70</td><td class="r">1.6</td><td class="r w-p">$4,492</td><td class="r w-r">$7,232</td></tr>
+        <tr data-v="30"><td class="ix">08</td><td>laser eye surgery near me <span class="small">· Chicago</span></td><td class="r">30</td><td class="r">0.7</td><td class="r w-p">$4,492</td><td class="r w-r">$3,099</td></tr>
+        <tr data-v="20"><td class="ix">09</td><td>smile eye surgery chicago</td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$4,492</td><td class="r w-r">$2,066</td></tr>
+        <tr data-v="20"><td class="ix">10</td><td>prk chicago</td><td class="r">20</td><td class="r">0.5</td><td class="r w-p">$4,492</td><td class="r w-r">$2,066</td></tr>
+        <tr data-v="10"><td class="ix">11</td><td>lasik surgeon chicago</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">12</td><td>icl chicago</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">13</td><td>lasik surgeon near me <span class="small">· Chicago</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">14</td><td>evo icl near me <span class="small">· Chicago</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">15</td><td>icl surgery near me <span class="small">· Chicago</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">16</td><td>smile eye surgery near me <span class="small">· Chicago</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">17</td><td>refractive lens exchange near me <span class="small">· Chicago</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">18</td><td>lasik highland park il</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">19</td><td>lasik skokie</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">20</td><td>lasik near me <span class="small">· Highland Park</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">21</td><td>lasik eye surgery near me <span class="small">· Highland Park</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">22</td><td>laser eye surgery near me <span class="small">· Highland Park</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">23</td><td>prk near me <span class="small">· Highland Park</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">24</td><td>lasik hoffman estates</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">25</td><td>lasik barrington</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">26</td><td>lasik near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">27</td><td>lasik eye surgery near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">28</td><td>laser eye surgery near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">29</td><td>lasik surgeon near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">30</td><td>evo icl near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">31</td><td>icl surgery near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">32</td><td>smile eye surgery near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">33</td><td>prk near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">34</td><td>refractive lens exchange near me <span class="small">· Hoffman Estates</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">35</td><td>lasik arlington heights</td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">36</td><td>lasik near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">37</td><td>lasik eye surgery near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">38</td><td>laser eye surgery near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">39</td><td>lasik surgeon near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">40</td><td>evo icl near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">41</td><td>icl surgery near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+        <tr data-v="10"><td class="ix">42</td><td>prk near me <span class="small">· Arlington Heights</span></td><td class="r">10</td><td class="r">0.2</td><td class="r w-p">$4,492</td><td class="r w-r">$1,033</td></tr>
+      </tbody>
+    </table></div>
+    <p class="small">Search volumes: DataForSEO, Google Ads search volume for Illinois (searches naming Chicago or a suburb) and for Chicago, Highland Park, Hoffman Estates and Arlington Heights (near me searches), November 14, 2026. Customers and revenue are estimates.</p>
+    <p class="small">Only cash-pay vision correction is counted. Left out to keep this conservative: “ophthalmologist chicago” (1,000 a month) and “eye surgery chicago” (210 a month), which are mostly insurance visits and cataract care, and blepharoplasty searches (“blepharoplasty chicago”, 170 a month; “eyelid surgery chicago”, 70 a month), which start counting when Ziplift launches in Q1 2027. Google counts “lasik eye surgery chicago” and “laser eye surgery chicago” as the same search as “lasik chicago”, and “lasik doctors near me” as the same as “lasik eye surgery near me”, so each is counted once. Searches with no measurable volume, such as “evo icl chicago” and “lasik north shore”, are not listed.</p>
+  </div>
+  <script>
+  (function(){var s=document.getElementById('w-slider');if(!s)return;var R=0.023,f=function(n){return '$'+Math.round(n).toLocaleString('en-US')};
+   s.addEventListener('input',function(){var p=+s.value,t=0;document.getElementById('w-price').textContent=f(p);
+    document.querySelectorAll('.w-tbl tr[data-v]').forEach(function(r){var c=+r.dataset.v*R;t+=c*p;r.querySelector('.w-p').textContent=f(p);r.querySelector('.w-r').textContent=f(c*p)});
+    document.getElementById('w-total').textContent=f(t)})})();
+  </script>
+</section>
+
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Part 3 · Value by office</p>
+    <h2>What each office could gain.</h2>
+    <p class="sub">The same math as above, split by the searches each office would win. Searches that name a town go to the nearest office, and &ldquo;near me&rdquo; searches go to the city they come from.</p>
+
+    <div class="bars" role="img" aria-label="Estimated added revenue a month: Chicago $118,813, Hoffman Estates $20,663, Arlington Heights $8,265, Highland Park $6,199">
+      <div class="brow"><span>Chicago</span><i style="--w:100%"></i><b class="num">$118,813</b></div>
+      <div class="brow"><span>Hoffman Estates</span><i style="--w:17.4%"></i><b class="num">$20,663</b></div>
+      <div class="brow"><span>Arlington Heights</span><i style="--w:7%"></i><b class="num">$8,265</b></div>
+      <div class="brow"><span>Highland Park</span><i style="--w:5.2%"></i><b class="num">$6,199</b></div>
+    </div>
+    <p class="small" style="margin:6px 0 26px">Estimated added revenue a month at $4,492 a patient. The dashed line is the plan, $3,000 a month. Every office clears it.</p>
+
+    <div class="offices">
+      <article class="office">
+        <div class="oh"><h3>Chicago</h3><span class="tag pick">Our pick to start</span></div>
+        <p class="addr">1725 W Harrison St, Illinois Medical District</p>
+        <div class="kpis">
+          <div><b class="num">1,150</b><span>searches a month</span></div>
+          <div><b class="num">26</b><span>patients a month</span></div>
+          <div class="g"><b class="num">$118,813</b><span>a month</span></div>
+        </div>
+        <ul class="facts">
+          <li class="bad"><b>Google map for &ldquo;lasik chicago&rdquo; (480 a month):</b> Kraff Eye Institute, LasikPlus and SharpeVision. You&rsquo;re not in the map or the top 10.</li>
+          <li class="mid"><b>AI:</b> ChatGPT and Gemini name you. Perplexity doesn&rsquo;t, and it gives your address as 259 E Erie St.</li>
+          <li class="mid"><b>AI Score 45</b> (Chicago average 37). Listed on 4 of 24 directories we check. No doctors listed on the profile.</li>
+          <li class="good"><b>4.5 stars</b> from 48 reviews, 75% answered.</li>
+        </ul>
+        <p class="why">Three quarters of all the demand, and the office with the most open time. The plan pays for itself 40 times over here.</p>
+      </article>
+
+      <article class="office">
+        <div class="oh"><h3>Hoffman Estates</h3><span class="tag">Busiest office</span></div>
+        <p class="addr">1585 Barrington Rd, Bldg 2</p>
+        <div class="kpis">
+          <div><b class="num">200</b><span>searches a month</span></div>
+          <div><b class="num">4.6</b><span>patients a month</span></div>
+          <div class="g"><b class="num">$20,663</b><span>a month</span></div>
+        </div>
+        <ul class="facts">
+          <li class="bad"><b>Google map for &ldquo;lasik near me&rdquo; in Hoffman Estates:</b> LasikPlus, Kovach Eye Institute and Vision One. You&rsquo;re not shown.</li>
+          <li class="mid"><b>AI:</b> Gemini names you. ChatGPT and Perplexity don&rsquo;t.</li>
+          <li class="bad"><b>4.0 stars</b> from 300 reviews, and only 56% answered in the past year.</li>
+          <li class="mid"><b>&ldquo;lasik schaumburg&rdquo;</b> alone is 90 searches a month, next door.</li>
+        </ul>
+        <p class="why">The best second office. Replying to every review in your voice is the fastest fix for the rating you mentioned.</p>
+      </article>
+
+      <article class="office">
+        <div class="oh"><h3>Arlington Heights</h3><span class="tag">Newest office</span></div>
+        <p class="addr">1602 Central Rd</p>
+        <div class="kpis">
+          <div><b class="num">80</b><span>searches a month</span></div>
+          <div><b class="num">1.8</b><span>patients a month</span></div>
+          <div class="g"><b class="num">$8,265</b><span>a month</span></div>
+        </div>
+        <ul class="facts">
+          <li class="bad"><b>AI:</b> ChatGPT, Gemini and Perplexity don&rsquo;t name this office at all (checked Nov 14).</li>
+          <li class="bad"><b>14 patient questions</b> in the last 30 days, none answered. No Google posts.</li>
+          <li class="bad"><b>Google map for &ldquo;lasik near me&rdquo;:</b> Vision One (two offices) and LasikPlus.</li>
+          <li class="good"><b>4.6 stars</b> from 50 reviews. Patients like it once they find it.</li>
+        </ul>
+        <p class="why">The biggest gap to close. AI Score 27. Its Google description still mentions the former Northwest Ophthalmology Associates.</p>
+      </article>
+
+      <article class="office">
+        <div class="oh"><h3>Highland Park</h3><span class="tag ok">Strongest today</span></div>
+        <p class="addr">806 Central Ave, Ste 300</p>
+        <div class="kpis">
+          <div><b class="num">60</b><span>searches a month</span></div>
+          <div><b class="num">1.4</b><span>patients a month</span></div>
+          <div class="g"><b class="num">$6,199</b><span>a month</span></div>
+        </div>
+        <ul class="facts">
+          <li class="good"><b>#1 in the Google map</b> for &ldquo;lasik near me&rdquo; in Highland Park.</li>
+          <li class="good"><b>AI:</b> ChatGPT, Gemini and Perplexity all name you.</li>
+          <li class="mid"><b>AI Score 36.</b> 4.5 stars from 110 reviews, but only 1 new review in the last 30 days.</li>
+        </ul>
+        <p class="why">Already in good shape, with the smallest search demand. If the goal is filling this office, pairing it with the Ziplift launch in Q1 2027 makes more sense than a pilot now.</p>
+      </article>
+    </div>
+
+    <div class="pickbox">
+      <h3>Why Chicago first</h3>
+      <p>It holds 1,150 of the 1,490 searches, it has the most open appointment time, and the map there is winnable: you already rank #1 for &ldquo;Intraocular Lenses Chicago&rdquo; and &ldquo;Contoura Chicago.&rdquo; It works best if a refractive surgeon can hold a regular consult day there. If that&rsquo;s not possible yet, start with Hoffman Estates. We&rsquo;re glad to walk Dr. Majmudar through either choice, and Steve Lee, our founder, can join that call.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Part 4 · How this fits with Studio 3</p>
+    <h2>Studio 3 keeps the website. We cover what it doesn&rsquo;t reach.</h2>
+    <p class="sub">Studio 3&rsquo;s October report shows good work: inquiries up 129% on last year, and first-page wins for searches like &ldquo;LASIK Highland Park IL.&rdquo; Their report also says organic traffic is softer than last year as Google and AI change how patients research. That shift is where we work.</p>
+    <div class="tw"><table class="tbl cmp">
+      <thead><tr><th>Area</th><th>Studio 3 today</th><th>What we add</th></tr></thead>
+      <tbody>
+        <tr><td>Website</td><td>Built and runs chicagocornea.com. New articles and page updates every month.</td><td>Briefs for Studio 3 to publish: answer pages for the questions patients ask AI, plus doctor and office code that AI can read. No second website.</td></tr>
+        <tr><td>Google rankings</td><td>Blue-link wins for named searches. &ldquo;LASIK Highland Park IL&rdquo; and &ldquo;LASIK Hoffman Estates&rdquo; are both #1.</td><td>The searches with the most volume. Those two get about 10 searches a month each. &ldquo;lasik chicago&rdquo; gets 480, and its map belongs to three competitors.</td></tr>
+        <tr><td>Google map, per office</td><td>Not in the October report.</td><td>All four Google profiles: posts, review replies in your voice, answers to patient questions, geotagged photos and a review QR code.</td></tr>
+        <tr><td>Listings beyond Google</td><td>Not in the October report.</td><td>One verified record synced to 40+ directories and health sites. Fixes errors like Perplexity&rsquo;s wrong Chicago address.</td></tr>
+        <tr><td>AI answers</td><td>Pages written to be easier for AI to read.</td><td>Getting each office named by ChatGPT, Gemini, Perplexity and Google AI, and measuring it every month. Guaranteed in 90 days.</td></tr>
+        <tr><td>Press</td><td>&ndash;</td><td>A press release every quarter on real news sites, starting with Ziplift in Q1 2027.</td></tr>
+        <tr><td>Reporting</td><td>Inquiries, traffic and rankings.</td><td>How often each AI names each office. Read it next to Studio 3&rsquo;s inquiry numbers.</td></tr>
+      </tbody>
+    </table></div>
+    <div class="flow" style="margin-top:22px">
+      <div><h3>We plan</h3><p>We pick the target searches with you and send Studio 3 clear briefs: what to publish and what code to add.</p></div>
+      <div><h3>Studio 3 builds</h3><p>They keep your website and publish our briefs. No overlap, and nothing you pay for twice.</p></div>
+      <div><h3>Julia approves</h3><p>You&rsquo;re our day-to-day contact. Nothing goes live without your OK.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="eyebrow">Part 5 · The plan</p>
+    <h2>Own Your Market, for your pilot office.</h2>
+    <div class="planbox">
+      <div class="pl">
+        <span class="tier">Our recommendation</span>
+        <h3>Own Your Market</h3>
+        <span class="price num">$3,000<small>/mo per office</small></span>
+        <p class="multi"><b>Multi-location discounts</b> are available if you decide to move forward with more than one office.</p>
+      </div>
+      <ul>
+        <li>Verified Local AI Registry record, synced to 40+ directories</li>
+        <li>Google profile run for you: posts, review replies, patient questions, geotagged photos</li>
+        <li>A review QR code for the front desk</li>
+        <li>Topical map, answer pages and technical fixes, published through Studio 3</li>
+        <li>Quality links and a press release every quarter</li>
+        <li>Monthly report on how often each AI names you</li>
+        <li>Page one of Google and named by AI within 90 days, or we keep working for free</li>
+        <li>No competing practice signed in that office&rsquo;s area</li>
+      </ul>
+    </div>
+
+    <h3 style="margin:34px 0 10px">What $3,000 is next to each office&rsquo;s estimate</h3>
+    <div class="tw"><table class="demand">
+      <thead><tr><th>Office</th><th class="r">Added revenue/mo</th><th class="r">Plan/mo</th><th class="r">Plan as share</th><th class="r">Return</th></tr></thead>
+      <tbody>
+        <tr><td><b>Chicago</b></td><td class="r">$118,813</td><td class="r">$3,000</td><td class="r">2.5%</td><td class="r"><b>40&times;</b></td></tr>
+        <tr><td>Hoffman Estates</td><td class="r">$20,663</td><td class="r">$3,000</td><td class="r">14.5%</td><td class="r">6.9&times;</td></tr>
+        <tr><td>Arlington Heights</td><td class="r">$8,265</td><td class="r">$3,000</td><td class="r">36.3%</td><td class="r">2.8&times;</td></tr>
+        <tr><td>Highland Park</td><td class="r">$6,199</td><td class="r">$3,000</td><td class="r">48.4%</td><td class="r">2.1&times;</td></tr>
+      </tbody>
+    </table></div>
+    <p class="sub" style="margin-top:14px">One LASIK patient at the $4,492 national average covers a month of the plan with $1,492 left over. Your Google LASIK test booked one or two surgeries on $3,500 of spend. This keeps working after the budget stops.</p>
+
+    <ul class="terms" style="margin-top:24px">
+      <li><b>Month to month.</b> Cancel anytime.</li>
+      <li><b>No setup fee.</b> The monthly price is the whole price.</li>
+      <li><b>90-day guarantee.</b> Page one and named by AI, or we keep working for free.</li>
+      <li><b>Add offices anytime.</b> Multi-location discounts apply.</li>
+    </ul>
+    <p class="small" style="margin-top:16px">Our guarantee needs two things from your side: Studio 3 publishing what we send, and drafts approved within 3 business days.</p>
+  </div>
+</section>
+
+<section class="dark" id="start">
+  <div class="wrap">
+    <p class="eyebrow" style="color:#9FB4FF">Ready when you are</p>
+    <h2>Pick your pilot office.</h2>
+    <p class="sub">Choose an office and send it to me. We start onboarding with you and Studio 3 the same week.</p>
+    <div class="seg dk" role="group" aria-label="Pilot office">
+      <button type="button" data-o="Chicago" aria-pressed="true">Chicago</button><button type="button" data-o="Hoffman Estates" aria-pressed="false">Hoffman Estates</button><button type="button" data-o="Arlington Heights" aria-pressed="false">Arlington Heights</button><button type="button" data-o="Highland Park" aria-pressed="false">Highland Park</button>
+    </div>
+    <div class="choice" aria-live="polite">
+      <div>
+        <div class="nm" id="cNm">Own Your Market · Chicago</div>
+        <div class="big num">$3,000<small>/mo</small></div>
+        <p id="cTx">Estimated added revenue: $118,813 a month.</p>
+      </div>
+      <a class="paybtn" id="go" href="#">Start the pilot &rarr;</a>
+    </div>
+    <p class="sig">Questions? Reply to my email or text me anytime.<br><b>Bridgette DeBrino</b> · VP, Marketing and Sales, Local AI Registry</p>
+  </div>
+</section>
+
+<section class="src">
+  <div class="wrap">
+    <h3>Sources</h3>
+    <ul>
+      <li>Search volumes and cost per click: DataForSEO, Google Ads search volume for Illinois, Chicago, Highland Park, Hoffman Estates and Arlington Heights, November 14, 2026.</li>
+      <li>Google map and page-one results: DataForSEO live Google results, run from Chicago (&ldquo;lasik chicago&rdquo;) and from Highland Park, Hoffman Estates and Arlington Heights (&ldquo;lasik near me&rdquo;), desktop, November 14, 2026.</li>
+      <li>AI Scores, ratings, AI mentions and directory checks: Local AI Registry listings for <a href="https://localairegistry.com/biz/il/chicago/chicago-cornea-consultants-chicago-il">Chicago</a>, <a href="https://localairegistry.com/biz/il/highland-park/chicago-cornea-consultants-highland-park-il">Highland Park</a>, <a href="https://localairegistry.com/biz/il/hoffman-estates/chicago-cornea-consultants-hoffman-estates-il">Hoffman Estates</a> and <a href="https://localairegistry.com/biz/il/arlington-heights/chicago-cornea-consultants-arlington-heights-il">Arlington Heights</a>, read November 14, 2026.</li>
+      <li>Average price: <a href="https://americanrefractivesurgerycouncil.org/how-much-does-lasik-eye-surgery-cost/">American Refractive Surgery Council</a>, June 2026. Conversion rate: <a href="https://www.ruleranalytics.com/wp-content/uploads/Lead-conversion-rates-by-industry.pdf">Ruler Analytics</a>.</li>
+      <li>Studio 3 figures: their October 2026 monthly report, shared by Julia. Ad results and goals: our call with Julia on November 13, 2026.</li>
+    </ul>
+  </div>
+</section>
+
+<footer><div class="wrap">Prepared for Chicago Cornea Consultants. Estimates, not promises: revenue depends on your conversion and case mix. © 2026 Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618</div></footer>
+
+<script>
+(()=>{
+const V={'Chicago':118813,'Hoffman Estates':20663,'Arlington Heights':8265,'Highland Park':6199};
+const M=n=>'$'+Math.round(n).toLocaleString('en-US');
+const go=document.getElementById('go');let cur='Chicago';
+function pick(o){cur=o;document.querySelectorAll('.seg.dk button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.o===o));
+  document.getElementById('cNm').textContent='Own Your Market · '+o;
+  document.getElementById('cTx').textContent='Estimated added revenue: '+M(V[o])+' a month.';
+  go.href='mailto:bridgette@localairegistry.com?subject='+encodeURIComponent('Chicago Cornea: start the Own Your Market pilot in '+o)+'&body='+encodeURIComponent('Hi Bridgette,\n\nWe would like to start Own Your Market ($3,000/mo) at our '+o+' office.\n\n');}
+document.querySelectorAll('.seg.dk button').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.o)));
+pick('Chicago');
+})();
+</script>
+</body>
+</html>
