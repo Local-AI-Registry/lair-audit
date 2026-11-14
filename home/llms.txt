@@ -46,8 +46,14 @@
 ## Original research and news
 
 - https://localairegistry.com/answer-watch/
+- https://localairegistry.com/journal/what-is-an-ai-score/
+- https://localairegistry.com/methodology/
 - https://localairegistry.com/news/
 - https://localairegistry.com/news/the-199-botox-studio-on-newport-boulevard/
+- https://localairegistry.com/proof/the-convergence-white-paper/
+- https://localairegistry.com/research/
+- https://localairegistry.com/research/how-often-ai-recommends-your-business/
+- https://localairegistry.com/research/local-answer-gap/
 - https://localairegistry.com/statistics/
 
 ## Best-of guides, awards and the registry
@@ -71,6 +77,7 @@
 - https://localairegistry.com/compare/yext/
 - https://localairegistry.com/guarantee/
 - https://localairegistry.com/legal/baa/
+- https://localairegistry.com/legal/privacy/
 - https://localairegistry.com/legal/terms/
 - https://localairegistry.com/pricing/
 - https://localairegistry.com/tools/
@@ -83,12 +90,20 @@
 
 ## The company
 
+- https://localairegistry.com/about/
 - https://localairegistry.com/badge/
 - https://localairegistry.com/careers/
+- https://localairegistry.com/contact/
+- https://localairegistry.com/data-policy/
 - https://localairegistry.com/experts/
 - https://localairegistry.com/founder-story/
 - https://localairegistry.com/giving-back/
+- https://localairegistry.com/opt-out/
+- https://localairegistry.com/press/
+- https://localairegistry.com/report-an-error/
 - https://localairegistry.com/team/
 - https://localairegistry.com/team/aneesh-patel/
 - https://localairegistry.com/team/steve-lee/
+- https://localairegistry.com/team/tess-mauricio/
+- https://localairegistry.com/trust/
 - https://localairegistry.com/works-with/
