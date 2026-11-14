@@ -122,8 +122,9 @@ pre.out{background:#0B1A2E;color:#E7ECF6;border-radius:12px;padding:16px;overflo
 @media (prefers-reduced-motion:reduce){.lgtrack{animation:none;flex-wrap:wrap;width:auto}.lgtrack [data-x]{display:none}}
 .lg{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:14px;background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.06),inset 0 0 0 1px rgba(11,26,46,.06);white-space:nowrap}
 .lg svg{width:22px;height:22px;fill:#0B1A2E;opacity:.78;flex:none}.lg b{font:600 15px/1 "Bricolage Grotesque",system-ui,sans-serif;color:#0B1A2E}
-.fgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:34px}
-@media(max-width:1000px){.fgrid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.fgrid{grid-template-columns:1fr}}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+.fc.ft{gap:8px;padding:18px}.fc.ft b{font-size:17px}.fc.fall{background:#1F4FE0;justify-content:center}.fc.fall b{color:#fff}.fc.fall span{color:rgba(255,255,255,.88);font-weight:600}
+@media(max-width:600px){.fgrid{gap:8px}.fc.ft{padding:12px 8px;align-items:center;text-align:center;gap:6px}.fc.ft .fic{width:44px;height:44px}.fc.ft b{font-size:13.5px;line-height:1.2}.fc.ft>span{display:none}.fc.fall>span{display:block;font-size:12px}}
 .fc{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:18px;background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.05),inset 0 0 0 1px rgba(11,26,46,.06);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
 .fc:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,26,46,.08),inset 0 0 0 1px rgba(31,79,224,.25)}
 .fc i{font:700 11px/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.14em;color:#FF5A3C;font-style:normal}
@@ -149,23 +150,44 @@ pre.out{background:#0B1A2E;color:#E7ECF6;border-radius:12px;padding:16px;overflo
 @keyframes hfloat{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-14px) rotate(var(--r,0deg))}}
 @media (prefers-reduced-motion:reduce){.giveband .hrt{animation:none}}
 .giveband .wrap{position:relative}
-.vsum{display:grid;grid-template-columns:minmax(0,1.25fr) auto minmax(0,1fr);gap:18px;align-items:stretch;margin-top:22px}
-.vold,.vnew{border-radius:22px;padding:18px 18px 16px}
-.vold{background:#fff;border:1px solid rgba(155,28,28,.18)}
-.vhd{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:10px}
-.vhd b{font:700 12px/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase}.vhd span{font:600 13px/1.3 "Hanken Grotesk",sans-serif;color:#5A6577}
-.vold .vhd b{color:#9B1C1C}.vnew .vhd b{color:#fff}.vnew .vhd span{color:rgba(255,255,255,.8)}
-.vold ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px 14px}
-.vold li{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:12px;background:#FBF3F2}
-.vold s{font:600 15px/1.2 "Bricolage Grotesque",system-ui,sans-serif;color:#7A1F1F;text-decoration:line-through;text-decoration-color:#9B1C1C;text-decoration-thickness:2px}
-.vx{flex:none;width:20px;height:20px;border-radius:50%;background:#9B1C1C;display:grid;place-items:center}.vx svg{width:11px;height:11px;stroke:#fff;stroke-width:2.6;stroke-linecap:round;fill:none}
-.veq{align-self:center;font:600 54px/1 "Cormorant",serif;color:#0B1A2E}
-.vnew{background:#1F4FE0;color:#fff;display:flex;flex-direction:column;box-shadow:0 20px 40px -24px rgba(31,79,224,.8)}
-.vone{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;background:rgba(255,255,255,.1);border-radius:16px;padding:18px}
-.vone strong{font:600 clamp(26px,2.6vw,34px)/1.1 "Cormorant",serif}.vone p{margin:0;font-size:15px;line-height:1.5;color:rgba(255,255,255,.88)}
-.vck{width:34px;height:34px;border-radius:50%;background:#fff;display:grid;place-items:center}.vck svg{width:18px;height:18px;stroke:#1F4FE0;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;fill:none}
-.veq .vd{display:none}@media(max-width:860px){.vsum{grid-template-columns:1fr}.veq{justify-self:center;font-size:44px}.veq .vr{display:none}.veq .vd{display:inline}}
-@media(max-width:420px){.vold ol{grid-template-columns:1fr}}
+.vsum{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:22px;align-items:stretch}
+.vold{background:#fff;border:1px solid rgba(15,27,45,.1);border-radius:26px;padding:22px 24px}
+.vhd b{font:600 12px/1 "Hanken Grotesk",system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#6B7689}
+.vold ol{list-style:none;margin:14px 0 0;padding:0}
+.vold li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,45,.08)}
+.vtl{display:flex;flex-direction:column;gap:2px;min-width:0}.vtl b{font:700 20px/1.1 "Bricolage Grotesque",system-ui,sans-serif;color:#9AA3B2;letter-spacing:-.01em}.vtl i{font:500 13px/1.2 "Hanken Grotesk",sans-serif;font-style:normal;color:#6B7689}
+.vpr{font:700 20px/1 "Bricolage Grotesque",system-ui,sans-serif;color:#B4232A;white-space:nowrap;font-variant-numeric:tabular-nums}.vpr small,.vtot small{font-size:.6em;font-weight:600}
+.vtot{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;padding-top:16px;margin-top:4px;border-top:2px solid #0B1A2E;font:500 15px/1.3 "Hanken Grotesk",sans-serif;color:#3D4A5C}
+.vtot strong{font:800 clamp(34px,4vw,46px)/1 "Bricolage Grotesque",system-ui,sans-serif;color:#B4232A;letter-spacing:-.02em}
+.vnew{background:#0B1A2E;color:#fff;border-radius:26px;padding:26px 24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 24px 50px -28px rgba(11,26,46,.7)}
+.vnew>strong{font:700 15px/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.02em;color:#9DB3F5}.vlogo{width:40px;height:40px}
+.vnew h3{margin:0;font:600 clamp(30px,3.2vw,42px)/1.05 "Cormorant",serif;color:#fff;text-wrap:balance}
+.vchips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}.vchips li{padding:8px 13px;border-radius:999px;border:1.5px solid rgba(255,255,255,.28);font:600 14px/1 "Hanken Grotesk",sans-serif}
+.vchips li:last-child{border-color:#FF5A3C}
+.vnew p{margin:auto 0 0;font-size:16px;line-height:1.5;color:rgba(255,255,255,.85)}
+.vsrc{grid-column:1/-1;margin:0;font-size:12.5px;line-height:1.5;color:#6B7689;text-align:center}
+@media(max-width:860px){.vsum{grid-template-columns:1fr}}
+.fic{width:56px;height:56px;overflow:visible;flex:none}
+.fic .lt{fill:#E7EDFC;stroke:#1F4FE0;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.fic .ln{fill:none;stroke:#1F4FE0;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.fic .lw{fill:#fff;stroke:#1F4FE0;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.fic g,.fic path,.fic circle{transform-box:fill-box;transform-origin:center}
+@media (prefers-reduced-motion:no-preference){
+.ia-pop{animation:iaPop 3s ease-in-out infinite}.ia-float{animation:iaFloat 3.6s ease-in-out infinite}.ia-pulse{animation:iaPulse 2.2s ease-in-out infinite}
+.ia-bar{stroke-dasharray:44;animation:iaBar 3s linear infinite}.ia-sweep{animation:iaSweep 3.4s ease-in-out infinite}.ia-blink{animation:iaBlink 1.1s steps(1) infinite}
+.ia-twinkle{animation:iaTw 3s ease-in-out infinite}.ia-bounce{animation:iaBounce 2.4s ease-in-out infinite}.ia-slide{animation:iaSlide 3.2s ease-in-out infinite}
+.ia-swing{transform-origin:50% 0;animation:iaSwing 3s ease-in-out infinite}.ia-spin{animation:iaSpin 4s linear infinite}}
+@keyframes iaPop{0%,20%{transform:scale(.4);opacity:0}32%,85%{transform:scale(1);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes iaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes iaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+@keyframes iaBar{from{stroke-dashoffset:44}to{stroke-dashoffset:0}}
+@keyframes iaSweep{0%,100%{transform:translate(0,0)}50%{transform:translate(-8px,-6px)}}
+@keyframes iaBlink{50%{opacity:0}}
+@keyframes iaTw{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.08) rotate(8deg)}}
+@keyframes iaBounce{0%,100%{transform:translateY(0)}45%{transform:translateY(-5px)}}
+@keyframes iaSlide{0%,15%{transform:translateX(10px);opacity:0}35%,85%{transform:none;opacity:1}100%{opacity:0}}
+@keyframes iaSwing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes iaSpin{to{transform:rotate(360deg)}}
 
 .soon{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 "Bricolage Grotesque",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:#FFE9E4;color:#C2401F}
 .soonbox{border:2px dashed rgba(11,26,46,.16);border-radius:20px;padding:22px;background:rgba(255,255,255,.5)}
@@ -219,9 +241,12 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
 .stg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
 .stg div{background:#fff;border:1px solid rgba(15,27,45,.1);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px}
 .stg b{font:700 30px/1 "Bricolage Grotesque",system-ui,sans-serif;color:#1F4FE0;letter-spacing:-.01em}
-.stg span{font-size:14px;line-height:1.4;color:#3D4A5C}
+.stg span{font-size:14px;line-height:1.4;color:#3D4A5C}.stg small{font-size:11.5px;letter-spacing:.02em;color:#6B7689;margin-top:auto}.stg.big b{font-size:40px}@media(max-width:420px){.stg.big b{font-size:32px}}
 .csres{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.csres div{background:#F5F7FB;border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
 .csres b{font:700 18px/1.1 "Bricolage Grotesque",system-ui,sans-serif;color:#0F1B2D}.csres span{font-size:12px;line-height:1.3;color:#3D4A5C}
+.gch{width:100%;height:auto;display:block;overflow:visible}.gch .gst{font:700 11px "Hanken Grotesk",sans-serif;fill:#1F4FE0;letter-spacing:.04em}.gch .gax{font:600 10.5px "Hanken Grotesk",sans-serif;fill:#6B7689}.gch .gsm{font:800 9px "Hanken Grotesk",sans-serif;fill:#8A6D00;letter-spacing:.12em}
+@media (prefers-reduced-motion:no-preference){.gch .gl{stroke-dasharray:600;stroke-dashoffset:600;animation:gdraw 2.2s ease-out forwards}}@keyframes gdraw{to{stroke-dashoffset:0}}
+.glg{display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.35;color:#3D4A5C}.glg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:1px}.glg b{font:700 15px "Bricolage Grotesque",sans-serif;color:#0B1A2E;margin-right:4px}
 .csq{margin:0;padding:10px 12px;border-left:3px solid #1F4FE0;font-style:italic;color:#3D4A5C;font-size:14px}
 .medrev{display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:14px;background:#F5F7FB;margin:0 0 20px;font-size:14px;color:#3D4A5C}
 .medrev b{color:#0F1B2D}
@@ -229,7 +254,7 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": ["Organization", "ProfessionalService"], "@id": "https://localairegistry.com/#org", "name": "Local AI Registry", "url": "https://localairegistry.com/", "logo": "https://localairegistry.com/brand/logo.png", "telephone": "+1-213-931-5633", "address": {"@type": "PostalAddress", "streetAddress": "9891 Irvine Center Dr", "addressLocality": "Irvine", "addressRegion": "CA", "postalCode": "92618", "addressCountry": "US"}, "founder": [{"@id": "https://localairegistry.com/team/steve-lee/#person"}, {"@id": "https://localairegistry.com/team/aneesh-patel/#person"}], "employee": [{"@type": "Person", "name": "Eric Sim", "jobTitle": "Chief Operating Officer"}, {"@type": "Person", "name": "Clinton Adeleke", "jobTitle": "Chief Product Officer"}, {"@type": "Person", "name": "Kerrie Quinby", "jobTitle": "VP of People and Partnerships"}, {"@type": "Person", "name": "Bridgette DeBrino", "jobTitle": "VP of Marketing and Sales"}], "foundingDate": "2026", "slogan": "Named in AI in 90 days. Guaranteed.", "alternateName": ["LAIR", "localairegistry.com"], "legalName": "Blind LLC", "areaServed": {"@type": "Country", "name": "United States"}, "brand": {"@type": "Brand", "name": "Local AI Blueprint"}, "email": "hello@localairegistry.com", "knowsAbout": [{"@type": "Thing", "name": "Generative engine optimization", "sameAs": "https://en.wikipedia.org/wiki/Generative_engine_optimization"}, {"@type": "Thing", "name": "Search engine optimization", "sameAs": "https://en.wikipedia.org/wiki/Search_engine_optimization"}, {"@type": "Thing", "name": "Local search (Internet)", "sameAs": "https://en.wikipedia.org/wiki/Local_search_(Internet)"}, {"@type": "Thing", "name": "Large language model", "sameAs": "https://en.wikipedia.org/wiki/Large_language_model"}, {"@type": "Thing", "name": "ChatGPT", "sameAs": "https://en.wikipedia.org/wiki/ChatGPT"}, {"@type": "Thing", "name": "Google Business Profile", "sameAs": "https://en.wikipedia.org/wiki/Google_Business_Profile"}, "AI visibility", "Answer engine optimization", "AI Score"], "sameAs": ["https://www.linkedin.com/company/local-ai-registry", "https://www.youtube.com/@localairegistry", "https://x.com/LocalAIRegistry", "https://www.instagram.com/localairegistry/", "https://www.facebook.com/profile.php?id=61591432116527", "https://www.tiktok.com/@localairegistry", "https://pinterest.com/localairegistry", "https://www.crunchbase.com/organization/local-ai-registry", "https://www.trustpilot.com/review/localairegistry.com", "https://www.saasworthy.com/product/local-ai-registry"]}, {"@type": "WebSite", "@id": "https://localairegistry.com/#website", "url": "https://localairegistry.com/", "name": "Local AI Registry", "publisher": {"@id": "https://localairegistry.com/#org"}}, {"@type": "WebPage", "@id": "https://localairegistry.com/legal/baa/#webpage", "url": "https://localairegistry.com/legal/baa/", "name": "HIPAA Business Associate Agreement (BAA) | Local AI Registry", "description": "Sign Local AI Registry's HIPAA Business Associate Agreement online. For healthcare practices: how we handle any protected health information, in plain language.", "isPartOf": {"@id": "https://localairegistry.com/#website"}, "inLanguage": "en-US", "datePublished": "2026-11-13", "dateModified": "2026-11-13", "breadcrumb": {"@id": "https://localairegistry.com/legal/baa/#breadcrumb"}, "publisher": {"@id": "https://localairegistry.com/#org"}}, {"@type": "BreadcrumbList", "@id": "https://localairegistry.com/legal/baa/#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://localairegistry.com/"}, {"@type": "ListItem", "position": 2, "name": "Business Associate Agreement", "item": "https://localairegistry.com/legal/baa/"}]}]}</script></head><body>
 <header class="top"><div class="wrap"><a class="logo" href="../../index.html" aria-label="Local AI Registry home"><svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 L94 88 L66 88 L50 58 L34 88 L6 88 Z" fill="#1F4FE0"/><path d="M50 8 L62 30 L38 30 Z" fill="#FF5A3C"/></svg>Local AI Registry</a>
-<nav class="main" aria-label="Main"><a href="../../solutions/index.html">Solutions</a><a href="../../signals/index.html">Features</a><a href="../../for/ai/index.html">Industries</a><a href="../../case-studies/index.html">Case studies</a><a href="https://localairegistry.com/research/">Research</a><a href="../../guide/index.html">Learn</a><a href="../../team/index.html">Team</a></nav>
+<nav class="main" aria-label="Main"><a href="../../registry/index.html">Search the registry</a><a href="../../news/index.html">News</a><a href="../../solutions/index.html">Solutions</a><a href="../../for/ai/index.html">Industries</a><a href="../../case-studies/index.html">Case studies</a><a href="https://localairegistry.com/research/">Research</a><a href="../../guide/index.html">Learn</a></nav>
 <a class="btn b hb" href="../../start/index.html">Get started</a></div></header><main class="wrap"><nav class="crumbs" aria-label="Breadcrumb"><a href="../../index.html">Home</a> / Business Associate Agreement</nav>
 <section class="hero"><div class="eyebrow">For healthcare practices</div><h1>HIPAA Business Associate <em>Agreement</em></h1></section>
 <div class="barebody"><p class="lead noprint">If you're a healthcare practice, sign our Business Associate Agreement online in about two minutes. We countersign and email you the executed copy within one business&nbsp;day.</p>
@@ -249,7 +274,7 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
 <div class="acts"><button class="btn c" type="button" id="b_send">Sign and send</button><button class="btn" type="button" id="b_print">Download a signed PDF</button></div>
 <p id="bmsg" role="status"></p>
 <p class="note">Signing opens an email to hello@localairegistry.com with your signature details and time stamp. Send it to complete signing. Questions? <a href="../../trust-center/index.html">Trust center</a> or (213)&nbsp;931-5633.</p>
-</form><div class="phleg" role="note">Yellow numbers are samples until real data is in</div></div><section class="band"><div><h2>Named in AI in 90 days. <em>Guaranteed.</em></h2><p>Tell us about your business and book a strategy call. We’ll show you what AI says about you today, live.</p></div>
+</form></div><section class="band"><div><h2>Named in AI in 90 days. <em>Guaranteed.</em></h2><p>Tell us about your business and book a strategy call. We’ll show you what AI says about you today, live.</p></div>
 <div class="acts"><a class="btn c" href="../../start/index.html">Get started</a><a class="btn ghost" href="tel:+12139315633">Call (213) 931-5633</a></div></section></main><footer class="site"><div class="wrap"><div class="ftop"><a class="logo" href="../../index.html"><svg width="28" height="28" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 L94 88 L66 88 L50 58 L34 88 L6 88 Z" fill="#1F4FE0"/><path d="M50 8 L62 30 L38 30 Z" fill="#FF5A3C"/></svg>Local AI Registry</a><p>Named in AI in 90 days. Guaranteed.</p><a class="btn c" href="../../start/index.html">Get started</a></div><div class="cols">
 <div><h5>Get found</h5><a href="../../start/index.html">Get started</a><a href="../../look-up/index.html">Look up your AI Score</a><a href="../../free-business-listing/index.html">Free business listing</a><a href="../../blueprint/index.html">AI search optimization</a><a href="../../guide/claim-your-business-in-chatgpt/index.html">Claim your business in ChatGPT</a><a href="../../solutions/index.html">Solutions</a><a href="../../signals/index.html">Features</a><a href="../../case-studies/index.html">Case studies</a><a href="../../works-with/index.html">Integrations</a><a href="../../compare/index.html">Compare</a><a href="../../pricing/index.html">Pricing</a><a href="../../blueprint/index.html">Local AI Blueprint™</a><a href="../../guarantee/index.html">90-day guarantee</a><a href="../../experts/index.html">Who trusts us</a><a href="../../tools/index.html">Free tools</a></div>
 <div><h5>Learn</h5><a href="../../guide/index.html">Start here</a><a href="../../guide/index.html">The complete guide</a><a href="../../signals/index.html">The 11 signals</a><a href="../../ai/index.html">By AI assistant</a><a href="../../glossary/index.html">Glossary</a><a href="https://localairegistry.com/research/">Research</a><a href="https://localairegistry.com/research/local-answer-gap/">The Local Answer Gap</a><a href="https://localairegistry.com/proof/the-convergence-white-paper/">The Convergence</a></div>
