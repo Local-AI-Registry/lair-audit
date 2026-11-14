@@ -814,9 +814,9 @@ function herRig(g,W,H0){
       const ax=V().crossVectors(fd,N).normalize();rotW(bb,ax,(opt.curl??.5)*(k===1?.7:1))}));
     /* left arm: bring it closer to her side (the source walk was made for a wider body) */
     const la=B('LeftArm');if(la){const fw=V().set(0,0,1).transformDirection(W.matrixWorld);rotW(la,fw,opt.adduct||0)}
-    st.palm=()=>{ha.getWorldPosition(pH);const c=m1.getWorldPosition(V()).add(pH).multiplyScalar(.5);return c.addScaledVector(palmN(),opt.pd||.03)};
+    st.palm=()=>{ha.getWorldPosition(pH);const c=m1.getWorldPosition(V()).add(pH).multiplyScalar(.5);const hd=B('RightHandMiddle1').getWorldPosition(V()).sub(pH).normalize();return c.addScaledVector(palmN(),opt.pd||.03).addScaledVector(hd,opt.pf||0)};
     m.updateMatrixWorld(true);
-  },hand:ha,head,el,phonePos(v){v.copy(st.palm())},handDir(v){ha.getWorldPosition(pH);el.getWorldPosition(pE);return v.copy(pH).sub(pE).normalize().add(tmp.set(0,1.3,0)).normalize()}};
+  },hand:ha,head,el,phonePos(v){v.copy(st.palm())},handDir(v){ha.getWorldPosition(pH);return v.copy(B('RightHandMiddle1').getWorldPosition(V())).sub(pH).normalize()}};
 }
 
 /* ---------------- copy bits ---------------- */
@@ -1048,7 +1048,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   const W=new THREE.Group();o.sc.add(W);const body=new THREE.Group();W.add(body);
   const add=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||body).add(m);return m};
   /* her: a rigged, textured character with a real walk cycle (loaded async; the intro opens on the phone screen) */
-  let HER=null;const HOPT={hand:V(.085,1.2,-.27),pole:V(.5,.7,.25),curl:-.25,look:.3,adduct:.28,ps:1,pd:.045};
+  let HER=null;const HOPT={hand:V(.085,1.2,-.27),pole:V(.5,.7,.25),curl:-.15,look:.3,adduct:.12,ps:1,pd:.05,pf:.035};
   if(THREE.GLTFLoader)new THREE.GLTFLoader().load('her.glb?v=claudia',g=>{HER=herRig(g,body,1.68)});
   /* her phone, held in the right hand, screen turned to her face */
   function phoneTex(kind){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
