@@ -151,6 +151,7 @@ input[type=range]{width:100%;accent-color:var(--blue);height:28px}
 .paybtn:hover{filter:brightness(1.06)}
 .alt-link{display:block;margin-top:14px;color:#9FB4FF;font-size:15px;background:none;border:0;padding:0;cursor:pointer;font-family:inherit;text-decoration:underline}
 @media (max-width:640px){.choice{grid-template-columns:1fr}.paybtn{text-align:center}}
+.codenote{margin:12px 0 0;color:#C3CBD9;font-size:15px}.codenote b{color:#fff;font-family:'Bricolage Grotesque',sans-serif;letter-spacing:.04em;background:rgba(255,255,255,.1);padding:2px 8px;border-radius:6px}
 .sig{margin-top:34px;color:#C3CBD9;font-size:15px}
 .sig b{color:#F4F1EA}
 footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
@@ -367,6 +368,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
       </div>
       <a class="paybtn" id="payBtn" href="#" target="_blank" rel="noopener">Start Authority &rarr;</a>
     </div>
+    <p class="codenote" id="codeNote" hidden></p>
     <button type="button" class="alt-link" id="swap">Or start with Own Your Market at $2,500/mo</button>
     <p class="sig">Questions? Reply to my email or text me anytime.<br><b>Bridgette DeBrino</b> · VP, Marketing and Sales, Local AI Registry</p>
   </div>
@@ -378,9 +380,11 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
 (()=>{
 /* ===== PAY LINKS: paste a Stripe Payment Link for each plan here ===== */
 const PAY={
-  own:'',   /* Own Your Market, $2,500/mo */
+  own:'https://buy.stripe.com/9B6fZhgrHesi5ia0YrejK01',   /* Own Your Market, $2,500/mo */
   auth:''   /* Authority, $3,500/mo */
 };
+/* Discount code each plan's checkout needs to reach the advocate price */
+const CODE={own:'LAIR500OFF',auth:''};
 const CONTACT='mailto:bridgette@localairegistry.com';
 const P={own:{nm:'Own Your Market',pr:2500,tx:'Verified record, directories, Google profile, reviews, press, procedure pages and technical fixes through Studio 3.'},
          auth:{nm:'Authority',pr:3500,tx:'Our recommendation. Everything in Own Your Market, plus videos, research explainers, editorials and weekly content.'}};
@@ -392,9 +396,10 @@ function pick(k){cur=k;$$('.plan').forEach(b=>b.setAttribute('aria-pressed',b.da
   const p=P[k],o=P[k==='auth'?'own':'auth'];
   $('#cNm').textContent=p.nm;$('#cPr').innerHTML=M(p.pr)+'<small>/mo</small>';$('#cTx').textContent=p.tx;
   const url=PAY[k];const btn=$('#payBtn');
-  if(url){btn.href=url;btn.target='_blank';btn.textContent='Start '+p.nm+' →'}
+  if(url){btn.href=CODE[k]?url+(url.includes('?')?'&':'?')+'prefilled_promo_code='+encodeURIComponent(CODE[k]):url;btn.target='_blank';btn.textContent='Start '+p.nm+' →'}
   else{btn.href=CONTACT+'?subject='+encodeURIComponent('Bloom: start '+p.nm+' at '+M(p.pr)+'/mo');btn.removeAttribute('target');btn.textContent='Start '+p.nm+' →'}
-  $('#swap').textContent='Or start with '+o.nm+' at '+M(o.pr)+'/mo';}
+  $('#swap').textContent='Or start with '+o.nm+' at '+M(o.pr)+'/mo';
+  const cn=$('#codeNote');if(url&&CODE[k]){cn.hidden=false;cn.innerHTML='Your advocate code <b>'+CODE[k]+'</b> brings checkout to '+M(p.pr)+'/mo. It should fill in for you; if not, enter it at checkout.'}else if(!url){cn.hidden=false;cn.textContent='Checkout for this plan is being set up. This button emails Bridgette to get you started.'}else cn.hidden=true;}
 $$('.plan').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.plan)));
 $('#swap').addEventListener('click',()=>pick(cur==='auth'?'own':'auth'));
 $('#diffonly').addEventListener('change',e=>$('#tbl').classList.toggle('diff',e.target.checked));
