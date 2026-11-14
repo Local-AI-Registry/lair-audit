@@ -124,7 +124,7 @@
   ],
   "price": {
     "value": 1000,
-    "label": "average Dr. Kipervas gave us per patient",
+    "label": "your average per patient",
     "source": "Laser & Cosmetic Center",
     "url": ""
   },
