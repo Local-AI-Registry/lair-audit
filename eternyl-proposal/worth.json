@@ -1,0 +1,20 @@
+{
+  "client": "Eternyl Beauty",
+  "rows": [
+    ["medical weight loss nyc", 590, ""],
+    ["dermal fillers nyc", 210, ""],
+    ["prp microneedling nyc", 210, ""],
+    ["botox upper east side", 170, ""],
+    ["best med spa nyc", 170, ""],
+    ["semaglutide nyc", 110, ""],
+    ["med spa upper east side", 70, ""],
+    ["weight loss injections nyc", 50, ""],
+    ["lip filler upper east side", 40, ""],
+    ["microneedling upper east side", 30, ""]
+  ],
+  "price": {"value": 527, "label": "average spend per US med spa visit",
+            "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
+            "url": "https://www.americanmedspa.org/blog/2024-medical-spa-state-of-the-industry-executive-report"},
+  "vol_source": "DataForSEO, Google Ads search volume, New York State, November 14, 2026",
+  "left_out": "Left out to keep this conservative: the city-wide “near me” searches in New York City (“botox near me”, 6,600 a month; “med spa near me”, 5,400; “lip filler near me”, 1,900), because most come from the other boroughs, and the broad head terms “botox nyc” (2,400) and “lip filler nyc” (1,300). These are the bigger prize once the foundation is in place."
+}
