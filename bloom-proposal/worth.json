@@ -1,0 +1,138 @@
+{
+ "client": "Bloom Facial Plastic and Aesthetic Surgery",
+ "rows": [
+  [
+   "plastic surgeon philadelphia",
+   480,
+   ""
+  ],
+  [
+   "breast augmentation philadelphia",
+   320,
+   ""
+  ],
+  [
+   "liposuction philadelphia",
+   260,
+   ""
+  ],
+  [
+   "rhinoplasty philadelphia",
+   170,
+   ""
+  ],
+  [
+   "mommy makeover philadelphia",
+   140,
+   ""
+  ],
+  [
+   "plastic surgeon bryn mawr",
+   110,
+   ""
+  ],
+  [
+   "facial plastic surgeon philadelphia",
+   70,
+   ""
+  ],
+  [
+   "eyelid surgery philadelphia",
+   70,
+   ""
+  ],
+  [
+   "breast lift philadelphia",
+   50,
+   ""
+  ],
+  [
+   "neck lift philadelphia",
+   30,
+   ""
+  ],
+  [
+   "face lift philadelphia",
+   20,
+   ""
+  ],
+  [
+   "plastic surgeon main line",
+   10,
+   ""
+  ],
+  [
+   "rhinoplasty main line",
+   10,
+   ""
+  ],
+  [
+   "liposuction near me",
+   70,
+   "Philadelphia"
+  ],
+  [
+   "breast augmentation near me",
+   50,
+   "Philadelphia"
+  ],
+  [
+   "rhinoplasty near me",
+   30,
+   "Philadelphia"
+  ],
+  [
+   "eyelid surgery near me",
+   20,
+   "Philadelphia"
+  ],
+  [
+   "mommy makeover near me",
+   20,
+   "Philadelphia"
+  ],
+  [
+   "facial plastic surgeon near me",
+   10,
+   "Philadelphia"
+  ],
+  [
+   "neck lift near me",
+   10,
+   "Philadelphia"
+  ],
+  [
+   "rhinoplasty near me",
+   10,
+   "Bryn Mawr"
+  ],
+  [
+   "breast augmentation near me",
+   10,
+   "Bryn Mawr"
+  ],
+  [
+   "eyelid surgery near me",
+   10,
+   "Bryn Mawr"
+  ],
+  [
+   "liposuction near me",
+   10,
+   "Bryn Mawr"
+  ],
+  [
+   "neck lift near me",
+   10,
+   "Bryn Mawr"
+  ]
+ ],
+ "price": {
+  "value": 4575,
+  "label": "low end of the 2024 average surgeon's fee for breast augmentation, the lowest-priced of the main procedures here (rhinoplasty starts at $7,500, neck lift at $7,500)",
+  "source": "American Society of Plastic Surgeons, 2024 Procedural Statistics, average surgeon/physician fees",
+  "url": "https://www.plasticsurgery.org/documents/news/statistics/2024/cosmetic-procedures-average-cost-2024.pdf"
+ },
+ "vol_source": "DataForSEO, Google Ads search volume for Pennsylvania (searches naming Philadelphia, Bryn Mawr or the Main Line) and for Philadelphia and Bryn Mawr (near me searches), November 13, 2026",
+ "left_out": "Left out to keep this conservative: Botox searches (\u201cbotox bryn mawr\u201d, 30 a month; \u201cbotox near me\u201d in Bryn Mawr, 20 a month), because injectables are priced far below surgery, and \u201cnose job philadelphia\u201d (170 a month), which Google counts as the same search as \u201crhinoplasty philadelphia\u201d. Searches with no measurable volume, such as \u201cfacelift main line\u201d, are not listed."
+}
