@@ -15,7 +15,7 @@ worth.json:
            ["botox near me", 20, "Stroudsburg"]],
   "price": {"value": 527, "label": "average spend per US med spa visit",
             "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
-            "url": "https://..."},
+            "url": "https://..."},           # url "" for the client's own number
   "vol_source": "DataForSEO, Google Ads search volume, Pennsylvania and city level, November 13, 2026",
   "left_out": "optional sentence about searches deliberately left out"
 }
@@ -60,7 +60,7 @@ def build(d):
       <p class="lab" style="margin-top:18px">Average price per customer</p>
       <p class="w-price" id="w-price">{money(price)}</p>
       <input type="range" id="w-slider" min="50" max="2500" step="5" value="{price}" aria-label="Average price per customer">
-      <p class="small">Starts at {money(price)}, the {e(d["price"]["label"])}. Source: <a href="{e(d["price"]["url"])}">{e(d["price"]["source"])}</a></p>
+      <p class="small">Starts at {money(price)}, the {e(d["price"]["label"])}. Source: {f'<a href="{e(d["price"]["url"])}">{e(d["price"]["source"])}</a>' if d["price"].get("url") else e(d["price"]["source"])}</p>
     </div>
     <div class="tw"><table class="demand w-tbl">
       <caption>Your searches, {len(rows)} in all</caption>

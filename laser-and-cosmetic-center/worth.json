@@ -1,36 +1,132 @@
 {
   "client": "Laser & Cosmetic Center",
   "rows": [
-    ["spa stroudsburg pa", 140, ""],
-    ["spa east stroudsburg pa", 70, ""],
-    ["facial near me", 70, "East Stroudsburg"],
-    ["laser hair removal stroudsburg pa", 30, ""],
-    ["day spa stroudsburg pa", 30, ""],
-    ["botox stroudsburg pa", 20, ""],
-    ["med spa stroudsburg pa", 20, ""],
-    ["botox near me", 20, "Stroudsburg"],
-    ["botox near me", 20, "East Stroudsburg"],
-    ["med spa near me", 20, "Stroudsburg"],
-    ["med spa near me", 20, "East Stroudsburg"],
-    ["lip filler near me", 20, "Stroudsburg"],
-    ["lip filler near me", 20, "East Stroudsburg"],
-    ["facials stroudsburg pa", 10, ""],
-    ["spa tannersville pa", 10, ""],
-    ["dermal fillers near me", 10, "Stroudsburg"],
-    ["dermal fillers near me", 10, "East Stroudsburg"],
-    ["laser hair removal near me", 10, "Stroudsburg"],
-    ["laser hair removal near me", 10, "East Stroudsburg"],
-    ["microneedling near me", 10, "Stroudsburg"],
-    ["microneedling near me", 10, "East Stroudsburg"],
-    ["hydrafacial near me", 10, "Stroudsburg"],
-    ["hydrafacial near me", 10, "East Stroudsburg"],
-    ["tattoo removal near me", 10, "East Stroudsburg"]
+    [
+      "spa stroudsburg pa",
+      140,
+      ""
+    ],
+    [
+      "spa east stroudsburg pa",
+      70,
+      ""
+    ],
+    [
+      "facial near me",
+      70,
+      "East Stroudsburg"
+    ],
+    [
+      "laser hair removal stroudsburg pa",
+      30,
+      ""
+    ],
+    [
+      "day spa stroudsburg pa",
+      30,
+      ""
+    ],
+    [
+      "botox stroudsburg pa",
+      20,
+      ""
+    ],
+    [
+      "med spa stroudsburg pa",
+      20,
+      ""
+    ],
+    [
+      "botox near me",
+      20,
+      "Stroudsburg"
+    ],
+    [
+      "botox near me",
+      20,
+      "East Stroudsburg"
+    ],
+    [
+      "med spa near me",
+      20,
+      "Stroudsburg"
+    ],
+    [
+      "med spa near me",
+      20,
+      "East Stroudsburg"
+    ],
+    [
+      "lip filler near me",
+      20,
+      "Stroudsburg"
+    ],
+    [
+      "lip filler near me",
+      20,
+      "East Stroudsburg"
+    ],
+    [
+      "facials stroudsburg pa",
+      10,
+      ""
+    ],
+    [
+      "spa tannersville pa",
+      10,
+      ""
+    ],
+    [
+      "dermal fillers near me",
+      10,
+      "Stroudsburg"
+    ],
+    [
+      "dermal fillers near me",
+      10,
+      "East Stroudsburg"
+    ],
+    [
+      "laser hair removal near me",
+      10,
+      "Stroudsburg"
+    ],
+    [
+      "laser hair removal near me",
+      10,
+      "East Stroudsburg"
+    ],
+    [
+      "microneedling near me",
+      10,
+      "Stroudsburg"
+    ],
+    [
+      "microneedling near me",
+      10,
+      "East Stroudsburg"
+    ],
+    [
+      "hydrafacial near me",
+      10,
+      "Stroudsburg"
+    ],
+    [
+      "hydrafacial near me",
+      10,
+      "East Stroudsburg"
+    ],
+    [
+      "tattoo removal near me",
+      10,
+      "East Stroudsburg"
+    ]
   ],
   "price": {
-    "value": 527,
-    "label": "average spend per US med spa visit",
-    "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
-    "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"
+    "value": 1000,
+    "label": "average Dr. Kipervas gave us per patient",
+    "source": "Laser & Cosmetic Center",
+    "url": ""
   },
   "vol_source": "DataForSEO, Google Ads search volume for Pennsylvania (searches naming a town) and for Stroudsburg and East Stroudsburg (near me searches), November 13, 2026",
   "left_out": "Left out to keep this conservative: “spa poconos” (1,000 a month, mostly resort spas) and “dermatologist stroudsburg pa” (260 a month)."
