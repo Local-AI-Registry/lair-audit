@@ -14,18 +14,6 @@ Done for you
 
 The Local AI Blueprint™ is how Local AI Registry gets a local business recommended by AI. Instead of buying SEO, listings, PR, video and reviews from different vendors, you get one plan that works all eleven signals together, one team accountable for it, and one report.
 
-## What the Blueprint delivers
-
-Across the practices we manage today.
-
-**70%** named by ChatGPT within 90 days, up from 15%
-
-**45** days, median to a first AI mention
-
-**50 to 150** visits a month from AI assistants, per client
-
-**85%** of clients stay past year one
-
 New data from our research team
 
 **73%**
@@ -73,6 +61,10 @@ Every signal AI checks:
 **Best-of guides** A place on the local best-of lists AI quotes.](../signals/best-of-guides/index.html)[11
 
 **AI monitoring** What every assistant says about you, each month.](../signals/ai-monitoring/index.html)
+
+## The monthly report
+
+Each month you see what ChatGPT, Gemini, Google's AI and the other assistants say about your business for the questions your customers ask, what changed, and what we're doing next.
 
 From our data · 3D
 

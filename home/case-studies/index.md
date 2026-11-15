@@ -12,33 +12,13 @@ Every agency shows its best three wins. We'd rather show the work. These practic
 
 [DD**Beverly Hills Rhinoplasty Center** Dr. Deepak Dugar · Facial plastic surgery · Beverly Hills, CA
 
-**1 → 9** of 10 AI asks name them** 2 → 18** customers a month from AI
-
 **Named by ChatGPT in 3 of 3 runs**“best closed rhinoplasty surgeon in Los Angeles,” Nov 13, 2026. See the screenshots.](../answer-watch/#test-03)[SS** LUXURGERY**Dr. Sachin Shridharani · Plastic surgery · New York, NY
-
-**2 → 8** of 10 AI asks name them** 1 → 12** customers a month from AI
 
 AI evidence being captured](#luxurgery)[BD**Define Clinic** Dr. Benji Dhillon · Aesthetic medicine · London and Beaconsfield, UK
 
-**3 → 9** of 10 AI asks name them** 2 → 9** customers a month from AI
-
 **#2 in all 3 ChatGPT runs**“best aesthetic clinic in Beaconsfield,” Nov 13, 2026. See the screenshots.](../answer-watch/#test-04)[NB** Injection Artistry**Naomi Barrett, NP-C · Aesthetic injection · Newport Beach, CA
 
-**0 → 7** of 10 AI asks name them** 0 → 8** customers a month from AI
-
 AI evidence being captured](#injection-artistry)
-
-## Across every client
-
-The same numbers for everyone, from the same monthly report.
-
-**100+** clients we work with
-
-**70%** named by ChatGPT within 90 days
-
-**5 to 10 in 100** new customers say they found the business through AI
-
-**2+ years** average time clients stay
 
 ## What AI says about our clients today
 
@@ -72,6 +52,30 @@ We ask ChatGPT the same question several times, because the answer changes from 
 From our data · 3D
 
 ## “best aesthetic clinic in Beaconsfield”: who ChatGPT named, ask by ask
+
+Drag to turn
+
+Three asks of the same question. Each column is a business, each row an ask. Taller means named higher. 5 different names came back. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../answer-watch/index.html).
+
+See the data
+
+| Business | Ask 1 | Ask 2 | Ask 3 |
+| --- | --- | --- | --- |
+| S-Thetics Clinic | #1 | #1 | #1 |
+| Define Clinic | #2 | #2 | #2 |
+| MBA Skin | #3 | #3 | #3 |
+| Ali Aesthetics | #4 | not named | not named |
+| The Skin & Self Clinic | #4 | not named | not named |
+
+## Why one screenshot isn't proof
+
+In our screenshots, only 2 of 10 US cities got the same #1 surgeon in six ChatGPT asks of one question. A single screenshot can make any business look like the winner. That's why every client report shows several asks of each question, every month, and counts how often you were named, not whether you showed up once. [Read our study on how often AI recommends a business](../research/how-often-ai-recommends-your-business/index.html).
+
+## Results you can check
+
+Every client gets the same monthly report: what AI said before and after, the AI Score over time and every piece of work done, with a date on each. No cherry-picking. [Named in AI in 90 days. Guaranteed.](../guarantee/index.html)
+
+[Book a free AI check](../start/index.html)[Who trusts us](../experts/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 

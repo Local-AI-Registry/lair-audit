@@ -14,18 +14,6 @@ Our guarantee
 
 Most business owners have paid for marketing they couldn't verify. We built Local AI Registry to fix that, so we put a date on the one outcome that matters: AI naming your business.
 
-## How the guarantee has held up
-
-Measured across every client, from our own monthly reports.
-
-**90%** of clients named in AI within 90 days
-
-**45** days, median time to a first AI mention
-
-**4%** of clients ever needed the guarantee paid out
-
-**100+** clients we work with
-
 New data from our research team
 
 **73%**
@@ -51,6 +39,15 @@ Nobody can buy a recommendation from ChatGPT, Gemini or Google's AI, and nobody 
 ## How it's measured
 
 Before we start, we agree with you on the questions your customers ask and the assistants we track. Because AI gives a different answer each time, we measure how often you're named across many answers, the way our research team recommends in [How Often AI Recommends Your Business](../research/how-often-ai-recommends-your-business/index.html). Every month your report shows the real answers, so you never have to take our word for it.
+
+## A promise you can check
+
+Be wary of anyone who guarantees AI results without showing you how they'll prove it. Here's how ours works:
+
+- **Day 1 baseline.** We screenshot what each assistant says about you today, for the exact questions we agreed on.
+- **The terms in writing.** Your proposal lists the questions, the assistants and what counts as being named.
+- **Monthly proof.** The same questions, asked again, with every answer in your report.
+- **A second scorekeeper.** If you've [claimed your business in ChatGPT](../guide/claim-your-business-in-chatgpt/index.html), OpenAI's own Business Hub shows how often ChatGPT shows your location.
 
 From our data · 3D
 

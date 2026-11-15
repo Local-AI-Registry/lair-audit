@@ -12,8 +12,6 @@ By [Steve Lee](../../../team/steve-lee/index.html), founder of Local AI Registry
 
 **Short answer** AI assistants recommend the plastic surgeons they can confirm across many trusted sources. For plastic surgeons, the biggest levers are articles on other sites, reviews and a clear, well-coded website, working together with the other signals.
 
-✓ Medically reviewed by [**Dr. Tess Mauricio, MD, FAAD**](../../../team/tess-mauricio/index.html), Medical Director, Local AI Registry · Nov 2026
-
 ## Rather have it done for you?
 
 The [Local AI Blueprint™](../../../blueprint/index.html) handles all 11 things AI checks for plastic surgeons, and every month you get a report of what ChatGPT, Google and Gemini say about you. Named in AI in 90 days, guaranteed. If we miss, we keep working for free until AI names you.
