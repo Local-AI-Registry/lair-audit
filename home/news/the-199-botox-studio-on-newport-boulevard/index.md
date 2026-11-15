@@ -1,6 +1,6 @@
 # The $199 Botox studio on Newport Boulevard
 
-> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit. Who it's for, how it compares, and everything you need before you book.
+> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit.
 
 Source: https://localairegistry.com/news/the-199-botox-studio-on-newport-boulevard/
 Updated: 2026-11-15

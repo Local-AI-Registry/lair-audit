@@ -65,7 +65,7 @@ Businesses' own websites supplied just 6.5% of those citations. [The Local Answe
 
 Brand websites ranked on page one for 147 of 157 brand questions, but AI cited them in only 70. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## Local “is it open” searches, day by day
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 

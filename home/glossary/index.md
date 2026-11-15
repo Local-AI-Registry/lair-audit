@@ -82,9 +82,75 @@ The word has two uses. In local SEO, a citation is any listing or page that ment
 
 Related: [NAP consistency](../glossary#nap-consistency/index.html), [GEO (generative engine optimization)](../glossary#geo/index.html)
 
-From our data · 3D
+## Entity
 
-## “best rhinoplasty surgeon in Atlanta”: best position each business reached
+**A distinct, identifiable thing, such as a business, person or place, that search engines and AI track as one object with known facts.**
+
+To an assistant, your business is an entity with a name, location, category, services, people and reviews. The clearer and more consistent those facts are across the web, the more confidently AI can talk about you. [Schema markup](../glossary/index.html#schema-markup) and [NAP consistency](../glossary/index.html#nap-consistency) are how you make your entity clear.
+
+Related: [Knowledge graph](../glossary#knowledge-graph/index.html), [NAP consistency](../glossary#nap-consistency/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## GEO (generative engine optimization)
+
+**The practice of improving how a business or brand appears in answers written by AI assistants.**
+
+GEO focuses on the sources AI reads and cites: reviews, articles, lists, structured data and your own pages. For a local business, GEO means making sure every assistant can confirm who you are, what you do and why you're a good choice. See how it compares with traditional SEO in [AI visibility vs SEO](../signals/seo/index.html).
+
+Related: [AEO (answer engine optimization)](../glossary#aeo/index.html), [AI SEO](../glossary#ai-seo/index.html), [Citation](../glossary#citation/index.html)
+
+## Knowledge graph
+
+**A database of entities and how they connect, used by search engines and AI to understand facts.**
+
+Google's Knowledge Graph and similar systems link your business to its location, category, people and other facts. A strong presence in these graphs makes it easier for AI to recognize and describe you.
+
+Related: [Entity](../glossary#entity/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## llms.txt
+
+**A proposed plain-text file at the root of a website that points AI systems to its most useful pages.**
+
+llms.txt is a community proposal, not an official standard, and assistants vary in whether they use it. It's quick to add and does no harm. Make one with our [llms.txt generator](../tools/llms-txt-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html)
+
+## Local AI Blueprint™
+
+**Local AI Registry's done-for-you program that works all 11 signals for a business.**
+
+The Local AI Blueprint™ is one plan, one team and one monthly report covering every signal AI checks. Learn more on the [Blueprint page](../blueprint/index.html) and about [our 90-day guarantee](../guarantee/index.html).
+
+Related: [AI Score](../glossary#ai-score/index.html), [AI visibility](../glossary#ai-visibility/index.html)
+
+## NAP consistency
+
+**Having the same business name, address and phone number everywhere your business is listed.**
+
+NAP stands for name, address, phone. Many practitioners add hours. Inconsistent NAP makes it harder for AI to confirm which listings belong to you. See [directory listings](../signals/directory-listings/index.html).
+
+Related: [Entity](../glossary#entity/index.html), [Citation](../glossary#citation/index.html)
+
+## Schema markup
+
+**Code added to a web page that labels facts, such as your business name, hours, services and reviews, in a standard vocabulary.**
+
+Schema markup uses the shared vocabulary at schema.org, usually written as JSON-LD. It doesn't change how a page looks; it tells machines exactly what the page is about. Build yours with our free [schema generator](../tools/schema-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html), [Entity](../glossary#entity/index.html)
+
+## Structured data
+
+**Information organized in a fixed format machines can read without interpretation.**
+
+Schema markup is the most common kind of structured data on websites. Business listings, menus and inventory feeds are others. The more of your key facts exist as structured data, the less AI has to guess.
+
+Related: [Schema markup](../glossary#schema-markup/index.html), [Knowledge graph](../glossary#knowledge-graph/index.html)
+
+**Is AI recommending you?**
+
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 

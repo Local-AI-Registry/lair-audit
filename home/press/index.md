@@ -46,7 +46,7 @@ For reporters
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Atlanta”: who ChatGPT named, ask by ask
+## The rating ChatGPT wrote vs the rating on its own map
 
 **Is AI recommending you?**
 

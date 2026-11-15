@@ -37,7 +37,7 @@ The Google searches you rank for, and should. Yes.
 05
 
 **[Website](../signals/web-management/index.html)**  
-A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing..
+A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing.
 
 06
 
@@ -91,7 +91,7 @@ In a census of every venue in two markets, 85.6% were never recommended by any o
 
 ## Who Google's AI cites for local questions
 
-#### On this page
+On this page
 
 1. [How the signals add up](#how-scored)
 2. [What does the research say?](#what-our-research-found)

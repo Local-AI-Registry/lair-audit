@@ -56,7 +56,7 @@ From our data · 3D
 
 ## “best closed rhinoplasty surgeon in Los Angeles”: who ChatGPT named, ask by ask
 
-#### On this page
+On this page
 
 1. [Why we guarantee it](#why)
 2. [If we miss it, we keep working for free](#if-we-miss)

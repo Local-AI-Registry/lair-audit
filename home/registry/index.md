@@ -24,24 +24,6 @@ Your record probably already exists. Book a free AI check and we'll show you wha
 
 [Book a free AI check](../start/index.html)[Get named in AI](../blueprint/index.html)
 
-From our data · 3D
-
-## What people ask AI about medical clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/medical-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.

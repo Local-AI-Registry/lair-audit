@@ -18,7 +18,7 @@ Email [support@localairegistry.com](mailto:support@localairegistry.com) with the
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Atlanta”: how often each business was named
+## How faithful local AI answers were to their sources
 
 ## Named in AI in 90 days. *Guaranteed.*
 

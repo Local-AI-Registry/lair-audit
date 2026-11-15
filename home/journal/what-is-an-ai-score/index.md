@@ -43,9 +43,60 @@ Each signal is scored on its own, then combined into the final 0-to-100 number u
 
 The weights come from how much each signal moves a real AI recommendation, not from what is easiest to measure. That is why two businesses with identical websites can score very differently: the one the wider web corroborates scores higher, because corroboration is what the assistant grounds its answer in.
 
-From our data · 3D
+## What a good AI Score looks like
 
-## “best plastic surgeon in New York City”: how often each business was named
+Because most local businesses score low, the bar to stand out is lower than it looks. Roughly:
+
+- A score of 65 or above is good: AI can reliably find and recommend you. Very few businesses are here yet.
+- A score in the 45 to 64 range is fair: you are eligible and sometimes named, with clear gaps to close.
+- Below 45 is poor: AI struggles to find or trust you, and a competitor is getting the recommendation instead.
+
+The point of the number is not the grade, it is the diagnosis. Your AI Score comes with the specific signals dragging it down, so you know what to fix first.
+
+## Why the score is independent
+
+No business can buy a higher AI Score, and no one can pay to be removed from a competitor’s comparison. We [never sell rank](../../trust/index.html), and we publish the method so anyone can check our work. That independence is the whole point: a score you could buy would tell an assistant nothing, and it would tell you nothing either.
+
+## Common questions
+
+### What is a good AI Score?
+
+Broadly, 65 or above is good, 45 to 64 is fair, and below 45 is poor. Because most local businesses currently score below 45, even reaching the fair range puts you ahead of the majority of your competitors.
+
+### Is checking my AI Score free?
+
+Yes. You can look up any business and see its AI Score for nothing.
+
+### How is an AI Score different from a Google ranking?
+
+A Google ranking is your position in a list of blue links. An AI Score measures whether an assistant will name you at all when it answers a question with a single recommendation instead of a list. The signals overlap, but the outcome an AI Score predicts is being the answer, not being on page one.
+
+### Can I improve my AI Score?
+
+Yes, and the score tells you how. It surfaces which of the eight signals are weakest, so you fix the ones that move an AI recommendation first, chiefly retrieval grounding and off-property attestation.
+
+### How often is the AI Score updated?
+
+It reflects the most recent measurement of what assistants say and the underlying signals. As you improve a signal, or as the assistants change, the score is recalculated so it stays a current read rather than a one-time snapshot.
+
+About the author
+
+Steve Lee, Founder & CEO, Local AI Registry
+
+Worked on Google’s search-algorithm team in its early years and has spent two decades building search-technology companies.
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [The launch of Local AI Registry and the free AI Score](https://localairegistry.com/journal/local-ai-registry-launch)
+- [The full scoring methodology](../../methodology/index.html)
+- [Why the score is never for sale](../../trust/index.html)
+
+## What is your AI Score?
+
+Free, no card, in about thirty seconds.
+
+[Get my AI Score](../../index.html)
 
 **Is AI recommending you?**
 

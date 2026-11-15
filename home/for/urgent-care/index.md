@@ -89,7 +89,7 @@ Can you publish our wait time?
 
 Only if you give us a figure and it is one you stand behind. We do not state a number nobody measured.
 
-#### On this page
+On this page
 
 1. [What urgent care centers are up against](#up-against)
 2. [What people ask AI about urgent care centers](#questions)

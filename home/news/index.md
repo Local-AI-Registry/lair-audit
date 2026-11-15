@@ -18,25 +18,6 @@ Every fact in a story links to its source and the date we checked it. When a bus
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in Chicago”: how often each business was named
-
-Drag to turn
-
-Each sphere is a business ChatGPT named. Bigger means it was named in more of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Dean Toriumi | 3 of 3 |
-| Anil Shah | 3 of 3 |
-| Douglas Sidle | 3 of 3 |
-| Thomas Mustoe | 3 of 3 |
-| Sammy Sinno | 2 of 3 |
-| Steven Dayan | 1 of 3 |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.

@@ -74,18 +74,18 @@ See the data
 
 |  |  |
 | --- | --- |
-| Content writer | 3,600/mo |
-| Video producer | 3,500/mo |
-| SEO agency | 1,750/mo |
+| Local SEO agency | 2,500/mo |
+| YouTube video producer | 2,000/mo |
 | PR group | 1,500/mo |
-| Web management team | 650/mo |
+| Web management team | 850/mo |
 | Review management | 399/mo |
 | AI monitoring tool | 399/mo |
 | Google profile manager | 299/mo |
+| Content ranking tool | 299/mo |
 
 ## Compared with buying it separately
 
-Covering the same nine jobs with separate vendors runs about **$12,200 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
+Covering the same nine jobs with separate vendors runs about **$8,300 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
 
 ## The terms, in plain words
 

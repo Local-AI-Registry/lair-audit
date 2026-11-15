@@ -27,13 +27,13 @@ Every assistant finds local businesses a little differently. Some lean on Google
 
 **Google AI Overviews and AI Mode** Google's AI answers are built on Google Search and Google's local data.](../ai/google-ai-overviews/index.html)[Google
 
-**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services..](../ai/gemini/index.html)[Perplexity
+**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services.](../ai/gemini/index.html)[Perplexity
 
 **Perplexity** Perplexity searches the web for every answer and shows its sources.](../ai/perplexity/index.html)[Anthropic
 
 **Claude** When Claude searches the web for a local question, it reads and cites public sources: review sites, guides, news and business websites.](../ai/claude/index.html)[Microsoft
 
-**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation..](../ai/copilot/index.html)[Apple
+**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation.](../ai/copilot/index.html)[Apple
 
 **Siri and Apple Intelligence** When someone asks Siri for a nearby business, Apple draws on Apple Maps data.](../ai/siri/index.html)[Amazon
 
@@ -63,9 +63,9 @@ When ChatGPT got the same local question about 39 minutes apart, a median of 29%
 
 Asked the same query twice, Google Search shared 0.78 of its sources, AI Overviews 0.66 and Gemini 0.46 (Grossman et al., SIGIR 2026, reviewed in our brief). [How Often AI Recommends Your Business, LAIR-R-2026-002](../research/how-often-ai-recommends-your-business/index.html)
 
-## The topics most likely to get an AI answer
+## How often the assistants agreed on a local pick
 
-#### On this page
+On this page
 
 1. [What every assistant has in common](#shared)
 2. [What does the research say?](#what-our-research-found)
@@ -159,7 +159,7 @@ What every assistant says about you, each month.
 
 From our data · 3D
 
-## The vaguer the question, the less the business gets cited
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -347,7 +347,7 @@ Why does ChatGPT give different businesses each time?
 
 Answers vary with wording, location and the sources it happens to read. Businesses that are strong across many sources show up most consistently.
 
-#### On this page
+On this page
 
 1. [How do I claim my business in ChatGPT?](#claim-in-chatgpt)
 2. [What does the research say?](#what-our-research-found)
@@ -450,7 +450,7 @@ Real news coverage AI can cite.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in New York”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -530,7 +530,7 @@ Complete, active and posting every week.
 
 From our data · 3D
 
-## Ranked and used vs ranked and ignored
+## How many businesses each assistant named
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -610,7 +610,7 @@ Explainer videos that answer what customers ask.
 
 From our data · 3D
 
-## Where Google's AI got each chain's hours
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -800,7 +800,7 @@ The Google searches you rank for, and should.
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: who ChatGPT named, ask by ask
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -884,7 +884,7 @@ Photos labeled so AI can read what they show.
 
 From our data · 3D
 
-## “best Botox injector in Newport Beach”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -964,7 +964,7 @@ Same name, address, phone and hours everywhere.
 
 From our data · 3D
 
-## How many sources each AI answer cites
+## Where each assistant found its local picks
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -1048,7 +1048,7 @@ A fast site with the code AI reads.
 
 From our data · 3D
 
-## 173 of 207 local answers told people to check with the store
+## “best chiropractor in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -1143,9 +1143,75 @@ The word has two uses. In local SEO, a citation is any listing or page that ment
 
 Related: [NAP consistency](../glossary#nap-consistency/index.html), [GEO (generative engine optimization)](../glossary#geo/index.html)
 
-From our data · 3D
+## Entity
 
-## “best rhinoplasty surgeon in Atlanta”: best position each business reached
+**A distinct, identifiable thing, such as a business, person or place, that search engines and AI track as one object with known facts.**
+
+To an assistant, your business is an entity with a name, location, category, services, people and reviews. The clearer and more consistent those facts are across the web, the more confidently AI can talk about you. [Schema markup](../glossary/index.html#schema-markup) and [NAP consistency](../glossary/index.html#nap-consistency) are how you make your entity clear.
+
+Related: [Knowledge graph](../glossary#knowledge-graph/index.html), [NAP consistency](../glossary#nap-consistency/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## GEO (generative engine optimization)
+
+**The practice of improving how a business or brand appears in answers written by AI assistants.**
+
+GEO focuses on the sources AI reads and cites: reviews, articles, lists, structured data and your own pages. For a local business, GEO means making sure every assistant can confirm who you are, what you do and why you're a good choice. See how it compares with traditional SEO in [AI visibility vs SEO](../signals/seo/index.html).
+
+Related: [AEO (answer engine optimization)](../glossary#aeo/index.html), [AI SEO](../glossary#ai-seo/index.html), [Citation](../glossary#citation/index.html)
+
+## Knowledge graph
+
+**A database of entities and how they connect, used by search engines and AI to understand facts.**
+
+Google's Knowledge Graph and similar systems link your business to its location, category, people and other facts. A strong presence in these graphs makes it easier for AI to recognize and describe you.
+
+Related: [Entity](../glossary#entity/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## llms.txt
+
+**A proposed plain-text file at the root of a website that points AI systems to its most useful pages.**
+
+llms.txt is a community proposal, not an official standard, and assistants vary in whether they use it. It's quick to add and does no harm. Make one with our [llms.txt generator](../tools/llms-txt-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html)
+
+## Local AI Blueprint™
+
+**Local AI Registry's done-for-you program that works all 11 signals for a business.**
+
+The Local AI Blueprint™ is one plan, one team and one monthly report covering every signal AI checks. Learn more on the [Blueprint page](../blueprint/index.html) and about [our 90-day guarantee](../guarantee/index.html).
+
+Related: [AI Score](../glossary#ai-score/index.html), [AI visibility](../glossary#ai-visibility/index.html)
+
+## NAP consistency
+
+**Having the same business name, address and phone number everywhere your business is listed.**
+
+NAP stands for name, address, phone. Many practitioners add hours. Inconsistent NAP makes it harder for AI to confirm which listings belong to you. See [directory listings](../signals/directory-listings/index.html).
+
+Related: [Entity](../glossary#entity/index.html), [Citation](../glossary#citation/index.html)
+
+## Schema markup
+
+**Code added to a web page that labels facts, such as your business name, hours, services and reviews, in a standard vocabulary.**
+
+Schema markup uses the shared vocabulary at schema.org, usually written as JSON-LD. It doesn't change how a page looks; it tells machines exactly what the page is about. Build yours with our free [schema generator](../tools/schema-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html), [Entity](../glossary#entity/index.html)
+
+## Structured data
+
+**Information organized in a fixed format machines can read without interpretation.**
+
+Schema markup is the most common kind of structured data on websites. Business listings, menus and inventory feeds are others. The more of your key facts exist as structured data, the less AI has to guess.
+
+Related: [Schema markup](../glossary#schema-markup/index.html), [Knowledge graph](../glossary#knowledge-graph/index.html)
+
+**Is AI recommending you?**
+
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -1351,7 +1417,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## How often Google shows an AI answer, by topic, stacked
+## What AI cites vs what you control
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -1419,21 +1485,28 @@ Source: [The Local Answer Gap](../../research/local-answer-gap/index.html) · LA
 
 From our data · 3D
 
-## Up close: what people ask AI about medical clinics
+## The few websites ChatGPT linked when it named local businesses
 
 Drag to turn
 
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/medical-clinics/index.html).
+Across 7 Irvine questions, ChatGPT took ratings and phone numbers from map listings and linked only a handful of pages, mostly licensing boards and best-of lists. Source: [AI Answer Watch: Irvine, Local AI Registry, Nov 15, 2026](../../answer-watch/index.html).
 
 See the data
 
 |  |  |
 | --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
+| cslb.ca.gov | 3 answers |
+| contractorsranked.com | 1 answers |
+| expertise.com | 1 answers |
+| cityvetted.com | 1 answers |
+| ucihealth.org | 1 answers |
+| zocdoc.com | 1 answers |
+| yelp.com | 1 answers |
+| iqlaservision.com | 1 answers |
+| calbar.ca.gov | 1 answers |
+| reviews.birdeye.com | 1 answers |
+| dt.caredge.com | 1 answers |
+| dealerrater.com | 1 answers |
 
 ## Want it done for you?
 
@@ -1578,7 +1651,7 @@ Businesses' own websites supplied just 6.5% of those citations. [The Local Answe
 
 Brand websites ranked on page one for 147 of 157 brand questions, but AI cited them in only 70. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## Local “is it open” searches, day by day
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -1628,7 +1701,7 @@ The Google searches you rank for, and should. Yes.
 05
 
 **[Website](../signals/web-management/index.html)**  
-A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing..
+A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing.
 
 06
 
@@ -1682,7 +1755,7 @@ In a census of every venue in two markets, 85.6% were never recommended by any o
 
 ## Who Google's AI cites for local questions
 
-#### On this page
+On this page
 
 1. [How the signals add up](#how-scored)
 2. [What does the research say?](#what-our-research-found)
@@ -1797,7 +1870,7 @@ A person reads it before you do. Three days before your date the draft goes to y
 
 From our data · 3D
 
-## How many sources stay the same when you reword the question
+## How often the assistants agreed on a local pick
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -2128,7 +2201,7 @@ Both use only the words on your own service list and what kind of picture it is.
 
 From our data · 3D
 
-## Readable words on the pages AI cited
+## Where the photos beside each pick came from
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -2307,7 +2380,7 @@ Thin replies already on your listing are rewritten, up to twenty of them, and ne
 
 From our data · 3D
 
-## Cited vs readable: what the AI could actually read
+## The rating ChatGPT wrote vs the rating on its own map
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -2609,7 +2682,7 @@ Our [schema generator](../../tools/schema-generator/index.html) builds LocalBusi
 
 From our data · 3D
 
-## Half of “the store locator says” claims had no source
+## Cited vs readable: what the AI could actually read
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -2668,7 +2741,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## “best breast augmentation surgeon in NYC”: best position each business reached
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -2699,7 +2772,7 @@ Dispensaries are locked out of most paid channels, which makes being named in an
 
 Google Ads will not take you. Meta will not take you. What is left is the organic answer, and the organic answer is increasingly one an assistant writes.
 
-People ask by landmark and by neighbourhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
+People ask by landmark and by neighborhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
 
 People also do not say "cannabis dispensary". They say dispo, or here, or nothing at all, and the questions we ask on your behalf are asked in those words.
 
@@ -2776,7 +2849,7 @@ We have several stores. Does each one need its own entry?
 
 Yes. A listing is one location, and the near-me answer is decided per location. Each store is its own registry entry.
 
-#### On this page
+On this page
 
 1. [What dispensaries are up against](#up-against)
 2. [What people ask AI about dispensaries](#questions)
@@ -2897,7 +2970,7 @@ We have two locations. How does that work?
 
 Each location is its own entry and its own near-me answer.
 
-#### On this page
+On this page
 
 1. [What dental practices are up against](#up-against)
 2. [What people ask AI about dental practices](#questions)
@@ -2987,7 +3060,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Scottsdale”: how often each business was named
+## What people ask AI about dermatology practices
 
 02
 
@@ -3061,7 +3134,7 @@ How long does it take for a dermatology practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -3184,7 +3257,7 @@ Can you say we are board certified?
 
 Only if you have given us the certification. A credential we do not hold on file is the one thing we will never approximate.
 
-#### On this page
+On this page
 
 1. [What dermatology practices are up against](#up-against)
 2. [What people ask AI about dermatology practices](#questions)
@@ -3276,7 +3349,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## What people ask AI about med spas, stacked
+## What people ask AI about dispensaries
 
 02
 
@@ -3344,7 +3417,7 @@ How long does it take for a dispensary to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -3468,7 +3541,7 @@ Can you say which insurance we take?
 
 Only where you have told us. Insurance is a fact about your practice, so it comes from you and goes onto your listing and your directory records.
 
-#### On this page
+On this page
 
 1. [What eye care practices are up against](#up-against)
 2. [What people ask AI about eye care practices](#questions)
@@ -3562,7 +3635,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## What people ask AI about urgent care centers, stacked
+## “best LASIK eye surgeon in Irvine, CA”: who ChatGPT named, in order
 
 02
 
@@ -3630,7 +3703,7 @@ How long does it take for a eye surgery practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -4092,7 +4165,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in New York”: best position each business reached
+## “best Botox injector in Newport Beach”: who ChatGPT named, ask by ask
 
 02
 
@@ -4166,7 +4239,7 @@ How long does it take for a med spa to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -4285,7 +4358,7 @@ How quickly do hours changes reach the assistants?
 
 Your listing updates immediately. What an assistant says catches up on its own schedule, which is why we re-ask your questions every month and show you the answer.
 
-#### On this page
+On this page
 
 1. [What medical clinics are up against](#up-against)
 2. [What people ask AI about medical clinics](#questions)
@@ -4807,7 +4880,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best aesthetic clinic in Beaconsfield”: best position each business reached
+## “best rhinoplasty surgeon in New York”: who ChatGPT named, ask by ask
 
 02
 
@@ -4881,7 +4954,7 @@ How long does it take for a plastic surgery practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -5000,7 +5073,7 @@ Can you write about products we sell?
 
 We can name a product you stock. We cannot say what it will do to somebody, which is where most product copy in this trade goes wrong.
 
-#### On this page
+On this page
 
 1. [What skin care clinics are up against](#up-against)
 2. [What people ask AI about skin care clinics](#questions)
@@ -5116,7 +5189,7 @@ Can you publish our wait time?
 
 Only if you give us a figure and it is one you stand behind. We do not state a number nobody measured.
 
-#### On this page
+On this page
 
 1. [What urgent care centers are up against](#up-against)
 2. [What people ask AI about urgent care centers](#questions)
@@ -5219,9 +5292,28 @@ Nov 13, 2026, 1:50 PM PT
 
 That's why we measure how often AI names a business across repeated asks, not where it lands once. It's the same way every client's AI Score is measured.
 
+## Test 05: seven trades in Irvine, one question each
+
+We asked ChatGPT for the best business in seven trades in Irvine, California, and recorded every business it named, the rating and review count on its map, the pages it linked and where each photo came from.
+
+| Question | Who ChatGPT named, in order | What we noticed |
+| --- | --- | --- |
+| **Chiropractors** “best chiropractor in Irvine, CA” | 1. Dr. Gary Martin, Irvine Chiropractor 4.9★ · 198 reviews 2. Lee Chiropractic 4.8★ · 506 reviews 3. The Alignment Studio 5.0★ · 215 reviews 4. DiSiena Family Chiropractic 4.7★ · 166 reviews 5. CleanSpine 4.9★ · 76 reviews 6. Yoon Family Chiropractic 5.0★ · 97 reviews |  |
+| **Plumbers** “best plumber in Irvine, CA” | 1. Pristine Plumbing Inc. 4.9★ · 1,935 reviews 2. Olson Superior Plumbing 4.9★ · 2,764 reviews 3. Patriot Plumbing & Rooter 4.7★ · 140 reviews 4. Zoom Drain 4.8★ · 151 reviews 5. Elevation Plumbing 4.9★ · 241 reviews | Photos beside two named plumbers came from other businesses' pages: a used-truck listing on jetterdepot.com and a different plumbing company's site. |
+| **Roofers** “best roofing company in Irvine, CA” | 1. Fox Roofing Company 4.9★ · 40 reviews 2. Above It All Roofing 4.8★ · 123 reviews 3. Antis Roofing & Waterproofing 4.6★ · 229 reviews 4. Merit Roofing & Waterproofing 5.0★ · 14 reviews 5. Ace Roofing Irvine 4.9★ · 40 reviews | The #1 pick had 40 reviews; the #3 had 229. Four of five photos shown were the #1 company's. |
+| **LASIK eye surgeons** “best LASIK eye surgeon in Irvine, CA” | 1. Farnoosh Tinoosh, MD (UCI Health) 4.5★ · 358 reviews 2. Lawrence Chao, MD 4.7★ · 197 reviews 3. Sumit Garg, MD (UCI Health) 4.8★ · 742 reviews 4. Orange County LASIK Institute 5.0★ · 895 reviews 5. Matthew W. Wade, MD (UCI Health) 4.8★ · 322 reviews | Three of five picks were doctors at one hospital, and their ratings came from the hospital's own profile pages. The practice with 895 reviews and a 5.0 rating was ranked fourth. Credentials (fellowship, board certification) led every write-up. |
+| **Personal injury lawyers** “best personal injury lawyer in Irvine, CA” | 1. Cohn & Swartzon LLP 5.0★ · 80 reviews 2. RMD Law 4.9★ · 280 reviews 3. MOET Law Group 4.7★ · 51 reviews 4. Morgan & Morgan 4.7★ · 317 reviews 5. Royer Law Group 5.0★ · 49 reviews | Ratings were quoted as Google reviews. One firm's photo came from an office-interiors company's portfolio page. |
+| **HVAC companies** “best HVAC company in Irvine, CA” | 1. Irvine Air Conditioning & Refrigeration 4.9★ · 226 reviews 2. One Season Heating and Air Conditioning 4.9★ · 89 reviews 3. Green Fuse HVAC & Appliance Repair 5.0★ · 455 reviews 4. True North Heating & Air 4.9★ · 118 reviews 5. MAYDAY Heating and Air Conditioning 4.9★ · 179 reviews | The photo beside MAYDAY came from another named company's website (irvineacrepair.com). The photo beside One Season came from a Thumbtack page about furnace repair in Laguna Niguel. The company with the most reviews (455) was ranked third. |
+| **Car dealerships** “best car dealership in Irvine, CA” | 1. Tuttle-Click Ford Irvine 4.7★ · 4,735 reviews 2. Tuttle-Click Mazda 4.2★ · 357 reviews 3. Norm Reeves Honda Superstore Irvine 3.9★ · 1,895 reviews 4. Porsche Irvine 3.1★ · 350 reviews 5. CarMax 3.1★ · 882 reviews | For three of five dealers, the rating in ChatGPT's answer came from Birdeye or DealerRater and was higher than the Google rating on the map beside it: Porsche Irvine was written up as 4.6 stars while its map listing showed 3.1. |
+
+- **Review count didn't decide the order.** The #1 roofer had 40 reviews; the #3 had 229. The LASIK practice with 895 reviews and a 5.0 rating came fourth.
+- **Photos came from anywhere.** Pictures beside named businesses came from directories, a used-truck listing and other companies' websites.
+- **The rating in the answer wasn't always the rating on the map.** For three car dealers, ChatGPT quoted a higher Birdeye or DealerRater rating than the Google rating on its own map.
+- **Few links.** Facts came from map listings. The pages it linked were mostly licensing boards and best-of lists.
+
 From our data · 3D
 
-## “best rhinoplasty surgeon in Miami”: who ChatGPT named, ask by ask
+## How many different names ChatGPT gave, city by city
 
 | City | Ask 1 | Ask 2 | Ask 3 | Ask 4 | Ask 5 | Ask 6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -5994,7 +6086,7 @@ Who was named, and how often
 
 ## Method and disclosure
 
-Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
+Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 05 and 06 were captured Nov 15, 2026 through DataForSEO: ChatGPT's web answer with web search on, asked from the United States, and Claude, Gemini and Perplexity through their APIs with web search on; each question was asked once. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
 
 [Download every capture as a spreadsheet (CSV)](../assets/data/ai-answer-watch-2026-11-13.csv): time, question, names in order, sources and a link to each screenshot. Free to use with credit (CC BY 4.0).
 
@@ -6062,9 +6154,60 @@ Each signal is scored on its own, then combined into the final 0-to-100 number u
 
 The weights come from how much each signal moves a real AI recommendation, not from what is easiest to measure. That is why two businesses with identical websites can score very differently: the one the wider web corroborates scores higher, because corroboration is what the assistant grounds its answer in.
 
-From our data · 3D
+## What a good AI Score looks like
 
-## “best plastic surgeon in New York City”: how often each business was named
+Because most local businesses score low, the bar to stand out is lower than it looks. Roughly:
+
+- A score of 65 or above is good: AI can reliably find and recommend you. Very few businesses are here yet.
+- A score in the 45 to 64 range is fair: you are eligible and sometimes named, with clear gaps to close.
+- Below 45 is poor: AI struggles to find or trust you, and a competitor is getting the recommendation instead.
+
+The point of the number is not the grade, it is the diagnosis. Your AI Score comes with the specific signals dragging it down, so you know what to fix first.
+
+## Why the score is independent
+
+No business can buy a higher AI Score, and no one can pay to be removed from a competitor’s comparison. We [never sell rank](../../trust/index.html), and we publish the method so anyone can check our work. That independence is the whole point: a score you could buy would tell an assistant nothing, and it would tell you nothing either.
+
+## Common questions
+
+### What is a good AI Score?
+
+Broadly, 65 or above is good, 45 to 64 is fair, and below 45 is poor. Because most local businesses currently score below 45, even reaching the fair range puts you ahead of the majority of your competitors.
+
+### Is checking my AI Score free?
+
+Yes. You can look up any business and see its AI Score for nothing.
+
+### How is an AI Score different from a Google ranking?
+
+A Google ranking is your position in a list of blue links. An AI Score measures whether an assistant will name you at all when it answers a question with a single recommendation instead of a list. The signals overlap, but the outcome an AI Score predicts is being the answer, not being on page one.
+
+### Can I improve my AI Score?
+
+Yes, and the score tells you how. It surfaces which of the eight signals are weakest, so you fix the ones that move an AI recommendation first, chiefly retrieval grounding and off-property attestation.
+
+### How often is the AI Score updated?
+
+It reflects the most recent measurement of what assistants say and the underlying signals. As you improve a signal, or as the assistants change, the score is recalculated so it stays a current read rather than a one-time snapshot.
+
+About the author
+
+Steve Lee, Founder & CEO, Local AI Registry
+
+Worked on Google’s search-algorithm team in its early years and has spent two decades building search-technology companies.
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [The launch of Local AI Registry and the free AI Score](https://localairegistry.com/journal/local-ai-registry-launch)
+- [The full scoring methodology](../../methodology/index.html)
+- [Why the score is never for sale](../../trust/index.html)
+
+## What is your AI Score?
+
+Free, no card, in about thirty seconds.
+
+[Get my AI Score](../../index.html)
 
 **Is AI recommending you?**
 
@@ -6125,7 +6268,7 @@ Retrieval tier
 
 Methods referenced
 
-## We didn’t invent the maths.
+## We didn’t invent the math.
 
 Every part of the score is a named, published method, borrowed from information retrieval, index construction, and game theory, and each one is cited.
 
@@ -6170,7 +6313,7 @@ From our data · 3D
 
 ## How many local answers cite each kind of source
 
-#### On this page
+On this page
 
 1. [What the marks on a business page mean](#marks-heading)
 2. [How AI decides what to tell you about a med spa](#how-ai-decides-med-spa-heading)
@@ -6215,25 +6358,6 @@ Every fact in a story links to its source and the date we checked it. When a bus
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in Chicago”: how often each business was named
-
-Drag to turn
-
-Each sphere is a business ChatGPT named. Bigger means it was named in more of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Dean Toriumi | 3 of 3 |
-| Anil Shah | 3 of 3 |
-| Douglas Sidle | 3 of 3 |
-| Thomas Mustoe | 3 of 3 |
-| Sammy Sinno | 2 of 3 |
-| Steven Dayan | 1 of 3 |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -6245,7 +6369,7 @@ Book a call and we’ll show you, live, what AI says about you today. If we miss
 
 # The $199 Botox studio on Newport Boulevard
 
-> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit. Who it's for, how it compares, and everything you need before you book.
+> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit.
 
 Source: https://localairegistry.com/news/the-199-botox-studio-on-newport-boulevard/
 Updated: 2026-11-15
@@ -7764,9 +7888,118 @@ More than 60%of queries: leading AI search tools wrong. CITED: Tow Center at Col
 
 This is the keystone the other three currents rest on. **ANALYSIS** The entire body of evidence converges on "be a verifiable entity," moving fast, on a closing clock, while no neutral party measures whether you are one, reproducibly, across platforms, over time. That negative space, visible only when all eleven streams are held in one frame, is not a gap in the research. It is a description of an institution that does not yet exist.
 
-From our data · 3D
+## VI · The Instrument, what the vacuum implies
 
-## How often each chain's own website was cited for its hours
+If the evidence converges on a substrate no one is measuring, the implied object is not a tactic or a tool, it is an institution: an independent, reproducible record of what AI says about local businesses, and whether they are known for the right things.
+
+That is the function Local AI Registry performs. It scores independent local businesses across ChatGPT, Gemini, Perplexity, and Google AI Overviews; it measures not just whether a business is named but whether it is named for the right service, the alignment this report shows the whole system rewards; and it does so repeatedly, across platforms, over time, which is exactly the reproducibility the landscape lacks. The registry is not a product appended to the research. It is the instrument the convergence implies.
+
+### From reading to record
+
+A reader can act on the four currents today: move the work off-property, apply specificity at every layer, act within the window, and treat verifiability as a conversion advantage. But to know where you stand, what you're named for, what you're invisible for, where the reputation and the marketing diverge, requires the instrument. That is what the next page offers.
+
+## VII · The evidence layer, seven findings underneath
+
+**Seven findings underneath the view**
+
+The bird's-eye view is built on a deeper layer of cross-source findings, each one a conclusion drawn by overlaying two or three datasets that none of them states alone. They are summarized here as the supporting evidence beneath the four currents; each is documented at length in companion analysis.
+
+### The seven triangulated findings beneath the convergence
+
+- **01 · The Broken Scoreboard.** The canonical local-pack model and AI visibility are nearly orthogonal. Built from: Ahrefs × Whitespark × antitrust.
+- **02 · The Exposure Runway.** The 7.9% local AI rate is a countdown toward the 57.9% question rate. Built from: Ahrefs × BrightLocal.
+- **03 · Re-Centralization.** Proximity's death plus prominence bias tilts AI toward incumbents. Built from: Local Falcon × retrieval-bias research.
+- **04 · The Closing Window.** A temporary long-tail citation opening that bias predicts will re-narrow. Built from: Ahrefs × field experiment × academia.
+- **05 · Reviews Are the Keystone.** The only lever that is ranking signal, citation source, safeguard & legal moat at once. Built from: Whitespark × mechanism × Liu × FTC.
+- **06 · The Verification Dividend.** The fact-check, not the recommendation, is where the funnel breaks. Built from: BrightLocal × Tow Center.
+- **07 · Two Disjoint Games.** ChatGPT-via-Bing visibility is the underpriced channel. Built from: Seer × Ahrefs × Sensor Tower.
+
+Each finding is graded **ANALYSIS**, a strong hypothesis from real, cited inputs, not a measured fact. Several become measurable original statistics when cross-checked against the live index; those measurements will be published when complete.
+
+## Where to go from here
+
+**See where you actually stand**
+
+This report describes the landscape from above. The next step is the instrument it implies, specific to you, whether you run a business that needs to know what AI says about it, or you're a customer who wants the truth about who's actually good.
+
+### For business owners
+
+**Register your business, free.** Find out, in under a minute, what ChatGPT, Gemini, Perplexity, and Google AI Overviews currently say about you, what you're named for, what you're invisible for, and your AI Score across every service you offer. Registering and claiming your listing is free.
+
+[Get your AI Score →](../../index.html)
+
+### For consumers
+
+**Check what a business is known for.** Before you book, see what the AI really says, what a local business is genuinely known for, where it's strong, and where the reputation doesn't match the marketing. An honest, editorial read, never pay-to-rank.
+
+[Look up a business →](https://localairegistry.com/search)
+
+Local AI Registry is the independent, editorial registry of how AI sees local business. We never sell rankings.
+
+## Methodology & limitations
+
+### How this report was built
+
+This is a work of synthesis at altitude: eleven independent evidence streams, read together to surface the conclusions that only their overlap reveals. Every input is a real, cited figure from a named source; the convergence and the four currents are our own **ANALYSIS**; forward inferences are marked ** PROJECTION**. We hold a strict "real or omitted" rule, no quote, statistic, study, court finding, or researcher is invented, and unverifiable figures (such as a widely-shared "797,444 impressions, 7 clicks" anecdote) are excluded rather than repeated.
+
+### What this method can and cannot claim
+
+Convergence is strong evidence, not proof of mechanism. Many independent sources agreeing on a substrate is a powerful signal, but several inputs are correlational and inherit that limit. Projections are reasoned, not certain, the transition window and the runway are extrapolations from measured trends, flagged as such. The local-AI research gap is real: little peer-reviewed work studies local-business inclusion in AI answers directly, so local conclusions are careful inferences from adjacent retrieval, bias, and entity-grounding research. Vendor incentive exists in some sources; figures were cross-checked where possible. The accountability vacuum is, by definition, where measurement is thinnest, which is precisely the gap the registry is built to close, and why proprietary figures are shown as forthcoming rather than asserted.
+
+Reference numbers are shared across the Local AI Visibility Series for cross-referencing; gaps indicate sources cited in companion papers.
+
+## The independent registry of how AI sees local business.
+
+Local AI Registry scores independent local businesses on whether AI assistants recommend them, and, just as importantly, on whether they're recommended for the right things. We're editorial, transparent, and never pay-to-rank. Yellow Pages told you who existed. We tell you what the AI actually says.
+
+**Free to register. Free to be found correctly.**
+
+This report synthesizes publicly available evidence; the convergence and currents are analytical conclusions, not measured facts. Not legal or marketing advice. No AI placement can be guaranteed.
+
+## How to cite this report
+
+Local AI Registry Research. The Convergence: What Eleven Streams of Evidence Reveal About How Local Businesses Win AI Recommendations. White Paper No. 03 (Definitive Edition), June 2026. localairegistry.com/research.
+
+About the author
+
+Local AI Registry Research, the research arm of Local AI Registry
+
+Publishes the Local AI Visibility Series, which reads the published evidence on how AI assistants recommend local businesses.
+
+References
+
+1. 1. BrightLocal. Local Consumer Review Survey 2026. [brightlocal.com](https://www.brightlocal.com/research/lcrs-ai-trust/)
+2. 2. G. Allsopp / Ahrefs. AI visibility study, 75,000 brands. [ahrefs.com](https://ahrefs.com/blog)
+3. 3. Ahrefs. What Triggers AI Overviews? 86 Factors, 146M SERPs. [ahrefs.com](https://ahrefs.com/blog/ai-overview-triggers/)
+4. 4. Ahrefs. 38% of AI Overview Citations Pull From the Top 10. [ahrefs.com](https://ahrefs.com/blog/ai-overview-citations-top-10/)
+5. 5. Local Falcon. AI Overviews proximity whitepaper, ~60,000 simulations. 2025. [localfalcon.com](https://localfalcon.com/)
+6. 6. Seer Interactive. SearchGPT/Bing citation & CTR analyses. 2025-26. [seerinteractive.com](https://seerinteractive.com/)
+7. 7. Sensor Tower. State of AI 2026. June 2026. [sensortower.com](https://sensortower.com/)
+8. 8. D. Shaw / Whitespark. Local Search Ranking Factors 2026. [whitespark.ca](https://whitespark.ca/)
+9. 9. Google Search Central. AI Features and Your Website. [developers.google.com](https://developers.google.com/search/docs/appearance/ai-features)
+10. 10. Google Search Central. AI optimization guide. [developers.google.com](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+11. 12. R. Stein (VP Product, Google Search), Lenny's Podcast. Query fan-out & AI Mode. 2025.
+12. 17. U.S. v. Google, Mem. Opinion (Judge A. Mehta, Nov 2025); FastSearch / RankEmbed / Navboost disclosures; P. Nayak testimony. [searchengineland.com](https://searchengineland.com/)
+13. 19. P. Aggarwal et al. (Princeton; Georgia Tech; Allen AI; IIT Delhi). GEO: Generative Engine Optimization. KDD 2024. [arxiv.org](https://arxiv.org/abs/2311.09735)
+14. 25. S. Dai, L. Pang, J. Xu et al. (Renmin Univ.; CAS). Neural Retrievers are Biased Towards LLM-Generated Content. KDD 2024. [arxiv.org](https://arxiv.org/abs/2310.20501)
+15. 26. M. Fayyaz, A. Modarressi, H. Schütze, N. Peng (UCLA; LMU). Collapse of Dense Retrievers. ACL 2025. [arxiv.org](https://arxiv.org/abs/2503.05037)
+16. 30. I. Yamada et al. (RIKEN; Studio Ousia). LUKE: entity-aware representations. EMNLP 2020. [aclanthology.org](https://aclanthology.org/2020.emnlp-main.523/)
+17. 32. N. F. Liu, T. Zhang, P. Liang (Stanford). Evaluating Verifiability in Generative Search Engines. EMNLP 2023. [aclanthology.org](https://aclanthology.org/2023.findings-emnlp.467/)
+18. 34. K. Jaźwińska, A. Chandrasekar (Tow Center, Columbia). AI Search Has a Citation Problem. CJR, 2025. [cjr.org](https://cjr.org/)
+19. 35. U.S. FTC. Rule on Consumer Reviews and Testimonials, 16 CFR 465. 2024. [ftc.gov](https://ftc.gov/)
+20. 38. European Commission. EU AI Act, Article 50, applicable 2 Aug 2026. [artificialintelligenceact.eu](https://artificialintelligenceact.eu/)
+21. 41. A. Shotland (Local SEO Guide). Reddit-mention AI Overview experiment. [localseoguide.com](https://localseoguide.com/)
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [How the AI Score is calculated](../../methodology/index.html)
+
+## See where you actually stand
+
+Free, no card, in about thirty seconds.
+
+[Get your AI Score](../../index.html)
 
 **Is AI recommending you?**
 
@@ -8093,9 +8326,130 @@ Track the share of answers that name your business, collect enough answers to tr
 
 Local AI Registry’s free AI Score gives a broader diagnostic of how findable and recommendable a business is to ChatGPT, Gemini, Claude and Perplexity. It is a diagnostic, not the recommendation-frequency measure described in this brief.
 
-From our data · 3D
+## What does this mean for local businesses?
 
-## “best closed rhinoplasty surgeon in Los Angeles”: how often each business was named
+The evidence changes the question worth asking. Whether a given assistant recommends a given business has no stable answer. How often the business is named, by which systems, for which requests, in which places, and how that frequency is moving does. Seen this way, AI visibility is not unknowable. It is measurable in the way other probabilistic systems are measured: through repeated, documented observation, with uncertainty stated and causes claimed only where the evidence supports them.
+
+For local businesses, and for healthcare providers in particular, that discipline separates a reaction to one answer from an understanding of a market position that AI assistants increasingly help to shape. No intervention studied to date guarantees a recommendation. The research does support a narrower and more useful conclusion: visibility in AI-generated local recommendations can be observed, compared and tracked, provided it is estimated from many observations and not inferred from a single answer.
+
+## Who provides AEO services for local businesses?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization company built for local businesses. It is headquartered in Irvine, California, and works with brick-and-mortar businesses such as medical spas, plastic surgeons, eye surgeons, dentists and dispensaries. Its local AEO services include:
+
+- **Free business record.** A public, owner-claimable record of what AI says about the business, with every fact confirmed by the owner.
+- **AI visibility audit.** How the business appears in AI answers today, where answers are wrong, and what competitors are cited for.
+- **Google Business Profile management.** Location-level hours, holiday hours, services and updates kept current.
+- **Press releases and media.** Earned coverage in the news sources AI cites most for local questions.
+- **AEO content.** Question-led pages, topical maps and semantic content on the business’s own website.
+- **Technical AEO.** LocalBusiness schema, llms.txt, readable pages and AI-readable media.
+- **Listing consistency.** Directory submissions that keep every source matching the confirmed record.
+
+Local AI Registry publishes its research openly, including this brief, so business owners can see the evidence behind its methods. Business owners can [look up their business at localairegistry.com/search](https://localairegistry.com/search) and see what AI says about them today.
+
+## Frequently asked questions
+
+### Does ChatGPT recommend the same businesses every time?
+
+No. AI assistants compose a new answer for every request. When ChatGPT was asked the same local question twice, a median of 39 minutes apart, a median of 29% of the businesses named in either answer were named in both, according to 8ight.AI data reviewed by Local AI Registry. In a census of Bali venues, repeated runs of the same query overlapped by 0.22 for Claude and 0.45 for Gemini.
+
+### How do I know if AI recommends my business?
+
+Ask the same customer questions many times, under the same conditions, and count the share of answers that name your business. One answer only shows whether you were named that one time. Local AI Registry’s free business record and AI visibility audit show what ChatGPT, Gemini, Claude and Perplexity say about a business today.
+
+### How many AI answers do I need to measure my AI visibility?
+
+More than one, and usually many. Local AI Registry calculated that a business named in 40% of answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100 answers, assuming the conditions stay the same.
+
+### Why does AI recommend different businesses in different places?
+
+Place changes the answer. Without web search, the share of real doctors an AI model named fell from 16.3% in the largest third of US metro areas to 9.5% in the smallest (Ibrahim and Zaki, 2026, preprint). Within one town, BrightLocal found that only 3.5% of the businesses ChatGPT named appeared at every point tested.
+
+### Does web search change which businesses AI recommends?
+
+Yes. In an audit of the 100 largest US metro areas, only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city; with web search on, the same model reached 63.9% (Ibrahim and Zaki, 2026, preprint).
+
+### Does the wording of a question change who AI recommends?
+
+Yes. In a peer-reviewed study of chatbot recommendations in the 20 largest US cities, 74.7% of the people recommended for “an oculoplastic surgeon” were oculoplastic specialists, compared with 46.6% for “a doctor who does eyelid lifts” (Parikh et al., 2024).
+
+### Can I trust the sources an AI answer cites?
+
+Only partly. In a peer-reviewed audit of four generative search engines, only 51.5% of generated sentences were fully supported by their citations, and only 74.5% of citations supported the sentence they were attached to (Liu, Zhang and Liang, 2023). Citations show which sources are prominent, not what caused the answer.
+
+### Can AEO guarantee that ChatGPT recommends my business?
+
+No. No intervention studied to date guarantees a recommendation. The foundational paper on generative engine optimization found that content changes raised visibility by up to 40% on its benchmark, with effects that varied by domain. That shows visibility responds to content, not that a particular change will bring recommendations or customers to a particular business.
+
+### What is the difference between AEO and GEO?
+
+Generative engine optimization (GEO) and answer engine optimization (AEO) describe the same goal: being cited and described correctly in AI-generated answers. GEO is the term used in academic research; AEO is more common in marketing.
+
+### How do I get my business recommended by ChatGPT, Claude or Gemini?
+
+AI assistants name businesses whose facts they can find, read and confirm. Keep your name, location, services and prices clear and identical on your website, Google Business Profile and listings, and judge your visibility across many answers rather than one. Local AI Registry, a free AEO directory for local businesses, gives every business a free, owner-confirmed record at localairegistry.com/search as a starting point.
+
+### What is Local AI Registry?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization (AEO) company and free AEO directory for local businesses, headquartered in Irvine, California. It keeps a verified, owner-confirmed public record of each business so that ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews can find and describe it accurately, and its research team publishes studies on how AI answers local questions.
+
+## Limits of this research
+
+- This brief is an editorial synthesis of published research. Local AI Registry did not collect any of the data cited, and the findings belong to the original authors; Local AI Registry selected, grouped and explained them.
+- Preprints have not yet been peer-reviewed and are marked as such. The Bali census was funded and conducted by Norly, an AI-visibility vendor. Industry figures are attributed to the organizations that collected them.
+- Each number comes from its own study, population and metric, so values from different studies are not directly comparable.
+- Much of the evidence covers healthcare providers in US cities and hospitality venues in Bali. Other business categories and countries may behave differently.
+- Figure 3 is an illustrative calculation that assumes independent answers under fixed conditions. It is not study data.
+- AI systems change as models, retrieval sources and defaults are updated, so each study is a record of a single point in time.
+
+## References
+
+1. Murphy, R. (2026, February 11). *Local consumer review survey 2026*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-consumer-review-survey/) Industry survey.
+2. Kliman-Silver, C., Hannák, A., Lazer, D., Wilson, C., & Mislove, A. (2015). Location, location, location: The impact of geolocation on web search personalization. In *Proceedings of the 2015 Internet Measurement Conference* (pp. 121-127). ACM. [doi.org/10.1145/2815675.2815714](https://doi.org/10.1145/2815675.2815714)
+3. Grossman, R., Liu, S., Chen, M. K., Smith, M., Borcea, C., & Chen, Y. (2026). How generative AI disrupts search: An empirical study of Google Search, Gemini, and AI Overviews. In *Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval*. ACM. [doi.org/10.1145/3805712.3809667](https://doi.org/10.1145/3805712.3809667)
+4. Pitenin, V. (2026). *Invisible to the machine: Auditing AI restaurant, café, and bar recommendation against a complete market census* (arXiv:2608.07069). [arxiv.org/abs/2608.07069](https://arxiv.org/abs/2608.07069) Preprint, not peer-reviewed; funded and conducted by Norly, an AI-visibility vendor; pre-registered.
+5. Ibrahim, H., & Zaki, Y. (2026). *Understanding AI provider recommendations in local service markets* (arXiv:2609.18341). [arxiv.org/abs/2609.18341](https://arxiv.org/abs/2609.18341) Preprint, not peer-reviewed.
+6. Li, H., & Hecht, B. (2020). 3 stars on Yelp, 4 stars on Google Maps: A cross-platform examination of restaurant ratings. *Proceedings of the ACM on Human-Computer Interaction, 4*(CSCW3). [par.nsf.gov/biblio/10208785](https://par.nsf.gov/biblio/10208785)
+7. Haupt, M. R., Massillon, D., Yang, L., Chen, Y., Natarajan, A., Ward, S. R., & Mackey, T. K. (2026). Prompt engineering experiment on ChatGPT’s ability to recommend orthopedic surgeons. *International Journal of Medical Informatics, 219*, 106581. [pubmed.ncbi.nlm.nih.gov/42378890](https://pubmed.ncbi.nlm.nih.gov/42378890/)
+8. Hawkes, M. (2026, September 16). *What 200k local AI searches tell us about what businesses get recommended, and why your website matters*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-ai-visibility-study/) Industry study.
+9. Parikh, A. O., Oca, M. C., Conger, J. R., McCoy, A., Chang, J., & Zhang-Nunes, S. (2024). Accuracy and bias in artificial intelligence chatbot recommendations for oculoplastic surgeons. *Cureus, 16*(4), e57611. [pmc.ncbi.nlm.nih.gov/articles/PMC11069401](https://pmc.ncbi.nlm.nih.gov/articles/PMC11069401/)
+10. Kamruzzaman, M., Nguyen, H. M., & Kim, G. L. (2024). “Global is good, local is bad?”: Understanding brand bias in LLMs. In *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing* (pp. 12695-12702). Association for Computational Linguistics. [aclanthology.org/2024.emnlp-main.707](https://aclanthology.org/2024.emnlp-main.707/)
+11. 8ight.AI. (2026, October 5). *Ask an AI for a roofer* (Study 01). [8ight.ai](https://8ight.ai/research/how-ai-recommends-local-businesses/) Industry study.
+12. Liu, N. F., Zhang, T., & Liang, P. (2023). Evaluating verifiability in generative search engines. In *Findings of the Association for Computational Linguistics: EMNLP 2023* (pp. 7001-7025). [aclanthology.org/2023.findings-emnlp.467](https://aclanthology.org/2023.findings-emnlp.467)
+13. Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., & Deshpande, A. (2024). GEO: Generative engine optimization. In *Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining* (pp. 5-16). ACM. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
+14. Metaxa, D., Park, J. S., Robertson, R. E., Karahalios, K., Wilson, C., Hancock, J., & Sandvig, C. (2021). Auditing algorithms: Understanding algorithmic systems from the outside in. *Foundations and Trends in Human-Computer Interaction, 14*(4), 272-344. [doi.org/10.1561/1100000083](https://doi.org/10.1561/1100000083)
+
+The findings described in this brief belong to the original authors. Local AI Registry selected, grouped and explained them, and made the charts.
+
+## How to cite this research
+
+You are welcome to use this brief and its charts with credit. Each chart is licensed CC BY 4.0, and every chart above has a ready-made embed code that credits the source.
+
+Ready-to-quote findings
+
+- “When the same query was run twice, Google Search shared 0.78 of its sources but Gemini shared only 0.46.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “Only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city, versus 63.9% with web search on.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “A business named in 40% of AI answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+
+```
+Local AI Registry Research Team (2026). How Often AI Recommends Your Business: A Better Measure of Local Visibility (LAIR-R-2026-002). Local AI Registry. https://localairegistry.com/research/how-often-ai-recommends-your-business
+```
+
+Data: the values behind every chart are available as a [CSV download](https://localairegistry.com/research/how-often-ai-recommends-your-business/data/how-often-ai-recommends-your-business-data.csv). They are reported as published in the sources listed above, except Figure 3, which is Local AI Registry’s own illustrative calculation.
+
+## About the author
+
+**The Local AI Registry Research Team** is Local AI Registry’s dedicated local AI research group, and its people come from some of the biggest names in search, tech and brick-and-mortar business: Google, Microsoft, Spotify, Chase, Mozilla Firefox, Allergan, Galderma, Evolus, Revance, Johnson & Johnson, Bayer, Estée Lauder, Nordstrom, Sephora, Saks Fifth Avenue, Spectrum, BitGo, Republic, NextSeed, Toptal and RxSight. It is led by a former Google Search executive, advised by a Stanford-trained dermatologist and a Northwestern professor who is a past president of the American Society for Laser Medicine and Surgery, and spread across California, Washington, Texas, New York, Florida, Brazil, Nigeria, Poland, India and Singapore. The team works from raw public data, owns and runs a local med spa, and studies how ChatGPT, Claude, Gemini, Google AI Overviews, Perplexity and Microsoft Copilot find and describe local businesses.
+
+The team is a dedicated follower of the researchers who built modern AI and those who study AI search, including Geoffrey Hinton, Yoshua Bengio, Yann LeCun, Ashish Vaswani, Noam Shazeer, Demis Hassabis, Jeff Dean, Ilya Sutskever, Andrej Karpathy, Dario Amodei, Jared Kaplan, Chris Olah, Fei-Fei Li, Andrew Ng, Percy Liang, Karthik Narasimhan, Ameet Deshpande, Himabindu Lakkaraju, Aounon Kumar, Nelson F. Liu, Umar Iqbal and Jacob M. Montgomery. Their work underpins ChatGPT, Claude and Gemini, and the team studies their papers and tests their ideas against what AI says about local businesses. No affiliation or endorsement implied. See the [references](../../research/how-often-ai-recommends-your-business/index.html#references).
+
+One last thing
+
+AI is evolving every day. So is our playbook.
+
+The engines change how they find, read and cite local businesses constantly, and what worked last quarter may not work next quarter. At Local AI Registry, our dedicated local AI research team keeps testing what works, so the businesses we serve always get the current best approach.
 
 **Is AI recommending you?**
 
@@ -9082,24 +9436,6 @@ Winners are listed in the guide that earned the award, with a link to their reco
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## What people ask AI about skin care clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/skin-care-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| What are the options for skin tag removal at a dermatologist? | 24,120 a year |
-| Do skin care clinics offer anti-wrinkle treatments? | 16,200 a year |
-| What is the process for skin tag removal at a clinic? | 13,200 a year |
-| What treatments are available for dry skin at a skin care clinic? | 10,860 a year |
-| Are there any skin care clinics offering red light therapy for skin rejuvenation? | 7,260 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -9128,24 +9464,6 @@ Best-of guides answer the question people actually ask AI: who's best for me? Ea
 Each award goes to the business that leads on one need, using public, checkable data: review rating and volume across sources, published prices, years open, menus and medical oversight. Businesses without enough public data are listed but not awarded. More cities and categories are added every month.
 
 [See the awards](../awards/index.html)[Search the registry](../registry/index.html)
-
-From our data · 3D
-
-## What people ask AI about dermatology practices, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/dermatology/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there a dermatologist near me? | 80,760 a year |
-| Who is the nearest dermatologist to me? | 80,760 a year |
-| Where can I get laser hair removal? | 24,120 a year |
-| Which dermatologist is good for removing skin tags? | 24,120 a year |
-| What treatments do dermatologists provide for skin tag removal? | 24,120 a year |
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -9759,24 +10077,6 @@ Your record probably already exists. Book a free AI check and we'll show you wha
 
 [Book a free AI check](../start/index.html)[Get named in AI](../blueprint/index.html)
 
-From our data · 3D
-
-## What people ask AI about medical clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/medical-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -9878,7 +10178,7 @@ Leaders from Allergan, Revance, Galderma, Merz, Evolus and more back the Local A
 
 [TC**Taryn Conway***Marketing executive*](../experts/index.html#taryn-conway)[BH**Benjamin Hahr***Tech executive*](../experts/index.html#benjamin-hahr)[KL**Kellie Lao***Marketing executive*](../experts/index.html#kellie-lao)[ES**Eric Sanders***Marketing executive*](../experts/index.html#eric-sanders)[JR**Jennifer Redmond, MBA***Commercial executive*](../experts/index.html#jennifer-redmond)[OO**Opie Opfer***Creative executive*](../experts/index.html#opie-opfer)[BB**Bryan Bullock***Marketing executive*](../experts/index.html#bryan-bullock)[JA**Jeff Allen***Sales executive*](../experts/index.html#jeff-allen)[DS**Dustin Sjuts***CEO, Revelyx Bio*](../experts/index.html#dustin-sjuts)[KM**Kara McClanahan***CEO, Aesthetic Practice Partners*](../experts/index.html#kara-mcclanahan)[KG**Kimberly Gerber***CEO, Excelerate*](../experts/index.html#kimberly-gerber)[JH**Jasmine Hill, MBA***CEO, Aesthetic Influencer*](../experts/index.html#jasmine-hill)[BW**Ben Wolber***CEO, Illume*](../experts/index.html#ben-wolber)[BH**Brandon Hahr***CEO, Kingsmen Digital Ventures*](../experts/index.html#brandon-hahr)[MM**Michael Moretti***CEO, Medical Insight*](../experts/index.html#michael-moretti)
 
-#### On this page
+On this page
 
 1. [What it is](#what-it-is)
 2. [What does the research say?](#what-our-research-found)
@@ -10027,7 +10327,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How often AI-cited pages were thin or broken
+## The rating ChatGPT wrote vs the rating on its own map
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -10035,7 +10335,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -10121,7 +10421,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How many searches we sampled in each topic
+## The few websites ChatGPT linked when it named local businesses
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -10129,7 +10429,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -10214,7 +10514,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## Up close: which sources AI leans on harder for local answers
+## More reviews didn't mean a higher spot
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -10222,7 +10522,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -10308,7 +10608,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## “best closed rhinoplasty surgeon in Los Angeles”: best position each business reached
+## Where Google's AI got each chain's hours
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -10316,7 +10616,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -10401,7 +10701,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How many local AI answers we read for each chain
+## Where each assistant found its local picks
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -10409,7 +10709,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -10514,7 +10814,7 @@ From our data · 3D
 
 ## “best closed rhinoplasty surgeon in Los Angeles”: who ChatGPT named, ask by ask
 
-#### On this page
+On this page
 
 1. [Why we guarantee it](#why)
 2. [If we miss it, we keep working for free](#if-we-miss)
@@ -10590,26 +10890,6 @@ References to the HIPAA Rules mean the sections as in effect or as amended. The 
 ### Business Associate
 
 Blind LLC, doing business as Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · (213) 931-5633 · hello@localairegistry.com. Signed by Steve Lee, Founder and CEO, upon countersignature.
-
-From our data · 3D
-
-## Up close: what people ask AI about dental practices
-
-Drag to turn
-
-A sample of the research we publish. Patient information never appears in it.
-
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/dentists/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Where can I find a dentist near me? | 219,600 a year |
-| Which dentists accept Delta Dental insurance? | 80,760 a year |
-| How do I find a dentist that accepts my insurance plan? | 36,120 a year |
-| What dental insurance plans are accepted by local dentists? | 36,120 a year |
-| Where can I find a pediatric dentist close to me? | 24,120 a year |
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -10755,7 +11035,7 @@ Google Gemini
 :   AI-generated content drafting and AI visibility checks. Same handling as OpenAI.
 
 SerpZilla / SerpClix / Adsy / RedPress
-:   Off-page module vendors used only for customers actively enrolled in those modules &mdash; backlinks, CTR campaigns, press release distribution.
+:   Off-page module vendors used only for customers actively enrolled in those modules: backlinks, CTR campaigns, press release distribution.
 
 DigitalOcean
 :   Application hosting, managed Postgres, object storage (DO Spaces) for photos and report PDFs.
@@ -10770,9 +11050,86 @@ No mobile information will be shared with third parties or affiliates for market
 
 Section 08
 
-From our data · 3D
+## When we disclose your information
 
-## “best rhinoplasty surgeon in San Diego”: how often each business was named
+We disclose information only in these specific circumstances:
+
+- **To deliver the Services.** The sub-processors in Section 7 receive what they need to do their job and nothing more.
+- **With your direction.** If you connect Google, or instruct us to publish content, we transmit the corresponding data to those platforms on your behalf.
+- **To comply with law.** We may disclose information when required by a valid subpoena, court order, or government request. We push back where the request is overbroad and notify you where we are legally permitted to do so.
+- **To protect rights and safety.** Where necessary to investigate fraud, security incidents, or violations of our Terms of Service.
+- **Business transfer.** If Blind LLC is acquired or merged, customer data transfers to the acquirer under the same protections.
+
+Section 09
+
+## Data retention
+
+We keep account data for as long as your account is active, plus a short tail to handle disputes, support, and legal obligations. Specifically:
+
+- **Account profile and business data:** kept while the account is active; deleted within 30 days of account closure (or sooner on request).
+- **OAuth tokens (Google):** deleted within 24 hours of revocation or account closure.
+- **Pageview hashes (Section 2):** raw IP is never persisted; the salted hash is kept for 13 months for week-over-week trend reporting, then purged.
+- **Billing records:** retained for 7 years to meet tax and accounting obligations.
+- **Application logs:** 30 days, then purged.
+- **Public business profile pages** we generate from the public web persist as long as the underlying business is operational. Owners can flag inaccurate data or request removal, see Section 11.
+
+Section 10
+
+## Data security
+
+We protect data with industry-standard controls: TLS in transit, AES-256 at rest in managed Postgres and object storage, encrypted secrets, least-privilege access management, structured access logs, and continuous error monitoring. OAuth tokens are stored encrypted with separate key material. Production database access is restricted to a small set of authorized engineers and audited.
+
+No system is impenetrable, so we maintain an incident-response plan and will notify affected users without undue delay if a breach occurs that materially affects their data.
+
+Section 11
+
+## Your rights and choices
+
+You can:
+
+- **Access** the personal information we hold about you by emailing the address in Section 15.
+- **Correct** inaccurate information directly in your dashboard, or by writing to us.
+- **Delete** your account and associated personal information at any time from Settings → Account, or by writing to us.
+- **Port** your data: request a machine-readable export.
+- **Restrict or object** to specific processing.
+- **Opt out** of non-essential email communications via the unsubscribe link in any non-transactional email.
+- **Revoke** OAuth access at any time through the third-party platform (Section 4).
+- **Flag** inaccurate data on a public business profile we generated using the “Report inaccuracy” affordance on the page.
+
+If you are in the United Kingdom or another jurisdiction with similar laws (GDPR, UK GDPR), you additionally have the right to lodge a complaint with your local supervisory authority. If you are a California resident, you have rights under the CCPA / CPRA including the right to know what we collect, the right to delete, the right to correct, and the right not to be discriminated against for exercising your rights. We honor all of these rights regardless of your jurisdiction.
+
+Section 12
+
+## International transfers
+
+Local AI Registry is operated from the United States, and our primary infrastructure is hosted in U.S. data centers. If you are accessing the Services from outside the United States (including the United Kingdom), your information will be transferred to and processed in the United States. We rely on Standard Contractual Clauses or equivalent mechanisms with our sub-processors where required.
+
+Section 13
+
+## Children
+
+The Services are intended for businesses and adults. We do not knowingly collect personal information from anyone under 13 (or under 16 in jurisdictions that apply a higher age). If we learn that we have inadvertently collected such information, we will delete it promptly.
+
+Section 14
+
+## Changes to this policy
+
+We may revise this policy as our product evolves or as legal requirements change. When we make material changes, we will notify account holders by email and update the “Last revised” date at the top. Continued use of the Services after the effective date of a revised policy constitutes acceptance of the revisions.
+
+Section 15
+
+## Contact us
+
+Questions about this policy, data requests, or anything else, reach us:
+
+Email
+:   [hello@localairegistry.com](mailto:hello@localairegistry.com)
+
+Phone
+:   (213) 928-2348
+
+Mailing entity
+:   Blind LLC
 
 **Is AI recommending you?**
 
@@ -10935,27 +11292,6 @@ For clients on a Program that includes the guarantee, Local AI Registry guarante
 
 SECTION 10
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in San Diego”: best position each business reached
-
-Drag to turn
-
-A sample of the research we publish, so you can see the standard we hold ourselves to.
-
-Each layer is a business ChatGPT named. Wider means it reached a higher spot in at least one of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Sirius Yoo | 6 |
-| John Hilinski | 6 |
-| Christopher Kolstad | 4 |
-| Ronald Edelson | 2 |
-| Victor Chung | 3 |
-| Richard Balikian | 3 |
-
 ## Cancellation
 
 Programs are month to month unless we agree otherwise in writing. Cancel anytime by emailing hello@localairegistry.com at least 14 business days before your next billing date; otherwise that cycle is charged and cancellation takes effect at its end. Submit any guarantee claim before your cancellation takes effect.
@@ -11114,18 +11450,18 @@ See the data
 
 |  |  |
 | --- | --- |
-| Content writer | 3,600/mo |
-| Video producer | 3,500/mo |
-| SEO agency | 1,750/mo |
+| Local SEO agency | 2,500/mo |
+| YouTube video producer | 2,000/mo |
 | PR group | 1,500/mo |
-| Web management team | 650/mo |
+| Web management team | 850/mo |
 | Review management | 399/mo |
 | AI monitoring tool | 399/mo |
 | Google profile manager | 299/mo |
+| Content ranking tool | 299/mo |
 
 ## Compared with buying it separately
 
-Covering the same nine jobs with separate vendors runs about **$12,200 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
+Covering the same nine jobs with separate vendors runs about **$8,300 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
 
 ## The terms, in plain words
 
@@ -11198,7 +11534,7 @@ Across the businesses we've scored, nearly two in three land below 45 out of 100
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: best position each business reached
+## How many sources stay the same when you reword the question
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -11247,7 +11583,7 @@ Use the [prompt finder](../../tools/prompt-finder/index.html) to get the questio
 
 From our data · 3D
 
-## Up close: how often Google shows an AI answer, by topic
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -11280,7 +11616,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## What nine separate vendors cost a month, stacked
+## Readable words on the pages AI cited
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -11323,7 +11659,7 @@ If you're not named, compare yourself with the businesses that are, using the [1
 
 From our data · 3D
 
-## How far past page one the AI goes, by source, stacked
+## The top questions in every industry
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -11356,7 +11692,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## “best lip filler in Newport Beach”: best position each business reached
+## Only 1 of 207 local answers gave an address or phone
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -11478,18 +11814,18 @@ Getting named in AI takes work across every place AI reads about you. Bought sep
 
 | Vendor | Job | Typical cost |
 | --- | --- | --- |
-| SEO agency | Rankings and links | $1,750/mo |
-| Web management team | Website updates | $650/mo |
+| Local SEO agency | Rankings, maps and links | $2,500/mo |
+| Web management team | Website updates and hosting | $850/mo |
 | PR group | Press releases every month | $1,500/mo |
-| Video producer | Video for your profiles | $3,500/mo |
-| Listings software | Yext Premium package | $83/mo |
-| Review management | Podium Core plan | $399/mo |
-| Google profile manager | Birdeye Starter plan | $299/mo |
-| Content writer | Blog and page copy | $3,600/mo |
-| AI monitoring tool | Profound Growth plan | $399/mo |
-| Total | Nine vendors | about $12,200/mo |
+| YouTube video producer | Videos for your channel and profiles | $2,000/mo |
+| Listings software | Premium package | $83/mo |
+| Review management | Core plan | $399/mo |
+| Google profile manager | Starter plan | $299/mo |
+| Content ranking tool | Peace of Mind plan, billed yearly | $299/mo |
+| AI monitoring tool | Growth plan | $399/mo |
+| Total | Nine vendors | about $8,300/mo |
 
-Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [WebFX, content marketing cost, 2026](https://www.webfx.com/content-marketing/pricing/how-much-does-content-marketing-cost/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
+Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Surfer, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [CostBench, Surfer SEO pricing, Nov 2026](https://www.costbench.com/software/ai-seo-tools/surfer-seo/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
 
 From our data · 3D
 
@@ -11528,7 +11864,7 @@ What if my agency already does SEO?
 
 SEO is part of it, and a good foundation. AI answers also lean on reviews, press, best-of lists and outside articles. We cover all of them.
 
-#### On this page
+On this page
 
 1. [Side by side](#side-by-side)
 2. [What it means for your business](#what-it-means)
@@ -11807,7 +12143,7 @@ Sample referral and wallet numbers.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Houston”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 **HIPAA ready** We sign a BAA with every healthcare practice.
 
@@ -12301,13 +12637,13 @@ Every assistant finds local businesses a little differently. Some lean on Google
 
 **Google AI Overviews and AI Mode** Google's AI answers are built on Google Search and Google's local data.](../ai/google-ai-overviews/index.html)[Google
 
-**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services..](../ai/gemini/index.html)[Perplexity
+**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services.](../ai/gemini/index.html)[Perplexity
 
 **Perplexity** Perplexity searches the web for every answer and shows its sources.](../ai/perplexity/index.html)[Anthropic
 
 **Claude** When Claude searches the web for a local question, it reads and cites public sources: review sites, guides, news and business websites.](../ai/claude/index.html)[Microsoft
 
-**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation..](../ai/copilot/index.html)[Apple
+**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation.](../ai/copilot/index.html)[Apple
 
 **Siri and Apple Intelligence** When someone asks Siri for a nearby business, Apple draws on Apple Maps data.](../ai/siri/index.html)[Amazon
 
@@ -12337,9 +12673,9 @@ When ChatGPT got the same local question about 39 minutes apart, a median of 29%
 
 Asked the same query twice, Google Search shared 0.78 of its sources, AI Overviews 0.66 and Gemini 0.46 (Grossman et al., SIGIR 2026, reviewed in our brief). [How Often AI Recommends Your Business, LAIR-R-2026-002](../research/how-often-ai-recommends-your-business/index.html)
 
-## The topics most likely to get an AI answer
+## How often the assistants agreed on a local pick
 
-#### On this page
+On this page
 
 1. [What every assistant has in common](#shared)
 2. [What does the research say?](#what-our-research-found)
@@ -12408,7 +12744,7 @@ Level 4**Tesla** 100 clients signed
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Miami”: best position each business reached
+## “best chiropractor in Irvine, CA”: how many assistants named each business
 
 ## What you’ll be selling
 
@@ -12498,7 +12834,7 @@ What every assistant says about you, each month.
 
 From our data · 3D
 
-## The vaguer the question, the less the business gets cited
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -12686,7 +13022,7 @@ Why does ChatGPT give different businesses each time?
 
 Answers vary with wording, location and the sources it happens to read. Businesses that are strong across many sources show up most consistently.
 
-#### On this page
+On this page
 
 1. [How do I claim my business in ChatGPT?](#claim-in-chatgpt)
 2. [What does the research say?](#what-our-research-found)
@@ -12789,7 +13125,7 @@ Real news coverage AI can cite.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in New York”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -12869,7 +13205,7 @@ Complete, active and posting every week.
 
 From our data · 3D
 
-## Ranked and used vs ranked and ignored
+## How many businesses each assistant named
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -12949,7 +13285,7 @@ Explainer videos that answer what customers ask.
 
 From our data · 3D
 
-## Where Google's AI got each chain's hours
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -13139,7 +13475,7 @@ The Google searches you rank for, and should.
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: who ChatGPT named, ask by ask
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -13223,7 +13559,7 @@ Photos labeled so AI can read what they show.
 
 From our data · 3D
 
-## “best Botox injector in Newport Beach”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -13303,7 +13639,7 @@ Same name, address, phone and hours everywhere.
 
 From our data · 3D
 
-## How many sources each AI answer cites
+## Where each assistant found its local picks
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -13387,7 +13723,7 @@ A fast site with the code AI reads.
 
 From our data · 3D
 
-## 173 of 207 local answers told people to check with the store
+## “best chiropractor in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -13476,9 +13812,28 @@ Nov 13, 2026, 1:50 PM PT
 
 That's why we measure how often AI names a business across repeated asks, not where it lands once. It's the same way every client's AI Score is measured.
 
+## Test 05: seven trades in Irvine, one question each
+
+We asked ChatGPT for the best business in seven trades in Irvine, California, and recorded every business it named, the rating and review count on its map, the pages it linked and where each photo came from.
+
+| Question | Who ChatGPT named, in order | What we noticed |
+| --- | --- | --- |
+| **Chiropractors** “best chiropractor in Irvine, CA” | 1. Dr. Gary Martin, Irvine Chiropractor 4.9★ · 198 reviews 2. Lee Chiropractic 4.8★ · 506 reviews 3. The Alignment Studio 5.0★ · 215 reviews 4. DiSiena Family Chiropractic 4.7★ · 166 reviews 5. CleanSpine 4.9★ · 76 reviews 6. Yoon Family Chiropractic 5.0★ · 97 reviews |  |
+| **Plumbers** “best plumber in Irvine, CA” | 1. Pristine Plumbing Inc. 4.9★ · 1,935 reviews 2. Olson Superior Plumbing 4.9★ · 2,764 reviews 3. Patriot Plumbing & Rooter 4.7★ · 140 reviews 4. Zoom Drain 4.8★ · 151 reviews 5. Elevation Plumbing 4.9★ · 241 reviews | Photos beside two named plumbers came from other businesses' pages: a used-truck listing on jetterdepot.com and a different plumbing company's site. |
+| **Roofers** “best roofing company in Irvine, CA” | 1. Fox Roofing Company 4.9★ · 40 reviews 2. Above It All Roofing 4.8★ · 123 reviews 3. Antis Roofing & Waterproofing 4.6★ · 229 reviews 4. Merit Roofing & Waterproofing 5.0★ · 14 reviews 5. Ace Roofing Irvine 4.9★ · 40 reviews | The #1 pick had 40 reviews; the #3 had 229. Four of five photos shown were the #1 company's. |
+| **LASIK eye surgeons** “best LASIK eye surgeon in Irvine, CA” | 1. Farnoosh Tinoosh, MD (UCI Health) 4.5★ · 358 reviews 2. Lawrence Chao, MD 4.7★ · 197 reviews 3. Sumit Garg, MD (UCI Health) 4.8★ · 742 reviews 4. Orange County LASIK Institute 5.0★ · 895 reviews 5. Matthew W. Wade, MD (UCI Health) 4.8★ · 322 reviews | Three of five picks were doctors at one hospital, and their ratings came from the hospital's own profile pages. The practice with 895 reviews and a 5.0 rating was ranked fourth. Credentials (fellowship, board certification) led every write-up. |
+| **Personal injury lawyers** “best personal injury lawyer in Irvine, CA” | 1. Cohn & Swartzon LLP 5.0★ · 80 reviews 2. RMD Law 4.9★ · 280 reviews 3. MOET Law Group 4.7★ · 51 reviews 4. Morgan & Morgan 4.7★ · 317 reviews 5. Royer Law Group 5.0★ · 49 reviews | Ratings were quoted as Google reviews. One firm's photo came from an office-interiors company's portfolio page. |
+| **HVAC companies** “best HVAC company in Irvine, CA” | 1. Irvine Air Conditioning & Refrigeration 4.9★ · 226 reviews 2. One Season Heating and Air Conditioning 4.9★ · 89 reviews 3. Green Fuse HVAC & Appliance Repair 5.0★ · 455 reviews 4. True North Heating & Air 4.9★ · 118 reviews 5. MAYDAY Heating and Air Conditioning 4.9★ · 179 reviews | The photo beside MAYDAY came from another named company's website (irvineacrepair.com). The photo beside One Season came from a Thumbtack page about furnace repair in Laguna Niguel. The company with the most reviews (455) was ranked third. |
+| **Car dealerships** “best car dealership in Irvine, CA” | 1. Tuttle-Click Ford Irvine 4.7★ · 4,735 reviews 2. Tuttle-Click Mazda 4.2★ · 357 reviews 3. Norm Reeves Honda Superstore Irvine 3.9★ · 1,895 reviews 4. Porsche Irvine 3.1★ · 350 reviews 5. CarMax 3.1★ · 882 reviews | For three of five dealers, the rating in ChatGPT's answer came from Birdeye or DealerRater and was higher than the Google rating on the map beside it: Porsche Irvine was written up as 4.6 stars while its map listing showed 3.1. |
+
+- **Review count didn't decide the order.** The #1 roofer had 40 reviews; the #3 had 229. The LASIK practice with 895 reviews and a 5.0 rating came fourth.
+- **Photos came from anywhere.** Pictures beside named businesses came from directories, a used-truck listing and other companies' websites.
+- **The rating in the answer wasn't always the rating on the map.** For three car dealers, ChatGPT quoted a higher Birdeye or DealerRater rating than the Google rating on its own map.
+- **Few links.** Facts came from map listings. The pages it linked were mostly licensing boards and best-of lists.
+
 From our data · 3D
 
-## “best rhinoplasty surgeon in Miami”: who ChatGPT named, ask by ask
+## How many different names ChatGPT gave, city by city
 
 | City | Ask 1 | Ask 2 | Ask 3 | Ask 4 | Ask 5 | Ask 6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -14251,7 +14606,7 @@ Who was named, and how often
 
 ## Method and disclosure
 
-Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
+Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 05 and 06 were captured Nov 15, 2026 through DataForSEO: ChatGPT's web answer with web search on, asked from the United States, and Claude, Gemini and Perplexity through their APIs with web search on; each question was asked once. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
 
 [Download every capture as a spreadsheet (CSV)](../assets/data/ai-answer-watch-2026-11-13.csv): time, question, names in order, sources and a link to each screenshot. Free to use with credit (CC BY 4.0).
 
@@ -14318,24 +14673,6 @@ Winners are listed in the guide that earned the award, with a link to their reco
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## What people ask AI about skin care clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/skin-care-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| What are the options for skin tag removal at a dermatologist? | 24,120 a year |
-| Do skin care clinics offer anti-wrinkle treatments? | 16,200 a year |
-| What is the process for skin tag removal at a clinic? | 13,200 a year |
-| What treatments are available for dry skin at a skin care clinic? | 10,860 a year |
-| Are there any skin care clinics offering red light therapy for skin rejuvenation? | 7,260 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -14364,24 +14701,6 @@ Best-of guides answer the question people actually ask AI: who's best for me? Ea
 Each award goes to the business that leads on one need, using public, checkable data: review rating and volume across sources, published prices, years open, menus and medical oversight. Businesses without enough public data are listed but not awarded. More cities and categories are added every month.
 
 [See the awards](../awards/index.html)[Search the registry](../registry/index.html)
-
-From our data · 3D
-
-## What people ask AI about dermatology practices, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/dermatology/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there a dermatologist near me? | 80,760 a year |
-| Who is the nearest dermatologist to me? | 80,760 a year |
-| Where can I get laser hair removal? | 24,120 a year |
-| Which dermatologist is good for removing skin tags? | 24,120 a year |
-| What treatments do dermatologists provide for skin tag removal? | 24,120 a year |
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -15061,7 +15380,7 @@ Leaders from Allergan, Revance, Galderma, Merz, Evolus and more back the Local A
 
 [TC**Taryn Conway***Marketing executive*](../experts/index.html#taryn-conway)[BH**Benjamin Hahr***Tech executive*](../experts/index.html#benjamin-hahr)[KL**Kellie Lao***Marketing executive*](../experts/index.html#kellie-lao)[ES**Eric Sanders***Marketing executive*](../experts/index.html#eric-sanders)[JR**Jennifer Redmond, MBA***Commercial executive*](../experts/index.html#jennifer-redmond)[OO**Opie Opfer***Creative executive*](../experts/index.html#opie-opfer)[BB**Bryan Bullock***Marketing executive*](../experts/index.html#bryan-bullock)[JA**Jeff Allen***Sales executive*](../experts/index.html#jeff-allen)[DS**Dustin Sjuts***CEO, Revelyx Bio*](../experts/index.html#dustin-sjuts)[KM**Kara McClanahan***CEO, Aesthetic Practice Partners*](../experts/index.html#kara-mcclanahan)[KG**Kimberly Gerber***CEO, Excelerate*](../experts/index.html#kimberly-gerber)[JH**Jasmine Hill, MBA***CEO, Aesthetic Influencer*](../experts/index.html#jasmine-hill)[BW**Ben Wolber***CEO, Illume*](../experts/index.html#ben-wolber)[BH**Brandon Hahr***CEO, Kingsmen Digital Ventures*](../experts/index.html#brandon-hahr)[MM**Michael Moretti***CEO, Medical Insight*](../experts/index.html#michael-moretti)
 
-#### On this page
+On this page
 
 1. [What it is](#what-it-is)
 2. [What does the research say?](#what-our-research-found)
@@ -15125,9 +15444,15 @@ We’re scrappy on purpose. We ship fast, use AI in everything we do, and measur
 - You care about independent local businesses.
 - You want to build something people use every day.
 
-From our data · 3D
+## What you get
 
-## “best rhinoplasty surgeon in Phoenix”: who ChatGPT named, ask by ask
+**Health insurance** For US-based employees
+
+**Unlimited PTO** Take the time you need
+
+**Claude Max, on us** The best AI tools, paid for
+
+**AI Discovery Stipend** Monthly, to try new AI tools
 
 ## How we work
 
@@ -15274,7 +15599,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How often AI-cited pages were thin or broken
+## The rating ChatGPT wrote vs the rating on its own map
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -15282,7 +15607,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -15368,7 +15693,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How many searches we sampled in each topic
+## The few websites ChatGPT linked when it named local businesses
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -15376,7 +15701,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -15461,7 +15786,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## Up close: which sources AI leans on harder for local answers
+## More reviews didn't mean a higher spot
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -15469,7 +15794,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -15555,7 +15880,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## “best closed rhinoplasty surgeon in Los Angeles”: best position each business reached
+## Where Google's AI got each chain's hours
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -15563,7 +15888,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -15648,7 +15973,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How many local AI answers we read for each chain
+## Where each assistant found its local picks
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -15656,7 +15981,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 
@@ -15747,9 +16072,13 @@ support@localairegistry.com](mailto:support@localairegistry.com)
 
 Send a message
 
-From our data · 3D
+## Or just leave a note.
 
-## Up close: what people ask AI about urgent care centers
+A real person reads every message, and replies, usually within a day or two.
+
+## The fastest answer is your own.
+
+See where you stand with AI.
 
 **Is AI recommending you?**
 
@@ -15794,9 +16123,25 @@ For each business: the public facts, name, address, category, hours, website, pu
 Public sources only: the open web, business listings, mapping providers, and the answers we get by putting real questions to AI assistants. We don’t buy private data, and we don’t track individual people.
 03
 
-From our data · 3D
+## How the score is built
 
-## The most-cited websites in local AI answers, stacked
+One method, applied the same way to every business, eight signals, documented weights, no paid placement. A business can’t buy a better score. [Read the method](../methodology/index.html)
+04
+
+## Public vs. private
+
+A profile is public, that’s the point of a registry. Account details for owners who register (login, billing, internal notes) are private, used only to run the service, and never sold.
+05
+
+## How long we keep it
+
+We keep a profile current and re-score it periodically, so it shows what AI says now and not what it said a year ago. Remove a business and we stop maintaining its profile.
+
+Your choices
+
+## It’s your business. Your call.
+
+Still have a question? [Get in touch](../contact/index.html)
 
 **Is AI recommending you?**
 
@@ -15845,11 +16190,15 @@ The people who built modern aesthetics, from Allergan, Revance, Galderma, Merz a
 
 [TC**Taryn Conway***Marketing executive*](../experts/index.html#taryn-conway)[BH**Benjamin Hahr***Tech executive*](../experts/index.html#benjamin-hahr)[KL**Kellie Lao***Marketing executive*](../experts/index.html#kellie-lao)[ES**Eric Sanders***Marketing executive*](../experts/index.html#eric-sanders)[JR**Jennifer Redmond, MBA***Commercial executive*](../experts/index.html#jennifer-redmond)[OO**Opie Opfer***Creative executive*](../experts/index.html#opie-opfer)[BB**Bryan Bullock***Marketing executive*](../experts/index.html#bryan-bullock)[JA**Jeff Allen***Sales executive*](../experts/index.html#jeff-allen)[DS**Dustin Sjuts***CEO, Revelyx Bio*](../experts/index.html#dustin-sjuts)[KM**Kara McClanahan***CEO, Aesthetic Practice Partners*](../experts/index.html#kara-mcclanahan)[KG**Kimberly Gerber***CEO, Excelerate*](../experts/index.html#kimberly-gerber)[JH**Jasmine Hill, MBA***CEO, Aesthetic Influencer*](../experts/index.html#jasmine-hill)[BW**Ben Wolber***CEO, Illume*](../experts/index.html#ben-wolber)[BH**Brandon Hahr***CEO, Kingsmen Digital Ventures*](../experts/index.html#brandon-hahr)[MM**Michael Moretti***CEO, Medical Insight*](../experts/index.html#michael-moretti)
 
-From our data · 3D
+## Founders
 
-## “best lip filler in Newport Beach”: how often each business was named
+[**Steve Lee** Founder and CEO. Former Google Search and Microsoft executive.](../team/steve-lee/index.html)[**Aneesh Patel, PharmD** Co-founder and Chief Growth Officer.](../team/aneesh-patel/index.html)
 
-#### On this page
+## Guides for their fields
+
+[**Med spas** Industry guide](../for/med-spas/ai/index.html)[**Plastic surgeons** Industry guide](../for/plastic-surgeons/ai/index.html)[**Dermatologists** Industry guide](../for/dermatologists/ai/index.html)
+
+On this page
 
 1. [Doctors, surgeons and injectors](#clinicians)
 2. [Industry leaders](#leaders)
@@ -15963,7 +16312,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## “best breast augmentation surgeon in NYC”: best position each business reached
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -15994,7 +16343,7 @@ Dispensaries are locked out of most paid channels, which makes being named in an
 
 Google Ads will not take you. Meta will not take you. What is left is the organic answer, and the organic answer is increasingly one an assistant writes.
 
-People ask by landmark and by neighbourhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
+People ask by landmark and by neighborhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
 
 People also do not say "cannabis dispensary". They say dispo, or here, or nothing at all, and the questions we ask on your behalf are asked in those words.
 
@@ -16071,7 +16420,7 @@ We have several stores. Does each one need its own entry?
 
 Yes. A listing is one location, and the near-me answer is decided per location. Each store is its own registry entry.
 
-#### On this page
+On this page
 
 1. [What dispensaries are up against](#up-against)
 2. [What people ask AI about dispensaries](#questions)
@@ -16192,7 +16541,7 @@ We have two locations. How does that work?
 
 Each location is its own entry and its own near-me answer.
 
-#### On this page
+On this page
 
 1. [What dental practices are up against](#up-against)
 2. [What people ask AI about dental practices](#questions)
@@ -16282,7 +16631,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Scottsdale”: how often each business was named
+## What people ask AI about dermatology practices
 
 02
 
@@ -16356,7 +16705,7 @@ How long does it take for a dermatology practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -16479,7 +16828,7 @@ Can you say we are board certified?
 
 Only if you have given us the certification. A credential we do not hold on file is the one thing we will never approximate.
 
-#### On this page
+On this page
 
 1. [What dermatology practices are up against](#up-against)
 2. [What people ask AI about dermatology practices](#questions)
@@ -16571,7 +16920,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## What people ask AI about med spas, stacked
+## What people ask AI about dispensaries
 
 02
 
@@ -16639,7 +16988,7 @@ How long does it take for a dispensary to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -16763,7 +17112,7 @@ Can you say which insurance we take?
 
 Only where you have told us. Insurance is a fact about your practice, so it comes from you and goes onto your listing and your directory records.
 
-#### On this page
+On this page
 
 1. [What eye care practices are up against](#up-against)
 2. [What people ask AI about eye care practices](#questions)
@@ -16857,7 +17206,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## What people ask AI about urgent care centers, stacked
+## “best LASIK eye surgeon in Irvine, CA”: who ChatGPT named, in order
 
 02
 
@@ -16925,7 +17274,7 @@ How long does it take for a eye surgery practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -17387,7 +17736,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in New York”: best position each business reached
+## “best Botox injector in Newport Beach”: who ChatGPT named, ask by ask
 
 02
 
@@ -17461,7 +17810,7 @@ How long does it take for a med spa to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -17580,7 +17929,7 @@ How quickly do hours changes reach the assistants?
 
 Your listing updates immediately. What an assistant says catches up on its own schedule, which is why we re-ask your questions every month and show you the answer.
 
-#### On this page
+On this page
 
 1. [What medical clinics are up against](#up-against)
 2. [What people ask AI about medical clinics](#questions)
@@ -18102,7 +18451,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## “best aesthetic clinic in Beaconsfield”: best position each business reached
+## “best rhinoplasty surgeon in New York”: who ChatGPT named, ask by ask
 
 02
 
@@ -18176,7 +18525,7 @@ How long does it take for a plastic surgery practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)
@@ -18295,7 +18644,7 @@ Can you write about products we sell?
 
 We can name a product you stock. We cannot say what it will do to somebody, which is where most product copy in this trade goes wrong.
 
-#### On this page
+On this page
 
 1. [What skin care clinics are up against](#up-against)
 2. [What people ask AI about skin care clinics](#questions)
@@ -18411,7 +18760,7 @@ Can you publish our wait time?
 
 Only if you give us a figure and it is one you stand behind. We do not state a number nobody measured.
 
-#### On this page
+On this page
 
 1. [What urgent care centers are up against](#up-against)
 2. [What people ask AI about urgent care centers](#questions)
@@ -18466,7 +18815,7 @@ Chapter 3
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Dallas”: who ChatGPT named, ask by ask
+## What nine separate vendors cost a month
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -18496,26 +18845,6 @@ We exist to help local businesses keep up. So a portion of what we earn goes to 
 Kiva funds the loans, SCORE gives the advice and Main Street America rebuilds the streets local businesses live on. The Children's Heart Foundation is personal: our founder [Steve Lee](../team/steve-lee/index.html)'s daughter needed open-heart surgery around the time he stepped off the corporate track to focus on local and stay close to home.
 
 [Book a free AI check](../start/index.html)[Meet the team](../team/index.html)
-
-From our data · 3D
-
-## Up close: what people ask AI about dermatology practices
-
-Drag to turn
-
-A sample of the research our team publishes for every local business, free.
-
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../for/dermatology/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there a dermatologist near me? | 80,760 a year |
-| Who is the nearest dermatologist to me? | 80,760 a year |
-| Where can I get laser hair removal? | 24,120 a year |
-| Which dermatologist is good for removing skin tags? | 24,120 a year |
-| What treatments do dermatologists provide for skin tag removal? | 24,120 a year |
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -18610,9 +18939,75 @@ The word has two uses. In local SEO, a citation is any listing or page that ment
 
 Related: [NAP consistency](../glossary#nap-consistency/index.html), [GEO (generative engine optimization)](../glossary#geo/index.html)
 
-From our data · 3D
+## Entity
 
-## “best rhinoplasty surgeon in Atlanta”: best position each business reached
+**A distinct, identifiable thing, such as a business, person or place, that search engines and AI track as one object with known facts.**
+
+To an assistant, your business is an entity with a name, location, category, services, people and reviews. The clearer and more consistent those facts are across the web, the more confidently AI can talk about you. [Schema markup](../glossary/index.html#schema-markup) and [NAP consistency](../glossary/index.html#nap-consistency) are how you make your entity clear.
+
+Related: [Knowledge graph](../glossary#knowledge-graph/index.html), [NAP consistency](../glossary#nap-consistency/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## GEO (generative engine optimization)
+
+**The practice of improving how a business or brand appears in answers written by AI assistants.**
+
+GEO focuses on the sources AI reads and cites: reviews, articles, lists, structured data and your own pages. For a local business, GEO means making sure every assistant can confirm who you are, what you do and why you're a good choice. See how it compares with traditional SEO in [AI visibility vs SEO](../signals/seo/index.html).
+
+Related: [AEO (answer engine optimization)](../glossary#aeo/index.html), [AI SEO](../glossary#ai-seo/index.html), [Citation](../glossary#citation/index.html)
+
+## Knowledge graph
+
+**A database of entities and how they connect, used by search engines and AI to understand facts.**
+
+Google's Knowledge Graph and similar systems link your business to its location, category, people and other facts. A strong presence in these graphs makes it easier for AI to recognize and describe you.
+
+Related: [Entity](../glossary#entity/index.html), [Structured data](../glossary#structured-data/index.html)
+
+## llms.txt
+
+**A proposed plain-text file at the root of a website that points AI systems to its most useful pages.**
+
+llms.txt is a community proposal, not an official standard, and assistants vary in whether they use it. It's quick to add and does no harm. Make one with our [llms.txt generator](../tools/llms-txt-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html)
+
+## Local AI Blueprint™
+
+**Local AI Registry's done-for-you program that works all 11 signals for a business.**
+
+The Local AI Blueprint™ is one plan, one team and one monthly report covering every signal AI checks. Learn more on the [Blueprint page](../blueprint/index.html) and about [our 90-day guarantee](../guarantee/index.html).
+
+Related: [AI Score](../glossary#ai-score/index.html), [AI visibility](../glossary#ai-visibility/index.html)
+
+## NAP consistency
+
+**Having the same business name, address and phone number everywhere your business is listed.**
+
+NAP stands for name, address, phone. Many practitioners add hours. Inconsistent NAP makes it harder for AI to confirm which listings belong to you. See [directory listings](../signals/directory-listings/index.html).
+
+Related: [Entity](../glossary#entity/index.html), [Citation](../glossary#citation/index.html)
+
+## Schema markup
+
+**Code added to a web page that labels facts, such as your business name, hours, services and reviews, in a standard vocabulary.**
+
+Schema markup uses the shared vocabulary at schema.org, usually written as JSON-LD. It doesn't change how a page looks; it tells machines exactly what the page is about. Build yours with our free [schema generator](../tools/schema-generator/index.html).
+
+Related: [Structured data](../glossary#structured-data/index.html), [Entity](../glossary#entity/index.html)
+
+## Structured data
+
+**Information organized in a fixed format machines can read without interpretation.**
+
+Schema markup is the most common kind of structured data on websites. Business listings, menus and inventory feeds are others. The more of your key facts exist as structured data, the less AI has to guess.
+
+Related: [Schema markup](../glossary#schema-markup/index.html), [Knowledge graph](../glossary#knowledge-graph/index.html)
+
+**Is AI recommending you?**
+
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -18681,7 +19076,7 @@ From our data · 3D
 
 ## “best closed rhinoplasty surgeon in Los Angeles”: who ChatGPT named, ask by ask
 
-#### On this page
+On this page
 
 1. [Why we guarantee it](#why)
 2. [If we miss it, we keep working for free](#if-we-miss)
@@ -18905,7 +19300,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## How often Google shows an AI answer, by topic, stacked
+## What AI cites vs what you control
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -18973,21 +19368,28 @@ Source: [The Local Answer Gap](../../research/local-answer-gap/index.html) · LA
 
 From our data · 3D
 
-## Up close: what people ask AI about medical clinics
+## The few websites ChatGPT linked when it named local businesses
 
 Drag to turn
 
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/medical-clinics/index.html).
+Across 7 Irvine questions, ChatGPT took ratings and phone numbers from map listings and linked only a handful of pages, mostly licensing boards and best-of lists. Source: [AI Answer Watch: Irvine, Local AI Registry, Nov 15, 2026](../../answer-watch/index.html).
 
 See the data
 
 |  |  |
 | --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
+| cslb.ca.gov | 3 answers |
+| contractorsranked.com | 1 answers |
+| expertise.com | 1 answers |
+| cityvetted.com | 1 answers |
+| ucihealth.org | 1 answers |
+| zocdoc.com | 1 answers |
+| yelp.com | 1 answers |
+| iqlaservision.com | 1 answers |
+| calbar.ca.gov | 1 answers |
+| reviews.birdeye.com | 1 answers |
+| dt.caredge.com | 1 answers |
+| dealerrater.com | 1 answers |
 
 ## Want it done for you?
 
@@ -19132,7 +19534,7 @@ Businesses' own websites supplied just 6.5% of those citations. [The Local Answe
 
 Brand websites ranked on page one for 147 of 157 brand questions, but AI cited them in only 70. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## Local “is it open” searches, day by day
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -19188,9 +19590,60 @@ Each signal is scored on its own, then combined into the final 0-to-100 number u
 
 The weights come from how much each signal moves a real AI recommendation, not from what is easiest to measure. That is why two businesses with identical websites can score very differently: the one the wider web corroborates scores higher, because corroboration is what the assistant grounds its answer in.
 
-From our data · 3D
+## What a good AI Score looks like
 
-## “best plastic surgeon in New York City”: how often each business was named
+Because most local businesses score low, the bar to stand out is lower than it looks. Roughly:
+
+- A score of 65 or above is good: AI can reliably find and recommend you. Very few businesses are here yet.
+- A score in the 45 to 64 range is fair: you are eligible and sometimes named, with clear gaps to close.
+- Below 45 is poor: AI struggles to find or trust you, and a competitor is getting the recommendation instead.
+
+The point of the number is not the grade, it is the diagnosis. Your AI Score comes with the specific signals dragging it down, so you know what to fix first.
+
+## Why the score is independent
+
+No business can buy a higher AI Score, and no one can pay to be removed from a competitor’s comparison. We [never sell rank](../../trust/index.html), and we publish the method so anyone can check our work. That independence is the whole point: a score you could buy would tell an assistant nothing, and it would tell you nothing either.
+
+## Common questions
+
+### What is a good AI Score?
+
+Broadly, 65 or above is good, 45 to 64 is fair, and below 45 is poor. Because most local businesses currently score below 45, even reaching the fair range puts you ahead of the majority of your competitors.
+
+### Is checking my AI Score free?
+
+Yes. You can look up any business and see its AI Score for nothing.
+
+### How is an AI Score different from a Google ranking?
+
+A Google ranking is your position in a list of blue links. An AI Score measures whether an assistant will name you at all when it answers a question with a single recommendation instead of a list. The signals overlap, but the outcome an AI Score predicts is being the answer, not being on page one.
+
+### Can I improve my AI Score?
+
+Yes, and the score tells you how. It surfaces which of the eight signals are weakest, so you fix the ones that move an AI recommendation first, chiefly retrieval grounding and off-property attestation.
+
+### How often is the AI Score updated?
+
+It reflects the most recent measurement of what assistants say and the underlying signals. As you improve a signal, or as the assistants change, the score is recalculated so it stays a current read rather than a one-time snapshot.
+
+About the author
+
+Steve Lee, Founder & CEO, Local AI Registry
+
+Worked on Google’s search-algorithm team in its early years and has spent two decades building search-technology companies.
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [The launch of Local AI Registry and the free AI Score](https://localairegistry.com/journal/local-ai-registry-launch)
+- [The full scoring methodology](../../methodology/index.html)
+- [Why the score is never for sale](../../trust/index.html)
+
+## What is your AI Score?
+
+Free, no card, in about thirty seconds.
+
+[Get my AI Score](../../index.html)
 
 **Is AI recommending you?**
 
@@ -19254,26 +19707,6 @@ References to the HIPAA Rules mean the sections as in effect or as amended. The 
 ### Business Associate
 
 Blind LLC, doing business as Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · (213) 931-5633 · hello@localairegistry.com. Signed by Steve Lee, Founder and CEO, upon countersignature.
-
-From our data · 3D
-
-## Up close: what people ask AI about dental practices
-
-Drag to turn
-
-A sample of the research we publish. Patient information never appears in it.
-
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/dentists/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Where can I find a dentist near me? | 219,600 a year |
-| Which dentists accept Delta Dental insurance? | 80,760 a year |
-| How do I find a dentist that accepts my insurance plan? | 36,120 a year |
-| What dental insurance plans are accepted by local dentists? | 36,120 a year |
-| Where can I find a pediatric dentist close to me? | 24,120 a year |
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -19419,7 +19852,7 @@ Google Gemini
 :   AI-generated content drafting and AI visibility checks. Same handling as OpenAI.
 
 SerpZilla / SerpClix / Adsy / RedPress
-:   Off-page module vendors used only for customers actively enrolled in those modules &mdash; backlinks, CTR campaigns, press release distribution.
+:   Off-page module vendors used only for customers actively enrolled in those modules: backlinks, CTR campaigns, press release distribution.
 
 DigitalOcean
 :   Application hosting, managed Postgres, object storage (DO Spaces) for photos and report PDFs.
@@ -19434,9 +19867,86 @@ No mobile information will be shared with third parties or affiliates for market
 
 Section 08
 
-From our data · 3D
+## When we disclose your information
 
-## “best rhinoplasty surgeon in San Diego”: how often each business was named
+We disclose information only in these specific circumstances:
+
+- **To deliver the Services.** The sub-processors in Section 7 receive what they need to do their job and nothing more.
+- **With your direction.** If you connect Google, or instruct us to publish content, we transmit the corresponding data to those platforms on your behalf.
+- **To comply with law.** We may disclose information when required by a valid subpoena, court order, or government request. We push back where the request is overbroad and notify you where we are legally permitted to do so.
+- **To protect rights and safety.** Where necessary to investigate fraud, security incidents, or violations of our Terms of Service.
+- **Business transfer.** If Blind LLC is acquired or merged, customer data transfers to the acquirer under the same protections.
+
+Section 09
+
+## Data retention
+
+We keep account data for as long as your account is active, plus a short tail to handle disputes, support, and legal obligations. Specifically:
+
+- **Account profile and business data:** kept while the account is active; deleted within 30 days of account closure (or sooner on request).
+- **OAuth tokens (Google):** deleted within 24 hours of revocation or account closure.
+- **Pageview hashes (Section 2):** raw IP is never persisted; the salted hash is kept for 13 months for week-over-week trend reporting, then purged.
+- **Billing records:** retained for 7 years to meet tax and accounting obligations.
+- **Application logs:** 30 days, then purged.
+- **Public business profile pages** we generate from the public web persist as long as the underlying business is operational. Owners can flag inaccurate data or request removal, see Section 11.
+
+Section 10
+
+## Data security
+
+We protect data with industry-standard controls: TLS in transit, AES-256 at rest in managed Postgres and object storage, encrypted secrets, least-privilege access management, structured access logs, and continuous error monitoring. OAuth tokens are stored encrypted with separate key material. Production database access is restricted to a small set of authorized engineers and audited.
+
+No system is impenetrable, so we maintain an incident-response plan and will notify affected users without undue delay if a breach occurs that materially affects their data.
+
+Section 11
+
+## Your rights and choices
+
+You can:
+
+- **Access** the personal information we hold about you by emailing the address in Section 15.
+- **Correct** inaccurate information directly in your dashboard, or by writing to us.
+- **Delete** your account and associated personal information at any time from Settings → Account, or by writing to us.
+- **Port** your data: request a machine-readable export.
+- **Restrict or object** to specific processing.
+- **Opt out** of non-essential email communications via the unsubscribe link in any non-transactional email.
+- **Revoke** OAuth access at any time through the third-party platform (Section 4).
+- **Flag** inaccurate data on a public business profile we generated using the “Report inaccuracy” affordance on the page.
+
+If you are in the United Kingdom or another jurisdiction with similar laws (GDPR, UK GDPR), you additionally have the right to lodge a complaint with your local supervisory authority. If you are a California resident, you have rights under the CCPA / CPRA including the right to know what we collect, the right to delete, the right to correct, and the right not to be discriminated against for exercising your rights. We honor all of these rights regardless of your jurisdiction.
+
+Section 12
+
+## International transfers
+
+Local AI Registry is operated from the United States, and our primary infrastructure is hosted in U.S. data centers. If you are accessing the Services from outside the United States (including the United Kingdom), your information will be transferred to and processed in the United States. We rely on Standard Contractual Clauses or equivalent mechanisms with our sub-processors where required.
+
+Section 13
+
+## Children
+
+The Services are intended for businesses and adults. We do not knowingly collect personal information from anyone under 13 (or under 16 in jurisdictions that apply a higher age). If we learn that we have inadvertently collected such information, we will delete it promptly.
+
+Section 14
+
+## Changes to this policy
+
+We may revise this policy as our product evolves or as legal requirements change. When we make material changes, we will notify account holders by email and update the “Last revised” date at the top. Continued use of the Services after the effective date of a revised policy constitutes acceptance of the revisions.
+
+Section 15
+
+## Contact us
+
+Questions about this policy, data requests, or anything else, reach us:
+
+Email
+:   [hello@localairegistry.com](mailto:hello@localairegistry.com)
+
+Phone
+:   (213) 928-2348
+
+Mailing entity
+:   Blind LLC
 
 **Is AI recommending you?**
 
@@ -19599,27 +20109,6 @@ For clients on a Program that includes the guarantee, Local AI Registry guarante
 
 SECTION 10
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in San Diego”: best position each business reached
-
-Drag to turn
-
-A sample of the research we publish, so you can see the standard we hold ourselves to.
-
-Each layer is a business ChatGPT named. Wider means it reached a higher spot in at least one of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Sirius Yoo | 6 |
-| John Hilinski | 6 |
-| Christopher Kolstad | 4 |
-| Ronald Edelson | 2 |
-| Victor Chung | 3 |
-| Richard Balikian | 3 |
-
 ## Cancellation
 
 Programs are month to month unless we agree otherwise in writing. Cancel anytime by emailing hello@localairegistry.com at least 14 business days before your next billing date; otherwise that cycle is charged and cancellation takes effect at its end. Submit any guarantee claim before your cancellation takes effect.
@@ -19746,7 +20235,7 @@ Retrieval tier
 
 Methods referenced
 
-## We didn’t invent the maths.
+## We didn’t invent the math.
 
 Every part of the score is a named, published method, borrowed from information retrieval, index construction, and game theory, and each one is cited.
 
@@ -19791,7 +20280,7 @@ From our data · 3D
 
 ## How many local answers cite each kind of source
 
-#### On this page
+On this page
 
 1. [What the marks on a business page mean](#marks-heading)
 2. [How AI decides what to tell you about a med spa](#how-ai-decides-med-spa-heading)
@@ -19836,25 +20325,6 @@ Every fact in a story links to its source and the date we checked it. When a bus
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in Chicago”: how often each business was named
-
-Drag to turn
-
-Each sphere is a business ChatGPT named. Bigger means it was named in more of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Dean Toriumi | 3 of 3 |
-| Anil Shah | 3 of 3 |
-| Douglas Sidle | 3 of 3 |
-| Thomas Mustoe | 3 of 3 |
-| Sammy Sinno | 2 of 3 |
-| Steven Dayan | 1 of 3 |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -19866,7 +20336,7 @@ Book a call and we’ll show you, live, what AI says about you today. If we miss
 
 # The $199 Botox studio on Newport Boulevard
 
-> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit. Who it's for, how it compares, and everything you need before you book.
+> QUIKTOX, a surgeon-led Costa Mesa studio, charges one flat $199 price for Botox in a city that charges by the unit.
 
 Source: https://localairegistry.com/news/the-199-botox-studio-on-newport-boulevard/
 Updated: 2026-11-15
@@ -21239,9 +21709,11 @@ You can ask us to remove a business from the public registry. If you only need t
 
 To remove a business, email [support@localairegistry.com](mailto:support@localairegistry.com) from an address at the business, with the business name and city. A real person handles every request.
 
-From our data · 3D
+**Is AI recommending you?**
 
-## Who Google's AI cites when the question isn't local
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -21300,7 +21772,7 @@ For reporters
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Atlanta”: who ChatGPT named, ask by ask
+## The rating ChatGPT wrote vs the rating on its own map
 
 **Is AI recommending you?**
 
@@ -21393,18 +21865,18 @@ See the data
 
 |  |  |
 | --- | --- |
-| Content writer | 3,600/mo |
-| Video producer | 3,500/mo |
-| SEO agency | 1,750/mo |
+| Local SEO agency | 2,500/mo |
+| YouTube video producer | 2,000/mo |
 | PR group | 1,500/mo |
-| Web management team | 650/mo |
+| Web management team | 850/mo |
 | Review management | 399/mo |
 | AI monitoring tool | 399/mo |
 | Google profile manager | 299/mo |
+| Content ranking tool | 299/mo |
 
 ## Compared with buying it separately
 
-Covering the same nine jobs with separate vendors runs about **$12,200 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
+Covering the same nine jobs with separate vendors runs about **$8,300 a month** at typical 2026 prices, before ad spend. [See the breakdown and sources](../vs/agencies/index.html).
 
 ## The terms, in plain words
 
@@ -21615,9 +22087,118 @@ More than 60%of queries: leading AI search tools wrong. CITED: Tow Center at Col
 
 This is the keystone the other three currents rest on. **ANALYSIS** The entire body of evidence converges on "be a verifiable entity," moving fast, on a closing clock, while no neutral party measures whether you are one, reproducibly, across platforms, over time. That negative space, visible only when all eleven streams are held in one frame, is not a gap in the research. It is a description of an institution that does not yet exist.
 
-From our data · 3D
+## VI · The Instrument, what the vacuum implies
 
-## How often each chain's own website was cited for its hours
+If the evidence converges on a substrate no one is measuring, the implied object is not a tactic or a tool, it is an institution: an independent, reproducible record of what AI says about local businesses, and whether they are known for the right things.
+
+That is the function Local AI Registry performs. It scores independent local businesses across ChatGPT, Gemini, Perplexity, and Google AI Overviews; it measures not just whether a business is named but whether it is named for the right service, the alignment this report shows the whole system rewards; and it does so repeatedly, across platforms, over time, which is exactly the reproducibility the landscape lacks. The registry is not a product appended to the research. It is the instrument the convergence implies.
+
+### From reading to record
+
+A reader can act on the four currents today: move the work off-property, apply specificity at every layer, act within the window, and treat verifiability as a conversion advantage. But to know where you stand, what you're named for, what you're invisible for, where the reputation and the marketing diverge, requires the instrument. That is what the next page offers.
+
+## VII · The evidence layer, seven findings underneath
+
+**Seven findings underneath the view**
+
+The bird's-eye view is built on a deeper layer of cross-source findings, each one a conclusion drawn by overlaying two or three datasets that none of them states alone. They are summarized here as the supporting evidence beneath the four currents; each is documented at length in companion analysis.
+
+### The seven triangulated findings beneath the convergence
+
+- **01 · The Broken Scoreboard.** The canonical local-pack model and AI visibility are nearly orthogonal. Built from: Ahrefs × Whitespark × antitrust.
+- **02 · The Exposure Runway.** The 7.9% local AI rate is a countdown toward the 57.9% question rate. Built from: Ahrefs × BrightLocal.
+- **03 · Re-Centralization.** Proximity's death plus prominence bias tilts AI toward incumbents. Built from: Local Falcon × retrieval-bias research.
+- **04 · The Closing Window.** A temporary long-tail citation opening that bias predicts will re-narrow. Built from: Ahrefs × field experiment × academia.
+- **05 · Reviews Are the Keystone.** The only lever that is ranking signal, citation source, safeguard & legal moat at once. Built from: Whitespark × mechanism × Liu × FTC.
+- **06 · The Verification Dividend.** The fact-check, not the recommendation, is where the funnel breaks. Built from: BrightLocal × Tow Center.
+- **07 · Two Disjoint Games.** ChatGPT-via-Bing visibility is the underpriced channel. Built from: Seer × Ahrefs × Sensor Tower.
+
+Each finding is graded **ANALYSIS**, a strong hypothesis from real, cited inputs, not a measured fact. Several become measurable original statistics when cross-checked against the live index; those measurements will be published when complete.
+
+## Where to go from here
+
+**See where you actually stand**
+
+This report describes the landscape from above. The next step is the instrument it implies, specific to you, whether you run a business that needs to know what AI says about it, or you're a customer who wants the truth about who's actually good.
+
+### For business owners
+
+**Register your business, free.** Find out, in under a minute, what ChatGPT, Gemini, Perplexity, and Google AI Overviews currently say about you, what you're named for, what you're invisible for, and your AI Score across every service you offer. Registering and claiming your listing is free.
+
+[Get your AI Score →](../../index.html)
+
+### For consumers
+
+**Check what a business is known for.** Before you book, see what the AI really says, what a local business is genuinely known for, where it's strong, and where the reputation doesn't match the marketing. An honest, editorial read, never pay-to-rank.
+
+[Look up a business →](https://localairegistry.com/search)
+
+Local AI Registry is the independent, editorial registry of how AI sees local business. We never sell rankings.
+
+## Methodology & limitations
+
+### How this report was built
+
+This is a work of synthesis at altitude: eleven independent evidence streams, read together to surface the conclusions that only their overlap reveals. Every input is a real, cited figure from a named source; the convergence and the four currents are our own **ANALYSIS**; forward inferences are marked ** PROJECTION**. We hold a strict "real or omitted" rule, no quote, statistic, study, court finding, or researcher is invented, and unverifiable figures (such as a widely-shared "797,444 impressions, 7 clicks" anecdote) are excluded rather than repeated.
+
+### What this method can and cannot claim
+
+Convergence is strong evidence, not proof of mechanism. Many independent sources agreeing on a substrate is a powerful signal, but several inputs are correlational and inherit that limit. Projections are reasoned, not certain, the transition window and the runway are extrapolations from measured trends, flagged as such. The local-AI research gap is real: little peer-reviewed work studies local-business inclusion in AI answers directly, so local conclusions are careful inferences from adjacent retrieval, bias, and entity-grounding research. Vendor incentive exists in some sources; figures were cross-checked where possible. The accountability vacuum is, by definition, where measurement is thinnest, which is precisely the gap the registry is built to close, and why proprietary figures are shown as forthcoming rather than asserted.
+
+Reference numbers are shared across the Local AI Visibility Series for cross-referencing; gaps indicate sources cited in companion papers.
+
+## The independent registry of how AI sees local business.
+
+Local AI Registry scores independent local businesses on whether AI assistants recommend them, and, just as importantly, on whether they're recommended for the right things. We're editorial, transparent, and never pay-to-rank. Yellow Pages told you who existed. We tell you what the AI actually says.
+
+**Free to register. Free to be found correctly.**
+
+This report synthesizes publicly available evidence; the convergence and currents are analytical conclusions, not measured facts. Not legal or marketing advice. No AI placement can be guaranteed.
+
+## How to cite this report
+
+Local AI Registry Research. The Convergence: What Eleven Streams of Evidence Reveal About How Local Businesses Win AI Recommendations. White Paper No. 03 (Definitive Edition), June 2026. localairegistry.com/research.
+
+About the author
+
+Local AI Registry Research, the research arm of Local AI Registry
+
+Publishes the Local AI Visibility Series, which reads the published evidence on how AI assistants recommend local businesses.
+
+References
+
+1. 1. BrightLocal. Local Consumer Review Survey 2026. [brightlocal.com](https://www.brightlocal.com/research/lcrs-ai-trust/)
+2. 2. G. Allsopp / Ahrefs. AI visibility study, 75,000 brands. [ahrefs.com](https://ahrefs.com/blog)
+3. 3. Ahrefs. What Triggers AI Overviews? 86 Factors, 146M SERPs. [ahrefs.com](https://ahrefs.com/blog/ai-overview-triggers/)
+4. 4. Ahrefs. 38% of AI Overview Citations Pull From the Top 10. [ahrefs.com](https://ahrefs.com/blog/ai-overview-citations-top-10/)
+5. 5. Local Falcon. AI Overviews proximity whitepaper, ~60,000 simulations. 2025. [localfalcon.com](https://localfalcon.com/)
+6. 6. Seer Interactive. SearchGPT/Bing citation & CTR analyses. 2025-26. [seerinteractive.com](https://seerinteractive.com/)
+7. 7. Sensor Tower. State of AI 2026. June 2026. [sensortower.com](https://sensortower.com/)
+8. 8. D. Shaw / Whitespark. Local Search Ranking Factors 2026. [whitespark.ca](https://whitespark.ca/)
+9. 9. Google Search Central. AI Features and Your Website. [developers.google.com](https://developers.google.com/search/docs/appearance/ai-features)
+10. 10. Google Search Central. AI optimization guide. [developers.google.com](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+11. 12. R. Stein (VP Product, Google Search), Lenny's Podcast. Query fan-out & AI Mode. 2025.
+12. 17. U.S. v. Google, Mem. Opinion (Judge A. Mehta, Nov 2025); FastSearch / RankEmbed / Navboost disclosures; P. Nayak testimony. [searchengineland.com](https://searchengineland.com/)
+13. 19. P. Aggarwal et al. (Princeton; Georgia Tech; Allen AI; IIT Delhi). GEO: Generative Engine Optimization. KDD 2024. [arxiv.org](https://arxiv.org/abs/2311.09735)
+14. 25. S. Dai, L. Pang, J. Xu et al. (Renmin Univ.; CAS). Neural Retrievers are Biased Towards LLM-Generated Content. KDD 2024. [arxiv.org](https://arxiv.org/abs/2310.20501)
+15. 26. M. Fayyaz, A. Modarressi, H. Schütze, N. Peng (UCLA; LMU). Collapse of Dense Retrievers. ACL 2025. [arxiv.org](https://arxiv.org/abs/2503.05037)
+16. 30. I. Yamada et al. (RIKEN; Studio Ousia). LUKE: entity-aware representations. EMNLP 2020. [aclanthology.org](https://aclanthology.org/2020.emnlp-main.523/)
+17. 32. N. F. Liu, T. Zhang, P. Liang (Stanford). Evaluating Verifiability in Generative Search Engines. EMNLP 2023. [aclanthology.org](https://aclanthology.org/2023.findings-emnlp.467/)
+18. 34. K. Jaźwińska, A. Chandrasekar (Tow Center, Columbia). AI Search Has a Citation Problem. CJR, 2025. [cjr.org](https://cjr.org/)
+19. 35. U.S. FTC. Rule on Consumer Reviews and Testimonials, 16 CFR 465. 2024. [ftc.gov](https://ftc.gov/)
+20. 38. European Commission. EU AI Act, Article 50, applicable 2 Aug 2026. [artificialintelligenceact.eu](https://artificialintelligenceact.eu/)
+21. 41. A. Shotland (Local SEO Guide). Reddit-mention AI Overview experiment. [localseoguide.com](https://localseoguide.com/)
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [How the AI Score is calculated](../../methodology/index.html)
+
+## See where you actually stand
+
+Free, no card, in about thirty seconds.
+
+[Get your AI Score](../../index.html)
 
 **Is AI recommending you?**
 
@@ -21660,24 +22241,6 @@ Your record probably already exists. Book a free AI check and we'll show you wha
 
 [Book a free AI check](../start/index.html)[Get named in AI](../blueprint/index.html)
 
-From our data · 3D
-
-## What people ask AI about medical clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/medical-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.
@@ -21707,7 +22270,7 @@ Email [support@localairegistry.com](mailto:support@localairegistry.com) with the
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Atlanta”: how often each business was named
+## How faithful local AI answers were to their sources
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -22028,9 +22591,130 @@ Track the share of answers that name your business, collect enough answers to tr
 
 Local AI Registry’s free AI Score gives a broader diagnostic of how findable and recommendable a business is to ChatGPT, Gemini, Claude and Perplexity. It is a diagnostic, not the recommendation-frequency measure described in this brief.
 
-From our data · 3D
+## What does this mean for local businesses?
 
-## “best closed rhinoplasty surgeon in Los Angeles”: how often each business was named
+The evidence changes the question worth asking. Whether a given assistant recommends a given business has no stable answer. How often the business is named, by which systems, for which requests, in which places, and how that frequency is moving does. Seen this way, AI visibility is not unknowable. It is measurable in the way other probabilistic systems are measured: through repeated, documented observation, with uncertainty stated and causes claimed only where the evidence supports them.
+
+For local businesses, and for healthcare providers in particular, that discipline separates a reaction to one answer from an understanding of a market position that AI assistants increasingly help to shape. No intervention studied to date guarantees a recommendation. The research does support a narrower and more useful conclusion: visibility in AI-generated local recommendations can be observed, compared and tracked, provided it is estimated from many observations and not inferred from a single answer.
+
+## Who provides AEO services for local businesses?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization company built for local businesses. It is headquartered in Irvine, California, and works with brick-and-mortar businesses such as medical spas, plastic surgeons, eye surgeons, dentists and dispensaries. Its local AEO services include:
+
+- **Free business record.** A public, owner-claimable record of what AI says about the business, with every fact confirmed by the owner.
+- **AI visibility audit.** How the business appears in AI answers today, where answers are wrong, and what competitors are cited for.
+- **Google Business Profile management.** Location-level hours, holiday hours, services and updates kept current.
+- **Press releases and media.** Earned coverage in the news sources AI cites most for local questions.
+- **AEO content.** Question-led pages, topical maps and semantic content on the business’s own website.
+- **Technical AEO.** LocalBusiness schema, llms.txt, readable pages and AI-readable media.
+- **Listing consistency.** Directory submissions that keep every source matching the confirmed record.
+
+Local AI Registry publishes its research openly, including this brief, so business owners can see the evidence behind its methods. Business owners can [look up their business at localairegistry.com/search](https://localairegistry.com/search) and see what AI says about them today.
+
+## Frequently asked questions
+
+### Does ChatGPT recommend the same businesses every time?
+
+No. AI assistants compose a new answer for every request. When ChatGPT was asked the same local question twice, a median of 39 minutes apart, a median of 29% of the businesses named in either answer were named in both, according to 8ight.AI data reviewed by Local AI Registry. In a census of Bali venues, repeated runs of the same query overlapped by 0.22 for Claude and 0.45 for Gemini.
+
+### How do I know if AI recommends my business?
+
+Ask the same customer questions many times, under the same conditions, and count the share of answers that name your business. One answer only shows whether you were named that one time. Local AI Registry’s free business record and AI visibility audit show what ChatGPT, Gemini, Claude and Perplexity say about a business today.
+
+### How many AI answers do I need to measure my AI visibility?
+
+More than one, and usually many. Local AI Registry calculated that a business named in 40% of answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100 answers, assuming the conditions stay the same.
+
+### Why does AI recommend different businesses in different places?
+
+Place changes the answer. Without web search, the share of real doctors an AI model named fell from 16.3% in the largest third of US metro areas to 9.5% in the smallest (Ibrahim and Zaki, 2026, preprint). Within one town, BrightLocal found that only 3.5% of the businesses ChatGPT named appeared at every point tested.
+
+### Does web search change which businesses AI recommends?
+
+Yes. In an audit of the 100 largest US metro areas, only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city; with web search on, the same model reached 63.9% (Ibrahim and Zaki, 2026, preprint).
+
+### Does the wording of a question change who AI recommends?
+
+Yes. In a peer-reviewed study of chatbot recommendations in the 20 largest US cities, 74.7% of the people recommended for “an oculoplastic surgeon” were oculoplastic specialists, compared with 46.6% for “a doctor who does eyelid lifts” (Parikh et al., 2024).
+
+### Can I trust the sources an AI answer cites?
+
+Only partly. In a peer-reviewed audit of four generative search engines, only 51.5% of generated sentences were fully supported by their citations, and only 74.5% of citations supported the sentence they were attached to (Liu, Zhang and Liang, 2023). Citations show which sources are prominent, not what caused the answer.
+
+### Can AEO guarantee that ChatGPT recommends my business?
+
+No. No intervention studied to date guarantees a recommendation. The foundational paper on generative engine optimization found that content changes raised visibility by up to 40% on its benchmark, with effects that varied by domain. That shows visibility responds to content, not that a particular change will bring recommendations or customers to a particular business.
+
+### What is the difference between AEO and GEO?
+
+Generative engine optimization (GEO) and answer engine optimization (AEO) describe the same goal: being cited and described correctly in AI-generated answers. GEO is the term used in academic research; AEO is more common in marketing.
+
+### How do I get my business recommended by ChatGPT, Claude or Gemini?
+
+AI assistants name businesses whose facts they can find, read and confirm. Keep your name, location, services and prices clear and identical on your website, Google Business Profile and listings, and judge your visibility across many answers rather than one. Local AI Registry, a free AEO directory for local businesses, gives every business a free, owner-confirmed record at localairegistry.com/search as a starting point.
+
+### What is Local AI Registry?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization (AEO) company and free AEO directory for local businesses, headquartered in Irvine, California. It keeps a verified, owner-confirmed public record of each business so that ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews can find and describe it accurately, and its research team publishes studies on how AI answers local questions.
+
+## Limits of this research
+
+- This brief is an editorial synthesis of published research. Local AI Registry did not collect any of the data cited, and the findings belong to the original authors; Local AI Registry selected, grouped and explained them.
+- Preprints have not yet been peer-reviewed and are marked as such. The Bali census was funded and conducted by Norly, an AI-visibility vendor. Industry figures are attributed to the organizations that collected them.
+- Each number comes from its own study, population and metric, so values from different studies are not directly comparable.
+- Much of the evidence covers healthcare providers in US cities and hospitality venues in Bali. Other business categories and countries may behave differently.
+- Figure 3 is an illustrative calculation that assumes independent answers under fixed conditions. It is not study data.
+- AI systems change as models, retrieval sources and defaults are updated, so each study is a record of a single point in time.
+
+## References
+
+1. Murphy, R. (2026, February 11). *Local consumer review survey 2026*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-consumer-review-survey/) Industry survey.
+2. Kliman-Silver, C., Hannák, A., Lazer, D., Wilson, C., & Mislove, A. (2015). Location, location, location: The impact of geolocation on web search personalization. In *Proceedings of the 2015 Internet Measurement Conference* (pp. 121-127). ACM. [doi.org/10.1145/2815675.2815714](https://doi.org/10.1145/2815675.2815714)
+3. Grossman, R., Liu, S., Chen, M. K., Smith, M., Borcea, C., & Chen, Y. (2026). How generative AI disrupts search: An empirical study of Google Search, Gemini, and AI Overviews. In *Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval*. ACM. [doi.org/10.1145/3805712.3809667](https://doi.org/10.1145/3805712.3809667)
+4. Pitenin, V. (2026). *Invisible to the machine: Auditing AI restaurant, café, and bar recommendation against a complete market census* (arXiv:2608.07069). [arxiv.org/abs/2608.07069](https://arxiv.org/abs/2608.07069) Preprint, not peer-reviewed; funded and conducted by Norly, an AI-visibility vendor; pre-registered.
+5. Ibrahim, H., & Zaki, Y. (2026). *Understanding AI provider recommendations in local service markets* (arXiv:2609.18341). [arxiv.org/abs/2609.18341](https://arxiv.org/abs/2609.18341) Preprint, not peer-reviewed.
+6. Li, H., & Hecht, B. (2020). 3 stars on Yelp, 4 stars on Google Maps: A cross-platform examination of restaurant ratings. *Proceedings of the ACM on Human-Computer Interaction, 4*(CSCW3). [par.nsf.gov/biblio/10208785](https://par.nsf.gov/biblio/10208785)
+7. Haupt, M. R., Massillon, D., Yang, L., Chen, Y., Natarajan, A., Ward, S. R., & Mackey, T. K. (2026). Prompt engineering experiment on ChatGPT’s ability to recommend orthopedic surgeons. *International Journal of Medical Informatics, 219*, 106581. [pubmed.ncbi.nlm.nih.gov/42378890](https://pubmed.ncbi.nlm.nih.gov/42378890/)
+8. Hawkes, M. (2026, September 16). *What 200k local AI searches tell us about what businesses get recommended, and why your website matters*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-ai-visibility-study/) Industry study.
+9. Parikh, A. O., Oca, M. C., Conger, J. R., McCoy, A., Chang, J., & Zhang-Nunes, S. (2024). Accuracy and bias in artificial intelligence chatbot recommendations for oculoplastic surgeons. *Cureus, 16*(4), e57611. [pmc.ncbi.nlm.nih.gov/articles/PMC11069401](https://pmc.ncbi.nlm.nih.gov/articles/PMC11069401/)
+10. Kamruzzaman, M., Nguyen, H. M., & Kim, G. L. (2024). “Global is good, local is bad?”: Understanding brand bias in LLMs. In *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing* (pp. 12695-12702). Association for Computational Linguistics. [aclanthology.org/2024.emnlp-main.707](https://aclanthology.org/2024.emnlp-main.707/)
+11. 8ight.AI. (2026, October 5). *Ask an AI for a roofer* (Study 01). [8ight.ai](https://8ight.ai/research/how-ai-recommends-local-businesses/) Industry study.
+12. Liu, N. F., Zhang, T., & Liang, P. (2023). Evaluating verifiability in generative search engines. In *Findings of the Association for Computational Linguistics: EMNLP 2023* (pp. 7001-7025). [aclanthology.org/2023.findings-emnlp.467](https://aclanthology.org/2023.findings-emnlp.467)
+13. Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., & Deshpande, A. (2024). GEO: Generative engine optimization. In *Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining* (pp. 5-16). ACM. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
+14. Metaxa, D., Park, J. S., Robertson, R. E., Karahalios, K., Wilson, C., Hancock, J., & Sandvig, C. (2021). Auditing algorithms: Understanding algorithmic systems from the outside in. *Foundations and Trends in Human-Computer Interaction, 14*(4), 272-344. [doi.org/10.1561/1100000083](https://doi.org/10.1561/1100000083)
+
+The findings described in this brief belong to the original authors. Local AI Registry selected, grouped and explained them, and made the charts.
+
+## How to cite this research
+
+You are welcome to use this brief and its charts with credit. Each chart is licensed CC BY 4.0, and every chart above has a ready-made embed code that credits the source.
+
+Ready-to-quote findings
+
+- “When the same query was run twice, Google Search shared 0.78 of its sources but Gemini shared only 0.46.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “Only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city, versus 63.9% with web search on.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “A business named in 40% of AI answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+
+```
+Local AI Registry Research Team (2026). How Often AI Recommends Your Business: A Better Measure of Local Visibility (LAIR-R-2026-002). Local AI Registry. https://localairegistry.com/research/how-often-ai-recommends-your-business
+```
+
+Data: the values behind every chart are available as a [CSV download](https://localairegistry.com/research/how-often-ai-recommends-your-business/data/how-often-ai-recommends-your-business-data.csv). They are reported as published in the sources listed above, except Figure 3, which is Local AI Registry’s own illustrative calculation.
+
+## About the author
+
+**The Local AI Registry Research Team** is Local AI Registry’s dedicated local AI research group, and its people come from some of the biggest names in search, tech and brick-and-mortar business: Google, Microsoft, Spotify, Chase, Mozilla Firefox, Allergan, Galderma, Evolus, Revance, Johnson & Johnson, Bayer, Estée Lauder, Nordstrom, Sephora, Saks Fifth Avenue, Spectrum, BitGo, Republic, NextSeed, Toptal and RxSight. It is led by a former Google Search executive, advised by a Stanford-trained dermatologist and a Northwestern professor who is a past president of the American Society for Laser Medicine and Surgery, and spread across California, Washington, Texas, New York, Florida, Brazil, Nigeria, Poland, India and Singapore. The team works from raw public data, owns and runs a local med spa, and studies how ChatGPT, Claude, Gemini, Google AI Overviews, Perplexity and Microsoft Copilot find and describe local businesses.
+
+The team is a dedicated follower of the researchers who built modern AI and those who study AI search, including Geoffrey Hinton, Yoshua Bengio, Yann LeCun, Ashish Vaswani, Noam Shazeer, Demis Hassabis, Jeff Dean, Ilya Sutskever, Andrej Karpathy, Dario Amodei, Jared Kaplan, Chris Olah, Fei-Fei Li, Andrew Ng, Percy Liang, Karthik Narasimhan, Ameet Deshpande, Himabindu Lakkaraju, Aounon Kumar, Nelson F. Liu, Umar Iqbal and Jacob M. Montgomery. Their work underpins ChatGPT, Claude and Gemini, and the team studies their papers and tests their ideas against what AI says about local businesses. No affiliation or endorsement implied. See the [references](../../research/how-often-ai-recommends-your-business/index.html#references).
+
+One last thing
+
+AI is evolving every day. So is our playbook.
+
+The engines change how they find, read and cite local businesses constantly, and what worked last quarter may not work next quarter. At Local AI Registry, our dedicated local AI research team keeps testing what works, so the businesses we serve always get the current best approach.
 
 **Is AI recommending you?**
 
@@ -22833,7 +23517,7 @@ The Google searches you rank for, and should. Yes.
 05
 
 **[Website](../signals/web-management/index.html)**  
-A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing..
+A fast site with the code AI reads. Your site needs to load fast, work on a phone, state plainly what you do and where, and include structured data (schema) that labels your business, services, hours and reviews in a format machines read without guessing.
 
 06
 
@@ -22887,7 +23571,7 @@ In a census of every venue in two markets, 85.6% were never recommended by any o
 
 ## Who Google's AI cites for local questions
 
-#### On this page
+On this page
 
 1. [How the signals add up](#how-scored)
 2. [What does the research say?](#what-our-research-found)
@@ -23002,7 +23686,7 @@ A person reads it before you do. Three days before your date the draft goes to y
 
 From our data · 3D
 
-## How many sources stay the same when you reword the question
+## How often the assistants agreed on a local pick
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -23333,7 +24017,7 @@ Both use only the words on your own service list and what kind of picture it is.
 
 From our data · 3D
 
-## Readable words on the pages AI cited
+## Where the photos beside each pick came from
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -23512,7 +24196,7 @@ Thin replies already on your listing are rewritten, up to twenty of them, and ne
 
 From our data · 3D
 
-## Cited vs readable: what the AI could actually read
+## The rating ChatGPT wrote vs the rating on its own map
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -23814,7 +24498,7 @@ Our [schema generator](../../tools/schema-generator/index.html) builds LocalBusi
 
 From our data · 3D
 
-## Half of “the store locator says” claims had no source
+## Cited vs readable: what the AI could actually read
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24134,9 +24818,31 @@ Small team, big plan, early days.
 
 [See open roles](../careers/index.html)
 
-From our data · 3D
+## Advisors
 
-## “best breast augmentation surgeon in NYC”: who ChatGPT named, ask by ask
+TM**Dr. Tess Mauricio, MD, FAAD** Medical Director
+
+Stanford-trained, board-certified dermatologist. Advises on what patients and doctors expect from AI. Seen on The Talk, Dr. Phil and The Doctors.
+
+AB**Dr. Ashish Bhatia, MD, FAAD** Medical Advisor
+
+Northwestern professor and past president of the American Society for Laser Medicine and Surgery. Advises on medical accuracy.
+
+YL**Youngro Lee** Advisor, Singapore
+
+Founder and former CEO of NextSeed. Managing Director and Head of Asia at BitGo, and a General Partner at Republic Asia.
+
+TB**Tamara Bogetti, MBA** Advisor, Eye care
+
+Co-founder and CCO of MDConsult. 18 years at Bryn Mawr Communications, publisher of CRSToday. Formerly at AMO and Allergan.
+
+RJ**Ranna Jaraha** Advisor, Eye care
+
+CXO of MDConsult. 12 years at Bryn Mawr Communications and anchor of EyewireTV.
+
+DQ**Darryl Quinlan** Sales Advisor
+
+Founder of Curious Conversations Marketing in Westbrook, Maine. Advises on how our AI Consultants tell the story.
 
 Plus the doctors, surgeons and industry leaders who trust our team. [See who trusts us](../experts/index.html).
 
@@ -24213,9 +24919,11 @@ New data from our research team
 
 [**The complete guide** How to get recommended by AI](../../guide/index.html)[**For med spas** Industry guide](../../for/med-spas/ai/index.html)
 
-From our data · 3D
+**Is AI recommending you?**
 
-## “best breast augmentation surgeon in NYC”: how often each business was named
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24242,17 +24950,21 @@ Founder and CEO
 
 Steve has helped more than 5,000 local businesses since 2010. He built and sold his first company at 14. He went on to lead digital work at Google in Search, Microsoft (HoloLens), Spotify, Chase, Kaplan and Razorfish, and was Head of Digital at Evolus through its 2018 Nasdaq IPO. He founded UX Laboratory, which was acquired, built a multi-million-dollar search-technology company with Eric Sim and Clinton Adeleke, who now run operations and product at Local AI Registry, and owns a local med spa.
 
-From our data · 3D
-
 New data from our research team
 
 **73%**
 
 73% of the 128,400+ local businesses Local AI Registry has scored are named by zero AI assistants (our estimate from AI-visibility checks). [Local AI Registry data](../../methodology/index.html)
 
-## “best rhinoplasty surgeon in Chicago”: best position each business reached
+## Why he started Local AI Registry
 
-#### On this page
+After stepping off the corporate track to stay local, Steve opened his own med spa. He ran into what many owners know too well: agencies he couldn't verify, a long contract and results nobody could show him. Local AI Registry is built to be the opposite: one outcome, AI recommending your business, measured every month. [Read the full founder story](../../founder-story/index.html).
+
+## Writes about
+
+[**The complete guide** How to get recommended by AI](../../guide/index.html)[**The 11 signals** What AI checks](../../signals/index.html)[**By assistant** How each assistant picks](../../ai/index.html)
+
+On this page
 
 1. [Background](#background)
 2. [Why he started Local AI Registry](#why)
@@ -24289,11 +25001,15 @@ Medical Director
 
 Dr. Tess Mauricio is a Stanford-trained, board-certified dermatologist and the founder of M Beauty Clinic in Beverly Hills. Viewers know her from The Talk, Dr. Phil and The Doctors.
 
-From our data · 3D
+## Her role at Local AI Registry
 
-## Up close: the most-cited websites in local AI answers
+As Medical Director, Dr. Tess advises on what patients and doctors expect from AI, and she medically reviews every guide we publish for medical practices before it goes live. When a guide says what a treatment involves or what patients ask AI, she checks that it is accurate and fair to practices and patients.
 
-#### On this page
+## Guides she has reviewed
+
+[**Med spas** Getting recommended by AI](../../for/med-spas/ai/index.html)[**Plastic surgeons** Getting recommended by AI](../../for/plastic-surgeons/ai/index.html)[**Dermatologists** Getting recommended by AI](../../for/dermatologists/ai/index.html)[**Eye surgeons** Getting recommended by AI](../../for/eye-surgeons/ai/index.html)
+
+On this page
 
 1. [Background](#background)
 2. [Her role at Local AI Registry](#role)
@@ -24340,7 +25056,7 @@ Across the businesses we've scored, nearly two in three land below 45 out of 100
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: best position each business reached
+## How many sources stay the same when you reword the question
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24389,7 +25105,7 @@ Use the [prompt finder](../../tools/prompt-finder/index.html) to get the questio
 
 From our data · 3D
 
-## Up close: how often Google shows an AI answer, by topic
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24422,7 +25138,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## What nine separate vendors cost a month, stacked
+## Readable words on the pages AI cited
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24465,7 +25181,7 @@ If you're not named, compare yourself with the businesses that are, using the [1
 
 From our data · 3D
 
-## How far past page one the AI goes, by source, stacked
+## The top questions in every industry
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24498,7 +25214,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## “best lip filler in Newport Beach”: best position each business reached
+## Only 1 of 207 local answers gave an address or phone
 
 ## Named in AI in 90 days. *Guaranteed.*
 
@@ -24563,7 +25279,7 @@ Editorial independence
 
 From our data · 3D
 
-## Up close: what people ask AI about eye care practices
+## Half of “the store locator says” claims had no source
 
 **Is AI recommending you?**
 
@@ -24691,18 +25407,18 @@ Getting named in AI takes work across every place AI reads about you. Bought sep
 
 | Vendor | Job | Typical cost |
 | --- | --- | --- |
-| SEO agency | Rankings and links | $1,750/mo |
-| Web management team | Website updates | $650/mo |
+| Local SEO agency | Rankings, maps and links | $2,500/mo |
+| Web management team | Website updates and hosting | $850/mo |
 | PR group | Press releases every month | $1,500/mo |
-| Video producer | Video for your profiles | $3,500/mo |
-| Listings software | Yext Premium package | $83/mo |
-| Review management | Podium Core plan | $399/mo |
-| Google profile manager | Birdeye Starter plan | $299/mo |
-| Content writer | Blog and page copy | $3,600/mo |
-| AI monitoring tool | Profound Growth plan | $399/mo |
-| Total | Nine vendors | about $12,200/mo |
+| YouTube video producer | Videos for your channel and profiles | $2,000/mo |
+| Listings software | Premium package | $83/mo |
+| Review management | Core plan | $399/mo |
+| Google profile manager | Starter plan | $299/mo |
+| Content ranking tool | Peace of Mind plan, billed yearly | $299/mo |
+| AI monitoring tool | Growth plan | $399/mo |
+| Total | Nine vendors | about $8,300/mo |
 
-Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [WebFX, content marketing cost, 2026](https://www.webfx.com/content-marketing/pricing/how-much-does-content-marketing-cost/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
+Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Surfer, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [CostBench, Surfer SEO pricing, Nov 2026](https://www.costbench.com/software/ai-seo-tools/surfer-seo/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
 
 From our data · 3D
 
@@ -24741,7 +25457,7 @@ What if my agency already does SEO?
 
 SEO is part of it, and a good foundation. AI answers also lean on reviews, press, best-of lists and outside articles. We cover all of them.
 
-#### On this page
+On this page
 
 1. [Side by side](#side-by-side)
 2. [What it means for your business](#what-it-means)
@@ -24767,9 +25483,9 @@ Book a call and we’ll show you, live, what AI says about you today. If we miss
 
 ---
 
-# Works with the tools you already use
+# The partner directory
 
-> The platforms Local AI Registry works with, from Google Business Profile and ChatGPT to WordPress and Square, and the partners who refer local businesses to us.
+> Every platform and referral partner Local AI Registry works with, from Google Business Profile, Yelp and WordPress to the consultants who refer local.
 
 Source: https://localairegistry.com/works-with/
 Updated: 2026-11-15
@@ -24777,127 +25493,155 @@ Publisher: Local AI Registry (https://localairegistry.com)
 
 Works with Local AI Registry
 
-Your Local AI Registry record works with the website you already have, verifies through Google, books through your calendar and gets read by every major AI assistant. Around it are our referral partners: consultants, software makers, marketers and industry leaders who send businesses our way.
+The platforms local businesses already run on, and the people who send businesses our way. Your Local AI Registry record works alongside the website, booking and review tools you already have.
 
-[*Platform***Google Business Profile** Listings and reviews](../works-with/index.html#google-business-profile)
+**32** platforms** 26** referral partners** 16** with a setup guide
 
-*Platform***ChatGPT** Reads the Registry
+[Platform**Google Business Profile** Listings and reviewsHow it connects](../works-with/index.html#google-business-profile)
 
-*Platform***Gemini** Reads the Registry
+Platform**ChatGPT** AI assistant
 
-*Platform***Claude** Reads the Registry
+[Platform**Google Maps** Maps and directionsHow it connects](../works-with/index.html#google-maps)[Platform**WordPress** WebsitesHow it connects](../works-with/index.html#wordpress)[Platform**Yelp** ReviewsHow it connects](../works-with/index.html#yelp)
 
-*Platform***Perplexity** Reads the Registry
+Platform**Claude** AI assistant
 
-[*Platform***Google Maps** Maps and directions](../works-with/index.html#google-maps)[*Platform***Apple Maps** Maps and Siri](../works-with/index.html#apple-maps)[*Platform***Yelp** Reviews](../works-with/index.html#yelp)[*Platform***Tripadvisor** Reviews](../works-with/index.html#tripadvisor)[*Platform***WordPress** Websites](../works-with/index.html#wordpress)[*Platform***Shopify** Websites and stores](../works-with/index.html#shopify)[*Platform***Squarespace** Websites](../works-with/index.html#squarespace)[*Platform***Wix** Websites](../works-with/index.html#wix)[*Platform***Webflow** Websites](../works-with/index.html#webflow)
+[Platform**Apple Maps** Maps and SiriHow it connects](../works-with/index.html#apple-maps)[Platform**Shopify** Websites and storesHow it connects](../works-with/index.html#shopify)[Platform**Facebook** SocialHow it connects](../works-with/index.html#facebook)
 
-*Platform***GoDaddy** Domains and websites
+Platform**Gemini** AI assistant
 
-[*Platform***Facebook** Social](../works-with/index.html#facebook)[*Platform***Instagram** Social](../works-with/index.html#instagram)[*Platform***TikTok** Social](../works-with/index.html#tiktok)[*Platform***YouTube** Video](../works-with/index.html#youtube)[*Platform***Nextdoor** Neighborhood](../works-with/index.html#nextdoor)
+[Platform**Instagram** SocialHow it connects](../works-with/index.html#instagram)[Platform**Squarespace** WebsitesHow it connects](../works-with/index.html#squarespace)
 
-*Platform***Square** Payments and POS
+Platform**Perplexity** AI assistant
 
-*Platform***Stripe** Payments
+[Platform**TikTok** SocialHow it connects](../works-with/index.html#tiktok)[Platform**Wix** WebsitesHow it connects](../works-with/index.html#wix)
 
-[*Platform***Calendly** Booking](../works-with/index.html#calendly)
+Platform**Square** Payments and POS
 
-*Platform***HubSpot** CRM
+[Platform**Nextdoor** NeighborhoodHow it connects](../works-with/index.html#nextdoor)
 
-*Platform***Salesforce** CRM
+Platform**GoDaddy** Domains and websites
 
-*Platform***QuickBooks** Accounting
+Platform**Stripe** Payments
 
-*Platform***Mailchimp** Email marketing
+[Platform**YouTube** VideoHow it connects](../works-with/index.html#youtube)[Platform**Webflow** WebsitesHow it connects](../works-with/index.html#webflow)[Platform**Calendly** BookingHow it connects](../works-with/index.html#calendly)
 
-*Platform***DoorDash** Delivery
+Platform**HubSpot** CRM
 
-*Platform***Uber Eats** Delivery
+Platform**QuickBooks** Accounting
 
-*Platform***Thumbtack** Local services
+Platform**Mailchimp** Email marketing
 
-*Platform***Canva** Design
+Platform**Salesforce** CRM
 
-*Platform***Zapier** Automation
+[Platform**Tripadvisor** ReviewsHow it connects](../works-with/index.html#tripadvisor)
 
-*Consultancy***Audrey Campbell, MPH** The Audrey Aesthetic
+Platform**DoorDash** Delivery
 
-*Consultancy***Kara McClanahan** Aesthetic Practice Partners
+Platform**Uber Eats** Delivery
 
-*Consultancy***Kimberly Gerber** Excelerate
+Platform**Thumbtack** Local services
 
-*Marketing***Jasmine Hill, MBA** Aesthetic Influencer
+Platform**Canva** Design
 
-*Technology***Brandon Hahr** Kingsmen Digital Ventures
+Platform**Zapier** Automation
 
-*Software***Ben Wolber** Illume
+Consultancy**Audrey Campbell, MPH** The Audrey Aesthetic
 
-*Marketing***Michael Moretti** Medical Insight
+Consultancy**Kara McClanahan** Aesthetic Practice Partners
 
-*Industry leaders***Dustin Sjuts** Revelyx Bio
+Consultancy**Kimberly Gerber** Excelerate
 
-*Industry leaders***Jeff Allen** Collagen P.I.N.
+Marketing**Jasmine Hill, MBA** Aesthetic Influencer
 
-*Industry leaders***Bryan Bullock** AVITA Medical
+Technology**Brandon Hahr** Kingsmen Digital Ventures
 
-*Industry leaders***Taryn Conway** Aesthetics executive
+Software**Ben Wolber** Illume
 
-*Industry leaders***Eric Sanders** Aesthetics executive
+Publishing**Michael Moretti** Medical Insight
 
-*Industry leaders***Jennifer Redmond, MBA** Commercial executive
+Industry leader**Dustin Sjuts** Revelyx Bio
 
-*Industry leaders***Kellie Lao** Marketing executive
+Industry leader**Jeff Allen** Collagen P.I.N.
 
-*Industry leaders***Opie Opfer** Creative executive
+Industry leader**Bryan Bullock** AVITA Medical
 
-*Technology***Benjamin Hahr** Tech executive
+Industry leader**Taryn Conway** Aesthetics executive
 
-*Industry leaders***Sierra Koitses** IRC Collective, Canada
+Industry leader**Eric Sanders** Aesthetics executive
 
-*Consultancy***Jonathan McLean** McLean Aesthetics, recruiting
+Industry leader**Jennifer Redmond, MBA** Commercial executive
 
-*Consultancy***Anthony Serhan and Erika Jones** Pink Sky
+Industry leader**Kellie Lao** Marketing executive
 
-*Marketing***Darryl Quinlan** Curious Conversations, marketing
+Industry leader**Opie Opfer** Creative executive
 
-*Software***Stephen Handisides** V-Unite, staff training
+Technology**Benjamin Hahr** Tech executive
 
-*Software***Arcuate Health** Patient engagement
+Industry leader**IRC Collective** Sierra Koitses · Canada
 
-*Consultancy***Paula Kokko** MedSpire Health, medical direction
+Consultancy**McLean Aesthetics** Jonathan McLean · recruiting
 
-*Technology***Ben Stover** AI Med Consult, practice AI
+Consultancy**Pink Sky** Anthony Serhan and Erika Jones
 
-*Technology***Alexander Odishelidze** Symbiotic AI
+Marketing**Curious Conversations** Darryl Quinlan · marketing
 
-*Marketing***Robin Dimond** Fifth & Cor, brand agency
+Software**V-Unite** Stephen Handisides · staff training
 
-We work with any platform a local business uses. These are the biggest. Platform names are trademarks of their owners and imply no endorsement.
+Software**Arcuate Health** Patient engagement
+
+Consultancy**MedSpire Health** Paula Kokko · medical direction
+
+Technology**AI Med Consult** Ben Stover · practice AI
+
+Technology**Symbiotic AI** Alexander Odishelidze
+
+Marketing**Fifth & Cor** Robin Dimond · brand agency
+
+We work with any platform a local business uses; these are the most common. Platform names and logos are trademarks of their owners and imply no endorsement. Partners are independent and refer businesses to us.
+
+## Why these platforms matter to AI
+
+When we asked ChatGPT, Claude, Gemini and Perplexity for the best local businesses, they built their answers from review sites, directories and map listings far more often than from business websites. The platforms you're already on are part of what AI reads about you. [See the research](../answer-watch/index.html).
 
 ## Want to be listed?
 
 Partners get a listing here and a portal to track referrals and commissions.
 
-[Become a partner](../partners/index.html)
+[Become a partner](../partners/index.html)[Book a free AI check](../start/index.html)
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Phoenix”: best position each business reached
+## Where each assistant found its local picks
 
 Drag to turn
 
-Each layer is a business ChatGPT named. Wider means it reached a higher spot in at least one of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../answer-watch/index.html).
+Why these platforms matter: they're where AI assistants found the businesses they named.
+
+Each sphere is a source an assistant used to name businesses for the two questions. Bigger means more assistants and questions leaned on it. Most spheres are review sites and directories; business websites are just one of them. Source: [AI Answer Watch: four assistants, Local AI Registry, Nov 15, 2026](../answer-watch/index.html).
 
 See the data
 
 |  |  |
 | --- | --- |
-| Matthew Tamplen | 6 |
-| Christian Paquet | 6 |
-| Paul Holden | 4 |
-| Todd Hobgood | 4 |
-| Farhan Taghizadeh | 2 |
-| Daniel Shapiro | 3 |
-| Roni Prucz | 2 |
+| yelp.com | 2 uses |
+| business websites | 2 uses |
+| threebestrated.com | 2 uses |
+| serviceagent.ai | 2 uses |
+| map listings (ratings and review counts) | 1 uses |
+| zencare.com | 1 uses |
+| thervo.com | 1 uses |
+| zocdoc.com | 1 uses |
+| healthgrades.com | 1 uses |
+| sharecare.com | 1 uses |
+| contractorsranked.com | 1 uses |
+| expertise.com | 1 uses |
+| cityvetted.com | 1 uses |
+| cslb.ca.gov | 1 uses |
+| angi.com | 1 uses |
+| homeadvisor.com | 1 uses |
+| 5starhomeservicepros.com | 1 uses |
+| thumbtack.com | 1 uses |
+| bbb.org | 1 uses |
 
 ## Named in AI in 90 days. *Guaranteed.*
 

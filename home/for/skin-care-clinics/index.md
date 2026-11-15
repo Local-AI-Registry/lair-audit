@@ -89,7 +89,7 @@ Can you write about products we sell?
 
 We can name a product you stock. We cannot say what it will do to somebody, which is where most product copy in this trade goes wrong.
 
-#### On this page
+On this page
 
 1. [What skin care clinics are up against](#up-against)
 2. [What people ask AI about skin care clinics](#questions)

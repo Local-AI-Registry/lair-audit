@@ -92,7 +92,7 @@ A person reads it before you do. Three days before your date the draft goes to y
 
 From our data · 3D
 
-## How many sources stay the same when you reword the question
+## How often the assistants agreed on a local pick
 
 ## Named in AI in 90 days. *Guaranteed.*
 

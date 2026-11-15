@@ -46,26 +46,6 @@ References to the HIPAA Rules mean the sections as in effect or as amended. The 
 
 Blind LLC, doing business as Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · (213) 931-5633 · hello@localairegistry.com. Signed by Steve Lee, Founder and CEO, upon countersignature.
 
-From our data · 3D
-
-## Up close: what people ask AI about dental practices
-
-Drag to turn
-
-A sample of the research we publish. Patient information never appears in it.
-
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/dentists/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Where can I find a dentist near me? | 219,600 a year |
-| Which dentists accept Delta Dental insurance? | 80,760 a year |
-| How do I find a dentist that accepts my insurance plan? | 36,120 a year |
-| What dental insurance plans are accepted by local dentists? | 36,120 a year |
-| Where can I find a pediatric dentist close to me? | 24,120 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.

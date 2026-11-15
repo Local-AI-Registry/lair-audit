@@ -58,7 +58,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## How often Google shows an AI answer, by topic, stacked
+## What AI cites vs what you control
 
 ## Named in AI in 90 days. *Guaranteed.*
 

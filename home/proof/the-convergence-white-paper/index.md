@@ -162,9 +162,118 @@ More than 60%of queries: leading AI search tools wrong. CITED: Tow Center at Col
 
 This is the keystone the other three currents rest on. **ANALYSIS** The entire body of evidence converges on "be a verifiable entity," moving fast, on a closing clock, while no neutral party measures whether you are one, reproducibly, across platforms, over time. That negative space, visible only when all eleven streams are held in one frame, is not a gap in the research. It is a description of an institution that does not yet exist.
 
-From our data · 3D
+## VI · The Instrument, what the vacuum implies
 
-## How often each chain's own website was cited for its hours
+If the evidence converges on a substrate no one is measuring, the implied object is not a tactic or a tool, it is an institution: an independent, reproducible record of what AI says about local businesses, and whether they are known for the right things.
+
+That is the function Local AI Registry performs. It scores independent local businesses across ChatGPT, Gemini, Perplexity, and Google AI Overviews; it measures not just whether a business is named but whether it is named for the right service, the alignment this report shows the whole system rewards; and it does so repeatedly, across platforms, over time, which is exactly the reproducibility the landscape lacks. The registry is not a product appended to the research. It is the instrument the convergence implies.
+
+### From reading to record
+
+A reader can act on the four currents today: move the work off-property, apply specificity at every layer, act within the window, and treat verifiability as a conversion advantage. But to know where you stand, what you're named for, what you're invisible for, where the reputation and the marketing diverge, requires the instrument. That is what the next page offers.
+
+## VII · The evidence layer, seven findings underneath
+
+**Seven findings underneath the view**
+
+The bird's-eye view is built on a deeper layer of cross-source findings, each one a conclusion drawn by overlaying two or three datasets that none of them states alone. They are summarized here as the supporting evidence beneath the four currents; each is documented at length in companion analysis.
+
+### The seven triangulated findings beneath the convergence
+
+- **01 · The Broken Scoreboard.** The canonical local-pack model and AI visibility are nearly orthogonal. Built from: Ahrefs × Whitespark × antitrust.
+- **02 · The Exposure Runway.** The 7.9% local AI rate is a countdown toward the 57.9% question rate. Built from: Ahrefs × BrightLocal.
+- **03 · Re-Centralization.** Proximity's death plus prominence bias tilts AI toward incumbents. Built from: Local Falcon × retrieval-bias research.
+- **04 · The Closing Window.** A temporary long-tail citation opening that bias predicts will re-narrow. Built from: Ahrefs × field experiment × academia.
+- **05 · Reviews Are the Keystone.** The only lever that is ranking signal, citation source, safeguard & legal moat at once. Built from: Whitespark × mechanism × Liu × FTC.
+- **06 · The Verification Dividend.** The fact-check, not the recommendation, is where the funnel breaks. Built from: BrightLocal × Tow Center.
+- **07 · Two Disjoint Games.** ChatGPT-via-Bing visibility is the underpriced channel. Built from: Seer × Ahrefs × Sensor Tower.
+
+Each finding is graded **ANALYSIS**, a strong hypothesis from real, cited inputs, not a measured fact. Several become measurable original statistics when cross-checked against the live index; those measurements will be published when complete.
+
+## Where to go from here
+
+**See where you actually stand**
+
+This report describes the landscape from above. The next step is the instrument it implies, specific to you, whether you run a business that needs to know what AI says about it, or you're a customer who wants the truth about who's actually good.
+
+### For business owners
+
+**Register your business, free.** Find out, in under a minute, what ChatGPT, Gemini, Perplexity, and Google AI Overviews currently say about you, what you're named for, what you're invisible for, and your AI Score across every service you offer. Registering and claiming your listing is free.
+
+[Get your AI Score →](../../index.html)
+
+### For consumers
+
+**Check what a business is known for.** Before you book, see what the AI really says, what a local business is genuinely known for, where it's strong, and where the reputation doesn't match the marketing. An honest, editorial read, never pay-to-rank.
+
+[Look up a business →](https://localairegistry.com/search)
+
+Local AI Registry is the independent, editorial registry of how AI sees local business. We never sell rankings.
+
+## Methodology & limitations
+
+### How this report was built
+
+This is a work of synthesis at altitude: eleven independent evidence streams, read together to surface the conclusions that only their overlap reveals. Every input is a real, cited figure from a named source; the convergence and the four currents are our own **ANALYSIS**; forward inferences are marked ** PROJECTION**. We hold a strict "real or omitted" rule, no quote, statistic, study, court finding, or researcher is invented, and unverifiable figures (such as a widely-shared "797,444 impressions, 7 clicks" anecdote) are excluded rather than repeated.
+
+### What this method can and cannot claim
+
+Convergence is strong evidence, not proof of mechanism. Many independent sources agreeing on a substrate is a powerful signal, but several inputs are correlational and inherit that limit. Projections are reasoned, not certain, the transition window and the runway are extrapolations from measured trends, flagged as such. The local-AI research gap is real: little peer-reviewed work studies local-business inclusion in AI answers directly, so local conclusions are careful inferences from adjacent retrieval, bias, and entity-grounding research. Vendor incentive exists in some sources; figures were cross-checked where possible. The accountability vacuum is, by definition, where measurement is thinnest, which is precisely the gap the registry is built to close, and why proprietary figures are shown as forthcoming rather than asserted.
+
+Reference numbers are shared across the Local AI Visibility Series for cross-referencing; gaps indicate sources cited in companion papers.
+
+## The independent registry of how AI sees local business.
+
+Local AI Registry scores independent local businesses on whether AI assistants recommend them, and, just as importantly, on whether they're recommended for the right things. We're editorial, transparent, and never pay-to-rank. Yellow Pages told you who existed. We tell you what the AI actually says.
+
+**Free to register. Free to be found correctly.**
+
+This report synthesizes publicly available evidence; the convergence and currents are analytical conclusions, not measured facts. Not legal or marketing advice. No AI placement can be guaranteed.
+
+## How to cite this report
+
+Local AI Registry Research. The Convergence: What Eleven Streams of Evidence Reveal About How Local Businesses Win AI Recommendations. White Paper No. 03 (Definitive Edition), June 2026. localairegistry.com/research.
+
+About the author
+
+Local AI Registry Research, the research arm of Local AI Registry
+
+Publishes the Local AI Visibility Series, which reads the published evidence on how AI assistants recommend local businesses.
+
+References
+
+1. 1. BrightLocal. Local Consumer Review Survey 2026. [brightlocal.com](https://www.brightlocal.com/research/lcrs-ai-trust/)
+2. 2. G. Allsopp / Ahrefs. AI visibility study, 75,000 brands. [ahrefs.com](https://ahrefs.com/blog)
+3. 3. Ahrefs. What Triggers AI Overviews? 86 Factors, 146M SERPs. [ahrefs.com](https://ahrefs.com/blog/ai-overview-triggers/)
+4. 4. Ahrefs. 38% of AI Overview Citations Pull From the Top 10. [ahrefs.com](https://ahrefs.com/blog/ai-overview-citations-top-10/)
+5. 5. Local Falcon. AI Overviews proximity whitepaper, ~60,000 simulations. 2025. [localfalcon.com](https://localfalcon.com/)
+6. 6. Seer Interactive. SearchGPT/Bing citation & CTR analyses. 2025-26. [seerinteractive.com](https://seerinteractive.com/)
+7. 7. Sensor Tower. State of AI 2026. June 2026. [sensortower.com](https://sensortower.com/)
+8. 8. D. Shaw / Whitespark. Local Search Ranking Factors 2026. [whitespark.ca](https://whitespark.ca/)
+9. 9. Google Search Central. AI Features and Your Website. [developers.google.com](https://developers.google.com/search/docs/appearance/ai-features)
+10. 10. Google Search Central. AI optimization guide. [developers.google.com](https://developers.google.com/search/docs/fundamentals/ai-optimization-guide)
+11. 12. R. Stein (VP Product, Google Search), Lenny's Podcast. Query fan-out & AI Mode. 2025.
+12. 17. U.S. v. Google, Mem. Opinion (Judge A. Mehta, Nov 2025); FastSearch / RankEmbed / Navboost disclosures; P. Nayak testimony. [searchengineland.com](https://searchengineland.com/)
+13. 19. P. Aggarwal et al. (Princeton; Georgia Tech; Allen AI; IIT Delhi). GEO: Generative Engine Optimization. KDD 2024. [arxiv.org](https://arxiv.org/abs/2311.09735)
+14. 25. S. Dai, L. Pang, J. Xu et al. (Renmin Univ.; CAS). Neural Retrievers are Biased Towards LLM-Generated Content. KDD 2024. [arxiv.org](https://arxiv.org/abs/2310.20501)
+15. 26. M. Fayyaz, A. Modarressi, H. Schütze, N. Peng (UCLA; LMU). Collapse of Dense Retrievers. ACL 2025. [arxiv.org](https://arxiv.org/abs/2503.05037)
+16. 30. I. Yamada et al. (RIKEN; Studio Ousia). LUKE: entity-aware representations. EMNLP 2020. [aclanthology.org](https://aclanthology.org/2020.emnlp-main.523/)
+17. 32. N. F. Liu, T. Zhang, P. Liang (Stanford). Evaluating Verifiability in Generative Search Engines. EMNLP 2023. [aclanthology.org](https://aclanthology.org/2023.findings-emnlp.467/)
+18. 34. K. Jaźwińska, A. Chandrasekar (Tow Center, Columbia). AI Search Has a Citation Problem. CJR, 2025. [cjr.org](https://cjr.org/)
+19. 35. U.S. FTC. Rule on Consumer Reviews and Testimonials, 16 CFR 465. 2024. [ftc.gov](https://ftc.gov/)
+20. 38. European Commission. EU AI Act, Article 50, applicable 2 Aug 2026. [artificialintelligenceact.eu](https://artificialintelligenceact.eu/)
+21. 41. A. Shotland (Local SEO Guide). Reddit-mention AI Overview experiment. [localseoguide.com](https://localseoguide.com/)
+
+Keep reading
+
+- [How AI decides which local business to recommend](https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend)
+- [How the AI Score is calculated](../../methodology/index.html)
+
+## See where you actually stand
+
+Free, no card, in about thirty seconds.
+
+[Get your AI Score](../../index.html)
 
 **Is AI recommending you?**
 

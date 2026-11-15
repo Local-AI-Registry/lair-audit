@@ -133,7 +133,7 @@ Google Gemini
 :   AI-generated content drafting and AI visibility checks. Same handling as OpenAI.
 
 SerpZilla / SerpClix / Adsy / RedPress
-:   Off-page module vendors used only for customers actively enrolled in those modules &mdash; backlinks, CTR campaigns, press release distribution.
+:   Off-page module vendors used only for customers actively enrolled in those modules: backlinks, CTR campaigns, press release distribution.
 
 DigitalOcean
 :   Application hosting, managed Postgres, object storage (DO Spaces) for photos and report PDFs.
@@ -148,9 +148,86 @@ No mobile information will be shared with third parties or affiliates for market
 
 Section 08
 
-From our data · 3D
+## When we disclose your information
 
-## “best rhinoplasty surgeon in San Diego”: how often each business was named
+We disclose information only in these specific circumstances:
+
+- **To deliver the Services.** The sub-processors in Section 7 receive what they need to do their job and nothing more.
+- **With your direction.** If you connect Google, or instruct us to publish content, we transmit the corresponding data to those platforms on your behalf.
+- **To comply with law.** We may disclose information when required by a valid subpoena, court order, or government request. We push back where the request is overbroad and notify you where we are legally permitted to do so.
+- **To protect rights and safety.** Where necessary to investigate fraud, security incidents, or violations of our Terms of Service.
+- **Business transfer.** If Blind LLC is acquired or merged, customer data transfers to the acquirer under the same protections.
+
+Section 09
+
+## Data retention
+
+We keep account data for as long as your account is active, plus a short tail to handle disputes, support, and legal obligations. Specifically:
+
+- **Account profile and business data:** kept while the account is active; deleted within 30 days of account closure (or sooner on request).
+- **OAuth tokens (Google):** deleted within 24 hours of revocation or account closure.
+- **Pageview hashes (Section 2):** raw IP is never persisted; the salted hash is kept for 13 months for week-over-week trend reporting, then purged.
+- **Billing records:** retained for 7 years to meet tax and accounting obligations.
+- **Application logs:** 30 days, then purged.
+- **Public business profile pages** we generate from the public web persist as long as the underlying business is operational. Owners can flag inaccurate data or request removal, see Section 11.
+
+Section 10
+
+## Data security
+
+We protect data with industry-standard controls: TLS in transit, AES-256 at rest in managed Postgres and object storage, encrypted secrets, least-privilege access management, structured access logs, and continuous error monitoring. OAuth tokens are stored encrypted with separate key material. Production database access is restricted to a small set of authorized engineers and audited.
+
+No system is impenetrable, so we maintain an incident-response plan and will notify affected users without undue delay if a breach occurs that materially affects their data.
+
+Section 11
+
+## Your rights and choices
+
+You can:
+
+- **Access** the personal information we hold about you by emailing the address in Section 15.
+- **Correct** inaccurate information directly in your dashboard, or by writing to us.
+- **Delete** your account and associated personal information at any time from Settings → Account, or by writing to us.
+- **Port** your data: request a machine-readable export.
+- **Restrict or object** to specific processing.
+- **Opt out** of non-essential email communications via the unsubscribe link in any non-transactional email.
+- **Revoke** OAuth access at any time through the third-party platform (Section 4).
+- **Flag** inaccurate data on a public business profile we generated using the “Report inaccuracy” affordance on the page.
+
+If you are in the United Kingdom or another jurisdiction with similar laws (GDPR, UK GDPR), you additionally have the right to lodge a complaint with your local supervisory authority. If you are a California resident, you have rights under the CCPA / CPRA including the right to know what we collect, the right to delete, the right to correct, and the right not to be discriminated against for exercising your rights. We honor all of these rights regardless of your jurisdiction.
+
+Section 12
+
+## International transfers
+
+Local AI Registry is operated from the United States, and our primary infrastructure is hosted in U.S. data centers. If you are accessing the Services from outside the United States (including the United Kingdom), your information will be transferred to and processed in the United States. We rely on Standard Contractual Clauses or equivalent mechanisms with our sub-processors where required.
+
+Section 13
+
+## Children
+
+The Services are intended for businesses and adults. We do not knowingly collect personal information from anyone under 13 (or under 16 in jurisdictions that apply a higher age). If we learn that we have inadvertently collected such information, we will delete it promptly.
+
+Section 14
+
+## Changes to this policy
+
+We may revise this policy as our product evolves or as legal requirements change. When we make material changes, we will notify account holders by email and update the “Last revised” date at the top. Continued use of the Services after the effective date of a revised policy constitutes acceptance of the revisions.
+
+Section 15
+
+## Contact us
+
+Questions about this policy, data requests, or anything else, reach us:
+
+Email
+:   [hello@localairegistry.com](mailto:hello@localairegistry.com)
+
+Phone
+:   (213) 928-2348
+
+Mailing entity
+:   Blind LLC
 
 **Is AI recommending you?**
 

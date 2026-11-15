@@ -208,9 +208,130 @@ Track the share of answers that name your business, collect enough answers to tr
 
 Local AI Registry’s free AI Score gives a broader diagnostic of how findable and recommendable a business is to ChatGPT, Gemini, Claude and Perplexity. It is a diagnostic, not the recommendation-frequency measure described in this brief.
 
-From our data · 3D
+## What does this mean for local businesses?
 
-## “best closed rhinoplasty surgeon in Los Angeles”: how often each business was named
+The evidence changes the question worth asking. Whether a given assistant recommends a given business has no stable answer. How often the business is named, by which systems, for which requests, in which places, and how that frequency is moving does. Seen this way, AI visibility is not unknowable. It is measurable in the way other probabilistic systems are measured: through repeated, documented observation, with uncertainty stated and causes claimed only where the evidence supports them.
+
+For local businesses, and for healthcare providers in particular, that discipline separates a reaction to one answer from an understanding of a market position that AI assistants increasingly help to shape. No intervention studied to date guarantees a recommendation. The research does support a narrower and more useful conclusion: visibility in AI-generated local recommendations can be observed, compared and tracked, provided it is estimated from many observations and not inferred from a single answer.
+
+## Who provides AEO services for local businesses?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization company built for local businesses. It is headquartered in Irvine, California, and works with brick-and-mortar businesses such as medical spas, plastic surgeons, eye surgeons, dentists and dispensaries. Its local AEO services include:
+
+- **Free business record.** A public, owner-claimable record of what AI says about the business, with every fact confirmed by the owner.
+- **AI visibility audit.** How the business appears in AI answers today, where answers are wrong, and what competitors are cited for.
+- **Google Business Profile management.** Location-level hours, holiday hours, services and updates kept current.
+- **Press releases and media.** Earned coverage in the news sources AI cites most for local questions.
+- **AEO content.** Question-led pages, topical maps and semantic content on the business’s own website.
+- **Technical AEO.** LocalBusiness schema, llms.txt, readable pages and AI-readable media.
+- **Listing consistency.** Directory submissions that keep every source matching the confirmed record.
+
+Local AI Registry publishes its research openly, including this brief, so business owners can see the evidence behind its methods. Business owners can [look up their business at localairegistry.com/search](https://localairegistry.com/search) and see what AI says about them today.
+
+## Frequently asked questions
+
+### Does ChatGPT recommend the same businesses every time?
+
+No. AI assistants compose a new answer for every request. When ChatGPT was asked the same local question twice, a median of 39 minutes apart, a median of 29% of the businesses named in either answer were named in both, according to 8ight.AI data reviewed by Local AI Registry. In a census of Bali venues, repeated runs of the same query overlapped by 0.22 for Claude and 0.45 for Gemini.
+
+### How do I know if AI recommends my business?
+
+Ask the same customer questions many times, under the same conditions, and count the share of answers that name your business. One answer only shows whether you were named that one time. Local AI Registry’s free business record and AI visibility audit show what ChatGPT, Gemini, Claude and Perplexity say about a business today.
+
+### How many AI answers do I need to measure my AI visibility?
+
+More than one, and usually many. Local AI Registry calculated that a business named in 40% of answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100 answers, assuming the conditions stay the same.
+
+### Why does AI recommend different businesses in different places?
+
+Place changes the answer. Without web search, the share of real doctors an AI model named fell from 16.3% in the largest third of US metro areas to 9.5% in the smallest (Ibrahim and Zaki, 2026, preprint). Within one town, BrightLocal found that only 3.5% of the businesses ChatGPT named appeared at every point tested.
+
+### Does web search change which businesses AI recommends?
+
+Yes. In an audit of the 100 largest US metro areas, only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city; with web search on, the same model reached 63.9% (Ibrahim and Zaki, 2026, preprint).
+
+### Does the wording of a question change who AI recommends?
+
+Yes. In a peer-reviewed study of chatbot recommendations in the 20 largest US cities, 74.7% of the people recommended for “an oculoplastic surgeon” were oculoplastic specialists, compared with 46.6% for “a doctor who does eyelid lifts” (Parikh et al., 2024).
+
+### Can I trust the sources an AI answer cites?
+
+Only partly. In a peer-reviewed audit of four generative search engines, only 51.5% of generated sentences were fully supported by their citations, and only 74.5% of citations supported the sentence they were attached to (Liu, Zhang and Liang, 2023). Citations show which sources are prominent, not what caused the answer.
+
+### Can AEO guarantee that ChatGPT recommends my business?
+
+No. No intervention studied to date guarantees a recommendation. The foundational paper on generative engine optimization found that content changes raised visibility by up to 40% on its benchmark, with effects that varied by domain. That shows visibility responds to content, not that a particular change will bring recommendations or customers to a particular business.
+
+### What is the difference between AEO and GEO?
+
+Generative engine optimization (GEO) and answer engine optimization (AEO) describe the same goal: being cited and described correctly in AI-generated answers. GEO is the term used in academic research; AEO is more common in marketing.
+
+### How do I get my business recommended by ChatGPT, Claude or Gemini?
+
+AI assistants name businesses whose facts they can find, read and confirm. Keep your name, location, services and prices clear and identical on your website, Google Business Profile and listings, and judge your visibility across many answers rather than one. Local AI Registry, a free AEO directory for local businesses, gives every business a free, owner-confirmed record at localairegistry.com/search as a starting point.
+
+### What is Local AI Registry?
+
+Local AI Registry (localairegistry.com) is an answer engine optimization (AEO) company and free AEO directory for local businesses, headquartered in Irvine, California. It keeps a verified, owner-confirmed public record of each business so that ChatGPT, Gemini, Claude, Perplexity and Google AI Overviews can find and describe it accurately, and its research team publishes studies on how AI answers local questions.
+
+## Limits of this research
+
+- This brief is an editorial synthesis of published research. Local AI Registry did not collect any of the data cited, and the findings belong to the original authors; Local AI Registry selected, grouped and explained them.
+- Preprints have not yet been peer-reviewed and are marked as such. The Bali census was funded and conducted by Norly, an AI-visibility vendor. Industry figures are attributed to the organizations that collected them.
+- Each number comes from its own study, population and metric, so values from different studies are not directly comparable.
+- Much of the evidence covers healthcare providers in US cities and hospitality venues in Bali. Other business categories and countries may behave differently.
+- Figure 3 is an illustrative calculation that assumes independent answers under fixed conditions. It is not study data.
+- AI systems change as models, retrieval sources and defaults are updated, so each study is a record of a single point in time.
+
+## References
+
+1. Murphy, R. (2026, February 11). *Local consumer review survey 2026*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-consumer-review-survey/) Industry survey.
+2. Kliman-Silver, C., Hannák, A., Lazer, D., Wilson, C., & Mislove, A. (2015). Location, location, location: The impact of geolocation on web search personalization. In *Proceedings of the 2015 Internet Measurement Conference* (pp. 121-127). ACM. [doi.org/10.1145/2815675.2815714](https://doi.org/10.1145/2815675.2815714)
+3. Grossman, R., Liu, S., Chen, M. K., Smith, M., Borcea, C., & Chen, Y. (2026). How generative AI disrupts search: An empirical study of Google Search, Gemini, and AI Overviews. In *Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval*. ACM. [doi.org/10.1145/3805712.3809667](https://doi.org/10.1145/3805712.3809667)
+4. Pitenin, V. (2026). *Invisible to the machine: Auditing AI restaurant, café, and bar recommendation against a complete market census* (arXiv:2608.07069). [arxiv.org/abs/2608.07069](https://arxiv.org/abs/2608.07069) Preprint, not peer-reviewed; funded and conducted by Norly, an AI-visibility vendor; pre-registered.
+5. Ibrahim, H., & Zaki, Y. (2026). *Understanding AI provider recommendations in local service markets* (arXiv:2609.18341). [arxiv.org/abs/2609.18341](https://arxiv.org/abs/2609.18341) Preprint, not peer-reviewed.
+6. Li, H., & Hecht, B. (2020). 3 stars on Yelp, 4 stars on Google Maps: A cross-platform examination of restaurant ratings. *Proceedings of the ACM on Human-Computer Interaction, 4*(CSCW3). [par.nsf.gov/biblio/10208785](https://par.nsf.gov/biblio/10208785)
+7. Haupt, M. R., Massillon, D., Yang, L., Chen, Y., Natarajan, A., Ward, S. R., & Mackey, T. K. (2026). Prompt engineering experiment on ChatGPT’s ability to recommend orthopedic surgeons. *International Journal of Medical Informatics, 219*, 106581. [pubmed.ncbi.nlm.nih.gov/42378890](https://pubmed.ncbi.nlm.nih.gov/42378890/)
+8. Hawkes, M. (2026, September 16). *What 200k local AI searches tell us about what businesses get recommended, and why your website matters*. BrightLocal. [brightlocal.com](https://www.brightlocal.com/research/local-ai-visibility-study/) Industry study.
+9. Parikh, A. O., Oca, M. C., Conger, J. R., McCoy, A., Chang, J., & Zhang-Nunes, S. (2024). Accuracy and bias in artificial intelligence chatbot recommendations for oculoplastic surgeons. *Cureus, 16*(4), e57611. [pmc.ncbi.nlm.nih.gov/articles/PMC11069401](https://pmc.ncbi.nlm.nih.gov/articles/PMC11069401/)
+10. Kamruzzaman, M., Nguyen, H. M., & Kim, G. L. (2024). “Global is good, local is bad?”: Understanding brand bias in LLMs. In *Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing* (pp. 12695-12702). Association for Computational Linguistics. [aclanthology.org/2024.emnlp-main.707](https://aclanthology.org/2024.emnlp-main.707/)
+11. 8ight.AI. (2026, October 5). *Ask an AI for a roofer* (Study 01). [8ight.ai](https://8ight.ai/research/how-ai-recommends-local-businesses/) Industry study.
+12. Liu, N. F., Zhang, T., & Liang, P. (2023). Evaluating verifiability in generative search engines. In *Findings of the Association for Computational Linguistics: EMNLP 2023* (pp. 7001-7025). [aclanthology.org/2023.findings-emnlp.467](https://aclanthology.org/2023.findings-emnlp.467)
+13. Aggarwal, P., Murahari, V., Rajpurohit, T., Kalyan, A., Narasimhan, K., & Deshpande, A. (2024). GEO: Generative engine optimization. In *Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining* (pp. 5-16). ACM. [arxiv.org/abs/2311.09735](https://arxiv.org/abs/2311.09735)
+14. Metaxa, D., Park, J. S., Robertson, R. E., Karahalios, K., Wilson, C., Hancock, J., & Sandvig, C. (2021). Auditing algorithms: Understanding algorithmic systems from the outside in. *Foundations and Trends in Human-Computer Interaction, 14*(4), 272-344. [doi.org/10.1561/1100000083](https://doi.org/10.1561/1100000083)
+
+The findings described in this brief belong to the original authors. Local AI Registry selected, grouped and explained them, and made the charts.
+
+## How to cite this research
+
+You are welcome to use this brief and its charts with credit. Each chart is licensed CC BY 4.0, and every chart above has a ready-made embed code that credits the source.
+
+Ready-to-quote findings
+
+- “When the same query was run twice, Google Search shared 0.78 of its sources but Gemini shared only 0.46.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “Only 10.8% of doctors named by an AI model without web search matched a real clinician in the queried city, versus 63.9% with web search on.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+- “A business named in 40% of AI answers has a 95% confidence interval of roughly 17% to 69% after 10 answers and 31% to 50% after 100.”
+  Local AI Registry, How Often AI Recommends Your Business (2026)
+
+```
+Local AI Registry Research Team (2026). How Often AI Recommends Your Business: A Better Measure of Local Visibility (LAIR-R-2026-002). Local AI Registry. https://localairegistry.com/research/how-often-ai-recommends-your-business
+```
+
+Data: the values behind every chart are available as a [CSV download](https://localairegistry.com/research/how-often-ai-recommends-your-business/data/how-often-ai-recommends-your-business-data.csv). They are reported as published in the sources listed above, except Figure 3, which is Local AI Registry’s own illustrative calculation.
+
+## About the author
+
+**The Local AI Registry Research Team** is Local AI Registry’s dedicated local AI research group, and its people come from some of the biggest names in search, tech and brick-and-mortar business: Google, Microsoft, Spotify, Chase, Mozilla Firefox, Allergan, Galderma, Evolus, Revance, Johnson & Johnson, Bayer, Estée Lauder, Nordstrom, Sephora, Saks Fifth Avenue, Spectrum, BitGo, Republic, NextSeed, Toptal and RxSight. It is led by a former Google Search executive, advised by a Stanford-trained dermatologist and a Northwestern professor who is a past president of the American Society for Laser Medicine and Surgery, and spread across California, Washington, Texas, New York, Florida, Brazil, Nigeria, Poland, India and Singapore. The team works from raw public data, owns and runs a local med spa, and studies how ChatGPT, Claude, Gemini, Google AI Overviews, Perplexity and Microsoft Copilot find and describe local businesses.
+
+The team is a dedicated follower of the researchers who built modern AI and those who study AI search, including Geoffrey Hinton, Yoshua Bengio, Yann LeCun, Ashish Vaswani, Noam Shazeer, Demis Hassabis, Jeff Dean, Ilya Sutskever, Andrej Karpathy, Dario Amodei, Jared Kaplan, Chris Olah, Fei-Fei Li, Andrew Ng, Percy Liang, Karthik Narasimhan, Ameet Deshpande, Himabindu Lakkaraju, Aounon Kumar, Nelson F. Liu, Umar Iqbal and Jacob M. Montgomery. Their work underpins ChatGPT, Claude and Gemini, and the team studies their papers and tests their ideas against what AI says about local businesses. No affiliation or endorsement implied. See the [references](../../research/how-often-ai-recommends-your-business/index.html#references).
+
+One last thing
+
+AI is evolving every day. So is our playbook.
+
+The engines change how they find, read and cite local businesses constantly, and what worked last quarter may not work next quarter. At Local AI Registry, our dedicated local AI research team keeps testing what works, so the businesses we serve always get the current best approach.
 
 **Is AI recommending you?**
 

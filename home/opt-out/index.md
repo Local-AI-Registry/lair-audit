@@ -16,9 +16,11 @@ You can ask us to remove a business from the public registry. If you only need t
 
 To remove a business, email [support@localairegistry.com](mailto:support@localairegistry.com) from an address at the business, with the business name and city. A real person handles every request.
 
-From our data · 3D
+**Is AI recommending you?**
 
-## Who Google's AI cites when the question isn't local
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 

@@ -42,7 +42,7 @@ Retrieval tier
 
 Methods referenced
 
-## We didn’t invent the maths.
+## We didn’t invent the math.
 
 Every part of the score is a named, published method, borrowed from information retrieval, index construction, and game theory, and each one is cited.
 
@@ -87,7 +87,7 @@ From our data · 3D
 
 ## How many local answers cite each kind of source
 
-#### On this page
+On this page
 
 1. [What the marks on a business page mean](#marks-heading)
 2. [How AI decides what to tell you about a med spa](#how-ai-decides-med-spa-heading)

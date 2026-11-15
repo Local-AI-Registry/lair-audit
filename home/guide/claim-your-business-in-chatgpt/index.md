@@ -55,21 +55,28 @@ Source: [The Local Answer Gap](../../research/local-answer-gap/index.html) · LA
 
 From our data · 3D
 
-## Up close: what people ask AI about medical clinics
+## The few websites ChatGPT linked when it named local businesses
 
 Drag to turn
 
-Each column is a real question from our production demand data. Height is Google's yearly searches for it. Here the biggest are closest to the center. Source: [Local AI Registry production demand data, Google yearly search volume](../../for/medical-clinics/index.html).
+Across 7 Irvine questions, ChatGPT took ratings and phone numbers from map listings and linked only a handful of pages, mostly licensing boards and best-of lists. Source: [AI Answer Watch: Irvine, Local AI Registry, Nov 15, 2026](../../answer-watch/index.html).
 
 See the data
 
 |  |  |
 | --- | --- |
-| Is there an urgent care facility nearby? | 180,000 a year |
-| Where can I find a medical clinic near me? | 29,520 a year |
-| Which medical clinic is closest to me? | 29,520 a year |
-| Where is the nearest medical clinic? | 29,520 a year |
-| What medical clinics are near me? | 29,520 a year |
+| cslb.ca.gov | 3 answers |
+| contractorsranked.com | 1 answers |
+| expertise.com | 1 answers |
+| cityvetted.com | 1 answers |
+| ucihealth.org | 1 answers |
+| zocdoc.com | 1 answers |
+| yelp.com | 1 answers |
+| iqlaservision.com | 1 answers |
+| calbar.ca.gov | 1 answers |
+| reviews.birdeye.com | 1 answers |
+| dt.caredge.com | 1 answers |
+| dealerrater.com | 1 answers |
 
 ## Want it done for you?
 

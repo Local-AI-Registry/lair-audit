@@ -144,27 +144,6 @@ For clients on a Program that includes the guarantee, Local AI Registry guarante
 
 SECTION 10
 
-From our data · 3D
-
-## “best rhinoplasty surgeon in San Diego”: best position each business reached
-
-Drag to turn
-
-A sample of the research we publish, so you can see the standard we hold ourselves to.
-
-Each layer is a business ChatGPT named. Wider means it reached a higher spot in at least one of the three asks. Source: [AI Answer Watch, Local AI Registry, Nov 13, 2026](../../answer-watch/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Sirius Yoo | 6 |
-| John Hilinski | 6 |
-| Christopher Kolstad | 4 |
-| Ronald Edelson | 2 |
-| Victor Chung | 3 |
-| Richard Balikian | 3 |
-
 ## Cancellation
 
 Programs are month to month unless we agree otherwise in writing. Cancel anytime by emailing hello@localairegistry.com at least 14 business days before your next billing date; otherwise that cycle is charged and cancellation takes effect at its end. Submit any guarantee claim before your cancellation takes effect.

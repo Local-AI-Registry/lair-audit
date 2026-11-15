@@ -28,7 +28,7 @@ Chapter 3
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Dallas”: who ChatGPT named, ask by ask
+## What nine separate vendors cost a month
 
 ## Named in AI in 90 days. *Guaranteed.*
 
