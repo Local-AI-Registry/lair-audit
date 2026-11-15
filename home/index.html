@@ -7,7 +7,7 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <meta name="robots" content="noindex,follow"><link rel="canonical" href="https://localairegistry.com/"><title>Local AI Registry: Get Your Business Recommended by AI</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,500;0,600;1,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap"></noscript>
 <style>
 /* Layout: a warm sand-model city runs through the page as live 3D; glass HUD cards sit on top of each scene; quiet paper bands carry the copy. Light mode only (brand rule). */
 :root{
@@ -809,8 +809,8 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
       <div style="display:flex;flex-direction:column;gap:14px">
         <p>I spent years inside the systems that decide what people find. Then I opened my own med spa and got stuck in a long contract with an agency whose results I couldn't verify. No proof, no&nbsp;accountability.</p>
         <p>Local AI Registry is the opposite: a public Local AI Blueprint&trade; you own, a team that does the work, and screenshots every month that show exactly what AI says about&nbsp;you.</p>
-        <div class="fsig"><img src="assets/team/steve-lee.jpg" alt="Steve Lee" class="fme"><div><b style="font:700 17px/1.3 var(--head);color:var(--ink);display:block">Steve Lee, Founder</b><span style="font-size:15px;color:var(--mute)">Former Google Search and Microsoft executive. 20+ years in&nbsp;digital.</span></div></div>
-        <div class="flogo"><span>Before this:</span><img src="assets/logos/co/google.svg" alt="Google"><img src="assets/logos/co/microsoft.svg" alt="Microsoft"><img src="assets/logos/co/evolus.svg" alt="Evolus"><img src="assets/logos/co/revance.png" alt="Revance"></div>
+        <div class="fsig"><img loading="lazy" src="assets/team/steve-lee.jpg" alt="Steve Lee" class="fme"><div><b style="font:700 17px/1.3 var(--head);color:var(--ink);display:block">Steve Lee, Founder</b><span style="font-size:15px;color:var(--mute)">Former Google Search and Microsoft executive. 20+ years in&nbsp;digital.</span></div></div>
+        <div class="flogo"><span>Before this:</span><img loading="lazy" src="assets/logos/co/google.svg" alt="Google"><img loading="lazy" src="assets/logos/co/microsoft.svg" alt="Microsoft"><img loading="lazy" src="assets/logos/co/evolus.svg" alt="Evolus"><img loading="lazy" src="assets/logos/co/revance.png" alt="Revance"></div>
         <a href="founder-story/" style="font-weight:700;color:var(--blue,#1F4FE0)">Read the founder story &rarr;</a>
       </div>
     </div>
@@ -858,9 +858,7 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
 <div><h5>Follow</h5><a href="https://www.linkedin.com/company/local-ai-registry" rel="me noopener">LinkedIn</a><a href="https://www.youtube.com/@localairegistry" rel="me noopener">YouTube</a><a href="https://x.com/LocalAIRegistry" rel="me noopener">X</a><a href="https://www.instagram.com/localairegistry/" rel="me noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61591432116527" rel="me noopener">Facebook</a><a href="https://www.tiktok.com/@localairegistry" rel="me noopener">TikTok</a><a href="https://pinterest.com/localairegistry" rel="me noopener">Pinterest</a><a href="https://www.crunchbase.com/organization/local-ai-registry" rel="me noopener">Crunchbase</a><a href="https://www.trustpilot.com/review/localairegistry.com" rel="me noopener">Trustpilot</a></div></div>
 <div class="legal"><span>Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · <a href="tel:+12139315633">(213) 931-5633</a></span><span><a href="legal/privacy/index.html">Privacy</a></span><span><a href="legal/terms/index.html">Terms</a></span><span><a href="legal/baa/index.html">HIPAA BAA</a></span><span><a href="opt-out/index.html">Opt out</a></span><span>Local AI Blueprint™ is a trademark of Local AI Registry.</span></div></div></footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
-<script>
+<script type="text/plain" id="hero3d">
 (function(){
 /* her rig: Mixamo character + walk/idle + right-arm IK holding phone + head looking at it */
 function herRig(g,W,H0){
@@ -1696,6 +1694,10 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
 requestAnimationFrame(loop);
 })();
 </script>
+<script>(function(){function add(src,cb){var s=document.createElement('script');s.src=src;s.onload=cb;document.body.appendChild(s)}
+function go(){add('https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js',function(){add('https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js',function(){var c=document.createElement('script');c.textContent=document.getElementById('hero3d').textContent;document.body.appendChild(c)})})}
+function idle(){(window.requestIdleCallback||function(f){setTimeout(f,1)})(go,{timeout:1500})}
+if(document.readyState==='complete')idle();else addEventListener('load',idle)})();</script>
 <script>
 (function(){
   var d=document.documentElement;
