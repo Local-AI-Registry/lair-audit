@@ -10,12 +10,6 @@ Our team
 
 Operators from Google, Microsoft, Allergan, Evolus, Revance, Spotify, Chase, Estée Lauder and Mozilla, building one thing together: making every good local business easy for AI to find, trust and book.
 
-## The team
-
-**12** full-time, US-based
-
-**10+** years helping local businesses get found
-
 Founder and CEO
 
 ## Steve Lee

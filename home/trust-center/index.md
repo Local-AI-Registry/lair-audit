@@ -26,18 +26,6 @@ How we protect your business, your customers' privacy and the integrity of the R
 
 **Your area is yours** We don't take on a business like yours in your area. We agree on the exact area with you before we start.
 
-## By the numbers
-
-The track record behind the promises on this page.
-
-**10+** years helping local businesses get found
-
-**85%** of clients stay past year one
-
-**4.9★** from 25 Google reviews
-
-**5** press stories about our work
-
 ## Things we will never do
 
 - A business can't buy a better score.
@@ -60,6 +48,46 @@ Trust isn't a badge. It's what the system refuses to do. These rules run on ever
 From our data · 3D
 
 ## How faithful local AI answers were to their sources
+
+Drag to turn
+
+Each layer is a kind of claim in local answers: supported, vague, ambiguous, incorrect or not in the sources. Source: [The Local Answer Gap, Local AI Registry Research, 2026](../research/local-answer-gap/index.html).
+
+See the data
+
+|  |  |
+| --- | --- |
+| Supported | 87.8% |
+| Vague | 4.9% |
+| Ambiguous | 1.9% |
+| Incorrect | 0.9% |
+| Not in sources | 4.5% |
+
+## Privacy for healthcare practices
+
+Private customer information never becomes public because it might help with AI. We sign a [Business Associate Agreement](../legal/baa/index.html) with every healthcare practice, online, in about two minutes. Read our [data policy](../data-policy/index.html) for what we hold and why.
+
+## How the Registry stays honest
+
+The Registry is a public record. A business can't pay for a better AI Score, and our own clients get no boost in it. Anyone can [report an error](../report-an-error/index.html) on a record or [remove a business](../opt-out/index.html), and a real person handles every request. The AI Score's weights are published in full on our [methodology](../methodology/index.html) page.
+
+## Policies
+
+- [Privacy policy](../legal/privacy/index.html)
+- [Terms of service](../legal/terms/index.html)
+- [HIPAA Business Associate Agreement (sign online)](../legal/baa/index.html)
+- [Data policy](../data-policy/index.html)
+- [Opt out of the Registry](../opt-out/index.html)
+- [Report an error in a record](../report-an-error/index.html)
+- [How the AI Score works](../methodology/index.html)
+
+Coming soon
+
+Security documentation and a subprocessor list will be downloadable here. Our [BAA can be signed online now](../legal/baa/index.html). Need them now? [Contact us](../contact/index.html).
+
+[Named in AI in 90 days. Guaranteed.](../guarantee/index.html)
+
+[Book a free AI check](../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 

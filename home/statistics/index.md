@@ -10,16 +10,6 @@ Statistics
 
 Every number on this page comes from Local AI Registry's own research or from studies our research team reviewed, with the source linked under each one. Cite freely, and link back to the study.
 
-## From our own clients
-
-What we see across the practices we manage.
-
-**15%** of new clients are named by ChatGPT for their main search on day one
-
-**70%** are named within 90 days
-
-**5 to 10 in 100** new customers say they found the business through AI
-
 ## How many businesses AI names
 
 **73%**
