@@ -93,7 +93,7 @@ We have two locations. How does that work?
 
 Each location is its own entry and its own near-me answer.
 
-#### On this page
+On this page
 
 1. [What dental practices are up against](#up-against)
 2. [What people ask AI about dental practices](#questions)

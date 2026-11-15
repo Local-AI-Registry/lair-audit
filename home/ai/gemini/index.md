@@ -67,7 +67,7 @@ Explainer videos that answer what customers ask.
 
 From our data · 3D
 
-## Where Google's AI got each chain's hours
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 

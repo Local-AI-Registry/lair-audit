@@ -30,11 +30,15 @@ The people who built modern aesthetics, from Allergan, Revance, Galderma, Merz a
 
 [TC**Taryn Conway***Marketing executive*](../experts/index.html#taryn-conway)[BH**Benjamin Hahr***Tech executive*](../experts/index.html#benjamin-hahr)[KL**Kellie Lao***Marketing executive*](../experts/index.html#kellie-lao)[ES**Eric Sanders***Marketing executive*](../experts/index.html#eric-sanders)[JR**Jennifer Redmond, MBA***Commercial executive*](../experts/index.html#jennifer-redmond)[OO**Opie Opfer***Creative executive*](../experts/index.html#opie-opfer)[BB**Bryan Bullock***Marketing executive*](../experts/index.html#bryan-bullock)[JA**Jeff Allen***Sales executive*](../experts/index.html#jeff-allen)[DS**Dustin Sjuts***CEO, Revelyx Bio*](../experts/index.html#dustin-sjuts)[KM**Kara McClanahan***CEO, Aesthetic Practice Partners*](../experts/index.html#kara-mcclanahan)[KG**Kimberly Gerber***CEO, Excelerate*](../experts/index.html#kimberly-gerber)[JH**Jasmine Hill, MBA***CEO, Aesthetic Influencer*](../experts/index.html#jasmine-hill)[BW**Ben Wolber***CEO, Illume*](../experts/index.html#ben-wolber)[BH**Brandon Hahr***CEO, Kingsmen Digital Ventures*](../experts/index.html#brandon-hahr)[MM**Michael Moretti***CEO, Medical Insight*](../experts/index.html#michael-moretti)
 
-From our data · 3D
+## Founders
 
-## “best lip filler in Newport Beach”: how often each business was named
+[**Steve Lee** Founder and CEO. Former Google Search and Microsoft executive.](../team/steve-lee/index.html)[**Aneesh Patel, PharmD** Co-founder and Chief Growth Officer.](../team/aneesh-patel/index.html)
 
-#### On this page
+## Guides for their fields
+
+[**Med spas** Industry guide](../for/med-spas/ai/index.html)[**Plastic surgeons** Industry guide](../for/plastic-surgeons/ai/index.html)[**Dermatologists** Industry guide](../for/dermatologists/ai/index.html)
+
+On this page
 
 1. [Doctors, surgeons and injectors](#clinicians)
 2. [Industry leaders](#leaders)

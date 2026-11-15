@@ -46,7 +46,7 @@ From [The Local Answer Gap](../../research/local-answer-gap/index.html), our stu
 
 From our data · 3D
 
-## “best breast augmentation surgeon in NYC”: best position each business reached
+## More reviews didn't mean a higher spot
 
 ## Named in AI in 90 days. *Guaranteed.*
 

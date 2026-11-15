@@ -175,7 +175,7 @@ Why does ChatGPT give different businesses each time?
 
 Answers vary with wording, location and the sources it happens to read. Businesses that are strong across many sources show up most consistently.
 
-#### On this page
+On this page
 
 1. [How do I claim my business in ChatGPT?](#claim-in-chatgpt)
 2. [What does the research say?](#what-our-research-found)

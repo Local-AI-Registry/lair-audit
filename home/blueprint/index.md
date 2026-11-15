@@ -90,7 +90,7 @@ Leaders from Allergan, Revance, Galderma, Merz, Evolus and more back the Local A
 
 [TC**Taryn Conway***Marketing executive*](../experts/index.html#taryn-conway)[BH**Benjamin Hahr***Tech executive*](../experts/index.html#benjamin-hahr)[KL**Kellie Lao***Marketing executive*](../experts/index.html#kellie-lao)[ES**Eric Sanders***Marketing executive*](../experts/index.html#eric-sanders)[JR**Jennifer Redmond, MBA***Commercial executive*](../experts/index.html#jennifer-redmond)[OO**Opie Opfer***Creative executive*](../experts/index.html#opie-opfer)[BB**Bryan Bullock***Marketing executive*](../experts/index.html#bryan-bullock)[JA**Jeff Allen***Sales executive*](../experts/index.html#jeff-allen)[DS**Dustin Sjuts***CEO, Revelyx Bio*](../experts/index.html#dustin-sjuts)[KM**Kara McClanahan***CEO, Aesthetic Practice Partners*](../experts/index.html#kara-mcclanahan)[KG**Kimberly Gerber***CEO, Excelerate*](../experts/index.html#kimberly-gerber)[JH**Jasmine Hill, MBA***CEO, Aesthetic Influencer*](../experts/index.html#jasmine-hill)[BW**Ben Wolber***CEO, Illume*](../experts/index.html#ben-wolber)[BH**Brandon Hahr***CEO, Kingsmen Digital Ventures*](../experts/index.html#brandon-hahr)[MM**Michael Moretti***CEO, Medical Insight*](../experts/index.html#michael-moretti)
 
-#### On this page
+On this page
 
 1. [What it is](#what-it-is)
 2. [What does the research say?](#what-our-research-found)

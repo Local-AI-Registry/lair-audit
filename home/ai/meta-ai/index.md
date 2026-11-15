@@ -71,7 +71,7 @@ Photos labeled so AI can read what they show.
 
 From our data · 3D
 
-## “best Botox injector in Newport Beach”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 

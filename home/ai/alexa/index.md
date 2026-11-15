@@ -71,7 +71,7 @@ What every assistant says about you, each month.
 
 From our data · 3D
 
-## The vaguer the question, the less the business gets cited
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 

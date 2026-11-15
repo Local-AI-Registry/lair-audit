@@ -71,7 +71,7 @@ The Google searches you rank for, and should.
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: who ChatGPT named, ask by ask
+## “best plumber in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 

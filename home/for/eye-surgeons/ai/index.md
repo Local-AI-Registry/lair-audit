@@ -66,7 +66,7 @@ Try them yourself with the tool at the end of this page.
 
 From our data · 3D
 
-## What people ask AI about urgent care centers, stacked
+## “best LASIK eye surgeon in Irvine, CA”: who ChatGPT named, in order
 
 02
 
@@ -134,7 +134,7 @@ How long does it take for a eye surgery practice to show up in AI?
 
 It depends on where you start and how competitive your area is. Fixes to your facts and profile can show up within weeks; reviews, lists and articles build over months. Our [90-day guarantee](../../../guarantee/index.html) reflects that timeline.
 
-#### On this page
+On this page
 
 1. [Rather have it done for you?](#done-for-you)
 2. [What does the research say?](#what-our-research-found)

@@ -89,7 +89,7 @@ How quickly do hours changes reach the assistants?
 
 Your listing updates immediately. What an assistant says catches up on its own schedule, which is why we re-ask your questions every month and show you the answer.
 
-#### On this page
+On this page
 
 1. [What medical clinics are up against](#up-against)
 2. [What people ask AI about medical clinics](#questions)

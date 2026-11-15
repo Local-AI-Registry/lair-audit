@@ -35,9 +35,15 @@ We’re scrappy on purpose. We ship fast, use AI in everything we do, and measur
 - You care about independent local businesses.
 - You want to build something people use every day.
 
-From our data · 3D
+## What you get
 
-## “best rhinoplasty surgeon in Phoenix”: who ChatGPT named, ask by ask
+**Health insurance** For US-based employees
+
+**Unlimited PTO** Take the time you need
+
+**Claude Max, on us** The best AI tools, paid for
+
+**AI Discovery Stipend** Monthly, to try new AI tools
 
 ## How we work
 

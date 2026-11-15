@@ -42,9 +42,13 @@ support@localairegistry.com](mailto:support@localairegistry.com)
 
 Send a message
 
-From our data · 3D
+## Or just leave a note.
 
-## Up close: what people ask AI about urgent care centers
+A real person reads every message, and replies, usually within a day or two.
+
+## The fastest answer is your own.
+
+See where you stand with AI.
 
 **Is AI recommending you?**
 

@@ -93,7 +93,7 @@ Can you say we are board certified?
 
 Only if you have given us the certification. A credential we do not hold on file is the one thing we will never approximate.
 
-#### On this page
+On this page
 
 1. [What dermatology practices are up against](#up-against)
 2. [What people ask AI about dermatology practices](#questions)

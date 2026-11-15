@@ -76,9 +76,28 @@ Nov 13, 2026, 1:50 PM PT
 
 That's why we measure how often AI names a business across repeated asks, not where it lands once. It's the same way every client's AI Score is measured.
 
+## Test 05: seven trades in Irvine, one question each
+
+We asked ChatGPT for the best business in seven trades in Irvine, California, and recorded every business it named, the rating and review count on its map, the pages it linked and where each photo came from.
+
+| Question | Who ChatGPT named, in order | What we noticed |
+| --- | --- | --- |
+| **Chiropractors** “best chiropractor in Irvine, CA” | 1. Dr. Gary Martin, Irvine Chiropractor 4.9★ · 198 reviews 2. Lee Chiropractic 4.8★ · 506 reviews 3. The Alignment Studio 5.0★ · 215 reviews 4. DiSiena Family Chiropractic 4.7★ · 166 reviews 5. CleanSpine 4.9★ · 76 reviews 6. Yoon Family Chiropractic 5.0★ · 97 reviews |  |
+| **Plumbers** “best plumber in Irvine, CA” | 1. Pristine Plumbing Inc. 4.9★ · 1,935 reviews 2. Olson Superior Plumbing 4.9★ · 2,764 reviews 3. Patriot Plumbing & Rooter 4.7★ · 140 reviews 4. Zoom Drain 4.8★ · 151 reviews 5. Elevation Plumbing 4.9★ · 241 reviews | Photos beside two named plumbers came from other businesses' pages: a used-truck listing on jetterdepot.com and a different plumbing company's site. |
+| **Roofers** “best roofing company in Irvine, CA” | 1. Fox Roofing Company 4.9★ · 40 reviews 2. Above It All Roofing 4.8★ · 123 reviews 3. Antis Roofing & Waterproofing 4.6★ · 229 reviews 4. Merit Roofing & Waterproofing 5.0★ · 14 reviews 5. Ace Roofing Irvine 4.9★ · 40 reviews | The #1 pick had 40 reviews; the #3 had 229. Four of five photos shown were the #1 company's. |
+| **LASIK eye surgeons** “best LASIK eye surgeon in Irvine, CA” | 1. Farnoosh Tinoosh, MD (UCI Health) 4.5★ · 358 reviews 2. Lawrence Chao, MD 4.7★ · 197 reviews 3. Sumit Garg, MD (UCI Health) 4.8★ · 742 reviews 4. Orange County LASIK Institute 5.0★ · 895 reviews 5. Matthew W. Wade, MD (UCI Health) 4.8★ · 322 reviews | Three of five picks were doctors at one hospital, and their ratings came from the hospital's own profile pages. The practice with 895 reviews and a 5.0 rating was ranked fourth. Credentials (fellowship, board certification) led every write-up. |
+| **Personal injury lawyers** “best personal injury lawyer in Irvine, CA” | 1. Cohn & Swartzon LLP 5.0★ · 80 reviews 2. RMD Law 4.9★ · 280 reviews 3. MOET Law Group 4.7★ · 51 reviews 4. Morgan & Morgan 4.7★ · 317 reviews 5. Royer Law Group 5.0★ · 49 reviews | Ratings were quoted as Google reviews. One firm's photo came from an office-interiors company's portfolio page. |
+| **HVAC companies** “best HVAC company in Irvine, CA” | 1. Irvine Air Conditioning & Refrigeration 4.9★ · 226 reviews 2. One Season Heating and Air Conditioning 4.9★ · 89 reviews 3. Green Fuse HVAC & Appliance Repair 5.0★ · 455 reviews 4. True North Heating & Air 4.9★ · 118 reviews 5. MAYDAY Heating and Air Conditioning 4.9★ · 179 reviews | The photo beside MAYDAY came from another named company's website (irvineacrepair.com). The photo beside One Season came from a Thumbtack page about furnace repair in Laguna Niguel. The company with the most reviews (455) was ranked third. |
+| **Car dealerships** “best car dealership in Irvine, CA” | 1. Tuttle-Click Ford Irvine 4.7★ · 4,735 reviews 2. Tuttle-Click Mazda 4.2★ · 357 reviews 3. Norm Reeves Honda Superstore Irvine 3.9★ · 1,895 reviews 4. Porsche Irvine 3.1★ · 350 reviews 5. CarMax 3.1★ · 882 reviews | For three of five dealers, the rating in ChatGPT's answer came from Birdeye or DealerRater and was higher than the Google rating on the map beside it: Porsche Irvine was written up as 4.6 stars while its map listing showed 3.1. |
+
+- **Review count didn't decide the order.** The #1 roofer had 40 reviews; the #3 had 229. The LASIK practice with 895 reviews and a 5.0 rating came fourth.
+- **Photos came from anywhere.** Pictures beside named businesses came from directories, a used-truck listing and other companies' websites.
+- **The rating in the answer wasn't always the rating on the map.** For three car dealers, ChatGPT quoted a higher Birdeye or DealerRater rating than the Google rating on its own map.
+- **Few links.** Facts came from map listings. The pages it linked were mostly licensing boards and best-of lists.
+
 From our data · 3D
 
-## “best rhinoplasty surgeon in Miami”: who ChatGPT named, ask by ask
+## How many different names ChatGPT gave, city by city
 
 | City | Ask 1 | Ask 2 | Ask 3 | Ask 4 | Ask 5 | Ask 6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -851,7 +870,7 @@ Who was named, and how often
 
 ## Method and disclosure
 
-Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
+Each run was a new temporary chat with personalization turned off, typed exactly as shown. Screenshots are cropped only to remove the account sidebar and empty margins. Each shows the top of the answer; the full ordered list from the same moment is printed under it. Tests 05 and 06 were captured Nov 15, 2026 through DataForSEO: ChatGPT's web answer with web search on, asked from the United States, and Claude, Gemini and Perplexity through their APIs with web search on; each question was asked once. Tests 02 to 04 were captured Nov 13, 2026, between 3:30 and 5:08 PM PT. In Test 02, Los Angeles' first three asks are the Test 01 runs. Where ChatGPT spelled one surgeon's name two ways, we count it once. Times are Pacific. Dr. Deepak Dugar is a Local AI Registry client; we report him the same way as everyone else.
 
 [Download every capture as a spreadsheet (CSV)](../assets/data/ai-answer-watch-2026-11-13.csv): time, question, names in order, sources and a link to each screenshot. Free to use with credit (CC BY 4.0).
 

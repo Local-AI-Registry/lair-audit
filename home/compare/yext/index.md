@@ -36,7 +36,7 @@ Owners who want to be the business AI names when someone nearby asks, without le
 
 From our data · 3D
 
-## How many local AI answers we read for each chain
+## Where each assistant found its local picks
 
 Source: [The Local Answer Gap](../../research/local-answer-gap/index.html), Local AI Registry research, 2026.
 
@@ -44,7 +44,7 @@ Two things follow. First, consistent listings are the floor, not the ceiling: al
 
 ## What the full job costs either way
 
-Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$12,200 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
+Software is one line on the bill. To cover every signal AI reads, most businesses end up paying several vendors: an SEO agency, a web team, a PR firm, a video producer, a content writer and three or four tools. At typical 2026 prices that comes to about **$8,300 a month** for one location, before ad spend. [See the nine vendors and the sources behind each price](../../vs/agencies/index.html).
 
 Local AI Registry does all nine jobs with one team. We share pricing on a call, after we've seen what AI says about you today, because the work depends on your market. [See how pricing works](../../pricing/index.html).
 

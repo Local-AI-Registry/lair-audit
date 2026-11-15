@@ -46,7 +46,7 @@ Level 4**Tesla** 100 clients signed
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Miami”: best position each business reached
+## “best chiropractor in Irvine, CA”: how many assistants named each business
 
 ## What you’ll be selling
 

@@ -71,7 +71,7 @@ Real news coverage AI can cite.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in New York”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 ## Named in AI in 90 days. *Guaranteed.*
 

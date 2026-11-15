@@ -94,7 +94,7 @@ Can you say which insurance we take?
 
 Only where you have told us. Insurance is a fact about your practice, so it comes from you and goes onto your listing and your directory records.
 
-#### On this page
+On this page
 
 1. [What eye care practices are up against](#up-against)
 2. [What people ask AI about eye care practices](#questions)

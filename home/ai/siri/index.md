@@ -71,7 +71,7 @@ A fast site with the code AI reads.
 
 From our data · 3D
 
-## 173 of 207 local answers told people to check with the store
+## “best chiropractor in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 

@@ -26,9 +26,25 @@ For each business: the public facts, name, address, category, hours, website, pu
 Public sources only: the open web, business listings, mapping providers, and the answers we get by putting real questions to AI assistants. We don’t buy private data, and we don’t track individual people.
 03
 
-From our data · 3D
+## How the score is built
 
-## The most-cited websites in local AI answers, stacked
+One method, applied the same way to every business, eight signals, documented weights, no paid placement. A business can’t buy a better score. [Read the method](../methodology/index.html)
+04
+
+## Public vs. private
+
+A profile is public, that’s the point of a registry. Account details for owners who register (login, billing, internal notes) are private, used only to run the service, and never sold.
+05
+
+## How long we keep it
+
+We keep a profile current and re-score it periodically, so it shows what AI says now and not what it said a year ago. Remove a business and we stop maintaining its profile.
+
+Your choices
+
+## It’s your business. Your call.
+
+Still have a question? [Get in touch](../contact/index.html)
 
 **Is AI recommending you?**
 

@@ -251,7 +251,7 @@ Sample referral and wallet numbers.
 
 From our data · 3D
 
-## “best rhinoplasty surgeon in Houston”: who ChatGPT named, ask by ask
+## “best chiropractor in Irvine, CA”: four AI assistants, four different lists
 
 **HIPAA ready** We sign a BAA with every healthcare practice.
 

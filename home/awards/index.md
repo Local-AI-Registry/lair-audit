@@ -42,24 +42,6 @@ Winners are listed in the guide that earned the award, with a link to their reco
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
 
-From our data · 3D
-
-## What people ask AI about skin care clinics, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/skin-care-clinics/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| What are the options for skin tag removal at a dermatologist? | 24,120 a year |
-| Do skin care clinics offer anti-wrinkle treatments? | 16,200 a year |
-| What is the process for skin tag removal at a clinic? | 13,200 a year |
-| What treatments are available for dry skin at a skin care clinic? | 10,860 a year |
-| Are there any skin care clinics offering red light therapy for skin rejuvenation? | 7,260 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.

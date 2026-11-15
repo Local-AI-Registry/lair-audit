@@ -18,24 +18,6 @@ Each award goes to the business that leads on one need, using public, checkable 
 
 [See the awards](../awards/index.html)[Search the registry](../registry/index.html)
 
-From our data · 3D
-
-## What people ask AI about dermatology practices, stacked
-
-Drag to turn
-
-The same data stacked: the widest layer is the largest. Each column is a real question from our production demand data. Height is Google's yearly searches for it. Source: [Local AI Registry production demand data, Google yearly search volume](../for/dermatology/index.html).
-
-See the data
-
-|  |  |
-| --- | --- |
-| Is there a dermatologist near me? | 80,760 a year |
-| Who is the nearest dermatologist to me? | 80,760 a year |
-| Where can I get laser hair removal? | 24,120 a year |
-| Which dermatologist is good for removing skin tags? | 24,120 a year |
-| What treatments do dermatologists provide for skin tag removal? | 24,120 a year |
-
 ## Named in AI in 90 days. *Guaranteed.*
 
 Book a call and we’ll show you, live, what AI says about you today. If we miss the 90 days, we keep working for free until AI names you.

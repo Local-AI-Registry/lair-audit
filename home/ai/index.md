@@ -20,13 +20,13 @@ Every assistant finds local businesses a little differently. Some lean on Google
 
 **Google AI Overviews and AI Mode** Google's AI answers are built on Google Search and Google's local data.](../ai/google-ai-overviews/index.html)[Google
 
-**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services..](../ai/gemini/index.html)[Perplexity
+**Gemini** Gemini can draw on Google Search and Google Maps, so the businesses it recommends usually have complete Google Business Profiles, strong recent reviews and websites that rank for their services.](../ai/gemini/index.html)[Perplexity
 
 **Perplexity** Perplexity searches the web for every answer and shows its sources.](../ai/perplexity/index.html)[Anthropic
 
 **Claude** When Claude searches the web for a local question, it reads and cites public sources: review sites, guides, news and business websites.](../ai/claude/index.html)[Microsoft
 
-**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation..](../ai/copilot/index.html)[Apple
+**Microsoft Copilot** Copilot draws on Bing search, so an accurate Bing Places listing, consistent directory details, reviews and a website that ranks in Bing are the foundation.](../ai/copilot/index.html)[Apple
 
 **Siri and Apple Intelligence** When someone asks Siri for a nearby business, Apple draws on Apple Maps data.](../ai/siri/index.html)[Amazon
 
@@ -56,9 +56,9 @@ When ChatGPT got the same local question about 39 minutes apart, a median of 29%
 
 Asked the same query twice, Google Search shared 0.78 of its sources, AI Overviews 0.66 and Gemini 0.46 (Grossman et al., SIGIR 2026, reviewed in our brief). [How Often AI Recommends Your Business, LAIR-R-2026-002](../research/how-often-ai-recommends-your-business/index.html)
 
-## The topics most likely to get an AI answer
+## How often the assistants agreed on a local pick
 
-#### On this page
+On this page
 
 1. [What every assistant has in common](#shared)
 2. [What does the research say?](#what-our-research-found)

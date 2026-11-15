@@ -18,7 +18,7 @@ Dispensaries are locked out of most paid channels, which makes being named in an
 
 Google Ads will not take you. Meta will not take you. What is left is the organic answer, and the organic answer is increasingly one an assistant writes.
 
-People ask by landmark and by neighbourhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
+People ask by landmark and by neighborhood far more than they ask by city. Almost every high-volume question we hold in this trade names a park, a station or a mall.
 
 People also do not say "cannabis dispensary". They say dispo, or here, or nothing at all, and the questions we ask on your behalf are asked in those words.
 
@@ -95,7 +95,7 @@ We have several stores. Does each one need its own entry?
 
 Yes. A listing is one location, and the near-me answer is decided per location. Each store is its own registry entry.
 
-#### On this page
+On this page
 
 1. [What dispensaries are up against](#up-against)
 2. [What people ask AI about dispensaries](#questions)

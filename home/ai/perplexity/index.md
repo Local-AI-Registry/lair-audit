@@ -67,7 +67,7 @@ Same name, address, phone and hours everywhere.
 
 From our data · 3D
 
-## How many sources each AI answer cites
+## Where each assistant found its local picks
 
 ## Named in AI in 90 days. *Guaranteed.*
 

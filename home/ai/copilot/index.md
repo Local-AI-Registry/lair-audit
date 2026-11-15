@@ -67,7 +67,7 @@ Complete, active and posting every week.
 
 From our data · 3D
 
-## Ranked and used vs ranked and ignored
+## How many businesses each assistant named
 
 ## Named in AI in 90 days. *Guaranteed.*
 
