@@ -20,7 +20,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## “best lip filler in Newport Beach”: best position each business reached
+## Only 1 of 207 local answers gave an address or phone
 
 ## Named in AI in 90 days. *Guaranteed.*
 

@@ -78,7 +78,7 @@ Thin replies already on your listing are rewritten, up to twenty of them, and ne
 
 From our data · 3D
 
-## Cited vs readable: what the AI could actually read
+## The rating ChatGPT wrote vs the rating on its own map
 
 ## Named in AI in 90 days. *Guaranteed.*
 

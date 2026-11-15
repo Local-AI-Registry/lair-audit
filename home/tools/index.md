@@ -24,7 +24,7 @@ Across the businesses we've scored, nearly two in three land below 45 out of 100
 
 From our data · 3D
 
-## “best plastic surgeon in New York City”: best position each business reached
+## How many sources stay the same when you reword the question
 
 ## Named in AI in 90 days. *Guaranteed.*
 

@@ -14,11 +14,15 @@ Medical Director
 
 Dr. Tess Mauricio is a Stanford-trained, board-certified dermatologist and the founder of M Beauty Clinic in Beverly Hills. Viewers know her from The Talk, Dr. Phil and The Doctors.
 
-From our data · 3D
+## Her role at Local AI Registry
 
-## Up close: the most-cited websites in local AI answers
+As Medical Director, Dr. Tess advises on what patients and doctors expect from AI, and she medically reviews every guide we publish for medical practices before it goes live. When a guide says what a treatment involves or what patients ask AI, she checks that it is accurate and fair to practices and patients.
 
-#### On this page
+## Guides she has reviewed
+
+[**Med spas** Getting recommended by AI](../../for/med-spas/ai/index.html)[**Plastic surgeons** Getting recommended by AI](../../for/plastic-surgeons/ai/index.html)[**Dermatologists** Getting recommended by AI](../../for/dermatologists/ai/index.html)[**Eye surgeons** Getting recommended by AI](../../for/eye-surgeons/ai/index.html)
+
+On this page
 
 1. [Background](#background)
 2. [Her role at Local AI Registry](#role)

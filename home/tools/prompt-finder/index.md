@@ -30,7 +30,7 @@ If you're not named, compare yourself with the businesses that are, using the [1
 
 From our data · 3D
 
-## How far past page one the AI goes, by source, stacked
+## The top questions in every industry
 
 ## Named in AI in 90 days. *Guaranteed.*
 

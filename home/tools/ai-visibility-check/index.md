@@ -36,7 +36,7 @@ Use the [prompt finder](../../tools/prompt-finder/index.html) to get the questio
 
 From our data · 3D
 
-## Up close: how often Google shows an AI answer, by topic
+## “best plumber in Irvine, CA”: how many assistants named each business
 
 ## Named in AI in 90 days. *Guaranteed.*
 

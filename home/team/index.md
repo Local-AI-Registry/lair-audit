@@ -128,9 +128,31 @@ Small team, big plan, early days.
 
 [See open roles](../careers/index.html)
 
-From our data · 3D
+## Advisors
 
-## “best breast augmentation surgeon in NYC”: who ChatGPT named, ask by ask
+TM**Dr. Tess Mauricio, MD, FAAD** Medical Director
+
+Stanford-trained, board-certified dermatologist. Advises on what patients and doctors expect from AI. Seen on The Talk, Dr. Phil and The Doctors.
+
+AB**Dr. Ashish Bhatia, MD, FAAD** Medical Advisor
+
+Northwestern professor and past president of the American Society for Laser Medicine and Surgery. Advises on medical accuracy.
+
+YL**Youngro Lee** Advisor, Singapore
+
+Founder and former CEO of NextSeed. Managing Director and Head of Asia at BitGo, and a General Partner at Republic Asia.
+
+TB**Tamara Bogetti, MBA** Advisor, Eye care
+
+Co-founder and CCO of MDConsult. 18 years at Bryn Mawr Communications, publisher of CRSToday. Formerly at AMO and Allergan.
+
+RJ**Ranna Jaraha** Advisor, Eye care
+
+CXO of MDConsult. 12 years at Bryn Mawr Communications and anchor of EyewireTV.
+
+DQ**Darryl Quinlan** Sales Advisor
+
+Founder of Curious Conversations Marketing in Westbrook, Maine. Advises on how our AI Consultants tell the story.
 
 Plus the doctors, surgeons and industry leaders who trust our team. [See who trusts us](../experts/index.html).
 

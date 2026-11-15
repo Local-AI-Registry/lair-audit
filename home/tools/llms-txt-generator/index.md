@@ -20,7 +20,7 @@ New data from our research team
 
 For claims AI attributed to a store locator, app or official site, 51.6% were not supported by any page it cited. [The Local Answer Gap, LAIR-R-2026-001](../../research/local-answer-gap/index.html)
 
-## What nine separate vendors cost a month, stacked
+## Readable words on the pages AI cited
 
 ## Named in AI in 90 days. *Guaranteed.*
 

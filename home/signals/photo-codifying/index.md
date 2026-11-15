@@ -67,7 +67,7 @@ Both use only the words on your own service list and what kind of picture it is.
 
 From our data · 3D
 
-## Readable words on the pages AI cited
+## Where the photos beside each pick came from
 
 ## Named in AI in 90 days. *Guaranteed.*
 

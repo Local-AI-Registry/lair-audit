@@ -65,7 +65,7 @@ Our [schema generator](../../tools/schema-generator/index.html) builds LocalBusi
 
 From our data · 3D
 
-## Half of “the store locator says” claims had no source
+## Cited vs readable: what the AI could actually read
 
 ## Named in AI in 90 days. *Guaranteed.*
 

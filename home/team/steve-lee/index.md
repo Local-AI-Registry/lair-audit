@@ -14,17 +14,21 @@ Founder and CEO
 
 Steve has helped more than 5,000 local businesses since 2010. He built and sold his first company at 14. He went on to lead digital work at Google in Search, Microsoft (HoloLens), Spotify, Chase, Kaplan and Razorfish, and was Head of Digital at Evolus through its 2018 Nasdaq IPO. He founded UX Laboratory, which was acquired, built a multi-million-dollar search-technology company with Eric Sim and Clinton Adeleke, who now run operations and product at Local AI Registry, and owns a local med spa.
 
-From our data · 3D
-
 New data from our research team
 
 **73%**
 
 73% of the 128,400+ local businesses Local AI Registry has scored are named by zero AI assistants (our estimate from AI-visibility checks). [Local AI Registry data](../../methodology/index.html)
 
-## “best rhinoplasty surgeon in Chicago”: best position each business reached
+## Why he started Local AI Registry
 
-#### On this page
+After stepping off the corporate track to stay local, Steve opened his own med spa. He ran into what many owners know too well: agencies he couldn't verify, a long contract and results nobody could show him. Local AI Registry is built to be the opposite: one outcome, AI recommending your business, measured every month. [Read the full founder story](../../founder-story/index.html).
+
+## Writes about
+
+[**The complete guide** How to get recommended by AI](../../guide/index.html)[**The 11 signals** What AI checks](../../signals/index.html)[**By assistant** How each assistant picks](../../ai/index.html)
+
+On this page
 
 1. [Background](#background)
 2. [Why he started Local AI Registry](#why)

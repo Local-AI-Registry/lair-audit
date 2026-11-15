@@ -52,7 +52,7 @@ Editorial independence
 
 From our data · 3D
 
-## Up close: what people ask AI about eye care practices
+## Half of “the store locator says” claims had no source
 
 **Is AI recommending you?**
 

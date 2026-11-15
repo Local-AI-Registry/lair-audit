@@ -24,9 +24,11 @@ New data from our research team
 
 [**The complete guide** How to get recommended by AI](../../guide/index.html)[**For med spas** Industry guide](../../for/med-spas/ai/index.html)
 
-From our data · 3D
+**Is AI recommending you?**
 
-## “best breast augmentation surgeon in NYC”: how often each business was named
+See what AI says about your business, live, on a strategy call.
+
+[Book a call](../../start/index.html)
 
 ## Named in AI in 90 days. *Guaranteed.*
 

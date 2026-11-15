@@ -37,18 +37,18 @@ Getting named in AI takes work across every place AI reads about you. Bought sep
 
 | Vendor | Job | Typical cost |
 | --- | --- | --- |
-| SEO agency | Rankings and links | $1,750/mo |
-| Web management team | Website updates | $650/mo |
+| Local SEO agency | Rankings, maps and links | $2,500/mo |
+| Web management team | Website updates and hosting | $850/mo |
 | PR group | Press releases every month | $1,500/mo |
-| Video producer | Video for your profiles | $3,500/mo |
-| Listings software | Yext Premium package | $83/mo |
-| Review management | Podium Core plan | $399/mo |
-| Google profile manager | Birdeye Starter plan | $299/mo |
-| Content writer | Blog and page copy | $3,600/mo |
-| AI monitoring tool | Profound Growth plan | $399/mo |
-| Total | Nine vendors | about $12,200/mo |
+| YouTube video producer | Videos for your channel and profiles | $2,000/mo |
+| Listings software | Premium package | $83/mo |
+| Review management | Core plan | $399/mo |
+| Google profile manager | Starter plan | $299/mo |
+| Content ranking tool | Peace of Mind plan, billed yearly | $299/mo |
+| AI monitoring tool | Growth plan | $399/mo |
+| Total | Nine vendors | about $8,300/mo |
 
-Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [WebFX, content marketing cost, 2026](https://www.webfx.com/content-marketing/pricing/how-much-does-content-marketing-cost/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
+Agency and freelancer rows use a published 2026 price range (Search Logistics, WebFX, Instant Press, Vidico). Software rows use the published price of a leading tool for one location (Yext, Podium, Birdeye, Surfer, Profound). Sources: [Search Logistics, SEO pricing, Nov 2026](https://www.searchlogistics.com/learn/seo/services/seo-pricing/); [WebFX, website maintenance pricing, Dec 2025](https://www.webfx.com/web-development/pricing/website-maintenance); [Instant Press, PR budget for small business, Apr 2026](https://www.instantpress.co/blog/pr-budget-for-small-business); [Vidico, video retainer cost in 2026](https://vidico.com/news/video-retainer-packages/); [Toolradar, Yext pricing, Oct 2026](https://toolradar.com/tools/yext/pricing); [PricingSaaS, Podium pricing, Nov 2026](https://pricingsaas.com/companies/podium); [SocialPilot, Birdeye pricing](https://www.socialpilot.co/reviews/blogs/birdeye-pricing); [CostBench, Surfer SEO pricing, Nov 2026](https://www.costbench.com/software/ai-seo-tools/surfer-seo/); [The Rank Masters, Profound pricing, Nov 2026](https://www.therankmasters.com/insights/ai-visibility/profound-pricing).
 
 From our data · 3D
 
@@ -87,7 +87,7 @@ What if my agency already does SEO?
 
 SEO is part of it, and a good foundation. AI answers also lean on reviews, press, best-of lists and outside articles. We cover all of them.
 
-#### On this page
+On this page
 
 1. [Side by side](#side-by-side)
 2. [What it means for your business](#what-it-means)
