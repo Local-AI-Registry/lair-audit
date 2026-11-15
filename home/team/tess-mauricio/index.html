@@ -145,7 +145,14 @@ body.lv-lock{overflow:hidden}
 @media (max-width:1024px){.lv-util{display:none}.lv-main,.lv-search,.lv-login{display:none}.lv-burger{display:grid}.lv-act{margin-left:auto}}
 @media (max-width:400px){.lv-logo span{font-size:16px}.lv-cta{padding:0 14px;font-size:14px}}
 @media (prefers-reduced-motion:reduce){.lv-pan,.lv-top svg{transition:none}}
-mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.play[data-enter=armed]{visibility:hidden}
+.rv{transition:opacity .7s ease,transform .7s ease}.rv[data-enter=armed]{opacity:0;transform:translateY(22px)}
+@media (prefers-reduced-motion:reduce){.rv,.rv[data-enter=armed]{opacity:1!important;transform:none!important;transition:none}.play[data-enter=armed]{visibility:visible}}
+.art{display:block;margin:22px auto;max-width:520px}.art svg{width:100%;height:auto;display:block}
+.art-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.art-row figure{margin:0;background:#fff;border:1px solid var(--line,#E2DCCF);border-radius:18px;padding:16px}.art-row svg{width:100%;height:auto;display:block}.art-row figcaption{font:700 15px "Bricolage Grotesque",sans-serif;margin-top:10px;color:#0B1A2E}.art-row figcaption span{display:block;font:400 14px/1.45 "Hanken Grotesk",sans-serif;color:#5A6474;margin-top:4px}
+.art-side{display:grid;grid-template-columns:1fr 220px;gap:22px;align-items:center}.art-side .art{margin:0}
+.trusted{display:flex;align-items:center;gap:12px;margin:18px 0;font-size:14px;color:#3D4A5C;flex-wrap:wrap}.trusted span{display:flex}.trusted img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #F4F1EA;margin-left:-9px;box-shadow:0 2px 6px rgba(11,26,46,.12)}.trusted img:first-child{margin-left:0}.trusted b{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#0B1A2E;color:#fff;font:700 12px "Bricolage Grotesque",sans-serif;margin-left:-9px;border:2px solid #F4F1EA}
+@media(max-width:760px){.art-row{grid-template-columns:1fr}.art-side{grid-template-columns:1fr}.art-side .art{max-width:260px;margin:0 auto}}mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .phleg{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;background:#FFE66B;color:#0F1B2D;font:700 12px/1.3 "Hanken Grotesk",system-ui,sans-serif;padding:8px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(15,27,45,.18);max-width:calc(100% - 24px)}
 .smp{margin:28px 0}.smp h2{margin:0 0 6px}.smp>p{margin:0 0 14px;color:#3D4A5C}
 .stg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
@@ -174,7 +181,35 @@ mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-dec
 <div><h5>Resources</h5><a href="../../resources/index.html">All resources</a><a href="../../answer-watch/index.html">AI Answer Watch</a><a href="../../statistics/index.html">Statistics</a><a href="../../tour/index.html">Product tour</a><a href="../../academy/index.html">Academy</a><a href="../../events/index.html">Live sessions</a><a href="../../changelog/index.html">What's new</a><a href="../../newsroom/index.html">Newsroom</a><a href="../../trust-center/index.html">Trust center</a></div>
 <div><h5>Earn with us</h5><a href="../../ai-consultants/index.html">Become an AI Consultant</a><a href="../../partners/index.html">Referral partners</a><a href="../../revenue-share/index.html">Revenue share</a><a href="../../works-with/index.html">Partner directory</a></div>
 <div><h5>Follow</h5><a href="https://www.linkedin.com/company/local-ai-registry" rel="me noopener">LinkedIn</a><a href="https://www.youtube.com/@localairegistry" rel="me noopener">YouTube</a><a href="https://x.com/LocalAIRegistry" rel="me noopener">X</a><a href="https://www.instagram.com/localairegistry/" rel="me noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61591432116527" rel="me noopener">Facebook</a><a href="https://www.tiktok.com/@localairegistry" rel="me noopener">TikTok</a><a href="https://pinterest.com/localairegistry" rel="me noopener">Pinterest</a><a href="https://www.crunchbase.com/organization/local-ai-registry" rel="me noopener">Crunchbase</a><a href="https://www.trustpilot.com/review/localairegistry.com" rel="me noopener">Trustpilot</a></div></div>
-<div class="legal"><span>Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · <a href="tel:+12139315633">(213) 931-5633</a></span><span><a href="../../legal/privacy/index.html">Privacy</a></span><span><a href="../../legal/terms/index.html">Terms</a></span><span><a href="../../legal/baa/index.html">HIPAA BAA</a></span><span><a href="../../opt-out/index.html">Opt out</a></span><span>Local AI Blueprint™ is a trademark of Local AI Registry.</span></div></div></footer><script>
+<div class="legal"><span>Local AI Registry · 9891 Irvine Center Dr, Irvine, CA 92618 · <a href="tel:+12139315633">(213) 931-5633</a></span><span><a href="../../legal/privacy/index.html">Privacy</a></span><span><a href="../../legal/terms/index.html">Terms</a></span><span><a href="../../legal/baa/index.html">HIPAA BAA</a></span><span><a href="../../opt-out/index.html">Opt out</a></span><span>Local AI Blueprint™ is a trademark of Local AI Registry.</span></div></div></footer><script>(function(){
+if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var E='cubic-bezier(0.45,0,0.55,1)',MS=2600,SH='path,circle,rect,ellipse,line,polyline';
+function n(v){return (v||'').split(',').map(Number)}function c(x){return x<0?0:x>1?1:x}
+function win(p,a,b,f,t){a=c(a);b=Math.max(a,c(b));var A={offset:0},B={offset:a,easing:E},C={offset:b},D={offset:1};A[p]=f;B[p]=f;C[p]=t;D[p]=t;return[A,B,C,D]}
+function ct(s){var o=[];(s||'').replace(/(translate|rotate|scale)\(([^)]*)\)/g,function(_,f,a){var v=a.trim().split(/[\s,]+/).map(Number);if(f=='translate')o.push('translate('+(v[0]||0)+'px,'+(v[1]||0)+'px)');else if(f=='scale')o.push('scale('+v[0]+','+(v[1]==null?v[0]:v[1])+')');else if(v.length<3)o.push('rotate('+v[0]+'deg)');else o.push('translate('+v[1]+'px,'+v[2]+'px) rotate('+v[0]+'deg) translate('+(-v[1])+'px,'+(-v[2])+'px)')});return o.join(' ')}
+function mv(x,y,r,s,b){return('translate('+x+'px,'+y+'px) rotate('+r+'deg) scale('+s+') '+b).trim()}
+function pl(e,f){try{e.animate(f,{duration:MS})}catch(_){}}
+function draw(svg){
+ svg.querySelectorAll('[data-d]').forEach(function(el){var w=n(el.dataset.d);(el.matches(SH)?[el]:[].slice.call(el.querySelectorAll(SH))).forEach(function(s){if(!s.getTotalLength)return;var L=Math.ceil(s.getTotalLength()+2);pl(s,win('strokeDashoffset',w[0]||0,w[1]==null?1:w[1],''+L,'0').map(function(k){k.strokeDasharray=''+L;return k}))})});
+ svg.querySelectorAll('[data-o],[data-o2]').forEach(function(el){var i=el.dataset.o?n(el.dataset.o):[-1,-1],o=el.dataset.o2?n(el.dataset.o2):[9,9],f=[{offset:0,opacity:i[0]<0?1:0}];if(i[0]>=0)f.push({offset:c(i[0]),opacity:0,easing:E},{offset:c(i[1]),opacity:1});if(o[0]<=1)f.push({offset:c(o[0]),opacity:1,easing:E},{offset:c(o[1]),opacity:0});f.push({offset:1,opacity:o[0]<=1?0:1});pl(el,f)});
+ svg.querySelectorAll('[data-m]').forEach(function(el){var m=n(el.dataset.m),b=ct(el.dataset.base);pl(el,win('transform',m[0]||0,m[1]==null?1:m[1],mv(m[2]||0,m[3]||0,m[6]||0,m[8]==null?1:m[8],b),mv(m[4]||0,m[5]||0,m[7]||0,m[9]==null?1:m[9],b)))});
+ svg.querySelectorAll('[data-f]').forEach(function(el){var p=(el.dataset.f||'').split(','),path=p[2]&&svg.querySelector('#'+p[2]);if(!path)return;var a=c(+p[0]),b=c(+p[1]),L=path.getTotalLength(),bs=ct(el.dataset.base),fr=[];for(var i=0;i<=12;i++){var k=i/12,pt=path.getPointAtLength(L*k);fr.push({offset:a+(b-a)*k,transform:mv(pt.x,pt.y,0,(+p[3])+((+p[4])-(+p[3]))*k,bs)})}pl(el,[{offset:0,transform:fr[0].transform}].concat(fr,[{offset:1,transform:fr[12].transform}]))});
+}
+function count(el){if(el.dataset.counted)return;el.dataset.counted='1';var t=el.textContent.trim(),m=t.match(/^([^\d]*)([\d,]+(?:\.\d+)?)(.*)$/);if(!m)return;var end=parseFloat(m[2].replace(/,/g,'')),dec=(m[2].split('.')[1]||'').length,comma=m[2].indexOf(',')>=0,st=performance.now();
+ function f(v){var s=v.toFixed(dec);return comma?Number(s).toLocaleString('en-US',{minimumFractionDigits:dec,maximumFractionDigits:dec}):s}
+ (function step(now){var p=Math.min(1,(now-st)/1800);el.textContent=m[1]+f(end*(1-Math.pow(1-p,3)))+m[3];if(p<1)requestAnimationFrame(step)})(st)}
+// targets: explicit data-enter, plus the common blocks on every page
+var sel='[data-enter],.play,.rv,.prose>h2,.prose>section,.barebody>section,.cards>.card,.sigrow,.dgrid>div,.frun>li,.lcards>a,.stg>div,.ln-stats>div,.tier,.fc,.find,.art-row figure,.perks>div,details';
+var els=[].slice.call(document.querySelectorAll(sel));
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;var el=e.target;io.unobserve(el);el.dataset.enter='in';
+ if(el.classList.contains('play')||/invisible/.test(el.className)){var s=el.querySelector('svg');if(s)draw(s)}
+ if(!el.children.length&&/^\d+(\.\d)?%$/.test(el.textContent.trim()))count(el);
+ if(el.dataset.count!=null)count(el);el.querySelectorAll&&el.querySelectorAll('[data-count]').forEach(count)})},{threshold:0.01,rootMargin:'0px 0px -12% 0px'});
+els.forEach(function(el){if(el.closest('header,footer,nav'))return;var r=el.getBoundingClientRect();if(r.bottom<0){el.dataset.enter='in';return}
+ if(!el.classList.contains('play')&&!el.hasAttribute('data-enter'))el.classList.add('rv');el.dataset.enter='armed';io.observe(el)});
+// count-ups on big figures
+document.querySelectorAll('.dgrid b,.stg b,.ln-stats b,.ev-num,.find b').forEach(function(b){if(/\d/.test(b.textContent)&&b.textContent.length<14)b.dataset.count=''});
+})();</script><script>
 (function(){
   var d=document.documentElement;
   try{ var q=new URLSearchParams(location.search); if(q.has('loggedin'))d.dataset.auth='in'; else if(/(^|;\s*)lair_auth=1/.test(document.cookie))d.dataset.auth='in'; }catch(e){}
