@@ -152,7 +152,14 @@ body.lv-lock{overflow:hidden}
 .art-row{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:20px 0}.art-row figure{margin:0;background:#fff;border:1px solid var(--line,#E2DCCF);border-radius:18px;padding:16px}.art-row svg{width:100%;height:auto;display:block}.art-row figcaption{font:700 15px "Bricolage Grotesque",sans-serif;margin-top:10px;color:#0B1A2E}.art-row figcaption span{display:block;font:400 14px/1.45 "Hanken Grotesk",sans-serif;color:#5A6474;margin-top:4px}
 .art-side{display:grid;grid-template-columns:1fr 220px;gap:22px;align-items:center}.art-side .art{margin:0}
 .trusted{display:flex;align-items:center;gap:12px;margin:18px 0;font-size:14px;color:#3D4A5C;flex-wrap:wrap}.trusted span{display:flex}.trusted img{width:38px;height:38px;border-radius:50%;object-fit:cover;border:2px solid #F4F1EA;margin-left:-9px;box-shadow:0 2px 6px rgba(11,26,46,.12)}.trusted img:first-child{margin-left:0}.trusted b{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#0B1A2E;color:#fff;font:700 12px "Bricolage Grotesque",sans-serif;margin-left:-9px;border:2px solid #F4F1EA}
-@media(max-width:760px){.art-row{grid-template-columns:1fr}.art-side{grid-template-columns:1fr}.art-side .art{max-width:260px;margin:0 auto}}.imported table{width:100%;border-collapse:collapse;margin:18px 0}.imported td,.imported th{border-bottom:1px solid rgba(11,26,46,.1);padding:8px 10px;text-align:left;vertical-align:top}.imported .kick{margin:40px 0 -22px;font:700 11.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1F4FE0}.imported a[href^='mailto:']{display:block;margin:12px 0;padding:16px 18px;border:1px solid rgba(11,26,46,.12);border-radius:16px;background:#fff;color:#1F4FE0;text-decoration:none;font-weight:700}.imported a[href^='mailto:'] h3{margin:0 0 4px;color:#0B1A2E}.imported a[href^='mailto:'] p{margin:0 0 8px;color:#3D4A5C;font-weight:400}.imported .tablewrap{overflow-x:auto}.imported img{max-width:100%;height:auto}.imported h2{margin-top:36px}mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+@media(max-width:760px){.art-row{grid-template-columns:1fr}.art-side{grid-template-columns:1fr}.art-side .art{max-width:260px;margin:0 auto}}.v3{margin:44px 0;background:linear-gradient(180deg,#FFFFFF,#F7F5EF);border:1px solid var(--line,#E2DCCF);border-radius:24px;padding:22px 22px 14px}
+.v3-k{font:700 11.5px "Bricolage Grotesque",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1F4FE0}.v3 .v3-t{margin:8px 0 12px!important;font-size:clamp(24px,3.4vw,32px)!important}
+.v3-stage{position:relative;height:380px;border-radius:18px;overflow:hidden;background:radial-gradient(120% 90% at 50% 20%,#FFFFFF 0%,#EEF2FB 70%,#E6ECF8 100%);touch-action:pan-y;cursor:grab}
+.v3-stage canvas{display:block;width:100%;height:100%}.v3-l{position:absolute;inset:0;pointer-events:none}
+.v3-l span{position:absolute;transform:translate(-50%,-100%);font:700 11px/1.2 "Hanken Grotesk",sans-serif;color:#0B1A2E;background:rgba(255,255,255,.88);padding:3px 7px;border-radius:7px;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 8px rgba(11,26,46,.08)}
+.v3-l span b{color:#1F4FE0}.v3-hint{position:absolute;right:12px;bottom:10px;font:600 11px "Hanken Grotesk",sans-serif;color:#6B7689;background:rgba(255,255,255,.8);padding:3px 8px;border-radius:99px}
+.v3-c{font-size:15px;color:#3D4A5C;margin:14px 0 6px}.v3-c span{display:block;font-size:12.5px;color:#6B7689;margin-top:4px}.v3-d summary{font-weight:700;cursor:pointer;font-size:14px}.v3-d table{font-size:13.5px}
+@media(max-width:600px){.v3{padding:16px 14px 10px}.v3-stage{height:320px}.v3-l span{font-size:10px;max-width:110px}}.imported table{width:100%;border-collapse:collapse;margin:18px 0}.imported td,.imported th{border-bottom:1px solid rgba(11,26,46,.1);padding:8px 10px;text-align:left;vertical-align:top}.imported .kick{margin:40px 0 -22px;font:700 11.5px/1 'Hanken Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1F4FE0}.imported a[href^='mailto:']{display:block;margin:12px 0;padding:16px 18px;border:1px solid rgba(11,26,46,.12);border-radius:16px;background:#fff;color:#1F4FE0;text-decoration:none;font-weight:700}.imported a[href^='mailto:'] h3{margin:0 0 4px;color:#0B1A2E}.imported a[href^='mailto:'] p{margin:0 0 8px;color:#3D4A5C;font-weight:400}.imported .tablewrap{overflow-x:auto}.imported img{max-width:100%;height:auto}.imported h2{margin-top:36px}mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .phleg{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;background:#FFE66B;color:#0F1B2D;font:700 12px/1.3 "Hanken Grotesk",system-ui,sans-serif;padding:8px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(15,27,45,.18);max-width:calc(100% - 24px)}
 .smp{margin:28px 0}.smp h2{margin:0 0 6px}.smp>p{margin:0 0 14px;color:#3D4A5C}
 .stg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
@@ -176,7 +183,7 @@ body.lv-lock{overflow:hidden}
 <hr></hr>
 <a id="what-it-is"></a>
 <h2>What the AI Score measures</h2>
-<p>The AI Score is a single number, from 0 to 100, that measures how findable and recommendable a local business is to AI assistants like ChatGPT, Perplexity, and Google’s AI Overviews. It is the metric we built Local AI Registry around, and we publish exactly how it is calculated. A high score means AI can find you, trust you, and name you when a customer asks; a low score means it cannot.</p><p>The number matters because the results are stark. Across the local businesses we have scored, nearly two in three land below 45 out of 100, and barely one in seventy-five clears 65. Most local businesses are not close to being recommendable by AI, and most owners have no idea where they stand.</p>
+<p>The AI Score is a single number, from 0 to 100, that measures how findable and recommendable a local business is to AI assistants like ChatGPT, Perplexity, and Google’s AI Overviews. It is the metric we built Local AI Registry around, and we publish exactly how it is calculated. A high score means AI can find you, trust you, and name you when a customer asks; a low score means it cannot.</p><div class="art play" data-enter="in"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" role="img" aria-label="Your AI Score, measured the same way for everyone"><path data-d="0.00,0.18" d="M70 180A110 110 0 0 1 290 180" fill="none" stroke="#D9DEE7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path data-d="0.11,0.41" d="M70 180A110 110 0 0 1 252 102" fill="none" stroke="#1F4FE0" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/><path data-d="0.29,0.47" d="M180 180L236 118" fill="none" stroke="#0B1A2E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path data-d="0.40,0.54" d="M173 180A7 7 0 1 0 187 180A7 7 0 1 0 173 180Z" fill="#0B1A2E" stroke="#0B1A2E" stroke-width="0" stroke-linecap="round" stroke-linejoin="round"/><text data-o="0.48,0.60" x="180" y="214" font-family="Hanken Grotesk, Arial, sans-serif" font-size="12" font-weight="800" fill="#0B1A2E" text-anchor="middle">AI Score</text><path data-d="0.51,0.59" d="M300 51V56M300 64V69M291 60H296M304 60H309" fill="none" stroke="#FF5A3C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><p>The number matters because the results are stark. Across the local businesses we have scored, nearly two in three land below 45 out of 100, and barely one in seventy-five clears 65. Most local businesses are not close to being recommendable by AI, and most owners have no idea where they stand.</p>
 64%of the local businesses we scored land below 45 out of 100
 <p>The AI Score exists to turn that invisible problem into one number you can see, act on, and track. It is the answer to the question every owner now has to ask: <a href="https://localairegistry.com/journal/how-ai-decides-which-local-business-to-recommend">does AI recommend me, and why not?</a></p>
 <a id="eight-signals"></a>
@@ -187,7 +194,7 @@ The first two signals, retrieval grounding and off-property attestation, carry t
 <h2>How the number is calculated</h2>
 <p>Each signal is scored on its own, then combined into the final 0-to-100 number using a weighted geometric mean rather than a simple average. The distinction matters. A geometric mean leans on your weakest signal, so a business cannot paper over a missing off-property presence with a fast website. If any load-bearing signal is near zero, the overall score stays low, which mirrors how an assistant actually behaves: one strong attribute does not earn a recommendation when a critical one is absent.</p><p>The weights come from how much each signal moves a real AI recommendation, not from what is easiest to measure. That is why two businesses with identical websites can score very differently: the one the wider web corroborates scores higher, because corroboration is what the assistant grounds its answer in.</p>
 <a id="what-good-looks-like"></a>
-<h2>What a good AI Score looks like</h2>
+<section class="v3" aria-label="3D data view: “best plastic surgeon in New York City”: how often each business was named"><div class="v3-k">From our data · 3D</div><h2 class="v3-t" id="data-3d">“best plastic surgeon in New York City”: how often each business was named</h2><div class="v3-stage" data-v3="{&quot;kind&quot;: &quot;orbit&quot;, &quot;labels&quot;: [&quot;Mansher Singh&quot;, &quot;Marc Everett&quot;, &quot;Philip Miller&quot;, &quot;Michael Stein&quot;, &quot;Melissa Doft&quot;, &quot;Ryan Neinstein&quot;, &quot;Darren Smith&quot;, &quot;Adam Schaffner&quot;], &quot;values&quot;: [3, 2, 2, 1, 1, 1, 1, 1], &quot;unit&quot;: &quot; of 3&quot;, &quot;cols&quot;: null, &quot;geo&quot;: null, &quot;total&quot;: null, &quot;hit&quot;: null}"><canvas aria-hidden="true"></canvas><div class="v3-l"></div><span class="v3-hint">Drag to turn</span></div><p class="v3-c">Each sphere is a business ChatGPT named. Bigger means it was named in more of the three asks. <span>Source: <a href="../../answer-watch/index.html">AI Answer Watch, Local AI Registry, Nov 13, 2026</a>.</span></p><details class="v3-d"><summary>See the data</summary><div class="tablewrap"><table><tr><td>Mansher Singh</td><td>3 of 3</td></tr><tr><td>Marc Everett</td><td>2 of 3</td></tr><tr><td>Philip Miller</td><td>2 of 3</td></tr><tr><td>Michael Stein</td><td>1 of 3</td></tr><tr><td>Melissa Doft</td><td>1 of 3</td></tr><tr><td>Ryan Neinstein</td><td>1 of 3</td></tr><tr><td>Darren Smith</td><td>1 of 3</td></tr><tr><td>Adam Schaffner</td><td>1 of 3</td></tr></table></div></details></section><h2>What a good AI Score looks like</h2>
 <p>Because most local businesses score low, the bar to stand out is lower than it looks. Roughly:</p><ul><li>A score of 65 or above is good: AI can reliably find and recommend you. Very few businesses are here yet.</li><li>A score in the 45 to 64 range is fair: you are eligible and sometimes named, with clear gaps to close.</li><li>Below 45 is poor: AI struggles to find or trust you, and a competitor is getting the recommendation instead.</li></ul><p>The point of the number is not the grade, it is the diagnosis. Your AI Score comes with the specific signals dragging it down, so you know what to fix first.</p>
 <a id="independent"></a>
 <h2>Why the score is independent</h2>
@@ -239,7 +246,82 @@ els.forEach(function(el){if(el.closest('header,footer,nav'))return;var r=el.getB
  if(!el.classList.contains('play')&&!el.hasAttribute('data-enter'))el.classList.add('rv');el.dataset.enter='armed';io.observe(el)});
 // count-ups on big figures
 document.querySelectorAll('.dgrid b,.stg b,.ln-stats b,.ev-num,.find b').forEach(function(b){if(/\d/.test(b.textContent)&&b.textContent.length<14)b.dataset.count=''});
-})();</script><script>
+})();</script><script>(function(){
+var stages=[].slice.call(document.querySelectorAll('[data-v3]'));if(!stages.length)return;
+var RM=matchMedia('(prefers-reduced-motion: reduce)').matches,loading=null;
+function need(cb){if(window.THREE)return cb();if(!loading){loading=[];var s=document.createElement('script');s.src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';s.onload=function(){loading.forEach(function(f){f()})};document.head.appendChild(s)}loading.push(cb)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){var el=e.target;if(e.isIntersecting){if(!el._v3){el._v3=1;need(function(){build(el)})}el._on=1}else el._on=0})},{rootMargin:'200px 0px'});
+stages.forEach(function(s){io.observe(s)});
+function build(el){
+ var T=THREE,cfg=JSON.parse(el.dataset.v3),cv=el.querySelector('canvas'),lay=el.querySelector('.v3-l');
+ var W=el.clientWidth,H=el.clientHeight,r=new T.WebGLRenderer({canvas:cv,antialias:true,alpha:true});r.setPixelRatio(Math.min(devicePixelRatio,1.75));r.setSize(W,H,false);
+ var sc=new T.Scene(),cam=new T.PerspectiveCamera(W<520?50:40,W/H,.1,200);cam.position.set(0,6.2,W<520?15:12.5);cam.lookAt(0,1.7,0);
+ sc.add(new T.HemisphereLight(0xffffff,0xc9d4ee,.95));var dl=new T.DirectionalLight(0xffffff,.65);dl.position.set(5,12,8);sc.add(dl);
+ var grp=new T.Group();sc.add(grp);var BLUE=0x1F4FE0,INK=0x0B1A2E,CORAL=0xFF5A3C,SOFT=0xBFD0F6;
+ var mat=function(c,o){return new T.MeshStandardMaterial({color:c,roughness:.45,metalness:.05,transparent:o!=null,opacity:o==null?1:o})};
+ var floor=new T.Mesh(new T.CircleGeometry(7.6,64),mat(0xffffff,.55));floor.rotation.x=-Math.PI/2;floor.position.y=-.01;grp.add(floor);
+ var ring=new T.Mesh(new T.RingGeometry(7.5,7.6,96),mat(SOFT));ring.rotation.x=-Math.PI/2;grp.add(ring);
+ var labels=[],grow=[],spin=[],pulses=[];
+ function lab(pos,txt,val){var s=document.createElement('span');s.innerHTML=(val!=null?'<b>'+val+'</b> ':'')+txt;lay.appendChild(s);labels.push({p:pos,el:s})}
+ function fmt(v){v=+v;return (v>=100||v===Math.round(v)?Math.round(v).toLocaleString('en-US'):v.toFixed(1))+(cfg.unit||'')}
+ function short(s,n){s=String(s);return s.length>n?s.slice(0,n-1)+'…':s}
+ var L=cfg.labels||[],V=cfg.values||[],k=cfg.kind;
+ if(k=='bars'||k=='map'){
+  var n=V.length,mx=Math.max.apply(null,V)||1,top=V.indexOf(mx);
+  V.forEach(function(v,i){var h=Math.max(.08,v/mx*5.2),x,z;
+   if(k=='map'){var g=cfg.geo[i];x=(g[1]+98)*.23;z=-(g[0]-36)*.32}else if(n>9){var a=(i/n)*Math.PI*1.6-Math.PI*.8;x=Math.sin(a)*6;z=-Math.cos(a)*6+3}else{x=(i-(n-1)/2)*Math.min(1.7,13/n);z=0}
+   var m=new T.Mesh(new T.BoxGeometry(.7,1,.7),mat(i==top?CORAL:BLUE));m.position.set(x,0,z);m.scale.y=.001;m.userData={h:h};grp.add(m);grow.push(m);
+   if(n<=12||i==top||i%2==0)lab(new T.Vector3(x,h+.35+(n>5&&k!='map'?(i%2)*.55:0),z),short(L[i],k=='map'?16:(n>6?12:16)),fmt(v))});
+ }else if(k=='orbit'||k=='network'){
+  var c=new T.Mesh(new T.SphereGeometry(.9,40,40),mat(k=='orbit'?CORAL:BLUE));c.position.y=1.6;grp.add(c);lab(new T.Vector3(0,2.9,0),k=='orbit'?'Your business':'Local answer',null);
+  var mx2=Math.max.apply(null,V)||1;V.forEach(function(v,i){var a=i/V.length*Math.PI*2,rad=k=='orbit'?3.2+(i%3)*1.4:5,s=.25+Math.sqrt(v/mx2)*.9,y=1.6+(k=='network'?Math.sin(i*1.7)*1.6:Math.sin(i)*.6);
+   var m=new T.Mesh(new T.SphereGeometry(s,28,28),mat(i==0?BLUE:SOFT));var o=new T.Group();o.add(m);m.position.set(rad,0,0);o.position.y=y;o.rotation.y=a;grp.add(o);spin.push({o:o,sp:k=='orbit'?.0016+.0007*(i%3):.0006});
+   var geo=new T.BufferGeometry().setFromPoints([new T.Vector3(0,1.6-y,0),new T.Vector3(rad,0,0)]);var ln=new T.Line(geo,new T.LineBasicMaterial({color:0x9FB3E8,transparent:true,opacity:.55}));o.add(ln);
+   var p=new T.Mesh(new T.SphereGeometry(.07,10,10),mat(CORAL));o.add(p);pulses.push({m:p,r:rad,t:Math.random(),dy:1.6-y});
+   if(i<10)lab({o:m},short(L[i],18),fmt(v))});
+ }else if(k=='matrix'){
+  var R=V.length,Cn=(V[0]||[]).length,all=[].concat.apply([],V),mx3=Math.max.apply(null,all)||1;
+  V.forEach(function(row,i){row.forEach(function(v,j){var h=Math.max(.05,v/mx3*4.6),x=(j-(Cn-1)/2)*1.25,z=(i-(R-1)/2)*Math.min(1.1,10/R);var m=new T.Mesh(new T.BoxGeometry(.8,1,.8),mat(j==0?CORAL:BLUE,j==0?1:.85-.12*(j%3)));m.position.set(x,0,z);m.scale.y=.001;m.userData={h:h};grp.add(m);grow.push(m)});
+   lab(new T.Vector3(-(Cn/2)*1.25-1.1,.3,(i-(R-1)/2)*Math.min(1.1,10/R)),short(L[i],16),null)});
+  (cfg.cols||[]).forEach(function(cn,j){lab(new T.Vector3((j-(Cn-1)/2)*1.25,.2,((R-1)/2)*Math.min(1.1,10/R)+1.1),short(cn,14),null)});
+ }else if(k=='scatter'){
+  var xs=V.map(function(p){return p[0]}),ys=V.map(function(p){return p[1]}),mx4=Math.max.apply(null,xs)||1,my=Math.max.apply(null,ys)||1;
+  var ax=new T.Group();[[-5,0,-2,5.5,0,-2],[-5,0,-2,-5,5.5,-2]].forEach(function(a){ax.add(new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(a[0],a[1],a[2]),new T.Vector3(a[3],a[4],a[5])]),new T.LineBasicMaterial({color:INK})))});grp.add(ax);
+  V.forEach(function(p,i){var x=-5+p[0]/mx4*10,y=p[1]/my*5,z=-2+((i*37)%5)*.6;var m=new T.Mesh(new T.SphereGeometry(.28,24,24),mat(i==0?CORAL:BLUE));m.position.set(x,y+.3,z);m.scale.setScalar(.001);m.userData={s:1};grp.add(m);grow.push(m);
+   var st=new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(x,0,z),new T.Vector3(x,y+.3,z)]),new T.LineBasicMaterial({color:0xB8C6EC}));grp.add(st);if(i<7)lab(new T.Vector3(x,y+.75+(i%2)*.5,z),short(L[i],14),null)});
+ }else if(k=='pairs'){
+  var mx5=Math.max.apply(null,[].concat.apply([],V))||1,n2=V.length;V.forEach(function(p,i){var x=(i-(n2-1)/2)*Math.min(1.1,13/n2);[0,1].forEach(function(j){var h=Math.max(.05,p[j]/mx5*4.8);var m=new T.Mesh(new T.BoxGeometry(.38,1,.38),mat(j?CORAL:BLUE));m.position.set(x+(j?.22:-.22),0,j?.3:-.3);m.scale.y=.001;m.userData={h:h};grp.add(m);grow.push(m)});if(i%2==0)lab(new T.Vector3(x,Math.max(p[0],p[1])/mx5*4.8+.5,0),short(L[i],12),null)});
+ }else if(k=='positions'){
+  V.forEach(function(p,i){[0,1,2].forEach(function(a){var pos=p[a]||0,h=pos?(7-pos)*.7:.05,x=(i-(V.length-1)/2)*1.25,z=(a-1)*1.3;var m=new T.Mesh(new T.BoxGeometry(.75,1,.75),mat(pos==1?CORAL:pos?BLUE:0xD9DEE7,pos?1:.6));m.position.set(x,0,z);m.scale.y=.001;m.userData={h:h};grp.add(m);grow.push(m)});
+   lab(new T.Vector3((i-(V.length-1)/2)*1.25,4.9-(i%2)*.5,0),short(L[i],16),null)});
+  ['Ask 1','Ask 2','Ask 3'].forEach(function(t,a){lab(new T.Vector3((V.length/2)*1.25+.9,.2,(a-1)*1.3),t,null)});
+ }else if(k=='ribbon'){
+  V.forEach(function(series,si){var mx6=Math.max.apply(null,[].concat.apply([],V))||1,n3=series.length,pts=[];series.forEach(function(v,i){pts.push(new T.Vector3((i-(n3-1)/2)*(12/n3),v/mx6*4.6+.1,si*1.4-.7))});
+   var curve=new T.CatmullRomCurve3(pts),tube=new T.Mesh(new T.TubeGeometry(curve,140,.12,10,false),mat(si?CORAL:BLUE));grp.add(tube);
+   series.forEach(function(v,i){var bar=new T.Mesh(new T.BoxGeometry(12/n3*.5,1,.18),mat(si?0xFFC2B5:SOFT,.8));bar.position.set(pts[i].x,0,pts[i].z);bar.scale.y=.001;bar.userData={h:pts[i].y};grp.add(bar);grow.push(bar)});
+   var mi=series.indexOf(Math.max.apply(null,series));lab(pts[mi].clone().add(new T.Vector3(0,.5,0)),short(L[mi],12),fmt(series[mi]))});
+ }else if(k=='layers'){
+  var mx7=Math.max.apply(null,V)||1;V.forEach(function(v,i){var w=1.2+v/mx7*7.5,y=i*.75;var m=new T.Mesh(new T.BoxGeometry(w,.22,3.2),mat(i==0?CORAL:BLUE,.92-.08*i));m.position.set(0,y+.2,0);m.scale.x=.001;m.userData={sx:1};grp.add(m);grow.push(m);lab(new T.Vector3(w/2+.2,y+.55,0),short(L[i],20),fmt(v))});
+ }else if(k=='dots'){
+  var tot=cfg.total,hit=cfg.hit,cols=Math.ceil(Math.sqrt(tot*1.6)),gap=Math.min(.42,13/cols),geo2=new T.SphereGeometry(gap*.32,10,10),ma=mat(SOFT),mh=mat(CORAL);
+  for(var i=0;i<tot;i++){var x=(i%cols-(cols-1)/2)*gap,z=(Math.floor(i/cols)-(Math.ceil(tot/cols)-1)/2)*gap;var m=new T.Mesh(geo2,i<hit?mh:ma);m.position.set(x,.2,z);m.userData={d:i/tot,y:.2+(i<hit?.35:0)};m.position.y=4;grp.add(m);grow.push(m)}
+  lab(new T.Vector3(0,2.6,0),hit+' of '+tot,null);
+ }
+ // interaction
+ var drag=null,rotY=-.35,auto=!RM;el.addEventListener('pointerdown',function(e){drag=e.clientX;auto=false;el.style.cursor='grabbing'});
+ addEventListener('pointerup',function(){drag=null;el.style.cursor='grab'});el.addEventListener('pointermove',function(e){if(drag!=null){rotY+=(e.clientX-drag)*.008;drag=e.clientX}});
+ new ResizeObserver(function(){W=el.clientWidth;H=el.clientHeight;r.setSize(W,H,false);cam.aspect=W/H;cam.updateProjectionMatrix()}).observe(el);
+ var t0=performance.now(),v=new T.Vector3();
+ function frame(now){var t=Math.min(1,(now-t0)/1600),e=RM?1:1-Math.pow(1-t,3);
+  grow.forEach(function(m,i){var u=m.userData,ee=RM?1:Math.min(1,Math.max(0,(now-t0-i*25)/900));ee=1-Math.pow(1-ee,3);
+   if(u.h!=null){m.scale.y=Math.max(.001,u.h*ee);m.position.y=u.h*ee/2}else if(u.s!=null)m.scale.setScalar(Math.max(.001,ee));else if(u.sx!=null)m.scale.x=Math.max(.001,ee);else if(u.d!=null){var q=RM?1:Math.min(1,Math.max(0,(now-t0-u.d*1400)/600));m.position.y=4+(u.y-4)*(1-Math.pow(1-q,3))}});
+  if(auto)rotY+=.0022;grp.rotation.y=rotY;spin.forEach(function(s){if(!RM)s.o.rotation.y+=s.sp});
+  pulses.forEach(function(p){if(RM)return;p.t=(p.t+.006)%1;p.m.position.set(p.r*(1-p.t),p.dy*p.t,0)});
+  r.render(sc,cam);
+  labels.forEach(function(l){if(l.p.o){l.p.o.getWorldPosition(v);v.y+=.6}else{v.copy(l.p);grp.localToWorld(v)}v.project(cam);var vis=v.z<1&&e>.6;l.el.style.display=vis?'':'none';if(vis){l.el.style.left=((v.x+1)/2*W)+'px';l.el.style.top=((1-v.y)/2*H)+'px'}});
+  if(RM&&t>=1)return;if(el._on||t<1)requestAnimationFrame(frame);else{var w=setInterval(function(){if(el._on){clearInterval(w);requestAnimationFrame(frame)}},400)}}
+ requestAnimationFrame(frame);
+}})();</script><script>
 (function(){
   var d=document.documentElement;
   try{ var q=new URLSearchParams(location.search); if(q.has('loggedin'))d.dataset.auth='in'; else if(/(^|;\s*)lair_auth=1/.test(document.cookie))d.dataset.auth='in'; }catch(e){}
