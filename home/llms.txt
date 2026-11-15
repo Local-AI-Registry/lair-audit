@@ -37,11 +37,20 @@
 ## Industry guides
 
 - https://localairegistry.com/for/ai/
+- https://localairegistry.com/for/cannabis-dispensaries/
+- https://localairegistry.com/for/dentists/
 - https://localairegistry.com/for/dermatologists/ai/
+- https://localairegistry.com/for/dermatology/
 - https://localairegistry.com/for/dispensaries/ai/
+- https://localairegistry.com/for/eye-care/
 - https://localairegistry.com/for/eye-surgeons/ai/
+- https://localairegistry.com/for/med-spas/
 - https://localairegistry.com/for/med-spas/ai/
+- https://localairegistry.com/for/medical-clinics/
+- https://localairegistry.com/for/plastic-surgeons/
 - https://localairegistry.com/for/plastic-surgeons/ai/
+- https://localairegistry.com/for/skin-care-clinics/
+- https://localairegistry.com/for/urgent-care/
 
 ## Original research and news
 
@@ -96,6 +105,7 @@
 - https://localairegistry.com/contact/
 - https://localairegistry.com/data-policy/
 - https://localairegistry.com/experts/
+- https://localairegistry.com/for/
 - https://localairegistry.com/founder-story/
 - https://localairegistry.com/giving-back/
 - https://localairegistry.com/opt-out/
