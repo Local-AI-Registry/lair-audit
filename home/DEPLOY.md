@@ -44,9 +44,63 @@ Only the production build (out-clean) carries the real robots tags. Never ship t
 5. After each deploy: submit sitemap-ai.xml in Google Search Console and Bing Webmaster Tools, and
    ping IndexNow with the changed URLs (indexnow.py does this).
 
+## Faster delivery for AI agents and repeat visitors
+
+### 1. Markdown at the same address (content negotiation)
+
+Every indexable page already has a Markdown twin at <path>/index.md. Serve it at the page's own URL
+when a request asks for Markdown, and the HTML to everyone else.
+
+- If the request's Accept header contains text/markdown, answer with <path>/index.md,
+  Content-Type: text/markdown; charset=utf-8.
+- Always send Vary: Accept on these URLs, so caches and CDNs keep the two versions apart.
+- Keep X-Robots-Tag: noindex on the Markdown response. Google keeps indexing the HTML.
+- Browsers and Googlebot never send text/markdown first, so nothing changes for people or search.
+
+Next.js (App Router) middleware, as a starting point:
+
+```ts
+// middleware.ts
+import { NextResponse, type NextRequest } from "next/server";
+
+export function middleware(req: NextRequest) {
+  const accept = req.headers.get("accept") ?? "";
+  const { pathname } = req.nextUrl;
+  if (!accept.includes("text/markdown") || pathname.includes(".")) return NextResponse.next();
+  const url = req.nextUrl.clone();
+  url.pathname = (pathname.endsWith("/") ? pathname : pathname + "/") + "index.md";
+  const res = NextResponse.rewrite(url);
+  res.headers.set("Vary", "Accept");
+  res.headers.set("X-Robots-Tag", "noindex");
+  return res;
+}
+```
+
+Only rewrite paths that have an index.md (deploy-manifest.json lists the indexable ones), and set the
+Markdown Content-Type in the static file headers. Test:  curl -H "Accept: text/markdown" https://localairegistry.com/ai/chatgpt/
+
+### 2. Compression
+
+- Baseline: Brotli for HTML, CSS, JS, SVG, JSON, Markdown and TXT, with gzip as the fallback.
+  Zstandard (zstd) where the CDN supports it.
+- Compression dictionaries (RFC 9842, supported in Chromium browsers): HTML pages share most of their
+  code, so a repeat visitor can download only the difference.
+  - On HTML responses send:  Use-As-Dictionary: match="/*", match-dest=("document")
+  - When a later request carries an Available-Dictionary header, compress against that page with
+    Content-Encoding: dcb (Brotli) or dcz (Zstandard), and send Vary: Accept-Encoding, Available-Dictionary.
+  - If the CDN offers this as a setting, use the setting rather than custom code. Crawlers don't keep
+    dictionaries, so they keep getting normal Brotli or gzip.
+
+### 3. An MCP server for AI agents
+
+See MCP_SPEC.md: a small read-mostly server at https://localairegistry.com/mcp so assistants can look up
+registry records and book a free AI check without scraping pages.
+
 ## Checks after go-live
 
 - Every "index" URL returns 200 with the canonical equal to its own URL.
 - Every "redirect" URL returns a single 301 hop to its target.
 - No "noindex" URL appears in any sitemap.
 - /llms.txt, /sitemap-ai.xml and a sample /<page>/index.md return 200.
+- curl -H "Accept: text/markdown" on an indexable page returns Markdown with Vary: Accept; without the header it returns HTML.
+- Response headers on HTML show Content-Encoding: br (or zstd), and dcb/dcz on a second page view in Chrome.

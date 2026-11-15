@@ -714,7 +714,7 @@
   "status": "index"
  },
  "research/simulations/quiktox-foot-traffic": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/research/simulations/quiktox-foot-traffic/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
