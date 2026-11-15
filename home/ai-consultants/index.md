@@ -10,6 +10,8 @@ Publisher: Local AI Registry (https://localairegistry.com)
 
 AI Consultants go door to door, but the doors belong to local businesses. Your job is to help owners see what AI says about them before they disappear from the answers, and to help them book a free AI check.
 
+## What you earn
+
 ### How you earn
 
 **15% commission, uncapped,** on what the businesses you sign pay us, as revenue share. You’re an independent 1099 contractor, so you set your own hours and you can keep your current job or other lines.

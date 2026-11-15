@@ -54,13 +54,13 @@ Reading a business page
 
 Every fact on a business page carries one of three marks, and every mark points to a reference at the end of that page.
 
-Confirmedsolid circle
+● Confirmed
 :   From a known source: the business's website, its Google Business Profile, review sites like Yelp, Healthgrades and RealSelf, a licensing board, or measured by Local AI Registry.
 
-Visitor submittedhollow circle
+○ Visitor submitted
 :   Added or corrected by a person, with the date and how they know, like a phone call or a visit.
 
-AI guesshollow triangle
+△ AI guess
 :   What AI engines like ChatGPT, Gemini and Perplexity are saying right now. Nobody has confirmed it.
 
 Each row is marked Confirmed, Visitor submitted or AI guess, with where it came from. Each reference names the fact, the source, what kind of source it is, and the date it was checked, with a link and an archived copy so anyone can verify it. Visitor references are dated firsthand accounts. AI guesses record what an AI engine said on that date, not what is true.

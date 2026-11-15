@@ -10,6 +10,8 @@ For healthcare practices
 
 If you're a healthcare practice, sign our Business Associate Agreement online in about two minutes. We countersign and email you the executed copy within one business day.
 
+## Terms
+
 ### 1. Who this is between
 
 This Business Associate Agreement (the “Agreement”) is between the healthcare practice signing below (the “Covered Entity”) and Blind LLC, a Wyoming limited liability company doing business as Local AI Registry (the “Business Associate”). It applies to any Protected Health Information (“PHI”) the Business Associate creates, receives, maintains or transmits for the Covered Entity while providing its services.

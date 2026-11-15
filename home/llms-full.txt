@@ -6272,13 +6272,13 @@ Reading a business page
 
 Every fact on a business page carries one of three marks, and every mark points to a reference at the end of that page.
 
-Confirmedsolid circle
+● Confirmed
 :   From a known source: the business's website, its Google Business Profile, review sites like Yelp, Healthgrades and RealSelf, a licensing board, or measured by Local AI Registry.
 
-Visitor submittedhollow circle
+○ Visitor submitted
 :   Added or corrected by a person, with the date and how they know, like a phone call or a visit.
 
-AI guesshollow triangle
+△ AI guess
 :   What AI engines like ChatGPT, Gemini and Perplexity are saying right now. Nobody has confirmed it.
 
 Each row is marked Confirmed, Visitor submitted or AI guess, with where it came from. Each reference names the fact, the source, what kind of source it is, and the date it was checked, with a link and an archived copy so anyone can verify it. Visitor references are dated firsthand accounts. AI guesses record what an AI engine said on that date, not what is true.
@@ -10830,6 +10830,8 @@ For healthcare practices
 
 If you're a healthcare practice, sign our Business Associate Agreement online in about two minutes. We countersign and email you the executed copy within one business day.
 
+## Terms
+
 ### 1. Who this is between
 
 This Business Associate Agreement (the “Agreement”) is between the healthcare practice signing below (the “Covered Entity”) and Blind LLC, a Wyoming limited liability company doing business as Local AI Registry (the “Business Associate”). It applies to any Protected Health Information (“PHI”) the Business Associate creates, receives, maintains or transmits for the Covered Entity while providing its services.
@@ -11368,6 +11370,8 @@ No contractMonth to month. Stay because it works.
 You approve everythingNothing goes live without your OK.
 
 Step 1
+
+## How it works
 
 ### A free AI check
 
@@ -12710,6 +12714,8 @@ Publisher: Local AI Registry (https://localairegistry.com)
 1099 · commission · your city
 
 AI Consultants go door to door, but the doors belong to local businesses. Your job is to help owners see what AI says about them before they disappear from the answers, and to help them book a free AI check.
+
+## What you earn
 
 ### How you earn
 
@@ -19660,6 +19666,8 @@ For healthcare practices
 
 If you're a healthcare practice, sign our Business Associate Agreement online in about two minutes. We countersign and email you the executed copy within one business day.
 
+## Terms
+
 ### 1. Who this is between
 
 This Business Associate Agreement (the “Agreement”) is between the healthcare practice signing below (the “Covered Entity”) and Blind LLC, a Wyoming limited liability company doing business as Local AI Registry (the “Business Associate”). It applies to any Protected Health Information (“PHI”) the Business Associate creates, receives, maintains or transmits for the Covered Entity while providing its services.
@@ -20235,13 +20243,13 @@ Reading a business page
 
 Every fact on a business page carries one of three marks, and every mark points to a reference at the end of that page.
 
-Confirmedsolid circle
+● Confirmed
 :   From a known source: the business's website, its Google Business Profile, review sites like Yelp, Healthgrades and RealSelf, a licensing board, or measured by Local AI Registry.
 
-Visitor submittedhollow circle
+○ Visitor submitted
 :   Added or corrected by a person, with the date and how they know, like a phone call or a visit.
 
-AI guesshollow triangle
+△ AI guess
 :   What AI engines like ChatGPT, Gemini and Perplexity are saying right now. Nobody has confirmed it.
 
 Each row is marked Confirmed, Visitor submitted or AI guess, with where it came from. Each reference names the fact, the source, what kind of source it is, and the date it was checked, with a link and an archived copy so anyone can verify it. Visitor references are dated firsthand accounts. AI guesses record what an AI engine said on that date, not what is true.
@@ -21796,6 +21804,8 @@ No contractMonth to month. Stay because it works.
 You approve everythingNothing goes live without your OK.
 
 Step 1
+
+## How it works
 
 ### A free AI check
 

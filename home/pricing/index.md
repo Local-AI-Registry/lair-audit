@@ -18,6 +18,8 @@ You approve everythingNothing goes live without your OK.
 
 Step 1
 
+## How it works
+
 ### A free AI check
 
 Free
