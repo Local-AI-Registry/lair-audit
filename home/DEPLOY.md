@@ -96,6 +96,15 @@ Markdown Content-Type in the static file headers. Test:  curl -H "Accept: text/m
 See MCP_SPEC.md: a small read-mostly server at https://localairegistry.com/mcp so assistants can look up
 registry records and book a free AI check without scraping pages.
 
+## Booking form: keep every lead
+
+The /start form only reaches us through the Calendly booking, so anyone who fills it in and doesn't pick
+a time is lost. Before the calendar step, POST the form fields (business, website, industry, city,
+revenue band, years, locations, role, name, email, mobile, UTM tags) to an app endpoint, for example
+POST /api/leads, and store them as a lead with status "form_completed". When Calendly's
+calendly.event_scheduled message fires (the page already listens for it), update the same lead to
+"booked". Alert sales on leads that stay "form_completed" for 30 minutes.
+
 ## Checks after go-live
 
 - Every "index" URL returns 200 with the canonical equal to its own URL.
