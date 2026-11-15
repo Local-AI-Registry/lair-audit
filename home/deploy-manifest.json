@@ -1,0 +1,1028 @@
+{
+ "": {
+  "canonical": "https://localairegistry.com/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "about": {
+  "canonical": "https://localairegistry.com/about/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "academy": {
+  "canonical": "https://localairegistry.com/academy/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "ai": {
+  "canonical": "https://localairegistry.com/ai/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai-consultants": {
+  "canonical": "https://localairegistry.com/ai-consultants/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "ai-search-optimization": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/blueprint/"
+ },
+ "ai-search-optimization/dermatologists": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/for/dermatologists/ai/"
+ },
+ "ai-search-optimization/eye-surgeons": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/for/eye-surgeons/ai/"
+ },
+ "ai-search-optimization/med-spas": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/for/med-spas/ai/"
+ },
+ "ai-search-optimization/plastic-surgeons": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/for/plastic-surgeons/ai/"
+ },
+ "ai/alexa": {
+  "canonical": "https://localairegistry.com/ai/alexa/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/chatgpt": {
+  "canonical": "https://localairegistry.com/ai/chatgpt/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/claude": {
+  "canonical": "https://localairegistry.com/ai/claude/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/copilot": {
+  "canonical": "https://localairegistry.com/ai/copilot/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/gemini": {
+  "canonical": "https://localairegistry.com/ai/gemini/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/google-ai-overviews": {
+  "canonical": "https://localairegistry.com/ai/google-ai-overviews/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/grok": {
+  "canonical": "https://localairegistry.com/ai/grok/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/meta-ai": {
+  "canonical": "https://localairegistry.com/ai/meta-ai/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/perplexity": {
+  "canonical": "https://localairegistry.com/ai/perplexity/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "ai/siri": {
+  "canonical": "https://localairegistry.com/ai/siri/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "answer-watch": {
+  "canonical": "https://localairegistry.com/answer-watch/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "awards": {
+  "canonical": "https://localairegistry.com/awards/",
+  "http": 200,
+  "sitemap": "local",
+  "status": "index"
+ },
+ "badge": {
+  "canonical": "https://localairegistry.com/badge/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "best": {
+  "canonical": "https://localairegistry.com/best/",
+  "http": 200,
+  "sitemap": "local",
+  "status": "index"
+ },
+ "best/botox/costa-mesa-ca": {
+  "canonical": "https://localairegistry.com/best/botox/costa-mesa-ca/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "best/botox/costa-mesa-ca/affordable": {
+  "canonical": "https://localairegistry.com/best/botox/costa-mesa-ca/affordable/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "best/med-spas/costa-mesa-ca": {
+  "canonical": "https://localairegistry.com/best/med-spas/costa-mesa-ca/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "blueprint": {
+  "canonical": "https://localairegistry.com/blueprint/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "careers": {
+  "canonical": "https://localairegistry.com/careers/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "case-studies": {
+  "canonical": "https://localairegistry.com/case-studies/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "changelog": {
+  "canonical": "https://localairegistry.com/changelog/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "compare": {
+  "canonical": "https://localairegistry.com/compare/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "compare/birdeye": {
+  "canonical": "https://localairegistry.com/compare/birdeye/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "compare/brightlocal": {
+  "canonical": "https://localairegistry.com/compare/brightlocal/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "compare/podium": {
+  "canonical": "https://localairegistry.com/compare/podium/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "compare/synup": {
+  "canonical": "https://localairegistry.com/compare/synup/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "compare/yext": {
+  "canonical": "https://localairegistry.com/compare/yext/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "contact": {
+  "canonical": "https://localairegistry.com/contact/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "data-policy": {
+  "canonical": "https://localairegistry.com/data-policy/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "events": {
+  "canonical": "https://localairegistry.com/events/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "experts": {
+  "canonical": "https://localairegistry.com/experts/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "features": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/"
+ },
+ "for": {
+  "canonical": "https://localairegistry.com/for/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "for/ai": {
+  "canonical": "https://localairegistry.com/for/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/auto-dealers/ai": {
+  "canonical": "https://localairegistry.com/for/auto-dealers/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/cannabis-dispensaries": {
+  "canonical": "https://localairegistry.com/for/cannabis-dispensaries/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/chiropractors/ai": {
+  "canonical": "https://localairegistry.com/for/chiropractors/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/dentists": {
+  "canonical": "https://localairegistry.com/for/dentists/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/dentists/ai": {
+  "canonical": "https://localairegistry.com/for/dentists/ai/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "for/dermatologists/ai": {
+  "canonical": "https://localairegistry.com/for/dermatologists/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/dermatology": {
+  "canonical": "https://localairegistry.com/for/dermatology/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/dispensaries/ai": {
+  "canonical": "https://localairegistry.com/for/dispensaries/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/eye-care": {
+  "canonical": "https://localairegistry.com/for/eye-care/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/eye-surgeons/ai": {
+  "canonical": "https://localairegistry.com/for/eye-surgeons/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/hvac/ai": {
+  "canonical": "https://localairegistry.com/for/hvac/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/law-firms/ai": {
+  "canonical": "https://localairegistry.com/for/law-firms/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/med-spas": {
+  "canonical": "https://localairegistry.com/for/med-spas/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/med-spas/ai": {
+  "canonical": "https://localairegistry.com/for/med-spas/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/medical-clinics": {
+  "canonical": "https://localairegistry.com/for/medical-clinics/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/plastic-surgeons": {
+  "canonical": "https://localairegistry.com/for/plastic-surgeons/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/plastic-surgeons/ai": {
+  "canonical": "https://localairegistry.com/for/plastic-surgeons/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/plumbers/ai": {
+  "canonical": "https://localairegistry.com/for/plumbers/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/roofers/ai": {
+  "canonical": "https://localairegistry.com/for/roofers/ai/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/skin-care-clinics": {
+  "canonical": "https://localairegistry.com/for/skin-care-clinics/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "for/urgent-care": {
+  "canonical": "https://localairegistry.com/for/urgent-care/",
+  "http": 200,
+  "sitemap": "industries",
+  "status": "index"
+ },
+ "founder-story": {
+  "canonical": "https://localairegistry.com/founder-story/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "free-business-listing": {
+  "canonical": "https://localairegistry.com/free-business-listing/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "giving-back": {
+  "canonical": "https://localairegistry.com/giving-back/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "glossary": {
+  "canonical": "https://localairegistry.com/glossary/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "glossary/aeo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#aeo"
+ },
+ "glossary/ai-overviews": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#ai-overviews"
+ },
+ "glossary/ai-score": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#ai-score"
+ },
+ "glossary/ai-seo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#ai-seo"
+ },
+ "glossary/ai-visibility": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#ai-visibility"
+ },
+ "glossary/citation": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#citation"
+ },
+ "glossary/entity": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#entity"
+ },
+ "glossary/geo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#geo"
+ },
+ "glossary/knowledge-graph": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#knowledge-graph"
+ },
+ "glossary/llms-txt": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#llms-txt"
+ },
+ "glossary/local-ai-blueprint": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#local-ai-blueprint"
+ },
+ "glossary/nap-consistency": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#nap-consistency"
+ },
+ "glossary/schema-markup": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#schema-markup"
+ },
+ "glossary/share-of-voice": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#share-of-voice"
+ },
+ "glossary/structured-data": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#structured-data"
+ },
+ "guarantee": {
+  "canonical": "https://localairegistry.com/guarantee/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "guide": {
+  "canonical": "https://localairegistry.com/guide/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "guide/checklist": {
+  "canonical": "https://localairegistry.com/guide/checklist/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "guide/claim-your-business-in-chatgpt": {
+  "canonical": "https://localairegistry.com/guide/claim-your-business-in-chatgpt/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "guide/not-showing-up": {
+  "canonical": "https://localairegistry.com/guide/not-showing-up/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "journal/what-is-an-ai-score": {
+  "canonical": "https://localairegistry.com/journal/what-is-an-ai-score/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "learn": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/guide/"
+ },
+ "legal/baa": {
+  "canonical": "https://localairegistry.com/legal/baa/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "legal/privacy": {
+  "canonical": "https://localairegistry.com/legal/privacy/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "legal/terms": {
+  "canonical": "https://localairegistry.com/legal/terms/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "look-up": {
+  "canonical": "https://localairegistry.com/look-up/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "methodology": {
+  "canonical": "https://localairegistry.com/methodology/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "near-me": {
+  "canonical": "https://localairegistry.com/near-me/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "news": {
+  "canonical": "https://localairegistry.com/news/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "news/the-199-botox-studio-on-newport-boulevard": {
+  "canonical": "https://localairegistry.com/news/the-199-botox-studio-on-newport-boulevard/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "newsroom": {
+  "canonical": "https://localairegistry.com/newsroom/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "opt-out": {
+  "canonical": "https://localairegistry.com/opt-out/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "partners": {
+  "canonical": "https://localairegistry.com/partners/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "platform": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/"
+ },
+ "platform/ai-capture": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/ai-monitoring/"
+ },
+ "platform/directory-listings": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/directory-listings/"
+ },
+ "platform/google-posts": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/google-profile/"
+ },
+ "platform/monthly-report": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/ai-monitoring/#monthly-report"
+ },
+ "platform/photos": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/photo-codifying/"
+ },
+ "platform/press-releases": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/pr/"
+ },
+ "platform/review-replies": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/reputation/"
+ },
+ "press": {
+  "canonical": "https://localairegistry.com/press/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "pricing": {
+  "canonical": "https://localairegistry.com/pricing/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "proof/the-convergence-white-paper": {
+  "canonical": "https://localairegistry.com/proof/the-convergence-white-paper/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "registry": {
+  "canonical": "https://localairegistry.com/registry/",
+  "http": 200,
+  "sitemap": "local",
+  "status": "index"
+ },
+ "registry/ca/costa-mesa/quiktox": {
+  "canonical": "https://localairegistry.com/biz/ca/costa-mesa/quiktox/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "report-an-error": {
+  "canonical": "https://localairegistry.com/report-an-error/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "research": {
+  "canonical": "https://localairegistry.com/research/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "research/how-often-ai-recommends-your-business": {
+  "canonical": "https://localairegistry.com/research/how-often-ai-recommends-your-business/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "research/local-answer-gap": {
+  "canonical": "https://localairegistry.com/research/local-answer-gap/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "research/simulations/quiktox-foot-traffic": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "resources": {
+  "canonical": "https://localairegistry.com/resources/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "revenue-share": {
+  "canonical": "https://localairegistry.com/revenue-share/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "signals": {
+  "canonical": "https://localairegistry.com/signals/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/ai-monitoring": {
+  "canonical": "https://localairegistry.com/signals/ai-monitoring/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/best-of-guides": {
+  "canonical": "https://localairegistry.com/signals/best-of-guides/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/directory-listings": {
+  "canonical": "https://localairegistry.com/signals/directory-listings/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/google-profile": {
+  "canonical": "https://localairegistry.com/signals/google-profile/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/photo-codifying": {
+  "canonical": "https://localairegistry.com/signals/photo-codifying/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/pr": {
+  "canonical": "https://localairegistry.com/signals/pr/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/reputation": {
+  "canonical": "https://localairegistry.com/signals/reputation/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/seo": {
+  "canonical": "https://localairegistry.com/signals/seo/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/third-party-articles": {
+  "canonical": "https://localairegistry.com/signals/third-party-articles/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/video": {
+  "canonical": "https://localairegistry.com/signals/video/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "signals/web-management": {
+  "canonical": "https://localairegistry.com/signals/web-management/",
+  "http": 200,
+  "sitemap": "pillar",
+  "status": "index"
+ },
+ "solutions": {
+  "canonical": "https://localairegistry.com/solutions/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "start": {
+  "canonical": "https://localairegistry.com/start/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "statistics": {
+  "canonical": "https://localairegistry.com/statistics/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "team": {
+  "canonical": "https://localairegistry.com/team/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "team/aneesh-patel": {
+  "canonical": "https://localairegistry.com/team/aneesh-patel/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "team/steve-lee": {
+  "canonical": "https://localairegistry.com/team/steve-lee/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "team/tess-mauricio": {
+  "canonical": "https://localairegistry.com/team/tess-mauricio/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "tools": {
+  "canonical": "https://localairegistry.com/tools/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "tools/ai-visibility-check": {
+  "canonical": "https://localairegistry.com/tools/ai-visibility-check/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "tools/llms-txt-generator": {
+  "canonical": "https://localairegistry.com/tools/llms-txt-generator/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "tools/prompt-finder": {
+  "canonical": "https://localairegistry.com/tools/prompt-finder/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "tools/schema-generator": {
+  "canonical": "https://localairegistry.com/tools/schema-generator/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "tour": {
+  "canonical": "https://localairegistry.com/tour/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "trust": {
+  "canonical": "https://localairegistry.com/trust/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "trust-center": {
+  "canonical": "https://localairegistry.com/trust-center/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "v2": {
+  "canonical": "https://localairegistry.com/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "verified": {
+  "canonical": "https://localairegistry.com/verified/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "vs/agencies": {
+  "canonical": "https://localairegistry.com/vs/agencies/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "vs/google-business-profile": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/google-profile/"
+ },
+ "vs/seo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signals/seo/"
+ },
+ "works-with": {
+  "canonical": "https://localairegistry.com/works-with/",
+  "http": 200,
+  "sitemap": "company",
+  "status": "index"
+ },
+ "works-with/apple-maps": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#apple-maps"
+ },
+ "works-with/calendly": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#calendly"
+ },
+ "works-with/facebook": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#facebook"
+ },
+ "works-with/google-business-profile": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#google-business-profile"
+ },
+ "works-with/google-maps": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#google-maps"
+ },
+ "works-with/instagram": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#instagram"
+ },
+ "works-with/nextdoor": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#nextdoor"
+ },
+ "works-with/shopify": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#shopify"
+ },
+ "works-with/squarespace": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#squarespace"
+ },
+ "works-with/tiktok": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#tiktok"
+ },
+ "works-with/tripadvisor": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#tripadvisor"
+ },
+ "works-with/webflow": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#webflow"
+ },
+ "works-with/wix": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#wix"
+ },
+ "works-with/wordpress": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#wordpress"
+ },
+ "works-with/yelp": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#yelp"
+ },
+ "works-with/youtube": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/works-with/#youtube"
+ }
+}
