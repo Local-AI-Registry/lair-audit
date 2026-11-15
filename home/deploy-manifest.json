@@ -596,8 +596,8 @@
  "newsroom": {
   "canonical": "https://localairegistry.com/newsroom/",
   "http": 200,
-  "sitemap": null,
-  "status": "noindex"
+  "sitemap": "research",
+  "status": "index"
  },
  "opt-out": {
   "canonical": "https://localairegistry.com/opt-out/",
