@@ -26,6 +26,9 @@ Only the production build (out-clean) carries the real robots tags. Never ship t
 4. Each indexable page has a Markdown twin at index.md and a <link rel="alternate" type="text/markdown">.
    Serve index.md with Content-Type text/markdown; charset=utf-8.
 5. llms.txt and llms-full.txt live at the site root. They replace the current /llms.txt on the main site.
+   The Markdown twins and llms files are for AI tools, not for search results: serve every *.md,
+   llms.txt and llms-full.txt with the header  X-Robots-Tag: noindex  so Google doesn't index them as
+   duplicates of the HTML pages. The HTML page stays the canonical version.
 6. Keep the Organization @id https://localairegistry.com/#org and person @ids (/team/<slug>/#person)
    unchanged. Other surfaces (profiles, reports) should reference the same ids.
 
