@@ -2191,8 +2191,8 @@ if (canGL()) {
   function closeAll(x){dds.forEach(function(dd){if(dd!==x){dd.classList.remove('open');dd.querySelector('.lv-top').setAttribute('aria-expanded','false')}})}
   dds.forEach(function(dd){
     var b=dd.querySelector('.lv-top'),t;
-    b.addEventListener('click',function(){var o=!dd.classList.contains('open');closeAll(dd);dd.classList.toggle('open',o);b.setAttribute('aria-expanded',o)});
-    dd.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches){clearTimeout(t);closeAll(dd);dd.classList.add('open');b.setAttribute('aria-expanded','true')}});
+    b.addEventListener('click',function(){if(dd.classList.contains('open')&&Date.now()-(dd._ht||0)<700)return;var o=!dd.classList.contains('open');closeAll(dd);dd.classList.toggle('open',o);b.setAttribute('aria-expanded',o)});
+    dd.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches){clearTimeout(t);if(!dd.classList.contains('open'))dd._ht=Date.now();closeAll(dd);dd.classList.add('open');b.setAttribute('aria-expanded','true')}});
     dd.addEventListener('mouseleave',function(){if(matchMedia('(hover:hover)').matches){t=setTimeout(function(){dd.classList.remove('open');b.setAttribute('aria-expanded','false')},160)}});
   });
   document.addEventListener('click',function(e){if(!e.target.closest('.lv-dd'))closeAll()});
