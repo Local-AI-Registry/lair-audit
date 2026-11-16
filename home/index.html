@@ -18,7 +18,7 @@
     <div id="iphone" aria-hidden="true"><div class="scr">
       <div class="sb"><b>9:41</b><span class="isl"></span><span class="sbi"><svg width="17" height="11" viewBox="0 0 17 11"><rect x="0" y="7" width="3" height="4" rx="1" fill="#fff"/><rect x="4.5" y="5" width="3" height="6" rx="1" fill="#fff"/><rect x="9" y="2.5" width="3" height="8.5" rx="1" fill="#fff"/><rect x="13.5" y="0" width="3" height="11" rx="1" fill="#fff"/></svg><svg width="25" height="12" viewBox="0 0 25 12"><rect x=".5" y=".5" width="21" height="11" rx="3.5" fill="none" stroke="#fff" opacity=".45"/><rect x="2" y="2" width="16" height="8" rx="2" fill="#fff"/><rect x="22.5" y="4" width="1.8" height="4" rx=".9" fill="#fff" opacity=".45"/></svg></span></div>
       <div class="ctop"><span>ChatGPT</span></div>
-      <div class="msgs"><div class="m u" id="iq">where's the nearest med spa?</div>
+      <div class="msgs"><div class="m u on" id="iq">where's the nearest med&nbsp;spa?</div>
         <div class="m a"><span class="av"><svg width="14" height="14" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg></span><div class="at" id="ia"></div></div>
         <div class="mcard" id="imc"><svg viewBox="0 0 300 120" class="mmap"><rect width="300" height="120" fill="#1C1C20"/><g stroke="#2E2E35" stroke-width="7"><path d="M0 34H300M0 88H300M62 0V120M150 0V120M238 0V120"/></g><g fill="#26262B"><rect x="72" y="44" width="68" height="34" rx="4"/><rect x="160" y="44" width="68" height="34" rx="4"/><rect x="72" y="0" width="68" height="26" rx="4"/><rect x="160" y="96" width="68" height="24" rx="4"/></g><path d="M62 112V88H150V40" fill="none" stroke="#FF5A3C" stroke-width="4" stroke-dasharray="7 6" stroke-linecap="round"/><circle cx="62" cy="112" r="6" fill="#4C8BFF" stroke="#fff" stroke-width="2"/><path d="M150 40c0-9-14-9-14 0 0 7 7 14 7 14s7-7 7-14z" transform="translate(7 -14)" fill="#FF5A3C"/></svg><div class="mi"><b>Glow Med Spa</b><span>4 min walk · Open until 7</span></div><div class="mb">Directions</div></div>
       </div>
@@ -578,7 +578,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   (function(){
     const end=()=>{cin.innerHTML='<span class="ph">Message</span><span class="snd"></span>';iq.classList.add('on');ia.parentElement.classList.add('on');ia.innerHTML=ANS;imc.classList.add('on');hint.style.opacity=1};
     if(RM){end();return}
-    const t0=performance.now()+500,tq=Q.length*55,tw=A.length*60;let stage=0;
+    const t0=performance.now()+500,tq=0,tw=A.length*60;let stage=0;
     (function step(now){const e=now-t0;
       if(e<0){requestAnimationFrame(step);return}
       if(e<tq){const n=Math.ceil(e/55);cin.innerHTML=Q.slice(0,n)+'<span class="caret"></span><span class="snd"></span>'}

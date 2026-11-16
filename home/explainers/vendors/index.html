@@ -287,7 +287,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
   (function(){
     const end=()=>{cin.innerHTML='<span class="ph">Message</span><span class="snd"></span>';iq.classList.add('on');ia.parentElement.classList.add('on');ia.innerHTML=ANS;imc.classList.add('on');hint.style.opacity=1};
     if(RM){end();return}
-    const t0=performance.now()+500,tq=Q.length*55,tw=A.length*60;let stage=0;
+    const t0=performance.now()+500,tq=0,tw=A.length*60;let stage=0;
     (function step(now){const e=now-t0;
       if(e<0){requestAnimationFrame(step);return}
       if(e<tq){const n=Math.ceil(e/55);cin.innerHTML=Q.slice(0,n)+'<span class="caret"></span><span class="snd"></span>'}
