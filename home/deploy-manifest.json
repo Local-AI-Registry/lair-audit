@@ -179,6 +179,30 @@
   "sitemap": "service",
   "status": "index"
  },
+ "case-studies/beverly-hills-rhinoplasty-center": {
+  "canonical": "https://localairegistry.com/case-studies/beverly-hills-rhinoplasty-center/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "case-studies/define-clinic": {
+  "canonical": "https://localairegistry.com/case-studies/define-clinic/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "case-studies/injection-artistry": {
+  "canonical": "https://localairegistry.com/case-studies/injection-artistry/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
+ "case-studies/luxurgery": {
+  "canonical": "https://localairegistry.com/case-studies/luxurgery/",
+  "http": 200,
+  "sitemap": "service",
+  "status": "index"
+ },
  "changelog": {
   "canonical": "https://localairegistry.com/changelog/",
   "http": 200,
