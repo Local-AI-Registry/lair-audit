@@ -1,6 +1,6 @@
 const {chromium}=require('playwright');(async()=>{const b=await chromium.launch({args:['--use-gl=swiftshader']});const errs=[];const D=__dirname+'/shots/';
 const p=await b.newPage({viewport:{width:1440,height:900}});p.on('pageerror',e=>errs.push(e.message));
-await p.goto('http://localhost:9314/ai-audit/?b=spiritleaf-sherwood-park#proposal');await p.waitForTimeout(2000);
+await p.goto('http://localhost:9314/ai-audit/classic.html?b=spiritleaf-sherwood-park#proposal');await p.waitForTimeout(2000);
 await p.click('#pct');await p.fill('#ccp','kody25');await p.click('#pca');await p.waitForTimeout(1300);
 console.log(await p.innerText('#pcm'),'|',await p.innerText('#cd'));
 await p.screenshot({path:D+'pr0.png'});

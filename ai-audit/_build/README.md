@@ -4,11 +4,12 @@
 One web page that runs our AI visibility audit for any business we've scanned.
 Live: https://audit.localairegistry.com/ai-audit/  (type a business name in the search box)
 
-Businesses in it today: Quiktox (demo), Spiritleaf Sherwood Park, Spiritleaf Salisbury,
-Key Cannabis Belton, Key Cannabis KC North, Bridge City Collective, EsthetixMD,
-Hello Smooth Med Spa, Illumé Med Spa.
+Businesses in it today: Spiritleaf Sherwood Park, Spiritleaf Salisbury, Key Cannabis Belton,
+Key Cannabis KC North, Bridge City Collective, EsthetixMD, Hello Smooth Med Spa, Illumé Med Spa.
 
-Screens: AI score, What it's worth, Audit (11 checks), Our system (3D record), Why us, Proposal.
+Built for sales calls (screen share). Screens: Scan, Your score (score, vs. competitors, what it's worth),
+Patients ask AI, the 11 checks (Our system, then Your results), Why us, Plan. Arrow keys move through it.
+The older dark version (with the Quiktox demo) is at https://audit.localairegistry.com/ai-audit/classic.html
 
 ## Getting set up (one time, about 10 minutes)
 1. Make sure Steve has added you to the GitHub repo `Local-AI-Registry/lair-audit`.

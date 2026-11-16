@@ -1,35 +1,37 @@
 # ai-audit: the one-link AI visibility audit
 
 Live at https://audit.localairegistry.com/ai-audit/ (search box loads any business in it).
-`index.html`, `map-bg.html` and `three.min.js` here are BUILT files. Never hand-edit them.
+This is the sales-call version: a light, 16:9 screen-share flow for walking a prospect through the audit on a call:
+Find → Scan → Your score (3 steps) → Patients ask AI (2 steps) → 11 checks (Our system, then Your results) → Why us → Plan.
+← → keys step through everything; 1 to 6 jump to a chapter; `?b=<slug>#<chapter>` links straight in.
+The older dark version stays at https://audit.localairegistry.com/ai-audit/classic.html. `v2/index.html` only forwards to the main page.
+
+`index.html`, `classic.html`, `map-bg.html` and `three.min.js` here are BUILT files. Never hand-edit them.
 Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 
 ## Source (`_build/`)
-- `hud.tpl.html`: the page template (all screens, styles, scripts).
-- `hudbuild3.py`: merges the template with every business's data into `../index.html`.
-- `build.sh`: the one command to rebuild. It lists every business included.
+- `sales.tpl.html` + `sales.py`: the main page. `sales.py` reuses `make()` from `hudbuild3.py`, so every number matches.
+- `hud.tpl.html`: the classic page template (all screens, styles, scripts).
+- `hudbuild3.py`: merges the classic template with every business's data into `../classic.html`.
+- `build.sh`: the one command to rebuild both. It lists every business included.
 - `biz/<slug>.json`: one business's scan (score, AI answers, 11 checks, competitors, traffic, volumes).
   Optional sidecars: `dir_<slug>.json` (directory check), `dirc_<slug>.json` (competitors' directories),
   `packs_<slug>.json` (Google map pack), `vol2_`/`kwlocal_`/`kwfull_` (keyword volumes).
 - `biz/SPEC.md`, `DIR_SPEC.md`, `DIRC_SPEC.md`, `KW_SPEC.md`: how a new business scan is done. Follow them exactly.
   Their output paths are relative to the repo root.
-- `mapbg.html` + `darkmap.py` + `darkmap.css`: the 3D map, converted to dark by build.sh.
+- `mapbg.html` + `darkmap.py` + `darkmap.css`: the classic page's 3D map, converted to dark by build.sh.
 - `quiktox-audit.html`, `qx6.py`, `extract.json`, `art.json`, `vouch.json`, `hud_ev.json`, `hud_fix.json`, `logos.json`: shared content (Quiktox demo data, news, references, illustrations, logos).
-- `tests/`: Playwright checks. Run from `_build`: `tests/serve.sh node tests/audt.js` (needs playwright).
+- `tests/`: Playwright checks, run from `_build`. Main page: `tests/serve.sh node tests/v2.js <slug> [<slug> ...]`
+  (every chapter, errors and overflow). Classic page: `tests/serve.sh node tests/audt.js` and the others.
 
-## Sales-call version (`v2/`, in review)
-- Live at https://audit.localairegistry.com/ai-audit/v2/ once merged. A light, 16:9 screen-share version for walking a prospect
-  through the audit on a call: Find → Scan → Your score (3 steps) → Patients ask AI (2 steps) → 11 checks (Our system, then
-  Your results) → Why us → Plan. ← → keys step through everything; 1 to 6 jump to a chapter; `?b=<slug>#<chapter>` links straight in.
-- `v2/index.html` is BUILT by `_build/sales.py` from `_build/sales.tpl.html` (build.sh runs it). Never hand-edit it.
-- `sales.py` reuses `make()` from `hudbuild3.py`, so every number matches the current tool. Same businesses, same rules.
-- Test: from `_build`, `tests/serve.sh node tests/v2.js <slug> [<slug> ...]` (checks every chapter for errors and overflow).
+## Main page notes
+- Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
 - Why us: only the plastic surgery (New York) chart has real monthly data; the other result cards are labeled
   "Illustrative" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.
-2. Add `biz/<slug>.json` to both lists in `build.sh`, run it, run the tests, check it at `?b=<slug>` (and `v2/?b=<slug>`).
+2. Add `biz/<slug>.json` to both lists in `build.sh`, run it, run the tests, check it at `?b=<slug>` (and `classic.html?b=<slug>`).
 
 ## Rules from Steve (always)
 - Audit findings follow ONE template, 11 times: status, issue sentence, a visual of only this business's own data,

@@ -1,5 +1,5 @@
-"""Build the sales-call version of the audit (ai-audit/v2/index.html).
-usage: python3 sales.py ../v2/index.html biz/<slug>.json [biz/<slug>.json ...]
+"""Build the main ai-audit page (ai-audit/index.html), the sales-call version of the audit.
+usage: python3 sales.py ../index.html biz/<slug>.json [biz/<slug>.json ...]
 Reuses make() from hudbuild3.py so the numbers match the current tool exactly."""
 import json, os, re, sys
 D = os.path.dirname(os.path.abspath(__file__)) + '/'
