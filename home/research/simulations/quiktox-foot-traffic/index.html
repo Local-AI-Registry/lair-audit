@@ -16,7 +16,7 @@
   --paper:#EEDDB8; --ink:#4A2F1B; --blue:#1F4FE0; --chrome:#F6EBD0;
   --f-map:"IM Fell English",Georgia,"Times New Roman",serif;
   --f-sc:"IM Fell English SC",Georgia,serif;
-  --f-ui:"Hanken Grotesk","Helvetica Neue",Arial,sans-serif;
+  --f-ui:"Hanken Grotesk","Hanken Grotesk Fallback","Helvetica Neue",Arial,sans-serif;
   color-scheme:light;
 }
 html,body{height:100%;margin:0}
@@ -392,7 +392,7 @@ body{background:var(--paper);color:var(--ink);font-family:var(--f-ui);overflow:h
     var taken=[], pinBox=null;
     function hitsT(b){for(var i=0;i<taken.length;i++){var t=taken[i]; if(b[0]<t[2]&&b[2]>t[0]&&b[1]<t[3]&&b[3]>t[1])return true;}return false;}
     function drawPings(){
-      ctx.font='600 11.5px "Hanken Grotesk", Arial, sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+      ctx.font='600 11.5px "Hanken Grotesk","Hanken Grotesk Fallback", Arial, sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
       pings.forEach(function(p){
         if(p.dead)return;
         var age=now-p.born, life=p.minor?1.8:3.2; if(age>life)return; var P=map.project(p.c), k=age/life;

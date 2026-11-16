@@ -2,8 +2,8 @@
 @font-face{font-family:'Hanken Grotesk';src:url(../../research/assets/fonts/hanken-grotesk.woff2) format('woff2');font-weight:400 700;font-display:swap}
 @font-face{font-family:'Bricolage Grotesque';src:url(../../research/assets/fonts/bricolage-grotesque.woff2) format('woff2');font-weight:600 800;font-display:swap}
 @font-face{font-family:'Cormorant';src:url(../../research/assets/fonts/cormorant.woff2) format('woff2');font-weight:500 600;font-display:swap}
-:root{--paper:#F4F1EA;--card:#FBF9F4;--deep:#ECE6D6;--ink:#0B1A2E;--muted:#4A5A72;--blue:#1F4FE0;--line:#D8D2C3;--tint:#E6EBFA;--f-head:"Bricolage Grotesque",system-ui,sans-serif;--f-display:"Cormorant",Georgia,serif}
-*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+:root{--paper:#F4F1EA;--card:#FBF9F4;--deep:#ECE6D6;--ink:#0B1A2E;--muted:#4A5A72;--blue:#1F4FE0;--line:#D8D2C3;--tint:#E6EBFA;--f-head:"Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;--f-display:"Cormorant","Cormorant Fallback",Georgia,serif}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif}
 a{color:var(--blue)}p,li{text-wrap:pretty}h1,h2,h3{margin:0;text-wrap:balance}
 .wrap{max-width:1040px;margin:0 auto;padding:0 16px}
 header.top{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--line)}

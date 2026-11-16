@@ -5,8 +5,8 @@
   --blue:#1F4FE0; --blue-tint:#E7EDFC; --blue-2:#B6C7F7; --coral:#FF5A3C;
   --red:#D7261B; --red-tint:#FDECEA; --ok:#0E8A5F; --ok-tint:#E2F4EC; --amber:#B5822A;
   --rule:rgba(11,26,46,.12); --rule-strong:rgba(11,26,46,.26); --code-bg:#0B1A2E; --code-fg:#E7EDFC;
-  --f-display:"Cormorant",Georgia,serif; --f-body:"Hanken Grotesk",system-ui,-apple-system,sans-serif;
-  --f-ui:"Bricolage Grotesque","Hanken Grotesk",system-ui,sans-serif; --f-mono:ui-monospace,Menlo,Consolas,monospace;
+  --f-display:"Cormorant","Cormorant Fallback",Georgia,serif; --f-body:"Hanken Grotesk","Hanken Grotesk Fallback",system-ui,-apple-system,sans-serif;
+  --f-ui:"Bricolage Grotesque","Bricolage Grotesque Fallback","Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif; --f-mono:ui-monospace,Menlo,Consolas,monospace;
 }
 
 
