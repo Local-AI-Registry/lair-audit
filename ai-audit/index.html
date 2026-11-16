@@ -798,7 +798,7 @@ const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
 let SLUG=null,D=null;
-/* live scans run on lair-api, free within its daily limits; a team key (from ?team=<key> once, kept in this browser only) skips them */
+/* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only */
 const API='https://lair-api-hps5or6egq-uw.a.run.app';
 let TEAM='';try{if(QP.get('team')){localStorage.setItem('lair-team',QP.get('team'));QP.delete('team');history.replaceState(null,'',location.pathname+(QP.toString()?'?'+QP:'')+location.hash)}TEAM=localStorage.getItem('lair-team')||''}catch(e){}
 const STAGE=$('#stage');
@@ -860,8 +860,8 @@ function vFind(){
  const pick=r=>{if(r.typed){location.href='/a/?q='+encodeURIComponent(r.name);return}if(r.id){location.href='/a/?id='+encodeURIComponent(r.id);return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
  let lt=null,lseq=0;
  q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
-  clearTimeout(lt);if(v.length<3)return;const my=++lseq;
-  lt=setTimeout(async()=>{try{const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(v),{headers:TEAM?{'X-Team-Key':TEAM}:{}});if(!r.ok)return;const j=await r.json();if(my!==lseq)return;
+  clearTimeout(lt);if(!TEAM||v.length<3)return;const my=++lseq;
+  lt=setTimeout(async()=>{try{const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(v),{headers:{'X-Team-Key':TEAM}});if(!r.ok)return;const j=await r.json();if(my!==lseq)return;
    const live=(j.results||[]).filter(x=>x.id).slice(0,5).map(x=>({name:x.name,sub:x.sub||'',id:x.id}));items=loc.concat(live,[{name:v,typed:1}]);act=-1;draw()}catch(e){}},220)});
  q.addEventListener('keydown',e=>{if(!items.length)return;if(e.key==='ArrowDown'){act=Math.min(items.length-1,act+1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){act=Math.max(0,act-1);draw();e.preventDefault()}else if(e.key==='Enter'){pick(items[Math.max(0,act)])}});
  sug.addEventListener('click',e=>{const li=e.target.closest('li');if(li)pick(items[+li.dataset.i])});

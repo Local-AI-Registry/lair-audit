@@ -41,8 +41,7 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Live scans (lair-api)
 - API: https://lair-api-hps5or6egq-uw.a.run.app (`/places/autocomplete`, `/audit` streams NDJSON, `/audits/<id>` returns a saved scan).
   Its `d` result has the same shape as one `SETS` entry, so a live scan loads straight into this page.
-- Anyone can scan and use live search without a key, within lair-api's free daily limits (3 per visitor, 25 in total,
-  set on the API). A team key (`X-Team-Key` header) skips them: open any page once with `?team=<key>`; it is stored in that
+- Scans and live search need a team key (`X-Team-Key` header). Open any page once with `?team=<key>`: it is stored in that
   browser's localStorage as `lair-team` and removed from the URL. Never commit the key.
 - Flow: search result (or the homepage) → `/a/?id=<place id>` (or `?q=<name>`) runs the scan with a progress list, about 4 minutes
   → `/ai-audit/?audit=<id>#scan`. Saved audit links need no key. The API only allows https://audit.localairegistry.com (CORS).
