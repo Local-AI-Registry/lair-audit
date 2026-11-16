@@ -8,3 +8,9 @@ python3 hudbuild3.py ../index.html quiktox \
   biz/elevate-cannabis-belton.json biz/key-cannabis-kc-north.json \
   biz/bridge-city-east-dubuque.json biz/esthetixmd-bend.json \
   biz/hello-smooth.json biz/illume-med-spa.json
+# Sales-call version (ai-audit/v2/): same businesses, built from sales.tpl.html. Test: tests/serve.sh node tests/v2.js <slugs>
+python3 sales.py ../v2/index.html \
+  biz/spiritleaf-sherwood-park.json biz/spiritleaf-salisbury.json \
+  biz/elevate-cannabis-belton.json biz/key-cannabis-kc-north.json \
+  biz/bridge-city-east-dubuque.json biz/esthetixmd-bend.json \
+  biz/hello-smooth.json biz/illume-med-spa.json
