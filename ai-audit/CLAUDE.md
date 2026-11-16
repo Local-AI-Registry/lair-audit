@@ -27,6 +27,8 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   (every chapter, errors and overflow). Classic page: `tests/serve.sh node tests/audt.js` and the others.
 
 ## Main page notes
+- Plan has 3 steps: the overview, the full agency comparison (`extract.json` "cmp") and the month-by-month plan
+  (`extract.json` "plan"). In the 11 checks, "What we found" shows each check's chart and findings table (`found` in biz JSON).
 - Plan: Get started opens a card form with a promo code (KODY25 = 25% off until Dec 1, 2026, set in `PROMOS` in
   `sales.tpl.html`). Card checkout is not connected to a payment processor yet: card details never leave the page,
   and a valid card shows "nothing was charged, we'll reach out".

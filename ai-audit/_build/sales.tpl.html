@@ -712,6 +712,74 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .newp s{font-size:.45em;color:var(--blue3);font-weight:700;margin-right:.2em}
 @media (max-width:760px){.ckx{place-items:end center;padding:0}.ckx-card{width:100%;border-radius:22px 22px 0 0;max-height:92vh;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}.fl3{grid-template-columns:1fr 1fr 1fr}.new .cdn{font-size:12px}}
 .btn2{border:0;cursor:pointer;font-family:var(--fb)}
+
+/* ---------- plan detail steps ---------- */
+.tblw{flex:1;min-height:0;overflow:auto;scrollbar-width:thin}
+.cmp2,.pl12{width:100%;border-collapse:separate;border-spacing:0;font-size:calc(1.02*var(--u));font-variant-numeric:tabular-nums}
+.cmp2 th{position:sticky;top:0;background:var(--card);z-index:1;text-align:center;padding:0 calc(.6*var(--u)) calc(.7*var(--u));vertical-align:bottom;font-weight:600;color:var(--muted)}
+.cmp2 th span{display:block;font:700 calc(.92*var(--u))/1.2 var(--fb)}
+.cmp2 th b{display:block;font:800 calc(1.25*var(--u)) var(--fu);color:var(--ink);margin-top:calc(.2*var(--u))}
+.cmp2 th.us{background:var(--blue-t);border-radius:calc(.8*var(--u)) calc(.8*var(--u)) 0 0;padding-top:calc(.6*var(--u))}
+.cmp2 th.us b{color:var(--blue)}
+.cmp2 td{padding:calc(.42*var(--u)) calc(.6*var(--u));border-bottom:1px solid var(--rule);text-align:center;color:var(--body)}
+.cmp2 td:first-child{text-align:left;color:var(--ink)}
+.cmp2 td.us{background:var(--blue-t)}
+.cmp2 tr.sec td{background:var(--bg);font:700 calc(.9*var(--u)) var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding-top:calc(.6*var(--u))}
+.cmp2 tr.tot td{font-weight:800;color:var(--ink);border-bottom:0}
+.cmp2 tr.tot td.us{color:var(--blue);border-radius:0 0 calc(.8*var(--u)) calc(.8*var(--u))}
+.cmp2 td.s{color:var(--amber);font-weight:700}
+.cmp2 .ck{font-style:normal;display:inline-grid;place-items:center;width:calc(1.5*var(--u));height:calc(1.5*var(--u));border-radius:50%;background:var(--ok-t);color:var(--ok);font-weight:800;font-size:calc(.85*var(--u))}
+.cmp2 td.us .ck{background:var(--ok);color:#fff}
+.cmp2 .dash{font-style:normal;color:var(--grey)}
+.pl12 th{position:sticky;top:0;background:var(--card);z-index:1;font:700 calc(.9*var(--u)) var(--fb);color:var(--muted);padding:0 0 calc(.5*var(--u));text-align:center}
+.pl12 th.d90{color:var(--ok)}
+.pl12 td{padding:calc(.3*var(--u)) calc(.15*var(--u));border-bottom:1px solid var(--rule)}
+.pl12 td:first-child{white-space:nowrap;padding-right:calc(1*var(--u))}
+.pl12 td:first-child span{font-weight:600;color:var(--ink)}
+.pl12 td:first-child small{color:var(--muted);margin-left:calc(.5*var(--u));font-size:calc(.92*var(--u))}
+.pl12 i{display:block;height:calc(.9*var(--u));border-radius:calc(.3*var(--u));background:var(--bg)}
+.pl12 i.on{background:var(--blue2)}
+.pl12 i.st{background:var(--blue)}
+.pside{padding:calc(1.8*var(--u));gap:calc(1*var(--u))}
+.pside .newp{font-size:calc(4.2*var(--u))}
+.t4.one{grid-template-columns:1fr;padding:calc(1*var(--u)) 0;border-top:1px solid rgba(255,255,255,.2);gap:calc(.8*var(--u))}
+.g90.dk{margin-left:0;align-self:flex-start;background:rgba(255,255,255,.14);color:#fff}
+.g90.dk i{background:#7EE2B0}
+/* ---------- 11 checks: what we found ---------- */
+.hfv{display:flex;background:var(--bg);border-radius:99px;padding:calc(.3*var(--u));gap:calc(.2*var(--u));align-self:flex-start}
+.hfv button{all:unset;cursor:pointer;padding:calc(.45*var(--u)) calc(1*var(--u));border-radius:99px;font:700 calc(.98*var(--u)) var(--fb);color:var(--muted)}
+.hfv button.on{background:var(--card);color:var(--ink);box-shadow:var(--shadow)}
+.hfv button:focus-visible{outline:2px solid var(--blue)}
+.fwrap{flex:1;min-height:0;overflow:auto;display:flex;flex-direction:column;gap:calc(1*var(--u));scrollbar-width:thin}
+.fch{display:flex;align-items:center;gap:calc(1.4*var(--u));background:var(--bg);border-radius:calc(1*var(--u));padding:calc(1*var(--u)) calc(1.3*var(--u))}
+.fch svg{width:calc(7*var(--u));height:calc(7*var(--u));flex:none}
+.fch div{display:flex;flex-direction:column;gap:calc(.3*var(--u));font-size:calc(1.05*var(--u))}
+.fch b{font:700 calc(1.15*var(--u)) var(--fu)}
+.fch span{display:flex;align-items:center;gap:calc(.5*var(--u));color:var(--body)}
+.fch i{width:calc(.9*var(--u));height:calc(.9*var(--u));border-radius:50%}
+.fbar{display:flex;flex-direction:column;gap:calc(.45*var(--u));background:var(--bg);border-radius:calc(1*var(--u));padding:calc(1*var(--u)) calc(1.3*var(--u))}
+.fbar b{font:700 calc(1.1*var(--u)) var(--fu)}
+.fbar div{display:grid;grid-template-columns:calc(11*var(--u)) 1fr calc(4*var(--u));gap:calc(.8*var(--u));align-items:center;font-size:calc(1*var(--u))}
+.fbar u{display:block;height:calc(.9*var(--u));background:#fff;border-radius:99px;overflow:hidden;text-decoration:none}
+.fbar u i{display:block;height:100%;border-radius:99px}
+.fbar em{font-style:normal;font-weight:700;text-align:right}
+.ftbl{display:flex;flex-direction:column}
+.ftbl .fh,.ftbl .fr{display:grid;grid-template-columns:34% 1fr calc(1.2*var(--u));gap:calc(1*var(--u));align-items:start;padding:calc(.6*var(--u)) 0;border-bottom:1px solid var(--rule);font-size:calc(1.05*var(--u));line-height:1.35}
+.ftbl .fh{font:700 calc(.9*var(--u)) var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);padding-top:0}
+.ftbl .fr span:first-child{font-weight:600;color:var(--ink)}
+.ftbl .fr span{color:var(--body);overflow-wrap:anywhere}
+.ftbl .fr i{width:calc(1*var(--u));height:calc(1*var(--u));border-radius:50%;margin-top:calc(.25*var(--u))}
+@media (max-width:760px){
+ .cmp2,.pl12{font-size:12.5px}.cmp2 th span{font-size:11px}.cmp2 th b{font-size:14px}.cmp2 .ck{width:20px;height:20px;font-size:11px}
+ .tblw{max-height:none;overflow-x:auto}
+ .pl12 td:first-child{white-space:normal;min-width:150px}.pl12 i{height:10px;min-width:12px}.pl12 th{font-size:10px}
+ .pside .newp{font-size:36px}.t4.one li{font-size:14px}
+ .hfv button{font-size:13px;padding:7px 12px}
+ .fwrap{overflow:visible}
+ .fch svg{width:72px;height:72px}.fch div,.fch b{font-size:13px}
+ .fbar div{grid-template-columns:34% 1fr 3.4em;font-size:12.5px}.fbar u{height:9px}.fbar b{font-size:14px}
+ .ftbl .fh,.ftbl .fr{font-size:13px;grid-template-columns:36% 1fr 12px}.ftbl .fh{font-size:11px}.ftbl .fr i{width:10px;height:10px}
+}
 </style>
 </head>
 <body>
@@ -734,7 +802,7 @@ const STAGE=$('#stage');
 
 /* ---------- chapters and routing ---------- */
 const CH=[['find','Find'],['scan','Scan'],['score','Your score'],['ask','Patients ask AI'],['checks','11 checks'],['why','Why us'],['plan','Plan']];
-const STEPS={score:3,ask:2,checks:2};
+const STEPS={score:3,ask:2,checks:2,plan:3};
 let cur='find',step=0;
 function go(id,s){if(!D&&id!=='find')id='find';const moved=id!==cur;cur=id;step=s||0;if(moved&&innerWidth<=760)scrollTo(0,0);if(location.hash.slice(1)!==id)history.replaceState(null,'',location.search+'#'+id);render()}
 function next(){const n=STEPS[cur]||1;if(step<n-1){step++;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i<CH.length-1)go(CH[i+1][0])}
@@ -957,12 +1025,14 @@ function hubCard(i,mode){const c=CK[i],st=ST[stName(c.st)],nm=SHORTC[c.c]||c.c,n
  if(m){const v=m.v||[];const nums=v.filter(x=>x!=null&&typeof x==='number');const mx=Math.max(...nums,m.t==='bool'?1:0)||1;
   hero='<div class="hero"><div class="big" style="color:'+(st[0]==='Passed'?'var(--ok)':st[0]==='Failed'?'var(--red)':'var(--amber)')+'">'+fmtM(m,v[0])+'</div><div class="cap">'+X(m.m)+'</div></div>';
   bars='<div class="lbl" style="margin-top:calc(.4*var(--u))">You vs. your 3 closest competitors'+(m.low?' · lower is better':'')+'</div><div class="bars">'+v.map((x,k)=>x==null?'':'<div class="'+(k?'':'me s-'+stName(c.st))+'"><span>'+X(WHO[k]||'')+'</span><u><i style="width:'+(m.t==='bool'?(x?100:4):Math.max(3,x/mx*100))+'%"></i></u><b>'+fmtM(m,x)+'</b></div>').join('')+'</div>'}
- return '<div class="card dt"><div class="rowx"><span class="kick">Check '+String(i+1).padStart(2,'0')+'</span><span class="pill '+st[1]+'">'+st[0]+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.3*var(--u))">'+X(nm)+'</div>'+hero+'<div class="say">'+X(c.i)+'</div>'+bars+'</div>'}
+ const F=(D.found||{})[c.c],nf=F&&F.r?F.r.length:0,tg=nf?'<div class="hfv" role="tablist"><button type="button" role="tab" data-hf="0" class="'+(hubFound?'':'on')+'" aria-selected="'+!hubFound+'">Summary</button><button type="button" role="tab" data-hf="1" class="'+(hubFound?'on':'')+'" aria-selected="'+!!hubFound+'">What we found · '+nf+'</button></div>':'';
+ return '<div class="card dt"><div class="rowx"><span class="kick">Check '+String(i+1).padStart(2,'0')+'</span><span class="pill '+st[1]+'">'+st[0]+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.3*var(--u))">'+X(nm)+'</div>'+tg+(hubFound&&nf?'<div class="fwrap">'+foundHTML(c)+'</div>':hero+'<div class="say">'+X(c.i)+'</div>'+bars)+'</div>'}
 function vChecks(){const mode=step===0?'svc':'status';const cnt={p:0,w:0,f:0};CK.forEach(c=>cnt[stName(c.st)]++);
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:calc(2*var(--u))"><div><div class="kick">'+(mode==='status'?'How we analyze your business':'What makes us different')+'</div><div class="ttl">'+(mode==='status'?'The 11 things AI checks, <em>and how you did</em>':'One record. <em>Powering all 11.</em>')+'</div></div>'+
  '<div class="col" style="align-items:flex-end;gap:calc(.6*var(--u))"><div class="tabs" role="tablist"><button type="button" role="tab" class="'+(mode==='svc'?'on':'')+'" data-step-set="0" aria-selected="'+(mode==='svc')+'">1 · Our system</button><button type="button" role="tab" class="'+(mode==='status'?'on':'')+'" data-step-set="1" aria-selected="'+(mode==='status')+'">2 · Your results</button></div>'+(mode==='status'?'<div class="chips"><span class="pill p-p">'+cnt.p+' passed</span><span class="pill p-w">'+cnt.w+' need work</span><span class="pill p-f">'+cnt.f+' failed</span></div>':'<div class="hint">Next: see how you did on each →</div>')+'</div></div>'+
  '<div class="hub"><div class="card" style="display:grid;place-items:center;padding:calc(.4*var(--u))">'+wheel(mode,hubSel)+'</div>'+hubCard(hubSel,mode)+'</div></div></div>'}
-STAGE.addEventListener('click',e=>{if(cur!=='checks')return;const n=e.target.closest('.nd'),t=e.target.closest('[data-step-set]'),b=e.target.closest('.tbtn');
+STAGE.addEventListener('click',e=>{if(cur!=='checks')return;const n=e.target.closest('.nd'),t=e.target.closest('[data-step-set]'),b=e.target.closest('.tbtn'),hf=e.target.closest('[data-hf]');
+ if(hf){hubFound=+hf.dataset.hf;render();return}
  if(n){hubSel=+n.dataset.i;render();const f=STAGE.querySelector('.nd[data-i="'+hubSel+'"]');f&&f.focus()}else if(t){step=+t.dataset.stepSet;render()}else if(b){hubSel=(hubSel+ +b.dataset.d+11)%11;render()}});
 STAGE.addEventListener('keydown',e=>{const n=e.target.closest('.nd');if(n&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();hubSel=+n.dataset.i;render();STAGE.querySelector('.nd[data-i="'+hubSel+'"]').focus()}});
 
@@ -981,7 +1051,7 @@ function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();c
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const t=STAGE.querySelector('.track');t.scrollBy({left:+b.dataset.sc*t.clientWidth*.66,behavior:RM?'auto':'smooth'})});
 
 /* ---------- PLAN ---------- */
-function vPlan(){const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
+function vPlan(){if(step===1)return vPlanCompare();if(step===2)return vPlan12();const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
  const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a month.</em></div><div class="vs">'+
  '<div class="card pad col old"><span class="lbl">The old way: 9 vendors to hire and manage</span><div class="oldp"><s>$14,250</s><small> /mo</small></div><div class="vl">'+V.map(r=>'<div><span>'+r[0]+'</span><b>$'+fmt(r[1])+'</b></div>').join('')+'</div><div style="margin-top:auto;font:600 calc(1.15*var(--u))/1.4 var(--fb);color:var(--muted)">9 contracts, 9 teams, each working on its own piece of your business.</div></div>'+
@@ -989,6 +1059,30 @@ function vPlan(){const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2
  '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+
  '<div class="rowx" style="margin-top:auto;justify-content:space-between"><button type="button" class="btn2" data-ckx="open">Get started →</button><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
  '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span><span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span class="d">'+p[2]+'</span></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
+/* compact plan card used beside the detail tables */
+function planSide(extra){return '<div class="card col new pside"><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl" style="color:#fff;font:700 calc(1.3*var(--u)) var(--fu)">One team. One record. All 11 checks.</div><div class="cdn" hidden></div>'+
+ '<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
+const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
+function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
+ const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
+  body.map(r=>r.length===1?'<tr class="sec"><td colspan="5">'+X(r[0].toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'</td></tr>':'<tr'+(/^Things included/.test(r[0])?' class="tot"':'')+'>'+r.map((c,i)=>i?'<td class="'+cmpCls(c)+(i===4?' us':'')+'">'+(c==='✓'?'<i class="ck">✓</i>':c==='–'?'<i class="dash">–</i>':X(c))+'</td>':'<td>'+X(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">What you get, <em>side by side with SEO agencies</em></div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u))">'+t+'</div>'+planSide()+'</div></div></div>'+ckHTML()}
+function vPlan12(){const R=PLAN12||[],MO=['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
+ const startOf=k=>k<6?0:k<9?2:k<12?3:k<15?5:k<18?7:9;
+ const t='<div class="tblw"><table class="pl12"><thead><tr><th></th>'+MO.map((m,i)=>'<th'+(i===2?' class="d90"':'')+'>'+m+'</th>').join('')+'</tr></thead><tbody>'+
+  R.map((r,k)=>{const s0=startOf(k);return '<tr><td><span>'+X(r[0])+'</span><small>'+X(r[1])+'</small></td>'+MO.map((_,m)=>'<td><i class="'+(m>=s0?'on':'')+(m===s0?' st':'')+'"></i></td>').join('')+'</tr>'}).join('')+'</tbody></table></div>';
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Your first 12 months, <em>month by month</em></div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u));gap:calc(.6*var(--u))"><div class="hint">We do more as time goes on. Every few months a new phase adds more work. It starts the month after you sign, and every item waits for your approval.</div>'+t+'</div>'+
+  planSide('<div class="g90 dk"><i></i>In AI answers by day 90, guaranteed</div>')+'</div></div></div>'+ckHTML()}
+
+/* ---------- 11 checks: "What we found" detail for each check ---------- */
+let hubFound=0;
+const FST={ok:['Passed','var(--ok)'],warn:['Needs work','var(--warn)'],bad:['Failed','var(--red)']};
+function foundChart(ch){if(!ch)return '';if(ch.t==='pie'&&ch.a+ch.b>0){const tot=ch.a+ch.b,p=ch.a/tot,R=34,C=2*Math.PI*R;
+  return '<div class="fch"><svg viewBox="0 0 90 90" role="img" aria-label="'+X(ch.cap)+'"><circle cx="45" cy="45" r="'+R+'" fill="none" stroke="var(--red-t)" stroke-width="12"/><circle cx="45" cy="45" r="'+R+'" fill="none" stroke="var(--ok)" stroke-width="12" stroke-dasharray="'+(C*p)+' '+C+'" transform="rotate(-90 45 45)"/><text x="45" y="50" text-anchor="middle" font-size="16" font-weight="800" fill="#0B1A2E" font-family="Bricolage Grotesque,sans-serif">'+Math.round(p*100)+'%</text></svg><div><b>'+X(ch.cap.charAt(0)+ch.cap.slice(1).toLowerCase())+'</b><span><i style="background:var(--ok)"></i>'+X(ch.la.charAt(0)+ch.la.slice(1).toLowerCase())+' · '+ch.a+'</span><span><i style="background:var(--red)"></i>'+X(ch.lb.charAt(0)+ch.lb.slice(1).toLowerCase())+' · '+ch.b+'</span></div></div>'}
+ if(ch.t==='bar'&&ch.d&&ch.d.length){const mx=Math.max(...ch.d.map(x=>+x[1]||0),1);return '<div class="fbar"><b>'+X(ch.cap.charAt(0)+ch.cap.slice(1).toLowerCase())+'</b>'+ch.d.map((x,i)=>'<div><span>'+X(String(x[0]).charAt(0)+String(x[0]).slice(1).toLowerCase())+'</span><u><i style="width:'+Math.max(2,(+x[1]||0)/mx*100)+'%;background:'+(i?'var(--blue3)':'var(--blue)')+'"></i></u><em>'+fmt1(+x[1])+(ch.u||'')+'</em></div>').join('')+'</div>'}
+ return ''}
+function foundHTML(c){const F=(D.found||{})[c.c];if(!F||!F.r||!F.r.length)return '<div class="hint">No detail rows for this check.</div>';
+ return foundChart(F.ch)+'<div class="ftbl"><div class="fh"><span>'+X((F.h&&F.h[0])||'Where')+'</span><span>'+X((F.h&&F.h[1])||'What we found')+'</span></div>'+F.r.map(r=>{const s=FST[r[2]]||FST.warn;return '<div class="fr"><span>'+X(r[0])+'</span><span>'+X(r[1])+'</span><i style="background:'+s[1]+'" title="'+s[0]+'"></i></div>'}).join('')+'</div>'}
 
 /* ---------- live map behind home and scan (map-light.html: real streets, roaming people) ---------- */
 const MAPBG=document.getElementById('mapbg');let mapWin=null,mapLive=false,mapFocused=null;

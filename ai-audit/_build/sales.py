@@ -9,7 +9,7 @@ ns = {'__file__': D + 'hudbuild3.py'}
 argv = sys.argv; sys.argv = ['hudbuild3.py', '/dev/null']
 exec(src[:src.index('SETS = {}; AUDS = []')], ns)
 sys.argv = argv
-KEEP = ['biz', 'hit', 'score', 'rd', 'cr', 'vp', 'S', 'months', 'aud2', 'volx', 'packs']
+KEEP = ['biz', 'hit', 'score', 'rd', 'cr', 'vp', 'S', 'months', 'aud2', 'volx', 'packs', 'found']
 SETS = {}
 for s in SRCS:
     J = json.load(open(D + s if not os.path.isabs(s) else s))
@@ -33,8 +33,15 @@ for a in json.load(open(D + 'art.json')):
     m = re.sub(r'<[^>]+>', '', a['m']).strip()
     m = {'IPSNEWS': 'IPS News', 'THE SILICON REVIEW': 'The Silicon Review'}.get(m, m)
     if m not in PRESS: PRESS.append(m)
+# shared proposal content from the classic page: the agency comparison and the 12-month plan
+EX = json.load(open(D + 'extract.json'))
+CMP = EX['cmp']
+L = EX['plan'].split('\n'); i = L.index('NOV') + 1; PLAN12 = []
+for j in range(i, len(L) - 1, 2):
+    if re.match(r'^(Year-in-review|Work streams)', L[j]): break
+    PLAN12.append([L[j], L[j + 1]])
 t = open(D + 'sales.tpl.html').read()
-data = 'const SETS=' + json.dumps(SETS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';'
+data = 'const SETS=' + json.dumps(SETS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';const CMP=' + json.dumps(CMP, ensure_ascii=False) + ';const PLAN12=' + json.dumps(PLAN12) + ';'
 t = t.replace('/*__DATA__*/', data.replace('</', '<\\/'))
 os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
 open(out, 'w').write(t); print('ok', out, len(t), list(SETS))
