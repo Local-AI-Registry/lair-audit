@@ -48,6 +48,9 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   (`liveScan()`, `LSTEP` in `sales.tpl.html`). When it finishes the URL becomes `?audit=<id>#scan` and "Your audit is ready"
   shows. Saved `?audit=` links open the scan already finished (no replay) and need no key. `/a/` only forwards here.
   `?b=<slug>` demo businesses still play the timed scan. The API only allows https://audit.localairegistry.com (CORS).
+- No self-service for the public: scans are run by our team. A visitor without a key who picks a business gets a lead card on
+  the Scan screen (no API calls): "Book my audit call" → Bridgette's Calendly (`BOOK` in `sales.tpl.html`), or text us.
+  The business name is prefilled with `?a1=`, so the event's first question must be the business name.
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.

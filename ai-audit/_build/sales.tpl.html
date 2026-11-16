@@ -782,6 +782,11 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 }
 
 /* ---------- responsive and QA fixes ---------- */
+.fpv{display:flex;flex-direction:column;gap:calc(.2*var(--u));background:rgba(255,255,255,.12);border-radius:calc(1*var(--u));padding:calc(.8*var(--u)) calc(1.1*var(--u));color:#fff}
+.fpv span{font:700 calc(.9*var(--u)) var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--blue3)}
+.fpv b{font:800 calc(2.2*var(--u))/1.1 var(--fu)}.fpv b small{font:600 calc(1*var(--u)) var(--fb);color:var(--blue3)}
+.fpv>small{font-size:calc(.9*var(--u));color:var(--blue3)}
+.fpv.one{flex-direction:row;align-items:baseline;justify-content:space-between;flex-wrap:wrap;padding:calc(.5*var(--u)) calc(1*var(--u))}.fpv.one b{font-size:calc(1.7*var(--u))}
 .ldbox{justify-content:center;align-items:center;text-align:center;gap:18px}
 .ldbox .lg{font:800 20px var(--fu);display:flex;align-items:center;gap:8px;color:var(--ink)}.ldbox .lg svg{width:26px;height:26px}
 .ldbox .sub{max-width:420px;color:var(--muted)}
@@ -809,6 +814,7 @@ a.btn{text-decoration:none}
 @media (min-width:3400px) and (min-height:1900px){.ckx-card{zoom:2.4;max-height:calc((100vh - 48px)/2.4)}}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
  .body>.trackw{flex-wrap:nowrap}
+ .fpv{padding:12px 14px;border-radius:12px}.fpv b{font-size:24px}.fpv span,.fpv>small{font-size:12px}.fpv b small{font-size:13px}
  .also,.sl,.mini3 span{font-size:12.5px}
  .lead .h{font-size:11.5px}
  .pl12 small,.cnote{font-size:12px}
@@ -860,7 +866,11 @@ const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
 let SLUG=null,D=null,LIVE=null;const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
-/* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only */
+/* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only.
+   Only our team scans: a visitor without a key gets the lead card (book a call with Bridgette, or text us). */
+const BOOK='https://calendly.com/bridgette-localairegistry/30min';
+/* Calendly fills a custom question from ?a1= (a1 = the event's first question): the business name goes there */
+const bookUrl=n=>BOOK+(n?'?a1='+encodeURIComponent(n):'');
 const API='https://lair-api-hps5or6egq-uw.a.run.app';
 let TEAM='';try{if(QP.get('team')){localStorage.setItem('lair-team',QP.get('team'));QP.delete('team');history.replaceState(null,'',location.pathname+(QP.toString()?'?'+QP:'')+location.hash)}TEAM=localStorage.getItem('lair-team')||''}catch(e){}
 const STAGE=$('#stage');
@@ -958,7 +968,8 @@ const MOB=()=>matchMedia(MQ).matches;
 function vScan(){let LV=LIVE&&!D?LIVE:null;
  if(LV){ME=LV.short||LV.name||'Your business';RAT=[LV.rt];WHO=[ME];NB=[];CRN=[];B={svc:LV.svc}}
  if(LV&&LV.err){clearInterval(scanTimer);STAGE.innerHTML='<div class="scr"><div class="scan4 ready-in"><div class="map"><div class="pan"></div></div><div class="sp" id="sp"><a class="lg" href="./" data-home>'+LOGO+'Local AI Registry</a><div class="sph"><div class="kick">AI visibility audit</div><div class="spn">'+X(ME)+'</div></div>'+
-  '<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">'+X(LV.err)+'</div><div class="sub">Text us and we\'ll send your audit, usually the same day.</div><a class="btn" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+(LV.name||LV.q||'my business')+(LV.id?' ('+LV.id+')':''))+'">Text us for my audit →</a></div></div></div></div>';return}
+  (LV.lead?'<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">We\'ll build the full audit for '+X(LV.name||LV.q||'your business')+'.</div><div class="sub">Our team checks how Google, ChatGPT, Gemini, Perplexity and Claude answer when customers look for a business like yours, then walks you through what\'s working and what to fix on a short call.</div><a class="btn" style="text-decoration:none" href="'+X(bookUrl(LV.name||LV.q))+'" target="_blank" rel="noopener">Book my audit call →</a><div class="sub">Or <a style="color:var(--blue);font-weight:600;text-decoration:none" href="sms:+12139315633?body='+encodeURIComponent('I\'d like my AI visibility audit for '+(LV.name||LV.q||'my business'))+'">text us</a> and we\'ll set it up.</div></div></div></div></div>':
+  '<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">'+X(LV.err)+'</div><div class="sub">Text us and we\'ll send your audit, usually the same day.</div><a class="btn" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+(LV.name||LV.q||'my business')+(LV.id?' ('+LV.id+')':''))+'">Text us for my audit →</a></div></div></div></div>');return}
  const FIND=LV?[[],[],[],[],[],[]]:findings();let k=0,q=0,paused=RM&&!LV,seq=0,lastEng='';const mob=MOB();
  /* layout: where "you" sits on the map, and where competitors go around it */
  const C0=mob?[50,40]:[64,50],POS=mob?[[24,34],[78,37],[76,50]]:[[50,22],[86,27],[80,70]];
@@ -1140,17 +1151,21 @@ function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();c
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const t=STAGE.querySelector('.track');t.scrollBy({left:+b.dataset.sc*t.clientWidth*.66,behavior:RM?'auto':'smooth'})});
 
 /* ---------- PLAN ---------- */
+/* full potential from the Your score math (searches x 2.3% x spend); left out when any part is unknown or not local */
+function fpLine(one){if(price==null||!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'))return '';const v=TOTAL*0.023*price;if(!(v>0))return '';
+ if(one)return '<div class="fpv one" title="'+fmt(TOTAL)+' searches a month × 2.3% × $'+fmt(price)+' average spend"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo</small></b></div>';
+ return '<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo in new customers</small></b><small>'+fmt(TOTAL)+(D.volx?' est.':'')+' searches a month × 2.3% × $'+fmt(price)+' average spend</small></div>'}
 function vPlan(){if(step===1)return vPlanCompare();if(step===2)return vPlan12();const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
  const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a&nbsp;month.</em></div><div class="vs">'+
  '<div class="card pad col old"><span class="lbl">The old way: 9 vendors to hire and manage</span><div class="oldp"><s>$14,250</s><small> /mo</small></div><div class="vl">'+V.map(r=>'<div><span>'+r[0]+'</span><b>$'+fmt(r[1])+'</b></div>').join('')+'</div><div style="margin-top:auto;font:600 calc(1.15*var(--u))/1.4 var(--fb);color:var(--muted)">9 contracts, 9 teams, each working on its own piece of your business.</div></div>'+
  '<div class="vsx">vs</div><div class="card col new"><div class="nhead"><div><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl">One team. One record. All 11 checks.</div><div class="cdn" hidden></div></div><div class="rec">'+LOGO+'</div></div>'+
- '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+
+ '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+fpLine(1)+
  '<div class="rowx" style="margin-top:auto;justify-content:space-between"><button type="button" class="btn2" data-ckx="open">Get started →</button><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
  '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span><span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span class="d">'+p[2]+'</span></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
 /* compact plan card used beside the detail tables */
 function planSide(extra){return '<div class="card col new pside"><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl" style="color:#fff;font:700 calc(1.3*var(--u)) var(--fu)">One team. One record. All 11 checks.</div><div class="cdn" hidden></div>'+
- '<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
+ '<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine()+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
 const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
 function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
  const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
@@ -1267,13 +1282,13 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
  const redraw=()=>{if(LIVE===L&&cur==='scan'&&!D)render()};
  const setHit=b=>{if(!b||b.lat==null||L.hit)return;L.hit={loc:[b.lng,b.lat],short:b.short||b.name,name:b.full||b.name,rt:b.rating,n:b.reviews,area:b.area,hours:b.hours,cq:L.svc||''};
   L.short=b.short||L.short;L.rt=b.rating;if(cur==='scan')mapFocus()};
- (async()=>{if(!TEAM)throw {msg:'This audit can\'t start from this link.'};const H={'X-Team-Key':TEAM};
-  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401)throw {msg:'This audit can\'t start from this link.'};
+ (async()=>{if(!TEAM){L.lead=1;throw {msg:'lead'}} /* no self-service: visitors book a call instead (see vScan) */const H={'X-Team-Key':TEAM};
+  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401){L.lead=1;throw {msg:'lead'}}
    const j=r.ok?await r.json():{};const hit=(j.results||[]).find(x=>x.id);if(!hit)throw {msg:'We couldn\'t find "'+L.q+'" on Google.'};L.id=hit.id;L.name=hit.name||L.name;
    try{history.replaceState(null,'','?id='+encodeURIComponent(L.id)+'#scan')}catch(e){}}
   fetch(API+'/places/'+encodeURIComponent(L.id),{headers:H}).then(r=>r.ok?r.json():null).then(b=>{if(b&&LIVE===L){L.name=b.full||L.name;L.short=b.short||L.short;setHit(b);redraw()}}).catch(()=>{});
   const res=await fetch(API+'/audit?id='+encodeURIComponent(L.id),{headers:H});
-  if(res.status===401)throw {msg:'This audit can\'t start from this link.'};if(res.status===429)throw {msg:'The team has used today\'s scans.'};
+  if(res.status===401){L.lead=1;throw {msg:'lead'}}if(res.status===429)throw {msg:'The team has used today\'s scans.'};
   if(!res.ok||!res.body)throw {msg:'We couldn\'t start the scan.'};
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
