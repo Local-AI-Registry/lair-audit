@@ -301,7 +301,7 @@ function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
 
   /* ---- golden-hour scene ---- */
   const HZ=0xF4EEE6;
-  const o=base('map0',{bg:HZ,fog:[28,118],fov:38,sun:[-22,15,14]});
+  const o=base('map0',{bg:HZ,fog:[28,118],fov:38,sun:[-22,15,14]});if(!o)return;
   o.sc.children.forEach(c=>{if(c.isDirectionalLight&&c.castShadow){c.color=lin(0xFFEBD2);c.intensity=1.1}if(c.isHemisphereLight){c.color=lin(0xFFF3E4);c.groundColor=lin(0xC9C0B0);c.intensity=.8}});
   const sky=new THREE.Mesh(new THREE.SphereGeometry(420,32,16),new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:false,
     vertexShader:'varying vec3 vp;void main(){vp=normalize(position);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
@@ -818,7 +818,7 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
 
 /* ===================== 10. THE MONTHLY REPORT on a floating tablet ===================== */
 (function(){
-  const o=base('map10',{bg:0xECE6D6,fog:[40,95],fov:30,sun:[10,30,18]});
+  const o=base('map10',{bg:0xECE6D6,fog:[40,95],fov:30,sun:[10,30,18]});if(!o)return;
   const fl=new THREE.Mesh(new THREE.CircleGeometry(50,64),mStd(0xE4DCCB));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;o.sc.add(fl);
   const TS=o.mob?1.5:1.9;o.crisp=true;function canvasTex(w,h,draw){const c=document.createElement('canvas');c.width=Math.round(w*TS);c.height=Math.round(h*TS);const x=c.getContext('2d');x.setTransform(TS,0,0,TS,0,0);draw(x,w,h);const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=16;tx.generateMipmaps=true;tx.minFilter=THREE.LinearMipmapLinearFilter;tx.redraw=()=>{x.clearRect(0,0,w,h);draw(x,w,h);tx.needsUpdate=true};return tx}
   const rr=(x,X,Y,W,H,R)=>{x.beginPath();x.moveTo(X+R,Y);x.arcTo(X+W,Y,X+W,Y+H,R);x.arcTo(X+W,Y+H,X,Y+H,R);x.arcTo(X,Y+H,X,Y,R);x.arcTo(X,Y,X+W,Y,R);x.closePath()};
