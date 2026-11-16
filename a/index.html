@@ -9,10 +9,10 @@
 <style>:root{--bg:#F4F1EA;--muted:#6E7887}html,body{background:var(--bg)}body{margin:0;font:16px/1.5 system-ui,sans-serif;color:var(--muted);display:grid;place-items:center;min-height:100vh;padding:0 16px}a{color:#1F4FE0}@media (prefers-color-scheme:dark){:root{--bg:#F4F1EA}}</style>
 <script>
 /* The live scan now runs on the audit page itself (on the map), so this address just forwards there.
-   ?id=<place id>, ?q=<name> and ?team=<key> are passed along. */
+   ?id=<place id>, ?q=<name>, ?audit=<id>, ?b=<slug> and ?team=<key> are passed along. */
 (function(){var p=new URLSearchParams(location.search),o=new URLSearchParams();
- ['id','q','team'].forEach(function(k){if(p.get(k))o.set(k,p.get(k))});
- location.replace('/ai-audit/'+(o.toString()?'?'+o:'')+'#scan')})();
+ ['id','q','team','audit','b'].forEach(function(k){if(p.get(k))o.set(k,p.get(k))});
+ location.replace('/ai-audit/'+(o.toString()?'?'+o:'')+(o.get('id')||o.get('q')?'#scan':location.hash))})();
 </script>
 </head>
 <body><p>Opening your audit… <a href="/ai-audit/">Continue</a></p></body>

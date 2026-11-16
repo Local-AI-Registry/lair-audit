@@ -27,7 +27,17 @@ for s in SRCS:
 VO = {v['n']: v for v in json.load(open(D + 'vouch.json'))}
 PICK = ['Dr. Sachin Shridharani', 'Dr. Doris Day', 'Dr. Deepak Dugar', 'Dr. Tess Mauricio', 'Naomi Barrett, NP-C', 'Linda Rank, PA-C',
         'Dr. Mariano Busso', 'Dr. Ashish Bhatia', 'Dr. Marie Hayag', 'Dr. Roberta Del Campo']
-FACES = [{'n': n, 'f': VO[n]['f']} for n in PICK if n in VO and VO[n].get('f')]
+FACES = []
+import base64, os
+os.makedirs(os.path.join(os.path.dirname(os.path.abspath(out)), 'faces'), exist_ok=True)
+for k, n in enumerate(n for n in PICK if n in VO and VO[n].get('f')):
+    f = VO[n]['f']
+    m = re.match(r'data:image/(\w+);base64,(.*)', f, re.S)
+    if m:  # written next to the page as faces/<k>.<ext>, so the page stays small
+        ext = 'jpg' if m.group(1) == 'jpeg' else m.group(1)
+        open(os.path.join(os.path.dirname(os.path.abspath(out)), 'faces', '%d.%s' % (k, ext)), 'wb').write(base64.b64decode(m.group(2)))
+        f = 'faces/%d.%s' % (k, ext)
+    FACES.append({'n': n, 'f': f})
 PRESS = []
 for a in json.load(open(D + 'art.json')):
     m = re.sub(r'<[^>]+>', '', a['m']).strip()

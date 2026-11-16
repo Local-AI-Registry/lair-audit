@@ -3,6 +3,7 @@ s=open(sys.argv[1]).read()
 def R(a,b,n=1):
     global s
     c=s.count(a);assert c>=1,a[:70];s=s.replace(a,b) if n==0 else s.replace(a,b,n)
+R('<img id="poster" src="map-poster.jpg"', '<img id="poster" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="')
 R("var INK='#4A2F1B', PAPER='#EEDDB8', BLUE='#1F4FE0';","var INK='#2A4670', PAPER='#050B15', BLUE='#5B8CFF';")
 R("0,'#F2E3BE',30,'#E9D3A2'],","0,'#0E2038',30,'#1D3C69'],")
 R("'fill-extrusion-opacity':.96","'fill-extrusion-opacity':.94")

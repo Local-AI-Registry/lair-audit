@@ -2,7 +2,7 @@
 
 Live at https://audit.localairegistry.com/ai-audit/ (search box loads any business in it).
 This is the sales-call version: a light, 16:9 screen-share flow for walking a prospect through the audit on a call:
-Find → Scan → Your score (3 steps) → Patients ask AI (2 steps) → 11 checks (Our system, then Your results) → Why us → Plan.
+Find → Scan → Your score (3 steps) → Customers ask AI (2 steps) → 11 checks (Our system, then Your results) → Why us → Plan.
 ← → keys step through everything; 1 to 6 jump to a chapter; `?b=<slug>#<chapter>` links straight in.
 The older dark version stays at https://audit.localairegistry.com/ai-audit/classic.html. `v2/index.html` only forwards to the main page.
 
