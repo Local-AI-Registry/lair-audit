@@ -823,8 +823,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
  .gpf{height:52vh}.gph b{font-size:19px}
 }
 @media (prefers-reduced-motion:reduce){.gpx,.gpx-card{transition:none}}
-/* ---------- plan overview: cards take their content height, the 12-month timeline gets the rest ---------- */
-.vs{flex:none}
+/* ---------- plan: 12-month timeline styles (overview cards fill the page) ---------- */
 @media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.tl12{flex:1;min-height:0;justify-content:center}}
 @media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){
 .tl12{gap:calc(2*var(--u));padding:calc(1.6*var(--u)) calc(2*var(--u))}
@@ -867,6 +866,90 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tiles{grid-template-columns:1fr 1fr;grid-auto-rows:auto;gap:10px;flex:none}.tile{padding:14px}.tile .typ{font-size:15px}.tile .loc,.tile .tu{font-size:12px}.tile .up{font-size:22px}.tile .tn{font-size:11px}.tile .badge{font-size:10.5px;padding:2px 8px}.tile .tch svg{max-height:none;height:auto}}
 @media (max-width:420px){.tiles{grid-template-columns:1fr}}
 .tcta{display:none;background:var(--blue);justify-content:center;gap:calc(.9*var(--u))}.tcta .kick{color:var(--blue3)}.tcta .typ{color:#fff!important;font-size:calc(1.7*var(--u))!important}.tcta p{margin:0;color:#DCE4FF;font-size:calc(1.05*var(--u));line-height:1.45}.tcta .btn2{align-self:flex-start;background:#fff;color:var(--blue)}
+
+/* ---------- why us: edge-to-edge charts ---------- */
+.tile .tch{flex:1;min-height:calc(7*var(--u));display:flex;flex-direction:column;margin:calc(.3*var(--u)) calc(-1.2*var(--u)) 0}
+.tile .tplot{position:relative;flex:1;min-height:0}
+.tile .tplot svg{position:absolute;inset:0;width:100%!important;height:100%!important;max-height:none!important}
+.tile .tarea{fill:#E3F3EC}.tile.match .tarea{fill:rgba(126,226,176,.13)}
+.tile .tws{position:absolute;top:calc(.3*var(--u));margin-left:calc(.4*var(--u));font:700 calc(.78*var(--u)) var(--fb);color:var(--coral)}
+.tile .tdot{position:absolute;width:calc(.85*var(--u));height:calc(.85*var(--u));border-radius:50%;background:#0E8A5F;box-shadow:0 0 0 calc(.2*var(--u)) #fff;transform:translate(-50%,-50%)}
+.tile .tlab{display:flex;justify-content:space-between;padding:calc(.35*var(--u)) calc(1.2*var(--u)) 0;font-size:calc(.85*var(--u));color:var(--muted)}.tile .tlab b{color:var(--ok)}
+.tile.match .tlab{color:var(--blue3)}.tile.match .tlab b{color:#7EE2B0}
+/* ---------- why us: results beside a trust panel ---------- */
+.whyg{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) calc(25*var(--u));gap:calc(1*var(--u))}
+.whyg .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
+.whyg .tiles .tcta{display:none}
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){.body .whyg .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.body .whyg .tiles .tcta{display:flex}}
+.trustp{background:var(--ink);color:#fff;padding:calc(1.3*var(--u)) calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.6*var(--u));min-height:0}
+.trustp .kick{color:#7EE2B0}
+.tph{font:800 calc(1.3*var(--u))/1.2 var(--fu)}
+.tpi{display:grid;grid-template-columns:calc(3*var(--u)) 1fr;gap:calc(.9*var(--u));align-items:start;padding:calc(.65*var(--u)) 0;border-top:1px solid rgba(255,255,255,.14)}
+.tpic{width:calc(3*var(--u));height:calc(3*var(--u));border-radius:calc(1*var(--u));background:rgba(126,226,176,.16);color:#7EE2B0;display:grid;place-items:center}
+.tpic svg{width:calc(1.9*var(--u));height:calc(1.9*var(--u))}
+.tpi b{display:block;font:800 calc(1.4*var(--u))/1.1 var(--fu)}
+.tpi span{display:block;font-size:calc(.88*var(--u));line-height:1.35;color:#C8D2E6;margin-top:calc(.3*var(--u))}
+.tpf{margin-top:auto;display:flex;flex-direction:column;gap:calc(.45*var(--u));font-size:calc(.85*var(--u));color:#C8D2E6;padding-top:calc(.7*var(--u));border-top:1px solid rgba(255,255,255,.14)}
+.tpf b{color:#fff}.tpf .stack2 img{width:calc(2.6*var(--u));height:calc(2.6*var(--u));border-radius:50%;object-fit:cover;border:2px solid var(--ink);margin-left:calc(-.8*var(--u))}.tpf .stack2 img:first-child{margin-left:0}
+.tps{font-size:calc(.85*var(--u));color:#9AA6BD}.tps b{color:#fff;margin-right:calc(.3*var(--u))}
+/* ---------- plan overview: cards at content height, then the next pages as cards ---------- */
+.vs{flex:none}
+.pnext{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:calc(1*var(--u));flex:1;min-height:0;align-items:stretch}
+.pnc{all:unset;box-sizing:border-box;cursor:pointer;position:relative;display:flex;flex-direction:column;justify-content:center;gap:calc(.3*var(--u));background:var(--card);border-radius:calc(1.4*var(--u));box-shadow:var(--shadow);padding:calc(1*var(--u)) calc(4*var(--u)) calc(1*var(--u)) calc(1.6*var(--u));transition:box-shadow .15s ease,transform .15s ease}
+.pnc:hover{box-shadow:inset 0 0 0 2px var(--blue),var(--shadow)}.pnc:active{transform:scale(.99)}.pnc:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.pnc .kick{color:var(--blue)}.pnc b{font:800 calc(1.35*var(--u))/1.2 var(--fu);color:var(--ink)}.pnc>span:not(.kick){font-size:calc(.95*var(--u));color:var(--muted)}
+.pnx{display:none}
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){
+ .pnext .pnc{justify-content:flex-start;padding:calc(1.6*var(--u))}.pnext .pnc i{top:calc(1.4*var(--u));transform:none}.pnext .pnc>b,.pnext .pnc>span{padding-right:calc(3*var(--u))}
+ .pnx{display:flex;flex-direction:column;gap:calc(.6*var(--u));margin-top:auto;padding-top:calc(1*var(--u))}
+ .pnx>div{display:flex;align-items:baseline;gap:calc(.6*var(--u));font-size:calc(.95*var(--u));color:var(--muted);padding:calc(.5*var(--u)) calc(.8*var(--u));background:var(--bg);border-radius:calc(.8*var(--u))}
+ .pnx>div b{font:800 calc(1.6*var(--u))/1 var(--fu);color:var(--ink);font-variant-numeric:tabular-nums}.pnx>div b small{font-size:.55em;color:var(--muted)}
+ .pnx>div.us{background:var(--blue-t)}.pnx>div.us b{color:var(--blue)}
+ .pnl{list-style:none;margin:auto 0 0;padding:calc(1*var(--u)) 0 0}
+ .pnl li{display:flex;gap:calc(.8*var(--u));font:700 calc(1.05*var(--u)) var(--fb);color:var(--ink);padding:calc(.4*var(--u)) 0;border-top:1px solid var(--rule)}
+ .pnl li span{width:calc(5.5*var(--u));flex:none;font-size:calc(.85*var(--u));letter-spacing:.06em;text-transform:uppercase;color:var(--blue);padding-top:calc(.15*var(--u))}
+}
+.pnc i{position:absolute;right:calc(1.4*var(--u));top:50%;transform:translateY(-50%);width:calc(2.4*var(--u));height:calc(2.4*var(--u));border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font:700 calc(1.1*var(--u)) var(--fb);font-style:normal}
+@media (min-aspect-ratio:16/10) and (min-width:761px) and (min-height:501px){.vs{flex:1;min-height:0}.pnext{flex:none}.pnc{padding-top:calc(.7*var(--u));padding-bottom:calc(.7*var(--u))}.pnc>span:not(.kick){display:none}}
+/* ---------- plan: tabs, no overlap in the blue card, phases on the 12-month page ---------- */
+.ttlrow{display:flex;justify-content:space-between;align-items:flex-end;gap:calc(1.6*var(--u));flex-wrap:wrap}
+.ptabs{align-self:auto}
+.new .fpv{margin:calc(1*var(--u)) 0}
+.new .rowx{padding-top:calc(.4*var(--u))}
+.tlmini{display:flex;flex-direction:column;gap:calc(1.3*var(--u));padding-bottom:calc(.8*var(--u));border-bottom:1px solid var(--rule)}
+.tlmini .tlh{flex-wrap:wrap;gap:calc(.6*var(--u))}.tlmini .tlh b{font-size:calc(1.2*var(--u))}
+.tlmini .tlr .d{font-size:calc(.88*var(--u))}.tlmini .tlr b{font-size:calc(1.05*var(--u))}
+/* ---------- proposal ---------- */
+.prop{grid-template-columns:1fr 1.1fr 1fr;align-items:stretch}
+.prc{gap:calc(.2*var(--u))}
+.prr{display:flex;flex-direction:column;padding:calc(.8*var(--u)) 0;border-bottom:1px solid var(--rule)}
+.prr:last-child{border-bottom:0}
+.prr>span{font-size:calc(.95*var(--u));color:var(--muted)}.prr b em{font-style:normal}.prr b{font:800 calc(1.7*var(--u))/1.15 var(--fu);color:var(--ink)}.prr b small{font:600 calc(.9*var(--u)) var(--fb);color:var(--muted)}.prr>small{font-size:calc(.85*var(--u));color:var(--muted)}
+.prh{font:700 calc(1.35*var(--u))/1.3 var(--fu);color:var(--ink);margin:calc(.5*var(--u)) 0}
+.prl{list-style:none;margin:calc(.4*var(--u)) 0 calc(.8*var(--u));padding:0;display:flex;flex-direction:column;gap:calc(.7*var(--u))}
+.prl li{display:grid;grid-template-columns:calc(6.5*var(--u)) 1fr;column-gap:calc(.8*var(--u));padding:calc(.7*var(--u)) calc(.9*var(--u));background:var(--bg);border-radius:calc(.9*var(--u))}
+.prl .m{grid-row:span 2;font:800 calc(.85*var(--u)) var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--blue);padding-top:calc(.2*var(--u))}
+.prl b{font:800 calc(1.1*var(--u)) var(--fu);color:var(--ink)}.prl li>span:last-child{font-size:calc(.95*var(--u));color:var(--body)}
+.prn{gap:calc(.8*var(--u))}.prn .newp{font-size:calc(4.4*var(--u))}
+.prn .fpv{margin:0}
+.prcta{margin-top:auto;display:flex;flex-direction:column;gap:calc(.7*var(--u));align-items:flex-start}
+.prbook{text-decoration:none;display:inline-flex}
+.prpay{all:unset;cursor:pointer;color:#fff;font:600 calc(1*var(--u)) var(--fb);text-decoration:underline;text-underline-offset:3px;opacity:.85}
+.prpay:hover{opacity:1}.prpay:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.prmeta{display:flex;flex-direction:column;align-items:flex-end;gap:calc(.3*var(--u))}
+.prfoot{text-align:center}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ .ttlrow{align-items:flex-start}.ptabs{overflow-x:auto;max-width:100%;scrollbar-width:none}.ptabs button{white-space:nowrap}
+ .tile .tch{margin:6px -14px 0;min-height:0}.tile .tplot{height:120px;flex:none}.tile .tws{font-size:10.5px;top:4px}.tile .tdot{width:9px;height:9px}.tile .tlab{font-size:11.5px;padding:4px 14px 0}
+ .tlmini .tlh b{font-size:16px}.tlmini .tlr b{font-size:15px}.tlmini .tlr .d{font-size:13px}
+ .whyg{grid-template-columns:1fr}.whyg .trustp{order:-1;padding:18px}.tph{font-size:18px}.tpi{grid-template-columns:44px 1fr}.tpic{width:44px;height:44px;border-radius:12px}.tpic svg{width:24px;height:24px}.tpi b{font-size:19px}.tpi span{font-size:13.5px}.tpf{font-size:13px}.tps{font-size:12px}
+ .whyg .tiles{grid-template-columns:1fr 1fr}
+ .tb-side{flex-wrap:wrap}
+ .pnext{grid-template-columns:1fr;flex:none}.pnc{padding:14px 56px 14px 16px;min-height:72px}.pnc b{font-size:16px}.pnc>span:not(.kick){font-size:13px}.pnc i{width:32px;height:32px;right:14px;font-size:15px}
+ .prop{grid-template-columns:1fr}.prr span{font-size:13px}.prr b{font-size:22px}.prr b small,.prr>small{font-size:12px}
+ .prh{font-size:17px}.prl li{grid-template-columns:76px 1fr;padding:10px 12px}.prl .m{font-size:11px}.prl b{font-size:15px}.prl li>span:last-child{font-size:13px}
+ .prn .newp{font-size:40px}.prpay{font-size:14px;padding:8px 0}.prmeta{align-items:flex-start}
+}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1036,6 +1119,7 @@ const X=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>
 const fmt=n=>n==null||isNaN(n)?'–':Math.round(n).toLocaleString('en-US');
 const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 /* the three things clients ask about first; shown wherever trust matters most */
+const TRUST_ICONS=['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'];
 const TRUST=where=>'<div class="tbadges tb-'+where+'" role="list" aria-label="Why it\'s safe to work with us">'+[
  ['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','$750K insured'],
  ['<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','HIPAA BAA'],
@@ -1072,15 +1156,15 @@ let TEAM='';try{if(QP.get('team')){localStorage.setItem('lair-team',QP.get('team
 const STAGE=$('#stage');
 
 /* ---------- chapters and routing ---------- */
-const CH=[['find','Find'],['scan','Scan'],['score','Your score'],['ask','Customers ask AI'],['checks','11 checks'],['why','Why us'],['plan','Plan']];
+const CH=[['find','Find'],['scan','Scan'],['score','Your score'],['ask','Customers ask AI'],['checks','11 checks'],['why','Why us'],['plan','Plan'],['prop','Your proposal']];
 const STEPS={score:3,ask:2,checks:2,plan:3};
 let cur='find',step=0;
 function go(id,s){if(!D&&id!=='find'&&!(id==='scan'&&LIVE))id='find';const moved=id!==cur;cur=id;step=s||0;if(moved&&matchMedia(MQ).matches)scrollTo(0,0);if(location.hash.slice(1)!==id){if(moved&&D&&cur!=='find'&&location.hash.length>1&&!go.pop)history.pushState(null,'',location.search+'#'+id);else history.replaceState(null,'',location.search+'#'+id)}render()}
 addEventListener('popstate',()=>{const h=location.hash.slice(1);if(D&&CH.some(c=>c[0]===h)&&h!==cur){go.pop=1;go(h);go.pop=0}});
-function next(){const n=STEPS[cur]||1;if(step<n-1){step++;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i<CH.length-1)go(CH[i+1][0]);else{const o=STAGE.querySelector('[data-ckx="open"]');o&&o.click()}}
+function next(){const n=STEPS[cur]||1;if(step<n-1){step++;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i<CH.length-1)go(CH[i+1][0])}
 function prev(){if(step>0){step--;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i>1)go(CH[i-1][0],(STEPS[CH[i-1][0]]||1)-1)}
 addEventListener('keydown',e=>{if(e.target.closest('input,textarea'))return;if(e.key==='Escape'){const ck=$('#ckx:not([hidden])');if(ck){const c=ck.querySelector('[data-ckx="close"]');c&&c.click();return}const p=$('.pop:not([hidden])');if(p){p.hidden=true;return}}
- if(!D)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();next()}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev()}else if(/^[1-6]$/.test(e.key))go(CH[+e.key][0])});
+ if(!D)return;if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();next()}else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();prev()}else if(/^[1-7]$/.test(e.key)&&CH[+e.key])go(CH[+e.key][0])});
 STAGE.addEventListener('click',e=>{const hm=e.target.closest('[data-home]');if(hm){e.preventDefault();go('find');return}const g=e.target.closest('[data-go]');if(g){e.preventDefault();go(g.dataset.go);return}
  const nv=e.target.closest('[data-nav]');if(nv){nv.dataset.nav==='next'?next():prev();return}
  const st=e.target.closest('[data-step]');if(st){const n=STEPS[cur]||1;step=+st.dataset.step<0?Math.max(0,step-1):(step+1)%n;render()}});
@@ -1379,6 +1463,7 @@ function vChecks(){const mode=step===0?'svc':'status';const cnt={p:0,w:0,f:0};CK
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:calc(2*var(--u))"><div><div class="kick">'+(mode==='status'?'How we analyze your business':'What makes us different')+'</div><div class="ttl">'+(mode==='status'?'The 11 things AI checks, <em>and how you did</em>':'One record. <em>Powering all 11.</em>')+'</div></div>'+
  '<div class="col" style="align-items:flex-end;gap:calc(.6*var(--u))"><div class="tabs" role="tablist"><button type="button" role="tab" class="'+(mode==='svc'?'on':'')+'" data-step-set="0" aria-selected="'+(mode==='svc')+'">1 · Our system</button><button type="button" role="tab" class="'+(mode==='status'?'on':'')+'" data-step-set="1" aria-selected="'+(mode==='status')+'">2 · Your results</button></div>'+(mode==='status'?'<div class="chips"><span class="pill p-p">'+cnt.p+' passed</span><span class="pill p-w">'+cnt.w+' need work</span><span class="pill p-f">'+cnt.f+' failed</span></div>':'<div class="hint">Next: see how you did on each →</div>')+'</div></div>'+
  '<div class="hub"><div class="card" style="display:grid;place-items:center;padding:calc(.4*var(--u))">'+wheel(mode,hubSel)+'</div>'+hubCard(hubSel,mode)+'</div></div></div>'}
+STAGE.addEventListener('click',e=>{const pt=e.target.closest('.ptabs [data-step-set],.pnext [data-step-set]');if(pt&&cur==='plan'){step=+pt.dataset.stepSet;render();return}});
 STAGE.addEventListener('click',e=>{if(cur!=='checks')return;const n=e.target.closest('.nd'),t=e.target.closest('[data-step-set]'),b=e.target.closest('.tbtn'),hf=e.target.closest('[data-hf]');
  if(hf){hubFound=+hf.dataset.hf;render();return}
  if(n){hubSel=+n.dataset.i;render();const f=STAGE.querySelector('.nd[data-i="'+hubSel+'"]');f&&f.focus({preventScroll:MOB()});if(MOB()){const d=STAGE.querySelector('.card.dt');d&&d.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'})}}else if(t){step=+t.dataset.stepSet;render()}else if(b){hubSel=(hubSel+ +b.dataset.d+11)%11;render()}});
@@ -1404,11 +1489,18 @@ function chart(c){const v=c.real?c.v:[c.a,c.a,c.b],s0=c.real?c.s0:1,W=300,H=120,
  return '<svg viewBox="0 0 '+W+' '+H+'" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Monthly visits before and after we started"><rect class="ar" x="'+x(s0)+'" y="10" width="'+(x(v.length-1)-x(s0))+'" height="'+(H-26)+'" fill="#E3F3EC" opacity=".7"/><line x1="'+x(s0)+'" x2="'+x(s0)+'" y1="6" y2="'+(H-16)+'" stroke="#FF5A3C" stroke-width="1.6" stroke-dasharray="3 3"/><text x="'+(x(s0)+4)+'" y="18" font-size="10" font-weight="700" fill="#FF5A3C" font-family="Hanken Grotesk,sans-serif">We started</text>'+
  '<path d="'+v.slice(0,s0+1).map((n,i)=>(i?'L':'M')+x(i)+' '+y(n)).join(' ')+'" fill="none" stroke="#AEB5BF" stroke-width="2.4"/><path d="'+v.slice(s0).map((n,i)=>(i?'L':'M')+x(i+s0)+' '+y(n)).join(' ')+'" fill="none" stroke="#0E8A5F" stroke-width="3"/><circle cx="'+x(v.length-1)+'" cy="'+y(v[v.length-1])+'" r="4" fill="#0E8A5F"/>'+
  '<text x="8" y="'+(H-2)+'" font-size="10" fill="#6E7887" font-family="Hanken Grotesk,sans-serif">Before: '+fmt(v[0])+'/mo</text><text x="'+(W-8)+'" y="'+(H-2)+'" text-anchor="end" font-size="10" font-weight="700" fill="#0E8A5F" font-family="Hanken Grotesk,sans-serif">Now: '+fmt(v[v.length-1])+'/mo</text></svg>'}
+function tchart(c){const v=c.real?c.v:[c.a,c.a,c.b],s0=c.real?c.s0:1,n=v.length-1,mx=Math.max(...v)*1.18,px=i=>2+i/n*95,py=x=>100-x/mx*100,pts=v.map((x,i)=>px(i).toFixed(2)+','+py(x).toFixed(2));
+ return '<div class="tch"><div class="tplot" role="img" aria-label="Monthly visits from '+fmt(v[0])+' before to '+fmt(v[n])+' now"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><rect x="'+px(s0)+'" y="0" width="'+(100-px(s0))+'" height="100" class="tarea"/><polyline points="'+pts.slice(0,s0+1).join(' ')+'" fill="none" stroke="#AEB5BF" stroke-width="2.2" vector-effect="non-scaling-stroke"/><polyline points="'+pts.slice(s0).join(' ')+'" fill="none" stroke="#0E8A5F" stroke-width="3" stroke-linejoin="round" vector-effect="non-scaling-stroke"/><line x1="'+px(s0)+'" x2="'+px(s0)+'" y1="0" y2="100" stroke="#FF5A3C" stroke-width="1.4" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/></svg>'+
+  '<span class="tws" style="left:'+px(s0)+'%">We started</span><i class="tdot" style="left:'+px(n)+'%;top:'+py(v[n])+'%"></i></div><div class="tlab"><span>Before: '+fmt(v[0])+'/mo</span><b>Now: '+fmt(v[n])+'/mo</b></div></div>'}
 function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();const mi=cards.findIndex(c=>c.k.test(svc));let match=-1;if(mi>=0){const [m]=cards.splice(mi,1);cards.unshift(m);match=0}
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">Businesses like yours, <em>after we started.</em></div><div class="tiles" aria-label="Client results">'+
- cards.map((c,i)=>{const up=Math.round((c.ai[1]/c.ai[0]-1)*100);return '<div class="card tile'+(i===match?' match':'')+'"><div class="th"><div><div class="typ">'+c.typ+'</div><div class="loc">'+c.loc+'</div></div>'+(i===match?'<span class="badge">Most like you</span>':'')+'</div><div class="tu"><span class="up">+'+up+'%</span><span>AI score '+c.ai[0]+' → '+c.ai[1]+'</span></div><div class="tch">'+chart(c)+'</div><span class="tn">'+(c.real?'Monthly visits from search and AI':'Illustrative: start and end visits only')+'</span></div>'}).join('')+'<div class="card tile tcta"><span class="kick">Your turn</span><div class="typ">'+X(ME)+'</div><p>One team, one record, all 11 checks. In AI answers by day 90, guaranteed.</p><button type="button" class="btn2" data-go="plan">See your plan →</button></div>'+
- '</div><div class="card" style="padding:calc(1.1*var(--u)) calc(1.6*var(--u))"><div class="facesrow"><div class="stack2">'+FACES.map(f=>'<img src="'+f.f+'" alt="'+X(f.n)+'" loading="lazy" decoding="async">').join('')+'</div><div style="font-size:calc(1.15*var(--u))"><b style="font-family:var(--fu)">'+FACES.slice(1,4).map(f=>X(f.n)).join(', ')+'</b> and 100+ practices and industry leaders vouch for us</div></div></div>'+
- '<div class="rowx" style="justify-content:space-between;font-size:calc(1.05*var(--u));color:var(--muted)"><span><b style="color:var(--ink)">As seen in</b>&nbsp; '+PRESS.slice(0,5).join(' · ')+'</span></span>'+TRUST('why')+'</div></div></div>'}
+ const SAFE=[[TRUST_ICONS[0],'$750K insured','We carry $750,000 in insurance coverage for the work we do for you.'],[TRUST_ICONS[1],'HIPAA BAA','We sign a Business Associate Agreement, so patient information stays protected under HIPAA.'],[TRUST_ICONS[2],'US-based team','Everyone who works on your account is based in the US.']];
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">Businesses like yours, <em>after we started.</em></div><div class="whyg"><div class="tiles" aria-label="Client results">'+
+ cards.map((c,i)=>{const up=Math.round((c.ai[1]/c.ai[0]-1)*100);return '<div class="card tile'+(i===match?' match':'')+'"><div class="th"><div><div class="typ">'+c.typ+'</div><div class="loc">'+c.loc+'</div></div>'+(i===match?'<span class="badge">Most like you</span>':'')+'</div><div class="tu"><span class="up">+'+up+'%</span><span>AI score '+c.ai[0]+' → '+c.ai[1]+'</span></div>'+tchart(c)+'<span class="tn">'+(c.real?'Monthly visits from search and AI':'Illustrative: start and end visits only')+'</span></div>'}).join('')+
+ '<div class="card tile tcta"><span class="kick">Your turn</span><div class="typ">'+X(ME)+'</div><p>One team, one record, all 11 checks. In AI answers by day 90, guaranteed.</p><button type="button" class="btn2" data-go="plan">See your plan →</button></div></div>'+
+ '<aside class="card trustp" aria-label="Why it\'s safe to work with us"><span class="kick">Safe to work with</span><div class="tph">Built for practices that handle patient information.</div>'+
+  SAFE.map(x=>'<div class="tpi"><span class="tpic"><svg viewBox="0 0 24 24" aria-hidden="true">'+x[0]+'</svg></span><div><b>'+x[1]+'</b><span>'+x[2]+'</span></div></div>').join('')+
+  '<div class="tpf"><div class="stack2">'+FACES.slice(0,6).map(f=>'<img src="'+f.f+'" alt="'+X(f.n)+'" loading="lazy" decoding="async">').join('')+'</div><span><b>'+FACES.slice(1,3).map(f=>X(f.n)).join(', ')+'</b> and 100+ practices vouch for us</span></div>'+
+  '<div class="tps"><b>As seen in</b> '+PRESS.slice(0,4).join(' · ')+'</div></aside></div></div></div>'}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const t=STAGE.querySelector('.track');t.scrollBy({left:+b.dataset.sc*t.clientWidth*.66,behavior:RM?'auto':'smooth'})});
 
 /* ---------- PLAN ---------- */
@@ -1417,27 +1509,59 @@ function fpLine(one){if(price==null||!TOTAL||(D.vol_loc&&D.vol_loc.level==='coun
  const vy=ANS.visits>1?ANS.visits:0;
  if(one)return '<div class="fpv one" title="'+fmt(TOTAL)+' searches a month × 2.3% × $'+fmt(price)+' average spend'+(vy?' × '+vy+' visits a year':'')+'"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo'+(vy?' · $'+fmt(v*vy)+' over their first year':'')+'</small></b></div>';
  return '<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo in new customers</small></b><small>'+fmt(TOTAL)+(D.volx?' est.':'')+' searches a month × 2.3% × $'+fmt(price)+' average spend'+(ANS.spend?' (from you)':'')+(vy?'. Over their first year, at '+vy+' visits: $'+fmt(v*vy)+(ANS.visits?' (from you)':''):'')+'</small></div>'}
+const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
+/* the plan's three pages, always visible so it's clear there's more */
+/* the three cards under the plan overview; on tall screens each shows a preview of what's there */
+function pnextCards(){const tot=(CMP||[]).find(r=>/^Things included/.test(r[0]));
+ const px=[tot?'<div class="pnx"><div class="us"><b>'+X(tot[4])+'</b>with us</div><div><b>'+X(tot[3])+'</b>advanced agency</div><div><b>'+X(tot[1])+'</b>basic agency</div></div>':'',
+  '<ol class="pnx pnl">'+PHS.map(p=>'<li><span>'+p[0]+'</span>'+p[1]+'</li>').join('')+'</ol>',
+  '<div class="pnx"><div><b>'+D.score.you+'<small>/100</small></b>your AI score now</div><div class="us"><b data-price>$5,000</b>a month, month to month</div></div>'];
+ return [['2','Compare with SEO agencies','What you get, item by item, next to what agencies charge','data-step-set="1"'],['3','Your first 12 months','Five phases, month by month, every item with your approval','data-step-set="2"'],['','Your proposal','Everything on one page to decide on or share','data-go="prop"']]
+  .map((x,i)=>'<button type="button" class="card pnc" '+x[3]+'><span class="kick">'+(x[0]?'Plan, page '+x[0]:'Then')+'</span><b>'+x[1]+'</b><span>'+x[2]+'</span>'+px[i]+'<i aria-hidden="true">→</i></button>').join('')}
+const PTABS=()=>'<div class="tabs ptabs" role="tablist" aria-label="Plan pages">'+['Overview','Compare with agencies','Your first 12 months'].map((t,i)=>'<button type="button" role="tab" class="'+(step===i?'on':'')+'" data-step-set="'+i+'" aria-selected="'+(step===i)+'">'+(i+1)+' · '+t+'</button>').join('')+'</div>';
 function vPlan(){if(step===1)return vPlanCompare();if(step===2)return vPlan12();const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
- const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a&nbsp;month.</em></div><div class="vs">'+
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a&nbsp;month.</em></div>'+PTABS()+'</div><div class="vs">'+
  '<div class="card pad col old"><span class="lbl">The old way: 9 vendors to hire and manage</span><div class="oldp"><s>$14,250</s><small> /mo</small></div><div class="vl">'+V.map(r=>'<div><span>'+r[0]+'</span><b>$'+fmt(r[1])+'</b></div>').join('')+'</div><div style="margin-top:auto;font:600 calc(1.15*var(--u))/1.4 var(--fb);color:var(--muted)">9 contracts, 9 teams, each working on its own piece of your business.</div></div>'+
  '<div class="vsx">vs</div><div class="card col new"><div class="nhead"><div><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl">One team. One record. All 11 checks.</div><div class="cdn" hidden></div></div><div class="rec">'+LOGO+'</div></div>'+
  '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+fpLine(1)+
  '<div class="rowx" style="margin-top:auto;justify-content:space-between"><button type="button" class="btn2" data-ckx="open">Get started →</button><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
- '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span>'+TRUST('plan')+'<span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><ul class="d">'+p[2].split(', ').map(x=>'<li><span>'+x+'</span></li>').join('')+'</ul></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
+ '<div class="pnext">'+pnextCards()+'</div></div></div>'+ckHTML()}
+/* the proposal: one page to decide on, or to talk over first; payment only when they choose it */
+function vProp(){const sc=D.score;const tally={};CRN.concat(NB).forEach(r=>(r.c||[]).forEach(n=>{if(!nameIsMe(n))tally[n]=(tally[n]||0)+1}));
+ const tp=Object.entries(tally).sort((a,b)=>b[1]-a[1])[0],rival=ANS.rival||(tp&&tp[0]);const cnt={p:0,w:0,f:0};CK.forEach(c=>cnt[stName(c.st)]++);
+ const VL=D.vol_loc&&D.vol_loc.level,ok$=price!=null&&TOTAL&&VL!=='country',full=ok$?TOTAL*0.023*price:null,stake=ok$&&SHARE!=null?full*(1-SHARE):null;
+ const row=(k,v,sm)=>'<div class="prr"><span>'+k+'</span><b>'+v+'</b>'+(sm?'<small>'+sm+'</small>':'')+'</div>';
+ const A='<div class="card pad col prc fade"><span class="kick">Where you are today</span>'+
+  row('AI score','<em style="color:'+(sc.you>=70?'var(--ok)':sc.you>=40?'var(--warn)':'var(--red)')+'">'+sc.you+'</em><small> / 100</small>',sc.avg!=null?'Area average '+sc.avg+' · top nearby '+sc.top:'')+
+  (D.scan&&D.scan.answers_total?row('AI answers that name you',D.scan.answers_naming_you+'<small> of '+D.scan.answers_total+'</small>',''):'')+
+  (rival?row(ANS.rival?'Who you lose clients to <span class="fromu">From you</span>':'Named most when AI skips you',X(rival),''):'')+
+  row('The 11 checks','<em style="color:var(--ok)">'+cnt.p+'</em><small> passed · </small><em style="color:var(--warn)">'+cnt.w+'</em><small> need work · </small><em style="color:var(--red)">'+cnt.f+'</em><small> failed</small>','')+
+  (stake!=null?row('Going to others each month','$'+fmt(stake),'Estimated from your searches and average spend'+(ANS.spend?' (from you)':'')):'')+'</div>';
+ const Bc='<div class="card pad col prc fade" style="animation-delay:.1s"><span class="kick">What we\'ll do</span><div class="prh">One team runs all 11 checks from one verified record of your business.</div>'+
+  (ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
+  '<ol class="prl">'+PHS.slice(0,3).map(p=>'<li><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span>'+p[2]+'</span></li>').join('')+'</ol>'+
+  '<div class="g90" style="margin-left:0;align-self:flex-start"><i></i>In AI answers by day 90, guaranteed</div><div class="hint" style="margin-top:auto">Every item waits for your approval. The full 12-month plan is in Plan, page 3.</div></div>';
+ const Cc='<div class="card col new prn fade" style="animation-delay:.2s"><span class="kick" style="color:var(--blue3)">Your plan</span><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="cdn" hidden></div>'+
+  (full?'<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(full)+'<small> /mo in new customers</small></b></div>':'')+
+  '<ul class="t4 one"><li><b>Month to month.</b> Cancel anytime.</li><li><b>Grandfathered</b> price as long as you stay</li><li><b>Area exclusivity</b> within 15 miles</li></ul>'+TRUST('side')+
+  '<div class="prcta"><a class="btn2 prbook" href="'+X(bookUrl(B.full||ME))+'" target="_blank" rel="noopener">Book a call to talk it over →</a><button type="button" class="prpay" data-ckx="open">Ready to start? Enter payment</button></div></div>';
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your proposal, <em>'+X(ME)+'</em></div><div class="prmeta"><span class="hint">'+new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span><button type="button" class="lnk prshare">Copy link to this proposal</button></div></div>'+
+  '<div class="g3 prop">'+A+Bc+Cc+'</div><div class="hint prfoot">No pressure: this proposal stays at this link, so you can share it with your team and decide when you\'re ready.</div></div></div>'+ckHTML()}
+STAGE.addEventListener('click',e=>{const b=e.target.closest('.prshare');if(!b)return;const u=location.href.split('#')[0]+'#prop';const done=t=>{b.textContent=t;setTimeout(()=>{b.textContent='Copy link to this proposal'},1800)};
+ (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>done('Link copied ✓')).catch(()=>{prompt('Copy this link:',u);done('Copy link to this proposal')})});
 /* compact plan card used beside the detail tables */
 function planSide(extra){return '<div class="card col new pside"><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl" style="color:#fff;font:700 calc(1.3*var(--u)) var(--fu)">One team. One record. All 11 checks.</div><div class="cdn" hidden></div>'+
- TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine()+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
+ TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine(1)+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
 const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
 function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
  const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
   body.map(r=>r.length===1?'<tr class="sec"><td colspan="5">'+X(r[0].toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'</td></tr>':'<tr'+(/^Things included/.test(r[0])?' class="tot"':'')+'>'+r.map((c,i)=>i?'<td class="'+cmpCls(c)+(i===4?' us':'')+'">'+(c==='✓'?'<i class="ck">✓</i>':c==='–'?'<i class="dash">–</i>':X(c))+'</td>':'<td>'+X(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">What you get, <em>side by side with SEO agencies</em></div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u))">'+t+'</div>'+planSide()+'</div></div></div>'+ckHTML()}
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">What you get, <em>side by side with SEO agencies</em></div>'+PTABS()+'</div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u))">'+t+'</div>'+planSide()+'</div></div></div>'+ckHTML()}
 function vPlan12(){const R=PLAN12||[],MO=matchMedia('(max-width:560px)').matches?['D','J','F','M','A','M','J','J','A','S','O','N']:['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
  const startOf=k=>k<6?0:k<9?2:k<12?3:k<15?5:k<18?7:9;
  const t='<div class="tblw"><table class="pl12"><thead><tr><th></th>'+MO.map((m,i)=>'<th'+(i===2?' class="d90"':'')+'>'+m+'</th>').join('')+'</tr></thead><tbody>'+
   R.map((r,k)=>{const s0=startOf(k);return '<tr><td><span>'+X(r[0])+'</span><small>'+X(r[1])+'</small></td>'+MO.map((_,m)=>'<td><i class="'+(m>=s0?'on':'')+(m===s0?' st':'')+'"></i></td>').join('')+'</tr>'}).join('')+'</tbody></table></div>';
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Your first 12 months, <em>month by month</em></div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u));gap:calc(.6*var(--u))"><div class="hint">We do more as time goes on. Every few months a new phase adds more work. It starts the month after you sign, and every item waits for your approval.</div>'+t+'</div>'+
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your first 12 months, <em>month by month</em></div>'+PTABS()+'</div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u));gap:calc(.6*var(--u))"><div class="tlmini"><div class="tlh"><b>Five phases</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span>'+TRUST('plan')+'<span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><ul class="d">'+p[2].split(', ').map(x=>'<li><span>'+x+'</span></li>').join('')+'</ul></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div>'+t+'</div>'+
   planSide('<div class="g90 dk"><i></i>In AI answers by day 90, guaranteed</div>')+'</div></div></div>'+ckHTML()}
 
 /* ---------- 11 checks: "What we found" detail for each check ---------- */
@@ -1515,7 +1639,7 @@ function priceUI(){const g=id=>document.getElementById(id),pr=planPrice();
  clearInterval(cdTimer);tick();if(promo)cdTimer=setInterval(()=>{if(cur!=='plan'){clearInterval(cdTimer);return}tick()},1000)}
 
 /* ---------- render ---------- */
-function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan})[cur]();if(cur==='scan')mapFocus();if(cur==='plan')ckWire();
+function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan,prop:vProp})[cur]();if(cur==='scan')mapFocus();if(cur==='plan'||cur==='prop')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
  if(MOB()&&D&&cur!=='find'&&cur!=='scan'){const bd=STAGE.querySelector('.scr>.body'),sp=STAGE.querySelector('.top .stepper');if(bd&&sp&&bd.scrollHeight>innerHeight*1.2){const c=sp.cloneNode(true);c.classList.add('mnext');bd.appendChild(c)}}
  if(!MOB())STAGE.querySelectorAll('.tblw,.fwrap').forEach(t=>{const f=()=>t.classList.toggle('more',t.scrollHeight>t.clientHeight+4&&t.scrollTop+t.clientHeight<t.scrollHeight-4);f();t.addEventListener('scroll',f,{passive:true})});
