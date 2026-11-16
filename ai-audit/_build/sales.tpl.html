@@ -798,6 +798,9 @@ const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
 let SLUG=null,D=null;
+/* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only */
+const API='https://lair-api-hps5or6egq-uw.a.run.app';
+let TEAM='';try{if(QP.get('team')){localStorage.setItem('lair-team',QP.get('team'));QP.delete('team');history.replaceState(null,'',location.pathname+(QP.toString()?'?'+QP:'')+location.hash)}TEAM=localStorage.getItem('lair-team')||''}catch(e){}
 const STAGE=$('#stage');
 
 /* ---------- chapters and routing ---------- */
@@ -854,8 +857,12 @@ function vFind(){
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
  const draw=()=>{sug.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
- const pick=r=>{if(r.typed){location.href='https://audit.localairegistry.com/a/?q='+encodeURIComponent(r.name);return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
- q.addEventListener('input',()=>{const v=q.value.trim();act=-1;items=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase())).concat([{name:v,typed:1}]);draw()});
+ const pick=r=>{if(r.typed){location.href='/a/?q='+encodeURIComponent(r.name);return}if(r.id){location.href='/a/?id='+encodeURIComponent(r.id);return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
+ let lt=null,lseq=0;
+ q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
+  clearTimeout(lt);if(!TEAM||v.length<3)return;const my=++lseq;
+  lt=setTimeout(async()=>{try{const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(v),{headers:{'X-Team-Key':TEAM}});if(!r.ok)return;const j=await r.json();if(my!==lseq)return;
+   const live=(j.results||[]).filter(x=>x.id).slice(0,5).map(x=>({name:x.name,sub:x.sub||'',id:x.id}));items=loc.concat(live,[{name:v,typed:1}]);act=-1;draw()}catch(e){}},220)});
  q.addEventListener('keydown',e=>{if(!items.length)return;if(e.key==='ArrowDown'){act=Math.min(items.length-1,act+1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){act=Math.max(0,act-1);draw();e.preventDefault()}else if(e.key==='Enter'){pick(items[Math.max(0,act)])}});
  sug.addEventListener('click',e=>{const li=e.target.closest('li');if(li)pick(items[+li.dataset.i])});
  if(D){q.value=D.hit.name}setTimeout(()=>q.focus(),50)}
@@ -1144,7 +1151,14 @@ function priceUI(){const g=id=>document.getElementById(id),pr=planPrice();
 function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan})[cur]();if(cur==='scan')mapFocus();if(cur==='plan')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
-if(SETS[QP.get('b')])setBiz(QP.get('b'));const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'));
+const start=()=>{const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'))};
+if(SETS[QP.get('b')])setBiz(QP.get('b'));
+if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
+ STAGE.innerHTML='<div class="scr"><div class="body" style="justify-content:center;align-items:center"><div class="sub" style="color:var(--muted)">Loading the audit…</div></div></div>';
+ fetch(API+'/audits/'+encodeURIComponent(QP.get('audit'))).then(r=>r.ok?r.json():null).then(j=>{
+  if(j&&j.status==='done'&&j.d&&j.d.biz&&j.d.hit){const k=j.slug||('live-'+j.id);SETS[k]=j.d;setBiz(k)}
+  start();if(!D)STAGE.querySelector('.sub')&&(STAGE.querySelector('.sub').textContent='That audit isn\'t ready or couldn\'t be found. Search for the business to run it again.')}).catch(()=>start())}
+else start();
 })();
 </script>
 </body>
