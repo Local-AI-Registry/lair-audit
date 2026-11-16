@@ -869,5 +869,5 @@ requestAnimationFrame(loop);
 })();
 </script>
 <script>(function(){function s(){parent.postMessage({lairEx:"vendors",h:document.documentElement.scrollHeight},"*")}addEventListener("load",s);addEventListener("resize",s);setTimeout(s,1500)})()</script>
-</body>
+<script id="skipfix">(function(){var s=document.getElementById("iskip");if(s&&!s.onclick)s.onclick=function(){var h=document.getElementById("hero");if(h)scrollTo({top:h.getBoundingClientRect().top+scrollY,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}})()</script></body>
 </html>
