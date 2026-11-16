@@ -151,8 +151,8 @@ body.lv-lock{overflow:hidden}
 .v3-stage{position:relative;height:380px;border-radius:18px;overflow:hidden;background:radial-gradient(120% 90% at 50% 20%,#FFFFFF 0%,#EEF2FB 70%,#E6ECF8 100%);touch-action:pan-y;cursor:grab}
 .v3-stage canvas{display:block;width:100%;height:100%}.v3-l{position:absolute;inset:0;pointer-events:none}
 .v3-l span{position:absolute;transform:translate(-50%,-100%);font:700 11px/1.2 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#0B1A2E;background:rgba(255,255,255,.88);padding:3px 7px;border-radius:7px;white-space:nowrap;max-width:150px;overflow:hidden;text-overflow:ellipsis;box-shadow:0 2px 8px rgba(11,26,46,.08)}
-.v3-l span b{color:#1F4FE0}.v3-hint{position:absolute;right:12px;bottom:10px;font:600 11px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#6B7689;background:rgba(255,255,255,.8);padding:3px 8px;border-radius:99px}
-.v3-why{margin:-4px 0 14px;font-size:15.5px;color:#0B1A2E;font-weight:500}.v3-c{font-size:15px;color:#3D4A5C;margin:14px 0 6px}.v3-c span{display:block;font-size:12.5px;color:#6B7689;margin-top:4px}.v3-d summary{font-weight:700;cursor:pointer;font-size:14px}.v3-d table{font-size:13.5px}
+.v3-l span b{color:#1F4FE0}.v3-hint{position:absolute;right:12px;bottom:10px;font:600 11px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#566174;background:rgba(255,255,255,.8);padding:3px 8px;border-radius:99px}
+.v3-why{margin:-4px 0 14px;font-size:15.5px;color:#0B1A2E;font-weight:500}.v3-c{font-size:15px;color:#3D4A5C;margin:14px 0 6px}.v3-c span{display:block;font-size:12.5px;color:#566174;margin-top:4px}.v3-d summary{font-weight:700;cursor:pointer;font-size:14px}.v3-d table{font-size:13.5px}
 @media(max-width:600px){.v3{padding:16px 14px 10px}.v3-stage{height:320px}.v3-l span{font-size:10px;max-width:110px}}pre{white-space:pre-wrap;word-break:break-word}img,svg,video,iframe{max-width:100%}
 @media(max-width:700px){
 .v3-k,.kick,p.kick,.soon,.tag,.tier-tag,.eyebrow,.num,.n,small,.legal span,.cite a,.fc i,.dir i,.awTest b,.test b,.facts b,.meta b,.trusted,.ln-small{font-size:12px!important}
@@ -201,7 +201,7 @@ footer.site.lf .lf-addr{text-transform:none;letter-spacing:.02em;font-size:12px}
 .ev-fig{margin:22px 0;padding:14px;background:#fff;border:1px solid rgba(11,26,46,.1);border-radius:18px}
 .ev-fig img{display:block;width:100%;height:auto;border-radius:10px;background:#fff}
 .ev-fig figcaption{margin-top:12px;font-size:14.5px;line-height:1.55;color:#3D4A5C}.ev-fig figcaption b{color:#0B1A2E}
-.ev-src{display:block;margin-top:8px;font-size:12.5px;color:#6B7689}.ev-src a{color:#1F4FE0}
+.ev-src{display:block;margin-top:8px;font-size:12.5px;color:#566174}.ev-src a{color:#1F4FE0}
 .ev-check,.ev-ask{margin:36px 0;padding:22px;border-radius:20px;background:#EEF2FD;border:1px solid rgba(31,79,224,.18)}
 .ev-check ul,.ev-ask ul{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:10px}
 .ev-check label{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;background:#fff;border-radius:12px;cursor:pointer;line-height:1.45}
