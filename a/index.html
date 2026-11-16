@@ -39,7 +39,8 @@ a.bk{color:var(--blue);font:600 14px var(--fu);text-decoration:none}
 </div>
 <script>
 /* Runs a live scan on lair-api, then opens the finished audit in /ai-audit/.
-   Scans need a team key: open any page once with ?team=<key> and it is kept in this browser. */
+   Anyone can scan within the API's free daily limits. A team key (open any page once with ?team=<key>, kept in
+   this browser) skips those limits. */
 const API='https://lair-api-hps5or6egq-uw.a.run.app';
 let STEPS=['Finding your Google profile','Finding your competitors','Reading your website','Checking Google results','Asking ChatGPT','Asking Gemini','Asking Perplexity','Asking Claude','Looking you up across the web','Comparing competitors','Writing your audit'];
 const st=document.getElementById('st'),pb=document.getElementById('pb');
@@ -53,15 +54,17 @@ const P=new URLSearchParams(location.search);let id=P.get('id')||'';const q=P.ge
 async function run(){
  if(!id&&!q){location.replace('/');return}
  let K='';try{if(P.get('team')){localStorage.setItem('lair-team',P.get('team'));P.delete('team');history.replaceState(null,'',location.pathname+'?'+P)}K=localStorage.getItem('lair-team')||''}catch(e){}
- if(!K)throw Object.assign(new Error('nokey'),{msg:'This audit needs a team key to run.'});
- const H={'X-Team-Key':K};
+ const H=K?{'X-Team-Key':K}:{};
+ const refused=async r=>{if(r.status!==401&&r.status!==429)return null;let d='';try{d=(await r.clone().json()).detail||''}catch(e){}
+  if(r.status===401)return Object.assign(new Error('key'),{msg:K?'That team key wasn\'t accepted.':'Free audits aren\'t open right now.'});
+  if(r.status===429)return Object.assign(new Error('limit'),{msg:d||'Today\'s free audits are all used up.'});return null};
  if(!id){document.getElementById('nm').textContent=q;
-  const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(q),{headers:H});if(r.status===401)throw Object.assign(new Error('key'),{msg:'That team key wasn\'t accepted.'});
+  const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(q),{headers:H});{const x=await refused(r);if(x)throw x}
   const j=r.ok?await r.json():{};const hit=(j.results||[]).find(x=>x.id);
   if(!hit)throw Object.assign(new Error('nf'),{msg:'We couldn\'t find "'+q+'" on Google.'});id=hit.id}
  LI.length&&(LI[0].className='on');
  const res=await fetch(API+'/audit?id='+encodeURIComponent(id),{headers:H});
- if(res.status===401)throw Object.assign(new Error('key'),{msg:'That team key wasn\'t accepted.'});
+ {const x=await refused(res);if(x)throw x}
  if(!res.ok||!res.body)throw new Error('server');
  const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',D=null;
  for(;;){const {value,done:end}=await rd.read();if(end)break;buf+=dec.decode(value,{stream:true});let n;
