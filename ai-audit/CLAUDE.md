@@ -45,6 +45,8 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   browser's localStorage as `lair-team` and removed from the URL. Never commit the key.
 - Flow: search result (or the homepage) → `/a/?id=<place id>` (or `?q=<name>`) runs the scan with a progress list, about 4 minutes
   → `/ai-audit/?audit=<id>#scan`. Saved audit links need no key. The API only allows https://audit.localairegistry.com (CORS).
+- No self-service for the public: scans are run by our team. A visitor without a key who picks a business lands on `/a/`,
+  which makes no API calls and shows a lead screen ("Book my audit call" → Bridgette's Calendly, or text us).
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.

@@ -39,7 +39,9 @@ a.bk{color:var(--blue);font:600 14px var(--fu);text-decoration:none}
 </div>
 <script>
 /* Runs a live scan on lair-api, then opens the finished audit in /ai-audit/.
-   Scans need a team key: open any page once with ?team=<key> and it is kept in this browser. */
+   Only our team runs scans (team key: open any page once with ?team=<key>, kept in this browser).
+   Visitors without a key see lead(): our team prepares their audit and they book a call to go through it. */
+const BOOK='https://calendly.com/bridgette-localairegistry/30min';
 const API='https://lair-api-hps5or6egq-uw.a.run.app';
 let STEPS=['Finding your Google profile','Finding your competitors','Reading your website','Checking Google results','Asking ChatGPT','Asking Gemini','Asking Perplexity','Asking Claude','Looking you up across the web','Comparing competitors','Writing your audit'];
 const st=document.getElementById('st'),pb=document.getElementById('pb');
@@ -53,7 +55,7 @@ const P=new URLSearchParams(location.search);let id=P.get('id')||'';const q=P.ge
 async function run(){
  if(!id&&!q){location.replace('/');return}
  let K='';try{if(P.get('team')){localStorage.setItem('lair-team',P.get('team'));P.delete('team');history.replaceState(null,'',location.pathname+'?'+P)}K=localStorage.getItem('lair-team')||''}catch(e){}
- if(!K)throw Object.assign(new Error('nokey'),{msg:'This audit needs a team key to run.'});
+ if(!K){lead(q);return}
  const H={'X-Team-Key':K};
  if(!id){document.getElementById('nm').textContent=q;
   const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(q),{headers:H});if(r.status===401)throw Object.assign(new Error('key'),{msg:'That team key wasn\'t accepted.'});
@@ -72,6 +74,15 @@ async function run(){
  if(!D||!aid)throw new Error('incomplete');
  LI.forEach((l,j)=>{done.add(j);l.className='ok'});pb.style.width='100%';
  location.replace('/ai-audit/?audit='+encodeURIComponent(aid)+'#scan')}
+function lead(name){
+ const nm=name||'your business';
+ document.getElementById('nm').textContent=name?'Your AI visibility audit for '+name:'Your AI visibility audit';
+ document.getElementById('ad').textContent='Prepared by our team, then walked through with you on a short call.';
+ document.title='Your AI visibility audit · Local AI Registry';
+ document.querySelector('.card').innerHTML='<p style="margin:0 0 6px;color:var(--ink);font-weight:600">We\'ll build the full audit for '+esc(nm)+'.</p><p class="note" style="margin:0">We check how Google, ChatGPT, Gemini, Perplexity and Claude answer when customers look for a business like yours, then show you what\'s working and what to fix. Pick a time and we\'ll go through it together.</p>'+
+  '<a class="cta" href="'+BOOK+'" target="_blank" rel="noopener">Book my audit call</a>'+
+  '<p class="note">Or <a class="bk" href="sms:+12139315633?body='+encodeURIComponent('I\'d like my AI visibility audit'+(name?' for '+name:''))+'">text us</a> and we\'ll set it up.</p>';
+ document.getElementById('nt').hidden=true}
 run().catch(e=>{const box=document.querySelector('.card');const name=document.getElementById('nm').textContent;
  box.innerHTML='<p style="margin:0;color:var(--ink);font-weight:600">'+esc(e.msg||'We hit a snag finishing this audit.')+'</p><p class="note">Text us and we\'ll send it to you, usually the same day.</p><a class="cta" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+name+(id?' ('+id+')':''))+'">Text us for my audit</a>';
  document.getElementById('nt').hidden=true});
