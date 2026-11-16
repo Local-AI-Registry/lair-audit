@@ -797,7 +797,7 @@ const fmt=n=>n==null||isNaN(n)?'–':Math.round(n).toLocaleString('en-US');
 const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
-let SLUG=null,D=null;
+let SLUG=null,D=null,LIVE=null;const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
 /* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only */
 const API='https://lair-api-hps5or6egq-uw.a.run.app';
 let TEAM='';try{if(QP.get('team')){localStorage.setItem('lair-team',QP.get('team'));QP.delete('team');history.replaceState(null,'',location.pathname+(QP.toString()?'?'+QP:'')+location.hash)}TEAM=localStorage.getItem('lair-team')||''}catch(e){}
@@ -807,7 +807,7 @@ const STAGE=$('#stage');
 const CH=[['find','Find'],['scan','Scan'],['score','Your score'],['ask','Patients ask AI'],['checks','11 checks'],['why','Why us'],['plan','Plan']];
 const STEPS={score:3,ask:2,checks:2,plan:3};
 let cur='find',step=0;
-function go(id,s){if(!D&&id!=='find')id='find';const moved=id!==cur;cur=id;step=s||0;if(moved&&innerWidth<=760)scrollTo(0,0);if(location.hash.slice(1)!==id)history.replaceState(null,'',location.search+'#'+id);render()}
+function go(id,s){if(!D&&id!=='find'&&!(id==='scan'&&LIVE))id='find';const moved=id!==cur;cur=id;step=s||0;if(moved&&innerWidth<=760)scrollTo(0,0);if(location.hash.slice(1)!==id)history.replaceState(null,'',location.search+'#'+id);render()}
 function next(){const n=STEPS[cur]||1;if(step<n-1){step++;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i<CH.length-1)go(CH[i+1][0])}
 function prev(){if(step>0){step--;render();return}const i=CH.findIndex(c=>c[0]===cur);if(i>1)go(CH[i-1][0],(STEPS[CH[i-1][0]]||1)-1)}
 addEventListener('keydown',e=>{if(e.target.closest('input,textarea'))return;if(e.key==='Escape'){const p=$('.pop:not([hidden])');if(p){p.hidden=true;return}}
@@ -857,7 +857,7 @@ function vFind(){
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
  const draw=()=>{sug.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
- const pick=r=>{if(r.typed){location.href='/a/?q='+encodeURIComponent(r.name);return}if(r.id){location.href='/a/?id='+encodeURIComponent(r.id);return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
+ const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
  let lt=null,lseq=0;
  q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
   clearTimeout(lt);if(!TEAM||v.length<3)return;const my=++lseq;
@@ -869,13 +869,17 @@ function vFind(){
 
 /* ---------- SCAN ---------- */
 const PH=[
- ['Reading your website','Looking at your site the way Google and AI do.',['How fast does it load on a phone?','Can search engines read every page?','Do your pages say what you offer?']],
  ['Checking your Google profile','What Google tells people before they ever call you.',['Hours, photos and categories','Reading your reviews','Is your website link working?']],
+ ['Sizing up your competition','Who else shows up near you, and how they\'re doing.',['Finding your closest competitors','Comparing reviews and ratings','Searching Google like a customer']],
+ ['Reading your website','Looking at your site the way Google and AI do.',['How fast does it load on a phone?','Can search engines read every page?','Do your pages say what you offer?']],
+ ['Asking the AI assistants','The same questions your customers ask, word for word.',['Asking Google AI','Asking ChatGPT','Asking Gemini','Asking Perplexity','Asking Claude']],
  ['Looking you up across the web','Every place AI goes to learn about a business.',['Is your address the same everywhere?','Any news stories about you?','Any videos on YouTube?','Are you in the best-of lists?']],
- ['Sizing up your competition','Who else shows up near you, and how they\'re doing.',['Finding your closest competitors','Comparing reviews and ratings','Comparing website traffic']],
- ['Asking the AI assistants','The same questions your customers ask, word for word.',['Asking ChatGPT','Asking Gemini','Asking Claude','Asking Perplexity','Asking Google AI']],
- ['Writing your audit','Turning it all into one simple score.',['Scoring 11 things AI checks','Adding up what it\'s worth to you']],
+ ['Writing your audit','Turning it all into one simple score.',['Comparing website traffic','Scoring 11 things AI checks','Adding up what it\'s worth to you']],
 ];
+const AIK=3; /* the "Asking the AI assistants" phase */
+/* the live scan's 11 steps (lair-api pipeline.STEPS) -> phase above, rough seconds each (for the progress bar), and what to show when a step sends no facts */
+const LSTEP=[[0,12,'Read your Google profile'],[1,40,'Found your closest competitors'],[2,25,'Read your website'],[3,2,'Checked Google results'],[3,14,'Asked ChatGPT'],[3,14,'Asked Gemini'],[3,14,'Asked Perplexity'],[3,14,'Asked Claude'],[4,45,'Looked you up across the web'],[5,30,'Compared your competitors'],[5,5,'Wrote your audit']];
+const LTOTAL=LSTEP.reduce((a,x)=>a+x[1],0);
 function findings(){const v=(c,re)=>{const x=(AUD[c]||[]).find(m=>re.test(m.m));return x?x.v[0]:null};const F=[[],[],[],[],[],[]];
  const lt=v('Web management',/load time/i);if(lt!=null)F[0].push('Your homepage loaded in '+fmt1(lt)+' seconds');F[0].push('Read your homepage and service pages','Checked the images on your homepage');
  if(B.reviews)F[1].push('Found '+fmt(B.reviews)+' Google reviews');if(B.rating)F[1].push('Your average rating: '+B.rating+' stars');const ph=v('Google profile',/photos/i);if(ph!=null)F[1].push('Found '+fmt(ph)+' photos on your Google profile');
@@ -885,14 +889,18 @@ function findings(){const v=(c,re)=>{const x=(AUD[c]||[]).find(m=>re.test(m.m));
  F[3].push('Found your '+(WHO.length-1)+' closest competitors');WHO.slice(1).forEach((n,i)=>{if(REV[i+1]!=null)F[3].push(n+': '+fmt(REV[i+1])+' reviews')});
  const EN=[[1,'ChatGPT'],[2,'Gemini'],[5,'Claude'],[3,'Perplexity']];EN.forEach(([k,n])=>{const hit=NB.some(r=>r.r&&r.r[k]);F[4].push(hit?n+' mentioned you':'Asked '+n+' about you')});
  if(D.scan&&D.scan.answers_total)F[4].push('Collected '+D.scan.answers_total+' AI answers');
- F[5].push('Scored 11 things AI checks','Worked out what AI is worth to you');return F}
+ F[5].push('Scored 11 things AI checks','Worked out what AI is worth to you');return [F[1],F[3],F[0],F[4],F[2],F[5]]}
 let scanTimer=null;
 const MOB=()=>innerWidth<=760;
-function vScan(){const FIND=findings();let k=0,q=0,paused=RM,seq=0,lastEng='';const mob=MOB();
+function vScan(){let LV=LIVE&&!D?LIVE:null;
+ if(LV){ME=LV.short||LV.name||'Your business';RAT=[LV.rt];WHO=[ME];NB=[];CRN=[];B={svc:LV.svc}}
+ if(LV&&LV.err){clearInterval(scanTimer);STAGE.innerHTML='<div class="scr"><div class="scan4 ready-in"><div class="map"><div class="pan"></div></div><div class="sp" id="sp"><a class="lg" href="./" data-home>'+LOGO+'Local AI Registry</a><div class="sph"><div class="kick">AI visibility audit</div><div class="spn">'+X(ME)+'</div></div>'+
+  '<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">'+X(LV.err)+'</div><div class="sub">Text us and we\'ll send your audit, usually the same day.</div><a class="btn" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+(LV.name||LV.q||'my business')+(LV.id?' ('+LV.id+')':''))+'">Text us for my audit →</a></div></div></div></div>';return}
+ const FIND=LV?[[],[],[],[],[],[]]:findings();let k=0,q=0,paused=RM&&!LV,seq=0,lastEng='';const mob=MOB();
  /* layout: where "you" sits on the map, and where competitors go around it */
  const C0=mob?[50,40]:[64,50],POS=mob?[[24,34],[78,37],[76,50]]:[[50,22],[86,27],[80,70]];
  const pins=[[ME,RAT[0]!=null?'★ '+RAT[0]:'',C0[0],C0[1],1]].concat(WHO.slice(1).map((n,i)=>[n,RAT[i+1]!=null?'★ '+RAT[i+1]:'',POS[i][0],POS[i][1]]));
- const q0=(NB[0]||CRN[0]||{}).q||('best '+(B.svc||'business')+' near me');
+ const qA=()=>(NB[0]||CRN[0]||{}).q||('best '+(B.svc||(LV&&LV.svc)||'business')+' near me'),q0=qA();
  STAGE.innerHTML='<div class="scr"><div class="scan4">'+
   '<div class="map"><div class="pan">'+STREETS+dots(26,7)+
    '<div class="ring r1" style="left:'+C0[0]+'%;top:'+C0[1]+'%"></div><div class="ring r2" style="left:'+C0[0]+'%;top:'+C0[1]+'%"></div><div class="sweep" style="left:'+C0[0]+'%;top:'+C0[1]+'%"></div>'+
@@ -904,27 +912,33 @@ function vScan(){const FIND=findings();let k=0,q=0,paused=RM,seq=0,lastEng='';co
    '<div class="ph4" id="ph4">'+PH.map((x,i)=>'<div class="p" id="phs'+i+'"><i></i><div><b>'+x[0]+'</b><span>'+x[1]+'</span><div class="quip" id="qp'+i+'"></div></div></div>').join('')+'</div>'+
    '<div class="ready"><div class="rt">Your audit is ready.</div><div class="sub">We checked 11 things AI looks at before it recommends you.</div><button type="button" class="btn" data-go="score">See your score →</button></div>'+
    '<div class="pct"><div class="rowx" style="justify-content:space-between"><b id="pct">0%</b><span class="hint" id="eta"></span></div><div class="pbar"><i id="pbar" style="width:0"></i></div></div></div>'+
-  '<div class="ctl"><button type="button" data-c="p" aria-label="Previous step">‹</button><button type="button" data-c="t" id="ctl-t" aria-label="Pause">⏸</button><button type="button" data-c="n" aria-label="Next step">›</button></div>'+
-  '<button type="button" class="skip" data-go="score">Skip to results →</button></div></div>';
+  (LV?'':'<div class="ctl"><button type="button" data-c="p" aria-label="Previous step">‹</button><button type="button" data-c="t" id="ctl-t" aria-label="Pause">⏸</button><button type="button" data-c="n" aria-label="Next step">›</button></div>'+
+  '<button type="button" class="skip" data-go="score">Skip to results →</button>')+'</div></div>';
  const $$=id=>document.getElementById(id);
  const plen=i=>Math.max(4,PH[Math.min(i,PH.length-1)][2].length);
- function update(){const done=k>=PH.length;$$('sp').classList.toggle('done',done);
+ function update(){if(LV){k=LV.done?PH.length:LV.k;if(LV.done&&D)LV=null}const done=k>=PH.length;$$('sp').classList.toggle('done',done);
   PH.forEach((x,i)=>{const r=$$('phs'+i);r.className=i<k?'d':i===k?'n':'p';if(i!==k){if(r.dataset.q){r.dataset.q='';$$('qp'+i).textContent=''}return}
-   const t=x[2][Math.min(x[2].length-1,Math.floor(q*x[2].length/plen(i)))]+'…';if(r.dataset.q!==t){r.dataset.q=t;$$('qp'+i).innerHTML='<em>'+X(t)+'</em>'}});
-  for(let i=1;i<pins.length;i++)$$('pin'+i).classList.toggle('in',k>=3);
-  $$('bigq').classList.toggle('show',k===4&&!done);
-  if(k===4){const e=PH[4][2][Math.min(4,Math.floor(q*5/plen(4)))].replace('Asking ','')+' is asked';if(e!==lastEng){lastEng=e;$$('bigq-s').innerHTML='<em>'+X(e)+'</em>'}}
-  const pct=Math.round(Math.min(PH.length,k+(done?0:q/plen(k)))/PH.length*100);$$('pbar').style.width=pct+'%';$$('pct').textContent=pct+'%';
-  $$('eta').textContent=done?'Ready':'Step '+(k+1)+' of '+PH.length+' · about '+Math.max(1,Math.round(((PH.length-k)*plen(k)-q)*1.25))+'s left';
-  const t=$$('ctl-t');t.textContent=paused?'▶':'⏸';t.setAttribute('aria-label',paused?'Play':'Pause')}
+   const t=(LV&&LV.label?LV.label:x[2][Math.min(x[2].length-1,Math.floor(q*x[2].length/plen(i)))])+'…';if(r.dataset.q!==t){r.dataset.q=t;$$('qp'+i).innerHTML='<em>'+X(t)+'</em>'}});
+  for(let i=1;i<pins.length;i++)$$('pin'+i).classList.toggle('in',k>=1);
+  $$('bigq').classList.toggle('show',k===AIK&&!done);
+  if(k===AIK){const e=(LV&&LV.label&&/^Asking /.test(LV.label)?LV.label:PH[AIK][2][Math.min(4,Math.floor(q*5/plen(AIK)))]).replace('Asking ','')+' is asked';if(e!==lastEng){lastEng=e;$$('bigq-s').innerHTML='<em>'+X(e)+'</em>';$$('bigq').lastChild.textContent='"'+qA()+'"'}}
+  let pct,eta;
+  if(LV){const el=(Date.now()-LV.t0)/1000,w=LSTEP.reduce((a,x,i)=>a+(LV.ok.has(i)?x[1]:0),0),cw=(LSTEP[LV.cur]||[0,0])[1],into=Math.min(cw*.9,Math.max(0,(Date.now()-LV.tc)/1000));
+   pct=done?100:Math.min(99,Math.round((w+into)/LTOTAL*100));const left=Math.max(10,Math.round(Math.max(LTOTAL-el,LTOTAL*(1-pct/100))/10)*10);
+   eta=done?'Ready':'Step '+(k+1)+' of '+PH.length+' · about '+(left>=90?Math.round(left/60)+' min':left+'s')+' left'}
+  else{pct=Math.round(Math.min(PH.length,k+(done?0:q/plen(k)))/PH.length*100);eta=done?'Ready':'Step '+(k+1)+' of '+PH.length+' · about '+Math.max(1,Math.round(((PH.length-k)*plen(k)-q)*1.25))+'s left'}
+  $$('pbar').style.width=pct+'%';$$('pct').textContent=pct+'%';$$('eta').textContent=eta;
+  const t=$$('ctl-t');if(t){t.textContent=paused?'▶':'⏸';t.setAttribute('aria-label',paused?'Play':'Pause')}}
  const SPOTS=[[72,11],[56,80],[87,46],[52,63],[84,87],[64,91],[67,33],[90,60]].sort(()=>Math.random()-.5);
- function addFinding(txt){const P=SPOTS[(seq++)%SPOTS.length],el=document.createElement('div');el.className='fnd';
+ function addFinding(txt){const bq=document.getElementById('bigq').classList.contains('show'),SP2=bq?SPOTS.filter(p=>p[1]>45):SPOTS,P=SP2[(seq++)%SP2.length],el=document.createElement('div');el.className='fnd';
   const x=mob?50:P[0],y=mob?57+((seq%3)-1)*2:P[1];el.style.left=x+'%';el.style.top=y+'%';el.innerHTML='<i>✓</i><span>'+X(txt)+'</span>';
   el.addEventListener('animationend',()=>{if(el.parentNode)el.parentNode.removeChild(el)});const f=$$('feed');[...f.children].forEach(c=>c.classList.add('out'));f.appendChild(el)}
  STAGE.onclick=e=>{const b=e.target.closest('[data-c]');if(!b)return;const c=b.dataset.c;if(c==='t')paused=!paused;else{paused=true;q=0;$$('feed').textContent='';k=c==='p'?Math.max(0,k-1):Math.min(PH.length,k+1)}update()};
- if(RM)k=PH.length;update();requestAnimationFrame(()=>requestAnimationFrame(()=>STAGE.querySelector('.scan4').classList.add('ready-in')));clearInterval(scanTimer);
- scanTimer=setInterval(()=>{if(cur!=='scan'){clearInterval(scanTimer);return}if(paused||k>=PH.length)return;q++;const FL=FIND[k]||[];const j=q===1?0:q===3?1:-1;if(j>=0&&FL[j])addFinding(FL[j]);if(q>=plen(k)){q=0;k++}update()},1250)}
-let wasMob=MOB();addEventListener('resize',()=>{const m=MOB();if(m!==wasMob){wasMob=m;if(D)render()}});
+ if(RM||(!LV&&SCANNED.has(SLUG)))k=PH.length;update();requestAnimationFrame(()=>requestAnimationFrame(()=>STAGE.querySelector('.scan4').classList.add('ready-in')));clearInterval(scanTimer);
+ scanTimer=setInterval(()=>{if(cur!=='scan'){clearInterval(scanTimer);return}
+  if(LV){q=(q+1)%999;if((q%2===0||LV.queue.length>3)&&LV.queue.length)addFinding(LV.queue.shift());update();return}
+  if(paused||k>=PH.length)return;q++;const FL=FIND[k]||[];const j=q===1?0:q===3?1:-1;if(j>=0&&FL[j])addFinding(FL[j]);if(q>=plen(k)){q=0;k++}update()},1250)}
+let wasMob=MOB();addEventListener('resize',()=>{const m=MOB();if(m!==wasMob){wasMob=m;if(D||LIVE)render()}});
 
 /* ---------- SCORE ---------- */
 function gauge(sz){const sc=D.score,cx=200,cy=190,R=150,ang=v=>Math.PI*(1-v/100),pt=(v,r)=>[cx+r*Math.cos(ang(v)),cy-r*Math.sin(ang(v))];
@@ -1103,11 +1117,11 @@ function mapEnsure(){if(MAPBG.firstChild)return;const f=document.createElement('
 function mapPad(){const mob=MOB();if(mob){const sp=STAGE.querySelector('.sp');return {top:150,bottom:(sp?sp.offsetHeight:260)+40,left:0,right:0}}const sp=STAGE.querySelector('.sp');return {top:90,bottom:60,left:(sp?sp.getBoundingClientRect().right:0)+30,right:30}}
 function mapTrack(){const L=mapWin&&mapWin.LAIR;if(!L||!L.map||!L.mk||L.__tracked)return;L.__tracked=1;
  const place=()=>{try{const p=L.map.project(L.mk.getLngLat());STAGE.style.setProperty('--rx',p.x+'px');STAGE.style.setProperty('--ry',p.y+'px');document.body.classList.add('maptracked')}catch(e){}};L.map.on('render',place);place()}
-async function mapFocus(){if(!mapLive||!D||mapFocused===SLUG)return;mapFocused=SLUG;const H=D.hit;if(!H||!H.loc)return;
+async function mapFocus(){const LV=!D&&LIVE&&LIVE.hit?LIVE:null,key=LV?'live:'+LV.id:SLUG;if(!mapLive||(!D&&!LV)||mapFocused===key)return;const H=LV?LV.hit:D.hit;if(!H||!H.loc)return;mapFocused=key;const SK=key;
  try{mapWin.LAIR.pad=mapPad()}catch(e){}
- const cs=await nearby(H.loc,H.cq||B.svc||'',H.name);if(mapFocused!==SLUG)return;
+ const cs=await nearby(H.loc,H.cq||(B&&B.svc)||'',H.name);if(mapFocused!==SK)return;
  const post=o=>{try{mapWin.postMessage(o,'*')}catch(e){}};
- post({t:'focus',name:H.short,rt:H.rt,n:H.n,area:H.area,loc:H.loc,hours:H.hours,comps:cs,qs:H.qs});post({t:'audit',steps:[['Scanning',PH.length*5+2]]});
+ post({t:'focus',name:H.short,rt:H.rt,n:H.n,area:H.area,loc:H.loc,hours:H.hours,comps:cs,qs:H.qs});post({t:'audit',steps:[['Scanning',LV?LTOTAL:PH.length*5+2]]});
  setTimeout(mapTrack,200)}
 
 /* ---------- checkout (card form and promo code; card details never leave the page) ---------- */
@@ -1156,9 +1170,43 @@ if(SETS[QP.get('b')])setBiz(QP.get('b'));
 if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
  STAGE.innerHTML='<div class="scr"><div class="body" style="justify-content:center;align-items:center"><div class="sub" style="color:var(--muted)">Loading the audit…</div></div></div>';
  fetch(API+'/audits/'+encodeURIComponent(QP.get('audit'))).then(r=>r.ok?r.json():null).then(j=>{
-  if(j&&j.status==='done'&&j.d&&j.d.biz&&j.d.hit){const k=j.slug||('live-'+j.id);SETS[k]=j.d;setBiz(k)}
+  if(j&&j.status==='done'&&j.d&&j.d.biz&&j.d.hit){const k=j.slug||('live-'+j.id);SETS[k]=j.d;SCANNED.add(k);setBiz(k)}
   start();if(!D)STAGE.querySelector('.sub')&&(STAGE.querySelector('.sub').textContent='That audit isn\'t ready or couldn\'t be found. Search for the business to run it again.')}).catch(()=>start())}
+else if(QP.get('id')||QP.get('q'))liveScan({id:QP.get('id')||'',q:QP.get('q')||''});
 else start();
+
+/* ---------- live scan: runs on lair-api and plays on the map as it happens, then opens the finished audit ---------- */
+function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(o.q||'')))return;
+ D=null;SLUG=null;LIVE={id:o.id||'',q:o.q||'',name:o.name||o.q||'',short:'',k:0,cur:0,label:'',ok:new Set(),queue:[],said:new Set(),t0:Date.now(),tc:Date.now(),hit:null,done:false,err:''};const L=LIVE;
+ try{history.replaceState(null,'','?'+(L.id?'id='+encodeURIComponent(L.id):'q='+encodeURIComponent(L.q))+'#scan')}catch(e){}
+ document.title='Running the audit · Local AI Registry';go('scan');
+ const fail=m=>{if(LIVE!==L)return;L.err=m||'We hit a snag finishing this audit.';if(cur==='scan')render()};
+ const redraw=()=>{if(LIVE===L&&cur==='scan'&&!D)render()};
+ const setHit=b=>{if(!b||b.lat==null||L.hit)return;L.hit={loc:[b.lng,b.lat],short:b.short||b.name,name:b.full||b.name,rt:b.rating,n:b.reviews,area:b.area,hours:b.hours,cq:L.svc||''};
+  L.short=b.short||L.short;L.rt=b.rating;if(cur==='scan')mapFocus()};
+ (async()=>{if(!TEAM)throw {msg:'This audit needs a team key to run.'};const H={'X-Team-Key':TEAM};
+  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401)throw {msg:'That team key wasn\'t accepted.'};
+   const j=r.ok?await r.json():{};const hit=(j.results||[]).find(x=>x.id);if(!hit)throw {msg:'We couldn\'t find "'+L.q+'" on Google.'};L.id=hit.id;L.name=hit.name||L.name;
+   try{history.replaceState(null,'','?id='+encodeURIComponent(L.id)+'#scan')}catch(e){}}
+  fetch(API+'/places/'+encodeURIComponent(L.id),{headers:H}).then(r=>r.ok?r.json():null).then(b=>{if(b&&LIVE===L){L.name=b.full||L.name;L.short=b.short||L.short;setHit(b);redraw()}}).catch(()=>{});
+  const res=await fetch(API+'/audit?id='+encodeURIComponent(L.id),{headers:H});
+  if(res.status===401)throw {msg:'That team key wasn\'t accepted.'};if(res.status===429)throw {msg:'The team has used today\'s scans.'};
+  if(!res.ok||!res.body)throw {msg:'We couldn\'t start the scan.'};
+  const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
+  for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
+   while((n=buf.indexOf('\n'))>=0){const line=buf.slice(0,n).trim();buf=buf.slice(n+1);if(!line)continue;let m;try{m=JSON.parse(line)}catch(e){continue}if(LIVE!==L)return;
+    if(m.id&&!m.d)aid=m.id;
+    if(m.biz){L.name=m.biz.name||L.name;if(m.biz.svc)L.svc=m.biz.svc;if(m.biz.short)L.short=m.biz.short;setHit(m.biz);if(L.hit&&m.biz.svc)L.hit.cq=m.biz.svc}
+    if(m.find)m.find.forEach(f=>{L.queue.push(f);L.said.add(m.at)});
+    if(m.step!=null&&m.ok!==false){L.ok.add(m.step);if(!L.said.has(m.step)&&LSTEP[m.step])L.queue.push(LSTEP[m.step][2]);
+     L.cur=Math.min(LSTEP.length-1,m.step+1);L.k=LSTEP[L.cur][0];L.tc=Date.now();
+     L.label={4:'Asking ChatGPT',5:'Asking Gemini',6:'Asking Perplexity',7:'Asking Claude',3:'Asking Google AI'}[L.cur]||''}
+    if(m.err)throw {msg:m.msg};
+    if(m.d){out=m.d;slug=m.slug;aid=m.id||aid}}}
+  if(!out||!out.biz||!out.hit)throw {msg:'We hit a snag finishing this audit.'};
+  const key=slug||('live-'+aid);SETS[key]=out;SCANNED.add(key);const wasScan=cur==='scan';setBiz(key);L.done=true;mapFocused=key;
+  try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#'+cur)}catch(e){}
+  if(!wasScan)render()})().catch(e=>fail(e&&e.msg))}
 })();
 </script>
 </body>

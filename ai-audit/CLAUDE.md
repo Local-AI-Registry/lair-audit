@@ -43,8 +43,11 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   Its `d` result has the same shape as one `SETS` entry, so a live scan loads straight into this page.
 - Scans and live search need a team key (`X-Team-Key` header). Open any page once with `?team=<key>`: it is stored in that
   browser's localStorage as `lair-team` and removed from the URL. Never commit the key.
-- Flow: search result (or the homepage) → `/a/?id=<place id>` (or `?q=<name>`) runs the scan with a progress list, about 4 minutes
-  → `/ai-audit/?audit=<id>#scan`. Saved audit links need no key. The API only allows https://audit.localairegistry.com (CORS).
+- Flow, one screen: picking a live search result (or `?id=<place id>` / `?q=<name>`) runs the scan on the Scan chapter's map
+  as it happens (about 3 to 4 minutes): the progress follows the API's real steps and the pop-ups are its `find` facts
+  (`liveScan()`, `LSTEP` in `sales.tpl.html`). When it finishes the URL becomes `?audit=<id>#scan` and "Your audit is ready"
+  shows. Saved `?audit=` links open the scan already finished (no replay) and need no key. `/a/` only forwards here.
+  `?b=<slug>` demo businesses still play the timed scan. The API only allows https://audit.localairegistry.com (CORS).
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.
