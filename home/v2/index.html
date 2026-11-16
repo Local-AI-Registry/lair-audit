@@ -1155,7 +1155,7 @@ function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0
   o.onResize=()=>{o.cam.fov=o.mob?44:30};o.resize();
   o.tick=(t,dt)=>{tab.position.y=3.4+Math.sin(t*.9)*.18;tab.rotation.y=Math.sin(t*.22)*.22;tab.rotation.z=Math.sin(t*.3)*.03;
     cards.forEach(c=>{c.m.position.set(c.p.x,c.p.y+Math.sin(t*1.1+c.i*2)*.25,c.p.z);c.m.lookAt(o.cam.position)});
-    o.aim(V(Math.sin(t*.12)*(o.mob?.6:1.2)+o.sx*1.2,(o.mob?12.5:11)-o.sy,o.mob?19.5:23),V(0,3.2,0),dt);
+    o.aim(V(Math.sin(t*.12)*(o.mob?.6:1.2)+o.sx*1.2,(o.mob?10.5:10)-o.sy,o.mob?15.5:20.5),V(0,3.2,0),dt);
   };
 })();
 
