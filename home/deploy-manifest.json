@@ -257,6 +257,12 @@
   "sitemap": "company",
   "status": "index"
  },
+ "demo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/start/"
+ },
  "events": {
   "http": 301,
   "sitemap": null,
@@ -281,6 +287,12 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "faq": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/guide/#faq"
+ },
  "features": {
   "http": 301,
   "sitemap": null,
@@ -292,6 +304,12 @@
   "http": 200,
   "sitemap": "company",
   "status": "index"
+ },
+ "for-agencies": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/partners/"
  },
  "for/ai": {
   "canonical": "https://localairegistry.com/for/ai/",
@@ -569,13 +587,49 @@
   "sitemap": "pillar",
   "status": "index"
  },
+ "journal": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/news/"
+ },
+ "journal/generative-engine-optimization-vs-seo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#geo"
+ },
+ "journal/how-ai-decides-which-local-business-to-recommend": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/guide/"
+ },
+ "journal/local-ai-registry-launch": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/newsroom/"
+ },
  "journal/what-is-an-ai-score": {
   "canonical": "https://localairegistry.com/journal/what-is-an-ai-score/",
   "http": 200,
   "sitemap": "research",
   "status": "index"
  },
+ "journal/what-is-answer-engine-optimization": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/glossary/#aeo"
+ },
  "learn": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/guide/"
+ },
+ "learn/ai-search-optimization": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
@@ -707,6 +761,12 @@
   "sitemap": "service",
   "status": "index"
  },
+ "proof": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/research/"
+ },
  "proof/the-convergence-white-paper": {
   "canonical": "https://localairegistry.com/proof/the-convergence-white-paper/",
   "http": 200,
@@ -720,7 +780,7 @@
   "status": "index"
  },
  "registry/ca/costa-mesa/quiktox": {
-  "canonical": "https://localairegistry.com/biz/ca/costa-mesa/quiktox/",
+  "canonical": "https://localairegistry.com/registry/ca/costa-mesa/quiktox/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -745,6 +805,12 @@
  },
  "research/local-answer-gap": {
   "canonical": "https://localairegistry.com/research/local-answer-gap/",
+  "http": 200,
+  "sitemap": "research",
+  "status": "index"
+ },
+ "research/med-spa-search-signals": {
+  "canonical": "https://localairegistry.com/research/med-spa-search-signals/",
   "http": 200,
   "sitemap": "research",
   "status": "index"
