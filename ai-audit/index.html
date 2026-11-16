@@ -783,6 +783,46 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 
 
 
+
+/* ---------- search: suggestions drop down over the page ---------- */
+.sfield{position:relative;width:100%}
+.sfield #sug{position:absolute;left:0;right:0;top:calc(100% + calc(.6*var(--u)));z-index:20;max-height:min(52vh,calc(34*var(--u)));overflow-y:auto;background:#fff;box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22),0 0 0 1px var(--rule)}
+/* ---------- trust badges ---------- */
+.tbadges{display:flex;flex-wrap:wrap;gap:calc(.6*var(--u))}
+.tbadges span{display:inline-flex;align-items:center;gap:calc(.5*var(--u));border-radius:99px;padding:calc(.5*var(--u)) calc(1*var(--u)) calc(.5*var(--u)) calc(.7*var(--u));background:var(--ok-t);color:var(--ok);font:700 calc(1*var(--u)) var(--fb);white-space:nowrap}
+.tbadges svg{width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none}
+.tbadges b{color:var(--ink);font:800 1em var(--fb)!important}
+.tb-home{justify-content:center;margin-top:calc(.4*var(--u))}
+.tb-why{gap:calc(.8*var(--u))}.tb-why span{font-size:calc(1.15*var(--u));padding:calc(.65*var(--u)) calc(1.2*var(--u)) calc(.65*var(--u)) calc(.9*var(--u))}.tb-why svg{width:calc(1.6*var(--u));height:calc(1.6*var(--u))}
+.tb-side{margin-top:calc(.6*var(--u))}
+.tb-side span{background:rgba(255,255,255,.14);color:#9DF0C6}.tb-side b{color:#fff}
+.tb-plan{margin-left:calc(1.2*var(--u))}.tb-plan span{font-size:calc(.92*var(--u));padding:calc(.35*var(--u)) calc(.9*var(--u)) calc(.35*var(--u)) calc(.6*var(--u))}
+.tb-side{flex-wrap:nowrap;gap:calc(.35*var(--u));margin-top:calc(.2*var(--u))}.tb-side span{font-size:calc(.78*var(--u));padding:calc(.3*var(--u)) calc(.6*var(--u)) calc(.3*var(--u)) calc(.45*var(--u));gap:calc(.3*var(--u))}.tb-side svg{width:calc(1.05*var(--u));height:calc(1.05*var(--u))}
+.tb-ck{justify-content:center;gap:8px}.tb-ck span{font-size:13px;padding:6px 12px 6px 9px}.tb-ck svg{width:17px;height:17px}
+/* ---------- google profile bubble ---------- */
+.gplink{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:calc(.4*var(--u));color:var(--blue);text-decoration:underline;text-decoration-thickness:calc(.12*var(--u));text-underline-offset:calc(.3*var(--u))}
+.gplink svg{width:.62em;height:.62em;flex:none}
+.gplink:hover{color:var(--ink)}.gplink:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+.gpx{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-left,0px));opacity:0;transition:opacity .2s ease}
+.gpx.on{opacity:1}
+.gpx-bg{position:absolute;inset:0;background:rgba(11,26,46,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.gpx-card{position:relative;width:min(760px,100%);max-height:calc(100vh - 48px);background:var(--card);border-radius:22px;box-shadow:0 30px 80px rgba(11,26,46,.35);padding:20px;display:flex;flex-direction:column;gap:12px;box-sizing:border-box;font:15px/1.45 var(--fb);color:var(--ink);transform:translateY(8px);transition:transform .25s ease}
+.gpx.on .gpx-card{transform:none}
+.gph{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.gph b{display:block;font:800 22px/1.15 var(--fu);margin-top:4px}.gph small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}.gph .kick{font-size:11px}
+.gph .ib.x{width:36px;height:36px;font:700 15px var(--fb);flex:none}
+.gpf{position:relative;height:min(56vh,460px);border-radius:14px;overflow:hidden;background:var(--bg);display:grid;place-items:center}
+.gpf iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.gpb{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.gpb a{color:var(--blue);font-weight:700;text-decoration:none}.gpb a:hover{text-decoration:underline}.gpb .hint{font-size:13px}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ .sfield #sug{max-height:46vh}
+ .tbadges span{font-size:12.5px;padding:6px 11px 6px 8px}.tbadges svg{width:17px;height:17px}
+ .tb-why span{font-size:13px}
+ .gpx{place-items:end center;padding:0}.gpx-card{width:100%;border-radius:22px 22px 0 0;max-height:92vh;padding:16px 16px calc(16px + env(safe-area-inset-bottom,0px))}
+ .gpf{height:52vh}.gph b{font-size:19px}
+}
+@media (prefers-reduced-motion:reduce){.gpx,.gpx-card{transition:none}}
 /* ---------- plan overview: cards take their content height, the 12-month timeline gets the rest ---------- */
 .vs{flex:none}
 @media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.tl12{flex:1;min-height:0;justify-content:center}}
@@ -995,6 +1035,12 @@ const $=s=>document.querySelector(s);
 const X=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>n==null||isNaN(n)?'–':Math.round(n).toLocaleString('en-US');
 const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
+/* the three things clients ask about first; shown wherever trust matters most */
+const TRUST=where=>'<div class="tbadges tb-'+where+'" role="list" aria-label="Why it\'s safe to work with us">'+[
+ ['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','$750K insured'],
+ ['<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','HIPAA BAA'],
+ ['<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>','US-based team']]
+ .map(b=>'<span role="listitem"><svg viewBox="0 0 24 24" aria-hidden="true">'+b[0]+'</svg><b>'+b[1]+'</b></span>').join('')+'</div>';
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
 let SLUG=null,D=null,LIVE=null;
@@ -1076,7 +1122,7 @@ const HQ=['best med spa near me','botox near me','dentist open saturday','best d
 function vFind(){
  STAGE.innerHTML='<div class="scr"><div class="map"><div class="pan">'+STREETS+dots(34,3)+HQ.map((q,i)=>'<div class="qb cyc" style="left:'+[8,62,14,70,40,76,22,52][i]+'%;top:'+[14,12,70,64,8,38,40,82][i]+'%;animation-delay:'+(RM?0:i*1.1)+'s">"'+q+'"</div>').join('')+'</div></div><div class="veil"></div>'+
  '<div class="home2"><div class="scard"><div class="lg" style="font-size:calc(1.4*var(--u))">'+LOGO+'Local AI Registry</div><h1 class="h4">Get recommended by&nbsp;AI.<br><em>Guaranteed.</em></h1><div class="sub" style="color:var(--muted)">Is AI recommending you today? Find out free.</div>'+
- '<div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div></div>'+
+ '<div class="sfield"><div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div>'+TRUST('home')+'</div></div>'+
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
  const draw=()=>{sug.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
@@ -1328,7 +1374,7 @@ function hubCard(i,mode){const c=CK[i],st=ST[stName(c.st)],nm=SHORTC[c.c]||c.c,n
   hero='<div class="hero"><div class="big" style="color:'+(st[0]==='Passed'?'var(--ok)':st[0]==='Failed'?'var(--red)':'var(--amber)')+'">'+fmtM(m,v[0])+'</div><div class="cap">'+X(m.m)+'</div></div>';
   bars=!v.slice(1).some(x=>x!=null)?'':'<div class="lbl" style="margin-top:calc(.4*var(--u))">You vs. '+cmpN()+(m.low?' · lower is better':'')+'</div><div class="bars">'+v.map((x,k)=>x==null?'':'<div class="'+(k?'':'me s-'+stName(c.st))+'"><span>'+X(WHO[k]||'')+'</span><u><i style="width:'+(m.t==='bool'?(x?100:4):Math.max(3,x/mx*100))+'%"></i></u><b>'+fmtM(m,x)+'</b></div>').join('')+'</div>'}
  const F=(D.found||{})[c.c],nf=F&&F.r?F.r.length:0,tg=nf?'<div class="hfv" role="tablist"><button type="button" role="tab" data-hf="0" class="'+(hubFound?'':'on')+'" aria-selected="'+!hubFound+'">Summary</button><button type="button" role="tab" data-hf="1" class="'+(hubFound?'on':'')+'" aria-selected="'+!!hubFound+'">What we found · '+nf+'</button></div>':'';
- return '<div class="card dt"><div class="rowx"><span class="kick">Check '+String(i+1).padStart(2,'0')+'</span><span class="pill '+st[1]+'">'+st[0]+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.3*var(--u))">'+X(nm)+'</div>'+tg+(hubFound&&nf?'<div class="fwrap">'+foundHTML(c)+'</div>':hero+'<div class="say">'+X(c.i)+'</div>'+bars)+'</div>'}
+ return '<div class="card dt"><div class="rowx"><span class="kick">Check '+String(i+1).padStart(2,'0')+'</span><span class="pill '+st[1]+'">'+st[0]+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.3*var(--u))">'+(c.c==='Google profile'&&(B.addr||B.full)?'<button type="button" class="gplink" data-gp title="See your Google profile">'+X(nm)+'<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>':X(nm))+'</div>'+tg+(hubFound&&nf?'<div class="fwrap">'+foundHTML(c)+'</div>':hero+'<div class="say">'+X(c.i)+'</div>'+bars)+'</div>'}
 function vChecks(){const mode=step===0?'svc':'status';const cnt={p:0,w:0,f:0};CK.forEach(c=>cnt[stName(c.st)]++);
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div style="display:flex;justify-content:space-between;align-items:flex-end;gap:calc(2*var(--u))"><div><div class="kick">'+(mode==='status'?'How we analyze your business':'What makes us different')+'</div><div class="ttl">'+(mode==='status'?'The 11 things AI checks, <em>and how you did</em>':'One record. <em>Powering all 11.</em>')+'</div></div>'+
  '<div class="col" style="align-items:flex-end;gap:calc(.6*var(--u))"><div class="tabs" role="tablist"><button type="button" role="tab" class="'+(mode==='svc'?'on':'')+'" data-step-set="0" aria-selected="'+(mode==='svc')+'">1 · Our system</button><button type="button" role="tab" class="'+(mode==='status'?'on':'')+'" data-step-set="1" aria-selected="'+(mode==='status')+'">2 · Your results</button></div>'+(mode==='status'?'<div class="chips"><span class="pill p-p">'+cnt.p+' passed</span><span class="pill p-w">'+cnt.w+' need work</span><span class="pill p-f">'+cnt.f+' failed</span></div>':'<div class="hint">Next: see how you did on each →</div>')+'</div></div>'+
@@ -1336,6 +1382,19 @@ function vChecks(){const mode=step===0?'svc':'status';const cnt={p:0,w:0,f:0};CK
 STAGE.addEventListener('click',e=>{if(cur!=='checks')return;const n=e.target.closest('.nd'),t=e.target.closest('[data-step-set]'),b=e.target.closest('.tbtn'),hf=e.target.closest('[data-hf]');
  if(hf){hubFound=+hf.dataset.hf;render();return}
  if(n){hubSel=+n.dataset.i;render();const f=STAGE.querySelector('.nd[data-i="'+hubSel+'"]');f&&f.focus({preventScroll:MOB()});if(MOB()){const d=STAGE.querySelector('.card.dt');d&&d.scrollIntoView({behavior:RM?'auto':'smooth',block:'start'})}}else if(t){step=+t.dataset.stepSet;render()}else if(b){hubSel=(hubSel+ +b.dataset.d+11)%11;render()}});
+/* their Google profile opens in a bubble on this screen (Google's map embed), with a link out only if they want it */
+function gpOpen(){const q=[B.full,B.addr].filter(Boolean).join(', '),pid=(D.hit&&D.hit.pid)||B.place_id||'';
+ const out='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q)+(pid?'&query_place_id='+encodeURIComponent(pid):'');
+ const w=document.createElement('div');w.className='gpx';w.setAttribute('role','dialog');w.setAttribute('aria-modal','true');w.setAttribute('aria-label','Google profile for '+(B.full||ME));
+ w.innerHTML='<div class="gpx-bg" data-gpx></div><div class="gpx-card"><div class="gph"><div><span class="kick">Your Google profile</span><b>'+X(B.full||ME)+'</b>'+(B.addr?'<small>'+X(B.addr)+'</small>':'')+'</div><button type="button" class="ib x" data-gpx aria-label="Close">✕</button></div>'+
+  '<div class="gpf"><div class="spin" aria-hidden="true"></div><iframe title="Google Maps listing for '+X(B.full||ME)+'" src="https://maps.google.com/maps?q='+encodeURIComponent(q)+'&output=embed" referrerpolicy="no-referrer-when-downgrade"></iframe></div>'+
+  '<div class="gpb"><span class="hint">This is what customers see when they look you up on Google.</span><a href="'+X(out)+'" target="_blank" rel="noopener">Open in Google Maps ↗</a></div></div>';
+ const prev=document.activeElement;document.body.appendChild(w);requestAnimationFrame(()=>w.classList.add('on'));w.querySelector('.x').focus();
+ const close=()=>{w.classList.remove('on');setTimeout(()=>w.remove(),200);document.removeEventListener('keydown',k,true);if(prev&&document.contains(prev))prev.focus()};
+ const k=e=>{if(e.key==='Escape'){e.stopPropagation();close()}else if(e.key==='Tab'){const f=[...w.querySelectorAll('button,a,iframe')];const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}}};
+ document.addEventListener('keydown',k,true);w.addEventListener('click',e=>{if(e.target.closest('[data-gpx]'))close()});
+ w.querySelector('iframe').addEventListener('load',()=>{const sp=w.querySelector('.gpf .spin');sp&&sp.remove()})}
+STAGE.addEventListener('click',e=>{if(e.target.closest('[data-gp]'))gpOpen()});
 STAGE.addEventListener('keydown',e=>{const n=e.target.closest('.nd');if(n&&(e.key==='Enter'||e.key===' ')){e.preventDefault();e.stopPropagation();hubSel=+n.dataset.i;render();STAGE.querySelector('.nd[data-i="'+hubSel+'"]').focus()}});
 
 /* ---------- WHY US ---------- */
@@ -1349,7 +1408,7 @@ function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();c
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">Businesses like yours, <em>after we started.</em></div><div class="tiles" aria-label="Client results">'+
  cards.map((c,i)=>{const up=Math.round((c.ai[1]/c.ai[0]-1)*100);return '<div class="card tile'+(i===match?' match':'')+'"><div class="th"><div><div class="typ">'+c.typ+'</div><div class="loc">'+c.loc+'</div></div>'+(i===match?'<span class="badge">Most like you</span>':'')+'</div><div class="tu"><span class="up">+'+up+'%</span><span>AI score '+c.ai[0]+' → '+c.ai[1]+'</span></div><div class="tch">'+chart(c)+'</div><span class="tn">'+(c.real?'Monthly visits from search and AI':'Illustrative: start and end visits only')+'</span></div>'}).join('')+'<div class="card tile tcta"><span class="kick">Your turn</span><div class="typ">'+X(ME)+'</div><p>One team, one record, all 11 checks. In AI answers by day 90, guaranteed.</p><button type="button" class="btn2" data-go="plan">See your plan →</button></div>'+
  '</div><div class="card" style="padding:calc(1.1*var(--u)) calc(1.6*var(--u))"><div class="facesrow"><div class="stack2">'+FACES.map(f=>'<img src="'+f.f+'" alt="'+X(f.n)+'" loading="lazy" decoding="async">').join('')+'</div><div style="font-size:calc(1.15*var(--u))"><b style="font-family:var(--fu)">'+FACES.slice(1,4).map(f=>X(f.n)).join(', ')+'</b> and 100+ practices and industry leaders vouch for us</div></div></div>'+
- '<div class="rowx" style="justify-content:space-between;font-size:calc(1.05*var(--u));color:var(--muted)"><span><b style="color:var(--ink)">As seen in</b>&nbsp; '+PRESS.slice(0,5).join(' · ')+'</span><span>$750K insured · HIPAA BAA · US-based team</span></div></div></div>'}
+ '<div class="rowx" style="justify-content:space-between;font-size:calc(1.05*var(--u));color:var(--muted)"><span><b style="color:var(--ink)">As seen in</b>&nbsp; '+PRESS.slice(0,5).join(' · ')+'</span></span>'+TRUST('why')+'</div></div></div>'}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)return;const t=STAGE.querySelector('.track');t.scrollBy({left:+b.dataset.sc*t.clientWidth*.66,behavior:RM?'auto':'smooth'})});
 
 /* ---------- PLAN ---------- */
@@ -1365,10 +1424,10 @@ function vPlan(){if(step===1)return vPlanCompare();if(step===2)return vPlan12();
  '<div class="vsx">vs</div><div class="card col new"><div class="nhead"><div><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl">One team. One record. All 11 checks.</div><div class="cdn" hidden></div></div><div class="rec">'+LOGO+'</div></div>'+
  '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+fpLine(1)+
  '<div class="rowx" style="margin-top:auto;justify-content:space-between"><button type="button" class="btn2" data-ckx="open">Get started →</button><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
- '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span><span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><ul class="d">'+p[2].split(', ').map(x=>'<li><span>'+x+'</span></li>').join('')+'</ul></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
+ '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span>'+TRUST('plan')+'<span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><ul class="d">'+p[2].split(', ').map(x=>'<li><span>'+x+'</span></li>').join('')+'</ul></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
 /* compact plan card used beside the detail tables */
 function planSide(extra){return '<div class="card col new pside"><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl" style="color:#fff;font:700 calc(1.3*var(--u)) var(--fu)">One team. One record. All 11 checks.</div><div class="cdn" hidden></div>'+
- '<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine()+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
+ TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine()+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
 const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
 function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
  const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
@@ -1428,7 +1487,7 @@ function ckHTML(){return '<div class="ckx" id="ckx" hidden role="dialog" aria-mo
  '<label class="fl"><span>Card number</span><input id="ccn" inputmode="numeric" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" required></label>'+
  '<div class="fl3"><label class="fl"><span>Expires</span><input id="cce" inputmode="numeric" autocomplete="cc-exp" maxlength="7" placeholder="MM / YY" required></label><label class="fl"><span>CVC</span><input id="ccv" inputmode="numeric" autocomplete="cc-csc" maxlength="4" placeholder="123" required></label><label class="fl"><span>ZIP</span><input id="ccz" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="12345" required></label></div>'+
  '<div class="promo"><button type="button" class="plink" id="pc-open">Have a promo code?</button><div class="pcrow" id="pc-row" hidden><input id="ccp" autocomplete="off" placeholder="Promo code" aria-label="Promo code"><button type="button" class="pbtn" id="pc-apply">Apply</button></div><p class="ckm" id="pc-msg" role="status"></p></div>'+
- '<button class="btn ckgo" type="submit" id="ck-go">Start plan · $'+fmt(planPrice())+'/mo →</button><p class="ckm" id="ck-msg" role="status"></p>'+
+ TRUST('ck')+'<button class="btn ckgo" type="submit" id="ck-go">Start plan · $'+fmt(planPrice())+'/mo →</button><p class="ckm" id="ck-msg" role="status"></p>'+
  '<p class="ckfine">Guaranteed: in AI answers by day 90, or we stop billing and keep working.</p></form></div>'}
 function ckWire(){const g=id=>document.getElementById(id),box=g('ckx');if(!box)return;
  let opener=null;const open=()=>{opener=document.activeElement;box.hidden=false;requestAnimationFrame(()=>box.classList.add('on'));setTimeout(()=>g('ccname').focus(),150)},close=()=>{box.classList.remove('on');setTimeout(()=>{box.hidden=true;if(opener&&document.contains(opener))opener.focus()},250)};
