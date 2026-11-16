@@ -12,10 +12,10 @@
   "status": "index"
  },
  "academy": {
-  "canonical": "https://localairegistry.com/academy/",
-  "http": 200,
+  "http": 301,
   "sitemap": null,
-  "status": "noindex"
+  "status": "redirect",
+  "to": "/guide/"
  },
  "ai": {
   "canonical": "https://localairegistry.com/ai/",
@@ -258,16 +258,28 @@
   "status": "index"
  },
  "events": {
-  "canonical": "https://localairegistry.com/events/",
-  "http": 200,
+  "http": 301,
   "sitemap": null,
-  "status": "noindex"
+  "status": "redirect",
+  "to": "/research/how-often-ai-recommends-your-business/"
  },
  "experts": {
   "canonical": "https://localairegistry.com/experts/",
   "http": 200,
   "sitemap": "company",
   "status": "index"
+ },
+ "explainers/street": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "explainers/vendors": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
  },
  "features": {
   "http": 301,
@@ -600,10 +612,10 @@
   "status": "index"
  },
  "near-me": {
-  "canonical": "https://localairegistry.com/near-me/",
-  "http": 200,
+  "http": 301,
   "sitemap": null,
-  "status": "noindex"
+  "status": "redirect",
+  "to": "/best/"
  },
  "news": {
   "canonical": "https://localairegistry.com/news/",
