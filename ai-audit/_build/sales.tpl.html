@@ -801,6 +801,23 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .qskip{all:unset;cursor:pointer;font:600 calc(.98*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 .qgo{all:unset;cursor:pointer;background:var(--ink);color:#fff;border-radius:99px;padding:calc(.6*var(--u)) calc(1.3*var(--u));font:700 calc(1.02*var(--u)) var(--fb)}
 .qgo[disabled]{opacity:.35;cursor:default}
+.qo,.qgo,.qskip{transition:background-color .15s ease,color .15s ease,transform .12s ease,box-shadow .15s ease}
+.qo:hover{box-shadow:inset 0 0 0 1.5px var(--blue)}
+.qo:active,.qgo:active{transform:scale(.95)}
+.qskip:hover{color:var(--ink)}.qskip:active{transform:scale(.97)}
+.qo[aria-pressed="true"]::before{content:"✓ ";font-weight:800}
+.qo.hit{animation:qpop .35s ease}
+@keyframes qpop{50%{transform:scale(1.06)}}
+.qo.nope{animation:qno .3s ease}
+@keyframes qno{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
+.qrow2{display:flex;gap:calc(.6*var(--u))}.qrow2[hidden]{display:none}.qrow2 .qtx{flex:1;min-width:0}
+.qsel{margin-left:auto;margin-right:calc(.8*var(--u));font:600 calc(.92*var(--u)) var(--fb);color:var(--muted)}
+.qdone{display:inline-flex;align-items:center;gap:calc(.5*var(--u));font:800 calc(1.1*var(--u)) var(--fb);color:var(--ok);animation:qfade .3s ease both}
+.qdone i{font-style:normal;width:calc(1.6*var(--u));height:calc(1.6*var(--u));border-radius:50%;background:var(--ok);color:#fff;display:inline-grid;place-items:center;font-size:calc(.9*var(--u))}
+.qcard.skipped .qdone{color:var(--muted)}.qcard.skipped .qdone i{background:var(--grey)}.qcard.skipped .qskip{color:var(--ink)}
+.qcard.sent,.qcard.skipped{transition:opacity .3s ease .55s,transform .3s ease .55s;opacity:.0001;transform:translateY(calc(.6*var(--u)))}
+.qcard.sent .qo[aria-pressed="true"]{background:var(--ok);color:#fff}
+@media (prefers-reduced-motion:reduce){.qo.hit,.qo.nope{animation:none}.qcard.sent,.qcard.skipped{transition:none}}
 .qo:focus-visible,.qskip:focus-visible,.qgo:focus-visible,.qtx:focus,.qnum:focus-within{outline:2px solid var(--blue);outline-offset:2px}
 .fromu{display:inline-block;vertical-align:middle;margin-left:calc(.5*var(--u));background:var(--blue-t);color:var(--blue);border-radius:6px;padding:0 calc(.5*var(--u));font:700 calc(.8*var(--u))/1.7 var(--fb);white-space:nowrap}
 /* ---------- customers ask AI: one grid per page ---------- */
@@ -837,7 +854,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
  .qcard{padding:14px;border-radius:16px;gap:10px}.qk{font-size:11px}.qt{font-size:17px}.qw{font-size:12.5px}
  .qo{font-size:14px;padding:10px 14px;min-height:44px}.qtx{font-size:16px;padding:10px 12px}.qnum span{font-size:20px}.qnum input{font-size:22px}
- .qskip{font-size:14px;padding:10px 0}.qgo{font-size:15px;padding:12px 18px}
+ .qskip{font-size:14px;padding:10px 0}.qgo{font-size:15px;padding:12px 18px}.qdone{font-size:15px}.qdone i{width:22px;height:22px;font-size:12px}.qsel{font-size:12.5px}
  .fromu{font-size:11px;padding:0 6px}
  .astat{grid-template-columns:1fr;gap:8px}.astat>div{padding:12px 14px}.astat b{font-size:24px}.astat span{font-size:13px}
  .amx .ah{display:none}
@@ -1099,32 +1116,41 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
  const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null;
  function qNext(done){if(!askOn)return null;return QDEF.find(d=>!QDONE.has(d.id)&&(done||k>=d.at)&&(d.id!=='rival'||rivalOpts().length))||null}
  function rivalOpts(){const L=LV||LIVE;const c=L&&L.comps?L.comps.map(x=>x.n):WHO.slice(1);return c.filter(Boolean).slice(0,4)}
- function qAnswer(id,val){if(val===undefined){ANS.skipped=(ANS.skipped||[]).concat(id)}else{ANS[id]=val;
+ let qHold=false;
+ /* save (or skip), show it on the card for a moment, then move on */
+ function qAnswer(id,val,card,label){if(qHold)return;if(val===undefined){ANS.skipped=(ANS.skipped||[]).concat(id)}else{ANS[id]=val;
    addFinding(id==='rival'?'Noted: '+val:id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+' a visit':'Noted: '+(QDEF[3].opts.find(o=>o[1]===val)||[''])[0])}
-  QDONE.add(id);ansSave();applyAns();qShown=null;drawQ(k>=PH.length)}
- function drawQ(done){const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
+  QDONE.add(id);ansSave();applyAns();
+  if(!card){qShown=null;drawQ(k>=PH.length);return}
+  qHold=true;card.classList.add(val===undefined?'skipped':'sent');card.querySelectorAll('button,input').forEach(x=>{x.disabled=true});
+  const f=card.querySelector('.qf');if(f)f.innerHTML='<span class="qdone" role="status">'+(val===undefined?'<i>↷</i> Skipped':'<i>✓</i> Saved'+(label?': '+X(label):''))+'</span>';
+  setTimeout(()=>{qHold=false;qShown=null;drawQ(k>=PH.length)},RM?300:900)}
+ function drawQ(done){if(qHold)return;const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
   if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m'):null;if(key===qShown)return;qShown=key;if(!slot)return;
   if(!d){slot.textContent='';return}
   const n=QDEF.indexOf(d)+1,opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():null;
   let inp='';
-  if(d.kind==='pick')inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt" data-other>Someone else</button></div><input class="qtx" id="q-other" hidden maxlength="80" placeholder="Their name" aria-label="Competitor name">';
+  if(d.kind==='pick')inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt" aria-pressed="false" data-other>Someone else</button></div><div class="qrow2" hidden><input class="qtx" id="q-other" maxlength="80" placeholder="Their name" aria-label="Competitor name"><button type="button" class="qgo" disabled>Save →</button></div>';
   else if(d.kind==='multi')inp=opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'<input class="qtx" id="q-txt" maxlength="120" placeholder="For example: implants, whitening" aria-label="Services">';
   else if(d.kind==='money')inp='<label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="250" aria-label="Average first-visit spend"></label>';
-  else inp='<div class="qopts">'+d.opts.map(o=>'<button type="button" class="qo" data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';
-  const save=d.kind==='multi'||d.kind==='money'||d.kind==='pick';
-  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+d.q+'</div>'+inp+'<div class="qw">'+d.why+'</div><div class="qf"><button type="button" class="qskip">Skip this one</button>'+(save?'<button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
-  const card=slot.firstChild,go=card.querySelector('.qgo');let sel=[];
-  const ready=()=>{if(!go)return;go.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||((card.querySelector('#q-txt')||{}).value||'').trim())};
-  card.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
-   if(b.classList.contains('qskip'))return qAnswer(d.id);
-   if(b.classList.contains('qgo')){if(go.disabled)return;if(d.kind==='money')return qAnswer(d.id,parseInt(card.querySelector('#q-num').value.replace(/\D/g,''),10));
-    if(d.kind==='pick')return qAnswer(d.id,sel[0]);const t=card.querySelector('#q-txt');return qAnswer(d.id,t?t.value.split(/[,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,3):sel)}
-   if(b.dataset.n)return qAnswer(d.id,+b.dataset.n);
-   if(b.hasAttribute('data-other')){const t=card.querySelector('#q-other');t.hidden=false;t.focus();card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));sel=[];ready();return}
-   if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('#q-other').hidden=true;sel=[b.dataset.v];ready();return}
-   if(d.kind==='multi'){const on=b.getAttribute('aria-pressed')!=='true';if(on&&sel.length>=3)return;b.setAttribute('aria-pressed',String(on));sel=on?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
+  else inp='<div class="qopts">'+d.opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';
+  const save=d.kind==='multi'||d.kind==='money';
+  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+d.q+'</div>'+inp+'<div class="qw">'+(d.kind==='pick'||d.kind==='chips'?'Tap one to save it. ':d.kind==='multi'&&opts?'Tap to choose, then save. ':'')+d.why+'</div><div class="qf"><button type="button" class="qskip">Skip this one</button>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
+  const card=slot.firstChild;let sel=[];
+  const ready=()=>{const g=card.querySelector('.qf .qgo')||card.querySelector('.qrow2 .qgo');if(!g)return;
+   g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||((card.querySelector('#q-txt')||{}).value||'').trim());
+   const c=card.querySelector('.qsel');if(c)c.textContent=d.kind==='multi'&&opts?sel.length+' of 3 chosen':''};
+  card.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
+   if(b.classList.contains('qskip'))return qAnswer(d.id,undefined,card);
+   if(b.classList.contains('qgo')){if(d.kind==='money'){const v=parseInt(card.querySelector('#q-num').value.replace(/\D/g,''),10);return qAnswer(d.id,v,card,'$'+fmt(v))}
+    if(d.kind==='pick')return qAnswer(d.id,sel[0],card,sel[0]);const t=card.querySelector('#q-txt');const v=t?t.value.split(/[,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,3):sel;return qAnswer(d.id,v,card,v.join(', '))}
+   if(b.dataset.n){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,+b.dataset.n,card,b.textContent)}
+   if(b.hasAttribute('data-other')){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('.qrow2').hidden=false;card.querySelector('#q-other').focus();sel=[];ready();return}
+   if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));b.classList.add('hit');return qAnswer(d.id,b.dataset.v,card,b.dataset.v)}
+   if(d.kind==='multi'){const on=b.getAttribute('aria-pressed')!=='true';if(on&&sel.length>=3){b.classList.remove('nope');void b.offsetWidth;b.classList.add('nope');return}
+    b.setAttribute('aria-pressed',String(on));sel=on?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
   card.addEventListener('input',e=>{if(e.target.id==='q-other')sel=e.target.value.trim()?[e.target.value.trim()]:[];if(e.target.id==='q-num')e.target.value=e.target.value.replace(/\D/g,'');ready()});
-  card.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.tagName==='INPUT'&&go&&!go.disabled){e.preventDefault();go.click()}})}
+  card.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.tagName==='INPUT'){const g=card.querySelector('.qgo:not([disabled])');if(g){e.preventDefault();g.click()}}})}
  STAGE.onclick=e=>{const b=e.target.closest('[data-c]');if(!b)return;const c=b.dataset.c;if(c==='t')paused=!paused;else{paused=true;q=0;$$('feed').textContent='';k=c==='p'?Math.max(0,k-1):Math.min(PH.length,k+1)}update()};
  if(RM||(!LV&&SCANNED.has(SLUG)))k=PH.length;update();requestAnimationFrame(()=>requestAnimationFrame(()=>STAGE.querySelector('.scan4').classList.add('ready-in')));clearInterval(scanTimer);
  scanTimer=setInterval(()=>{if(cur!=='scan'){clearInterval(scanTimer);return}
