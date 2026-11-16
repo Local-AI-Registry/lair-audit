@@ -659,10 +659,64 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--fb);over
  .scan4 .ctl button{width:34px;height:34px;font-size:14px}
  .skip{position:absolute;top:calc(12px + env(safe-area-inset-top,0px));right:12px;bottom:auto;font-size:13px;padding:9px 14px}
 }
+
+/* ---------- live map layer ---------- */
+#mapbg{position:fixed;inset:0;z-index:0;opacity:0;transition:opacity 1.2s ease;pointer-events:none;background:var(--bg)}
+#mapbg iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+#stage{z-index:1}
+body.maplive.mapon #mapbg{opacity:1}
+body.maplive.mapon #stage{background:transparent}
+body.maplive .scr>.map{display:none}
+body.maplive .home2 ~ .veil,body.maplive .veil{background:radial-gradient(60% 60% at 50% 48%,rgba(244,241,234,.55),rgba(244,241,234,.15))}
+body.maplive .scan4 .map{background:transparent}
+body.maplive .scan4 .pan{animation:none;inset:0}
+body.maplive .scan4 .streets,body.maplive .scan4 .dotp,body.maplive .scan4 .pin{display:none}
+body.maplive .scan4 .ring,body.maplive .scan4 .sweep{opacity:0;transition:opacity 1.2s ease}
+body.maplive.maptracked .scan4 .ring,body.maplive.maptracked .scan4 .sweep{opacity:1;left:var(--rx)!important;top:var(--ry)!important}
+body.maplive.maptracked .scan4 .sweep{opacity:.8}
+/* ---------- checkout ---------- */
+.ckx{position:fixed;inset:0;z-index:30;display:grid;place-items:center;padding:24px max(16px,env(safe-area-inset-left,0px));opacity:0;transition:opacity .25s ease}
+.ckx.on{opacity:1}
+.ckx[hidden]{display:none}
+.ckx-bg{position:absolute;inset:0;background:rgba(11,26,46,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.ckx-card{position:relative;width:min(480px,100%);max-height:calc(100vh - 48px);overflow:auto;background:var(--card);border-radius:22px;box-shadow:0 30px 80px rgba(11,26,46,.35);padding:26px 26px 22px;display:flex;flex-direction:column;gap:14px;font:15px/1.45 var(--fb);color:var(--ink);transform:translateY(10px);transition:transform .3s ease;box-sizing:border-box}
+.ckx.on .ckx-card{transform:none}
+.ckh{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.ckh h2{margin:4px 0 0;font:800 26px/1.1 var(--fu)}
+.ckh .kick{font-size:11px}
+.ckx .ib.x{width:32px;height:32px;font:700 14px var(--fb);flex:none}
+.cksum{display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--bg);border-radius:14px;padding:12px 14px}
+.cksum span{font-weight:700;font-size:14px}.cksum span small{display:block;font-weight:500;color:var(--muted);font-size:12.5px}
+.cksum b{font:800 24px var(--fu);white-space:nowrap}.cksum b small{font-size:13px;color:var(--muted)}.cksum s{color:var(--muted);font-size:15px;font-weight:700}
+.cdn{background:var(--ok-t);color:var(--ok);border-radius:12px;padding:9px 12px;font-size:13px}
+.cdn[hidden]{display:none}
+.cdn .num{font-variant-numeric:tabular-nums;font-weight:700}
+.fl{display:flex;flex-direction:column;gap:5px;min-width:0}
+.fl span{font-size:12.5px;font-weight:700;color:var(--body)}
+.fl input,.prow input{font:500 16px var(--fb);color:var(--ink);background:#fff;border:1px solid rgba(11,26,46,.18);border-radius:12px;padding:12px 14px;outline:none;min-width:0;width:100%;box-sizing:border-box;transition:border-color .2s,box-shadow .2s}
+.fl input:focus,.prow input:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--blue-t)}
+.fl3{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}
+.promo{display:flex;flex-direction:column;gap:6px}
+.plink{all:unset;cursor:pointer;color:var(--blue);font-weight:700;font-size:14px;align-self:flex-start}
+.plink:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.prow{display:flex;gap:8px}
+.prow[hidden]{display:none}
+.pbtn{border:0;cursor:pointer;background:var(--ink);color:#fff;font:700 15px var(--fb);border-radius:12px;padding:0 20px;min-height:48px;flex:none}
+.pbtn[disabled],.ckgo[disabled]{opacity:.5;cursor:default}
+.ckm{margin:0;font-size:13.5px;min-height:0}
+.ckm:empty{display:none}
+.ckm.ok{color:var(--ok)}.ckm.er{color:var(--red)}
+.ckgo{justify-content:center;font-size:16px;padding:15px 20px;border-radius:14px}
+.ckfine{margin:0;font-size:12.5px;color:var(--muted);text-align:center}
+.new .cdn{background:rgba(255,255,255,.14);color:#fff;font-size:calc(1*var(--u));padding:calc(.6*var(--u)) calc(1*var(--u));align-self:flex-start;border-radius:99px}
+.newp s{font-size:.45em;color:var(--blue3);font-weight:700;margin-right:.2em}
+@media (max-width:760px){.ckx{place-items:end center;padding:0}.ckx-card{width:100%;border-radius:22px 22px 0 0;max-height:92vh;padding-bottom:calc(22px + env(safe-area-inset-bottom,0px))}.fl3{grid-template-columns:1fr 1fr 1fr}.new .cdn{font-size:12px}}
+.btn2{border:0;cursor:pointer;font-family:var(--fb)}
 </style>
 </head>
 <body>
 <!-- Built by _build/sales.py from _build/sales.tpl.html. Do not hand-edit ai-audit/index.html. -->
+<div id="mapbg" aria-hidden="true"></div>
 <main id="stage" aria-live="off"></main>
 <script>/*__DATA__*/</script>
 <script>
@@ -929,15 +983,71 @@ STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)r
 /* ---------- PLAN ---------- */
 function vPlan(){const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
  const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for $9,250 less a month.</em></div><div class="vs">'+
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a month.</em></div><div class="vs">'+
  '<div class="card pad col old"><span class="lbl">The old way: 9 vendors to hire and manage</span><div class="oldp"><s>$14,250</s><small> /mo</small></div><div class="vl">'+V.map(r=>'<div><span>'+r[0]+'</span><b>$'+fmt(r[1])+'</b></div>').join('')+'</div><div style="margin-top:auto;font:600 calc(1.15*var(--u))/1.4 var(--fb);color:var(--muted)">9 contracts, 9 teams, each working on its own piece of your business.</div></div>'+
- '<div class="vsx">vs</div><div class="card col new"><div class="nhead"><div><div class="newp">$5,000<small> /mo</small></div><div class="lbl">One team. One record. All 11 checks.</div></div><div class="rec">'+LOGO+'</div></div>'+
+ '<div class="vsx">vs</div><div class="card col new"><div class="nhead"><div><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl">One team. One record. All 11 checks.</div><div class="cdn" hidden></div></div><div class="rec">'+LOGO+'</div></div>'+
  '<ul class="t4"><li><b>Guaranteed.</b> In AI answers by day 90, or we stop billing and keep working.</li><li><b>Area exclusivity.</b> Nobody like you within 15 miles.</li><li><b>Grandfathered.</b> Keep this price as long as you stay.</li><li><b>Month to month.</b> Cancel anytime.</li></ul>'+
- '<div class="rowx" style="margin-top:auto;justify-content:space-between"><a class="btn2" href="https://localairegistry.com" target="_blank" rel="noopener">Get started →</a><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
- '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span><span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span class="d">'+p[2]+'</span></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'}
+ '<div class="rowx" style="margin-top:auto;justify-content:space-between"><button type="button" class="btn2" data-ckx="open">Get started →</button><span style="font-size:calc(1*var(--u));color:var(--blue3)">Multiple locations? Ask about pricing.</span></div></div></div>'+
+ '<div class="card tl12"><div class="tlh"><b>Your first 12 months</b><span class="g90"><i></i>In AI answers by day 90, guaranteed</span><span style="margin-left:auto">Every item waits for your approval</span></div><div class="tlr">'+PHS.map(p=>'<div><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span class="d">'+p[2]+'</span></div>').join('')+'<i class="g90m" title="Day 90"></i></div></div></div></div>'+ckHTML()}
+
+/* ---------- live map behind home and scan (map-light.html: real streets, roaming people) ---------- */
+const MAPBG=document.getElementById('mapbg');let mapWin=null,mapLive=false,mapFocused=null;
+const QUIET='#ldr,#fx,.fxbar,#fxtop,#fxback,#fxctl,.fxctl,#fxkey,#fxkeyb,#fxcart,#fxnote,.fxdock,.nightbadge,#nightbadge,#mvveil,.mvcap,.mvb,.iv-skip,#poster{display:none!important}.paper{opacity:.25!important}';
+const GKEY='AIzaSyAM_oWtpPy_P8I__Os1wxe9Koyd2Ma30k4';
+async function nearby(loc,qtext,self){try{const j=await fetch('https://places.googleapis.com/v1/places:searchText',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'places.id,places.displayName,places.location,places.rating,places.userRatingCount'},body:JSON.stringify({textQuery:qtext,maxResultCount:10,locationBias:{circle:{center:{latitude:loc[1],longitude:loc[0]},radius:8000}}})}).then(x=>x.json());
+ const sn=String(self||'').toLowerCase().replace(/[^a-z]/g,'').slice(0,10);return (j.places||[]).filter(p=>p.location&&!(sn&&(p.displayName.text||'').toLowerCase().replace(/[^a-z]/g,'').startsWith(sn))).map(p=>({name:p.displayName.text,loc:[p.location.longitude,p.location.latitude],rt:p.rating||null,n:p.userRatingCount||0}))}catch(e){return []}}
+function mapEnsure(){if(MAPBG.firstChild)return;const f=document.createElement('iframe');f.src='map-light.html?v=1';f.title='Map';f.tabIndex=-1;f.setAttribute('aria-hidden','true');MAPBG.appendChild(f);
+ f.addEventListener('load',()=>{try{const d=f.contentDocument,st=d.createElement('style');st.textContent=QUIET;d.head.appendChild(st);mapWin=f.contentWindow}catch(e){return}
+  let n=0;(function chk(){try{const L=mapWin.LAIR,m=L&&L.map;if(m&&L.focus&&m.loaded()&&m.isStyleLoaded()){mapLive=true;document.body.classList.add('maplive');if(cur==='scan')mapFocus();return}}catch(e){}if(n++<50)setTimeout(chk,300)})()})}
+function mapPad(){const mob=MOB();if(mob){const sp=STAGE.querySelector('.sp');return {top:150,bottom:(sp?sp.offsetHeight:260)+40,left:0,right:0}}const sp=STAGE.querySelector('.sp');return {top:90,bottom:60,left:(sp?sp.getBoundingClientRect().right:0)+30,right:30}}
+function mapTrack(){const L=mapWin&&mapWin.LAIR;if(!L||!L.map||!L.mk||L.__tracked)return;L.__tracked=1;
+ const place=()=>{try{const p=L.map.project(L.mk.getLngLat());STAGE.style.setProperty('--rx',p.x+'px');STAGE.style.setProperty('--ry',p.y+'px');document.body.classList.add('maptracked')}catch(e){}};L.map.on('render',place);place()}
+async function mapFocus(){if(!mapLive||!D||mapFocused===SLUG)return;mapFocused=SLUG;const H=D.hit;if(!H||!H.loc)return;
+ try{mapWin.LAIR.pad=mapPad()}catch(e){}
+ const cs=await nearby(H.loc,H.cq||B.svc||'',H.name);if(mapFocused!==SLUG)return;
+ const post=o=>{try{mapWin.postMessage(o,'*')}catch(e){}};
+ post({t:'focus',name:H.short,rt:H.rt,n:H.n,area:H.area,loc:H.loc,hours:H.hours,comps:cs,qs:H.qs});post({t:'audit',steps:[['Scanning',PH.length*5+2]]});
+ setTimeout(mapTrack,200)}
+
+/* ---------- checkout (card form and promo code; card details never leave the page) ---------- */
+const PROMOS={KODY25:{off:.25,label:'25% off your monthly price',ends:Date.parse('2026-12-01T07:59:00Z'),endsLabel:'Dec 1'}};
+let promo=null,cdTimer=0;
+const planPrice=()=>promo?Math.round(5000*(1-promo.off)):5000;
+function ckHTML(){return '<div class="ckx" id="ckx" hidden role="dialog" aria-modal="true" aria-labelledby="ckt"><div class="ckx-bg" data-ckx="close"></div><form class="ckx-card" id="ckf" novalidate autocomplete="on">'+
+ '<div class="ckh"><div><div class="kick">'+X(ME)+' × Local AI Registry</div><h2 id="ckt">Start your plan</h2></div><button type="button" class="ib x" data-ckx="close" aria-label="Close">✕</button></div>'+
+ '<div class="cksum"><span>One team, one record, all 11 checks<small>Month to month · cancel anytime</small></span><b><s id="ck-was" hidden>$5,000</s> <span id="ck-price">$'+fmt(planPrice())+'</span><small>/mo</small></b></div>'+
+ '<div class="cdn" id="ck-cd" hidden></div>'+
+ '<label class="fl"><span>Name on card</span><input id="ccname" autocomplete="cc-name" required></label>'+
+ '<label class="fl"><span>Card number</span><input id="ccn" inputmode="numeric" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" required></label>'+
+ '<div class="fl3"><label class="fl"><span>Expires</span><input id="cce" inputmode="numeric" autocomplete="cc-exp" maxlength="7" placeholder="MM / YY" required></label><label class="fl"><span>CVC</span><input id="ccv" inputmode="numeric" autocomplete="cc-csc" maxlength="4" placeholder="123" required></label><label class="fl"><span>ZIP</span><input id="ccz" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="12345" required></label></div>'+
+ '<div class="promo"><button type="button" class="plink" id="pc-open">Have a promo code?</button><div class="prow" id="pc-row" hidden><input id="ccp" autocomplete="off" placeholder="Promo code" aria-label="Promo code"><button type="button" class="pbtn" id="pc-apply">Apply</button></div><p class="ckm" id="pc-msg" role="status"></p></div>'+
+ '<button class="btn ckgo" type="submit" id="ck-go">Start plan · $'+fmt(planPrice())+'/mo →</button><p class="ckm" id="ck-msg" role="status"></p>'+
+ '<p class="ckfine">Guaranteed: in AI answers by day 90, or we stop billing and keep working.</p></form></div>'}
+function ckWire(){const g=id=>document.getElementById(id),box=g('ckx');if(!box)return;
+ const open=()=>{box.hidden=false;requestAnimationFrame(()=>box.classList.add('on'));setTimeout(()=>g('ccname').focus(),150)},close=()=>{box.classList.remove('on');setTimeout(()=>{box.hidden=true},250)};
+ STAGE.querySelectorAll('[data-ckx="open"]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();open()}));
+ box.addEventListener('click',e=>{if(e.target.closest('[data-ckx="close"]'))close()});box.addEventListener('keydown',e=>{if(e.key==='Escape'){e.stopPropagation();close()}});
+ g('ccn').addEventListener('input',e=>{const d=e.target.value.replace(/\D/g,'').slice(0,16);e.target.value=d.replace(/(\d{4})(?=\d)/g,'$1 ')});
+ g('cce').addEventListener('input',e=>{const d=e.target.value.replace(/\D/g,'').slice(0,4);e.target.value=d.length>2?d.slice(0,2)+' / '+d.slice(2):d});
+ ['ccv','ccz'].forEach(id=>g(id).addEventListener('input',e=>{e.target.value=e.target.value.replace(/\D/g,'')}));
+ g('pc-open').addEventListener('click',()=>{g('pc-row').hidden=false;g('pc-open').hidden=true;g('ccp').focus()});
+ const apply=()=>{const c=g('ccp').value.trim().toUpperCase(),m=g('pc-msg');if(!c){m.textContent='';return}const P=PROMOS[c];
+  if(!P||Date.now()>P.ends){m.textContent='That code isn\'t valid.';m.className='ckm er';return}
+  promo=Object.assign({code:c},P);m.textContent=c+' applied: '+P.label+'.';m.className='ckm ok';g('ccp').disabled=true;g('pc-apply').disabled=true;priceUI()};
+ g('pc-apply').addEventListener('click',apply);g('ccp').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();apply()}});
+ g('ckf').addEventListener('submit',e=>{e.preventDefault();const m=g('ck-msg');const ok=g('ccname').value.trim().length>1&&g('ccn').value.replace(/\s/g,'').length>=15&&/^\d\d \/ \d\d$/.test(g('cce').value)&&g('ccv').value.length>=3&&g('ccz').value.length>=5;
+  if(!ok){m.textContent='Please fill in all your card details.';m.className='ckm er';return}
+  m.innerHTML='<b>Thank you.</b> Card checkout isn\'t live yet, so nothing was charged. We\'ll reach out to finish setting up your plan.';m.className='ckm ok';g('ck-go').disabled=true});
+ priceUI()}
+function priceUI(){const g=id=>document.getElementById(id),pr=planPrice();
+ STAGE.querySelectorAll('[data-price]').forEach(e=>e.textContent='$'+fmt(pr));STAGE.querySelectorAll('[data-was]').forEach(e=>e.hidden=!promo);STAGE.querySelectorAll('[data-save]').forEach(e=>e.textContent='$'+fmt(14250-pr));
+ const cp=g('ck-price');if(cp){cp.textContent='$'+fmt(pr);g('ck-was').hidden=!promo;g('ck-go').textContent='Start plan · $'+fmt(pr)+'/mo →'}
+ const tick=()=>{const z=promo?Math.max(0,Math.floor((promo.ends-Date.now())/1000)):0,t=promo?'<b>'+Math.round(promo.off*100)+'% off</b> ends '+promo.endsLabel+', then $5,000/mo · <span class="num">'+Math.floor(z/86400)+'d '+String(Math.floor(z%86400/3600)).padStart(2,'0')+'h '+String(Math.floor(z%3600/60)).padStart(2,'0')+'m '+String(z%60).padStart(2,'0')+'s</span>':'';
+  STAGE.querySelectorAll('.cdn').forEach(e=>{e.hidden=!promo;e.innerHTML=t})};
+ clearInterval(cdTimer);tick();if(promo)cdTimer=setInterval(()=>{if(cur!=='plan'){clearInterval(cdTimer);return}tick()},1000)}
 
 /* ---------- render ---------- */
-function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan})[cur]();
+function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan})[cur]();if(cur==='scan')mapFocus();if(cur==='plan')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
 if(SETS[QP.get('b')])setBiz(QP.get('b'));const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'));

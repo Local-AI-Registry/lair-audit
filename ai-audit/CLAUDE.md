@@ -6,7 +6,7 @@ Find → Scan → Your score (3 steps) → Patients ask AI (2 steps) → 11 chec
 ← → keys step through everything; 1 to 6 jump to a chapter; `?b=<slug>#<chapter>` links straight in.
 The older dark version stays at https://audit.localairegistry.com/ai-audit/classic.html. `v2/index.html` only forwards to the main page.
 
-`index.html`, `classic.html`, `map-bg.html` and `three.min.js` here are BUILT files. Never hand-edit them.
+`index.html`, `classic.html`, `map-bg.html`, `map-light.html` and `three.min.js` here are BUILT files. Never hand-edit them.
 Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 
 ## Source (`_build/`)
@@ -20,11 +20,18 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - `biz/SPEC.md`, `DIR_SPEC.md`, `DIRC_SPEC.md`, `KW_SPEC.md`: how a new business scan is done. Follow them exactly.
   Their output paths are relative to the repo root.
 - `mapbg.html` + `darkmap.py` + `darkmap.css`: the classic page's 3D map, converted to dark by build.sh.
+- `lightmap.py`: makes `../map-light.html`, the same map recolored to the white brand. The main page shows it behind
+  the home screen and the scan (real streets and roaming people), and falls back to a drawn map if it can't load.
 - `quiktox-audit.html`, `qx6.py`, `extract.json`, `art.json`, `vouch.json`, `hud_ev.json`, `hud_fix.json`, `logos.json`: shared content (Quiktox demo data, news, references, illustrations, logos).
 - `tests/`: Playwright checks, run from `_build`. Main page: `tests/serve.sh node tests/v2.js <slug> [<slug> ...]`
   (every chapter, errors and overflow). Classic page: `tests/serve.sh node tests/audt.js` and the others.
 
 ## Main page notes
+- Plan: Get started opens a card form with a promo code (KODY25 = 25% off until Dec 1, 2026, set in `PROMOS` in
+  `sales.tpl.html`). Card checkout is not connected to a payment processor yet: card details never leave the page,
+  and a valid card shows "nothing was charged, we'll reach out".
+- Tests: `tests/v2map.js` checks the live map and the checkout. Set `MAPLIBRE_DIST` to a local maplibre-gl/dist/ folder
+  to test the live map where map tiles are blocked.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
 - Why us: only the plastic surgery (New York) chart has real monthly data; the other result cards are labeled
   "Illustrative" until their monthly visits are added to `CARDS` in `sales.tpl.html`.

@@ -3,6 +3,7 @@
 # Add a new business: put its files in biz/ and add biz/<slug>.json to the list below.
 cd "$(dirname "$0")"
 python3 darkmap.py mapbg.html ../map-bg.html || exit 1
+python3 lightmap.py mapbg.html ../map-light.html || exit 1
 python3 hudbuild3.py ../classic.html quiktox \
   biz/spiritleaf-sherwood-park.json biz/spiritleaf-salisbury.json \
   biz/elevate-cannabis-belton.json biz/key-cannabis-kc-north.json \
