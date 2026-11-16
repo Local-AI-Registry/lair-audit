@@ -52,6 +52,19 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   the Scan screen (no API calls): "Book my audit call" → Bridgette's Calendly (`BOOK` in `sales.tpl.html`), or text us.
   The business name is prefilled with `?a1=`, so the event's first question must be the business name.
 
+## Questions during the scan (rep only)
+- With a team key, the Scan screen asks the owner up to 4 optional questions, each when its step comes up (`QDEF` in
+  `sales.tpl.html`): who they lose clients to, services to grow (up to 3), first-visit spend, visits a year. Each has
+  "Skip this one". On desktop the card sits on the map; on phones, or once the scan is done, it moves into the side panel.
+- Answers are saved in the browser and, for live audits, with the audit (`PUT /audits/<id>/answers`; `GET /audits/<id>`
+  returns `answers`). They change later pages and are always tagged "From you": spend replaces the cited price,
+  visits add first-year value to the plan's full potential, services move those searches to the top of Customers ask AI,
+  and the rival is tagged on the leaderboard and on "Who shows up when it isn't you".
+
+## Customers ask AI
+- Step 1: three summary numbers, then one grid: a row per search, a column per AI assistant, the result on the right.
+- Step 2: "Who takes your spot" (ranked) beside a table of the searches where they're missing: Google's map top 3 and what AI says.
+
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.
 2. Add `biz/<slug>.json` to both lists in `build.sh`, run it, run the tests, check it at `?b=<slug>` (and `classic.html?b=<slug>`).

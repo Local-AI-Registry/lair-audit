@@ -781,6 +781,76 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
  .ftbl .fh,.ftbl .fr{font-size:13px;grid-template-columns:36% 1fr 12px}.ftbl .fh{font-size:11px}.ftbl .fr i{width:10px;height:10px}
 }
 
+
+/* ---------- scan questions ---------- */
+.qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
+.qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
+.qpanel .qcard{box-shadow:none;background:var(--blue-t);padding:calc(1.2*var(--u))}
+.qk{display:flex;justify-content:space-between;align-items:center;gap:calc(1*var(--u));font:700 calc(.85*var(--u)) var(--fb);color:var(--muted)}
+.qctx{display:inline-flex;align-items:center;gap:calc(.5*var(--u));color:var(--blue)}.qctx i{width:calc(.75*var(--u));height:calc(.75*var(--u));border-radius:50%;background:var(--blue)}
+.qt{font:800 calc(1.45*var(--u))/1.2 var(--fu);color:var(--ink)}
+.qw{font-size:calc(.95*var(--u));color:var(--muted)}
+.qopts{display:flex;flex-wrap:wrap;gap:calc(.5*var(--u))}
+.qo{all:unset;box-sizing:border-box;cursor:pointer;background:var(--bg);color:var(--ink);border-radius:99px;padding:calc(.6*var(--u)) calc(1.1*var(--u));font:700 calc(1.02*var(--u)) var(--fb);box-shadow:inset 0 0 0 1px var(--rule)}
+.qpanel .qo{background:var(--card)}
+.qo[aria-pressed="true"]{background:var(--blue);color:#fff;box-shadow:none}
+.qtx{font:600 calc(1.1*var(--u)) var(--fb);color:var(--ink);border:1px solid var(--rule);border-radius:calc(.9*var(--u));padding:calc(.7*var(--u)) calc(1*var(--u));background:#fff;width:100%;box-sizing:border-box}
+.qnum{display:flex;align-items:center;gap:calc(.5*var(--u));background:#fff;border:1px solid var(--rule);border-radius:calc(.9*var(--u));padding:calc(.4*var(--u)) calc(1*var(--u))}
+.qnum span{font:800 calc(1.6*var(--u)) var(--fu);color:var(--muted)}.qnum input{all:unset;width:100%;font:800 calc(1.9*var(--u)) var(--fu);color:var(--ink)}
+.qf{display:flex;justify-content:space-between;align-items:center;gap:calc(1*var(--u))}
+.qskip{all:unset;cursor:pointer;font:600 calc(.98*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+.qgo{all:unset;cursor:pointer;background:var(--ink);color:#fff;border-radius:99px;padding:calc(.6*var(--u)) calc(1.3*var(--u));font:700 calc(1.02*var(--u)) var(--fb)}
+.qgo[disabled]{opacity:.35;cursor:default}
+.qo:focus-visible,.qskip:focus-visible,.qgo:focus-visible,.qtx:focus,.qnum:focus-within{outline:2px solid var(--blue);outline-offset:2px}
+.fromu{display:inline-block;vertical-align:middle;margin-left:calc(.5*var(--u));background:var(--blue-t);color:var(--blue);border-radius:6px;padding:0 calc(.5*var(--u));font:700 calc(.8*var(--u))/1.7 var(--fb);white-space:nowrap}
+/* ---------- customers ask AI: one grid per page ---------- */
+.astat{display:grid;grid-template-columns:repeat(3,1fr);gap:calc(1.2*var(--u))}
+.astat>div{background:var(--card);border-radius:calc(1.2*var(--u));box-shadow:var(--shadow);padding:calc(1*var(--u)) calc(1.4*var(--u));display:flex;align-items:baseline;gap:calc(1*var(--u))}
+.astat b{font:800 calc(2.6*var(--u))/1 var(--fu);color:var(--ink);white-space:nowrap}.astat b small{font-size:.5em;color:var(--muted)}
+.astat span{font-size:calc(1.05*var(--u));color:var(--body)}
+.amx{flex:1;min-height:0;gap:calc(.4*var(--u))}
+.amx .ah,.amx .ar{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,.9fr) repeat(var(--n),minmax(0,.75fr)) minmax(0,1fr);gap:calc(.8*var(--u));align-items:center}
+.am2 .ah,.am2 .ar{grid-template-columns:minmax(0,1.5fr) minmax(0,.9fr) minmax(0,1.6fr)}
+.amx .ah{font:700 calc(.85*var(--u)) var(--fb);letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding-bottom:calc(.6*var(--u));border-bottom:1px solid var(--rule)}
+.amx .ah .en{display:flex;align-items:center;gap:calc(.35*var(--u));justify-content:center;text-transform:none;letter-spacing:0;font-size:calc(.92*var(--u))}
+.amx .ah .en i{width:calc(.7*var(--u));height:calc(.7*var(--u));border-radius:50%;flex:none}
+.amx .ah>span:nth-child(2),.amx .av{text-align:right}
+.amx .ah>span:last-child,.amx .ap{text-align:right}
+.am2 .ah>span:nth-child(2),.am2 .ah>span:last-child{text-align:left}
+.arows{display:flex;flex-direction:column}
+.amx .ar{padding:calc(.75*var(--u)) 0;border-bottom:1px solid var(--rule);font-size:calc(1.15*var(--u))}
+.amx .ar:last-child{border-bottom:0}
+.aq{color:var(--ink);font-weight:600;min-width:0}.aq small{display:block;font-weight:500;color:var(--muted);font-size:calc(.95*var(--u))}
+.av{font:700 calc(1.15*var(--u)) var(--fu);color:var(--ink);font-variant-numeric:tabular-nums}
+.ac{justify-self:center;width:calc(1.9*var(--u));height:calc(1.9*var(--u));border-radius:50%;display:inline-grid;place-items:center;font:800 calc(1*var(--u)) var(--fb);vertical-align:middle}
+.ac.y{background:var(--ok);color:#fff}.ac.n{background:var(--bg);color:var(--grey)}.ac.u{box-shadow:inset 0 0 0 1.5px var(--grey);opacity:.5}
+.p-u{background:var(--bg);color:var(--muted)}
+.alg{display:flex;flex-wrap:wrap;align-items:center;gap:calc(.6*var(--u)) calc(1.4*var(--u));padding-top:calc(.6*var(--u));border-top:1px solid var(--rule)}
+.alg>span{display:inline-flex;align-items:center;gap:calc(.4*var(--u))}.alg .ac{width:calc(1.4*var(--u));height:calc(1.4*var(--u));font-size:calc(.75*var(--u))}
+.apk .okx,.anm .nchip{white-space:nowrap}
+.anm{display:flex;flex-wrap:wrap;gap:calc(.4*var(--u));align-items:center}
+.nchip{background:var(--red-t);color:var(--red);border-radius:99px;padding:calc(.25*var(--u)) calc(.7*var(--u));font:700 calc(.92*var(--u)) var(--fb);max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.nchip.pk{background:var(--red);color:#fff}
+.rivals .tallyc>div.tp span{font-weight:800;color:var(--ink)}
+.rivals .tallyc>div.pk u i{opacity:1}
+.rivals .tallyc>div{grid-template-columns:minmax(0,1.3fr) 1fr calc(2*var(--u))}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ .qcard{padding:14px;border-radius:16px;gap:10px}.qk{font-size:11px}.qt{font-size:17px}.qw{font-size:12.5px}
+ .qo{font-size:14px;padding:10px 14px;min-height:44px}.qtx{font-size:16px;padding:10px 12px}.qnum span{font-size:20px}.qnum input{font-size:22px}
+ .qskip{font-size:14px;padding:10px 0}.qgo{font-size:15px;padding:12px 18px}
+ .fromu{font-size:11px;padding:0 6px}
+ .astat{grid-template-columns:1fr;gap:8px}.astat>div{padding:12px 14px}.astat b{font-size:24px}.astat span{font-size:13px}
+ .amx .ah{display:none}
+ .amx:not(.am2) .ar{display:flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;padding:12px 0}
+ .amx:not(.am2) .ar .aq,.amx:not(.am2) .ar .av{flex:0 0 100%}.amx .ar .av{text-align:left;font:600 12.5px var(--fb);color:var(--muted)}.amx .ar .av::after{content:" searches a month"}.amx .ar .av.nv{display:none}
+ .amx .ar .ap{margin-left:auto}
+ .amx .ar .ac{width:auto;min-width:30px;height:26px;padding:0 7px;border-radius:99px;font-size:0}.amx .ar .ac::before{content:attr(data-l);font:700 11px var(--fb)}
+ .amx .ar .ac.u{opacity:.45}
+ .am2 .ar{grid-template-columns:1fr;row-gap:6px}.am2 .apk::before{content:"Google map ";font:600 12.5px var(--fb);color:var(--muted);margin-right:6px}.am2 .anm::before{content:"AI ";font:600 12.5px var(--fb);color:var(--muted);margin-right:2px}.am2 .ar .apk,.am2 .ar .anm{grid-column:1}
+ .nchip{font-size:12.5px;padding:3px 9px}.aq small{font-size:12.5px}
+ .alg{font-size:12.5px}.alg>span:last-child{margin-left:0!important}.alg .ac{width:20px;height:20px;font-size:10px}
+ .rivals .tallyc>div{font-size:14px}
+}
 /* ---------- responsive and QA fixes ---------- */
 .fpv{display:flex;flex-direction:column;gap:calc(.2*var(--u));background:rgba(255,255,255,.12);border-radius:calc(1*var(--u));padding:calc(.8*var(--u)) calc(1.1*var(--u));color:#fff}
 .fpv span{font:700 calc(.9*var(--u)) var(--fb);letter-spacing:.06em;text-transform:uppercase;color:var(--blue3)}
@@ -865,7 +935,25 @@ const fmt=n=>n==null||isNaN(n)?'–':Math.round(n).toLocaleString('en-US');
 const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
-let SLUG=null,D=null,LIVE=null;const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
+let SLUG=null,D=null,LIVE=null;
+/* answers the owner gives during the scan (all optional); saved with the audit, labeled "From you" wherever used */
+let ANS={},QDONE=new Set(),ANSK=null,ANS_AID=null;
+const norm=t=>String(t||'').toLowerCase().replace(/[^a-z0-9]/g,'');
+const nameMatch=(a,b)=>{a=norm(a);b=norm(b);if(!a||!b)return false;const n=Math.min(10,a.length,b.length);return a.slice(0,n)===b.slice(0,n)};
+const nameIsMe=n=>nameMatch(n,ME);
+function growHit(q){const g=ANS.grow||[];q=String(q).toLowerCase();return g.some(w=>{const t=String(w).toLowerCase().split(/\s+/).filter(x=>x.length>2).map(x=>x.replace(/(ing)?s$/,''));return t.length&&t.every(x=>q.includes(x))})?1:0}
+function ansLoad(k,server){ANSK=k;let a={};try{a=JSON.parse(localStorage.getItem('lair-ans:'+k)||'{}')}catch(e){}ANS=Object.assign({},a,server&&typeof server==='object'?server:{});QDONE=new Set(Object.keys(ANS).filter(x=>x!=='skipped').concat(ANS.skipped||[]))}
+function ansSave(){if(!ANSK)return;try{localStorage.setItem('lair-ans:'+ANSK,JSON.stringify(ANS))}catch(e){}
+ if(ANS_AID&&TEAM)fetch(API+'/audits/'+encodeURIComponent(ANS_AID)+'/answers',{method:'PUT',headers:{'X-Team-Key':TEAM,'Content-Type':'application/json'},body:JSON.stringify(ANS)}).catch(()=>{})}
+function applyAns(){if(!D)return;if(ANS.spend>0){price=Math.round(ANS.spend);RMIN=Math.min(RMIN,Math.max(5,Math.round(price/4)));RMAX=Math.max(RMAX,Math.round(price*3))}}
+const SVCS=[[/dispens|cannabis|weed|marijuana/i,['Flower','Edibles','Vapes','Pre-rolls','Concentrates','Delivery']],[/med ?spa|aesthetic|botox|inject/i,['Botox','Lip filler','Laser hair removal','Microneedling','Hydrafacial','Body contouring']],[/dent|orthodont/i,['Cleanings','Implants','Invisalign','Whitening','Veneers','Emergency visits']],[/derm|skin/i,['Skin checks','Acne','Botox','Laser','Mole removal','Eczema']],[/plastic|cosmetic surg/i,['Breast','Tummy tuck','Facelift','Rhinoplasty','Liposuction','Eyelids']]];
+const svcOpts=()=>{const sv=(B&&B.svc)||(LIVE&&LIVE.svc)||'';const m=SVCS.find(x=>x[0].test(sv));return m?m[1]:null};
+/* when each question appears: the scan phase it belongs to (0 profile, 1 competition, 2 website, 3 AI, 4 web, 5 writing) */
+const QDEF=[
+ {id:'rival',at:2,ctx:'We just found your competitors',q:'Who do you lose clients to most?',why:'We\'ll point them out on the pages that follow.',kind:'pick'},
+ {id:'grow',at:3,ctx:'While we ask AI about you',q:'Which services do you most want more of?',why:'Pick up to 3. We\'ll put those searches first.',kind:'multi'},
+ {id:'spend',at:4,ctx:'While we write your audit',q:'What does a new client usually spend on their first visit?',why:'Used for what AI is worth to you.',kind:'money'},
+ {id:'visits',at:4,ctx:'While we write your audit',q:'How many times does a typical client come back in a year?',why:'Shows what a new client is worth over a year.',kind:'chips',opts:[['Just once',1],['2 to 3 times',2.5],['4 to 6 times',5],['About monthly',12]]}];const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
 /* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only.
    Only our team scans: a visitor without a key gets the lead card (book a call with Bridgette, or text us). */
 const BOOK='https://calendly.com/bridgette-localairegistry/30min';
@@ -912,7 +1000,7 @@ function setBiz(slug){SLUG=slug;D=SETS[slug];hubSel=0;B=D.biz;ME=D.hit.short;S=D
  TOTAL=(D.vp||[]).reduce((a,r)=>a+(r[1]||0),0);
  PRICE0=(D.vp&&D.vp[0]&&D.vp[0][3])||(D.price&&D.price.value)||null;PRICE0=PRICE0==null?null:Math.max(1,Math.round(PRICE0));NOTES=Array.isArray(D.notes)?D.notes.filter(Boolean):[];
  SHARE=D.scan&&D.scan.answers_total?D.scan.answers_naming_you/D.scan.answers_total:null;
- document.title=ME+' · AI Visibility Audit';price=PRICE0;RMIN=PRICE0?Math.max(5,Math.round(PRICE0/4)):10;RMAX=PRICE0?Math.max(150,Math.round(PRICE0*3)):1500}
+ document.title=ME+' · AI Visibility Audit';price=PRICE0;queueMicrotask(applyAns);RMIN=PRICE0?Math.max(5,Math.round(PRICE0/4)):10;RMAX=PRICE0?Math.max(150,Math.round(PRICE0*3)):1500}
 const stName=st=>/^P/.test(st)?'p':/^F/.test(st)?'f':'w';
 const ST={f:['Failed','p-f','#D7261B'],w:['Needs work','p-w','#E3A93B'],p:['Passed','p-p','#0E8A5F']}; /* same three statuses and colors on every screen */
 
@@ -930,7 +1018,7 @@ function vFind(){
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
  const draw=()=>{sug.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
- const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
+ const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}ansLoad('b:'+r.slug);setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
  let lt=null,lseq=0;
  q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
   clearTimeout(lt);if(!TEAM||v.length<3)return;const my=++lseq;
@@ -981,11 +1069,11 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
    pins.map((p,i)=>'<div class="pin'+(p[4]?' me in':'')+'" id="pin'+i+'" style="left:'+p[2]+'%;top:'+p[3]+'%;transition-delay:'+(i?(i-1)*.45:0)+'s"><span>'+X(p[0])+(p[1]?' <small>'+p[1]+'</small>':'')+'</span><i></i></div>').join('')+
   '</div></div>'+
   '<div class="bigq" id="bigq"><small id="bigq-s">ChatGPT is asked</small>"'+X(q0)+'"</div>'+
-  '<div class="feed" id="feed" aria-live="polite"></div>'+
+  '<div class="feed" id="feed" aria-live="polite"></div><div class="qmap" id="qmap"></div>'+
   '<div class="sp" id="sp"><a class="lg" href="./" data-home>'+LOGO+'Local AI Registry</a><div class="sph"><div class="kick">Building your AI visibility audit</div><div class="spn">'+X(ME)+'</div></div>'+
    '<div class="ph4" id="ph4">'+PH.map((x,i)=>'<div class="p" id="phs'+i+'"><i></i><div><b>'+x[0]+'</b><span>'+x[1]+'</span><div class="quip" id="qp'+i+'"></div></div></div>').join('')+'</div>'+
    '<div class="ready"><div class="rt">Your audit is ready.</div><div class="sub">We checked 11 things AI looks at before it recommends you.</div><button type="button" class="btn" data-go="score">See your score →</button></div>'+
-   '<div class="pct"><div class="rowx" style="justify-content:space-between"><b id="pct">0%</b><span class="hint" id="eta"></span></div><div class="pbar"><i id="pbar" style="width:0"></i></div></div></div>'+
+   '<div class="qpanel" id="qpanel"></div><div class="pct"><div class="rowx" style="justify-content:space-between"><b id="pct">0%</b><span class="hint" id="eta"></span></div><div class="pbar"><i id="pbar" style="width:0"></i></div></div></div>'+
   (LV||SCANNED.has(SLUG)?'':'<div class="ctl"><button type="button" data-c="p" aria-label="Previous step">‹</button><button type="button" data-c="t" id="ctl-t" aria-label="Pause">⏸</button><button type="button" data-c="n" aria-label="Next step">›</button></div>'+
   '<button type="button" class="skip" data-go="score">Skip to results →</button>')+'</div></div>';
  const $$=id=>document.getElementById(id);
@@ -1001,12 +1089,42 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
    pct=done?100:Math.min(99,Math.round((w+into)/LTOTAL*100));const left=Math.max(10,Math.round(Math.max(LTOTAL-el,LTOTAL*(1-pct/100))/10)*10);
    eta=done?'Ready':'Step '+(k+1)+' of '+PH.length+' · about '+(left>=90?Math.round(left/60)+' min':left+'s')+' left'}
   else{pct=Math.round(Math.min(PH.length,k+(done?0:q/plen(k)))/PH.length*100);eta=done?'Ready':'Step '+(k+1)+' of '+PH.length+' · about '+Math.max(1,Math.round(((PH.length-k)*plen(k)-q)*1.25))+'s left'}
-  $$('pbar').style.width=pct+'%';$$('pct').textContent=pct+'%';$$('eta').textContent=eta;
+  $$('pbar').style.width=pct+'%';$$('pct').textContent=pct+'%';$$('eta').textContent=eta;drawQ(done);
   const t=$$('ctl-t');if(t){t.textContent=paused?'▶':'⏸';t.setAttribute('aria-label',paused?'Play':'Pause')}}
  const SPOTS=[[72,11],[56,80],[87,46],[52,63],[84,87],[64,91],[67,33],[90,60]].sort(()=>Math.random()-.5);
- function addFinding(txt){const bq=document.getElementById('bigq').classList.contains('show'),SP2=bq?SPOTS.filter(p=>p[1]>45):SPOTS,P=SP2[(seq++)%SP2.length],el=document.createElement('div');el.className='fnd';
+ function addFinding(txt){const bq=document.getElementById('bigq').classList.contains('show'),qv=!mob&&$$('qmap').firstChild,S1=SPOTS.filter(p=>(!bq||p[1]>45)&&(!qv||p[0]<70||p[1]<45)),SP2=S1.length?S1:SPOTS,P=SP2[(seq++)%SP2.length],el=document.createElement('div');el.className='fnd';
   const x=mob?50:P[0],y=mob?57+((seq%3)-1)*2:P[1];el.style.left=x+'%';el.style.top=y+'%';el.innerHTML='<i>✓</i><span>'+X(txt)+'</span>';
   el.addEventListener('animationend',()=>{if(el.parentNode)el.parentNode.removeChild(el)});const f=$$('feed');[...f.children].forEach(c=>c.classList.add('out'));f.appendChild(el)}
+ /* questions for the owner while the scan runs: one at a time, each with its step, all skippable */
+ const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null;
+ function qNext(done){if(!askOn)return null;return QDEF.find(d=>!QDONE.has(d.id)&&(done||k>=d.at)&&(d.id!=='rival'||rivalOpts().length))||null}
+ function rivalOpts(){const L=LV||LIVE;const c=L&&L.comps?L.comps.map(x=>x.n):WHO.slice(1);return c.filter(Boolean).slice(0,4)}
+ function qAnswer(id,val){if(val===undefined){ANS.skipped=(ANS.skipped||[]).concat(id)}else{ANS[id]=val;
+   addFinding(id==='rival'?'Noted: '+val:id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+' a visit':'Noted: '+(QDEF[3].opts.find(o=>o[1]===val)||[''])[0])}
+  QDONE.add(id);ansSave();applyAns();qShown=null;drawQ(k>=PH.length)}
+ function drawQ(done){const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
+  if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m'):null;if(key===qShown)return;qShown=key;if(!slot)return;
+  if(!d){slot.textContent='';return}
+  const n=QDEF.indexOf(d)+1,opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():null;
+  let inp='';
+  if(d.kind==='pick')inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt" data-other>Someone else</button></div><input class="qtx" id="q-other" hidden maxlength="80" placeholder="Their name" aria-label="Competitor name">';
+  else if(d.kind==='multi')inp=opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'<input class="qtx" id="q-txt" maxlength="120" placeholder="For example: implants, whitening" aria-label="Services">';
+  else if(d.kind==='money')inp='<label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="250" aria-label="Average first-visit spend"></label>';
+  else inp='<div class="qopts">'+d.opts.map(o=>'<button type="button" class="qo" data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';
+  const save=d.kind==='multi'||d.kind==='money'||d.kind==='pick';
+  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+d.q+'</div>'+inp+'<div class="qw">'+d.why+'</div><div class="qf"><button type="button" class="qskip">Skip this one</button>'+(save?'<button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
+  const card=slot.firstChild,go=card.querySelector('.qgo');let sel=[];
+  const ready=()=>{if(!go)return;go.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||((card.querySelector('#q-txt')||{}).value||'').trim())};
+  card.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;
+   if(b.classList.contains('qskip'))return qAnswer(d.id);
+   if(b.classList.contains('qgo')){if(go.disabled)return;if(d.kind==='money')return qAnswer(d.id,parseInt(card.querySelector('#q-num').value.replace(/\D/g,''),10));
+    if(d.kind==='pick')return qAnswer(d.id,sel[0]);const t=card.querySelector('#q-txt');return qAnswer(d.id,t?t.value.split(/[,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,3):sel)}
+   if(b.dataset.n)return qAnswer(d.id,+b.dataset.n);
+   if(b.hasAttribute('data-other')){const t=card.querySelector('#q-other');t.hidden=false;t.focus();card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));sel=[];ready();return}
+   if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('#q-other').hidden=true;sel=[b.dataset.v];ready();return}
+   if(d.kind==='multi'){const on=b.getAttribute('aria-pressed')!=='true';if(on&&sel.length>=3)return;b.setAttribute('aria-pressed',String(on));sel=on?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
+  card.addEventListener('input',e=>{if(e.target.id==='q-other')sel=e.target.value.trim()?[e.target.value.trim()]:[];if(e.target.id==='q-num')e.target.value=e.target.value.replace(/\D/g,'');ready()});
+  card.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.tagName==='INPUT'&&go&&!go.disabled){e.preventDefault();go.click()}})}
  STAGE.onclick=e=>{const b=e.target.closest('[data-c]');if(!b)return;const c=b.dataset.c;if(c==='t')paused=!paused;else{paused=true;q=0;$$('feed').textContent='';k=c==='p'?Math.max(0,k-1):Math.min(PH.length,k+1)}update()};
  if(RM||(!LV&&SCANNED.has(SLUG)))k=PH.length;update();requestAnimationFrame(()=>requestAnimationFrame(()=>STAGE.querySelector('.scan4').classList.add('ready-in')));clearInterval(scanTimer);
  scanTimer=setInterval(()=>{if(cur!=='scan'){clearInterval(scanTimer);return}
@@ -1037,7 +1155,7 @@ function popHTML(){const cols=[[0,'Google top 20'],[4,'Google AI Overview'],[1,'
   '<div class="eq"><span><b>'+named+'</b> of '+slots+' name you</span><span>=</span><span><b style="color:var(--ok)">'+D.score.you+'</b> / 100</span><span class="hint" style="margin-left:auto;max-width:calc(26*var(--u))">'+(unread?(byM?'Answers we could not read (blank) are left out of the score. ':'Google AI Overview could not be read in this scan and counts as not naming you. '):'')+cmpTxt+'</span></div>'
   :(cmpTxt?'<p class="hint">'+cmpTxt+'</p>':''))+lim+'</div>'}
 function lead(){const rows=WHO.map((n,i)=>({n,i,ai:AIM?AIM[i]:null,s:(S[i]||{}).v||[],r:RAT[i],c:REV[i]}));rows.sort((a,b)=>(b.ai??-1)-(a.ai??-1));const mx=Math.max(1,...rows.map(r=>r.ai||0),AIN||0),vm=Math.max(...rows.map(r=>r.s[r.s.length-1]||0),1);
- return '<div class="lead"><div class="h"><span>#</span><span>Business</span><span>AI answers naming them</span><span>Google visits, last 12 months</span><span>Reviews</span></div>'+rows.map((r,k)=>{const me=r.i===0,last=r.s[r.s.length-1];return '<div class="'+(me?'me':'')+' fade" style="animation-delay:'+(RM?0:k*.12)+'s"><span class="rk">'+(k+1)+'</span><b style="font-size:calc(1.25*var(--u))">'+X(r.n)+'</b><span><b>'+fmt(r.ai)+'</b>'+(AIN?'<small> of '+AIN+'</small>':'')+'<div class="minib"><i style="width:'+((r.ai||0)/mx*100)+'%"></i></div></span><span class="spk">'+(r.s.length?spark(r.s,me?'#FF5A3C':'#6F8FEF'):'')+'<span><b>'+fmt(last)+'</b><small> /mo</small></span></span><span>'+(r.r!=null?'★ '+(+r.r).toFixed(1):'–')+' <small>· '+fmt(r.c)+'</small></span></div>'}).join('')+'</div>'}
+ return '<div class="lead"><div class="h"><span>#</span><span>Business</span><span>AI answers naming them</span><span>Google visits, last 12 months</span><span>Reviews</span></div>'+rows.map((r,k)=>{const me=r.i===0,last=r.s[r.s.length-1];return '<div class="'+(me?'me':'')+' fade" style="animation-delay:'+(RM?0:k*.12)+'s"><span class="rk">'+(k+1)+'</span><b style="font-size:calc(1.25*var(--u))">'+X(r.n)+(!me&&ANS.rival&&nameMatch(r.n,ANS.rival)?' <span class="fromu">Your pick</span>':'')+'</b><span><b>'+fmt(r.ai)+'</b>'+(AIN?'<small> of '+AIN+'</small>':'')+'<div class="minib"><i style="width:'+((r.ai||0)/mx*100)+'%"></i></div></span><span class="spk">'+(r.s.length?spark(r.s,me?'#FF5A3C':'#6F8FEF'):'')+'<span><b>'+fmt(last)+'</b><small> /mo</small></span></span><span>'+(r.r!=null?'★ '+(+r.r).toFixed(1):'–')+' <small>· '+fmt(r.c)+'</small></span></div>'}).join('')+'</div>'}
 function vScore(){const sc=D.score,ab=sc.you-sc.avg;const sv=S[0]&&S[0].v||[],last=sv[sv.length-1],first=sv[0],gr=first?Math.round((last/first-1)*100):null;
  const cnt={p:0,w:0,f:0};CK.forEach(c=>cnt[stName(c.st)]++);
  const T=['Your AI score: <em style="white-space:nowrap">'+sc.you+' out of 100</em>',lead1(),'What it\'s worth: <em>your share, and what\'s left</em>'][step];
@@ -1051,13 +1169,13 @@ function vScore(){const sc=D.score,ab=sc.you-sc.avg;const sv=S[0]&&S[0].v||[],la
  else if(step===1)body='<div class="g2" style="grid-template-columns:calc(20*var(--u)) 1fr"><div class="card pad col" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score</span>'+IB+'</div>'+gauge('100%')+(sc.avg!=null?'<div class="hint" style="text-align:center">Area average '+sc.avg+' · top nearby '+sc.top+'</div>':'')+'</div><div class="card pad col">'+lead()+'<div class="hint" style="margin-top:auto">Ranked by how often AI names each business. '+X(((AUD['AI monitoring']||[])[0]||{}).m||'')+'. Visits: estimated monthly visits to each whole website from Google.</div></div></div>';
  else{const tot=price==null?null:TOTAL*0.023*price,cust=TOTAL*0.023;const sh=SHARE??0;const vx=D.volx?' (est.)':'';const VL=D.vol_loc&&D.vol_loc.level,wide=VL==='country',noVol=!TOTAL,rivalAI=AIM&&AIM.slice(1).some(v=>v>0),$$=v=>v==null||wide||noVol?'–':'$'+fmt(v);
   body='<div class="mini3 fade"><span style="display:inline-flex;align-items:center;gap:calc(.6*var(--u))">AI score <b>'+sc.you+'</b>'+IB+'</span>'+(SHARE!=null?'<span><b>'+Math.round(sh*100)+'%</b> of AI answers name you</span>':'')+(last?'<span><b>'+fmt(last)+'</b> Google visits /mo</span>':'')+'</div>'+
-  '<div class="chain fade"><div class="card"><span>'+(D.volx?'Est. searches':'Searches')+' a month for what you offer</span><b>'+(noVol?'–':fmt(TOTAL))+'</b><span>'+(noVol?'Search volume isn\'t available for this area':D.volx?'4× the measured volume: Google hides most searches in this category':(D.vp||[]).length+' searches '+(VL==='country'?'nationwide (no local numbers for your area)':VL==='state'?'statewide':'in your area'))+'</span></div><div class="op">×</div><div class="card"><span>Become customers</span><b>2.3%</b><span>average conversion rate (Ruler Analytics)</span></div><div class="op">×</div><div class="card" style="box-shadow:inset 0 0 0 calc(.2*var(--u)) var(--ok),var(--shadow)"><span>Your average spend per customer</span><b id="sc-p">'+(price==null?'–':'$'+fmt(price))+'</b><span>'+(price==null?'Set your average spend with the slider below':X(D.priceLabel||'Drag the slider below to match your business'))+'</span></div></div>'+
+  '<div class="chain fade"><div class="card"><span>'+(D.volx?'Est. searches':'Searches')+' a month for what you offer</span><b>'+(noVol?'–':fmt(TOTAL))+'</b><span>'+(noVol?'Search volume isn\'t available for this area':D.volx?'4× the measured volume: Google hides most searches in this category':(D.vp||[]).length+' searches '+(VL==='country'?'nationwide (no local numbers for your area)':VL==='state'?'statewide':'in your area'))+'</span></div><div class="op">×</div><div class="card"><span>Become customers</span><b>2.3%</b><span>average conversion rate (Ruler Analytics)</span></div><div class="op">×</div><div class="card" style="box-shadow:inset 0 0 0 calc(.2*var(--u)) var(--ok),var(--shadow)"><span>Your average spend per customer</span><b id="sc-p">'+(price==null?'–':'$'+fmt(price))+'</b><span>'+(price==null?'Set your average spend with the slider below':ANS.spend?'What you told us <span class="fromu">From you</span>':X(D.priceLabel||'Drag the slider below to match your business'))+'</span></div></div>'+
   '<div class="card pad col fade" style="flex:1;gap:calc(1*var(--u))"><span class="lbl" style="color:var(--ink);font-weight:700">AI names you in '+Math.round(sh*100)+'% of answers. Here\'s what that splits into:</span>'+
   '<div class="wins"><div class="w"><span class="lbl">You win now</span><b><span id="sc-w">'+$$(tot==null?null:tot*sh)+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust*sh))+' customers a month pick you</span></div>'+
   '<div class="g"><span class="lbl">At stake</span><b><span id="sc-g">'+$$(tot==null?null:tot*(1-sh))+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust*(1-sh)))+(rivalAI?' go to a competitor AI names instead':' go to someone else')+'</span></div>'+
   '<div class="t"><span class="lbl">Full potential</span><b><span id="sc-t">'+$$(tot)+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust))+' new customers a month</span></div></div>'+
   '<div class="bar2" aria-hidden="true"><i style="width:'+(sh*100)+'%;background:var(--ok)"></i><i style="width:'+((1-sh)*100)+'%;background:var(--coral)"></i></div>'+
-  '<div style="margin-top:auto"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div></div>'}
+  '<div style="margin-top:auto"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(ANS.spend?'Your answer: $'+fmt(ANS.spend):PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div></div>'}
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+T+'</div>'+body+'</div>'+popHTML()+'</div>';
  const r=$('#sc-r');if(r){const hide=!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'),upd=set=>{if(set)price=+r.value;const pv=price==null?+r.value:price;r.style.setProperty('--p',((pv-RMIN)/(RMAX-RMIN)*100)+'%');if(price==null)return;const tot=TOTAL*0.023*price,sh=SHARE??0,d=v=>hide?'–':'$'+fmt(v);$('#sc-p').textContent='$'+fmt(price);$('#sc-t').textContent=d(tot);$('#sc-w').textContent=d(tot*sh);$('#sc-g').textContent=d(tot*(1-sh))};r.addEventListener('input',()=>upd(1));upd(0)}}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-info]');if(!b)return;const p=STAGE.querySelector('.pop');if(!p)return;p.hidden=!p.hidden;if(!p.hidden)p.querySelector('.x').focus()});
@@ -1066,25 +1184,38 @@ STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-info]');if(!b
 const ENG=[[0,'G','#4285F4','Google search (top 20)'],[1,'GPT','#111','ChatGPT'],[2,'Ge','#8E75B2','Gemini'],[3,'P','#1F8A8A','Perplexity'],[4,'AIO','#34A853','Google AI Overview'],[5,'C','#D97757','Claude']];
 function engs(){const all=NB.concat(CRN),used=ENG.filter(e=>all.some(r=>r.r&&r.r[e[0]]!=null));if(used.length)return used;const bad=(D.scan&&D.scan.engines_failed)||[];return ENG.filter(e=>e[0]!==4&&!bad.includes(e[3]))}
 function vAsk(){const E=engs();
- const rows=NB.map(r=>{const rd=E.map(e=>r.r[e[0]]);return {q:r.q,v:r.v,r:rd,n:rd.filter(Boolean).length,m:rd.filter(x=>x!=null).length}}).concat(CRN.map(r=>{const rd=E.map(e=>r.r&&r.r[e[0]]===null?null:0);return {q:r.q,v:r.v,r:rd,n:0,m:rd.filter(x=>x!=null).length,c:r.c||[]}}));
- rows.forEach(r=>{r.g=!r.m?'u':r.n===r.m?'p':r.n===0?'f':'w'});
- const pass=rows.filter(r=>r.g==='p').sort((a,b)=>(b.v||0)-(a.v||0)),work=rows.filter(r=>r.g!=='p').sort((a,b)=>a.n-b.n||(b.v||0)-(a.v||0));
+ const rows=NB.map(r=>{const rd=E.map(e=>r.r[e[0]]);return {q:r.q,v:r.v,r:rd,n:rd.filter(Boolean).length,m:rd.filter(x=>x!=null).length,c:r.c||[]}}).concat(CRN.map(r=>{const rd=E.map(e=>r.r&&r.r[e[0]]===null?null:0);return {q:r.q,v:r.v,r:rd,n:0,m:rd.filter(x=>x!=null).length,c:r.c||[]}}));
+ rows.forEach(r=>{r.g=!r.m?'u':r.n===r.m?'p':r.n===0?'f':'w';r.grow=growHit(r.q)});
+ rows.sort((a,b)=>(b.grow-a.grow)||((b.v||0)-(a.v||0)));
  const vol=L=>L.reduce((a,r)=>a+(r.v||0),0),est=D.volx?' est.':'';
- const eng=r=>'<span class="eng">'+E.map((e,i)=>'<i class="'+(r[i]?'':r[i]==null?'off u':'off')+'" style="background:'+e[2]+'" title="'+e[3]+(r[i]?' names you':r[i]==null?' could not be read':' leaves you out')+'">'+e[1]+'</i>').join('')+'</span>';
- const row=(r,names)=>'<div class="qrow"><div class="t"><span>'+X(r.q)+'</span><b>'+fmt(r.v)+'</b></div><div class="e">'+(r.g==='u'?'<span class="hint">We couldn\'t check this search</span>':r.g==='f'&&r.m===E.length?'<span class="okx n">Failed: no AI names you</span>':eng(r.r)+(r.g!=='p'?'<span class="hint">'+r.n+' of '+r.m+' name you</span>':''))+'</div>'+(names&&r.c&&r.c.length?'<div class="also fade">Named instead: <b>'+r.c.map(X).join(' · ')+'</b></div>':'')+'</div>';
- const colP=()=>'<div class="card pad col" style="gap:0;overflow:hidden"><div class="colh"><i style="background:var(--ok)"></i>Passed<small>'+(pass.length?fmt(vol(pass))+est+' /mo':'')+'</small></div><div class="hint" style="padding-bottom:calc(.6*var(--u))">Every place we checked names you</div>'+(pass.length?pass.slice(0,5).map(r=>row(r)).join('')+(pass.length>5?'<div class="hint" style="padding-top:calc(.6*var(--u))">+'+(pass.length-5)+' more</div>':''):'<div class="hint" style="padding-top:calc(1*var(--u))">None yet. That\'s where we start.</div>')+'</div>';
- const colW=(n,names)=>'<div class="card pad col" style="gap:0;overflow:hidden;box-shadow:inset 0 0 0 calc(.18*var(--u)) var(--warn),var(--shadow)"><div class="colh"><i style="background:var(--warn)"></i>Needs work<small>'+(work.length?fmt(vol(work))+est+' /mo':'')+'</small></div><div class="hint" style="padding-bottom:calc(.6*var(--u))">'+(names?'Where AI leaves you out, and who it names instead':'Places that leave you out, weakest first')+'</div>'+(work.length?work.slice(0,n).map(r=>row(r,names)).join('')+(work.length>n?'<div class="hint" style="padding-top:calc(.6*var(--u))">+'+(work.length-n)+' more</div>':''):'<div class="hint" style="padding-top:calc(1*var(--u))">Nothing. Every search we checked names you everywhere.</div>')+'</div>';
- const legend='<div class="rowx hint" style="gap:calc(1.2*var(--u));flex-wrap:wrap">'+E.map(e=>'<span style="display:inline-flex;align-items:center;gap:calc(.4*var(--u))"><i style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));border-radius:50%;background:'+e[2]+';color:#fff;display:inline-grid;place-items:center;font:800 calc(.6*var(--u)) var(--fb);font-style:normal">'+e[1]+'</i>'+e[3]+'</span>').join('')+'</div>';
+ const named=rows.reduce((a,r)=>a+r.n,0),asked=rows.reduce((a,r)=>a+r.m,0),none=rows.filter(r=>r.g==='f'),miss=rows.filter(r=>r.g!=='p');
+ const pill=r=>r.g==='u'?'<span class="pill p-u">Not checked</span>':'<span class="pill '+ST[r.g][1]+'">'+ST[r.g][0]+'</span>';
+ const growTag=r=>r.grow?'<span class="fromu">You want more</span>':'';
  let body;
- if(step===0){const f=rows.filter(r=>r.g==='f'),w=rows.filter(r=>r.g==='w'),tv=vol(rows)||1;
-  const seg=[['Passed',pass,'var(--ok)','Every place names you'],['Needs work',w,'var(--warn)','Some places leave you out'],['Failed',f,'var(--red)','No AI names you']];
-  body='<div class="cols3">'+colP()+colW(5)+'<div class="card pad col"><div class="colh" style="font-size:calc(1.35*var(--u))">Where your searches stand</div><div class="hint">Share of monthly'+est+' searches</div><div class="vstack">'+seg.map(x=>vol(x[1])?'<i style="width:'+vol(x[1])/tv*100+'%;background:'+x[2]+'"></i>':'').join('')+'</div><div class="vleg">'+seg.map(x=>'<div><i style="background:'+x[2]+'"></i><span><b style="font-family:var(--fb)">'+x[0]+'</b><small>'+x[3]+'</small></span><b>'+x[1].length+' · '+Math.round(vol(x[1])/tv*100)+'%</b></div>').join('')+'</div><div class="hint" style="margin-top:auto">'+rows.length+' everyday searches checked in '+E.length+' places each.</div></div></div>'+legend}
- else{const PK=(D.packs||[]).filter(p=>p.pack&&p.pack.length);const tally={};CRN.forEach(r=>(r.c||[]).forEach(n=>tally[n]=(tally[n]||0)+1));PK.forEach(p=>{if(p.you==null)p.pack.forEach(n=>{n=n.replace(/^#\d+\s*/,'');tally[n]=(tally[n]||0)+1})});
-  const T=Object.entries(tally).sort((a,b)=>b[1]-a[1]).slice(0,7),tm=T.length?T[0][1]:1;
-  body='<div class="cols3" style="grid-template-columns:'+(PK.length?'1.1fr 1.1fr 1fr':'1.4fr 1fr')+'">'+
-   (PK.length?'<div class="card pad col" style="gap:0;overflow:hidden"><div class="colh"><i style="background:#4285F4"></i>Google\'s map pack</div><div class="hint" style="padding-bottom:calc(.6*var(--u))">The top 3 places Google shows on the map</div>'+PK.slice(0,3).map(p=>'<div class="qrow"><div class="t"><span>'+X(p.q)+'</span>'+(p.you?'<span class="okx y">You: #'+String(p.you).replace(/^#/,'')+'</span>':'<span class="okx n">Not you</span>')+'</div><div class="also">'+p.pack.map(n=>{const nm=n.replace(/^#\d+\s*/,'');return nm.toLowerCase().startsWith(ME.toLowerCase().split(' ')[0])?'<span style="color:var(--ok);font-weight:700">'+X(nm)+'</span>':X(nm)}).join(' · ')+'</div></div>').join('')+'</div>':'')+
-   colW(3,1)+
-   '<div class="card pad col fade"><div class="colh" style="font-size:calc(1.35*var(--u))">Shows up most when you don\'t</div>'+(T.length?'<div class="tallyc">'+T.map(t=>'<div><span>'+X(t[0])+'</span><u><i style="width:'+t[1]/tm*100+'%"></i></u><b>'+t[1]+'</b></div>').join('')+'</div><div class="hint" style="margin-top:auto">Searches where they appear and you don\'t'+(PK.length?', in AI answers or Google\'s map pack':'')+'.</div>':'<div class="hint">No single competitor stands out on the searches we checked.</div>')+'</div></div>'}
+ if(step===0){
+  const cell=(x,e)=>'<span class="ac '+(x?'y':x==null?'u':'n')+'" data-l="'+e[1]+'" title="'+e[3]+(x?' names you':x==null?' could not be read':' leaves you out')+'">'+(x?'✓':x==null?'':'–')+'</span>';
+  const stats=[[asked?named+'<small> of '+asked+'</small>':'–','AI answers that name you'],[String(none.length),none.length===1?'search where no AI names you':'searches where no AI names you'],[vol(miss)?fmt(vol(miss))+est:'–','searches a month where you\'re left out somewhere']];
+  body='<div class="astat fade">'+stats.map(s=>'<div><b>'+s[0]+'</b><span>'+s[1]+'</span></div>').join('')+'</div>'+
+   '<div class="card pad col amx" style="--n:'+E.length+'"><div class="ah"><span>Search</span><span>Searches /mo'+est+'</span>'+E.map(e=>'<span class="en"><i style="background:'+e[2]+'"></i>'+X(e[3].replace(' (top 20)','').replace('Google search','Google'))+'</span>').join('')+'<span>Result</span></div>'+
+   '<div class="tblw arows">'+rows.map(r=>'<div class="ar g-'+r.g+'"><span class="aq">'+X(r.q)+growTag(r)+'</span><span class="av'+(r.v!=null?'':' nv')+'">'+(r.v!=null?fmt(r.v):'–')+'</span>'+E.map((e,i)=>cell(r.r[i],e)).join('')+'<span class="ap">'+pill(r)+'</span></div>').join('')+'</div>'+
+   '<div class="alg hint"><span><span class="ac y">✓</span> names you</span><span><span class="ac n">–</span> leaves you out</span><span><span class="ac u"></span> couldn\'t be read</span><span style="margin-left:auto">'+rows.length+' everyday searches, '+E.length+' places each</span></div></div>'}
+ else{const PK={};(D.packs||[]).forEach(p=>{if(p.pack&&p.pack.length)PK[p.q]=p});
+  const tally={},seen={};const add=(n,q)=>{n=String(n).replace(/^#\d+\s*/,'');if(!n||nameIsMe(n))return;tally[n]=(tally[n]||0)+1;(seen[n]=seen[n]||new Set()).add(q)};
+  rows.forEach(r=>{if(r.g!=='p')r.c.forEach(n=>add(n,r.q))});Object.values(PK).forEach(p=>{if(p.you==null)p.pack.forEach(n=>add(n,p.q))});
+  const T=Object.entries(tally).sort((a,b)=>b[1]-a[1]).slice(0,6),tm=T.length?T[0][1]:1,pick=ANS.rival;
+  const isPick=n=>pick&&nameMatch(n,pick);
+  const lst=rows.filter(r=>r.g!=='p'||(PK[r.q]&&PK[r.q].you==null)).map(r=>Object.assign({pk:PK[r.q]},r));
+  Object.values(PK).forEach(p=>{if(!rows.some(r=>r.q===p.q)&&p.you==null)lst.push({q:p.q,v:null,c:[],g:'x',pk:p,grow:growHit(p.q)})});
+  lst.sort((a,b)=>(b.grow-a.grow)||((b.v||0)-(a.v||0)));
+  const chip=n=>'<span class="nchip'+(isPick(n)?' pk':'')+'">'+X(n)+'</span>';
+  const pkCell=p=>!p?'<span class="hint">–</span>':p.you?'<span class="okx y">You\'re #'+String(p.you).replace(/^#/,'')+'</span>':'<span class="okx n">Not in top 3</span>';
+  const aiCell=r=>r.g==='p'?'<span class="hint">AI names you</span>':r.c.length?r.c.slice(0,2).map(chip).join('')+(r.c.length>2?'<span class="hint">+'+(r.c.length-2)+'</span>':''):r.g==='f'?'<span class="hint">No business named</span>':r.g==='w'?'<span class="hint">Names you in '+r.n+' of '+r.m+'</span>':'<span class="hint">–</span>';
+  const pickLine=pick?(T.some(t=>isPick(t[0]))?'':'<div class="hint">You said you lose clients to <b>'+X(pick)+'</b>. They didn\'t come up in place of you on these searches.</div>'):'';
+  body='<div class="g2 rivals" style="grid-template-columns:1fr 1.7fr">'+
+   '<div class="card pad col fade"><div class="colh" style="font-size:calc(1.35*var(--u))">Who takes your spot</div><div class="hint">How many searches each one shows up in when you don\'t</div>'+
+   (T.length?'<div class="tallyc">'+T.map((t,k)=>'<div class="'+(k?'':'tp ')+(isPick(t[0])?'pk':'')+'"><span>'+X(t[0])+(isPick(t[0])?'<span class="fromu">Your pick</span>':'')+'</span><u><i style="width:'+t[1]/tm*100+'%"></i></u><b>'+t[1]+'</b></div>').join('')+'</div>':'<div class="hint">No single competitor stands out on the searches we checked.</div>')+pickLine+'<div class="hint" style="margin-top:auto">Counted from AI answers, and Google\'s top 3 on the map, on searches where you\'re missing.</div></div>'+
+   '<div class="card pad col amx am2"><div class="ah"><span>Search where you\'re missing</span><span>Google\'s map, top 3</span><span>What AI says</span></div>'+
+   '<div class="tblw arows">'+(lst.length?lst.map(r=>'<div class="ar"><span class="aq">'+X(r.q)+growTag(r)+(r.v!=null?'<small>'+fmt(r.v)+est+' /mo</small>':'')+'</span><span class="apk">'+pkCell(r.pk)+'</span><span class="anm">'+aiCell(r)+'</span></div>').join(''):'<div class="hint" style="padding:calc(1*var(--u)) 0">AI and Google name you on every search we checked.</div>')+'</div></div></div>'}
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+(step===0?'What customers ask AI, <em>and how you do</em>':'Who shows up <em>when it isn\'t&nbsp;you</em>')+'</div>'+body+'</div></div>'}
 
 /* ---------- 11 CHECKS hub ---------- */
@@ -1153,8 +1284,9 @@ STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-sc]');if(!b)r
 /* ---------- PLAN ---------- */
 /* full potential from the Your score math (searches x 2.3% x spend); left out when any part is unknown or not local */
 function fpLine(one){if(price==null||!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'))return '';const v=TOTAL*0.023*price;if(!(v>0))return '';
- if(one)return '<div class="fpv one" title="'+fmt(TOTAL)+' searches a month × 2.3% × $'+fmt(price)+' average spend"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo</small></b></div>';
- return '<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo in new customers</small></b><small>'+fmt(TOTAL)+(D.volx?' est.':'')+' searches a month × 2.3% × $'+fmt(price)+' average spend</small></div>'}
+ const vy=ANS.visits>1?ANS.visits:0;
+ if(one)return '<div class="fpv one" title="'+fmt(TOTAL)+' searches a month × 2.3% × $'+fmt(price)+' average spend'+(vy?' × '+vy+' visits a year':'')+'"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo'+(vy?' · $'+fmt(v*vy)+' over their first year':'')+'</small></b></div>';
+ return '<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(v)+'<small> /mo in new customers</small></b><small>'+fmt(TOTAL)+(D.volx?' est.':'')+' searches a month × 2.3% × $'+fmt(price)+' average spend'+(ANS.spend?' (from you)':'')+(vy?'. Over their first year, at '+vy+' visits: $'+fmt(v*vy)+(ANS.visits?' (from you)':''):'')+'</small></div>'}
 function vPlan(){if(step===1)return vPlanCompare();if(step===2)return vPlan12();const V=[['AEO agency',5000],['PR firm',3000],['Video agency',2500],['Local SEO agency',1500],['Web management',1000],['Review and profile tool',400],['Listings service',300],['Search and AI data',300],['Content writer',250]];
  const PHS=[['Month 1','Foundation','Record, AI tracking, Google profile, listings, website care'],['Month 3','Clean-up','Keyword fixes, topical map, photos geotagged'],['Month 4','Content','News articles, internal links, best-of guides'],['Month 6','Authority','Answer pages, press releases, vetted backlinks'],['Month 8','Reach','Explainer videos, competitor content gaps']];
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttl">Nine agencies\' work. <em>One team, for <span data-save>$9,250</span> less a&nbsp;month.</em></div><div class="vs">'+
@@ -1259,13 +1391,13 @@ function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);co
  if(!MOB())STAGE.querySelectorAll('.tblw,.fwrap').forEach(t=>{const f=()=>t.classList.toggle('more',t.scrollHeight>t.clientHeight+4&&t.scrollTop+t.clientHeight<t.scrollHeight-4);f();t.addEventListener('scroll',f,{passive:true})});
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
 const start=()=>{const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'))};
-if(SETS[QP.get('b')])setBiz(QP.get('b'));
+if(SETS[QP.get('b')]){ansLoad('b:'+QP.get('b'));setBiz(QP.get('b'))}
 if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
  const AID=QP.get('audit'),msg=(t,b)=>{STAGE.innerHTML='<div class="scr"><div class="body ldbox"><div class="lg">'+LOGO+'Local AI Registry</div>'+(b?'':'<div class="spin" aria-hidden="true"></div>')+'<div class="sub" role="status">'+t+'</div>'+(b||'')+'</div></div>'};
  const fail=t=>msg(t,'<a class="btn" href="sms:+12139315633?&body='+encodeURIComponent('Please send my AI visibility audit ('+AID+')')+'">Text us for your audit →</a><button type="button" class="lnk" data-home>Search for a business instead</button>');
  msg('Opening your audit…');let tries=0;const t0=Date.now();
  const load=()=>fetch(API+'/audits/'+encodeURIComponent(AID)).then(r=>r.status===404?{status:'missing'}:r.ok?r.json():Promise.reject(r.status)).then(j=>{
-  if(j&&j.status==='done'&&j.d&&j.d.biz&&j.d.hit){const k=j.slug||('live-'+j.id);SETS[k]=j.d;SCANNED.add(k);setBiz(k);start();return}
+  if(j&&j.status==='done'&&j.d&&j.d.biz&&j.d.hit){const k=j.slug||('live-'+j.id);SETS[k]=j.d;SCANNED.add(k);ANS_AID=AID;ansLoad('a:'+AID,j.answers);setBiz(k);start();return}
   if(j&&j.status==='running'&&Date.now()-t0<6*60e3){msg('Your audit is still being built. This page will open it as soon as it\'s ready.');setTimeout(load,8000);return}
   fail(j&&j.status==='failed'?'This audit didn\'t finish. We can run it again for you.':'We couldn\'t find that audit. The link may be incomplete.')
  }).catch(()=>{if(++tries<3){msg(tries>1?'Still connecting…':'Opening your audit…');setTimeout(load,1500*tries);return}fail('We couldn\'t reach our server just now. Check your connection, or text us and we\'ll send your audit.')});
@@ -1275,7 +1407,7 @@ else start();
 
 /* ---------- live scan: runs on lair-api and plays on the map as it happens, then opens the finished audit ---------- */
 function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(o.q||'')))return;
- D=null;SLUG=null;LIVE={id:o.id||'',q:o.q||'',name:o.name||o.q||'',short:'',k:0,cur:0,label:'',ok:new Set(),queue:[],said:new Set(),t0:Date.now(),tc:Date.now(),hit:null,done:false,err:''};const L=LIVE;
+ D=null;SLUG=null;ANS={};QDONE=new Set();ANSK=null;ANS_AID=null;LIVE={id:o.id||'',q:o.q||'',name:o.name||o.q||'',short:'',k:0,cur:0,label:'',ok:new Set(),queue:[],said:new Set(),t0:Date.now(),tc:Date.now(),hit:null,done:false,err:''};const L=LIVE;
  try{history.replaceState(null,'','?'+(L.id?'id='+encodeURIComponent(L.id):'q='+encodeURIComponent(L.q))+'#scan')}catch(e){}
  document.title='Running the audit · Local AI Registry';go('scan');
  const fail=m=>{if(LIVE!==L)return;L.err=m||'We hit a snag finishing this audit.';if(cur==='scan')render()};
@@ -1293,7 +1425,8 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
    while((n=buf.indexOf('\n'))>=0){const line=buf.slice(0,n).trim();buf=buf.slice(n+1);if(!line)continue;let m;try{m=JSON.parse(line)}catch(e){continue}if(LIVE!==L)return;
-    if(m.id&&!m.d){aid=m.id;try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#scan')}catch(e){}}
+    if(m.comps)L.comps=m.comps;
+    if(m.id&&!m.d){aid=m.id;L.aid=aid;ANS_AID=aid;ANSK='a:'+aid;ansSave();try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#scan')}catch(e){}}
     if(m.biz){L.name=m.biz.name||L.name;if(m.biz.svc)L.svc=m.biz.svc;if(m.biz.short)L.short=m.biz.short;setHit(m.biz);if(L.hit&&m.biz.svc)L.hit.cq=m.biz.svc}
     if(m.find)m.find.forEach(f=>{L.queue.push(f);L.said.add(m.at)});
     if(m.step!=null&&m.ok!==false){L.ok.add(m.step);if(!L.said.has(m.step)&&LSTEP[m.step])L.queue.push(LSTEP[m.step][2]);
