@@ -29,9 +29,10 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Main page notes
 - Plan has 3 steps: the overview, the full agency comparison (`extract.json` "cmp") and the month-by-month plan
   (`extract.json` "plan"). In the 11 checks, "What we found" shows each check's chart and findings table (`found` in biz JSON).
-- Plan: Get started opens a card form with a promo code (KODY25 = 25% off until Dec 1, 2026, set in `PROMOS` in
-  `sales.tpl.html`). Card checkout is not connected to a payment processor yet: card details never leave the page,
-  and a valid card shows "nothing was charged, we'll reach out".
+- Checkout (Get started, or the proposal's payment link): step 1 takes name, email, phone and a promo code (checked by
+  `/billing/promo`), then `/billing/subscribe` creates the subscription and step 2 shows Stripe's Payment Element inside
+  the popup (Stripe.js from js.stripe.com; card numbers never touch our servers). Prices and codes live in Stripe.
+  Next never opens checkout. Reps (team key) also get "Send follow-ups" on the proposal, which calls `/leads`.
 - Tests: `tests/v2map.js` checks the live map and the checkout. Set `MAPLIBRE_DIST` to a local maplibre-gl/dist/ folder
   to test the live map where map tiles are blocked.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.

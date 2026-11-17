@@ -950,6 +950,23 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
  .prh{font-size:17px}.prl li{grid-template-columns:76px 1fr;padding:10px 12px}.prl .m{font-size:11px}.prl b{font-size:15px}.prl li>span:last-child{font-size:13px}
  .prn .newp{font-size:40px}.prpay{font-size:14px;padding:8px 0}.prmeta{align-items:flex-start}
 }
+
+/* ---------- checkout steps (Stripe) and rep follow-ups ---------- */
+.cksteps{display:flex;align-items:center;gap:8px;font:600 13px var(--fb);color:var(--muted)}
+.cksteps b,.cksteps span:not(.ok){display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--bg);font-size:12px;font-weight:800}
+.cksteps b{background:var(--blue);color:#fff}.cksteps .ok{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ok);color:#fff;font-size:12px}
+.cksteps i{flex:0 0 22px;height:2px;background:var(--rule)}
+.cksteps .lnk{font-weight:600}
+.ckstep{display:flex;flex-direction:column;gap:14px}.ckstep[hidden]{display:none}
+.fl span small{font-weight:500;color:var(--muted)}
+.ckpe{min-height:180px;display:grid;align-content:start}.ckpe .spin{justify-self:center;margin-top:50px}
+.ckdone{align-items:flex-start;text-align:left}.ckdone h3{margin:0;font:800 24px var(--fu)}.ckdone p{margin:0;color:var(--body)}
+.ckok{width:48px;height:48px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font:800 24px var(--fb)}
+.ckm a{color:inherit;font-weight:700}
+.ldf{gap:12px;width:min(520px,100%)}.ldc{display:flex;align-items:center;gap:10px;font:600 14px var(--fb);color:var(--ink)}.ldc input{width:20px;height:20px;accent-color:var(--blue)}
+.prmeta .prlead{font-size:calc(.9*var(--u));color:var(--muted)}
+.paytoast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;padding:14px 20px;border-radius:14px;font:700 15px var(--fb);box-shadow:0 20px 50px rgba(11,26,46,.25);max-width:calc(100vw - 32px)}
+.paytoast.ok{background:var(--ok);color:#fff}.paytoast.er{background:var(--red);color:#fff}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1545,10 +1562,29 @@ function vProp(){const sc=D.score;const tally={};CRN.concat(NB).forEach(r=>(r.c|
   (full?'<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(full)+'<small> /mo in new customers</small></b></div>':'')+
   '<ul class="t4 one"><li><b>Month to month.</b> Cancel anytime.</li><li><b>Grandfathered</b> price as long as you stay</li><li><b>Area exclusivity</b> within 15 miles</li></ul>'+TRUST('side')+
   '<div class="prcta"><a class="btn2 prbook" href="'+X(bookUrl(B.full||ME))+'" target="_blank" rel="noopener">Book a call to talk it over →</a><button type="button" class="prpay" data-ckx="open">Ready to start? Enter payment</button></div></div>';
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your proposal, <em>'+X(ME)+'</em></div><div class="prmeta"><span class="hint">'+new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span><button type="button" class="lnk prshare">Copy link to this proposal</button></div></div>'+
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your proposal, <em>'+X(ME)+'</em></div><div class="prmeta"><span class="hint">'+new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span><button type="button" class="lnk prshare">Copy link to this proposal</button>'+(TEAM?'<button type="button" class="lnk prlead">Send follow-ups (rep only)</button>':'')+'</div></div>'+
   '<div class="g3 prop">'+A+Bc+Cc+'</div><div class="hint prfoot">No pressure: this proposal stays at this link, so you can share it with your team and decide when you\'re ready.</div></div></div>'+ckHTML()}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('.prshare');if(!b)return;const u=location.href.split('#')[0]+'#prop';const done=t=>{b.textContent=t;setTimeout(()=>{b.textContent='Copy link to this proposal'},1800)};
  (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>done('Link copied ✓')).catch(()=>{prompt('Copy this link:',u);done('Copy link to this proposal')})});
+/* rep only: enroll the prospect in the follow-up emails (and a text, if they agreed) for this audit */
+function leadOpen(){const w=document.createElement('div');w.className='gpx';w.setAttribute('role','dialog');w.setAttribute('aria-modal','true');w.setAttribute('aria-label','Send follow-ups');
+ w.innerHTML='<div class="gpx-bg" data-gpx></div><form class="gpx-card ldf" novalidate><div class="gph"><div><span class="kick">Rep only</span><b>Send follow-ups to '+X(B.full||ME)+'</b><small>Their audit link goes out now, then short follow-ups at 2, 5 and 10 days. They stop if they pay, unsubscribe or reply STOP.</small></div><button type="button" class="ib x" data-gpx aria-label="Close">✕</button></div>'+
+  '<label class="fl"><span>Their name</span><input id="ld-name" autocomplete="off" maxlength="120" required></label><label class="fl"><span>Email</span><input id="ld-email" type="email" autocomplete="off" maxlength="200"></label><label class="fl"><span>Mobile phone</span><input id="ld-phone" type="tel" autocomplete="off" maxlength="40"></label>'+
+  '<label class="ldc"><input type="checkbox" id="ld-ok"> They agreed to get a text from us</label><button class="btn ckgo" type="submit">Start follow-ups →</button><p class="ckm" id="ld-msg" role="status"></p></form>';
+ const prev=document.activeElement;document.body.appendChild(w);requestAnimationFrame(()=>w.classList.add('on'));w.querySelector('#ld-name').focus();
+ const close=()=>{w.classList.remove('on');setTimeout(()=>w.remove(),200);document.removeEventListener('keydown',k,true);if(prev&&document.contains(prev))prev.focus()};
+ const k=e=>{if(e.key==='Escape'){e.stopPropagation();close()}};document.addEventListener('keydown',k,true);w.addEventListener('click',e=>{if(e.target.closest('[data-gpx]'))close()});
+ const m=w.querySelector('#ld-msg'),say=(t,ok)=>{m.innerHTML=t;m.className='ckm '+(ok?'ok':'er')};
+ w.querySelector('form').addEventListener('submit',e=>{e.preventDefault();const v=id=>w.querySelector(id).value.trim(),name=v('#ld-name'),email=v('#ld-email'),phone=v('#ld-phone'),ok=w.querySelector('#ld-ok').checked;
+  if(!name)return say('Add their name.');if(!email&&!(phone&&ok))return say('Add an email, or a phone number they agreed to get texts on.');
+  const btn=w.querySelector('button[type=submit]');btn.disabled=true;
+  fetch(API+'/leads',{method:'POST',headers:{'Content-Type':'application/json','X-Team-Key':TEAM},body:JSON.stringify({name,business:B.full||ME,email:email||null,phone:phone||null,texts_ok:ok,audit_id:ANS_AID||null,slug:SLUG&&!/^live-/.test(SLUG)?SLUG:null,svc:B.svc||null})})
+   .then(async r=>{const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.detail||'HTTP '+r.status);
+    say('Done. '+j.planned.filter(x=>x.step===0).map(x=>x.channel==='text'?'A text':'The audit email').join(' and ')+' goes out within 15 minutes, then '+j.planned.filter(x=>x.step>0).length+' follow-ups.'+(j.held_for_address?' (Emails wait until the mailing address is set.)':''),true);btn.textContent='Scheduled ✓'})
+   .catch(er=>{btn.disabled=false;say(X(er.message||'That didn\'t go through. Try again.'))})})}
+STAGE.addEventListener('click',e=>{if(e.target.closest('.prlead'))leadOpen()});
+/* coming back from a bank check during payment */
+if(QP.get('redirect_status')){const okp=QP.get('redirect_status')==='succeeded';setTimeout(()=>{const t=document.createElement('div');t.className='paytoast '+(okp?'ok':'er');t.setAttribute('role','status');t.textContent=okp?'Payment received. You\'re all set, and we\'ll email your receipt.':'Your payment didn\'t go through. Nothing was charged.';document.body.appendChild(t);setTimeout(()=>t.remove(),9000)},800)}
 /* compact plan card used beside the detail tables */
 function planSide(extra){return '<div class="card col new pside"><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="lbl" style="color:#fff;font:700 calc(1.3*var(--u)) var(--fu)">One team. One Blueprint. All 11 checks.</div><div class="cdn" hidden></div>'+
  TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> within 15 miles</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine(1)+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
@@ -1599,44 +1635,79 @@ async function mapFocus(){const LV=!D&&LIVE&&LIVE.hit?LIVE:null,key=LV?'live:'+L
  post({t:'focus',name:H.short,rt:H.rt,n:H.n,area:H.area,loc:H.loc,hours:H.hours,comps:cs,qs:H.qs});post({t:'audit',steps:[['Scanning',LV?LTOTAL:PH.length*5+2]]});
  setTimeout(mapTrack,200)}
 
-/* ---------- checkout (card form and promo code; card details never leave the page) ---------- */
-const PROMOS={KODY25:{off:.25,label:'25% off your monthly price',ends:Date.parse('2026-12-01T07:59:00Z'),endsLabel:'Dec 1'}};
-let promo=null,cdTimer=0;
-const planPrice=()=>promo?Math.round(5000*(1-promo.off)):5000;
-function ckHTML(){return '<div class="ckx" id="ckx" hidden role="dialog" aria-modal="true" aria-labelledby="ckt"><div class="ckx-bg" data-ckx="close"></div><form class="ckx-card" id="ckf" novalidate autocomplete="on">'+
+/* ---------- checkout: details, then Stripe's own payment form inside the popup (card numbers never touch our servers) ---------- */
+let promo=null,cdTimer=0,ckCfg=null,stripeJs=null;
+const BASE=5000;
+const planPrice=()=>!promo?BASE:promo.percent_off?Math.round(BASE*(1-promo.percent_off/100)):promo.amount_off?Math.max(0,Math.round(BASE-promo.amount_off/100)):BASE;
+const rid=()=>{try{return crypto.randomUUID().replace(/-/g,'')}catch(e){return Date.now().toString(36)+Math.random().toString(36).slice(2,12)}};
+const api=(path,body)=>fetch(API+path,body?{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)}:{}).then(async r=>{let j={};try{j=await r.json()}catch(e){}if(!r.ok)throw Object.assign(new Error(j.detail||'HTTP '+r.status),{status:r.status});return j});
+const loadStripe=()=>stripeJs||(stripeJs=new Promise((ok,no)=>{if(window.Stripe)return ok(window.Stripe);const s=document.createElement('script');s.src='https://js.stripe.com/v3/';s.onload=()=>ok(window.Stripe);s.onerror=()=>{stripeJs=null;no(new Error('stripe'))};document.head.appendChild(s)}));
+function ckHTML(){return '<div class="ckx" id="ckx" hidden role="dialog" aria-modal="true" aria-labelledby="ckt"><div class="ckx-bg" data-ckx="close"></div><div class="ckx-card">'+
  '<div class="ckh"><div><div class="kick">'+X(ME)+' × Local AI Registry</div><h2 id="ckt">Start your plan</h2></div><button type="button" class="ib x" data-ckx="close" aria-label="Close">✕</button></div>'+
  '<div class="cksum"><span>One team, one Blueprint, all 11 checks<small>Month to month · cancel anytime</small></span><b><s id="ck-was" hidden>$5,000</s> <span id="ck-price">$'+fmt(planPrice())+'</span><small>/mo</small></b></div>'+
  '<div class="cdn" id="ck-cd" hidden></div>'+
- '<label class="fl"><span>Name on card</span><input id="ccname" autocomplete="cc-name" required></label>'+
- '<label class="fl"><span>Card number</span><input id="ccn" inputmode="numeric" autocomplete="cc-number" maxlength="19" placeholder="1234 1234 1234 1234" required></label>'+
- '<div class="fl3"><label class="fl"><span>Expires</span><input id="cce" inputmode="numeric" autocomplete="cc-exp" maxlength="7" placeholder="MM / YY" required></label><label class="fl"><span>CVC</span><input id="ccv" inputmode="numeric" autocomplete="cc-csc" maxlength="4" placeholder="123" required></label><label class="fl"><span>ZIP</span><input id="ccz" inputmode="numeric" autocomplete="postal-code" maxlength="10" placeholder="12345" required></label></div>'+
- '<div class="promo"><button type="button" class="plink" id="pc-open">Have a promo code?</button><div class="pcrow" id="pc-row" hidden><input id="ccp" autocomplete="off" placeholder="Promo code" aria-label="Promo code"><button type="button" class="pbtn" id="pc-apply">Apply</button></div><p class="ckm" id="pc-msg" role="status"></p></div>'+
- TRUST('ck')+'<button class="btn ckgo" type="submit" id="ck-go">Start plan · $'+fmt(planPrice())+'/mo →</button><p class="ckm" id="ck-msg" role="status"></p>'+
- '<p class="ckfine">Guaranteed: in AI answers by day 90, or we stop billing and keep working.</p></form></div>'}
+ '<form id="ck-a" class="ckstep" novalidate autocomplete="on"><div class="cksteps"><b>1</b> Your details <i></i><span>2</span> Payment</div>'+
+  '<label class="fl"><span>Your name</span><input id="ck-name" autocomplete="name" required maxlength="120"></label>'+
+  '<label class="fl"><span>Email for receipts</span><input id="ck-email" type="email" autocomplete="email" required maxlength="200"></label>'+
+  '<label class="fl"><span>Mobile phone <small>optional</small></span><input id="ck-phone" type="tel" autocomplete="tel" maxlength="40"></label>'+
+  '<div class="promo"><button type="button" class="plink" id="pc-open">Have a promo code?</button><div class="pcrow" id="pc-row" hidden><input id="ccp" autocomplete="off" placeholder="Promo code" aria-label="Promo code" maxlength="40"><button type="button" class="pbtn" id="pc-apply">Apply</button></div><p class="ckm" id="pc-msg" role="status"></p></div>'+
+  TRUST('ck')+'<button class="btn ckgo" type="submit" id="ck-next">Continue to payment →</button><p class="ckm" id="ck-msg-a" role="status"></p></form>'+
+ '<div id="ck-b" class="ckstep" hidden><div class="cksteps"><span class="ok">✓</span> <button type="button" class="lnk" id="ck-back">Your details</button> <i></i><b>2</b> Payment</div>'+
+  '<div class="ckpe" id="ck-pe"><div class="spin" aria-hidden="true"></div></div>'+
+  '<button class="btn ckgo" type="button" id="ck-go" disabled>Start plan · $'+fmt(planPrice())+'/mo →</button><p class="ckm" id="ck-msg" role="status"></p></div>'+
+ '<div id="ck-done" class="ckstep ckdone" hidden role="status"><div class="ckok">✓</div><h3>You\'re all set.</h3><p id="ck-done-t">Your plan has started. We\'ll email your receipt.</p><p>Within 2 business days we\'ll reach out to schedule your kickoff call, then start on your Blueprint, your Google profile and your listings.</p><button type="button" class="btn2" data-ckx="close">Done</button></div>'+
+ '<p class="ckfine">Guaranteed: in AI answers by day 90, or we stop billing and keep working.</p></div></div>'}
 function ckWire(){const g=id=>document.getElementById(id),box=g('ckx');if(!box)return;
- let opener=null;const open=()=>{opener=document.activeElement;box.hidden=false;requestAnimationFrame(()=>box.classList.add('on'));setTimeout(()=>g('ccname').focus(),150)},close=()=>{box.classList.remove('on');setTimeout(()=>{box.hidden=true;if(opener&&document.contains(opener))opener.focus()},250)};
- box.addEventListener('input',()=>{const m=g('ck-msg');if(m&&m.classList.contains('er')){m.textContent='';m.className='ckm'}});
- box.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...box.querySelectorAll('button,input,a[href]')].filter(x=>!x.disabled&&!x.hidden&&x.offsetParent);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}});
+ let opener=null,cid=rid(),sub=null,elements=null,stripe=null,busy=false;
+ const show=w=>['ck-a','ck-b','ck-done'].forEach(id=>{g(id).hidden=id!==w});
+ const msg=(id,t,ok)=>{const m=g(id);m.innerHTML=t||'';m.className='ckm'+(t?(ok?' ok':' er'):'')};
+ const open=()=>{opener=document.activeElement;box.hidden=false;requestAnimationFrame(()=>box.classList.add('on'));setTimeout(()=>{const f=box.querySelector('.ckstep:not([hidden]) input,.ckstep:not([hidden]) button');f&&f.focus()},150);
+  if(!ckCfg)api('/billing/config').then(j=>{ckCfg=j}).catch(()=>{ckCfg={off:1}})},
+  close=()=>{box.classList.remove('on');setTimeout(()=>{box.hidden=true;if(opener&&document.contains(opener))opener.focus()},250)};
+ box.addEventListener('input',e=>{if(e.target.closest('#ck-a')){msg('ck-msg-a','');if(sub){sub=null;cid=rid()}}});
+ box.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const f=[...box.querySelectorAll('button,input,a[href],iframe')].filter(x=>!x.disabled&&!x.hidden&&x.offsetParent);if(!f.length)return;const a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}});
  STAGE.querySelectorAll('[data-ckx="open"]').forEach(b=>b.addEventListener('click',e=>{e.preventDefault();open()}));
  box.addEventListener('click',e=>{if(e.target.closest('[data-ckx="close"]'))close()});box.addEventListener('keydown',e=>{if(e.key==='Escape'){e.stopPropagation();close()}});
- g('ccn').addEventListener('input',e=>{const d=e.target.value.replace(/\D/g,'').slice(0,16);e.target.value=d.replace(/(\d{4})(?=\d)/g,'$1 ')});
- g('cce').addEventListener('input',e=>{const d=e.target.value.replace(/\D/g,'').slice(0,4);e.target.value=d.length>2?d.slice(0,2)+' / '+d.slice(2):d});
- ['ccv','ccz'].forEach(id=>g(id).addEventListener('input',e=>{e.target.value=e.target.value.replace(/\D/g,'')}));
  g('pc-open').addEventListener('click',()=>{g('pc-row').hidden=false;g('pc-open').hidden=true;g('ccp').focus()});
- const apply=()=>{const c=g('ccp').value.trim().toUpperCase(),m=g('pc-msg');if(!c){m.textContent='';return}const P=PROMOS[c];
-  if(!P||Date.now()>P.ends){m.textContent='That code isn\'t valid.';m.className='ckm er';return}
-  promo=Object.assign({code:c},P);m.textContent=c+' applied: '+P.label+'.';m.className='ckm ok';g('ccp').disabled=true;g('pc-apply').disabled=true;priceUI();g('ck-go').focus()};
+ const apply=()=>{const c=g('ccp').value.trim();if(!c){msg('pc-msg','');return}g('pc-apply').disabled=true;msg('pc-msg','Checking…',true);
+  api('/billing/promo',{code:c}).then(j=>{if(!j.valid){promo=null;msg('pc-msg','That code isn\'t valid.');g('pc-apply').disabled=false;priceUI();return}
+   promo={code:j.code,label:j.label,percent_off:j.percent_off,amount_off:j.amount_off,ends:j.redeem_by?j.redeem_by*1000:null};sub=null;cid=rid();
+   msg('pc-msg',X(j.code)+' applied: '+X(j.label)+'.',true);g('ccp').disabled=true;priceUI();g('ck-next').focus()})
+  .catch(e=>{g('pc-apply').disabled=false;msg('pc-msg',e.status===429?'Too many tries. Please wait a few minutes.':'We couldn\'t check that code just now. Try again, or mention it when we talk.')})};
  g('pc-apply').addEventListener('click',apply);g('ccp').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();apply()}});
- g('ckf').addEventListener('submit',e=>{e.preventDefault();const m=g('ck-msg');const ok=g('ccname').value.trim().length>1&&g('ccn').value.replace(/\s/g,'').length>=15&&/^\d\d \/ \d\d$/.test(g('cce').value)&&g('ccv').value.length>=3&&g('ccz').value.length>=5;
-  if(!ok){m.textContent='Please fill in all your card details.';m.className='ckm er';return}
-  m.innerHTML='<b>Thank you.</b> Card checkout isn\'t live yet, so nothing was charged. We\'ll reach out to finish setting up your plan.';m.className='ckm ok';g('ck-go').disabled=true});
+ g('ck-back').addEventListener('click',()=>{show('ck-a');g('ck-name').focus()});
+ /* step 1: create the subscription on our server, then show Stripe's payment form for it */
+ g('ck-a').addEventListener('submit',e=>{e.preventDefault();if(busy)return;const name=g('ck-name').value.trim(),email=g('ck-email').value.trim(),phone=g('ck-phone').value.trim();
+  if(name.length<2){msg('ck-msg-a','Please enter your name.');g('ck-name').focus();return}
+  if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){msg('ck-msg-a','Please enter a valid email address.');g('ck-email').focus();return}
+  busy=true;const b=g('ck-next');b.disabled=true;b.textContent='One moment…';
+  const go=sub?Promise.resolve(sub):api('/billing/subscribe',{email,name,phone:phone||null,business:B.full||ME,audit_id:ANS_AID||null,slug:SLUG&&!/^live-/.test(SLUG)?SLUG:null,promo:promo?promo.code:null,checkout_id:cid});
+  go.then(async j=>{sub=j;
+    if(j.status==='active'||j.amount_due===0){show('ck-done');g('ck-done-t').textContent='Your plan has started. Nothing was due today. We\'ll email your receipt.';return}
+    if(!j.client_secret)throw new Error('no secret');
+    const S=await loadStripe();if(!ckCfg||!ckCfg.publishable_key)ckCfg=await api('/billing/config');
+    stripe=S(ckCfg.publishable_key);elements=stripe.elements({clientSecret:j.client_secret,appearance:{theme:'stripe',variables:{colorPrimary:'#1F4FE0',colorText:'#0B1A2E',borderRadius:'12px',fontFamily:'Hanken Grotesk, system-ui, sans-serif',spacingUnit:'4px'}},fonts:[{cssSrc:'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&display=swap'}]});
+    const pe=g('ck-pe');pe.innerHTML='';const el=elements.create('payment',{layout:'tabs',defaultValues:{billingDetails:{name,email,phone:phone||undefined}}});el.mount(pe);
+    el.on('ready',()=>{g('ck-go').disabled=false});el.on('change',()=>msg('ck-msg',''));
+    g('ck-go').textContent='Start plan · $'+fmt((j.amount_due!=null?j.amount_due/100:planPrice()))+' today →';show('ck-b')})
+  .catch(e=>{msg('ck-msg-a',e.status===503?'Online payment isn\'t switched on yet. <a href="'+X(bookUrl(B.full||ME))+'" target="_blank" rel="noopener">Book a call</a> and we\'ll set you up.':e.status===429?'Too many tries. Please wait a few minutes and try again.':e.message&&e.status===400?X(e.message):'We couldn\'t start checkout just now. Please try again, or <a href="'+X(bookUrl(B.full||ME))+'" target="_blank" rel="noopener">book a call</a>.')})
+  .finally(()=>{busy=false;b.disabled=false;b.textContent='Continue to payment →'})});
+ /* step 2: Stripe confirms the payment; banks that need a check send them away and back to this page */
+ g('ck-go').addEventListener('click',async()=>{if(busy||!stripe||!elements)return;busy=true;const b=g('ck-go'),t=b.textContent;b.disabled=true;b.textContent='Processing…';
+  try{const r=await stripe.confirmPayment({elements,confirmParams:{return_url:location.href.split('#')[0]+'#prop'},redirect:'if_required'});
+   if(r.error){msg('ck-msg',X(r.error.message||'Your payment didn\'t go through.'));return}
+   const st=r.paymentIntent&&r.paymentIntent.status;show('ck-done');g('ck-done-t').textContent=st==='processing'?'Your payment is processing. We\'ll email your receipt once it clears.':'Your first payment of $'+fmt((r.paymentIntent.amount||planPrice()*100)/100)+' went through. We\'ll email your receipt.'}
+  catch(e){msg('ck-msg','Something went wrong. Nothing was charged. Please try again.')}
+  finally{busy=false;b.disabled=false;b.textContent=t}});
  priceUI()}
 function priceUI(){const g=id=>document.getElementById(id),pr=planPrice();
  STAGE.querySelectorAll('[data-price]').forEach(e=>e.textContent='$'+fmt(pr));STAGE.querySelectorAll('[data-was]').forEach(e=>e.hidden=!promo);STAGE.querySelectorAll('[data-save]').forEach(e=>e.textContent='$'+fmt(14250-pr));
- const cp=g('ck-price');if(cp){cp.textContent='$'+fmt(pr);g('ck-was').hidden=!promo;g('ck-go').textContent='Start plan · $'+fmt(pr)+'/mo →'}
- const tick=()=>{const z=promo?Math.max(0,Math.floor((promo.ends-Date.now())/1000)):0,t=promo?'<b>'+Math.round(promo.off*100)+'% off</b> ends '+promo.endsLabel+', then $5,000/mo · <span class="num">'+Math.floor(z/86400)+'d '+String(Math.floor(z%86400/3600)).padStart(2,'0')+'h '+String(Math.floor(z%3600/60)).padStart(2,'0')+'m '+String(z%60).padStart(2,'0')+'s</span>':'';
+ const cp=g('ck-price');if(cp){cp.textContent='$'+fmt(pr);g('ck-was').hidden=!promo}
+ const tick=()=>{const z=promo&&promo.ends?Math.max(0,Math.floor((promo.ends-Date.now())/1000)):0,
+  t=promo?'<b>'+X(promo.code)+': '+X(promo.label)+'</b>'+(promo.ends?' · use it within <span class="num">'+Math.floor(z/86400)+'d '+String(Math.floor(z%86400/3600)).padStart(2,'0')+'h '+String(Math.floor(z%3600/60)).padStart(2,'0')+'m</span>':''):'';
   STAGE.querySelectorAll('.cdn').forEach(e=>{e.hidden=!promo;e.innerHTML=t})};
- clearInterval(cdTimer);tick();if(promo)cdTimer=setInterval(()=>{if(cur!=='plan'){clearInterval(cdTimer);return}tick()},1000)}
+ clearInterval(cdTimer);tick();if(promo&&promo.ends)cdTimer=setInterval(()=>{if(cur!=='plan'&&cur!=='prop'){clearInterval(cdTimer);return}tick()},30000)}
+
 
 /* ---------- render ---------- */
 function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan,prop:vProp})[cur]();if(cur==='scan')mapFocus();if(cur==='plan'||cur==='prop')ckWire();
