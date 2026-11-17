@@ -263,6 +263,18 @@
   "status": "redirect",
   "to": "/start/"
  },
+ "drafts/gallery": {
+  "canonical": "https://localairegistry.com/drafts/gallery/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/quiet": {
+  "canonical": "https://localairegistry.com/drafts/quiet/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "events": {
   "http": 301,
   "sitemap": null,
@@ -586,6 +598,12 @@
   "http": 200,
   "sitemap": "pillar",
   "status": "index"
+ },
+ "how-it-works": {
+  "canonical": "https://localairegistry.com/how-it-works/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
  },
  "journal": {
   "http": 301,

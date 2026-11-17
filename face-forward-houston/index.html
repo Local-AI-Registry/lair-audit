@@ -123,6 +123,20 @@ table.plans{min-width:560px}
 .worth .w-tbl .w-r{color:var(--good);font-weight:600}
 @media (max-width:480px){.worth .w-big{font-size:44px}.worth .w-row b{font-size:24px}}
 .worth+section,section+.worth{border-top:1px solid var(--line)}
+.pick{display:grid;grid-template-columns:1fr;gap:14px;margin:22px 0}
+@media(min-width:720px){.pick{grid-template-columns:1fr 1fr}}
+.pcard{border:1px solid var(--line);border-radius:18px;padding:20px;background:var(--card)}
+.pcard.rec{border:2px solid var(--blue)}
+.pcard .pk{margin:0 0 4px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.pcard.rec .pk{color:var(--blue)}
+.pcard h3{margin:0 0 4px}
+.pcard .pp{margin:0 0 12px;color:var(--ink2)}
+.pcard .pp .num{font-size:34px;font-weight:700;color:var(--ink)}
+.pcard ul{margin:0 0 14px;padding-left:18px}
+.pcard li{margin:0 0 6px}
+.pcard .pf{margin:0;padding-top:12px;border-top:1px solid var(--line)}
+.pcard .pf s{opacity:.6;margin-left:6px}
+table.plans tr.grp td{background:var(--paper2,transparent);font-weight:700;color:var(--ink);font-size:13px;letter-spacing:.04em;text-transform:uppercase;padding-top:16px}
 </style>
 </head>
 <body>
@@ -173,7 +187,7 @@ table.plans{min-width:560px}
     <h2>What you told us</h2>
     <p class="sub">Four things from our first conversation. This proposal is built around them.</p>
     <ol class="heard">
-      <li><strong>&ldquo;I&rsquo;m with Influx, and I&rsquo;m not happy with them. But I like my site.&rdquo;</strong> Good. Nothing here asks you to throw the site away. Part 2 shows what the site does well, and where the process around it is costing you.</li>
+      <li><strong>&ldquo;I&rsquo;m with Influx, and I&rsquo;m not happy with them. But I like my site.&rdquo;</strong> Good. We keep the look you like and move it to WordPress, where you own it and can update it the same day. Part 2 shows what the site does well, and where the process around it is costing you.</li>
       <li><strong>Updates take weeks.</strong> You pay someone to take photos and crop them, then hand them to the website team, and it takes weeks to see them live. Part 3 changes that: your photos reach Google within days, and website updates go live on a set clock.</li>
       <li><strong>Your team writes the blogs, then uploads them to Influx.</strong> Your office is doing the writing and still waiting. Only two posts went live on your site in 2026. We write, you approve, it publishes.</li>
       <li><strong>&ldquo;I don&rsquo;t want to be as hands-on. I want to see real results.&rdquo;</strong> You approve; we do the rest. Every month you get one plain report: where you rank, how often AI names you, and the calls and consult requests that came from it.</li>
@@ -360,7 +374,7 @@ table.plans{min-width:560px}
           <div class="stat"><span class="num bad">50</span><p>Google&rsquo;s new score for how easily AI agents can read and use your site, out of 100. No <code>llms.txt</code> file either.</p></div>
         </div>
         <p>Your team writes the content and pays for the photos. The bottleneck is getting it published. Every week a photo or post waits is a week Google and AI see a practice that looks quiet.</p>
-        <p>The site runs on Influx&rsquo;s platform: the footer credits Influx and the pages load Influx&rsquo;s own scripts. That matters for who can make changes, and for what you keep if you ever leave. Finding 5 covers it.</p>
+        <p>The site runs on Influx&rsquo;s platform: the footer credits Influx and the pages load Influx&rsquo;s own scripts. That&rsquo;s why every change waits on the agency, and why the site may not be yours to keep. Moving it to WordPress fixes both. Finding 5 and Part 3 cover it.</p>
         <p class="small">Source: DataForSEO Lighthouse test (desktop) and page checks of faceforwardhouston.com and its blog, November 16, 2026.</p>
       </div>
     </details>
@@ -395,7 +409,7 @@ table.plans{min-width:560px}
   <div class="wrap">
     <p class="part">Part 3 of 5</p>
     <h2>What we&rsquo;d do about it</h2>
-    <p class="sub">One idea: make sure every place Google and AI look says the same true thing. Two double board-certified facial plastic surgeons, in the Heights, who do the face and only the face. Four pieces of work, each tied to a finding.</p>
+    <p class="sub">One idea: make sure every place Google and AI look says the same true thing. Two double board-certified facial plastic surgeons, in the Heights, who do the face and only the face. Five pieces of work, each tied to a finding.</p>
 
     <details class="acc">
       <summary><span class="sh">A. One true record, everywhere</span><span class="ss">Fixes findings 1 and 3.</span></summary>
@@ -437,17 +451,29 @@ table.plans{min-width:560px}
     </details>
 
     <details class="acc">
-      <summary><span class="sh">Optional: a website you own</span><span class="ss">For when your Influx contract ends. Same look, your property.</span></summary>
+      <summary><span class="sh">E. Your website moved to WordPress, in under a month</span><span class="ss">Same look you like. Your property. Starting as soon as next week.</span></summary>
       <div class="more">
-        <p>You like your site, so we&rsquo;d keep it. If the answers to the five questions show you rent it, Caron&rsquo;s team rebuilds the same design on WordPress in your name, with no monthly platform fee and no waiting on anyone to publish. We time it to your contract end so nothing goes dark. We&rsquo;ll quote it separately once we know the end date.</p>
+        <p>The slow updates come from the platform the site runs on. So Caron&rsquo;s team rebuilds your site on WordPress, in your name, and keeps the design you like.</p>
+        <ul class="facts">
+          <li>Every page, photo and before-and-after carried over, with redirects so you keep the Google rankings you have</li>
+          <li>Built for AI from day one: surgeon and procedure markup for Dr. Rodman and Dr. Bender, an <code>llms.txt</code>, and fast pages</li>
+          <li>Your team can post a photo or a blog the same day, or send it to us and we publish it</li>
+          <li>You own the site outright: no platform fee, and nothing to hand back if you change agencies</li>
+          <li>Done in under a month. We can start next week</li>
+        </ul>
+        <div class="stats">
+          <div class="stat"><span class="num">$6,000</span><p>One-time cost of the move on its own, or alongside any other plan.</p></div>
+          <div class="stat"><span class="num">$0</span><p>With the Authority plan. We cover the full cost of the move.</p></div>
+        </div>
+        <p class="small">The build doesn&rsquo;t have to wait on Influx. We point your domain to the new site when it&rsquo;s ready, so it&rsquo;s worth asking them question 2 now.</p>
       </div>
     </details>
 
     <h3 class="tl-h">Timeline</h3>
     <ol class="tl">
       <li><b>This week</b>Kickoff call. Your Registry record verified, Google profile shared with us, and the five questions sent to Influx.</li>
-      <li><b>Late November</b>Old addresses corrected, directories synced, RealSelf updated. Your photo backlog starts posting to Google.</li>
-      <li><b>December</b>Weekly Google posts and review replies running. First rebuilt procedure pages and the Heights press release.</li>
+      <li><b>Next week</b>The WordPress rebuild starts. Old addresses corrected, directories synced, RealSelf updated. Your photo backlog starts posting to Google.</li>
+      <li><b>By mid-December</b>Your new WordPress site live, in under a month. Rebuilt procedure pages, weekly Google posts and review replies running, and the Heights press release out.</li>
       <li><b>About day 90, mid-February</b>Named in AI answers for your target procedures and on page one of Google for them, ahead of spring consult season.</li>
     </ol>
   </div>
@@ -471,11 +497,11 @@ table.plans{min-width:560px}
             <tr><td>Named by AI for facelifts</td><td><span class="you no">Not named</span> by ChatGPT or Perplexity</td><td>Measured monthly by procedure, with a 90-day guarantee</td></tr>
             <tr><td>Your address across the web</td><td><span class="you no">3 different addresses</span></td><td>One, synced weekly across 40+ directories</td></tr>
             <tr><td>File written for AI (<code>llms.txt</code>)</td><td><span class="you no">Missing</span></td><td>Built and kept current</td></tr>
-            <tr><td>Who owns the website</td><td>Runs on Influx&rsquo;s platform. Ask question 2</td><td>We work on your current site; optional rebuild you own</td></tr>
+            <tr><td>Who owns the website</td><td>Runs on Influx&rsquo;s platform. Ask question 2</td><td><span class="you yes">You do.</span> Moved to WordPress in under a month; free with Authority</td></tr>
             <tr><td>Contract</td><td>Ask question 5</td><td>Month to month, no setup fee</td></tr>
           </tbody>
         </table></div>
-        <p>We&rsquo;re not asking you to cancel anything tonight. We can work alongside Influx on the site wherever they give access, and start everything outside the site on day one.</p>
+        <p>You don&rsquo;t have to cancel anything to start. Everything outside the website starts on day one, and the WordPress rebuild runs alongside your current site until it&rsquo;s ready to switch.</p>
       </div>
     </details>
 
@@ -483,7 +509,7 @@ table.plans{min-width:560px}
       <summary><span class="sh">Your team</span><span class="ss">People who know aesthetics, not just search.</span></summary>
       <div class="more"><ul class="facts">
         <li><strong>Steve Lee,</strong> CEO and Founder. Former Google Search and Microsoft executive, helped launch Revance and Evolus as CMO, and owns a med spa himself.</li>
-        <li><strong>Caron Cooper,</strong> SVP Web Development. Runs the monthly work and any website rebuild.</li>
+        <li><strong>Caron Cooper,</strong> SVP Web Development. Leads your WordPress move and runs the monthly work.</li>
         <li><strong>Bridgette DeBrino,</strong> VP Marketing and Sales. Your contact from day one, with 14 years helping run a medical practice.</li>
       </ul>
       <div class="stats">
@@ -493,7 +519,7 @@ table.plans{min-width:560px}
     </details>
 
     <details class="acc">
-      <summary><span class="sh">Our 90-day guarantee</span><span class="ss">On Own Your Market.</span></summary>
+      <summary><span class="sh">Our 90-day guarantee</span><span class="ss">On Own Your Market and Authority.</span></summary>
       <div class="more">
         <p>If Dr. Rodman and Face Forward Houston aren&rsquo;t named in more AI answers within 90 days of completed onboarding, we stop billing and keep working until you are. We also guarantee page one of Google, organically, for at least one of your target searches in the same 90 days. Both require access to your website and drafts approved within 3 business days.</p>
       </div>
@@ -505,41 +531,99 @@ table.plans{min-width:560px}
   <div class="wrap">
     <p class="part">Part 5 of 5</p>
     <h2>What it&rsquo;s worth, and what it costs</h2>
-    <p class="sub">You know your numbers better than we do. Here&rsquo;s the simple math.</p>
+    <p class="sub">Two plans to choose from. Both cover every finding on this page. Authority adds the content and video that make you the name AI quotes, and pays for your website move.</p>
 
     <details class="acc" open>
-      <summary><span class="sh">One patient covers a month of Own Your Market</span><span class="ss">Based on the calculator near the top of this page.</span></summary>
+      <summary><span class="sh">One patient covers a month</span><span class="ss">Based on the calculator near the top of this page.</span></summary>
       <div class="more">
-        <p>At $3,000 per patient, the low end of the national surgeon&rsquo;s fee for the least expensive face surgeries, being the answer for your 33 Houston searches is worth an estimated $244,260 a month, about 81 patients. Own Your Market at $3,000 a month is about 1% of that. A single eyelid patient pays for the month. A single facelift, at the national low end of $12,000, pays for four.</p>
+        <p>At $3,000 per patient, the low end of the national surgeon&rsquo;s fee for the least expensive face surgeries, being the answer for your 33 Houston searches is worth an estimated $244,260 a month, about 81 patients. Authority at $5,000 a month is about 2% of that, and Own Your Market at $3,000 is about 1%. A single facelift, at the national low end of $12,000, covers more than two months of Authority.</p>
         <p>Move the slider in &ldquo;What being AI&rsquo;s answer is worth&rdquo; to your own average, and the numbers update. We&rsquo;ll report your real calls and consult requests every month.</p>
+      </div>
+    </details>
+
+    <div class="pick">
+      <div class="pcard">
+        <p class="pk">Our standard top plan</p>
+        <h3>Own Your Market</h3>
+        <p class="pp"><span class="num">$3,000</span>/mo</p>
+        <ul>
+          <li>Verified record, old addresses fixed, 40+ directories synced weekly</li>
+          <li>Google profile, photo posts 3 a week, review replies, quarterly press</li>
+          <li>Procedure pages, surgeon markup, <code>llms.txt</code>, 10 target searches</li>
+          <li>90-day guarantee and area exclusivity</li>
+        </ul>
+        <p class="pf">WordPress move: <b>$6,000</b> one-time</p>
+      </div>
+      <div class="pcard rec">
+        <p class="pk">Our recommendation</p>
+        <h3>Authority</h3>
+        <p class="pp"><span class="num">$5,000</span>/mo</p>
+        <ul>
+          <li><b>Everything in Own Your Market, plus:</b></li>
+          <li>Explainer videos on YouTube, 2 a month</li>
+          <li>Your research and techniques explained under your name</li>
+          <li>Best-of guides and &ldquo;where to go in Houston&rdquo; editorials</li>
+          <li>Weekly articles and answer pages</li>
+        </ul>
+        <p class="pf">WordPress move: <b>included</b> <s>$6,000</s></p>
+      </div>
+    </div>
+
+    <div class="tw"><table class="demand plans">
+      <caption>Side by side: what the extra $2,000 a month buys</caption>
+      <thead><tr><th>What we do</th><th class="r">Own Your Market<br><span class="small">$3,000/mo</span></th><th class="r">Authority<br><span class="small">$5,000/mo</span></th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="3">Your website</td></tr>
+        <tr><td>Moved to WordPress you own, same design, in under a month</td><td class="r">$6,000 one-time</td><td class="r">Included</td></tr>
+        <tr><td>Procedure pages rebuilt, 10 target Houston searches, surgeon markup and <code>llms.txt</code></td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr><td>Articles on your site</td><td class="r">Monthly</td><td class="r">4 a month</td></tr>
+        <tr><td>Answer pages for the questions patients ask AI</td><td class="r">&ndash;</td><td class="r">4 a month</td></tr>
+        <tr><td>Competitor gaps found and your top pages refreshed</td><td class="r">&ndash;</td><td class="r">Monthly</td></tr>
+        <tr><td>Nearby areas added to your reach, such as Katy, Sugar Land and The Woodlands</td><td class="r">&ndash;</td><td class="r">1 a month</td></tr>
+        <tr class="grp"><td colspan="3">Your identity, everywhere</td></tr>
+        <tr><td>Verified Registry record with both surgeons, old addresses fixed, 40+ directories synced weekly</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr><td>Google posts 3 a week from your photos, personal review replies, RealSelf fixed</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr><td>Press releases on real news sites</td><td class="r">Quarterly</td><td class="r">Quarterly</td></tr>
+        <tr><td>Monthly report: how often ChatGPT, Gemini, Perplexity and Google&rsquo;s AI name you</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr class="grp"><td colspan="3">Your authority, in a form AI can read</td></tr>
+        <tr><td>Explainer videos on YouTube, such as deep plane facelift, lip lift and hair restoration with Dr. Bender</td><td class="r">&ndash;</td><td class="r">2 a month</td></tr>
+        <tr><td>Your research and techniques in the lower face and jawline, explained for patients under your name</td><td class="r">&ndash;</td><td class="r">&check;</td></tr>
+        <tr><td>Best-of guides and &ldquo;where to go in Houston&rdquo; editorials</td><td class="r">&ndash;</td><td class="r">1 a month</td></tr>
+        <tr><td>Authority links</td><td class="r">Cleanup</td><td class="r">5 vetted a month</td></tr>
+        <tr class="grp"><td colspan="3">Your protection</td></tr>
+        <tr><td>Named in more AI answers within 90 days, or we stop billing and keep working</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr><td>Area exclusivity: no competing facial plastic practice near you</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+        <tr><td>Month to month, no setup fee</td><td class="r">&check;</td><td class="r">&check;</td></tr>
+      </tbody>
+    </table></div>
+
+    <details class="acc" open>
+      <summary><span class="sh">Why we recommend Authority</span><span class="ss">It fits where Face Forward is right now.</span></summary>
+      <div class="more">
+        <ul class="facts">
+          <li><strong>For the first three months, the two cost the same.</strong> Own Your Market plus the move is $9,000 + $6,000 = $15,000. Authority is $15,000, with the move included and twice the content.</li>
+          <li><strong>Video already works for you.</strong> Google&rsquo;s AI used your YouTube videos when it named you for facial feminization. Two a month brings that to your facelift, neck lift and lip lift patients.</li>
+          <li><strong>Your expertise is your edge.</strong> Few surgeons can reshape both the soft tissue and the bone of the face. Explained in your words, that is the reason AI gives for naming you.</li>
+          <li><strong>Two surgeons, many procedures.</strong> Authority has the volume to push face, nose, eyelids and Dr. Bender&rsquo;s hair restoration at once.</li>
+          <li><strong>It&rsquo;s easy to step down.</strong> Build with Authority, then move to Own Your Market to maintain. Month to month, no penalty.</li>
+        </ul>
       </div>
     </details>
 
     <div class="offer">
       <p class="part">Our recommendation</p>
-      <p class="price"><span class="num">Own Your Market</span></p>
-      <p>It&rsquo;s the only plan that covers every finding: the record and the move, the Google profile and photos, and the procedure pages AI needs to read. It&rsquo;s also the only one with the 90-day guarantee. Month to month, so you can step down once you&rsquo;re fully built.</p>
+      <p class="price"><span class="num">Authority, $5,000/mo</span></p>
+      <p>Your WordPress move, a $6,000 value, included. Everything on this page, plus videos, research explainers, editorials and weekly content. 90-day guarantee, month to month. We can start the rebuild next week.</p>
     </div>
-
-    <div class="tw"><table class="demand plans">
-      <caption>Plans, each including the one before</caption>
-      <thead><tr><th></th><th class="r">Get Found<br><span class="small">$500/mo</span></th><th class="r">Get Optimized<br><span class="small">$1,500/mo</span></th><th class="r">Own Your Market<br><span class="small">$3,000/mo</span></th></tr></thead>
-      <tbody>
-        <tr><td>Verified Registry record with both surgeons and procedures, 40+ directories synced weekly, old addresses fixed, monthly AI report</td><td class="r">&check;</td><td class="r">&check;</td><td class="r">&check;</td></tr>
-        <tr><td>Google posts 3 a week from your photos, photo labeling, personal review replies, RealSelf fixed, quarterly press release</td><td class="r">&ndash;</td><td class="r">&check;</td><td class="r">&check;</td></tr>
-        <tr><td>10 target Houston searches, procedure pages rebuilt, surgeon markup and <code>llms.txt</code>, blogs published within 3 business days of approval (needs website access)</td><td class="r">&ndash;</td><td class="r">&ndash;</td><td class="r">&check;</td></tr>
-        <tr><td>90-day AI and page-one guarantee</td><td class="r">&ndash;</td><td class="r">&ndash;</td><td class="r">&check;</td></tr>
-      </tbody>
-    </table></div>
-    <p class="small">Month to month, no setup fee, no contract. We don&rsquo;t run or mark up ads. You approve everything before it goes live.</p>
+    <p class="small">Smaller plans start at $500 a month if you&rsquo;d rather begin with the basics. No setup fee, no contract. We don&rsquo;t run or mark up ads. You approve everything before it goes live.</p>
   </div>
 </section>
 
 <section class="next">
   <div class="wrap">
     <h2>Next step</h2>
-    <p>Dr. Rodman, thank you for making time on your admin day. Tonight we&rsquo;ll walk through this together and answer every question.</p>
-    <p>If you&rsquo;d like to move ahead, we start with a 30-minute kickoff with you or your office manager: your Google profile shared with us, your Registry record confirmed, and the five Influx questions sent the same day. From then on, photos and drafts come to us, and you approve.</p>
+    <p>Dr. Rodman, thank you for making time on your admin day. This page has everything we covered, so you can come back to it.</p>
+    <p>If you&rsquo;d like to move ahead, we start with a 30-minute kickoff with you or your office manager this week: your Google profile shared with us, your Registry record confirmed, and the five Influx questions sent the same day. The WordPress rebuild starts next week and is live in under a month. From then on, photos and drafts come to us, and you approve.</p>
     <p class="sig">Bridgette DeBrino<br><span class="small">VP, Marketing and Sales, Local AI Registry · (561) 436-0607 · bridgette@localairegistry.com</span></p>
     <p class="sig">Steve Lee<br><span class="small">CEO and Founder, Local AI Registry</span></p>
   </div>
