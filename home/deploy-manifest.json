@@ -359,6 +359,12 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/start": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "drafts/quiet": {
   "canonical": "https://localairegistry.com/drafts/quiet/",
   "http": 200,
