@@ -240,8 +240,7 @@ const scenes=[];let last=performance.now(),acc=0,fr=0,PR=Math.min(devicePixelRat
 function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;fr++;if(acc>2){if(acc/fr>1/48&&PR>1){PR=Math.max(1,PR-.25);scenes.forEach(s=>{if(s.r&&!s.crisp)s.r.setPixelRatio(PR);s.resize()})}acc=0;fr=0}
   for(const s of scenes)if(s.vis&&s.r){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);if(!s.hold){s.r.render(s.sc,s.cam);s.labels&&s.labels()}}requestAnimationFrame(loop)}
 function base(id,{bg=PAPER,fog=[70,150],fov=30,shadow=true,sun=[18,34,14]}={}){
-  const wrap=document.getElementById(id),mob=MOB();
-  if(!wrap)return null;
+  const wrap=document.getElementById(id)||document.createElement('div'),mob=MOB();
   const sc=new THREE.Scene();if(fog)sc.fog=new THREE.Fog(lin(bg),fog[0],fog[1]);
   const cam=new THREE.PerspectiveCamera(fov,1,.1,600);
   sc.add(new THREE.HemisphereLight(lin(0xffffff),lin(0xCFC8BC),.8));
