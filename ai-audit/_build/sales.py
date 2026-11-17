@@ -51,6 +51,12 @@ for j in range(i, len(L) - 1, 2):
     if re.match(r'^(Year-in-review|Work streams)', L[j]): break
     PLAN12.append([L[j], L[j + 1]])
 t = open(D + 'sales.tpl.html').read()
+# the verified business record is called the Blueprint on this page
+def blueprint(x):
+    if isinstance(x, list):
+        return [blueprint(y) for y in x]
+    return re.sub(r'\b(?:Registry )?[Rr]ecord\b', 'Blueprint', x) if isinstance(x, str) else x
+CMP, PLAN12 = blueprint(CMP), blueprint(PLAN12)
 data = 'const SETS=' + json.dumps(SETS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';const CMP=' + json.dumps(CMP, ensure_ascii=False) + ';const PLAN12=' + json.dumps(PLAN12) + ';'
 t = t.replace('/*__DATA__*/', data.replace('</', '<\\/'))
 os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
