@@ -317,6 +317,12 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/pricing": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "drafts/home-2/research": {
   "canonical": null,
   "http": 200,
