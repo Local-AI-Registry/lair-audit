@@ -41,7 +41,10 @@ section.band{padding-top:clamp(110px,13vw,190px)!important;padding-bottom:clamp(
 @media(max-width:600px){#intro{min-height:600px}.cTop{padding-top:32px}.cTop p{margin:16px auto 20px}}
 </style><script>window.__heroCam=function(o,t,dt){
   if(!o.__hc){o.__hc=1;if(o.sc.fog){o.sc.fog.near=90;o.sc.fog.far=190}
-    o.sc.children.forEach(function(c){if(c.isGroup&&c.children.some(function(m){return m.geometry&&m.geometry.type==='TorusGeometry'}))c.visible=false})}
+    o.sc.children.forEach(function(c){if(c.isGroup&&c.children.some(function(m){return m.geometry&&m.geometry.type==='TorusGeometry'}))c.visible=false});
+    var L=function(h){return new THREE.Color(h).convertSRGBToLinear()};if(o.sc.fog)o.sc.fog.color=L(0xF4F1EA);
+    o.sc.traverse(function(m){if(m.isMesh&&m.geometry&&m.geometry.type==='CircleGeometry')m.material.color=L(0xECE8DF);
+      if(m.isDirectionalLight&&m.castShadow){m.color=L(0xFFFFFF);m.intensity=1}if(m.isHemisphereLight){m.color=L(0xFFFFFF);m.groundColor=L(0xDAD6CE);m.intensity=.95}})}
   var a=.5+t*.012,m=innerWidth<700,r=m?92:78,y=m?62:52;
   o.cam.position.set(Math.sin(a)*r,y,Math.cos(a)*r);o.cam.lookAt(0,m?-4:-6,0);
   if(o.cam.fov!==30){o.cam.fov=30;o.cam.updateProjectionMatrix()}
