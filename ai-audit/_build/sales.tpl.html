@@ -967,6 +967,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .prmeta .prlead{font-size:calc(.9*var(--u));color:var(--muted)}
 .paytoast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;padding:14px 20px;border-radius:14px;font:700 15px var(--fb);box-shadow:0 20px 50px rgba(11,26,46,.25);max-width:calc(100vw - 32px)}
 .paytoast.ok{background:var(--ok);color:#fff}.paytoast.er{background:var(--red);color:#fff}
+#sug li.serr,#sug li.swait{cursor:default;background:#FFF8EC}#sug li.serr small{color:var(--red);font-weight:600}#sug li.swait{background:#fff}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1226,15 +1227,25 @@ function vFind(){
  '<div class="sfield"><div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div>'+TRUST('home')+'</div></div>'+
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
- const draw=()=>{sug.innerHTML=items.map((r,i)=>'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
+ const draw=()=>{sug.innerHTML=items.map((r,i)=>r.err?'<li class="serr" role="status" aria-disabled="true"><small>'+X(r.err)+'</small></li>':r.wait?'<li class="swait" aria-disabled="true"><small>Searching Google…</small></li>':'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
  const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}ansLoad('b:'+r.slug);setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
  let lt=null,lseq=0;
  q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
-  clearTimeout(lt);if(!TEAM||v.length<3)return;const my=++lseq;
-  lt=setTimeout(async()=>{try{const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(v),{headers:{'X-Team-Key':TEAM}});if(!r.ok)return;const j=await r.json();if(my!==lseq)return;
-   const live=(j.results||[]).filter(x=>x.id).slice(0,5).map(x=>({name:x.name,sub:x.sub||'',id:x.id}));items=loc.concat(live,[{name:v,typed:1}]);act=-1;draw()}catch(e){}},220)});
- q.addEventListener('keydown',e=>{if(!items.length)return;if(e.key==='ArrowDown'){act=Math.min(items.length-1,act+1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){act=Math.max(0,act-1);draw();e.preventDefault()}else if(e.key==='Enter'){pick(items[Math.max(0,act)])}});
- sug.addEventListener('click',e=>{const li=e.target.closest('li');if(li)pick(items[+li.dataset.i])});
+  clearTimeout(lt);if(v.length<3)return;const my=++lseq;items=loc.concat([{wait:1},{name:v,typed:1}]);draw();
+  /* real Google suggestions for everyone: reps through our API (their key), visitors straight from Google with the site's
+     browser key, the same way the homepage does. Picking a business still only runs a scan for reps. */
+  lt=setTimeout(async()=>{let live=[],err='';
+   try{if(TEAM){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(v),{headers:{'X-Team-Key':TEAM}});
+     if(r.status===401){err='Your team key isn\'t accepted. Open the page once with ?team=<key> again.'}else if(!r.ok){const j=await r.json().catch(()=>({}));err='Google search isn\'t responding ('+r.status+(j.detail?': '+String(j.detail).slice(0,90):'')+').'}
+     else{const j=await r.json();live=(j.results||[]).filter(x=>x.id).slice(0,5).map(x=>({name:x.name,sub:x.sub||'',id:x.id}))}}
+    if(!TEAM||(err&&GKEY)){const r=await fetch('https://places.googleapis.com/v1/places:autocomplete',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY},body:JSON.stringify({input:v,sessionToken:GTOK,includedRegionCodes:['us','ca']})});
+     const j=await r.json().catch(()=>({}));if(!r.ok){err=err||('Google search isn\'t responding ('+r.status+(j.error&&j.error.status?': '+j.error.status:'')+').')}
+     else{err=TEAM?err:'';live=(j.suggestions||[]).map(x=>x.placePrediction).filter(Boolean).slice(0,5).map(x=>({name:(x.structuredFormat&&x.structuredFormat.mainText&&x.structuredFormat.mainText.text)||(x.text&&x.text.text)||'',sub:(x.structuredFormat&&x.structuredFormat.secondaryText&&x.structuredFormat.secondaryText.text)||'',id:x.placeId})).filter(x=>x.id&&x.name)}}}
+   catch(e){err='We couldn\'t reach Google. Check your connection.'}
+   if(my!==lseq)return;if(err)try{console.warn('Places:',err)}catch(e){}
+   items=loc.concat(live,err?[{err}]:[],[{name:v,typed:1}]);act=-1;draw()},220)});
+ q.addEventListener('keydown',e=>{items=items.filter(r=>!r.err&&!r.wait);if(!items.length)return;if(e.key==='ArrowDown'){act=Math.min(items.length-1,act+1);draw();e.preventDefault()}else if(e.key==='ArrowUp'){act=Math.max(0,act-1);draw();e.preventDefault()}else if(e.key==='Enter'){pick(items[Math.max(0,act)])}});
+ sug.addEventListener('click',e=>{const li=e.target.closest('li[data-i]');if(li)pick(items[+li.dataset.i])});
  if(D){q.value=D.hit.name}setTimeout(()=>q.focus(),50)}
 
 /* ---------- SCAN ---------- */
@@ -1615,6 +1626,7 @@ function foundHTML(c){const F=(D.found||{})[c.c];if(!F||!F.r||!F.r.length)return
 /* ---------- live map behind home and scan (map-light.html: real streets, roaming people) ---------- */
 const MAPBG=document.getElementById('mapbg');let mapWin=null,mapLive=false,mapFocused=null;
 const QUIET='#ldr,#fx,.fxbar,#fxtop,#fxback,#fxctl,.fxctl,#fxkey,#fxkeyb,#fxcart,#fxnote,.fxdock,.nightbadge,#nightbadge,#mvveil,.mvcap,.mvb,.iv-skip,#poster{display:none!important}.paper{opacity:.25!important}';
+let GTOK=(()=>{try{return crypto.randomUUID()}catch(e){return String(Date.now())}})(); /* one Google autocomplete session per search */
 const GKEY='AIzaSyAM_oWtpPy_P8I__Os1wxe9Koyd2Ma30k4';
 async function nearby(loc,qtext,self){try{const j=await fetch('https://places.googleapis.com/v1/places:searchText',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'places.id,places.displayName,places.location,places.rating,places.userRatingCount'},body:JSON.stringify({textQuery:qtext,maxResultCount:10,locationBias:{circle:{center:{latitude:loc[1],longitude:loc[0]},radius:8000}}})}).then(x=>x.json());
  const sn=String(self||'').toLowerCase().replace(/[^a-z]/g,'').slice(0,10);return (j.places||[]).filter(p=>p.location&&!(sn&&(p.displayName.text||'').toLowerCase().replace(/[^a-z]/g,'').startsWith(sn))).map(p=>({name:p.displayName.text,loc:[p.location.longitude,p.location.latitude],rt:p.rating||null,n:p.userRatingCount||0}))}catch(e){return []}}
