@@ -1,0 +1,25 @@
+{
+ "client": "Key Cannabis KC North",
+ "rows": [
+  ["dispensary near me open now", 720, "Kansas City"],
+  ["dispensaries open near me", 480, "Kansas City"],
+  ["kc dispensaries", 390, ""],
+  ["dispensary kansas city mo", 320, ""],
+  ["best dispensary in kansas city", 170, ""],
+  ["gladstone dispensary", 170, ""],
+  ["dispensaries in kansas city", 140, ""],
+  ["dispensary kc", 110, ""],
+  ["dispensary open now", 90, "Kansas City"],
+  ["dispensary gladstone mo", 90, ""],
+  ["dispensary near me open now", 70, "Gladstone"],
+  ["kansas city mo dispensary", 50, ""],
+  ["pot shop near me", 30, "Kansas City"],
+  ["dispensary near me open now", 30, "North Kansas City"],
+  ["dispensary open now", 10, "Gladstone"],
+  ["dispensary open now", 10, "North Kansas City"]
+ ],
+ "price": {"value": 47.03, "label": "average US dispensary basket, 12 months to Sep 2026 (first visit only)",
+   "source": "Headset, cannabis industry statistics", "url": "https://www.headset.io/data/cannabis-industry-statistics"},
+ "vol_source": "DataForSEO, Google Ads search volume for Missouri (searches naming Kansas City or Gladstone) and for Kansas City, Gladstone and North Kansas City (near me and open now searches), November 17, 2026",
+ "left_out": "Left out to keep this conservative: 24 hour searches (“24 hour dispensary near me”, 480 a month in Kansas City; “24 hour dispensary kansas city”, 170), because KC North closes at 9:45 PM, and “dispensary close to me” (49,500 a month reported for Kansas City), which is far out of line with every other search here. Google also withholds volume for many cannabis searches, including “dispensary kansas city” and “dispensary near me”, so they count as zero here. Treat this as a floor."
+}
