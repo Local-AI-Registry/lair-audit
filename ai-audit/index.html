@@ -1761,13 +1761,22 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
  const redraw=()=>{if(LIVE===L&&cur==='scan'&&!D)render()};
  const setHit=b=>{if(!b||b.lat==null||L.hit)return;L.hit={loc:[b.lng,b.lat],short:b.short||b.name,name:b.full||b.name,rt:b.rating,n:b.reviews,area:b.area,hours:b.hours,cq:L.svc||''};
   L.short=b.short||L.short;L.rt=b.rating;if(cur==='scan')mapFocus()};
- (async()=>{if(!TEAM){L.lead=1;throw {msg:'lead'}} /* no self-service: visitors book a call instead (see vScan) */const H={'X-Team-Key':TEAM};
-  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}throw {msg:'lead'}}
+ /* where the business is, straight from Google with the site's browser key: used when there's no team key or our
+    API can't answer, so the map always shows the business that was picked */
+ const gLocate=async()=>{if(L.hit||!GKEY)return;try{let id=L.id;
+  if(!id&&L.q){const r=await fetch('https://places.googleapis.com/v1/places:searchText',{method:'POST',headers:{'Content-Type':'application/json','X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'places.id'},body:JSON.stringify({textQuery:L.q,maxResultCount:1})});const j=await r.json();id=j.places&&j.places[0]&&j.places[0].id;if(!id)return}
+  const r=await fetch('https://places.googleapis.com/v1/places/'+encodeURIComponent(id)+(GTOK?'?sessionToken='+encodeURIComponent(GTOK):''),{headers:{'X-Goog-Api-Key':GKEY,'X-Goog-FieldMask':'id,displayName,formattedAddress,location,rating,userRatingCount,addressComponents'}});
+  try{GTOK=crypto.randomUUID()}catch(e){GTOK=String(Date.now())}
+  if(!r.ok)return;const p=await r.json();if(LIVE!==L||!p.location)return;
+  const ac=p.addressComponents||[],comp=t=>(ac.find(c=>(c.types||[]).includes(t))||{}).longText||'',full=(p.displayName&&p.displayName.text)||L.name;
+  L.name=full;L.id=L.id||id;setHit({full,short:full.split(/\s[-|–:]\s/)[0],lat:p.location.latitude,lng:p.location.longitude,rating:p.rating,reviews:p.userRatingCount,area:[comp('locality'),comp('administrative_area_level_1')]});redraw()}catch(e){}};
+ (async()=>{if(!TEAM){L.lead=1;gLocate();throw {msg:'lead'}} /* no self-service: visitors book a call instead (see vScan) */const H={'X-Team-Key':TEAM};
+  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}gLocate();throw {msg:'lead'}}
    const j=r.ok?await r.json():{};const hit=(j.results||[]).find(x=>x.id);if(!hit)throw {msg:'We couldn\'t find "'+L.q+'" on Google.'};L.id=hit.id;L.name=hit.name||L.name;
    try{history.replaceState(null,'','?id='+encodeURIComponent(L.id)+'#scan')}catch(e){}}
-  fetch(API+'/places/'+encodeURIComponent(L.id),{headers:H}).then(r=>r.ok?r.json():null).then(b=>{if(b&&LIVE===L){L.name=b.full||L.name;L.short=b.short||L.short;setHit(b);redraw()}}).catch(()=>{});
+  fetch(API+'/places/'+encodeURIComponent(L.id),{headers:H}).then(r=>r.ok?r.json():null).then(b=>{if(b&&b.lat!=null&&LIVE===L){L.name=b.full||L.name;L.short=b.short||L.short;setHit(b);redraw()}else gLocate()}).catch(()=>gLocate());
   const res=await fetch(API+'/audit?id='+encodeURIComponent(L.id),{headers:H});
-  if(res.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}throw {msg:'lead'}}if(res.status===429)throw {msg:'The team has used today\'s scans.'};
+  if(res.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}gLocate();throw {msg:'lead'}}if(res.status===429)throw {msg:'The team has used today\'s scans.'};
   if(!res.ok||!res.body)throw {msg:'We couldn\'t start the scan.'};
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
