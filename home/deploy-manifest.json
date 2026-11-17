@@ -263,6 +263,12 @@
   "status": "redirect",
   "to": "/start/"
  },
+ "drafts/breathe": {
+  "canonical": "https://localairegistry.com/drafts/breathe/",
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "drafts/gallery": {
   "canonical": "https://localairegistry.com/drafts/gallery/",
   "http": 200,
