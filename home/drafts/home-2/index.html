@@ -1,0 +1,1017 @@
+<!doctype html>
+<html lang="en">
+<head><!-- LAIR deploy | https://localairegistry.com/drafts/home-2/ | production: 200, noindex,follow (kept for visitors, out of search) | not in sitemap | rules: DEPLOY.md -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts/hanken.woff2"><link rel="preload" as="font" type="font/woff2" crossorigin href="../../assets/fonts/cormorant.woff2"><style>@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:200 800;font-display:swap;src:url(../../assets/fonts/bricolage.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/hanken.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Hanken Grotesk';font-style:italic;font-weight:100 900;font-display:swap;src:url(../../assets/fonts/hanken-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant';font-style:normal;font-weight:300 700;font-display:swap;src:url(../../assets/fonts/cormorant.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant';font-style:italic;font-weight:300 700;font-display:swap;src:url(../../assets/fonts/cormorant-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Hanken Grotesk Fallback';src:local('Arial'),local('Helvetica'),local('Liberation Sans'),local('Roboto');size-adjust:101.5%;ascent-override:98.5%;descent-override:29.9%;line-gap-override:0%}@font-face{font-family:'Bricolage Grotesque Fallback';src:local('Arial'),local('Helvetica'),local('Liberation Sans'),local('Roboto');size-adjust:95.2%;ascent-override:97.7%;descent-override:28.4%;line-gap-override:0%}@font-face{font-family:'Cormorant Fallback';src:local('Times New Roman'),local('Times'),local('Liberation Serif'),local('Georgia');size-adjust:97.2%;ascent-override:95.1%;descent-override:29.5%;line-gap-override:0%}</style>
+<meta name="description" content="Local AI Registry makes sure that when people nearby ask ChatGPT, Gemini or Google where to go, the answer is your business.">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="canonical" href="https://localairegistry.com/drafts/home-2/"><meta property="og:type" content="website"><meta property="og:title" content="Local AI Registry: Get Your Business Recommended by AI"><meta property="og:description" content="Local AI Registry makes sure that when people nearby ask ChatGPT, Gemini or Google where to go, the answer is your business."><meta property="og:url" content="https://localairegistry.com/drafts/home-2/"><meta property="og:site_name" content="Local AI Registry"><meta name="twitter:card" content="summary_large_image"><title>Home 2: The local version | Local AI Registry</title>
+
+<link rel="stylesheet" href="../../assets/css/2dcfc6e25ad3.css">
+
+<meta name="robots" content="noindex,follow"><link rel="apple-touch-icon" href="../../research/apple-touch-icon.png"><link rel="manifest" href="../../assets/brand/site.webmanifest"><meta name="theme-color" content="#F4F1EA"><style id="wrapfix">p,li,td,th,summary,figcaption,blockquote,dd,small{text-wrap:pretty}h1,h2,h3,h4{text-wrap:balance}p a,li a,td a,figcaption a,dd a,p em,li em{overflow-wrap:break-word}footer .lf-cols a{overflow-wrap:normal}.prose,.grid>*,details,.tablewrap{min-width:0;max-width:100%}.tablewrap{overflow-x:auto}@media(max-width:720px){main table:not(.keep){display:block;max-width:100%;overflow-x:auto}}</style><link rel="icon" href="../../research/favicon.ico" sizes="any"><link rel="icon" href="../../research/favicon.svg" type="image/svg+xml"><meta property="og:image" content="https://audit.localairegistry.com/home/assets/og/cab4adc7f02f.png" class="og-card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="When people nearby ask ChatGPT, will it name your business?"><meta name="twitter:image" content="https://audit.localairegistry.com/home/assets/og/cab4adc7f02f.png"><style id="a11ylink">main p a:not([class]),main li a:not([class]),main cite a,.updated a,main td a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}</style></head>
+<body class="x2"><div hidden aria-hidden="true"><div id="g11"></div><div id="safe"></div><div id="cop"></div><div id="intro"></div><div id="iphone"></div><div id="ifade"></div><div id="ihint"></div><div id="iskip"></div><div id="icap"></div><div id="icap2"></div><div id="iq"></div><div id="ia"></div><div id="icin"></div><div id="imc"></div><div id="hero"></div><div id="story"></div><div id="pbar"></div><div id="lvdq"></div><div id="lv-drawer"></div></div><link rel="stylesheet" href="../../assets/css/e5ca6d6fbd95.css" id="h2x"><div class="x">
+<div class="xa"><a href="../../guide/claim-your-business-in-chatgpt/"><b>NEW</b>You can now claim your business in ChatGPT. See how &rsaquo;</a></div>
+<header class="xh"><div class="in"><a class="brand" href="../../drafts/home-2/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg>Local AI Registry</a>
+<nav aria-label="Main"><a href="../../how-it-works/">How it works</a><a href="../../case-studies/">Results</a><a href="../../research/">Research</a><a href="../../resources/">Resources</a></nav>
+<div class="r"><a class="li" href="https://localairegistry.com/login/">Log in</a><a class="xb b" href="../../start/">Free AI audit<i>&rsaquo;</i></a></div>
+<button class="menu" data-menu aria-label="Open menu"><span></span><span></span></button></div></header>
+<div class="xm" role="dialog" aria-label="Menu"><div class="x1"><a class="brand" href="../../drafts/home-2/" style="display:flex;gap:9px;align-items:center;text-decoration:none;font:700 18px Bricolage Grotesque,'Bricolage Grotesque Fallback',sans-serif"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg>Local AI Registry</a><button data-menu aria-label="Close menu">&times;</button></div>
+<a class="big" href="../../how-it-works/">How it works</a><a class="big" href="../../case-studies/">Results</a><a class="big" href="../../research/">Research</a><a class="big" href="../../resources/">Resources</a>
+<a class="xb b" href="../../start/">Get my free AI audit<i>&rsaquo;</i></a></div>
+
+<main>
+<section class="hero"><div class="in">
+<h1>When people nearby ask <span class="rot">ChatGPT</span>,<br>will it name your&nbsp;business?</h1>
+<p class="sub">Local AI Registry is the local AI team that finds why AI skips your business, then fixes it. Named in 90&nbsp;days, guaranteed.</p>
+<form class="go" action="start/"><label class="sr" for="x2biz" style="position:absolute;left:-9999px">Your business name</label><input id="x2biz" type="text" placeholder="Your business name" autocomplete="organization"><button class="xb b" type="submit">Get my free AI audit<i>&rsaquo;</i></button></form>
+<a class="alt" href="../../start/">Or book a call &rsaquo;</a></div>
+<div class="in glow"><div class="sky heroui"><div class="ui app">
+<aside class="feed"><div class="fh"><b>Your AI team</b><span class="sample">Sample data</span></div>
+<div class="msg"><div class="wh"><span class="avt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#fff"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg></span>This week</div><div class="tsk"><span>Fixed your hours on 14 listings</span><span class="tg t-ok">Done</span></div><div class="tsk"><span>Replied to 6 new reviews</span><span class="tg t-ok">Done</span></div><div class="tsk"><span>Press release on your new service</span><span class="tg t-bl">In review</span></div><div class="tsk"><span>Labeled 24 photos</span><span class="tg t-ok">Done</span></div></div>
+<div class="msg"><div class="wh"><span class="avt"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#fff"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg></span>Heads up</div>A best-of guide in your area lists two competitors and not you. We pitched the editor this morning.</div>
+<div class="ask">Ask your team anything<span class="s"></span></div></aside>
+<div class="main"><div class="mh"><div><b>Your business</b><small>Monthly AI report</small></div><span class="tg t-ok">Named in AI</span></div>
+<div class="kpi"><div><span>Assistants naming you</span><b>4 of 5</b><small>Up from 1</small></div><div><span>AI mentions</span><b>82</b><small>This month</small></div><div><span>Listings matched</span><b>38/41</b><small>3 in progress</small></div><div><span>Reviews answered</span><b>100%</b><small>Within 48 hours</small></div></div>
+<div class="duo"><div class="pcard"><h4>AI mentions <em>Last 6&nbsp;months</em></h4><div class="mbars"><div><i style="height:18%"></i><i class="n" style="height:34%"></i></div><div><i style="height:22%"></i><i class="n" style="height:41%"></i></div><div><i style="height:26%"></i><i class="n" style="height:52%"></i></div><div><i style="height:30%"></i><i class="n" style="height:63%"></i></div><div><i style="height:34%"></i><i class="n" style="height:71%"></i></div><div><i style="height:38%"></i><i class="n" style="height:82%"></i></div></div><div class="mbl"><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span></div></div>
+<div class="pcard"><h4>Who AI names nearby <em>This&nbsp;month</em></h4><div class="rk you"><em>1</em><span class="nm">You</span><span class="pc">4 of 5</span></div><div class="rk"><em>2</em><span class="nm">Competitor A</span><span class="pc">3 of 5</span></div><div class="rk"><em>3</em><span class="nm">Competitor B</span><span class="pc">2 of 5</span></div><div class="rk"><em>4</em><span class="nm">Competitor C</span><span class="pc">1 of 5</span></div><div class="rk"><em>5</em><span class="nm">Competitor D</span><span class="pc">1 of 5</span></div></div></div></div></div></div></div>
+<div class="in logos"><span class="eb">Trusted by leading local practices</span><div class="lrow"><img src="../../assets/logos/clients/luxurgery.png" alt="LUXURGERY" title="LUXURGERY" style="height:15px" loading="lazy"><img src="../../assets/logos/clients/scarlessnose.svg" alt="Beverly Hills Rhinoplasty Center" title="Beverly Hills Rhinoplasty Center" style="height:26px" loading="lazy"><img src="../../assets/logos/clients/daydermatology.png" alt="Day Dermatology" title="Day Dermatology" style="height:24px" loading="lazy"><img src="../../assets/logos/clients/rve.png" alt="R.Ve Aesthetics" title="R.Ve Aesthetics" style="height:30px" loading="lazy"><img src="../../assets/logos/clients/defineclinic2.png" alt="Define Clinic" title="Define Clinic" style="height:21px" loading="lazy"><img src="../../assets/logos/clients/oak.png" alt="Oak Dermatology" title="Oak Dermatology" style="height:22px" loading="lazy"><img src="../../assets/logos/clients/injectionartistry.png" alt="Injection Artistry" title="Injection Artistry" style="height:28px" loading="lazy"></div></div></section>
+
+<section class="sec"><div class="shift sec" style="padding-block:clamp(72px,8vw,120px)"><div class="in">
+<div class="t"><span class="eb">The shift</span><h2><span class="g">Your next customer won't search.</span><br>They'll ask&nbsp;AI.</h2>
+<p class="sub">Local questions are where AI answers show up most. When it answers, it names a few businesses, not ten&nbsp;blue&nbsp;links.</p></div>
+<div class="stats"><div><span>Local searches</span><b>76.4%</b><p>trigger a Google AI&nbsp;answer</p></div><div><span>All searches</span><b>13.7%</b><p>trigger&nbsp;one</p></div><div><span>Business websites</span><b>6.5%</b><p>of the citations in those&nbsp;answers</p></div></div>
+<div class="chart"><div style="height:76.4%"><b>76.4%</b></div><div class="lo" style="height:13.7%"><b>13.7%</b></div></div>
+<div class="cl"><span>Local business searches</span><span>All searches</span></div>
+<p class="src">Source: <a href="../../research/local-answer-gap/">The Local Answer Gap</a>, Local AI Registry research,&nbsp;LAIR&#8209;R&#8209;2026&#8209;001.</p></div></div></section>
+
+<section class="sec" style="padding-top:0"><div class="in">
+<div class="shead"><div><span class="eb">Why AI skips you</span><h2><span class="g">See why AI skips you.</span><br>Then change the&nbsp;answer.</h2></div>
+<p>We check the questions people nearby ask, the answers AI gives, and the sources&nbsp;behind&nbsp;them.</p></div>
+<div class="three"><div class="rv"><div class="sky"><div class="ui"><div class="q">AI answer <span class="tg t-gy">best spot near me</span></div>
+<div class="li2"><span class="nm"><em>1</em>Competitor A</span></div><div class="li2"><span class="nm"><em>2</em>Competitor B</span></div><div class="li2"><span class="nm"><em>3</em>Competitor C</span></div>
+<div class="li2"><span class="nm"><em>-</em>Your business</span><span class="tg t-no">Not named</span></div></div></div><div class="n">01</div><h3>You're not in the&nbsp;answer</h3><p>We find the questions people nearby ask AI, and the ones where competitors get named and you&nbsp;don't.</p></div><div class="rv"><div class="sky"><div class="ui"><div class="q">Sources AI used</div><div class="tree">
+<div class="li2"><span class="nm">Local best-of guide</span><span class="tg t-no">You're missing</span></div>
+<div class="li2"><span class="nm">Directory listing</span><span class="tg t-no">Old hours</span></div>
+<div class="li2"><span class="nm">Google profile</span><span class="tg t-no">Wrong category</span></div>
+<div class="li2"><span class="nm">Reviews</span><span class="tg t-ok">Strong</span></div></div></div></div><div class="n">02</div><h3>A source is leaving you&nbsp;out</h3><p>We trace each answer back to the pages and listings AI read, and find the ones that skip you or get you&nbsp;wrong.</p></div><div class="rv"><div class="sky"><div class="ui"><div class="q">Your AI team <span class="tg t-bl">Working</span></div>
+<div class="li2"><span class="nm">Pitch the guide's editor</span><span class="tg t-bl">Sent</span></div>
+<div class="li2"><span class="nm">Correct hours on 14 listings</span><span class="tg t-ok">Done</span></div>
+<div class="li2"><span class="nm">Fix the Google category</span><span class="tg t-ok">Done</span></div>
+<div class="li2"><span class="nm">Ask AI again</span><span class="tg t-gy">Next report</span></div></div></div><div class="n">03</div><h3>Our team fixes&nbsp;it</h3><p>We correct the facts, earn the mentions and publish what's missing. Then we ask AI again and show you the&nbsp;answer.</p></div></div></div></section>
+
+<section class="sec rule res"><div class="in rv">
+<blockquote>Beverly Hills Rhinoplasty Center went from <span class="mark">0 to 45 ChatGPT questions</span> that pull up its&nbsp;site.</blockquote>
+<div class="by"><img loading="lazy" class="f" src="../../assets/for-med-spas/faces/s/deepak-dugar.jpg" alt=""><span style="text-align:left"><b>Dr. Deepak Dugar</b>Beverly Hills Rhinoplasty Center</span><span class="vbar"></span><img loading="lazy" src="../../assets/logos/clients/scarlessnose.svg" alt="Beverly Hills Rhinoplasty Center" style="height:26px;filter:grayscale(1) brightness(.3)"></div>
+<p class="src">Source: DataForSEO LLM mentions, running&nbsp;total.</p></div></section>
+
+<section class="sec rule"><div class="in">
+<div class="shead"><div><span class="eb">Your first 90 days</span><h2>See what changes<br>in <span class="mark">90&nbsp;days</span></h2></div>
+<p>Our team finds what's missing, does the work and shows you the answer. You approve what goes out in&nbsp;your&nbsp;name.</p></div>
+<div class="sky days"><div class="dl" role="tablist" aria-label="Your first 90 days"><small>Your first 90 days</small><button role="tab" aria-selected="true" data-d="0">Day 1<span>Free audit</span></button><button role="tab" aria-selected="false" data-d="1">Week 1<span>Your plan</span></button><button role="tab" aria-selected="false" data-d="2">Month 1<span>The work</span></button><button role="tab" aria-selected="false" data-d="3">Month 2<span>Proof</span></button><button role="tab" aria-selected="false" data-d="4">Day 90<span>Guarantee</span></button><div class="tot"><b>11</b>parts of the Blueprint, handled</div></div><div class="dp on" role="tabpanel" data-p="0"><div class="dd">Day 1</div><h3>Free AI&nbsp;audit</h3><p>We ask the assistants what people nearby ask, and show you who they&nbsp;name.</p><div class="ui"><div class="grid5"><div class="h">Questions people ask</div><div class="h c">ChatGPT</div><div class="h c">Gemini</div><div class="h c hide">Google AI</div><div class="h c hide">Perplexity</div><div>best [service] near me</div><div class="c"><span class="yes">✓</span></div><div class="c"><span class="nop">✗</span></div><div class="c hide"><span class="nop">✗</span></div><div class="c hide"><span class="yes">✓</span></div><div>[service] open Saturday near me</div><div class="c"><span class="nop">✗</span></div><div class="c"><span class="nop">✗</span></div><div class="c hide"><span class="yes">✓</span></div><div class="c hide"><span class="nop">✗</span></div><div>most trusted [business] nearby</div><div class="c"><span class="nop">✗</span></div><div class="c"><span class="yes">✓</span></div><div class="c hide"><span class="nop">✗</span></div><div class="c hide"><span class="nop">✗</span></div><div>[business] with great reviews</div><div class="c"><span class="nop">✗</span></div><div class="c"><span class="nop">✗</span></div><div class="c hide"><span class="nop">✗</span></div><div class="c hide"><span class="yes">✓</span></div><div>[service] near [your street]</div><div class="c"><span class="yes">✓</span></div><div class="c"><span class="nop">✗</span></div><div class="c hide"><span class="nop">✗</span></div><div class="c hide"><span class="nop">✗</span></div></div></div></div><div class="dp" role="tabpanel" data-p="1"><div class="dd">Week 1</div><h3>Your area, your&nbsp;plan</h3><p>We agree on your exclusive area, set your plan and start fixing the facts AI reads&nbsp;first.</p><div class="ui"><div><div class="li2"><span class="nm">Area boundary agreed</span><span class="tg t-ok">Locked</span></div><div class="li2"><span class="nm">Google profile categories and hours</span><span class="tg t-ok">Fixed</span></div><div class="li2"><span class="nm">Name, address and phone on every listing</span><span class="tg t-bl">In progress</span></div><div class="li2"><span class="nm">Your approval list</span><span class="tg t-gy">Ready for you</span></div></div></div></div><div class="dp" role="tabpanel" data-p="2"><div class="dd">Month 1</div><h3>The Blueprint in&nbsp;motion</h3><p>All 11 parts of the Local AI Blueprint are underway, each one waiting on your OK before anything goes&nbsp;out.</p><div class="ui"><div><div class="li2"><span class="nm">Reviews answered in your voice</span><span class="tg t-ok">Weekly</span></div><div class="li2"><span class="nm">Photos labeled for AI</span><span class="tg t-ok">Done</span></div><div class="li2"><span class="nm">Press release drafted</span><span class="tg t-bl">Your review</span></div><div class="li2"><span class="nm">Best-of guide outreach</span><span class="tg t-bl">Sent</span></div><div class="li2"><span class="nm">Website fixes for AI</span><span class="tg t-bl">In progress</span></div></div></div></div><div class="dp" role="tabpanel" data-p="3"><div class="dd">Month 2</div><h3>Proof, with&nbsp;dates</h3><p>Your monthly report shows the real answers, with screenshots, so you can see exactly what&nbsp;changed.</p><div class="ui"><div><div class="li2"><span class="nm">ChatGPT</span><span class="tg t-ok">Named</span></div><div class="li2"><span class="nm">Gemini</span><span class="tg t-ok">Named</span></div><div class="li2"><span class="nm">Google AI Mode</span><span class="tg t-ok">Named</span></div><div class="li2"><span class="nm">Perplexity</span><span class="tg t-bl">Getting closer</span></div><div class="li2"><span class="nm">Copilot</span><span class="tg t-gy">Checking</span></div></div></div></div><div class="dp" role="tabpanel" data-p="4"><div class="dd">Day 90</div><h3>Named in AI.&nbsp;Guaranteed.</h3><p>If AI hasn't named you by day 90, we keep working for free until it&nbsp;does.</p><div class="ui"><div><div class="li2"><span class="nm">Named in AI</span><span class="tg t-ok">Guaranteed</span></div><div class="li2"><span class="nm">Month to month</span><span class="tg t-gy">No long contract</span></div><div class="li2"><span class="nm">Your area</span><span class="tg t-gy">Yours alone</span></div></div></div></div></div>
+<div class="after"><div><h3>The work,&nbsp;handled.</h3><p>One local AI team, the 11-part Blueprint and a monthly report with screenshots. Month to&nbsp;month.</p></div>
+<div class="xbs"><a class="xb b" href="../../start/">Get my free AI audit<i>&rsaquo;</i></a><a class="xb k" href="../../start/">Book a call</a></div></div></div></section>
+
+<section class="sec rule"><div class="in bp">
+<div><span class="eb">The Local AI Blueprint&trade;</span><h2><span class="g">Eleven things AI checks.</span><br>We handle every&nbsp;one.</h2>
+<div class="pills" role="group" aria-label="The 11 parts of the Blueprint"><button aria-pressed="true" data-t="AI monitoring" data-p="We ask ChatGPT, Gemini, Google and the other assistants the questions people nearby ask, every month, and show you who gets named." data-h="signals/ai-monitoring/">AI monitoring</button><button aria-pressed="false" data-t="Google profile" data-p="Your Google Business Profile is the first record AI checks. We keep the categories, hours, services and photos complete and right." data-h="signals/google-profile/">Google profile</button><button aria-pressed="false" data-t="Reviews" data-p="AI reads what customers say about you. We help you earn steady reviews and reply to each one in your voice, with your OK." data-h="signals/reputation/">Reviews</button><button aria-pressed="false" data-t="Directory listings" data-p="Your name, address and phone have to match everywhere. We correct and sync your listings across the directories AI reads." data-h="signals/directory-listings/">Directory listings</button><button aria-pressed="false" data-t="Photos" data-p="We label your photos so AI can tell what it is looking at: your space, your work and your team." data-h="signals/photo-codifying/">Photos</button><button aria-pressed="false" data-t="Press releases" data-p="Real news about your business, published where AI looks for credible sources." data-h="signals/pr/">Press releases</button><button aria-pressed="false" data-t="SEO" data-p="The pages Google ranks are the pages AI reads first. We fix what holds yours back." data-h="signals/seo/">SEO</button><button aria-pressed="false" data-t="Website" data-p="A site AI can read: clear services, clean structure, and the facts in the format assistants expect." data-h="signals/web-management/">Website</button><button aria-pressed="false" data-t="Video" data-p="Short videos that answer the questions people ask about your business, published where AI can find them." data-h="signals/video/">Video</button><button aria-pressed="false" data-t="Outside articles" data-p="Articles on other sites that mention you. AI trusts what others say about you more than what you say." data-h="signals/third-party-articles/">Outside articles</button><button aria-pressed="false" data-t="Best-of guides" data-p="The local lists AI cites when it recommends someone. We work to get you on them, the honest way." data-h="signals/best-of-guides/">Best-of guides</button></div>
+<div class="bpt"><h3>AI&nbsp;monitoring</h3><p>We ask ChatGPT, Gemini, Google and the other assistants the questions people nearby ask, every month, and show you who gets&nbsp;named.</p><a class="xb k" href="../../signals/ai-monitoring/">See how we do it</a></div></div>
+<div class="sky bps"><div class="stage holoStage" id="map7"><canvas aria-label="Holographic 3D street showing the web of facts AI connects between businesses"></canvas>
+    <div class="toggle dark" role="group" aria-label="View"><button type="button" id="tStreet" aria-pressed="false">Street view</button><button type="button" id="tAI" aria-pressed="true">AI view</button></div>
+    <div class="hud hudD" id="hud7"><h4>Reading sources&nbsp;<span class="tag">Example</span></h4><div class="pg"><i id="prog7"></i></div>
+      <div class="row">Name, address, phone <span class="ok2">Match</span></div><div class="row">Reviews <span class="ok2">Strong</span></div><div class="row">Articles and guides <span class="ok2">Found</span></div><div class="row">Photos <span class="ok2">Labeled</span></div></div>
+  </div></div></div></section>
+
+<section class="sec rule"><div class="in">
+<div class="shead"><div><span class="eb">Client results</span><h2><span class="g">Real clients.</span> Measurable&nbsp;gains.</h2></div><p>Measured with DataForSEO, the same way&nbsp;every&nbsp;month.</p></div>
+<div class="car"><div class="cc a"><div><div class="big"><s>0 &rarr;</s> 45</div><div class="cap">ChatGPT questions that pulled up his site</div></div>
+<blockquote>Named by ChatGPT in 3 of 3 runs for the best closed rhinoplasty surgeon in Los&nbsp;Angeles.</blockquote><div class="lgo"><img src="../../assets/logos/clients/scarlessnose.svg" alt="Beverly Hills Rhinoplasty Center" loading="lazy"></div>
+<div class="ft"><div class="wh"><img src="../../assets/for-med-spas/faces/s/deepak-dugar.jpg" alt="" loading="lazy"><span><b>Dr. Deepak Dugar</b>Beverly Hills Rhinoplasty Center</span></div><a class="xb k" href="../../case-studies/beverly-hills-rhinoplasty-center/">Read the story</a></div></div><div class="cc b"><div><div class="big"><s>1,071 &rarr;</s> 2,364</div><div class="cap">estimated visits a month from Google</div></div>
+<blockquote>More of the right people finding the practice every month, from search and from AI&nbsp;answers.</blockquote><div class="lgo"><img src="../../assets/logos/clients/luxurgery.png" alt="LUXURGERY, New York" loading="lazy"></div>
+<div class="ft"><div class="wh"><img src="../../assets/for-med-spas/faces/s/sachin-shridharani.jpg" alt="" loading="lazy"><span><b>Dr. Sachin Shridharani</b>LUXURGERY, New York</span></div><a class="xb k" href="../../case-studies/luxurgery/">Read the story</a></div></div><div class="cc c"><div><div class="big"><s>6 &rarr;</s> 12</div><div class="cap">Google searches where it ranks #1 in the UK</div></div>
+<blockquote>Twice as many top spots in Google, the pages AI reads&nbsp;first.</blockquote><div class="lgo"><img src="../../assets/logos/clients/defineclinic2.png" alt="Define Clinic, London" loading="lazy"></div>
+<div class="ft"><div class="wh"><img src="../../assets/for-med-spas/faces/s/benji-dhillon.jpg" alt="" loading="lazy"><span><b>Dr. Benji Dhillon</b>Define Clinic, London</span></div><a class="xb k" href="../../case-studies/define-clinic/">Read the story</a></div></div></div><div class="nav2"><button data-dir="-1" aria-label="Previous">&lsaquo;</button><button data-dir="1" aria-label="Next">&rsaquo;</button></div></div></section>
+
+<section class="sec ind"><div class="in"><div><span class="eb">Who it's for</span><h2>Built for the businesses people find by&nbsp;asking.</h2></div>
+<div class="tiles"><a class="tile t1" href="../../for/"><h3>Medical and&nbsp;aesthetics</h3><p>Med spas, plastic surgeons, dermatology and eye&nbsp;care.</p><span class="rm">Read more</span></a><a class="tile t2" href="../../for/dentists/"><h3>Dental</h3><p>Dentists and orthodontists people find by&nbsp;asking.</p><span class="rm">Read more</span></a><a class="tile t3" href="../../for/cannabis-dispensaries/"><h3>Dispensaries</h3><p>The shop AI sends people to&nbsp;tonight.</p><span class="rm">Read more</span></a><a class="tile t4" href="../../for/"><h3>Every local&nbsp;business</h3><p>If people nearby ask AI about it, we can&nbsp;help.</p><span class="rm">Read more</span></a></div></div></section>
+
+<section class="sec"><div class="in rs">
+<div><span class="eb">Research</span><h2><span class="g">AI changes every day.</span><br>Our research team keeps&nbsp;up.</h2>
+<p class="sub" style="margin-top:20px">A dedicated team that tests what ChatGPT, Gemini and Google recommend for local businesses, and publishes what it finds. When AI changes, your plan changes&nbsp;with&nbsp;it.</p>
+<div class="studies"><a href="../../research/local-answer-gap/"><b>The Local Answer Gap</b><span>LAIR&#8209;R&#8209;2026&#8209;001</span></a><a href="../../research/how-often-ai-recommends-your-business/"><b>How often AI recommends your business</b><span>LAIR&#8209;R&#8209;2026&#8209;002</span></a><a href="../../research/med-spa-search-signals/"><b>Med spa search signals</b><span>Study</span></a></div><div class="xbs" style="margin-top:26px"><a class="xb k" href="../../research/">See all research</a></div></div>
+<div class="sky rsv"><div class="stage" id="map2">
+    <canvas aria-label="3D map of how often people in each block ask AI, with arcs to the business AI recommends"></canvas>
+    <div class="toggle glass" role="group" aria-label="Who AI recommends">
+      <button type="button" id="tBefore" aria-pressed="true">Today</button>
+      <button type="button" id="tAfter" aria-pressed="false">With Local AI Registry</button>
+    </div>
+    <div class="hud glass" id="hud2">
+      <h4>Who AI recommends nearby&nbsp;<span class="tag">Example</span></h4>
+      <div class="shareRow"><span style="width:84px;font:700 12.5px/1 var(--head);color:var(--ink)">You</span><div class="bar"><i id="bYou" style="width:10%;background:var(--blue)"></i></div></div>
+      <div class="shareRow"><span style="width:84px;font:600 12.5px/1 var(--head);color:var(--mute)">Competitors</span><div class="bar"><i id="bThem" style="width:90%;background:#AEB6C3"></i></div></div>
+      <div style="margin-top:14px"><div class="ramp"></div><div class="rampL"><span>Fewer people ask</span><span>More people ask</span></div></div>
+    </div>
+    <div class="hud glass qsWrap" id="hud3">
+      <h4>What people nearby ask&nbsp;<span class="tag">Example</span></h4>
+      <div class="qs"><span>"best med spa near me"</span><span>"Botox near me open Saturday"</span><span>"who does natural-looking lip filler"</span><span>"HydraFacial near me tonight"</span></div>
+      <p class="fine" style="margin-top:10px;font-size:12.5px">Illustration. Your free AI check maps the real questions in your&nbsp;area.</p>
+    </div>
+    <div id="tip"></div>
+  </div></div></div></section>
+
+<section class="sec rule"><div class="in fq"><div><span class="eb">Questions we get asked</span><h2>Straight&nbsp;answers.</h2></div><div><h4>Understanding AI&nbsp;search</h4><details><summary>What is AI&nbsp;search?</summary><p>People now ask ChatGPT, Gemini, Google's AI answers, Siri and others where to go, instead of scrolling a list of links. The assistant answers with a few names. AI search is about being one of&nbsp;them.</p></details><details><summary>How is this different from&nbsp;SEO?</summary><p>SEO gets your pages ranked. AI search gets your business named in the answer. Rankings still matter, because AI reads the pages Google ranks, but AI also checks your listings, reviews, photos and what other sites say about&nbsp;you.</p></details><details><summary>Why does local matter so&nbsp;much?</summary><p>Local questions are where AI answers show up most. Our research found that 76.4% of local business searches trigger a Google AI answer, versus 13.7% of all&nbsp;searches.</p></details><h4>How we&nbsp;work</h4><details><summary>What is the Local AI&nbsp;Blueprint?</summary><p>The 11 things AI checks before it recommends a local business, from your Google profile and listings to reviews, photos, articles and best-of guides. Our team handles all of them for&nbsp;you.</p></details><details><summary>Do I have to do&nbsp;anything?</summary><p>Very little. You approve what goes out in your name, and we do the work. Each month you get a report with the real answers and&nbsp;screenshots.</p></details><details><summary>Will you work with my&nbsp;competitors?</summary><p>No. Your area is yours alone. We don't take on a business like yours in your area, and we agree on the exact boundary with you before we&nbsp;start.</p></details><h4>Getting&nbsp;started</h4><details><summary>What is the free AI&nbsp;audit?</summary><p>A call where we show you, live, what ChatGPT, Gemini and Google's AI say about your business today, who they name instead, and what it takes to change&nbsp;that.</p></details><details><summary>What does it&nbsp;cost?</summary><p>It depends on your market and what your business needs, so we quote after your free audit. Month to month, no long&nbsp;contracts.</p></details><details><summary>What does the guarantee&nbsp;cover?</summary><p>Named in AI in 90 days. If AI hasn't named you by then, we keep working for free until it&nbsp;does.</p></details></div></div></section>
+
+<section class="close"><div class="in"><h2><span class="g">Be the business AI names</span><br>when people nearby&nbsp;ask.</h2>
+<p class="sub" style="color:rgba(255,255,255,.7);margin-top:18px">Named in AI in 90 days,&nbsp;guaranteed.</p>
+<div class="xbs"><a class="xb w" href="../../start/">Get my free AI audit<i>&rsaquo;</i></a><a class="xb o" href="../../start/">Book a call</a></div></div></section>
+</main>
+<footer class="ft2"><div class="in"><div class="fcols">
+<div><b>How it works</b><a href="../../how-it-works/">Overview</a><a href="../../blueprint/">The Blueprint</a><a href="../../signals/">All 11 parts</a><a href="../../guarantee/">The guarantee</a><a href="../../tour/">Sample report</a></div>
+<div><b>Results</b><a href="../../case-studies/">Client stories</a><a href="../../experts/">Who trusts us</a><a href="../../compare/">Compare</a></div>
+<div><b>Research</b><a href="../../research/">All research</a><a href="../../research/local-answer-gap/">The Local Answer Gap</a><a href="../../statistics/">Statistics</a><a href="../../methodology/">Methodology</a></div>
+<div><b>Resources</b><a href="../../guide/">Guides</a><a href="../../tools/">Free tools</a><a href="../../glossary/">Glossary</a><a href="../../for/">Industries</a></div>
+<div><b>Company</b><a href="../../about/">About</a><a href="../../team/">Team</a><a href="../../careers/">Careers</a><a href="../../press/">Press</a><a href="../../contact/">Contact</a></div></div>
+<div class="fb"><span>&copy; 2026 Local AI Registry. 9891 Irvine Center Dr, Irvine, CA 92618. (213) 931-5633</span><span><a href="../../legal/privacy/" style="color:inherit">Privacy</a> &nbsp; <a href="../../legal/terms/" style="color:inherit">Terms</a></span></div></div></footer>
+</div><script>(function(){
+var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
+/* menu */var m=q('.xm');qa('[data-menu]').forEach(function(b){b.onclick=function(){m.classList.toggle('on')}});
+/* rotating assistant name */var r=q('.rot'),names=['ChatGPT','Gemini','Google AI','Siri','Perplexity'],ri=0;
+if(r&&!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){r.style.opacity=0;setTimeout(function(){ri=(ri+1)%names.length;r.textContent=names[ri];r.style.opacity=1},350)},2400);
+/* hero form */qa('form.go').forEach(function(f){f.onsubmit=function(e){e.preventDefault();var v=f.querySelector('input').value.trim();location.href=f.getAttribute('action')+(v?'?biz='+encodeURIComponent(v):'')}});
+/* reveal */var io='IntersectionObserver' in window?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{rootMargin:'0px 0px -10% 0px'}):null;
+qa('.x .rv,.x .chart').forEach(function(e){io?io.observe(e):e.classList.add('on')});
+/* 90 days */var tb=qa('.dl button'),pn=qa('.dp'),di=0,auto=true;function go(i){di=i;tb.forEach(function(b,k){b.setAttribute('aria-selected',k===i)});pn.forEach(function(p,k){p.classList.toggle('on',k===i)})}
+tb.forEach(function(b,k){b.onclick=function(){auto=false;go(k)}});setInterval(function(){var d=q('.days');if(!auto||!d)return;var rr=d.getBoundingClientRect();if(rr.top<innerHeight&&rr.bottom>0)go((di+1)%tb.length)},5200);
+/* blueprint pills */var bt=q('.bpt');qa('.pills button').forEach(function(b){b.onclick=function(){qa('.pills button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');bt.querySelector('h3').textContent=b.dataset.t;bt.querySelector('p').textContent=b.dataset.p;bt.querySelector('a').href=b.dataset.h}});
+/* carousel */var car=q('.car');qa('.nav2 button').forEach(function(b){b.onclick=function(){car.scrollBy({left:(b.dataset.dir|0)*car.clientWidth*.8,behavior:'smooth'})}});
+})()</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script>
+(function(){
+/* her rig: Mixamo character + walk/idle + right-arm IK holding phone + head looking at it */
+function herRig(g,W,H0){
+  const m=g.scene;m.updateMatrixWorld(true);const hy=m.getObjectByName('mixamorigHead').getWorldPosition(new THREE.Vector3()).y,s=H0*(1.369/1.586)/hy,sw=H0/1.586;m.scale.setScalar(s);m.rotation.y=Math.PI;W.add(m);
+  m.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;if(o.material){o.material.envMapIntensity=.8}}});
+  const B=n=>m.getObjectByName('mixamorig'+n);
+  const sh=B('RightArm'),el=B('RightForeArm'),ha=B('RightHand'),neck=B('Neck'),head=B('Head'),sp2=B('Spine2');
+  const mixer=new THREE.AnimationMixer(m),clip=n=>g.animations.find(a=>a.name===n);
+  const walk=mixer.clipAction(clip('walk')),idle=mixer.clipAction(clip('idle'));walk.play();idle.play();
+  const V=()=>new THREE.Vector3(),Q=()=>new THREE.Quaternion();
+  const pS=V(),pE=V(),pH=V(),tmp=V(),q=Q(),pq=Q(),wq=Q();
+  function aim(bone,childPos,target){bone.updateMatrixWorld(true);bone.getWorldPosition(tmp);
+    const a=childPos.clone().sub(tmp).normalize(),b=target.clone().sub(tmp).normalize();
+    q.setFromUnitVectors(a,b);bone.getWorldQuaternion(wq);wq.premultiply(q);
+    bone.parent.getWorldQuaternion(pq);bone.quaternion.copy(pq.invert().multiply(wq));bone.updateMatrixWorld(true)}
+  function rotW(bone,axis,ang){bone.getWorldQuaternion(wq);q.setFromAxisAngle(axis,ang);wq.premultiply(q);bone.parent.getWorldQuaternion(pq);bone.quaternion.copy(pq.invert().multiply(wq));bone.updateMatrixWorld(true)}
+  const T=V(),P=V(),right=V(),fwd=V(),up=new THREE.Vector3(0,1,0);
+  const st={walkPhase:0,idleT:0,inv:new THREE.Matrix4()};const rest=[];m.traverse(o=>{if(o.isBone)rest.push([o,o.quaternion.clone()])});
+  return {m,mixer,update(dt,dist,amp,opt){
+    const cyc=walk.getClip().duration;
+    walk.time=((dist/(1.45*sw))%1+1)%1*cyc;st.idleT+=dt;idle.time=st.idleT%idle.getClip().duration;
+    rest.forEach(([o,q])=>o.quaternion.copy(q));walk.setEffectiveWeight(amp);idle.setEffectiveWeight(1-amp);mixer.update(0);
+    W.updateMatrixWorld(true);
+    /* W-local frame: she faces -z, her right is +x */
+    const toW=v=>v.applyMatrix4(W.matrixWorld);
+    right.set(1,0,0).transformDirection(W.matrixWorld);
+    /* head/neck look down at the phone */
+    rotW(neck,right,-(opt.look||.28)*.45);rotW(head,right,-(opt.look||.28)*.55);
+    /* right arm: two-bone IK to the phone-holding point, elbow down, back and out */
+    sh.getWorldPosition(pS);el.getWorldPosition(pE);ha.getWorldPosition(pH);
+    const a=pS.distanceTo(pE),b=pE.distanceTo(pH);
+    const ci=sp2.getWorldPosition(V()).applyMatrix4(st.inv.copy(W.matrixWorld).invert());if(!st.cb)st.cb=ci.clone();st.cb.lerp(ci,1-Math.exp(-dt*1.5));
+    T.copy(opt.hand).add(ci.sub(st.cb).multiplyScalar(.9));if(!st.hs)st.hs=T.clone();st.hs.lerp(T,1-Math.exp(-dt*12));toW(T.copy(st.hs));toW(P.copy(opt.pole));
+    const t=T.clone().sub(pS);let d=t.length();d=Math.min(d,(a+b)*.999);t.normalize();
+    const x=(a*a-b*b+d*d)/(2*d),h=Math.sqrt(Math.max(0,a*a-x*x));
+    const pp=P.clone().sub(pS);pp.addScaledVector(t,-pp.dot(t)).normalize();
+    const E=pS.clone().addScaledVector(t,x).addScaledVector(pp,h),Ht=pS.clone().addScaledVector(t,d);
+    aim(sh,pE,E);el.getWorldPosition(pE);ha.getWorldPosition(pH);aim(el,pH,Ht);
+    /* hand: bind pose continues the forearm, then twist about the forearm so the palm faces her eyes */
+    const restQ=n=>{for(const r of rest)if(r[0]===n)return r[1];return null};
+    ha.quaternion.copy(restQ(ha));ha.updateMatrixWorld(true);
+    const i1=B('RightHandIndex1'),p1=B('RightHandPinky1'),m1=B('RightHandMiddle1');
+    const palmN=()=>{ha.getWorldPosition(pH);const a=i1.getWorldPosition(V()).sub(pH),b=p1.getWorldPosition(V()).sub(pH);return a.cross(b).normalize().multiplyScalar(opt.ps||1)};
+    el.getWorldPosition(pE);ha.getWorldPosition(pH);const fa=pH.clone().sub(pE).normalize();
+    head.getWorldPosition(tmp);const want=tmp.clone().sub(pH);want.addScaledVector(fa,-want.dot(fa)).normalize();
+    let n=palmN();n.addScaledVector(fa,-n.dot(fa)).normalize();
+    let ang=Math.acos(Math.max(-1,Math.min(1,n.dot(want))));if(fa.dot(V().crossVectors(n,want))<0)ang=-ang;
+    rotW(ha,fa,ang+(opt.tw||0));
+    /* curl fingers toward the palm around the phone */
+    const N=palmN();
+    ['Index','Middle','Ring','Pinky'].forEach(f=>[1,2,3].forEach(k=>{const bb=B('RightHand'+f+k),ch=B('RightHand'+f+(k+1));if(!bb)return;
+      const p0=bb.getWorldPosition(V()),p1x=ch?ch.getWorldPosition(V()):p0.clone().multiplyScalar(2).sub(bb.parent.getWorldPosition(V()));const fd=p1x.sub(p0).normalize();
+      const ax=V().crossVectors(fd,N).normalize();rotW(bb,ax,(opt.curl??.5)*(k===1?.7:1))}));
+    /* left arm: bring it closer to her side (the source walk was made for a wider body) */
+    const lf=B('LeftForeArm'),rq=lf&&rest.find(r=>r[0]===lf);if(rq){lf.quaternion.slerp(rq[1],.4);lf.updateMatrixWorld(true)}
+    const la=B('LeftArm');if(la){const fw=V().set(0,0,1).transformDirection(W.matrixWorld);rotW(la,fw,opt.adduct||0)}
+    st.palm=()=>{ha.getWorldPosition(pH);const c=m1.getWorldPosition(V()).add(pH).multiplyScalar(.5);const hd=B('RightHandMiddle1').getWorldPosition(V()).sub(pH).normalize();return c.addScaledVector(palmN(),opt.pd||.03).addScaledVector(hd,opt.pf||0)};
+    m.updateMatrixWorld(true);
+  },hand:ha,head,el,phonePos(v){v.copy(st.palm())},handDir(v){ha.getWorldPosition(pH);return v.copy(B('RightHandMiddle1').getWorldPosition(V())).sub(pH).normalize()}};
+}
+
+/* ---------------- copy bits ---------------- */
+const CHECKS=[["Directory listings","Same name, address, phone and hours everywhere."],["PR","Real news coverage AI can cite."],["Video","Explainer videos that answer what customers ask."],["SEO","The Google searches you rank for, and should."],["Web management","A fast site with the code AI reads."],["Reputation","Reviews, ratings and replies across sites."],["Google profile","Complete, active and posting every week."],["Photo codifying","Photos labeled so AI can read what they show."],["3rd-party articles","Features about you on independent sites."],["Best-of guides","A place on the local best-of lists AI quotes."],["AI monitoring","What every assistant says about you, each month."]];
+const g11=document.getElementById('g11');
+g11.innerHTML=CHECKS.map((c,i)=>`<button type="button" class="ck" data-i="${i}"><b>${String(i+1).padStart(2,'0')}</b><div><strong>${c[0]}</strong><span>${c[1]}</span></div></button>`).join('');
+const SAFE=[["$750K insured","Professional liability and cyber coverage",'<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/>'],["HIPAA","We sign a BAA with every healthcare client",'<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h4"/>'],["Accessibility","Pages built to accessibility standards",'<circle cx="12" cy="5" r="2"/><path d="M5 9h14M12 9v12M8 21l4-6 4 6"/>'],["Bank-level security","Encrypted data, two-factor access",'<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/>'],["US-based team","Headquartered in Irvine, California",'<circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.5 1.6-4.5 4-4.8"/>']];
+document.getElementById('safe').innerHTML=SAFE.map((s,i)=>`<div><span class="sfi sf${i}"><svg width="30" height="30" viewBox="0 0 24 24" fill="#E7EDFC" stroke="#1F4FE0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${s[2]}</svg></span><b>${s[0]}</b><span>${s[1]}</span></div>`).join('');
+document.querySelectorAll('form.go').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();const v=f.querySelector('input').value.trim();location.href='start/'+(v?'?biz='+encodeURIComponent(v):'')}));
+setTimeout(()=>{const c=document.getElementById('cop');if(c)c.textContent='Named'},3200);
+
+if(!window.THREE)return;
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,MOT=RM?0:1;
+const MOB=()=>innerWidth<980;
+const rng=s=>()=>{s|=0;s=s+0x6D2B79F5|0;let t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296};
+const V=(x,y,z)=>new THREE.Vector3(x,y,z);
+const lin=h=>new THREE.Color(h).convertSRGBToLinear();
+const BLUE=0x1F4FE0,CORAL=0xFF5A3C,INK=0x0B1A2E,PAPER=0xF4F1EA;
+const ease=x=>x<=0?0:x>=1?1:1-Math.pow(1-x,3);
+const sm=x=>x<=0?0:x>=1?1:x*x*(3-2*x);
+
+/* ---------------- engine: one RAF, only visible scenes render ---------------- */
+const scenes=[];let last=performance.now(),acc=0,fr=0,PR=Math.min(devicePixelRatio,MOB()?1.6:2);
+function loop(now){const dt=Math.min(.05,(now-last)/1000);last=now;acc+=dt;fr++;if(acc>2){if(acc/fr>1/48&&PR>1){PR=Math.max(1,PR-.25);scenes.forEach(s=>{if(s.r&&!s.crisp)s.r.setPixelRatio(PR);s.resize()})}acc=0;fr=0}
+  for(const s of scenes)if(s.vis&&s.r){const k=1-Math.exp(-dt*2.5);s.sx+=(s.mx-s.sx)*k;s.sy+=(s.my-s.sy)*k;s.T+=dt*MOT;s.tick(s.T,dt);if(!s.hold){s.r.render(s.sc,s.cam);s.labels&&s.labels()}}requestAnimationFrame(loop)}
+function base(id,{bg=PAPER,fog=[70,150],fov=30,shadow=true,sun=[18,34,14]}={}){
+  const wrap=document.getElementById(id)||document.createElement('div'),mob=MOB();
+  const sc=new THREE.Scene();if(fog)sc.fog=new THREE.Fog(lin(bg),fog[0],fog[1]);
+  const cam=new THREE.PerspectiveCamera(fov,1,.1,600);
+  sc.add(new THREE.HemisphereLight(lin(0xffffff),lin(0xCFC8BC),.8));
+  const d=new THREE.DirectionalLight(lin(0xFFF9F0),1.0);d.position.set(...sun);d.castShadow=shadow;d.shadow.mapSize.set(mob?1024:2048,mob?1024:2048);
+  const c=d.shadow.camera;c.left=c.bottom=-46;c.right=c.top=46;c.near=1;c.far=140;d.shadow.bias=-.0004;d.shadow.radius=4;sc.add(d);
+  const fill=new THREE.DirectionalLight(lin(0xDCE6FF),.25);fill.position.set(-20,12,-16);sc.add(fill);
+  const o={wrap,r:null,sc,cam,T:0,vis:false,w:1,h:1,mx:0,my:0,sx:0,sy:0,cp:null,ct:null,fz:0,tick(){},
+    aim(p,t,dt,k=3){if(!o.cp){o.cp=p.clone();o.ct=t.clone()}const a=1-Math.exp(-(dt||.016)*k);o.cp.lerp(p,a);o.ct.lerp(t,a);cam.position.copy(o.cp);cam.lookAt(o.ct)},
+    freeze(){o.fz=1;if(o.r){o.r.shadowMap.autoUpdate=false;o.r.shadowMap.needsUpdate=true}},
+    // WebGL contexts are created only near the viewport and released when far away, so the page never holds more than a few at once
+    make(){if(o.r)return;const old=wrap.querySelector('canvas'),cv=document.createElement('canvas');
+      if(old){['aria-label','aria-hidden'].forEach(a=>{if(old.hasAttribute(a))cv.setAttribute(a,old.getAttribute(a))});old.replaceWith(cv)}else wrap.prepend(cv);
+      try{o.r=new THREE.WebGLRenderer({canvas:cv,antialias:true,powerPreference:'high-performance'})}catch(e){o.r=null;return}
+      const r=o.r;r.setPixelRatio(o.crisp?Math.min(devicePixelRatio,2.5):PR);r.outputEncoding=THREE.sRGBEncoding;r.setClearColor(bg,1);r.shadowMap.enabled=shadow;r.shadowMap.type=THREE.PCFSoftShadowMap;
+      if(o.fz){r.shadowMap.autoUpdate=false;r.shadowMap.needsUpdate=true}o.resize()},
+    kill(){if(!o.r)return;try{o.r.dispose();o.r.forceContextLoss()}catch(e){}o.r=null},
+    resize(){const w=wrap.clientWidth,h=wrap.clientHeight;if(!w||!h)return;o.w=w;o.h=h;o.mob=MOB();if(o.r)o.r.setSize(w,h,false);cam.aspect=w/h;cam.clearViewOffset();if(o.onResize)o.onResize(w,h);cam.updateProjectionMatrix();o.labs.forEach(l=>l.wd=0)}};
+  o.labs=[];
+  scenes.push(o);
+  new IntersectionObserver(e=>{if(e[0].isIntersecting)o.make();else o.kill()},{rootMargin:'130% 0px'}).observe(wrap);
+  new IntersectionObserver(e=>{o.vis=e[0].isIntersecting;if(o.vis){o.make();o.resize()}},{rootMargin:'120px'}).observe(wrap);
+  wrap.addEventListener('pointermove',e=>{const b=wrap.getBoundingClientRect();o.mx=(e.clientX-b.left)/b.width*2-1;o.my=(e.clientY-b.top)/b.height*2-1});
+  o.resize();return o;
+}
+addEventListener('resize',()=>scenes.forEach(s=>s.resize()));
+const _v=new THREE.Vector3();
+function lab(o,html){const d=document.createElement('div');d.className='lab';d.innerHTML='<span>'+html+'</span>';o.wrap.appendChild(d);d.s=d.firstChild;d.wd=0;o.labs.push(d);return d}
+function setLab(d,html){if(d.html===html)return;d.html=html;d.s.innerHTML=html;d.wd=0}
+function put(o,d,v,show=true,minX=0){
+  if(!show){d.style.visibility='hidden';return}
+  _v.copy(v).project(o.cam);if(_v.z>1){d.style.visibility='hidden';return}
+  if(!d.wd)d.wd=d.s.offsetWidth||120;
+  let x=(_v.x*.5+.5)*o.w,y=(-_v.y*.5+.5)*o.h;if(minX&&x<o.w*minX){d.style.visibility='hidden';return}const hw=d.wd/2+10;x=Math.max(hw,Math.min(o.w-hw,x));
+  d.style.visibility='';d.style.transform=`translate(${x}px,${y}px)`;
+}
+
+/* ---------------- shared geometry and materials ---------------- */
+function rounded(r,bev){
+  const s=new THREE.Shape(),w=.5;
+  s.moveTo(-w+r,-w);s.lineTo(w-r,-w);s.quadraticCurveTo(w,-w,w,-w+r);s.lineTo(w,w-r);s.quadraticCurveTo(w,w,w-r,w);s.lineTo(-w+r,w);s.quadraticCurveTo(-w,w,-w,w-r);s.lineTo(-w,-w+r);s.quadraticCurveTo(-w,-w,-w+r,-w);
+  const g=new THREE.ExtrudeGeometry(s,{depth:1,bevelEnabled:true,bevelThickness:bev,bevelSize:bev,bevelSegments:3,curveSegments:8});
+  g.rotateX(-Math.PI/2);g.computeBoundingBox();const b=g.boundingBox;
+  g.translate(-(b.min.x+b.max.x)/2,-b.min.y,-(b.min.z+b.max.z)/2);g.scale(1/(b.max.x-b.min.x),1/(b.max.y-b.min.y),1/(b.max.z-b.min.z));return g;
+}
+const RB=rounded(.16,.04),RP=rounded(.1,.03);
+const BOX=new THREE.BoxGeometry(1,1,1);BOX.translate(0,.5,0);
+const TREE=new THREE.IcosahedronGeometry(.5,2);
+const TONES=[0xFFFFFF,0xF7F5F0,0xEFEBE3,0xF0F2F6,0xE4E9F2,0xF9F7F3].map(lin);
+const mStd=(hex,o={})=>new THREE.MeshStandardMaterial(Object.assign({color:lin(hex),roughness:.82,metalness:0},o));
+
+/* glowing point sprites with per-point alpha */
+function ptsMat(hex,size){
+  return new THREE.ShaderMaterial({uniforms:{c:{value:new THREE.Color(hex)},s:{value:size},px:{value:Math.min(devicePixelRatio,2)},op:{value:1}},
+    vertexShader:'attribute float a;varying float va;uniform float s;uniform float px;void main(){va=a;vec4 mv=modelViewMatrix*vec4(position,1.);gl_PointSize=s*px*(300./-mv.z);gl_Position=projectionMatrix*mv;}',
+    fragmentShader:'uniform vec3 c;uniform float op;varying float va;void main(){vec2 d=gl_PointCoord-.5;float r=length(d);if(r>.5)discard;float core=smoothstep(.5,.0,r);gl_FragColor=vec4(mix(c,vec3(1.),smoothstep(.22,.0,r)*.55),va*op*core);}',
+    transparent:true,depthWrite:false});
+}
+function arc(sc,hex,{n=60,size=.55}={}){
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(n*3),3));g.setAttribute('a',new THREE.BufferAttribute(new Float32Array(n),1));
+  const m=ptsMat(hex,size),p=new THREE.Points(g,m);p.frustumCulled=false;sc.add(p);
+  const A={p,m,n,curve:null,
+    set(a,b,lift){A.curve=new THREE.QuadraticBezierCurve3(a,V((a.x+b.x)/2,Math.max(a.y,b.y)+lift,(a.z+b.z)/2),b);const pos=g.attributes.position;for(let i=0;i<n;i++){const q=A.curve.getPoint(i/(n-1));pos.setXYZ(i,q.x,q.y,q.z)}pos.needsUpdate=true},
+    anim(ph,op){const al=g.attributes.a;for(let i=0;i<n;i++){let d=ph-i/(n-1);if(d<0)d+=1;al.setX(i,.16+.84*Math.exp(-d*7))}al.needsUpdate=true;m.uniforms.op.value=op;p.visible=op>.01}};
+  return A;
+}
+function flows(sc,{n,P,count=260,R}){
+  const out=[];
+  [[CORAL,.42],[BLUE,.36]].forEach(([hex,size],k)=>{
+    const N=count>>1,g=new THREE.BufferGeometry(),pos=new Float32Array(N*3),al=new Float32Array(N).fill(.85);
+    g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('a',new THREE.BufferAttribute(al,1));
+    const pts=new THREE.Points(g,ptsMat(hex,size));pts.frustumCulled=false;sc.add(pts);
+    const rnd=rng(77+k),P2=[];
+    for(let i=0;i<N;i++){P2.push({ax:rnd()<.5?0:1,line:(((rnd()*2*n)|0)-n)*P+P/2,u:(rnd()*2-1)*R,sp:(1.8+rnd()*2.6)*(rnd()<.5?-1:1)})}
+    out.push({g,P2,pos,al,R});
+  });
+  return {tick(dt){for(const f of out){f.P2.forEach((q,i)=>{q.u+=q.sp*dt;if(q.u>f.R)q.u=-f.R;if(q.u<-f.R)q.u=f.R;const x=q.ax?q.line:q.u,z=q.ax?q.u:q.line;f.pos[i*3]=x;f.pos[i*3+1]=.14;f.pos[i*3+2]=z;const e=Math.hypot(x,z)/f.R;f.al[i]=.85*(1-e*e)});f.g.attributes.position.needsUpdate=true;f.g.attributes.a.needsUpdate=true}}};
+}
+
+/* sand-model city with rounded buildings, parks, trees, rise-in animation */
+function city(sc,{n=7,P=5.2,seed=3,hmax=3.2,clear=[],tint={}}){
+  const rnd=rng(seed),R=(n+.4)*P;
+  const ground=new THREE.Mesh(new THREE.CircleGeometry(R*3,96),mStd(0xDCD2BF));ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;sc.add(ground);
+  const plates=[],bl=[],trees=[],roofs=[];
+  for(let i=-n;i<=n;i++)for(let j=-n;j<=n;j++){
+    const cx=i*P,cz=j*P,d=Math.hypot(cx,cz);if(d>R)continue;
+    const pl={x:cx,z:cz};plates.push(pl);
+    if(clear.some(c=>c[0]===i&&c[1]===j)){pl.clear=1;continue}
+    if(rnd()<.08){pl.park=1;for(let k=0;k<7;k++)trees.push([cx+(rnd()-.5)*(P-2.2),cz+(rnd()-.5)*(P-2.2),.55+rnd()*.5]);continue}
+    const tall=Math.max(.25,1.15-d/(n*P));
+    for(let a=0;a<2;a++)for(let b=0;b<2;b++){
+      if(rnd()<.08)continue;
+      const w=1.35+rnd()*.6,dd=1.35+rnd()*.6;let h=.55+Math.pow(rnd(),2.1)*hmax*tall*1.5;if(rnd()<.05)h+=hmax*tall*1.6;
+      const x=cx-1.06+a*2.12,z=cz-1.06+b*2.12;const key=i+','+j;
+      bl.push({x,z,w,d:dd,h,dist:d,col:tint[key]!=null?lin(tint[key]):TONES[(rnd()*TONES.length)|0]});
+      if(h>2.4&&rnd()<.55)roofs.push({x:x+(rnd()-.5)*.4,z:z+(rnd()-.5)*.4,s:.35+rnd()*.25,h,dist:d});
+    }
+    if(rnd()<.6)trees.push([cx+(P-1.4)/2*(rnd()<.5?-1:1),cz+(P-1.4)/2*(rnd()<.5?-1:1),.32+rnd()*.15]);
+  }
+  const M=new THREE.Matrix4();
+  const pm=new THREE.InstancedMesh(RP,mStd(0xffffff),plates.length);
+  plates.forEach((p,k)=>{M.makeScale(P-1.2,.14,P-1.2);M.setPosition(p.x,0,p.z);pm.setMatrixAt(k,M);pm.setColorAt(k,p.park?lin(0xCBDDB7):lin(0xF6F3EC))});pm.receiveShadow=true;sc.add(pm);
+  const bm=new THREE.InstancedMesh(RB,mStd(0xffffff,{roughness:.7}),bl.length);
+  bl.forEach((b,k)=>bm.setColorAt(k,b.col));bm.castShadow=bm.receiveShadow=true;sc.add(bm);
+  const rm=new THREE.InstancedMesh(RB,mStd(0xD9D2C4),Math.max(1,roofs.length));rm.castShadow=true;sc.add(rm);
+  const tm=new THREE.InstancedMesh(TREE,mStd(0xffffff,{flatShading:true,roughness:.9}),Math.max(1,trees.length));
+  trees.forEach((t,k)=>{M.makeScale(t[2],t[2]*1.15,t[2]);M.setPosition(t[0],.14+t[2]*.5,t[1]);tm.setMatrixAt(k,M);tm.setColorAt(k,lin([0x9DB98A,0xB2C79C,0x8FAE80][k%3]))});tm.castShadow=true;sc.add(tm);
+  let done=false;
+  function rise(t){
+    if(done)return true;const T=RM?99:t;let all=true;
+    bl.forEach((b,k)=>{const e=ease(T*1.25-b.dist*.028);if(e<1)all=false;M.makeScale(b.w,Math.max(.001,b.h*e),b.d);M.setPosition(b.x,.14,b.z);bm.setMatrixAt(k,M)});bm.instanceMatrix.needsUpdate=true;
+    roofs.forEach((r,k)=>{const e=ease(T*1.25-r.dist*.028-.25);M.makeScale(r.s,Math.max(.001,.28*e),r.s);M.setPosition(r.x,.14+r.h*Math.min(1,ease(T*1.25-r.dist*.028)),r.z);rm.setMatrixAt(k,M)});rm.instanceMatrix.needsUpdate=true;
+    if(all)done=true;return done;
+  }
+  rise(0);
+  /* fade out (shrink) any building between the camera and what it looks at */
+  let fz=null;const seg=(px,py,pz,qx,qy,qz,b,f)=>{const hw=b.w/2+.35,hd=b.d/2+.35;let t0=0,t1=1;
+    const ax=[[px,qx,b.x-hw,b.x+hw],[py,qy,0,.14+b.h],[pz,qz,b.z-hd,b.z+hd]];
+    for(const [a0,a1,lo,hi] of ax){const dv=a1-a0;if(Math.abs(dv)<1e-6){if(a0<lo||a0>hi)return false;continue}let u0=(lo-a0)/dv,u1=(hi-a0)/dv;if(u0>u1){const t=u0;u0=u1;u1=t}t0=Math.max(t0,u0);t1=Math.min(t1,u1);if(t0>t1)return false}return true};
+  function occlude(cp,tps,dt){if(!done)return;fz=fz||bl.map(()=>1);let ch=false;const k=1-Math.exp(-(dt||.016)*7);
+    bl.forEach((b,i)=>{const hit=tps.some(tp=>seg(cp.x,cp.y,cp.z,tp.x,tp.y,tp.z,b));const tg=hit?.04:1;if(Math.abs(fz[i]-tg)<.002)return;fz[i]+=(tg-fz[i])*k;M.makeScale(b.w,Math.max(.001,b.h*fz[i]),b.d);M.setPosition(b.x,.14,b.z);bm.setMatrixAt(i,M);ch=true});
+    if(ch)bm.instanceMatrix.needsUpdate=true;
+    roofs.forEach((r,i)=>{const bi=bl.findIndex(b=>Math.abs(b.x-r.x)<1&&Math.abs(b.z-r.z)<1);const f=bi>=0?fz[bi]:1;M.makeScale(r.s,Math.max(.001,.28*(f>.9?1:0)),r.s);M.setPosition(r.x,.14+r.h*f,r.z);rm.setMatrixAt(i,M)});rm.instanceMatrix.needsUpdate=true}
+  return {P,R,rise,occlude};
+}
+/* the hero business: rounded blue block, awning, glass, roof mark, pulse rings */
+function shop(sc,{x=0,z=0,s=1,col=BLUE,mark=true}={}){
+  const g=new THREE.Group();g.position.set(x,0,z);g.scale.setScalar(s);
+  const body=new THREE.Mesh(RB,mStd(col,{roughness:.45,metalness:.05}));body.scale.set(3.6,2.6,3.6);body.position.y=.14;body.castShadow=body.receiveShadow=true;g.add(body);
+  const glass=new THREE.Mesh(new THREE.PlaneGeometry(2.6,1.25),new THREE.MeshStandardMaterial({color:lin(0xDCE6FF),emissive:lin(0xBFD0FF),emissiveIntensity:.35,roughness:.15}));glass.position.set(0,.85,1.83);g.add(glass);
+  const awn=new THREE.Mesh(RB,mStd(CORAL,{roughness:.5}));awn.scale.set(3.1,.14,.8);awn.position.set(0,1.62,2.0);awn.castShadow=true;g.add(awn);
+  if(mark){const m=new THREE.Mesh(new THREE.ConeGeometry(.6,1,3),mStd(0xffffff,{roughness:.4}));m.position.set(0,3.35,0);g.add(m);const tip=new THREE.Mesh(new THREE.ConeGeometry(.25,.36,3),mStd(CORAL));tip.position.set(0,3.73,0);g.add(tip);g.mark=m}
+  const rings=[0,1,2].map(k=>{const m=new THREE.Mesh(new THREE.RingGeometry(2.3,2.5,72),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.5,depthWrite:false}));m.rotation.x=-Math.PI/2;m.position.y=.16;g.add(m);m.k=k;return m});
+  sc.add(g);g.glass=glass;
+  g.pulse=t=>{rings.forEach(m=>{const p=((t*.38)+m.k/3)%1;m.scale.setScalar(1+p*3);m.material.opacity=.5*(1-p)*(1-p)});if(g.mark)g.mark.rotation.y=t*.8};
+  return g;
+}
+const CSG=new THREE.CircleGeometry(.3,40),CSM=new THREE.MeshBasicMaterial({color:0x2a2418,transparent:true,opacity:.16,depthWrite:false});
+const PG={body:new THREE.CylinderGeometry(.12,.17,.52,32,2),head:new THREE.SphereGeometry(.13,32,24),phone:new THREE.BoxGeometry(.13,.2,.02)};PG.body.translate(0,.4,0);
+const SKIN=[0xE7C3A0,0xC68E63,0x8D5A3B,0xF1D2B6,0xA8714A].map(lin),SHIRT=[0x0B1A2E,0x3B4D6B,0x7C8799,0xFF5A3C,0x1F4FE0,0xC9BFA8,0xffffff].map(lin);
+function person(sc,rnd,s=1.6){
+  const g=new THREE.Group();
+  const b=new THREE.Mesh(PG.body,new THREE.MeshStandardMaterial({color:SHIRT[(rnd()*SHIRT.length)|0],roughness:.7}));g.add(b);
+  const cs=new THREE.Mesh(CSG,CSM);cs.rotation.x=-Math.PI/2;cs.position.y=.012;g.add(cs);
+  const h=new THREE.Mesh(PG.head,new THREE.MeshStandardMaterial({color:SKIN[(rnd()*SKIN.length)|0],roughness:.6}));h.position.y=.8;g.add(h);
+  const p=new THREE.Mesh(PG.phone,new THREE.MeshStandardMaterial({color:lin(0x0B1A2E),emissive:lin(0x7FA2FF),emissiveIntensity:.9}));p.position.set(.02,.6,.2);p.rotation.x=-.7;g.add(p);
+  g.scale.setScalar(s);g.phone=p;g.body=b;sc.add(g);return g;
+}
+function pinMesh(sc,{x,z,h=6,col=BLUE,head=CORAL,r=.42}){
+  const g=new THREE.Group();g.position.set(x,0,z);
+  const st=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,h,8),mStd(col));st.position.y=h/2;g.add(st);
+  const hd=new THREE.Mesh(new THREE.SphereGeometry(r,24,16),mStd(head,{roughness:.35}));hd.position.y=h;hd.castShadow=true;g.add(hd);
+  const bs=new THREE.Mesh(new THREE.CylinderGeometry(.9,.9,.08,40),new THREE.MeshBasicMaterial({color:new THREE.Color(col),transparent:true,opacity:.25}));bs.position.y=.05;g.add(bs);
+  sc.add(g);g.top=V(x,h,z);return g;
+}
+
+
+/* ===================== 0. INTRO: cold open, phone, her walk, the signal ===================== */
+(function(){
+  const intro=document.getElementById('intro');if(!intro)return;
+  const ph=document.getElementById('iphone'),fade=document.getElementById('ifade'),hint=document.getElementById('ihint'),skip=document.getElementById('iskip');
+  const caps=[document.getElementById('icap'),document.getElementById('icap2')];
+  const iq=document.getElementById('iq'),ia=document.getElementById('ia'),cin=document.getElementById('icin'),imc=document.getElementById('imc');
+  const Q="where's the nearest med spa?";
+  const A="The closest highly rated one is <b>Glow Med Spa</b>, about 4 minutes away on foot. Great reviews for Botox and facials, and they’re open until 7.".split(' ');
+  const ANS=A.join(' ');
+  /* the chat plays once on load, timed off the clock so it stays smooth even when the page is busy */
+  (function(){
+    const end=()=>{cin.innerHTML='<span class="ph">Message</span><span class="snd"></span>';iq.classList.add('on');ia.parentElement.classList.add('on');ia.innerHTML=ANS;imc.classList.add('on');hint.style.opacity=1};
+    if(RM){end();return}
+    const t0=performance.now()+500,tq=0,tw=A.length*60;let stage=0;
+    (function step(now){const e=now-t0;
+      if(e<0){requestAnimationFrame(step);return}
+      if(e<tq){const n=Math.ceil(e/55);cin.innerHTML=Q.slice(0,n)+'<span class="caret"></span><span class="snd"></span>'}
+      else if(e<tq+1300){if(stage<1){stage=1;hint.style.opacity=1;cin.innerHTML='<span class="ph">Message</span><span class="snd"></span>';iq.classList.add('on');ia.parentElement.classList.add('on');ia.innerHTML='<span class="dots"><i></i><i></i><i></i></span>'}}
+      else if(e<tq+1300+tw){stage=2;ia.innerHTML=A.slice(0,Math.ceil((e-tq-1300)/60)).join(' ')}
+      else{end();return}
+      requestAnimationFrame(step)})(performance.now());
+  })();
+  skip.onclick=()=>{const h=document.getElementById('hero');scrollTo({top:h.getBoundingClientRect().top+scrollY,behavior:RM?'auto':'smooth'})};
+
+  /* ---- golden-hour scene ---- */
+  const HZ=0xF4EEE6;
+  const o=base('map0',{bg:HZ,fog:[28,118],fov:38,sun:[-22,15,14]});
+  o.sc.children.forEach(c=>{if(c.isDirectionalLight&&c.castShadow){c.color=lin(0xFFEBD2);c.intensity=1.1}if(c.isHemisphereLight){c.color=lin(0xFFF3E4);c.groundColor=lin(0xC9C0B0);c.intensity=.8}});
+  const sky=new THREE.Mesh(new THREE.SphereGeometry(420,32,16),new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:false,
+    vertexShader:'varying vec3 vp;void main(){vp=normalize(position);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+    fragmentShader:'varying vec3 vp;void main(){float h=clamp(vp.y,0.,1.);vec3 a=vec3(.957,.933,.902),b=vec3(.82,.87,.95);gl_FragColor=vec4(mix(a,b,pow(h,.55)),1.);}'}));o.sc.add(sky);
+  const Cy=city(o.sc,{n:7,seed:29,hmax:3.2,clear:[[0,0]]});Cy.rise(100);const P=Cy.P;
+  const S=shop(o.sc);
+  /* street furniture: lamps, crosswalk, cars, walkers */
+  const poleM=mStd(0x3A3F4A,{roughness:.5,metalness:.5}),lampM=new THREE.MeshStandardMaterial({color:lin(0xFFF1D6),emissive:lin(0xFFC98A),emissiveIntensity:1.2});
+  const glowP=[];
+  [3.2,8.4,13.6,18.8].forEach(z=>{[1.55].forEach((x,k)=>{const pl=new THREE.Mesh(new THREE.CylinderGeometry(.03,.045,2.5,10),poleM);pl.position.set(x,1.39,z+(k?2.6:0));pl.castShadow=true;o.sc.add(pl);
+    const arm=new THREE.Mesh(new THREE.CylinderGeometry(.018,.018,.45,8),poleM);arm.rotation.z=Math.PI/2;arm.position.set(x+(k?-.2:.2),2.6,pl.position.z);o.sc.add(arm);
+    const hd=new THREE.Mesh(new THREE.CylinderGeometry(.09,.12,.08,14),lampM);hd.position.set(x+(k?-.4:.4),2.55,pl.position.z);o.sc.add(hd);glowP.push(hd.position.x,2.5,hd.position.z)})});
+  const gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(glowP),3));gg.setAttribute('a',new THREE.BufferAttribute(new Float32Array(glowP.length/3).fill(.55),1));
+  o.sc.add(new THREE.Points(gg,ptsMat(0xFFD39A,1.1)));
+  const zebra=new THREE.MeshBasicMaterial({color:lin(0xFBF8F1)});
+  for(let k=0;k<6;k++){const z=new THREE.Mesh(new THREE.PlaneGeometry(.2,1.1),zebra);z.rotation.x=-Math.PI/2;z.position.set(P/2-.75+k*.3,.03,P/2+1.3);z.rotation.z=Math.PI/2;o.sc.add(z)}
+  const WH=new THREE.CylinderGeometry(.16,.16,.12,16);WH.rotateZ(Math.PI/2);
+  const cars=[];const crnd=rng(88);const CC=[0xFFFFFF,0x1F4FE0,0x0B1A2E,0xC9CFD8,0xFF5A3C,0x8A94A6];
+  [[1,-P*1.5+.45],[1,-P*1.5-.45],[0,-P*1.5+.45],[0,P*1.5-.45],[1,-P*.5-.45],[0,-P*2.5+.45]].forEach(([ax,ln],i)=>{const g=new THREE.Group();
+    const b=new THREE.Mesh(RB,mStd(CC[i%CC.length],{roughness:.3,metalness:.35}));b.scale.set(.85,.34,1.85);b.position.y=.16;b.castShadow=true;g.add(b);
+    const c=new THREE.Mesh(RB,mStd(0x26303F,{roughness:.12,metalness:.5}));c.scale.set(.74,.3,1.0);c.position.set(0,.48,.08);c.castShadow=true;g.add(c);
+    [[-.42,.6],[.42,.6],[-.42,-.6],[.42,-.6]].forEach(([x,z])=>{const w=new THREE.Mesh(WH,mStd(0x15171C,{roughness:.7}));w.position.set(x,.18,z);g.add(w)});
+    o.sc.add(g);cars.push({g,ax,ln,u:(crnd()*2-1)*30,sp:(3+crnd()*2.5)*(i%2?-1:1)})});
+  const rnd=rng(61),extras=[];for(let i=0;i<14;i++){const pp=person(o.sc,rnd,1.55);const ln=(((rnd()*12)|0)-6)*P+P/2+(rnd()<.5?-.75:.75);pp.ax=rnd()<.5;pp.ln=ln;pp.u=(rnd()*2-1)*30;pp.sp=(.9+rnd()*.6)*(rnd()<.5?-1:1);if(Math.abs(ln-P/2)<1.5&&pp.ax)pp.ln+=P;extras.push(pp)}
+
+  /* ---- her: jointed, proportioned, walking ---- */
+  const W=new THREE.Group();o.sc.add(W);const body=new THREE.Group();W.add(body);
+  const add=(geo,mat,x,y,z,par)=>{const m=new THREE.Mesh(geo,mat);m.position.set(x,y,z);m.castShadow=true;(par||body).add(m);return m};
+  /* her: a rigged, textured character with a real walk cycle (loaded async; the intro opens on the phone screen) */
+  let HER=null;const HOPT={hand:V(.11,1.1,-.26),pole:V(.6,.5,.6),curl:-.15,look:.3,adduct:.12,ps:1,pd:.05,pf:.035};
+  if(THREE.GLTFLoader)new THREE.GLTFLoader().load('../../her.glb?v=claudia',g=>{HER=herRig(g,body,1.68)});
+  /* her phone, held in the right hand, screen turned to her face */
+  function phoneTex(kind){const c=document.createElement('canvas');c.width=720;c.height=1480;const x=c.getContext('2d');
+    const rr=(X,Y,w,h,r)=>{x.beginPath();x.moveTo(X+r,Y);x.arcTo(X+w,Y,X+w,Y+h,r);x.arcTo(X+w,Y+h,X,Y+h,r);x.arcTo(X,Y+h,X,Y,r);x.arcTo(X,Y,X+w,Y,r);x.closePath()};
+    const HF='"Bricolage Grotesque",system-ui,sans-serif',TF='"Hanken Grotesk",system-ui,sans-serif';
+    x.fillStyle=kind?'#16161A':'#0E0E10';x.fillRect(0,0,720,1480);
+    if(!kind){x.fillStyle='#fff';x.font='600 32px '+HF;x.textAlign='center';x.fillText('ChatGPT',360,150);x.textAlign='left';
+      x.font='500 31px '+TF;const qw=x.measureText(Q).width;x.fillStyle='#2F2F33';rr(684-qw-60,210,qw+60,84,42);x.fill();x.fillStyle='#fff';x.fillText(Q,684-qw-30,262);
+      x.font='400 32px '+TF;x.fillStyle='#ECECF1';let line='',y=380;ANS.replace(/<\/?b>/g,'').split(' ').forEach(w=>{const t=line?line+' '+w:w;if(x.measureText(t).width>600){x.fillText(line,90,y);y+=46;line=w}else line=t});x.fillText(line,90,y);
+      x.fillStyle='#10A37F';x.beginPath();x.arc(52,370,22,0,7);x.fill();
+      x.fillStyle='#1C1C20';rr(90,y+40,590,330,28);x.fill();x.strokeStyle='#2E2E35';x.lineWidth=12;[[90,y+110,680,y+110],[90,y+200,680,y+200],[230,y+40,230,y+260],[420,y+40,420,y+260]].forEach(l=>{x.beginPath();x.moveTo(l[0],l[1]);x.lineTo(l[2],l[3]);x.stroke()});
+      x.strokeStyle='#FF5A3C';x.lineWidth=7;x.setLineDash([14,12]);x.beginPath();x.moveTo(230,y+250);x.lineTo(230,y+200);x.lineTo(420,y+200);x.lineTo(420,y+110);x.stroke();x.setLineDash([]);
+      x.fillStyle='#fff';x.font='700 30px '+HF;x.fillText('Glow Med Spa',120,y+310);x.fillStyle='#A0A0A8';x.font='400 24px '+TF;x.fillText('4 min walk · Open until 7',120,y+350);
+    }else{x.strokeStyle='#2C2C33';x.lineWidth=40;[[0,520,720,520],[0,980,720,980],[230,0,230,1480],[520,0,520,1480]].forEach(l=>{x.beginPath();x.moveTo(l[0],l[1]);x.lineTo(l[2],l[3]);x.stroke()});
+      x.strokeStyle='#FF5A3C';x.lineWidth=18;x.lineCap='round';x.beginPath();x.moveTo(230,1300);x.lineTo(230,980);x.lineTo(520,980);x.lineTo(520,560);x.stroke();
+      x.fillStyle='#4C8BFF';x.beginPath();x.arc(230,1250,22,0,7);x.fill();x.strokeStyle='#fff';x.lineWidth=6;x.stroke();
+      x.fillStyle='#FF5A3C';x.beginPath();x.arc(520,520,30,0,7);x.fill();
+      x.fillStyle='#1F4FE0';rr(30,90,660,170,32);x.fill();x.fillStyle='#fff';x.font='700 44px '+HF;x.fillText('Glow Med Spa',70,165);x.font='500 30px '+TF;x.fillText('4 min · Walking',70,215);
+    }
+    const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=8;return tx}
+  const phoneG=new THREE.Group();W.add(phoneG);phoneG.position.set(.1,1.28,-.3);
+  add(new THREE.Mesh().geometry=RB,mStd(0x0B0B0F,{roughness:.25,metalness:.5}),0,0,0,phoneG).scale.set(.084,.168,.01);
+  phoneG.children[0].position.set(0,-.084,-.005);
+  let texC=phoneTex(0),texN=phoneTex(1);const scr=new THREE.Mesh(new THREE.PlaneGeometry(.078,.161),new THREE.MeshBasicMaterial({map:texC}));scr.position.z=.0062;phoneG.add(scr);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{texC=phoneTex(0);texN=phoneTex(1);scr.material.map=texC;scr.material.needsUpdate=true});
+  const eye=new THREE.Vector3();
+  const path=[V(P/2,.14,22),V(P/2,.14,P/2),V(0,.14,P/2),V(0,.14,2.45)];
+  const segL=[];let tot=0;for(let i=0;i<3;i++){const l=path[i].distanceTo(path[i+1]);segL.push(l);tot+=l}
+  /* the Local AI Registry mark */
+  const mark=new THREE.Group();mark.position.set(2.2,11.5,8);o.sc.add(mark);
+  const sh=new THREE.Shape();sh.moveTo(0,1);sh.lineTo(.88,-.62);sh.lineTo(.32,-.62);sh.lineTo(0,-.02);sh.lineTo(-.32,-.62);sh.lineTo(-.88,-.62);sh.closePath();
+  const mg=new THREE.ExtrudeGeometry(sh,{depth:.26,bevelEnabled:true,bevelThickness:.06,bevelSize:.05,bevelSegments:4});mg.center();
+  const mm=new THREE.Mesh(mg,mStd(BLUE,{roughness:.2,metalness:.3}));mm.scale.setScalar(1.4);mm.castShadow=true;mark.add(mm);
+  const ts=new THREE.Shape();ts.moveTo(0,1);ts.lineTo(.22,.6);ts.lineTo(-.22,.6);ts.closePath();
+  const tg=new THREE.ExtrudeGeometry(ts,{depth:.32,bevelEnabled:false});tg.translate(0,-.19,-.16);
+  const tip=new THREE.Mesh(tg,mStd(CORAL,{roughness:.3}));tip.scale.setScalar(1.4);mark.add(tip);
+  const halo=new THREE.Mesh(new THREE.TorusGeometry(2.1,.035,8,140),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.55}));mark.add(halo);
+  const halo2=new THREE.Mesh(new THREE.TorusGeometry(2.7,.02,8,140),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.45}));mark.add(halo2);
+  mark.scale.setScalar(.001);
+  const up=arc(o.sc,CORAL,{n:90,size:.7}),down=arc(o.sc,INK,{n:90,size:1.0});up.anim(0,0);down.anim(0,0);
+  const rip=[0,1,2].map(k=>{const m=new THREE.Mesh(new THREE.RingGeometry(.3,.35,64),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:0,depthWrite:false,side:THREE.DoubleSide}));o.sc.add(m);m.k=k;return m});
+  const mL=lab(o,'<span class="pin ilab"><span class="chip you"><span class="d"></span>Local AI Registry</span></span>');
+  const sL=lab(o,'<span class="pin"><span class="chip"><span class="d"></span>Glow Med Spa</span></span>');
+  const CAPS=[[0,.21,'',0],[.21,.37,'AI gives one answer. <em>Just one.</em>',0],[.37,.52,'She&rsquo;s four minutes away.',1],[.52,.68,'And already on her way.',1],[.68,.86,'Local AI Registry makes sure that answer is&nbsp;<em>you</em>.',1],[.86,1.01,'Named in AI in 90&nbsp;days.&nbsp;<em>Guaranteed.</em>',1]];
+  let SPt=0,SP=0,lastCap=-1,ci2=0,dist=0,prevW=null,amp=0;
+  function onScroll(){const r=intro.getBoundingClientRect(),t=r.height-innerHeight;SPt=Math.max(0,Math.min(1,-r.top/Math.max(1,t)));document.body.classList.toggle('introOn',r.bottom>innerHeight*.35)}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();SP=SPt;
+  let O_S1=.7;const FL=document.createElement('div');FL.style.cssText='position:absolute;inset:0;pointer-events:none;z-index:2;opacity:0;background:radial-gradient(ellipse 60% 50% at 50% 50%,#FFFFFF 0%,#DCE7FF 35%,rgba(31,79,224,.35) 70%,rgba(31,79,224,0) 100%);mix-blend-mode:screen';ph.parentNode.appendChild(FL);const HDV=new THREE.Vector3(),Wq=new THREE.Quaternion(),PH=new THREE.Vector3(),PQ=new THREE.Quaternion(),Z=V(0,0,1);
+  const off=v=>v.applyQuaternion(Wq);
+  const KN=[0,.13,.21,.31,.47,.66,1];
+  const cpC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V(),V()],false,'centripetal'),ctC=new THREE.CatmullRomCurve3([V(),V(),V(),V(),V(),V(),V()],false,'centripetal');
+  o.onResize=()=>{o.cam.fov=o.mob?50:38};o.resize();
+  o.tick=(t,dt)=>{
+    SP+=(SPt-SP)*(1-Math.exp(-dt*7));const p=SP;o.hold=p<.3;if(o.r){o.r.shadowMap.autoUpdate=false;o.r.shadowMap.needsUpdate=(o.fr=(o.fr||0)+1)%2===0}
+    /* HTML phone */
+    const vw=innerWidth,vh=o.h||innerHeight,S0=Math.min(vh/716,vw/336),S1=Math.min(1,vh*(o.mob?.62:.72)/740,vw*.82/360);
+    const z1=sm((p-.12)/.2),z2=sm((p-.36)/.035);
+    ph.style.transform=`scale(${S0+(S1-S0)*z1})`;O_S1=S1;ph.style.opacity=(1-z2).toFixed(3);ph.style.visibility=z2>=1?'hidden':'';ph.style.filter='';
+    ph.style.boxShadow=`0 0 0 2px rgba(58,58,68,${z1}),0 0 0 9px rgba(20,20,26,${z1}),0 50px 140px rgba(0,0,0,${.7*z1})`;
+    fade.style.opacity=(1-sm((p-.34)/.11)).toFixed(3);hint.style.display=p>.04?'none':'';
+    /* captions crossfade */
+    const ci=CAPS.findIndex(c=>p>=c[0]&&p<c[1]);
+    if(ci!==lastCap){lastCap=ci;const c=CAPS[ci]||CAPS[0];const outE=caps[ci2];outE.classList.remove('on');ci2^=1;const inE=caps[ci2];inE.innerHTML=c[2];inE.classList.toggle('light',!!c[3]);if(c[2])requestAnimationFrame(()=>inE.classList.add('on'))}
+    skip.classList.toggle('light',p>.4);
+    /* walk: position from scroll, steps from distance, amplitude eases in and out */
+    const w=sm((p-.4)/.44)*tot;let d=w,si=0;while(si<2&&d>segL[si]){d-=segL[si];si++}
+    const a0=path[si],b0=path[si+1];W.position.lerpVectors(a0,b0,Math.min(1,d/segL[si]));
+    let yaw=Math.atan2(-(b0.x-a0.x),-(b0.z-a0.z));W.rotation.y+=(yaw-W.rotation.y)*(1-Math.exp(-dt*5));
+    const dw=prevW==null?0:Math.abs(w-prevW);prevW=w;dist+=dw;const spd=dt>0?dw/dt:0;amp+=((spd>.05?1:0)-amp)*(1-Math.exp(-dt*5));
+    W.updateMatrixWorld(true);Wq.copy(W.quaternion);
+    if(HER){HER.update(dt,dist,amp,HOPT);
+      const hp=new THREE.Vector3(),ep=new THREE.Vector3();HER.hand.getWorldPosition(hp);HER.el.getWorldPosition(ep);
+      HER.phonePos(hp);HER.handDir(HDV);phoneG.up.set(0,1,0).lerp(HDV,sm((p-.5)/.08)).normalize();W.worldToLocal(hp);phoneG.position.copy(hp);
+      HER.head.getWorldPosition(eye);eye.add(V(0,.06,0)).add(off(V(0,0,-.09)));}
+    else{eye.copy(W.position).add(V(0,1.62,0)).add(off(V(0,0,-.08)))}
+    phoneG.lookAt(eye);phoneG.updateMatrixWorld(true);phoneG.getWorldPosition(PH);phoneG.getWorldQuaternion(PQ);
+    scr.material.map=p>.5?texN:texC;
+    /* camera: one smooth spline through every shot */
+    const n=Z.clone().applyQuaternion(PQ),Wp=W.position;
+    const D0=Math.max(.12,.168*(o.h||innerHeight)/(2*Math.tan((o.mob?50:38)*Math.PI/360)*740*O_S1)),P0=PH.clone().addScaledVector(n,D0),T0=PH.clone();
+    const P1=Wp.clone().add(off(V(.62,1.58,.1))),T1=PH.clone();
+    const PS=Wp.clone().add(off(V(.45,1.75,-1.15))),TS=PH.clone().lerp(Wp.clone().add(V(0,1.55,0)),.5);
+    const P2=Wp.clone().add(off(V(-.35,1.6,-3.2))),T2=Wp.clone().add(V(0,1.4,0));
+    const P3=Wp.clone().add(off(V(-.1,2.8,-7.6))),T3=Wp.clone().add(V(0,1.05,0));
+    const P4=V(Wp.x+8,12,Wp.z+15),T4=V(Wp.x*.5,1.5,Wp.z*.5);
+    const P5=V(10,26,34),T5=V(1.5,5,5);
+    cpC.points=[P0,P1,PS,P2,P3,P4,P5];ctC.points=[T0,T1,TS,T2,T3,T4,T5];
+    const q=Math.max(0,Math.min(1,(p-.405)/.555));let k=0;while(k<5&&q>KN[k+1])k++;const u=(k+sm((q-KN[k])/(KN[k+1]-KN[k])))/6;
+    const fb=o.mob?50:38;let cP=cpC.getPoint(u),cT=ctC.getPoint(u),fv=fb,rate=q<.04?60:8;
+    if(p>.4&&p<.56){const k=Math.min(1,Math.max(0,(p-.403)/.065)),r=sm((p-.468)/.08),dP1=P1.clone().sub(PH).normalize(),dir=n.clone().lerp(dP1,Math.min(1,sm(Math.min(1,k*2.6)))).normalize(),d=D0*Math.pow(16,k*k);
+      const fz=Math.max(7,2*Math.atan(Math.tan(fb*Math.PI/360)*D0/d)*180/Math.PI);cP=PH.clone().addScaledVector(dir,d).lerp(cP,r);cT=PH.clone().lerp(cT,r);fv=fz+(fb-fz)*r;rate=60-52*r}
+    if(HER&&p>.415){const hd=cP.clone().sub(eye),dl=hd.length();if(dl<.55)cP=eye.clone().add(hd.normalize().multiplyScalar(.55))}
+    if(Math.abs(o.cam.fov-fv)>.02){o.cam.fov=fv;o.cam.updateProjectionMatrix()}
+    o.aim(cP,cT,dt,rate);
+    if(Cy.occlude){const tgt=W.position.clone();tgt.y+=1.1;Cy.occlude(o.cp,[tgt,o.ct],dt)}
+    
+    /* the signal */
+    const sg=sm((p-.66)/.12);mark.scale.setScalar(.001+ease(sg));mark.rotation.y=t*.55;halo.rotation.x=Math.PI/2+Math.sin(t)*.2;halo2.rotation.y=t*.7;mark.position.y=11.5+Math.sin(t*1.1)*.2;
+    up.set(PH.clone(),mark.position.clone(),2.5);up.anim(MOT?(t*.7)%1:.6,sg);
+    down.set(mark.position.clone(),V(0,4,0),1.5);down.anim(MOT?(t*.6+.3)%1:.6,sm((p-.72)/.1));
+    rip.forEach(m=>{const uu=((t*.8)+m.k/3)%1;m.position.copy(PH);m.scale.setScalar(1+uu*7);m.lookAt(o.cam.position);m.material.opacity=sg*.6*(1-uu)});
+    S.pulse(t);
+    cars.forEach(c=>{if(MOT){c.u+=c.sp*dt;if(c.u>34)c.u=-34;if(c.u<-34)c.u=34}const x=c.ax?c.ln:c.u,z=c.ax?c.u:c.ln;c.g.position.set(x,.12,z);c.g.rotation.y=c.ax?(c.sp>0?0:Math.PI):(c.sp>0?Math.PI/2:-Math.PI/2)});
+    extras.forEach(e=>{if(MOT){e.u+=e.sp*dt;if(e.u>30)e.u=-30;if(e.u<-30)e.u=30}const x=e.ax?e.ln:e.u,z=e.ax?e.u:e.ln;e.position.set(x,.14,z);e.rotation.y=e.ax?(e.sp>0?0:Math.PI):(e.sp>0?Math.PI/2:-Math.PI/2);e.body.position.y=Math.abs(Math.sin(t*9+e.ln))*.025});
+  };
+  o.labels=()=>{put(o,mL,V(mark.position.x,mark.position.y+2.4,mark.position.z),SP>.7);put(o,sL,V(0,4.6,0),SP>.52)};
+})();
+
+/* ===================== 1. HERO ===================== */
+(function(){
+  const o=base('map1',{fog:[48,120]});if(!o)return;
+  const C=city(o.sc,{n:7,seed:7,hmax:3.4,clear:[[0,0]],tint:{'2,-1':0xB9C3D6,'-2,2':0xB9C3D6,'3,2':0xB9C3D6}});const P=C.P;
+  const S=shop(o.sc);
+  const FL=flows(o.sc,{n:6,P,count:300,R:C.R*.9});
+  const rnd=rng(21);
+  const Q=["best med spa near me?","who does Botox near me with great reviews?","lip filler open Saturday near me?","HydraFacial near me tonight?","most trusted injector nearby?","laser hair removal near me?"];
+  const AI=["ChatGPT","Gemini","Google AI Mode","Perplexity"];
+  const people=[];
+  function spawn(p){
+    const k=((rnd()*12)|0)-6,xs=k*P+P/2+(rnd()-.5)*.6,side=rnd()<.5?-1:1,zs=P/2+.7+(rnd()-.5)*.3;
+    p.path=[V(xs,.14,side*6.4*P),V(xs,.14,zs),V((rnd()-.5)*1.4,.14,zs),V((rnd()-.5)*1.2,.14,2.2)];p.seg=0;p.u=0;p.spd=1.2+rnd()*.8;p.ask=0;p.position.copy(p.path[0]);
+  }
+  for(let i=0;i<28;i++){const p=person(o.sc,rnd);spawn(p);p.id=i;
+    let adv=rnd()*34;while(adv>0&&p.seg<p.path.length-1){const a=p.path[p.seg],b=p.path[p.seg+1],L=a.distanceTo(b);const st=Math.min(adv,L*(1-p.u));p.u+=st/L;adv-=st;if(p.u>=1){p.seg++;p.u=0}}
+    if(p.seg>=p.path.length-1)spawn(p);
+    p.arc=arc(o.sc,INK,{size:.85});p.arc.anim(0,0);people.push(p)}
+  const pool=[0,1,2].map(()=>{const d=lab(o,'');d.p=null;d.style.visibility='hidden';return d});
+  const spaL=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>Glow Med Spa <small>Named by AI</small></span></span>');
+  const comps=[[2*P,-P],[-2*P,2*P],[3*P,2*P]].map(([x,z])=>({v:V(x,3.6,z),l:lab(o,'<span class="pin"><span class="chip dim mini"><span class="d"></span>Not named</span></span>')}));
+  let next=.3;
+  o.onResize=(w,h)=>{o.cam.fov=o.mob?40:30};o.resize();
+  o.tick=(t,dt)=>{
+    if(C.rise(t)&&!o.fz){o.fz=1;o.freeze()}S.pulse(t);if(MOT)FL.tick(dt);
+    const ki=RM?1:ease(t/4.5),a=.72+t*.03+o.sx*.06-(1-ki)*.7,R=(o.mob?40:31)+(1-ki)*36;o.aim(V(Math.cos(a)*R,(o.mob?27:19)+(1-ki)*30-o.sy*1.5,Math.sin(a)*R),V(0,1,1.5),dt,ki<1?30:3);
+    next-=dt;const max=o.mob?2:3;
+    if(next<=0||(RM&&!o.seeded)){next=1.25;const free=pool.find(d=>!d.p);const busy=pool.filter(d=>d.p).length;
+      if(free&&busy<max){const cand=people.filter(p=>!p.ask&&p.seg<2&&p.position.distanceTo(S.position)<17&&p.position.distanceTo(S.position)>5);
+        if(cand.length){const p=cand[(rnd()*cand.length)|0];p.ask=5;p.q=Q[(rnd()*Q.length)|0];p.ai=AI[(rnd()*AI.length)|0];p.ph=-1;free.p=p;p.lab=free}}
+      if(RM)o.seeded=1}
+    for(const p of people){
+      if(MOT){const A0=p.path[p.seg],B0=p.path[p.seg+1];const L=A0.distanceTo(B0)||1;p.u+=(p.ask?.3:p.spd)*dt/L;
+        if(p.u>=1){p.seg++;p.u=0;if(p.seg>=p.path.length-1){if(p.lab){p.lab.p=null;p.lab.style.visibility='hidden';p.lab=null}p.ask=0;p.arc.anim(0,0);spawn(p);continue}}
+        const A=p.path[p.seg],B=p.path[p.seg+1];p.position.lerpVectors(A,B,p.u);p.rotation.y=Math.atan2(B.x-A.x,B.z-A.z);p.body.position.y=Math.abs(Math.sin(t*9+p.id))*.025}
+      if(p.ask){const life=5-p.ask;if(MOT)p.ask-=dt;
+        p.arc.set(V(p.position.x,1.6,p.position.z),V(0,4,0),2.4+p.position.distanceTo(S.position)*.14);
+        p.arc.anim(((life-1.4)*.6)%1,Math.min(1,life*1.4,p.ask*1.4)*(life>1.4?1:.35));
+        p.phone.material.emissive=lin(life>1.4?CORAL:0x7FA2FF);
+        const ph=life<2.1?0:1;
+        if(p.lab&&ph!==p.ph){p.ph=ph;setLab(p.lab,ph?`<span class="bub a"><i>${p.ai}</i>Try Glow Med Spa. 0.4 mi away, top rated for injectables.</span>`:`<span class="bub q">${p.q}</span>`)}
+        if(p.ask<=0){p.ask=0;p.arc.anim(0,0);p.phone.material.emissive=lin(0x7FA2FF);if(p.lab){p.lab.p=null;p.lab.style.visibility='hidden';p.lab=null}}
+      }
+    }
+  };
+  o.labels=()=>{put(o,spaL,V(0,4.4,0));comps.forEach(c=>put(o,c.l,c.v,!o.mob));pool.forEach(d=>{if(d.p)put(o,d,V(d.p.position.x,1.9,d.p.position.z))})};
+})();
+
+/* ===================== 2. DEMAND MAP (hex columns) ===================== */
+(function(){
+  const o=base('map2',{fov:28,fog:[70,140]});if(!o)return;
+  const rnd=rng(11),COLS=32,ROWS=34,dx=1.06,dz=.92;
+  const ground=new THREE.Mesh(new THREE.CircleGeometry(80,96),mStd(0xE6DECE));ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;o.sc.add(ground);
+  // winding roads under the columns
+  for(let k=0;k<7;k++){const pts=[];const a0=rnd()*Math.PI*2;for(let i=0;i<6;i++){const t=i/5;pts.push(V(Math.cos(a0)*(22-44*t)+(rnd()-.5)*8,.03,Math.sin(a0)*(22-44*t)+(rnd()-.5)*8))}
+    const tube=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),60,.16,4),mStd(0xD3C8B2));tube.scale.y=.2;o.sc.add(tube)}
+  const peaks=[[-6,-4,6.5,4.6],[7,5,5,3.8],[2,-9,4,3],[-9,8,4,2.4],[10,-6,3.5,2.2],[-1,3,3,2.8],[5,11,3,1.8]];
+  const H=[];let mx=0;
+  for(let i=0;i<COLS;i++)for(let j=0;j<ROWS;j++){const x=(i-COLS/2)*dx+(j%2?dx/2:0),z=(j-ROWS/2)*dz;const rr=Math.hypot(x,z);if(rr>16.5)continue;
+    let h=.12+rnd()*.3;for(const p of peaks){const d2=(x-p[0])**2+(z-p[1])**2;h+=p[3]*Math.exp(-d2/(p[2]*p[2])*1.1)}h*=1-Math.pow(rr/16.5,4)*.7;H.push({x,z,h});mx=Math.max(mx,h)}
+  const HEX=new THREE.CylinderGeometry(.5,.5,1,6);HEX.translate(0,.5,0);
+  const im=new THREE.InstancedMesh(HEX,mStd(0xffffff,{roughness:.55}),H.length);im.castShadow=true;im.receiveShadow=true;o.sc.add(im);
+  const ramp=[[0,0xDCE4FA],[.4,0x7E9BF2],[.75,BLUE],[1,CORAL]].map(([s,h])=>[s,lin(h)]);
+  const col=new THREE.Color();
+  function rampCol(t){for(let k=1;k<ramp.length;k++)if(t<=ramp[k][0]){const a=ramp[k-1],b=ramp[k];return col.copy(a[1]).lerp(b[1],(t-a[0])/(b[0]-a[0]))}return col.copy(ramp[3][1])}
+  H.forEach((b,k)=>{b.t=b.h/mx;b.c=rampCol(b.t).clone();im.setColorAt(k,b.c)});
+  const MAXH=8,M=new THREE.Matrix4();
+  const biz=[{n:'You',x:3,z:-1,you:1},{n:'Competitor',x:-8.5,z:-7},{n:'Competitor',x:9.5,z:9},{n:'Competitor',x:-6,z:10}];
+  biz.forEach(b=>{b.g=pinMesh(o.sc,{x:b.x,z:b.z,h:b.you?10.5:9.2,col:b.you?BLUE:0x9AA3B2,head:b.you?CORAL:0xC3C9D3,r:b.you?.55:.42});b.top=b.g.top;
+    b.l=lab(o,`<span class="pin"><span class="chip ${b.you?'you':'dim'}"><span class="d"></span>${b.n}</span></span>`)});
+  const hot=H.slice().sort((a,b)=>b.h-a.h).filter((h,i,arr)=>arr.slice(0,i).every(q=>Math.hypot(q.x-h.x,q.z-h.z)>2.6)).slice(0,14);
+  const arcs=hot.map((h,i)=>{const A=arc(o.sc,INK,{size:1.05});A.h=h;A.off=i/14;return A});
+  let mode=0,auto=true,grow=0,flip=0,hover=-1;
+  const bB=document.getElementById('tBefore'),bA=document.getElementById('tAfter'),bYou=document.getElementById('bYou'),bThem=document.getElementById('bThem');
+  function setMode(m,user){mode=m;if(user)auto=false;bB.setAttribute('aria-pressed',m?'false':'true');bA.setAttribute('aria-pressed',m?'true':'false');bYou.style.width=m?'86%':'10%';bThem.style.width=m?'14%':'90%';arcs.forEach(A=>A.mat=m?BLUE:0x8A93A3);arcs.forEach(A=>A.m.uniforms.c.value.set(m?INK:0x5B6577))}
+  bB.onclick=()=>setMode(0,1);bA.onclick=()=>setMode(1,1);setMode(0);
+  // hover tooltips
+  const tip=document.getElementById('tip'),ray=new THREE.Raycaster(),pm=new THREE.Vector2();
+  const LV=['Rarely','Sometimes','Often','Very often'];
+  o.wrap.addEventListener('pointermove',e=>{const b=o.wrap.getBoundingClientRect();pm.set((e.clientX-b.left)/b.width*2-1,-(e.clientY-b.top)/b.height*2+1);ray.setFromCamera(pm,o.cam);const hit=ray.intersectObject(im)[0];
+    if(hover>=0){im.setColorAt(hover,H[hover].c);hover=-1}
+    if(hit&&hit.instanceId!=null){hover=hit.instanceId;im.setColorAt(hover,lin(CORAL));const t=H[hover].t;tip.innerHTML=`People here ask AI ${LV[Math.min(3,(t*4)|0)].toLowerCase()}<small>Illustration</small>`;tip.style.left=(e.clientX-b.left)+'px';tip.style.top=(e.clientY-b.top)+'px';tip.style.opacity=1}else tip.style.opacity=0;
+    im.instanceColor.needsUpdate=true});
+  o.wrap.addEventListener('pointerleave',()=>{tip.style.opacity=0;if(hover>=0){im.setColorAt(hover,H[hover].c);im.instanceColor.needsUpdate=true;hover=-1}});
+  o.onResize=(w,h)=>{o.cam.fov=o.mob?42:27;if(!o.mob)o.cam.setViewOffset(w,h,-w*.2,0,w,h)};o.resize();
+  o.tick=(t,dt)=>{
+    grow=RM?1:Math.min(1,grow+dt*.5);
+    if(!o.fz){H.forEach((b,k)=>{const e=ease(grow*1.6-Math.hypot(b.x,b.z)*.04);const hh=Math.max(.06,b.t*MAXH*e);M.makeScale(.9,hh,.9);M.setPosition(b.x,0,b.z);im.setMatrixAt(k,M);b.cur=hh});im.instanceMatrix.needsUpdate=true;if(grow>=1&&H.every(b=>ease(1.6-Math.hypot(b.x,b.z)*.04)>=1)){o.fz=1;o.freeze()}}
+    if(auto&&MOT){flip+=dt;if(flip>5.5){flip=0;setMode(mode?0:1)}}
+    arcs.forEach(A=>{const h=A.h,from=V(h.x,h.cur+.2,h.z);
+      const tgt=mode?biz[0]:biz.slice(1).reduce((a,b)=>Math.hypot(b.x-h.x,b.z-h.z)<Math.hypot(a.x-h.x,a.z-h.z)?b:a);
+      A.set(from,tgt.top,3+from.distanceTo(tgt.top)*.22);A.anim(MOT?((t*.4+A.off)%1):.7,grow>.9?1:0)});
+    const a=-.85+t*.028+o.sx*.08,R=o.mob?56:54;o.aim(V(Math.cos(a)*R,(o.mob?36:27)-o.sy*2,Math.sin(a)*R),V(0,2,0),dt);
+  };
+  o.labels=()=>biz.forEach(b=>put(o,b.l,V(b.top.x,b.top.y+.6,b.top.z),true,o.mob?0:.44));
+})();
+
+/* ===================== 3. STORY: cinematic camera through one neighborhood ===================== */
+(function(){
+  const o=base('map3',{fog:[40,110],bg:0xEEF1F8});if(!o)return;
+  const C=city(o.sc,{n:6,seed:19,hmax:3,clear:[[0,0]]});const P=C.P;
+  const S=shop(o.sc);
+  const FL=flows(o.sc,{n:5,P,count:200,R:C.R*.9});
+  // the customer
+  const walker=person(o.sc,rng(4),1.9);const start=V(P/2+.75,.14,9.2);walker.position.copy(start);walker.rotation.y=Math.PI;
+  const path=[start,V(P/2+.75,.14,P/2+.75),V(0,.14,P/2+.75),V(0,.14,2.2)];
+  // the Record: a floating crystal above the neighborhood
+  const rec=new THREE.Group();rec.position.set(0,11,0);
+  const cr=new THREE.Mesh(new THREE.OctahedronGeometry(1.5,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.3,transparent:true,opacity:.92,flatShading:true}));rec.add(cr);
+  const core=new THREE.Mesh(new THREE.OctahedronGeometry(.55,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)}));rec.add(core);
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(2.4,.04,8,96),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.6}));ring.rotation.x=Math.PI/2;rec.add(ring);
+  const ring2=ring.clone();ring2.scale.setScalar(1.35);ring2.material=ring.material.clone();ring2.material.opacity=.3;rec.add(ring2);
+  o.sc.add(rec);
+  // eleven sources as beacons around the neighborhood
+  const rnd=rng(5),NAMES=CHECKS.map(c=>c[0]),src=[];
+  NAMES.forEach((n,i)=>{const th=i/11*Math.PI*2+.3,rr=13+rnd()*7,x=Math.cos(th)*rr,z=Math.sin(th)*rr,h=4+rnd()*3;
+    const g=new THREE.Group();g.position.set(x,0,z);
+    const col=new THREE.Mesh(new THREE.CylinderGeometry(.16,.16,h,10),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.35}));col.position.y=h/2;g.add(col);
+    const disc=new THREE.Mesh(new THREE.CylinderGeometry(.7,.7,.16,32),mStd(0xffffff,{roughness:.3}));disc.position.y=h;g.add(disc);
+    const dot=new THREE.Mesh(new THREE.CylinderGeometry(.34,.34,.18,24),mStd(i%3?BLUE:CORAL));dot.position.y=h+.02;g.add(dot);
+    const base=new THREE.Mesh(new THREE.RingGeometry(.6,.9,32),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.35,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.17;g.add(base);
+    g.scale.setScalar(.001);o.sc.add(g);
+    const A=arc(o.sc,INK,{size:1.05});A.set(V(x,h,z),V(0,11,0),3);A.anim(0,0);
+    src.push({g,A,top:V(x,h+.6,z),l:lab(o,`<span class="chip mini">${n}</span>`),off:i/11})});
+  const beam=arc(o.sc,CORAL,{n:70,size:.9});beam.anim(0,0);
+  const qL=lab(o,'<span class="bub q">best med spa near me?</span>');
+  const aL=lab(o,'<span class="bub a"><i>ChatGPT</i>Glow Med Spa. Great reviews, open until 7, about 4 minutes away.</span>');
+  const rL=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>Your Local AI Blueprint&trade;</span></span>');
+  const sL=lab(o,'<span class="pin"><span class="chip"><span class="d"></span>Glow Med Spa</span></span>');
+  const story=document.getElementById('story'),steps=[...document.querySelectorAll('.st')],pbar=document.getElementById('pbar');
+  let SP=0,SPt=0,cur=-1;const vis=[1,0,0,0];
+  function onScroll(){const r=story.getBoundingClientRect(),tot=r.height-innerHeight;SPt=Math.max(0,Math.min(.9999,-r.top/Math.max(1,tot)))}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();SP=SPt;
+  // camera shots: [position, target] per step (desktop), pulled back on phones
+  const SHOTS=[[V(13,12,25),V(3.2,1.2,9)],[V(-6,30,36),V(0,5,0)],[V(-14,13,24),V(0,5,5)],[V(8,11,19),V(0,1,3.5)]];
+  const cp=new THREE.Vector3(),ct=new THREE.Vector3();
+  o.onResize=(w,h)=>{o.cam.fov=o.mob?52:32;if(!o.mob)o.cam.setViewOffset(w,h,-w*.17,0,w,h);else o.cam.setViewOffset(w,h,0,h*.14,w,h)};o.resize();
+  o.tick=(t,dt)=>{
+    if(C.rise(t+2)&&!o.fz){o.fz=1;o.freeze()}S.pulse(t);SP+=(SPt-SP)*(1-Math.exp(-dt*6));if(MOT)FL.tick(dt);
+    const s=Math.min(3,Math.floor(SP*4)),lp=SP*4-s;
+    if(s!==cur){cur=s;steps.forEach((e,i)=>e.classList.toggle('on',i===s))}
+    pbar.style.width=(SP*100).toFixed(1)+'%';
+    for(let i=0;i<4;i++){const tg=(i===1?s>=1&&s<=2:i===2?s>=2:i===3?s===3:s<=2)?1:0;vis[i]+=(tg-vis[i])*Math.min(1,dt*5||1)}
+    // camera between shots
+    const c=Math.max(0,Math.min(3,SP*4-.55)),i0=Math.floor(c),i1=Math.min(3,i0+1),f=sm((c-i0)*1.4);
+    cp.lerpVectors(SHOTS[i0][0],SHOTS[i1][0],f);ct.lerpVectors(SHOTS[i0][1],SHOTS[i1][1],f);
+    if(o.mob)cp.sub(ct).multiplyScalar(1.35).add(ct);
+    cp.x+=Math.sin(t*.25)*.8+o.sx*.8;cp.y+=-o.sy*.6;o.aim(cp,ct,dt,6);
+    // record + sources
+    rec.rotation.y=t*.5;core.rotation.y=-t*1.2;rec.position.y=11+Math.sin(t*1.2)*.25;ring2.rotation.z=t*.3;
+    const sv=vis[1];rec.scale.setScalar(.001+Math.max(sv,vis[2]));
+    src.forEach(q=>{q.g.scale.setScalar(.001+ease(sv*1.4-q.off*.4));q.A.anim(MOT?(t*.5+q.off)%1:.6,sv*(s===1?1:.35))});
+    // beam from record to phone
+    const ph=V(walker.position.x,walker.position.y+1.3,walker.position.z);
+    beam.set(V(0,rec.position.y,0),ph,3);beam.anim(MOT?(t*.7)%1:.6,vis[2]);
+    walker.phone.material.emissive=lin(s>=2?CORAL:0x7FA2FF);
+    // walk in on step 4
+    if(s===3){const k=Math.min(1,lp*1.2);const segs=[0,.42,.8,1];let si=0;while(si<2&&k>segs[si+1])si++;const u=(k-segs[si])/(segs[si+1]-segs[si]);
+      const A=path[si],B=path[si+1];walker.position.lerpVectors(A,B,u);walker.rotation.y=Math.atan2(B.x-A.x,B.z-A.z);walker.body.position.y=Math.abs(Math.sin(t*9))*.03;
+      S.glass.material.emissive=lin(k>.96?CORAL:0xBFD0FF);S.glass.material.emissiveIntensity=k>.96?.8:.35}
+    else{walker.position.copy(start);walker.rotation.y=Math.PI*.85;walker.body.position.y=0;S.glass.material.emissive=lin(0xBFD0FF);S.glass.material.emissiveIntensity=.35}
+    qL.s.style.opacity=s<=1?1:0;aL.s.style.opacity=s===2?1:0;rL.s.style.opacity=(s===1||s===2)?1:0;sL.s.style.opacity=s>=2?1:0;
+  };
+  o.labels=()=>{const ph=V(walker.position.x,walker.position.y+2.2,walker.position.z);put(o,qL,ph,cur<=1);put(o,aL,ph,cur===2);put(o,rL,V(0,rec.position.y+2.2,0),cur===1||cur===2);put(o,sL,V(0,4.6,0),cur>=2);src.forEach(q=>put(o,q.l,q.top,cur===1&&!o.mob))};
+})();
+
+/* ===================== 5. CONSTELLATION: eleven signals feed the Record ===================== */
+(function(){
+  const o=base('map5',{bg:0xECE6D6,fog:[30,70],shadow:false});if(!o)return;
+  const floor=new THREE.Mesh(new THREE.CircleGeometry(40,96),mStd(0xE4DCCB));floor.rotation.x=-Math.PI/2;floor.position.y=-4;o.sc.add(floor);
+  for(let k=1;k<=4;k++){const r=new THREE.Mesh(new THREE.RingGeometry(k*2.6,k*2.6+.03,128),new THREE.MeshBasicMaterial({color:new THREE.Color(0xC9BEA6),transparent:true,opacity:.7}));r.rotation.x=-Math.PI/2;r.position.y=-3.98;o.sc.add(r)}
+  const rec=new THREE.Group();o.sc.add(rec);
+  const cr=new THREE.Mesh(new THREE.OctahedronGeometry(1.6,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.35,flatShading:true}));rec.add(cr);
+  const core=new THREE.Mesh(new THREE.OctahedronGeometry(.5,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)}));rec.add(core);
+  const shadow=new THREE.Mesh(new THREE.CircleGeometry(1.6,48),new THREE.MeshBasicMaterial({color:0x000000,transparent:true,opacity:.08}));shadow.rotation.x=-Math.PI/2;shadow.position.y=-3.97;o.sc.add(shadow);
+  const orbits=[[4.2,.25],[6,-.35],[7.6,.15]];
+  orbits.forEach(([r,tl])=>{const t=new THREE.Mesh(new THREE.TorusGeometry(r,.02,6,160),new THREE.MeshBasicMaterial({color:new THREE.Color(0x9DB1EE),transparent:true,opacity:.7}));t.rotation.x=Math.PI/2+tl;o.sc.add(t)});
+  const nodes=CHECKS.map((c,i)=>{const oi=i%3,[r,tl]=orbits[oi];const sp=(.18-oi*.04)*(oi===1?-1:1);
+    const m=new THREE.Mesh(new THREE.SphereGeometry(.42,28,20),mStd(i%4===0?CORAL:i%2?BLUE:0xffffff,{roughness:.3,metalness:.1}));o.sc.add(m);
+    const halo=new THREE.Mesh(new THREE.RingGeometry(.55,.62,40),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:0,side:THREE.DoubleSide}));o.sc.add(halo);
+    const A=arc(o.sc,i%4===0?CORAL:INK,{n:40,size:.7});
+    return {m,halo,A,r,tl,sp,ph:i/11*Math.PI*2,l:lab(o,`<span class="chip mini">${c[0]}</span>`),i}});
+  let sel=-1;const btns=[...document.querySelectorAll('.ck')];
+  btns.forEach(b=>{const i=+b.dataset.i;b.addEventListener('mouseenter',()=>sel=i);b.addEventListener('focus',()=>sel=i);b.addEventListener('click',()=>{sel=i;btns.forEach(x=>x.classList.toggle('on',x===b))});b.addEventListener('mouseleave',()=>{if(!b.classList.contains('on'))sel=-1})});
+  o.onResize=()=>{o.cam.fov=o.mob?44:34};o.resize();
+  o.tick=(t,dt)=>{
+    rec.rotation.y=t*.4;rec.position.y=Math.sin(t*1.1)*.25;core.rotation.x=t;
+    const a=.4+t*.05+o.sx*.15;o.aim(V(Math.sin(a)*(o.mob?24:20),9-o.sy*1.5,Math.cos(a)*(o.mob?24:20)),V(0,-.5,0),dt);
+    nodes.forEach(n=>{const an=n.ph+t*n.sp;const p=V(Math.cos(an)*n.r,0,Math.sin(an)*n.r);p.applyAxisAngle(V(1,0,0),n.tl);n.m.position.copy(p);
+      const on=sel===n.i;const s=on?1.6:1;n.m.scale.lerp(V(s,s,s),.15);n.halo.position.copy(p);n.halo.lookAt(o.cam.position);n.halo.material.opacity+=((on?.9:0)-n.halo.material.opacity)*.15;
+      n.A.set(p,V(0,rec.position.y,0),1.2);n.A.anim(MOT?(t*.45+n.i/11)%1:.6,sel<0?.8:on?1:.2);n.top=V(p.x,p.y+.9,p.z)});
+  };
+  o.labels=()=>nodes.forEach(n=>put(o,n.l,n.top,!o.mob||sel===n.i));
+})();
+
+/* ===================== 4. AREA: exclusive ring with radar sweep ===================== */
+(function(){
+  const o=base('map4',{fog:[60,130]});if(!o)return;
+  const C=city(o.sc,{n:8,P:4.6,seed:5,hmax:2.6,clear:[[0,0]],tint:{'5,-2':0xB9C3D6,'-4,5':0xB9C3D6,'-6,-3':0xB9C3D6,'4,6':0xB9C3D6,'1,-6':0xB9C3D6}});
+  const S=shop(o.sc,{s:.85});
+  const R=14;
+  const wall=new THREE.Mesh(new THREE.CylinderGeometry(R,R,3.2,180,1,true),new THREE.ShaderMaterial({uniforms:{c:{value:new THREE.Color(CORAL)},t:{value:0}},
+    vertexShader:'varying float vy;void main(){vy=uv.y;gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+    fragmentShader:'uniform vec3 c;uniform float t;varying float vy;void main(){float a=pow(1.-vy,2.)*.45+.25*smoothstep(.0,.04,fract(vy*5.-t))*(1.-vy)*(1.-smoothstep(.04,.12,fract(vy*5.-t)));gl_FragColor=vec4(c,a);}',
+    transparent:true,side:THREE.DoubleSide,depthWrite:false}));wall.position.y=1.6;o.sc.add(wall);
+  const edge=new THREE.Mesh(new THREE.RingGeometry(R-.14,R+.06,200),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL),transparent:true,opacity:.95}));edge.rotation.x=-Math.PI/2;edge.position.y=.2;o.sc.add(edge);
+  const sweep=new THREE.Mesh(new THREE.CircleGeometry(R,64,0,Math.PI/4),new THREE.MeshBasicMaterial({color:new THREE.Color(BLUE),transparent:true,opacity:.12,depthWrite:false,side:THREE.DoubleSide}));sweep.rotation.x=-Math.PI/2;sweep.position.y=.22;o.sc.add(sweep);
+  const rnd=rng(8);const spokes=Array.from({length:18},(_,i)=>{const th=i/18*Math.PI*2+rnd()*.3,r=4+rnd()*(R-5);const A=arc(o.sc,INK,{n:40,size:.85});A.set(V(Math.cos(th)*r,.3,Math.sin(th)*r),V(0,3.2,0),1.8+r*.15);A.off=rnd();return A});
+  const ly=lab(o,'<span class="pin"><span class="chip you"><span class="d"></span>You</span></span>');
+  const lr=lab(o,'<span class="chip" style="background:var(--coral);color:var(--ink)">Your area, yours alone</span>');
+  const others=[[5,-2],[-4,5],[-6,-3],[4,6],[1,-6]].map(([i,j])=>({v:V(i*4.6,3.4,j*4.6),l:lab(o,'<span class="pin"><span class="chip dim mini"><span class="d"></span>Outside your area</span></span>')}));
+  o.onResize=()=>{o.cam.fov=o.mob?44:30};o.resize();
+  o.tick=(t,dt)=>{if(C.rise(t)&&!o.fz){o.fz=1;o.freeze()}S.pulse(t);wall.material.uniforms.t.value=t*.6;sweep.rotation.z=-t*.6;spokes.forEach(A=>A.anim(MOT?(t*.35+A.off)%1:.5,1));
+    const a=.5+t*.03+o.sx*.08,Rc=o.mob?58:48;o.aim(V(Math.cos(a)*Rc,(o.mob?44:36)-o.sy*2,Math.sin(a)*Rc),V(0,0,0),dt)};
+  o.labels=()=>{put(o,ly,V(0,4.2,0));put(o,lr,V(0,3.6,R));others.forEach((q,i)=>put(o,q.l,q.v,!o.mob||i<2))};
+})();
+
+/* ===================== 6. FINAL: the Record, orbited by every assistant ===================== */
+(function(){
+  const o=base('map6',{bg:INK,fog:null,shadow:false});if(!o)return;
+  o.sc.children.filter(c=>c.isHemisphereLight).forEach(h=>h.intensity=.5);
+  const cr=new THREE.Mesh(new THREE.OctahedronGeometry(2,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.4,flatShading:true,emissive:lin(0x0B2A8A),emissiveIntensity:.4}));o.sc.add(cr);
+  const core=new THREE.Mesh(new THREE.OctahedronGeometry(.7,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)}));o.sc.add(core);
+  const AIS=['ChatGPT','Gemini','Google AI','Claude','Perplexity','Copilot','Meta AI','Grok','Siri','Alexa+'];
+  const g=new THREE.BufferGeometry(),N=900,pos=new Float32Array(N*3),al=new Float32Array(N),rnd=rng(3);
+  for(let i=0;i<N;i++){const r=4+rnd()*6,th=rnd()*Math.PI*2,y=(rnd()-.5)*1.6*(r/6);pos.set([Math.cos(th)*r,y,Math.sin(th)*r],i*3);al[i]=.25+rnd()*.6}
+  g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('a',new THREE.BufferAttribute(al,1));
+  const dust=new THREE.Points(g,ptsMat(0x9DB3F5,.18));dust.rotation.x=.35;o.sc.add(dust);
+  const sat=AIS.map((n,i)=>{const m=new THREE.Mesh(new THREE.SphereGeometry(.22,20,14),new THREE.MeshBasicMaterial({color:new THREE.Color(i%3?0xDCE4FA:CORAL)}));o.sc.add(m);const A=arc(o.sc,0x7E9BF2,{n:36,size:.45});return {m,A,ph:i/AIS.length*Math.PI*2,r:5.4+(i%3)*1.2,l:lab(o,`<span class="chip mini" style="background:rgba(255,255,255,.1);color:#DCE4FA;box-shadow:none">${n}</span>`)}});
+  o.onResize=()=>{o.cam.fov=o.mob?46:36};o.resize();
+  o.tick=(t,dt)=>{cr.rotation.y=t*.4;cr.rotation.x=Math.sin(t*.5)*.2;core.rotation.y=-t;dust.rotation.y=t*.05;
+    o.aim(V(Math.sin(t*.1+o.sx*.2)*18,6-o.sy,Math.cos(t*.1+o.sx*.2)*18),V(0,0,0),dt);
+    sat.forEach((s,i)=>{const a=s.ph+t*.18;const p=V(Math.cos(a)*s.r,Math.sin(a*2)*.8,Math.sin(a)*s.r);p.applyAxisAngle(V(1,0,0),.35);s.m.position.copy(p);s.A.set(p,V(0,0,0),1);s.A.anim(MOT?(t*.5+i/10)%1:.5,.9);s.top=V(p.x,p.y+.7,p.z)})};
+  o.labels=()=>sat.forEach((s,i)=>put(o,s.l,s.top,!o.mob||i%2===0));
+})();
+
+/* ---------------- holographic helpers ---------------- */
+const B=(hex,op,add)=>new THREE.MeshBasicMaterial({color:lin(hex),transparent:true,opacity:op,blending:add?THREE.AdditiveBlending:THREE.NormalBlending,depthWrite:false,side:THREE.DoubleSide});
+const LB=(hex,op)=>new THREE.LineBasicMaterial({color:lin(hex),transparent:true,opacity:op,blending:THREE.AdditiveBlending,depthWrite:false});
+function segGeo(arr){const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(arr),3));return g}
+function holo(sc,{n=6,P=4.6,seed=9,hmax=4.2,edge=0x9DB3F5,op=.5}){
+  const rnd=rng(seed),R=(n+.3)*P,seg=[],boxes=[];const L=(a,b,c,d,e,f)=>seg.push(a,b,c,d,e,f);
+  for(let i=-n;i<=n;i++)for(let j=-n;j<=n;j++){const cx=i*P,cz=j*P,dd=Math.hypot(cx,cz);if(dd>R||(i===0&&j===0))continue;
+    for(let a=0;a<2;a++)for(let b=0;b<2;b++){if(rnd()<.14)continue;const w=1.2+rnd()*.6,de=1.2+rnd()*.6,h=.5+Math.pow(rnd(),1.7)*hmax*Math.max(.3,1.2-dd/(n*P));
+      const x=cx-1+a*2,z=cz-1+b*2,x0=x-w/2,x1=x+w/2,z0=z-de/2,z1=z+de/2;boxes.push({x,z,w,d:de,h,dist:dd});
+      [[x0,z0],[x1,z0],[x1,z1],[x0,z1]].forEach(([px,pz])=>L(px,0,pz,px,h,pz));
+      const st=Math.max(.3,h/12);for(let y=0;y<=h+1e-4;y+=st){L(x0,y,z0,x1,y,z0);L(x1,y,z0,x1,y,z1);L(x1,y,z1,x0,y,z1);L(x0,y,z1,x0,y,z0)}}}
+  const lines=new THREE.LineSegments(segGeo(seg),LB(edge,op));sc.add(lines);
+  const M=new THREE.Matrix4(),faces=new THREE.InstancedMesh(BOX,B(BLUE,.06,1),boxes.length);
+  boxes.forEach((b,k)=>{M.makeScale(b.w,b.h,b.d);M.setPosition(b.x,0,b.z);faces.setMatrixAt(k,M)});sc.add(faces);
+  const gr=new THREE.Mesh(new THREE.CircleGeometry(R*2.4,80),new THREE.MeshBasicMaterial({color:lin(0x081426)}));gr.rotation.x=-Math.PI/2;gr.position.y=-.03;sc.add(gr);
+  const gl=[];const S=P/4,E=R*1.4;for(let v=-E;v<=E+1e-4;v+=S){gl.push(v,0,-E,v,0,E,-E,0,v,E,0,v)}
+  sc.add(new THREE.LineSegments(segGeo(gl),LB(0x1C3560,.55)));
+  return {lines,faces,boxes,R,P};
+}
+function roads(sc,{n,P,R,color,op=.5,w=.22}){const grp=new THREE.Group(),m=B(color,op,1);
+  for(let k=-n;k<n;k++){const c=k*P+P/2,len=2*Math.sqrt(Math.max(0,R*R-c*c));if(len<1)continue;
+    const a=new THREE.Mesh(new THREE.PlaneGeometry(w,len),m);a.rotation.x=-Math.PI/2;a.position.set(c,.02,0);grp.add(a);
+    const b=new THREE.Mesh(new THREE.PlaneGeometry(len,w),m);b.rotation.x=-Math.PI/2;b.position.set(0,.021,c);grp.add(b)}
+  sc.add(grp);grp.m=m;return grp}
+function tickRing(sc,{r=12,col=CORAL,op=.8,y=.2,n=180}){const seg=[];for(let i=0;i<n;i++){const a=i/n*Math.PI*2,l=i%10?.35:.9;seg.push(Math.cos(a)*r,0,Math.sin(a)*r,Math.cos(a)*(r+l),0,Math.sin(a)*(r+l))}
+  const g=new THREE.Group();g.position.y=y;const t=new THREE.LineSegments(segGeo(seg),LB(col,op));g.add(t);
+  const ring=new THREE.Mesh(new THREE.RingGeometry(r-.05,r+.05,160),B(col,op,1));ring.rotation.x=-Math.PI/2;g.add(ring);
+  const arcm=new THREE.Mesh(new THREE.RingGeometry(r+1.2,r+1.42,96,1,0,Math.PI*.6),B(col,op*.8,1));arcm.rotation.x=-Math.PI/2;g.add(arcm);
+  sc.add(g);g.t=t;g.arc=arcm;return g}
+
+/* ===================== 7. AI VIEW: holographic street, Street view vs AI view ===================== */
+(function(){
+  const o=base('map7',{bg:0x06101D,fog:[60,125],shadow:false,fov:32});if(!o)return;
+  const H=holo(o.sc,{n:6,P:4.6,seed:23,hmax:4.6});
+  const RD=roads(o.sc,{n:6,P:4.6,R:H.R,color:0x2E5BD8,op:.35});
+  const rnd=rng(31),art=[];
+  for(let k=0;k<4;k++){const pts=[],a0=rnd()*Math.PI;for(let i=0;i<7;i++){const t=i/6;pts.push(V(Math.cos(a0)*(H.R-2*H.R*t)+(rnd()-.5)*6,.05,Math.sin(a0)*(H.R-2*H.R*t)+(rnd()-.5)*6))}
+    const m=new THREE.Mesh(new THREE.TubeGeometry(new THREE.CatmullRomCurve3(pts),90,.22,5),B(0xFF8A3C,0,1));m.scale.y=.12;o.sc.add(m);art.push(m)}
+  const M=new THREE.Matrix4(),solid=new THREE.InstancedMesh(RB,new THREE.MeshStandardMaterial({color:lin(0x3A78FF),emissive:lin(0x0D2F9A),emissiveIntensity:.7,roughness:.35,transparent:true,opacity:0}),H.boxes.length);
+  H.boxes.forEach((b,k)=>{M.makeScale(b.w*.9,b.h,b.d*.9);M.setPosition(b.x,0,b.z);solid.setMatrixAt(k,M)});o.sc.add(solid);
+  const yb=new THREE.Mesh(BOX,B(BLUE,.35,1));yb.scale.set(2.6,6,2.6);o.sc.add(yb);
+  const ye=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(2.6,6,2.6)),LB(0xffffff,.9));ye.position.y=3;o.sc.add(ye);
+  const TR=tickRing(o.sc,{r:13,col:CORAL,op:.75}),TOP=tickRing(o.sc,{r:2.4,col:CORAL,op:.9,y:7.2,n:72});
+  const nodes=[];let guard=0;while(nodes.length<15&&guard++<400){const b=H.boxes[(rnd()*H.boxes.length)|0];if(b.dist<H.R*.8&&b.dist>4)nodes.push(V(b.x,b.h+.9,b.z))}
+  nodes.push(V(0,7.2,0));const YI=nodes.length-1,edges=[];
+  nodes.forEach((p,i)=>{if(i===YI)return;edges.push([i,YI]);nodes.map((q,j)=>[q.distanceTo(p),j]).filter(x=>x[1]!==i&&x[1]!==YI).sort((a,b)=>a[0]-b[0]).slice(0,2).forEach(([,j])=>{if(i<j)edges.push([i,j])})});
+  const ew=[];edges.forEach(([i,j])=>ew.push(nodes[i].x,nodes[i].y,nodes[i].z,nodes[j].x,nodes[j].y,nodes[j].z));
+  const web=new THREE.LineSegments(segGeo(ew),LB(0xFF8A5C,.7));o.sc.add(web);
+  const marks=nodes.slice(0,YI).map(p=>{const m=new THREE.Mesh(new THREE.ConeGeometry(.32,.6,3),B(CORAL,.95,0));m.rotation.x=Math.PI;m.position.copy(p);o.sc.add(m);return m});
+  const PN=edges.length,pg=new THREE.BufferGeometry(),pp=new Float32Array(PN*3);pg.setAttribute('position',new THREE.BufferAttribute(pp,3));pg.setAttribute('a',new THREE.BufferAttribute(new Float32Array(PN).fill(1),1));
+  const pulses=new THREE.Points(pg,ptsMat(0xFFE2D6,.8));pulses.frustumCulled=false;o.sc.add(pulses);const poff=edges.map(()=>rnd());
+  const zg=[];for(let x=-6;x<=6;x+=.7)for(let z=-6;z<=6;z+=.7){const r=Math.hypot(x,z*1.25);if(r<5.6&&r>2)zg.push(x,.1,z)}
+  const zgeo=segGeo(zg);zgeo.setAttribute('a',new THREE.BufferAttribute(new Float32Array(zg.length/3).fill(1),1));const zm=ptsMat(0xffffff,.3);o.sc.add(new THREE.Points(zgeo,zm));
+  const SN=['MAIN ST','5TH AVE','OAK ST','BROADWAY','2ND AVE','PARK BLVD'];
+  const sl=SN.map((n,i)=>({l:lab(o,`<span class="street">${n}</span>`),v:i%2?V((i-3)*4.6+2.3,.1,H.R*.6):V(H.R*.55,.1,(i-3)*4.6+2.3)}));
+  const yl=lab(o,'<span class="pin"><span class="chip holo"><span class="d"></span>Glow Med Spa <small>Strongest web of facts</small></span></span>');
+  let mode=1,m=1,auto=true,flip=0;const bS=document.getElementById('tStreet'),bAI=document.getElementById('tAI'),prog=document.getElementById('prog7');
+  const set=(k,u)=>{mode=k;if(u)auto=false;bS.setAttribute('aria-pressed',k?'false':'true');bAI.setAttribute('aria-pressed',k?'true':'false')};
+  bS.onclick=()=>set(0,1);bAI.onclick=()=>set(1,1);
+  const cA=lin(0x2E5BD8),cB=lin(0xFF7A2E);
+  o.onResize=()=>{o.cam.fov=o.mob?48:32};o.resize();
+  o.tick=(t,dt)=>{
+    if(auto&&MOT){flip+=dt;if(flip>6.5){flip=0;set(mode?0:1)}}
+    m+=(mode-m)*(1-Math.exp(-dt*2.6));
+    H.lines.material.opacity=.08+.5*m;H.faces.material.opacity=.06*m;solid.material.opacity=.96*(1-m);solid.visible=m<.985;
+    RD.m.color.copy(cA).lerp(cB,1-m);RD.m.opacity=.3+.45*(1-m);art.forEach(a=>a.material.opacity=.9*(1-m));
+    web.material.opacity=.7*m;pulses.material.uniforms.op.value=m;zm.uniforms.op.value=.9*(1-m);
+    marks.forEach((k,i)=>{k.material.opacity=.95*m;k.position.y=nodes[i].y+Math.sin(t*2+i)*.15;k.rotation.y=t});
+    edges.forEach(([i,j],k)=>{const u=MOT?(t*.35+poff[k])%1:.5,a=nodes[i],b=nodes[j];pp[k*3]=a.x+(b.x-a.x)*u;pp[k*3+1]=a.y+(b.y-a.y)*u;pp[k*3+2]=a.z+(b.z-a.z)*u});pg.attributes.position.needsUpdate=true;
+    TR.t.rotation.y=t*.05;TR.arc.rotation.z=-t*.35;TOP.t.rotation.y=-t*.3;TOP.arc.rotation.z=t*.8;yb.material.opacity=.2+.2*m;
+    if(prog)prog.style.width=((t*14)%100).toFixed(1)+'%';
+    const a=.6+t*.035+o.sx*.1,R=o.mob?54:38;o.aim(V(Math.cos(a)*R,(o.mob?36:24)-o.sy*2,Math.sin(a)*R),V(0,2,0),dt);
+  };
+  o.labels=()=>{sl.forEach(s=>put(o,s.l,s.v,!o.mob));put(o,yl,V(0,8.8,0))};
+})();
+
+/* ===================== 8. SIGNAL STREAM: questions flowing to one door ===================== */
+(function(){
+  const o=base('map8',{bg:0x06101D,fog:[50,115],shadow:false,fov:34});if(!o)return;
+  const H=holo(o.sc,{n:6,P:4.6,seed:41,hmax:3.6,op:.26});
+  roads(o.sc,{n:6,P:4.6,R:H.R,color:0x2E5BD8,op:.3});
+  const rnd=rng(12),P=4.6,R=H.R,tgt=V(0,.6,0);
+  function stream(N,hex,size,mainFrac){const pos=new Float32Array(N*3),al=new Float32Array(N),g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(pos,3));g.setAttribute('a',new THREE.BufferAttribute(al,1));
+    const pts=new THREE.Points(g,ptsMat(hex,size));pts.frustumCulled=false;o.sc.add(pts);const S=[];
+    const spawn=q=>{if(rnd()<mainFrac){q.s=V((rnd()-.5)*.9,.25,R*(.3+rnd()*.7));q.c=V((rnd()-.5)*.4,.25,q.s.z*.45)}else{const ln=(((rnd()*12)|0)-6)*P+P/2;if(rnd()<.5){q.s=V(ln,.25,(rnd()*2-1)*R*.9);q.c=V(ln,.25,0)}else{q.s=V((rnd()*2-1)*R*.9,.25,ln);q.c=V(0,.25,ln)}}q.u=0;q.sp=.1+rnd()*.2};
+    for(let i=0;i<N;i++){const q={};spawn(q);q.u=rnd();S.push(q)}
+    return {tick(dt){for(let i=0;i<N;i++){const q=S[i];q.u+=q.sp*dt*MOT;if(q.u>=1)spawn(q);const u=q.u,iu=1-u,A=iu*iu,Bq=2*iu*u,C=u*u;
+      pos[i*3]=A*q.s.x+Bq*q.c.x+C*tgt.x;pos[i*3+1]=A*q.s.y+Bq*q.c.y+C*tgt.y;pos[i*3+2]=A*q.s.z+Bq*q.c.z+C*tgt.z;al[i]=Math.sin(Math.PI*Math.min(1,u*1.04))*.95}
+      g.attributes.position.needsUpdate=true;g.attributes.a.needsUpdate=true}};
+  }
+  const S1=stream(o.mob?900:2000,0xCFDBFF,.34,.4),S2=stream(o.mob?260:560,CORAL,.46,.5);
+  const ret=new THREE.Group();o.sc.add(ret);
+  [[1.3,1.45,CORAL,.9],[2.3,2.36,0x9DB3F5,.7],[3.3,3.34,0x9DB3F5,.35]].forEach(([a,b,c,op])=>{const r=new THREE.Mesh(new THREE.RingGeometry(a,b,96),B(c,op,1));r.rotation.x=-Math.PI/2;r.position.y=.3;ret.add(r)});
+  const TK=tickRing(o.sc,{r:4.2,col:CORAL,op:.6,y:.3,n:90});
+  const cr=[];[[-7,0,-2.4,0],[2.4,0,7,0],[0,-7,0,-2.4],[0,2.4,0,7]].forEach(s=>cr.push(s[0],.3,s[1],s[2],.3,s[3]));o.sc.add(new THREE.LineSegments(segGeo(cr),LB(CORAL,.7)));
+  const beacon=new THREE.Mesh(new THREE.CylinderGeometry(.05,.05,14,8),B(CORAL,.55,1));beacon.position.y=7;o.sc.add(beacon);
+  const QS=['best med spa near me','Botox open now','lip filler near me','HydraFacial tonight','top rated injector','laser hair removal near me','med spa with good reviews'];
+  const chips=[0,1,2,3,4].map(i=>({l:lab(o,''),u:i/5,s:null,i}));
+  const dl=lab(o,'<span class="pin"><span class="chip holo"><span class="d"></span>Glow Med Spa</span></span>');
+  o.onResize=()=>{o.cam.fov=o.mob?50:34};o.resize();
+  o.tick=(t,dt)=>{S1.tick(dt);S2.tick(dt);TK.t.rotation.y=t*.2;TK.arc.rotation.z=-t*.6;ret.rotation.y=t*.3;beacon.material.opacity=.4+Math.sin(t*3)*.15;
+    chips.forEach(c=>{c.u+=dt*.2*MOT;if(!c.s||c.u>=1){if(c.s)c.u=0;const th=rnd()*Math.PI*2,r=R*(.45+rnd()*.4);c.s=V(Math.cos(th)*r,1.6,Math.sin(th)*r);setLab(c.l,`<span class="chip holo mini">"${QS[(rnd()*QS.length)|0]}"</span>`)}
+      c.p=c.s.clone().lerp(V(0,1.6,0),ease(c.u));c.l.s.style.opacity=Math.max(0,Math.min(1,c.u*5,(1-c.u)*3)).toFixed(2)});
+    const a=1.1+Math.sin(t*.08)*.35+o.sx*.08,rr=o.mob?20:16;o.aim(V(Math.cos(a)*rr,(o.mob?54:40)-o.sy*2,Math.sin(a)*rr),V(0,0,0),dt);
+  };
+  o.labels=()=>{chips.forEach(c=>c.p&&put(o,c.l,c.p,!o.mob||c.i<3));put(o,dl,V(0,3,0))};
+})();
+
+/* ===================== 9. OLD WAY vs NEW WAY ===================== */
+(function(){
+  const o=base('map9',{fog:[60,130],fov:30});if(!o)return;
+  const fl=new THREE.Mesh(new THREE.PlaneGeometry(160,90),mStd(0xE9E2D3));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;o.sc.add(fl);
+  const L=shop(o.sc,{x:-10,z:1,s:.75,col:0x9AA6BA,mark:false}),Rt=shop(o.sc,{x:10,z:1,s:.75});
+  const dv=new THREE.Mesh(new THREE.PlaneGeometry(.05,12),new THREE.MeshBasicMaterial({color:lin(INK),transparent:true,opacity:.1}));dv.position.set(0,6,0);o.sc.add(dv);
+  const VN=['Local SEO agency','Web management team','PR group','YouTube video producer','Listings software','Review management','Google profile manager','Content ranking tool','AI monitoring tool'];
+  const rnd=rng(17);
+  const mkLine=(hex,op)=>{const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.BufferAttribute(new Float32Array(48*3),3));const ln=new THREE.Line(g,new THREE.LineBasicMaterial({color:lin(hex),transparent:true,opacity:op}));ln.frustumCulled=false;o.sc.add(ln);return ln};
+  const vend=VN.map((n,i)=>{const a=i/9*Math.PI*2+rnd()*.4,r=5+rnd()*2.2,x=-10+Math.cos(a)*r,z=1+Math.sin(a)*r*.8,h=.8+rnd()*1.4;
+    const m=new THREE.Mesh(RB,mStd([0xD7DBE3,0xE6E0D4,0xCFD5DF][i%3]));m.scale.set(1.3,h,1.3);m.position.set(x,0,z);m.castShadow=m.receiveShadow=true;o.sc.add(m);
+    return {top:V(x,h+.1,z),ln:mkLine(0x7C8799,.75),ph:rnd()*9,l:lab(o,`<span class="chip dim mini">${n}</span>`)}});
+  const cross=[];for(let k=0;k<8;k++){const a=vend[(rnd()*9)|0],b=vend[(rnd()*9)|0];if(a!==b)cross.push({a,b,ln:mkLine(0xA0A8B5,.5),ph:rnd()*9})}
+  const shopTop=V(-10,2.4,1);
+  function wob(ln,a,b,ph,t,amp){const pos=ln.geometry.attributes.position;for(let i=0;i<48;i++){const u=i/47,w=Math.sin(u*Math.PI)*amp;pos.setXYZ(i,a.x+(b.x-a.x)*u+Math.sin(u*9+t*1.7+ph)*w,a.y+(b.y-a.y)*u+Math.sin(u*Math.PI)*2.2+Math.sin(u*7+t*2.3+ph)*w*.6,a.z+(b.z-a.z)*u+Math.cos(u*8+t*1.3+ph)*w)}pos.needsUpdate=true}
+  const rec=new THREE.Group();rec.position.set(10,7,1);o.sc.add(rec);
+  rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(1.1,0),new THREE.MeshStandardMaterial({color:lin(BLUE),roughness:.15,metalness:.3,flatShading:true})));
+  rec.add(new THREE.Mesh(new THREE.OctahedronGeometry(.38,0),new THREE.MeshBasicMaterial({color:new THREE.Color(CORAL)})));
+  const srcs=Array.from({length:11},(_,i)=>{const a=i/11*Math.PI*2,x=10+Math.cos(a)*5.6,z=1+Math.sin(a)*4.2;const d=new THREE.Mesh(new THREE.CylinderGeometry(.32,.32,.16,24),mStd(i%3?BLUE:CORAL,{roughness:.35}));d.position.set(x,.1,z);d.castShadow=true;o.sc.add(d);const A=arc(o.sc,INK,{n:40,size:.7});A.set(V(x,.3,z),V(10,7,1),1.5);return {A,off:i/11}});
+  const beam=arc(o.sc,CORAL,{n:50,size:.8});beam.set(V(10,6.2,1),V(10,2.7,1),0);
+  const lL=lab(o,'<span class="chip dim"><span class="d"></span>9 vendors · 9 logins · 9 invoices</span>');
+  const lR=lab(o,'<span class="chip you"><span class="d"></span>One Blueprint&trade; · one team · one report</span>');
+  o.onResize=()=>{o.cam.fov=o.mob?44:30;setLab(lL,`<span class="chip dim"><span class="d"></span>${o.mob?'9 vendors':'9 vendors · 9 logins · 9 invoices'}</span>`);setLab(lR,`<span class="chip you"><span class="d"></span>${o.mob?'One Blueprint&trade;':'One Blueprint&trade; · one team · one report'}</span>`)};o.resize();
+  o.tick=(t,dt)=>{L.pulse(t*.3);Rt.pulse(t);const T=MOT?t:0;
+    vend.forEach(v=>wob(v.ln,v.top,shopTop,v.ph,T,.6));cross.forEach(c=>wob(c.ln,c.a.top,c.b.top,c.ph,T,.9));
+    rec.rotation.y=t*.5;rec.position.y=7+Math.sin(t*1.2)*.2;srcs.forEach(s=>s.A.anim(MOT?(t*.5+s.off)%1:.6,.9));beam.anim(MOT?(t*.8)%1:.6,1);
+    if(!o.fz&&t>1)o.freeze();
+    o.aim(V(Math.sin(t*.07)*3+o.sx*2,(o.mob?17:15)-o.sy,o.mob?40:31),V(0,o.mob?4:2.6,1),dt);
+  };
+  o.labels=()=>{vend.forEach(v=>put(o,v.l,V(v.top.x,v.top.y+.6,v.top.z),!o.mob));put(o,lL,V(-10,9.6,1));put(o,lR,V(10,9.6,1))};
+})();
+
+/* ===================== 10. THE MONTHLY REPORT on a floating tablet ===================== */
+(function(){
+  const o=base('map10',{bg:0xECE6D6,fog:[40,95],fov:30,sun:[10,30,18]});
+  const fl=new THREE.Mesh(new THREE.CircleGeometry(50,64),mStd(0xE4DCCB));fl.rotation.x=-Math.PI/2;fl.receiveShadow=true;o.sc.add(fl);
+  const TS=o.mob?1.5:1.9;o.crisp=true;function canvasTex(w,h,draw){const c=document.createElement('canvas');c.width=Math.round(w*TS);c.height=Math.round(h*TS);const x=c.getContext('2d');x.setTransform(TS,0,0,TS,0,0);draw(x,w,h);const tx=new THREE.CanvasTexture(c);tx.encoding=THREE.sRGBEncoding;tx.anisotropy=16;tx.generateMipmaps=true;tx.minFilter=THREE.LinearMipmapLinearFilter;tx.redraw=()=>{x.clearRect(0,0,w,h);draw(x,w,h);tx.needsUpdate=true};return tx}
+  const rr=(x,X,Y,W,H,R)=>{x.beginPath();x.moveTo(X+R,Y);x.arcTo(X+W,Y,X+W,Y+H,R);x.arcTo(X+W,Y+H,X,Y+H,R);x.arcTo(X,Y+H,X,Y,R);x.arcTo(X,Y,X+W,Y,R);x.closePath()};
+  const HF='"Bricolage Grotesque",system-ui,sans-serif',TF='"Hanken Grotesk",system-ui,sans-serif';
+  function report(x,w,h){
+    x.fillStyle='#F7F5F0';x.fillRect(0,0,w,h);x.fillStyle='#0B1A2E';x.fillRect(0,0,w,110);
+    x.fillStyle='#1F4FE0';x.beginPath();x.moveTo(62,24);x.lineTo(104,88);x.lineTo(84,88);x.lineTo(62,58);x.lineTo(40,88);x.lineTo(20,88);x.closePath();x.fill();
+    x.fillStyle='#FF5A3C';x.beginPath();x.moveTo(62,24);x.lineTo(72,40);x.lineTo(52,40);x.closePath();x.fill();
+    x.fillStyle='#fff';x.font='700 34px '+HF;x.fillText('Monthly AI report',130,68);
+    x.fillStyle='#9DB3F5';x.font='600 22px '+TF;x.textAlign='right';x.fillText('Glow Med Spa · Example',w-50,68);x.textAlign='left';
+    x.fillStyle='#fff';rr(x,50,150,620,700,24);x.fill();
+    x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('Who names you',90,212);
+    [['ChatGPT',1],['Gemini',1],['Google AI Mode',1],['Perplexity',1],['Claude',1],['Microsoft Copilot',0]].forEach(([n,ok],i)=>{const y=290+i*92;x.fillStyle='#ECE7DC';x.fillRect(90,y-50,540,2);
+      x.fillStyle='#0B1A2E';x.font='500 27px '+TF;x.fillText(n,90,y);x.fillStyle=ok?'#E3F4EC':'#FFE9E4';rr(x,450,y-34,170,46,23);x.fill();
+      x.fillStyle=ok?'#2F9E6E':'#E8452A';x.font='700 21px '+HF;x.textAlign='center';x.fillText(ok?'Named':'In progress',535,y-3);x.textAlign='left'});
+    x.fillStyle='#fff';rr(x,710,150,840,430,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('How often AI names you',750,212);
+    x.fillStyle='#6E7887';x.font='500 20px '+TF;x.textAlign='right';x.fillText('Example',1510,212);x.textAlign='left';
+    const pts=[[0,.12],[.2,.2],[.4,.34],[.6,.52],[.8,.7],[1,.88]],cx=760,cy=520,cw=740,ch=260;
+    x.strokeStyle='#ECE7DC';x.lineWidth=2;for(let k=0;k<4;k++){x.beginPath();x.moveTo(cx,cy-k*ch/3);x.lineTo(cx+cw,cy-k*ch/3);x.stroke()}
+    const path=()=>{x.beginPath();pts.forEach(([u,v],k)=>{const X=cx+u*cw,Y=cy-v*ch;k?x.lineTo(X,Y):x.moveTo(X,Y)})};
+    const g=x.createLinearGradient(0,cy-ch,0,cy);g.addColorStop(0,'rgba(31,79,224,.3)');g.addColorStop(1,'rgba(31,79,224,0)');
+    path();x.lineTo(cx+cw,cy);x.lineTo(cx,cy);x.closePath();x.fillStyle=g;x.fill();path();x.strokeStyle='#1F4FE0';x.lineWidth=5;x.lineJoin='round';x.stroke();
+    pts.forEach(([u,v],k)=>{x.beginPath();x.arc(cx+u*cw,cy-v*ch,k===5?11:6,0,7);x.fillStyle=k===5?'#FF5A3C':'#1F4FE0';x.fill()});
+    x.fillStyle='#6E7887';x.font='500 19px '+TF;x.textAlign='center';for(let k=0;k<6;k++)x.fillText('Month '+(k+1),cx+k*cw/5,cy+40);x.textAlign='left';
+    x.fillStyle='#fff';rr(x,710,610,840,240,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('Screenshots, as proof',750,668);
+    for(let k=0;k<3;k++){const X=750+k*265,Y=694;x.fillStyle='#F1EEE7';rr(x,X,Y,240,132,14);x.fill();x.fillStyle='#fff';rr(x,X+16,Y+16,150,28,14);x.fill();x.fillStyle='#1F4FE0';rr(x,X+60,Y+54,164,30,14);x.fill();x.globalAlpha=.45;rr(x,X+60,Y+92,120,22,11);x.fill();x.globalAlpha=1}
+    x.fillStyle='#fff';rr(x,50,880,1500,160,24);x.fill();x.fillStyle='#0B1A2E';x.font='700 30px '+HF;x.fillText('What changed this month',90,940);
+    ['Fixed your hours across directories','Answered common questions','Labeled your photos for AI'].forEach((s,k)=>{x.fillStyle='#2F9E6E';x.beginPath();x.arc(100+k*490,990,9,0,7);x.fill();x.fillStyle='#46526A';x.font='500 24px '+TF;x.fillText(s,120+k*490,999)});
+  }
+  const tab=new THREE.Group();o.sc.add(tab);
+  const body=new THREE.Mesh(RB,mStd(INK,{roughness:.3,metalness:.25}));body.scale.set(9.5,.34,6.7);body.position.y=-.34;body.castShadow=true;tab.add(body);
+  const tex=canvasTex(1600,1080,report);
+  const scr=new THREE.Mesh(new THREE.PlaneGeometry(8.95,6.04),new THREE.MeshBasicMaterial({map:tex}));scr.rotation.x=-Math.PI/2;scr.position.y=.012;tab.add(scr);
+  tab.rotation.x=.66;tab.position.set(0,3.4,0);
+  const CARDS=[['ChatGPT','Named you this month',1,V(-3.2,6.7,2.4)],['Screenshot saved','Proof for every answer',0,V(3.4,5.9,1.6)],['Gemini','Named you this month',1,V(3,1.3,5.4)]];
+  const cards=CARDS.map(([a,b,ok,p],i)=>{const tx=canvasTex(560,180,(x,w,h)=>{x.fillStyle='#fff';rr(x,4,4,w-8,h-8,34);x.fill();x.fillStyle=ok?'#E3F4EC':'#E7EDFC';x.beginPath();x.arc(84,90,42,0,7);x.fill();
+      x.strokeStyle=ok?'#2F9E6E':'#1F4FE0';x.lineWidth=7;x.lineCap='round';x.lineJoin='round';x.beginPath();if(ok){x.moveTo(66,92);x.lineTo(80,106);x.lineTo(104,76)}else{x.rect(66,74,36,32)}x.stroke();
+      x.fillStyle='#0B1A2E';x.font='700 34px '+HF;x.fillText(a,150,82);x.fillStyle='#6E7887';x.font='500 26px '+TF;x.fillText(b,150,126)});
+    const m=new THREE.Mesh(new THREE.PlaneGeometry(4.3,1.38),new THREE.MeshBasicMaterial({map:tx,transparent:true}));m.position.copy(p);o.sc.add(m);return {m,tx,p,i}});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{tex.redraw();cards.forEach(c=>c.tx.redraw())});
+  o.onResize=()=>{o.cam.fov=o.mob?44:30};o.resize();
+  o.tick=(t,dt)=>{tab.position.y=3.4+Math.sin(t*.9)*.18;tab.rotation.y=Math.sin(t*.22)*.22;tab.rotation.z=Math.sin(t*.3)*.03;
+    cards.forEach(c=>{c.m.position.set(c.p.x,c.p.y+Math.sin(t*1.1+c.i*2)*.25,c.p.z);c.m.lookAt(o.cam.position)});
+    o.aim(V(Math.sin(t*.12)*(o.mob?.6:1.2)+o.sx*1.2,(o.mob?10.5:10)-o.sy,o.mob?15.5:20.5),V(0,3.2,0),dt);
+  };
+})();
+
+requestAnimationFrame(loop);
+})();
+</script>
+<script>
+(function(){
+  var d=document.documentElement;
+  try{ var q=new URLSearchParams(location.search); if(q.has('loggedin'))d.dataset.auth='in'; else if(/(^|;\s*)lair_auth=1/.test(document.cookie))d.dataset.auth='in'; }catch(e){}
+  var dds=[].slice.call(document.querySelectorAll('.lv-dd'));
+  function closeAll(x){dds.forEach(function(dd){if(dd!==x){dd.classList.remove('open');dd.querySelector('.lv-top').setAttribute('aria-expanded','false')}})}
+  dds.forEach(function(dd){
+    var b=dd.querySelector('.lv-top'),t;
+    b.addEventListener('click',function(){if(dd.classList.contains('open')&&Date.now()-(dd._ht||0)<700)return;var o=!dd.classList.contains('open');closeAll(dd);dd.classList.toggle('open',o);b.setAttribute('aria-expanded',o)});
+    dd.addEventListener('mouseenter',function(){if(matchMedia('(hover:hover)').matches){clearTimeout(t);if(!dd.classList.contains('open'))dd._ht=Date.now();closeAll(dd);dd.classList.add('open');b.setAttribute('aria-expanded','true')}});
+    dd.addEventListener('mouseleave',function(){if(matchMedia('(hover:hover)').matches){t=setTimeout(function(){dd.classList.remove('open');b.setAttribute('aria-expanded','false')},160)}});
+  });
+  document.addEventListener('click',function(e){if(!e.target.closest('.lv-dd'))closeAll()});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){closeAll();closeDrawer()}});
+  var s=document.querySelector('.lv-search');
+  if(s)s.addEventListener('click',function(){var i=s.querySelector('input');if(getComputedStyle(i).display==='none'){openDrawer();setTimeout(function(){var di=document.getElementById('lvdq');di&&di.focus()},60)}});
+  var dr=document.getElementById('lv-drawer'),bg=document.querySelector('.lv-burger');
+  function show(n){[].forEach.call(dr.querySelectorAll('[data-lv-panel]'),function(p){p.hidden=p.getAttribute('data-lv-panel')!==n});dr.querySelector('.lv-l1').hidden=n!==null;dr.scrollTop=0}
+  function openDrawer(){if(!dr)return;dr.hidden=false;show(null);document.body.classList.add('lv-lock');bg&&bg.setAttribute('aria-expanded','true')}
+  function closeDrawer(){if(!dr||dr.hidden)return;dr.hidden=true;document.body.classList.remove('lv-lock');bg&&bg.setAttribute('aria-expanded','false');bg&&bg.focus()}
+  if(bg)bg.addEventListener('click',openDrawer);
+  if(dr){
+    [].forEach.call(dr.querySelectorAll('[data-lv]'),function(b){b.addEventListener('click',function(){show(b.getAttribute('data-lv'))})});
+    [].forEach.call(dr.querySelectorAll('.lv-backb'),function(b){b.addEventListener('click',function(){show(null)})});
+    [].forEach.call(dr.querySelectorAll('.lv-x'),function(b){b.addEventListener('click',closeDrawer)});
+  }
+})();
+</script>
+<script id="skipfix">(function(){var s=document.getElementById("iskip");if(s&&!s.onclick)s.onclick=function(){var h=document.getElementById("hero");if(h)scrollTo({top:h.getBoundingClientRect().top+scrollY,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}})()</script><script id="a11yfix">addEventListener("load",function(){document.querySelectorAll("main div,main figure,main table,main section,main pre").forEach(function(e){if(e.scrollWidth>e.clientWidth+2&&/(auto|scroll)/.test(getComputedStyle(e).overflowX)&&!e.querySelector("a,button,input,select,textarea,[tabindex]")&&!e.hasAttribute("tabindex")){e.tabIndex=0;if(!e.getAttribute("role"))e.setAttribute("role","group");if(!e.getAttribute("aria-label"))e.setAttribute("aria-label","Scrollable content")}})})</script></body>
+</html>
