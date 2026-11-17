@@ -5,7 +5,7 @@ html{-webkit-text-size-adjust:100%}body{margin:0;background:#fff}img{max-width:1
 .x .ph .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,80px);align-items:center}
 .x .ph h1{font-size:clamp(38px,4.4vw,60px);line-height:1.08}
 .x .ph .sub{margin:22px 0 32px;max-width:30em}
-.x .ph .crd{background:#fff;border-radius:24px;padding:clamp(20px,2.4vw,32px);box-shadow:0 30px 70px -40px rgba(11,26,46,.4)}
+.x .ph .crd{min-width:0;overflow-wrap:anywhere;background:#fff;border-radius:24px;padding:clamp(20px,2.4vw,32px);box-shadow:0 30px 70px -40px rgba(11,26,46,.4)}
 .x .ph .crd h4,.x .kv h4{margin:0 0 14px;font:600 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);display:flex;align-items:center;gap:8px}
 .x .ph .crd h4::before,.x .kv h4::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--blue)}
 .x .kv .r{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
@@ -69,7 +69,7 @@ a.gc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(11,26,46
 .x .note{font-size:14px;color:var(--ink2);border-left:2px solid var(--blue);padding:4px 0 4px 16px;margin-top:40px;max-width:44em}
 .x .studies a.sl{display:grid;grid-template-columns:140px 1fr auto;gap:24px;align-items:start;padding:26px 0}.x .studies a.sl span{white-space:normal}
 .x .ctr{text-align:center}.x .ctr .sub{margin:20px auto 0;max-width:34em}
-.x .bstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:48px;padding-top:28px;border-top:1px solid #DCD6C8;text-align:left}
+.x .bstats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow-wrap:anywhere;gap:24px;margin-top:48px;padding-top:28px;border-top:1px solid #DCD6C8;text-align:left}
 .x .bstats b{display:block;font:400 clamp(30px,3vw,42px)/1.1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em}.x .bstats p{font-size:14px;color:var(--ink2);margin-top:8px}.x .bstats small{display:block;font-size:12px;color:var(--soft);margin-top:6px}
 @media(max-width:980px){
  .x .ph .in,.x .row,.x .story,.x .st.wide{grid-template-columns:minmax(0,1fr)}.x .row.flip>div:first-child{order:0}
@@ -77,7 +77,7 @@ a.gc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(11,26,46
  .x .glance{position:static;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}
 }
 @media(max-width:640px){
- .x .grid,.x .trio,.x .steps4,.x .stories,.x .two2,.x .keys{grid-template-columns:1fr}.x .team{grid-template-columns:1fr 1fr}
+ .x .grid,.x .trio,.x .steps4,.x .stories,.x .two2,.x .keys{grid-template-columns:1fr}.x .bstats{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px 14px}.x .team{grid-template-columns:1fr 1fr}
  .x .shot{grid-template-columns:1fr}.x .studies a.sl{grid-template-columns:1fr;gap:8px}.x .st{padding:24px}.x .row .sky{min-height:0}
  .x .ph{border-radius:0 0 28px 28px}
 }
@@ -163,12 +163,12 @@ a.gc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(11,26,46
 <section class="close"><div class="in ctr"><span class="eb">The 90-day guarantee</span><h2><span class="g">Be the business AI names</span><br>when people nearby&nbsp;ask.</h2>
 <p class="sub" style="color:rgba(255,255,255,.7)">Named in AI in 90 days. If not, we keep working for free until&nbsp;it&nbsp;happens.</p>
 <div class="xbs"><a class="xb w" href="../../../drafts/home-2/start/">Get my free AI audit<i>&rsaquo;</i></a><a class="xb o" href="../../../drafts/home-2/guarantee/">How the guarantee works</a></div></div></section></main><footer class="ft2"><div class="in"><div class="fcols">
-<div><b>How it works</b><a href="../../../drafts/home-2/how-it-works/">Overview</a><a href="../../../drafts/home-2/blueprint/">The Blueprint</a><a href="../../../drafts/home-2/guarantee/">The 90-day guarantee</a><a href="../../../drafts/home-2/pricing/">Pricing</a><a href="../../../drafts/home-2/free-audit/">Free AI audit</a><a href="../../../tour/">Sample report</a></div>
+<div><b>How it works</b><a href="../../../drafts/home-2/how-it-works/">Overview</a><a href="../../../drafts/home-2/blueprint/">The Blueprint</a><a href="../../../drafts/home-2/guarantee/">The 90-day guarantee</a><a href="../../../drafts/home-2/pricing/">Pricing</a><a href="../../../drafts/home-2/free-audit/">Free AI audit</a><a href="../tour/">Sample report</a></div>
 <div><b>Results</b><a href="../../../drafts/home-2/results/">Client stories</a><a href="../../../drafts/home-2/results/beverly-hills-rhinoplasty-center/">Beverly Hills Rhinoplasty Center</a><a href="../../../drafts/home-2/results/luxurgery/">LUXURGERY</a><a href="../../../drafts/home-2/results/define-clinic/">Define Clinic</a><a href="../../../drafts/home-2/results/injection-artistry/">Injection Artistry</a></div>
-<div><b>Research</b><a href="../../../drafts/home-2/research/">All research</a><a href="../../../research/local-answer-gap/">The Local Answer Gap</a><a href="../../../statistics/">Statistics</a><a href="../../../methodology/">Methodology</a></div>
-<div><b>Resources</b><a href="../../../drafts/home-2/resources/">All resources</a><a href="../../../guide/">Guides</a><a href="../../../tools/">Free tools</a><a href="../../../glossary/">Glossary</a><a href="../../../drafts/home-2/industries/">Industries</a></div>
-<div><b>Company</b><a href="../../../drafts/home-2/about/">About</a><a href="../../../team/">Team</a><a href="../../../careers/">Careers</a><a href="../../../press/">Press</a><a href="../../../contact/">Contact</a></div></div>
-<div class="fb"><span>&copy; 2026 Local AI Registry. 9891 Irvine Center Dr, Irvine, CA 92618. (213) 931-5633</span><span><a href="../../../legal/privacy/" style="color:inherit">Privacy</a> &nbsp; <a href="../../../legal/terms/" style="color:inherit">Terms</a></span></div></div></footer></div><script>(function(){
+<div><b>Research</b><a href="../../../drafts/home-2/research/">All research</a><a href="../../../research/local-answer-gap/">The Local Answer Gap</a><a href="../statistics/">Statistics</a><a href="../methodology/">Methodology</a></div>
+<div><b>Resources</b><a href="../../../drafts/home-2/resources/">All resources</a><a href="../guide/">Guides</a><a href="../tools/">Free tools</a><a href="../glossary/">Glossary</a><a href="../../../drafts/home-2/industries/">Industries</a></div>
+<div><b>Company</b><a href="../../../drafts/home-2/about/">About</a><a href="../team/">Team</a><a href="../careers/">Careers</a><a href="../press/">Press</a><a href="../contact/">Contact</a></div></div>
+<div class="fb"><span>&copy; 2026 Local AI Registry. 9891 Irvine Center Dr, Irvine, CA 92618. (213) 931-5633</span><span><a href="../legal/privacy/" style="color:inherit">Privacy</a> &nbsp; <a href="../legal/terms/" style="color:inherit">Terms</a></span></div></div></footer></div><script>(function(){
 var q=function(s,r){return (r||document).querySelector(s)},qa=function(s,r){return [].slice.call((r||document).querySelectorAll(s))};
 /* menu */var m=q('.xm');qa('[data-menu]').forEach(function(b){b.onclick=function(){m.classList.toggle('on')}});
 /* rotating assistant, with its logo */var ris=qa('.rot .ri'),ri=0;
