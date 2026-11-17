@@ -205,6 +205,11 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
 .y{color:var(--good);font-weight:700}.x{color:var(--mute)}
 
 /* Spiritleaf Brentwood additions */
+.plan .save{align-self:flex-start;margin:8px 0 0}
+.plan .free{display:inline-block;align-self:flex-start;margin:8px 0 0;background:var(--blue-soft);color:var(--blue);font:700 13px 'Bricolage Grotesque',sans-serif;padding:4px 10px;border-radius:999px}
+.plan .was{margin-bottom:2px}
+.offer{background:var(--good-soft);border:1px solid var(--good);border-radius:16px;padding:16px 18px;margin:0 0 26px;color:var(--ink)}
+.offer b{color:var(--good)}
 .plans{grid-template-columns:repeat(3,1fr)}
 .plan .cad{display:block;font-size:14px;color:var(--mute);margin:6px 0 14px}
 .plan h3{font-size:22px}
@@ -255,7 +260,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
     <h2>Built around what you told us.</h2>
     <p class="sub">Nic, Nathan, Steve and Bridgette, Nov 12. Every recommendation below ties back to one of these.</p>
     <div class="heard">
-      <article><h3>&ldquo;Five grand a month off my net would hurt too much.&rdquo;</h3><p>Heard. We recommend starting at $3,000, not $5,000, and there&rsquo;s a $1,500 plan that fixes the facts AI has wrong. Every plan is month to month.</p></article>
+      <article><h3>&ldquo;Five grand a month off my net would hurt too much.&rdquo;</h3><p>Heard. We recommend starting at $3,000, not $5,000, and there&rsquo;s a $1,500 plan that fixes the facts AI has wrong. Every plan is month to month, and the first month is free.</p></article>
       <article><h3>&ldquo;Next December my 10-year contract is up.&rdquo;</h3><p>Start in December and the 90-day build is done by March, with nine months of results before your contract ends. What we build stays with the store whichever way you go.</p></article>
       <article><h3>&ldquo;How do we grab these customers when my price point is higher?&rdquo;</h3><p>By telling AI what price can&rsquo;t: craft SKUs nobody else in the Park carries, long-time staff who educate, people driving in from Edmonton. Price shoppers go to the discounters. The &ldquo;what&rsquo;s good&rdquo; questions should come to you.</p></article>
       <article><h3>&ldquo;Is that what you&rsquo;ve seen, four customers a day?&rdquo;</h3><p>Fair question, so we redid the math with only real Google numbers. It&rsquo;s smaller than what we showed on the call, and we say so below. The plan is priced against that floor.</p></article>
@@ -380,11 +385,13 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
     <p class="eyebrow">Your three options for Brentwood</p>
     <h2>Pick one to see what changes.</h2>
     <p class="sub">All three are month to month, with no setup fee and no contract. Prices are in US dollars, as Steve mentioned on the call; Canadian amounts are approximate at today&rsquo;s exchange rate. Tap a plan to highlight it.</p>
+    <div class="offer"><b>Two offers from Thursday&rsquo;s call.</b> Your first month is free on any plan, so you see the work before you pay for it. And as our first Canadian dispensary, Authority is 25% off: $3,750 a month instead of $5,000, if you sign by November 30.</div>
     <div class="plans" role="group" aria-label="Choose a plan">
       <button class="plan" type="button" data-plan="rec" aria-pressed="false">
         <span class="tier">Fix the facts</span>
         <h3>Get Recommended</h3>
         <span class="price num">$1,500<small>/mo</small></span>
+        <span class="free">First month free</span>
         <span class="cad">about C$2,040</span>
         <ul>
           <li>Claim and fill in your registry record</li>
@@ -399,6 +406,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
         <span class="tier">Fix the facts and win the map</span>
         <h3>Own Your Market</h3>
         <span class="price num">$3,000<small>/mo</small></span>
+        <span class="free">First month free</span>
         <span class="cad">about C$4,080</span>
         <ul>
           <li><b>Everything in Get Recommended, plus:</b></li>
@@ -411,8 +419,11 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
       <button class="plan" type="button" data-plan="auth" aria-pressed="false">
         <span class="tier">Our full program</span>
         <h3>Authority</h3>
-        <span class="price num">$5,000<small>/mo</small></span>
-        <span class="cad">about C$6,800</span>
+        <span class="was">$5,000/mo</span>
+        <span class="price num">$3,750<small>/mo</small></span>
+        <span class="save">25% off: first Canadian dispensary, ends Nov 30</span>
+        <span class="free">First month free</span>
+        <span class="cad">about C$5,100</span>
         <ul>
           <li><b>Everything in Own Your Market, plus:</b></li>
           <li>Store videos on YouTube, 2 a month</li>
@@ -429,14 +440,14 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
       <tbody>
         <tr><td>Get Recommended</td><td class="r">C$2,040</td><td class="r">50</td><td class="r">1.7</td></tr>
         <tr><td><b>Own Your Market</b></td><td class="r">C$4,080</td><td class="r">99</td><td class="r"><b>3.3</b></td></tr>
-        <tr><td>Authority</td><td class="r">C$6,800</td><td class="r">166</td><td class="r">5.5</td></tr>
+        <tr><td>Authority, at $3,750</td><td class="r">C$5,100</td><td class="r">124</td><td class="r">4.1</td></tr>
       </tbody>
     </table></div>
     <p class="sub" style="margin:14px 0 0">On the call you worked out 4.4 extra people a day for $6,000. Here&rsquo;s the honest version. Google searches alone, at your C$41 and US return rates, come to about C$2,300 a month once running: enough to cover Get Recommended, and a little over half of Own Your Market. The rest has to come from what that floor leaves out: the map spot for &ldquo;dispensary sherwood park&rdquo; (480 searches a month, and you&rsquo;re not in it), questions people ask ChatGPT that Google never counts, and the &ldquo;near me&rdquo; searches Google hides for cannabis. That&rsquo;s exactly the work Own Your Market adds, which is why we recommend it over the $1,500 plan.</p>
 
     <div class="tw" style="margin-top:28px"><table class="demand cmp">
       <caption>Side by side</caption>
-      <thead><tr><th>What we do</th><th class="r">Get Recommended<br>$1,500</th><th class="r">Own Your Market<br>$3,000</th><th class="r">Authority<br>$5,000</th></tr></thead>
+      <thead><tr><th>What we do</th><th class="r">Get Recommended<br>$1,500</th><th class="r">Own Your Market<br>$3,000</th><th class="r">Authority<br><s>$5,000</s> $3,750</th></tr></thead>
       <tbody>
         <tr><td>Claim and fill in the Local AI Registry record, answer customer questions</td><td class="r y">✓</td><td class="r y">✓</td><td class="r y">✓</td></tr>
         <tr><td>One name, address, phone and hours on 40+ directories, synced weekly</td><td class="r y">✓</td><td class="r y">✓</td><td class="r y">✓</td></tr>
@@ -454,6 +465,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
         <tr><td>Best-of guides and craft features for Sherwood Park and Edmonton shoppers</td><td class="r x">–</td><td class="r x">–</td><td class="r">1 a month</td></tr>
         <tr><td>Vetted links to your store site</td><td class="r x">–</td><td class="r">Cleanup</td><td class="r">5 a month</td></tr>
         <tr><td>90-day money-back guarantee on the results we agree at kickoff</td><td class="r y">✓</td><td class="r y">✓</td><td class="r y">✓</td></tr>
+        <tr><td>First month free</td><td class="r y">✓</td><td class="r y">✓</td><td class="r y">✓</td></tr>
         <tr><td>Month to month, cancel anytime; the fixes stay yours</td><td class="r y">✓</td><td class="r y">✓</td><td class="r y">✓</td></tr>
       </tbody>
     </table></div>
@@ -463,10 +475,10 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
 <section>
   <div class="wrap">
     <p class="eyebrow">The first 90 days on Own Your Market</p>
-    <h2>Start in December, finished by March.</h2>
+    <h2>Start in December free, finished by March.</h2>
     <p class="sub">It takes about three months for AI and Google to pick up the changes, which is why starting now matters. A December start leaves nine months of results before your contract is up.</p>
     <div class="months">
-      <article><h3>December: one Brentwood</h3><ul><li>Claim the registry record, link Instagram</li><li>Pick one store name; fix Leafly, Yellow Pages, MapQuest</li><li>Add Weedmaps, Foursquare, Facebook</li><li>Fix the Google profile link and categories</li></ul></article>
+      <article><h3>December (free): one Brentwood</h3><ul><li>Claim the registry record, link Instagram</li><li>Pick one store name; fix Leafly, Yellow Pages, MapQuest</li><li>Add Weedmaps, Foursquare, Facebook</li><li>Fix the Google profile link and categories</li></ul></article>
       <article><h3>January: make it readable</h3><ul><li>spiritleafsherwoodpark.ca title, description and schema</li><li>Image descriptions on the store site</li><li>First craft and staff answer pages</li><li>Instagram drops start flowing to Google</li></ul></article>
       <article><h3>February: win the map</h3><ul><li>Push for &ldquo;dispensary sherwood park&rdquo; and &ldquo;weed store&rdquo;</li><li>First press since 2019, about the store itself</li><li>Check that AI has dropped the Tisbury Street address</li><li>Day 90 check against the guarantee</li></ul></article>
     </div>
@@ -486,7 +498,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
     <div class="cta">
       <h2>Next steps</h2>
       <ol>
-        <li>Pick a plan for Brentwood. We recommend Own Your Market.</li>
+        <li>Pick a plan for Brentwood. We recommend Own Your Market. The first month is free; the 25% off Authority ends November 30.</li>
         <li>We claim the registry record and start the listing cleanup the same week.</li>
         <li>We agree the 90-day targets with you at kickoff, so the guarantee is in writing.</li>
       </ol>
@@ -499,7 +511,7 @@ footer{padding:28px 0 40px;font-size:13px;color:var(--mute)}
   <div class="wrap">
     <p class="eyebrow">Sources</p>
     <ul class="src">
-      <li>Call with Nic, Nathan Rayner, Steve Lee and Bridgette DeBrino, Nov 12, 2026 (quotes, average spend of about C$41 a visit, royalties, contract end date).</li>
+      <li>Call with Nic, Nathan Rayner, Steve Lee and Bridgette DeBrino, Nov 12, 2026 (quotes, average spend of about C$41 a visit, royalties, contract end date, the free first month and the 25% first-Canadian-dispensary discount on Authority, which Steve said ends 18 days after the call).</li>
       <li>Audit scan of Spiritleaf Brentwood and nearby competitors, Nov 12, 2026: Google map and organic results run from Sherwood Park, AB via DataForSEO; DataForSEO page tests and backlink index; Google, Leafly, Yelp, Yellow Pages, MapQuest, Where&rsquo;s Weed, Weedmaps, Facebook and Foursquare listings; AI answers from ChatGPT, Claude, Gemini and Perplexity.</li>
       <li><a href="https://localairegistry.com/biz/ab/sherwood-park/spiritleaf-sherwood-park-ab">Local AI Registry record for Spiritleaf, Sherwood Park</a>, viewed Nov 17, 2026 (AI score 34, dispensary average 39, unclaimed; ChatGPT address and hours conflicts).</li>
       <li><a href="https://spiritleaf.ca/collections/spiritleaf-sherwood-park">spiritleaf.ca store page, &ldquo;Spiritleaf Brentwood&rdquo;</a>, viewed Nov 17, 2026.</li>
