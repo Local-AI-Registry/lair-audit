@@ -1,0 +1,17 @@
+{
+ "client": "Spiritleaf Brentwood",
+ "rows": [
+  ["dispensary sherwood park", 480, ""],
+  ["weed store", 210, "Sherwood Park"],
+  ["sherwood park dispensary", 110, ""],
+  ["dispensary", 110, "Sherwood Park"],
+  ["weed sherwood park", 20, ""],
+  ["pot shop near me", 20, "Sherwood Park"],
+  ["pot shop sherwood park", 10, ""],
+  ["dispensary open now", 10, "Sherwood Park"]
+ ],
+ "price": {"value": 41, "label": "average spend per visit you gave us on our Nov 12 call (Canadian dollars)",
+   "source": "Nic, Spiritleaf Brentwood", "url": ""},
+ "vol_source": "DataForSEO, Google Ads search volume for Alberta (searches naming Sherwood Park) and for Sherwood Park (searches without a town name), November 17, 2026",
+ "left_out": "Left out to keep this conservative: “dispensaries sherwood park” (480 a month), because Google reports the exact same month-by-month numbers as “dispensary sherwood park” and counting both would double it; and “spiritleaf sherwood park”, because people searching your name already find you. Google withholds volume for most cannabis “near me” searches in Sherwood Park, including “dispensary near me” and “weed store near me”, and for every craft cannabis search we tried, so they count as zero. Searches typed into ChatGPT and other AI tools are not in Google’s numbers at all. Treat this as a floor."
+}
