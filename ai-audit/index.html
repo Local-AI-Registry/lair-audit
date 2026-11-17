@@ -968,6 +968,11 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .paytoast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;padding:14px 20px;border-radius:14px;font:700 15px var(--fb);box-shadow:0 20px 50px rgba(11,26,46,.25);max-width:calc(100vw - 32px)}
 .paytoast.ok{background:var(--ok);color:#fff}.paytoast.er{background:var(--red);color:#fff}
 #sug li.serr,#sug li.swait{cursor:default;background:#FFF8EC}#sug li.serr small{color:var(--red);font-weight:600}#sug li.swait{background:#fff}
+.tkey{margin-top:calc(.4*var(--u));padding-top:calc(.8*var(--u));border-top:1px solid var(--rule)}
+.tkopen{all:unset;cursor:pointer;font:600 calc(.92*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}.tkopen:focus-visible{outline:2px solid var(--blue)}
+.tkrow{display:none;gap:8px;margin-top:8px}.tkey[data-open] .tkrow{display:flex}.tkrow input{flex:1;min-width:0;font:500 15px var(--fb);border:1px solid var(--rule);border-radius:12px;padding:10px 12px;background:#fff}
+.tkey[data-open] .tkopen{color:var(--ink);text-decoration:none;cursor:default}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tkopen{font-size:13px;padding:8px 0}}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1276,7 +1281,8 @@ const MOB=()=>matchMedia(MQ).matches;
 function vScan(){let LV=LIVE&&!D?LIVE:null;
  if(LV){ME=LV.short||LV.name||'Your business';RAT=[LV.rt];WHO=[ME];NB=[];CRN=[];B={svc:LV.svc}}
  if(LV&&LV.err){clearInterval(scanTimer);STAGE.innerHTML='<div class="scr"><div class="scan4 ready-in"><div class="map"><div class="pan"></div></div><div class="sp" id="sp"><a class="lg" href="./" data-home>'+LOGO+'Local AI Registry</a><div class="sph"><div class="kick">AI visibility audit</div><div class="spn">'+X(ME)+'</div></div>'+
-  (LV.lead?'<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">We\'ll build the full audit for '+X(LV.name||LV.q||'your business')+'.</div><div class="sub">Our team checks how Google, ChatGPT, Gemini, Perplexity and Claude answer when customers look for a business like yours, then walks you through what\'s working and what to fix on a short call.</div><a class="btn" style="text-decoration:none" href="'+X(bookUrl(LV.name||LV.q))+'" target="_blank" rel="noopener">Book my audit call →</a><div class="sub">Or <a style="color:var(--blue);font-weight:600;text-decoration:none" href="sms:+12139315633?body='+encodeURIComponent('I\'d like my AI visibility audit for '+(LV.name||LV.q||'my business'))+'">text us</a> and we\'ll set it up.</div></div></div></div></div>':
+  (LV.lead?'<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">We\'ll build the full audit for '+X(LV.name||LV.q||'your business')+'.</div><div class="sub">Our team checks how Google, ChatGPT, Gemini, Perplexity and Claude answer when customers look for a business like yours, then walks you through what\'s working and what to fix on a short call.</div><a class="btn" style="text-decoration:none" href="'+X(bookUrl(LV.name||LV.q))+'" target="_blank" rel="noopener">Book my audit call →</a><div class="sub">Or <a style="color:var(--blue);font-weight:600;text-decoration:none" href="sms:+12139315633?body='+encodeURIComponent('I\'d like my AI visibility audit for '+(LV.name||LV.q||'my business'))+'">text us</a> and we\'ll set it up.</div>'+
+  '<form class="tkey" data-tkey novalidate'+(LV.keyBad?' data-open':'')+'><button type="button" class="tkopen">'+(LV.keyBad?'That team key wasn\'t accepted. Try again':'Team member? Run the live scan')+'</button><div class="tkrow"><input type="password" id="tk-in" autocomplete="current-password" placeholder="Team key" aria-label="Team key" maxlength="200"><button type="submit" class="pbtn">Run scan</button></div></form></div></div></div></div>':
   '<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">'+X(LV.err)+'</div><div class="sub">Text us and we\'ll send your audit, usually the same day.</div><a class="btn" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+(LV.name||LV.q||'my business')+(LV.id?' ('+LV.id+')':''))+'">Text us for my audit →</a></div></div></div></div>');return}
  const FIND=LV?[[],[],[],[],[],[]]:findings();let k=0,q=0,paused=RM&&!LV,seq=0,lastEng='';const mob=MOB();
  /* layout: where "you" sits on the map, and where competitors go around it */
@@ -1594,6 +1600,10 @@ function leadOpen(){const w=document.createElement('div');w.className='gpx';w.se
     say('Done. '+j.planned.filter(x=>x.step===0).map(x=>x.channel==='text'?'A text':'The audit email').join(' and ')+' goes out within 15 minutes, then '+j.planned.filter(x=>x.step>0).length+' follow-ups.'+(j.held_for_address?' (Emails wait until the mailing address is set.)':''),true);btn.textContent='Scheduled ✓'})
    .catch(er=>{btn.disabled=false;say(X(er.message||'That didn\'t go through. Try again.'))})})}
 STAGE.addEventListener('click',e=>{if(e.target.closest('.prlead'))leadOpen()});
+/* team key entered on the booking card: keep it in this browser and start the live scan */
+STAGE.addEventListener('click',e=>{const o=e.target.closest('.tkopen');if(!o)return;const f=o.closest('form');f.setAttribute('data-open','');const i=f.querySelector('input');i&&i.focus()});
+STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-tkey]');if(!f)return;e.preventDefault();const k=(f.querySelector('input').value||'').trim();if(!k||!LIVE)return;
+ TEAM=k;try{localStorage.setItem('lair-team',k)}catch(er){}const L=LIVE;liveScan({id:L.id,q:L.q,name:L.name})});
 /* coming back from a bank check during payment */
 if(QP.get('redirect_status')){const okp=QP.get('redirect_status')==='succeeded';setTimeout(()=>{const t=document.createElement('div');t.className='paytoast '+(okp?'ok':'er');t.setAttribute('role','status');t.textContent=okp?'Payment received. You\'re all set, and we\'ll email your receipt.':'Your payment didn\'t go through. Nothing was charged.';document.body.appendChild(t);setTimeout(()=>t.remove(),9000)},800)}
 /* compact plan card used beside the detail tables */
@@ -1752,12 +1762,12 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
  const setHit=b=>{if(!b||b.lat==null||L.hit)return;L.hit={loc:[b.lng,b.lat],short:b.short||b.name,name:b.full||b.name,rt:b.rating,n:b.reviews,area:b.area,hours:b.hours,cq:L.svc||''};
   L.short=b.short||L.short;L.rt=b.rating;if(cur==='scan')mapFocus()};
  (async()=>{if(!TEAM){L.lead=1;throw {msg:'lead'}} /* no self-service: visitors book a call instead (see vScan) */const H={'X-Team-Key':TEAM};
-  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401){L.lead=1;throw {msg:'lead'}}
+  if(!L.id){const r=await fetch(API+'/places/autocomplete?q='+encodeURIComponent(L.q),{headers:H});if(r.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}throw {msg:'lead'}}
    const j=r.ok?await r.json():{};const hit=(j.results||[]).find(x=>x.id);if(!hit)throw {msg:'We couldn\'t find "'+L.q+'" on Google.'};L.id=hit.id;L.name=hit.name||L.name;
    try{history.replaceState(null,'','?id='+encodeURIComponent(L.id)+'#scan')}catch(e){}}
   fetch(API+'/places/'+encodeURIComponent(L.id),{headers:H}).then(r=>r.ok?r.json():null).then(b=>{if(b&&LIVE===L){L.name=b.full||L.name;L.short=b.short||L.short;setHit(b);redraw()}}).catch(()=>{});
   const res=await fetch(API+'/audit?id='+encodeURIComponent(L.id),{headers:H});
-  if(res.status===401){L.lead=1;throw {msg:'lead'}}if(res.status===429)throw {msg:'The team has used today\'s scans.'};
+  if(res.status===401){L.lead=1;L.keyBad=1;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}throw {msg:'lead'}}if(res.status===429)throw {msg:'The team has used today\'s scans.'};
   if(!res.ok||!res.body)throw {msg:'We couldn\'t start the scan.'};
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
