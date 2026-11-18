@@ -287,11 +287,17 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/agents": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "drafts/home-2/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../blueprint/ai-monitoring/"
+  "to": "../agents/"
  },
  "drafts/home-2/ai-consultants": {
   "http": 301,
@@ -303,103 +309,103 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/chatgpt": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/claude": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/copilot": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/gemini": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/google-ai-overviews": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/grok": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/meta-ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/perplexity": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/ai/siri": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../blueprint/ai-monitoring/"
+  "to": "../../agents/"
  },
  "drafts/home-2/answer-watch": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/awards": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/badge": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/best": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/best/botox/costa-mesa-ca": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../"
+  "to": "../../../agents/"
  },
  "drafts/home-2/best/botox/costa-mesa-ca/affordable": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../../"
+  "to": "../../../../agents/"
  },
  "drafts/home-2/best/med-spas/costa-mesa-ca": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../"
+  "to": "../../../agents/"
  },
  "drafts/home-2/blueprint": {
   "canonical": null,
@@ -573,133 +579,133 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/auto-dealers/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/cannabis-dispensaries": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/chiropractors/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/dentists": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/dentists/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/dermatologists/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/dermatology": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/dispensaries/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/eye-care": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/eye-surgeons/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/hvac/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/law-firms/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/med-spas": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/med-spas/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/medical-clinics": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/plastic-surgeons": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/plastic-surgeons/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/plumbers/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/roofers/ai": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../industries/"
+  "to": "../../../agents/"
  },
  "drafts/home-2/for/skin-care-clinics": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/for/urgent-care": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../industries/"
+  "to": "../../agents/"
  },
  "drafts/home-2/founder-story": {
   "http": 301,
@@ -717,7 +723,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/giving-back": {
   "http": 301,
@@ -729,7 +735,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../resources/"
+  "to": "../agents/"
  },
  "drafts/home-2/guarantee": {
   "canonical": null,
@@ -741,25 +747,25 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../resources/"
+  "to": "../agents/"
  },
  "drafts/home-2/guide/checklist": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../resources/"
+  "to": "../../agents/"
  },
  "drafts/home-2/guide/claim-your-business-in-chatgpt": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../resources/"
+  "to": "../../agents/"
  },
  "drafts/home-2/guide/not-showing-up": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../resources/"
+  "to": "../../agents/"
  },
  "drafts/home-2/how-it-works": {
   "canonical": null,
@@ -783,7 +789,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../"
+  "to": "../../agents/"
  },
  "drafts/home-2/legal/baa": {
   "canonical": null,
@@ -807,13 +813,13 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../start/"
+  "to": "../agents/"
  },
  "drafts/home-2/methodology": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../research/"
+  "to": "../agents/"
  },
  "drafts/home-2/news": {
   "canonical": null,
@@ -861,19 +867,19 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../"
+  "to": "../../agents/"
  },
  "drafts/home-2/registry": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/registry/ca/costa-mesa/quiktox": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../../"
+  "to": "../../../../agents/"
  },
  "drafts/home-2/report-an-error": {
   "http": 301,
@@ -1035,7 +1041,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../research/"
+  "to": "../agents/"
  },
  "drafts/home-2/team": {
   "http": 301,
@@ -1113,7 +1119,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "../agents/"
  },
  "drafts/home-2/vs/agencies": {
   "http": 301,
