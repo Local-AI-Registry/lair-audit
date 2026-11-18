@@ -293,6 +293,18 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/agents/best-of": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/agents/editorials": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
  "drafts/home-2/ai": {
   "http": 301,
   "sitemap": null,
