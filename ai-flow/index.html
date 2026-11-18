@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light only">
+<title>AI Decision Path for Local Businesses | Local AI Registry</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Cormorant:ital,wght@0,500;0,600;1,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1F4FE0; --blue-tint:#E7EDFD; --ink:#0B1A2E; --coral:#FF5A3C; --coral-tint:#FFE6E0;
+  --paper:#F4F1EA; --line:#DCD6C8; --muted:#5D6778; --grey:#D6D3CC;
+  --serif:'Cormorant',Georgia,serif; --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{color-scheme:light}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{text-wrap:pretty;margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+
+header.top{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:inline-flex;align-items:center;gap:9px;font-family:var(--display);font-weight:800;font-size:18px;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+.top a.link{font-size:14px;font-weight:600;color:var(--blue);text-decoration:none}
+
+.hero{text-align:center;padding:64px 0 56px}
+.eyebrow{font-family:var(--display);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue)}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(36px,5.6vw,58px);line-height:1.04;margin:14px auto 28px;max-width:640px}
+.run{display:flex;align-items:center;max-width:500px;margin:0 auto;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:5px 5px 5px 20px}
+.run input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:16px;background:transparent;color:var(--ink)}
+.run button{font-family:var(--display);font-weight:700;font-size:15px;border:0;border-radius:999px;background:var(--blue);color:#fff;padding:11px 22px;cursor:pointer}
+.via{font-size:13px;color:var(--muted);margin-top:14px}
+.via .models{display:flex;justify-content:center;gap:16px;margin-top:6px;font-weight:600;color:var(--ink)}
+.via .models span{display:inline-flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+/* mock window */
+.win{background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:0 24px 50px -30px rgba(11,26,46,.35);overflow:hidden}
+.chrome{display:flex;align-items:center;gap:12px;padding:9px 12px;background:#F7F5F0;border-bottom:1px solid var(--line)}
+.lights{display:flex;gap:6px}.lights i{width:9px;height:9px;border-radius:50%;background:#CFCAC0}
+.addr{flex:1;text-align:center;font-size:13px;color:var(--muted);background:#fff;border:1px solid var(--line);border-radius:8px;padding:5px}
+.body{padding:16px 18px 14px}
+.fakeinput{border:1.5px solid var(--ink);border-radius:999px;padding:8px 16px;font-size:15px;min-height:38px}
+.fakeinput .caret{display:inline-block;width:1.5px;height:16px;background:var(--ink);vertical-align:-3px;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.searching{display:flex;align-items:center;gap:8px;margin:14px 0 4px;font-size:13px;font-weight:700;min-height:26px;flex-wrap:wrap}
+.searching code{font-family:ui-monospace,Menlo,monospace;font-weight:500;font-size:12.5px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.rtitle{font-family:var(--display);font-weight:700;font-size:clamp(17px,2vw,21px);margin:10px 0 2px;min-height:30px;opacity:0;transition:opacity .4s}
+.rtitle.show{opacity:1}
+.rtitle .bad{color:var(--coral)} .rtitle .good{color:var(--blue)}
+.rtitle span{display:inline-block}
+
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -18px;padding:0 18px}
+.stagebox{position:relative;min-width:880px}
+svg.flow{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--body)}
+.stg text{font-family:var(--display);font-weight:700;font-size:13px}
+.reveal{opacity:0;transition:opacity .5s}
+.reveal.on{opacity:1}
+.strand{fill:none;stroke-linecap:butt}
+.strand.anim{stroke-dasharray:1;stroke-dashoffset:1;animation:draw 3.4s cubic-bezier(.45,.05,.4,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+.quote{position:absolute;width:250px;background:#fff;border:1.5px solid var(--ink);border-radius:12px;padding:10px 13px;font-size:13px;line-height:1.4;box-shadow:0 10px 24px -14px rgba(11,26,46,.5);opacity:0;transform:translateY(8px);transition:all .45s}
+.quote.on{opacity:1;transform:none}
+.quote.good{border-color:var(--blue)} .quote.bad{border-color:var(--coral)}
+.quote .qh{display:flex;align-items:center;gap:6px;font-weight:700;font-size:12px;margin-bottom:4px}
+.quote mark{padding:0 2px;border-radius:3px}
+.quote.bad mark{background:var(--coral-tint);color:#B5301A}
+.quote.good mark{background:var(--blue-tint);color:var(--blue)}
+
+.legend{display:grid;grid-template-columns:auto auto;gap:6px 22px;justify-content:start;font-size:12.5px;color:var(--ink);margin-top:6px}
+.legend > span{display:inline-flex;align-items:center;gap:8px}
+.legend .sw{width:20px;height:8px;border-radius:3px}
+.swipe{display:none;font-size:12px;color:var(--muted);margin-top:4px}
+
+.dots{display:flex;justify-content:center;gap:8px;margin:18px 0 0}
+.dots button{width:8px;height:8px;border-radius:999px;border:0;background:#C9C4B8;padding:0;cursor:pointer;transition:width .3s}
+.dots button.on{width:26px;background:var(--ink)}
+
+.explain{margin:56px auto 0;max-width:1180px}
+.ex{border-top:1px solid var(--line);padding:20px 0}
+.ex h3{font-family:var(--display);font-weight:700;font-size:19px;margin-bottom:4px}
+.ex p{color:var(--muted);font-size:15.5px;max-width:760px}
+
+.cta{background:var(--ink);color:#fff;border-radius:22px;padding:44px 26px;text-align:center;margin:40px 0 28px}
+.cta h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4.4vw,44px);line-height:1.08;max-width:640px;margin:0 auto 12px}
+.cta p{color:#C3CAD6;max-width:520px;margin:0 auto 22px}
+.cta button{font-family:var(--display);font-weight:700;font-size:15px;border:0;border-radius:999px;background:#fff;color:var(--ink);padding:12px 24px;cursor:pointer}
+footer{font-size:13px;color:var(--muted);padding-bottom:40px}
+footer p{margin-bottom:8px;max-width:760px}
+
+.modal{position:fixed;inset:0;background:rgba(11,26,46,.5);display:none;align-items:center;justify-content:center;padding:20px;z-index:50}
+.modal.open{display:flex}
+.sheet{background:#fff;border-radius:20px;max-width:440px;width:100%;padding:28px;position:relative}
+.sheet h3{font-family:var(--serif);font-weight:600;font-size:30px;line-height:1.1;margin-bottom:10px}
+.sheet p{color:var(--muted)}
+.sheet .x{position:absolute;top:10px;right:14px;border:0;background:none;font-size:24px;color:var(--muted);cursor:pointer}
+.contact{background:var(--paper);border-radius:12px;padding:12px 16px;margin:16px 0;font-size:15px}
+.contact div{display:flex;justify-content:space-between;gap:12px;padding:3px 0}
+.contact span{color:var(--muted)}
+.sheet a.btn{display:inline-block;font-family:var(--display);font-weight:700;background:var(--blue);color:#fff;text-decoration:none;border-radius:999px;padding:11px 20px}
+
+@media (max-width:760px){
+  .hero{padding:40px 0 36px}
+  .swipe{display:block}
+  .legend{grid-template-columns:1fr 1fr;font-size:12px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="https://localairegistry.com/" aria-label="Local AI Registry home"><svg width="26" height="26" viewBox="0 0 100 100" aria-hidden="true"><path d="M50 8 L94 88 L66 88 L50 58 L34 88 L6 88 Z" fill="#1F4FE0"/><path d="M50 8 L62 30 L38 30 Z" fill="#FF5A3C"/></svg><span>Local AI Registry</span></a>
+    <a class="link" href="https://localairegistry.com/">How we help</a>
+  </header>
+
+  <section class="hero">
+    <div class="eyebrow">AI Decision Path</div>
+    <h1>See your business through AI's decision&#8209;making process.</h1>
+    <form class="run" id="runForm" autocomplete="off">
+      <input id="runUrl" placeholder="yourbusiness.com" aria-label="Your business website">
+      <button type="submit">Run</button>
+    </form>
+    <div class="via">Explore your business's decision path through
+      <div class="models"><span><i class="dot" style="background:#10A37F"></i>ChatGPT</span><span><i class="dot" style="background:#D97757"></i>Claude</span></div>
+    </div>
+  </section>
+
+  <div class="win">
+    <div class="chrome"><div class="lights"><i></i><i></i><i></i></div><div class="addr">localairegistry.com</div><div style="width:39px"></div></div>
+    <div class="body">
+      <div class="fakeinput" id="fake"></div>
+      <div class="searching" id="searching"></div>
+      <div class="rtitle" id="rtitle"></div>
+      <div class="scroller">
+        <div class="stagebox" id="stagebox">
+          <svg class="flow" id="flow" viewBox="0 0 1140 560"></svg>
+          <div class="quote" id="quote"></div>
+        </div>
+      </div>
+      <div class="swipe">Swipe to see the full path &rarr;</div>
+      <div class="legend">
+        <span><i class="sw" style="background:var(--blue)"></i><span>Named <b>your business</b></span></span>
+        <span><i class="sw" style="background:var(--coral);opacity:.8"></i><span>Saw <b>your business</b>, didn't pick it</span></span>
+        <span><i class="sw" style="background:var(--grey)"></i>Named another business</span>
+        <span><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#0B1A2E" stroke-width="1.2"/><path d="M4.6 4.6l4.8 4.8M9.4 4.6l-4.8 4.8" stroke="#0B1A2E" stroke-width="1.2"/></svg>Ruled out here</span>
+      </div>
+    </div>
+  </div>
+  <div class="dots" id="dots"></div>
+
+  <section class="explain">
+    <div class="ex"><h3>What AI searched</h3><p>AI searches the web before it answers. You see whether it used your website, your Google profile, someone else's page about you, or only its memory.</p></div>
+    <div class="ex"><h3>What AI compared</h3><p>Reviews, hours, service area, pricing. Every condition comes from the AI's own answer, and each ribbon shows which businesses it kept.</p></div>
+    <div class="ex"><h3>What AI wrote about you</h3><p>See the AI's exact words, including the sentence that sent the customer to a competitor and what your listings should say instead.</p></div>
+  </section>
+
+  <section class="cta">
+    <h2>See how far your business gets.</h2>
+    <p>We run the questions your customers actually ask, in your city, on ChatGPT and Claude, and show you where you drop out.</p>
+    <button id="ctaBtn" type="button">Get your decision path</button>
+  </section>
+
+  <footer>
+    <p>The examples above use made-up businesses to show how the tool works. Live results come from OpenAI and Anthropic models, with the test question built from your business type and city.</p>
+    <p>AI is evolving every day. Local AI Registry's dedicated local AI research team is always figuring out the best approach.</p>
+  </footer>
+</div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true">
+  <div class="sheet">
+    <button class="x" id="mClose" aria-label="Close">&times;</button>
+    <h3>Get your decision path</h3>
+    <p id="mBody">Our team runs your business through ChatGPT and Claude and sends you the full path: what AI searched, what it compared and who it picked.</p>
+    <div class="contact">
+      <div><span>Call or text</span><b>(213) 931&#8209;5633</b></div>
+      <div><span>Website</span><b>localairegistry.com</b></div>
+    </div>
+    <a class="btn" href="https://localairegistry.com/">Visit Local AI Registry</a>
+  </div>
+</div>
+
+<script>
+const BLUE='#1F4FE0', CORAL='#FF5A3C', GREY='#D6D3CC', INK='#0B1A2E';
+const MC={chatgpt:{name:'ChatGPT',color:'#10A37F'},claude:{name:'Claude',color:'#D97757'}};
+
+/* layout columns (viewBox 1140 x 470) */
+const X={q:128, m:240, s:390, c:[560,720,880], e:1012};
+const MODEL_Y={chatgpt:140, claude:385};
+const OPT_Y=[175,300,410];
+const END_Y=[140,205,270,335];
+
+const EXAMPLES=[
+ {
+  title:'How AI picks a med spa:', verdict:'Your business stops at hours', tone:'bad',
+  question:'Which med spa in Irvine would you recommend?',
+  queries:{chatgpt:['best med spa Irvine CA','Irvine med spa open Saturday'],claude:['Irvine med spa reviews','med spa Irvine licensed injector']},
+  modelNote:{chatgpt:'Checked business profiles',claude:'Searched reviews'},
+  sources:[{id:'gbp',label:'Your Google profile',you:1,y:110},{id:'site',label:'Your website',you:1,y:190},{id:'other',label:'Other business sites',y:270},{id:'rev',label:'Review sites',y:350},{id:'mem',label:"The AI's own memory",y:430}],
+  crit:[{name:'Reviews',opts:['4.8+, hundreds','Under 100']},{name:'Hours',opts:['Same everywhere','Listings conflict']},{name:'Credentials',opts:['Providers named','Not listed']}],
+  ends:[{id:'A',label:'Business A'},{id:'B',label:'Business B'},{id:'C',label:'Business C'}],
+  youEnd:null,
+  strands:[
+   {m:'chatgpt',s:'other',o:[0,0,0],end:'A'},
+   {m:'chatgpt',s:'rev',o:[0,0,0],end:'B'},
+   {m:'chatgpt',s:'gbp',o:[0,1],you:1,out:'Hours don\'t match'},
+   {m:'claude',s:'rev',o:[0,0,0],end:'A'},
+   {m:'claude',s:'other',o:[0,0,0],end:'C'},
+   {m:'claude',s:'mem',o:[1],out:'Too few reviews'},
+   {m:'claude',s:'site',o:[0,0,1],you:1,out:'No providers named'}
+  ],
+  quote:{x:600,y:430,m:'chatgpt',tone:'bad',text:'Your business has great reviews, but <mark>its website and Google profile show different Saturday hours</mark>, so I can\'t confirm it\'s open.'}
+ },
+ {
+  title:'How AI picks a family dentist:', verdict:'Your business is named for Saturday hours', tone:'good',
+  question:'Who\'s a good family dentist in Austin taking new patients?',
+  queries:{chatgpt:['family dentist Austin new patients','Austin dentist accepts Delta Dental'],claude:['Austin family dentist reviews','kid friendly dentist Austin Saturday']},
+  modelNote:{chatgpt:'Checked business sites',claude:'Searched reviews'},
+  sources:[{id:'site',label:'Your website',you:1,y:110},{id:'other',label:'Other business sites',y:200},{id:'rev',label:'Review sites',y:300},{id:'mem',label:"The AI's own memory",y:410}],
+  crit:[{name:'New patients',opts:['Clearly yes','Unclear']},{name:'Insurance',opts:['Plans listed','"Most plans"']},{name:'Family hours',opts:['Saturdays','Weekdays only']}],
+  ends:[{id:'you',label:'Your business',sub:'Saturday hours'},{id:'A',label:'Business A'},{id:'B',label:'Business B'}],
+  youEnd:'you',
+  strands:[
+   {m:'chatgpt',s:'site',o:[0,0,0],end:'you',you:1},
+   {m:'chatgpt',s:'other',o:[0,0,1],end:'A'},
+   {m:'chatgpt',s:'mem',o:[1],out:'New patients unclear'},
+   {m:'claude',s:'rev',o:[0,0,0],end:'you',you:1},
+   {m:'claude',s:'rev',o:[0,1],out:'Plans not listed'},
+   {m:'claude',s:'other',o:[0,0,0],end:'B'}
+  ],
+  quote:{x:850,y:420,m:'claude',tone:'good',text:'One dentist only says it takes \"most plans.\" <mark>Your business lists every plan it accepts and is open Saturdays</mark>, which works for busy families.'}
+ },
+ {
+  title:'How AI picks an emergency plumber:', verdict:'Your business is named by Claude only', tone:'good',
+  question:'I need an emergency plumber in Phoenix tonight. Who should I call?',
+  queries:{chatgpt:['24 hour emergency plumber Phoenix','Phoenix plumber service area'],claude:['emergency plumber Phoenix reviews','Phoenix plumber flat rate pricing']},
+  modelNote:{chatgpt:'Used its memory',claude:'Searched reviews'},
+  sources:[{id:'site',label:'Your website',you:1,y:110,unused:1},{id:'rev',label:'Review sites',y:200},{id:'other',label:'Other business sites',y:300},{id:'mem',label:"The AI's own memory",y:410}],
+  crit:[{name:'Open tonight',opts:['24/7','Closes at 9pm']},{name:'Service area',opts:['Cities listed','"Greater Phoenix"']},{name:'Pricing',opts:['Flat fees posted','Call for quote']}],
+  ends:[{id:'A',label:'Business A'},{id:'B',label:'Business B'},{id:'C',label:'Business C'},{id:'you',label:'Your business',sub:'By Claude only'}],
+  youEnd:'you',
+  strands:[
+   {m:'chatgpt',s:'other',o:[0,0,0],end:'A'},
+   {m:'chatgpt',s:'rev',o:[0,0,1],end:'B'},
+   {m:'chatgpt',s:'mem',o:[0,1],you:1,out:'Service area unclear'},
+   {m:'claude',s:'rev',o:[0,0,0],end:'you',you:1},
+   {m:'claude',s:'other',o:[0,0,0],end:'C'},
+   {m:'claude',s:'other',o:[1],out:'Closed tonight'}
+  ],
+  quote:{x:850,y:400,m:'claude',tone:'good',text:'<mark>Reviewers say your business answers at 2am</mark> and posts flat fees up front, so it\'s a safe call for tonight.'}
+ }
+];
+
+const NS='http://www.w3.org/2000/svg';
+function el(tag,attrs,parent,text){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(text!=null)e.textContent=text;if(parent)parent.appendChild(e);return e;}
+
+function nodeSeq(ex,st){
+  const seq=[{k:'q',x:X.q,y:250},{k:'m:'+st.m,x:X.m,y:MODEL_Y[st.m]},{k:'s:'+st.s,x:X.s,y:ex.sources.find(s=>s.id===st.s).y}];
+  st.o.forEach((oi,ci)=>seq.push({k:'c'+ci+':'+oi,x:X.c[ci],y:OPT_Y[oi]}));
+  if(st.end){const i=ex.ends.findIndex(e=>e.id===st.end);seq.push({k:'e:'+st.end,x:X.e,y:END_Y[i]});}
+  return seq;
+}
+
+function draw(ex){
+  const svg=document.getElementById('flow');svg.innerHTML='';
+  const W=13, GAP=2;
+  ex.strands.forEach(st=>{st.seq=nodeSeq(ex,st);st.rank=st.seq[st.seq.length-1].y+(st.end?0:0.5);});
+  // stacking offsets per node
+  const nodes={};
+  ex.strands.forEach((st,si)=>st.seq.forEach((n,ni)=>{(nodes[n.k]=nodes[n.k]||{x:n.x,y:n.y,list:[]}).list.push({si,ni});}));
+  for(const k in nodes){
+    const N=nodes[k];
+    N.list.sort((a,b)=>{
+      const sa=ex.strands[a.si], sb=ex.strands[b.si];
+      const na=sa.seq[a.ni+1]||sa.seq[a.ni], nb=sb.seq[b.ni+1]||sb.seq[b.ni];
+      return (na.y-nb.y)||(sa.rank-sb.rank);
+    });
+    const n=N.list.length;
+    N.list.forEach((it,i)=>{ex.strands[it.si].seq[it.ni].oy=N.y+(i-(n-1)/2)*(W+GAP);});
+    N.h=n*(W+GAP)-GAP;
+  }
+
+  const T=3.4; // draw duration
+  const tAt=x=>Math.max(0,(x-X.q)/(X.e-X.q))*T;
+
+  // stage headers
+  const stg=el('g',{class:'stg'},svg);
+  const stages=[['Customer question',0,110],['AI searches',X.m-14,120],['Sources found',X.s-14,140],['What AI compared',X.c[0]-14,X.c[2]-X.c[0]+90],['Recommended',X.e-14,130]];
+  stages.forEach(([t,x,w],i)=>{
+    const g=el('g',{class:'reveal','data-t':i===0?0:tAt(x+14)},stg);
+    el('circle',{cx:x+8,cy:14,r:8,fill:INK},g);
+    el('text',{x:x+8,y:18,'text-anchor':'middle',fill:'#fff','font-size':10},g,i+1);
+    el('text',{x:x+22,y:18,fill:INK},g,t);
+    el('line',{x1:x,x2:x+w,y1:32,y2:32,stroke:INK,'stroke-width':1.5},g);
+  });
+
+  // criterion pills + guides
+  ex.crit.forEach((c,ci)=>{
+    const g=el('g',{class:'reveal','data-t':tAt(X.c[ci])-.2},svg);
+    const w=c.name.length*7.4+20;
+    el('line',{x1:X.c[ci],x2:X.c[ci],y1:70,y2:420,stroke:'#B9B3A6','stroke-dasharray':'2 4'},g);
+    el('rect',{x:X.c[ci]-w/2,y:44,width:w,height:22,rx:5,fill:INK},g);
+    el('text',{x:X.c[ci],y:59,'text-anchor':'middle',fill:'#fff','font-size':12,'font-weight':700},g,c.name);
+  });
+
+  // strands
+  const sg=el('g',{},svg);
+  const order=[...ex.strands].sort((a,b)=>(a.you?1:0)-(b.you?1:0));
+  order.forEach(st=>{
+    const pts=[];
+    st.seq.forEach((n,i)=>{const y=n.oy;if(i===0)pts.push([n.x,y]);else{pts.push([n.x-5,y]);pts.push([n.x+5,y]);}});
+    if(!st.end){pts.pop();}
+    let d=`M${pts[0][0]} ${pts[0][1]}`;
+    for(let i=1;i<pts.length;i++){
+      const [x0,y0]=pts[i-1],[x1,y1]=pts[i];
+      if(y0===y1){d+=` L${x1} ${y1}`;continue;}
+      const mx=(x0+x1)/2;d+=` C${mx} ${y0} ${mx} ${y1} ${x1} ${y1}`;
+    }
+    const color=st.you?(st.end==='you'?BLUE:CORAL):GREY;
+    const lastX=pts[pts.length-1][0];
+    const dur=T*((lastX-X.q)/(X.e+5-X.q));
+    el('path',{d,class:'strand anim',stroke:color,'stroke-width':W,'stroke-opacity':st.you?(color===CORAL?.78:.9):1,pathLength:1,style:`animation-duration:${dur}s`},sg);
+    if(!st.end){
+      const last=st.seq[st.seq.length-1];
+      const g=el('g',{class:'reveal','data-t':dur},svg);
+      const cx=last.x+14, cy=last.oy;
+      const c=st.you?CORAL:'#5D6778';
+      el('circle',{cx,cy,r:6.5,fill:'#fff',stroke:c,'stroke-width':1.4},g);
+      el('path',{d:`M${cx-3} ${cy-3}l6 6M${cx+3} ${cy-3}l-6 6`,stroke:c,'stroke-width':1.4},g);
+      el('text',{x:cx+11,y:cy+4,'font-size':12,'font-weight':st.you?700:500,fill:c},g,st.out);
+    }
+  });
+
+  // node bars + labels
+  const ng=el('g',{},svg);
+  for(const k in nodes){
+    const N=nodes[k]; if(k==='q')continue;
+    const g=el('g',{class:'reveal','data-t':tAt(N.x)-.1},ng);
+    el('rect',{x:N.x-2,y:N.y-N.h/2-2,width:4,height:N.h+4,rx:1,fill:INK},g);
+  }
+  // model labels
+  ['chatgpt','claude'].forEach(m=>{
+    const N=nodes['m:'+m]; if(!N)return;
+    const g=el('g',{class:'reveal','data-t':tAt(X.m)},svg);
+    const up=m==='chatgpt', y=up?N.y-N.h/2-26:N.y+N.h/2+20;
+    el('circle',{cx:X.m-36,cy:y-4,r:5,fill:MC[m].color},g);
+    el('text',{x:X.m-26,y,'font-family':'Bricolage Grotesque','font-weight':700,'font-size':14,fill:INK},g,MC[m].name);
+    el('text',{x:X.m,y:y+14,'text-anchor':'middle','font-size':10.5,fill:'#5D6778'},g,ex.modelNote[m]);
+  });
+  // source labels
+  ex.sources.forEach(s=>{
+    const N=nodes['s:'+s.id];
+    const g=el('g',{class:'reveal','data-t':tAt(X.s)},svg);
+    const top=N?N.y-N.h/2-8:s.y-6;
+    if(!N){
+      const w=s.label.length*6.6+16;
+      el('rect',{x:X.s-4,y:s.y-12,width:w,height:22,rx:5,fill:'#fff',stroke:'#9AA2AE','stroke-dasharray':'3 3'},g);
+      el('text',{x:X.s+4,y:s.y+3,'font-size':12,fill:'#5D6778'},g,s.label);
+      el('text',{x:X.s-4,y:s.y+24,'font-size':10.5,fill:'#5D6778'},g,s.unused?'Found but not used':'Not checked');
+    } else {
+      el('text',{x:X.s+8,y:top,'font-size':12,'font-weight':600,fill:s.you?BLUE:INK},g,s.label);
+    }
+  });
+  // option labels
+  ex.crit.forEach((c,ci)=>c.opts.forEach((o,oi)=>{
+    const N=nodes['c'+ci+':'+oi]; if(!N)return;
+    const g=el('g',{class:'reveal','data-t':tAt(X.c[ci])},svg);
+    el('text',{x:X.c[ci]+8,y:N.y-N.h/2-8,'font-size':12,'font-weight':600,fill:INK},g,o);
+  }));
+  // question box
+  const qg=el('g',{class:'reveal on'},svg);
+  const qb=el('foreignObject',{x:6,y:190,width:122,height:120},qg);
+  qb.innerHTML=`<div xmlns="http://www.w3.org/1999/xhtml" style="height:120px;display:flex;align-items:center;justify-content:center;text-align:center;border:1.5px solid ${INK};border-radius:12px;background:#fff;padding:8px;font:700 12.5px/1.3 'Hanken Grotesk',sans-serif;color:${INK}">${ex.question}</div>`;
+  // ends
+  ex.ends.forEach((e,i)=>{
+    const g=el('g',{class:'reveal','data-t':T},svg);
+    const you=e.id==='you';
+    el('text',{x:X.e+10,y:END_Y[i]+(e.sub?1:5),'font-family':'Bricolage Grotesque','font-weight':700,'font-size':15,fill:you?BLUE:INK},g,e.label);
+    if(e.sub)el('text',{x:X.e+10,y:END_Y[i]+15,'font-size':10.5,'font-weight':700,fill:BLUE},g,e.sub);
+  });
+  if(!ex.youEnd){
+    const g=el('g',{class:'reveal','data-t':T},svg);
+    el('rect',{x:X.e+2,y:384,width:112,height:26,rx:6,fill:'#fff',stroke:'#9AA2AE','stroke-dasharray':'3 3'},g);
+    el('text',{x:X.e+58,y:401,'text-anchor':'middle','font-family':'Bricolage Grotesque','font-weight':700,'font-size':13,fill:'#9AA2AE'},g,'Your business');
+    el('text',{x:X.e+58,y:426,'text-anchor':'middle','font-size':10.5,fill:'#5D6778'},g,'Not recommended');
+  }
+  return T;
+}
+
+/* playback */
+let cur=0, timers=[];
+const later=(fn,ms)=>timers.push(setTimeout(fn,ms));
+function clearAll(){timers.forEach(clearTimeout);timers=[];}
+
+function play(i){
+  clearAll();cur=i;
+  const ex=EXAMPLES[i];
+  document.querySelectorAll('#dots button').forEach((b,j)=>b.classList.toggle('on',j===i));
+  const fake=document.getElementById('fake'), rt=document.getElementById('rtitle'), se=document.getElementById('searching'), q=document.getElementById('quote');
+  rt.classList.remove('show');q.classList.remove('on');se.innerHTML='';
+  document.getElementById('flow').innerHTML='';
+  const url='yourbusiness.com';
+  fake.innerHTML='<span class="caret"></span>';
+  for(let k=1;k<=url.length;k++)later(()=>{fake.innerHTML=url.slice(0,k)+'<span class="caret"></span>';},120+k*55);
+  const t0=120+url.length*55+300;
+  // searching pill cycles
+  const qs=[];['chatgpt','claude'].forEach(m=>ex.queries[m].forEach(x=>qs.push([m,x])));
+  qs.forEach(([m,x],k)=>later(()=>{se.innerHTML=`<i class="dot" style="background:${MC[m].color}"></i>${MC[m].name} is searching <code>${x}</code>`;},t0+k*900));
+  later(()=>{
+    fake.textContent=url;
+    rt.innerHTML=`${ex.title} <span class="${ex.tone}">${ex.verdict}</span>`;rt.classList.add('show');
+    const T=draw(ex);
+    document.querySelectorAll('#flow .reveal').forEach(g=>{
+      if(g.classList.contains('on'))return;
+      const t=+g.getAttribute('data-t')||0;later(()=>g.classList.add('on'),Math.max(0,t)*1000);
+    });
+    // quote position near your ending
+    const youSt=ex.strands.find(s=>s.you&&s.m===ex.quote.m)||ex.strands.find(s=>s.you);
+    const last=youSt.seq[youSt.seq.length-1];
+    const box=document.getElementById('stagebox');
+    later(()=>{
+      const sx=box.clientWidth/1140;
+      let left=ex.quote.x*sx, top=ex.quote.y*sx;
+      q.style.left=Math.max(0,left)+'px';q.style.top=top+'px';
+      q.className='quote '+ex.quote.tone;
+      q.innerHTML=`<div class="qh"><i class="dot" style="background:${MC[ex.quote.m].color}"></i>${MC[ex.quote.m].name} wrote</div>"${ex.quote.text}"`;
+      requestAnimationFrame(()=>q.classList.add('on'));
+    },(T+0.6)*1000);
+    later(()=>{se.innerHTML=`<span style="color:var(--muted);font-weight:600">Done. Both models answered.</span>`;},(T+0.2)*1000);
+  },t0+qs.length*900-400);
+  later(()=>play((cur+1)%EXAMPLES.length),t0+qs.length*900+12000);
+}
+
+const dots=document.getElementById('dots');
+EXAMPLES.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Example '+(i+1));b.onclick=()=>play(i);dots.appendChild(b);});
+play(0);
+
+/* modal */
+const modal=document.getElementById('modal');
+function openModal(u){
+  const who=u?`<b>${u.replace(/</g,'&lt;')}</b>`:'your business';
+  document.getElementById('mBody').innerHTML=`Our team runs ${who} through ChatGPT and Claude and sends you the full path: what AI searched, what it compared and who it picked.`;
+  modal.classList.add('open');
+}
+document.getElementById('runForm').addEventListener('submit',e=>{e.preventDefault();openModal(document.getElementById('runUrl').value.trim());});
+document.getElementById('ctaBtn').onclick=()=>openModal('');
+document.getElementById('mClose').onclick=()=>modal.classList.remove('open');
+modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open');};
+</script>
+</body>
+</html>
