@@ -982,8 +982,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .tkrow{display:flex;gap:8px;margin-top:8px}.tkrow[hidden]{display:none}.tkrow input{flex:1;min-width:0;font:500 15px var(--fb);border:1px solid var(--rule);border-radius:12px;padding:10px 12px;background:#fff}
 [data-ts][data-open] .tkopen{color:var(--ink);text-decoration:none;cursor:default}
 .tsb{display:flex;flex-direction:column;gap:8px;margin-top:10px;align-items:flex-start}.tsb[hidden]{display:none}.t-home .tsb{align-items:center}
-.gbtn{min-height:44px}.gbtn[hidden]{display:none}.tsb .tkrow{width:100%;margin-top:0}
-.tkalt{all:unset;cursor:pointer;font:600 13px var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}.tkalt[hidden]{display:none}.tkalt:focus-visible{outline:2px solid var(--blue)}
+.tsb .tkrow{width:100%;margin-top:0}
 .tkm{margin:6px 0 0;font-size:13px;color:var(--muted)}.tkm.er{color:var(--red)}.tkm:empty{display:none}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tkopen{font-size:13px;padding:8px 0}}
 
@@ -1346,28 +1345,19 @@ const dots=(n,seed)=>{let h='';for(let i=0;i<n;i++)h+='<i class="dotp dr" style=
 /* ---------- FIND (home) ---------- */
 const HITS=Object.keys(SETS).map(k=>Object.assign({},SETS[k].hit,{slug:k,re:new RegExp(SETS[k].hit.match,'i')}));
 const HQ=['best med spa near me','botox near me','dentist open saturday','best dermatologist downtown','dispensary near me','lip filler cost','who does the best rhinoplasty?','emergency dentist near me'];
-/* team sign-in: a Google account on the team's domain (checked by the API), or a team key as the backup */
-let TWHO='';try{TWHO=localStorage.getItem('lair-team-who')||''}catch(e){}
-function teamSet(tok,who){TEAM=tok||'';TWHO=tok?who||'':'';try{if(tok){localStorage.setItem('lair-team',tok);localStorage.setItem('lair-team-who',TWHO)}else{localStorage.removeItem('lair-team');localStorage.removeItem('lair-team-who')}}catch(e){}}
-function tsHTML(kind,label){return '<div class="tsign t-'+kind+'" data-ts="'+kind+'"><button type="button" class="tkopen">'+label+'</button><div class="tsb" hidden><div class="gbtn"></div><button type="button" class="tkalt">Use a team key instead</button><form class="tkrow" novalidate hidden><input type="password" autocomplete="current-password" placeholder="Team key" aria-label="Team key" maxlength="200"><button type="submit" class="pbtn">Sign in</button></form></div><p class="tkm" role="status"></p></div>'}
-function teamBar(){return TEAM?'<div class="thome on"><span class="tkon"><i></i>'+(TWHO?'Signed in as '+X(TWHO):'Team mode on')+'</span><span class="tkon2">Picking a business runs the live scan.</span><button type="button" class="tkout">Sign out</button></div>':'<div class="thome">'+tsHTML('home','Team sign-in')+'</div>'}
-let GSI=null;const gsiLoad=()=>GSI||(GSI=new Promise((ok,no)=>{const s=document.createElement('script');s.src='https://accounts.google.com/gsi/client';s.async=true;s.onload=ok;s.onerror=()=>{GSI=null;no()};document.head.appendChild(s)}));
-function tsDone(w){const k=w.dataset.ts;if(k==='lead'&&LIVE){const L=LIVE;liveScan({id:L.id,q:L.q,name:L.name})}else render()}
-function tsKeyMode(w){w.querySelector('.gbtn').hidden=true;w.querySelector('.tkalt').hidden=true;const f=w.querySelector('form');f.hidden=false;f.querySelector('input').focus()}
-async function tsOpen(w){const b=w.querySelector('.tsb'),m=w.querySelector('.tkm');if(!b.hidden)return;b.hidden=false;w.setAttribute('data-open','');m.className='tkm';m.textContent='Loading Google sign-in…';
- try{const c=await fetch(API+'/auth/config').then(r=>r.ok?r.json():{});if(!c.google_client_id)throw 0;await gsiLoad();
-  google.accounts.id.initialize({client_id:c.google_client_id,hd:(c.domains||[])[0],auto_select:false,cancel_on_tap_outside:true,callback:r=>tsGoogle(w,r.credential)});
-  google.accounts.id.renderButton(w.querySelector('.gbtn'),{theme:'outline',size:'large',shape:'pill',text:'signin_with',logo_alignment:'left'});m.textContent=''}
- catch(e){m.textContent='';tsKeyMode(w)}}
-function tsGoogle(w,cred){const m=w.querySelector('.tkm');m.className='tkm';m.textContent='Signing you in…';
- fetch(API+'/auth/google',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({credential:cred})}).then(async r=>{const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.detail||'Sign-in didn\'t work. Try again.');teamSet(j.token,j.email);tsDone(w)})
-  .catch(e=>{m.className='tkm er';m.textContent=e.message||'Sign-in didn\'t work. Try again.'})}
-STAGE.addEventListener('click',e=>{const o=e.target.closest('.tkopen');if(o&&o.closest('[data-ts]')){tsOpen(o.closest('[data-ts]'));return}
- const a=e.target.closest('.tkalt');if(a){tsKeyMode(a.closest('[data-ts]'));return}
- if(e.target.closest('.tkout')){teamSet('');try{google.accounts.id.disableAutoSelect()}catch(er){}render()}});
-STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-ts] form');if(!f)return;e.preventDefault();const w=f.closest('[data-ts]'),k=(f.querySelector('input').value||'').trim(),m=w.querySelector('.tkm');if(!k)return;m.className='tkm';m.textContent='Checking the key…';
- const ok=()=>{teamSet(k,'');tsDone(w)};
- fetch(API+'/auth/me',{headers:{'X-Team-Key':k}}).then(r=>{if(r.status===401||r.status===403){m.className='tkm er';m.textContent='That team key wasn\'t accepted. Check it and try again.';return}ok()}).catch(ok)});
+/* team sign-in: one shared team password (the API's TEAM_KEYS), entered once per browser and device */
+function teamSet(tok){TEAM=tok||'';try{if(tok)localStorage.setItem('lair-team',tok);else localStorage.removeItem('lair-team');localStorage.removeItem('lair-team-who')}catch(e){}}
+function tsHTML(kind,label){return '<div class="tsign t-'+kind+'" data-ts="'+kind+'"><button type="button" class="tkopen">'+label+'</button><div class="tsb" hidden><form class="tkrow" novalidate><input type="password" autocomplete="current-password" placeholder="Team password" aria-label="Team password" maxlength="200"><button type="submit" class="pbtn">'+(kind==='lead'?'Run scan':'Sign in')+'</button></form></div><p class="tkm" role="status"></p></div>'}
+function teamBar(){return TEAM?'<div class="thome on"><span class="tkon"><i></i>Team mode on</span><span class="tkon2">Picking a business runs the live scan.</span><button type="button" class="tkout">Sign out</button></div>':'<div class="thome">'+tsHTML('home','Team sign-in')+'</div>'}
+function tsDone(w){if(w.dataset.ts==='lead'&&LIVE){const L=LIVE;liveScan({id:L.id,q:L.q,name:L.name})}else render()}
+STAGE.addEventListener('click',e=>{const o=e.target.closest('.tkopen');if(o&&o.closest('[data-ts]')){const w=o.closest('[data-ts]');w.setAttribute('data-open','');w.querySelector('.tsb').hidden=false;w.querySelector('input').focus();return}
+ if(e.target.closest('.tkout')){teamSet('');render()}});
+STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-ts] form');if(!f)return;e.preventDefault();const w=f.closest('[data-ts]'),k=(f.querySelector('input').value||'').trim(),m=w.querySelector('.tkm'),btn=f.querySelector('button');if(!k)return;
+ m.className='tkm';m.textContent='Checking…';btn.disabled=true;const H={headers:{'X-Team-Key':k}};
+ const no=t=>{btn.disabled=false;m.className='tkm er';m.textContent=t};
+ fetch(API+'/auth/me',H).then(r=>r.status===404?fetch(API+'/places/autocomplete?q=dentist',H):r).then(r=>{
+  if(r.status===401||r.status===403)return no('That password isn\'t right. Check it and try again.');if(r.status===429)return no('Too many wrong tries. Wait 10 minutes and try again.');
+  teamSet(k);tsDone(w)}).catch(()=>no('Couldn\'t reach our server. Check the connection and try again.'))});
 function vFind(){
  STAGE.innerHTML='<div class="scr"><div class="map"><div class="pan">'+STREETS+dots(34,3)+HQ.map((q,i)=>'<div class="qb cyc" style="left:'+[8,62,14,70,40,76,22,52][i]+'%;top:'+[14,12,70,64,8,38,40,82][i]+'%;animation-delay:'+(RM?0:i*1.1)+'s">"'+q+'"</div>').join('')+'</div></div><div class="veil"></div>'+
  '<div class="home2"><div class="scard"><div class="lg" style="font-size:calc(1.4*var(--u))">'+LOGO+'Local AI Registry</div><h1 class="h4">Get recommended by&nbsp;AI.<br><em>Guaranteed.</em></h1><div class="sub" style="color:var(--muted)">Is AI recommending you today? Find out free.</div>'+
@@ -1424,7 +1414,7 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
  if(LV){ME=LV.short||LV.name||'Your business';RAT=[LV.rt];WHO=[ME];NB=[];CRN=[];B={svc:LV.svc}}
  if(LV&&LV.err){clearInterval(scanTimer);STAGE.innerHTML='<div class="scr"><div class="scan4 ready-in"><div class="map"><div class="pan"></div></div><div class="sp" id="sp"><a class="lg" href="./" data-home>'+LOGO+'Local AI Registry</a><div class="sph"><div class="kick">AI visibility audit</div><div class="spn">'+X(ME)+'</div></div>'+
   (LV.lead?'<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">We\'ll build the full audit for '+X(LV.name||LV.q||'your business')+'.</div><div class="sub">Our team checks how Google, ChatGPT, Gemini, Perplexity and Claude answer when customers look for a business like yours, then walks you through what\'s working and what to fix on a short call.</div><a class="btn" style="text-decoration:none" href="'+X(bookUrl(LV.name||LV.q))+'" target="_blank" rel="noopener">Book my audit call →</a><div class="sub">Or <a style="color:var(--blue);font-weight:600;text-decoration:none" href="sms:+12139315633?body='+encodeURIComponent('I\'d like my AI visibility audit for '+(LV.name||LV.q||'my business'))+'">text us</a> and we\'ll set it up.</div>'+
-  '<div class="tkey">'+tsHTML('lead',LV.keyBad?'Your team sign-in has ended. Sign in again to run the scan':'Team member? Sign in to run the live scan')+'</div></div></div></div></div>':
+  '<div class="tkey">'+tsHTML('lead',LV.keyBad?'The team password has changed. Enter the new one to run the scan':'Team member? Enter the team password to run the scan')+'</div></div></div></div></div>':
   '<div class="ready" style="display:flex"><div class="sub" style="color:var(--ink);font-weight:600">'+X(LV.err)+'</div><div class="sub">Text us and we\'ll send your audit, usually the same day.</div><a class="btn" href="sms:+12139315633?body='+encodeURIComponent('Please send my AI visibility audit for '+(LV.name||LV.q||'my business')+(LV.id?' ('+LV.id+')':''))+'">Text us for my audit →</a></div></div></div></div>');return}
  const FIND=LV?[[],[],[],[],[],[]]:findings();let k=0,q=0,paused=RM&&!LV,seq=0,lastEng='';const mob=MOB();
  /* layout: where "you" sits on the map, and where competitors go around it */

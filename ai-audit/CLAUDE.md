@@ -43,7 +43,7 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Live scans (lair-api)
 - API: https://lair-api-hps5or6egq-uw.a.run.app (`/places/autocomplete`, `/audit` streams NDJSON, `/audits/<id>` returns a saved scan).
   Its `d` result has the same shape as one `SETS` entry, so a live scan loads straight into this page.
-- Scans and live search need a team sign-in or team key (`X-Team-Key` header, see Team sign-in below). A `?team=<key>` link is
+- Scans and live search need the team password (`X-Team-Key` header, see Team sign-in below). A `?team=<key>` link is
   stored in that browser's localStorage as `lair-team` and removed from the URL. Never commit a key.
 - Flow, one screen: picking a live search result (or `?id=<place id>` / `?q=<name>`) runs the scan on the Scan chapter's map
   as it happens (about 3 to 4 minutes): the progress follows the API's real steps and the pop-ups are its `find` facts
@@ -53,11 +53,10 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - No self-service for the public: scans are run by our team. A visitor without a key who picks a business gets a lead card on
   the Scan screen (no API calls): "Book my audit call" → Bridgette's Calendly (`BOOK` in `sales.tpl.html`), or text us.
   The business name is prefilled with `?a1=`, so the event's first question must be the business name.
-- Team sign-in (`tsHTML()`/`tsOpen()` in `sales.tpl.html`): "Team sign-in" under the home search box, or "Team member? Sign in
-  to run the live scan" on the lead card. It shows Google's "Sign in with Google" button (script loaded from accounts.google.com
-  only when tapped; client id from the API's `/auth/config`). Only Google Workspace accounts on the team's domain get in (the API
-  checks, `/auth/google`), and the sign-in lasts 12 hours. "Use a team key instead" is the backup, and `?team=<key>` still works.
-  The sign-in is stored like a key (`lair-team`, plus `lair-team-who` for the email), once per browser and device.
+- Team sign-in (`tsHTML()` in `sales.tpl.html`): one shared team password (the API's `TEAM_KEYS`; how to set it is in lair-api's
+  deploy/README.md). "Team sign-in" under the home search box, or "Team member? Enter the team password to run the scan" on the
+  lead card. The page checks it with `/auth/me` before saving it in `lair-team`, once per browser and device; then the card says
+  "Team mode on", with Sign out. Ten wrong tries from one address wait 10 minutes. `?team=<password>` links still work.
   Without a sign-in, picking a business always shows the lead card, never a scan.
 
 ## Questions during the scan (rep only)
