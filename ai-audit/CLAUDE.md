@@ -53,6 +53,9 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - No self-service for the public: scans are run by our team. A visitor without a key who picks a business gets a lead card on
   the Scan screen (no API calls): "Book my audit call" → Bridgette's Calendly (`BOOK` in `sales.tpl.html`), or text us.
   The business name is prefilled with `?a1=`, so the event's first question must be the business name.
+- Reps sign in once per browser and device: "Team sign-in" under the home search box (it checks the key with the API, then says
+  "Team mode: picking a business runs the live scan", with Sign out), the "Team member? Run the live scan" link on the lead card,
+  or a `?team=<key>` link. Without a key, picking a business always shows the lead card, never a scan.
 
 ## Questions during the scan (rep only)
 - With a team key, the Scan screen asks the owner up to 4 optional questions, each when its step comes up (`QDEF` in

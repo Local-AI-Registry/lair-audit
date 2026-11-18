@@ -1019,6 +1019,17 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
  .prop .prc:first-child .prr{flex:none}
  .vs .new .t4,.prn .t4.one{margin:0}
 }
+
+/* ---------- team sign-in on the home card ---------- */
+.thome{margin-top:calc(.9*var(--u));padding-top:calc(.8*var(--u));border-top:1px solid var(--rule);text-align:center;font-size:calc(.9*var(--u))}
+.thome .tkopen{font-size:calc(.85*var(--u));color:rgba(11,26,46,.45)}
+.thome .tkrow{max-width:calc(26*var(--u));margin:8px auto 0}
+.thome .tkm{margin:6px 0 0;font-size:13px;color:var(--red)}.thome .tkm:empty{display:none}
+.thome.on{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+.tkon{display:inline-flex;align-items:center;gap:8px;font:600 calc(.9*var(--u)) var(--fb);color:var(--ok)}
+.tkon i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(14,138,95,.15)}
+.tkout{all:unset;cursor:pointer;font:600 calc(.85*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.thome,.tkon,.tkout,.thome .tkopen{font-size:13px}.thome .tkrow{max-width:none}}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1331,10 +1342,15 @@ const dots=(n,seed)=>{let h='';for(let i=0;i<n;i++)h+='<i class="dotp dr" style=
 /* ---------- FIND (home) ---------- */
 const HITS=Object.keys(SETS).map(k=>Object.assign({},SETS[k].hit,{slug:k,re:new RegExp(SETS[k].hit.match,'i')}));
 const HQ=['best med spa near me','botox near me','dentist open saturday','best dermatologist downtown','dispensary near me','lip filler cost','who does the best rhinoplasty?','emergency dentist near me'];
+function teamBar(){return TEAM?'<div class="thome on"><span class="tkon"><i></i>Team mode: picking a business runs the live scan</span><button type="button" class="tkout">Sign out</button></div>':'<form class="tkey thome" data-tkh novalidate><button type="button" class="tkopen">Team sign-in</button><div class="tkrow"><input type="password" autocomplete="current-password" placeholder="Team key" aria-label="Team key" maxlength="200"><button type="submit" class="pbtn">Sign in</button></div><p class="tkm" role="status"></p></form>'}
+STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-tkh]');if(!f)return;e.preventDefault();const k=(f.querySelector('input').value||'').trim(),m=f.querySelector('.tkm');if(!k)return;m.textContent='Checking the key…';
+ const ok=()=>{TEAM=k;try{localStorage.setItem('lair-team',k)}catch(er){}render()};
+ fetch(API+'/places/autocomplete?q=dentist',{headers:{'X-Team-Key':k}}).then(r=>{if(r.status===401){m.textContent='That team key wasn\'t accepted. Check it and try again.';return}ok()}).catch(ok)});
+STAGE.addEventListener('click',e=>{if(!e.target.closest('.tkout'))return;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}render()});
 function vFind(){
  STAGE.innerHTML='<div class="scr"><div class="map"><div class="pan">'+STREETS+dots(34,3)+HQ.map((q,i)=>'<div class="qb cyc" style="left:'+[8,62,14,70,40,76,22,52][i]+'%;top:'+[14,12,70,64,8,38,40,82][i]+'%;animation-delay:'+(RM?0:i*1.1)+'s">"'+q+'"</div>').join('')+'</div></div><div class="veil"></div>'+
  '<div class="home2"><div class="scard"><div class="lg" style="font-size:calc(1.4*var(--u))">'+LOGO+'Local AI Registry</div><h1 class="h4">Get recommended by&nbsp;AI.<br><em>Guaranteed.</em></h1><div class="sub" style="color:var(--muted)">Is AI recommending you today? Find out free.</div>'+
- '<div class="sfield"><div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div>'+TRUST('home')+'</div></div>'+
+ '<div class="sfield"><div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div>'+TRUST('home')+teamBar()+'</div></div>'+
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
  const q=$('#q'),sug=$('#sug');let items=[],act=-1;
  const draw=()=>{sug.innerHTML=items.map((r,i)=>r.err?'<li class="serr" role="status" aria-disabled="true"><small>'+X(r.err)+'</small></li>':r.wait?'<li class="swait" aria-disabled="true"><small>Searching Google…</small></li>':'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
