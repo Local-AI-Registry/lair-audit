@@ -46,8 +46,8 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Live scans (lair-api)
 - API: https://lair-api-hps5or6egq-uw.a.run.app (`/places/autocomplete`, `/audit` streams NDJSON, `/audits/<id>` returns a saved scan).
   Its `d` result has the same shape as one `SETS` entry, so a live scan loads straight into this page.
-- Scans and live search need the team password (`X-Team-Key` header, see Team sign-in below). A `?team=<key>` link is
-  stored in that browser's localStorage as `lair-team` and removed from the URL. Never commit a key.
+- Scans and live search need a team key (`X-Team-Key` header). Open any page once with `?team=<key>`: it is stored in that
+  browser's localStorage as `lair-team` and removed from the URL. Never commit the key.
 - Flow, one screen: picking a live search result (or `?id=<place id>` / `?q=<name>`) runs the scan on the Scan chapter's map
   as it happens (about 3 to 4 minutes): the progress follows the API's real steps and the pop-ups are its `find` facts
   (`liveScan()`, `LSTEP` in `sales.tpl.html`). When it finishes the URL becomes `?audit=<id>#scan` and "Your audit is ready"
@@ -56,11 +56,10 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - No self-service for the public: scans are run by our team. A visitor without a key who picks a business gets a lead card on
   the Scan screen (no API calls): "Book my audit call" → Bridgette's Calendly (`BOOK` in `sales.tpl.html`), or text us.
   The business name is prefilled with `?a1=`, so the event's first question must be the business name.
-- Team sign-in (`tsHTML()` in `sales.tpl.html`): one shared team password (the API's `TEAM_KEYS`; how to set it is in lair-api's
-  deploy/README.md). "Team sign-in" under the home search box, or "Team member? Enter the team password to run the scan" on the
-  lead card. The page checks it with `/auth/me` before saving it in `lair-team`, once per browser and device; then the card says
-  "Team mode on", with Sign out. Ten wrong tries from one address wait 10 minutes. `?team=<password>` links still work.
-  Without a sign-in, picking a business always shows the lead card, never a scan.
+- Reps sign in once per browser and device: "Team sign-in" under the home search box (it checks the key with the API, then says
+  "Team mode: picking a business runs the live scan", with Sign out), the "Team member? Run the live scan" link on the lead card,
+  or a `?team=<key>` link. Without a key, picking a business always shows the lead card, never a scan.
+- Later (see `_build/PARKING_LOT.md`): a shared team password, then maybe Google sign-in. Both are built and reverted.
 
 ## Questions during the scan (rep only)
 - With a team key, the Scan screen asks the owner up to 4 optional questions, each when its step comes up (`QDEF` in
