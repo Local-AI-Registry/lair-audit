@@ -38,7 +38,8 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - Look: matches the new website (/home/drafts/home-2/): self-hosted fonts from home/assets/fonts, regular-weight Hanken headlines in grey then ink, Bricolage eyebrows, blue pill buttons (a trailing arrow becomes a chevron chip via chipify()), hairline cards on white. It lives in the "2026 site look" block at the end of the stylesheet.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
 - Why us: only the plastic surgery (New York) chart has real monthly data. The other cards have real start and end visits;
-  the months between are a seeded path with its own shape per card (`shape` in `CARDS`, drawn by `cseries()`), labeled
+  the months between are a seeded path with its own shape per card (`shape` in `CARDS`, `cseries()`; flat year with a
+  seasonal ripple, a lag, a climb with small pullbacks), drawn as a smooth line (`spath()`), labeled
   "Illustrative path; real start and end" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
 - Area exclusivity is described without a set distance ("one business like yours per area").
 
