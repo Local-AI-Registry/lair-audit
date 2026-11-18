@@ -7,7 +7,16 @@
 <meta name="color-scheme" content="light">
 <title>AI Visibility Audit · Local AI Registry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Cormorant:wght@500;600&display=swap">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../home/assets/fonts/hanken.woff2">
+<style>
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(../home/assets/fonts/hanken.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-style:italic;font-weight:100 900;font-display:swap;src:url(../home/assets/fonts/hanken-italic.woff2) format('woff2')}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:200 800;font-display:swap;src:url(../home/assets/fonts/bricolage.woff2) format('woff2')}
+@font-face{font-family:'Cormorant';font-style:normal;font-weight:300 700;font-display:swap;src:url(../home/assets/fonts/cormorant.woff2) format('woff2')}
+@font-face{font-family:'Cormorant';font-style:italic;font-weight:300 700;font-display:swap;src:url(../home/assets/fonts/cormorant-italic.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk Fallback';src:local('Arial'),local('Helvetica'),local('Liberation Sans'),local('Roboto');size-adjust:101.5%;ascent-override:98.5%;descent-override:29.9%;line-gap-override:0%}
+@font-face{font-family:'Bricolage Grotesque Fallback';src:local('Arial'),local('Helvetica'),local('Liberation Sans'),local('Roboto');size-adjust:95.2%;ascent-override:97.7%;descent-override:28.4%;line-gap-override:0%}
+</style>
 <style>
 
 /* Layout: full-window stage. Every size is a multiple of --u (1% of the width, capped by the height), so the screen fills any desktop window. Below 760px it becomes one scrolling column.
@@ -825,7 +834,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 @media (prefers-reduced-motion:reduce){.gpx,.gpx-card{transition:none}}
 /* ---------- plan: 12-month timeline styles (overview cards fill the page) ---------- */
 @media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.tl12{flex:1;min-height:0;justify-content:center}}
-@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:159/100) and (min-height:501px){
 .tl12{gap:calc(2*var(--u));padding:calc(1.6*var(--u)) calc(2*var(--u))}
 .tl12 .tlh b{font-size:calc(1.6*var(--u))}.tl12 .tlh span{font-size:calc(1.05*var(--u))}
 .tl12 .tlr{gap:calc(1.6*var(--u));padding-top:calc(1.8*var(--u))}
@@ -837,7 +846,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .tlr ul.d{margin:0;padding:0;list-style:none}.tlr ul.d li{display:inline}.tlr ul.d li:not(:last-child)::after{content:", "}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tlr ul.d li{display:list-item;list-style:none}.tlr ul.d li::after{content:none!important}}
 /* taller-than-16:10 desktops: the timeline becomes five panels with their work listed */
-@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:159/100) and (min-height:501px){
  .tl12{justify-content:flex-start}
  .tl12 .tlr{flex:1;min-height:0;align-items:stretch}
  .tl12 .tlr>div{background:var(--bg);border-radius:calc(1.2*var(--u));padding:calc(1.3*var(--u)) calc(1.3*var(--u)) calc(1.5*var(--u));gap:calc(.5*var(--u))}
@@ -880,7 +889,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .whyg{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) calc(25*var(--u));gap:calc(1*var(--u))}
 .whyg .tiles{grid-template-columns:repeat(4,minmax(0,1fr))}
 .whyg .tiles .tcta{display:none}
-@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){.body .whyg .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.body .whyg .tiles .tcta{display:flex}}
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:159/100) and (min-height:501px){.body .whyg .tiles{grid-template-columns:repeat(3,minmax(0,1fr))}.body .whyg .tiles .tcta{display:flex}}
 .trustp{background:var(--ink);color:#fff;padding:calc(1.3*var(--u)) calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.6*var(--u));min-height:0}
 .trustp .kick{color:#7EE2B0}
 .tph{font:800 calc(1.3*var(--u))/1.2 var(--fu)}
@@ -899,7 +908,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .pnc:hover{box-shadow:inset 0 0 0 2px var(--blue),var(--shadow)}.pnc:active{transform:scale(.99)}.pnc:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
 .pnc .kick{color:var(--blue)}.pnc b{font:800 calc(1.35*var(--u))/1.2 var(--fu);color:var(--ink)}.pnc>span:not(.kick){font-size:calc(.95*var(--u));color:var(--muted)}
 .pnx{display:none}
-@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:16/10) and (min-height:501px){
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (max-aspect-ratio:159/100) and (min-height:501px){
  .pnext .pnc{justify-content:flex-start;padding:calc(1.6*var(--u))}.pnext .pnc i{top:calc(1.4*var(--u));transform:none}.pnext .pnc>b,.pnext .pnc>span{padding-right:calc(3*var(--u))}
  .pnx{display:flex;flex-direction:column;gap:calc(.6*var(--u));margin-top:auto;padding-top:calc(1*var(--u))}
  .pnx>div{display:flex;align-items:baseline;gap:calc(.6*var(--u));font-size:calc(.95*var(--u));color:var(--muted);padding:calc(.5*var(--u)) calc(.8*var(--u));background:var(--bg);border-radius:calc(.8*var(--u))}
@@ -1123,6 +1132,65 @@ a.btn{text-decoration:none}
  .plink{padding:12px 0}
  .rng::-webkit-slider-thumb{width:28px;height:28px}
  .hfv button{min-height:40px;box-sizing:border-box}
+}
+
+/* ==========================================================================================================
+   2026 site look (matches /home/drafts/home-2/): white pages, regular-weight Hanken headlines in grey and ink,
+   Bricolage eyebrows, blue pill buttons with a chevron chip, hairline cards. Layout rules above stay as they are.
+   ========================================================================================================== */
+:root{--fb:"Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;--fu:"Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;--fe:"Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;
+ --grey:#8C94A3;--body:#46526A;--muted:#5A647A;--rule:rgba(11,26,46,.1);--ring:inset 0 0 0 1px rgba(11,26,46,.07);
+ --shadow:0 1px 2px rgba(11,26,46,.06),inset 0 0 0 1px rgba(11,26,46,.07)}
+html,body,#stage{background:#fff}
+/* headings: regular weight, tight tracking; the lead-in is grey and the point is ink */
+.ttl{font:400 calc(2.9*var(--u))/1.1 var(--fb);letter-spacing:-.025em;color:var(--grey)}
+.ttl em{color:var(--ink)}
+.kick{font:600 calc(.85*var(--u))/1.2 var(--fe);letter-spacing:.14em;color:var(--muted)}
+.lg{font-family:var(--fe)}
+.colh,.tile .typ,.prh,.tph,.dt .ttl,.card .ttl{font-weight:600;letter-spacing:-.01em}
+.dt .ttl,.hub .ttl{color:var(--ink)}
+.spn,.rt,.sp .ready .rt{font-weight:600;letter-spacing:-.02em}
+/* numbers: large and light, like the site's stats */
+.big,.up,.newp,.oldp,.prr b,.astat b,.wins b,.chain b,.stat4 b,.pct b,.tpi b,.pnx>div b,.fpv b,.qnum input,.cksum b,.lead b,.av{font-weight:500!important;letter-spacing:-.02em}
+.newp,.oldp{font-weight:400!important;letter-spacing:-.035em}
+.scr svg text[font-family^="Bricolage"]{font-family:"Hanken Grotesk",sans-serif;font-weight:600}
+/* top bar: a clean nav row over a hairline, chapters as quiet links */
+.top{background:#fff;box-shadow:inset 0 -1px 0 var(--rule)}
+.prog{height:2px;background:transparent;margin:0}
+.chap{background:transparent;box-shadow:none;padding:0;gap:calc(.3*var(--u))}
+.chap button{color:#5A647A;font-weight:500}
+.chap button:hover{color:var(--ink)}
+.chap button.on{background:#F1F3F7;color:var(--ink);box-shadow:none}
+.chap button i{box-shadow:inset 0 0 0 1px var(--rule)}
+.chap button.on i{background:var(--ink);color:#fff;box-shadow:none}
+.chap button.done i{background:#E7EDFC;color:var(--blue);box-shadow:none}
+/* buttons: blue pills; an arrow at the end becomes a chevron chip */
+.btn,.stepper button:not(.bk),.ckgo{background:var(--blue);color:#fff;font-weight:500;border-radius:999px;box-shadow:0 6px 18px rgba(31,79,224,.22);transition:background .15s,transform .15s}
+.btn:hover,.stepper button:not(.bk):hover,.ckgo:hover{background:#163BAF;transform:translateY(-1px)}
+.stepper .bk{background:#fff!important;color:var(--ink)!important;box-shadow:inset 0 0 0 1px var(--rule)!important}
+.btn2{font-weight:500;border-radius:999px}
+.chv{display:inline-grid;place-items:center;width:1.55em;height:1.55em;margin:-.35em -.55em -.35em .25em;border-radius:50%;background:rgba(255,255,255,.18);font:500 1em/1 var(--fb);font-style:normal}
+.btn2 .chv{background:#E7EDFC;color:var(--blue)}
+.stepper .bk .chv{display:none}
+/* cards: white with a hairline ring, 14px corners */
+.card{border-radius:14px;box-shadow:var(--shadow)}
+.card.new,.trustp,.tcta,.tile.match{box-shadow:0 18px 50px -24px rgba(11,26,46,.45)}
+.pill,.tabs button.on{font-weight:600}
+.tabs{background:#F1F3F7}
+/* find: the site's hero, with the search as a pill form */
+.scard{background:#fff;border-radius:22px;box-shadow:0 1px 2px rgba(11,26,46,.06),0 30px 80px -30px rgba(11,26,46,.35),inset 0 0 0 1px rgba(11,26,46,.06)}
+.scard .h4{font:400 calc(3.6*var(--u))/1.06 var(--fb);letter-spacing:-.03em;color:var(--ink)}
+.scard .h4 em{color:var(--blue)}
+.sbox{border:0;box-shadow:inset 0 0 0 1px #E6E3DC,0 10px 30px -18px rgba(11,26,46,.35)}
+.sbox:focus-within{box-shadow:inset 0 0 0 2px var(--blue),0 10px 30px -18px rgba(11,26,46,.35)}
+/* scan panel and pop-ups */
+.scan4 .sp{border-radius:18px;box-shadow:0 1px 2px rgba(11,26,46,.06),0 30px 80px -30px rgba(11,26,46,.35),inset 0 0 0 1px rgba(11,26,46,.06)}
+.qcard,.feed .fnd,.bigq{border-radius:14px}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ .ttl{font-size:28px;line-height:1.12}
+ .kick{font-size:11px}
+ .scard .h4{font-size:32px}
+ .chap button{font-size:13px}
 }
 </style>
 </head>
@@ -1732,8 +1800,10 @@ function priceUI(){const g=id=>document.getElementById(id),pr=planPrice();
 
 
 /* ---------- render ---------- */
+function chipify(root){root.querySelectorAll('.btn,.btn2,.stepper button,.ckgo,.prbook,.qgo').forEach(b=>{if(b.querySelector('.chv'))return;const t=b.lastChild;if(t&&t.nodeType===3&&/\s?→\s*$/.test(t.nodeValue)){t.nodeValue=t.nodeValue.replace(/\s?→\s*$/,'');const i=document.createElement('i');i.className='chv';i.setAttribute('aria-hidden','true');i.textContent='›';b.appendChild(i)}})}
 function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan,prop:vProp})[cur]();if(cur==='scan')mapFocus();if(cur==='plan'||cur==='prop')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
+ chipify(STAGE);
  if(MOB()&&D&&cur!=='find'&&cur!=='scan'){const bd=STAGE.querySelector('.scr>.body'),sp=STAGE.querySelector('.top .stepper');if(bd&&sp&&bd.scrollHeight>innerHeight*1.2){const c=sp.cloneNode(true);c.classList.add('mnext');bd.appendChild(c)}}
  if(!MOB())STAGE.querySelectorAll('.tblw,.fwrap').forEach(t=>{const f=()=>t.classList.toggle('more',t.scrollHeight>t.clientHeight+4&&t.scrollTop+t.clientHeight<t.scrollHeight-4);f();t.addEventListener('scroll',f,{passive:true})});
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
