@@ -37,8 +37,11 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   to test the live map where map tiles are blocked.
 - Look: matches the new website (/home/drafts/home-2/): self-hosted fonts from home/assets/fonts, regular-weight Hanken headlines in grey then ink, Bricolage eyebrows, blue pill buttons (a trailing arrow becomes a chevron chip via chipify()), hairline cards on white. It lives in the "2026 site look" block at the end of the stylesheet.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
-- Why us: only the plastic surgery (New York) chart has real monthly data; the other result cards are labeled
-  "Illustrative" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
+- Why us: only the plastic surgery (New York) chart has real monthly data. The other cards have real start and end visits;
+  the months between are a seeded path with its own shape per card (`shape` in `CARDS`, `cseries()`; flat year with a
+  seasonal ripple, a lag, a climb with small pullbacks), drawn as a smooth line (`spath()`), labeled
+  "Illustrative path; real start and end" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
+- Area exclusivity is described without a set distance ("one business like yours per area").
 
 ## Live scans (lair-api)
 - API: https://lair-api-hps5or6egq-uw.a.run.app (`/places/autocomplete`, `/audit` streams NDJSON, `/audits/<id>` returns a saved scan).
@@ -56,6 +59,7 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - Reps sign in once per browser and device: "Team sign-in" under the home search box (it checks the key with the API, then says
   "Team mode: picking a business runs the live scan", with Sign out), the "Team member? Run the live scan" link on the lead card,
   or a `?team=<key>` link. Without a key, picking a business always shows the lead card, never a scan.
+- Later (see `_build/PARKING_LOT.md`): a shared team password, then maybe Google sign-in. Both are built and reverted.
 
 ## Questions during the scan (rep only)
 - With a team key, the Scan screen asks the owner up to 4 optional questions, each when its step comes up (`QDEF` in
