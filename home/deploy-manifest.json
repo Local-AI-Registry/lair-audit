@@ -282,7 +282,7 @@
   "status": "noindex"
  },
  "drafts/home-2/about": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/about/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -420,73 +420,73 @@
   "to": "/leaderboards/ca/costa-mesa"
  },
  "drafts/home-2/blueprint": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/ai-monitoring": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/ai-monitoring/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/best-of-guides": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/best-of-guides/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/directory-listings": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/directory-listings/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/google-profile": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/google-profile/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/photo-codifying": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/photo-codifying/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/pr": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/pr/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/reputation": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/reputation/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/seo": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/seo/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/third-party-articles": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/third-party-articles/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/video": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/video/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/blueprint/web-management": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/blueprint/web-management/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -522,49 +522,49 @@
   "to": "../../results/luxurgery/"
  },
  "drafts/home-2/changelog": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/changelog/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/agencies": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/agencies/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/birdeye": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/birdeye/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/brightlocal": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/brightlocal/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/podium": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/podium/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/synup": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/synup/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/compare/yext": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/compare/yext/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -726,7 +726,7 @@
   "to": "../about/#team"
  },
  "drafts/home-2/free-audit": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/free-audit/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -750,7 +750,7 @@
   "to": "/learn"
  },
  "drafts/home-2/guarantee": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/guarantee/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -780,19 +780,19 @@
   "to": "/learn"
  },
  "drafts/home-2/how-it-works": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/how-it-works/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/industries": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/industries/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/integrations": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/integrations/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -804,19 +804,19 @@
   "to": "/journal/what-is-an-ai-score"
  },
  "drafts/home-2/legal/baa": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/legal/baa/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/legal/privacy": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/legal/privacy/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/legal/terms": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/legal/terms/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -834,7 +834,7 @@
   "to": "/methodology"
  },
  "drafts/home-2/news": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/news/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -870,7 +870,7 @@
   "to": "../news/"
  },
  "drafts/home-2/pricing": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/pricing/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -900,43 +900,43 @@
   "to": "/report-an-error"
  },
  "drafts/home-2/research": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/research/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/resources": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/resources/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/results": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/results/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/results/beverly-hills-rhinoplasty-center": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/results/beverly-hills-rhinoplasty-center/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/results/define-clinic": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/results/define-clinic/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/results/injection-artistry": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/results/injection-artistry/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/results/luxurgery": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/results/luxurgery/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -1020,31 +1020,31 @@
   "to": "../../blueprint/web-management/"
  },
  "drafts/home-2/solutions": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/solutions/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/solutions/multi-location": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/solutions/multi-location/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/solutions/owners": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/solutions/owners/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/solutions/teams": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/solutions/teams/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/start": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/start/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -1080,7 +1080,7 @@
   "to": "../../about/#team"
  },
  "drafts/home-2/tools": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/tools/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
@@ -1092,19 +1092,19 @@
   "to": "../../start/"
  },
  "drafts/home-2/tools/llms-txt-generator": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/tools/llms-txt-generator/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/tools/prompt-finder": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/tools/prompt-finder/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
  },
  "drafts/home-2/tools/schema-generator": {
-  "canonical": null,
+  "canonical": "https://localairegistry.com/drafts/home-2/tools/schema-generator/",
   "http": 200,
   "sitemap": null,
   "status": "noindex"
