@@ -387,25 +387,25 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/leaderboards/ca/costa-mesa"
  },
  "drafts/home-2/best/botox/costa-mesa-ca": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../agents/"
+  "to": "/leaderboards/ca/costa-mesa"
  },
  "drafts/home-2/best/botox/costa-mesa-ca/affordable": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../../agents/"
+  "to": "/leaderboards/ca/costa-mesa"
  },
  "drafts/home-2/best/med-spas/costa-mesa-ca": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../agents/"
+  "to": "/leaderboards/ca/costa-mesa"
  },
  "drafts/home-2/blueprint": {
   "canonical": null,
@@ -567,7 +567,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "/data-policy"
  },
  "drafts/home-2/experts": {
   "http": 301,
@@ -591,7 +591,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/chiropractors/ai": {
   "http": 301,
@@ -603,7 +603,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/dentists/ai": {
   "http": 301,
@@ -621,7 +621,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/dispensaries/ai": {
   "http": 301,
@@ -633,7 +633,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/eye-surgeons/ai": {
   "http": 301,
@@ -657,7 +657,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/med-spas/ai": {
   "http": 301,
@@ -669,13 +669,13 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/plastic-surgeons": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/plastic-surgeons/ai": {
   "http": 301,
@@ -699,13 +699,13 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/for/urgent-care": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "../../industries/"
  },
  "drafts/home-2/founder-story": {
   "http": 301,
@@ -723,7 +723,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/signup"
  },
  "drafts/home-2/giving-back": {
   "http": 301,
@@ -735,7 +735,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/learn"
  },
  "drafts/home-2/guarantee": {
   "canonical": null,
@@ -747,25 +747,25 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/learn"
  },
  "drafts/home-2/guide/checklist": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "/learn"
  },
  "drafts/home-2/guide/claim-your-business-in-chatgpt": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "/learn"
  },
  "drafts/home-2/guide/not-showing-up": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "/learn"
  },
  "drafts/home-2/how-it-works": {
   "canonical": null,
@@ -789,7 +789,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "/journal/what-is-an-ai-score"
  },
  "drafts/home-2/legal/baa": {
   "canonical": null,
@@ -813,13 +813,13 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/search"
  },
  "drafts/home-2/methodology": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/methodology"
  },
  "drafts/home-2/news": {
   "canonical": null,
@@ -843,7 +843,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "/opt-out"
  },
  "drafts/home-2/partners": {
   "http": 301,
@@ -867,25 +867,25 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../agents/"
+  "to": "/proof/the-convergence-white-paper"
  },
  "drafts/home-2/registry": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/search"
  },
  "drafts/home-2/registry/ca/costa-mesa/quiktox": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../../../../agents/"
+  "to": "/biz/ca/costa-mesa/quiktoxtm-botox-same-day-appointments-sms-text-to-book-costa-mesa-ca"
  },
  "drafts/home-2/report-an-error": {
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../"
+  "to": "/report-an-error"
  },
  "drafts/home-2/research": {
   "canonical": null,
@@ -1041,7 +1041,7 @@
   "http": 301,
   "sitemap": null,
   "status": "redirect",
-  "to": "../agents/"
+  "to": "/research"
  },
  "drafts/home-2/team": {
   "http": 301,
