@@ -35,6 +35,7 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   Next never opens checkout. Reps (team key) also get "Send follow-ups" on the proposal, which calls `/leads`.
 - Tests: `tests/v2map.js` checks the live map and the checkout. Set `MAPLIBRE_DIST` to a local maplibre-gl/dist/ folder
   to test the live map where map tiles are blocked.
+- Look: matches the new website (/home/drafts/home-2/): self-hosted fonts from home/assets/fonts, regular-weight Hanken headlines in grey then ink, Bricolage eyebrows, blue pill buttons (a trailing arrow becomes a chevron chip via chipify()), hairline cards on white. It lives in the "2026 site look" block at the end of the stylesheet.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
 - Why us: only the plastic surgery (New York) chart has real monthly data; the other result cards are labeled
   "Illustrative" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
