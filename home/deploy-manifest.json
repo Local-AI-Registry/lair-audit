@@ -287,11 +287,431 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/agents": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../agents/"
+ },
+ "drafts/home-2/ai-consultants": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/#careers"
+ },
+ "drafts/home-2/ai/alexa": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/chatgpt": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/claude": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/copilot": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/gemini": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/google-ai-overviews": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/grok": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/meta-ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/perplexity": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/ai/siri": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/answer-watch": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../agents/"
+ },
+ "drafts/home-2/awards": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../agents/"
+ },
+ "drafts/home-2/badge": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../agents/"
+ },
+ "drafts/home-2/best": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/leaderboards/ca/costa-mesa"
+ },
+ "drafts/home-2/best/botox/costa-mesa-ca": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/leaderboards/ca/costa-mesa"
+ },
+ "drafts/home-2/best/botox/costa-mesa-ca/affordable": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/leaderboards/ca/costa-mesa"
+ },
+ "drafts/home-2/best/med-spas/costa-mesa-ca": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/leaderboards/ca/costa-mesa"
+ },
  "drafts/home-2/blueprint": {
   "canonical": null,
   "http": 200,
   "sitemap": null,
   "status": "noindex"
+ },
+ "drafts/home-2/blueprint/ai-monitoring": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/best-of-guides": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/directory-listings": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/google-profile": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/photo-codifying": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/pr": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/reputation": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/seo": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/third-party-articles": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/video": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/blueprint/web-management": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/careers": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/#careers"
+ },
+ "drafts/home-2/case-studies/beverly-hills-rhinoplasty-center": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../results/beverly-hills-rhinoplasty-center/"
+ },
+ "drafts/home-2/case-studies/define-clinic": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../results/define-clinic/"
+ },
+ "drafts/home-2/case-studies/injection-artistry": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../results/injection-artistry/"
+ },
+ "drafts/home-2/case-studies/luxurgery": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../results/luxurgery/"
+ },
+ "drafts/home-2/changelog": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/agencies": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/birdeye": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/brightlocal": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/podium": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/synup": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/compare/yext": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/contact": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../start/"
+ },
+ "drafts/home-2/data-policy": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/data-policy"
+ },
+ "drafts/home-2/experts": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../"
+ },
+ "drafts/home-2/for/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../agents/"
+ },
+ "drafts/home-2/for/auto-dealers/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/cannabis-dispensaries": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/chiropractors/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/dentists": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/dentists/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/dermatologists/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/dermatology": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/dispensaries/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/eye-care": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/eye-surgeons/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/hvac/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/law-firms/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/med-spas": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/med-spas/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/medical-clinics": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/plastic-surgeons": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/plastic-surgeons/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/plumbers/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/roofers/ai": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../../agents/"
+ },
+ "drafts/home-2/for/skin-care-clinics": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/for/urgent-care": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../industries/"
+ },
+ "drafts/home-2/founder-story": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/#team"
  },
  "drafts/home-2/free-audit": {
   "canonical": null,
@@ -299,11 +719,53 @@
   "sitemap": null,
   "status": "noindex"
  },
+ "drafts/home-2/free-business-listing": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/signup"
+ },
+ "drafts/home-2/giving-back": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../"
+ },
+ "drafts/home-2/glossary": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/learn"
+ },
  "drafts/home-2/guarantee": {
   "canonical": null,
   "http": 200,
   "sitemap": null,
   "status": "noindex"
+ },
+ "drafts/home-2/guide": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/learn"
+ },
+ "drafts/home-2/guide/checklist": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/learn"
+ },
+ "drafts/home-2/guide/claim-your-business-in-chatgpt": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/learn"
+ },
+ "drafts/home-2/guide/not-showing-up": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/learn"
  },
  "drafts/home-2/how-it-works": {
   "canonical": null,
@@ -316,6 +778,114 @@
   "http": 200,
   "sitemap": null,
   "status": "noindex"
+ },
+ "drafts/home-2/integrations": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/journal/what-is-an-ai-score": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/journal/what-is-an-ai-score"
+ },
+ "drafts/home-2/legal/baa": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/legal/privacy": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/legal/terms": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/look-up": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/search"
+ },
+ "drafts/home-2/methodology": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/methodology"
+ },
+ "drafts/home-2/news": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/news/the-199-botox-studio-on-newport-boulevard": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../"
+ },
+ "drafts/home-2/newsroom": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../news/"
+ },
+ "drafts/home-2/opt-out": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/opt-out"
+ },
+ "drafts/home-2/partners": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../integrations/"
+ },
+ "drafts/home-2/press": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../news/"
+ },
+ "drafts/home-2/pricing": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/proof/the-convergence-white-paper": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/proof/the-convergence-white-paper"
+ },
+ "drafts/home-2/registry": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/search"
+ },
+ "drafts/home-2/registry/ca/costa-mesa/quiktox": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/biz/ca/costa-mesa/quiktoxtm-botox-same-day-appointments-sms-text-to-book-costa-mesa-ca"
+ },
+ "drafts/home-2/report-an-error": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/report-an-error"
  },
  "drafts/home-2/research": {
   "canonical": null,
@@ -358,6 +928,210 @@
   "http": 200,
   "sitemap": null,
   "status": "noindex"
+ },
+ "drafts/home-2/revenue-share": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../solutions/teams/"
+ },
+ "drafts/home-2/signals": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../blueprint/"
+ },
+ "drafts/home-2/signals/ai-monitoring": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/ai-monitoring/"
+ },
+ "drafts/home-2/signals/best-of-guides": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/best-of-guides/"
+ },
+ "drafts/home-2/signals/directory-listings": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/directory-listings/"
+ },
+ "drafts/home-2/signals/google-profile": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/google-profile/"
+ },
+ "drafts/home-2/signals/photo-codifying": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/photo-codifying/"
+ },
+ "drafts/home-2/signals/pr": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/pr/"
+ },
+ "drafts/home-2/signals/reputation": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/reputation/"
+ },
+ "drafts/home-2/signals/seo": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/seo/"
+ },
+ "drafts/home-2/signals/third-party-articles": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/third-party-articles/"
+ },
+ "drafts/home-2/signals/video": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/video/"
+ },
+ "drafts/home-2/signals/web-management": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../blueprint/web-management/"
+ },
+ "drafts/home-2/solutions": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/solutions/multi-location": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/solutions/owners": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/solutions/teams": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/start": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/statistics": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "/research"
+ },
+ "drafts/home-2/team": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/#team"
+ },
+ "drafts/home-2/team/aneesh-patel": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../about/#team"
+ },
+ "drafts/home-2/team/steve-lee": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../about/#team"
+ },
+ "drafts/home-2/team/tess-mauricio": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../about/#team"
+ },
+ "drafts/home-2/tools": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/tools/ai-visibility-check": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../start/"
+ },
+ "drafts/home-2/tools/llms-txt-generator": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/tools/prompt-finder": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/tools/schema-generator": {
+  "canonical": null,
+  "http": 200,
+  "sitemap": null,
+  "status": "noindex"
+ },
+ "drafts/home-2/tour": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../"
+ },
+ "drafts/home-2/trust": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/"
+ },
+ "drafts/home-2/trust-center": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../about/"
+ },
+ "drafts/home-2/verified": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../agents/"
+ },
+ "drafts/home-2/vs/agencies": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../../compare/agencies/"
+ },
+ "drafts/home-2/works-with": {
+  "http": 301,
+  "sitemap": null,
+  "status": "redirect",
+  "to": "../integrations/"
  },
  "drafts/quiet": {
   "canonical": "https://localairegistry.com/drafts/quiet/",

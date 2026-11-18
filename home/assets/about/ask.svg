@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="A person asks her phone who is the best injector near her, and AI gives one answer">
+  <g transform="translate(62 104) scale(1.15)"><path class="lt" d="M-15 14 V-1 a15 15 0 0 1 30 0 V14 Z"/><path class="lt" d="M-23 40 c0-14 9-21 23-21 c14 0 23 7 23 21 z"/><path class="ln" d="M-6 20 l6 7 l6 -7" style="stroke-width:2.4"/><circle class="lw" cx="0" cy="2" r="11.5"/><circle cx="-4" cy="4" r="1.7" fill="#1F4FE0"/><circle cx="4" cy="4" r="1.7" fill="#1F4FE0"/></g>
+  <path class="dl" d="M96 104 H116"/>
+  <rect class="lw" x="118" y="8" width="112" height="204" rx="18"/><path class="ln" d="M162 20 H186" style="stroke-width:3"/>
+  <g class="" transform="translate(174 44)"><circle class="lt" r="11"/><path d="M0 -4.62 C0.5544 -1.0164 1.0164 -0.5544 4.62 0 C1.0164 0.5544 0.5544 1.0164 0 4.62 C-0.5544 1.0164 -1.0164 0.5544 -4.62 0 C-1.0164 -0.5544 -0.5544 -1.0164 0 -4.62Z" fill="#1F4FE0"/></g>
+  <g class="pop" style="animation-delay:.2s"><rect x="132" y="64" width="86" height="40" rx="9" fill="#1F4FE0"/><text x="140" y="80" font-family="Hanken Grotesk, sans-serif" font-weight="600" font-size="10" fill="#fff">Best injector</text><text x="140" y="94" font-family="Hanken Grotesk, sans-serif" font-weight="600" font-size="10" fill="#fff">near me?</text></g>
+  <g class="pop" style="animation-delay:1.1s"><rect x="132" y="112" width="86" height="88" rx="9" fill="#F1F0EC"/>
+    <rect class="lw" x="136" y="120" width="78" height="30" rx="7" style="stroke-width:2.5"/><circle cx="147" cy="135" r="6.5" fill="#1F4FE0"/><text x="147" y="138.5" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="9" fill="#fff">1</text><text x="157" y="138.5" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="8.5" fill="#0B1A2E">Juniper Skin</text>
+    <path class="ln" d="M142 164 H200 M142 176 H190 M142 188 H196" style="stroke-width:2.5;opacity:.25"/></g>
+</svg>
