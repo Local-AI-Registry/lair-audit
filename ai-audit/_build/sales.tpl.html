@@ -994,6 +994,31 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .tlmini .tlh{flex-wrap:nowrap;white-space:nowrap}
 .tlmini .tlh>span:last-child{color:var(--muted);font-size:calc(.9*var(--u))}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tlmini .tlh{flex-wrap:wrap;white-space:normal}.sc2 .lead>div:not(.h){min-height:0}}
+
+/* ---------- third pass: cards fill their space ---------- */
+.gcard>.rowx:first-child{margin-bottom:auto}.gcard>:last-child{margin-bottom:auto}
+.sc0 .stat4{flex:1;grid-auto-rows:1fr}
+.sc0 .stat4 .card{justify-content:center;padding:calc(1.6*var(--u)) calc(1.8*var(--u))}
+.sc0 .stat4 b{font-size:calc(3.8*var(--u));margin-bottom:calc(.4*var(--u))}
+.amx .tblw.arows>.ar{flex:1 0 auto;max-height:calc(5.6*var(--u))}
+.rivals .tallyc{gap:calc(1.2*var(--u));margin-top:calc(1*var(--u))}
+.rivals .tallyc u{height:calc(1.3*var(--u))}
+.vs .old .vl{flex:1;grid-auto-rows:1fr;margin-bottom:calc(1*var(--u))}
+.vs .old .vl div{align-items:center}
+.vs .new .fpv{margin-top:auto}.vs .new .fpv+.rowx{margin-top:calc(1.4*var(--u))!important}
+.prop .prc:first-child{justify-content:space-between}
+.prop .prc:first-child .prr{flex:1;justify-content:center}
+.sc0 .stat4 b span{font-size:inherit!important;color:inherit}
+.vs .new .t4{margin:auto 0}.vs .new .fpv{margin-top:0}
+.prn .t4.one{margin-top:auto}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ .gcard>.rowx:first-child,.gcard>:last-child{margin-bottom:0}
+ .sc0 .stat4{flex:none;grid-auto-rows:auto}.sc0 .stat4 b{font-size:26px;margin-bottom:0}.sc0 .stat4 .card{padding:14px 16px}
+ .amx .tblw.arows>.ar{flex:none;max-height:none}
+ .vs .old .vl{flex:none;grid-auto-rows:auto}
+ .prop .prc:first-child .prr{flex:none}
+ .vs .new .t4,.prn .t4.one{margin:0}
+}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1478,10 +1503,10 @@ function vScore(){const sc=D.score,ab=sc.you-sc.avg;const sv=S[0]&&S[0].v||[],la
   const vb=S.slice(1).map(s=>s&&s.v&&s.v[s.v.length-1]).filter(v=>v!=null),g=last==null||!vb.length?'':last>Math.max(...vb)?'You lead on Google too.':last===Math.max(...vb)?'You\'re level on Google.':'A rival out-draws you on Google.';
   return (me>best?'You lead on AI.':me===best?'You\'re level with the top rival on AI.':'AI names a rival more often.')+(g?' <em>'+g+'</em>':'')}
  let body;
- if(step===0)body='<div class="g2" style="grid-template-columns:1.05fr 1fr"><div class="card pad col fade" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score, out of 100</span>'+IB+'</div>'+gauge('86%')+'<div class="sub" style="text-align:center">'+(sc.avg==null?'We found no nearby competitors with reviews to compare you with.':(ab>0?'<b style="color:var(--ok)">'+ab+' points above</b> the area average ('+sc.avg+'). ':ab<0?'<b style="color:var(--red)">'+(-ab)+' points below</b> the area average ('+sc.avg+'). ':'Level with the area average ('+sc.avg+'). ')+(sc.you>sc.top?'Ahead of the top score nearby ('+sc.top+').':sc.you===sc.top?'Level with the top score nearby.':'The top score nearby is '+sc.top+'.'))+'</div></div>'+
+ if(step===0)body='<div class="g2 sc0" style="grid-template-columns:1.05fr 1fr"><div class="card pad col fade gcard" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score, out of 100</span>'+IB+'</div>'+gauge('86%')+'<div class="sub" style="text-align:center">'+(sc.avg==null?'We found no nearby competitors with reviews to compare you with.':(ab>0?'<b style="color:var(--ok)">'+ab+' points above</b> the area average ('+sc.avg+'). ':ab<0?'<b style="color:var(--red)">'+(-ab)+' points below</b> the area average ('+sc.avg+'). ':'Level with the area average ('+sc.avg+'). ')+(sc.you>sc.top?'Ahead of the top score nearby ('+sc.top+').':sc.you===sc.top?'Level with the top score nearby.':'The top score nearby is '+sc.top+'.'))+'</div></div>'+
   '<div class="col" style="gap:calc(1*var(--u))"><div class="lbl">What\'s behind it</div><div class="stat4">'+
   [[SHARE!=null?Math.round(SHARE*100)+'%':'–','of AI answers name you',D.scan?D.scan.answers_naming_you+' of '+D.scan.answers_total+' answers':''],[fmt(last),'Google visits a month',gr!=null?(gr>=0?'+':'')+gr+'% in 12 months':''],[B.rating?B.rating+'★':'–','from '+fmt(B.reviews)+' reviews',''],['<span style="color:var(--ok)">'+cnt.p+'</span><span style="color:var(--grey);font-weight:500"> / </span><span style="color:var(--warn)">'+cnt.w+'</span><span style="color:var(--grey);font-weight:500"> / </span><span style="color:var(--red)">'+cnt.f+'</span>','checks passed · need work · failed','details in the 11 checks']].map((x,i)=>'<div class="card fade" style="animation-delay:'+(RM?0:.15+i*.12)+'s"><b>'+x[0]+'</b><span style="color:var(--ink);font-weight:600">'+x[1]+'</span><span>'+x[2]+'</span></div>').join('')+'</div><div class="hint" style="margin-top:auto">'+(NOTES.length?'<b>Data limits:</b> '+X(NOTES[0])+(NOTES.length>1?' <button type="button" class="lnk" data-info>See all '+NOTES.length+'</button>':''):WHO.length>1?'Next: how that compares with '+cmpN()+'.':'')+'</div></div></div>';
- else if(step===1)body='<div class="g2 sc2" style="grid-template-columns:calc(25*var(--u)) 1fr"><div class="card pad col" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score</span>'+IB+'</div>'+gauge('100%')+(sc.avg!=null?'<div class="hint" style="text-align:center">Area average '+sc.avg+' · top nearby '+sc.top+'</div>':'')+'</div><div class="card pad col">'+lead()+'<div class="hint" style="margin-top:auto">Ranked by how often AI names each business. '+X(((AUD['AI monitoring']||[])[0]||{}).m||'')+'. Visits: estimated monthly visits to each whole website from Google.</div></div></div>';
+ else if(step===1)body='<div class="g2 sc2" style="grid-template-columns:calc(25*var(--u)) 1fr"><div class="card pad col gcard" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score</span>'+IB+'</div>'+gauge('100%')+(sc.avg!=null?'<div class="hint" style="text-align:center">Area average '+sc.avg+' · top nearby '+sc.top+'</div>':'')+'</div><div class="card pad col">'+lead()+'<div class="hint" style="margin-top:auto">Ranked by how often AI names each business. '+X(((AUD['AI monitoring']||[])[0]||{}).m||'')+'. Visits: estimated monthly visits to each whole website from Google.</div></div></div>';
  else{const tot=price==null?null:TOTAL*0.023*price,cust=TOTAL*0.023;const sh=SHARE??0;const vx=D.volx?' (est.)':'';const VL=D.vol_loc&&D.vol_loc.level,wide=VL==='country',noVol=!TOTAL,rivalAI=AIM&&AIM.slice(1).some(v=>v>0),$$=v=>v==null||wide||noVol?'–':'$'+fmt(v);
   body='<div class="mini3 fade"><span style="display:inline-flex;align-items:center;gap:calc(.6*var(--u))">AI score <b>'+sc.you+'</b>'+IB+'</span>'+(SHARE!=null?'<span><b>'+Math.round(sh*100)+'%</b> of AI answers name you</span>':'')+(last?'<span><b>'+fmt(last)+'</b> Google visits /mo</span>':'')+'</div>'+
   '<div class="chain fade"><div class="card"><span>'+(D.volx?'Est. searches':'Searches')+' a month for what you offer</span><b>'+(noVol?'–':fmt(TOTAL))+'</b><span>'+(noVol?'Search volume isn\'t available for this area':D.volx?'4× the measured volume: Google hides most searches in this category':(D.vp||[]).length+' searches '+(VL==='country'?'nationwide (no local numbers for your area)':VL==='state'?'statewide':'in your area'))+'</span></div><div class="op">×</div><div class="card"><span>Become customers</span><b>2.3%</b><span>average conversion rate (Ruler Analytics)</span></div><div class="op">×</div><div class="card" style="box-shadow:inset 0 0 0 calc(.2*var(--u)) var(--ok),var(--shadow)"><span>Your average spend per customer</span><b id="sc-p">'+(price==null?'–':'$'+fmt(price))+'</b><span>'+(price==null?'Set your average spend with the slider below':ANS.spend?'What you told us <span class="fromu">From you</span>':X(D.priceLabel||'Drag the slider below to match your business'))+'</span></div></div>'+
@@ -1653,7 +1678,7 @@ function vProp(){const sc=D.score;const tally={};CRN.concat(NB).forEach(r=>(r.c|
   (stake!=null?row('Going to others each month','$'+fmt(stake),'Estimated from your searches and average spend'+(ANS.spend?' (from you)':'')):'')+'</div>';
  const Bc='<div class="card pad col prc fade" style="animation-delay:.1s"><span class="kick">What we\'ll do</span><div class="prh">One team runs all 11 checks from one verified Blueprint of your business.</div>'+
   (ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
-  '<ol class="prl">'+PHS.slice(0,3).map(p=>'<li><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span>'+p[2]+'</span></li>').join('')+'</ol>'+
+  '<ol class="prl">'+PHS.map(p=>'<li><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span>'+p[2]+'</span></li>').join('')+'</ol>'+
   '<div class="g90" style="margin-left:0;align-self:flex-start"><i></i>In AI answers by day 90, guaranteed</div><div class="hint" style="margin-top:auto">Every item waits for your approval. The full 12-month plan is in Plan, page 3.</div></div>';
  const Cc='<div class="card col new prn fade" style="animation-delay:.2s"><span class="kick" style="color:var(--blue3)">Your plan</span><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="cdn" hidden></div>'+
   (full?'<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(full)+'<small> /mo in new customers</small></b></div>':'')+
