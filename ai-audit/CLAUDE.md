@@ -37,8 +37,10 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   to test the live map where map tiles are blocked.
 - Look: matches the new website (/home/drafts/home-2/): self-hosted fonts from home/assets/fonts, regular-weight Hanken headlines in grey then ink, Bricolage eyebrows, blue pill buttons (a trailing arrow becomes a chevron chip via chipify()), hairline cards on white. It lives in the "2026 site look" block at the end of the stylesheet.
 - Status names and colors are the same on every screen: Passed (green), Needs work (amber), Failed (red), in that order.
-- Why us: only the plastic surgery (New York) chart has real monthly data; the other result cards are labeled
-  "Illustrative" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
+- Why us: only the plastic surgery (New York) chart has real monthly data. The other cards have real start and end visits;
+  the months between are a seeded path with its own shape per card (`shape` in `CARDS`, drawn by `cseries()`), labeled
+  "Illustrative path; real start and end" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
+- Area exclusivity is described without a set distance ("one business like yours per area").
 
 ## Live scans (lair-api)
 - API: https://lair-api-hps5or6egq-uw.a.run.app (`/places/autocomplete`, `/audit` streams NDJSON, `/audits/<id>` returns a saved scan).
