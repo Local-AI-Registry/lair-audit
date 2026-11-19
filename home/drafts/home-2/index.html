@@ -7,10 +7,955 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <meta property="og:type" content="website"><meta property="og:url" content="https://localairegistry.com/drafts/home-2/"><meta property="og:site_name" content="Local AI Registry"><title>Get named by AI in 90 days. Guaranteed. | Local AI Registry</title>
 
-<link rel="stylesheet" href="../../assets/css/2dcfc6e25ad3.css">
+<style>
+/* Layout: a warm sand-model city runs through the page as live 3D; glass HUD cards sit on top of each scene; quiet paper bands carry the copy. Light mode only (brand rule). */
+:root{
+  --paper:#F4F1EA; --paper2:#ECE6D6; --sand:#E4DCCB; --ink:#0B1A2E; --body:#46526A; --mute:#5a6474;
+  --blue:#1F4FE0; --blue2:#163BAF; --blueT:#E7EDFC; --coral:#FF5A3C; --green:#2F9E6E; --line:rgba(11,26,46,.1);
+  --glass:rgba(255,255,255,.72); --glassB:rgba(255,255,255,.9); --shadow:0 1px 1px rgba(11,26,46,.04),0 8px 28px rgba(11,26,46,.10);
+  --disp:"Cormorant","Cormorant Fallback",Georgia,serif; --head:"Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif; --text:"Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;
+  color-scheme:light;
+}
+body{background:var(--paper);color:var(--body);font:400 17px/1.6 var(--text);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:20;background:var(--paper)}
+*{box-sizing:border-box}
+h1,h2,h3,p{margin:0}
+h1,h2,h3{text-wrap:balance;color:var(--ink)}
+p{text-wrap:pretty}
+a{color:var(--blue)}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eye{display:inline-flex;align-items:center;gap:10px;font:700 12px/1.2 var(--head);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.eye::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 4px rgba(255,90,60,.16)}
+.h2{font:500 clamp(38px,4.8vw,64px)/1.02 var(--disp);letter-spacing:-.01em}
+.h2 em{font-style:italic;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 22px;border-radius:12px;border:0;cursor:pointer;font:700 15px/1 var(--head);text-decoration:none;white-space:nowrap;transition:transform .15s,background .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.b{background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(31,79,224,.28)}.btn.b:hover{background:var(--blue2)}
+.btn.c{background:var(--coral);color:var(--ink);box-shadow:0 6px 18px rgba(255,90,60,.3)}.btn.c:hover{background:#ff6d52}
+.btn:focus-visible,input:focus-visible,button:focus-visible,a:focus-visible{outline:2px solid var(--coral);outline-offset:2px}
+.sr{position:absolute;left:-9999px}
+section{position:relative}
+.glass{background:var(--glass);backdrop-filter:blur(14px) saturate(1.4);-webkit-backdrop-filter:blur(14px) saturate(1.4);border:1px solid rgba(255,255,255,.8);box-shadow:var(--shadow);border-radius:16px}
+.tag{font:600 11px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+
+/* header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:15;background:rgba(244,241,234,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:24px;height:66px}
+.logo{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:700 18px/1 var(--head);white-space:nowrap}
+nav{margin-left:auto;display:flex;gap:22px;font:600 14.5px/1 var(--head)}
+nav a{color:var(--ink);text-decoration:none;opacity:.8}nav a:hover{opacity:1;color:var(--blue)}
+
+/* 3D stage + labels */
+.stage{position:relative;overflow:hidden}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block;touch-action:pan-y}
+.lab{position:absolute;left:0;top:0;pointer-events:none;z-index:2}
+.lab>span{position:absolute;left:0;bottom:0;transform:translateX(-50%);display:block;width:max-content;transition:opacity .4s}
+.pin{display:flex;flex-direction:column;align-items:center}
+.pin::after{content:"";width:1px;height:22px;background:linear-gradient(var(--ink),transparent);opacity:.35}
+.chip{display:flex;align-items:center;gap:8px;font:700 12.5px/1 var(--head);padding:8px 11px;border-radius:10px;background:var(--glassB);color:var(--ink);box-shadow:var(--shadow);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);white-space:nowrap}
+.chip small{font:600 11px/1 var(--text);color:var(--mute)}
+.chip.you{background:var(--blue);color:#fff}.chip.you small{color:rgba(255,255,255,.75)}
+.chip.dim{background:rgba(255,255,255,.82);color:var(--mute)}
+.chip .d{width:8px;height:8px;border-radius:50%;background:var(--coral);box-shadow:0 0 0 3px rgba(255,90,60,.2)}
+.chip.dim .d{background:#AEB6C3;box-shadow:none}
+.chip.mini{font-size:11px;padding:6px 9px;border-radius:8px}
+.bub{display:block;font:500 13px/1.38 var(--text);padding:10px 13px;border-radius:14px 14px 14px 4px;max-width:230px;box-shadow:0 8px 24px rgba(11,26,46,.16)}
+.bub.q{background:#fff;color:var(--ink)}
+.bub.a{background:var(--blue);color:#fff}
+.bub i{display:block;font:700 10px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;font-style:normal;opacity:.7;margin-bottom:5px}
+
+.tilt{position:absolute;left:0;right:0;height:24%;z-index:1;pointer-events:none;backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.tilt.t{top:0;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent)}
+.tilt.b{bottom:0;-webkit-mask-image:linear-gradient(transparent,#000);mask-image:linear-gradient(transparent,#000)}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:30;opacity:.045;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+html{scroll-behavior:smooth}
+/* hero */
+#hero{display:grid;grid-template-columns:minmax(0,1fr);min-height:min(880px,calc(100svh - 66px))}
+#hero>.stage{position:absolute;inset:0}
+@media (min-width:981px){#hero #hud2{left:auto;right:max(24px,env(safe-area-inset-right,0px));bottom:28px}#hero #hud3{top:84px}#hero .toggle{top:auto;bottom:28px;left:auto;right:calc(max(24px,env(safe-area-inset-right,0px)) + 318px);transform:none}}
+#hero>.wrap{pointer-events:none}#hero .heroTx{pointer-events:auto}
+#hero .veil{position:absolute;inset:0;background:linear-gradient(90deg,var(--paper) 0%,rgba(244,241,234,.9) 28%,rgba(244,241,234,0) 52%);pointer-events:none;z-index:1}
+.heroTx{position:relative;z-index:3;display:flex;flex-direction:column;gap:22px;max-width:540px;padding-block:80px}
+h1{font:500 clamp(50px,6.4vw,94px)/.96 var(--disp);letter-spacing:-.015em}
+.heroTx{position:relative}
+.gline{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font:600 18px/1.3 var(--head);color:var(--ink)}
+.gline b{background:var(--coral);color:var(--ink);padding:8px 12px;border-radius:10px;font-weight:800}
+.seal{position:absolute;right:-150px;top:70px;width:132px;height:132px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 12px 30px rgba(11,26,46,.25);transform:rotate(-8deg)}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+.seal text{font:700 8.4px var(--head);letter-spacing:.16em;fill:#9DB3F5}
+.sealc{position:relative;display:flex;flex-direction:column;align-items:center;gap:5px}.seal b{font:500 50px/.8 var(--disp);font-variant-numeric:lining-nums;color:#fff;display:block}
+.seal small{font:800 10px/1 var(--head);letter-spacing:.24em;padding-left:.24em;color:var(--coral)}
+@keyframes spin{to{transform:rotate(360deg)}}
+h1 em{font-style:italic;color:var(--blue)}
+.lede{font-size:19px;max-width:29em}
+form.go{display:flex;flex-wrap:wrap;gap:10px;max-width:540px}
+form.go input{flex:1 1 240px;min-width:0;min-height:52px;padding:0 18px;border-radius:12px;border:1px solid rgba(11,26,46,.18);background:#fff;font:500 16px var(--text);color:var(--ink);box-shadow:0 2px 6px rgba(11,26,46,.05)}
+.fine{font:500 14px/1.5 var(--text);color:var(--mute)}
+.ok{font:600 14px/1.4 var(--head);color:var(--blue);flex-basis:100%}
+.hud{position:absolute;z-index:3;padding:16px 18px;min-width:0}
+.hud h4{margin:0 0 10px;font:700 13px/1.2 var(--head);color:var(--ink);display:flex;align-items:center;gap:8px;justify-content:space-between}
+.hud .row{display:flex;align-items:center;justify-content:space-between;gap:14px;font:500 13.5px/1 var(--text);color:var(--ink);padding:8px 0;border-top:1px solid var(--line)}
+.ok2{display:inline-flex;align-items:center;gap:6px;font:700 12px/1 var(--head);color:var(--green)}
+.ok2::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+.live{display:inline-flex;align-items:center;gap:6px;font:700 10.5px/1 var(--head);letter-spacing:.12em;color:var(--coral)}
+.live::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--coral);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+#hud1{right:max(24px,env(safe-area-inset-right,0px));bottom:28px;width:290px}
+
+/* ticker */
+.tick{background:var(--ink);overflow:hidden;padding-block:14px}
+.tick div{display:flex;width:max-content;animation:tk 34s linear infinite;font:700 13px/1 var(--head);letter-spacing:.2em;color:#C9D3E6;white-space:nowrap}
+.tick span{padding-right:48px}.tick b{color:var(--coral);font-weight:800}
+@keyframes tk{to{transform:translateX(-50%)}}
+
+/* section heads */
+.band{padding-block:clamp(80px,9vw,128px)}
+.secHead{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:20px 64px;align-items:end}
+.secHead>*{min-width:0}
+.secHead>div{display:flex;flex-direction:column;gap:16px}
+
+/* demand map */
+#local .stage{height:clamp(520px,60vw,740px);margin-top:36px;border-radius:28px;margin-inline:max(12px,env(safe-area-inset-left,0px));box-shadow:inset 0 0 0 1px var(--line)}
+.toggle{position:absolute;z-index:4;top:20px;left:50%;transform:translateX(-50%);display:flex;padding:5px;border-radius:999px}
+.toggle button{border:0;background:transparent;border-radius:999px;padding:11px 18px;font:700 13.5px/1 var(--head);color:var(--mute);cursor:pointer;white-space:nowrap;transition:background .2s,color .2s}
+.toggle button[aria-pressed="true"]{background:var(--ink);color:#fff}
+#hud2{left:20px;bottom:20px;width:300px}
+#hud3{right:20px;top:20px;width:270px}
+.ramp{height:8px;border-radius:4px;background:linear-gradient(90deg,#DCE4FA,#7E9BF2,#1F4FE0,#FF5A3C);margin:4px 0 6px}
+.rampL{display:flex;justify-content:space-between;font:600 11px/1 var(--head);color:var(--mute)}
+.qs{display:flex;flex-direction:column;gap:7px;margin-top:4px}
+.qs span{font:500 13px/1.35 var(--text);color:var(--ink);background:#fff;border-radius:10px;padding:8px 10px;box-shadow:0 1px 3px rgba(11,26,46,.06)}
+#tip{position:absolute;z-index:5;pointer-events:none;padding:9px 12px;border-radius:10px;background:var(--ink);color:#fff;font:600 12.5px/1.3 var(--head);transform:translate(-50%,calc(-100% - 14px));opacity:0;transition:opacity .15s;white-space:nowrap}
+#tip small{display:block;font:500 11px/1.3 var(--text);opacity:.7}
+.shareRow{display:flex;gap:8px;align-items:center;margin-top:10px}
+.bar{flex:1;height:8px;border-radius:4px;background:#E9ECF2;overflow:hidden}
+.bar i{display:block;height:100%;border-radius:4px;transition:width .8s cubic-bezier(.2,.8,.2,1)}
+
+/* story */
+#story{height:460vh}
+.stick{position:sticky;top:calc(66px + env(safe-area-inset-top,0px));height:calc(100svh - 66px);overflow:hidden}
+#map3{position:absolute;inset:0}
+.steps{position:absolute;z-index:4;left:max(24px,env(safe-area-inset-left,0px));top:50%;transform:translateY(-50%);width:min(390px,38vw);padding:22px;display:flex;flex-direction:column;gap:4px}
+.steps .eye{margin-bottom:12px}
+.st{display:grid;grid-template-columns:34px minmax(0,1fr);gap:0 12px;padding:12px 10px;border-radius:12px;opacity:.45;transition:opacity .35s,background .35s}
+.st b{grid-row:span 2;width:34px;height:34px;border-radius:10px;display:grid;place-items:center;background:#fff;color:var(--ink);font:800 13px/1 var(--head);box-shadow:inset 0 0 0 1px var(--line)}
+.st h3{font:700 18px/1.3 var(--head);align-self:center}
+.st>p,.st>.srcs{grid-column:2}
+.st p{font-size:14.5px;line-height:1.5;margin-top:4px;display:none}
+.st .srcs{display:none;flex-wrap:wrap;gap:5px;margin-top:8px}
+.st .srcs span{font:600 11px/1 var(--head);padding:5px 7px;border-radius:6px;background:var(--blueT);color:var(--blue)}
+.st.on{opacity:1;background:#fff;box-shadow:0 4px 18px rgba(11,26,46,.08)}
+.st.on b{background:var(--blue);color:#fff;box-shadow:none}
+.st.on p{display:block}.st.on .srcs{display:flex}
+.pbar{height:3px;border-radius:2px;background:var(--line);margin-top:14px;overflow:hidden}
+.pbar i{display:block;height:100%;background:var(--coral);width:0}
+
+/* constellation */
+.cgrid{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:32px;align-items:center;margin-top:36px}
+.cgrid>*{min-width:0}
+#map5{height:clamp(440px,48vw,620px);border-radius:28px}
+.checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.ck{display:flex;gap:10px;align-items:flex-start;text-align:left;padding:12px;border-radius:12px;background:#fff;border:1px solid transparent;cursor:pointer;font:inherit;color:inherit;transition:border-color .2s,box-shadow .2s,transform .2s}
+.ck:hover,.ck.on{border-color:rgba(31,79,224,.35);box-shadow:0 6px 20px rgba(31,79,224,.12);transform:translateY(-1px)}
+.ck b{flex:none;width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:var(--blueT);color:var(--blue);font:800 11px/1 var(--head)}
+.ck.on b{background:var(--blue);color:#fff}
+.ck strong{display:block;font:700 14.5px/1.25 var(--head);color:var(--ink)}
+.ck span{display:block;font-size:13px;line-height:1.4;margin-top:3px}
+
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:40px}
+.card{border-radius:20px;padding:32px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.card h3{font:700 26px/1.2 var(--head)}
+.card ul{margin:4px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px}
+.card li{display:flex;gap:10px;align-items:flex-start}
+.card li::before,.ticks li::before{content:"";flex:none;width:18px;height:18px;margin-top:3px;border-radius:50%;background:var(--blueT) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5 9.5l2.6 2.5L13 6.5' fill='none' stroke='%231F4FE0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/18px no-repeat}
+.card .btn{align-self:flex-start;margin-top:10px}
+
+.ink{background:#06101D;color:#A8B2C1}
+.ink .h2{color:#F4F1EA}.ink .h2 em{color:#8EA8F7}.ink .eye{color:#9DB3F5}
+.holoStage{height:clamp(540px,60vw,780px);margin-top:36px;border-radius:28px;margin-inline:max(12px,env(safe-area-inset-left,0px));box-shadow:inset 0 0 0 1px rgba(157,179,245,.16)}
+.hudD{background:rgba(8,18,34,.62);border:1px solid rgba(157,179,245,.22);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-radius:14px;color:#DCE4FA}
+.hudD h4{color:#fff}.hudD .tag{color:#7F8DA8}.hudD .row{color:#C9D3E6;border-top-color:rgba(157,179,245,.14)}.hudD .row b{color:#fff;font:700 12.5px/1 var(--head)}
+.hudD .ok2{color:#5FD3A0}
+#hud7{left:20px;bottom:20px;width:300px}#hud8{left:20px;top:20px;width:290px}
+.pg{height:4px;border-radius:2px;background:rgba(157,179,245,.18);overflow:hidden;margin:4px 0 8px}.pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,#1F4FE0,#FF5A3C)}
+.toggle.dark{background:rgba(8,18,34,.72);border:1px solid rgba(157,179,245,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.toggle.dark button{color:#9DB3F5}.toggle.dark button[aria-pressed="true"]{background:#fff;color:var(--ink)}
+.chip.holo{background:rgba(8,18,34,.72);color:#E6ECFA;box-shadow:0 0 0 1px rgba(157,179,245,.3),0 0 24px rgba(31,79,224,.35)}
+.chip.holo small{color:#9DB3F5}
+.street{font:700 10.5px/1 var(--head);letter-spacing:.22em;color:rgba(157,179,245,.75);white-space:nowrap}
+#map9{height:clamp(480px,50vw,660px);margin-top:36px;border-radius:28px;box-shadow:inset 0 0 0 1px var(--line)}
+.rgrid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.25fr);gap:40px;align-items:center}
+.rgrid>*{min-width:0}
+#map10{height:clamp(460px,44vw,620px);border-radius:28px}
+.ticks{list-style:none;padding:0;margin:6px 0 0;display:flex;flex-direction:column;gap:10px}.ticks li{display:flex;gap:10px;align-items:flex-start}
+/* intro: scroll-driven cold open */
+#intro{height:620vh;background:#000}
+.istick{position:sticky;top:0;height:100svh;overflow:hidden;background:#000}
+#map0{position:absolute;inset:0}
+#ifade{position:absolute;inset:0;background:#000;z-index:2;pointer-events:none}
+#iphone{position:absolute;left:50%;top:50%;width:360px;height:740px;margin:-370px 0 0 -180px;border-radius:54px;background:#0E0E10;padding:12px;z-index:3;transform-origin:50% 50%;will-change:transform,opacity}
+#iphone .scr{position:relative;width:100%;height:100%;border-radius:43px;background:#0E0E10;overflow:hidden;display:flex;flex-direction:column;color:#ECECF1;font:400 16px/1.5 var(--text)}
+#iphone .sb{position:relative;display:flex;justify-content:space-between;align-items:center;padding:14px 26px 0 30px;height:44px;font:600 15px/1 var(--text);color:#fff}
+#iphone .isl{position:absolute;top:10px;left:50%;width:100px;height:30px;margin-left:-50px;border-radius:20px;background:#000}
+#iphone .sbi{display:flex;gap:6px;align-items:center}
+#iphone .hb{position:absolute;bottom:8px;left:50%;width:120px;height:5px;margin-left:-60px;border-radius:3px;background:rgba(255,255,255,.85)}
+#iphone .av{flex:none;width:26px;height:26px;border-radius:50%;background:#10A37F;display:grid;place-items:center;margin-top:1px}
+#iphone .m.a{display:flex;gap:10px;align-items:flex-start}#iphone .m.a{opacity:0;transition:opacity .3s}#iphone .m.a.on{opacity:1}
+#iphone .at{flex:1;min-width:0}
+#iphone .mcard{margin-left:36px;border-radius:16px;overflow:hidden;background:#1C1C20;border:1px solid rgba(255,255,255,.08);opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+#iphone .mcard.on{opacity:1;transform:none}
+#iphone .mmap{display:block;width:100%;height:auto}
+#iphone .mi{padding:10px 14px 4px;display:flex;flex-direction:column;gap:2px}#iphone .mi b{font:700 15px/1.2 var(--head);color:#fff}#iphone .mi span{font-size:13px;color:#A0A0A8}
+#iphone .mb{margin:8px 14px 14px;padding:9px;border-radius:10px;background:#fff;color:#0E0E10;text-align:center;font:700 13.5px/1 var(--head)}
+#iphone .cin{display:flex;justify-content:space-between;align-items:center}
+#iphone .snd{width:30px;height:30px;border-radius:50%;background:#fff;opacity:.85;flex:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 18V6M7 11l5-5 5 5' fill='none' stroke='%230E0E10' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-size:18px;background-position:center;background-repeat:no-repeat}
+#iphone .ctop{padding:10px 0 10px;text-align:center;font:600 16px/1 var(--head);color:#fff;border-bottom:1px solid rgba(255,255,255,.06)}
+#iphone .msgs{flex:1;padding:18px 18px 0;display:flex;flex-direction:column;gap:16px;overflow:hidden}
+#iphone .m.u{align-self:flex-end;max-width:80%;background:#2F2F33;color:#fff;padding:10px 15px;border-radius:20px;opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s}
+#iphone .m.u.on{opacity:1;transform:none}
+#iphone .m.a{min-height:24px;color:#ECECF1}
+#iphone .m.a b{color:#fff}
+#iphone .dots{display:inline-flex;gap:5px}#iphone .dots i{width:8px;height:8px;border-radius:50%;background:#ECECF1;opacity:.35;animation:dt 1s infinite}#iphone .dots i:nth-child(2){animation-delay:.15s}#iphone .dots i:nth-child(3){animation-delay:.3s}
+@keyframes dt{50%{opacity:1}}
+#iphone .cin{margin:12px;padding:14px 18px;border-radius:26px;background:#2F2F33;color:#fff;min-height:50px;font:400 16px/1.4 var(--text)}
+#iphone .cin .ph{color:#A6A6AD}
+#iphone .caret{display:inline-block;width:2px;height:18px;background:#fff;vertical-align:-3px;margin-left:1px;animation:blink 1s steps(1) infinite}
+.icap{position:absolute;left:0;right:0;bottom:7vh;z-index:4;text-align:center;padding-inline:20px;font:500 clamp(30px,4.2vw,58px)/1.08 var(--disp);color:#fff;text-wrap:balance;transition:opacity .7s ease,transform .7s ease,filter .7s ease;pointer-events:none;opacity:0;transform:translateY(10px);filter:blur(6px)}
+.icap.on{opacity:1;transform:none;filter:none}
+.icap.light{color:var(--ink);text-shadow:0 0 30px rgba(244,241,234,.9),0 0 8px rgba(244,241,234,.9)}
+.icap em{font-style:italic;color:#8EA8F7}.icap.light em{color:var(--blue)}
+#iskip{position:absolute;z-index:5;top:max(18px,env(safe-area-inset-top,0px));right:max(18px,env(safe-area-inset-right,0px));border:1px solid rgba(255,255,255,.25);background:rgba(0,0,0,.35);color:#fff;border-radius:999px;padding:10px 16px;font:700 13px/1 var(--head);cursor:pointer;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transition:background .3s,color .3s,border-color .3s}
+#iskip.light{background:rgba(255,255,255,.7);color:var(--ink);border-color:var(--line)}
+.ihint{position:absolute;z-index:6;left:50%;bottom:calc(16vh + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:10px;font:700 15px/1 var(--head);letter-spacing:.02em;color:#0B1A2E;opacity:0;transition:opacity .6s;pointer-events:none}
+.ihint b{display:flex;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:14px 22px;box-shadow:0 12px 40px rgba(0,0,0,.45),0 0 0 6px rgba(255,255,255,.14)}
+.ihint svg{animation:bob 1.3s ease-in-out infinite}
+@keyframes hin{to{opacity:1}}@keyframes bob{0%,100%{transform:translateY(-3px)}50%{transform:translateY(4px)}}
+
+@keyframes hint{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.ihint .hm{display:none}@media (hover:none),(max-width:980px){.ihint .hd{display:none}.ihint .hm{display:inline}}
+.ilab .chip{font-size:14px;padding:10px 14px}
+header{transition:opacity .5s,transform .5s}
+body.introOn header{opacity:0;transform:translateY(-100%);pointer-events:none}
+/* area */
+#area{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);min-height:640px}
+#area>*{min-width:0}
+#map4{min-height:560px}
+.terms{display:flex;flex-direction:column;justify-content:center;gap:20px;padding:clamp(48px,6vw,96px) clamp(20px,5vw,72px)}
+.terms dl{margin:6px 0 0;border-top:1px solid var(--line)}
+.terms dl>div{display:grid;grid-template-columns:160px minmax(0,1fr);gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
+.terms dt{font:700 16px/1.4 var(--head);color:var(--ink)}
+.terms dd{margin:0}
+
+/* trust */
+.safe{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:22px}
+.safe>div{background:#fff;border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;min-width:0;box-shadow:0 1px 3px rgba(11,26,46,.05)}
+.sfi{width:54px;height:54px;border-radius:16px;background:#EEF2FD;display:grid;place-items:center;margin-bottom:6px}.sfi svg{overflow:visible}
+@media (prefers-reduced-motion:no-preference){.sfi svg{animation:sfB 3.2s ease-in-out infinite;transform-origin:center}.sf1 svg{animation-delay:.5s}.sf2 svg{animation:sfW 2.6s ease-in-out infinite}.sf3 svg{animation-delay:1s}.sf4 svg{animation-delay:1.5s}}
+@keyframes sfB{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-2px) scale(1.06)}}@keyframes sfW{0%,100%{transform:rotate(-6deg)}50%{transform:rotate(6deg)}}
+.safe b{font:700 15.5px/1.3 var(--head);color:var(--ink)}
+.safe span{font-size:14px;line-height:1.45}
+.founder{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;margin-top:80px;align-items:start}
+.founder>*{min-width:0}.fsig{display:flex;gap:14px;align-items:center}.fme{width:64px;height:64px;border-radius:50%;object-fit:cover;flex:none}.flogo{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}.flogo span{font-size:13px;color:var(--mute)}.flogo img{height:18px;width:auto;filter:grayscale(1);opacity:.6}
+
+/* final */
+.final{background:var(--ink);border-radius:28px;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);overflow:hidden;position:relative}
+.final>*{min-width:0}
+.finalTx{padding:clamp(40px,6vw,80px);display:flex;flex-direction:column;gap:20px;align-items:flex-start;position:relative;z-index:2}
+.final .eye{color:#9DB3F5}
+.final h2{color:var(--paper);font:500 clamp(46px,6vw,84px)/.98 var(--disp)}
+.final h2 span{color:var(--coral);font-style:italic}
+.final p{color:#A8B2C1;font-size:18px;max-width:30em}
+.final input{background:#13243C!important;color:var(--paper)!important;border-color:rgba(244,241,234,.2)!important}
+.final .fine{color:#8E9AB0}
+#map6{min-height:420px}
+footer{border-top:1px solid var(--line);padding-block:30px 46px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;align-items:center;font-size:14px;color:var(--mute)}
+
+@media (max-width:980px){
+  .icap{top:76px;bottom:auto;font-size:clamp(26px,7vw,34px)}
+  .seal{right:0;top:28px;width:96px;height:96px}.seal b{font-size:36px}.seal small{font-size:8.5px}.seal text{font-size:8.2px}
+  .heroTx h1{padding-right:96px}
+  .rgrid{grid-template-columns:minmax(0,1fr)}
+  .holoStage{height:600px;border-radius:20px}
+  #hud7,#hud8{left:12px;right:12px;width:auto;padding:12px 14px}
+  #hud8{top:auto;bottom:12px}
+  #hud7 .row,#hud8 .row,#hud8 .tag{display:none}
+  #hud7 h4,#hud8 h4{margin-bottom:6px}
+  #map9{height:330px;border-radius:20px}
+  #map10{height:440px}
+  .tilt{display:none}
+  nav,#hud1,#hud3{display:none}
+  .secHead,.two,.founder,#area,.cgrid,.final{grid-template-columns:minmax(0,1fr)}
+  .safe{grid-template-columns:repeat(2,minmax(0,1fr))}
+  #hero{min-height:0}
+  #hero>.stage{position:relative;inset:auto;height:540px;order:2}
+  #hero .veil{display:none}
+  .heroTx{padding-block:44px 28px}
+  #local .stage{border-radius:20px;height:560px}
+  #hud2{left:12px;right:12px;bottom:12px;width:auto;padding:12px 14px}
+  #hud2 .qsWrap{display:none}
+  .toggle{top:12px}
+  .steps{top:auto;bottom:14px;transform:none;width:auto;right:max(14px,env(safe-area-inset-right,0px));left:max(14px,env(safe-area-inset-left,0px));padding:14px}
+  .steps .eye{display:none}
+  .st{display:none}.st.on{display:grid;background:transparent;box-shadow:none;padding:4px}
+  #map5{height:420px}
+  #map4{min-height:460px}
+  #map6{min-height:300px;order:-1}
+}
+@media (max-width:560px){
+  .checks{grid-template-columns:minmax(0,1fr)}.safe{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.safe>div{padding:14px}.safe>div:last-child{grid-column:1/-1}
+  .terms dl>div{grid-template-columns:minmax(0,1fr);gap:4px}
+  .toggle button{padding:10px 12px;font-size:12.5px}
+  .btn{white-space:normal;text-align:center}
+}
+@media (prefers-reduced-motion:reduce){.tick div,.live::before,.seal svg{animation:none}}
+#experts .xlead{max-width:620px;color:var(--mute);margin:10px 0 26px;font-size:18px}
+.xgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px;margin-top:14px}
+.xp{display:flex;gap:12px;align-items:center;background:#FFFDF8;border:1px solid rgba(11,26,46,.1);border-radius:16px;padding:10px 12px;transition:transform .2s,box-shadow .2s}
+.xp:hover{transform:translateY(-2px);box-shadow:0 10px 24px -14px rgba(11,26,46,.35)}
+.xav{position:relative;width:58px;height:58px;border-radius:50%;background:#EAF0FE;color:#1F4FE0;font:700 18px var(--head);display:grid;place-items:center;flex:none;overflow:hidden}
+.xav img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.xp b{display:block;font:600 15px/1.3 var(--head);color:var(--ink)}.xp i{display:block;font-style:normal;font-size:13px;line-height:1.35;color:var(--mute)}
+.xgrid.lead .xav{width:46px;height:46px;font-size:15px}.xlg{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:6px}.xlg img{height:15px;width:auto;max-width:74px;object-fit:contain;filter:grayscale(1);opacity:.6}.xp:hover .xlg img{filter:none;opacity:1}.dlg img{height:22px;max-width:120px}.dlg img.blk{filter:brightness(0);opacity:.55}
+@media(max-width:640px){.xgrid{grid-template-columns:1fr 1fr;gap:8px}.xp{flex-direction:column;text-align:center;padding:12px 8px;gap:8px}.xp b{font-size:14px}.xp i{font-size:12px}.xgrid.lead .xp i{display:none}.xlg{justify-content:center}}
+.rfgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}@media(max-width:900px){.rfgrid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.rfgrid{grid-template-columns:1fr}}
+.rf{display:flex;flex-direction:column;gap:10px;padding:22px;border-radius:18px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#E4E9F2;text-decoration:none;transition:background .2s}.rf:hover{background:rgba(255,255,255,.1)}
+.rf b{font:500 54px/1 var(--disp);color:#FF8A70}.rf span{font-size:16px;line-height:1.45}.rf i{font-style:normal;font-size:12.5px;color:#9DB3F5;margin-top:auto}
+.rmore{margin-top:22px;color:#C9D2E3}.rmore a{color:#BFD0FF}
+footer .soc{display:flex;flex-wrap:wrap;gap:6px 14px;width:100%}footer .soc a{color:inherit;text-decoration:none}footer .soc a:hover{color:#1F4FE0}
+#intro{overflow-x:clip}html,body{overflow-x:clip}
+footer.site{background:var(--ink);color:#A8B2C1;margin-top:40px;padding:48px 0 50px;font-size:14px}
+footer.site .wrap{max-width:1240px}
+footer.site .ftop{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;padding-bottom:30px;margin-bottom:30px;border-bottom:1px solid rgba(255,255,255,.1)}
+footer.site .ftop .logo{color:#F4F1EA}footer.site .ftop p{margin:0;font:500 22px "Cormorant","Cormorant Fallback",serif;color:#F4F1EA;flex:1 1 240px}
+footer.site .cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:26px}
+footer.site h5{font:700 12px "Bricolage Grotesque";letter-spacing:.14em;text-transform:uppercase;color:#9DB3F5;margin:0 0 10px}
+footer.site .cols a{color:#C9D2E3;text-decoration:none;display:block;margin:6px 0}footer.site a:hover{color:#fff}
+footer.site .legal a{color:#C9D2E3}
+.legal{margin-top:28px;display:flex;flex-wrap:wrap;gap:6px 18px}
+footer.site.lf{position:relative;overflow:hidden;background:#F4F1EA;color:#0B1A2E;margin-top:56px;padding:0;font-size:14px;border-top:0}
+footer.site.lf .lf-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+footer.site.lf .lf-veil{position:absolute;inset:0;background:rgba(244,241,234,.35)}
+footer.site.lf .lf-in{position:relative;max-width:1280px;margin:0 auto;padding:64px 16px 32px}
+footer.site.lf .lf-k{display:block;margin:0;font:600 12px/1.3 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#5A647A}
+footer.site.lf .lf-bar{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:24px;margin:0 4px;padding:24px 28px 64px;border:1px solid rgba(11,26,46,.15);border-radius:26px;background:rgba(244,241,234,.7);-webkit-backdrop-filter:blur(4px);backdrop-filter:blur(4px);text-decoration:none;color:#0B1A2E}
+footer.site.lf .lf-bt{min-width:0;flex:1}
+footer.site.lf .lf-big{display:block;margin-top:6px;font:500 clamp(24px,2.6vw,34px)/1.1 "Cormorant","Cormorant Fallback",Georgia,serif;color:#0B1A2E;white-space:nowrap}
+footer.site.lf .lf-bar .lf-k{text-wrap:balance}
+@media(max-width:767px){footer.site.lf .lf-bar{padding:22px 20px 60px;gap:14px}footer.site.lf .lf-go{width:48px;height:44px}footer.site.lf .lf-row span[aria-hidden]{display:none}footer.site.lf .lf-row{gap:6px 16px}}
+footer.site.lf .lf-go{display:grid;place-items:center;flex:0 0 auto;width:56px;height:48px;border-radius:14px;background:#0B1A2E;color:#F4F1EA;box-shadow:0 10px 30px -12px rgba(11,26,46,.6);transition:transform .2s}
+footer.site.lf .lf-go svg{width:20px;height:20px}
+footer.site.lf .lf-bar:hover .lf-go{transform:translateY(-2px)}
+footer.site.lf .lf-panel{position:relative;z-index:2;margin-top:-44px;padding:56px 28px;border-radius:26px;background:#ECE6D6;box-shadow:0 50px 130px -55px rgba(11,26,46,.55)}
+footer.site.lf .lf-mark{display:none;position:absolute;right:32px;top:50%;width:320px;height:320px;transform:translateY(-50%);pointer-events:none}
+footer.site.lf .lf-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:44px 32px}
+footer.site.lf ul{list-style:none;margin:20px 0 0;padding:0}
+footer.site.lf li{margin:0 0 10px}
+footer.site.lf .lf-cols a{display:inline;font:500 clamp(19px,1.45vw,23px)/1.2 "Cormorant","Cormorant Fallback",Georgia,serif;color:#0B1A2E;text-decoration:none;transition:color .2s}
+footer.site.lf .lf-cols a:hover{color:#FF5A3C}
+footer.site.lf .lf-base{display:flex;flex-direction:column;gap:12px;margin:24px 4px 0;font:500 11px/1.6 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase;color:#5A647A}
+footer.site.lf .lf-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px}
+footer.site.lf .lf-row a{color:#5A647A;text-decoration:none}
+footer.site.lf .lf-row a:hover{color:#0B1A2E}
+footer.site.lf .lf-row span[aria-hidden]{color:rgba(90,100,122,.45)}
+footer.site.lf .lf-addr{text-transform:none;letter-spacing:.02em;font-size:12px}
+@media(min-width:768px){footer.site.lf .lf-in{padding:96px 40px 32px}footer.site.lf .lf-bar{margin-left:13%;padding:24px 44px 64px}footer.site.lf .lf-panel{padding:64px 56px}footer.site.lf .lf-cols{grid-template-columns:repeat(4,minmax(0,1fr));max-width:66%;gap:44px 24px}footer.site.lf .lf-mark{display:block}}
+@media(min-width:1024px){footer.site.lf .lf-mark{right:40px;width:340px;height:340px}}
+footer.site{border-top:0}footer.site .wrap{display:block;color:#A8B2C1}footer.site .logo{font-size:18px}footer.site .btn.c{margin-top:0;align-self:center}footer.site .legal{margin-top:28px;display:flex;flex-wrap:wrap;gap:6px 18px}footer.site .legal a{color:#C9D2E3}
+.gico{width:58px;height:58px;border-radius:16px;background:#F3F6FE;display:grid;place-items:center;margin-bottom:6px}.gico svg{width:46px;height:46px;overflow:visible}
+.gd{animation:gdot 1.6s infinite}.d2{animation-delay:.2s}.d3{animation-delay:.4s}@keyframes gdot{0%,60%,100%{opacity:.3;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.gpop{transform-origin:center;transform-box:fill-box;animation:gpop 3.2s infinite}@keyframes gpop{0%,35%{transform:scale(0)}45%{transform:scale(1.15)}52%,90%{transform:scale(1)}100%{transform:scale(0)}}
+.gbounce{transform-box:fill-box;transform-origin:bottom;animation:gbn 1.8s infinite cubic-bezier(.3,.6,.4,1)}@keyframes gbn{0%,100%{transform:translateY(0)}45%{transform:translateY(-6px)}}
+.gring{transform-box:fill-box;transform-origin:center;animation:grg 1.8s infinite}@keyframes grg{0%{opacity:.9;transform:scale(.5)}100%{opacity:0;transform:scale(1.8)}}
+.gstrike,.gfix,.gl{stroke-dasharray:1;stroke-dashoffset:1}.gstrike{animation:gdraw 3.2s infinite}.gfix{animation:gdraw 3.2s .5s infinite}.gl{animation:gdraw 3.2s infinite}
+@keyframes gdraw{0%{stroke-dashoffset:1}30%,90%{stroke-dashoffset:0}100%{stroke-dashoffset:0;opacity:0}}
+.gstar{transform-box:fill-box;transform-origin:center;opacity:.25;animation:gst 3.2s infinite}.s0{animation-delay:0.00s}.s1{animation-delay:0.18s}.s2{animation-delay:0.36s}.s3{animation-delay:0.54s}.s4{animation-delay:0.72s}@keyframes gst{0%,5%{opacity:.25;transform:scale(.8)}15%,85%{opacity:1;transform:scale(1)}100%{opacity:.25}}
+.gbar{transform-box:fill-box;transform-origin:left;animation:gbr 3.2s infinite}@keyframes gbr{0%{transform:scaleX(0)}60%,90%{transform:scaleX(1)}100%{transform:scaleX(1);opacity:0}}
+.gv0{animation:gv0 3.2s infinite ease-in-out}@keyframes gv0{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(20px,18px);opacity:0}100%{transform:none;opacity:1}}.gv1{animation:gv1 3.2s infinite ease-in-out}@keyframes gv1{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(-20px,20px);opacity:0}100%{transform:none;opacity:1}}.gv2{animation:gv2 3.2s infinite ease-in-out}@keyframes gv2{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(22px,-14px);opacity:0}100%{transform:none;opacity:1}}.gv3{animation:gv3 3.2s infinite ease-in-out}@keyframes gv3{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(-22px,-18px);opacity:0}100%{transform:none;opacity:1}}.gv4{animation:gv4 3.2s infinite ease-in-out}@keyframes gv4{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(0px,24px);opacity:0}100%{transform:none;opacity:1}}.gv5{animation:gv5 3.2s infinite ease-in-out}@keyframes gv5{0%,15%{transform:none;opacity:1}55%,85%{transform:translate(2px,-24px);opacity:0}100%{transform:none;opacity:1}}
+.gdia{transform-box:fill-box;transform-origin:center;animation:gdi 3.2s infinite}@keyframes gdi{0%,40%{transform:scale(.4) rotate(0);opacity:.4}60%,90%{transform:scale(1.2) rotate(90deg);opacity:1}100%{transform:scale(.4);opacity:.4}}
+@media(prefers-reduced-motion:reduce){.gico *{animation:none!important;opacity:1!important;stroke-dashoffset:0!important}}
+.gch{width:100%;height:auto;display:block;overflow:visible;margin-top:10px}.gch .gst{font:700 11px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:.02em}.gch .gax{font:600 10.5px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;fill:#6B7689}
+@media (prefers-reduced-motion:no-preference){.gch .gl{stroke-dasharray:900;stroke-dashoffset:900;animation:gdraw 2.2s ease-out forwards}}@keyframes gdraw{to{stroke-dashoffset:0}}
+.glg{display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.4;color:#3D4A5C;margin:8px 0 10px}.glg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:1px}.glg b{font:700 15px "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;color:#0B1A2E}
+.ill{display:block;width:100%;height:auto;border-radius:12px;margin-bottom:8px}
+.lgwall{margin-top:34px;display:flex;flex-direction:column;gap:14px;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.lgrow{overflow:hidden}.lgtrack{display:flex;gap:12px;width:max-content;animation:lgm 70s linear infinite}.lgrow.rev .lgtrack{animation-direction:reverse}
+.lgwall:hover .lgtrack{animation-play-state:paused}
+@keyframes lgm{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.lgtrack{animation:none;flex-wrap:wrap;width:auto}.lgtrack [data-x]{display:none}}
+.lg{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:14px;background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.06),inset 0 0 0 1px rgba(11,26,46,.06);white-space:nowrap}
+.lg svg{width:22px;height:22px;fill:#0B1A2E;opacity:.78;flex:none}.lg b{font:600 15px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E}
+.fgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}
+.fc.ft{gap:8px;padding:18px}.fc.ft b{font-size:17px}.fc.fall{background:#1F4FE0;justify-content:center}.fc.fall b{color:#fff}.fc.fall span{color:rgba(255,255,255,.88);font-weight:600}
+@media(max-width:600px){.fgrid{gap:8px}.fc.ft{padding:12px 8px;align-items:center;text-align:center;gap:6px}.fc.ft .fic{width:44px;height:44px}.fc.ft b{font-size:13.5px;line-height:1.2}.fc.ft>span{display:none}.fc.fall>span{display:block;font-size:12px}}
+.fc{display:flex;flex-direction:column;gap:6px;padding:20px;border-radius:18px;background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.05),inset 0 0 0 1px rgba(11,26,46,.06);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s}
+.fc:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(11,26,46,.08),inset 0 0 0 1px rgba(31,79,224,.25)}
+.fc i{font:700 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.14em;color:#FF5A3C;font-style:normal}
+.fc b{font:600 18px/1.25 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E}.fc span{font-size:15px;line-height:1.5;color:#46526A}
+.sgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:30px}@media(max-width:900px){.sgrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.sgrid{grid-template-columns:1fr}}
+.sgrid .fc span.gol{color:#1F4FE0;font-weight:600;font-size:14px;margin-top:auto;padding-top:6px}
+.who{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}@media(max-width:900px){.who{grid-template-columns:1fr 1fr}}@media(max-width:560px){.who{grid-template-columns:1fr}}
+.who div{padding:18px;border-radius:16px;background:#0B1A2E;color:#C9D2E3;font-size:15px;line-height:1.5}.who b{display:block;font:600 17px/1.3 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#fff;margin-bottom:6px}
+.csgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:34px}@media(max-width:1000px){.csgrid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.csgrid{grid-template-columns:1fr}}
+.cs{display:flex;flex-direction:column;gap:12px;padding:22px;border-radius:20px;background:#fff;box-shadow:0 1px 3px rgba(11,26,46,.05),inset 0 0 0 1px rgba(11,26,46,.06);text-decoration:none;color:inherit}
+.cs .hd{display:flex;gap:12px;align-items:center}.cslogo{height:30px;width:auto;max-width:160px;object-fit:contain;align-self:flex-start;filter:grayscale(1);opacity:.75}.cslogo.blk{filter:brightness(0);opacity:.7}.csproof{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border-radius:12px;background:#EEF2FD;border:1px solid rgba(31,79,224,.2)}.csproof b{color:#1F4FE0;font-size:15px}.csproof small{font-size:13px;color:#3D4A5C}.cs .csav{width:54px;height:54px;border-radius:50%;background:#E8EEFD;flex:none;overflow:hidden;position:relative;display:grid;place-items:center;font:700 17px "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;color:#1F4FE0}
+.cs .csav img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.cs .hd b{display:block;font:600 18px/1.2 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E}.cs .hd small{display:block;font-size:13.5px;color:#5a6474;margin-top:3px}
+.cs dl{margin:0;display:grid;gap:10px}.cs dt{font:700 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#FF5A3C}.cs dd{margin:4px 0 0;font-size:15px;line-height:1.5;color:#46526A}
+.ggrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:34px}@media(max-width:1000px){.ggrid{grid-template-columns:1fr 1fr}}@media(max-width:560px){.ggrid{grid-template-columns:1fr}}
+.gv{position:relative;display:flex;flex-direction:column;gap:8px;padding:22px;border-radius:22px;background:#fff;box-shadow:0 1px 0 rgba(11,26,46,.04),0 14px 34px -22px rgba(255,90,60,.55);border:1px solid rgba(255,90,60,.16);text-decoration:none;color:#3D4A5C;transition:transform .2s,box-shadow .2s}
+.gv:hover{transform:translateY(-3px);box-shadow:0 22px 40px -22px rgba(255,90,60,.7)}
+.gvlogo{height:54px;display:flex;align-items:center;margin-bottom:6px}.gvlogo img{max-height:46px;max-width:170px;width:auto;object-fit:contain;mix-blend-mode:multiply}
+.gv i{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#C2311B;font-style:normal}.gv i svg{width:13px;height:13px;fill:#FF5A3C}
+.gv b{font:600 27px/1.1 "Cormorant","Cormorant Fallback",serif;color:#0B1A2E}.gv span{font-size:15px;line-height:1.5}
+.gv.heart{background:linear-gradient(160deg,#FFF1EC,#FFE3DA);border-color:rgba(255,90,60,.35)}
+.giveband{position:relative;overflow:hidden;background:radial-gradient(900px 420px at 85% 0%,#FFE1D8 0,transparent 60%),radial-gradient(700px 380px at 0% 100%,#FDE7EF 0,transparent 60%),#FFF7F2}
+.giveband .hrt{position:absolute;fill:#FF5A3C;pointer-events:none;animation:hfloat 7s ease-in-out infinite}
+@keyframes hfloat{0%,100%{transform:translateY(0) rotate(var(--r,0deg))}50%{transform:translateY(-14px) rotate(var(--r,0deg))}}
+@media (prefers-reduced-motion:reduce){.giveband .hrt{animation:none}}
+.giveband .wrap{position:relative}
+.vsum{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:22px;align-items:stretch}
+.vold{background:#fff;border:1px solid rgba(15,27,45,.1);border-radius:26px;padding:22px 24px}
+.vhd b{font:600 12px/1 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#566174}
+.vold ol{list-style:none;margin:14px 0 0;padding:0}
+.vold li{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid rgba(15,27,45,.08)}
+.vtl{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1 1 auto}.vtl i{text-wrap:balance}.vtl .vcat{display:block;font:700 19px/1.2 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif!important;color:#0B1A2E!important;letter-spacing:-.01em}.vex{display:flex;flex-direction:column;align-items:flex-start;gap:3px}.vlr{display:inline-flex;align-items:center;gap:8px;white-space:nowrap}.vlg{white-space:nowrap}.vimg img{display:block;height:20px;width:auto}.vlg em{white-space:nowrap}.vsrc a,.vsrc span{white-space:nowrap}.veg{font:600 11px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#687183}.vex i{font-size:13px!important;color:#626b7c!important}.vsw-surfer b{font:800 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif!important;letter-spacing:-.03em}.vlg{display:inline-flex;align-items:center;gap:6px;color:#626b7c;line-height:1}.vlg svg{width:22px;height:22px;flex:0 0 auto}.vlg b{font:800 17px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif!important;color:#626b7c!important;letter-spacing:-.02em}.vlg em{font:600 11px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;font-style:normal;letter-spacing:.14em;text-transform:uppercase;color:#687183;align-self:center}.vsw-yext b{font:900 20px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif!important;letter-spacing:-.04em}.vsw-podium b{font:800 18px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif!important;letter-spacing:-.03em}.vsw-birdeye b{font:700 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif!important;letter-spacing:-.01em}.vsw-profound b{font:600 14px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif!important;letter-spacing:.2em;text-transform:uppercase}.vtl b{font:700 20px/1.1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#687183;letter-spacing:-.01em}.vtl i{font:500 13px/1.2 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;font-style:normal;color:#566174}
+.vpr sup{font:600 10px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#566174;margin-left:3px;vertical-align:top}.vsrc a,.vsrc span{display:inline;margin-right:8px;color:inherit}.vpr{font:700 20px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#B4232A;white-space:nowrap;font-variant-numeric:tabular-nums}.vpr small,.vtot small{font-size:.6em;font-weight:600}
+.vtot{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 10px;padding-top:16px;margin-top:4px;border-top:2px solid #0B1A2E;font:500 15px/1.3 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#3D4A5C}
+.vtot strong{font:800 clamp(34px,4vw,46px)/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#B4232A;letter-spacing:-.02em}
+.vnew{background:#0B1A2E;color:#fff;border-radius:26px;padding:26px 24px;display:flex;flex-direction:column;gap:12px;box-shadow:0 24px 50px -28px rgba(11,26,46,.7)}
+.vnew>strong{font:700 15px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.02em;color:#9DB3F5}.vlogo{width:40px;height:40px}
+.vnew h3{margin:0;font:600 clamp(30px,3.2vw,42px)/1.05 "Cormorant","Cormorant Fallback",serif;color:#fff;text-wrap:balance}
+.vchips{list-style:none;margin:4px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}.vchips li{padding:8px 13px;border-radius:999px;border:1.5px solid rgba(255,255,255,.28);font:600 14px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}
+.vchips li:last-child{border-color:#FF5A3C}
+.vnew p{margin:auto 0 0;font-size:16px;line-height:1.5;color:rgba(255,255,255,.85)}
+.vsrc{grid-column:1/-1;margin:0;font-size:12.5px;line-height:1.5;color:#566174;text-align:center}
+@media(max-width:860px){.vsum{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:520px){.vlr{white-space:normal;flex-wrap:wrap}.vlg em{display:none}.vold{padding:20px 18px}.vtl .vcat{font-size:17px!important}}
+.fic{width:56px;height:56px;overflow:visible;flex:none}
+.fic .lt{fill:#E7EDFC;stroke:#1F4FE0;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.fic .ln{fill:none;stroke:#1F4FE0;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.fic .lw{fill:#fff;stroke:#1F4FE0;stroke-width:3;stroke-linejoin:round;stroke-linecap:round}
+.fic g,.fic path,.fic circle{transform-box:fill-box;transform-origin:center}
+@media (prefers-reduced-motion:no-preference){
+.ia-pop{animation:iaPop 3s ease-in-out infinite}.ia-float{animation:iaFloat 3.6s ease-in-out infinite}.ia-pulse{animation:iaPulse 2.2s ease-in-out infinite}
+.ia-bar{stroke-dasharray:44;animation:iaBar 3s linear infinite}.ia-sweep{animation:iaSweep 3.4s ease-in-out infinite}.ia-blink{animation:iaBlink 1.1s steps(1) infinite}
+.ia-twinkle{animation:iaTw 3s ease-in-out infinite}.ia-bounce{animation:iaBounce 2.4s ease-in-out infinite}.ia-slide{animation:iaSlide 3.2s ease-in-out infinite}
+.ia-swing{transform-origin:50% 0;animation:iaSwing 3s ease-in-out infinite}.ia-spin{animation:iaSpin 4s linear infinite}}
+@keyframes iaPop{0%,20%{transform:scale(.4);opacity:0}32%,85%{transform:scale(1);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes iaFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes iaPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.15)}}
+@keyframes iaBar{from{stroke-dashoffset:44}to{stroke-dashoffset:0}}
+@keyframes iaSweep{0%,100%{transform:translate(0,0)}50%{transform:translate(-8px,-6px)}}
+@keyframes iaBlink{50%{opacity:0}}
+@keyframes iaTw{0%,100%{transform:scale(1) rotate(0)}50%{transform:scale(1.08) rotate(8deg)}}
+@keyframes iaBounce{0%,100%{transform:translateY(0)}45%{transform:translateY(-5px)}}
+@keyframes iaSlide{0%,15%{transform:translateX(10px);opacity:0}35%,85%{transform:none;opacity:1}100%{opacity:0}}
+@keyframes iaSwing{0%,100%{transform:rotate(-7deg)}50%{transform:rotate(7deg)}}
+@keyframes iaSpin{to{transform:rotate(360deg)}}
+
+.lv-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+header .wrap.lv-bar{display:flex;align-items:center;gap:14px;height:66px}
+.lv-logo{display:flex;align-items:center;gap:9px;font:800 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E;text-decoration:none;white-space:nowrap;flex:none}
+.lv-burger{display:none;place-items:center;width:44px;height:44px;margin-left:-8px;border:0;background:none;color:#0B1A2E;cursor:pointer;border-radius:12px;flex:none}
+.lv-main{display:flex;gap:2px;margin-left:8px}
+.lv-dd{position:static}header .wrap.lv-bar{position:relative}
+.lv-top{display:flex;align-items:center;gap:6px;font:600 15px/1 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;color:#0B1A2E;background:none;border:0;padding:12px 9px;border-radius:10px;cursor:pointer;white-space:nowrap}
+.lv-top svg{transition:transform .2s;opacity:.6}.lv-top:hover,.lv-dd.open .lv-top{background:rgba(31,79,224,.08);color:#1F4FE0}.lv-dd.open .lv-top svg{transform:rotate(180deg)}
+.lv-pan{position:absolute;top:calc(100% - 4px);left:0;right:0;margin-inline:auto;max-width:calc(100vw - 32px);width:420px;background:#fff;border:1px solid rgba(11,26,46,.1);border-radius:18px;box-shadow:0 22px 50px rgba(11,26,46,.16);padding:18px;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:40}
+.lv-pan{display:flex;gap:22px}.lv-w1{width:330px}.lv-w2{width:620px}.lv-w3{width:940px}.lv-col{flex:1;min-width:0}.lv-col2{flex:2}.lv-col2 .lv-links{grid-template-columns:1fr 1fr}
+.lv-dd.open .lv-pan{opacity:1;visibility:visible;transform:none}
+.lv-ttl{margin:0 0 10px 10px;font:700 11px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1F4FE0}
+.lv-links{display:grid;gap:2px}
+.lv-links a{display:flex;flex-direction:column;gap:2px;padding:10px;border-radius:12px;text-decoration:none;color:#0B1A2E}
+.lv-links a:hover,.lv-links a:focus-visible{background:#F2F5FD}
+.lv-links b{font:700 15px/1.25 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;text-wrap:balance}.lv-links span{font:400 13.5px/1.35 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#5B6678;text-wrap:balance}.lv-l2 a span{text-wrap:balance}
+.lv-search{display:flex;align-items:center;gap:8px;margin-left:auto;flex:0 1 250px;min-width:0;height:42px;padding:0 14px;border-radius:999px;background:#fff;border:1px solid rgba(11,26,46,.14);color:#5B6678}
+.lv-search:focus-within{border-color:#1F4FE0;box-shadow:0 0 0 3px rgba(31,79,224,.18)}
+.lv-search input,.lv-dsearch input{flex:1;min-width:0;border:0;outline:0;background:none;font:500 14.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#0B1A2E}
+.lv-act{display:flex;align-items:center;gap:6px;flex:none}
+.lv-login{font:600 15px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#0B1A2E;text-decoration:none;padding:12px 10px;border-radius:10px}.lv-login:hover{color:#1F4FE0}
+.lv-cta{display:inline-flex;align-items:center;min-height:42px;padding:0 18px;border-radius:999px;background:#1F4FE0;color:#fff;font:700 15px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 6px 16px rgba(31,79,224,.28)}
+.lv-cta:hover{background:#1840B8}.lv-cts{display:none}@media(max-width:520px){.lv-ctl{display:none}.lv-cts{display:inline}.lv-cta{padding:0 14px;font-size:14px}}
+header details.lv-acct{position:relative;background:none;border:0;padding:0;margin:0;box-shadow:none;border-radius:0}.lv-acct summary{list-style:none;cursor:pointer}.lv-acct summary::-webkit-details-marker{display:none}
+.lv-av{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#0B1A2E;color:#fff;font:700 13px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}
+.lv-acp{position:absolute;right:0;top:calc(100% + 10px);width:210px;background:#fff;border:1px solid rgba(11,26,46,.1);border-radius:14px;box-shadow:0 18px 40px rgba(11,26,46,.16);padding:6px;display:flex;flex-direction:column;z-index:40}
+.lv-acp a{padding:11px 12px;border-radius:10px;color:#0B1A2E;text-decoration:none;font:600 14.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}.lv-acp a:hover{background:#F2F5FD}
+html[data-auth="in"] .ao{display:none!important}html:not([data-auth="in"]) .ai{display:none!important}
+/* drawer */
+.lv-drawer{position:fixed;inset:0;z-index:100;background:#fff;color:#0B1A2E;overflow:auto;padding:env(safe-area-inset-top,0px) max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px))}
+.lv-drawer section{min-height:100%;display:flex;flex-direction:column}
+.lv-dh{display:flex;align-items:center;justify-content:space-between;gap:12px;height:66px;flex:none}
+.lv-dh p{margin:0;font:700 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif}
+.lv-x,.lv-backb{display:grid;place-items:center;width:44px;height:44px;border:0;background:none;color:#0B1A2E;cursor:pointer;border-radius:12px}
+.lv-x{margin-right:-8px}.lv-backb{margin-left:-8px}
+.lv-dsearch{display:flex;align-items:center;gap:10px;height:52px;padding:0 18px;border-radius:999px;border:1.5px solid rgba(11,26,46,.16);color:#5B6678;margin:6px 0 18px}
+.lv-dsearch:focus-within{border-color:#1F4FE0}.lv-dsearch input{font-size:17px}
+.lv-drawer ul{list-style:none;margin:0;padding:0}
+.lv-list button{display:flex;align-items:center;gap:12px;width:100%;padding:12px 0;border:0;background:none;color:#0B1A2E;cursor:pointer;text-align:left;font:800 34px/1.1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:-.02em}
+.lv-list i{font-style:normal;font-weight:500;color:#1F4FE0}
+.lv-l2 ul{display:flex;flex-direction:column;gap:2px;margin:6px 0 10px}.lv-sub{margin:18px 0 0;font:700 11.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#1F4FE0}
+.lv-l2 a{display:flex;flex-direction:column;gap:3px;padding:9px 0;color:#0B1A2E;text-decoration:none;font:700 22px/1.2 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:-.01em}
+.lv-l2 a span{font:400 14.5px/1.35 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#5B6678;letter-spacing:0}
+.lv-foot{margin-top:auto;padding-top:28px;display:flex;flex-direction:column;gap:14px}
+.lv-big{display:flex;align-items:center;justify-content:center;min-height:58px;border-radius:999px;background:#1F4FE0;color:#fff;text-decoration:none;font:700 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif}
+.lv-foot p{margin:0;text-align:center;font:500 15px/1.5 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#3D4A5C}.lv-foot p a{color:#1F4FE0;font-weight:700}
+.lv-top:focus-visible,.lv-burger:focus-visible,.lv-x:focus-visible,.lv-backb:focus-visible,.lv-list button:focus-visible,.lv-cta:focus-visible{outline:3px solid rgba(31,79,224,.4);outline-offset:2px}
+body.lv-lock{overflow:hidden}
+.lv-util{background:#0B1A2E}.lv-uin{max-width:1240px;margin:0 auto;display:flex;justify-content:flex-end;gap:18px;padding:7px max(16px,env(safe-area-inset-right,0px)) 7px max(16px,env(safe-area-inset-left,0px));overflow-x:auto;scrollbar-width:none}
+.lv-uin a{font:600 12.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#C9D2E3;text-decoration:none;white-space:nowrap}.lv-uin a:hover{color:#fff}
+.lv-more{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.lv-more .lv-sub{width:100%;margin:0 0 4px}.lv-more a{padding:9px 12px;border-radius:999px;border:1px solid rgba(11,26,46,.14);font:600 14px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#0B1A2E;text-decoration:none}
+.lv-drawer[hidden],.lv-drawer [hidden]{display:none!important}
+@media (max-width:1180px){.lv-search{flex-basis:44px;width:44px;padding:0;justify-content:center;cursor:pointer}.lv-search input{display:none}}
+@media (max-width:1024px){.lv-util{display:none}.lv-main,.lv-search,.lv-login{display:none}.lv-burger{display:grid}.lv-act{margin-left:auto}}
+@media (max-width:400px){.lv-logo span{font-size:16px}.lv-cta{padding:0 14px;font-size:14px}}
+@media (prefers-reduced-motion:reduce){.lv-pan,.lv-top svg{transition:none}}
+
+.soon{display:inline-flex;align-items:center;gap:6px;font:700 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:#FFE9E4;color:#a5311a}
+.soonbox{border:2px dashed rgba(11,26,46,.16);border-radius:20px;padding:22px;background:rgba(255,255,255,.5)}
+.stgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:16px}
+.stc{background:#fff;border-radius:18px;padding:20px;box-shadow:0 1px 3px rgba(11,26,46,.05),inset 0 0 0 1px rgba(11,26,46,.06);display:flex;flex-direction:column;gap:8px}
+.stc b{font:500 44px/1 "Cormorant","Cormorant Fallback",serif;color:#1F4FE0}.stc p{margin:0;font-size:15.5px;line-height:1.5;color:#0B1A2E}.stc small{font-size:13px;color:#5a6474}.stc small a{color:#1F4FE0}
+.pair{display:flex;align-items:center;gap:14px;margin:6px 0 18px}.pair span{width:56px;height:56px;border-radius:16px;background:#fff;display:grid;place-items:center;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08)}
+.pair span svg{width:28px;height:28px;fill:#0B1A2E}.pair i{font-style:normal;font:600 22px "Bricolage Grotesque";color:#5a6474}
+.igrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:16px}
+.igrid a{display:flex;align-items:center;gap:10px;padding:14px 16px;border-radius:14px;background:#fff;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08);text-decoration:none;color:#0B1A2E;font:600 15px "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif}
+.igrid a svg{width:20px;height:20px;fill:#0B1A2E;opacity:.8;flex:none}.igrid a:hover{box-shadow:inset 0 0 0 1px #1F4FE0}
+table.cmp{width:100%;border-collapse:collapse;margin-top:16px;font-size:15px;background:#fff;border-radius:16px;overflow:hidden;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08)}
+table.cmp th,table.cmp td{text-align:left;padding:14px 16px;border-bottom:1px solid rgba(11,26,46,.07);vertical-align:top}
+table.cmp th{font:600 14px "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E;background:#F7F5F0}table.cmp td:first-child{font-weight:600;color:#0B1A2E;width:28%}
+.tscroll{overflow-x:auto}
+.tour{display:grid;grid-template-columns:260px 1fr;gap:16px;margin-top:16px}@media(max-width:760px){.tour{grid-template-columns:1fr}}
+.tabs{display:flex;flex-direction:column;gap:8px}@media(max-width:760px){.tabs{flex-direction:row;overflow-x:auto}}
+.tabs button{text-align:left;font:600 15px "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;padding:14px 16px;border-radius:14px;border:0;background:#fff;color:#0B1A2E;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08);white-space:nowrap}
+.tabs button small{display:block;font:500 13px "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;color:#5a6474;margin-top:4px;white-space:normal}
+.tabs button[aria-selected=true]{background:#0B1A2E;color:#fff}.tabs button[aria-selected=true] small{color:#A8B2C1}
+.screen{background:#fff;border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(11,26,46,.08),inset 0 0 0 1px rgba(11,26,46,.06);min-height:360px}
+.screen .tag{font:700 11px "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#a5311a}
+.screen .srow{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid rgba(11,26,46,.07);font-size:15px}.screen .srow b{color:#0B1A2E}
+.okc{color:#137A3A;font-weight:700}.noc{color:#a5311a;font-weight:700}
+.bubble{background:#F4F1EA;border-radius:14px;padding:14px 16px;margin:10px 0;font-size:15px;line-height:1.5}.bubble i{display:block;font-style:normal;font:700 12px "Bricolage Grotesque";color:#5a6474;margin-bottom:6px}
+.bars{display:flex;align-items:flex-end;gap:10px;height:170px;margin-top:16px}.bars div{flex:1;background:#1F4FE0;border-radius:8px 8px 0 0;position:relative}.bars div span{position:absolute;bottom:-22px;left:0;right:0;text-align:center;font-size:12px;color:#5a6474}
+.log{display:grid;gap:12px;margin-top:16px}.log>div{display:grid;grid-template-columns:150px 1fr;gap:16px;background:#fff;border-radius:16px;padding:18px;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08)}@media(max-width:600px){.log>div{grid-template-columns:1fr;gap:6px}}
+.log time{font:600 14px "Bricolage Grotesque";color:#1F4FE0}.log b{display:block;font:600 17px "Bricolage Grotesque";color:#0B1A2E;margin-bottom:4px}.log p{margin:0;font-size:15px;color:#46526A}
+.city{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.city span{padding:9px 13px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px rgba(11,26,46,.1);font:600 14px "Bricolage Grotesque";color:#5a6474}
+.vid{position:relative;padding-top:56.25%;border-radius:18px;overflow:hidden;background:#0B1A2E;margin-top:16px}.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.trustbar{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 44px;margin:22px auto 0;max-width:1060px}.trustbar img{width:auto;max-width:170px;object-fit:contain;filter:grayscale(1);opacity:.78;transition:filter .25s,opacity .25s}.trustbar img.blk{filter:brightness(0);opacity:.7}.trustbar img:hover{filter:none;opacity:1}@media(max-width:640px){.trustbar{gap:16px 26px}.trustbar img{max-width:120px;transform:scale(.85)}}
+.trustbar span{font:500 20px/1.2 "Cormorant","Cormorant Fallback",serif;color:#0B1A2E;opacity:.72;white-space:nowrap}
+.badges{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:20px}
+.badges a,.badges span{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:12px;background:#fff;box-shadow:inset 0 0 0 1px rgba(11,26,46,.08);font:600 14px "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0B1A2E;text-decoration:none}
+.badges span{color:#5a6474}.badges small{font:700 10px "Bricolage Grotesque";letter-spacing:.12em;text-transform:uppercase;color:#a5311a}
+mark.ph{background:#FFE66B;color:inherit;border-radius:4px;padding:0 3px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.phleg{position:fixed;left:max(12px,env(safe-area-inset-left,0px));bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:60;background:#FFE66B;color:#0F1B2D;font:700 12px/1.3 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;padding:8px 12px;border-radius:999px;box-shadow:0 4px 14px rgba(15,27,45,.18);max-width:calc(100% - 24px)}
+.smp{margin:28px 0}.smp h2{margin:0 0 6px}.smp>p{margin:0 0 14px;color:#3D4A5C}
+.stg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+.stg div{background:#fff;border:1px solid rgba(15,27,45,.1);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:6px}
+.stg b{font:700 30px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#1F4FE0;letter-spacing:-.01em}
+.stg span{text-wrap:balance;font-size:14px;line-height:1.4;color:#3D4A5C}.stg small{font-size:11.5px;letter-spacing:.02em;color:#566174;margin-top:auto}.stg.big b{font-size:40px}@media(max-width:420px){.stg.big b{font-size:32px}}
+.csres{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.csres div{background:#F5F7FB;border-radius:12px;padding:10px;display:flex;flex-direction:column;gap:3px}
+.csres b{font:700 18px/1.1 "Bricolage Grotesque","Bricolage Grotesque Fallback",system-ui,sans-serif;color:#0F1B2D}.csres span{font-size:12px;line-height:1.3;color:#3D4A5C}
+.gch{width:100%;height:auto;display:block;overflow:visible}.gch .gst{font:700 11px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;fill:#1F4FE0;letter-spacing:.04em}.gch .gax{font:600 10.5px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;fill:#6B7689}.gch .gsm{font:800 9px "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;fill:#8A6D00;letter-spacing:.12em}
+@media (prefers-reduced-motion:no-preference){.gch .gl{stroke-dasharray:600;stroke-dashoffset:600;animation:gdraw 2.2s ease-out forwards}}@keyframes gdraw{to{stroke-dashoffset:0}}
+.glg{display:flex;flex-direction:column;gap:6px;font-size:14px;line-height:1.35;color:#3D4A5C}.glg i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:8px;vertical-align:1px}.glg b{font:700 15px "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;color:#0B1A2E;margin-right:4px}
+.csq{margin:0;padding:10px 12px;border-left:3px solid #1F4FE0;font-style:italic;color:#3D4A5C;font-size:14px}
+.medrev{display:flex;gap:10px;align-items:center;padding:10px 14px;border-radius:14px;background:#F5F7FB;margin:0 0 20px;font-size:14px;color:#3D4A5C}
+.medrev b{color:#0F1B2D}
+@media(max-width:420px){.csres{grid-template-columns:1fr 1fr 1fr}.csres b{font-size:16px}}
+</style>
 
 <meta name="robots" content="noindex,follow"><meta property="og:title" content="Get named by AI in 90 days. Guaranteed. | Local AI Registry"><meta property="og:description" content="When people nearby ask AI where to go, our local AI team makes sure it names your business. If it hasn&#x27;t by day 90, we keep working for free until it does."><meta property="og:image" content="https://audit.localairegistry.com/home/drafts/home-2/og/index.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Get named by ChatGPT Gemini Google AI Perplexity Claude in 90 days. Guaranteed."><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Get named by AI in 90 days. Guaranteed. | Local AI Registry"><meta name="twitter:image" content="https://audit.localairegistry.com/home/drafts/home-2/og/index.png"><link rel="canonical" href="https://audit.localairegistry.com/home/drafts/home-2/"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://localairegistry.com/#organization", "name": "Local AI Registry", "url": "https://localairegistry.com/", "logo": "https://localairegistry.com/brand/logo-512.png", "email": "hello@localairegistry.com", "telephone": "+1-213-931-5633", "address": {"@type": "PostalAddress", "streetAddress": "9891 Irvine Center Dr", "addressLocality": "Irvine", "addressRegion": "CA", "postalCode": "92618", "addressCountry": "US"}, "sameAs": ["https://www.linkedin.com/company/local-ai-registry", "https://www.instagram.com/localairegistry/", "https://www.facebook.com/profile.php?id=61591432116527", "https://www.tiktok.com/@localairegistry", "https://www.youtube.com/@localairegistry", "https://x.com/LocalAIRegistry", "https://pinterest.com/localairegistry", "https://www.crunchbase.com/organization/local-ai-registry"]}, {"@type": "WebPage", "@id": "https://audit.localairegistry.com/home/drafts/home-2/", "url": "https://audit.localairegistry.com/home/drafts/home-2/", "name": "Get named by AI in 90 days. Guaranteed.", "description": "When people nearby ask AI where to go, our local AI team makes sure it names your business. If it hasn't by day 90, we keep working for free until it does.", "isPartOf": {"@type": "WebSite", "name": "Local AI Registry", "url": "https://localairegistry.com/"}, "publisher": {"@id": "https://localairegistry.com/#organization"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://audit.localairegistry.com/home/drafts/home-2/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is AI search?", "acceptedAnswer": {"@type": "Answer", "text": "People now ask ChatGPT, Gemini, Google's AI answers, Siri and others where to go, instead of scrolling a list of links. The assistant answers with a few names. AI search is about being one of them."}}, {"@type": "Question", "name": "How is this different from SEO?", "acceptedAnswer": {"@type": "Answer", "text": "SEO gets your pages ranked. AI search gets your business named in the answer. Rankings still matter, because AI reads the pages Google ranks, but AI also checks your listings, reviews, photos and what other sites say about you."}}, {"@type": "Question", "name": "Why does local matter so much?", "acceptedAnswer": {"@type": "Answer", "text": "Local questions are where AI answers show up most. Our research found that 76.4% of local business searches trigger a Google AI answer, versus 13.7% of all searches."}}, {"@type": "Question", "name": "What is the Local AI Blueprint?", "acceptedAnswer": {"@type": "Answer", "text": "The 11 things AI checks before it recommends a local business, from your Google profile and listings to reviews, photos, articles and best-of guides. Our team handles all of them for you."}}, {"@type": "Question", "name": "Do I have to do anything?", "acceptedAnswer": {"@type": "Answer", "text": "Very little. You approve what goes out in your name, and we do the work. Each month you get a report with the real answers and screenshots."}}, {"@type": "Question", "name": "Will you work with my competitors?", "acceptedAnswer": {"@type": "Answer", "text": "No. Your area is yours alone. We don't take on a business like yours in your area, and we agree on the exact boundary with you before we start."}}, {"@type": "Question", "name": "What is the free AI audit?", "acceptedAnswer": {"@type": "Answer", "text": "A call where we show you, live, what ChatGPT, Gemini and Google's AI say about your business today, who they name instead, and what it takes to change that."}}, {"@type": "Question", "name": "What does it cost?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on your market and what your business needs, so we quote after your free audit. Month to month, no long contracts."}}, {"@type": "Question", "name": "What does the guarantee cover?", "acceptedAnswer": {"@type": "Answer", "text": "Named in AI in 90 days. If AI hasn't named you by then, we keep working for free until it does."}}]}]}</script><link rel="apple-touch-icon" href="../../research/apple-touch-icon.png"><link rel="manifest" href="../../assets/brand/site.webmanifest"><meta name="theme-color" content="#F4F1EA"><style id="wrapfix">p,li,td,th,summary,figcaption,blockquote,dd,small{text-wrap:pretty}h1,h2,h3,h4{text-wrap:balance}p a,li a,td a,figcaption a,dd a,p em,li em{overflow-wrap:break-word}footer .lf-cols a{overflow-wrap:normal}.prose,.grid>*,details,.tablewrap{min-width:0;max-width:100%}.tablewrap{overflow-x:auto}@media(max-width:720px){main table:not(.keep){display:block;max-width:100%;overflow-x:auto}}</style><link rel="icon" href="../../research/favicon.ico" sizes="any"><link rel="icon" href="../../research/favicon.svg" type="image/svg+xml"><style id="a11ylink">main p a:not([class]),main li a:not([class]),main cite a,.updated a,main td a:not([class]){text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}</style></head>
-<body class="x2"><div hidden aria-hidden="true"><div id="g11"></div><div id="safe"></div><div id="cop"></div><div id="intro"></div><div id="iphone"></div><div id="ifade"></div><div id="ihint"></div><div id="iskip"></div><div id="icap"></div><div id="icap2"></div><div id="iq"></div><div id="ia"></div><div id="icin"></div><div id="imc"></div><div id="hero"></div><div id="story"></div><div id="pbar"></div><div id="lvdq"></div><div id="lv-drawer"></div></div><link rel="stylesheet" href="../../assets/css/6b58f8a935da.css" id="h2x"><div class="x">
+<body class="x2"><div hidden aria-hidden="true"><div id="g11"></div><div id="safe"></div><div id="cop"></div><div id="intro"></div><div id="iphone"></div><div id="ifade"></div><div id="ihint"></div><div id="iskip"></div><div id="icap"></div><div id="icap2"></div><div id="iq"></div><div id="ia"></div><div id="icin"></div><div id="imc"></div><div id="hero"></div><div id="story"></div><div id="pbar"></div><div id="lvdq"></div><div id="lv-drawer"></div></div><style id="h2x">
+@font-face{font-family:"H2 Cormorant";src:url(../../assets/fonts/cormorant.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:"H2 Cormorant";font-style:italic;src:url(../../assets/fonts/cormorant-italic.woff2) format("woff2");font-weight:300 700;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(../../assets/fonts/hanken.woff2) format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Bricolage Grotesque";src:url(../../assets/fonts/bricolage.woff2) format("woff2");font-weight:200 800;font-display:swap}
+body.x2{background:#fff!important}body.x2::before,body.x2::after{display:none!important}
+.x2 *{box-sizing:border-box}
+.x{--ink:#0B1A2E;--ink2:#5A647A;--soft:#8C94A3;--line:#E6E3DC;--blue:#1F4FE0;--coral:#FF5A3C;--paper:#F4F1EA;--sky1:#EEF3FF;--sky2:#DCE6FF;
+  font:400 17px/1.6 "Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;color:var(--ink);-webkit-font-smoothing:antialiased}
+.x a{color:inherit}
+.x .in{max-width:1200px;margin:0 auto;padding:0 24px}
+.x .eb{font:600 11.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0 0 18px;display:block}
+.x h1,.x h2,.x h3{font-family:"Hanken Grotesk","Hanken Grotesk Fallback",system-ui,sans-serif;font-weight:400;letter-spacing:-.025em;color:var(--ink);margin:0;text-wrap:balance}
+.x h2{font-size:clamp(32px,3.5vw,48px);line-height:1.18}
+.x h2 .g,.x h1 .g{color:var(--soft)}
+.x h3{font-size:19px;letter-spacing:-.01em;font-weight:500}
+.x p{margin:0}.x :is(p,li,td,dd,figcaption,small,summary,blockquote){text-wrap:pretty}.x :is(.fqg,.h4l,.h6l,.nm2 b,figcaption small,.studies a span,p.src,.src,.lead2 cite,.por span,.crew span,.cons span,.tlist span,.fnd cite){color:#646C7E!important}
+.x .sub{font-size:clamp(17px,1.4vw,20px);line-height:1.5;color:var(--ink2)}
+.x .mark{background:linear-gradient(transparent 12%,#DCE6FF 12%,#DCE6FF 92%,transparent 92%);padding:0 .12em;border-radius:3px}
+.x .xb{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 6px 0 20px;border-radius:999px;font:500 15px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s;border:0;cursor:pointer}
+.x .xb i{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;font-style:normal;font-size:15px}
+.x .xb.b{background:var(--blue);color:#fff}.x .xb.b i{background:rgba(255,255,255,.18)}.x .xb.b:hover{background:#1A43C2}
+.x .xb.k{background:var(--ink);color:#fff;padding:0 20px}.x .xb.k:hover{background:#22324A}
+.x .xb.w{background:#fff;color:var(--ink)}.x .xb.w i{background:var(--paper)}
+.x .xb.o{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35);padding:0 20px}
+.x .xbs{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.x .sec{padding:clamp(88px,10vw,150px) 0}
+.x .rule{border-top:1px solid var(--line)}
+.x .sky{position:relative;border-radius:22px;overflow:hidden;background:radial-gradient(120% 90% at 15% 0%,#FFFFFF 0%,rgba(255,255,255,0) 55%),radial-gradient(90% 80% at 100% 100%,#C9D8FF 0%,rgba(201,216,255,0) 60%),linear-gradient(160deg,#F6F8FF 0%,#E3EBFF 55%,#D4E0FF 100%)}
+.x .sky::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(11,26,46,.05) 1px,transparent 1px);background-size:4px 4px;pointer-events:none;mix-blend-mode:multiply}
+.x .ui{position:relative;z-index:1;background:rgba(255,255,255,.92);border-radius:14px;box-shadow:0 1px 2px rgba(11,26,46,.06),0 18px 50px -24px rgba(11,26,46,.35);backdrop-filter:blur(8px)}
+.x .tg{display:inline-flex;align-items:center;gap:6px;font:600 11px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;padding:5px 8px;border-radius:6px;white-space:nowrap}
+.x .tg.t-ok{background:#E7F5EC;color:#17703D}.x .tg.t-no{background:#FDECE8;color:#A5311A}.x .tg.t-bl{background:#E8EEFF;color:#1A43C2}.x .tg.t-gy{background:#F1EFEA;color:#5A647A}
+.x .sample{font:600 10.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#A5311A}
+
+
+.x .gpill{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 6px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line);font-size:13.5px;text-decoration:none;margin-bottom:26px;color:var(--ink)}
+.x .gpill span{width:22px;height:22px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:12px}
+.x .gu{color:var(--blue)}.x .gpill em{font-style:normal;color:var(--soft)}
+.x .gticks{list-style:none;padding:0;margin:20px auto 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 22px;font-size:14px;color:var(--ink2)}
+.x .gticks li::before{content:"\2713";color:var(--blue);font-weight:700;margin-right:7px}
+/* announcement + header */
+.xa{background:var(--ink);color:#fff;text-align:center;font-size:14px;padding:10px 16px}
+.xa a{color:#fff;text-decoration:none}.xa b{display:inline-block;background:var(--blue);font:600 10.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.12em;padding:5px 8px;border-radius:5px;margin-right:10px;vertical-align:1px}
+.xh{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.xh .in{display:flex;align-items:center;height:64px;gap:32px}
+.xh .brand,.xm .brand{display:flex;align-items:center;gap:9px;text-decoration:none;font:700 18px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;color:var(--ink);letter-spacing:-.01em}
+.xh .brand svg,.xm .brand svg{width:24px;height:24px;flex:none}
+.xh nav{display:flex;align-items:center;gap:26px;margin:0 auto}
+.xh nav a{font-size:14.5px;text-decoration:none;color:var(--ink2)}.xh nav a[aria-current]{color:var(--ink);font-weight:500}.xh nav a:hover{color:var(--ink)}
+.xh .r{display:flex;align-items:center;gap:18px}.xh .r a.li{font-size:14.5px;text-decoration:none;color:var(--ink)}
+.xh .xb{height:38px;font-size:14px}.xh .xb i{width:28px;height:28px}
+.xh .menu{display:none;background:none;border:0;width:40px;height:40px;margin-left:auto;cursor:pointer}
+.xh .menu span{display:block;width:18px;height:1.5px;background:var(--ink);margin:4px auto}
+.xm{display:none;position:fixed;inset:0;z-index:60;background:#fff;padding:16px 24px 24px;flex-direction:column;overflow-y:auto;-webkit-overflow-scrolling:touch}
+.xm.on{display:flex}.xm a.big{font-size:30px;letter-spacing:-.02em;text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line)}
+.xm .x1{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px}.xm button{background:none;border:0;font-size:30px;line-height:1;color:var(--ink);cursor:pointer;padding:6px 2px}.xm a.big{color:var(--ink);font-size:26px}
+.x .xm .xmn{display:flex;flex-direction:column;gap:2px;align-self:stretch;width:100%;margin:0}.x .xm details{border:0}
+.x .xm .xmn .xg0,.x .xm .xmn summary{display:flex;justify-content:space-between;align-items:center;font:400 clamp(30px,8.5vw,40px)/1.15 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.025em;color:#5B6170;text-decoration:none;padding:8px 0;gap:12px}
+.x .xm .xmn summary::after{content:"";width:11px;height:11px;border:0;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin-right:8px;transition:transform .25s;background:none;font-size:0}.x .xm .xmn details[open] summary::after{transform:rotate(45deg)}.x .xm .xmn .xg0:first-child{color:var(--ink)}
+.xmn .xg0,.xmn summary{display:flex;justify-content:space-between;align-items:center;font:400 clamp(30px,8.5vw,40px)/1.15 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.025em;color:#5B6170;text-decoration:none;padding:8px 0;cursor:pointer;list-style:none}
+.xmn .xg0:first-child{color:var(--ink)}.xmn summary::-webkit-details-marker{display:none}
+.xmn summary::after{content:"";width:11px;height:11px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(-45deg);margin-right:8px;transition:transform .25s}
+.xmn details[open] summary{color:var(--ink)}.xmn details[open] summary::after{transform:rotate(45deg)}
+.xmn .xs{display:flex;flex-direction:column;padding:4px 0 14px 2px}.xmn .xs a{font-size:17px;color:var(--ink2);text-decoration:none;padding:7px 0}
+.xmf{margin-top:auto;padding-top:28px}.xm .xmf .xb{display:flex;justify-content:center;min-height:54px}
+.xmb{display:flex;justify-content:space-between;align-items:center;margin-top:22px;padding-top:20px;border-top:1px solid var(--line);gap:12px;flex-wrap:wrap}
+.xmb span{display:flex;gap:18px;align-items:center}.agi{font:600 12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--soft);text-decoration:none;border:1px solid var(--line);border-radius:6px;padding:5px 6px;letter-spacing:-.02em}.agi:hover{color:var(--ink);border-color:var(--ink)}.xh .r .agi{margin-right:4px}.xmb span a{color:var(--ink);text-decoration:none;font-size:16px;font-weight:500}
+.soc{display:flex;gap:14px;align-items:center}.soc a{display:grid;place-items:center;width:22px;height:22px;color:var(--ink)}.soc svg{width:20px;height:20px;fill:currentColor}
+.x .fsoc{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.08);flex-wrap:wrap}.x .fsoc .agt{font:12px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:rgba(255,255,255,.55);text-decoration:none;letter-spacing:.02em}.x .fsoc .agt:hover{color:rgba(255,255,255,.7)}
+.x .ft2 .soc a{color:rgba(255,255,255,.7)}.x .ft2 .soc a:hover{color:#fff}
+
+/* hero */
+.x .hero{text-align:center;padding:clamp(72px,9vw,120px) 0 clamp(48px,6vw,72px)}
+.x .hero h1{font-size:clamp(40px,5.2vw,68px);line-height:1.08}
+.x .rot{display:inline-grid;vertical-align:baseline;padding:.02em .3em .06em;border-radius:.24em;background:#fff;box-shadow:inset 0 0 0 1px var(--line),0 2px 10px -4px rgba(11,26,46,.2);color:var(--ink);min-width:6.2em;text-align:center}.x .ri{grid-area:1/1;display:inline-flex;white-space:nowrap;align-items:center;justify-content:center;gap:.2em;opacity:0;transform:translateY(.25em);filter:blur(6px);transition:opacity .45s,transform .45s,filter .45s}.x .ri.on{opacity:1;transform:none;filter:none}.x .ri img,.x .ri svg{width:.72em;height:.72em;flex:none}
+.x .hero .sub{max-width:34em;margin:22px auto 34px}
+.x .go{display:flex;align-items:center;gap:8px;max-width:520px;position:relative;margin:0 auto;padding:6px;border-radius:999px;background:#fff;box-shadow:inset 0 0 0 1px var(--line),0 10px 30px -18px rgba(11,26,46,.35)}
+.x .go input{flex:1;min-width:0;height:52px;border:0;box-shadow:none!important;background:transparent;font:400 16px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;padding:0 16px;color:var(--ink);outline:none}
+.x .alt{display:inline-block;margin-top:16px;font-size:14.5px;color:var(--ink2);text-decoration:none}.x .alt:hover{color:var(--ink)}
+@media(max-width:640px){.x .portal .qdg span{min-height:28px;padding:3px 0 2px;gap:2px}.x .portal .qky{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 14px}.x .portal ul.qky li{display:block;padding:5px 0;border-top:1px solid #F1EEE8}.x .portal ul.qky span{font-size:11.5px;line-height:1.25;white-space:nowrap}.x .portal ul.qky em{display:block;padding-left:16px;font-size:10px;margin-top:1px}.x .portal :is(h6,.h6l){margin:12px 0 6px}.x .portal .qpm>.qap:last-of-type{display:none}.x .portal .qsc .qchs,.x .portal .qsc .qmx{display:none}.x .heroui{padding:10px}}
+.x .chq{font-size:13px;font-weight:600;color:var(--ink);margin:0 0 -8px}
+.xh nav .dd{position:relative}.xh nav .dd>a{display:inline-flex;align-items:center;gap:6px;padding:22px 0}.xh nav .dd>a i{width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);opacity:.6}.xh nav .ddm{position:absolute;top:100%;left:-18px;min-width:220px;background:#fff;border-radius:14px;box-shadow:0 18px 50px rgba(11,26,46,.14),0 0 0 1px rgba(11,26,46,.06);padding:10px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .18s,transform .18s,visibility .18s;z-index:60}.xh nav .dd:hover .ddm,.xh nav .dd:focus-within .ddm{opacity:1;visibility:visible;transform:none}.xh nav .ddm a{padding:8px 10px;border-radius:8px;font-size:14px;color:var(--ink);white-space:nowrap}.xh nav .ddm a:hover{background:#F4F6FB}.xh nav .ddm small{display:block;font:600 10.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);padding:8px 10px 6px}.xh nav .ddw{flex-direction:row;gap:10px;min-width:560px}.xh nav .ddw>div{display:flex;flex-direction:column}.xh nav .ddw>div+div{border-left:1px solid #EEF0F4;padding-left:10px}.xh nav .dd2{display:grid;grid-template-columns:1fr 1fr}
+.xh .brand,.xh .r a.li{white-space:nowrap}@media(max-width:1180px){.xh .in{gap:20px}.xh nav{gap:16px}.xh nav a{font-size:14px}.xh .r{gap:12px}}
+.x .go>.xb{height:52px;flex:none}
+.x .gores{position:absolute;left:0;right:0;top:calc(100% + 8px);background:#fff;border-radius:16px;box-shadow:0 18px 50px rgba(11,26,46,.16),0 0 0 1px rgba(11,26,46,.06);padding:6px;z-index:40;text-align:left;display:none}
+.x .gores.on{display:block}.x .gores button{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;width:100%;padding:10px 12px;border-radius:10px;cursor:pointer}
+.x .gores button:hover,.x .gores button:focus{background:#F4F6FB}.x .gores b{display:block;font-weight:600;font-size:14.5px;color:var(--ink)}.x .gores span.t span{display:block;font-size:12.5px;color:var(--ink2)}
+.x .gores em{margin-left:auto;font-style:normal;font-size:11px;color:var(--soft);white-space:nowrap}.x .gores .msg{padding:10px 12px;font-size:13.5px;color:var(--ink2)}
+.x .in.pcap{margin:clamp(64px,8vw,112px) auto 0;max-width:640px;text-align:center;display:flex;flex-direction:column;align-items:center}.x .in.pcap .eb{margin:0 auto}.x .pcap h2{font-size:clamp(28px,3.4vw,40px);line-height:1.12;letter-spacing:-.025em;font-weight:400;margin:12px 0 10px}.x .pcap p{color:#5A647A;margin:0 auto;max-width:34em;font-size:16px;line-height:1.55}.x .pcap+.glow .heroui{margin-top:clamp(24px,3vw,36px)}
+.x .heroui{margin:clamp(48px,6vw,80px) auto 0;max-width:1200px;padding:clamp(14px,2.4vw,34px)}
+.x .glow{position:relative}.x .glow::before{content:"";position:absolute;left:10%;right:10%;top:22%;height:70%;background:radial-gradient(closest-side,rgba(31,79,224,.16),transparent);filter:blur(40px);z-index:0}
+
+/* product UI */
+.x .app{display:grid;grid-template-columns:300px 1fr;min-height:520px;overflow:hidden;text-align:left}
+.x .feed{border-right:1px solid var(--line);padding:18px;display:flex;flex-direction:column;gap:14px;background:rgba(250,249,246,.9)}
+.x .fh{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--ink2)}.x .fh b{color:var(--ink);font-weight:600}
+.x .msg{font-size:13.5px;line-height:1.5;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 13px}
+.x .msg .wh{display:flex;align-items:center;gap:7px;font:600 12px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;margin-bottom:8px;color:var(--ink)}
+.x .avt{width:20px;height:20px;border-radius:50%;background:var(--blue);display:grid;place-items:center}
+.x .avt svg{width:11px;height:11px}
+.x .tsk{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid var(--line);font-size:12.5px}
+.x .tsk:first-of-type{border-top:0}
+.x .ask{margin-top:auto;border:1px solid var(--line);border-radius:12px;padding:12px;font-size:13px;color:var(--soft);display:flex;justify-content:space-between;align-items:center;background:#fff}
+.x .ask span.s{width:26px;height:26px;border-radius:50%;background:var(--ink)}
+.x .main{padding:20px 22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.x .mh{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.x .mh b{font:600 15px/1.2 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}.x .mh small{display:block;color:var(--soft);font-size:12px;margin-top:3px}
+.x .kpi{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.x .kpi div{border:1px solid var(--line);border-radius:12px;padding:12px 13px;background:#fff}
+.x .kpi span{font-size:11.5px;color:var(--ink2)}.x .kpi b{display:block;font:500 26px/1.1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em;margin-top:6px}.x .kpi small{font-size:11px;color:#17703D}
+.x .duo{display:grid;grid-template-columns:1.25fr 1fr;gap:12px;flex:1;min-height:0}
+.x .pcard{border:1px solid var(--line);border-radius:12px;padding:14px;background:#fff;min-width:0}
+.x .pcard h4{margin:0 0 12px;font:600 12.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;display:flex;justify-content:space-between;color:var(--ink)}
+.x .pcard h4 em{font-style:normal;font-weight:500;color:var(--soft)}
+.x .mbars{display:flex;align-items:flex-end;gap:12px;height:170px;padding:0 4px;border-bottom:1px solid var(--line)}
+.x .mbars div{flex:1;display:flex;gap:3px;align-items:flex-end;height:100%}
+.x .mbars i{flex:1;border-radius:4px 4px 0 0;background:#D6DEF2}.x .mbars i.n{background:var(--blue)}
+.x .mbl{display:flex;gap:12px;padding:8px 4px 0;font-size:10.5px;color:var(--soft)}.x .mbl span{flex:1;text-align:center}
+.x .rk{display:flex;align-items:center;gap:10px;padding:8px 0;border-top:1px solid var(--line);font-size:13px}.x .rk:first-of-type{border-top:0}
+.x .rk em{font-style:normal;width:16px;color:var(--soft);font-size:12px}.x .rk .nm{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.x .rk.you{font-weight:600}.x .rk.you .nm{color:var(--blue)}
+.x .rk .pc{font-size:12px;color:var(--ink2)}
+.x .logos{padding:clamp(44px,5vw,64px) 0 0;text-align:center}
+.x .logos .eb{margin-bottom:24px}
+.x .lrow{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:22px 48px}
+.x .lrow img{filter:grayscale(1) brightness(.35);opacity:.55;max-width:42vw;object-fit:contain}
+
+
+/* KOL marquee: portrait cards, monochrome until hover, serif names, hairline frames, slow drift both ways */
+.x .kols{margin-top:clamp(56px,7vw,96px);overflow:hidden}
+.x .kh{text-align:center;margin-bottom:34px}.x .kh .eb{margin-left:auto;margin-right:auto}
+.x .kq{font:400 clamp(26px,2.8vw,38px)/1.2 "H2 Cormorant",Georgia,serif;letter-spacing:-.01em;color:var(--ink);text-wrap:balance}
+.x .kq em{color:var(--soft)}
+.x .mq{--gap:18px;overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);padding:4px 0}
+.x .mq+.mq{margin-top:var(--gap)}
+.x .mt{display:flex;gap:var(--gap);width:max-content;animation:mq 120s linear infinite}
+.x .mq.rev .mt{animation-direction:reverse;animation-duration:140s}
+.x .mq:hover .mt{animation-play-state:paused}
+.x .dup{display:contents}
+@keyframes mq{to{transform:translateX(calc(-50% - var(--gap)/2))}}
+.x .kol{margin:0;flex:none;width:clamp(156px,13vw,188px);text-align:left}
+.x .kol .pf{display:block;aspect-ratio:4/5;overflow:hidden;border-radius:4px;background:#ECE9E2;box-shadow:inset 0 0 0 1px rgba(11,26,46,.06)}
+.x .kol .pf img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;filter:grayscale(1) contrast(1.08) brightness(1.02);transform:scale(1.02);transition:filter .6s,transform .9s cubic-bezier(.2,.7,.2,1)}
+.x .kol:hover .pf img{filter:none;transform:scale(1.06)}
+.x .kol figcaption{padding:12px 2px 0;border-top:0}
+.x .kol b{display:block;font:500 19px/1.15 "H2 Cormorant",Georgia,serif;letter-spacing:.005em;color:var(--ink)}
+.x .kol span{display:block;font-size:12.5px;color:var(--ink2);margin-top:4px;line-height:1.35}
+.x .kol small{display:block;margin-top:6px;font:600 9.5px/1.3 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--soft)}
+
+.x .kn{text-align:center;margin-top:30px;font-size:14px}.x .kn a{color:var(--ink2);text-decoration:none}.x .kn a:hover{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.x .mt{animation:none}.x .mq{overflow-x:auto}.x .dup{display:none}}
+/* the shift */
+.x .shift{background:var(--paper);border-radius:28px;margin:0 clamp(8px,1.5vw,20px)}
+.x .shift .t{text-align:center;max-width:820px;margin:0 auto}
+.x .shift .sub{max-width:38em;margin:20px auto 0}
+.x .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin:clamp(48px,6vw,72px) 0 28px;padding-top:28px;border-top:1px solid #DCD6C8}
+.x .stats span{font:600 10.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.x .stats b{display:block;font:400 clamp(28px,3vw,40px)/1.1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em;margin-top:10px}
+.x .stats p{font-size:14px;color:var(--ink2);margin-top:6px}
+.x .chart{position:relative;height:clamp(220px,26vw,320px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px);align-items:end;border-bottom:1px solid #CFC8B8;padding:0 clamp(8px,6vw,120px)}
+.x .chart div{position:relative;border-radius:6px 6px 0 0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.18) 0 2px,transparent 2px 6px),var(--blue);transform-origin:bottom;transform:scaleY(0);transition:transform 1.4s cubic-bezier(.2,.8,.2,1)}
+.x .chart div.lo{background:repeating-linear-gradient(0deg,rgba(255,255,255,.35) 0 2px,transparent 2px 6px),#B9C3D6}
+.x .chart.on div{transform:none}
+.x .chart div b{position:absolute;top:-30px;left:0;right:0;text-align:center;font:500 15px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}
+.x .cl{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,3vw,40px);padding:12px clamp(8px,6vw,120px) 0;font-size:13px;color:var(--ink2);text-align:center}
+.x .src{font-size:12.5px;color:var(--soft);margin-top:22px}.x .src a{color:var(--ink2)}
+
+/* why */
+.x .shead{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:clamp(36px,4vw,56px)}
+.x .shead p{max-width:340px;font-size:15px;color:var(--ink2)}
+.x .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.x .three .sky{aspect-ratio:1.15;padding:22px;display:flex;align-items:center}
+.x .three .ui{width:100%;padding:14px;font-size:12.5px}
+.x .three .n{font:600 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;color:var(--soft);margin:20px 0 10px}
+.x .three p{font-size:15px;color:var(--ink2);margin-top:8px;max-width:30em}
+.x .li2{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 0;border-top:1px solid var(--line)}.x .li2:first-child{border-top:0}
+.x .li2 .nm{display:flex;gap:8px;align-items:center;min-width:0}.x .li2 em{font-style:normal;color:var(--soft);width:12px}
+.x .q{font-weight:600;font-size:13px;margin-bottom:8px;display:flex;gap:8px;align-items:center}
+.x .tree{padding-left:14px;border-left:1.5px dashed #C9CFDB;margin-left:6px}
+
+/* result */
+.x .res{text-align:center}
+.x .res blockquote{margin:0 auto;max-width:22em;font:400 clamp(26px,2.9vw,40px)/1.3 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em;text-wrap:balance}
+.x .by{display:flex;align-items:center;justify-content:center;gap:12px;margin-top:30px;font-size:14px;color:var(--ink2)}
+.x .by img.f{width:40px;height:40px;border-radius:50%;object-fit:cover}.x .by b{color:var(--ink);font-weight:600;display:block}
+.x .by .vbar{width:1px;height:28px;background:var(--line);margin:0 8px}
+
+/* 90 days */
+.x .days{display:grid;grid-template-columns:230px 1fr;gap:0;padding:0;min-height:560px}
+.x .dl{padding:26px 18px;border-right:1px solid rgba(11,26,46,.08);display:flex;flex-direction:column;gap:6px;position:relative;z-index:1}
+.x .dl small{font:600 10.5px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--ink2);margin:0 0 10px 10px}
+.x .dl button{all:unset;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:11px 12px;border-radius:10px;font-size:14px;color:var(--ink2)}
+.x .dl button[aria-selected=true]{background:#fff;color:var(--ink);font-weight:600;box-shadow:0 4px 16px -8px rgba(11,26,46,.3)}
+.x .dl button span{font-size:12px;color:var(--soft);font-weight:400}
+.x .dl .tot{margin-top:auto;padding:0 10px;font-size:13px;color:var(--ink2)}.x .dl .tot b{display:block;font:400 34px/1.1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:var(--ink);letter-spacing:-.02em}
+.x .dp{padding:26px clamp(18px,3vw,40px);position:relative;z-index:1;display:none}
+.x .dp.on{display:block;animation:xin .5s ease}
+@keyframes xin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.x .dp .dd{font-size:12px;color:var(--soft)}.x .dp h3{font-size:30px;letter-spacing:-.02em;margin:4px 0 6px;font-weight:400}.x .dp>p{color:var(--ink2);font-size:14.5px;margin-bottom:18px}
+.x .dp .ui{padding:6px 16px}
+.x .grid5{display:grid;grid-template-columns:1.6fr repeat(4,minmax(0,1fr));gap:0;font-size:13px}
+.x .grid5>div{padding:11px 6px;border-top:1px solid var(--line);display:flex;align-items:center}
+.x .grid5>div.h{border-top:0;font-size:11.5px;color:var(--soft);font-weight:600}
+.x .grid5 .c{justify-content:center}
+.x .yes{color:#17703D;font-weight:700}.x .nop{color:#A5311A;font-weight:700}
+.x .after{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-top:26px;flex-wrap:wrap}
+.x .after h3{font-size:22px;font-weight:400}.x .after p{color:var(--ink2);font-size:15px;max-width:32em;margin-top:6px}
+
+/* blueprint */
+.x .bp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:clamp(28px,5vw,72px);align-items:center}
+.x .pills{display:flex;flex-wrap:wrap;gap:8px;margin:30px 0 30px}
+.x .pills button{all:unset;cursor:pointer;font-size:13.5px;padding:8px 13px;border-radius:999px;box-shadow:inset 0 0 0 1px var(--line);color:var(--ink2);background:#fff;transition:all .2s}
+.x .pills button[aria-pressed=true]{background:var(--ink);color:#fff;box-shadow:none}
+.x .bpt h3{font-size:22px;font-weight:500}.x .bpt p{color:var(--ink2);font-size:15.5px;margin:8px 0 22px;max-width:32em;min-height:4.8em}
+.x .bps{aspect-ratio:1.18;padding:0}
+.x .bps .stage{position:absolute!important;inset:0!important;height:auto!important;margin:0!important;border-radius:0!important;box-shadow:none!important}
+.x .bps .hud,.x .bps .hudD{display:none!important}
+
+/* clients carousel */
+.x .car{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 12px;margin:0 -24px;scrollbar-width:none}
+.x .car::-webkit-scrollbar{display:none}
+.x .cc{flex:0 0 min(640px,86%);scroll-snap-align:start;border-radius:20px;padding:30px;display:grid;grid-template-columns:auto 1fr;gap:12px 36px;min-height:300px}
+.x .cc.a{background:linear-gradient(140deg,#F3F6FF,#E2EAFF)}.x .cc.b{background:linear-gradient(140deg,#FBF7EF,#EFE6D3)}.x .cc.c{background:linear-gradient(140deg,#F4F7F4,#E1EBE3)}
+.x .cc .big{font:400 clamp(38px,4vw,54px)/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.03em}.x .cc .big s{text-decoration:none;color:var(--soft);font-size:.55em}
+.x .cc .cap{font-size:12.5px;color:var(--ink2);margin-top:8px;max-width:14em}
+.x .cc blockquote{margin:0;font-size:17px;line-height:1.5;grid-row:span 2}
+.x .cc .lgo{align-self:end}.x .cc .lgo img{height:18px;max-width:150px;object-fit:contain;object-position:left;filter:grayscale(1) brightness(.2);opacity:.75}
+.x .cc .ft{grid-column:2;display:flex;justify-content:space-between;align-items:center;align-self:end;gap:12px}
+.x .cc .ft .wh{display:flex;align-items:center;gap:10px;font-size:13px}.x .cc .ft img{width:32px;height:32px;border-radius:50%;object-fit:cover}.x .cc .ft b{display:block;font-weight:600}
+.x .cc .ft .xb{height:36px;font-size:13px;padding:0 16px}
+.x .nav2{display:flex;gap:8px;margin-top:16px}.x .nav2 button{all:unset;cursor:pointer;width:34px;height:34px;border-radius:50%;box-shadow:inset 0 0 0 1px var(--line);display:grid;place-items:center;color:var(--ink2)}
+
+/* industries */
+.x .ind{position:relative;background:#E9E6DF url(../../assets/brand/ranked-street.webp) center/cover;border-radius:0}
+.x .ind::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(244,241,234,.96) 0%,rgba(244,241,234,.82) 40%,rgba(244,241,234,.45) 100%)}
+.x .ind .in{position:relative;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.6fr);gap:40px;align-items:center}
+.x .tiles{display:grid;grid-template-columns:1fr 1fr;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px -30px rgba(11,26,46,.4)}
+.x .tile{padding:26px;min-height:200px;display:flex;flex-direction:column;text-decoration:none}
+.x .tile h3{font-size:19px}.x .tile p{font-size:14px;margin-top:6px;opacity:.8}
+.x .tile .rm{margin-top:auto;display:inline-flex;align-self:flex-start;font-size:13px;padding:7px 14px;border-radius:999px;background:var(--ink);color:#fff}
+.x .tile.t1{background:var(--blue);color:#fff}.x .tile.t1 h3{color:#fff}.x .tile.t1 .rm{background:#fff;color:var(--ink)}
+.x .tile.t2{background:var(--ink);color:#fff}.x .tile.t2 h3{color:#fff}.x .tile.t2 .rm{background:#fff;color:var(--ink)}
+.x .tile.t3{background:#EFEBE2}.x .tile.t4{background:#fff}
+
+/* research */
+.x .rs{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(28px,5vw,72px);align-items:center}
+.x .rsv{aspect-ratio:1.15;padding:0}
+.x .rsv .stage{position:absolute!important;inset:0!important;height:auto!important;margin:0!important;border-radius:0!important;box-shadow:none!important}
+.x .rsv .toggle,.x .rsv .hud{display:none!important}
+.x .studies{margin-top:28px;border-top:1px solid var(--line)}
+.x .studies a{display:flex;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.x .studies b{font-weight:500;font-size:16px}.x .studies span{font-size:12.5px;color:var(--soft);white-space:nowrap}
+.x .studies a:hover b{color:var(--blue)}
+
+/* faq */
+.x .fq{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.6fr);gap:40px}
+.x .fq :is(h4,h3.fqg){font:600 11px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:30px 0 6px}
+.x .fq :is(h4,h3.fqg):first-child{margin-top:0}
+.x details{border-bottom:1px solid var(--line)}
+.x summary{list-style:none;cursor:pointer;padding:16px 0;font-size:15.5px;display:flex;justify-content:space-between;gap:16px}
+.x summary::-webkit-details-marker{display:none}.x summary::after{content:"+";color:var(--soft);font-size:18px;line-height:1}
+.x details[open] summary::after{content:"−"}
+.x details p{padding:0 0 18px;color:var(--ink2);font-size:15px;max-width:40em}
+
+/* close + footer */
+.x .close{background:var(--ink);color:#fff;text-align:center;position:relative;overflow:hidden;padding:clamp(110px,12vw,170px) 0}
+.x .close::before{content:"";position:absolute;inset:0;background:radial-gradient(60% 70% at 50% 0%,rgba(31,79,224,.55),transparent 70%);opacity:.9}
+.x .close::after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.12) 1px,transparent 1px);background-size:5px 5px;-webkit-mask:linear-gradient(#000,transparent 75%);mask:linear-gradient(#000,transparent 75%)}
+.x .close .in{position:relative;z-index:1}
+.x .close h2{color:#fff}.x .close .sub{margin:18px auto 0;max-width:30em}.x .close h2 .g{color:rgba(255,255,255,.6)}
+.x .close .xbs{justify-content:center;margin-top:30px}
+.x .ft2{background:var(--ink);color:rgba(255,255,255,.7);font-size:14px;padding:30px 0 40px;border-top:1px solid rgba(255,255,255,.08)}
+.x .fcols{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px;padding:40px 0;border-bottom:1px solid rgba(255,255,255,.08)}
+.x .fcols b{display:block;color:#fff;font-weight:500;margin-bottom:14px;font-size:14px}
+.x .fcols a{display:block;text-decoration:none;color:rgba(255,255,255,.62);padding:4px 0;font-size:13.5px}.x .fcols a:hover{color:#fff}
+.x .fb{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:22px;font-size:12.5px;color:rgba(255,255,255,.5)}
+
+
+/* motion: headlines resolve letter by letter out of a blur, eyebrows get an ink wipe, panels wipe in (chatfeatured's rhythm, our colors) */
+.x .sw{display:inline-block;white-space:nowrap}
+.fxr .x .fx .sc{display:inline-block}.fxr .x .fx .rot{display:inline-grid}.fxr .x .fx .sc,.fxr .x .fx .rot{opacity:0;filter:blur(10px);transform:translateY(14%)}
+.fxr .x .fx.on .sc,.fxr .x .fx.on .rot{animation:xrb .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i,0) * 16ms)}
+@keyframes xrb{to{opacity:1;filter:none;transform:none}}
+.fxr .x .eb{position:relative;width:fit-content;color:transparent}
+.fxr .x .eb::after{content:"";position:absolute;inset:-4px -6px;background:var(--blue);border-radius:3px;clip-path:inset(0 100% 0 0)}
+.fxr .x .eb.on{animation:ebt .9s steps(1) forwards}.fxr .x .eb.on::after{animation:ebw .9s cubic-bezier(.7,0,.3,1) forwards}
+.fxr .x .close .eb.on,.fxr .x .dk .eb.on{animation-name:ebt2}
+.fxr .x .t .eb,.fxr .x .logos .eb,.fxr .x .close .eb,.fxr .x .ctr .eb{margin-left:auto;margin-right:auto}
+@keyframes ebw{0%{clip-path:inset(0 100% 0 0)}45%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 0 100%)}}
+@keyframes ebt{0%,44%{color:transparent}45%,100%{color:var(--soft)}}
+@keyframes ebt2{0%,44%{color:transparent}45%,100%{color:rgba(255,255,255,.6)}}
+.fxr .x .rvb{opacity:0;filter:blur(12px);transform:translateY(28px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),filter 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.fxr .x .rvb.on{opacity:1;filter:none;transform:none}
+.fxr .x .sky.wp::before{content:"";position:absolute;inset:0;z-index:5;background:var(--blue);clip-path:inset(100% 0 0 0);pointer-events:none}
+.fxr .x .sky.wp.on::before{animation:wpn 1.15s cubic-bezier(.7,0,.3,1) forwards;animation-delay:var(--d,0s)}
+.fxr .x .sky.wp>*{opacity:0;transition:opacity .6s ease .5s}.fxr .x .sky.wp.on>*{opacity:1;transition-delay:calc(var(--d,0s) + .5s)}
+@keyframes wpn{0%{clip-path:inset(100% 0 0 0)}45%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 100% 0)}}
+.x .rv{opacity:0;transform:translateY(16px);transition:opacity .9s ease,transform .9s ease}.x .rv.on{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.x .rv{opacity:1;transform:none}.x .rvb,.x .sky.wp>*{opacity:1!important;filter:none!important;transform:none!important}.x .chart div{transform:none}}
+
+@media(max-width:980px){
+  .xh nav,.xh .r{display:none}.xh .menu{display:block}
+  .x .app{grid-template-columns:1fr}.x .feed{display:none}
+  .x .kpi{grid-template-columns:1fr 1fr}.x .duo{grid-template-columns:1fr}
+  .x .three{grid-template-columns:1fr;gap:44px}
+  .x .shead{flex-direction:column;align-items:flex-start;gap:16px}
+  .x .days{grid-template-columns:1fr}.x .dl{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid rgba(11,26,46,.08);padding:14px;scrollbar-width:none}.x .dl small,.x .dl .tot{display:none}
+  .x .dl button{flex:none}.x .dl button span{display:none}
+  .x .bp,.x .rs,.x .fq,.x .ind .in{grid-template-columns:1fr}
+  .x .rs .rsv{order:2}
+  .x .cc{grid-template-columns:1fr;gap:16px}.x .cc .ft{grid-column:1;flex-direction:column;align-items:flex-start}.x .cc blockquote{grid-row:auto}
+  .x .fcols{grid-template-columns:1fr 1fr}
+  .x .tiles{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .x .go{flex-direction:column;align-items:stretch;border-radius:18px;padding:8px}.x .go input{height:46px;text-align:left}.x .go>.xb{width:100%;height:48px}.x .go input{height:46px}.x .go .xb{justify-content:center;height:48px}
+  .x .stats{grid-template-columns:1fr;gap:20px}
+  .x .grid5{font-size:12px}.x .grid5 .hide{display:none}.x .grid5{grid-template-columns:1.8fr repeat(2,minmax(0,1fr))}
+  .x .shift{border-radius:20px;margin:0 8px}
+  .x .chart{padding:0 8px}.x .cl{padding:12px 8px 0}
+}
+
+@media(max-width:640px){.x .sec{padding:64px 0}.x .shift.sec{padding-block:52px!important}
+.x .shift .stats{grid-template-columns:minmax(0,1fr);gap:0;margin:28px 0 26px;padding-top:4px}.x .shift .stats>div{display:grid;grid-template-columns:92px minmax(0,1fr);column-gap:14px;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}.x .shift .stats>div>span{grid-column:1/-1;margin-bottom:6px}.x .shift .stats>div>b{font-size:28px;white-space:nowrap}.x .shift .stats>div>p{margin:0}
+.x .shift .stats span{font-size:9px;letter-spacing:.1em;line-height:1.3;display:block;min-height:24px}.x .shift .stats b{font-size:26px;margin-top:6px}.x .shift .stats p{font-size:12.5px;line-height:1.4}
+.x .chart{height:180px}.x .chart div b{font-size:13px;top:-24px}.x .cl{font-size:13px}.x .src{font-size:12.5px}}
+
+/* client portal, abstracted */
+.x .portal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.25fr);gap:14px;padding:16px;background:#F4F1EA;text-align:left;font-size:12px;position:relative}
+.x .portal .qpc{background:#fff;border-radius:14px;box-shadow:0 1px 2px rgba(11,26,46,.06),inset 0 0 0 1px rgba(11,26,46,.05);padding:14px 16px}
+.x .portal .qpm{display:flex;flex-direction:column;gap:14px;min-width:0}
+.x .portal small{font-size:10.5px;color:var(--ink2)}
+.x .portal .qah{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:8px}.x .portal .qah b{font-size:13px;font-weight:600}
+.x .portal .qdw,.x .portal .qdg{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));text-align:center}
+.x .portal .qdw i{font-style:normal;font-size:9.5px;color:var(--soft);padding:2px 0 4px}
+.x .portal .qdg span{font-size:11px;padding:5px 0 3px;border-radius:7px;display:flex;flex-direction:column;align-items:center;gap:3px;min-height:34px}
+.x .portal .qdg span i{display:flex;gap:2px;height:5px}.x .portal .qdg span i b{width:5px;height:5px;border-radius:50%}
+.x .portal .qdg span.qtd{background:var(--ink);color:#fff}.x .portal .qdg span.qtd i b{box-shadow:0 0 0 1px #fff}
+.x .portal :is(h6,.h6l){margin:12px 0 4px;padding-top:12px;border-top:1px solid #EFECE5;font:600 9px/1 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.x .portal .qky{list-style:none;margin:0;padding:0}
+.x .portal .qky li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:5px 0;font-size:11.5px}
+.x .portal .qky span{display:flex;align-items:center;gap:8px;min-width:0}.x .portal .qky span b{flex:none;width:8px;height:8px;border-radius:50%}
+.x .portal .qky em{font-style:normal;font-size:10.5px;color:var(--ink2);white-space:nowrap}
+.x .portal .qdv small i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.x .portal .qst{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.x .portal .qsv{display:flex;align-items:baseline;gap:8px;margin-top:2px}.x .portal .qsv b{font:400 34px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em}.x .portal .qsv span{font-size:10.5px;color:#17703D;font-weight:600}
+.x .portal .qfc{text-align:right}.x .portal .qfc b{display:block;font:400 22px/1.1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;color:#1F4FE0;opacity:.75}.x .portal .qfc span{font-size:10px;color:var(--soft)}
+.x .portal .qchs{width:100%;height:auto;display:block;margin-top:10px}.x .portal .qgl{stroke:#EFECE5}
+.x .portal .qmx{display:flex;justify-content:space-between;font-size:9.5px;color:var(--soft);padding:2px 2px 0}
+.x .portal .qct{display:inline-grid;place-items:center;min-width:18px;height:18px;border-radius:9px;background:var(--ink);color:#fff;font-size:10px}
+.x .portal .qdv{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 0;border-top:1px solid #EFECE5}
+.x .portal .qdv b{display:block;font-size:12px;font-weight:600}.x .portal .qbt{font-size:10.5px;font-weight:600;color:#fff;background:#1F4FE0;border-radius:999px;padding:5px 11px;white-space:nowrap}
+.x .portal .qdn{color:#17703D;font-weight:700;font-size:13px}.x .portal .qpst{position:absolute;right:16px;bottom:-22px}
+@media(max-width:700px){.x .portal{grid-template-columns:minmax(0,1fr);padding:12px}.x .portal .qpst{position:static;text-align:right;margin-top:-4px}}
+
+.x .rxg{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:76px 76px;gap:5px;border-radius:12px;overflow:hidden;margin-bottom:14px}
+.x .rxg span{position:relative;background-color:#F1EADB;background-repeat:no-repeat}.x .rxg .rg0{grid-row:span 2}
+.x .rxg em{position:absolute;left:6px;bottom:6px;font:600 9.5px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;font-style:normal;color:#0B1A2E;background:rgba(255,255,255,.92);border-radius:999px;padding:4px 7px}
+.x .rxg em::before{content:"AI label: ";color:var(--soft);font-weight:500}.x .rxg span:not(.rg0) em::before{content:""}
+.x .rxg b{position:absolute;inset:0;display:grid;place-items:center;background:rgba(11,26,46,.55);color:#fff;font:500 15px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif}
+.x .kol small.kb{font:400 12px/1.4 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:0;text-transform:none;color:var(--ink2)}
+.x .srcsec .bp{align-items:center}
+.x .rxp{padding:22px 22px 18px;text-align:left;font-size:12.5px;position:relative;background:#fff}
+.x .rxh{display:flex;align-items:center;gap:12px;padding-bottom:16px}
+.x .rxm{flex:none;width:44px;height:44px;border-radius:12px;background:#0B1A2E;color:#fff;display:grid;place-items:center;font:400 22px/1 "H2 Cormorant","Cormorant","Cormorant Fallback",serif}
+.x .rxh b{display:block;font:400 21px/1.15 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em}.x .rxh small{font-size:11.5px;color:var(--ink2)}
+.x .rxv{flex:none;margin-left:auto;align-self:flex-start;white-space:nowrap;font-size:10.5px;font-weight:600;color:#17703D;background:#E7F5EC;border-radius:999px;padding:4px 10px}
+.x .rxf{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.x .rxf li{display:grid;grid-template-columns:78px minmax(0,1fr) 16px;gap:10px;align-items:baseline;padding:9px 0;border-bottom:1px solid #EFECE5}
+.x .rxf span{font:600 9px/1.6 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.x .rxf b{font-weight:400;font-size:13px}.x .rxf i{font-style:normal;color:#1F4FE0;font-size:12px;text-align:right}
+.x .rxs{display:grid;grid-template-columns:auto minmax(0,1fr);gap:18px;align-items:center;margin-top:16px}
+.x .rxs small,.x .rxa small{font-size:10.5px;color:var(--ink2);display:block}.x .rxs b{font:400 34px/1 "Hanken Grotesk","Hanken Grotesk Fallback",sans-serif;letter-spacing:-.02em}
+.x .rxbar{position:relative;height:8px;border-radius:4px;background:#EFECE5;margin-bottom:14px}.x .rxbar i{position:absolute;inset:0 auto 0 0;border-radius:4px;background:#1F4FE0}
+.x .rxbar em{position:absolute;top:-4px;bottom:-4px;width:2px;background:#0B1A2E;font-style:normal}.x .rxbar em span{position:absolute;top:18px;left:-4px;white-space:nowrap;font-size:10px;color:var(--ink2)}
+.x .rxa{display:flex;align-items:center;gap:12px;margin-top:14px;padding-top:12px;border-top:1px solid #EFECE5;flex-wrap:wrap}
+.x .rxl{display:flex;gap:8px}.x .rxl img{width:20px;height:20px}.x .rxa .rxu{margin-left:auto;color:var(--soft)}
+.x .rxc{display:flex;align-items:center;gap:10px;margin-top:12px;background:#F4F1EA;border-radius:10px;padding:9px 12px;flex-wrap:wrap}
+.x .rxc code{font:11px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;color:#1A43C2}.x .rxc span{font-size:10.5px;color:var(--ink2)}
+.x .pst2{position:absolute;right:16px;bottom:-22px}
+.x .gl2{list-style:none;padding:0;margin:22px 0 0;font-size:15px}.x .gl2 li{padding:10px 0;border-top:1px solid var(--line);display:flex;gap:10px}.x .gl2 li::before{content:"\2713";color:var(--blue);font-weight:700}
+@media(max-width:600px){.x .rxp{padding:18px 16px 16px}.x .rxf li{grid-template-columns:70px minmax(0,1fr) 14px}.x .rxa .rxu{margin-left:0;width:100%}}
+
+.x .igw{border-top:1px solid var(--line);margin-top:8px}
+.x .igr{display:grid;grid-template-columns:200px minmax(0,1fr);gap:24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.x .igl{font:600 10.5px/1.3 "Bricolage Grotesque","Bricolage Grotesque Fallback",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--soft)}
+.x .igc{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.x .igi{display:flex;align-items:center;gap:9px;color:var(--ink2);font-size:14.5px;min-width:0;transition:color .25s}
+.x .igi:hover{color:var(--ink)}.x .igi svg{width:20px;height:20px;flex:none;fill:currentColor}.x .igi b{font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.x .igsec .kn{margin-top:22px}.x .igsec .kn a{color:var(--ink2);text-decoration:none;font-size:15px}.x .igsec .kn a:hover{color:var(--blue)}
+@media(max-width:980px){.x .igr{grid-template-columns:minmax(0,1fr);gap:12px}.x .igc{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:12px}}
+@media(max-width:420px){.x .igc{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style><div class="x">
 <div class="xa"><a href="../../drafts/home-2/guarantee/"><b>90 DAYS</b>Named in AI in 90 days, or we keep working for free. See how &rsaquo;</a></div>
 <header class="xh"><div class="in"><a class="brand" href="../../drafts/home-2/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg>Local AI Registry</a>
 <nav aria-label="Main"><a href="../../drafts/home-2/blueprint/">Platform</a><a href="../../drafts/home-2/solutions/">Solutions</a><a href="../../drafts/home-2/results/">Customers</a><a href="../../drafts/home-2/research/">Research</a><a href="../../drafts/home-2/pricing/">Pricing</a></nav>
@@ -28,7 +973,7 @@
 <ul class="gticks"><li>Named in 90 days or we work&nbsp;free</li><li>Month to&nbsp;month</li><li>Your area is yours&nbsp;alone</li></ul>
 </div>
 <div class="in pcap rvb" style="--d:.45s"><span class="eb">Your dashboard</span><h2>Watch the work&nbsp;happen.</h2><p>Every task our team does for you, as it happens, and how close you are to being named&nbsp;by&nbsp;AI.</p></div>
-<div class="in glow rvb" style="--d:.5s"><div class="sky heroui"><div class="ui portal"><div class="qpc qcal"><div class="qah"><b>November</b><small>28&nbsp;pieces this&nbsp;month</small></div><div class="qdw"><i>S</i><i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i></div><div class="qdg"><span class="">1<i></i></span><span class="">2<i><b style=background:#1F4FE0></b><b style=background:#0B1A2E></b></i></span><span class="">3<i><b style=background:#7A4FE0></b></i></span><span class="">4<i><b style=background:#17703D></b><b style=background:#0E8C7A></b></i></span><span class="">5<i><b style=background:#5A647A></b></i></span><span class="">6<i><b style=background:#1F4FE0></b><b style=background:#B7791F></b></i></span><span class="">7<i></i></span><span class="">8<i></i></span><span class="">9<i><b style=background:#0B1A2E></b><b style=background:#7A4FE0></b></i></span><span class="">10<i><b style=background:#17703D></b><b style=background:#2C8FD6></b></i></span><span class="">11<i><b style=background:#FF5A3C></b></i></span><span class="">12<i><b style=background:#1F4FE0></b><b style=background:#C2410C></b></i></span><span class="">13<i><b style=background:#7A4FE0></b><b style=background:#0E8C7A></b></i></span><span class="">14<i></i></span><span class="">15<i></i></span><span class="">16<i><b style=background:#0B1A2E></b><b style=background:#17703D></b></i></span><span class="qtd">17<i><b style=background:#1F4FE0></b><b style=background:#D6336C></b></i></span><span class="">18<i><b style=background:#7A4FE0></b><b style=background:#B7791F></b></i></span><span class="">19<i><b style=background:#5A647A></b><b style=background:#17703D></b></i></span><span class="">20<i><b style=background:#1F4FE0></b><b style=background:#FF5A3C></b></i></span><span class="">21<i></i></span><span class="">22<i></i></span><span class="">23<i><b style=background:#0B1A2E></b><b style=background:#0E8C7A></b></i></span><span class="">24<i><b style=background:#17703D></b><b style=background:#2C8FD6></b></i></span><span class="">25<i><b style=background:#1F4FE0></b><b style=background:#7A4FE0></b></i></span><span class="">26<i></i></span><span class="">27<i><b style=background:#B7791F></b><b style=background:#FF5A3C></b></i></span><span class="">28<i></i></span><span class="">29<i></i></span><span class="">30<i><b style=background:#0B1A2E></b><b style=background:#1F4FE0></b><b style=background:#17703D></b></i></span></div><h6>The 11 parts of your Blueprint</h6><ul class="qky"><li><span><b style="background:#0B1A2E"></b>AI monitoring</span><em>Every&nbsp;week</em></li><li><span><b style="background:#1F4FE0"></b>Google profile</span><em>6&nbsp;posts</em></li><li><span><b style="background:#17703D"></b>Reviews</span><em>14&nbsp;replied</em></li><li><span><b style="background:#7A4FE0"></b>Directory listings</span><em>10 of&nbsp;12</em></li><li><span><b style="background:#0E8C7A"></b>Photos</span><em>24&nbsp;labeled</em></li><li><span><b style="background:#C2410C"></b>Press releases</span><em>1 in&nbsp;review</em></li><li><span><b style="background:#5A647A"></b>SEO</span><em>3&nbsp;fixes</em></li><li><span><b style="background:#2C8FD6"></b>Website</span><em>2&nbsp;pages</em></li><li><span><b style="background:#D6336C"></b>Video</span><em>1&nbsp;filmed</em></li><li><span><b style="background:#B7791F"></b>Outside articles</span><em>2&nbsp;placed</em></li><li><span><b style="background:#FF5A3C"></b>Best-of guides</span><em>3&nbsp;pitched</em></li></ul></div><div class="qpm"><div class="qpc qsc"><div class="qst"><div><small>AI Score</small><div class="qsv"><b>47</b><span>+9 this month</span></div></div><div class="qfc"><small>Forecast</small><b>64</b><span>by March</span></div></div><svg viewBox="0 0 450 104" class="qchs" aria-hidden="true"><line x1="10" x2="440" y1="81.0" y2="81.0" class="qgl"/><line x1="10" x2="440" y1="51.0" y2="51.0" class="qgl"/><line x1="10" x2="440" y1="21.0" y2="21.0" class="qgl"/><polygon points="10,100 10,79.5 72,76.5 134,69.0 196,55.5 196,100" fill="rgba(31,79,224,.08)"/><polyline points="10,79.5 72,76.5 134,69.0 196,55.5" fill="none" stroke="#1F4FE0" stroke-width="2.2" stroke-linecap="round"/><polyline points="196,55.5 444,30.0" fill="none" stroke="#1F4FE0" stroke-width="1.6" stroke-dasharray="3 5" opacity=".55"/><circle cx="196" cy="55.5" r="5" fill="#fff" stroke="#1F4FE0" stroke-width="2.2"/><circle cx="444" cy="30.0" r="3" fill="#1F4FE0" opacity=".55"/></svg><div class="qmx"><span>Aug</span><span>Nov</span><span>Mar</span></div></div><div class="qpc qap"><div class="qah"><b>Ready for your OK</b><span class="qct">2</span></div><div class="qdv"><div><b>Reply to a new 5-star review</b><small><i style="background:#17703D"></i>Reviews</small></div><span class="qbt">Approve</span></div><div class="qdv"><div><b>Press release: your new service</b><small><i style="background:#C2410C"></i>Press releases</small></div><span class="qbt">Approve</span></div></div><div class="qpc qap"><div class="qah"><b>Just delivered</b><small>This week</small></div><div class="qdv"><div><b>6 Google posts went live</b><small><i style="background:#1F4FE0"></i>Google profile</small></div><span class="qdn">&#10003;</span></div><div class="qdv"><div><b>Listed on 2 more directories</b><small><i style="background:#7A4FE0"></i>Directory listings</small></div><span class="qdn">&#10003;</span></div><div class="qdv"><div><b>Pitched 3 local best-of guides</b><small><i style="background:#FF5A3C"></i>Best-of guides</small></div><span class="qdn">&#10003;</span></div></div></div><span class="sample qpst">Sample data</span></div></div></div>
+<div class="in glow rvb" style="--d:.5s"><div class="sky heroui"><div class="ui portal"><div class="qpc qcal"><div class="qah"><b>November</b><small>28&nbsp;pieces this&nbsp;month</small></div><div class="qdw"><i>S</i><i>M</i><i>T</i><i>W</i><i>T</i><i>F</i><i>S</i></div><div class="qdg"><span class="">1<i></i></span><span class="">2<i><b style=background:#1F4FE0></b><b style=background:#0B1A2E></b></i></span><span class="">3<i><b style=background:#7A4FE0></b></i></span><span class="">4<i><b style=background:#17703D></b><b style=background:#0E8C7A></b></i></span><span class="">5<i><b style=background:#5A647A></b></i></span><span class="">6<i><b style=background:#1F4FE0></b><b style=background:#B7791F></b></i></span><span class="">7<i></i></span><span class="">8<i></i></span><span class="">9<i><b style=background:#0B1A2E></b><b style=background:#7A4FE0></b></i></span><span class="">10<i><b style=background:#17703D></b><b style=background:#2C8FD6></b></i></span><span class="">11<i><b style=background:#FF5A3C></b></i></span><span class="">12<i><b style=background:#1F4FE0></b><b style=background:#C2410C></b></i></span><span class="">13<i><b style=background:#7A4FE0></b><b style=background:#0E8C7A></b></i></span><span class="">14<i></i></span><span class="">15<i></i></span><span class="">16<i><b style=background:#0B1A2E></b><b style=background:#17703D></b></i></span><span class="qtd">17<i><b style=background:#1F4FE0></b><b style=background:#D6336C></b></i></span><span class="">18<i><b style=background:#7A4FE0></b><b style=background:#B7791F></b></i></span><span class="">19<i><b style=background:#5A647A></b><b style=background:#17703D></b></i></span><span class="">20<i><b style=background:#1F4FE0></b><b style=background:#FF5A3C></b></i></span><span class="">21<i></i></span><span class="">22<i></i></span><span class="">23<i><b style=background:#0B1A2E></b><b style=background:#0E8C7A></b></i></span><span class="">24<i><b style=background:#17703D></b><b style=background:#2C8FD6></b></i></span><span class="">25<i><b style=background:#1F4FE0></b><b style=background:#7A4FE0></b></i></span><span class="">26<i></i></span><span class="">27<i><b style=background:#B7791F></b><b style=background:#FF5A3C></b></i></span><span class="">28<i></i></span><span class="">29<i></i></span><span class="">30<i><b style=background:#0B1A2E></b><b style=background:#1F4FE0></b><b style=background:#17703D></b></i></span></div><p class="h6l">The 11 parts of your&nbsp;Blueprint</p><ul class="qky"><li><span><b style="background:#0B1A2E"></b>AI monitoring</span><em>Every&nbsp;week</em></li><li><span><b style="background:#1F4FE0"></b>Google profile</span><em>6&nbsp;posts</em></li><li><span><b style="background:#17703D"></b>Reviews</span><em>14&nbsp;replied</em></li><li><span><b style="background:#7A4FE0"></b>Directory listings</span><em>10 of&nbsp;12</em></li><li><span><b style="background:#0E8C7A"></b>Photos</span><em>24&nbsp;labeled</em></li><li><span><b style="background:#C2410C"></b>Press releases</span><em>1 in&nbsp;review</em></li><li><span><b style="background:#5A647A"></b>SEO</span><em>3&nbsp;fixes</em></li><li><span><b style="background:#2C8FD6"></b>Website</span><em>2&nbsp;pages</em></li><li><span><b style="background:#D6336C"></b>Video</span><em>1&nbsp;filmed</em></li><li><span><b style="background:#B7791F"></b>Outside articles</span><em>2&nbsp;placed</em></li><li><span><b style="background:#FF5A3C"></b>Best-of guides</span><em>3&nbsp;pitched</em></li></ul></div><div class="qpm"><div class="qpc qsc"><div class="qst"><div><small>AI Score</small><div class="qsv"><b>47</b><span>+9 this month</span></div></div><div class="qfc"><small>Forecast</small><b>64</b><span>by March</span></div></div><svg viewBox="0 0 450 104" class="qchs" aria-hidden="true"><line x1="10" x2="440" y1="81.0" y2="81.0" class="qgl"/><line x1="10" x2="440" y1="51.0" y2="51.0" class="qgl"/><line x1="10" x2="440" y1="21.0" y2="21.0" class="qgl"/><polygon points="10,100 10,79.5 72,76.5 134,69.0 196,55.5 196,100" fill="rgba(31,79,224,.08)"/><polyline points="10,79.5 72,76.5 134,69.0 196,55.5" fill="none" stroke="#1F4FE0" stroke-width="2.2" stroke-linecap="round"/><polyline points="196,55.5 444,30.0" fill="none" stroke="#1F4FE0" stroke-width="1.6" stroke-dasharray="3 5" opacity=".55"/><circle cx="196" cy="55.5" r="5" fill="#fff" stroke="#1F4FE0" stroke-width="2.2"/><circle cx="444" cy="30.0" r="3" fill="#1F4FE0" opacity=".55"/></svg><div class="qmx"><span>Aug</span><span>Nov</span><span>Mar</span></div></div><div class="qpc qap"><div class="qah"><b>Ready for your OK</b><span class="qct">2</span></div><div class="qdv"><div><b>Reply to a new 5-star review</b><small><i style="background:#17703D"></i>Reviews</small></div><span class="qbt">Approve</span></div><div class="qdv"><div><b>Press release: your new service</b><small><i style="background:#C2410C"></i>Press releases</small></div><span class="qbt">Approve</span></div></div><div class="qpc qap"><div class="qah"><b>Just delivered</b><small>This week</small></div><div class="qdv"><div><b>6 Google posts went live</b><small><i style="background:#1F4FE0"></i>Google profile</small></div><span class="qdn">&#10003;</span></div><div class="qdv"><div><b>Listed on 2 more directories</b><small><i style="background:#7A4FE0"></i>Directory listings</small></div><span class="qdn">&#10003;</span></div><div class="qdv"><div><b>Pitched 3 local best-of guides</b><small><i style="background:#FF5A3C"></i>Best-of guides</small></div><span class="qdn">&#10003;</span></div></div></div><span class="sample qpst">Sample data</span></div></div></div>
 <div class="in logos"><span class="eb">Trusted by leading local practices</span><div class="lrow"><img src="../../assets/logos/clients/luxurgery.png" alt="LUXURGERY" title="LUXURGERY" style="height:15px" loading="lazy"><img src="../../assets/logos/clients/scarlessnose.svg" alt="Beverly Hills Rhinoplasty Center" title="Beverly Hills Rhinoplasty Center" style="height:26px" loading="lazy"><img src="../../assets/logos/clients/daydermatology.png" alt="Day Dermatology" title="Day Dermatology" style="height:24px" loading="lazy"><img src="../../assets/logos/clients/rve.png" alt="R.Ve Aesthetics" title="R.Ve Aesthetics" style="height:30px" loading="lazy"><img src="../../assets/logos/clients/defineclinic2.png" alt="Define Clinic" title="Define Clinic" style="height:21px" loading="lazy"><img src="../../assets/logos/clients/oak.png" alt="Oak Dermatology" title="Oak Dermatology" style="height:22px" loading="lazy"><img src="../../assets/logos/clients/injectionartistry.png" alt="Injection Artistry" title="Injection Artistry" style="height:28px" loading="lazy"></div></div><div class="kols"><div class="kh in"><span class="eb">The people behind the practices</span><p class="kq">Doctors and the leaders of aesthetics, <em>named with&nbsp;permission.</em></p></div><div class="mq"><div class="mt"><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/doris-day.webp" srcset="../../assets/for-med-spas/faces/md/doris-day.webp 400w, ../../assets/for-med-spas/faces/hd/doris-day.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Doris Day" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Doris Day</b><span>Day Dermatology & Aesthetics</span><small>Dermatology &middot; New&nbsp;York</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/sachin-shridharani.webp" srcset="../../assets/for-med-spas/faces/md/sachin-shridharani.webp 400w, ../../assets/for-med-spas/faces/hd/sachin-shridharani.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Sachin Shridharani" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Sachin Shridharani</b><span>LUXURGERY</span><small>Plastic surgery &middot; New&nbsp;York</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/mariano-busso.webp" srcset="../../assets/for-med-spas/faces/md/mariano-busso.webp 400w, ../../assets/for-med-spas/faces/hd/mariano-busso.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Mariano Busso" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Mariano Busso</b><span>Dr. Busso Cosmetic Dermatology</span><small>Cosmetic dermatology &middot;&nbsp;Miami</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/deepak-dugar.webp" srcset="../../assets/for-med-spas/faces/md/deepak-dugar.webp 400w, ../../assets/for-med-spas/faces/hd/deepak-dugar.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Deepak Dugar" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Deepak Dugar</b><span>Beverly Hills Rhinoplasty Center (Scarless Nose)</span><small>Facial plastic surgery &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/ashish-bhatia.webp" srcset="../../assets/for-med-spas/faces/md/ashish-bhatia.webp 400w, ../../assets/for-med-spas/faces/hd/ashish-bhatia.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Ashish Bhatia" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Ashish Bhatia</b><span>Oak Dermatology</span><small>Dermatology &middot; Chicago&nbsp;area</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/roberta-del-campo.webp" srcset="../../assets/for-med-spas/faces/md/roberta-del-campo.webp 400w, ../../assets/for-med-spas/faces/hd/roberta-del-campo.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Roberta Del Campo" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Roberta Del Campo</b><span>Del Campo Dermatology & Laser Institute</span><small>Dermatology &middot;&nbsp;Miami</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/benji-dhillon.webp" srcset="../../assets/for-med-spas/faces/md/benji-dhillon.webp 400w, ../../assets/for-med-spas/faces/hd/benji-dhillon.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Benji Dhillon" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Benji Dhillon</b><span>Define Clinic</span><small>Cosmetic surgery &middot;&nbsp;London</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/marie-hayag.webp" srcset="../../assets/for-med-spas/faces/md/marie-hayag.webp 400w, ../../assets/for-med-spas/faces/hd/marie-hayag.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Marie Hayag" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Marie Hayag</b><span>Fifth Avenue Aesthetics</span><small>Aesthetic medicine &middot; New York,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jeff-lisiecki.webp" srcset="../../assets/for-med-spas/faces/md/jeff-lisiecki.webp 400w, ../../assets/for-med-spas/faces/hd/jeff-lisiecki.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Jeff Lisiecki" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Jeff Lisiecki</b><span>Jeffrey Lisiecki MD Plastic Surgery</span><small>Plastic surgery &middot; New York,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/walter-joseph.webp" srcset="../../assets/for-med-spas/faces/md/walter-joseph.webp 400w, ../../assets/for-med-spas/faces/hd/walter-joseph.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Walter Joseph" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Walter Joseph</b><span>Walter J. Joseph MD</span><small>Plastic surgery &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/anton-georgiev.webp" srcset="../../assets/for-med-spas/faces/md/anton-georgiev.webp 400w, ../../assets/for-med-spas/faces/hd/anton-georgiev.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Anton Georgiev" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Anton Georgiev, DO</b><span>Zoyya Anti-Aging & Aesthetics</span><small>Aesthetic medicine &middot; Garden City,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/tess-mauricio.webp" srcset="../../assets/for-med-spas/faces/md/tess-mauricio.webp 400w, ../../assets/for-med-spas/faces/hd/tess-mauricio.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Tess Mauricio" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Tess Mauricio</b><span>M Beauty Clinic</span><small>Dermatology &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/osborne-williams.webp" srcset="../../assets/for-med-spas/faces/md/osborne-williams.webp 400w, ../../assets/for-med-spas/faces/hd/osborne-williams.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Osborne Williams" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Osborne Williams</b><span>R.Ve Aesthetics</span><small>Aesthetic medicine &middot; Huntington,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/naomi-barrett.webp" srcset="../../assets/for-med-spas/faces/md/naomi-barrett.webp 400w, ../../assets/for-med-spas/faces/hd/naomi-barrett.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Naomi Barrett" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Naomi Barrett, NP-C</b><span>Injection Artistry</span><small>Aesthetic injection &middot; Newport Beach,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/janell-ocampo.webp" srcset="../../assets/for-med-spas/faces/md/janell-ocampo.webp 400w, ../../assets/for-med-spas/faces/hd/janell-ocampo.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Janell Ocampo" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Janell Ocampo, DNP</b><span>Belle Vie Wellness & Aesthetics</span><small>Aesthetics and wellness &middot; Cerritos,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/linda-rank.webp" srcset="../../assets/for-med-spas/faces/md/linda-rank.webp 400w, ../../assets/for-med-spas/faces/hd/linda-rank.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Linda Rank" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Linda Rank, PA-C</b><span>soul&beautyMEDx</span><small>Aesthetic medicine &middot; Mission Viejo,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/angela-hash.webp" srcset="../../assets/for-med-spas/faces/md/angela-hash.webp 400w, ../../assets/for-med-spas/faces/hd/angela-hash.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Angela Hash" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Angela Hash, BSN, RN</b><span>Savage Serenity MedSpa</span><small>Aesthetic nursing &middot; Fresno,&nbsp;CA</small></figcaption></figure><span class="dup" aria-hidden="true"><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/doris-day.webp" srcset="../../assets/for-med-spas/faces/md/doris-day.webp 400w, ../../assets/for-med-spas/faces/hd/doris-day.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Doris Day" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Doris Day</b><span>Day Dermatology & Aesthetics</span><small>Dermatology &middot; New&nbsp;York</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/sachin-shridharani.webp" srcset="../../assets/for-med-spas/faces/md/sachin-shridharani.webp 400w, ../../assets/for-med-spas/faces/hd/sachin-shridharani.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Sachin Shridharani" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Sachin Shridharani</b><span>LUXURGERY</span><small>Plastic surgery &middot; New&nbsp;York</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/mariano-busso.webp" srcset="../../assets/for-med-spas/faces/md/mariano-busso.webp 400w, ../../assets/for-med-spas/faces/hd/mariano-busso.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Mariano Busso" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Mariano Busso</b><span>Dr. Busso Cosmetic Dermatology</span><small>Cosmetic dermatology &middot;&nbsp;Miami</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/deepak-dugar.webp" srcset="../../assets/for-med-spas/faces/md/deepak-dugar.webp 400w, ../../assets/for-med-spas/faces/hd/deepak-dugar.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Deepak Dugar" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Deepak Dugar</b><span>Beverly Hills Rhinoplasty Center (Scarless Nose)</span><small>Facial plastic surgery &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/ashish-bhatia.webp" srcset="../../assets/for-med-spas/faces/md/ashish-bhatia.webp 400w, ../../assets/for-med-spas/faces/hd/ashish-bhatia.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Ashish Bhatia" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Ashish Bhatia</b><span>Oak Dermatology</span><small>Dermatology &middot; Chicago&nbsp;area</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/roberta-del-campo.webp" srcset="../../assets/for-med-spas/faces/md/roberta-del-campo.webp 400w, ../../assets/for-med-spas/faces/hd/roberta-del-campo.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Roberta Del Campo" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Roberta Del Campo</b><span>Del Campo Dermatology & Laser Institute</span><small>Dermatology &middot;&nbsp;Miami</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/benji-dhillon.webp" srcset="../../assets/for-med-spas/faces/md/benji-dhillon.webp 400w, ../../assets/for-med-spas/faces/hd/benji-dhillon.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Benji Dhillon" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Benji Dhillon</b><span>Define Clinic</span><small>Cosmetic surgery &middot;&nbsp;London</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/marie-hayag.webp" srcset="../../assets/for-med-spas/faces/md/marie-hayag.webp 400w, ../../assets/for-med-spas/faces/hd/marie-hayag.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Marie Hayag" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Marie Hayag</b><span>Fifth Avenue Aesthetics</span><small>Aesthetic medicine &middot; New York,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jeff-lisiecki.webp" srcset="../../assets/for-med-spas/faces/md/jeff-lisiecki.webp 400w, ../../assets/for-med-spas/faces/hd/jeff-lisiecki.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Jeff Lisiecki" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Jeff Lisiecki</b><span>Jeffrey Lisiecki MD Plastic Surgery</span><small>Plastic surgery &middot; New York,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/walter-joseph.webp" srcset="../../assets/for-med-spas/faces/md/walter-joseph.webp 400w, ../../assets/for-med-spas/faces/hd/walter-joseph.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Walter Joseph" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Walter Joseph</b><span>Walter J. Joseph MD</span><small>Plastic surgery &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/anton-georgiev.webp" srcset="../../assets/for-med-spas/faces/md/anton-georgiev.webp 400w, ../../assets/for-med-spas/faces/hd/anton-georgiev.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Anton Georgiev" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Anton Georgiev, DO</b><span>Zoyya Anti-Aging & Aesthetics</span><small>Aesthetic medicine &middot; Garden City,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/tess-mauricio.webp" srcset="../../assets/for-med-spas/faces/md/tess-mauricio.webp 400w, ../../assets/for-med-spas/faces/hd/tess-mauricio.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Tess Mauricio" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Tess Mauricio</b><span>M Beauty Clinic</span><small>Dermatology &middot; Beverly Hills,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/osborne-williams.webp" srcset="../../assets/for-med-spas/faces/md/osborne-williams.webp 400w, ../../assets/for-med-spas/faces/hd/osborne-williams.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Osborne Williams" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Osborne Williams</b><span>R.Ve Aesthetics</span><small>Aesthetic medicine &middot; Huntington,&nbsp;NY</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/naomi-barrett.webp" srcset="../../assets/for-med-spas/faces/md/naomi-barrett.webp 400w, ../../assets/for-med-spas/faces/hd/naomi-barrett.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Naomi Barrett" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Naomi Barrett, NP-C</b><span>Injection Artistry</span><small>Aesthetic injection &middot; Newport Beach,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/janell-ocampo.webp" srcset="../../assets/for-med-spas/faces/md/janell-ocampo.webp 400w, ../../assets/for-med-spas/faces/hd/janell-ocampo.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dr. Janell Ocampo" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dr. Janell Ocampo, DNP</b><span>Belle Vie Wellness & Aesthetics</span><small>Aesthetics and wellness &middot; Cerritos,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/linda-rank.webp" srcset="../../assets/for-med-spas/faces/md/linda-rank.webp 400w, ../../assets/for-med-spas/faces/hd/linda-rank.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Linda Rank" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Linda Rank, PA-C</b><span>soul&beautyMEDx</span><small>Aesthetic medicine &middot; Mission Viejo,&nbsp;CA</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/angela-hash.webp" srcset="../../assets/for-med-spas/faces/md/angela-hash.webp 400w, ../../assets/for-med-spas/faces/hd/angela-hash.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Angela Hash" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Angela Hash, BSN, RN</b><span>Savage Serenity MedSpa</span><small>Aesthetic nursing &middot; Fresno,&nbsp;CA</small></figcaption></figure></span></div></div><div class="mq rev"><div class="mt"><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/taryn-conway.webp" srcset="../../assets/for-med-spas/faces/md/taryn-conway.webp 400w, ../../assets/for-med-spas/faces/hd/taryn-conway.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Taryn Conway" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Taryn Conway</b><span>Marketing executive</span><small class="kb">VP at Revance. Launched DAXXIFY,&nbsp;RHA.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/aneesh-patel.webp" srcset="../../assets/for-med-spas/faces/md/aneesh-patel.webp 400w, ../../assets/for-med-spas/faces/hd/aneesh-patel.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Aneesh Patel" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Aneesh Patel, PharmD</b><span>Commercial executive</span><small class="kb">Ex&#8209;Galderma, Allergan,&nbsp;Evolus.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/benjamin-hahr.webp" srcset="../../assets/for-med-spas/faces/md/benjamin-hahr.webp 400w, ../../assets/for-med-spas/faces/hd/benjamin-hahr.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Benjamin Hahr" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Benjamin Hahr</b><span>Tech executive</span><small class="kb">Built tech at Evolus, HintMD,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kellie-lao.webp" srcset="../../assets/for-med-spas/faces/md/kellie-lao.webp 400w, ../../assets/for-med-spas/faces/hd/kellie-lao.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kellie Lao" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kellie Lao</b><span>Marketing executive</span><small class="kb">Marketed Jeuveau, Evolysse,&nbsp;RHA.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/eric-sanders.webp" srcset="../../assets/for-med-spas/faces/md/eric-sanders.webp 400w, ../../assets/for-med-spas/faces/hd/eric-sanders.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Eric Sanders" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Eric Sanders</b><span>Marketing executive</span><small class="kb">10 years at Allergan. VP at&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jennifer-redmond.webp" srcset="../../assets/for-med-spas/faces/md/jennifer-redmond.webp 400w, ../../assets/for-med-spas/faces/hd/jennifer-redmond.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jennifer Redmond" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jennifer Redmond, MBA</b><span>Commercial executive</span><small class="kb">Led sales at Merz. Built Endo's team.&nbsp;Ex&#8209;Allergan.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/opie-opfer.webp" srcset="../../assets/for-med-spas/faces/md/opie-opfer.webp 400w, ../../assets/for-med-spas/faces/hd/opie-opfer.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Opie Opfer" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Opie Opfer</b><span>Creative executive</span><small class="kb">Launched RHA, DAXXIFY. Co-led Revance&nbsp;X.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/bryan-bullock.webp" srcset="../../assets/for-med-spas/faces/md/bryan-bullock.webp 400w, ../../assets/for-med-spas/faces/hd/bryan-bullock.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Bryan Bullock" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Bryan Bullock</b><span>Marketing executive</span><small class="kb">Launched DAXXIFY at Revance. Now at AVITA&nbsp;Medical.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kerrie-quinby.webp" srcset="../../assets/for-med-spas/faces/md/kerrie-quinby.webp 400w, ../../assets/for-med-spas/faces/hd/kerrie-quinby.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kerrie Quinby" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kerrie Quinby</b><span>Brand and education exec</span><small class="kb">Colorescience, SkinCeuticals, Est&eacute;e&nbsp;Lauder.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jeff-allen.webp" srcset="../../assets/for-med-spas/faces/md/jeff-allen.webp 400w, ../../assets/for-med-spas/faces/hd/jeff-allen.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jeff Allen" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jeff Allen</b><span>Sales executive</span><small class="kb">VP Sales, Collagen P.I.N. Ex&#8209;Teoxane,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jill-gregory.webp" srcset="../../assets/for-med-spas/faces/md/jill-gregory.webp 400w, ../../assets/for-med-spas/faces/hd/jill-gregory.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jill Gregory" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jill Gregory</b><span>Sales executive</span><small class="kb">Now at Acorn Biolabs. Ex&#8209;HydraFacial. Launched&nbsp;Juv&eacute;derm.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/dustin-sjuts.webp" srcset="../../assets/for-med-spas/faces/md/dustin-sjuts.webp 400w, ../../assets/for-med-spas/faces/hd/dustin-sjuts.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dustin Sjuts" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dustin Sjuts</b><span>CEO, Revelyx Bio</span><small class="kb">Former President of Revance.&nbsp;Ex&#8209;Galderma.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kara-mcclanahan.webp" srcset="../../assets/for-med-spas/faces/md/kara-mcclanahan.webp 400w, ../../assets/for-med-spas/faces/hd/kara-mcclanahan.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kara McClanahan" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kara McClanahan</b><span>CEO, Aesthetic Practice Partners</span><small class="kb">Advisor to MedShift.&nbsp;Ex&#8209;Genesis.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kimberly-gerber.webp" srcset="../../assets/for-med-spas/faces/md/kimberly-gerber.webp 400w, ../../assets/for-med-spas/faces/hd/kimberly-gerber.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kimberly Gerber" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kimberly Gerber</b><span>CEO, Excelerate</span><small class="kb">Coaches leaders at Allergan,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jasmine-hill.webp" srcset="../../assets/for-med-spas/faces/md/jasmine-hill.webp 400w, ../../assets/for-med-spas/faces/hd/jasmine-hill.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jasmine Hill" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jasmine Hill, MBA</b><span>CEO, Aesthetic Influencer</span><small class="kb">Ex&#8209;Cynosure, Pierre&nbsp;Fabre.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/ben-wolber.webp" srcset="../../assets/for-med-spas/faces/md/ben-wolber.webp 400w, ../../assets/for-med-spas/faces/hd/ben-wolber.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Ben Wolber" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Ben Wolber</b><span>CEO, Illume</span><small class="kb">Partners with Allergan.&nbsp;Ex&#8209;Fidelity.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/brandon-hahr.webp" srcset="../../assets/for-med-spas/faces/md/brandon-hahr.webp 400w, ../../assets/for-med-spas/faces/hd/brandon-hahr.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Brandon Hahr" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Brandon Hahr</b><span>CEO, Kingsmen Digital Ventures</span><small class="kb">Built tech for Galderma,&nbsp;Merz.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/michael-moretti.webp" srcset="../../assets/for-med-spas/faces/md/michael-moretti.webp 400w, ../../assets/for-med-spas/faces/hd/michael-moretti.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Michael Moretti" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Michael Moretti</b><span>CEO, Medical Insight</span><small class="kb">Publishes THE Aesthetic Guide.&nbsp;Ex&#8209;Allergan.</small></figcaption></figure><span class="dup" aria-hidden="true"><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/taryn-conway.webp" srcset="../../assets/for-med-spas/faces/md/taryn-conway.webp 400w, ../../assets/for-med-spas/faces/hd/taryn-conway.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Taryn Conway" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Taryn Conway</b><span>Marketing executive</span><small class="kb">VP at Revance. Launched DAXXIFY,&nbsp;RHA.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/aneesh-patel.webp" srcset="../../assets/for-med-spas/faces/md/aneesh-patel.webp 400w, ../../assets/for-med-spas/faces/hd/aneesh-patel.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Aneesh Patel" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Aneesh Patel, PharmD</b><span>Commercial executive</span><small class="kb">Ex&#8209;Galderma, Allergan,&nbsp;Evolus.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/benjamin-hahr.webp" srcset="../../assets/for-med-spas/faces/md/benjamin-hahr.webp 400w, ../../assets/for-med-spas/faces/hd/benjamin-hahr.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Benjamin Hahr" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Benjamin Hahr</b><span>Tech executive</span><small class="kb">Built tech at Evolus, HintMD,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kellie-lao.webp" srcset="../../assets/for-med-spas/faces/md/kellie-lao.webp 400w, ../../assets/for-med-spas/faces/hd/kellie-lao.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kellie Lao" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kellie Lao</b><span>Marketing executive</span><small class="kb">Marketed Jeuveau, Evolysse,&nbsp;RHA.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/eric-sanders.webp" srcset="../../assets/for-med-spas/faces/md/eric-sanders.webp 400w, ../../assets/for-med-spas/faces/hd/eric-sanders.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Eric Sanders" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Eric Sanders</b><span>Marketing executive</span><small class="kb">10 years at Allergan. VP at&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jennifer-redmond.webp" srcset="../../assets/for-med-spas/faces/md/jennifer-redmond.webp 400w, ../../assets/for-med-spas/faces/hd/jennifer-redmond.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jennifer Redmond" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jennifer Redmond, MBA</b><span>Commercial executive</span><small class="kb">Led sales at Merz. Built Endo's team.&nbsp;Ex&#8209;Allergan.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/opie-opfer.webp" srcset="../../assets/for-med-spas/faces/md/opie-opfer.webp 400w, ../../assets/for-med-spas/faces/hd/opie-opfer.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Opie Opfer" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Opie Opfer</b><span>Creative executive</span><small class="kb">Launched RHA, DAXXIFY. Co-led Revance&nbsp;X.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/bryan-bullock.webp" srcset="../../assets/for-med-spas/faces/md/bryan-bullock.webp 400w, ../../assets/for-med-spas/faces/hd/bryan-bullock.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Bryan Bullock" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Bryan Bullock</b><span>Marketing executive</span><small class="kb">Launched DAXXIFY at Revance. Now at AVITA&nbsp;Medical.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kerrie-quinby.webp" srcset="../../assets/for-med-spas/faces/md/kerrie-quinby.webp 400w, ../../assets/for-med-spas/faces/hd/kerrie-quinby.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kerrie Quinby" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kerrie Quinby</b><span>Brand and education exec</span><small class="kb">Colorescience, SkinCeuticals, Est&eacute;e&nbsp;Lauder.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jeff-allen.webp" srcset="../../assets/for-med-spas/faces/md/jeff-allen.webp 400w, ../../assets/for-med-spas/faces/hd/jeff-allen.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jeff Allen" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jeff Allen</b><span>Sales executive</span><small class="kb">VP Sales, Collagen P.I.N. Ex&#8209;Teoxane,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jill-gregory.webp" srcset="../../assets/for-med-spas/faces/md/jill-gregory.webp 400w, ../../assets/for-med-spas/faces/hd/jill-gregory.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jill Gregory" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jill Gregory</b><span>Sales executive</span><small class="kb">Now at Acorn Biolabs. Ex&#8209;HydraFacial. Launched&nbsp;Juv&eacute;derm.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/dustin-sjuts.webp" srcset="../../assets/for-med-spas/faces/md/dustin-sjuts.webp 400w, ../../assets/for-med-spas/faces/hd/dustin-sjuts.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Dustin Sjuts" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Dustin Sjuts</b><span>CEO, Revelyx Bio</span><small class="kb">Former President of Revance.&nbsp;Ex&#8209;Galderma.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kara-mcclanahan.webp" srcset="../../assets/for-med-spas/faces/md/kara-mcclanahan.webp 400w, ../../assets/for-med-spas/faces/hd/kara-mcclanahan.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kara McClanahan" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kara McClanahan</b><span>CEO, Aesthetic Practice Partners</span><small class="kb">Advisor to MedShift.&nbsp;Ex&#8209;Genesis.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/kimberly-gerber.webp" srcset="../../assets/for-med-spas/faces/md/kimberly-gerber.webp 400w, ../../assets/for-med-spas/faces/hd/kimberly-gerber.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Kimberly Gerber" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Kimberly Gerber</b><span>CEO, Excelerate</span><small class="kb">Coaches leaders at Allergan,&nbsp;Revance.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/jasmine-hill.webp" srcset="../../assets/for-med-spas/faces/md/jasmine-hill.webp 400w, ../../assets/for-med-spas/faces/hd/jasmine-hill.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Jasmine Hill" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Jasmine Hill, MBA</b><span>CEO, Aesthetic Influencer</span><small class="kb">Ex&#8209;Cynosure, Pierre&nbsp;Fabre.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/ben-wolber.webp" srcset="../../assets/for-med-spas/faces/md/ben-wolber.webp 400w, ../../assets/for-med-spas/faces/hd/ben-wolber.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Ben Wolber" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Ben Wolber</b><span>CEO, Illume</span><small class="kb">Partners with Allergan.&nbsp;Ex&#8209;Fidelity.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/brandon-hahr.webp" srcset="../../assets/for-med-spas/faces/md/brandon-hahr.webp 400w, ../../assets/for-med-spas/faces/hd/brandon-hahr.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Brandon Hahr" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Brandon Hahr</b><span>CEO, Kingsmen Digital Ventures</span><small class="kb">Built tech for Galderma,&nbsp;Merz.</small></figcaption></figure><figure class="kol"><span class="pf"><img src="../../assets/for-med-spas/faces/md/michael-moretti.webp" srcset="../../assets/for-med-spas/faces/md/michael-moretti.webp 400w, ../../assets/for-med-spas/faces/hd/michael-moretti.webp 800w" sizes="(max-width:720px) 46vw, 240px" alt="Michael Moretti" width="400" height="500" loading="lazy" decoding="async"></span><figcaption><b>Michael Moretti</b><span>CEO, Medical Insight</span><small class="kb">Publishes THE Aesthetic Guide.&nbsp;Ex&#8209;Allergan.</small></figcaption></figure></span></div></div></div></section>
 
 <section class="sec"><div class="shift sec" style="padding-block:clamp(72px,8vw,120px)"><div class="in">
@@ -122,7 +1067,7 @@
     <div id="tip"></div>
   </div></div></div></section>
 
-<section class="sec rule"><div class="in fq"><div><span class="eb">Questions we get asked</span><h2>Straight&nbsp;answers.</h2></div><div><h4>Understanding AI&nbsp;search</h4><details><summary>What is AI&nbsp;search?</summary><p>People now ask ChatGPT, Gemini, Google's AI answers, Siri and others where to go, instead of scrolling a list of links. The assistant answers with a few names. AI search is about being one of&nbsp;them.</p></details><details><summary>How is this different from&nbsp;SEO?</summary><p>SEO gets your pages ranked. AI search gets your business named in the answer. Rankings still matter, because AI reads the pages Google ranks, but AI also checks your listings, reviews, photos and what other sites say about&nbsp;you.</p></details><details><summary>Why does local matter so&nbsp;much?</summary><p>Local questions are where AI answers show up most. Our research found that 76.4% of local business searches trigger a Google AI answer, versus 13.7% of all&nbsp;searches.</p></details><h4>How we&nbsp;work</h4><details><summary>What is the Local AI&nbsp;Blueprint?</summary><p>The 11 things AI checks before it recommends a local business, from your Google profile and listings to reviews, photos, articles and best-of guides. Our team handles all of them for&nbsp;you.</p></details><details><summary>Do I have to do&nbsp;anything?</summary><p>Very little. You approve what goes out in your name, and we do the work. Each month you get a report with the real answers and&nbsp;screenshots.</p></details><details><summary>Will you work with my&nbsp;competitors?</summary><p>No. Your area is yours alone. We don't take on a business like yours in your area, and we agree on the exact boundary with you before we&nbsp;start.</p></details><h4>Getting&nbsp;started</h4><details><summary>What is the free AI&nbsp;audit?</summary><p>A call where we show you, live, what ChatGPT, Gemini and Google's AI say about your business today, who they name instead, and what it takes to change&nbsp;that.</p></details><details><summary>What does it&nbsp;cost?</summary><p>It depends on your market and what your business needs, so we quote after your free audit. Month to month, no long&nbsp;contracts.</p></details><details><summary>What does the guarantee&nbsp;cover?</summary><p>Named in AI in 90 days. If AI hasn't named you by then, we keep working for free until it&nbsp;does.</p></details></div></div></section>
+<section class="sec rule"><div class="in fq"><div><span class="eb">Questions we get asked</span><h2>Straight&nbsp;answers.</h2></div><div><h3 class="fqg">Understanding AI&nbsp;search</h3><details><summary>What is AI&nbsp;search?</summary><p>People now ask ChatGPT, Gemini, Google's AI answers, Siri and others where to go, instead of scrolling a list of links. The assistant answers with a few names. AI search is about being one of&nbsp;them.</p></details><details><summary>How is this different from&nbsp;SEO?</summary><p>SEO gets your pages ranked. AI search gets your business named in the answer. Rankings still matter, because AI reads the pages Google ranks, but AI also checks your listings, reviews, photos and what other sites say about&nbsp;you.</p></details><details><summary>Why does local matter so&nbsp;much?</summary><p>Local questions are where AI answers show up most. Our research found that 76.4% of local business searches trigger a Google AI answer, versus 13.7% of all&nbsp;searches.</p></details><h3 class="fqg">How we&nbsp;work</h3><details><summary>What is the Local AI&nbsp;Blueprint?</summary><p>The 11 things AI checks before it recommends a local business, from your Google profile and listings to reviews, photos, articles and best-of guides. Our team handles all of them for&nbsp;you.</p></details><details><summary>Do I have to do&nbsp;anything?</summary><p>Very little. You approve what goes out in your name, and we do the work. Each month you get a report with the real answers and&nbsp;screenshots.</p></details><details><summary>Will you work with my&nbsp;competitors?</summary><p>No. Your area is yours alone. We don't take on a business like yours in your area, and we agree on the exact boundary with you before we&nbsp;start.</p></details><h3 class="fqg">Getting&nbsp;started</h3><details><summary>What is the free AI&nbsp;audit?</summary><p>A call where we show you, live, what ChatGPT, Gemini and Google's AI say about your business today, who they name instead, and what it takes to change&nbsp;that.</p></details><details><summary>What does it&nbsp;cost?</summary><p>It depends on your market and what your business needs, so we quote after your free audit. Month to month, no long&nbsp;contracts.</p></details><details><summary>What does the guarantee&nbsp;cover?</summary><p>Named in AI in 90 days. If AI hasn't named you by then, we keep working for free until it&nbsp;does.</p></details></div></div></section>
 
 <section class="close"><div class="in"><h2><span class="g">Be the business AI names</span><br>when people nearby&nbsp;ask.</h2>
 <p class="sub" style="color:rgba(255,255,255,.7);margin-top:18px">Named in AI in 90 days,&nbsp;guaranteed.</p>

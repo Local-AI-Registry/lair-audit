@@ -1,0 +1,98 @@
+{
+ "client": "Mentor Plastic Surgery & MedSpa",
+ "rows": [
+  [
+   "plastic surgeon cleveland",
+   390,
+   ""
+  ],
+  [
+   "cosmetic surgery cleveland",
+   170,
+   ""
+  ],
+  [
+   "plastic surgery mentor ohio",
+   140,
+   ""
+  ],
+  [
+   "breast augmentation cleveland",
+   140,
+   ""
+  ],
+  [
+   "plastic surgeon beachwood ohio",
+   110,
+   ""
+  ],
+  [
+   "tummy tuck cleveland",
+   90,
+   ""
+  ],
+  [
+   "liposuction cleveland",
+   90,
+   ""
+  ],
+  [
+   "rhinoplasty cleveland",
+   90,
+   ""
+  ],
+  [
+   "breast reduction cleveland",
+   40,
+   ""
+  ],
+  [
+   "bbl cleveland",
+   30,
+   ""
+  ],
+  [
+   "mommy makeover cleveland",
+   20,
+   ""
+  ],
+  [
+   "breast lift cleveland",
+   20,
+   ""
+  ],
+  [
+   "eyelid surgery cleveland",
+   20,
+   ""
+  ],
+  [
+   "labiaplasty cleveland",
+   20,
+   ""
+  ],
+  [
+   "neck lift cleveland",
+   10,
+   ""
+  ],
+  [
+   "gynecomastia cleveland",
+   10,
+   ""
+  ],
+  [
+   "plastic surgeon mentor ohio",
+   10,
+   ""
+  ]
+ ],
+ "price": {
+  "value": 4300,
+  "label": "low end of the 2024 US surgeon fee for liposuction",
+  "source": "American Society of Plastic Surgeons, 2024 Procedural Statistics",
+  "url": "https://www.plasticsurgery.org/documents/news/statistics/2024/cosmetic-procedures-average-cost-2024.pdf"
+ },
+ "vol_source": "DataForSEO, Google Ads search volume, Ohio level, November 18, 2026",
+ "left_out": "Left out: near-me searches (Google returned no Cleveland-level volume), med spa and injectable searches, duplicate searches Google counts as one, and searches with no measurable volume."
+}
