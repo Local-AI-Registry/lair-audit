@@ -2,6 +2,8 @@
 
 > Local AI Registry gets local businesses named when people ask ChatGPT, Gemini, Perplexity and Google's AI where to go. We run the 11 parts of the Local AI Blueprint for each business, publish original research on how AI picks local businesses, and keep a public registry of business records.
 
+Every page is also available as Markdown: add index.md to its address. The whole site in one file: https://localairegistry.com/llms-full.txt
+
 Contact: hello@localairegistry.com · (213) 931-5633 · 9891 Irvine Center Dr, Irvine, CA 92618
 
 ## Start here

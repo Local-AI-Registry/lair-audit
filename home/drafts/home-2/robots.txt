@@ -1,5 +1,7 @@
 # Home-2 robots.txt for localairegistry.com at launch. Not live on the audit draft.
 User-agent: *
+# Content signals (contentsignals.org): yes to search and to AI answers that cite us; training left unstated for now
+Content-Signal: search=yes, ai-input=yes
 Allow: /
 
 # AI crawlers are welcome
