@@ -51,6 +51,11 @@ header.bar{background:#fff;border-bottom:1px solid #EEF0F3}
 header.bar .wrap{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;min-height:64px}
 .logo{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;color:#0B1A2E;font-weight:700;text-decoration:none;font-size:17px}
 .logo svg{width:22px;height:22px;margin-right:8px}
+.logo{white-space:nowrap}
+.logo svg{-webkit-flex:none;flex:none}
+header.bar .wrap>span{white-space:nowrap}
+.btn.hdr-book{display:none}
+@media (min-width:480px){.btn.hdr-book{display:inline-block}}
 .btn{display:inline-block;background:#1F4FE0;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:14px 24px;min-height:50px;font-size:16px;line-height:22px;border:0;cursor:pointer;-webkit-transition:background .2s,-webkit-transform .2s;transition:background .2s,transform .2s}
 .btn:hover{background:#163BAF;-webkit-transform:translateY(-1px);transform:translateY(-1px)}
 .btn .chev{display:inline-block;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.22);text-align:center;line-height:21px;margin-left:10px;font-size:14px}
@@ -83,7 +88,7 @@ header.bar .wrap{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-a
 .arch .frame img{width:100%}
 .arch .cap{position:absolute;right:-6px;top:24px;background:#fff;border-radius:14px;padding:8px 12px;font-size:12px;color:#0B1A2E;box-shadow:0 10px 30px rgba(11,26,46,.15);line-height:1.3}
 .arch .cap b{display:block;font-size:13px}
-.aicard{position:relative;margin:-110px 10px 0;background:rgba(255,255,255,.97);border-radius:20px;padding:16px;box-shadow:0 24px 60px rgba(11,26,46,.28);z-index:2}
+.aicard{position:relative;margin:-46px 14px 0;background:rgba(255,255,255,.97);border-radius:20px;padding:16px;box-shadow:0 24px 60px rgba(11,26,46,.28);z-index:2}
 .aicard .q{background:#1F4FE0;color:#fff;border-radius:14px 14px 4px 14px;padding:9px 12px;font-size:14px;margin-left:30px;margin-bottom:12px}
 .aicard .hd{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#5a6474;font-weight:700;margin-bottom:8px}
 .aicard .hd img{display:inline-block;width:16px;height:16px;vertical-align:-3px;margin-right:6px}
@@ -298,7 +303,7 @@ details .in-d{padding:0 16px 16px;font-size:15px}
 
 /* CTA */
 .cta{background:#0B1A2E;color:#C9D2E3;border-radius:30px;overflow:hidden}
-.cta .pic{height:300px;overflow:hidden}
+.cta .pic{height:340px;overflow:hidden}
 .cta .pic img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
 .cta .txt{padding:28px 24px}
 .cta h2{color:#fff;font-size:40px}
@@ -411,7 +416,7 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
   .hero .txt{width:56%;padding-right:40px}
   .hero .pics{width:44%}
   .arch{margin-top:0}
-  .aicard{position:absolute;left:-30px;right:auto;bottom:26px;width:270px;margin:0}
+  .aicard{position:relative;width:300px;margin:-56px 0 0 -40px}
   .calc{padding:46px}
   .money{font-size:96px}
   .finding{padding:34px}
@@ -462,13 +467,13 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
 </style>
 </head>
 <body>
-<a class="skip" href="#score">Skip to the scorecard</a>
+<a class="skip" href="#examples">Skip to the examples you asked for</a>
 
 <div class="promo"><b>90 DAYS</b>Named in AI in 90 days, or we keep working for free.</div>
 <header class="bar">
   <div class="wrap">
     <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#FF5A3C"/></svg>Local AI Registry</span>
-    <a class="btn small" href="#next">Book kickoff <span class="chev">&rsaquo;</span></a>
+    <span><a class="btn small ghost" href="#examples" style="margin-right:6px">Examples</a><a class="btn small hdr-book" href="#next">Book <span class="chev">&rsaquo;</span></a></span>
   </div>
 </header>
 
@@ -487,7 +492,8 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
         <li class="seq s3"><span class="ic bad" aria-hidden="true">&#10007;</span><span><b>ChatGPT and Perplexity skip you</b> for facelifts and neck lifts.</span></li>
         <li class="seq s4"><span class="ic bad" aria-hidden="true">&#10007;</span><span><b>Not on the Google map</b> for facelift or rhinoplasty in Houston.</span></li>
       </ul>
-      <a class="btn" href="#score">See your scorecard <span class="chev">&darr;</span></a>
+      <a class="btn" href="#examples">See the examples you asked for <span class="chev">&darr;</span></a>
+      <a class="btn ghost" href="#score" style="margin-top:8px">Your scorecard</a>
     </div>
     <div class="pics rv d2">
       <div class="arch">
@@ -535,6 +541,53 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
   </div>
   <p class="sub">Super Doctors, Texas Top Doctor, RealSelf Top Doctor. <b>AI just can't see any of it yet.</b> That's what we fix.</p>
 </div>
+
+<!-- ================= EXAMPLES (she asked for these) ================= -->
+<section id="examples" class="paper">
+  <div class="wrap">
+    <!-- Proof of our work -->
+    <div class="rv center" style="margin-bottom:26px">
+      <span class="eyebrow"><i></i>The examples you asked for</span>
+      <h2>You asked for examples. <em class="blue">Here they are.</em></h2>
+      <p class="lead">Three recent pieces of our work, what each one achieved, and what we'd make for Face Forward.</p>
+    </div>
+    <div class="row proof">
+      <div class="col c2 c3 rv d1"><div class="card">
+        <div class="shot"><img src="img/shot-yahoo.jpg" alt="Local AI Registry launch release on Yahoo Finance" width="330" height="270" loading="lazy"></div>
+        <img class="src" src="img/yahoo-finance.png" alt="Yahoo Finance" width="164" height="60">
+        <div class="num">Picked up</div>
+        <p style="font-size:15px">Our launch release ran on Yahoo Finance and IPS News. Perplexity now reads it when asked who we are.</p>
+        <p style="font-size:14px"><b>For you:</b> the Heights clinic, Dr. Bender joining.</p>
+        <a class="btn ghost small" href="https://finance.yahoo.com/technology/ai/articles/local-ai-registry-launches-first-183700721.html">Read it <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
+      </div></div>
+      <div class="col c2 c3 rv d2"><div class="card">
+        <div class="shot"><img src="img/video-poster.jpg" alt="Explainer video: how to get your practice recommended by ChatGPT" width="800" height="450" loading="lazy" style="object-position:center"><span class="play" aria-hidden="true"></span></div>
+        <img class="src" src="img/l-youtube.svg" alt="YouTube" width="22" height="22">
+        <div class="num">#1 and #3</div>
+        <p style="font-size:15px">#1 on YouTube for "how to get plastic surgery practice recommended by chatgpt," two weeks after launch.</p>
+        <p style="font-size:14px"><b>For you:</b> deep plane facelift, lip lift, hair restoration. 2 a month.</p>
+        <a class="btn ghost small" href="https://www.youtube.com/watch?v=DgAbZqaXeX4">Watch <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
+      </div></div>
+      <div class="col c2 c3 rv d3"><div class="card">
+        <div class="shot"><img src="img/shot-blog.jpg" alt="Blog post written for an eye surgery practice" width="330" height="440" loading="lazy"></div>
+        <img class="src" src="img/l-perplexity.svg" alt="Perplexity" width="22" height="22">
+        <div class="num">5 of 10</div>
+        <p style="font-size:15px">Sources Perplexity read were the practice's own pages. 5 days from call to live post.</p>
+        <p style="font-size:14px"><b>For you:</b> "facial plastic surgeon vs plastic surgeon."</p>
+        <a class="btn ghost small" href="https://www.compeyecare.com/ophthalmologists-and-optometrists-at-our-practice/">Read it <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
+      </div></div>
+    </div>
+
+    <div class="card rv" style="margin-top:22px">
+      <div class="feature-q">
+        <div class="ph"><img src="img/dr-deepak-dugar.jpg" alt="Dr. Deepak Dugar" width="144" height="144"></div>
+        <blockquote><span class="eyebrow" style="display:block;font-family:'Hanken Grotesk',Arial,sans-serif;font-style:normal;margin-bottom:6px"><i></i>A result for a facial plastic surgeon</span>Beverly Hills Rhinoplasty Center went from <span class="hl">0 to 45 ChatGPT questions</span> that pull up its site.<span style="display:block;font-family:'Hanken Grotesk',Arial,sans-serif;font-size:14px;color:#5a6474;margin-top:8px"><b style="color:#0B1A2E">Dr. Deepak Dugar</b>, facial plastic surgeon, Beverly Hills. <span class="note">DataForSEO LLM mentions, running total.</span></span></blockquote>
+        <img src="img/l-scarlessnose.svg" alt="Scarless Nose" width="120" height="40" style="height:40px;width:auto;margin-left:auto">
+      </div>
+    </div>
+    <p class="center rv" style="margin-top:22px"><a class="btn" href="#score">Now see your scorecard <span class="chev">&darr;</span></a></p>
+  </div>
+</section>
 
 <!-- ================= SCORECARD ================= -->
 <section id="score" class="ink">
@@ -1009,13 +1062,6 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
       <span class="eyebrow"><i></i>Trusted by aesthetic leaders</span>
       <h2>Doctors like you, <em>named with permission.</em></h2>
     </div>
-    <div class="card rv" style="margin-bottom:22px">
-      <div class="feature-q">
-        <div class="ph"><img src="img/dr-deepak-dugar.jpg" alt="Dr. Deepak Dugar" width="144" height="144"></div>
-        <blockquote>Beverly Hills Rhinoplasty Center went from <span class="hl">0 to 45 ChatGPT questions</span> that pull up its site.<span style="display:block;font-family:'Hanken Grotesk',Arial,sans-serif;font-size:14px;color:#5a6474;margin-top:8px"><b style="color:#0B1A2E">Dr. Deepak Dugar</b>, facial plastic surgeon, Beverly Hills. <span class="note">DataForSEO LLM mentions, running total.</span></span></blockquote>
-        <img src="img/l-scarlessnose.svg" alt="Scarless Nose" width="120" height="40" style="height:40px;width:auto;margin-left:auto">
-      </div>
-    </div>
     <div class="docs rv">
       <div class="doc"><img src="img/dr-sachin-shridharani.jpg" alt="" width="88" height="88" loading="lazy"><b>Dr. Sachin Shridharani</b><span>LUXURGERY<br>Plastic surgery &middot; New York</span></div>
       <div class="doc"><img src="img/dr-doris-day.jpg" alt="" width="88" height="88" loading="lazy"><b>Dr. Doris Day</b><span>Day Dermatology &amp; Aesthetics<br>New York</span></div>
@@ -1028,38 +1074,6 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
     </div>
     <div class="clogos rv" aria-label="Practice logos">
       <img src="img/l-luxurgery.svg" alt="LUXURGERY"><img src="img/l-defineclinic.svg" alt="Define Clinic"><img src="img/l-busso.png" alt="Dr. Busso"><img src="img/l-delcampo2.png" alt="Del Campo"><img src="img/l-scarlessnose.svg" alt="Scarless Nose">
-    </div>
-
-    <!-- Proof of our work -->
-    <div class="rv center" style="margin:60px 0 24px">
-      <span class="eyebrow"><i></i>Proof from our own work</span>
-      <h2>We do this for ourselves, <em>too.</em></h2>
-    </div>
-    <div class="row proof">
-      <div class="col c2 c3 rv d1"><div class="card">
-        <div class="shot"><img src="img/shot-yahoo.jpg" alt="Local AI Registry launch release on Yahoo Finance" width="330" height="270" loading="lazy"></div>
-        <img class="src" src="img/yahoo-finance.png" alt="Yahoo Finance" width="164" height="60">
-        <div class="num">Picked up</div>
-        <p style="font-size:15px">Our launch release ran on Yahoo Finance and IPS News. Perplexity now reads it when asked who we are.</p>
-        <p style="font-size:14px"><b>For you:</b> the Heights clinic, Dr. Bender joining.</p>
-        <a class="btn ghost small" href="https://finance.yahoo.com/technology/ai/articles/local-ai-registry-launches-first-183700721.html">Read it <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
-      </div></div>
-      <div class="col c2 c3 rv d2"><div class="card">
-        <div class="shot"><img src="img/video-poster.jpg" alt="Explainer video: how to get your practice recommended by ChatGPT" width="800" height="450" loading="lazy" style="object-position:center"><span class="play" aria-hidden="true"></span></div>
-        <img class="src" src="img/l-youtube.svg" alt="YouTube" width="22" height="22">
-        <div class="num">#1 and #3</div>
-        <p style="font-size:15px">#1 on YouTube for "how to get plastic surgery practice recommended by chatgpt," two weeks after launch.</p>
-        <p style="font-size:14px"><b>For you:</b> deep plane facelift, lip lift, hair restoration. 2 a month.</p>
-        <a class="btn ghost small" href="https://www.youtube.com/watch?v=DgAbZqaXeX4">Watch <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
-      </div></div>
-      <div class="col c2 c3 rv d3"><div class="card">
-        <div class="shot"><img src="img/shot-blog.jpg" alt="Blog post written for an eye surgery practice" width="330" height="440" loading="lazy"></div>
-        <img class="src" src="img/l-perplexity.svg" alt="Perplexity" width="22" height="22">
-        <div class="num">5 of 10</div>
-        <p style="font-size:15px">Sources Perplexity read were the practice's own pages. 5 days from call to live post.</p>
-        <p style="font-size:14px"><b>For you:</b> "facial plastic surgeon vs plastic surgeon."</p>
-        <a class="btn ghost small" href="https://www.compeyecare.com/ophthalmologists-and-optometrists-at-our-practice/">Read it <span class="chev" style="background:#E7EDFC;color:#1F4FE0">&rsaquo;</span></a>
-      </div></div>
     </div>
 
     <div class="row" style="margin-top:22px">
@@ -1182,7 +1196,7 @@ footer{padding:30px 0 100px;font-size:13px;color:#5a6474}
 <section id="next">
   <div class="wrap">
     <div class="cta rv">
-      <div class="pic"><img src="img/rodman-wide.jpg" alt="Dr. Regina Rodman" width="1200" height="620" loading="lazy" style="object-position:62% 30%"></div>
+      <div class="pic"><img src="img/rodman-cta.jpg" alt="Dr. Regina Rodman" width="520" height="600" loading="lazy" style="object-position:50% 18%"></div>
       <div class="txt">
         <span class="eyebrow"><i></i>Next step</span>
         <h2>Let's make you <em style="color:#9FBAFF">the answer.</em></h2>
