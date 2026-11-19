@@ -74,18 +74,26 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - Later (see `_build/PARKING_LOT.md`): a shared team password, then maybe Google sign-in. Both are built and reverted.
 
 ## Questions during the scan (rep only)
-- With a team key, the Scan screen asks the owner up to 4 optional questions (`QDEF` in `sales.tpl.html`): who they lose
-  clients to, services to grow (up to 3, or their own), spend (quick picks or a typed amount), how often they come back.
-  The next question shows as soon as one is answered or skipped (who they lose to waits until competitors are found);
+- With a team key, the Scan screen asks the owner up to 8 optional questions (`QDEF` in `sales.tpl.html`): who they lose
+  customers to, services to grow (up to 3, or their own), spend (quick picks or a typed amount), how often they come back,
+  new customers a month, where most find them, marketing spend a month, and what matters most right now.
+  The next question shows as soon as one is answered or skipped. Live scans wait (up to 20s) for the business type so the
+  wording fits; "who they lose to" waits for the competitors and "services" waits for the services list.
   "← Back" reopens the previous one with its answer filled in; each has "Not sure" (or similar) and "Skip".
   On desktop the card sits on the map; on phones, or once the scan is done, it moves into the side panel.
+- Services choices (`svcList()`): one list from the business's website and the searches the scan ran. Live audits get it from
+  the API (`{services}` event after the website step, saved with the audit as `services`, each `{n, src:["site","scan"]}`;
+  the API keeps only names written on the page). Demo audits use the services named in their own searches. The business
+  type's list only tops it up when both give fewer than 4. The card says where the list came from.
 - Wording and choices follow the business type (`CATS` → `qcat()`): patients for clinics, customers for dispensaries and
   shops, clients for vets and therapists; each type has its own services (`SVCO`) and spend quick picks (`QSPEND`).
   Dispensaries and shops get "a typical order" and "how often a regular comes back". Unknown types get generic choices.
 - Answers are saved in the browser and, for live audits, with the audit (`PUT /audits/<id>/answers`; `GET /audits/<id>`
   returns `answers`). They change later pages and are always tagged "From you": spend replaces the cited price,
   visits add first-year value to the plan's full potential, services move those searches to the top of Customers ask AI,
-  and the rival is tagged on the leaderboard and on "Who shows up when it isn't you".
+  and the rival is tagged on the leaderboard and on "Who shows up when it isn't you". New customers a month shows under
+  the worth page's full potential; new customers, where they find you and marketing spend show as "What you told us" on the
+  proposal, and the goal leads its "What we'll do" card.
 - What it's worth, with no usable search numbers (none for the area, or only nationwide): instead of dashes, the card shows
   what one new customer is worth (spend, times visits a year when answered) and says why there's no monthly figure.
 

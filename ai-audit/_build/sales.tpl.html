@@ -1112,6 +1112,12 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .qf .qback+.qfr{margin-left:calc(1.2*var(--u))}
 .qcard .qtx{margin-top:calc(.2*var(--u))}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.qf{flex-wrap:wrap}.qf .qback{font-size:14px;padding:10px 0}.qfr{gap:16px}}
+/* what the owner told us, on the proposal and the worth page */
+.prtold ul{list-style:none;margin:calc(.3*var(--u)) 0 0;padding:0;display:flex;flex-direction:column;gap:calc(.15*var(--u));font-size:calc(.95*var(--u));color:var(--body)}
+.prop .prtold li b{font:600 1em/1.35 var(--fb)!important;letter-spacing:0!important;color:var(--ink)}
+.nowl{margin-top:calc(.2*var(--u))}
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.prop .prc:first-child:has(.prtold) .prr{padding:calc(.45*var(--u)) 0}.prop .prc:has(.prtold) .prr b{font-size:calc(1.5*var(--u))}.prop .prh{font-size:calc(1.25*var(--u));margin:calc(.3*var(--u)) 0}.prop .prc>.hint{font-size:calc(.9*var(--u))}}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.prtold ul{font-size:13.5px}}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1377,7 +1383,17 @@ const SVCO={disp:['Flower','Edibles','Vapes','Pre-rolls','Concentrates','Deliver
  eye:['Eye exams','Glasses','Contacts','LASIK','Cataracts','Dry eye','Kids exams'],well:['Weight loss','IV therapy','Hormone therapy','Semaglutide','Vitamin shots','Peptides'],
  hair:['Hair transplant','PRP','Hair loss consult','Beard','Eyebrows'],vet:['Checkups','Vaccines','Dental','Surgery','Emergency','Grooming'],
  mind:['Therapy','Couples','Anxiety','Depression','Psychiatry','Telehealth'],clinic:['Primary care','Urgent care','Physicals','Telehealth','Lab work','Vaccines','Women\'s health','Weight loss']};
-const svcOpts=()=>SVCO[qcat()]||null;
+/* the services question's choices, one list from two sources: the business's own website and the searches the scan ran
+   (live audits: the API's "services" event, saved with the audit; demo audits: services named in their searches).
+   Topped up from the business type's list only when both together give fewer than 4. */
+const SVC_EXTRA=['Facials','Tattoo removal','IV therapy','Semaglutide','CoolSculpting','Dysport','Kybella','Sculptra','IPL','Skin care','Chemical peel','Dermal fillers','Morpheus8','Anti-aging','THC gummies','Recreational','Deals','Teeth whitening','Dental implants','Mole removal','Acne treatment','Breast augmentation'];
+const svcKey=x=>String(x).toLowerCase().replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(Boolean).map(w=>w.length>3&&/s$/.test(w)&&!/ss$/.test(w)?w.slice(0,-1):w).join(' ');
+function svcList(){const L=LIVE&&!LIVE.done&&!D?LIVE:null,src=(L&&L.services)||(D&&D.services)||null;const out=src?src.map(x=>({n:x.n||String(x),src:x.src||['scan']})):[];const has=n=>{const k=' '+svcKey(n)+' ';return out.some(o=>{const j=' '+svcKey(o.n)+' ';return j===k||j.includes(k)||k.includes(j)})};
+ if(!src&&D){const txt=' '+svcKey((D.vp||[]).map(r=>r[0]).concat(NB.concat(CRN).map(r=>r.q||'')).join(' | '))+' ';
+  (SVCO[qcat()]||[]).concat(SVC_EXTRA).forEach(n=>{const k=svcKey(n);if(k.length>2&&txt.includes(' '+k+' ')&&!has(n))out.push({n,src:['scan']})})}
+ if(out.length<4)(SVCO[qcat()]||[]).forEach(n=>{if(out.length<8&&!has(n))out.push({n,src:[]})});return out.slice(0,10)}
+const svcOpts=()=>{const l=svcList();return l.length?l.map(x=>x.n):null};
+const svcFrom=()=>{const l=svcList(),w=l.some(x=>x.src.includes('site')),q=l.some(x=>x.src.includes('scan'));return w&&q?'From your website and the searches we ran. ':w?'From your website. ':q?'From the searches we ran. ':''};
 const qnoun=()=>{const c=qcat();return c==='disp'||c==='shop'||!c?'customer':c==='vet'||c==='mind'?'client':'patient'};
 const QSPEND={disp:[40,60,80,120],shop:[25,50,75,100],spa:[250,450,700,1000],dent:[150,300,750,1500],derm:[150,300,500,900],plas:[1000,5000,9000,15000],chiro:[60,100,150,250],pt:[100,150,250,400],eye:[150,300,600,2500],well:[150,300,500,800],hair:[500,3000,8000,12000],vet:[80,150,300,600],mind:[100,150,200,300],clinic:[100,150,250,400]};
 const qretail=()=>/^(disp|shop)$/.test(qcat());
@@ -1387,7 +1403,13 @@ const QDEF=[
  {id:'grow',ctx:'While we ask AI about you',q:()=>qretail()?'What do you most want to sell more of?':'Which services do you most want more of?',why:'Pick up to 3, or add your own. We\'ll put those searches first.',kind:'multi'},
  {id:'spend',ctx:'While we write your audit',q:()=>qretail()?'What does a typical order come to?':'What does a new '+qnoun()+' usually spend on their first visit?',why:'Tap the closest, or type the amount. Used for what AI is worth to you.',kind:'money'},
  {id:'visits',ctx:'While we write your audit',q:()=>qretail()?'How often does a regular '+qnoun()+' come back?':'How many times does a typical '+qnoun()+' come back in a year?',why:'Shows what a new customer is worth over a year.',kind:'chips',
-  opts:()=>qretail()?[['Every week or two',36],['About monthly',12],['A few times a year',4],['Just once',1]]:[['Just once',1],['2 to 3 times',2.5],['4 to 6 times',5],['About monthly',12]]}];
+  opts:()=>qretail()?[['Every week or two',36],['About monthly',12],['A few times a year',4],['Just once',1]]:[['Just once',1],['2 to 3 times',2.5],['4 to 6 times',5],['About monthly',12]]},
+ {id:'newpm',ctx:'While we look you up across the web',q:()=>'About how many new '+qnoun()+'s do you get a month?',why:'So we can compare what AI could add with what you get now.',kind:'chips',opts:()=>[['Under 10',5],['10 to 30',20],['30 to 75',50],['75 to 150',110],['150+',200]]},
+ {id:'source',ctx:'While we look you up across the web',q:()=>'Where do most new '+qnoun()+'s find you today?',why:'We\'ll build on what already works.',kind:'say',opts:()=>['Google','Word of mouth','Instagram or Facebook','Walk-ins','Ads','AI assistants']},
+ {id:'mspend',ctx:'While we write your audit',q:()=>'What do you spend on marketing a month now?',why:'Ads, agencies and tools together. Only shown on your proposal.',kind:'chips',opts:()=>[['Nothing',0],['Under $1,000',500],['$1,000 to $3,000',2000],['$3,000 to $7,500',5000],['$7,500+',10000]]},
+ {id:'goal',ctx:'While we write your audit',q:()=>'What matters most to you right now?',why:'We\'ll lead your plan with it.',kind:'say',opts:()=>['More new '+qnoun()+'s',qretail()?'Sell more of one thing':'More of one service','Beat a competitor','Fill slow days','Be the one AI recommends']}];
+const ansText=id=>{const t=ansLabel(id);if(t==null)return null;if(id==='newpm')return {'Under 10':'fewer than 10','150+':'150 or more'}[t]||'about '+t;if(id==='source')return t==='AI assistants'?'AI assistants':t==='Google'?'Google':t==='Instagram or Facebook'?'Instagram or Facebook':t.toLowerCase();return t};
+const ansLabel=id=>{const d=QDEF.find(x=>x.id===id),v=ANS[id];if(v==null||!d)return null;if(d.kind==='chips'){const o=d.opts().find(o=>o[1]===v);return o?o[0]:String(v)}return String(v)};
 const qText=d=>typeof d.q==='function'?d.q():d.q;
 
 const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
@@ -1551,7 +1573,7 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
  /* questions for the owner while the scan runs: one at a time, each with its step, all skippable */
  const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null,qForce=null;const QH=[];
  /* the next question: one the rep went back to, else the first not yet answered (who they lose to waits for the competitors) */
- function qNext(done){if(!askOn)return null;if(qForce){const f=QDEF.find(d=>d.id===qForce);if(f)return f}return QDEF.find(d=>!QDONE.has(d.id)&&(d.id!=='rival'||rivalOpts().length))||null}
+ function qNext(done){if(!askOn)return null;if(LV&&!LV.svc&&!LV.done&&!done&&Date.now()-LV.t0<20000)return null; /* live: wait (up to 20s) for the business type, so the wording fits */if(qForce){const f=QDEF.find(d=>d.id===qForce);if(f)return f}return QDEF.find(d=>!QDONE.has(d.id)&&(d.id!=='rival'||rivalOpts().length)&&(d.id!=='grow'||!LV||LV.services||LV.done||done))||null}
  function rivalOpts(){const L=LV||LIVE;const c=L&&L.comps?L.comps.map(x=>x.n):WHO.slice(1);return c.filter(Boolean).slice(0,4)}
  let qHold=false;
  /* save (or skip), show it on the card for a moment, then the next question */
@@ -1566,15 +1588,16 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
  function drawQ(done){if(qHold)return;const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
   if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m')+QH.length:null;if(key===qShown)return;qShown=key;if(!slot)return;
   if(!d){slot.textContent='';return}
-  const n=QDEF.indexOf(d)+1,prev=ANS[d.id],opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():d.kind==='chips'?d.opts():null,on=v=>' aria-pressed="'+(v?'true':'false')+'"';
+  const n=QDEF.indexOf(d)+1,prev=ANS[d.id],opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():d.kind==='chips'||d.kind==='say'?d.opts():null,on=v=>' aria-pressed="'+(v?'true':'false')+'"';
   let inp='',alt='';
   if(d.kind==='pick'){const mine=prev&&!opts.includes(prev)?prev:'';inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt"'+on(mine)+' data-other>Someone else</button></div><div class="qrow2"'+(mine?'':' hidden')+'><input class="qtx" id="q-other" maxlength="80" placeholder="Their name" aria-label="Competitor name" value="'+X(mine)+'"><button type="button" class="qgo"'+(mine?'':' disabled')+'>Save →</button></div>';alt='No one in particular'}
   else if(d.kind==='multi'){const pv=Array.isArray(prev)?prev:[],own=pv.filter(x=>!(opts||[]).includes(x));
    inp=(opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(pv.includes(o))+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'')+'<input class="qtx" id="q-txt" maxlength="120" placeholder="'+(opts?'Something else? Type it here':'For example: implants, whitening')+'" aria-label="Other services" value="'+X(own.join(', '))+'">';alt='Not sure yet'}
   else if(d.kind==='money'){const P=QSPEND[qcat()]||[50,100,250,500];inp='<div class="qopts">'+P.map((v,j)=>'<button type="button" class="qo"'+on(prev===v)+' data-m="'+v+'">$'+fmt(v)+(j===P.length-1?'+':'')+'</button>').join('')+'</div><label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="Or type it" aria-label="Amount" value="'+(prev&&!P.includes(prev)?prev:'')+'"></label>';alt='Not sure'}
+  else if(d.kind==='say'){inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-s="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>';alt='Not sure'}
   else{inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o[1])+' data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';alt='Not sure'}
   const save=d.kind==='multi'||d.kind==='money';
-  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
+  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+(d.kind==='multi'?svcFrom():'')+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
   const card=slot.firstChild;let sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
   const typed=()=>((card.querySelector('#q-txt')||{}).value||'').split(/[,;]+/).map(x=>x.trim()).filter(Boolean);
   const ready=()=>{const g=card.querySelector('.qf .qgo')||card.querySelector('.qrow2 .qgo');if(!g)return;
@@ -1588,6 +1611,7 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
     if(d.kind==='pick')return qAnswer(d.id,sel[0],card,sel[0]);const v=[...new Set(sel.concat(typed()))].slice(0,3);return qAnswer(d.id,v,card,v.join(', '))}
    if(b.dataset.m){b.setAttribute('aria-pressed','true');b.classList.add('hit');const v=+b.dataset.m;return qAnswer(d.id,v,card,'$'+fmt(v))}
    if(b.dataset.n){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,+b.dataset.n,card,b.textContent)}
+   if(b.dataset.s!=null){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,b.dataset.s,card,b.dataset.s)}
    if(b.hasAttribute('data-other')){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('.qrow2').hidden=false;card.querySelector('#q-other').focus();sel=[];ready();return}
    if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));b.classList.add('hit');return qAnswer(d.id,b.dataset.v,card,b.dataset.v)}
    if(d.kind==='multi'){const o=b.getAttribute('aria-pressed')!=='true';if(o&&sel.length+typed().length>=3){b.classList.remove('nope');void b.offsetWidth;b.classList.add('nope');return}
@@ -1645,6 +1669,7 @@ function vScore(){const sc=D.score,ab=sc.you-sc.avg;const sv=S[0]&&S[0].v||[],la
   '<div class="g"><span class="lbl">At stake</span><b><span id="sc-g">'+$$(tot==null?null:tot*(1-sh))+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust*(1-sh)))+(rivalAI?' go to a competitor AI names instead':' go to someone else')+'</span></div>'+
   '<div class="t"><span class="lbl">Full potential</span><b><span id="sc-t">'+$$(tot)+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust))+' new customers a month</span></div></div>'+
   '<div class="bar2" aria-hidden="true"><i style="width:'+(sh*100)+'%;background:var(--ok)"></i><i style="width:'+((1-sh)*100)+'%;background:var(--coral)"></i></div>'+
+  (ANS.newpm>0&&!noVol?'<div class="hint nowl">You get <b>'+ansText('newpm')+'</b> new '+qnoun()+'s a month now <span class="fromu">From you</span>. Full potential from AI is about <b>'+fmt(cust)+'</b> a month.</div>':'')+
   '<div style="margin-top:calc(1.6*var(--u))"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(ANS.spend?'Your answer: $'+fmt(ANS.spend):PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div></div>')}
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+T+'</div>'+body+'</div>'+popHTML()+'</div>';
  const r=$('#sc-r');if(r){const hide=!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'),upd=set=>{if(set)price=+r.value;const pv=price==null?+r.value:price;r.style.setProperty('--p',((pv-RMIN)/(RMAX-RMIN)*100)+'%');if(price==null)return;const tot=TOTAL*0.023*price,sh=SHARE??0,d=v=>hide?'–':'$'+fmt(v);$('#sc-p').textContent='$'+fmt(price);const w=$('#sc-w');if(w){w.textContent=d(tot*sh);$('#sc-g').textContent=d(tot*(1-sh));$('#sc-t').textContent=d(tot)}const v=$('#sc-v');if(v)v.textContent='$'+fmt(price*(ANS.visits>1?ANS.visits:1))};r.addEventListener('input',()=>upd(1));upd(0)}}
@@ -1819,11 +1844,13 @@ function vProp(){const sc=D.score;const tally={};CRN.concat(NB).forEach(r=>(r.c|
  const A='<div class="card pad col prc fade"><span class="kick">Where you are today</span>'+
   row('AI score','<em style="color:'+(sc.you>=70?'var(--ok)':sc.you>=40?'var(--warn)':'var(--red)')+'">'+sc.you+'</em><small> / 100</small>',sc.avg!=null?'Area average '+sc.avg+' · top nearby '+sc.top:'')+
   (D.scan&&D.scan.answers_total?row('AI answers that name you',D.scan.answers_naming_you+'<small> of '+D.scan.answers_total+'</small>',''):'')+
-  (rival?row(ANS.rival?'Who you lose clients to <span class="fromu">From you</span>':'Named most when AI skips you',X(rival),''):'')+
+  (rival?row(ANS.rival?'Who you lose '+qnoun()+'s to <span class="fromu">From you</span>':'Named most when AI skips you',X(rival),''):'')+
   row('The 11 checks','<em style="color:var(--ok)">'+cnt.p+'</em><small> passed · </small><em style="color:var(--warn)">'+cnt.w+'</em><small> need work · </small><em style="color:var(--red)">'+cnt.f+'</em><small> failed</small>','')+
+  (ANS.newpm!=null||ANS.source||ANS.mspend!=null?'<div class="prr prtold"><span>What you told us <span class="fromu">From you</span></span><ul>'+(ANS.newpm!=null?'<li><b>'+X(ansText('newpm')).replace(/^\w/,c=>c.toUpperCase())+'</b> new '+qnoun()+'s a month</li>':'')+(ANS.source?'<li>Most find you through <b>'+X(ansText('source'))+'</b></li>':'')+(ANS.mspend!=null?'<li>'+(ANS.mspend===0?'<b>Nothing</b> on marketing now':'<b>'+X(ansLabel('mspend'))+'</b> a month on marketing now')+'</li>':'')+'</ul></div>':'')+
   (stake!=null?row('Going to others each month','$'+fmt(stake),'Estimated from your searches and average spend'+(ANS.spend?' (from you)':'')):'')+'</div>';
  const Bc='<div class="card pad col prc fade" style="animation-delay:.1s"><span class="kick">What we\'ll do</span><div class="prh">One team runs all 11 checks from one verified Blueprint of your business.</div>'+
-  (ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
+  (ANS.goal?'<div class="hint">Your goal: <b style="color:var(--ink)">'+X(ANS.goal)+'</b>'+(ANS.grow&&ANS.grow.length?'. Starting with <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b>':'')+' <span class="fromu">From you</span></div>':'')+
+  (!ANS.goal&&ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
   '<ol class="prl">'+PHS.map(p=>'<li><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span>'+p[2]+'</span></li>').join('')+'</ol>'+
   '<div class="g90" style="margin-left:0;align-self:flex-start"><i></i>In AI answers by day 90, guaranteed</div><div class="hint" style="margin-top:auto">Every item waits for your approval. The full 12-month plan is in Plan, page 3.</div></div>';
  const Cc='<div class="card col new prn fade" style="animation-delay:.2s"><span class="kick" style="color:var(--blue3)">Your plan</span><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="cdn" hidden></div>'+
@@ -2049,7 +2076,7 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
    while((n=buf.indexOf('\n'))>=0){const line=buf.slice(0,n).trim();buf=buf.slice(n+1);if(!line)continue;let m;try{m=JSON.parse(line)}catch(e){continue}if(LIVE!==L)return;
-    if(m.comps)L.comps=m.comps;
+    if(m.comps)L.comps=m.comps;if(m.services)L.services=m.services;
     if(m.id&&!m.d){aid=m.id;L.aid=aid;ANS_AID=aid;ANSK='a:'+aid;ansSave();try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#scan')}catch(e){}}
     if(m.biz){L.name=m.biz.name||L.name;if(m.biz.svc)L.svc=m.biz.svc;if(m.biz.short)L.short=m.biz.short;setHit(m.biz);if(L.hit&&m.biz.svc)L.hit.cq=m.biz.svc}
     if(m.find)m.find.forEach(f=>{L.queue.push(f);L.said.add(m.at)});
@@ -2059,6 +2086,7 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
     if(m.err)throw {msg:m.msg};
     if(m.d){out=m.d;slug=m.slug;aid=m.id||aid;if(Array.isArray(m.notes)&&!out.notes)out.notes=m.notes}}}
   if(!out||!out.biz||!out.hit)throw {msg:'We hit a snag finishing this audit.'};
+  if(!out.services&&L.services)out.services=L.services;
   const key=slug||('live-'+aid);SETS[key]=out;SCANNED.add(key);const wasScan=cur==='scan';setBiz(key);L.done=true;mapFocused=key;
   try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#'+cur)}catch(e){}
   if(!wasScan){document.title='Ready · '+ME+' · AI Visibility Audit';render()}})().catch(e=>fail(e&&e.msg))}
