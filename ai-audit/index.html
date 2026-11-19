@@ -1353,8 +1353,9 @@ const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 /* the three things clients ask about first; shown wherever trust matters most */
 const TRUST_ICONS=['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'];
 const TRUST_ICONS2=['<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8 12.2 2.7 2.7L16 9.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','<rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 10h16M9 3v4M15 3v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'];
-/* HIPAA and the insurance only matter to practices that handle patient information; the home screen (no business yet) shows them */
-const trustMed=()=>{if(!D&&!LIVE)return true;return /^(spa|dent|derm|plas|chiro|pt|eye|well|hair|clinic|mind)$/.test(qcat())};
+/* HIPAA and the insurance only matter to practices that handle patient information; the first screen (no business yet) is
+   seen by every kind of business, so it shows the general ones */
+const trustMed=()=>{if(!D&&!LIVE)return false;return /^(spa|dent|derm|plas|chiro|pt|eye|well|hair|clinic|mind)$/.test(qcat())};
 const TRUST=where=>where==='side'&&!trustMed()?'':'<div class="tbadges tb-'+where+'" role="list" aria-label="Why it\'s safe to work with us">'+(trustMed()?[
  ['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','$750K insured'],
  ['<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','HIPAA BAA'],
@@ -1469,7 +1470,7 @@ const dots=(n,seed)=>{let h='';for(let i=0;i<n;i++)h+='<i class="dotp dr" style=
 
 /* ---------- FIND (home) ---------- */
 const HITS=Object.keys(SETS).map(k=>Object.assign({},SETS[k].hit,{slug:k,re:new RegExp(SETS[k].hit.match,'i')}));
-const HQ=['best med spa near me','botox near me','dentist open saturday','best dermatologist downtown','dispensary near me','lip filler cost','who does the best rhinoplasty?','emergency dentist near me'];
+const HQ=['best plumber near me','dentist open saturday','dispensary near me','who has the best reviews?','best med spa near me','emergency vet near me','hair salon open now','best pizza downtown'];
 function teamBar(){return TEAM?'<div class="thome on"><span class="tkon"><i></i>Team mode: picking a business runs the live scan</span><button type="button" class="tkout">Sign out</button></div>':'<form class="tkey thome" data-tkh novalidate><button type="button" class="tkopen">Team sign-in</button><div class="tkrow"><input type="password" autocomplete="current-password" placeholder="Team key" aria-label="Team key" maxlength="200"><button type="submit" class="pbtn">Sign in</button></div><p class="tkm" role="status"></p></form>'}
 STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-tkh]');if(!f)return;e.preventDefault();const k=(f.querySelector('input').value||'').trim(),m=f.querySelector('.tkm');if(!k)return;m.textContent='Checking the key…';
  const ok=()=>{TEAM=k;try{localStorage.setItem('lair-team',k)}catch(er){}render()};
