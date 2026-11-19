@@ -200,12 +200,6 @@ QUIKTOX, with a flat $199 per treatment and a $45 monthly membership.
 
 Skin Perfect Medical Aesthetics, open since 2004 with 589 Google reviews.
 
-## Related
-
-* [Most affordable Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/affordable/)
-* [Best Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/)
-* [Best med spas in Costa Mesa](/home/drafts/home-2/best/med-spas/costa-mesa-ca/)
-* [All medical spas in Costa Mesa](https://localairegistry.com/leaderboards/ca/costa-mesa/med-spa)
-* Botox prices in Orange County, 2026
+## Related * [Most affordable Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/affordable/) * [Best Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/) * [Best med spas in Costa Mesa](/home/drafts/home-2/best/med-spas/costa-mesa-ca/) * [All medical spas in Costa Mesa](https://localairegistry.com/leaderboards/ca/costa-mesa/med-spa) * Botox prices in Orange County, 2026
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.

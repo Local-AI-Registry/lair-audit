@@ -148,12 +148,6 @@ QUIKTOX, at $45 a month. TIEV Med Spa's memberships run $149 to $299 a month and
 
 Most providers charge $10 to $20 a unit, or $200 to $400 for the 20-unit frown-line dose. Belle Vie lists a typical first visit at $250 to $600. QUIKTOX charges a flat $199.
 
-## Related
-
-* [Most affordable Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/affordable/)
-* [Best Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/)
-* [Best med spas in Costa Mesa](/home/drafts/home-2/best/med-spas/costa-mesa-ca/)
-* [All medical spas in Costa Mesa](https://localairegistry.com/leaderboards/ca/costa-mesa/med-spa)
-* Botox prices in Orange County, 2026
+## Related * [Most affordable Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/affordable/) * [Best Botox in Costa Mesa](/home/drafts/home-2/best/botox/costa-mesa-ca/) * [Best med spas in Costa Mesa](/home/drafts/home-2/best/med-spas/costa-mesa-ca/) * [All medical spas in Costa Mesa](https://localairegistry.com/leaderboards/ca/costa-mesa/med-spa) * Botox prices in Orange County, 2026
 
 AI is evolving every day, and Local AI Registry's dedicated local AI research team is always figuring out the best approach.
