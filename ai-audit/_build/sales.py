@@ -60,4 +60,10 @@ CMP, PLAN12 = blueprint(CMP), blueprint(PLAN12)
 data = 'const SETS=' + json.dumps(SETS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';const CMP=' + json.dumps(CMP, ensure_ascii=False) + ';const PLAN12=' + json.dumps(PLAN12) + ';'
 t = t.replace('/*__DATA__*/', data.replace('</', '<\\/'))
 os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
+# the 11 "how we fix it" illustrations (from the classic page) go in their own file, loaded only when the Blueprint slide opens
+def blueprint_ill(h):  # the classic drawings say "record"; this page calls it the Blueprint
+    h = h.replace('font-size="7.5" font-weight="800" fill="#fff">RECORD<', 'font-size="7" font-weight="800" fill="#fff">BLUEPRINT<')
+    return h.replace('Your record', 'Your Blueprint').replace('your record', 'your Blueprint')
+json.dump({x['c']: blueprint_ill(x['html']) for x in json.load(open(D + 'hud_fix.json'))},
+          open(os.path.join(os.path.dirname(os.path.abspath(out)), 'fix-ill.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
 open(out, 'w').write(t); print('ok', out, len(t), list(SETS))

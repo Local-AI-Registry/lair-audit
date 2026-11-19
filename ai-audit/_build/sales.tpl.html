@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="AI Audit">
+<link rel="apple-touch-icon" href="../home/research/apple-touch-icon.png">
 <title>AI Visibility Audit · Local AI Registry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../home/assets/fonts/hanken.woff2">
@@ -651,6 +657,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--fb);over
  .scan4 .pin span{font-size:11px;max-width:34vw;overflow:hidden;text-overflow:ellipsis}
  .scan4 .pin.me span{max-width:70vw}
  .scan4 .sp{position:absolute;left:12px;right:12px;top:auto;bottom:calc(12px + env(safe-area-inset-bottom,0px));width:auto;margin:0;padding:16px 18px;gap:10px;border-radius:20px}
+ .scan4 .sp{max-height:calc(100dvh - 76px - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));overflow-y:auto;overscroll-behavior:contain}
  .scan4 .sp .lg,.scan4 .sp .kick{display:none}
  .spn{font-size:17px;margin:0}
  .ph4{gap:0}
@@ -945,7 +952,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .prbook{text-decoration:none;display:inline-flex}
 .prpay{all:unset;cursor:pointer;color:#fff;font:600 calc(1*var(--u)) var(--fb);text-decoration:underline;text-underline-offset:3px;opacity:.85}
 .prpay:hover{opacity:1}.prpay:focus-visible{outline:2px solid #fff;outline-offset:3px}
-.prmeta{display:flex;flex-direction:column;align-items:flex-end;gap:calc(.3*var(--u))}
+.prmeta{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:baseline;column-gap:calc(1.4*var(--u));row-gap:calc(.3*var(--u))}
 .prfoot{text-align:center}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
  .ttlrow{align-items:flex-start}.ptabs{overflow-x:auto;max-width:100%;scrollbar-width:none}.ptabs button{white-space:nowrap}
@@ -957,7 +964,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
  .pnext{grid-template-columns:1fr;flex:none}.pnc{padding:14px 56px 14px 16px;min-height:72px}.pnc b{font-size:16px}.pnc>span:not(.kick){font-size:13px}.pnc i{width:32px;height:32px;right:14px;font-size:15px}
  .prop{grid-template-columns:1fr}.prr span{font-size:13px}.prr b{font-size:22px}.prr b small,.prr>small{font-size:12px}
  .prh{font-size:17px}.prl li{grid-template-columns:76px 1fr;padding:10px 12px}.prl .m{font-size:11px}.prl b{font-size:15px}.prl li>span:last-child{font-size:13px}
- .prn .newp{font-size:40px}.prpay{font-size:14px;padding:8px 0}.prmeta{align-items:flex-start}
+ .prn .newp{font-size:40px}.prpay{font-size:14px;padding:8px 0}.prmeta{align-items:flex-start;justify-content:flex-start;column-gap:16px}
 }
 
 /* ---------- checkout steps (Stripe) and rep follow-ups ---------- */
@@ -973,7 +980,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .ckok{width:48px;height:48px;border-radius:50%;background:var(--ok);color:#fff;display:grid;place-items:center;font:800 24px var(--fb)}
 .ckm a{color:inherit;font-weight:700}
 .ldf{gap:12px;width:min(520px,100%)}.ldc{display:flex;align-items:center;gap:10px;font:600 14px var(--fb);color:var(--ink)}.ldc input{width:20px;height:20px;accent-color:var(--blue)}
-.prmeta .prlead{font-size:calc(.9*var(--u));color:var(--muted)}
+.prmeta .prlead{font-size:inherit}
 .paytoast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);z-index:50;padding:14px 20px;border-radius:14px;font:700 15px var(--fb);box-shadow:0 20px 50px rgba(11,26,46,.25);max-width:calc(100vw - 32px)}
 .paytoast.ok{background:var(--ok);color:#fff}.paytoast.er{background:var(--red);color:#fff}
 #sug li.serr,#sug li.swait{cursor:default;background:#FFF8EC}#sug li.serr small{color:var(--red);font-weight:600}#sug li.swait{background:#fff}
@@ -1031,6 +1038,86 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .tkout{all:unset;cursor:pointer;font:600 calc(.85*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.thome,.tkon,.tkout,.thome .tkopen{font-size:13px}.thome .tkrow{max-width:none}}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tile .th{flex-direction:column-reverse;align-items:flex-start;gap:6px}}
+
+/* ---------- phones in person: bottom bar, swipe row for case studies, agency picker ---------- */
+#dock{display:none}
+.cmpsw{display:none;gap:6px;margin-bottom:10px}
+.cmpsw button{all:unset;cursor:pointer;flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 4px;border-radius:12px;font:600 12.5px var(--fb);color:var(--muted);box-shadow:inset 0 0 0 1px var(--rule);min-height:44px;box-sizing:border-box;justify-content:center}
+.cmpsw button small{font:500 11.5px var(--fb);color:var(--muted)}
+.cmpsw button.on{background:var(--ink);color:#fff;box-shadow:none}.cmpsw button.on small{color:#C8D2E6}
+.cmpsw button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.tcount{display:none}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ body.docked .top .stepper{display:none}
+ body.docked .scr>.body{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))!important}
+ #dock{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;align-items:center;gap:10px;padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--rule),0 -8px 24px rgba(11,26,46,.06)}
+ #dock button{all:unset;cursor:pointer;box-sizing:border-box;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font:600 15px var(--fb);-webkit-tap-highlight-color:transparent;transition:transform .12s}
+ #dock button:active{transform:scale(.96)}
+ #dock button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+ #dock .dk-b{width:48px;background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--rule);font-size:18px}
+ #dock .dk-n{padding:0 14px 0 20px;background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(31,79,224,.25)}
+ #dock .dk-n .chv{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.18);font-size:15px}
+ #dock button[disabled]{opacity:.4;cursor:default}
+ #dock .dk-m{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+ #dock .dk-m b{font:600 14px var(--fb);color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+ #dock .dk-m>span{display:inline-flex;align-items:center;gap:7px;font:500 12px var(--fb);color:var(--muted)}
+ #dock .dk-d{display:inline-flex;gap:3px}#dock .dk-d i{width:6px;height:6px;border-radius:9px;background:var(--rule)}#dock .dk-d i.on{width:14px;background:var(--blue)}
+ .body .whyg .tiles{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 10px;scrollbar-width:none;overscroll-behavior-x:contain}
+ .body .whyg .tiles::-webkit-scrollbar{display:none}
+ .body .whyg .tiles>.tile{flex:0 0 84%;scroll-snap-align:center}
+ .body .whyg .tiles>.tcta{display:none}
+ #dock .dk-sp{width:48px;flex:none}
+ @media (max-height:500px){#dock{padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom,0px))}#dock button{min-height:40px}#dock .dk-b{width:40px}#dock .dk-m>span{display:none}body.docked .scr>.body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))!important}}
+ .tcount{display:flex;justify-content:center;align-items:center;gap:6px;font:500 12.5px var(--fb);color:var(--muted);margin-top:-2px}
+ .tcount i{width:6px;height:6px;border-radius:9px;background:var(--rule);transition:all .2s}.tcount i.on{width:14px;background:var(--blue)}
+}
+/* proposal: compact phases so the middle card fits short laptop and projector screens */
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){
+ .prop .prl{gap:calc(.45*var(--u));margin:calc(.3*var(--u)) 0 calc(.6*var(--u))}
+ .prop .prl li{padding:calc(.5*var(--u)) calc(.8*var(--u));row-gap:calc(.1*var(--u))}
+ .prop .prl li>span:last-child{font-size:calc(.9*var(--u));line-height:1.3}
+ .prop .prc{min-height:0;overflow:hidden}
+}
+/* Blueprint slide: each check's "how we fix it" illustration fills the rest of the card */
+:root{--rule2:#E6EAF0}
+.fixill{flex:1;min-height:calc(10*var(--u));display:flex;align-items:center;justify-content:center;background:var(--bg);border-radius:calc(1*var(--u));padding:calc(.8*var(--u));overflow:hidden}
+.fixill:empty{background:transparent}
+.fixill .stage{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.fixill svg{width:100%;height:100%;max-height:calc(26*var(--u));display:block}
+.fxv .fi{opacity:0;transform-box:fill-box;transform-origin:center;animation:fxi .7s cubic-bezier(.22,1,.36,1) forwards}
+.fxv .fpop{animation-name:fxp}
+.fxv .ffl{animation:fxi .7s cubic-bezier(.22,1,.36,1) forwards,fxf 4.5s ease-in-out 1.2s infinite}
+.fxv .fdraw{stroke-dasharray:100;stroke-dashoffset:100;animation:fxdr 1.2s cubic-bezier(.22,1,.36,1) forwards}
+.fxv .frot{transform-box:view-box;transform-origin:186px 112px;transform:rotate(-80deg);animation:fxr 1.2s cubic-bezier(.22,1,.36,1) forwards}
+.fxv .fgrow{transform-box:fill-box;transform-origin:left center;transform:scaleX(0);animation:fxg 1s cubic-bezier(.22,1,.36,1) forwards}
+@keyframes fxi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@keyframes fxp{0%{opacity:0;transform:scale(.4)}60%{opacity:1;transform:scale(1.12)}100%{opacity:1;transform:scale(1)}}
+@keyframes fxf{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes fxdr{to{stroke-dashoffset:8}}
+@keyframes fxr{to{transform:rotate(62deg)}}
+@keyframes fxg{to{transform:scaleX(1)}}
+@media (prefers-reduced-motion:reduce){.fxv .fi,.fxv .ffl,.fxv .fdraw,.fxv .frot,.fxv .fgrow{animation:none;opacity:1;transform:none;stroke-dashoffset:8}}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.fixill{min-height:0;aspect-ratio:16/9;flex:none;padding:8px}.fixill svg{max-height:none}}
+/* what it's worth, when Google has no usable search numbers: one customer's value instead of dashes */
+.novol .nvv{display:flex;align-items:baseline;gap:calc(1*var(--u));flex-wrap:wrap}
+.novol .nvv b{font:500 calc(4.6*var(--u))/1 var(--fu);letter-spacing:-.02em;color:var(--ok)}
+.novol .nvv .c{font-size:calc(1.15*var(--u));color:var(--muted)}
+.novol .sub{max-width:calc(70*var(--u))}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.novol .nvv b{font-size:40px}.novol .nvv .c{font-size:14px}}
+
+/* questions: Back on the left, Not sure and Skip together, amounts as quick picks above the box */
+.qf .qback{all:unset;cursor:pointer;font:600 calc(.98*var(--u)) var(--fb);color:var(--ink);padding:calc(.3*var(--u)) 0}
+.qf .qback:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.qfr{display:flex;gap:calc(1.2*var(--u));align-items:center;margin-right:auto}
+.qf .qback+.qfr{margin-left:calc(1.2*var(--u))}
+.qcard .qtx{margin-top:calc(.2*var(--u))}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.qf{flex-wrap:wrap}.qf .qback{font-size:14px;padding:10px 0}.qfr{gap:16px}}
+/* what the owner told us, on the proposal and the worth page */
+.prtold ul{list-style:none;margin:calc(.3*var(--u)) 0 0;padding:0;display:flex;flex-direction:column;gap:calc(.15*var(--u));font-size:calc(.95*var(--u));color:var(--body)}
+.prop .prtold li b{font:600 1em/1.35 var(--fb)!important;letter-spacing:0!important;color:var(--ink)}
+.nowl{margin-top:calc(.2*var(--u))}
+@media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.prop .prc:first-child:has(.prtold) .prr{padding:calc(.45*var(--u)) 0}.prop .prc:has(.prtold) .prr b{font-size:calc(1.5*var(--u))}.prop .prh{font-size:calc(1.25*var(--u));margin:calc(.3*var(--u)) 0}.prop .prc>.hint{font-size:calc(.9*var(--u))}}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.prtold ul{font-size:13.5px}}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1168,9 +1255,14 @@ a.btn{text-decoration:none}
 }
 /* small phones: compare table shows the strongest agency next to us; the 12-month grid uses one letter per month */
 @media (max-width:560px){
- .cmp2 th:nth-child(2),.cmp2 td:nth-child(2),.cmp2 th:nth-child(3),.cmp2 td:nth-child(3){display:none}
+ .cmpw .cmp2 :is(th,td):is(:nth-child(2),:nth-child(3),:nth-child(4)):not([colspan]){display:none}
+ .cmpw[data-a="2"] .cmp2 :is(th,td):nth-child(2),.cmpw[data-a="3"] .cmp2 :is(th,td):nth-child(3),.cmpw[data-a="4"] .cmp2 :is(th,td):nth-child(4){display:table-cell!important}
+ .cmpsw{display:flex}
  .cmp2 td:first-child{width:44%}.cmp2 td,.cmp2 th{padding-inline:6px}
- .pl12 td:first-child{min-width:0;width:40%;white-space:normal}.pl12 td{padding:3px 1px}.pl12 i{min-width:0}
+ .pl12,.pl12 thead,.pl12 tbody{display:block}.pl12 tr{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px}
+ .pl12 thead th:first-child{display:none}.pl12 thead th{padding:0 0 6px;font-size:10.5px}
+ .pl12 tbody tr{padding:9px 0;border-bottom:1px solid var(--rule)}.pl12 td{border:0;padding:0}.pl12 i{min-width:0;height:9px}
+ .pl12 tbody td:first-child{grid-column:1/-1;width:auto;min-width:0;white-space:normal;padding:0 0 7px;font-size:13.5px}
 }
 /* touch screens: everything tappable is at least 44px */
 @media (pointer:coarse){
@@ -1260,10 +1352,13 @@ const fmt=n=>n==null||isNaN(n)?'–':Math.round(n).toLocaleString('en-US');
 const fmt1=n=>n==null?'–':(Math.round(n*10)/10).toLocaleString('en-US');
 /* the three things clients ask about first; shown wherever trust matters most */
 const TRUST_ICONS=['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>'];
-const TRUST=where=>'<div class="tbadges tb-'+where+'" role="list" aria-label="Why it\'s safe to work with us">'+[
+const TRUST_ICONS2=['<circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8 12.2 2.7 2.7L16 9.6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','<rect x="4" y="5" width="16" height="15" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 10h16M9 3v4M15 3v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>'];
+/* HIPAA and the insurance only matter to practices that handle patient information; the home screen (no business yet) shows them */
+const trustMed=()=>{if(!D&&!LIVE)return true;return /^(spa|dent|derm|plas|chiro|pt|eye|well|hair|clinic|mind)$/.test(qcat())};
+const TRUST=where=>where==='side'&&!trustMed()?'':'<div class="tbadges tb-'+where+'" role="list" aria-label="Why it\'s safe to work with us">'+(trustMed()?[
  ['<path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>','$750K insured'],
  ['<rect x="5" y="10" width="14" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="15.5" r="1.6" fill="currentColor"/>','HIPAA BAA'],
- ['<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>','US-based team']]
+ ['<path d="M5 21V4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5 4h12l-2.5 4L17 12H5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>','US-based team']]:[[TRUST_ICONS2[0],'Guaranteed by day 90'],[TRUST_ICONS2[1],'Month to month'],[TRUST_ICONS[2],'US-based team']])
  .map(b=>'<span role="listitem"><svg viewBox="0 0 24 24" aria-hidden="true">'+b[0]+'</svg><b>'+b[1]+'</b></span>').join('')+'</div>';
 const LOGO='<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>';
 const QP=new URLSearchParams(location.search);
@@ -1278,14 +1373,46 @@ function ansLoad(k,server){ANSK=k;let a={};try{a=JSON.parse(localStorage.getItem
 function ansSave(){if(!ANSK)return;try{localStorage.setItem('lair-ans:'+ANSK,JSON.stringify(ANS))}catch(e){}
  if(ANS_AID&&TEAM)fetch(API+'/audits/'+encodeURIComponent(ANS_AID)+'/answers',{method:'PUT',headers:{'X-Team-Key':TEAM,'Content-Type':'application/json'},body:JSON.stringify(ANS)}).catch(()=>{})}
 function applyAns(){if(!D)return;if(ANS.spend>0){price=Math.round(ANS.spend);RMIN=Math.min(RMIN,Math.max(5,Math.round(price/4)));RMAX=Math.max(RMAX,Math.round(price*3))}}
-const SVCS=[[/dispens|cannabis|weed|marijuana/i,['Flower','Edibles','Vapes','Pre-rolls','Concentrates','Delivery']],[/med ?spa|aesthetic|botox|inject/i,['Botox','Lip filler','Laser hair removal','Microneedling','Hydrafacial','Body contouring']],[/dent|orthodont/i,['Cleanings','Implants','Invisalign','Whitening','Veneers','Emergency visits']],[/derm|skin/i,['Skin checks','Acne','Botox','Laser','Mole removal','Eczema']],[/plastic|cosmetic surg/i,['Breast','Tummy tuck','Facelift','Rhinoplasty','Liposuction','Eyelids']]];
-const svcOpts=()=>{const sv=(B&&B.svc)||(LIVE&&LIVE.svc)||'';const m=SVCS.find(x=>x[0].test(sv));return m?m[1]:null};
-/* when each question appears: the scan phase it belongs to (0 profile, 1 competition, 2 website, 3 AI, 4 web, 5 writing) */
+/* the owner's business type, from Google's category and the name: sets the wording and the choices in the questions */
+const CATS=[[/dispens|cannabis|marijuana|weed/i,'disp'],[/smoke|vape|cbd|hemp|kratom|head shop/i,'shop'],[/med ?spa|aesthetic|botox|inject|laser clinic/i,'spa'],[/dent|orthodont/i,'dent'],[/derm|skin/i,'derm'],[/plastic|cosmetic surg/i,'plas'],[/chiro/i,'chiro'],[/physical therap|physiotherap|sports med/i,'pt'],[/optom|eye|lasik|ophthal|vision/i,'eye'],[/weight|\biv\b|hormone|wellness|longevity|ketamine/i,'well'],[/hair (restor|transplant|loss)/i,'hair'],[/veterin|animal|\bpet\b/i,'vet'],[/therap|counsel|psych|mental/i,'mind'],[/urgent|primary care|family (medicine|practice)|clinic|medical|doctor|physician|health|podiat|allerg|surgeon|surgery|cardio|orthop|pediatr|gyn|urolog|audiolog|acupunct|hospital|nurs/i,'clinic']];
+const qcat=()=>{const sv=((B&&B.svc)||(LIVE&&LIVE.svc)||'')+' '+((B&&B.full)||(LIVE&&LIVE.name)||'');const m=CATS.find(x=>x[0].test(sv));return m?m[1]:''};
+const SVCO={disp:['Flower','Edibles','Vapes','Pre-rolls','Concentrates','Delivery','Daily deals','Medical cards'],shop:['Vapes','CBD','Glass','Disposables','Kratom','Hookah'],
+ spa:['Botox','Lip filler','Laser hair removal','Microneedling','Hydrafacial','Body contouring','Chemical peels','Weight loss'],dent:['Cleanings','Implants','Invisalign','Whitening','Veneers','Crowns','Emergency visits','Kids'],
+ derm:['Skin checks','Acne','Botox','Laser','Mole removal','Eczema','Psoriasis','Fillers'],plas:['Breast','Tummy tuck','Facelift','Rhinoplasty','Liposuction','Eyelids','BBL','Mommy makeover'],
+ chiro:['Back pain','Neck pain','Adjustments','Sports injuries','Auto injuries','Pregnancy','Massage'],pt:['Back pain','Sports injuries','Post-surgery rehab','Knee','Shoulder','Balance','Dry needling'],
+ eye:['Eye exams','Glasses','Contacts','LASIK','Cataracts','Dry eye','Kids exams'],well:['Weight loss','IV therapy','Hormone therapy','Semaglutide','Vitamin shots','Peptides'],
+ hair:['Hair transplant','PRP','Hair loss consult','Beard','Eyebrows'],vet:['Checkups','Vaccines','Dental','Surgery','Emergency','Grooming'],
+ mind:['Therapy','Couples','Anxiety','Depression','Psychiatry','Telehealth'],clinic:['Primary care','Urgent care','Physicals','Telehealth','Lab work','Vaccines','Women\'s health','Weight loss']};
+/* the services question's choices, one list from two sources: the business's own website and the searches the scan ran
+   (live audits: the API's "services" event, saved with the audit; demo audits: services named in their searches).
+   Topped up from the business type's list only when both together give fewer than 4. */
+const SVC_EXTRA=['Facials','Tattoo removal','IV therapy','Semaglutide','CoolSculpting','Dysport','Kybella','Sculptra','IPL','Skin care','Chemical peel','Dermal fillers','Morpheus8','Anti-aging','THC gummies','Recreational','Deals','Teeth whitening','Dental implants','Mole removal','Acne treatment','Breast augmentation'];
+const svcKey=x=>String(x).toLowerCase().replace(/[^a-z0-9 ]+/g,' ').split(/\s+/).filter(Boolean).map(w=>w.length>3&&/s$/.test(w)&&!/ss$/.test(w)?w.slice(0,-1):w).join(' ');
+function svcList(){const L=LIVE&&!LIVE.done&&!D?LIVE:null,src=(L&&L.services)||(D&&D.services)||null;const out=src?src.map(x=>({n:x.n||String(x),src:x.src||['scan']})):[];const has=n=>{const k=' '+svcKey(n)+' ';return out.some(o=>{const j=' '+svcKey(o.n)+' ';return j===k||j.includes(k)||k.includes(j)})};
+ if(!src&&D){const txt=' '+svcKey((D.vp||[]).map(r=>r[0]).concat(NB.concat(CRN).map(r=>r.q||'')).join(' | '))+' ';
+  (SVCO[qcat()]||[]).concat(SVC_EXTRA).forEach(n=>{const k=svcKey(n);if(k.length>2&&txt.includes(' '+k+' ')&&!has(n))out.push({n,src:['scan']})})}
+ if(out.length<4)(SVCO[qcat()]||[]).forEach(n=>{if(out.length<8&&!has(n))out.push({n,src:[]})});return out.slice(0,10)}
+const svcOpts=()=>{const l=svcList();return l.length?l.map(x=>x.n):null};
+const svcFrom=()=>{const l=svcList(),w=l.some(x=>x.src.includes('site')),q=l.some(x=>x.src.includes('scan'));return w&&q?'From your website and the searches we ran. ':w?'From your website. ':q?'From the searches we ran. ':''};
+const qnoun=()=>{const c=qcat();return c==='disp'||c==='shop'||!c?'customer':c==='vet'||c==='mind'?'client':'patient'};
+const QSPEND={disp:[40,60,80,120],shop:[25,50,75,100],spa:[250,450,700,1000],dent:[150,300,750,1500],derm:[150,300,500,900],plas:[1000,5000,9000,15000],chiro:[60,100,150,250],pt:[100,150,250,400],eye:[150,300,600,2500],well:[150,300,500,800],hair:[500,3000,8000,12000],vet:[80,150,300,600],mind:[100,150,200,300],clinic:[100,150,250,400]};
+const qretail=()=>/^(disp|shop)$/.test(qcat());
+/* the questions, in order; each one is optional, and the next shows as soon as one is answered or skipped */
 const QDEF=[
- {id:'rival',at:2,ctx:'We just found your competitors',q:'Who do you lose clients to most?',why:'We\'ll point them out on the pages that follow.',kind:'pick'},
- {id:'grow',at:3,ctx:'While we ask AI about you',q:'Which services do you most want more of?',why:'Pick up to 3. We\'ll put those searches first.',kind:'multi'},
- {id:'spend',at:4,ctx:'While we write your audit',q:'What does a new client usually spend on their first visit?',why:'Used for what AI is worth to you.',kind:'money'},
- {id:'visits',at:4,ctx:'While we write your audit',q:'How many times does a typical client come back in a year?',why:'Shows what a new client is worth over a year.',kind:'chips',opts:[['Just once',1],['2 to 3 times',2.5],['4 to 6 times',5],['About monthly',12]]}];const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
+ {id:'rival',ctx:'We just found your competitors',q:()=>'Who do you lose '+qnoun()+'s to most?',why:'We\'ll point them out on the pages that follow.',kind:'pick'},
+ {id:'grow',ctx:'While we ask AI about you',q:()=>qretail()?'What do you most want to sell more of?':'Which services do you most want more of?',why:'Pick up to 3, or add your own. We\'ll put those searches first.',kind:'multi'},
+ {id:'spend',ctx:'While we write your audit',q:()=>qretail()?'What does a typical order come to?':'What does a new '+qnoun()+' usually spend on their first visit?',why:'Tap the closest, or type the amount. Used for what AI is worth to you.',kind:'money'},
+ {id:'visits',ctx:'While we write your audit',q:()=>qretail()?'How often does a regular '+qnoun()+' come back?':'How many times does a typical '+qnoun()+' come back in a year?',why:'Shows what a new customer is worth over a year.',kind:'chips',
+  opts:()=>qretail()?[['Every week or two',36],['About monthly',12],['A few times a year',4],['Just once',1]]:[['Just once',1],['2 to 3 times',2.5],['4 to 6 times',5],['About monthly',12]]},
+ {id:'newpm',ctx:'While we look you up across the web',q:()=>'About how many new '+qnoun()+'s do you get a month?',why:'So we can compare what AI could add with what you get now.',kind:'chips',opts:()=>[['Under 10',5],['10 to 30',20],['30 to 75',50],['75 to 150',110],['150+',200]]},
+ {id:'source',ctx:'While we look you up across the web',q:()=>'Where do most new '+qnoun()+'s find you today?',why:'We\'ll build on what already works.',kind:'say',opts:()=>['Google','Word of mouth','Instagram or Facebook','Walk-ins','Ads','AI assistants']},
+ {id:'mspend',ctx:'While we write your audit',q:()=>'What do you spend on marketing a month now?',why:'Ads, agencies and tools together. Only shown on your proposal.',kind:'chips',opts:()=>[['Nothing',0],['Under $1,000',500],['$1,000 to $3,000',2000],['$3,000 to $7,500',5000],['$7,500+',10000]]},
+ {id:'goal',ctx:'While we write your audit',q:()=>'What matters most to you right now?',why:'We\'ll lead your plan with it.',kind:'say',opts:()=>['More new '+qnoun()+'s',qretail()?'Sell more of one thing':'More of one service','Beat a competitor','Fill slow days','Be the one AI recommends']}];
+const ansText=id=>{const t=ansLabel(id);if(t==null)return null;if(id==='newpm')return {'Under 10':'fewer than 10','150+':'150 or more'}[t]||'about '+t;if(id==='source')return t==='AI assistants'?'AI assistants':t==='Google'?'Google':t==='Instagram or Facebook'?'Instagram or Facebook':t.toLowerCase();return t};
+const ansLabel=id=>{const d=QDEF.find(x=>x.id===id),v=ANS[id];if(v==null||!d)return null;if(d.kind==='chips'){const o=d.opts().find(o=>o[1]===v);return o?o[0]:String(v)}return String(v)};
+const qText=d=>typeof d.q==='function'?d.q():d.q;
+
+const SCANNED=new Set(); /* live audits: already scanned, so the scan screen opens finished */
 /* live scans run on lair-api; the team key comes from ?team=<key> once and is kept in this browser only.
    Only our team scans: a visitor without a key gets the lead card (book a call with Bridgette, or text us). */
 const BOOK='https://calendly.com/bridgette-localairegistry/30min';
@@ -1444,43 +1571,52 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
   const x=mob?50:P[0],y=mob?57+((seq%3)-1)*2:P[1];el.style.left=x+'%';el.style.top=y+'%';el.innerHTML='<i>✓</i><span>'+X(txt)+'</span>';
   el.addEventListener('animationend',()=>{if(el.parentNode)el.parentNode.removeChild(el)});const f=$$('feed');[...f.children].forEach(c=>c.classList.add('out'));f.appendChild(el)}
  /* questions for the owner while the scan runs: one at a time, each with its step, all skippable */
- const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null;
- function qNext(done){if(!askOn)return null;return QDEF.find(d=>!QDONE.has(d.id)&&(done||k>=d.at)&&(d.id!=='rival'||rivalOpts().length))||null}
+ const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null,qForce=null;const QH=[];
+ /* the next question: one the rep went back to, else the first not yet answered (who they lose to waits for the competitors) */
+ function qNext(done){if(!askOn)return null;if(LV&&!LV.svc&&!LV.done&&!done&&Date.now()-LV.t0<20000)return null; /* live: wait (up to 20s) for the business type, so the wording fits */if(qForce){const f=QDEF.find(d=>d.id===qForce);if(f)return f}return QDEF.find(d=>!QDONE.has(d.id)&&(d.id!=='rival'||rivalOpts().length)&&(d.id!=='grow'||!LV||LV.services||LV.done||done))||null}
  function rivalOpts(){const L=LV||LIVE;const c=L&&L.comps?L.comps.map(x=>x.n):WHO.slice(1);return c.filter(Boolean).slice(0,4)}
  let qHold=false;
- /* save (or skip), show it on the card for a moment, then move on */
- function qAnswer(id,val,card,label){if(qHold)return;if(val===undefined){ANS.skipped=(ANS.skipped||[]).concat(id)}else{ANS[id]=val;
-   addFinding(id==='rival'?'Noted: '+val:id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+' a visit':'Noted: '+(QDEF[3].opts.find(o=>o[1]===val)||[''])[0])}
-  QDONE.add(id);ansSave();applyAns();
+ /* save (or skip), show it on the card for a moment, then the next question */
+ function qAnswer(id,val,card,label){if(qHold)return;ANS.skipped=(ANS.skipped||[]).filter(x=>x!==id);if(val===undefined){delete ANS[id];ANS.skipped.push(id)}else{ANS[id]=val;
+   addFinding(id==='rival'?'Noted: '+val:id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+(qretail()?' an order':' a visit'):'Noted: '+(label||val))}
+  QDONE.add(id);QH.push(id);if(qForce===id)qForce=null;ansSave();applyAns();
   if(!card){qShown=null;drawQ(k>=PH.length);return}
   qHold=true;card.classList.add(val===undefined?'skipped':'sent');card.querySelectorAll('button,input').forEach(x=>{x.disabled=true});
-  const f=card.querySelector('.qf');if(f)f.innerHTML='<span class="qdone" role="status">'+(val===undefined?'<i>↷</i> Skipped':'<i>✓</i> Saved'+(label?': '+X(label):''))+'</span>';
-  setTimeout(()=>{qHold=false;qShown=null;drawQ(k>=PH.length)},RM?300:900)}
+  const f=card.querySelector('.qf');if(f)f.innerHTML='<span class="qdone" role="status">'+(val===undefined?'<i>↷</i> '+(label||'Skipped'):'<i>✓</i> Saved'+(label?': '+X(label):''))+'</span>';
+  setTimeout(()=>{qHold=false;qShown=null;drawQ(k>=PH.length)},RM?250:650)}
+ function qBack(){const id=QH.pop();if(!id||qHold)return;QDONE.delete(id);ANS.skipped=(ANS.skipped||[]).filter(x=>x!==id);qForce=id;qShown=null;drawQ(k>=PH.length)}
  function drawQ(done){if(qHold)return;const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
-  if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m'):null;if(key===qShown)return;qShown=key;if(!slot)return;
+  if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m')+QH.length:null;if(key===qShown)return;qShown=key;if(!slot)return;
   if(!d){slot.textContent='';return}
-  const n=QDEF.indexOf(d)+1,opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():null;
-  let inp='';
-  if(d.kind==='pick')inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt" aria-pressed="false" data-other>Someone else</button></div><div class="qrow2" hidden><input class="qtx" id="q-other" maxlength="80" placeholder="Their name" aria-label="Competitor name"><button type="button" class="qgo" disabled>Save →</button></div>';
-  else if(d.kind==='multi')inp=opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'<input class="qtx" id="q-txt" maxlength="120" placeholder="For example: implants, whitening" aria-label="Services">';
-  else if(d.kind==='money')inp='<label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="250" aria-label="Average first-visit spend"></label>';
-  else inp='<div class="qopts">'+d.opts.map(o=>'<button type="button" class="qo" aria-pressed="false" data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';
+  const n=QDEF.indexOf(d)+1,prev=ANS[d.id],opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():d.kind==='chips'||d.kind==='say'?d.opts():null,on=v=>' aria-pressed="'+(v?'true':'false')+'"';
+  let inp='',alt='';
+  if(d.kind==='pick'){const mine=prev&&!opts.includes(prev)?prev:'';inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt"'+on(mine)+' data-other>Someone else</button></div><div class="qrow2"'+(mine?'':' hidden')+'><input class="qtx" id="q-other" maxlength="80" placeholder="Their name" aria-label="Competitor name" value="'+X(mine)+'"><button type="button" class="qgo"'+(mine?'':' disabled')+'>Save →</button></div>';alt='No one in particular'}
+  else if(d.kind==='multi'){const pv=Array.isArray(prev)?prev:[],own=pv.filter(x=>!(opts||[]).includes(x));
+   inp=(opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(pv.includes(o))+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'')+'<input class="qtx" id="q-txt" maxlength="120" placeholder="'+(opts?'Something else? Type it here':'For example: implants, whitening')+'" aria-label="Other services" value="'+X(own.join(', '))+'">';alt='Not sure yet'}
+  else if(d.kind==='money'){const P=QSPEND[qcat()]||[50,100,250,500];inp='<div class="qopts">'+P.map((v,j)=>'<button type="button" class="qo"'+on(prev===v)+' data-m="'+v+'">$'+fmt(v)+(j===P.length-1?'+':'')+'</button>').join('')+'</div><label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="Or type it" aria-label="Amount" value="'+(prev&&!P.includes(prev)?prev:'')+'"></label>';alt='Not sure'}
+  else if(d.kind==='say'){inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-s="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>';alt='Not sure'}
+  else{inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o[1])+' data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';alt='Not sure'}
   const save=d.kind==='multi'||d.kind==='money';
-  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+d.q+'</div>'+inp+'<div class="qw">'+(d.kind==='pick'||d.kind==='chips'?'Tap one to save it. ':d.kind==='multi'&&opts?'Tap to choose, then save. ':'')+d.why+'</div><div class="qf"><button type="button" class="qskip">Skip this one</button>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
-  const card=slot.firstChild;let sel=[];
+  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+(d.kind==='multi'?svcFrom():'')+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
+  const card=slot.firstChild;let sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
+  const typed=()=>((card.querySelector('#q-txt')||{}).value||'').split(/[,;]+/).map(x=>x.trim()).filter(Boolean);
   const ready=()=>{const g=card.querySelector('.qf .qgo')||card.querySelector('.qrow2 .qgo');if(!g)return;
-   g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||((card.querySelector('#q-txt')||{}).value||'').trim());
-   const c=card.querySelector('.qsel');if(c)c.textContent=d.kind==='multi'&&opts?sel.length+' of 3 chosen':''};
+   g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||typed().length);
+   const c=card.querySelector('.qsel');if(c)c.textContent=d.kind==='multi'?Math.min(3,sel.length+typed().length)+' of 3 chosen':''};
+  ready();
   card.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
-   if(b.classList.contains('qskip'))return qAnswer(d.id,undefined,card);
+   if(b.classList.contains('qback'))return qBack();
+   if(b.classList.contains('qskip'))return qAnswer(d.id,undefined,card,b.dataset.alt||'Skipped');
    if(b.classList.contains('qgo')){if(d.kind==='money'){const v=parseInt(card.querySelector('#q-num').value.replace(/\D/g,''),10);return qAnswer(d.id,v,card,'$'+fmt(v))}
-    if(d.kind==='pick')return qAnswer(d.id,sel[0],card,sel[0]);const t=card.querySelector('#q-txt');const v=t?t.value.split(/[,;]+/).map(x=>x.trim()).filter(Boolean).slice(0,3):sel;return qAnswer(d.id,v,card,v.join(', '))}
+    if(d.kind==='pick')return qAnswer(d.id,sel[0],card,sel[0]);const v=[...new Set(sel.concat(typed()))].slice(0,3);return qAnswer(d.id,v,card,v.join(', '))}
+   if(b.dataset.m){b.setAttribute('aria-pressed','true');b.classList.add('hit');const v=+b.dataset.m;return qAnswer(d.id,v,card,'$'+fmt(v))}
    if(b.dataset.n){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,+b.dataset.n,card,b.textContent)}
+   if(b.dataset.s!=null){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,b.dataset.s,card,b.dataset.s)}
    if(b.hasAttribute('data-other')){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('.qrow2').hidden=false;card.querySelector('#q-other').focus();sel=[];ready();return}
    if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));b.classList.add('hit');return qAnswer(d.id,b.dataset.v,card,b.dataset.v)}
-   if(d.kind==='multi'){const on=b.getAttribute('aria-pressed')!=='true';if(on&&sel.length>=3){b.classList.remove('nope');void b.offsetWidth;b.classList.add('nope');return}
-    b.setAttribute('aria-pressed',String(on));sel=on?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
-  card.addEventListener('input',e=>{if(e.target.id==='q-other')sel=e.target.value.trim()?[e.target.value.trim()]:[];if(e.target.id==='q-num')e.target.value=e.target.value.replace(/\D/g,'');ready()});
+   if(d.kind==='multi'){const o=b.getAttribute('aria-pressed')!=='true';if(o&&sel.length+typed().length>=3){b.classList.remove('nope');void b.offsetWidth;b.classList.add('nope');return}
+    b.setAttribute('aria-pressed',String(o));sel=o?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
+  card.addEventListener('input',e=>{if(e.target.id==='q-other')sel=e.target.value.trim()?[e.target.value.trim()]:[];if(e.target.id==='q-num'){e.target.value=e.target.value.replace(/\D/g,'');card.querySelectorAll('[data-m]').forEach(x=>x.setAttribute('aria-pressed','false'))}ready()});
   card.addEventListener('keydown',e=>{if(e.key==='Enter'&&e.target.tagName==='INPUT'){const g=card.querySelector('.qgo:not([disabled])');if(g){e.preventDefault();g.click()}}})}
  STAGE.onclick=e=>{const b=e.target.closest('[data-c]');if(!b)return;const c=b.dataset.c;if(c==='t')paused=!paused;else{paused=true;q=0;$$('feed').textContent='';k=c==='p'?Math.max(0,k-1):Math.min(PH.length,k+1)}update()};
  if(RM||(!LV&&SCANNED.has(SLUG)))k=PH.length;update();requestAnimationFrame(()=>requestAnimationFrame(()=>STAGE.querySelector('.scan4').classList.add('ready-in')));clearInterval(scanTimer);
@@ -1525,16 +1661,18 @@ function vScore(){const sc=D.score,ab=sc.you-sc.avg;const sv=S[0]&&S[0].v||[],la
   [[SHARE!=null?Math.round(SHARE*100)+'%':'–','of AI answers name you',D.scan?D.scan.answers_naming_you+' of '+D.scan.answers_total+' answers':''],[fmt(last),'Google visits a month',gr!=null?(gr>=0?'+':'')+gr+'% in 12 months':''],[B.rating?B.rating+'★':'–','from '+fmt(B.reviews)+' reviews',''],['<span style="color:var(--ok)">'+cnt.p+'</span><span style="color:var(--grey);font-weight:500"> / </span><span style="color:var(--warn)">'+cnt.w+'</span><span style="color:var(--grey);font-weight:500"> / </span><span style="color:var(--red)">'+cnt.f+'</span>','checks passed · need work · failed','details in the 11 checks']].map((x,i)=>'<div class="card fade" style="animation-delay:'+(RM?0:.15+i*.12)+'s"><b>'+x[0]+'</b><span style="color:var(--ink);font-weight:600">'+x[1]+'</span><span>'+x[2]+'</span></div>').join('')+'</div><div class="hint" style="margin-top:auto">'+(NOTES.length?'<b>Data limits:</b> '+X(NOTES[0])+(NOTES.length>1?' <button type="button" class="lnk" data-info>See all '+NOTES.length+'</button>':''):WHO.length>1?'Next: how that compares with '+cmpN()+'.':'')+'</div></div></div>';
  else if(step===1)body='<div class="g2 sc2" style="grid-template-columns:calc(25*var(--u)) 1fr"><div class="card pad col gcard" style="align-items:center;justify-content:center"><div class="rowx" style="align-self:stretch;justify-content:space-between"><span class="lbl">AI score</span>'+IB+'</div>'+gauge('100%')+(sc.avg!=null?'<div class="hint" style="text-align:center">Area average '+sc.avg+' · top nearby '+sc.top+'</div>':'')+'</div><div class="card pad col">'+lead()+'<div class="hint" style="margin-top:auto">Ranked by how often AI names each business. '+X(((AUD['AI monitoring']||[])[0]||{}).m||'')+'. Visits: estimated monthly visits to each whole website from Google.</div></div></div>';
  else{const tot=price==null?null:TOTAL*0.023*price,cust=TOTAL*0.023;const sh=SHARE??0;const vx=D.volx?' (est.)':'';const VL=D.vol_loc&&D.vol_loc.level,wide=VL==='country',noVol=!TOTAL,rivalAI=AIM&&AIM.slice(1).some(v=>v>0),$$=v=>v==null||wide||noVol?'–':'$'+fmt(v);
+  const vy=ANS.visits>1?ANS.visits:0,ALT='<div class="card pad col fade novol" style="flex:1;gap:calc(1*var(--u));justify-content:center"><span class="lbl" style="color:var(--ink);font-weight:700">What one new customer is worth to you</span>'+'<div class="nvv"><b id="sc-v">'+(price==null?'–':'$'+fmt(price*(vy||1)))+'</b><span class="c">'+(vy?'in their first year: average spend × '+vy+' visits'+(ANS.visits?' <span class="fromu">From you</span>':''):'on their first visit')+'</span></div>'+'<div class="sub">'+(wide?'Google only has nationwide search numbers for these searches, not ones for your area,':'Google has no monthly search numbers for these searches in your area right now,')+' so we don\'t put a monthly dollar figure on AI here. What we do know: AI names you in '+Math.round(sh*100)+'% of answers, and every customer it sends to someone else is worth about this much.</div>'+'<div class="bar2" aria-hidden="true"><i style="width:'+(sh*100)+'%;background:var(--ok)"></i><i style="width:'+((1-sh)*100)+'%;background:var(--coral)"></i></div><div class="sl"><span>AI names you: '+Math.round(sh*100)+'%</span><span>Someone else: '+Math.round((1-sh)*100)+'%</span></div>'+'<div style="margin-top:calc(1.6*var(--u))"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(ANS.spend?'Your answer: $'+fmt(ANS.spend):PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div>'+'</div>';
   body='<div class="mini3 fade"><span style="display:inline-flex;align-items:center;gap:calc(.6*var(--u))">AI score <b>'+sc.you+'</b>'+IB+'</span>'+(SHARE!=null?'<span><b>'+Math.round(sh*100)+'%</b> of AI answers name you</span>':'')+(last?'<span><b>'+fmt(last)+'</b> Google visits /mo</span>':'')+'</div>'+
   '<div class="chain fade"><div class="card"><span>'+(D.volx?'Est. searches':'Searches')+' a month for what you offer</span><b>'+(noVol?'–':fmt(TOTAL))+'</b><span>'+(noVol?'Search volume isn\'t available for this area':D.volx?'4× the measured volume: Google hides most searches in this category':(D.vp||[]).length+' searches '+(VL==='country'?'nationwide (no local numbers for your area)':VL==='state'?'statewide':'in your area'))+'</span></div><div class="op">×</div><div class="card"><span>Become customers</span><b>2.3%</b><span>average conversion rate (Ruler Analytics)</span></div><div class="op">×</div><div class="card" style="box-shadow:inset 0 0 0 calc(.2*var(--u)) var(--ok),var(--shadow)"><span>Your average spend per customer</span><b id="sc-p">'+(price==null?'–':'$'+fmt(price))+'</b><span>'+(price==null?'Set your average spend with the slider below':ANS.spend?'What you told us <span class="fromu">From you</span>':X(D.priceLabel||'Drag the slider below to match your business'))+'</span></div></div>'+
-  '<div class="card pad col fade" style="flex:1;gap:calc(1*var(--u));justify-content:center"><span class="lbl" style="color:var(--ink);font-weight:700">AI names you in '+Math.round(sh*100)+'% of answers. Here\'s what that splits into:</span>'+
+  ((noVol||wide)?ALT:'<div class="card pad col fade" style="flex:1;gap:calc(1*var(--u));justify-content:center"><span class="lbl" style="color:var(--ink);font-weight:700">AI names you in '+Math.round(sh*100)+'% of answers. Here\'s what that splits into:</span>'+
   '<div class="wins"><div class="w"><span class="lbl">You win now</span><b><span id="sc-w">'+$$(tot==null?null:tot*sh)+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust*sh))+' customers a month pick you</span></div>'+
   '<div class="g"><span class="lbl">At stake</span><b><span id="sc-g">'+$$(tot==null?null:tot*(1-sh))+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust*(1-sh)))+(rivalAI?' go to a competitor AI names instead':' go to someone else')+'</span></div>'+
   '<div class="t"><span class="lbl">Full potential</span><b><span id="sc-t">'+$$(tot)+'</span><small> /mo</small></b><span class="c">'+(noVol?'–':fmt(cust))+' new customers a month</span></div></div>'+
   '<div class="bar2" aria-hidden="true"><i style="width:'+(sh*100)+'%;background:var(--ok)"></i><i style="width:'+((1-sh)*100)+'%;background:var(--coral)"></i></div>'+
-  '<div style="margin-top:calc(1.6*var(--u))"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(ANS.spend?'Your answer: $'+fmt(ANS.spend):PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div></div>'}
+  (ANS.newpm>0&&!noVol?'<div class="hint nowl">You get <b>'+ansText('newpm')+'</b> new '+qnoun()+'s a month now <span class="fromu">From you</span>. Full potential from AI is about <b>'+fmt(cust)+'</b> a month.</div>':'')+
+  '<div style="margin-top:calc(1.6*var(--u))"><div class="col" style="gap:calc(.5*var(--u))"><input class="rng" type="range" min="'+RMIN+'" max="'+RMAX+'" step="1" value="'+(price==null?Math.round((RMIN+RMAX)/2):price)+'" id="sc-r" aria-label="Average spend per customer"><div class="sl"><span>$'+fmt(RMIN)+'</span><span>'+(ANS.spend?'Your answer: $'+fmt(ANS.spend):PRICE0==null?'No published average for your category: set yours':'Starting point: $'+fmt(PRICE0))+'</span><span>$'+fmt(RMAX)+'</span></div></div></div></div>')}
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+T+'</div>'+body+'</div>'+popHTML()+'</div>';
- const r=$('#sc-r');if(r){const hide=!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'),upd=set=>{if(set)price=+r.value;const pv=price==null?+r.value:price;r.style.setProperty('--p',((pv-RMIN)/(RMAX-RMIN)*100)+'%');if(price==null)return;const tot=TOTAL*0.023*price,sh=SHARE??0,d=v=>hide?'–':'$'+fmt(v);$('#sc-p').textContent='$'+fmt(price);$('#sc-t').textContent=d(tot);$('#sc-w').textContent=d(tot*sh);$('#sc-g').textContent=d(tot*(1-sh))};r.addEventListener('input',()=>upd(1));upd(0)}}
+ const r=$('#sc-r');if(r){const hide=!TOTAL||(D.vol_loc&&D.vol_loc.level==='country'),upd=set=>{if(set)price=+r.value;const pv=price==null?+r.value:price;r.style.setProperty('--p',((pv-RMIN)/(RMAX-RMIN)*100)+'%');if(price==null)return;const tot=TOTAL*0.023*price,sh=SHARE??0,d=v=>hide?'–':'$'+fmt(v);$('#sc-p').textContent='$'+fmt(price);const w=$('#sc-w');if(w){w.textContent=d(tot*sh);$('#sc-g').textContent=d(tot*(1-sh));$('#sc-t').textContent=d(tot)}const v=$('#sc-v');if(v)v.textContent='$'+fmt(price*(ANS.visits>1?ANS.visits:1))};r.addEventListener('input',()=>upd(1));upd(0)}}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-info]');if(!b)return;const p=STAGE.querySelector('.pop');if(!p)return;p.hidden=!p.hidden;if(!p.hidden)p.querySelector('.x').focus()});
 
 /* ---------- ASK (what patients ask AI) ---------- */
@@ -1607,8 +1745,10 @@ function wheel(mode,sel){if(MOB())return '<div class="chips11" role="group" aria
  return s+'</svg>'}
 function cmpN(){const n=Math.max(0,WHO.length-1);return n===1?'your closest competitor':'your '+n+' closest competitors'}
 function fmtM(m,v){if(v==null)return '–';if(m.t==='bool')return v?'Yes':'No';return fmt1(v)+(m.u||'')}
-function hubCard(i,mode){const c=CK[i],st=ST[stName(c.st)],nm=SHORTC[c.c]||c.c,nav='<span class="cnav"><button type="button" class="tbtn" data-d="-1" aria-label="Previous check">←</button><span>'+(i+1)+' / 11</span><button type="button" class="tbtn" data-d="1" aria-label="Next check">→</button></span>';
- if(mode==='svc'){const sv=SVC[i]||[[],''];return '<div class="card dt"><div class="rowx"><span class="kick">What we do · check '+String(i+1).padStart(2,'0')+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.5*var(--u))">'+X(nm)+'</div><ul class="svc">'+sv[0].map(x=>'<li>'+X(x)+'</li>').join('')+'</ul><div class="diff"><b>Why it\'s different:</b> '+X(sv[1])+'</div></div>'}
+let FIXILL=null,fixP=null;
+function fixLoad(){if(FIXILL||fixP)return;fixP=fetch('fix-ill.json').then(r=>r.ok?r.json():null).then(j=>{if(!j)return;FIXILL=j;STAGE.querySelectorAll('.fixill').forEach(e=>{e.innerHTML=j[e.dataset.c]||''})}).catch(()=>{fixP=null})}
+function hubCard(i,mode){if(mode==='svc')fixLoad();const c=CK[i],st=ST[stName(c.st)],nm=SHORTC[c.c]||c.c,nav='<span class="cnav"><button type="button" class="tbtn" data-d="-1" aria-label="Previous check">←</button><span>'+(i+1)+' / 11</span><button type="button" class="tbtn" data-d="1" aria-label="Next check">→</button></span>';
+ if(mode==='svc'){const sv=SVC[i]||[[],''];return '<div class="card dt"><div class="rowx"><span class="kick">What we do · check '+String(i+1).padStart(2,'0')+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.5*var(--u))">'+X(nm)+'</div><ul class="svc">'+sv[0].map(x=>'<li>'+X(x)+'</li>').join('')+'</ul><div class="diff"><b>Why it\'s different:</b> '+X(sv[1])+'</div><div class="fixill" data-c="'+X(c.c)+'" aria-hidden="true">'+(FIXILL&&FIXILL[c.c]||'')+'</div></div>'}
  const ms=AUD[c.c]||[],m=ms.find(x=>x.t==='num'&&x.v&&x.v[0]!=null)||ms[0];let hero='',bars='';
  if(m){const v=m.v||[];const nums=v.filter(x=>x!=null&&typeof x==='number');const mx=Math.max(...nums,m.t==='bool'?1:0)||1;
   hero='<div class="hero"><div class="big" style="color:'+(st[0]==='Passed'?'var(--ok)':st[0]==='Failed'?'var(--red)':'var(--amber)')+'">'+fmtM(m,v[0])+'</div><div class="cap">'+X(m.m)+'</div></div>';
@@ -1662,11 +1802,12 @@ function tchart(c,i){const v=cseries(c,i||0),s0=c.real?c.s0:12,n=v.length-1,mx=M
  return '<div class="tch"><div class="tplot" role="img" aria-label="Monthly visits from '+fmt(v[0])+' before to '+fmt(v[n])+' now"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><rect x="'+px(s0)+'" y="0" width="'+(100-px(s0))+'" height="100" class="tarea"/><path d="'+spath(P,0,s0)+'" fill="none" stroke="#AEB5BF" stroke-width="2.2" stroke-linecap="round" vector-effect="non-scaling-stroke"/><path d="'+spath(P,s0,n)+'" fill="none" stroke="#0E8A5F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke"/><line x1="'+px(s0)+'" x2="'+px(s0)+'" y1="0" y2="100" stroke="#FF5A3C" stroke-width="1.4" stroke-dasharray="3 3" vector-effect="non-scaling-stroke"/></svg>'+
   '<span class="tws" style="left:'+px(s0)+'%">We started</span><i class="tdot" style="left:'+px(n)+'%;top:'+py(v[n])+'%"></i></div><div class="tlab"><span>Before: '+fmt(c.real?v[0]:c.a)+'/mo</span><b>Now: '+fmt(v[n])+'/mo</b></div></div>'}
 function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();const mi=cards.findIndex(c=>c.k.test(svc));let match=-1;if(mi>=0){const [m]=cards.splice(mi,1);cards.unshift(m);match=0}
- const SAFE=[[TRUST_ICONS[0],'$750K insured','We carry $750,000 in insurance coverage for the work we do for you.'],[TRUST_ICONS[1],'HIPAA BAA','We sign a Business Associate Agreement, so patient information stays protected under HIPAA.'],[TRUST_ICONS[2],'US-based team','Everyone who works on your account is based in the US.']];
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">Businesses like yours, <em>after we started.</em></div><div class="whyg"><div class="tiles" aria-label="Client results">'+
+ const MED=trustMed(),SAFE=MED?[[TRUST_ICONS[0],'$750K insured','We carry $750,000 in insurance coverage for the work we do for you.'],[TRUST_ICONS[1],'HIPAA BAA','We sign a Business Associate Agreement, so patient information stays protected under HIPAA.'],[TRUST_ICONS[2],'US-based team','Everyone who works on your account is based in the US.']]:[[TRUST_ICONS2[0],'Guaranteed by day 90','You show up in AI answers by day 90, or we stop billing and keep working until you do.'],[TRUST_ICONS2[1],'Month to month','No long contract. Cancel anytime, and your price stays the same as long as you stay.'],[TRUST_ICONS[2],'US-based team','Everyone who works on your account is based in the US.']];
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+(MED?'Businesses like yours, <em>after we started.</em>':'Our clients\' results, <em>after we started.</em>')+'</div><div class="whyg"><div class="tiles" aria-label="Client results">'+
  cards.map((c,i)=>{const up=Math.round((c.ai[1]/c.ai[0]-1)*100);return '<div class="card tile'+(i===match?' match':'')+'"><div class="th"><div><div class="typ">'+c.typ+'</div><div class="loc">'+c.loc+'</div></div>'+(i===match?'<span class="badge">Most like you</span>':'')+'</div><div class="tu"><span class="up">+'+up+'%</span><span>AI score '+c.ai[0]+' → '+c.ai[1]+'</span></div>'+tchart(c,CARDS.indexOf(c))+'<span class="tn">'+(c.real?'Monthly visits from search and AI':'Illustrative path; real start and end')+'</span></div>'}).join('')+
  '<div class="card tile tcta"><span class="kick">Your turn</span><div class="typ">'+X(ME)+'</div><p>One team, one Blueprint, all 11 checks. In AI answers by day 90, guaranteed.</p><button type="button" class="btn2" data-go="plan">See your plan →</button></div></div>'+
- '<aside class="card trustp" aria-label="Why it\'s safe to work with us"><span class="kick">Safe to work with</span><div class="tph">Built for practices that handle patient information.</div>'+
+ '<div class="tcount" aria-hidden="true">'+cards.map((_,k)=>'<i class="'+(k?'':'on')+'"></i>').join('')+'<span>Swipe for more</span></div>'+
+ '<aside class="card trustp" aria-label="Why it\'s safe to work with us"><span class="kick">'+(MED?'Safe to work with':'Easy to say yes to')+'</span><div class="tph">'+(MED?'Built for practices that handle patient information.':'No long contract, and a result we stand behind.')+'</div>'+
   SAFE.map(x=>'<div class="tpi"><span class="tpic"><svg viewBox="0 0 24 24" aria-hidden="true">'+x[0]+'</svg></span><div><b>'+x[1]+'</b><span>'+x[2]+'</span></div></div>').join('')+
   '<div class="tpf"><div class="stack2">'+FACES.slice(0,6).map(f=>'<img src="'+f.f+'" alt="'+X(f.n)+'" loading="lazy" decoding="async">').join('')+'</div><span><b>'+FACES.slice(1,3).map(f=>X(f.n)).join(', ')+'</b> and 100+ practices vouch for us</span></div>'+
   '<div class="tps"><b>As seen in</b> '+PRESS.slice(0,4).join(' · ')+'</div></aside></div></div></div>'}
@@ -1703,32 +1844,34 @@ function vProp(){const sc=D.score;const tally={};CRN.concat(NB).forEach(r=>(r.c|
  const A='<div class="card pad col prc fade"><span class="kick">Where you are today</span>'+
   row('AI score','<em style="color:'+(sc.you>=70?'var(--ok)':sc.you>=40?'var(--warn)':'var(--red)')+'">'+sc.you+'</em><small> / 100</small>',sc.avg!=null?'Area average '+sc.avg+' · top nearby '+sc.top:'')+
   (D.scan&&D.scan.answers_total?row('AI answers that name you',D.scan.answers_naming_you+'<small> of '+D.scan.answers_total+'</small>',''):'')+
-  (rival?row(ANS.rival?'Who you lose clients to <span class="fromu">From you</span>':'Named most when AI skips you',X(rival),''):'')+
+  (rival?row(ANS.rival?'Who you lose '+qnoun()+'s to <span class="fromu">From you</span>':'Named most when AI skips you',X(rival),''):'')+
   row('The 11 checks','<em style="color:var(--ok)">'+cnt.p+'</em><small> passed · </small><em style="color:var(--warn)">'+cnt.w+'</em><small> need work · </small><em style="color:var(--red)">'+cnt.f+'</em><small> failed</small>','')+
+  (ANS.newpm!=null||ANS.source||ANS.mspend!=null?'<div class="prr prtold"><span>What you told us <span class="fromu">From you</span></span><ul>'+(ANS.newpm!=null?'<li><b>'+X(ansText('newpm')).replace(/^\w/,c=>c.toUpperCase())+'</b> new '+qnoun()+'s a month</li>':'')+(ANS.source?'<li>Most find you through <b>'+X(ansText('source'))+'</b></li>':'')+(ANS.mspend!=null?'<li>'+(ANS.mspend===0?'<b>Nothing</b> on marketing now':'<b>'+X(ansLabel('mspend'))+'</b> a month on marketing now')+'</li>':'')+'</ul></div>':'')+
   (stake!=null?row('Going to others each month','$'+fmt(stake),'Estimated from your searches and average spend'+(ANS.spend?' (from you)':'')):'')+'</div>';
  const Bc='<div class="card pad col prc fade" style="animation-delay:.1s"><span class="kick">What we\'ll do</span><div class="prh">One team runs all 11 checks from one verified Blueprint of your business.</div>'+
-  (ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
+  (ANS.goal?'<div class="hint">Your goal: <b style="color:var(--ink)">'+X(ANS.goal)+'</b>'+(ANS.grow&&ANS.grow.length?'. Starting with <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b>':'')+' <span class="fromu">From you</span></div>':'')+
+  (!ANS.goal&&ANS.grow&&ANS.grow.length?'<div class="hint">Starting with what you want more of: <b style="color:var(--ink)">'+ANS.grow.map(X).join(', ')+'</b> <span class="fromu">From you</span></div>':'')+
   '<ol class="prl">'+PHS.map(p=>'<li><span class="m">'+p[0]+'</span><b>'+p[1]+'</b><span>'+p[2]+'</span></li>').join('')+'</ol>'+
   '<div class="g90" style="margin-left:0;align-self:flex-start"><i></i>In AI answers by day 90, guaranteed</div><div class="hint" style="margin-top:auto">Every item waits for your approval. The full 12-month plan is in Plan, page 3.</div></div>';
  const Cc='<div class="card col new prn fade" style="animation-delay:.2s"><span class="kick" style="color:var(--blue3)">Your plan</span><div class="newp"><s data-was hidden>$5,000</s><span data-price>$5,000</span><small> /mo</small></div><div class="cdn" hidden></div>'+
   (full?'<div class="fpv"><span>Your full potential from AI</span><b>$'+fmt(full)+'<small> /mo in new customers</small></b></div>':'')+
   '<ul class="t4 one"><li><b>Month to month.</b> Cancel anytime.</li><li><b>Grandfathered</b> price as long as you stay</li><li><b>Area exclusivity</b> in your market</li></ul>'+TRUST('side')+
   '<div class="prcta"><a class="btn2 prbook" href="'+X(bookUrl(B.full||ME))+'" target="_blank" rel="noopener">Book a call to talk it over →</a><button type="button" class="prpay" data-ckx="open">Ready to start? Enter payment</button></div></div>';
- STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your proposal, <em>'+X(ME)+'</em></div><div class="prmeta"><span class="hint">'+new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span><button type="button" class="lnk prshare">Copy link to this proposal</button>'+(TEAM?'<button type="button" class="lnk prlead">Send follow-ups (rep only)</button>':'')+'</div></div>'+
+ STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">Your proposal, <em>'+X(ME)+'</em></div><div class="prmeta"><span class="hint">'+new Date().toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'})+'</span><button type="button" class="lnk prshare">Copy link to this proposal</button>'+(TEAM?'<button type="button" class="lnk prlead">Email or text this proposal</button>':'')+'</div></div>'+
   '<div class="g3 prop">'+A+Bc+Cc+'</div><div class="hint prfoot">No pressure: this proposal stays at this link, so you can share it with your team and decide when you\'re ready.</div></div></div>'+ckHTML()}
 STAGE.addEventListener('click',e=>{const b=e.target.closest('.prshare');if(!b)return;const u=location.href.split('#')[0]+'#prop';const done=t=>{b.textContent=t;setTimeout(()=>{b.textContent='Copy link to this proposal'},1800)};
  (navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(()=>done('Link copied ✓')).catch(()=>{prompt('Copy this link:',u);done('Copy link to this proposal')})});
 /* rep only: enroll the prospect in the follow-up emails (and a text, if they agreed) for this audit */
 function leadOpen(){const w=document.createElement('div');w.className='gpx';w.setAttribute('role','dialog');w.setAttribute('aria-modal','true');w.setAttribute('aria-label','Send follow-ups');
- w.innerHTML='<div class="gpx-bg" data-gpx></div><form class="gpx-card ldf" novalidate><div class="gph"><div><span class="kick">Rep only</span><b>Send follow-ups to '+X(B.full||ME)+'</b><small>Their audit link goes out now, then short follow-ups at 2, 5 and 10 days. They stop if they pay, unsubscribe or reply STOP.</small></div><button type="button" class="ib x" data-gpx aria-label="Close">✕</button></div>'+
-  '<label class="fl"><span>Their name</span><input id="ld-name" autocomplete="off" maxlength="120" required></label><label class="fl"><span>Email</span><input id="ld-email" type="email" autocomplete="off" maxlength="200"></label><label class="fl"><span>Mobile phone</span><input id="ld-phone" type="tel" autocomplete="off" maxlength="40"></label>'+
-  '<label class="ldc"><input type="checkbox" id="ld-ok"> They agreed to get a text from us</label><button class="btn ckgo" type="submit">Start follow-ups →</button><p class="ckm" id="ld-msg" role="status"></p></form>';
+ w.innerHTML='<div class="gpx-bg" data-gpx></div><form class="gpx-card ldf" novalidate><div class="gph"><div><span class="kick">Your proposal</span><b>Send it to '+X(B.full||ME)+'</b><small>We\'ll send the link to this proposal now, then a few short check-ins over the next 10 days. Unsubscribe or reply STOP anytime.</small></div><button type="button" class="ib x" data-gpx aria-label="Close">✕</button></div>'+
+  '<label class="fl"><span>Name</span><input id="ld-name" autocomplete="off" maxlength="120" required></label><label class="fl"><span>Email</span><input id="ld-email" type="email" autocomplete="off" maxlength="200"></label><label class="fl"><span>Mobile phone</span><input id="ld-phone" type="tel" autocomplete="off" maxlength="40"></label>'+
+  '<label class="ldc"><input type="checkbox" id="ld-ok"> OK to text this number</label><button class="btn ckgo" type="submit">Send it →</button><p class="ckm" id="ld-msg" role="status"></p></form>';
  const prev=document.activeElement;document.body.appendChild(w);requestAnimationFrame(()=>w.classList.add('on'));w.querySelector('#ld-name').focus();
  const close=()=>{w.classList.remove('on');setTimeout(()=>w.remove(),200);document.removeEventListener('keydown',k,true);if(prev&&document.contains(prev))prev.focus()};
  const k=e=>{if(e.key==='Escape'){e.stopPropagation();close()}};document.addEventListener('keydown',k,true);w.addEventListener('click',e=>{if(e.target.closest('[data-gpx]'))close()});
  const m=w.querySelector('#ld-msg'),say=(t,ok)=>{m.innerHTML=t;m.className='ckm '+(ok?'ok':'er')};
  w.querySelector('form').addEventListener('submit',e=>{e.preventDefault();const v=id=>w.querySelector(id).value.trim(),name=v('#ld-name'),email=v('#ld-email'),phone=v('#ld-phone'),ok=w.querySelector('#ld-ok').checked;
-  if(!name)return say('Add their name.');if(!email&&!(phone&&ok))return say('Add an email, or a phone number they agreed to get texts on.');
+  if(!name)return say('Add a name.');if(!email&&!(phone&&ok))return say('Add an email, or a phone number with OK to text checked.');
   const btn=w.querySelector('button[type=submit]');btn.disabled=true;
   fetch(API+'/leads',{method:'POST',headers:{'Content-Type':'application/json','X-Team-Key':TEAM},body:JSON.stringify({name,business:B.full||ME,email:email||null,phone:phone||null,texts_ok:ok,audit_id:ANS_AID||null,slug:SLUG&&!/^live-/.test(SLUG)?SLUG:null,svc:B.svc||null})})
    .then(async r=>{const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.detail||'HTTP '+r.status);
@@ -1746,7 +1889,8 @@ function planSide(extra){return '<div class="card col new pside"><div class="new
  TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> in your market</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine(1)+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
 const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
 function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
- const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
+ const sw='<div class="cmpsw" role="group" aria-label="Compare with">'+[1,2,3].map(k=>{const [a,b]=String(head[k]||'').split('\n');return '<button type="button" data-cmpa="'+(k+1)+'" class="'+(k===3?'on':'')+'">'+X(String(a||'').replace(/\s*seo agency/i,'').toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'<small>'+X(b||'')+'</small></button>'}).join('')+'</div>';
+ const t=sw+'<div class="tblw cmpw" data-a="4"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
   body.map(r=>r.length===1?'<tr class="sec"><td colspan="5">'+X(r[0].toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'</td></tr>':'<tr'+(/^Things included/.test(r[0])?' class="tot"':'')+'>'+r.map((c,i)=>i?'<td class="'+cmpCls(c)+(i===4?' us':'')+'">'+(c==='✓'?'<i class="ck">✓</i>':c==='–'?'<i class="dash">–</i>':X(c))+'</td>':'<td>'+X(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">What you get, <em>side by side with SEO agencies</em></div>'+PTABS()+'</div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u))">'+t+'</div>'+planSide()+'</div></div></div>'+ckHTML()}
 function vPlan12(){const R=PLAN12||[],MO=matchMedia('(max-width:560px)').matches?['D','J','F','M','A','M','J','J','A','S','O','N']:['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
@@ -1871,9 +2015,23 @@ function chipify(root){root.querySelectorAll('.btn,.btn2,.stepper button,.ckgo,.
 function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan,prop:vProp})[cur]();if(cur==='scan')mapFocus();if(cur==='plan'||cur==='prop')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
  chipify(STAGE);
- if(MOB()&&D&&cur!=='find'&&cur!=='scan'){const bd=STAGE.querySelector('.scr>.body'),sp=STAGE.querySelector('.top .stepper');if(bd&&sp&&bd.scrollHeight>innerHeight*1.2){const c=sp.cloneNode(true);c.classList.add('mnext');bd.appendChild(c)}}
+ dock();
  if(!MOB())STAGE.querySelectorAll('.tblw,.fwrap').forEach(t=>{const f=()=>t.classList.toggle('more',t.scrollHeight>t.clientHeight+4&&t.scrollTop+t.clientHeight<t.scrollHeight-4);f();t.addEventListener('scroll',f,{passive:true})});
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
+/* phones (in person): the bottom bar, swiping between screens, and keeping the screen awake while presenting */
+function dock(){let d=document.getElementById('dock');const on=MOB()&&D&&cur!=='find'&&cur!=='scan';document.body.classList.toggle('docked',on);
+ if(!on){if(d)d.remove();return}if(!d){d=document.createElement('nav');d.id='dock';d.setAttribute('aria-label','Step through the audit');document.body.appendChild(d)}
+ const i=CH.findIndex(c=>c[0]===cur),n=STEPS[cur]||1,last=i===CH.length-1&&step===n-1;
+ d.innerHTML='<button type="button" class="dk-b" data-nav="prev" aria-label="Back"'+(i<=1&&step===0?' disabled':'')+'>←</button><div class="dk-m"><b>'+CH[i][1]+'</b><span>'+(n>1?'<span class="dk-d">'+Array.from({length:n},(_,k)=>'<i class="'+(k===step?'on':'')+'"></i>').join('')+'</span>Step '+(step+1)+' of '+n:'Chapter '+i+' of '+(CH.length-1))+'</span></div>'+(last?'<span class="dk-sp" aria-hidden="true"></span>':'<button type="button" class="dk-n" data-nav="next">'+(step<n-1?'Next step':'Next')+' <span class="chv" aria-hidden="true">›</span></button>')}
+STAGE.addEventListener('scroll',e=>{const t=e.target;if(!t.classList||!t.classList.contains('tiles'))return;const f=t.querySelector('.tile');if(!f)return;const k=Math.round(t.scrollLeft/(f.offsetWidth+12));STAGE.querySelectorAll('.tcount i').forEach((x,j)=>x.classList.toggle('on',j===k))},true);
+STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-cmpa]');if(!b)return;const w=STAGE.querySelector('.cmpw');if(w)w.dataset.a=b.dataset.cmpa;b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b))});
+document.addEventListener('click',e=>{const b=e.target.closest('#dock [data-nav]');if(!b||b.disabled)return;b.dataset.nav==='next'?next():prev()});
+(()=>{let x0=null,y0=0,t0=0;const NO='.chap,.tblw,.tiles,input,textarea,select,.rng,.gpx,.ckx,.qmap,.qcard,.pop,.hub,svg.hubsvg,[data-noswipe]';
+ const sideScroll=el=>{for(;el&&el!==document.body;el=el.parentElement){if(el.scrollWidth>el.clientWidth+4&&/(auto|scroll)/.test(getComputedStyle(el).overflowX))return true}return false};
+ addEventListener('touchstart',e=>{x0=null;if(!MOB()||!D||cur==='find'||cur==='scan'||e.touches.length>1)return;const t=e.target;if(t.closest&&(t.closest(NO)||sideScroll(t)))return;if(document.querySelector('.ckx:not([hidden]),.gpx'))return;x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=Date.now()},{passive:true});
+ addEventListener('touchend',e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;if(Date.now()-t0>700||Math.abs(dx)<70||Math.abs(dy)>Math.abs(dx)*.6)return;dx<0?next():prev()},{passive:true})})();
+(()=>{let lock=null;const ask=()=>{if(!MOB()||lock||!('wakeLock' in navigator)||document.visibilityState!=='visible')return;navigator.wakeLock.request('screen').then(l=>{lock=l;l.addEventListener('release',()=>{lock=null})}).catch(()=>{})};
+ addEventListener('pointerdown',ask,{passive:true});document.addEventListener('visibilitychange',ask)})();
 const start=()=>{const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'))};
 if(SETS[QP.get('b')]){ansLoad('b:'+QP.get('b'));setBiz(QP.get('b'))}
 if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
@@ -1918,7 +2076,7 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
   const rd=res.body.getReader(),dec=new TextDecoder();let buf='',aid='',out=null,slug='';
   for(;;){const {value,done}=await rd.read();if(done)break;buf+=dec.decode(value,{stream:true});let n;
    while((n=buf.indexOf('\n'))>=0){const line=buf.slice(0,n).trim();buf=buf.slice(n+1);if(!line)continue;let m;try{m=JSON.parse(line)}catch(e){continue}if(LIVE!==L)return;
-    if(m.comps)L.comps=m.comps;
+    if(m.comps)L.comps=m.comps;if(m.services)L.services=m.services;
     if(m.id&&!m.d){aid=m.id;L.aid=aid;ANS_AID=aid;ANSK='a:'+aid;ansSave();try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#scan')}catch(e){}}
     if(m.biz){L.name=m.biz.name||L.name;if(m.biz.svc)L.svc=m.biz.svc;if(m.biz.short)L.short=m.biz.short;setHit(m.biz);if(L.hit&&m.biz.svc)L.hit.cq=m.biz.svc}
     if(m.find)m.find.forEach(f=>{L.queue.push(f);L.said.add(m.at)});
@@ -1928,6 +2086,7 @@ function liveScan(o){if(LIVE&&!LIVE.err&&!LIVE.done&&(LIVE.id===o.id&&LIVE.q===(
     if(m.err)throw {msg:m.msg};
     if(m.d){out=m.d;slug=m.slug;aid=m.id||aid;if(Array.isArray(m.notes)&&!out.notes)out.notes=m.notes}}}
   if(!out||!out.biz||!out.hit)throw {msg:'We hit a snag finishing this audit.'};
+  if(!out.services&&L.services)out.services=L.services;
   const key=slug||('live-'+aid);SETS[key]=out;SCANNED.add(key);const wasScan=cur==='scan';setBiz(key);L.done=true;mapFocused=key;
   try{history.replaceState(null,'','?audit='+encodeURIComponent(aid)+'#'+cur)}catch(e){}
   if(!wasScan){document.title='Ready · '+ME+' · AI Visibility Audit';render()}})().catch(e=>fail(e&&e.msg))}
