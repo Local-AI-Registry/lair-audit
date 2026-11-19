@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="AI Audit">
+<link rel="apple-touch-icon" href="../home/research/apple-touch-icon.png">
 <title>AI Visibility Audit · Local AI Registry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../home/assets/fonts/hanken.woff2">
@@ -1031,6 +1037,39 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .tkout{all:unset;cursor:pointer;font:600 calc(.85*var(--u)) var(--fb);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.thome,.tkon,.tkout,.thome .tkopen{font-size:13px}.thome .tkrow{max-width:none}}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.tile .th{flex-direction:column-reverse;align-items:flex-start;gap:6px}}
+
+/* ---------- phones in person: bottom bar, swipe row for case studies, agency picker ---------- */
+#dock{display:none}
+.cmpsw{display:none;gap:6px;margin-bottom:10px}
+.cmpsw button{all:unset;cursor:pointer;flex:1;display:flex;flex-direction:column;align-items:center;gap:1px;padding:8px 4px;border-radius:12px;font:600 12.5px var(--fb);color:var(--muted);box-shadow:inset 0 0 0 1px var(--rule);min-height:44px;box-sizing:border-box;justify-content:center}
+.cmpsw button small{font:500 11.5px var(--fb);color:var(--muted)}
+.cmpsw button.on{background:var(--ink);color:#fff;box-shadow:none}.cmpsw button.on small{color:#C8D2E6}
+.cmpsw button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+.tcount{display:none}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
+ body.docked .top .stepper{display:none}
+ body.docked .scr>.body{padding-bottom:calc(92px + env(safe-area-inset-bottom,0px))!important}
+ #dock{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:25;align-items:center;gap:10px;padding:10px max(16px,env(safe-area-inset-left,0px)) calc(10px + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.95);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 -1px 0 var(--rule),0 -8px 24px rgba(11,26,46,.06)}
+ #dock button{all:unset;cursor:pointer;box-sizing:border-box;min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;font:600 15px var(--fb);-webkit-tap-highlight-color:transparent;transition:transform .12s}
+ #dock button:active{transform:scale(.96)}
+ #dock button:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+ #dock .dk-b{width:48px;background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--rule);font-size:18px}
+ #dock .dk-n{padding:0 14px 0 20px;background:var(--blue);color:#fff;box-shadow:0 6px 18px rgba(31,79,224,.25)}
+ #dock .dk-n .chv{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:rgba(255,255,255,.18);font-size:15px}
+ #dock button[disabled]{opacity:.4;cursor:default}
+ #dock .dk-m{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center}
+ #dock .dk-m b{font:600 14px var(--fb);color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+ #dock .dk-m>span{display:inline-flex;align-items:center;gap:7px;font:500 12px var(--fb);color:var(--muted)}
+ #dock .dk-d{display:inline-flex;gap:3px}#dock .dk-d i{width:6px;height:6px;border-radius:9px;background:var(--rule)}#dock .dk-d i.on{width:14px;background:var(--blue)}
+ .body .whyg .tiles{display:flex;grid-template-columns:none;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 10px;scrollbar-width:none;overscroll-behavior-x:contain}
+ .body .whyg .tiles::-webkit-scrollbar{display:none}
+ .body .whyg .tiles>.tile{flex:0 0 84%;scroll-snap-align:center}
+ .body .whyg .tiles>.tcta{display:none}
+ #dock .dk-sp{width:48px;flex:none}
+ @media (max-height:500px){#dock{padding-top:6px;padding-bottom:calc(6px + env(safe-area-inset-bottom,0px))}#dock button{min-height:40px}#dock .dk-b{width:40px}#dock .dk-m>span{display:none}body.docked .scr>.body{padding-bottom:calc(64px + env(safe-area-inset-bottom,0px))!important}}
+ .tcount{display:flex;justify-content:center;align-items:center;gap:6px;font:500 12.5px var(--fb);color:var(--muted);margin-top:-2px}
+ .tcount i{width:6px;height:6px;border-radius:9px;background:var(--rule);transition:all .2s}.tcount i.on{width:14px;background:var(--blue)}
+}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1168,9 +1207,14 @@ a.btn{text-decoration:none}
 }
 /* small phones: compare table shows the strongest agency next to us; the 12-month grid uses one letter per month */
 @media (max-width:560px){
- .cmp2 th:nth-child(2),.cmp2 td:nth-child(2),.cmp2 th:nth-child(3),.cmp2 td:nth-child(3){display:none}
+ .cmpw .cmp2 :is(th,td):is(:nth-child(2),:nth-child(3),:nth-child(4)):not([colspan]){display:none}
+ .cmpw[data-a="2"] .cmp2 :is(th,td):nth-child(2),.cmpw[data-a="3"] .cmp2 :is(th,td):nth-child(3),.cmpw[data-a="4"] .cmp2 :is(th,td):nth-child(4){display:table-cell!important}
+ .cmpsw{display:flex}
  .cmp2 td:first-child{width:44%}.cmp2 td,.cmp2 th{padding-inline:6px}
- .pl12 td:first-child{min-width:0;width:40%;white-space:normal}.pl12 td{padding:3px 1px}.pl12 i{min-width:0}
+ .pl12,.pl12 thead,.pl12 tbody{display:block}.pl12 tr{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:3px}
+ .pl12 thead th:first-child{display:none}.pl12 thead th{padding:0 0 6px;font-size:10.5px}
+ .pl12 tbody tr{padding:9px 0;border-bottom:1px solid var(--rule)}.pl12 td{border:0;padding:0}.pl12 i{min-width:0;height:9px}
+ .pl12 tbody td:first-child{grid-column:1/-1;width:auto;min-width:0;white-space:normal;padding:0 0 7px;font-size:13.5px}
 }
 /* touch screens: everything tappable is at least 44px */
 @media (pointer:coarse){
@@ -1666,6 +1710,7 @@ function vWhy(){const svc=(B.svc||'')+' '+(B.full||'');let cards=CARDS.slice();c
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">Businesses like yours, <em>after we started.</em></div><div class="whyg"><div class="tiles" aria-label="Client results">'+
  cards.map((c,i)=>{const up=Math.round((c.ai[1]/c.ai[0]-1)*100);return '<div class="card tile'+(i===match?' match':'')+'"><div class="th"><div><div class="typ">'+c.typ+'</div><div class="loc">'+c.loc+'</div></div>'+(i===match?'<span class="badge">Most like you</span>':'')+'</div><div class="tu"><span class="up">+'+up+'%</span><span>AI score '+c.ai[0]+' → '+c.ai[1]+'</span></div>'+tchart(c,CARDS.indexOf(c))+'<span class="tn">'+(c.real?'Monthly visits from search and AI':'Illustrative path; real start and end')+'</span></div>'}).join('')+
  '<div class="card tile tcta"><span class="kick">Your turn</span><div class="typ">'+X(ME)+'</div><p>One team, one Blueprint, all 11 checks. In AI answers by day 90, guaranteed.</p><button type="button" class="btn2" data-go="plan">See your plan →</button></div></div>'+
+ '<div class="tcount" aria-hidden="true">'+cards.map((_,k)=>'<i class="'+(k?'':'on')+'"></i>').join('')+'<span>Swipe for more</span></div>'+
  '<aside class="card trustp" aria-label="Why it\'s safe to work with us"><span class="kick">Safe to work with</span><div class="tph">Built for practices that handle patient information.</div>'+
   SAFE.map(x=>'<div class="tpi"><span class="tpic"><svg viewBox="0 0 24 24" aria-hidden="true">'+x[0]+'</svg></span><div><b>'+x[1]+'</b><span>'+x[2]+'</span></div></div>').join('')+
   '<div class="tpf"><div class="stack2">'+FACES.slice(0,6).map(f=>'<img src="'+f.f+'" alt="'+X(f.n)+'" loading="lazy" decoding="async">').join('')+'</div><span><b>'+FACES.slice(1,3).map(f=>X(f.n)).join(', ')+'</b> and 100+ practices vouch for us</span></div>'+
@@ -1746,7 +1791,8 @@ function planSide(extra){return '<div class="card col new pside"><div class="new
  TRUST('side')+'<ul class="t4 one"><li><b>Guaranteed</b> in AI answers by day 90</li><li><b>Area exclusivity</b> in your market</li><li><b>Grandfathered</b> price</li><li><b>Month to month</b></li></ul>'+fpLine(1)+(extra||'')+'<button type="button" class="btn2" data-ckx="open" style="margin-top:auto;align-self:flex-start">Get started →</button></div>'}
 const cmpCls=c=>c==='✓'?'y':c==='–'?'n':/some|add-on|\/mo|weekly/i.test(c)?'s':'';
 function vPlanCompare(){const R=CMP||[];const head=R[0]||[];const body=R.slice(1);
- const t='<div class="tblw"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
+ const sw='<div class="cmpsw" role="group" aria-label="Compare with">'+[1,2,3].map(k=>{const [a,b]=String(head[k]||'').split('\n');return '<button type="button" data-cmpa="'+(k+1)+'" class="'+(k===3?'on':'')+'">'+X(String(a||'').replace(/\s*seo agency/i,'').toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'<small>'+X(b||'')+'</small></button>'}).join('')+'</div>';
+ const t=sw+'<div class="tblw cmpw" data-a="4"><table class="cmp2"><thead><tr>'+head.map((h,i)=>{const [a,b]=String(h).split('\n');return '<th class="'+(i===4?'us':'')+'">'+(i?'<span>'+X(a.toLowerCase().replace(/^\w/,c=>c.toUpperCase()).replace(/\bseo\b/gi,'SEO').replace(/^Us$/,'Local AI Registry'))+'</span><b>'+X(b||'')+'</b>':'')+'</th>'}).join('')+'</tr></thead><tbody>'+
   body.map(r=>r.length===1?'<tr class="sec"><td colspan="5">'+X(r[0].toLowerCase().replace(/^\w/,c=>c.toUpperCase()))+'</td></tr>':'<tr'+(/^Things included/.test(r[0])?' class="tot"':'')+'>'+r.map((c,i)=>i?'<td class="'+cmpCls(c)+(i===4?' us':'')+'">'+(c==='✓'?'<i class="ck">✓</i>':c==='–'?'<i class="dash">–</i>':X(c))+'</td>':'<td>'+X(c)+'</td>').join('')+'</tr>').join('')+'</tbody></table></div>';
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body" style="gap:calc(1.1*var(--u))"><div class="ttlrow"><div class="ttl">What you get, <em>side by side with SEO agencies</em></div>'+PTABS()+'</div><div class="g2" style="grid-template-columns:1fr calc(27*var(--u))"><div class="card pad col" style="padding:calc(1.2*var(--u)) calc(1.6*var(--u))">'+t+'</div>'+planSide()+'</div></div></div>'+ckHTML()}
 function vPlan12(){const R=PLAN12||[],MO=matchMedia('(max-width:560px)').matches?['D','J','F','M','A','M','J','J','A','S','O','N']:['Dec','Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov'];
@@ -1871,9 +1917,23 @@ function chipify(root){root.querySelectorAll('.btn,.btn2,.stepper button,.ckgo,.
 function render(){STAGE.onclick=null;if(cur!=='scan')clearInterval(scanTimer);const mo=cur==='find'||cur==='scan';document.body.classList.toggle('mapon',mo);mapPause(!mo);if(mo)mapEnsure();({find:vFind,scan:vScan,score:vScore,ask:vAsk,checks:vChecks,why:vWhy,plan:vPlan,prop:vProp})[cur]();if(cur==='scan')mapFocus();if(cur==='plan'||cur==='prop')ckWire();
  STAGE.querySelectorAll('.chap button').forEach(b=>b.disabled=!D);
  chipify(STAGE);
- if(MOB()&&D&&cur!=='find'&&cur!=='scan'){const bd=STAGE.querySelector('.scr>.body'),sp=STAGE.querySelector('.top .stepper');if(bd&&sp&&bd.scrollHeight>innerHeight*1.2){const c=sp.cloneNode(true);c.classList.add('mnext');bd.appendChild(c)}}
+ dock();
  if(!MOB())STAGE.querySelectorAll('.tblw,.fwrap').forEach(t=>{const f=()=>t.classList.toggle('more',t.scrollHeight>t.clientHeight+4&&t.scrollTop+t.clientHeight<t.scrollHeight-4);f();t.addEventListener('scroll',f,{passive:true})});
  const ch=STAGE.querySelector('.chap'),on=ch&&ch.querySelector('.on');if(on&&ch.scrollWidth>ch.clientWidth)ch.scrollLeft=on.offsetLeft-(ch.clientWidth-on.offsetWidth)/2}
+/* phones (in person): the bottom bar, swiping between screens, and keeping the screen awake while presenting */
+function dock(){let d=document.getElementById('dock');const on=MOB()&&D&&cur!=='find'&&cur!=='scan';document.body.classList.toggle('docked',on);
+ if(!on){if(d)d.remove();return}if(!d){d=document.createElement('nav');d.id='dock';d.setAttribute('aria-label','Step through the audit');document.body.appendChild(d)}
+ const i=CH.findIndex(c=>c[0]===cur),n=STEPS[cur]||1,last=i===CH.length-1&&step===n-1;
+ d.innerHTML='<button type="button" class="dk-b" data-nav="prev" aria-label="Back"'+(i<=1&&step===0?' disabled':'')+'>←</button><div class="dk-m"><b>'+CH[i][1]+'</b><span>'+(n>1?'<span class="dk-d">'+Array.from({length:n},(_,k)=>'<i class="'+(k===step?'on':'')+'"></i>').join('')+'</span>Step '+(step+1)+' of '+n:'Chapter '+i+' of '+(CH.length-1))+'</span></div>'+(last?'<span class="dk-sp" aria-hidden="true"></span>':'<button type="button" class="dk-n" data-nav="next">'+(step<n-1?'Next step':'Next')+' <span class="chv" aria-hidden="true">›</span></button>')}
+STAGE.addEventListener('scroll',e=>{const t=e.target;if(!t.classList||!t.classList.contains('tiles'))return;const f=t.querySelector('.tile');if(!f)return;const k=Math.round(t.scrollLeft/(f.offsetWidth+12));STAGE.querySelectorAll('.tcount i').forEach((x,j)=>x.classList.toggle('on',j===k))},true);
+STAGE.addEventListener('click',e=>{const b=e.target.closest('[data-cmpa]');if(!b)return;const w=STAGE.querySelector('.cmpw');if(w)w.dataset.a=b.dataset.cmpa;b.parentElement.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b))});
+document.addEventListener('click',e=>{const b=e.target.closest('#dock [data-nav]');if(!b||b.disabled)return;b.dataset.nav==='next'?next():prev()});
+(()=>{let x0=null,y0=0,t0=0;const NO='.chap,.tblw,.tiles,input,textarea,select,.rng,.gpx,.ckx,.qmap,.qcard,.pop,.hub,svg.hubsvg,[data-noswipe]';
+ const sideScroll=el=>{for(;el&&el!==document.body;el=el.parentElement){if(el.scrollWidth>el.clientWidth+4&&/(auto|scroll)/.test(getComputedStyle(el).overflowX))return true}return false};
+ addEventListener('touchstart',e=>{x0=null;if(!MOB()||!D||cur==='find'||cur==='scan'||e.touches.length>1)return;const t=e.target;if(t.closest&&(t.closest(NO)||sideScroll(t)))return;if(document.querySelector('.ckx:not([hidden]),.gpx'))return;x0=e.touches[0].clientX;y0=e.touches[0].clientY;t0=Date.now()},{passive:true});
+ addEventListener('touchend',e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;if(Date.now()-t0>700||Math.abs(dx)<70||Math.abs(dy)>Math.abs(dx)*.6)return;dx<0?next():prev()},{passive:true})})();
+(()=>{let lock=null;const ask=()=>{if(!MOB()||lock||!('wakeLock' in navigator)||document.visibilityState!=='visible')return;navigator.wakeLock.request('screen').then(l=>{lock=l;l.addEventListener('release',()=>{lock=null})}).catch(()=>{})};
+ addEventListener('pointerdown',ask,{passive:true});document.addEventListener('visibilitychange',ask)})();
 const start=()=>{const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'))};
 if(SETS[QP.get('b')]){ansLoad('b:'+QP.get('b'));setBiz(QP.get('b'))}
 if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
