@@ -1747,6 +1747,8 @@ function cmpN(){const n=Math.max(0,WHO.length-1);return n===1?'your closest comp
 function fmtM(m,v){if(v==null)return '–';if(m.t==='bool')return v?'Yes':'No';return fmt1(v)+(m.u||'')}
 let FIXILL=null,fixP=null;
 function fixLoad(){if(FIXILL||fixP)return;fixP=fetch('fix-ill.json').then(r=>r.ok?r.json():null).then(j=>{if(!j)return;FIXILL=j;STAGE.querySelectorAll('.fixill').forEach(e=>{e.innerHTML=j[e.dataset.c]||''})}).catch(()=>{fixP=null})}
+/* replay the drawing every 7 seconds while the Blueprint slide is on screen (redrawing restarts the moving dots too) */
+setInterval(()=>{if(RM||cur!=='checks'||document.visibilityState!=='visible')return;STAGE.querySelectorAll('.fixill').forEach(e=>{if(e.firstChild&&e.getBoundingClientRect().bottom>0&&e.getBoundingClientRect().top<innerHeight)e.innerHTML=e.innerHTML})},7000);
 function hubCard(i,mode){if(mode==='svc')fixLoad();const c=CK[i],st=ST[stName(c.st)],nm=SHORTC[c.c]||c.c,nav='<span class="cnav"><button type="button" class="tbtn" data-d="-1" aria-label="Previous check">←</button><span>'+(i+1)+' / 11</span><button type="button" class="tbtn" data-d="1" aria-label="Next check">→</button></span>';
  if(mode==='svc'){const sv=SVC[i]||[[],''];return '<div class="card dt"><div class="rowx"><span class="kick">What we do · check '+String(i+1).padStart(2,'0')+'</span>'+nav+'</div><div class="ttl" style="font-size:calc(2.5*var(--u))">'+X(nm)+'</div><ul class="svc">'+sv[0].map(x=>'<li>'+X(x)+'</li>').join('')+'</ul><div class="diff"><b>Why it\'s different:</b> '+X(sv[1])+'</div><div class="fixill" data-c="'+X(c.c)+'" aria-hidden="true">'+(FIXILL&&FIXILL[c.c]||'')+'</div></div>'}
  const ms=AUD[c.c]||[],m=ms.find(x=>x.t==='num'&&x.v&&x.v[0]!=null)||ms[0];let hero='',bars='';
