@@ -1,0 +1,26 @@
+name: Publish now
+
+# On-demand site publish, outside the "Publish on every push" queue.
+# Use it when a push didn't publish (pushes from outside collaborators and from
+# Claude sessions don't start Pages builds, and stuck re-runs can block the
+# other workflow's queue). Actions tab > Publish now > Run workflow.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+
+concurrency:
+  group: publish-now
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Request a Pages publish of main
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X POST "repos/${{ github.repository }}/pages/builds" --jq '.status'
