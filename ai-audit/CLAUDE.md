@@ -46,6 +46,9 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   the months between are a seeded path with its own shape per card (`shape` in `CARDS`, `cseries()`; flat year with a
   seasonal ripple, a lag, a climb with small pullbacks), drawn as a smooth line (`spath()`), labeled
   "Illustrative path; real start and end" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
+- Blueprint slide (11 checks, Our system): each check shows its "how we fix it" drawing from the classic page
+  (`hud_fix.json`), written by sales.py to `../fix-ill.json` with "record" renamed Blueprint, and loaded only when the slide opens.
+- Proposal: the rep's send button reads "Email or text this proposal" (it calls `/leads`), so nothing says "rep only" on screen.
 - Area exclusivity is described without a set distance ("one business like yours per area").
 
 ## Live scans (lair-api)
@@ -67,13 +70,20 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - Later (see `_build/PARKING_LOT.md`): a shared team password, then maybe Google sign-in. Both are built and reverted.
 
 ## Questions during the scan (rep only)
-- With a team key, the Scan screen asks the owner up to 4 optional questions, each when its step comes up (`QDEF` in
-  `sales.tpl.html`): who they lose clients to, services to grow (up to 3), first-visit spend, visits a year. Each has
-  "Skip this one". On desktop the card sits on the map; on phones, or once the scan is done, it moves into the side panel.
+- With a team key, the Scan screen asks the owner up to 4 optional questions (`QDEF` in `sales.tpl.html`): who they lose
+  clients to, services to grow (up to 3, or their own), spend (quick picks or a typed amount), how often they come back.
+  The next question shows as soon as one is answered or skipped (who they lose to waits until competitors are found);
+  "← Back" reopens the previous one with its answer filled in; each has "Not sure" (or similar) and "Skip".
+  On desktop the card sits on the map; on phones, or once the scan is done, it moves into the side panel.
+- Wording and choices follow the business type (`CATS` → `qcat()`): patients for clinics, customers for dispensaries and
+  shops, clients for vets and therapists; each type has its own services (`SVCO`) and spend quick picks (`QSPEND`).
+  Dispensaries and shops get "a typical order" and "how often a regular comes back". Unknown types get generic choices.
 - Answers are saved in the browser and, for live audits, with the audit (`PUT /audits/<id>/answers`; `GET /audits/<id>`
   returns `answers`). They change later pages and are always tagged "From you": spend replaces the cited price,
   visits add first-year value to the plan's full potential, services move those searches to the top of Customers ask AI,
   and the rival is tagged on the leaderboard and on "Who shows up when it isn't you".
+- What it's worth, with no usable search numbers (none for the area, or only nationwide): instead of dashes, the card shows
+  what one new customer is worth (spend, times visits a year when answered) and says why there's no monthly figure.
 
 ## Customers ask AI
 - Step 1: three summary numbers, then one grid: a row per search, a column per AI assistant, the result on the right.
