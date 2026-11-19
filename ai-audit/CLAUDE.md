@@ -48,6 +48,10 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
   "Illustrative path; real start and end" until their monthly visits are added to `CARDS` in `sales.tpl.html`.
 - Blueprint slide (11 checks, Our system): each check shows its "how we fix it" drawing from the classic page
   (`hud_fix.json`), written by sales.py to `../fix-ill.json` with "record" renamed Blueprint, and loaded only when the slide opens.
+- Assurances follow the business type (`trustMed()`): medical practices (and the home screen, before a business is picked)
+  show $750K insured / HIPAA BAA / US-based team; everyone else (dispensaries, shops, vets, unknown types) shows Guaranteed
+  by day 90 / Month to month / US-based team, the Why us panel reads "Easy to say yes to", the plan and proposal cards drop
+  the badge row (their list already says it), and Why us is titled "Our clients' results" (all case studies are medical).
 - Proposal: the rep's send button reads "Email or text this proposal" (it calls `/leads`), so nothing says "rep only" on screen.
 - Area exclusivity is described without a set distance ("one business like yours per area").
 
