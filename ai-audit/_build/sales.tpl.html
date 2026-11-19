@@ -1118,6 +1118,39 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .nowl{margin-top:calc(.2*var(--u))}
 @media (min-width:761px) and (min-aspect-ratio:4/5) and (min-height:501px){.prop .prc:first-child:has(.prtold) .prr{padding:calc(.45*var(--u)) 0}.prop .prc:has(.prtold) .prr b{font-size:calc(1.5*var(--u))}.prop .prh{font-size:calc(1.25*var(--u));margin:calc(.3*var(--u)) 0}.prop .prc>.hint{font-size:calc(.9*var(--u))}}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.prtold ul{font-size:13.5px}}
+
+/* how AI decided (popup from Customers ask AI) */
+[data-flow]{cursor:pointer;transition:background .15s}
+[data-flow]:hover{background:rgba(31,79,224,.04)}[data-flow]:focus-visible{outline:2px solid var(--blue);outline-offset:-2px}
+.flhint{color:var(--blue);font-weight:600}
+.flcard{width:min(1180px,100%)!important;max-height:calc(100dvh - 40px)!important;overflow:auto}
+.flcard .gph b{font:500 22px/1.25 var(--fu)}.flbad{color:var(--red);font-weight:600}.flok{color:var(--ok);font-weight:600}
+.flw{display:grid;grid-template-columns:1fr 1.1fr 1.3fr 1.7fr 1.2fr;gap:14px;align-items:start}
+.flw section{position:relative;background:var(--bg);border-radius:14px;padding:12px 12px 14px;min-width:0}
+.flw section+section::before{content:"›";position:absolute;left:-12px;top:12px;font:700 16px var(--fb);color:var(--muted)}
+.flw h4{display:flex;align-items:center;gap:7px;margin:0 0 10px;font:600 12px/1.3 var(--fb);letter-spacing:.02em;color:var(--ink)}
+.flw h4 i{flex:none;display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--ink);color:#fff;font:700 10.5px var(--fb);font-style:normal}
+.flq{font:500 17px/1.3 var(--fu);color:var(--ink)}
+.flw ul,.flw ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:7px}
+.fleng li{display:grid;grid-template-columns:20px 1fr;column-gap:7px;font-size:13px}.fleng li i{grid-row:span 2;display:grid;place-items:center;width:20px;height:20px;border-radius:50%;font:700 11px var(--fb);font-style:normal}
+.fleng li b{font-weight:600}.fleng li span{color:var(--muted);font-size:12px}
+.fleng li.y i{background:var(--ok);color:#fff}.fleng li.n i{background:var(--red-t);color:var(--red)}.fleng li.u i{background:#fff;color:var(--muted);box-shadow:inset 0 0 0 1px var(--rule)}
+.flsrc li{background:#fff;border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:3px;font-size:13px;align-items:flex-start}
+.flsrc li b{font-weight:600}.flsrc li span{color:var(--body);font-size:12.5px}.flsrc .pill{font-size:11px;padding:2px 8px}
+.flcmp .flch,.flcmp li{display:grid;grid-template-columns:minmax(0,1fr) 62px 62px;gap:8px;align-items:baseline}
+.flcmp .flch{font:600 11.5px var(--fb);color:var(--muted);margin-bottom:6px}.flcmp .flch b{font-weight:600;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.flcmp li{background:#fff;border-radius:10px;padding:7px 10px;font-size:12.5px;line-height:1.3}
+.flcmp li b{text-align:right;font:600 13px var(--fb);font-variant-numeric:tabular-nums}
+.flcmp li.bh{box-shadow:inset 3px 0 0 var(--red)}.flcmp li.bh b:nth-of-type(1){color:var(--red)}
+.flcmp li.ah{box-shadow:inset 3px 0 0 var(--ok)}.flcmp li.ah b:nth-of-type(1){color:var(--ok)}
+.flrec li{background:#fff;border-radius:10px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;font-size:13px}
+.flrec li b{font-weight:600}.flrec li span{color:var(--muted);font-size:12px}
+.flrec li.me{box-shadow:inset 3px 0 0 var(--ok)}.flrec li.me.out{box-shadow:inset 3px 0 0 var(--red)}.flrec li.me.out span{color:var(--red)}
+.flmap{margin-top:10px;font-size:12.5px}.flmap>span{font:600 11.5px var(--fb);color:var(--muted)}.flmap ol{margin-top:5px!important;gap:4px!important;counter-reset:n}
+.flmap li{counter-increment:n}.flmap li::before{content:counter(n) ". ";color:var(--muted)}.flmap li.me{color:var(--ok);font-weight:600}.flmap small{color:var(--red);font-weight:600}
+.flft{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:4px}
+@media (max-width:1100px){.flw{grid-template-columns:1fr 1fr}.flw section.wide{grid-column:1/-1}.flw section+section::before{content:none}}
+@media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){.flw{grid-template-columns:1fr}.fleng{display:grid!important;grid-template-columns:1fr 1fr;gap:10px 8px!important}.flq{font-size:16px}.flcard .gph b{font-size:19px}.flcard{max-height:92dvh!important}.flhint{display:none}}
 /* ---------- scan questions ---------- */
 .qmap{position:absolute;right:calc(2.4*var(--u));bottom:calc(2.4*var(--u));width:calc(32*var(--u));z-index:8}
 .qcard{background:var(--card);border-radius:calc(1.6*var(--u));padding:calc(1.5*var(--u));display:flex;flex-direction:column;gap:calc(.8*var(--u));box-shadow:0 calc(1.4*var(--u)) calc(4*var(--u)) rgba(11,26,46,.22);animation:qfade .6s ease both}
@@ -1689,13 +1722,13 @@ function vAsk(){const E=engs();
  const pill=r=>r.g==='u'?'<span class="pill p-u">Not checked</span>':'<span class="pill '+ST[r.g][1]+'">'+ST[r.g][0]+'</span>';
  const growTag=r=>r.grow?'<span class="fromu">You want more</span>':'';
  let body;
- if(step===0){
+ if(step===0){FLOWROWS=rows;FLOWE=E;
   const cell=(x,e)=>'<span class="ac '+(x?'y':x==null?'u':'n')+'" data-l="'+e[1]+'" title="'+e[3]+(x?' names you':x==null?' could not be read':' leaves you out')+'">'+(x?'✓':x==null?'':'–')+'</span>';
   const stats=[[asked?named+'<small> of '+asked+'</small>':'–','AI answers that name you'],[String(none.length),none.length===1?'search where no AI names you':'searches where no AI names you'],[vol(miss)?fmt(vol(miss))+est:'–','searches a month where you\'re left out somewhere']];
   body='<div class="astat fade">'+stats.map(s=>'<div><b>'+s[0]+'</b><span>'+s[1]+'</span></div>').join('')+'</div>'+
    '<div class="card pad col amx" style="--n:'+E.length+'"><div class="ah"><span>Search</span><span>Searches /mo'+est+'</span>'+E.map(e=>'<span class="en"><i style="background:'+e[2]+'"></i>'+X(e[3].replace(' (top 20)','').replace('Google search','Google'))+'</span>').join('')+'<span>Result</span></div>'+
-   '<div class="tblw arows">'+rows.map(r=>'<div class="ar g-'+r.g+'"><span class="aq">'+X(r.q)+growTag(r)+'</span><span class="av'+(r.v!=null?'':' nv')+'">'+(r.v!=null?fmt(r.v):'–')+'</span>'+E.map((e,i)=>cell(r.r[i],e)).join('')+'<span class="ap">'+pill(r)+'</span></div>').join('')+'</div>'+
-   '<div class="alg hint"><span><span class="ac y">✓</span> names you</span><span><span class="ac n">–</span> leaves you out</span><span><span class="ac u"></span> couldn\'t be read</span><span style="margin-left:auto">'+rows.length+' everyday searches, '+E.length+' places each</span></div></div>'}
+   '<div class="tblw arows">'+rows.map((r,i)=>'<div class="ar g-'+r.g+'" data-flow="'+i+'" role="button" tabindex="0" aria-label="How AI answered: '+X(r.q)+'"><span class="aq">'+X(r.q)+growTag(r)+'</span><span class="av'+(r.v!=null?'':' nv')+'">'+(r.v!=null?fmt(r.v):'–')+'</span>'+E.map((e,i)=>cell(r.r[i],e)).join('')+'<span class="ap">'+pill(r)+'</span></div>').join('')+'</div>'+
+   '<div class="alg hint"><span><span class="ac y">✓</span> names you</span><span><span class="ac n">–</span> leaves you out</span><span><span class="ac u"></span> couldn\'t be read</span><span class="flhint">Tap a search to see how AI decided</span><span style="margin-left:auto">'+rows.length+' everyday searches, '+E.length+' places each</span></div></div>'}
  else{const PK={};(D.packs||[]).forEach(p=>{if(p.pack&&p.pack.length)PK[p.q]=p});
   const tally={},seen={};const add=(n,q)=>{n=String(n).replace(/^#\d+\s*/,'');if(!n||nameIsMe(n))return;tally[n]=(tally[n]||0)+1;(seen[n]=seen[n]||new Set()).add(q)};
   rows.forEach(r=>{if(r.g!=='p')r.c.forEach(n=>add(n,r.q))});Object.values(PK).forEach(p=>{if(p.you==null)p.pack.forEach(n=>add(n,p.q))});
@@ -1703,18 +1736,63 @@ function vAsk(){const E=engs();
   const isPick=n=>pick&&nameMatch(n,pick);
   const lst=rows.filter(r=>r.g!=='p'||(PK[r.q]&&PK[r.q].you==null)).map(r=>Object.assign({pk:PK[r.q]},r));
   Object.values(PK).forEach(p=>{if(!rows.some(r=>r.q===p.q)&&p.you==null)lst.push({q:p.q,v:null,c:[],g:'x',pk:p,grow:growHit(p.q)})});
-  lst.sort((a,b)=>(b.grow-a.grow)||((b.v||0)-(a.v||0)));
+  lst.sort((a,b)=>(b.grow-a.grow)||((b.v||0)-(a.v||0)));FLOWROWS=lst;FLOWE=E;
   const chip=n=>'<span class="nchip'+(isPick(n)?' pk':'')+'">'+X(n)+'</span>';
   const pkCell=p=>!p?'<span class="hint">–</span>':p.you?'<span class="okx y">You\'re #'+String(p.you).replace(/^#/,'')+'</span>':'<span class="okx n">Not in top 3</span>';
   const aiCell=r=>r.g==='p'?'<span class="hint">AI names you</span>':r.c.length?r.c.slice(0,2).map(chip).join('')+(r.c.length>2?'<span class="hint">+'+(r.c.length-2)+'</span>':''):r.g==='f'?'<span class="hint">No business named</span>':r.g==='w'?'<span class="hint">Names you in '+r.n+' of '+r.m+'</span>':'<span class="hint">–</span>';
   const pickLine=pick?(T.some(t=>isPick(t[0]))?'':'<div class="hint">You said you lose clients to <b>'+X(pick)+'</b>. They didn\'t come up in place of you on these searches.</div>'):'';
   body='<div class="g2 rivals" style="grid-template-columns:1fr 1.7fr">'+
    '<div class="card pad col fade"><div class="colh" style="font-size:calc(1.35*var(--u))">Who takes your spot</div><div class="hint">How many searches each one shows up in when you don\'t</div>'+
-   (T.length?'<div class="tallyc">'+T.map((t,k)=>'<div class="'+(k?'':'tp ')+(isPick(t[0])?'pk':'')+'"><span>'+X(t[0])+(isPick(t[0])?'<span class="fromu">Your pick</span>':'')+'</span><u><i style="width:'+t[1]/tm*100+'%"></i></u><b>'+t[1]+'</b></div>').join('')+'</div>':'<div class="hint">No single competitor stands out on the searches we checked.</div>')+pickLine+'<div class="hint" style="margin-top:auto">Counted from AI answers, and Google\'s top 3 on the map, on searches where you\'re missing.</div></div>'+
+   (T.length?'<div class="tallyc">'+T.map((t,k)=>'<div class="'+(k?'':'tp ')+(isPick(t[0])?'pk':'')+'"><span>'+X(t[0])+(isPick(t[0])?'<span class="fromu">Your pick</span>':'')+'</span><u><i style="width:'+t[1]/tm*100+'%"></i></u><b>'+t[1]+'</b></div>').join('')+'</div>':'<div class="hint">No single competitor stands out on the searches we checked.</div>')+pickLine+'<div class="hint" style="margin-top:auto">Counted from AI answers, and Google\'s top 3 on the map, on searches where you\'re missing. <b class="flhint">Tap a search to see how AI decided.</b></div></div>'+
    '<div class="card pad col amx am2"><div class="ah"><span>Search where you\'re missing</span><span>Google\'s map, top 3</span><span>What AI says</span></div>'+
-   '<div class="tblw arows">'+(lst.length?lst.map(r=>'<div class="ar"><span class="aq">'+X(r.q)+growTag(r)+(r.v!=null?'<small>'+fmt(r.v)+est+' /mo</small>':'')+'</span><span class="apk">'+pkCell(r.pk)+'</span><span class="anm">'+aiCell(r)+'</span></div>').join(''):'<div class="hint" style="padding:calc(1*var(--u)) 0">AI and Google name you on every search we checked.</div>')+'</div></div></div>'}
+   '<div class="tblw arows">'+(lst.length?lst.map((r,i)=>'<div class="ar" data-flow="'+i+'" role="button" tabindex="0" aria-label="How AI answered: '+X(r.q)+'"><span class="aq">'+X(r.q)+growTag(r)+(r.v!=null?'<small>'+fmt(r.v)+est+' /mo</small>':'')+'</span><span class="apk">'+pkCell(r.pk)+'</span><span class="anm">'+aiCell(r)+'</span></div>').join(''):'<div class="hint" style="padding:calc(1*var(--u)) 0">AI and Google name you on every search we checked.</div>')+'</div></div></div>'}
  STAGE.innerHTML='<div class="scr">'+top()+'<div class="body"><div class="ttl">'+(step===0?'What customers ask AI, <em>and how you do</em>':'Who shows up <em>when it isn\'t&nbsp;you</em>')+'</div>'+body+'</div></div>'}
 
+/* ---------- how AI decided, for one search (opened from a row on Customers ask AI) ----------
+   Every value is from this audit: the AI answers, the Google profile, the 11 checks and the "you vs. competitors" measures.
+   Stage 4 compares with the business AI named instead (or, if it isn't one of the 3 we measured, the closest competitor). */
+let FLOWROWS=[],FLOWE=[];
+function flowOpen(i){const r=FLOWROWS[i];if(!r)return;const E=FLOWE,strip=n=>String(n).replace(/^#\d+\s*/,'');
+ const ck=n=>CK.find(c=>c.c===n),stc=c=>c?ST[stName(c.st)]:null,dot=c=>{const t=stc(c);return t?'<span class="pill '+t[1]+'">'+t[0]+'</span>':''};
+ const named=(r.c||[]).filter(n=>!nameIsMe(n)),pack=r.pk&&r.pk.pack?r.pk.pack.map(strip):[];
+ const cand=named[0]||pack.find(n=>!nameIsMe(n))||null;let idx=cand?WHO.findIndex((w,j)=>j>0&&nameMatch(w,cand)):-1;
+ const exact=idx>0;if(!exact){const a=AIM?AIM.slice(1):[];let best=-1,bi=1;a.forEach((v,j)=>{if(v!=null&&v>best){best=v;bi=j+1}});idx=WHO.length>1?bi:-1}
+ const them=idx>0?WHO[idx]:null;
+ /* 2. the assistants */
+ const eng=E.map((e,j)=>{const x=r.r?r.r[j]:null;return '<li class="'+(x?'y':x==null?'u':'n')+'"><i>'+(x?'✓':x==null?'?':'✕')+'</i><b>'+X(e[3].replace(' (top 20)','').replace('Google search','Google'))+'</b><span>'+(x?'named you':x==null?'couldn\'t be read':'left you out')+'</span></li>'}).join('');
+ /* 3. what AI reads about you */
+ const dir=(D.found||{})['Directory listings'],dch=dir&&dir.ch,dbad=dir&&dir.r?dir.r.find(x=>x[2]!=='ok'):null;
+ const src=[['Your Google profile',(B.rating?B.rating+'★':'')+(B.reviews?' from '+fmt(B.reviews)+' reviews':''),ck('Google profile')],
+  ['Your website',B.site||'',ck('Web management')],
+  ['Directories',dch&&dch.b!=null?(dch.a||0)+' of '+((dch.a||0)+(dch.b||0))+' match your Google details'+(dbad?' · '+dbad[0]+': '+String(dbad[1]).toLowerCase():''):'',ck('Directory listings')],
+  ['News and articles about you','',ck('PR')]].filter(x=>x[1]||x[2]);
+ const reads=src.map(x=>'<li><b>'+x[0]+'</b>'+(x[1]?'<span>'+X(x[1])+'</span>':'')+dot(x[2])+'</li>').join('');
+ /* 4. how you compare */
+ const cmp=[];if(idx>0)CK.forEach(c=>{const m=(AUD[c.c]||[]).find(x=>x.v&&x.v[0]!=null&&x.v[idx]!=null);if(!m)return;const a=m.v[0],b=m.v[idx];if(a===b)return;
+  const behind=m.t==='bool'?(!a&&b):m.low?a>b:a<b;cmp.push({m,a,b,behind})});
+ const gaps=cmp.filter(x=>x.behind).slice(0,5),wins=cmp.filter(x=>!x.behind).slice(0,2);
+ const crow=x=>'<li class="'+(x.behind?'bh':'ah')+'"><span>'+X(x.m.m)+'</span><b>'+fmtM(x.m,x.a)+'</b><b>'+fmtM(x.m,x.b)+'</b></li>';
+ const comp=them?'<div class="flcmp"><div class="flch"><span></span><b>You</b><b>'+X(them)+'</b></div><ul>'+gaps.map(crow).join('')+wins.map(crow).join('')+'</ul>'+(gaps.length?'':'<p class="hint">You\'re level or ahead on everything we measured.</p>')+'</div>':'<p class="hint">We didn\'t measure a competitor for this search.</p>';
+ /* 5. who AI recommended */
+ const rec=(r.g==='p'?'<li class="me"><b>'+X(ME)+'</b><span>named in every answer</span></li>':(r.n?'<li class="me"><b>'+X(ME)+'</b><span>named in '+r.n+' of '+r.m+' answers</span></li>':'<li class="me out"><b>'+X(ME)+'</b><span>not named</span></li>'))+
+  named.slice(0,4).map(n=>'<li><b>'+X(n)+'</b><span>named instead</span></li>').join('');
+ const mp=pack.length?'<div class="flmap"><span>Google\'s map, top 3</span><ol>'+pack.slice(0,3).map(n=>'<li'+(nameIsMe(n)?' class="me"':'')+'>'+X(n)+'</li>').join('')+'</ol>'+(r.pk&&r.pk.you?'':'<small>You\'re not in the top 3</small>')+'</div>':'';
+ const head=r.m?(r.n===0?'<span class="flbad">No AI assistant named you</span>':r.n===r.m?'<span class="flok">Every AI assistant named you</span>':'<span class="flbad">'+(r.m-r.n)+' of '+r.m+' AI assistants left you out</span>'):'';
+ const w=document.createElement('div');w.className='gpx flx';w.setAttribute('role','dialog');w.setAttribute('aria-modal','true');w.setAttribute('aria-label','How AI answered '+r.q);
+ w.innerHTML='<div class="gpx-bg" data-gpx></div><div class="gpx-card flcard"><div class="gph"><div><span class="kick">How AI decided</span><b>&ldquo;'+X(r.q)+'&rdquo;</b><small>'+head+'</small></div><button type="button" class="ib x" data-gpx aria-label="Close">✕</button></div>'+
+  '<div class="flw">'+
+  '<section><h4><i>1</i>A customer asks</h4><div class="flq">&ldquo;'+X(r.q)+'&rdquo;</div>'+(r.v!=null?'<p class="hint">'+fmt(r.v)+(D.volx?' est.':'')+' searches a month</p>':'')+'</section>'+
+  '<section><h4><i>2</i>AI assistants answer</h4><ul class="fleng">'+eng+'</ul></section>'+
+  '<section><h4><i>3</i>What AI reads about you</h4><ul class="flsrc">'+reads+'</ul></section>'+
+  '<section class="wide"><h4><i>4</i>'+(them?'How you compare with '+X(them)+(exact?'':', your closest competitor'):'How you compare')+'</h4>'+comp+'</section>'+
+  '<section><h4><i>5</i>Who AI recommended</h4><ul class="flrec">'+rec+'</ul>'+mp+'</section>'+
+  '</div><div class="flft"><span class="hint">Every number here is from your audit. Each gap is one of the 11 checks we fix.</span><button type="button" class="btn2" data-flgo>See your 11 checks →</button></div></div>';
+ const prev=document.activeElement;document.body.appendChild(w);requestAnimationFrame(()=>w.classList.add('on'));const x=w.querySelector('.x');x&&x.focus();
+ const close=()=>{w.classList.remove('on');setTimeout(()=>w.remove(),200);document.removeEventListener('keydown',k,true);if(prev&&document.contains(prev))prev.focus()};
+ const k=e=>{if(e.key==='Escape'){e.stopPropagation();close()}};document.addEventListener('keydown',k,true);
+ w.addEventListener('click',e=>{if(e.target.closest('[data-gpx]'))return close();if(e.target.closest('[data-flgo]')){close();go('checks',1)}})}
+STAGE.addEventListener('click',e=>{const r=e.target.closest('[data-flow]');if(r&&!e.target.closest('button,a'))flowOpen(+r.dataset.flow)});
+STAGE.addEventListener('keydown',e=>{const r=e.target.closest&&e.target.closest('[data-flow]');if(r&&(e.key==='Enter'||e.key===' ')){e.preventDefault();flowOpen(+r.dataset.flow)}});
 /* ---------- 11 CHECKS hub ---------- */
 const SVC=[
  [['Hand submissions to the directories AI reads','Data networks that feed hundreds of sites','Duplicate and wrong listings cleaned up'],'One Blueprint means every directory says the same thing.'],

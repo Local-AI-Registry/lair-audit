@@ -101,6 +101,11 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Customers ask AI
 - Step 1: three summary numbers, then one grid: a row per search, a column per AI assistant, the result on the right.
 - Step 2: "Who takes your spot" (ranked) beside a table of the searches where they're missing: Google's map top 3 and what AI says.
+- Tapping a search (either step) opens "How AI decided" (`flowOpen()`), a five-stage path for that one search, from this
+  audit's own data only: the question and its volume; each assistant (named you / left you out / couldn't be read); what AI
+  reads about you (Google profile, website, directories, news, with each check's status); how you compare with the business
+  AI named instead (or the closest competitor), from the "you vs. competitors" measures, gaps first; who AI recommended and
+  Google's map top 3. "See your 11 checks" goes to the results. Modeled on /ai-flow/ (an illustrative explainer).
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.
