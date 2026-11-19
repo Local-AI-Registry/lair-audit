@@ -29,4 +29,11 @@ R('#pinrt{font:700 10.5px var(--f-ui)!important;color:#4A2F1B!important', '#pinr
 R('<img id="poster" src="map-poster.jpg"', '<img id="poster" src="data:image/gif;base64,R0lGODlhAQABAAAAACw="')
 # let the page say how much room its own panels take, so the business lands in the open part of the screen
 R("map.setPadding({top:TOPP,bottom:BOT,left:0,right:0});", "map.setPadding(LAIR.pad||{top:TOPP,bottom:BOT,left:0,right:0});")
+# fonts: the same self-hosted files the audit page already loaded (cached), instead of Google Fonts and the unused serif
+import re
+s, n = re.subn(r'<link rel="preconnect" href="https://fonts\.(googleapis|gstatic)\.com"[^>]*>\n?', '', s)
+s, m = re.subn(r'<link rel="stylesheet" href="https://fonts\.googleapis\.com/css2\?[^"]*">',
+    '<style>@font-face{font-family:"Hanken Grotesk";font-weight:100 900;font-display:swap;src:url(../home/assets/fonts/hanken.woff2) format("woff2")}'
+    '@font-face{font-family:"Bricolage Grotesque";font-weight:200 800;font-display:swap;src:url(../home/assets/fonts/bricolage.woff2) format("woff2")}</style>', s)
+assert n == 2 and m == 1, (n, m)
 open(sys.argv[2], 'w').write(s); print('ok', sys.argv[2])

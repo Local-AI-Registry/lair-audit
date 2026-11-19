@@ -6,7 +6,7 @@ Find → Scan → Your score (3 steps) → Customers ask AI (2 steps) → 11 che
 ← → keys step through everything; 1 to 6 jump to a chapter; `?b=<slug>#<chapter>` links straight in.
 The older dark version stays at https://audit.localairegistry.com/ai-audit/classic.html. `v2/index.html` only forwards to the main page.
 
-`index.html`, `classic.html`, `map-bg.html`, `map-light.html` and `three.min.js` here are BUILT files. Never hand-edit them.
+`index.html`, `classic.html`, `map-bg.html`, `map-light.html`, `three.min.js`, `fix-ill.json` and `sets/` here are BUILT files. Never hand-edit them.
 Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 
 ## Source (`_build/`)
@@ -25,6 +25,15 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - `quiktox-audit.html`, `qx6.py`, `extract.json`, `art.json`, `vouch.json`, `hud_ev.json`, `hud_fix.json`, `logos.json`: shared content (Quiktox demo data, news, references, illustrations, logos).
 - `tests/`: Playwright checks, run from `_build`. Main page: `tests/serve.sh node tests/v2.js <slug> [<slug> ...]`
   (every chapter, errors and overflow). Classic page: `tests/serve.sh node tests/audt.js` and the others.
+
+## Speed (first load)
+- Each demo business's data is its own file, `sets/<slug>.json`, fetched when that demo opens (`loadSet()`); the page keeps only
+  their names (`DEMOS`, for the search box). A `?b=` link starts fetching its file from the `<head>` while the page loads.
+- The first screen ships as plain HTML (`_build/find-shell.html`, captured from `vFind()`), so the headline paints before the
+  script runs; links to an audit or demo (`?b=`, `?audit=`, `?id=`, `?q=`) keep the small loader instead.
+  `tests/serve.sh node tests/shell.js` fails if that HTML drifts from what the script draws: re-capture it as the test says.
+- sales.py strips comments and indentation from the styles and the main script. Fonts are self-hosted (no Google Fonts, also
+  in `map-light.html`, which reuses the page's cached font files). The map loads only after the page has finished loading.
 
 ## Main page notes
 - Plan has 3 steps: the overview, the full agency comparison (`extract.json` "cmp") and the month-by-month plan

@@ -57,8 +57,18 @@ def blueprint(x):
         return [blueprint(y) for y in x]
     return re.sub(r'\b(?:Registry )?[Rr]ecord\b', 'Blueprint', x) if isinstance(x, str) else x
 CMP, PLAN12 = blueprint(CMP), blueprint(PLAN12)
-data = 'const SETS=' + json.dumps(SETS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';const CMP=' + json.dumps(CMP, ensure_ascii=False) + ';const PLAN12=' + json.dumps(PLAN12) + ';'
+SETDIR = os.path.join(os.path.dirname(os.path.abspath(out)), 'sets')
+os.makedirs(SETDIR, exist_ok=True)
+for f in os.listdir(SETDIR):
+    if f.endswith('.json') and f[:-5] not in SETS:
+        os.remove(os.path.join(SETDIR, f))  # a demo dropped from build.sh
+for k, v in SETS.items():
+    json.dump(v, open(os.path.join(SETDIR, k + '.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
+DEMOS = {k: v['hit'] for k, v in SETS.items()}
+data = 'const SETS={};const DEMOS=' + json.dumps(DEMOS, ensure_ascii=False) + ';const FACES=' + json.dumps(FACES) + ';const PRESS=' + json.dumps(PRESS) + ';const CMP=' + json.dumps(CMP, ensure_ascii=False) + ';const PLAN12=' + json.dumps(PLAN12) + ';'
 t = t.replace('/*__DATA__*/', data.replace('</', '<\\/'))
+# the first screen as plain HTML (captured from vFind; tests/shell.js fails if it drifts from what the script draws)
+t = t.replace('/*__SHELL__*/', open(D + 'find-shell.html').read().strip())
 os.makedirs(os.path.dirname(os.path.abspath(out)), exist_ok=True)
 # the 11 "how we fix it" illustrations (from the classic page) go in their own file, loaded only when the Blueprint slide opens
 def blueprint_ill(h):  # the classic drawings say "record"; this page calls it the Blueprint
@@ -67,4 +77,27 @@ def blueprint_ill(h):  # the classic drawings say "record"; this page calls it t
     return h.replace('>Your record<', '>Your Blueprint\u2122<').replace('Your record', 'Your Blueprint').replace('your record', 'your Blueprint')
 json.dump({x['c']: blueprint_ill(x['html']) for x in json.load(open(D + 'hud_fix.json'))},
           open(os.path.join(os.path.dirname(os.path.abspath(out)), 'fix-ill.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
+# smaller page: comments and indentation out of the styles and the main script (conservative; no renaming)
+def _min_css(c):
+    c = re.sub(r'/\*.*?\*/', '', c, flags=re.S)
+    c = re.sub(r'\s+', ' ', c)
+    c = re.sub(r'\s*([{};,>])\s*', r'\1', c)  # never around ':' (selectors like "a :hover") or '+'/'-' (calc)
+    return c.replace(';}', '}').strip()
+def _min_js(j):
+    out, lines, i = [], j.split('\n'), 0
+    while i < len(lines):
+        ln = lines[i]
+        if ln.lstrip().startswith('/*'):  # a comment that starts the line: drop it only if nothing follows its end
+            k, rest = i, ln.lstrip()[2:]
+            while '*/' not in rest and k + 1 < len(lines):
+                k += 1
+                rest = lines[k]
+            if '*/' in rest and not rest.split('*/', 1)[1].strip():
+                i = k + 1
+                continue
+        out.append(ln.lstrip())
+        i += 1
+    return '\n'.join(x for x in out if x)
+t = re.sub(r'<style>(.*?)</style>', lambda m: '<style>' + _min_css(m.group(1)) + '</style>', t, flags=re.S)
+t = re.sub(r'<script>(.*?)</script>', lambda m: '<script>' + (_min_js(m.group(1)) if len(m.group(1)) > 20000 else m.group(1)) + '</script>', t, flags=re.S)
 open(out, 'w').write(t); print('ok', out, len(t), list(SETS))

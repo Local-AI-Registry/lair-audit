@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>(function(){var b=new URLSearchParams(location.search).get("b");if(b&&/^[a-z0-9-]{2,60}$/.test(b)){var l=document.createElement("link");l.rel="preload";l.as="fetch";l.crossOrigin="anonymous";l.href="sets/"+b+".json";document.head.appendChild(l)}})()</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
 <meta name="color-scheme" content="light">
@@ -12,7 +13,6 @@
 <meta name="apple-mobile-web-app-title" content="AI Audit">
 <link rel="apple-touch-icon" href="../home/research/apple-touch-icon.png">
 <title>AI Visibility Audit · Local AI Registry</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../home/assets/fonts/hanken.woff2">
 <style>
 @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:100 900;font-display:swap;src:url(../home/assets/fonts/hanken.woff2) format('woff2')}
@@ -955,7 +955,7 @@ body.maplive.maptracked .scan4 .sweep{opacity:.8}
 .prmeta{display:flex;flex-wrap:wrap;justify-content:flex-end;align-items:baseline;column-gap:calc(1.4*var(--u));row-gap:calc(.3*var(--u))}
 .prfoot{text-align:center}
 @media (max-width:760px),(max-aspect-ratio:4/5),(max-height:500px){
- .ttlrow{align-items:flex-start}.ptabs{overflow-x:auto;max-width:100%;scrollbar-width:none}.ptabs button{white-space:nowrap}
+ .ttlrow{align-items:flex-start}.ptabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;box-sizing:border-box;overflow:visible}.ptabs button{white-space:normal;text-align:center;justify-content:center;font-size:12.5px;line-height:1.25;padding:8px 6px;min-height:44px}
  .tile .tch{margin:6px -14px 0;min-height:0}.tile .tplot{height:120px;flex:none}.tile .tws{font-size:10.5px;top:4px}.tile .tdot{width:9px;height:9px}.tile .tlab{font-size:11.5px;padding:4px 14px 0}
  .tlmini .tlh b{font-size:16px}.tlmini .tlr b{font-size:15px}.tlmini .tlr .d{font-size:13px}
  .whyg{grid-template-columns:1fr}.whyg .trustp{order:-1;padding:18px}.tph{font-size:18px}.tpi{grid-template-columns:44px 1fr}.tpic{width:44px;height:44px;border-radius:12px}.tpic svg{width:24px;height:24px}.tpi b{font-size:19px}.tpi span{font-size:13.5px}.tpf{font-size:13px}.tps{font-size:12px}
@@ -1372,6 +1372,8 @@ html,body,#stage{background:#fff}
 <!-- Built by _build/sales.py from _build/sales.tpl.html. Do not hand-edit ai-audit/index.html. -->
 <div id="mapbg" aria-hidden="true"></div>
 <main id="stage" aria-live="off"><div class="scr"><div class="body ldbox"><div class="lg"><svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 10 L92 86 L64 86 L50 58 L36 86 L8 86 Z" fill="#1F4FE0"/><path d="M50 10 L61 30 L39 30 Z" fill="#FF5A3C"/></svg>Local AI Registry</div><div class="spin" aria-hidden="true"></div></div></div></main>
+<template id="fshell">/*__SHELL__*/</template>
+<script>if(!/[?&](b|audit|id|q)=/.test(location.search)){document.getElementById("stage").innerHTML=document.getElementById("fshell").innerHTML;document.body.classList.add("mapon")}</script>
 <noscript><p style="padding:24px;font:16px system-ui">This audit needs JavaScript. Please turn it on, or text us at (213) 931-5633 and we'll send it to you.</p></noscript>
 <script>/*__DATA__*/</script>
 <script>
@@ -1502,21 +1504,23 @@ const STREETS='<svg class="streets" viewBox="0 0 100 56" preserveAspectRatio="no
 const dots=(n,seed)=>{let h='';for(let i=0;i<n;i++)h+='<i class="dotp dr" style="left:'+(4+((i*37+seed)%92))+'%;top:'+(6+((i*53+seed*3)%86))+'%;animation-delay:-'+(i%6)+'s;animation-duration:'+(4+i%5)+'s"></i>';return h};
 
 /* ---------- FIND (home) ---------- */
-const HITS=Object.keys(SETS).map(k=>Object.assign({},SETS[k].hit,{slug:k,re:new RegExp(SETS[k].hit.match,'i')}));
+const HITS=Object.keys(DEMOS).map(k=>Object.assign({},DEMOS[k],{slug:k,re:new RegExp(DEMOS[k].match,'i')}));
+/* demo businesses: each one's data is its own file, fetched when it opens (keeps the first load small) */
+const loadSet=k=>SETS[k]?Promise.resolve(SETS[k]):fetch('sets/'+encodeURIComponent(k)+'.json').then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(d=>SETS[k]=d);
 const HQ=['best plumber near me','dentist open saturday','dispensary near me','who has the best reviews?','best med spa near me','emergency vet near me','hair salon open now','best pizza downtown'];
 function teamBar(){return TEAM?'<div class="thome on"><span class="tkon"><i></i>Team mode: picking a business runs the live scan</span><button type="button" class="tkout">Sign out</button></div>':'<form class="tkey thome" data-tkh novalidate><button type="button" class="tkopen">Team sign-in</button><div class="tkrow"><input type="password" autocomplete="current-password" placeholder="Team key" aria-label="Team key" maxlength="200"><button type="submit" class="pbtn">Sign in</button></div><p class="tkm" role="status"></p></form>'}
 STAGE.addEventListener('submit',e=>{const f=e.target.closest('[data-tkh]');if(!f)return;e.preventDefault();const k=(f.querySelector('input').value||'').trim(),m=f.querySelector('.tkm');if(!k)return;m.textContent='Checking the key…';
  const ok=()=>{TEAM=k;try{localStorage.setItem('lair-team',k)}catch(er){}render()};
  fetch(API+'/places/autocomplete?q=dentist',{headers:{'X-Team-Key':k}}).then(r=>{if(r.status===401){m.textContent='That team key wasn\'t accepted. Check it and try again.';return}ok()}).catch(ok)});
 STAGE.addEventListener('click',e=>{if(!e.target.closest('.tkout'))return;TEAM='';try{localStorage.removeItem('lair-team')}catch(er){}render()});
-function vFind(){
+function vFind(){const pq=document.getElementById('q');if(pq&&pq.value&&!D)vFind.pre=pq.value;
  STAGE.innerHTML='<div class="scr"><div class="map"><div class="pan">'+STREETS+dots(34,3)+HQ.map((q,i)=>'<div class="qb cyc" style="left:'+[8,62,14,70,40,76,22,52][i]+'%;top:'+[14,12,70,64,8,38,40,82][i]+'%;animation-delay:'+(RM?0:i*1.1)+'s">"'+q+'"</div>').join('')+'</div></div><div class="veil"></div>'+
  '<div class="home2"><div class="scard"><div class="lg" style="font-size:calc(1.4*var(--u))">'+LOGO+'Local AI Registry</div><h1 class="h4">Get recommended by&nbsp;AI.<br><em>Guaranteed.</em></h1><div class="sub" style="color:var(--muted)">Is AI recommending you today? Find out free.</div>'+
  '<div class="sfield"><div class="sbox"><svg viewBox="0 0 24 24" style="width:calc(1.4*var(--u));height:calc(1.4*var(--u));flex:none" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#6E7887" stroke-width="2"/><path d="M16.5 16.5L21 21" stroke="#6E7887" stroke-width="2"/></svg><input id="q" type="text" autocomplete="off" placeholder="Type your business name" aria-label="Business name" role="combobox" aria-expanded="false" aria-controls="sug"></div><ul id="sug" role="listbox"></ul></div>'+TRUST('home')+teamBar()+'</div></div>'+
  '<div class="seen2"><b>As seen in</b>'+PRESS.join(' · ')+'</div></div>';
- const q=$('#q'),sug=$('#sug');let items=[],act=-1;
+ const q=$('#q'),sug=$('#sug');let items=[],act=-1;if(vFind.pre){q.value=vFind.pre;vFind.pre='';setTimeout(()=>q.dispatchEvent(new Event('input')),0)}
  const draw=()=>{sug.innerHTML=items.map((r,i)=>r.err?'<li class="serr" role="status" aria-disabled="true"><small>'+X(r.err)+'</small></li>':r.wait?'<li class="swait" aria-disabled="true"><small>Searching Google…</small></li>':'<li role="option" data-i="'+i+'" class="'+(i===act?'on':'')+'"><b>'+(r.typed?'Use "'+X(r.name)+'"':X(r.name))+'</b><small>'+(r.typed?'Not listed? We\'ll find it for you':X(r.sub))+'</small></li>').join('');q.setAttribute('aria-expanded',items.length?'true':'false')};
- const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}ansLoad('b:'+r.slug);setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')};
+ const pick=r=>{if(r.typed){liveScan({q:r.name});return}if(r.id){liveScan({id:r.id,name:r.name});return}loadSet(r.slug).then(()=>{ansLoad('b:'+r.slug);setBiz(r.slug);try{history.replaceState(null,'','?b='+r.slug+'#scan')}catch(e){}go('scan')}).catch(()=>liveScan({q:r.name}))};
  let lt=null,lseq=0;
  q.addEventListener('input',()=>{const v=q.value.trim();act=-1;const loc=v.length<2?[]:HITS.filter(h=>h.re.test(v)||h.name.toLowerCase().includes(v.toLowerCase())||h.short.toLowerCase().includes(v.toLowerCase()));items=v.length<2?[]:loc.concat([{name:v,typed:1}]);draw();
   clearTimeout(lt);if(v.length<3)return;const my=++lseq;items=loc.concat([{wait:1},{name:v,typed:1}]);draw();
@@ -2115,8 +2119,9 @@ document.addEventListener('click',e=>{const b=e.target.closest('#dock [data-nav]
 (()=>{let lock=null;const ask=()=>{if(!MOB()||lock||!('wakeLock' in navigator)||document.visibilityState!=='visible')return;navigator.wakeLock.request('screen').then(l=>{lock=l;l.addEventListener('release',()=>{lock=null})}).catch(()=>{})};
  addEventListener('pointerdown',ask,{passive:true});document.addEventListener('visibilitychange',ask)})();
 const start=()=>{const h=location.hash.slice(1);go(D&&CH.some(c=>c[0]===h)?h:(D?'scan':'find'))};
-if(SETS[QP.get('b')]){ansLoad('b:'+QP.get('b'));setBiz(QP.get('b'))}
-if(!D&&/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
+const B0=QP.get('b');
+if(DEMOS[B0]){loadSet(B0).then(()=>{ansLoad('b:'+B0);setBiz(B0);start()}).catch(()=>start())}
+else if(/^[A-Za-z0-9_-]{4,64}$/.test(QP.get('audit')||'')){
  const AID=QP.get('audit'),msg=(t,b)=>{STAGE.innerHTML='<div class="scr"><div class="body ldbox"><div class="lg">'+LOGO+'Local AI Registry</div>'+(b?'':'<div class="spin" aria-hidden="true"></div>')+'<div class="sub" role="status">'+t+'</div>'+(b||'')+'</div></div>'};
  const fail=t=>msg(t,'<a class="btn" href="sms:+12139315633?&body='+encodeURIComponent('Please send my AI visibility audit ('+AID+')')+'">Text us for your audit →</a><button type="button" class="lnk" data-home>Search for a business instead</button>');
  msg('Opening your audit…');let tries=0;const t0=Date.now();
