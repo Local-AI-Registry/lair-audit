@@ -1579,7 +1579,7 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
  let qHold=false;
  /* save (or skip), show it on the card for a moment, then the next question */
  function qAnswer(id,val,card,label){if(qHold)return;ANS.skipped=(ANS.skipped||[]).filter(x=>x!==id);if(val===undefined){delete ANS[id];ANS.skipped.push(id)}else{ANS[id]=val;
-   addFinding(id==='rival'?'Noted: '+val:id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+(qretail()?' an order':' a visit'):'Noted: '+(label||val))}
+   addFinding(id==='rival'?'Noted: '+(val||'someone not on the list'):id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+(qretail()?' an order':' a visit'):'Noted: '+(label||val))}
   QDONE.add(id);QH.push(id);if(qForce===id)qForce=null;ansSave();applyAns();
   if(!card){qShown=null;drawQ(k>=PH.length);return}
   qHold=true;card.classList.add(val===undefined?'skipped':'sent');card.querySelectorAll('button,input').forEach(x=>{x.disabled=true});
@@ -1591,7 +1591,7 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
   if(!d){slot.textContent='';return}
   const n=QDEF.indexOf(d)+1,prev=ANS[d.id],opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():d.kind==='chips'||d.kind==='say'?d.opts():null,on=v=>' aria-pressed="'+(v?'true':'false')+'"';
   let inp='',alt='';
-  if(d.kind==='pick'){const mine=prev&&!opts.includes(prev)?prev:'';inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt"'+on(mine)+' data-other>Someone else</button></div><div class="qrow2"'+(mine?'':' hidden')+'><input class="qtx" id="q-other" maxlength="80" placeholder="Their name" aria-label="Competitor name" value="'+X(mine)+'"><button type="button" class="qgo"'+(mine?'':' disabled')+'>Save →</button></div>';alt='No one in particular'}
+  if(d.kind==='pick'){const mine=prev&&!opts.includes(prev)?prev:'',oth=prev===''||!!mine;inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'<button type="button" class="qo qalt"'+on(oth)+' data-other>Someone else</button></div><div class="qrow2"'+(oth?'':' hidden')+'><input class="qtx" id="q-other" maxlength="80" placeholder="Their name (optional)" aria-label="Competitor name, optional" value="'+X(mine)+'"><button type="button" class="qgo"'+(oth?'':' disabled')+'>'+(mine?'Save →':'Next →')+'</button></div>';alt='No one in particular'}
   else if(d.kind==='multi'){const pv=Array.isArray(prev)?prev:[],own=pv.filter(x=>!(opts||[]).includes(x));
    inp=(opts?'<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(pv.includes(o))+' data-v="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>':'')+'<input class="qtx" id="q-txt" maxlength="120" placeholder="'+(opts?'Something else? Type it here':'For example: implants, whitening')+'" aria-label="Other services" value="'+X(own.join(', '))+'">';alt='Not sure yet'}
   else if(d.kind==='money'){const P=QSPEND[qcat()]||[50,100,250,500];inp='<div class="qopts">'+P.map((v,j)=>'<button type="button" class="qo"'+on(prev===v)+' data-m="'+v+'">$'+fmt(v)+(j===P.length-1?'+':'')+'</button>').join('')+'</div><label class="qnum"><span>$</span><input id="q-num" type="text" inputmode="numeric" maxlength="7" placeholder="Or type it" aria-label="Amount" value="'+(prev&&!P.includes(prev)?prev:'')+'"></label>';alt='Not sure'}
@@ -1599,22 +1599,23 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
   else{inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o[1])+' data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';alt='Not sure'}
   const save=d.kind==='multi'||d.kind==='money';
   slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+(d.kind==='multi'?svcFrom():'')+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
-  const card=slot.firstChild;let sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
+  const card=slot.firstChild;let oPick=d.kind==='pick'&&(prev===''||!!(prev&&!opts.includes(prev))),sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
   const typed=()=>((card.querySelector('#q-txt')||{}).value||'').split(/[,;]+/).map(x=>x.trim()).filter(Boolean);
   const ready=()=>{const g=card.querySelector('.qf .qgo')||card.querySelector('.qrow2 .qgo');if(!g)return;
-   g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!sel.length:!(sel.length||typed().length);
+   g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!(sel.length||oPick):!(sel.length||typed().length);
+   if(d.kind==='pick')g.textContent=oPick&&!sel.length?'Next →':'Save →';
    const c=card.querySelector('.qsel');if(c)c.textContent=d.kind==='multi'?Math.min(3,sel.length+typed().length)+' of 3 chosen':''};
   ready();
   card.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.disabled)return;
    if(b.classList.contains('qback'))return qBack();
    if(b.classList.contains('qskip'))return qAnswer(d.id,undefined,card,b.dataset.alt||'Skipped');
    if(b.classList.contains('qgo')){if(d.kind==='money'){const v=parseInt(card.querySelector('#q-num').value.replace(/\D/g,''),10);return qAnswer(d.id,v,card,'$'+fmt(v))}
-    if(d.kind==='pick')return qAnswer(d.id,sel[0],card,sel[0]);const v=[...new Set(sel.concat(typed()))].slice(0,3);return qAnswer(d.id,v,card,v.join(', '))}
+    if(d.kind==='pick')return sel.length?qAnswer(d.id,sel[0],card,sel[0]):qAnswer(d.id,'',card,'Someone not on the list');const v=[...new Set(sel.concat(typed()))].slice(0,3);return qAnswer(d.id,v,card,v.join(', '))}
    if(b.dataset.m){b.setAttribute('aria-pressed','true');b.classList.add('hit');const v=+b.dataset.m;return qAnswer(d.id,v,card,'$'+fmt(v))}
    if(b.dataset.n){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,+b.dataset.n,card,b.textContent)}
    if(b.dataset.s!=null){b.setAttribute('aria-pressed','true');b.classList.add('hit');return qAnswer(d.id,b.dataset.s,card,b.dataset.s)}
-   if(b.hasAttribute('data-other')){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('.qrow2').hidden=false;card.querySelector('#q-other').focus();sel=[];ready();return}
-   if(d.kind==='pick'){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));b.classList.add('hit');return qAnswer(d.id,b.dataset.v,card,b.dataset.v)}
+   if(b.hasAttribute('data-other')){card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));card.querySelector('.qrow2').hidden=false;if(!MOB())card.querySelector('#q-other').focus();sel=[];oPick=true;ready();return}
+   if(d.kind==='pick'){oPick=false;card.querySelectorAll('.qo').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));b.classList.add('hit');return qAnswer(d.id,b.dataset.v,card,b.dataset.v)}
    if(d.kind==='multi'){const o=b.getAttribute('aria-pressed')!=='true';if(o&&sel.length+typed().length>=3){b.classList.remove('nope');void b.offsetWidth;b.classList.add('nope');return}
     b.setAttribute('aria-pressed',String(o));sel=o?sel.concat(b.dataset.v):sel.filter(x=>x!==b.dataset.v);ready()}});
   card.addEventListener('input',e=>{if(e.target.id==='q-other')sel=e.target.value.trim()?[e.target.value.trim()]:[];if(e.target.id==='q-num'){e.target.value=e.target.value.replace(/\D/g,'');card.querySelectorAll('[data-m]').forEach(x=>x.setAttribute('aria-pressed','false'))}ready()});
