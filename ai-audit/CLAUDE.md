@@ -49,8 +49,8 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 - Blueprint slide (11 checks, Our system): each check shows its "how we fix it" drawing from the classic page
   (`hud_fix.json`), written by sales.py to `../fix-ill.json` with "record" renamed Blueprint ("Your Blueprint™", same as the
   team's LAIR-11-checks-animations files), loaded only when the slide opens, and replayed every 7 seconds while on screen.
-- Assurances follow the business type (`trustMed()`): medical practices (and the home screen, before a business is picked)
-  show $750K insured / HIPAA BAA / US-based team; everyone else (dispensaries, shops, vets, unknown types) shows Guaranteed
+- Assurances follow the business type (`trustMed()`): medical practices
+  show $750K insured / HIPAA BAA / US-based team; everyone else (dispensaries, shops, vets, unknown types, and the first screen before a business is picked) shows Guaranteed
   by day 90 / Month to month / US-based team, the Why us panel reads "Easy to say yes to", the plan and proposal cards drop
   the badge row (their list already says it), and Why us is titled "Our clients' results" (all case studies are medical).
 - Proposal: the rep's send button reads "Email or text this proposal" (it calls `/leads`), so nothing says "rep only" on screen.
@@ -101,6 +101,11 @@ Edit the source in `_build/` and run `_build/build.sh`, which rewrites them.
 ## Customers ask AI
 - Step 1: three summary numbers, then one grid: a row per search, a column per AI assistant, the result on the right.
 - Step 2: "Who takes your spot" (ranked) beside a table of the searches where they're missing: Google's map top 3 and what AI says.
+- Tapping a search (either step) opens "How AI decided" (`flowOpen()`), a five-stage path for that one search, from this
+  audit's own data only: the question and its volume; each assistant (named you / left you out / couldn't be read); what AI
+  reads about you (Google profile, website, directories, news, with each check's status); how you compare with the business
+  AI named instead (or the closest competitor), from the "you vs. competitors" measures, gaps first; who AI recommended and
+  Google's map top 3. "See your 11 checks" goes to the results. Modeled on /ai-flow/ (an illustrative explainer).
 
 ## Add a business
 1. Run the scan per `biz/SPEC.md` (plus DIR_SPEC and DIRC_SPEC), writing `biz/<slug>.json` and its sidecars.
