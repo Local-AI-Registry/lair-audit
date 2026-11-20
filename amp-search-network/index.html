@@ -281,6 +281,38 @@ input[type=range]{width:100%;accent-color:var(--blue);height:28px}
 .c2o.big span{color:#C9D2E3}.c2o.big b{color:#fff;font-size:clamp(34px,4.4vw,46px)}.c2o.big em{font-style:normal;font-size:13px;color:#D8BC86}
 .c2flow svg{width:100%;height:auto;display:block;margin-top:6px}
 @media (max-width:860px){.c2grid{grid-template-columns:1fr}.calc2{padding:16px}}
+/* how we do it */
+.hw{margin-top:34px;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:20px}
+.hwsvg{width:100%;height:auto;display:block}
+.hwk{font:700 11px var(--loud);letter-spacing:.16em;fill:#D8BC86}.hwt{font:600 19px var(--serif);fill:#fff}.hws{font:500 13px var(--sans);fill:#C9D2E3}
+.hwhub{transform-box:fill-box;transform-origin:center;opacity:0;transform:scale(.6);transition:all .8s cubic-bezier(.3,1.5,.5,1)}
+.hw.in .hwhub{opacity:1;transform:none}
+.hwring{transform-box:fill-box;transform-origin:center;animation:ring 2.8s ease-out infinite}
+.hwl{stroke:#C9B48C;stroke-width:1.6;fill:none;stroke-dasharray:400;stroke-dashoffset:400;transition:stroke-dashoffset 1s ease;transition-delay:var(--d)}
+.hw.in .hwl{stroke-dashoffset:0}
+.hwn{opacity:0;transition:opacity .5s;transition-delay:var(--d)}.hw.in .hwn{opacity:1}
+.hwn rect{fill:#fff;stroke:#E6DED2}.hwn text{font:700 13px var(--loud);fill:#041E42}.hwn .num{font:800 11px var(--loud);fill:#8E7140}
+.hwn .ok{opacity:0;transition:opacity .4s;transition-delay:calc(var(--d) + 1.4s)}.hw.in .hwn .ok{opacity:1}
+.hwp{fill:#B9975B;opacity:0;transition:opacity .4s 1.6s}.hw.in .hwp{opacity:1}
+.hwlist{display:none}
+.hwcap{font-size:15.5px;color:#2A3547;margin:10px 6px 2px}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
+.case{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:22px}
+.ctop b{font:800 17px var(--loud);display:block}.ctop span{font-size:13.5px;color:var(--muted)}
+.cbig{margin:14px 0 6px}.cbig em{font-style:normal;font-size:13px;color:var(--muted);display:block}
+.cbig strong{font:800 34px/1.1 var(--loud);color:var(--blue)}.cbig i{font-style:normal;color:var(--gold)}
+.cchart{width:100%;height:auto;display:block;margin:8px 0 4px}
+.lxl{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:600;stroke-dashoffset:600;transition:stroke-dashoffset 1.8s ease}
+.case.in .lxl{stroke-dashoffset:0}
+.cleg{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center}
+.cleg .l1,.cleg .l2{display:inline-block;width:14px;height:3px;border-radius:2px;background:#1F4FE0;margin-right:5px}.cleg .l2{background:#C9C2B1}
+.case p{font-size:14.5px;color:#2A3547;margin:8px 0 0}
+.case .csrc{font-size:12px;color:var(--muted)}
+.cstats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.cstats div{background:var(--paper);border-radius:12px;padding:12px}
+.cstats b{font:800 22px var(--loud);display:block;color:var(--ink)}.cstats span{font-size:13px;color:#2A3547;line-height:1.4;display:block}
+@media (max-width:860px){.cases{grid-template-columns:1fr}}
+@media (max-width:560px){.hwsvg{display:none}.hwlist{display:grid;grid-template-columns:1fr;gap:8px}.hwli{display:flex;align-items:center;gap:10px;background:var(--paper);border-radius:10px;padding:10px 12px;font:700 14px var(--loud)}.hwli i{font-style:normal;color:var(--gold7);font-size:12px}.hwli::after{content:"✓";margin-left:auto;color:var(--blue)}.hwhubm{background:var(--ink);color:#fff;border-radius:14px;padding:16px;text-align:center;font:600 18px var(--serif);margin-bottom:6px}.hwhubm small{display:block;font:700 11px var(--loud);letter-spacing:.16em;color:#D8BC86;margin-bottom:4px}}
 /* rag (from Fresh) */
 .pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:40px}
 .pipe .pstep{grid-column:span 2}
@@ -872,6 +904,56 @@ footer a{color:var(--blue)}
 <p class="plain"><b>In plain English:</b> AI only names practices whose facts line up across the web. We make every source say the same true thing about each AMP practice, connect the family behind the scenes without changing any brand, and write it the way patients ask, so your practices land inside the circle.</p>
 </div></section>
 
+<!-- HOW WE DO IT -->
+<section id="how"><div class="wrap">
+<span class="label">How we do it</span>
+<h2 class="wide">One true record for each practice. Eleven places AI checks. <span class="nw">Always in sync.</span></h2>
+<p class="intro">For every practice we keep one central record: name, address, phone, services, prices, providers, hours and how it belongs to AMP. That record feeds the 11 kinds of sources AI reads before it recommends anyone, and we check every month that they still match.</p>
+
+<div class="hw reveal" id="hw">
+<svg viewBox="0 0 900 520" class="hwsvg" role="img" aria-label="A central record sending the same facts to 11 sources AI reads">
+<defs><radialGradient id="hwg" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#E7EDFC"/><stop offset="1" stop-color="#E7EDFC" stop-opacity="0"/></radialGradient></defs>
+<circle cx="450" cy="260" r="230" fill="url(#hwg)"/>
+<g id="hwlines"></g>
+<g id="hwnodes"></g>
+<g class="hwhub">
+<circle cx="450" cy="260" r="78" fill="#041E42"/>
+<circle class="hwring" cx="450" cy="260" r="78" fill="none" stroke="#B9975B" stroke-width="2"/>
+<text x="450" y="242" text-anchor="middle" class="hwk">THE RECORD</text>
+<text x="450" y="268" text-anchor="middle" class="hwt">One set of facts</text>
+<text x="450" y="290" text-anchor="middle" class="hws">per practice</text>
+</g>
+</svg>
+<div class="hwlist" id="hwlist"></div>
+<p class="hwcap">If one source says something different, AI trusts the practice less. Keeping all 11 in sync is the job, every month.</p>
+</div>
+
+<h3 class="subh">Results we've measured</h3>
+<div class="cases">
+<div class="case reveal">
+<div class="ctop"><b>LUXURGERY</b><span>Plastic surgery · New York, NY</span></div>
+<div class="cbig"><div><em>AI visibility score</em><strong>34 <i>→</i> 71</strong></div></div>
+<svg viewBox="0 0 320 120" class="cchart" aria-label="Monthly organic visits over 12 months, this year versus the year before">
+<g id="lxg"></g>
+</svg>
+<p class="cleg"><span class="nw"><span class="l1"></span>Monthly visits from Google, last 12 months</span> <span class="nw"><span class="l2"></span>Same months, year before</span></p>
+<p>Visits from Google grew from about 1,000 to about 3,450 a month in a year, while the year before stayed under 1,000. AI visibility score more than doubled.</p>
+<p class="csrc">Semrush organic traffic; AI score from the Local AI Registry</p>
+</div>
+<div class="case reveal">
+<div class="ctop"><b>Eye surgery practice</b><span>Ophthalmology · Louisville, KY</span></div>
+<div class="cbig"><div><em>ChatGPT, Louisville procedure searches</em><strong>Not named <i>→</i> #1</strong></div></div>
+<div class="cstats">
+<div><b>3</b><span>procedures where ChatGPT now lists them first, two months in</span></div>
+<div><b>−27%</b><span>Google clicks lost to a core update before we started</span></div>
+<div><b>Stopped</b><span>the slide the month we started; weekly clicks held steady since</span></div>
+<div><b>+40%</b><span>more appearances in Google's AI answers</span></div>
+</div>
+<p class="csrc">The practice's own Google Search Console, Nov 2026. Shown without the name until approved</p>
+</div>
+</div>
+</div></section>
+
 <section class="band" id="team"><div class="wrap">
 <span class="label">Who you'll work with</span>
 <h2>Built by aesthetics insiders. <span class="nw">No handoffs.</span></h2>
@@ -1047,6 +1129,26 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
 
  // underneath replay
  (function(){var ub=document.getElementById('ub'),b=document.getElementById('ubreplay');if(!ub||!b)return;b.addEventListener('click',function(){ub.classList.remove('in');void ub.offsetWidth;setTimeout(function(){ub.classList.add('in')},60)})})();
+
+ // how-we-do-it hub + Luxurgery chart
+ (function(){
+  var S=['Directory listings','Google and company profiles','Reviews and reputation','Press releases','Independent articles','Best-of guides','Video','Website content','Website code','Image details','AI monitoring'];
+  var lg=document.getElementById('hwlines'),ng=document.getElementById('hwnodes');if(!lg)return;
+  var cx=450,cy=260,R=205,h='',n='';
+  S.forEach(function(s,i){var a=-Math.PI/2+Math.PI/S.length+i*2*Math.PI/S.length,x=cx+335*Math.cos(a),y=cy+212*Math.sin(a),d=(.25+i*.09).toFixed(2)+'s';
+   var ex=cx+78*Math.cos(a),ey=cy+78*Math.sin(a);
+   h+='<path class="hwl" style="--d:'+d+'" d="M'+ex.toFixed(1)+' '+ey.toFixed(1)+' L'+x.toFixed(1)+' '+y.toFixed(1)+'"/>';
+   h+='<circle class="hwp" r="4"><animateMotion dur="'+(1.8+(i%4)*.35).toFixed(2)+'s" begin="'+(i*.2).toFixed(1)+'s" repeatCount="indefinite" path="M'+ex.toFixed(1)+' '+ey.toFixed(1)+' L'+x.toFixed(1)+' '+y.toFixed(1)+'"/></circle>';
+   var w=Math.max(120,s.length*7.4+46);
+   n+='<g class="hwn" style="--d:'+d+'"><rect x="'+(x-w/2).toFixed(1)+'" y="'+(y-17)+'" width="'+w.toFixed(1)+'" height="34" rx="17"/><text x="'+(x-w/2+14).toFixed(1)+'" y="'+(y+4)+'" class="num">'+(i<9?'0':'')+(i+1)+'</text><text x="'+(x-w/2+36).toFixed(1)+'" y="'+(y+5)+'">'+s+'</text><circle class="ok" cx="'+(x+w/2-2).toFixed(1)+'" cy="'+(y-15)+'" r="8" fill="#1F4FE0"/><path class="ok" d="M'+(x+w/2-6).toFixed(1)+' '+(y-15)+' l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none"/></g>';
+  });
+  lg.innerHTML=h;ng.innerHTML=n;
+  document.getElementById('hwlist').innerHTML='<div class="hwhubm"><small>THE RECORD</small>One set of facts per practice</div>'+S.map(function(s,i){return '<div class="hwli"><i>'+(i<9?'0':'')+(i+1)+'</i>'+s+'</div>'}).join('');
+  var m=[1002,1286,1391,1374,1767,1953,2357,2634,3353,3275,3311,3451],p=[640,690,655,720,760,740,810,870,850,910,960,980],mx=3600;
+  function line(v,c){return '<path class="lxl" stroke="'+c+'" d="'+v.map(function(y,i){return (i?'L':'M')+(10+i*27.3).toFixed(1)+' '+(108-y/mx*96).toFixed(1)}).join(' ')+'"/>'}
+  var g=document.getElementById('lxg');
+  g.innerHTML='<line x1="10" x2="310" y1="108" y2="108" stroke="#E6DED2"/>'+line(p,'#C9C2B1')+line(m,'#1F4FE0')+'<circle cx="310.3" cy="'+(108-3451/mx*96).toFixed(1)+'" r="4.5" fill="#1F4FE0"/><text x="304" y="'+(108-3451/mx*96+18).toFixed(1)+'" text-anchor="end" style="font:800 12px Bricolage Grotesque;fill:#1F4FE0">3,451</text><text x="14" y="'+(108-1002/mx*96-8).toFixed(1)+'" style="font:700 11px Bricolage Grotesque;fill:#5D6878">1,002</text>';
+ })();
  // calculator v2 (EBITDA + platform value)
  (function(){
   var F=[].slice.call(document.querySelectorAll('.c2f')),V={};
