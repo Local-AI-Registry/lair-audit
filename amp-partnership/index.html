@@ -123,7 +123,7 @@ table.hm tr.hot td:first-child{box-shadow:inset 3px 0 0 var(--coral)}
 /* AI grid */
 .aig{display:grid;grid-template-columns:minmax(0,1fr) repeat(5,32px);gap:5px;align-items:center;font-size:12.5px}
 .aig .h{font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--mute);text-align:center;text-transform:uppercase}
-.aig i{display:block;height:34px;border-radius:7px;background:var(--bad-t);position:relative}
+.aig i{display:block;height:22px;border-radius:6px;background:var(--bad-t);position:relative}
 .aig i.y{background:var(--good)}
 .aig i.u{background:repeating-linear-gradient(45deg,var(--soft) 0 5px,var(--line) 5px 10px)}
 .aig .q{color:var(--ink2);line-height:1.2;padding-right:4px}
@@ -394,26 +394,27 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
 <!-- 5 · WHAT WE ANALYZED -->
 <section class="slide" data-t="What we analyzed">
   <p class="eyebrow">What we analyzed</p>
-  <h2 class="h2">Four AMP practices, four markets. <span class="g">Three fully scored against local rivals, Synergy next.</span></h2>
+  <h2 class="h2">Four AMP practices, four markets. <span class="g">Each scored against its closest local rivals.</span></h2>
   <div class="body grid g4" id="pcards"></div>
-  <div class="foot"><span class="src">AI score: share of AI and Google answers naming the practice, across the six local searches that matter most to it. Scans Nov 11–12, 2026: ChatGPT, Gemini, Claude, Perplexity, Google and Google AI Overview. Synergy: DataForSEO live Google results from Kennewick and Yakima, rankings and backlinks, Nov 20 2026.</span><span></span></div>
+  <div class="foot"><span class="src">AI score: share of AI and Google answers naming the practice, across the six local searches that matter most to it. Scans Nov 11–12, 2026: ChatGPT, Gemini, Claude, Perplexity, Google and Google AI Overview. Synergy (Kennewick) scanned Nov 20, 2026 the same way; EsthetixMD's Claude and Perplexity answers added Nov 20.</span><span></span></div>
 </section>
 
 <!-- 6 · SCOREBOARD -->
 <section class="slide" data-t="Scoreboard">
   <p class="eyebrow">Scoreboard</p>
-  <h2 class="h2">One shares the lead, one is ahead but thin, <span class="g">and one trails a rival by 31 points.</span></h2>
+  <h2 class="h2">Three lead or share the lead in their markets. <span class="g">Hello Smooth trails a rival by 31 points.</span></h2>
   <div class="body">
     <div class="sb" id="sb"></div>
-    <div class="axis" style="margin-top:12px"><div></div><div><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div></div>
-    <div class="legend" style="margin-top:16px"><span><i style="background:var(--blue)"></i>AMP practice</span><span><i style="background:var(--line)"></i>Highest-scoring local rival</span></div>
-    <div class="grid g3" style="margin-top:26px">
+    <div class="axis" style="margin-top:6px"><div></div><div><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div></div>
+    <div class="legend" style="margin-top:8px"><span><i style="background:var(--blue)"></i>AMP practice</span><span><i style="background:var(--line)"></i>Highest-scoring local rival</span></div>
+    <div class="grid g4" style="margin-top:12px">
       <div class="card" style="padding:16px 18px"><p class="k">EsthetixMD</p><p>Tied at the top; rivals average 57. The job is keeping the lead.</p></div>
       <div class="card" style="padding:16px 18px"><p class="k">Hello Smooth</p><p>31 points behind Amason Aesthetics, despite more Google reviews.</p></div>
       <div class="card" style="padding:16px 18px"><p class="k">Illumé</p><p>14 points ahead, but its Google reach halved in a year.</p></div>
+      <div class="card" style="padding:16px 18px"><p class="k">Synergy</p><p>AI names it almost every time. Mismatched phones and dead links put that at risk.</p></div>
     </div>
   </div>
-  <div class="foot"><span>Scores out of 100 from the Nov 11–12, 2026 audit scans.</span><span></span></div>
+  <div class="foot"><span>Scores out of 100. EsthetixMD, Hello Smooth, Illumé: scans Nov 11–12, 2026. Synergy (Kennewick): scan Nov 20, 2026.</span><span></span></div>
 </section>
 
 <!-- 7 · THREE SITUATIONS -->
@@ -439,7 +440,7 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
   <p class="eyebrow">The 11 checks, side by side</p>
   <h2 class="h2">Line them up and the pattern is clear: <span class="g">the same checks fail at every practice.</span></h2>
   <div class="body tblw" style="margin-top:18px"><table class="hm" id="hm"></table></div>
-  <div class="foot"><span>Highlighted rows: below "Passed" at all three fully scanned practices. Synergy: 4 checks measured from Google data (Nov 20); the rest fill in with its AI scan.</span><span></span></div>
+  <div class="foot"><span>Highlighted rows: below "Passed" at all three fully scanned practices. Synergy (Nov 20 scan): 8 of 11 checks measured; PR, video and web management not yet checked.</span><span></span></div>
 </section>
 
 <!-- 9 · THE PATTERN -->
@@ -448,7 +449,7 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
   <h2 class="h2">These aren't four local problems. <span class="g">It's one portfolio problem, and it can be fixed centrally.</span></h2>
   <div class="body pat">
     <div class="card"><span class="num big">4 of 4</span><h3>Identity drift</h3><p>Old names and conflicting details left over from rebrands and acquisitions.</p>
-      <ul><li>Exhale Spa → EsthetixMD</li><li>Hello Smooth Laser Studio → Med Spa</li><li>4 spellings of Illumé</li><li>Synergy: phones differ, both sites</li></ul></div>
+      <ul><li>Exhale Spa → EsthetixMD; AI still says "formerly Exhale"</li><li>Hello Smooth Laser Studio → Med Spa</li><li>4 spellings of Illumé</li><li>Synergy: phones differ, both sites</li></ul></div>
     <div class="card"><span class="num big">3 of 3</span><h3>Google reach shrinking</h3><p>Fewer searches each site ranks for, year on year.</p>
       <ul><li>Hello Smooth: 997 → 557</li><li>Illumé: 597 → 246</li><li>EsthetixMD: down, no new article since Sep 2025</li></ul></div>
     <div class="card"><span class="num big">3 of 3</span><h3>No earned media</h3><p>AI leans on news and guides to decide who to trust.</p>
@@ -464,9 +465,9 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
 <section class="slide" data-t="What AI says today">
   <p class="eyebrow">What AI says today</p>
   <h2 class="h2">The AI tools don't agree with each other. <span class="g">Being named by one isn't enough.</span></h2>
-  <div class="body grid g3" id="aig"></div>
+  <div class="body grid g2" id="aig" style="row-gap:14px;column-gap:40px;margin-top:20px"></div>
   <div class="legend"><span><i style="background:var(--good)"></i>Names the practice</span><span><i style="background:var(--bad-t)"></i>Doesn't name it</span><span><i style="background:repeating-linear-gradient(45deg,var(--soft) 0 4px,var(--line) 4px 8px)"></i>Not checked or no answer</span></div>
-  <div class="foot"><span>The searches in each scan, run Nov 11–12, 2026 from the practice's own city. GPT ChatGPT · Ge Gemini · C Claude · P Perplexity · G Google top 20 (map or organic).</span><span></span></div>
+  <div class="foot"><span>Searches run from each practice's own city: Nov 11–12, 2026, plus Nov 20 for Synergy and EsthetixMD's Claude and Perplexity answers. GPT ChatGPT · Ge Gemini · C Claude · P Perplexity · G Google top 20 (map or organic).</span><span></span></div>
 </section>
 
 <!-- 11 · WORTH -->
@@ -739,7 +740,7 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
 var P=[
  {s:'esthetixmd-bend',n:'EsthetixMD',full:'EsthetixMD Spa & Laser Center',city:'Bend, OR',score:72,top:72,topN:'its market (it is the top score)',rev:'628 reviews · 4.9★',cmp:[72,'best local rival (tied)'],named:'16 of 21',tag:['Protect the leader','p-blue'],
   rivals:'Elite Medi Spa, Salt Medical Aesthetics, Juniper Dermatology',
-  rd:[['best med spa in bend oregon',90,[1,0,1,1,0,null]],['where should i get botox in bend oregon',170,[1,0,1,null,1,null]],['best lip filler in bend oregon',140,[1,0,1,1,1,null]],['best laser hair removal in bend oregon',210,[1,1,1,null,1,null]],['best hydrafacial in bend oregon',140,[1,0,1,1,1,null]],['best place for coolsculpting in bend oregon',110,[1,1,1,null,1,null]]],
+  rd:[['best med spa in bend oregon',90,[1,0,1,1,0,1]],['where should i get botox in bend oregon',170,[1,0,1,1,1,1]],['best lip filler in bend oregon',140,[1,0,1,1,1,1]],['best laser hair removal in bend oregon',210,[1,1,1,1,1,1]],['best hydrafacial in bend oregon',140,[1,0,1,1,1,1]],['best place for coolsculpting in bend oregon',110,[1,1,1,1,1,1]]],
   checks:['Failed','Needs','Needs','Needs','Needs','Passed','Needs','Needs','Needs','Passed','Needs']},
  {s:'hello-smooth',n:'Hello Smooth',full:'Hello Smooth Med Spa',city:'St Johns, FL',score:43,top:74,topN:'Amason Aesthetics',rev:'613 reviews · 4.9★',cmp:[74,'Amason Aesthetics'],named:'17 of 34',tag:['Close the gap','p-bad'],ign:1,
   rivals:'Amason Aesthetics, Modern Aesthetic Centers, New Beauty Company',
@@ -750,6 +751,9 @@ var P=[
   rd:[['med spa lees summit',90,[0,1,1,1,0,1]],['botox lees summit',90,[0,1,1,0,null,1]],['laser hair removal lees summit',50,[0,1,1,0,0,1]],['facials lees summit',70,[1,1,1,0,0,0]],['lip filler lees summit',20,[1,1,1,0,0,1]]],
   checks:['Needs','Failed','Failed','Needs','Needs','Needs','Needs','Needs','Needs','Needs','Needs']}
 ];
+/* Synergy MedAesthetics, Kennewick: scan run Nov 20 2026 (DataForSEO live Google + ChatGPT, Gemini, Perplexity, Claude). See data/synergy-ai-2026-11-20.json */
+var SY={n:'Synergy',city:'Kennewick, WA',score:90,cmp:[74,'New U Women\'s Clinic'],
+  rd:[['botox kennewick',70,[1,1,1,1,null,1]],['med spa kennewick',20,[1,1,1,1,null,1]],['laser hair removal kennewick',40,[0,1,1,1,null,1]],['botox tri cities',70,[1,1,1,1,null,0]],['med spa in Kennewick (near me)',20,[0,1,1,1,1,1]],['lip filler in Kennewick (near me)',40,[1,1,1,1,null,1]]]};
 var CHECKS=['Directory listings','PR','Video','SEO','Web management','Reputation management','Google profile','Photo codifying','Independent articles','Independent guides','AI monitoring'];
 var RATE=0.023;
 function $(s,r){return (r||document).querySelector(s)}
@@ -765,33 +769,34 @@ $('#pcards').innerHTML=P.map(function(p){
   '<div class="score"><span class="num">'+p.score+'</span><small>/ 100 AI score</small></div>'+
   '<p class="vs">'+(lead?'Leads its market. Next best: '+(p.top===p.score?'tied at the top':p.top):'Top rival: <b>'+p.top+'</b> ('+esc(p.topN)+')')+'<br><span class="small">Named in '+p.named+' AI and Google answers</span></p>'+
   '<a class="btn ghost" href="/ai-audit/?b='+p.s+'#score" target="_blank" rel="noopener">Open audit</a></div>'}).join('')+
-  '<div class="card pc pending"><span class="pill p-mute" style="align-self:flex-start">Google data in · AI scan next</span><h3>Synergy MedAesthetics</h3><p class="meta">Kennewick &amp; Yakima, WA · 212 + 284 reviews · 4.9★</p>'+
-  '<div class="score"><span class="num" style="font-size:40px">#1</span><small>on Google Maps for 4 of 4 searches</small></div>'+
-  '<p class="vs">But Google and its website list different phone numbers at both locations, and 370 of 570 links point to dead pages.<br><span class="small">AI score after the live scan</span></p>'+
+  '<div class="card pc"><span class="pill p-good" style="align-self:flex-start">Lock in the lead</span><h3>Synergy MedAesthetics</h3><p class="meta">Kennewick &amp; Yakima, WA · 212 + 284 reviews · 4.9★</p>'+
+  '<div class="score"><span class="num">90</span><small>/ 100 AI score</small></div>'+
+  '<p class="vs">Leads its market. Next best: <b>74</b> (New U Women\'s Clinic)<br><span class="small">Named in 28 of 31 AI and Google answers (Kennewick)</span></p>'+
   '<a class="btn ghost" href="/ai-audit/?q=Synergy%20MedAesthetics%20Kennewick" target="_blank" rel="noopener">Run live scan</a></div>';
 /* fix the EsthetixMD "next best" line: its avg was 57, top rival below 72 */
-$('#pcards .pc .vs').innerHTML='Tied for the top score in Bend; rival average 57<br><span class="small">Named in 16 of 21 AI and Google answers</span>';
+$('#pcards .pc .vs').innerHTML='Tied for the top score in Bend; rival average 57<br><span class="small">Named in 25 of 30 AI and Google answers</span>';
 
 /* scoreboard */
 $('#sb').innerHTML=P.map(function(p){
   return '<div class="sbr"><div class="nm"><b>'+esc(p.n)+'</b><span>'+esc(p.city)+'</span></div><div class="track">'+
   '<span class="bar you" style="width:'+p.score+'%"></span><span class="lbl y" style="left:'+p.score+'%">'+p.score+'</span>'+
   '<span class="bar top" style="width:'+p.cmp[0]+'%"></span><span class="lbl t" style="left:'+p.cmp[0]+'%">'+p.cmp[0]+' · '+esc(p.cmp[1])+'</span></div></div>'}).join('');
+$('#sb').innerHTML+= '<div class="sbr"><div class="nm"><b>'+SY.n+'</b><span>'+SY.city+'</span></div><div class="track"><span class="bar you" style="width:'+SY.score+'%"></span><span class="lbl y" style="left:'+SY.score+'%">'+SY.score+'</span><span class="bar top" style="width:'+SY.cmp[0]+'%"></span><span class="lbl t" style="left:'+SY.cmp[0]+'%">'+SY.cmp[0]+' · '+esc(SY.cmp[1])+'</span></div></div>';
 
 /* heatmap */
 var lab={Passed:'Passed',Needs:'Needs work',Failed:'Failed'};
 /* Synergy: only the checks measured from Google data so far */
-var SYN=['Needs',null,null,'Needs',null,'Passed',null,null,'Needs',null,null];
+var SYN=['Needs',null,null,'Needs',null,'Passed','Needs','Needs','Needs','Passed','Passed'];
 $('#hm').innerHTML='<thead><tr><th>Check</th>'+P.map(function(p){return '<th style="text-align:center">'+esc(p.n)+'</th>'}).join('')+'<th style="text-align:center">Synergy</th></tr></thead><tbody>'+
  CHECKS.map(function(c,i){var hot=P.every(function(p){return p.checks[i]!=='Passed'});
-  return '<tr'+(hot?' class="hot"':'')+'><td>'+c+'</td>'+P.map(function(p){var v=p.checks[i];return '<td class="c"><span class="dot d-'+v+'">'+lab[v]+'</span></td>'}).join('')+'<td class="c">'+(SYN[i]?'<span class="dot d-'+SYN[i]+'">'+lab[SYN[i]]+'</span>':'<span class="dot d-q">AI scan</span>')+'</td></tr>'}).join('')+'</tbody>';
+  return '<tr'+(hot?' class="hot"':'')+'><td>'+c+'</td>'+P.map(function(p){var v=p.checks[i];return '<td class="c"><span class="dot d-'+v+'">'+lab[v]+'</span></td>'}).join('')+'<td class="c">'+(SYN[i]?'<span class="dot d-'+SYN[i]+'">'+lab[SYN[i]]+'</span>':'<span class="dot d-q">Not yet</span>')+'</td></tr>'}).join('')+'</tbody>';
 
 /* AI grids: show GPT, Gemini, Claude, Perplexity, Google */
 var COLS=[[1,'GPT'],[2,'Ge'],[5,'C'],[3,'P'],[0,'G']];
-$('#aig').innerHTML=P.map(function(p){
+$('#aig').innerHTML=P.concat([SY]).map(function(p){
   var named=0,slots=0;
   var rows=p.rd.map(function(r){return '<span class="q" title="'+esc(r[0])+'">'+esc(r[0])+'</span>'+COLS.map(function(c){var v=r[2][c[0]];if(v!=null){slots++;if(v)named++}return '<i class="'+(v?'y':v==null?'u':'')+'" title="'+(v?'Names it':v==null?'Not checked':'Does not name it')+'"></i>'}).join('')}).join('');
-  return '<div><h3 style="font-family:var(--display);font-size:19px;font-weight:600">'+esc(p.n)+' <span class="small">· '+esc(p.city)+'</span></h3><div class="aig" style="margin-top:12px"><span></span>'+COLS.map(function(c){return '<span class="h">'+c[1]+'</span>'}).join('')+rows+'</div></div>'}).join('');
+  return '<div><h3 style="font-family:var(--display);font-size:17px;font-weight:600">'+esc(p.n)+' <span class="small">· '+esc(p.city)+'</span></h3><div class="aig" style="margin-top:6px;row-gap:3px"><span></span>'+COLS.map(function(c){return '<span class="h">'+c[1]+'</span>'}).join('')+rows+'</div></div>'}).join('');
 
 /* worth */
 var W=[['EsthetixMD',960],['Hello Smooth',310],['Illumé',610],['Synergy',750]];

@@ -1,0 +1,21 @@
+{"model_names":{"claude":"claude-haiku-4-5 (served as claude-haiku-4-5-20251001)","perplexity":"sonar","chat_gpt":"gpt-4.1-mini (served as gpt-4.1-mini-2025-04-14)","gemini":"gemini-2.5-flash (requested; all 3 attempts failed with rate_limit_exceeded, no substitute used because the model name was not the problem)"},"run_date":"2026-11-20",
+"claude":[
+{"q":"best med spa in bend oregon","named":1,"others":["Elite Medi Spa","Central Oregon Aesthetics","Bend Aesthetics and Wellness","The Lounge Bend"]},
+{"q":"where should i get botox in bend oregon","named":1,"others":["Deschutes Dermatology","Dr. B MedSpa","Cascade Medical Spa","Juniper Dermatology","Salt Medical Aesthetics","The Lounge Aesthetics + Wellness"]},
+{"q":"best lip filler in bend oregon","named":1,"others":["Elite Medi Spa","Central Oregon Aesthetics","The Lounge Aesthetics + Wellness","Juniper Dermatology","Salt Medical Aesthetics"]},
+{"q":"best laser hair removal in bend oregon","named":1,"others":["Elite Medi Spa","Cascade Medical Spa","Pain-Free Laser","Renew Esthetics","The Lounge Aesthetics + Wellness","W Aesthetics and Wellness","Hope Aesthetics & Wellness"]},
+{"q":"best hydrafacial in bend oregon","named":1,"others":["Elite Medi Spa","Evoke Healing Space","Bend Aesthetics & Wellness","DermaSpa at Bend Dermatology Clinic","NovusElle Salon"]},
+{"q":"best place for coolsculpting in bend oregon","named":1,"others":["Cascade Medical Spa and Laser Center"]}
+],
+"perplexity":[
+{"q":"where should i get botox in bend oregon","named":1,"others":["Juniper Dermatology","Deschutes Dermatology","Bend Dermatology Clinic DermaSpa","Salt Medical Aesthetics","Bluebird Skin Therapy","Central Oregon Aesthetics"]},
+{"q":"best laser hair removal in bend oregon","named":1,"others":["Juniper Dermatology","Elite Medi Spa","Bloom Aesthetics"]},
+{"q":"best place for coolsculpting in bend oregon","named":1,"others":["Cascade Medical Spa"]}
+],
+"brand":{
+"chat_gpt":{"named":1,"others":[],"summary":"Positive (10-time Best Medical Spa per The Source, 23 years, correct address 115 SW Allen Rd) but gives wrong hours: Mon-Fri 8-7, Sat 9-6, Sun 9-4, while esthetixmd.com shows Mon-Fri 8-6, Sat closed, Sun 9-4."},
+"gemini":{"named":null,"others":[],"summary":null},
+"perplexity":{"named":1,"others":[],"summary":"Mostly positive ('probably' a good choice, 4.9 stars from 600+ reviews, correct address) but mentions the old Exhale Spa & Laser Center name, says online listings show inconsistent phone numbers and Saturday hours, and notes some reviews complain about effectiveness, communication and how long results lasted."},
+"claude":{"named":1,"others":[],"summary":"Positive and correct address, but mentions the old name ('formerly Exhale Spa & Laser Center') and says 'eighteen+ years', which looks outdated next to the 23-year anniversary The Source reported in Sept 2026."}
+},
+"failures":["gemini gemini-2.5-flash brand prompt: 50301 '3rd Party API Service Unavailable (rate_limit_exceeded)' on 3 attempts; no text returned"]}
