@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>AMP × Local AI Registry · Partnership Conversation</title>
+<meta name="description" content="What our AI audit of four AMP practices found, what it means for the portfolio, and how we could partner.">
+<style>
+@font-face{font-family:'Hanken Grotesk';src:url(/home/assets/fonts/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Bricolage Grotesque';src:url(/home/assets/fonts/bricolage.woff2) format('woff2');font-weight:200 800;font-display:swap}
+:root{
+  --bg:#EEF0F4; --paper:#FFFFFF; --ink:#0B1A2E; --ink2:#2B3A50; --mute:#6E7887; --line:#E2E5EB; --soft:#F5F7FA;
+  --blue:#1F4FE0; --blue-t:#E7EDFC; --coral:#FF5A3C; --coral-t:#FFE9E3;
+  --good:#0E8A5F; --good-t:#E3F3EC; --warn:#B5822A; --warn-t:#F8EFDC; --bad:#D7261B; --bad-t:#FDECEA;
+  --display:'Bricolage Grotesque',system-ui,sans-serif; --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --shadow:0 1px 2px rgba(11,26,46,.06),0 12px 40px rgba(11,26,46,.10);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#060B14; --paper:#0E1726; --ink:#EEF2F8; --ink2:#C7D0DD; --mute:#8D99AB; --line:#1F2B3D; --soft:#131E30;
+  --blue:#6E93FF; --blue-t:#16244A; --coral:#FF7A5F; --coral-t:#3A1A14;
+  --good:#3CC48D; --good-t:#0F2E22; --warn:#E0AE52; --warn-t:#33270F; --bad:#FF6B5E; --bad-t:#3A1513;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 40px rgba(0,0,0,.45);
+}}
+:root[data-theme="dark"]{
+  --bg:#060B14; --paper:#0E1726; --ink:#EEF2F8; --ink2:#C7D0DD; --mute:#8D99AB; --line:#1F2B3D; --soft:#131E30;
+  --blue:#6E93FF; --blue-t:#16244A; --coral:#FF7A5F; --coral-t:#3A1A14;
+  --good:#3CC48D; --good-t:#0F2E22; --warn:#E0AE52; --warn-t:#33270F; --bad:#FF6B5E; --bad-t:#3A1513;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 12px 40px rgba(0,0,0,.45);
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow:hidden}
+h1,h2,h3,h4{margin:0;font-weight:500;text-wrap:balance}
+p{margin:0;text-wrap:pretty}
+a{color:var(--blue)}
+button{font:inherit;color:inherit}
+
+/* ---------- stage ---------- */
+#viewport{position:fixed;inset:0;display:grid;place-items:center}
+#stage{width:1280px;height:720px;position:relative;transform-origin:center center;flex:none}
+.slide{position:absolute;inset:0;background:var(--paper);border-radius:22px;box-shadow:var(--shadow);padding:56px 72px 64px;display:none;flex-direction:column;overflow:hidden}
+.slide.on{display:flex;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.slide.on{animation:none}}
+
+/* ---------- type ---------- */
+.eyebrow{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:14px;display:flex;align-items:center;gap:10px}
+.eyebrow .pk{font-size:11px;letter-spacing:.1em;padding:3px 8px;border-radius:99px;background:var(--coral-t);color:var(--coral)}
+.h1{font-size:64px;line-height:1.02;letter-spacing:-.025em}
+.h2{font-size:42px;line-height:1.08;letter-spacing:-.02em;max-width:1050px}
+.h2 .g,.h1 .g{color:var(--mute)}
+.lede{font-size:20px;line-height:1.45;color:var(--ink2);max-width:880px;margin-top:16px}
+.small{font-size:13px;color:var(--mute);line-height:1.45}
+.foot{position:absolute;left:72px;right:72px;bottom:22px;display:flex;justify-content:space-between;font-size:12px;color:var(--mute)}
+.foot .src{max-width:900px}
+.num{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.body{flex:1;min-height:0;margin-top:28px}
+
+/* ---------- building blocks ---------- */
+.grid{display:grid;gap:18px}
+.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:22px 22px}
+.card h3{font-family:var(--display);font-size:21px;font-weight:600;letter-spacing:-.01em}
+.card p{font-size:15.5px;line-height:1.45;color:var(--ink2);margin-top:8px}
+.card .k{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.pill{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:4px 10px;border-radius:99px;letter-spacing:.02em}
+.p-good{background:var(--good-t);color:var(--good)}.p-warn{background:var(--warn-t);color:var(--warn)}.p-bad{background:var(--bad-t);color:var(--bad)}.p-blue{background:var(--blue-t);color:var(--blue)}.p-mute{background:var(--soft);color:var(--mute);border:1px dashed var(--line)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:600;font-size:14px;padding:9px 16px;border-radius:99px;border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+:root[data-theme="dark"] .btn:not(.ghost){color:#06102A}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn:not(.ghost){color:#06102A}}
+ul.ticks{list-style:none;margin:10px 0 0;padding:0}
+ul.ticks li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.45;color:var(--ink2);margin:6px 0}
+  .tight .card{padding:16px 20px}.tight ul.ticks li{font-size:14.5px;margin:4px 0}
+ul.ticks li::before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--blue)}
+
+/* title slide */
+.title-wrap{display:grid;grid-template-columns:1.25fr .75fr;gap:40px;flex:1;align-items:end}
+.who{display:grid;gap:14px}
+.who div{border-top:1px solid var(--line);padding-top:12px}
+.who b{display:block;font-size:16px}.who span{font-size:14px;color:var(--mute)}
+.lockup{display:flex;align-items:center;gap:14px;font-family:var(--display);font-weight:700;font-size:20px}
+.lockup .x{color:var(--mute);font-weight:400}
+.mark{width:34px;height:34px;border-radius:9px;background:var(--blue);display:grid;place-items:center;color:#fff;font-size:15px}
+
+/* practice cards */
+.pc{display:flex;flex-direction:column;gap:10px;position:relative}
+.pc .score{display:flex;align-items:baseline;gap:8px}
+.pc .score .num{font-size:54px;line-height:1}
+.pc .score small{font-size:15px;color:var(--mute)}
+.pc .meta{font-size:14px;color:var(--mute)}
+.pc .vs{font-size:14px;color:var(--ink2);border-top:1px solid var(--line);padding-top:10px}
+.pc.pending{background:transparent;border-style:dashed}
+.pc a.btn{align-self:flex-start;margin-top:auto}
+
+/* scoreboard chart */
+.sb{display:grid;gap:22px;margin-top:6px}
+.sbr{display:grid;grid-template-columns:200px 1fr;gap:20px;align-items:center}
+.sbr .nm b{display:block;font-size:17px}.sbr .nm span{font-size:13px;color:var(--mute)}
+.track{position:relative;height:46px}
+.track .bar{position:absolute;left:0;height:20px;border-radius:0 6px 6px 0}
+.track .you{top:0;background:var(--blue)}
+.track .top{top:24px;background:var(--line)}
+.track .lbl{position:absolute;font-size:13px;font-weight:600;white-space:nowrap;transform:translateX(8px)}
+.track .lbl.y{top:1px;color:var(--ink)}.track .lbl.t{top:25px;color:var(--mute);font-weight:500}
+.axis{display:grid;grid-template-columns:200px 1fr;gap:20px;font-size:12px;color:var(--mute)}
+.axis div:last-child{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:6px}
+
+/* heatmap */
+table.hm{width:100%;border-collapse:separate;border-spacing:0 3px;font-size:14px}
+table.hm th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-align:left;font-weight:700;padding:0 10px 4px}
+table.hm td{padding:4px 10px;background:var(--soft)}
+table.hm td:first-child{border-radius:10px 0 0 10px;font-weight:600}
+table.hm td:last-child{border-radius:0 10px 10px 0}
+table.hm td.c{text-align:center;width:150px}
+table.hm tr.hot td:first-child{box-shadow:inset 3px 0 0 var(--coral)}
+.dot{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:700;padding:3px 9px;border-radius:99px}
+.d-Passed{background:var(--good-t);color:var(--good)}.d-Needs{background:var(--warn-t);color:var(--warn)}.d-Failed{background:var(--bad-t);color:var(--bad)}
+.d-q{background:transparent;border:1px dashed var(--line);color:var(--mute);font-weight:600}
+
+/* AI grid */
+.aig{display:grid;grid-template-columns:minmax(0,1fr) repeat(5,32px);gap:5px;align-items:center;font-size:12.5px}
+.aig .h{font-size:11px;font-weight:700;letter-spacing:.05em;color:var(--mute);text-align:center;text-transform:uppercase}
+.aig i{display:block;height:34px;border-radius:7px;background:var(--bad-t);position:relative}
+.aig i.y{background:var(--good)}
+.aig i.u{background:repeating-linear-gradient(45deg,var(--soft) 0 5px,var(--line) 5px 10px)}
+.aig .q{color:var(--ink2);line-height:1.2;padding-right:4px}
+.legend{display:flex;gap:16px;font-size:12px;color:var(--mute);margin-top:10px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:14px;height:10px;border-radius:3px;display:inline-block}
+
+/* pattern */
+.pat{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pat .card{display:flex;flex-direction:column;gap:6px}
+.pat .big{font-size:40px;line-height:1;color:var(--coral)}
+.pat ul{margin:6px 0 0;padding-left:16px;font-size:14px;color:var(--ink2);line-height:1.5}
+
+/* worth */
+.wgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;align-items:start}
+.card .wbig,.wbig{font-size:72px;line-height:1;color:var(--good);margin-top:6px}
+.wbig small{font-size:20px;color:var(--mute);font-weight:500}
+.wrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;border-top:1px solid var(--line);margin-top:18px;padding-top:14px}
+.wrow b{font-family:var(--display);font-size:28px;display:block}
+.lab,.card .lab{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);margin:0}
+.card .small{font-size:13px;color:var(--mute)}
+input[type=range]{width:100%;accent-color:var(--blue);margin:8px 0 2px}
+table.t{width:100%;border-collapse:collapse;font-size:14px}
+table.t th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);font-weight:700}
+table.t td{padding:8px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+table.t .r{text-align:right}
+table.t tr.tot td{font-weight:700;border-bottom:0}
+
+/* diagrams */
+svg text{font-family:var(--body)}
+.dg-stroke{stroke:var(--line)}
+.dg-ink{fill:var(--ink)}.dg-mute{fill:var(--mute)}.dg-blue{fill:var(--blue)}.dg-card{fill:var(--soft);stroke:var(--line)}
+.dg-bluet{fill:var(--blue-t)}.dg-coral{fill:var(--coral)}.dg-coralt{fill:var(--coral-t)}.dg-good{fill:var(--good)}
+.flowline{stroke:var(--blue);stroke-width:2;fill:none;stroke-dasharray:5 6;animation:dash 1.4s linear infinite}
+@keyframes dash{to{stroke-dashoffset:-22}}
+@media (prefers-reduced-motion:reduce){.flowline{animation:none}}
+
+/* questions */
+.qs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.qs .card{padding:18px 18px 14px;display:flex;flex-direction:column;gap:6px}
+.qs .n{font-family:var(--display);font-weight:700;color:var(--blue);font-size:14px}
+.qs h3{font-size:18px;line-height:1.25}
+.qs p{font-size:13.5px;margin-top:2px}
+.qs textarea{margin-top:auto;width:100%;min-height:40px;resize:none;border:1px dashed var(--line);border-radius:10px;background:var(--paper);color:var(--ink);font:inherit;font-size:13px;padding:7px 9px}
+.qs textarea::placeholder{color:var(--mute)}
+
+/* structures */
+.st{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.st .card{padding:18px;display:flex;flex-direction:column;gap:8px}
+.st h3{font-size:18px}
+.st .fit{font-size:13px;color:var(--mute);border-top:1px solid var(--line);padding-top:8px;margin-top:6px}
+.st .react{margin-top:auto}
+.react{display:flex;gap:6px;margin-top:6px}
+.react button{flex:1;border:1px solid var(--line);background:var(--paper);border-radius:8px;padding:5px 0;font-size:12px;font-weight:700;cursor:pointer;color:var(--mute)}
+.react button[aria-pressed="true"].y{background:var(--good-t);color:var(--good);border-color:var(--good)}
+.react button[aria-pressed="true"].m{background:var(--warn-t);color:var(--warn);border-color:var(--warn)}
+.react button[aria-pressed="true"].n{background:var(--bad-t);color:var(--bad);border-color:var(--bad)}
+
+/* matrix */
+table.mx{width:100%;border-collapse:separate;border-spacing:0;font-size:14px}
+table.mx th,table.mx td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:center}
+table.mx th:first-child,table.mx td:first-child{text-align:left}
+table.mx thead th{font-family:var(--display);font-size:16px;font-weight:600;border-bottom:2px solid var(--ink)}
+table.mx thead th small{display:block;font-family:var(--body);font-size:12px;color:var(--mute);font-weight:500}
+table.mx td.y{color:var(--good);font-weight:700}table.mx td.d{color:var(--mute)}
+table.mx col.hl{background:var(--blue-t)}
+
+/* timeline */
+.tl{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:10px}
+.tl::before{content:"";position:absolute;left:0;right:0;top:16px;height:2px;background:var(--line)}
+.tl .st2{position:relative;padding-top:42px}
+.tl .st2::before{content:attr(data-n);position:absolute;top:0;left:0;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-family:var(--display);font-weight:700;display:grid;place-items:center;font-size:14px}
+.tl h3{font-family:var(--display);font-size:19px;font-weight:600}
+.tl .when{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);margin:2px 0 6px}
+.tl p{font-size:14.5px;color:var(--ink2);line-height:1.45}
+
+/* divider */
+.slide.divider{background:var(--ink);color:var(--paper)}
+.slide.divider .eyebrow{color:var(--coral)}
+.slide.divider .lede{color:color-mix(in srgb,var(--paper) 75%,transparent)}
+.slide.divider .foot{color:color-mix(in srgb,var(--paper) 55%,transparent)}
+
+/* ---------- chrome ---------- */
+#bar{position:fixed;left:0;right:0;bottom:0;height:4px;background:transparent;z-index:5}
+#bar i{display:block;height:100%;background:var(--blue);width:0;transition:width .3s}
+#ctl{position:fixed;right:14px;bottom:12px;display:flex;gap:6px;z-index:6;align-items:center}
+#ctl button,#ctl span{background:var(--paper);border:1px solid var(--line);border-radius:99px;height:34px;min-width:34px;padding:0 12px;font-size:13px;font-weight:600;cursor:pointer;color:var(--ink);display:grid;place-items:center}
+#ctl span{cursor:default;font-variant-numeric:tabular-nums}
+#menu{position:fixed;inset:0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(6px);z-index:10;display:none;overflow:auto;padding:40px 24px}
+#menu.on{display:block}
+#menu .in{max-width:900px;margin:0 auto}
+#menu h2{font-family:var(--display);font-size:22px;margin:18px 0 10px}
+#menu ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
+#menu li button{width:100%;text-align:left;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 14px;cursor:pointer;font-size:14px}
+#menu li button b{color:var(--mute);margin-right:8px;font-variant-numeric:tabular-nums}
+#menu .keys{font-size:13px;color:var(--mute);margin-top:22px}
+kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;border-radius:5px;padding:0 5px;font-size:12px}
+
+/* ---------- phone / narrow: slides stack and scroll ---------- */
+@media (max-width:820px),(max-height:430px) and (max-width:960px){
+  body{overflow:auto}
+  #viewport{position:static;display:block;padding:12px 16px 80px}
+  #stage{width:100%!important;max-width:100%;height:auto;transform:none!important}
+  .slide{max-width:100%;min-width:0}
+  .body,.grid>*,.card{min-width:0}
+  .slide{position:relative;display:flex!important;inset:auto;padding:28px 20px 44px;margin-bottom:14px;animation:none!important;border-radius:18px}
+  .h1{font-size:40px}.h2{font-size:28px}.lede{font-size:17px}
+  .g2,.g3,.g4,.pat,.st,.qs,.wgrid,.title-wrap,.tl{grid-template-columns:1fr}
+  .tl::before{display:none}
+  .title-wrap{margin-top:28px}
+  .sbr,.axis{grid-template-columns:1fr;gap:6px}
+  .axis div:first-child{display:none}
+  .foot{position:static;margin-top:20px;flex-direction:column;gap:4px}
+  table.hm{font-size:13px}table.hm td.c{width:auto}
+  .tblw{overflow-x:auto}
+  .aig{grid-template-columns:1fr repeat(5,34px)}
+  .aig .h{font-size:9px}
+  #ctl{display:none}#bar{display:none}
+  .wbig,.card .wbig{font-size:52px}
+  .track .lbl.t{left:auto!important;right:0;transform:none;top:46px}
+  .track{height:66px}
+  table.t{font-size:12.5px}table.t th,table.t td{padding:6px 4px}table.t th{font-size:10px;letter-spacing:.02em}
+  .wrow b{font-size:22px}
+  svg.dg{width:100%;height:auto}
+}
+@media print{
+  body{overflow:visible;background:#fff}
+  #viewport{position:static;display:block}#stage{transform:none!important;width:1280px;height:auto}
+  .slide{display:flex!important;position:relative;page-break-after:always;box-shadow:none;height:720px;animation:none}
+  #ctl,#bar,#menu{display:none!important}
+}
+</style>
+</head>
+<body>
+<div id="viewport"><div id="stage">
+
+<!-- 1 · TITLE -->
+<section class="slide" data-t="Title">
+  <div class="lockup"><span class="mark">AI</span>Local AI Registry <span class="x">×</span> Advanced MedAesthetic Partners</div>
+  <div class="title-wrap">
+    <div>
+      <p class="eyebrow">Partnership conversation · November 20, 2026</p>
+      <h1 class="h1">Making every AMP practice<br><span class="g">the answer AI gives.</span></h1>
+      <p class="lede">What we found when we audited AMP practices, what it means across a 77-to-100 location portfolio, and the ways we could work together.</p>
+    </div>
+    <div class="who">
+      <div><b>Mari Sallee</b><span>Co-CEO, Marketing · AMP</span></div>
+      <div><b>Ashton Graves</b><span>Senior Director, Marketing &amp; Sales · AMP</span></div>
+      <div><b>Steve Lee &amp; Aneesh Patel</b><span>CEO · Chief Growth Officer · Local AI Registry</span></div>
+    </div>
+  </div>
+  <div class="foot"><span>Confidential. Prepared for AMP.</span><span>← → to move · M for menu</span></div>
+</section>
+
+<!-- 2 · WHERE WE ARE -->
+<section class="slide" data-t="Where we are">
+  <p class="eyebrow">Where we are</p>
+  <h2 class="h2">Ashton saw an early version of the audit. <span class="g">Today you'll see the finished one, across four practices.</span></h2>
+  <div class="body grid g3">
+    <div class="card"><p class="k">Nov 12 · with Ashton</p><h3>The first look</h3>
+      <ul class="ticks"><li>Walked through the AI audit and early data in our earlier screens</li><li>Talked about the move from WordPress to new Sanity-built sites across ~100 practices</li><li>Agreed to bring in Mari as the decision maker</li></ul></div>
+    <div class="card"><p class="k">Since then</p><h3>What's new</h3>
+      <ul class="ticks"><li>Rebuilt audit tool: one link, live scans, the 11 checks, and the revenue math</li><li>Full scans of EsthetixMD, Hello Smooth and Illumé, with Synergy next</li><li>A portfolio view: what repeats across practices</li></ul></div>
+    <div class="card" style="background:var(--blue-t);border-color:transparent"><p class="k" style="color:var(--blue)">Today</p><h3>What we'd like to leave with</h3>
+      <ul class="ticks"><li>Your reaction to the findings</li><li>Answers to six questions so we can tailor the plan</li><li>Agreement on the shape of a first step</li></ul></div>
+  </div>
+  <div class="foot"><span>Agenda: findings · what it means for AMP · what we can do · your questions</span><span></span></div>
+</section>
+
+<!-- 3 · THE SHIFT -->
+<section class="slide" data-t="How AI picks a med spa">
+  <p class="eyebrow">The shift</p>
+  <h2 class="h2">Patients now ask AI where to go. <span class="g">AI searches, compares, then names a few practices.</span></h2>
+  <div class="body">
+    <svg class="dg" viewBox="0 0 1136 400" width="1136" height="400" role="img" aria-label="How AI decides which med spa to recommend: a patient asks, AI searches the web, compares what it finds, and names one to three practices.">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-blue"/></marker></defs>
+      <!-- ask -->
+      <rect x="0" y="40" width="230" height="150" rx="18" class="dg-card"/>
+      <text x="22" y="74" class="dg-mute" font-size="12" font-weight="700" letter-spacing="1.5">1 · THE PATIENT ASKS</text>
+      <rect x="22" y="92" width="186" height="70" rx="14" class="dg-bluet"/>
+      <text x="36" y="120" class="dg-ink" font-size="15">"Best place for Botox</text>
+      <text x="36" y="142" class="dg-ink" font-size="15">in Bend, Oregon?"</text>
+      <!-- search -->
+      <rect x="290" y="0" width="250" height="230" rx="18" class="dg-card"/>
+      <text x="312" y="34" class="dg-mute" font-size="12" font-weight="700" letter-spacing="1.5">2 · AI SEARCHES</text>
+      <g font-size="14" class="dg-ink">
+        <rect x="312" y="52" width="206" height="30" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="326" y="72">Google profile &amp; reviews</text>
+        <rect x="312" y="90" width="206" height="30" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="326" y="110">Practice website &amp; code</text>
+        <rect x="312" y="128" width="206" height="30" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="326" y="148">Directories &amp; listings</text>
+        <rect x="312" y="166" width="206" height="30" rx="8" fill="var(--paper)" stroke="var(--line)"/><text x="326" y="186">News, guides, YouTube</text>
+      </g>
+      <!-- compare -->
+      <rect x="600" y="0" width="250" height="230" rx="18" class="dg-card"/>
+      <text x="622" y="34" class="dg-mute" font-size="12" font-weight="700" letter-spacing="1.5">3 · AI COMPARES</text>
+      <g font-size="14">
+        <text x="622" y="72" class="dg-ink">Do the details agree?</text>
+        <text x="622" y="100" class="dg-ink">Who do others vouch for?</text>
+        <text x="622" y="128" class="dg-ink">Is it current and specific?</text>
+        <text x="622" y="156" class="dg-ink">Can it read the site fast?</text>
+      </g>
+      <rect x="622" y="176" width="206" height="34" rx="9" class="dg-coralt"/>
+      <text x="636" y="198" font-size="13.5" font-weight="700" fill="var(--coral)">Conflicts? AI skips you.</text>
+      <!-- answer -->
+      <rect x="910" y="40" width="226" height="150" rx="18" fill="var(--blue)"/>
+      <text x="932" y="74" font-size="12" font-weight="700" letter-spacing="1.5" fill="#fff" opacity=".8">4 · AI ANSWERS</text>
+      <text x="932" y="108" font-size="22" font-weight="700" fill="#fff">Names 1 to 3</text>
+      <text x="932" y="134" font-size="22" font-weight="700" fill="#fff">practices.</text>
+      <text x="932" y="164" font-size="14" fill="#fff" opacity=".85">Everyone else is invisible.</text>
+      <path class="flowline" d="M232,115 H286" marker-end="url(#ah)"/>
+      <path class="flowline" d="M542,115 H596" marker-end="url(#ah)"/>
+      <path class="flowline" d="M852,115 H906" marker-end="url(#ah)"/>
+      <!-- bottom band -->
+      <rect x="0" y="270" width="1136" height="110" rx="18" fill="var(--soft)" stroke="var(--line)"/>
+      <text x="28" y="306" font-size="12" font-weight="700" letter-spacing="1.5" class="dg-mute">WHAT THIS MEANS</text>
+      <text x="28" y="340" font-size="19" class="dg-ink">Ranking on Google is no longer enough. A practice has to be the one AI trusts, and AI trusts</text>
+      <text x="28" y="366" font-size="19" class="dg-ink">details that match everywhere, proof from other sites, and pages it can read quickly.</text>
+    </svg>
+  </div>
+  <div class="foot"><span>The same path is drawn live for each practice in the audit tool (Customers ask AI).</span><span></span></div>
+</section>
+
+<!-- 4 · WHY NOW FOR AMP -->
+<section class="slide" data-t="Why now for AMP">
+  <p class="eyebrow">Why now for AMP</p>
+  <h2 class="h2">The move from WordPress to Sanity is a risk <span class="g">and the best moment to build AI in from day one.</span></h2>
+  <div class="body grid g2 tight" style="grid-template-columns:1fr 1.1fr;align-items:start;margin-top:20px">
+    <div class="grid" style="gap:12px">
+      <div class="card" style="border-left:4px solid var(--coral)"><p class="k" style="color:var(--coral)">Risk if nothing changes</p>
+        <ul class="ticks"><li>WordPress plugins quietly handled schema, alt text and meta tags. New sites start without them.</li><li>Heavy, script-built pages are harder for Google and AI crawlers to read in full.</li><li>Changed page addresses break old links. EsthetixMD already has 532 of 632 inbound links pointing to dead pages.</li></ul></div>
+      <div class="card" style="border-left:4px solid var(--good)"><p class="k" style="color:var(--good)">Opportunity</p>
+        <ul class="ticks"><li>One standard for every new site: schema, llms.txt, crawlable record, redirects</li><li>One verified record per location that AI reads first, whatever the site is built on</li><li>Fix name and phone mismatches once, at the source, for all locations</li></ul></div>
+    </div>
+    <svg class="dg" viewBox="0 0 560 420" width="560" height="420" role="img" aria-label="Each location's verified record sits beside its new Sanity site and feeds Google, ChatGPT, Gemini, Claude, Perplexity and directories.">
+      <rect x="20" y="150" width="190" height="120" rx="16" class="dg-card"/>
+      <text x="40" y="182" font-size="12" font-weight="700" letter-spacing="1.4" class="dg-mute">NEW SANITY SITE</text>
+      <text x="40" y="210" font-size="15" class="dg-ink">Design, booking,</text>
+      <text x="40" y="230" font-size="15" class="dg-ink">treatments</text>
+      <text x="40" y="254" font-size="12.5" class="dg-mute">built by AMP's team</text>
+      <rect x="240" y="150" width="140" height="120" rx="16" fill="var(--blue)"/>
+      <text x="258" y="182" font-size="12" font-weight="700" letter-spacing="1.4" fill="#fff" opacity=".85">BLUEPRINT™</text>
+      <text x="258" y="208" font-size="15" fill="#fff" font-weight="700">Verified record</text>
+      <text x="258" y="228" font-size="13" fill="#fff" opacity=".9">per location</text>
+      <text x="258" y="252" font-size="12" fill="#fff" opacity=".8">tiny, fast, exact</text>
+      <path d="M212,210 H236" stroke="var(--blue)" stroke-width="2"/>
+      <g font-size="13.5">
+        <rect x="430" y="40" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="63" class="dg-ink">Google</text>
+        <rect x="430" y="96" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="119" class="dg-ink">ChatGPT</text>
+        <rect x="430" y="152" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="175" class="dg-ink">Gemini</text>
+        <rect x="430" y="208" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="231" class="dg-ink">Claude</text>
+        <rect x="430" y="264" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="287" class="dg-ink">Perplexity</text>
+        <rect x="430" y="320" width="120" height="36" rx="10" class="dg-card"/><text x="446" y="343" class="dg-ink">Directories</text>
+      </g>
+      <g>
+        <path class="flowline" d="M382,210 C405,210 405,58 428,58"/>
+        <path class="flowline" d="M382,210 C405,210 405,114 428,114"/>
+        <path class="flowline" d="M382,210 C405,210 405,170 428,170"/>
+        <path class="flowline" d="M382,210 C405,210 405,226 428,226"/>
+        <path class="flowline" d="M382,210 C405,210 405,282 428,282"/>
+        <path class="flowline" d="M382,210 C405,210 405,338 428,338"/>
+      </g>
+      <text x="20" y="320" font-size="13" class="dg-mute">The site can change. The record stays the</text>
+      <text x="20" y="338" font-size="13" class="dg-mute">single source of truth AI reads first.</text>
+    </svg>
+  </div>
+  <div class="foot"><span>Migration details from our Nov 12 call with Ashton. Link figure: EsthetixMD backlink check, Nov 12 2026.</span><span></span></div>
+</section>
+
+<!-- 5 · WHAT WE ANALYZED -->
+<section class="slide" data-t="What we analyzed">
+  <p class="eyebrow">What we analyzed</p>
+  <h2 class="h2">Four AMP practices, four markets. <span class="g">Each scored against its three closest local rivals.</span></h2>
+  <div class="body grid g4" id="pcards"></div>
+  <div class="foot"><span class="src">AI score: share of AI and Google answers naming the practice, across the six local searches that matter most to it. Scans Nov 11–12, 2026: ChatGPT, Gemini, Claude, Perplexity, Google and Google AI Overview.</span><span></span></div>
+</section>
+
+<!-- 6 · SCOREBOARD -->
+<section class="slide" data-t="Scoreboard">
+  <p class="eyebrow">Scoreboard</p>
+  <h2 class="h2">One shares the lead, one is ahead but thin, <span class="g">and one trails a rival by 31 points.</span></h2>
+  <div class="body">
+    <div class="sb" id="sb"></div>
+    <div class="axis" style="margin-top:12px"><div></div><div><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span></div></div>
+    <div class="legend" style="margin-top:16px"><span><i style="background:var(--blue)"></i>AMP practice</span><span><i style="background:var(--line)"></i>Highest-scoring local rival</span></div>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card" style="padding:16px 18px"><p class="k">EsthetixMD</p><p>Tied at the top; rivals average 57. The job is keeping the lead.</p></div>
+      <div class="card" style="padding:16px 18px"><p class="k">Hello Smooth</p><p>31 points behind Amason Aesthetics, despite more Google reviews.</p></div>
+      <div class="card" style="padding:16px 18px"><p class="k">Illumé</p><p>14 points ahead, but its Google reach halved in a year.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Scores out of 100 from the Nov 11–12, 2026 audit scans.</span><span></span></div>
+</section>
+
+<!-- 7 · THREE SITUATIONS -->
+<section class="slide" data-t="Three situations">
+  <p class="eyebrow">Three situations</p>
+  <h2 class="h2">Each practice needs something different. <span class="g">That's how a portfolio plan should work too.</span></h2>
+  <div class="body grid g3">
+    <div class="card"><span class="pill p-blue">Protect the leader</span><h3 style="margin-top:12px">EsthetixMD · Bend, OR</h3>
+      <p>Tied for the top score in Bend (72), with 628 reviews at 4.9. But ChatGPT left it out of 4 of 6 searches and named Elite Medi Spa and Juniper Dermatology instead.</p>
+      <p><b>Why:</b> three phone numbers online and the old Exhale Spa name still on its YouTube channel.</p></div>
+    <div class="card"><span class="pill p-bad">Close the gap</span><h3 style="margin-top:12px">Hello Smooth · St Johns, FL</h3>
+      <p>43 against Amason Aesthetics' 74. AI named Amason 20 times to Hello Smooth's 13. No AI tool named it for HydraFacial or microneedling.</p>
+      <p><b>Why:</b> name, address or hours differ on every directory we could read. No news coverage at all.</p></div>
+    <div class="card"><span class="pill p-warn">Build depth</span><h3 style="margin-top:12px">Illumé · Lee's Summit, MO</h3>
+      <p>Ahead of its market (57 vs 43), and ChatGPT and Gemini name it every time. But it now ranks for 246 Google searches, down from 597 a year ago.</p>
+      <p><b>Why:</b> no videos, no press, 110 reviews against rivals' 300+, and four versions of its name online.</p></div>
+  </div>
+  <div class="foot"><span>Sources: audit scans Nov 11–12, 2026 (DataForSEO for rankings, links and live Google results; AI answers checked directly).</span><span></span></div>
+</section>
+
+<!-- 8 · HEATMAP -->
+<section class="slide" data-t="The 11 checks, side by side">
+  <p class="eyebrow">The 11 checks, side by side</p>
+  <h2 class="h2">Line them up and the pattern is clear: <span class="g">the same checks fail at every practice.</span></h2>
+  <div class="body tblw" style="margin-top:18px"><table class="hm" id="hm"></table></div>
+  <div class="foot"><span>Highlighted rows: below "Passed" at all three scanned practices. Synergy's column fills in once its scan runs.</span><span></span></div>
+</section>
+
+<!-- 9 · THE PATTERN -->
+<section class="slide" data-t="Portfolio pattern">
+  <p class="eyebrow">What this means for AMP</p>
+  <h2 class="h2">These aren't four local problems. <span class="g">It's one portfolio problem, and it can be fixed centrally.</span></h2>
+  <div class="body pat">
+    <div class="card"><span class="num big">3 of 3</span><h3>Identity drift</h3><p>Old names and conflicting details left over from rebrands and acquisitions.</p>
+      <ul><li>Exhale Spa → EsthetixMD</li><li>Hello Smooth Laser Studio → Med Spa</li><li>4 spellings of Illumé</li></ul></div>
+    <div class="card"><span class="num big">3 of 3</span><h3>Google reach shrinking</h3><p>Fewer searches each site ranks for, year on year.</p>
+      <ul><li>Hello Smooth: 997 → 557</li><li>Illumé: 597 → 246</li><li>EsthetixMD: down, no new article since Sep 2025</li></ul></div>
+    <div class="card"><span class="num big">3 of 3</span><h3>No earned media</h3><p>AI leans on news and guides to decide who to trust.</p>
+      <ul><li>Hello Smooth, Illumé: no news stories</li><li>EsthetixMD: one reader poll</li></ul></div>
+    <div class="card"><span class="num big">3 of 3</span><h3>Video gone quiet</h3><p>YouTube is a source AI reads and quotes.</p>
+      <ul><li>EsthetixMD, Hello Smooth: newest own video ~2022</li><li>Illumé: none; search shows a Milwaukee "Illume"</li></ul></div>
+  </div>
+  <p class="lede" style="margin-top:22px;font-size:18px">One central team, one playbook and one record standard can fix all four across every location, while each practice keeps its local voice.</p>
+  <div class="foot"><span>From the three completed scans. Ranking counts: DataForSEO, Nov 2025 to Oct 2026.</span><span></span></div>
+</section>
+
+<!-- 10 · AI ANSWERS -->
+<section class="slide" data-t="What AI says today">
+  <p class="eyebrow">What AI says today</p>
+  <h2 class="h2">The AI tools don't agree with each other. <span class="g">Being named by one isn't enough.</span></h2>
+  <div class="body grid g3" id="aig"></div>
+  <div class="legend"><span><i style="background:var(--good)"></i>Names the practice</span><span><i style="background:var(--bad-t)"></i>Doesn't name it</span><span><i style="background:repeating-linear-gradient(45deg,var(--soft) 0 4px,var(--line) 4px 8px)"></i>Not checked or no answer</span></div>
+  <div class="foot"><span>The searches in each scan, run Nov 11–12, 2026 from the practice's own city. GPT ChatGPT · Ge Gemini · C Claude · P Perplexity · G Google top 20 (map or organic).</span><span></span></div>
+</section>
+
+<!-- 11 · WORTH -->
+<section class="slide" data-t="What being AI's answer is worth">
+  <p class="eyebrow">What being AI's answer is worth</p>
+  <h2 class="h2">Just the searches we tracked are worth about <span id="w-h">$17,000</span> a month <span class="g">across three practices.</span></h2>
+  <div class="body wgrid">
+    <div class="card" style="background:var(--paper)">
+      <p class="lab">Added revenue, 3 practices</p>
+      <p class="num wbig"><span id="w-total">$17,212</span><small>/mo</small></p>
+      <div class="wrow">
+        <div><p class="lab">Searches/mo</p><b id="w-s">1,420</b></div>
+        <div><p class="lab">× Conversion</p><b>2.3%</b></div>
+        <div><p class="lab">= New patients</p><b id="w-c">33</b></div>
+      </div>
+      <p class="lab" style="margin-top:18px">Average spend per visit: <span id="w-p" style="color:var(--ink)">$527</span></p>
+      <input type="range" id="w-slider" min="150" max="1500" step="1" value="527" aria-label="Average spend per visit">
+      <p class="small">Starts at $527, the average spend per US med spa visit (American Med Spa Association, 2024 report). Conversion: Ruler Analytics average. Move it to AMP's real number.</p>
+    </div>
+    <div>
+      <table class="t" id="w-tbl"><thead><tr><th>Practice</th><th class="r">Tracked searches/mo</th><th class="r">New patients</th><th class="r">Revenue/mo</th></tr></thead><tbody></tbody></table>
+      <div class="card" style="margin-top:16px;padding:16px 18px">
+        <p class="lab">Why this is a floor</p>
+        <ul class="ticks" style="margin-top:4px"><li>Only the 5–6 core searches per practice; the full keyword lists run 5 to 10 times larger</li><li>One visit per patient; med spa patients come back</li><li>No "near me" searches, which are counted nationally, not locally</li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Searches × 2.3% conversion (Ruler Analytics) × average spend. Volumes are the monthly volumes recorded in the Nov 11–12, 2026 scans for each practice's non-brand searches; brand searches left out. Estimates, not a forecast.</span><span></span></div>
+</section>
+
+<!-- 12 · HOW WE FIX IT -->
+<section class="slide" data-t="How we fix it">
+  <p class="eyebrow">How we fix it</p>
+  <h2 class="h2">One system runs every location: <span class="g">record, distribute, prove, monitor.</span></h2>
+  <div class="body">
+    <svg class="dg" viewBox="0 0 1136 300" width="1136" height="300" role="img" aria-label="Four-step loop: build the verified record, distribute it to sources AI reads, earn proof from news, guides and video, monitor every AI tool weekly, then repeat.">
+      <defs><marker id="ah2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="dg-blue"/></marker></defs>
+      <g>
+        <rect x="0" y="20" width="250" height="190" rx="18" class="dg-card"/>
+        <circle cx="34" cy="54" r="16" class="dg-blue"/><text x="28" y="60" font-size="15" font-weight="700" fill="#fff">1</text>
+        <text x="62" y="60" font-size="19" font-weight="700" class="dg-ink">Record</text>
+        <text x="22" y="96" font-size="14.5" class="dg-ink">One verified Blueprint™ per</text>
+        <text x="22" y="117" font-size="14.5" class="dg-ink">location: name, phone, hours,</text>
+        <text x="22" y="138" font-size="14.5" class="dg-ink">providers, treatments, prices.</text>
+        <text x="22" y="178" font-size="13" class="dg-mute">Fixes identity drift</text>
+      </g>
+      <g>
+        <rect x="295" y="20" width="250" height="190" rx="18" class="dg-card"/>
+        <circle cx="329" cy="54" r="16" class="dg-blue"/><text x="323" y="60" font-size="15" font-weight="700" fill="#fff">2</text>
+        <text x="357" y="60" font-size="19" font-weight="700" class="dg-ink">Distribute</text>
+        <text x="317" y="96" font-size="14.5" class="dg-ink">Push it to Google, directories,</text>
+        <text x="317" y="117" font-size="14.5" class="dg-ink">data networks and site code.</text>
+        <text x="317" y="138" font-size="14.5" class="dg-ink">Remove duplicates by hand.</text>
+        <text x="317" y="178" font-size="13" class="dg-mute">Fixes listings, schema, photos</text>
+      </g>
+      <g>
+        <rect x="590" y="20" width="250" height="190" rx="18" class="dg-card"/>
+        <circle cx="624" cy="54" r="16" class="dg-blue"/><text x="618" y="60" font-size="15" font-weight="700" fill="#fff">3</text>
+        <text x="652" y="60" font-size="19" font-weight="700" class="dg-ink">Prove</text>
+        <text x="612" y="96" font-size="14.5" class="dg-ink">Press, best-of guides, articles</text>
+        <text x="612" y="117" font-size="14.5" class="dg-ink">and explainer videos that</text>
+        <text x="612" y="138" font-size="14.5" class="dg-ink">vouch for the practice.</text>
+        <text x="612" y="178" font-size="13" class="dg-mute">Fixes PR, video, links</text>
+      </g>
+      <g>
+        <rect x="885" y="20" width="250" height="190" rx="18" fill="var(--blue)"/>
+        <circle cx="919" cy="54" r="16" fill="#fff"/><text x="913" y="60" font-size="15" font-weight="700" fill="var(--blue)">4</text>
+        <text x="947" y="60" font-size="19" font-weight="700" fill="#fff">Monitor</text>
+        <text x="907" y="96" font-size="14.5" fill="#fff">Ask every AI tool weekly.</text>
+        <text x="907" y="117" font-size="14.5" fill="#fff">See who it names and why.</text>
+        <text x="907" y="138" font-size="14.5" fill="#fff">Fix what slips.</text>
+        <text x="907" y="178" font-size="13" fill="#fff" opacity=".8">One dashboard for all locations</text>
+      </g>
+      <path class="flowline" d="M252,115 H291" marker-end="url(#ah2)"/>
+      <path class="flowline" d="M547,115 H586" marker-end="url(#ah2)"/>
+      <path class="flowline" d="M842,115 H881" marker-end="url(#ah2)"/>
+      <path class="flowline" d="M1010,212 C1010,280 125,280 125,214" marker-end="url(#ah2)"/>
+      <text x="520" y="292" font-size="13" class="dg-mute">repeats every week</text>
+    </svg>
+    <div class="grid g4" style="margin-top:6px">
+      <div class="card" style="padding:14px 16px"><p class="k">Guarantee</p><p style="margin-top:4px">In AI answers by day 90</p></div>
+      <div class="card" style="padding:14px 16px"><p class="k">Compliance</p><p style="margin-top:4px">HIPAA BAA · $750K insured · US team</p></div>
+      <div class="card" style="padding:14px 16px"><p class="k">Exclusivity</p><p style="margin-top:4px">One practice like yours per area</p></div>
+      <div class="card" style="padding:14px 16px"><p class="k">Works with</p><p style="margin-top:4px">AMP's own web team and Sanity sites</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Each of the 11 checks has a "how we fix it" walkthrough in the audit tool (11 checks → Our system).</span><span></span></div>
+</section>
+
+<!-- 13 · BEYOND ONE PRACTICE -->
+<section class="slide" data-t="What we can do for AMP">
+  <p class="eyebrow">What we can do for AMP</p>
+  <h2 class="h2">Beyond fixing practices one at a time: <span class="g">things only a portfolio partner can do.</span></h2>
+  <div class="body grid g3">
+    <div class="card"><h3>Portfolio AI dashboard</h3><p>Every location's AI score, rivals and trend on one screen, ranked so marketing knows where to spend next.</p></div>
+    <div class="card"><h3>Sanity migration guardrails</h3><p>A record and schema standard, an llms.txt template and a redirect map built into each new site, so rankings survive the move.</p></div>
+    <div class="card"><h3>Identity cleanup at scale</h3><p>One pass across all 77–100 locations to retire old names, numbers and duplicate listings left by rebrands.</p></div>
+    <div class="card"><h3>Central content &amp; PR engine</h3><p>One AMP story or study, localized for every market. A single press push earns coverage for dozens of practices.</p></div>
+    <div class="card"><h3>Day-one acquisition audit</h3><p>Score a practice before or right after AMP partners with it, and plan its first 90 days in AI from the start.</p></div>
+    <div class="card"><h3>A benefit for partner practices</h3><p>AI visibility offered as part of what AMP gives its practices, alongside training, marketing and recruiting.</p></div>
+  </div>
+  <div class="foot"><span>Built on the same system and scans you saw today.</span><span></span></div>
+</section>
+
+<!-- 14 · LIVE TOOL -->
+<section class="slide" data-t="See it live">
+  <p class="eyebrow">See it live</p>
+  <h2 class="h2">The full audit for any AMP practice, <span class="g">one link each.</span></h2>
+  <div class="body grid g2" style="grid-template-columns:1.1fr .9fr;align-items:start">
+    <div class="card">
+      <h3>Open a practice</h3>
+      <p>Score, how each AI tool answered, the 11 checks with what we found, and the revenue math.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px">
+        <a class="btn" href="/ai-audit/?b=esthetixmd-bend#score" target="_blank" rel="noopener">EsthetixMD</a>
+        <a class="btn" href="/ai-audit/?b=hello-smooth#score" target="_blank" rel="noopener">Hello Smooth</a>
+        <a class="btn" href="/ai-audit/?b=illume-med-spa#score" target="_blank" rel="noopener">Illumé</a>
+        <a class="btn ghost" href="/ai-audit/?q=Synergy%20MedAesthetics%20Kennewick" target="_blank" rel="noopener">Run Synergy live</a>
+      </div>
+      <p class="small" style="margin-top:14px">Running a live scan needs team sign-in on this browser and takes about 3 to 4 minutes. Start it at the top of the call and come back to it.</p>
+    </div>
+    <div class="card" style="background:var(--blue-t);border-color:transparent">
+      <p class="k" style="color:var(--blue)">Suggested walkthrough</p>
+      <ul class="ticks"><li><b>Hello Smooth</b>: Customers ask AI. Tap a search to see why AI chose Amason.</li><li><b>EsthetixMD</b>: 11 checks → Directory listings, the three phone numbers.</li><li><b>Illumé</b>: What it's worth. Move the price slider to AMP's average.</li></ul>
+    </div>
+  </div>
+  <div class="foot"><span>audit.localairegistry.com/ai-audit</span><span></span></div>
+</section>
+
+<!-- 15 · QUESTIONS -->
+<section class="slide" data-t="Questions for you">
+  <p class="eyebrow">Help us tailor this</p>
+  <h2 class="h2">Six questions <span class="g">that shape what we propose.</span></h2>
+  <div class="body qs" id="qs"></div>
+  <div class="foot"><span>Notes typed here stay in this browser only.</span><span></span></div>
+</section>
+
+<!-- 16 · NEXT STEPS -->
+<section class="slide" data-t="Next steps">
+  <p class="eyebrow">Next steps</p>
+  <h2 class="h2">A simple path from here.</h2>
+  <div class="body tl">
+    <div class="st2" data-n="1"><p class="when">This week</p><h3>Pick the practices</h3><p>Choose the first group together, using your answers on priority and budget.</p></div>
+    <div class="st2" data-n="2"><p class="when">Next 2 weeks</p><h3>Scan them</h3><p>We run Synergy and the rest of the first group, at no cost, and share a portfolio view.</p></div>
+    <div class="st2" data-n="3"><p class="when">Follow-up meeting</p><h3>Agree the shape</h3><p>Partnership structure, rollout order, roles with Ashton's team and the Sanity build.</p></div>
+    <div class="st2" data-n="4"><p class="when">Day 1 to 90</p><h3>Prove it</h3><p>First practices named in AI answers by day 90, reported weekly, then expand.</p></div>
+  </div>
+  <div class="card" style="margin-top:34px;display:flex;gap:24px;align-items:center;justify-content:space-between">
+    <div><p class="k">Day-to-day</p><p style="margin-top:4px"><b>Ashton Graves</b> (AMP) with <b>Aneesh Patel</b> (LAIR)</p></div>
+    <div><p class="k">Sign-off</p><p style="margin-top:4px"><b>Mari Sallee</b>, Co-CEO</p></div>
+    <div><p class="k">Web build</p><p style="margin-top:4px">AMP's Sanity team, guided by our record standard</p></div>
+  </div>
+  <div class="foot"><span>Thank you.</span><span></span></div>
+</section>
+
+<!-- ================= BACK POCKET ================= -->
+<section class="slide divider" data-t="Back pocket" data-back>
+  <p class="eyebrow">Back pocket</p>
+  <div style="flex:1;display:flex;flex-direction:column;justify-content:center">
+    <h2 class="h1" style="color:inherit">Ways we could partner.</h2>
+    <p class="lede">Structures and scenarios to react to. No pricing here: numbers follow once we know your answers on scope, budget and how you fund practice marketing.</p>
+  </div>
+  <div class="foot"><span>Use if the conversation goes there, or open at the follow-up meeting.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Partnership structures" data-back>
+  <p class="eyebrow">Partnership structures <span class="pk">Back pocket</span></p>
+  <h2 class="h2">Five ways to work together. <span class="g">Which feel right?</span></h2>
+  <div class="body st" id="st"></div>
+  <div class="foot"><span>Tap a reaction on each to capture where the room lands. Saved in this browser only.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Central vs local" data-back>
+  <p class="eyebrow">Operating model <span class="pk">Back pocket</span></p>
+  <h2 class="h2">Centralized or practice by practice? <span class="g">Most of it can be both.</span></h2>
+  <div class="body">
+    <svg class="dg" viewBox="0 0 1136 400" width="1136" height="400" role="img" aria-label="AMP central team owns the standard, playbook, PR, video and dashboard; each practice keeps reviews, photos, local pages and provider details; Local AI Registry runs the system between them.">
+      <rect x="380" y="0" width="376" height="128" rx="20" fill="var(--blue)"/>
+      <text x="404" y="36" font-size="12" font-weight="700" letter-spacing="1.5" fill="#fff" opacity=".85">AMP CENTRAL · RUN ONCE</text>
+      <g font-size="15" fill="#fff"><text x="404" y="66">Record standard &amp; Sanity template</text><text x="404" y="90">Playbook, PR, studies, video formats</text><text x="404" y="114">Portfolio dashboard &amp; reporting</text></g>
+      <rect x="430" y="168" width="276" height="64" rx="16" class="dg-card"/>
+      <text x="452" y="196" font-size="12" font-weight="700" letter-spacing="1.5" class="dg-mute">LOCAL AI REGISTRY</text>
+      <text x="452" y="218" font-size="15" class="dg-ink">Runs the system for both levels</text>
+      <path class="flowline" d="M568,130 V166"/>
+      <g id="loc">
+        <rect x="0" y="272" width="250" height="118" rx="16" class="dg-card"/><text x="20" y="302" font-size="12" font-weight="700" letter-spacing="1.4" class="dg-mute">PRACTICE · LOCAL VOICE</text><text x="20" y="330" font-size="14.5" class="dg-ink">Reviews &amp; replies</text><text x="20" y="352" font-size="14.5" class="dg-ink">Photos, providers, offers</text><text x="20" y="374" font-size="14.5" class="dg-ink">Area pages, local press</text>
+        <rect x="295" y="272" width="250" height="118" rx="16" class="dg-card"/><text x="315" y="302" font-size="12" font-weight="700" letter-spacing="1.4" class="dg-mute">PRACTICE · LOCAL VOICE</text><text x="315" y="330" font-size="14.5" class="dg-ink">Reviews &amp; replies</text><text x="315" y="352" font-size="14.5" class="dg-ink">Photos, providers, offers</text><text x="315" y="374" font-size="14.5" class="dg-ink">Area pages, local press</text>
+        <rect x="590" y="272" width="250" height="118" rx="16" class="dg-card"/><text x="610" y="302" font-size="12" font-weight="700" letter-spacing="1.4" class="dg-mute">PRACTICE · LOCAL VOICE</text><text x="610" y="330" font-size="14.5" class="dg-ink">Reviews &amp; replies</text><text x="610" y="352" font-size="14.5" class="dg-ink">Photos, providers, offers</text><text x="610" y="374" font-size="14.5" class="dg-ink">Area pages, local press</text>
+        <rect x="885" y="272" width="250" height="118" rx="16" fill="none" stroke="var(--line)" stroke-dasharray="6 6"/><text x="905" y="320" font-size="15" class="dg-mute">… up to 100 locations</text><text x="905" y="344" font-size="13" class="dg-mute">same standard, own voice</text>
+      </g>
+      <path class="flowline" d="M568,234 C568,256 125,250 125,270"/>
+      <path class="flowline" d="M568,234 C568,256 420,250 420,270"/>
+      <path class="flowline" d="M568,234 C568,256 715,250 715,270"/>
+      <path class="flowline" d="M568,234 C568,256 1010,250 1010,270"/>
+    </svg>
+  </div>
+  <div class="foot"><span>Question to settle: who approves local content, the practice or AMP marketing?</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Which practices first" data-back>
+  <p class="eyebrow">Rollout scenarios <span class="pk">Back pocket</span></p>
+  <h2 class="h2">Which practices go first? <span class="g">Four ways to order the rollout.</span></h2>
+  <div class="body grid g4">
+    <div class="card"><span class="pill p-bad">Triage</span><h3 style="margin-top:10px">Struggling first</h3><p>Start where the gap is widest, like Hello Smooth (43 vs 74).</p><ul class="ticks"><li>Biggest visible lift</li><li>Strong case studies for the rest</li></ul><p class="small" style="margin-top:8px">Watch: slower start where basics are weak.</p></div>
+    <div class="card"><span class="pill p-blue">Protect</span><h3 style="margin-top:10px">Leaders first</h3><p>Lock in practices already winning, like EsthetixMD, before rivals catch up.</p><ul class="ticks"><li>Protects the most revenue</li><li>Fastest wins</li></ul><p class="small" style="margin-top:8px">Watch: smaller "before and after" story.</p></div>
+    <div class="card"><span class="pill p-good">Clusters</span><h3 style="margin-top:10px">Market by market</h3><p>Do every AMP practice in a region together, sharing local press and guides.</p><ul class="ticks"><li>Shared content lowers effort</li><li>Regional exclusivity</li></ul><p class="small" style="margin-top:8px">Watch: depends on regional density.</p></div>
+    <div class="card"><span class="pill p-warn">Migration-led</span><h3 style="margin-top:10px">Follow the Sanity build</h3><p>Each practice starts the week its new site goes live, with the record built in.</p><ul class="ticks"><li>Protects rankings through the move</li><li>No rework later</li></ul><p class="small" style="margin-top:8px">Watch: pace set by the build schedule.</p></div>
+  </div>
+  <div class="foot"><span>A mix is common: a small pilot from two or three of these, then the full rollout.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="What each level includes" data-back>
+  <p class="eyebrow">Partnership level <span class="pk">Back pocket</span></p>
+  <h2 class="h2">The deeper the partnership, <span class="g">the more we put in beyond each practice.</span></h2>
+  <div class="body tblw">
+    <table class="mx">
+      <colgroup><col><col><col class="hl"><col></colgroup>
+      <thead><tr><th></th><th>Pilot<small>a first group of practices</small></th><th>Portfolio<small>most or all locations</small></th><th>Strategic partner<small>portfolio + shared growth</small></th></tr></thead>
+      <tbody>
+        <tr><td>Full service for each enrolled practice</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Guaranteed in AI answers by day 90</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Portfolio AI dashboard</td><td class="d">Pilot practices</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Sanity record standard &amp; migration guardrails</td><td class="d">–</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Central content &amp; PR engine</td><td class="d">–</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Dedicated team &amp; quarterly business review</td><td class="d">–</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Day-one audits for new acquisitions</td><td class="d">–</td><td class="d">On request</td><td class="y">✓</td></tr>
+        <tr><td>Co-branded research &amp; conference speaking</td><td class="d">–</td><td class="d">–</td><td class="y">✓</td></tr>
+        <tr><td>Advisory board seat &amp; product input</td><td class="d">–</td><td class="d">–</td><td class="y">✓</td></tr>
+        <tr><td>Area exclusivity for AMP markets</td><td class="d">Enrolled areas</td><td class="y">✓</td><td class="y">✓ + new markets</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><span>Illustrative. Final inclusions depend on the structure AMP prefers.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Roles" data-back>
+  <p class="eyebrow">Who does what <span class="pk">Back pocket</span></p>
+  <h2 class="h2">Little extra work for AMP's team, <span class="g">one point of contact on each side.</span></h2>
+  <div class="body grid g3">
+    <div class="card"><p class="k">AMP marketing · Ashton</p><h3>Coordinate &amp; approve</h3><ul class="ticks"><li>Pick practices and order</li><li>Approve the record and content</li><li>Monthly check-in</li></ul></div>
+    <div class="card"><p class="k">AMP web · Sanity team</p><h3>Build to the standard</h3><ul class="ticks"><li>Use our schema and record template</li><li>Apply our redirect map at launch</li><li>Give us access to publish articles</li></ul></div>
+    <div class="card" style="background:var(--blue-t);border-color:transparent"><p class="k" style="color:var(--blue)">Local AI Registry</p><h3>Do the work</h3><ul class="ticks"><li>Records, listings, schema, photos</li><li>Articles, press, guides, video</li><li>Weekly AI tracking and reports</li></ul></div>
+  </div>
+  <div class="foot"><span>Practices only confirm their details and answer review prompts.</span><span></span></div>
+</section>
+
+</div></div>
+
+<div id="bar"><i></i></div>
+<div id="ctl"><button data-a="prev" aria-label="Previous slide">←</button><span id="pg">1 / 1</span><button data-a="next" aria-label="Next slide">→</button><button data-a="menu" aria-label="All slides">☰</button><button data-a="theme" aria-label="Switch light or dark">◐</button></div>
+<div id="menu" role="dialog" aria-label="All slides"><div class="in"><h2>Meeting</h2><ol id="m-core"></ol><h2>Back pocket</h2><ol id="m-back"></ol>
+<p class="keys"><kbd>←</kbd> <kbd>→</kbd> move · <kbd>M</kbd> this menu · <kbd>B</kbd> jump to back pocket · <kbd>F</kbd> full screen · <kbd>Esc</kbd> close</p></div></div>
+
+<script>
+(function(){
+/* ---------- data (from the Nov 11–12, 2026 audit scans) ---------- */
+var P=[
+ {s:'esthetixmd-bend',n:'EsthetixMD',full:'EsthetixMD Spa & Laser Center',city:'Bend, OR',score:72,top:72,topN:'its market (it is the top score)',rev:'628 reviews · 4.9★',cmp:[72,'best local rival (tied)'],named:'16 of 21',tag:['Protect the leader','p-blue'],
+  rivals:'Elite Medi Spa, Salt Medical Aesthetics, Juniper Dermatology',
+  rd:[['best med spa in bend oregon',90,[1,0,1,1,0,null]],['where should i get botox in bend oregon',170,[1,0,1,null,1,null]],['best lip filler in bend oregon',140,[1,0,1,1,1,null]],['best laser hair removal in bend oregon',210,[1,1,1,null,1,null]],['best hydrafacial in bend oregon',140,[1,0,1,1,1,null]],['best place for coolsculpting in bend oregon',110,[1,1,1,null,1,null]]],
+  checks:['Failed','Needs','Needs','Needs','Needs','Passed','Needs','Needs','Needs','Passed','Needs']},
+ {s:'hello-smooth',n:'Hello Smooth',full:'Hello Smooth Med Spa',city:'St Johns, FL',score:43,top:74,topN:'Amason Aesthetics',rev:'613 reviews · 4.9★',cmp:[74,'Amason Aesthetics'],named:'17 of 34',tag:['Close the gap','p-bad'],
+  rivals:'Amason Aesthetics, Modern Aesthetic Centers, New Beauty Company',
+  rd:[['med spa st johns fl',30,[0,1,1,1,0,1]],['botox st johns fl',50,[0,1,1,0,null,1]],['laser hair removal st johns',70,[1,1,0,1,0,1]],['lip filler st johns fl',40,[0,0,1,1,0,1]],['hydrafacial st johns',50,[1,0,0,0,0,0]]],
+  checks:['Failed','Failed','Needs','Needs','Passed','Passed','Needs','Passed','Needs','Needs','Needs']},
+ {s:'illume-med-spa',n:'Illumé',full:'Illumé Med Spa & Wellness Center',city:"Lee's Summit, MO",score:57,top:43,topN:'KC Injectables, LIV, Healthylooks (best of three)',rev:'110 reviews · 4.8★',cmp:[43,'best local rival'],named:'21 of 34',tag:['Build depth','p-warn'],
+  rivals:'KC Injectables, LIV Aesthetics + Wellness, Healthylooks',
+  rd:[['med spa lees summit',90,[0,1,1,1,0,1]],['botox lees summit',90,[0,1,1,0,null,1]],['laser hair removal lees summit',50,[0,1,1,0,0,1]],['facials lees summit',70,[1,1,1,0,0,0]],['lip filler lees summit',20,[1,1,1,0,0,1]]],
+  checks:['Needs','Failed','Failed','Needs','Needs','Needs','Needs','Needs','Needs','Needs','Needs']}
+];
+var CHECKS=['Directory listings','PR','Video','SEO','Web management','Reputation management','Google profile','Photo codifying','Independent articles','Independent guides','AI monitoring'];
+var RATE=0.023;
+function $(s,r){return (r||document).querySelector(s)}
+function fmt(n){return Math.round(n).toLocaleString('en-US')}
+function money(n){return '$'+fmt(n)}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+
+/* practice cards */
+$('#pcards').innerHTML=P.map(function(p){
+  var lead=p.score>=p.top;
+  return '<div class="card pc"><span class="pill '+p.tag[1]+'" style="align-self:flex-start">'+p.tag[0]+'</span><h3>'+esc(p.n)+'</h3><p class="meta">'+esc(p.city)+' · '+esc(p.rev)+'</p>'+
+  '<div class="score"><span class="num">'+p.score+'</span><small>/ 100 AI score</small></div>'+
+  '<p class="vs">'+(lead?'Leads its market. Next best: '+(p.top===p.score?'tied at the top':p.top):'Top rival: <b>'+p.top+'</b> ('+esc(p.topN)+')')+'<br><span class="small">Named in '+p.named+' AI and Google answers</span></p>'+
+  '<a class="btn ghost" href="/ai-audit/?b='+p.s+'#score" target="_blank" rel="noopener">Open audit</a></div>'}).join('')+
+  '<div class="card pc pending"><span class="pill p-mute" style="align-self:flex-start">Scan next</span><h3>Synergy MedAesthetics</h3><p class="meta">Kennewick, WA · Tri-Cities, Yakima, Mobile</p>'+
+  '<div class="score"><span class="num" style="color:var(--mute)">–</span><small>/ 100 AI score</small></div>'+
+  '<p class="vs">Multi-location, so it shows how the audit works across sites under one brand.<br><span class="small">Not yet scanned</span></p>'+
+  '<a class="btn ghost" href="/ai-audit/?q=Synergy%20MedAesthetics%20Kennewick" target="_blank" rel="noopener">Run live scan</a></div>';
+/* fix the EsthetixMD "next best" line: its avg was 57, top rival below 72 */
+$('#pcards .pc .vs').innerHTML='Tied for the top score in Bend; rival average 57<br><span class="small">Named in 16 of 21 AI and Google answers</span>';
+
+/* scoreboard */
+$('#sb').innerHTML=P.map(function(p){
+  return '<div class="sbr"><div class="nm"><b>'+esc(p.n)+'</b><span>'+esc(p.city)+'</span></div><div class="track">'+
+  '<span class="bar you" style="width:'+p.score+'%"></span><span class="lbl y" style="left:'+p.score+'%">'+p.score+'</span>'+
+  '<span class="bar top" style="width:'+p.cmp[0]+'%"></span><span class="lbl t" style="left:'+p.cmp[0]+'%">'+p.cmp[0]+' · '+esc(p.cmp[1])+'</span></div></div>'}).join('');
+
+/* heatmap */
+var lab={Passed:'Passed',Needs:'Needs work',Failed:'Failed'};
+$('#hm').innerHTML='<thead><tr><th>Check</th>'+P.map(function(p){return '<th style="text-align:center">'+esc(p.n)+'</th>'}).join('')+'<th style="text-align:center">Synergy</th></tr></thead><tbody>'+
+ CHECKS.map(function(c,i){var hot=P.every(function(p){return p.checks[i]!=='Passed'});
+  return '<tr'+(hot?' class="hot"':'')+'><td>'+c+'</td>'+P.map(function(p){var v=p.checks[i];return '<td class="c"><span class="dot d-'+v+'">'+lab[v]+'</span></td>'}).join('')+'<td class="c"><span class="dot d-q">Pending</span></td></tr>'}).join('')+'</tbody>';
+
+/* AI grids: show GPT, Gemini, Claude, Perplexity, Google */
+var COLS=[[1,'GPT'],[2,'Ge'],[5,'C'],[3,'P'],[0,'G']];
+$('#aig').innerHTML=P.map(function(p){
+  var named=0,slots=0;
+  var rows=p.rd.map(function(r){return '<span class="q" title="'+esc(r[0])+'">'+esc(r[0])+'</span>'+COLS.map(function(c){var v=r[2][c[0]];if(v!=null){slots++;if(v)named++}return '<i class="'+(v?'y':v==null?'u':'')+'" title="'+(v?'Names it':v==null?'Not checked':'Does not name it')+'"></i>'}).join('')}).join('');
+  return '<div><h3 style="font-family:var(--display);font-size:19px;font-weight:600">'+esc(p.n)+' <span class="small">· '+esc(p.city)+'</span></h3><div class="aig" style="margin-top:12px"><span></span>'+COLS.map(function(c){return '<span class="h">'+c[1]+'</span>'}).join('')+rows+'</div></div>'}).join('');
+
+/* worth */
+function worth(price){
+  var tb='',ts=0;
+  P.forEach(function(p){var s=p.rd.reduce(function(a,r){return a+(r[1]||0)},0);ts+=s;
+    tb+='<tr><td>'+esc(p.n)+'</td><td class="r">'+fmt(s)+'</td><td class="r">'+(s*RATE).toFixed(1)+'</td><td class="r" style="color:var(--good);font-weight:600">'+money(s*RATE*price)+'</td></tr>'});
+  tb+='<tr><td style="color:var(--mute)">Synergy</td><td class="r" style="color:var(--mute)" colspan="3">after its scan</td></tr>';
+  tb+='<tr class="tot"><td>Total, 3 practices</td><td class="r">'+fmt(ts)+'</td><td class="r">'+(ts*RATE).toFixed(1)+'</td><td class="r" style="color:var(--good)">'+money(ts*RATE*price)+'</td></tr>';
+  $('#w-tbl tbody').innerHTML=tb;
+  $('#w-total').textContent=money(ts*RATE*price);$('#w-s').textContent=fmt(ts);$('#w-c').textContent=fmt(ts*RATE);$('#w-p').textContent=money(price);
+  $('#w-h').textContent=money(Math.round(ts*RATE*price/1000)*1000);
+}
+var sl=$('#w-slider');sl.addEventListener('input',function(){worth(+sl.value)});worth(527);
+
+/* questions */
+var Q=[
+ ['Scope','Do you see us as a service for all 77–100 locations, or a subset?','Tells us whether to plan a pilot, waves, or a portfolio build.'],
+ ['Budget model','How is marketing budgeted today: centrally, by each practice, or a mix?','Decides who the agreement is with and how it is billed.'],
+ ['Priority','Should we focus on practices that are struggling more than others?','Sets the rollout order (see back pocket).'],
+ ['Budget & fit','How much is set aside for something like this, and how does it fit with the services AMP gives its practices?','Lets us size a first step, and decide if it is an AMP benefit, an opt-in, or both.'],
+ ['Operating model','Centralized through AMP marketing, or individualized for each practice?','Determines approvals, reporting and who we work with day to day.'],
+ ['Partnership level','Does a practice\'s partnership level with AMP change what you would want us to offer it?','Lets us match service depth to each tier of AMP practice.']
+];
+$('#qs').innerHTML=Q.map(function(q,i){var k='amp-q'+i;return '<div class="card"><span class="n">'+(i+1)+' · '+q[0]+'</span><h3>'+esc(q[1])+'</h3><p>'+esc(q[2])+'</p><textarea data-k="'+k+'" placeholder="Notes" aria-label="Notes for question '+(i+1)+'">'+esc(store(k)||'')+'</textarea></div>'}).join('')+
+ '';
+document.querySelectorAll('#qs textarea').forEach(function(t){t.addEventListener('input',function(){store(t.dataset.k,t.value)})});
+
+/* structures */
+var S=[
+ ['Pilot group','A small group of practices for 90 days, picked together. Prove it, then decide.','Fits if AMP wants proof before a portfolio decision.'],
+ ['Portfolio rollout','All locations in planned waves, with one contract and one dashboard.','Fits if marketing is centralized and the goal is consistency.'],
+ ['Platform + AMP team','We provide the system and records; AMP\'s marketing team runs the local work with our playbook.','Fits if AMP wants to keep work in-house.'],
+ ['Practice opt-in benefit','AMP offers it to practices as a benefit; each practice chooses to join, with AMP support.','Fits if practices control their own marketing budgets.'],
+ ['Strategic partner','Portfolio rollout plus acquisition audits, co-branded research, advisory seat and referrals.','Fits if AMP wants a long-term AI partner, not a vendor.']
+];
+$('#st').innerHTML=S.map(function(s,i){var k='amp-s'+i,v=store(k)||'';return '<div class="card"><span class="k">Option '+String.fromCharCode(65+i)+'</span><h3>'+esc(s[0])+'</h3><p>'+esc(s[1])+'</p><p class="fit">'+esc(s[2])+'</p><div class="react" data-k="'+k+'">'+
+ [['y','Yes'],['m','Maybe'],['n','No']].map(function(b){return '<button class="'+b[0]+'" aria-pressed="'+(v===b[0])+'">'+b[1]+'</button>'}).join('')+'</div></div>'}).join('');
+document.querySelectorAll('.react').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var on=b.getAttribute('aria-pressed')!=='true';g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed',String(on));store(g.dataset.k,on?b.className:'')})});
+
+/* ---------- deck engine ---------- */
+var slides=[].slice.call(document.querySelectorAll('.slide')),cur=0,stage=$('#stage');
+function narrow(){return matchMedia('(max-width:820px),(max-height:430px) and (max-width:960px)').matches}
+function fit(){if(narrow()){stage.style.transform='';return}var s=Math.min((innerWidth-32)/1280,(innerHeight-60)/720);stage.style.transform='scale('+s+')'}
+function go(i,push){i=Math.max(0,Math.min(slides.length-1,i));slides[cur].classList.remove('on');cur=i;slides[cur].classList.add('on');
+  $('#pg').textContent=(cur+1)+' / '+slides.length;$('#bar i').style.width=((cur+1)/slides.length*100)+'%';
+  if(push!==false)history.replaceState(null,'','#'+(cur+1));}
+var core=$('#m-core'),back=$('#m-back');
+slides.forEach(function(s,i){var li=document.createElement('li');li.innerHTML='<button><b>'+(i+1)+'</b>'+esc(s.dataset.t||'')+'</button>';li.firstChild.onclick=function(){go(i);menu(false)};(s.hasAttribute('data-back')?back:core).appendChild(li)});
+function menu(on){$('#menu').classList.toggle('on',on===undefined?!$('#menu').classList.contains('on'):on)}
+function theme(){var r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark';store('amp-theme',r.dataset.theme)}
+var th=store('amp-theme');if(th)document.documentElement.dataset.theme=th;
+document.addEventListener('keydown',function(e){
+  if(e.target.matches('textarea,input'))return;
+  var k=e.key;
+  if(k==='ArrowRight'||k==='PageDown'||k===' '){e.preventDefault();go(cur+1)}
+  else if(k==='ArrowLeft'||k==='PageUp'){e.preventDefault();go(cur-1)}
+  else if(k==='Home')go(0);else if(k==='End')go(slides.length-1);
+  else if(k==='m'||k==='M')menu();else if(k==='Escape')menu(false);
+  else if(k==='b'||k==='B')go(slides.findIndex(function(s){return s.hasAttribute('data-back')}));
+  else if(k==='f'||k==='F'){if(document.fullscreenElement)document.exitFullscreen();else document.documentElement.requestFullscreen&&document.documentElement.requestFullscreen()}
+});
+$('#ctl').addEventListener('click',function(e){var a=e.target.closest('button');if(!a)return;a=a.dataset.a;if(a==='prev')go(cur-1);if(a==='next')go(cur+1);if(a==='menu')menu();if(a==='theme')theme()});
+$('#menu').addEventListener('click',function(e){if(e.target.id==='menu')menu(false)});
+var tx=null;document.addEventListener('touchstart',function(e){if(narrow())return;tx=e.touches[0].clientX},{passive:true});
+document.addEventListener('touchend',function(e){if(tx==null||narrow())return;var d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>60)go(cur+(d<0?1:-1));tx=null});
+addEventListener('resize',fit);fit();
+var h=parseInt(location.hash.slice(1),10);go(isNaN(h)?0:h-1,false);
+})();
+</script>
+</body>
+</html>
