@@ -32,6 +32,15 @@
   "worth": 871137,
   "vol": 71870,
   "invisible": 6,
+  "lead": 25,
+  "tie": 5,
+  "trail": 47,
+  "trail_worth": 788230,
+  "reach": 20,
+  "reach_worth": 207210,
+  "review_adv": 61,
+  "review_cmp": 70,
+  "any_price": 34,
   "eng": {
    "chat_gpt": [
     127,
@@ -144,10 +153,6 @@
      "n": 5
     },
     {
-     "name": "22 Spa MD",
-     "n": 5
-    },
-    {
      "name": "Nouvelle Aesthetics & Wellness",
      "n": 4
     },
@@ -158,6 +163,10 @@
     {
      "name": "Esthetics by Emi",
      "n": 3
+    },
+    {
+     "name": "Dr. Richard Fryer, MD",
+     "n": 2
     }
    ],
    "searches": [
@@ -207,6 +216,14 @@
     "S2 Gemini and S3 Perplexity/Claude named this practice's surgeons (John L. Clayton, Brian Reuben, Neal Moores, Katherine Vandenberg) but not the '22 Plastic Surgery' brand; scored named=0. Surgeons also have personal sites (johnlclaytonmd.com) splitting brand signal.",
     "Google contact_info lists extra backlink-sourced phones (801-806-0222, 1-800-985-3059) and an unrelated CMS email."
    ],
+   "own_n": 8,
+   "rival": "Vincent Surgical Arts and Medspa",
+   "rival_n": 5,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 291.0,
+   "comp_rating": 4.85,
+   "review_x": 1.0,
    "shared_with": 1,
    "vol": 90,
    "vol_town": 15,
@@ -421,6 +438,14 @@
     "gemini-2.5-flash rate limited (50301) twice; substituted gemini-3.6-flash for all 3 Gemini prompts.",
     "Gemini 3.6 responses returned no search_results array; named judged from answer text."
    ],
+   "own_n": 14,
+   "rival": "Esthetics by Emi Med Spa",
+   "rival_n": 10,
+   "margin": 4,
+   "h2h": "lead",
+   "comp_reviews": 233.0,
+   "comp_rating": 4.97,
+   "review_x": 1.3,
    "shared_with": 1,
    "vol": 90,
    "vol_town": 15,
@@ -634,6 +659,14 @@
     "Named by all 4 LLMs on all 3 prompts (12/12); Claude S2 only in a trailing 'additional options' line.",
     "No Sat/Sun hours; most prices on Google listing are $0 placeholders (7 of 10 services)."
    ],
+   "own_n": 14,
+   "rival": "GLOW Med Spa of 30A",
+   "rival_n": 8,
+   "margin": 6,
+   "h2h": "lead",
+   "comp_reviews": 58.0,
+   "comp_rating": 4.98,
+   "review_x": 5.2,
    "shared_with": 0,
    "vol": 70,
    "vol_town": 0,
@@ -831,6 +864,14 @@
     "Gemini gemini-2.5-flash rate limited (rate_limit_exceeded) on all 3 prompts and on a retry; substituted gemini-3.6-flash for all 3 Gemini answers.",
     "Gemini S1 lists Medical Spa Buffalo services citing luminescence-aesthetics.com; Luminescence not named so not counted."
    ],
+   "own_n": 9,
+   "rival": "Finesse Beauty & Wellness Medspa",
+   "rival_n": 12,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 595.0,
+   "comp_rating": 4.9,
+   "review_x": 1.4,
    "shared_with": 0,
    "vol": 190,
    "vol_town": 20,
@@ -1021,6 +1062,14 @@
     "Perplexity S2 cited a MapQuest page for 'Ideal Image Creve Coeur' at the same address 10413 Olive Blvd (legacy brand name still indexed), but did not name Avelure in its answer.",
     "S3 'best med spa near me' local pack is St. Louis/Clayton/Des Peres businesses; Avelure absent. Organic results for S3 are mostly out-of-market (Cincinnati, Rochester, Decatur, Tulsa)."
    ],
+   "own_n": 10,
+   "rival": "4Ever Young STL MedSpa",
+   "rival_n": 11,
+   "margin": -1,
+   "h2h": "trail",
+   "comp_reviews": 188.0,
+   "comp_rating": 4.83,
+   "review_x": 4.6,
    "shared_with": 0,
    "vol": 130,
    "vol_town": 40,
@@ -1217,6 +1266,14 @@
     "gemini-2.5-flash hit a rate limit twice on all three prompts; used gemini-3.6-flash for all Gemini answers.",
     "Serp location_name 'Grand Rapids,Michigan,United States' worked; S3 is a 'near me' query run from that location."
    ],
+   "own_n": 3,
+   "rival": "Grand Pearl Spa",
+   "rival_n": 10,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 130.0,
+   "comp_rating": 4.86,
+   "review_x": 6.3,
    "shared_with": 0,
    "vol": 1380,
    "vol_town": 1050,
@@ -1318,10 +1375,6 @@
    "aio_seen": 0,
    "rivals": [
     {
-     "name": "Ageless Aesthetics",
-     "n": 13
-    },
-    {
      "name": "The SKN Lab",
      "n": 12
     },
@@ -1336,6 +1389,10 @@
     {
      "name": "Hamilton Facial Plastic Surgery",
      "n": 5
+    },
+    {
+     "name": "Balanced Beauty Medical Aesthetics",
+     "n": 3
     }
    ],
    "searches": [
@@ -1388,6 +1445,14 @@
     "S3 'best med spa near me' organic results were mostly out-of-market (Cincinnati, Rochester, St. Louis etc.); local pack was local.",
     "Not in any local pack for the 3 queries despite 281 reviews; competitors The SKN Lab (597 reviews, 5.0) and Ageless Aesthetics (436, 5.0) dominate."
    ],
+   "own_n": 7,
+   "rival": "The SKN Lab",
+   "rival_n": 12,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 0,
    "vol": 220,
    "vol_town": 180,
@@ -1515,10 +1580,6 @@
    "aio_seen": 0,
    "rivals": [
     {
-     "name": "Ageless Aesthetics",
-     "n": 9
-    },
-    {
      "name": "Lyfe MedSpa",
      "n": 7
     },
@@ -1532,6 +1593,10 @@
     },
     {
      "name": "Embolden MedSpa",
+     "n": 4
+    },
+    {
+     "name": "Üesthetics",
      "n": 4
     }
    ],
@@ -1582,6 +1647,14 @@
     "All three Google SERPs had asynchronous AI Overviews with no text (aio=unreadable); Avelure absent from all local packs and top-10 organic.",
     "S3 'best med spa near me' SERP with location Indianapolis returned mostly irrelevant medspaflorida.com organic results."
    ],
+   "own_n": 2,
+   "rival": "Lyfe MedSpa",
+   "rival_n": 7,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": 276.0,
+   "comp_rating": 4.74,
+   "review_x": 3.3,
    "shared_with": 0,
    "vol": 2260,
    "vol_town": 1230,
@@ -1778,6 +1851,14 @@
     "No priced services on the Google listing (12 services, none with price).",
     "Google SERP location_name 'Ocala,Florida,United States' worked; no fallback needed."
    ],
+   "own_n": 9,
+   "rival": "Advanced Aesthetics Med Spa",
+   "rival_n": 9,
+   "margin": 0,
+   "h2h": "tie",
+   "comp_reviews": 150.0,
+   "comp_rating": 4.84,
+   "review_x": 4.9,
    "shared_with": 0,
    "vol": 1210,
    "vol_town": 570,
@@ -1971,6 +2052,14 @@
     "Perplexity S2 cited Avelure's Birdeye page as a source but did not name it in the answer text (counted 0).",
     "Google listing has no prices on services (prices empty). Google review count 999 vs Birdeye ~1,001."
    ],
+   "own_n": 10,
+   "rival": "Estetica MedSpa",
+   "rival_n": 11,
+   "margin": -1,
+   "h2h": "trail",
+   "comp_reviews": 356.0,
+   "comp_rating": 4.85,
+   "review_x": 2.8,
    "shared_with": 0,
    "vol": 340,
    "vol_town": 0,
@@ -2165,6 +2254,14 @@
     "No organic top-10 result for aveluremedspa.com in any of the 3 searches; S3 organic results are mostly irrelevant medspaflorida.com directory pages.",
     "Listing open Mon-Fri 9-18, Sat 9-15, closed Sunday."
    ],
+   "own_n": 7,
+   "rival": "Novi Skin & Body Center",
+   "rival_n": 12,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": 103.0,
+   "comp_rating": 4.88,
+   "review_x": 5.5,
    "shared_with": 0,
    "vol": 340,
    "vol_town": 210,
@@ -2298,8 +2395,8 @@
      "n": 5
     },
     {
-     "name": "Q the Medical Spa",
-     "n": 4
+     "name": "Monroe Medspa - Rochester",
+     "n": 3
     }
    ],
    "searches": [
@@ -2355,6 +2452,14 @@
     "Model substitution: gemini-2.5-flash rate limited (50301) twice; all 3 Gemini answers use gemini-3.6-flash.",
     "SERP location_name 'Rochester,New York,United States' worked without error."
    ],
+   "own_n": 7,
+   "rival": "Q the Medical Spa at Lindsay House",
+   "rival_n": 9,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 546.0,
+   "comp_rating": 4.93,
+   "review_x": 1.5,
    "shared_with": 0,
    "vol": 1610,
    "vol_town": 1290,
@@ -2551,6 +2656,14 @@
     "Google services list has no prices; prices=[].",
     "Avelure Creve Coeur listing also returned (separate AMP location), not a duplicate."
    ],
+   "own_n": 9,
+   "rival": "Divine, A Boutique Medspa",
+   "rival_n": 12,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 157.0,
+   "comp_rating": 4.88,
+   "review_x": 6.9,
    "shared_with": 0,
    "vol": 40,
    "vol_town": 0,
@@ -2682,10 +2795,6 @@
      "n": 6
     },
     {
-     "name": "The Palm Medspa + Wellness",
-     "n": 5
-    },
-    {
      "name": "Nectar Aesthetics",
      "n": 5
     },
@@ -2696,6 +2805,10 @@
     {
      "name": "Celine Med Spa",
      "n": 4
+    },
+    {
+     "name": "Spa Blue Skin Care & Laser Center",
+     "n": 3
     }
    ],
    "searches": [
@@ -2746,6 +2859,14 @@
     "Competitor The Palm Medspa + Wellness (12301 Lake Underhill Rd, 32828, same ZIP) appears in both map packs, Perplexity/Claude/Gemini answers, and Avelure's people-also-search list.",
     "SERPs ran with location_name 'Orlando,Florida,United States' with no errors."
    ],
+   "own_n": 0,
+   "rival": "LUXE Med Spa Aesthetics",
+   "rival_n": 6,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 177.0,
+   "comp_rating": 4.48,
+   "review_x": 5.1,
    "shared_with": 0,
    "vol": 5070,
    "vol_town": 3070,
@@ -2942,6 +3063,14 @@
     "Perplexity named 'Avelure Med Spa - Zona Rosa' for S1. ChatGPT S1 cited aveluremedspa.com/locations/zona-rosa in search results but did not name it in the answer.",
     "Listing first_seen 2024-08-04; claimed; 681 reviews but 55 one-star (8.1%)."
    ],
+   "own_n": 1,
+   "rival": "AesthetiCare Medspa + Wellness",
+   "rival_n": 11,
+   "margin": -10,
+   "h2h": "trail",
+   "comp_reviews": 186.0,
+   "comp_rating": 4.74,
+   "review_x": 3.7,
    "shared_with": 0,
    "vol": 1920,
    "vol_town": 1060,
@@ -3148,6 +3277,14 @@
     "gemini-2.5-flash rate limited twice (50301) on all 3 prompts; used gemini-3.6-flash instead.",
     "Back to 30 named by all 4 LLMs on all 3 prompts (12/12); Claude S3 names it as the best med spa."
    ],
+   "own_n": 15,
+   "rival": "Tehila Aesthetics",
+   "rival_n": 15,
+   "margin": 0,
+   "h2h": "tie",
+   "comp_reviews": 191.0,
+   "comp_rating": 4.9,
+   "review_x": 1.1,
    "shared_with": 0,
    "vol": 60,
    "vol_town": 10,
@@ -3346,6 +3483,14 @@
     "Google work_time shows Mon-Fri only (42 h/week); website (per Claude S2) mentions select Saturdays.",
     "SERP location_name 'Greenville,South Carolina,United States' worked without fallback."
    ],
+   "own_n": 5,
+   "rival": "Augusta Road Aesthetics",
+   "rival_n": 10,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": 505.0,
+   "comp_rating": 4.72,
+   "review_x": 0.8,
    "shared_with": 1,
    "vol": 630,
    "vol_town": 490,
@@ -3548,6 +3693,14 @@
     "Listing services: only 10 returned by API; 7 have $0 (consult/injectable placeholders), so prices list holds 3 items.",
     "Brand-level naming: ChatGPT S2, Gemini S2/S3 named 'Back to 30' (brand/multi-location), counted as named."
    ],
+   "own_n": 9,
+   "rival": "Augusta Road Aesthetics",
+   "rival_n": 12,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 140.0,
+   "comp_rating": 5.0,
+   "review_x": 1.9,
    "shared_with": 1,
    "vol": 630,
    "vol_town": 490,
@@ -3759,6 +3912,14 @@
     "Only 3 of 10 Google services have price > 0; injectables/consults listed at $0.",
     "Google listing last updated 2026-09-14."
    ],
+   "own_n": 12,
+   "rival": "SkinGlow MD",
+   "rival_n": 9,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 28.0,
+   "comp_rating": 4.8,
+   "review_x": 8.7,
    "shared_with": 0,
    "vol": 60,
    "vol_town": 0,
@@ -3943,7 +4104,7 @@
      "n": 4
     },
     {
-     "name": "Smooth Synergy MedSpa",
+     "name": "SkinTight MedSpa",
      "n": 3
     }
    ],
@@ -3995,6 +4156,14 @@
     "S3 'best med spa near me' organic results were mostly out-of-market Yelp pages (Rochester, Lewes DE, Cincinnati, etc.) despite New York location; local pack was NYC.",
     "BeautyFix not named by any LLM in 12 answers and absent from all Google map packs and organic top 10."
    ],
+   "own_n": 0,
+   "rival": "Tribeca Medspa",
+   "rival_n": 9,
+   "margin": -9,
+   "h2h": "trail",
+   "comp_reviews": 40.0,
+   "comp_rating": 4.4,
+   "review_x": 20.9,
    "shared_with": 3,
    "vol": 7050,
    "vol_town": 2225,
@@ -4175,11 +4344,11 @@
      "n": 3
     },
     {
-     "name": "Ever/Body",
+     "name": "Thérapie Clinic Flatiron",
      "n": 3
     },
     {
-     "name": "Thérapie Clinic Flatiron",
+     "name": "Peachy West SoHo",
      "n": 3
     }
    ],
@@ -4235,6 +4404,14 @@
     "Gemini gemini-2.5-flash rate limited (rate_limit_exceeded) twice; used gemini-3.6-flash for all 3 Gemini prompts.",
     "Gemini S3 named 'BeautyFix MedSpa' (brand-level, recommended for body sculpting), not this location specifically."
    ],
+   "own_n": 1,
+   "rival": "Tribeca Medspa",
+   "rival_n": 9,
+   "margin": -8,
+   "h2h": "trail",
+   "comp_reviews": 20.0,
+   "comp_rating": 4.57,
+   "review_x": 14.3,
    "shared_with": 3,
    "vol": 7050,
    "vol_town": 2225,
@@ -4471,6 +4648,14 @@
     "Listing review count 160; live SERP shows 161.",
     "Some LLM 'others' names may not be aesthetic businesses or may be outside Larchmont (e.g. Fountain Med Spa at the same address per spaweek, Lumiere Laser in Fairfield County)."
    ],
+   "own_n": 13,
+   "rival": "StudioMD",
+   "rival_n": 9,
+   "margin": 4,
+   "h2h": "lead",
+   "comp_reviews": 35.0,
+   "comp_rating": 4.88,
+   "review_x": 4.6,
    "shared_with": 0,
    "vol": 60,
    "vol_town": 20,
@@ -4655,8 +4840,8 @@
      "n": 7
     },
     {
-     "name": "Greenwich Medical Spa",
-     "n": 7
+     "name": "Mia's Medical Spa",
+     "n": 6
     }
    ],
    "searches": [
@@ -4709,6 +4894,14 @@
     "S3 'best med spa near me' organic results were not local (Rochester NY, Lewes DE, Virginia Beach, Cincinnati) even with location West Hartford; local pack was local.",
     "Perplexity S2 also named Hartford Hospital Procedure Clinic (medical/headache Botox), excluded from others as non-aesthetic."
    ],
+   "own_n": 8,
+   "rival": "Bella Republic Medspa",
+   "rival_n": 11,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 178.0,
+   "comp_rating": 4.8,
+   "review_x": 1.2,
    "shared_with": 1,
    "vol": 225,
    "vol_town": 175,
@@ -4867,10 +5060,6 @@
    "aio_seen": 0,
    "rivals": [
     {
-     "name": "Radiance Medspa",
-     "n": 13
-    },
-    {
      "name": "True Medical Aesthetics",
      "n": 12
     },
@@ -4884,6 +5073,10 @@
     },
     {
      "name": "Samara MedSpa",
+     "n": 5
+    },
+    {
+     "name": "BellaDonna Medspa",
      "n": 5
     }
    ],
@@ -4934,6 +5127,14 @@
     "S3 'best med spa near me' organic results are dominated by medspaflorida.com directory pages.",
     "Claude S2 (botox) omitted Blush; it did name Blush in S1 and S3."
    ],
+   "own_n": 13,
+   "rival": "True Medical Aesthetics",
+   "rival_n": 12,
+   "margin": 1,
+   "h2h": "lead",
+   "comp_reviews": 124.0,
+   "comp_rating": 4.92,
+   "review_x": 1.2,
    "shared_with": 0,
    "vol": 60,
    "vol_town": 60,
@@ -5103,6 +5304,14 @@
     "Business listing search also returned Blush Med Spa - Enfield (115 Elm St, Enfield CT, 4.9/491) which was not used.",
     "Google listing distance from AMP pin computed with coarse Google coords (42.066,-72.514)."
    ],
+   "own_n": 15,
+   "rival": "Revive Health + Aesthetics",
+   "rival_n": 11,
+   "margin": 4,
+   "h2h": "lead",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 0,
    "vol": 20,
    "vol_town": 20,
@@ -5330,6 +5539,14 @@
     "Many third-party directories (MapQuest, chamberofcommerce) list a different phone (860) 698-1989 for this address; Yelp shows 3.4 stars (18 reviews) on one Blush Enfield page per Perplexity sources.",
     "Only 6 of 10 Google services have a price > 0; injectables (Botox, filler) show $0 'From' price."
    ],
+   "own_n": 15,
+   "rival": "Magnolia Medical Wellness",
+   "rival_n": 13,
+   "margin": 2,
+   "h2h": "lead",
+   "comp_reviews": 59.0,
+   "comp_rating": 4.82,
+   "review_x": 8.3,
    "shared_with": 0,
    "vol": 30,
    "vol_town": 30,
@@ -5492,10 +5709,6 @@
      "n": 8
     },
     {
-     "name": "Greenwich Medical Spa",
-     "n": 8
-    },
-    {
      "name": "Kalon Medical Spa",
      "n": 7
     },
@@ -5506,6 +5719,10 @@
     {
      "name": "Greenwich Medical Spa at Glastonbury",
      "n": 6
+    },
+    {
+     "name": "Veda Medspa",
+     "n": 4
     }
    ],
    "searches": [
@@ -5555,6 +5772,14 @@
     "Description says 'Best of Hartford 2020-2022' and lists HydraFacial, lasers, PCA peels, neuromodulators, fillers, memberships, B12; many booking services show $0 'From' prices.",
     "Weekly open hours: Mon 9-17, Tue 9-18:30, Wed 9-18, Thu 9-17, Fri 9-17, Sat 9-14, Sun closed = 47.5h."
    ],
+   "own_n": 12,
+   "rival": "Infinity MedSpa of Glastonbury",
+   "rival_n": 8,
+   "margin": 4,
+   "h2h": "lead",
+   "comp_reviews": 212.0,
+   "comp_rating": 4.96,
+   "review_x": 1.3,
    "shared_with": 0,
    "vol": 190,
    "vol_town": 190,
@@ -5726,6 +5951,14 @@
     "Claude S1 cites AMSA/PR Newswire: Blush Orange opened May 2025 as an AMP-backed new location.",
     "Backlink contact_info includes extra phones (860-835-5495, 860-781-8544, 860-606-6879) and emails incl. info@blushmedspct.com (typo domain)."
    ],
+   "own_n": 15,
+   "rival": "The RadianceMD",
+   "rival_n": 13,
+   "margin": 2,
+   "h2h": "lead",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 0,
    "vol": 40,
    "vol_town": 40,
@@ -5940,6 +6173,14 @@
     "ChatGPT S1 cited curatemedspa.com/locations/chattanooga in search_results but did not name the business in its answer (named=0).",
     "Listing first_seen equals last_updated (2026-09-13) in DataForSEO; rating distribution shows 246 five-star and one 1-star."
    ],
+   "own_n": 9,
+   "rival": "Larimar Medspa",
+   "rival_n": 11,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 44.0,
+   "comp_rating": 4.96,
+   "review_x": 5.6,
    "shared_with": 0,
    "vol": 750,
    "vol_town": 750,
@@ -6075,15 +6316,15 @@
      "n": 7
     },
     {
-     "name": "Ageless Medical Spa",
-     "n": 6
-    },
-    {
      "name": "Valencia MedSpa",
      "n": 5
     },
     {
      "name": "Elite MedAesthetic",
+     "n": 5
+    },
+    {
+     "name": "KnoxGlow Aesthetics",
      "n": 5
     }
    ],
@@ -6136,6 +6377,14 @@
     "Gemini S1 named 'Create Medical Aesthetics' (createmedspa.com) - a different business, not counted as Curate.",
     "Perplexity S1 named Curate MedAesthetics at 11439 Parkside Dr, citing curatemedspa.com/locations/knoxville/."
    ],
+   "own_n": 1,
+   "rival": "Skin & Sculpt Medical Spa",
+   "rival_n": 8,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 477.0,
+   "comp_rating": 4.78,
+   "review_x": 2.0,
    "shared_with": 0,
    "vol": 1030,
    "vol_town": 1030,
@@ -6332,6 +6581,14 @@
     "All three AI Overviews were asynchronous with no text (unreadable).",
     "Gemini gemini-2.5-flash rate limited (rate_limit_exceeded) on all 3 prompts and on retry; all Gemini answers used gemini-3.6-flash."
    ],
+   "own_n": 6,
+   "rival": "Webb Aesthetic Plastic Surgery & Med Spa",
+   "rival_n": 8,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 118.0,
+   "comp_rating": 4.92,
+   "review_x": 0.5,
    "shared_with": 0,
    "vol": 600,
    "vol_town": 600,
@@ -6527,6 +6784,14 @@
     "Perplexity S1 named Cúrate MedAesthetics (cited curatemedspa.com/locations/nashville); Gemini S3 named Cúrate MedAesthetics.",
     "Listing last_updated 2026-09-23; first_seen 2024-07-29."
    ],
+   "own_n": 2,
+   "rival": "61Five Health & Wellness",
+   "rival_n": 8,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 27.0,
+   "comp_rating": 4.76,
+   "review_x": 47.4,
    "shared_with": 0,
    "vol": 1890,
    "vol_town": 1890,
@@ -6744,6 +7009,14 @@
     "Brand named in all 12 AI answers; no model substitutions needed.",
     "S3 SERP for 'best med spa near me' organic results are largely off-geo (Florida, Atlanta, Alabama directories)."
    ],
+   "own_n": 15,
+   "rival": "Clear Beauty Medical Aesthetics",
+   "rival_n": 7,
+   "margin": 8,
+   "h2h": "lead",
+   "comp_reviews": 50.0,
+   "comp_rating": 4.96,
+   "review_x": 16.5,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -6875,10 +7148,6 @@
      "n": 10
     },
     {
-     "name": "The MD Aesthetics",
-     "n": 9
-    },
-    {
      "name": "Northern California Wellness",
      "n": 7
     },
@@ -6889,6 +7158,10 @@
     {
      "name": "Inspired Aesthetic Medicine",
      "n": 6
+    },
+    {
+     "name": "The Esthetics Center",
+     "n": 5
     }
    ],
    "searches": [
@@ -6939,6 +7212,14 @@
     "Gemini web-search answers reference brand 'Destination Aesthetics' generically in S1/S2; counted as named per brand rule. No model substitutions needed.",
     "Weekly hours: Mon-Thu 9:15-17:00, Fri 8:15-16:00 = 38.75 h; website mentions one Saturday per month not in Google hours."
    ],
+   "own_n": 15,
+   "rival": "Dignity Medical Aesthetics & Wellness",
+   "rival_n": 10,
+   "margin": 5,
+   "h2h": "lead",
+   "comp_reviews": 78.0,
+   "comp_rating": 4.42,
+   "review_x": 1.6,
    "shared_with": 0,
    "vol": 130,
    "vol_town": 130,
@@ -7134,6 +7415,14 @@
     "S1 and S2 organic: brand only appears via third-party pages (exploreelkgrove.com directory, Instagram), not destinationaesthetics.com, so organic_pos is null. One S2 Instagram result showing the brand's text and phone is labeled 'umabeautybar' (a competitor) in the SERP.",
     "SERP location_name 'Elk Grove,California,United States' worked; no model substitutions; all 12 LLM calls succeeded."
    ],
+   "own_n": 14,
+   "rival": "K3 Health & Wellness",
+   "rival_n": 11,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 31.0,
+   "comp_rating": 4.74,
+   "review_x": 10.5,
    "shared_with": 0,
    "vol": 300,
    "vol_town": 300,
@@ -7277,7 +7566,7 @@
      "n": 4
     },
     {
-     "name": "SER Aesthetics",
+     "name": "RenewMD Beauty and Wellness",
      "n": 4
     }
    ],
@@ -7332,6 +7621,14 @@
     "LLM answers cite 'voted #1 Best Medical Spa by Sacramento Magazine 5 years in a row' (from brand site); Claude S3 quoted Yelp 4.6 / 155 reviews; Birdeye shows 4.7 / 310 reviews.",
     "No model substitutions; gemini-2.5-flash succeeded on all prompts."
    ],
+   "own_n": 14,
+   "rival": "Seven Medical Aesthetics",
+   "rival_n": 11,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 77.0,
+   "comp_rating": 4.42,
+   "review_x": 1.9,
    "shared_with": 0,
    "vol": 320,
    "vol_town": 320,
@@ -7529,6 +7826,14 @@
     "All three SERPs had an asynchronous AI Overview with no text (aio=unreadable). S3 'best med spa near me' organic results were mostly non-local (Reno, Fresno, Morgan Hill) even with Napa location set.",
     "No model substitutions needed; Napa,California,United States location accepted."
    ],
+   "own_n": 11,
+   "rival": "Nude Medical Aesthetics",
+   "rival_n": 12,
+   "margin": -1,
+   "h2h": "trail",
+   "comp_reviews": 45.0,
+   "comp_rating": 4.98,
+   "review_x": 3.2,
    "shared_with": 0,
    "vol": 280,
    "vol_town": 280,
@@ -7725,6 +8030,14 @@
     "Claude cites Yelp at 4.7 (162 reviews); Gemini cites Birdeye 573 reviews and Sacramento Magazine '#1 Best Medical Spa five consecutive years'.",
     "No model substitutions; all 12 LLM calls succeeded with the specified models."
    ],
+   "own_n": 10,
+   "rival": "SkinSpirit Roseville",
+   "rival_n": 10,
+   "margin": 0,
+   "h2h": "tie",
+   "comp_reviews": 477.0,
+   "comp_rating": 4.95,
+   "review_x": 0.8,
    "shared_with": 0,
    "vol": 700,
    "vol_town": 700,
@@ -7856,10 +8169,6 @@
      "n": 6
     },
     {
-     "name": "One Med Spa",
-     "n": 4
-    },
-    {
      "name": "Ideal Plastic Surgery",
      "n": 4
     },
@@ -7869,6 +8178,10 @@
     },
     {
      "name": "Arden Creek Laser & Aesthetics",
+     "n": 3
+    },
+    {
+     "name": "Medspa of Sacramento",
      "n": 3
     }
    ],
@@ -7922,6 +8235,14 @@
     "Weekly hours from Google: Mon-Thu 9:00-17:30, Fri 8:00-16:30 = 42.5 h; closed Sat/Sun. DA website (via Perplexity citation) states Mon-Thu 9:15-5, Fri 8:15-4, plus one Saturday per month - hours mismatch vs Google.",
     "No model substitutions; all 12 LLM calls returned text."
    ],
+   "own_n": 11,
+   "rival": "Angell Medical Spa",
+   "rival_n": 6,
+   "margin": 5,
+   "h2h": "lead",
+   "comp_reviews": 152.0,
+   "comp_rating": 4.94,
+   "review_x": 2.7,
    "shared_with": 0,
    "vol": 2050,
    "vol_town": 2050,
@@ -8154,6 +8475,14 @@
     "SERP rating for listing showed 630 reviews vs 626 in listing data.",
     "No model substitutions needed; Bend,Oregon,United States location_name worked."
    ],
+   "own_n": 11,
+   "rival": "Elite Medi Spa",
+   "rival_n": 11,
+   "margin": 0,
+   "h2h": "tie",
+   "comp_reviews": 126.0,
+   "comp_rating": 4.98,
+   "review_x": 5.0,
    "shared_with": 0,
    "vol": 330,
    "vol_town": 330,
@@ -8323,6 +8652,14 @@
     "Claude (S2) named Ever/Body Colleyville but cited phone (917) 781-2352, matching neither Google nor AMP number.",
     "No model substitutions; all 12 LLM calls succeeded on requested models; SERP location Colleyville,Texas,United States worked."
    ],
+   "own_n": 4,
+   "rival": "Skinsation Medspa",
+   "rival_n": 8,
+   "margin": -4,
+   "h2h": "trail",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 0,
    "vol": 330,
    "vol_town": 330,
@@ -8541,6 +8878,14 @@
     "All 3 SERPs: ai_overview asynchronous with no text (unreadable); no everbody.com organic result in top 10; S3 'best med spa near me' with city-level location returned no local pack and mostly out-of-market Yelp pages.",
     "Gemini (S1) and Perplexity (S1) named Ever/Body as a brand (citing Observer luxury med spa list; Perplexity mentions Flatiron location). No model substitutions needed."
    ],
+   "own_n": 2,
+   "rival": "Tribeca Medspa",
+   "rival_n": 7,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": 73.0,
+   "comp_rating": 4.7,
+   "review_x": 7.9,
    "shared_with": 3,
    "vol": 7050,
    "vol_town": 2225,
@@ -8737,6 +9082,14 @@
     "ChatGPT S1 search results cited nobsmedspareviews 'ever-body-bethesda-row-gaithersburg-md' and shopdowntowncrown.com 'ideal-image-med-spa', but the answer text did not name the business.",
     "No model substitutions; SERP location Gaithersburg,Maryland,United States worked."
    ],
+   "own_n": 2,
+   "rival": "SkinSpirit Gaithersburg",
+   "rival_n": 15,
+   "margin": -13,
+   "h2h": "trail",
+   "comp_reviews": 230.0,
+   "comp_rating": 4.88,
+   "review_x": 2.2,
    "shared_with": 0,
    "vol": 80,
    "vol_town": 80,
@@ -8908,6 +9261,14 @@
     "AI overviews for S1 and S3 were asynchronous with no text; S2 had none.",
     "No model substitutions; location_name 'New York,New York,United States' worked."
    ],
+   "own_n": 3,
+   "rival": "Tribeca Medspa",
+   "rival_n": 6,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 3,
    "vol": 7050,
    "vol_town": 2225,
@@ -9051,10 +9412,6 @@
    "aio_seen": 0,
    "rivals": [
     {
-     "name": "BeautyFix West Hartford",
-     "n": 11
-    },
-    {
      "name": "Bella Republic Medspa",
      "n": 10
     },
@@ -9069,6 +9426,10 @@
     {
      "name": "FemCare MedSpa",
      "n": 7
+    },
+    {
+     "name": "Mia's Medical Spa",
+     "n": 4
     }
    ],
    "searches": [
@@ -9119,6 +9480,14 @@
     "Google listing last updated 2026-09-12; 77 one-star reviews (8.7%) despite 4.5 average.",
     "No model substitutions; SERP location_name West Hartford,Connecticut,United States worked."
    ],
+   "own_n": 3,
+   "rival": "Bella Republic Medspa",
+   "rival_n": 10,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 125.0,
+   "comp_rating": 4.9,
+   "review_x": 7.1,
    "shared_with": 1,
    "vol": 225,
    "vol_town": 175,
@@ -9289,11 +9658,11 @@
      "n": 6
     },
     {
-     "name": "S+P MedSpa",
-     "n": 6
+     "name": "FoxHall Dermatology",
+     "n": 5
     },
     {
-     "name": "FoxHall Dermatology",
+     "name": "Ritual by Tracy Holzman NP-C",
      "n": 5
     }
    ],
@@ -9346,6 +9715,14 @@
     "No LLM answer named Ever/Body in any of 12 calls; no model substitutions needed; serp location_name Washington,District of Columbia,United States worked.",
     "Google services list 10 items; 5 priced at $0 (consult, Botox new/existing, lip filler) and excluded from prices."
    ],
+   "own_n": 0,
+   "rival": "Arta Medical Spa",
+   "rival_n": 8,
+   "margin": -8,
+   "h2h": "trail",
+   "comp_reviews": 219.0,
+   "comp_rating": 4.78,
+   "review_x": 1.1,
    "shared_with": 0,
    "vol": 750,
    "vol_town": 750,
@@ -9540,6 +9917,14 @@
     "Google listing distance to AMP pin about 0.03 km (Google lat/lng given only to 3 decimals).",
     "No model substitutions; all 12 LLM calls succeeded."
    ],
+   "own_n": 9,
+   "rival": "The Beauty Spot MedSpa",
+   "rival_n": 15,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 240.0,
+   "comp_rating": 4.85,
+   "review_x": 3.2,
    "shared_with": 0,
    "vol": 30,
    "vol_town": 30,
@@ -9748,6 +10133,14 @@
     "Perplexity S3 failed once with Bad Gateway and succeeded on retry. No model substitutions; gemini-2.5-flash worked for all calls.",
     "Google listing returns only 17 photos, which is low for 753 reviews; 66 one-star reviews (8.8%)."
    ],
+   "own_n": 7,
+   "rival": "SKIN Medical + Wellness",
+   "rival_n": 13,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 155.0,
+   "comp_rating": 4.97,
+   "review_x": 4.9,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -9975,6 +10368,14 @@
     "No LLM answer named Ever/Body. Perplexity S3 cited an Observer list of NYC luxury med spas whose snippet includes 'Ever/Body', but the answer text did not name it. Competitor LaserAway Brooklyn-Williamsburg (89 N 4th St) named by ChatGPT and Claude for botox.",
     "All models used as specified (no substitutions); serp location 'Brooklyn,New York,United States' worked."
    ],
+   "own_n": 0,
+   "rival": "PBK Medspa",
+   "rival_n": 6,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 185.0,
+   "comp_rating": 4.82,
+   "review_x": 1.3,
    "shared_with": 0,
    "vol": 5190,
    "vol_town": 1020,
@@ -10196,6 +10597,14 @@
     "Services list: 10 returned, consult/injectable items priced $0 excluded from prices.",
     "No model substitutions; all 12 LLM calls succeeded."
    ],
+   "own_n": 15,
+   "rival": "Head To Toe Med Spa",
+   "rival_n": 12,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 320.0,
+   "comp_rating": 5.0,
+   "review_x": 3.9,
    "shared_with": 0,
    "vol": 720,
    "vol_town": 720,
@@ -10386,6 +10795,14 @@
     "S3 SERP 'best med spa near me' organic results were irrelevant (medspaflorida.com, Charleston); all three AI overviews were asynchronous with no readable text.",
     "No model substitutions; all 12 LLM calls succeeded and all named Glo MedSpa."
    ],
+   "own_n": 14,
+   "rival": "Alive Wellness & Aesthetics",
+   "rival_n": 13,
+   "margin": 1,
+   "h2h": "lead",
+   "comp_reviews": 38.0,
+   "comp_rating": 4.67,
+   "review_x": 4.8,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -10607,6 +11024,14 @@
     "Perplexity S1 named 'H-MD Medical Spa – Gaillardia' specifically; ChatGPT S2 named H-MD with Gaillardia and Chisholm Creek locations; Gemini S3 cited Gaillardia 4.8/944 reviews.",
     "Claude haiku-4-5 named H-MD in none of the 3 prompts. No model substitutions; SERP location_name Oklahoma City worked."
    ],
+   "own_n": 7,
+   "rival": "The Treatment Room",
+   "rival_n": 10,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 145.0,
+   "comp_rating": 4.96,
+   "review_x": 6.4,
    "shared_with": 1,
    "vol": 775,
    "vol_town": 775,
@@ -10814,6 +11239,14 @@
     "LLM brand mentions are for the H-MD brand; ChatGPT S2 and Perplexity S1 point to Gaillardia/okc page; Gemini S1 mentions 'three locations'. None specifically named Chisholm Creek.",
     "No model substitutions; all 12 LLM calls succeeded; SERP location_name Oklahoma City,Oklahoma,United States worked."
    ],
+   "own_n": 7,
+   "rival": "The Treatment Room",
+   "rival_n": 9,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 160.0,
+   "comp_rating": 4.78,
+   "review_x": 4.1,
    "shared_with": 1,
    "vol": 775,
    "vol_town": 775,
@@ -11020,6 +11453,14 @@
     "SERP location 'Tulsa,Oklahoma,United States' worked; no model substitutions needed.",
     "Listing last_updated 2026-09-21; 1-star reviews are 80 of 788 (10.2%)."
    ],
+   "own_n": 2,
+   "rival": "Bella Roma Medical Spa",
+   "rival_n": 9,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 73.0,
+   "comp_rating": 4.98,
+   "review_x": 10.8,
    "shared_with": 0,
    "vol": 1610,
    "vol_town": 1610,
@@ -11260,6 +11701,14 @@
     "Description self-describes as 'Jacksonville's leading spa'; site title 'Medical Spa Jacksonville FL'.",
     "No model substitutions; all 12 LLM calls succeeded."
    ],
+   "own_n": 10,
+   "rival": "Amason Aesthetics",
+   "rival_n": 12,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 329.0,
+   "comp_rating": 4.92,
+   "review_x": 1.8,
    "shared_with": 0,
    "vol": 250,
    "vol_town": 20,
@@ -11455,6 +11904,14 @@
     "S3 'best med spa near me' organic results were mostly out-of-market (Omaha, Tulsa, Cincinnati, Springfield MO) Yelp pages despite Lee's Summit location setting.",
     "No model substitutions; all 12 LLM calls succeeded. LLM names 8/12."
    ],
+   "own_n": 8,
+   "rival": "KC Injectables Med Spa",
+   "rival_n": 9,
+   "margin": -1,
+   "h2h": "trail",
+   "comp_reviews": 296.0,
+   "comp_rating": 4.9,
+   "review_x": 0.3,
    "shared_with": 0,
    "vol": 230,
    "vol_town": 20,
@@ -11651,6 +12108,14 @@
     "Weekly hours 39 (Mon 8-15, Tue 11-19, Wed 8-16, Thu 11-19, Fri 8-16; closed Sat/Sun). Yelp lists Mon 9-5, differs from Google.",
     "No model substitutions; all 12 LLM calls succeeded and all named the brand."
    ],
+   "own_n": 15,
+   "rival": "Fusion Medispa",
+   "rival_n": 11,
+   "margin": 4,
+   "h2h": "lead",
+   "comp_reviews": 165.0,
+   "comp_rating": 4.95,
+   "review_x": 1.2,
    "shared_with": 0,
    "vol": 100,
    "vol_town": 30,
@@ -11847,6 +12312,14 @@
     "Review count in SERP local pack (600) higher than listing snapshot (578, last_updated 2026-09-19).",
     "No model substitutions; all 12 LLM calls succeeded. Claude S1 named the brand only in an 'other options' line."
    ],
+   "own_n": 10,
+   "rival": "Olympia Aesthetics & Wellness",
+   "rival_n": 11,
+   "margin": -1,
+   "h2h": "trail",
+   "comp_reviews": 50.0,
+   "comp_rating": 4.88,
+   "review_x": 11.6,
    "shared_with": 0,
    "vol": 360,
    "vol_town": 230,
@@ -12040,6 +12513,14 @@
     "SERP location_name 'Seminole,Florida,United States' worked; note Google sometimes mixed in Seminole County (Oviedo/Lake Mary) results.",
     "Listing first_seen equals last_updated (2026-09-13)."
    ],
+   "own_n": 13,
+   "rival": "NU YU Laser and MedSpa",
+   "rival_n": 7,
+   "margin": 6,
+   "h2h": "lead",
+   "comp_reviews": 157.0,
+   "comp_rating": 4.72,
+   "review_x": 3.7,
    "shared_with": 0,
    "vol": 130,
    "vol_town": 0,
@@ -12246,6 +12727,14 @@
     "SERP location 'St. Petersburg,Florida,United States' accepted. AI Overview present but asynchronous (no text) for S1 and S3; none for S2. Brand absent from the local pack and the top-10 organic results in all three searches.",
     "LLM: Gemini named the brand in 3/3 prompts (citing livingyoungcenter.com/tampa-bay-med-spa/best-med-spa-in-st-pete/), Perplexity 1/3 (S2), Claude 1/3 (S1), ChatGPT 0/3. In Claude S3 and Perplexity S3 the brand's page was among the sources but the brand was not named in the answer. No model substitutions were needed."
    ],
+   "own_n": 5,
+   "rival": "Glow St. Pete Med Spa",
+   "rival_n": 7,
+   "margin": -2,
+   "h2h": "trail",
+   "comp_reviews": 145.0,
+   "comp_rating": 4.94,
+   "review_x": 1.7,
    "shared_with": 0,
    "vol": 1210,
    "vol_town": 350,
@@ -12437,6 +12926,14 @@
     "Gemini S1 also listed 'Eric F. Bernstein, MD, MSE' separately (same practice's physician); excluded from others. Gemini 2.5-flash ran without rate limit; no model substitutions.",
     "Claude S2 answer did not name the business (named=0); all other 11 LLM answers named it."
    ],
+   "own_n": 12,
+   "rival": "Elevate Medical Aesthetics & Wellness Center",
+   "rival_n": 12,
+   "margin": 0,
+   "h2h": "tie",
+   "comp_reviews": 271.0,
+   "comp_rating": 4.87,
+   "review_x": 0.7,
    "shared_with": 0,
    "vol": 30,
    "vol_town": 30,
@@ -12583,16 +13080,16 @@
      "n": 5
     },
     {
-     "name": "Pearl Med Spa",
-     "n": 4
-    },
-    {
      "name": "Peace Love Med Aesthetic Rejuvenation",
      "n": 4
     },
     {
      "name": "Sanctuary Medical Aesthetic Center",
      "n": 4
+    },
+    {
+     "name": "AuraMed Aesthetics",
+     "n": 3
     }
    ],
    "searches": [
@@ -12643,6 +13140,14 @@
     "Several Google services listed at $0 (consults, Botox, GLP-1 wellness); only 2 priced services recorded. Not open Saturday/Sunday per Google hours (Mon-Fri 10-18).",
     "Listing last updated 2026-09-20; first seen 2024-07-26."
    ],
+   "own_n": 0,
+   "rival": "COSMETICA MED SPA",
+   "rival_n": 5,
+   "margin": -5,
+   "h2h": "trail",
+   "comp_reviews": 198.0,
+   "comp_rating": 4.8,
+   "review_x": 1.0,
    "shared_with": 0,
    "vol": 2400,
    "vol_town": 1710,
@@ -12855,6 +13360,14 @@
     "Claude S1 also named Youthful Balance Medical Center (truncated at 8 others).",
     "No model substitutions needed; gemini-2.5-flash succeeded for all 3 prompts."
    ],
+   "own_n": 4,
+   "rival": "The Aesthetics Lounge and Spa Palm Beach Gardens",
+   "rival_n": 8,
+   "margin": -4,
+   "h2h": "trail",
+   "comp_reviews": 510.0,
+   "comp_rating": 4.97,
+   "review_x": 1.2,
    "shared_with": 0,
    "vol": 1430,
    "vol_town": 340,
@@ -13065,6 +13578,14 @@
     "Most Google services list price 'From $0.00'; only 3 priced services >0. Business description mentions Smart Liposuction (surgical) but primary category is Medical spa.",
     "No model substitutions; SERP location_name Port St. Lucie,Florida,United States worked."
    ],
+   "own_n": 6,
+   "rival": "Port St. Lucie Medical Wellness",
+   "rival_n": 9,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 112.0,
+   "comp_rating": 4.94,
+   "review_x": 4.9,
    "shared_with": 0,
    "vol": 790,
    "vol_town": 380,
@@ -13212,10 +13733,6 @@
      "n": 8
     },
     {
-     "name": "SP Aesthetics",
-     "n": 7
-    },
-    {
      "name": "LA Medical & Aesthetics",
      "n": 6
     },
@@ -13225,6 +13742,10 @@
     },
     {
      "name": "ProMD Health Wellington",
+     "n": 4
+    },
+    {
+     "name": "Healthy Enhancements",
      "n": 4
     }
    ],
@@ -13276,6 +13797,14 @@
     "Service prices on Google mostly $0 consult/booking placeholders; only 3 priced items.",
     "Wellington location_name worked for SERP; no model substitutions needed."
    ],
+   "own_n": 5,
+   "rival": "SmizePro Med Spa",
+   "rival_n": 8,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 273.0,
+   "comp_rating": 4.94,
+   "review_x": 1.4,
    "shared_with": 0,
    "vol": 860,
    "vol_town": 390,
@@ -13449,10 +13978,6 @@
    "aio_seen": 0,
    "rivals": [
     {
-     "name": "Synergy MedAesthetics",
-     "n": 12
-    },
-    {
      "name": "New U Women's Clinic & Aesthetics",
      "n": 12
     },
@@ -13467,6 +13992,10 @@
     {
      "name": "Curve Appeal",
      "n": 5
+    },
+    {
+     "name": "Shape Cosmetic Surgery & MedSpa",
+     "n": 3
     }
    ],
    "searches": [
@@ -13517,6 +14046,14 @@
     "Google lat/lng returned with only 3 decimals (46.22,-119.231), so distance_km is approximate.",
     "No model substitutions; all 12 LLM calls succeeded. Gemini and Claude describe Nouveau as specializing in massages, waxing, skin care and nails rather than injectables."
    ],
+   "own_n": 5,
+   "rival": "New U Women's Clinic & Aesthetics",
+   "rival_n": 12,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 210.0,
+   "comp_rating": 4.3,
+   "review_x": 1.6,
    "shared_with": 1,
    "vol": 0,
    "vol_town": 0,
@@ -13714,6 +14251,14 @@
     "Brand named in all 12 LLM answers; LLMs (Gemini, Claude) describe it as a Kirkland & Edmonds brand. Claude S3 cited Yelp: 4.6 stars/100 reviews.",
     "No model substitutions needed; SERP location 'Edmonds,Washington,United States' worked."
    ],
+   "own_n": 14,
+   "rival": "212 Med Spa",
+   "rival_n": 8,
+   "margin": 6,
+   "h2h": "lead",
+   "comp_reviews": 69.0,
+   "comp_rating": 4.97,
+   "review_x": 3.8,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -13885,6 +14430,14 @@
     "S3 'best med spa near me' organic results were mostly irrelevant medspaflorida.com pages.",
     "No model substitutions; all 12 LLM calls succeeded with Kirkland location for SERPs."
    ],
+   "own_n": 5,
+   "rival": "Templum Aesthetics & Wellness",
+   "rival_n": 9,
+   "margin": -4,
+   "h2h": "trail",
+   "comp_reviews": null,
+   "comp_rating": null,
+   "review_x": null,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -14079,6 +14632,14 @@
     "S3 'best med spa near me' SERP had no local pack; AI overview listed Bellora Medical Aesthetics, Seattle Beauty, Lux Aesthetics. S1/S2 AI overviews were asynchronous (unreadable).",
     "Not named in any of 12 LLM answers; Google lat/lng rounded to 3 decimals so distance is approximate."
    ],
+   "own_n": 0,
+   "rival": "Skinlogic Med Spa",
+   "rival_n": 7,
+   "margin": -7,
+   "h2h": "trail",
+   "comp_reviews": 62.0,
+   "comp_rating": 4.84,
+   "review_x": 0.4,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -14266,6 +14827,14 @@
     "ChatGPT S1 'others' are mostly IV-therapy lounges, not aesthetic med spas.",
     "No model substitutions; all 12 LLM calls succeeded."
    ],
+   "own_n": 12,
+   "rival": "Shadi Zandieh MD",
+   "rival_n": 3,
+   "margin": 9,
+   "h2h": "lead",
+   "comp_reviews": 102.0,
+   "comp_rating": 4.93,
+   "review_x": 2.7,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -14447,6 +15016,14 @@
     "Google listing has 96 services but no prices; last_updated 2026-09-12; only 16 photos.",
     "No model substitutions; location_name 'Livingston,New Jersey,United States' worked."
    ],
+   "own_n": 11,
+   "rival": "Line Eraser MD Medical Spa",
+   "rival_n": 10,
+   "margin": 1,
+   "h2h": "lead",
+   "comp_reviews": 46.0,
+   "comp_rating": 5.0,
+   "review_x": 6.1,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -14611,6 +15188,14 @@
     "Business not in any map pack or organic top 10 for S1-S3; S1/S3 AI Overviews were asynchronous (unreadable); S2 AI Overview listed Altman and Lumina, not this business.",
     "SERP location_name 'Englewood Cliffs,New Jersey,United States' worked; no model substitutions."
    ],
+   "own_n": 1,
+   "rival": "Farkas Plastic Surgery and Medical Spa",
+   "rival_n": 5,
+   "margin": -4,
+   "h2h": "trail",
+   "comp_reviews": 195.0,
+   "comp_rating": 4.3,
+   "review_x": 0.0,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -14774,6 +15359,14 @@
     "Google listing title is 'Reflections Medical' (SERP shows 'Reflections Medical - Pearl River'); reviews 308 in listings API vs 318 in live SERP.",
     "SERP location 'Pearl River,New York,United States' worked; no model substitutions."
    ],
+   "own_n": 14,
+   "rival": "Michael Ingargiola, MD",
+   "rival_n": 3,
+   "margin": 11,
+   "h2h": "lead",
+   "comp_reviews": 10.0,
+   "comp_rating": 5.0,
+   "review_x": 30.8,
    "shared_with": 0,
    "vol": 50,
    "vol_town": 10,
@@ -14995,6 +15588,14 @@
     "SERP location_name 'Atlanta,Georgia,United States' worked; no model substitutions.",
     "Last listing update 2026-09-20; first_seen 2024-07-25."
    ],
+   "own_n": 1,
+   "rival": "Natural Body Spa + Med Spa",
+   "rival_n": 7,
+   "margin": -6,
+   "h2h": "trail",
+   "comp_reviews": 344.0,
+   "comp_rating": 4.9,
+   "review_x": 0.8,
    "shared_with": 1,
    "vol": 0,
    "vol_town": 0,
@@ -15150,12 +15751,12 @@
      "n": 6
     },
     {
-     "name": "Nouveau Day Spa",
-     "n": 6
-    },
-    {
      "name": "Revive Wellness",
      "n": 5
+    },
+    {
+     "name": "Shape Cosmetic Surgery & MedSpa",
+     "n": 3
     }
    ],
    "searches": [
@@ -15206,6 +15807,14 @@
     "S3 'best med spa near me' had no local pack; AI Overview listed Synergy MedAesthetics - Kennewick first. Organic results were dominated by irrelevant medspaflorida.com pages.",
     "SERP location_name 'Kennewick,Washington,United States' worked; no model substitutions needed (gemini-2.5-flash ran fine)."
    ],
+   "own_n": 14,
+   "rival": "New U Women's Clinic & Aesthetics",
+   "rival_n": 11,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 143.0,
+   "comp_rating": 4.94,
+   "review_x": 1.4,
    "shared_with": 1,
    "vol": 0,
    "vol_town": 0,
@@ -15390,6 +15999,14 @@
     "Google site URL is www.synergymedaesthetics.com/yakima/; Google organic result points to /location/yakima/.",
     "Named 12/12 in LLM answers. Serp location_name 'Yakima,Washington,United States' worked; no model substitutions."
    ],
+   "own_n": 14,
+   "rival": "Soma Aesthetics",
+   "rival_n": 11,
+   "margin": 3,
+   "h2h": "lead",
+   "comp_reviews": 41.0,
+   "comp_rating": 4.97,
+   "review_x": 6.5,
    "shared_with": 0,
    "vol": 0,
    "vol_town": 0,
@@ -15592,6 +16209,14 @@
     "Gemini S2 named The Ageless Center citing theagelesscenter.com/atlanta-botox-special/; no other LLM named it.",
     "No model substitutions; serp location 'Atlanta,Georgia,United States' worked."
    ],
+   "own_n": 2,
+   "rival": "Natural Body Spa + Med Spa",
+   "rival_n": 5,
+   "margin": -3,
+   "h2h": "trail",
+   "comp_reviews": 132.0,
+   "comp_rating": 4.9,
+   "review_x": 3.8,
    "shared_with": 1,
    "vol": 0,
    "vol_town": 0,
@@ -17952,14 +18577,6 @@
    ]
   },
   {
-   "name": "Ageless Aesthetics",
-   "n": 22,
-   "where": [
-    "Greenwood",
-    "Indianapolis"
-   ]
-  },
-  {
    "name": "Augusta Road Aesthetics",
    "n": 22,
    "where": [
@@ -18030,6 +18647,13 @@
    "n": 15,
    "where": [
     "Boiling Springs"
+   ]
+  },
+  {
+   "name": "Bravo MedSpa",
+   "n": 15,
+   "where": [
+    "West Hartford"
    ]
   },
   {
@@ -19417,103 +20041,201 @@
  },
  "spotlights": [
   {
-   "k": "invisible",
-   "tag": "Loved by patients, missing in AI",
-   "loc": "Cúrate MedAesthetics - Nashville",
-   "slug": "crate-medaesthetics-nashville",
-   "big": "2 of 12",
-   "text": "Cúrate MedAesthetics - Nashville has 1,281 Google reviews at 4.6★, yet AI named it in only 2 of 12 answers (ChatGPT 0/3, Gemini 1/3, Claude 0/3, Perplexity 1/3). The business AI named most instead: 61Five Health & Wellness (8 times)."
+   "k": "prize",
+   "tag": "The biggest prize",
+   "loc": "BeautyFix MedSpa - Flatiron",
+   "slug": "beautyfix-medspa-flatiron",
+   "big": "$85,453/mo",
+   "text": "BeautyFix MedSpa - Flatiron sits in the portfolio's most valuable market: about $85,453 a month in local searches. Today AI names Tribeca Medspa 9 times and BeautyFix MedSpa - Flatiron 0. Every share point won here is worth more than anywhere else."
   },
   {
-   "k": "map_not_ai",
-   "tag": "Wins on Google Maps, loses in AI",
-   "loc": "New Radiance Cosmetic Centers- Palm Beach Gardens",
-   "slug": "new-radiance-cosmetic-centers-palm-beach-gardens",
-   "big": "Map 2/3 · AI 2/12",
-   "text": "New Radiance Cosmetic Centers- Palm Beach Gardens is in Google's map pack for 2 of 3 searches, but AI tools named it in only 2 of 12 answers. Ranking on Google no longer guarantees being AI's answer."
+   "k": "trust",
+   "tag": "Trust already earned",
+   "loc": "Cúrate MedAesthetics - Nashville",
+   "slug": "crate-medaesthetics-nashville",
+   "big": "47.4× the reviews",
+   "text": "Cúrate MedAesthetics - Nashville has 1,281 Google reviews, 47.4× the local competitors Google pairs it with (median 27). AI named it in only 2 of 12 answers and named 61Five Health & Wellness 8 times. The reputation is there; AI just can't see it yet."
+  },
+  {
+   "k": "close",
+   "tag": "One step from the top",
+   "loc": "Living Young Center - Palm Harbor",
+   "slug": "living-young-center-palm-harbor",
+   "big": "10 vs 11",
+   "text": "Living Young Center - Palm Harbor trails Olympia Aesthetics & Wellness by 1 mention across AI answers and Google's map pack. A handful of fixes moves it to first in its market."
   },
   {
    "k": "champion",
-   "tag": "The model to copy",
-   "loc": "Glo Med Spa - Wilmington",
-   "slug": "glo-med-spa-wilmington",
-   "big": "100/100",
-   "text": "Glo Med Spa - Wilmington scores 100: named in 12 of 12 AI answers (ChatGPT 3/3, Gemini 3/3, Claude 3/3, Perplexity 3/3) and on Google for 3 of 3 searches. What it does right is the playbook for the rest of the portfolio."
+   "tag": "Already the local answer",
+   "loc": "Reflections Medical by Dr. Michael Fiorillo- Pearl River",
+   "slug": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
+   "big": "14 vs 3",
+   "text": "Reflections Medical by Dr. Michael Fiorillo- Pearl River is named 14 times against 3 for its closest rival, Michael Ingargiola, MD (ChatGPT 3/3, Gemini 3/3, Claude 3/3, Perplexity 3/3). This is what every AMP location can look like, and it's worth defending."
+  },
+  {
+   "k": "ready",
+   "tag": "Winning Google, ready for AI",
+   "loc": "New Radiance Cosmetic Centers- Palm Beach Gardens",
+   "slug": "new-radiance-cosmetic-centers-palm-beach-gardens",
+   "big": "Map 2/3 · AI 2/12",
+   "text": "New Radiance Cosmetic Centers- Palm Beach Gardens already holds Google's map pack for 2 of 3 searches. AI tools name it in 2 of 12 answers. The local authority exists; it needs to reach the sources AI reads."
   },
   {
    "k": "phones",
-   "tag": "Two phone numbers, one practice",
-   "loc": "22 - Med Spa",
+   "tag": "One fix, 59 locations",
+   "loc": "Phone numbers",
    "slug": "22-med-spa",
-   "big": "59 locations",
-   "text": "22 - Med Spa: Google lists +1801-609-3130, while AMP's own site lists (801) 806-0222. 59 of 77 locations have a phone on Google that differs from the parent site. AI treats conflicting numbers as a reason to doubt the listing."
+   "big": "59 of 77",
+   "text": "59 of 77 locations show a different phone on Google than on AMP's own site (for example 22 - Med Spa: +1801-609-3130 on Google, (801) 806-0222 on the site). Many are call-tracking numbers. Setting one main number per location, everywhere, removes a doubt AI applies to every one of them."
   },
   {
    "k": "shared_phone",
-   "tag": "One number, many locations",
+   "tag": "Give every location its own voice",
    "loc": "Destination Aesthetics",
    "slug": "destination-aesthetics-el-dorado-hills",
-   "big": "5 locations",
-   "text": "Destination Aesthetics lists the same number, (916) 844-4913, for 5 locations (El Dorado Hills, Elk Grove, Folsom, Roseville, Sacramento). Search engines and AI can't tell those locations apart. 15 locations share a phone number across 4 brands."
-  },
-  {
-   "k": "pin",
-   "tag": "Pinned in the wrong place",
-   "loc": "Hello Smooth Med Spa",
-   "slug": "hello-smooth-med-spa",
-   "big": "14.8 km off",
-   "text": "AMP's location map puts Hello Smooth Med Spa 14.8 km from where Google has it. 2 location pins are 2 km or more off."
-  },
-  {
-   "k": "bad_url",
-   "tag": "A link that goes nowhere",
-   "loc": "Cúrate MedAesthetics - Murfreesboro",
-   "slug": "crate-medaesthetics-murfreesboro",
-   "big": "curatemedspa",
-   "text": "The website link AMP lists for Cúrate MedAesthetics - Murfreesboro is \"https://curatemedspa\", which is not a working address."
-  },
-  {
-   "k": "price",
-   "tag": "Same treatment, different price",
-   "loc": "HydraFacial",
-   "slug": null,
-   "big": "$175 to $295",
-   "text": "HydraFacial is listed on Google from $175 at Synergy MedAesthetics Med Spa - Kennewick to $295 at Ever / Body - Williamsburg (18 price listings across the portfolio). AI quotes these prices to patients."
+   "big": "5 locations, 1 number",
+   "text": "Destination Aesthetics lists (916) 844-4913 for 5 locations (El Dorado Hills, Elk Grove, Folsom, Roseville, Sacramento). Search engines and AI can't tell them apart, so they compete for one identity instead of winning five markets. 15 locations share a number today."
   },
   {
    "k": "split",
-   "tag": "The AI tools disagree",
+   "tag": "One AI tool away",
    "loc": "H-MD Medical Spa - Gaillardia - Oklahoma City",
    "slug": "h-md-medical-spa-gaillardia-oklahoma-city",
    "big": "Gemini 3/3 · Claude 0/3",
-   "text": "For H-MD Medical Spa - Gaillardia - Oklahoma City, Gemini named it 3 of 3 times; Claude named it 0 of 3. Each AI reads different sources, so one strong channel isn't enough."
+   "text": "Gemini already recommends H-MD Medical Spa - Gaillardia - Oklahoma City every time; Claude hasn't yet. Each AI reads different sources, so closing this gap is a targeted job, not a rebuild."
+  },
+  {
+   "k": "price",
+   "tag": "Prices AI can quote",
+   "loc": "Google profiles",
+   "slug": null,
+   "big": "34 of 77",
+   "text": "Only 34 of 77 AMP Google profiles show any price. When a patient asks AI what a treatment costs nearby, it quotes the competitors that publish one."
   }
  ],
  "insights": [
   {
-   "big": "93 vs 22",
-   "h": "Execution matters more than size",
-   "p": "Among the 5 largest brands (37 locations), Blush Med Spa averages an AI score of 93 across 5 locations while Ever/Body averages 22 across 9. Big brands average 51 and single-location brands 54, so scale alone isn't the advantage it should be. What Blush Med Spa does can be copied across the portfolio."
+   "big": "25 of 77",
+   "h": "Markets where AI already picks AMP first",
+   "p": "In 25 markets the AMP location is named more often than its closest local rival. The other 52 are the growth opportunity: they hold $816,472 of the $871,137 a month in local searches at stake."
   },
   {
-   "big": "5 of 10",
-   "h": "Reviews alone don't buy AI visibility",
-   "p": "Of the 10 most-reviewed locations, 5 are named in fewer than half of AI answers (correlation between review count and AI mentions: -0.02). AI weighs consistency, third-party coverage and fresh pages, not just stars."
+   "big": "20",
+   "h": "Close races, ready to win",
+   "p": "20 locations trail their local leader by 3 mentions or fewer, worth $207,210 a month together: Ever/Body - Greenwich Village (vs Tribeca Medspa, 3–6), Avelure - Rochester (vs Q the Medical Spa at Lindsay House, 7–9), Living Young Center - St. Petersburg (vs Glow St. Pete Med Spa, 5–7)."
   },
   {
-   "big": "4",
-   "h": "Google rank and AI rank are drifting apart",
-   "p": "4 locations sit in Google's map pack for 2 or 3 of our searches but are named in under half of AI answers (correlation between map-pack presence and AI mentions: 0.57). Local SEO alone is no longer enough."
+   "big": "61 of 70",
+   "h": "The reputation is already earned",
+   "p": "In 61 of 70 markets, the AMP location has more Google reviews than the local competitors Google pairs it with. AI doesn't credit it yet: Cúrate MedAesthetics - Nashville has 1,281 reviews (47.4× local) and is named in 2 of 12 answers; BeautyFix MedSpa - Flatiron has 836 reviews (20.9× local) and is named in 0 of 12 answers; BeautyFix MedSpa - Upper East Side has 287 reviews (14.3× local) and is named in 1 of 12 answers."
   },
   {
    "big": "66%",
-   "h": "Where the money is",
-   "p": "The 10 locations with the most local search demand hold 66% of the revenue at stake: BeautyFix MedSpa - Flatiron ($85,453/mo, AI score 0), BeautyFix MedSpa - Upper East Side ($85,453/mo, AI score 7), Ever / Body - Flatiron ($85,453/mo, AI score 13), Ever/Body - Greenwich Village ($85,453/mo, AI score 20). These are the first places to win in AI."
+   "h": "Where the growth is concentrated",
+   "p": "The 10 busiest markets hold 66% of the value: BeautyFix MedSpa - Flatiron ($85,453/mo, named 0× vs Tribeca Medspa 9×), BeautyFix MedSpa - Upper East Side ($85,453/mo, named 1× vs Tribeca Medspa 9×), Ever / Body - Flatiron ($85,453/mo, named 2× vs Tribeca Medspa 7×)."
   },
   {
-   "big": "6",
-   "h": "Locations no AI tool named, even once",
-   "p": "No AI tool named these in any of 12 answers: Avelure - Waterford (901 reviews, AI named LUXE Med Spa Aesthetics instead); BeautyFix MedSpa - Flatiron (836 reviews, AI named Tribeca Medspa instead); Ever / Body - Logan Circle (246 reviews, AI named Arta Medical Spa instead); Ever / Body - Williamsburg (245 reviews, AI named PBK Medspa instead); New Radiance Cosmetic Centers- Boca Raton (202 reviews, AI named COSMETICA MED SPA instead); Pūr Skin Clinic - South Lake Union (22 reviews, AI named Skinlogic Med Spa instead)."
+   "big": "34 of 77",
+   "h": "Google profiles that show a price",
+   "p": "AI answers cost questions with published prices. 43 AMP profiles show none, so AI quotes competitors instead. Adding a price menu is one of the fastest wins available."
+  }
+ ],
+ "products": [
+  {
+   "b": "Semaglutide / GLP-1",
+   "priced": 0,
+   "mentioned": 2,
+   "mentions": 4,
+   "us_vol": 368000,
+   "change": -15.9
+  },
+  {
+   "b": "Microneedling",
+   "priced": 14,
+   "mentioned": 0,
+   "mentions": 0,
+   "us_vol": 201000,
+   "change": 14.0
+  },
+  {
+   "b": "Laser hair removal",
+   "priced": 13,
+   "mentioned": 20,
+   "mentions": 1022,
+   "us_vol": 201000,
+   "change": 14.2
+  },
+  {
+   "b": "Botox",
+   "priced": 1,
+   "mentioned": 4,
+   "mentions": 41,
+   "us_vol": 165000,
+   "change": -3.5
+  },
+  {
+   "b": "Sculptra",
+   "priced": 3,
+   "mentioned": 1,
+   "mentions": 11,
+   "us_vol": 110000,
+   "change": 9.7
+  },
+  {
+   "b": "HydraFacial",
+   "priced": 13,
+   "mentioned": 9,
+   "mentions": 150,
+   "us_vol": 90500,
+   "change": -12.1
+  },
+  {
+   "b": "Morpheus8",
+   "priced": 0,
+   "mentioned": 0,
+   "mentions": 0,
+   "us_vol": 49500,
+   "change": -11.1
+  },
+  {
+   "b": "CoolSculpting",
+   "priced": 0,
+   "mentioned": 23,
+   "mentions": 220,
+   "us_vol": 33100,
+   "change": -17.8
+  },
+  {
+   "b": "Daxxify",
+   "priced": 0,
+   "mentioned": 0,
+   "mentions": 0,
+   "us_vol": 27100,
+   "change": 62.5
+  },
+  {
+   "b": "Dysport",
+   "priced": 1,
+   "mentioned": 0,
+   "mentions": 0,
+   "us_vol": null,
+   "change": null
+  },
+  {
+   "b": "DiamondGlow",
+   "priced": 9,
+   "mentioned": 9,
+   "mentions": 41,
+   "us_vol": null,
+   "change": null
+  },
+  {
+   "b": "Emsculpt",
+   "priced": 6,
+   "mentioned": 0,
+   "mentions": 0,
+   "us_vol": null,
+   "change": null
   }
  ],
  "audits": {

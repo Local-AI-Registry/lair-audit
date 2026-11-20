@@ -62,15 +62,16 @@ ENGINES = ["chat_gpt", "gemini", "claude", "perplexity"]
 ENGINE_LABEL = {"chat_gpt": "ChatGPT", "gemini": "Gemini", "claude": "Claude", "perplexity": "Perplexity"}
 
 
-def score_location(loc, raw):
+def score_location(loc, raw, family=frozenset()):
     lst = raw.get("listing") or {}
     searches = raw.get("searches") or []
     brand_key = norm(loc["brand"])
     self_keys = {brand_key, norm(loc["name"]), norm(lst.get("title"))} - {""}
 
     def is_self(name):
+        # the location itself, or any other location of the same account (rivals are local competitors only)
         n = norm(name)
-        return bool(n) and any(k and (k in n or n in k) for k in self_keys if len(k) >= 4)
+        return bool(n) and any(k and (k in n or n in k) for k in (self_keys | family) if len(k) >= 4)
 
     hits = slots = 0
     llm_named = llm_total = 0
@@ -161,6 +162,17 @@ def pct(a, b):
     return round(100 * a / b) if b else None
 
 
+PRODUCT_BRANDS = [  # product and treatment brands patients search by name
+    ("Botox", r"botox"), ("Dysport", r"dysport"), ("Xeomin", r"xeomin"), ("Jeuveau", r"jeuveau"), ("Daxxify", r"daxx"),
+    ("Juvederm", r"juv[eé]derm"), ("Restylane", r"restylane"), ("Sculptra", r"sculptra"), ("Kybella", r"kybella"),
+    ("HydraFacial", r"hydra ?facial"), ("DiamondGlow", r"diamond ?glow"), ("Morpheus8", r"morpheus"),
+    ("CoolSculpting", r"cool ?sculpt"), ("Emsculpt", r"emsculpt"), ("Semaglutide / GLP-1", r"semaglut|tirzepat|glp|wegovy|ozempic"),
+    ("Microneedling", r"microneedl|skinpen"), ("Laser hair removal", r"laser hair|hair removal|\blhr\b"),
+]
+TREND_KEY = {"Botox": "botox", "Daxxify": "daxxify", "Sculptra": "sculptra", "HydraFacial": "hydrafacial", "Morpheus8": "morpheus8",
+             "CoolSculpting": "coolsculpting", "Semaglutide / GLP-1": "semaglutide", "Microneedling": "microneedling", "Laser hair removal": "laser hair removal"}
+
+
 SERVICE_KEYS = [
     ("Botox / neurotoxin", r"botox|dysport|xeomin|jeuveau|daxxify|neurotox|tox\b|wrinkle relax"),
     ("Dermal filler", r"filler|juvederm|restylane|rha|lip"),
@@ -184,40 +196,55 @@ def service_of(title):
 
 # ---------------------------------------------------------------- spotlights: specific, real examples
 def spotlights(L, acc_short):
-    out = []
+    """Specific, real examples framed as opportunities. Each names a location, its numbers and its local rival."""
+    out, used = [], set()
     scored = [l for l in L if l["score"] is not None]
 
     def eng_line(l):
         return ", ".join(f"{ENGINE_LABEL[e]} {l['eng'][e][0]}/{l['eng'][e][1]}" for e in ENGINES if l["eng"][e][1])
 
-    # 1. Strong on Google reviews, weak in AI
-    cands = [l for l in scored if l["llm_total"] and l["llm_named"] / l["llm_total"] <= 0.34 and l["reviews"]]
-    if cands:
-        l = max(cands, key=lambda x: x["reviews"])
-        r = l["rivals"][0] if l["rivals"] else None
-        out.append({"k": "invisible", "tag": "Loved by patients, missing in AI", "loc": l["name"], "slug": l["slug"],
-                    "big": f"{l['llm_named']} of {l['llm_total']}",
-                    "text": f"{l['name']} has {l['reviews']:,} Google reviews at {l['rating']}★, yet AI named it in only {l['llm_named']} of {l['llm_total']} answers ({eng_line(l)})."
-                            + (f" The business AI named most instead: {r['name']} ({r['n']} times)." if r else "")})
-    # 2. Google ranks it, AI ignores it
-    cands = [l for l in scored if l["map_hits"] >= 2 and l["llm_total"] and l["llm_named"] / l["llm_total"] <= 0.5 and l["slug"] not in {o.get("slug") for o in out}]
-    if cands:
-        l = min(cands, key=lambda x: x["llm_named"] / x["llm_total"])
-        out.append({"k": "map_not_ai", "tag": "Wins on Google Maps, loses in AI", "loc": l["name"], "slug": l["slug"],
-                    "big": f"Map {l['map_hits']}/3 · AI {l['llm_named']}/{l['llm_total']}",
-                    "text": f"{l['name']} is in Google's map pack for {l['map_hits']} of 3 searches, but AI tools named it in only {l['llm_named']} of {l['llm_total']} answers. Ranking on Google no longer guarantees being AI's answer."})
-    # 3. AI champion
-    if scored:
-        l = max(scored, key=lambda x: (x["score"], x["reviews"]))
-        out.append({"k": "champion", "tag": "The model to copy", "loc": l["name"], "slug": l["slug"], "big": f"{l['score']}/100",
-                    "text": f"{l['name']} scores {l['score']}: named in {l['llm_named']} of {l['llm_total']} AI answers ({eng_line(l)}) and on Google for {l['google_hits']} of {l['google_total']} searches. What it does right is the playbook for the rest of the portfolio."})
-    # 4. Phone mismatches
+    def add(card, l=None):
+        if l is not None:
+            used.add(l["slug"])
+        out.append(card)
+
+    # 1. Biggest prize: highest-value market where a rival leads
+    tr = [l for l in scored if l.get("h2h") == "trail" and l.get("worth")]
+    if tr:
+        l = max(tr, key=lambda x: x["worth"])
+        add({"k": "prize", "tag": "The biggest prize", "loc": l["name"], "slug": l["slug"], "big": f"{money(l['worth'])}/mo",
+             "text": f"{l['name']} sits in the portfolio's most valuable market: about {money(l['worth'])} a month in local searches. Today AI names {l['rival']} {l['rival_n']} times and {l['name']} {l['own_n']}. Every share point won here is worth more than anywhere else."}, l)
+    # 2. Earned trust, not yet credited by AI
+    c = [l for l in scored if l.get("review_x") and l["review_x"] >= 2 and l["llm_total"] and l["llm_named"] / l["llm_total"] <= 0.34 and l["slug"] not in used]
+    if c:
+        l = max(c, key=lambda x: x["review_x"])
+        add({"k": "trust", "tag": "Trust already earned", "loc": l["name"], "slug": l["slug"], "big": f"{l['review_x']}× the reviews",
+             "text": f"{l['name']} has {l['reviews']:,} Google reviews, {l['review_x']}× the local competitors Google pairs it with (median {int(l['comp_reviews']):,}). AI named it in only {l['llm_named']} of {l['llm_total']} answers and named {l['rival']} {l['rival_n']} times. The reputation is there; AI just can't see it yet."}, l)
+    # 3. Closest race
+    c = [l for l in scored if l.get("margin") == -1 and l["slug"] not in used] or [l for l in scored if l.get("margin", 0) in (-2, -3) and l["slug"] not in used]
+    if c:
+        l = max(c, key=lambda x: x.get("worth", 0))
+        add({"k": "close", "tag": "One step from the top", "loc": l["name"], "slug": l["slug"], "big": f"{l['own_n']} vs {l['rival_n']}",
+             "text": f"{l['name']} trails {l['rival']} by {-l['margin']} mention{'s' if l['margin'] < -1 else ''} across AI answers and Google's map pack. A handful of fixes moves it to first in its market."}, l)
+    # 4. Already the local answer
+    c = [l for l in scored if l.get("h2h") == "lead" and l["slug"] not in used]
+    if c:
+        l = max(c, key=lambda x: (x["margin"], x["reviews"]))
+        add({"k": "champion", "tag": "Already the local answer", "loc": l["name"], "slug": l["slug"], "big": f"{l['own_n']} vs {l['rival_n']}",
+             "text": f"{l['name']} is named {l['own_n']} times against {l['rival_n']} for its closest rival, {l['rival']} ({eng_line(l)}). This is what every AMP location can look like, and it's worth defending."}, l)
+    # 5. Ready for AI: wins Google maps, not AI
+    c = [l for l in scored if l["map_hits"] >= 2 and l["llm_total"] and l["llm_named"] / l["llm_total"] <= 0.5 and l["slug"] not in used]
+    if c:
+        l = min(c, key=lambda x: x["llm_named"] / x["llm_total"])
+        add({"k": "ready", "tag": "Winning Google, ready for AI", "loc": l["name"], "slug": l["slug"], "big": f"Map {l['map_hits']}/3 · AI {l['llm_named']}/{l['llm_total']}",
+             "text": f"{l['name']} already holds Google's map pack for {l['map_hits']} of 3 searches. AI tools name it in {l['llm_named']} of {l['llm_total']} answers. The local authority exists; it needs to reach the sources AI reads."}, l)
+    # 6. Phones
     mm = [l for l in L if l["phone_ok"] is False and l["g_phone"]]
     if mm:
         l = mm[0]
-        out.append({"k": "phones", "tag": "Two phone numbers, one practice", "loc": l["name"], "slug": l["slug"], "big": f"{len(mm)} locations",
-                    "text": f"{l['name']}: Google lists {l['g_phone']}, while {acc_short}'s own site lists {l['src_phone']}. {len(mm)} of {len(L)} locations have a phone on Google that differs from the parent site. AI treats conflicting numbers as a reason to doubt the listing."})
-    # 5. Shared phone numbers on the parent site
+        add({"k": "phones", "tag": f"One fix, {len(mm)} locations", "loc": "Phone numbers", "slug": l["slug"], "big": f"{len(mm)} of {len(L)}",
+             "text": f"{len(mm)} of {len(L)} locations show a different phone on Google than on {acc_short}'s own site (for example {l['name']}: {l['g_phone']} on Google, {l['src_phone']} on the site). Many are call-tracking numbers. Setting one main number per location, everywhere, removes a doubt AI applies to every one of them."})
+    # 7. Shared phones
     by_phone = defaultdict(list)
     for l in L:
         if digits(l["src_phone"]):
@@ -225,46 +252,25 @@ def spotlights(L, acc_short):
     shared = sorted([v for v in by_phone.values() if len(v) > 1], key=len, reverse=True)
     if shared:
         v = shared[0]
-        out.append({"k": "shared_phone", "tag": "One number, many locations", "loc": v[0]["brand"], "slug": v[0]["slug"], "big": f"{len(v)} locations",
-                    "text": f"{v[0]['brand']} lists the same number, {v[0]['src_phone']}, for {len(v)} locations ({', '.join(x['city'] for x in v)}). Search engines and AI can't tell those locations apart. {sum(len(x) for x in shared)} locations share a phone number across {len(shared)} brands."})
-    # 6. Map pin off
-    off = sorted([l for l in L if l["pin_km"] and l["pin_km"] >= 2], key=lambda x: -x["pin_km"])
-    if off:
-        l = off[0]
-        out.append({"k": "pin", "tag": "Pinned in the wrong place", "loc": l["name"], "slug": l["slug"], "big": f"{l['pin_km']:.1f} km off",
-                    "text": f"{acc_short}'s location map puts {l['name']} {l['pin_km']:.1f} km from where Google has it. {len(off)} location pins are 2 km or more off."})
-    # 7. Broken website links on the parent site
-    bad = [l for l in L if l["src_site"] and not re.search(r"\.[a-z]{2,}(/|$)", l["src_site"].lower())]
-    if bad:
-        l = bad[0]
-        out.append({"k": "bad_url", "tag": "A link that goes nowhere", "loc": l["name"], "slug": l["slug"], "big": l["src_site"].replace("https://", ""),
-                    "text": f"The website link {acc_short} lists for {l['name']} is \"{l['src_site']}\", which is not a working address."})
-    # 8. Price spread for the same service
-    by_svc = defaultdict(list)
-    for l in L:
-        for p in l["prices"]:
-            s = service_of(p["t"])
-            if s:
-                by_svc[s].append((p["p"], l["name"], p["t"]))
-    COMPARABLE = ["HydraFacial", "Microneedling", "Chemical peel"]  # priced per session, not per unit or body area
-    spreads = [(s, by_svc[s]) for s in COMPARABLE if len(by_svc.get(s, [])) >= 3 and max(x[0] for x in by_svc[s]) >= 1.4 * min(x[0] for x in by_svc[s])]
-    if spreads:
-        s, v = spreads[0]
-        lo, hi = min(v), max(v)
-        out.append({"k": "price", "tag": "Same treatment, different price", "loc": s, "slug": None, "big": f"{money(lo[0])} to {money(hi[0])}",
-                    "text": f"{s} is listed on Google from {money(lo[0])} at {lo[1]} to {money(hi[0])} at {hi[1]} ({len(v)} price listings across the portfolio). AI quotes these prices to patients."})
-    # 9. Engine split
+        add({"k": "shared_phone", "tag": "Give every location its own voice", "loc": v[0]["brand"], "slug": v[0]["slug"], "big": f"{len(v)} locations, 1 number",
+             "text": f"{v[0]['brand']} lists {v[0]['src_phone']} for {len(v)} locations ({', '.join(x['city'] for x in v)}). Search engines and AI can't tell them apart, so they compete for one identity instead of winning five markets. {sum(len(x) for x in shared)} locations share a number today."})
+    # 8. One AI tool away
     splits = []
     for l in scored:
         r = {e: (l["eng"][e][0] / l["eng"][e][1]) for e in ENGINES if l["eng"][e][1]}
-        if len(r) >= 3:
+        if len(r) >= 3 and l["slug"] not in used:
             hi_e, lo_e = max(r, key=r.get), min(r, key=r.get)
             splits.append((r[hi_e] - r[lo_e], l, hi_e, lo_e))
     if splits:
-        d, l, hi_e, lo_e = max(splits, key=lambda x: (x[0], x[1]["reviews"]))
-        if d >= 0.66:
-            out.append({"k": "split", "tag": "The AI tools disagree", "loc": l["name"], "slug": l["slug"], "big": f"{ENGINE_LABEL[hi_e]} {l['eng'][hi_e][0]}/{l['eng'][hi_e][1]} · {ENGINE_LABEL[lo_e]} {l['eng'][lo_e][0]}/{l['eng'][lo_e][1]}",
-                        "text": f"For {l['name']}, {ENGINE_LABEL[hi_e]} named it {l['eng'][hi_e][0]} of {l['eng'][hi_e][1]} times; {ENGINE_LABEL[lo_e]} named it {l['eng'][lo_e][0]} of {l['eng'][lo_e][1]}. Each AI reads different sources, so one strong channel isn't enough."})
+        d_, l, hi_e, lo_e = max(splits, key=lambda x: (x[0], x[1]["reviews"]))
+        if d_ >= 0.66:
+            add({"k": "split", "tag": "One AI tool away", "loc": l["name"], "slug": l["slug"], "big": f"{ENGINE_LABEL[hi_e]} {l['eng'][hi_e][0]}/{l['eng'][hi_e][1]} · {ENGINE_LABEL[lo_e]} {l['eng'][lo_e][0]}/{l['eng'][lo_e][1]}",
+                 "text": f"{ENGINE_LABEL[hi_e]} already recommends {l['name']} every time; {ENGINE_LABEL[lo_e]} hasn't yet. Each AI reads different sources, so closing this gap is a targeted job, not a rebuild."}, l)
+    # 9. Prices AI can quote
+    no_price = [l for l in L if not l["prices"]]
+    if no_price:
+        add({"k": "price", "tag": "Prices AI can quote", "loc": "Google profiles", "slug": None, "big": f"{len(L) - len(no_price)} of {len(L)}",
+             "text": f"Only {len(L) - len(no_price)} of {len(L)} {acc_short} Google profiles show any price. When a patient asks AI what a treatment costs nearby, it quotes the competitors that publish one."})
     return out
 
 
@@ -277,11 +283,34 @@ def main(cfg_path):
     raw_dir = rp(cfg["raw_dir"])
     acc = cfg["account"]
     L, missing = [], []
+    family = set()
+    for loc in locs:
+        family |= {norm(loc["brand"]), norm(loc["name"])}
+        rr = load(os.path.join(raw_dir, loc["slug"] + ".json")) or {}
+        family.add(norm((rr.get("listing") or {}).get("title")))
+    family = frozenset(k for k in family if k and len(k) >= 4)
     for loc in locs:
         raw = load(os.path.join(raw_dir, loc["slug"] + ".json"))
         if not raw:
             missing.append(loc["slug"]); continue
-        L.append(score_location(loc, raw))
+        L.append(score_location(loc, raw, family))
+
+    # head-to-head with the top local rival, and reviews against local competitors
+    own_names = {norm(l["title"] or l["name"]) for l in L} | {norm(l["name"]) for l in L}
+    for l in L:
+        own = l["llm_named"] + l["map_hits"]
+        r = l["rivals"][0] if l["rivals"] else {"name": None, "n": 0}
+        l["own_n"], l["rival"], l["rival_n"] = own, r["name"], r["n"]
+        l["margin"] = own - r["n"]
+        l["h2h"] = "lead" if l["margin"] > 0 else "tie" if l["margin"] == 0 else "trail"
+        comps = [a for a in l["also"] if isinstance(a, dict) and a.get("reviews") and norm(a.get("name")) not in own_names]
+        if comps:
+            rv = sorted(num(a["reviews"]) for a in comps)
+            l["comp_reviews"] = rv[len(rv) // 2]
+            l["comp_rating"] = round(avg([num(a.get("rating")) for a in comps]) or 0, 2)
+            l["review_x"] = round(l["reviews"] / l["comp_reviews"], 1) if l["comp_reviews"] else None
+        else:
+            l["comp_reviews"] = l["comp_rating"] = l["review_x"] = None
 
     # domains, trends, volumes
     domains = {}
@@ -371,6 +400,25 @@ def main(cfg_path):
             if isinstance(t, dict) and t.get("t"):
                 topics[t["t"].lower()] += int(num(t.get("n")) or 1)
 
+    pb_rows = []
+    trend_by = {t.get("term"): t for t in (trends.get("treatments") or [])}
+    for name, rx in PRODUCT_BRANDS:
+        priced = mentioned = mentions = 0
+        for loc in locs:
+            raw = load(os.path.join(raw_dir, loc["slug"] + ".json")) or {}
+            li = raw.get("listing") or {}
+            pt = " ".join(f"{p.get('title') or ''} {p.get('category') or ''}" for p in li.get("prices") or [] if (num(g(p, "price_usd", "price")) or 0) > 0).lower()
+            tps = [t for t in (li.get("topics") or []) if isinstance(t, dict)]
+            if re.search(rx, pt): priced += 1
+            hit = [t for t in tps if re.search(rx, (t.get("t") or "").lower())]
+            if hit: mentioned += 1; mentions += sum(int(num(t.get("n")) or 0) for t in hit)
+        t = trend_by.get(TREND_KEY.get(name, ""), {})
+        if priced or mentioned or t:
+            pb_rows.append({"b": name, "priced": priced, "mentioned": mentioned, "mentions": mentions,
+                            "us_vol": t.get("us_search_volume"), "change": t.get("change_pct")})
+    pb_rows.sort(key=lambda x: -(x["us_vol"] or 0))
+    any_price = sum(1 for l in L if l["prices"])
+
     eng_tot = {e: [sum(l["eng"][e][0] for l in L), sum(l["eng"][e][1] for l in L)] for e in ENGINES}
     sc = [l["score"] for l in L if l["score"] is not None]
     kpi = {
@@ -386,6 +434,11 @@ def main(cfg_path):
         "no_desc": sum(1 for l in L if l["has_desc"] is False),
         "worth": sum(l.get("worth", 0) for l in L), "vol": sum(l.get("vol", 0) for l in L),
         "invisible": sum(1 for l in L if l["llm_total"] and l["llm_named"] == 0),
+        "lead": sum(1 for l in L if l["h2h"] == "lead"), "tie": sum(1 for l in L if l["h2h"] == "tie"), "trail": sum(1 for l in L if l["h2h"] == "trail"),
+        "trail_worth": sum(l.get("worth", 0) for l in L if l["h2h"] == "trail"),
+        "reach": sum(1 for l in L if -3 <= l["margin"] < 0), "reach_worth": sum(l.get("worth", 0) for l in L if -3 <= l["margin"] < 0),
+        "review_adv": sum(1 for l in L if l["review_x"] and l["review_x"] > 1), "review_cmp": sum(1 for l in L if l["review_x"]),
+        "any_price": any_price,
         "eng": eng_tot,
     }
     # owner-level cuts of the data
@@ -397,36 +450,34 @@ def main(cfg_path):
         sx = math.sqrt(sum((p[0] - mx) ** 2 for p in pts)); sy = math.sqrt(sum((p[1] - my) ** 2 for p in pts))
         return sum((p[0] - mx) * (p[1] - my) for p in pts) / (sx * sy) if sx and sy else None
     ins = []
-    big = [b for b in brands if b["n"] >= 5]; small = [b for b in brands if b["n"] == 1]
-    if big and small:
-        bl = [l for l in L if l["brand"] in {b["brand"] for b in big}]; sl = [l for l in L if l["brand"] in {b["brand"] for b in small}]
-        bs = sorted(big, key=lambda x: -x["score"])
-        ins.append({"big": f"{bs[0]['score']} vs {bs[-1]['score']}", "h": "Execution matters more than size",
-                    "p": f"Among the {len(big)} largest brands ({len(bl)} locations), {bs[0]['brand']} averages an AI score of {bs[0]['score']} across {bs[0]['n']} locations while {bs[-1]['brand']} averages {bs[-1]['score']} across {bs[-1]['n']}. Big brands average {round(avg([l['score'] for l in bl]))} and single-location brands {round(avg([l['score'] for l in sl]))}, so scale alone isn't the advantage it should be. What {bs[0]['brand']} does can be copied across the portfolio."})
-    rv = pearson([math.log1p(l["reviews"]) for l in L], [l["llm_named"] / l["llm_total"] if l["llm_total"] else None for l in L])
-    if rv is not None:
-        hi = sorted([l for l in L if l["llm_total"]], key=lambda x: -x["reviews"])[:10]
-        ins.append({"big": f"{sum(1 for l in hi if l['llm_named'] / l['llm_total'] < 0.5)} of 10", "h": "Reviews alone don't buy AI visibility",
-                    "p": f"Of the 10 most-reviewed locations, {sum(1 for l in hi if l['llm_named'] / l['llm_total'] < 0.5)} are named in fewer than half of AI answers (correlation between review count and AI mentions: {rv:.2f}). AI weighs consistency, third-party coverage and fresh pages, not just stars."})
-    mv = pearson([l["map_hits"] / l["google_total"] if l["google_total"] else None for l in L], [l["llm_named"] / l["llm_total"] if l["llm_total"] else None for l in L])
-    gonly = [l for l in L if l["map_hits"] >= 2 and l["llm_total"] and l["llm_named"] / l["llm_total"] < 0.5]
-    ins.append({"big": f"{len(gonly)}", "h": "Google rank and AI rank are drifting apart",
-                "p": f"{len(gonly)} locations sit in Google's map pack for 2 or 3 of our searches but are named in under half of AI answers" + (f" (correlation between map-pack presence and AI mentions: {mv:.2f})" if mv is not None else "") + ". Local SEO alone is no longer enough."})
-    wsorted = sorted(L, key=lambda x: -x.get("worth", 0)); tw = sum(l.get("worth", 0) for l in L)
+    k_lead = sum(1 for l in L if l["h2h"] == "lead"); k_trail = [l for l in L if l["h2h"] != "lead"]
+    tw = sum(l.get("worth", 0) for l in L); trw = sum(l.get("worth", 0) for l in k_trail)
+    ins.append({"big": f"{k_lead} of {len(L)}", "h": "Markets where AI already picks " + (acc.get("short") or "you") + " first",
+                "p": f"In {k_lead} markets the {acc.get('short')} location is named more often than its closest local rival. The other {len(k_trail)} are the growth opportunity: they hold {money(trw)} of the {money(tw)} a month in local searches at stake."})
+    reach = sorted([l for l in L if -3 <= l["margin"] < 0], key=lambda x: -x.get("worth", 0))
+    if reach:
+        ins.append({"big": f"{len(reach)}", "h": "Close races, ready to win",
+                    "p": f"{len(reach)} locations trail their local leader by 3 mentions or fewer, worth {money(sum(l.get('worth', 0) for l in reach))} a month together: " + ", ".join(f"{l['name']} (vs {l['rival']}, {l['own_n']}–{l['rival_n']})" for l in reach[:3]) + "."})
+    rx = [l for l in L if l["review_x"]]
+    if rx:
+        adv = [l for l in rx if l["review_x"] > 1]
+        gap = sorted([l for l in adv if l["llm_total"] and l["llm_named"] / l["llm_total"] <= 0.34], key=lambda x: -x["review_x"])
+        ins.append({"big": f"{len(adv)} of {len(rx)}", "h": "The reputation is already earned",
+                    "p": f"In {len(adv)} of {len(rx)} markets, the {acc.get('short')} location has more Google reviews than the local competitors Google pairs it with. AI doesn't credit it yet: " + "; ".join(f"{l['name']} has {l['reviews']:,} reviews ({l['review_x']}× local) and is named in {l['llm_named']} of {l['llm_total']} answers" for l in gap[:3]) + "."})
+    wsorted = sorted(L, key=lambda x: -x.get("worth", 0))
     if tw:
         t10 = sum(l.get("worth", 0) for l in wsorted[:10])
-        ins.append({"big": f"{round(100 * t10 / tw)}%", "h": "Where the money is",
-                    "p": f"The 10 locations with the most local search demand hold {round(100 * t10 / tw)}% of the revenue at stake: " + ", ".join(f"{l['name']} ({money(l['worth'])}/mo, AI score {l['score']})" for l in wsorted[:4]) + ". These are the first places to win in AI."})
-    inv = [l for l in L if l["llm_total"] and l["llm_named"] == 0]
-    if inv:
-        ins.append({"big": f"{len(inv)}", "h": "Locations no AI tool named, even once",
-                    "p": "No AI tool named these in any of 12 answers: " + "; ".join(f"{l['name']} ({l['reviews']:,} reviews" + (f", AI named {l['rivals'][0]['name']} instead" if l['rivals'] else "") + ")" for l in inv) + "."})
+        ins.append({"big": f"{round(100 * t10 / tw)}%", "h": "Where the growth is concentrated",
+                    "p": f"The 10 busiest markets hold {round(100 * t10 / tw)}% of the value: " + ", ".join(f"{l['name']} ({money(l['worth'])}/mo, named {l['own_n']}× vs {l['rival'] or 'rivals'} {l['rival_n']}×)" for l in wsorted[:3]) + "."})
+    np_ = sum(1 for l in L if not l["prices"])
+    ins.append({"big": f"{len(L) - np_} of {len(L)}", "h": "Google profiles that show a price",
+                "p": f"AI answers cost questions with published prices. {np_} {acc.get('short')} profiles show none, so AI quotes competitors instead. Adding a price menu is one of the fastest wins available."})
     data = {
         "account": acc, "prepared_for": cfg.get("prepared_for"), "date": cfg.get("date"), "price": price,
         "kpi": kpi, "locations": L, "brands": brands, "states": states,
         "rivals": [{"name": n, "n": c, "where": sorted(set(riv_where[n]))[:6]} for n, c in riv.most_common(15)],
         "services": services, "topics": topics.most_common(12), "trends": trends,
-        "spotlights": spotlights(L, acc.get("short") or acc.get("name")), "insights": ins,
+        "spotlights": spotlights(L, acc.get("short") or acc.get("name")), "insights": ins, "products": pb_rows,
         "audits": cfg.get("audits") or {},
     }
 
