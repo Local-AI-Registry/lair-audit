@@ -311,7 +311,8 @@ input[type=range]{width:100%;accent-color:var(--blue);height:28px}
 .cstats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
 .cstats div{background:var(--paper);border-radius:12px;padding:12px}
 .cstats b{font:800 22px var(--loud);display:block;color:var(--ink)}.cstats span{font-size:13px;color:#2A3547;line-height:1.4;display:block}
-@media (max-width:860px){.cases{grid-template-columns:1fr}}
+.cases.one{grid-template-columns:1fr}.cases.one .case{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center;padding:28px}
+@media (max-width:860px){.cases{grid-template-columns:1fr}.cases.one .case{display:block}}
 @media (max-width:560px){.hwsvg{display:none}.hwlist{display:grid;grid-template-columns:1fr;gap:8px}.hwli{display:flex;align-items:center;gap:10px;background:var(--paper);border-radius:10px;padding:10px 12px;font:700 14px var(--loud)}.hwli i{font-style:normal;color:var(--gold7);font-size:12px}.hwli::after{content:"✓";margin-left:auto;color:var(--blue)}.hwhubm{background:var(--ink);color:#fff;border-radius:14px;padding:16px;text-align:center;font:600 18px var(--serif);margin-bottom:6px}.hwhubm small{display:block;font:700 11px var(--loud);letter-spacing:.16em;color:#D8BC86;margin-bottom:4px}}
 /* rag (from Fresh) */
 .pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:40px}
@@ -928,28 +929,21 @@ footer a{color:var(--blue)}
 <p class="hwcap">If one source says something different, AI trusts the practice less. Keeping all 11 in sync is the job, every month.</p>
 </div>
 
-<h3 class="subh">Results we've measured</h3>
-<div class="cases">
+<h3 class="subh">A measured result in aesthetics</h3>
+<div class="cases one">
 <div class="case reveal">
+<div class="cl">
 <div class="ctop"><b>LUXURGERY</b><span>Plastic surgery · New York, NY</span></div>
 <div class="cbig"><div><em>AI visibility score</em><strong>34 <i>→</i> 71</strong></div></div>
+<p>Visits from Google grew from about 1,000 to about 3,450 a month in a year, while the year before stayed under 1,000. AI visibility score more than doubled.</p>
+<p class="csrc">Semrush organic traffic; AI score from the Local AI Registry</p>
+</div>
+<div class="cr">
 <svg viewBox="0 0 320 120" class="cchart" aria-label="Monthly organic visits over 12 months, this year versus the year before">
 <g id="lxg"></g>
 </svg>
 <p class="cleg"><span class="nw"><span class="l1"></span>Monthly visits from Google, last 12 months</span> <span class="nw"><span class="l2"></span>Same months, year before</span></p>
-<p>Visits from Google grew from about 1,000 to about 3,450 a month in a year, while the year before stayed under 1,000. AI visibility score more than doubled.</p>
-<p class="csrc">Semrush organic traffic; AI score from the Local AI Registry</p>
 </div>
-<div class="case reveal">
-<div class="ctop"><b>Eye surgery practice</b><span>Ophthalmology · Louisville, KY</span></div>
-<div class="cbig"><div><em>ChatGPT, Louisville procedure searches</em><strong>Not named <i>→</i> #1</strong></div></div>
-<div class="cstats">
-<div><b>3</b><span>procedures where ChatGPT now lists them first, two months in</span></div>
-<div><b>−27%</b><span>Google clicks lost to a core update before we started</span></div>
-<div><b>Stopped</b><span>the slide the month we started; weekly clicks held steady since</span></div>
-<div><b>+40%</b><span>more appearances in Google's AI answers</span></div>
-</div>
-<p class="csrc">The practice's own Google Search Console, Nov 2026. Shown without the name until approved</p>
 </div>
 </div>
 </div></section>
