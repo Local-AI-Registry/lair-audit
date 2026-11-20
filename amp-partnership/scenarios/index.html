@@ -63,7 +63,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
   <p class="eyebrow">AMP × Local AI Registry</p>
   <span class="flag">Internal · Don't screen-share unless asked</span>
   <h1>Pricing scenarios <span class="g">if the conversation turns to numbers.</span></h1>
-  <p class="lede">Five structures that match the partnership options in the deck's back pocket. Each is anchored to our list price and floor, and to the revenue our audit measured. Use the calculator to answer "what would X locations cost?" live.</p>
+  <p class="lede">Five structures that match the partnership options in the deck's back pocket, and line up with AMP's IGNITE tiers (Gold, Platinum, Diamond JV). Each is anchored to our list price and floor, and to the revenue our audit measured. Use the calculator to answer "what would X locations cost?" live.</p>
 </header>
 
 <section>
@@ -97,7 +97,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
       <input type="range" id="c-loc" min="1" max="100" value="4">
       <label class="l" for="c-price">Average spend per visit: <span id="c-pricev" style="color:var(--ink)">$527</span></label>
       <input type="range" id="c-price" min="150" max="1500" step="1" value="527">
-      <label class="l" for="c-opt">Practices joining (opt-in scenario only): <span id="c-optv" style="color:var(--ink)">40%</span></label>
+      <label class="l" for="c-opt">Practices joining (vendor-network scenario only): <span id="c-optv" style="color:var(--ink)">40%</span></label>
       <input type="range" id="c-opt" min="10" max="100" step="5" value="40">
       <p class="small" style="margin-top:12px" id="c-how"></p>
     </div>
@@ -111,7 +111,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
       </div>
     </div>
   </div>
-  <div class="tw"><table id="tiers"><thead><tr><th>Locations</th><th class="r">Pilot</th><th class="r">Portfolio</th><th class="r">Platform + AMP team</th><th class="r">Opt-in (40% join)</th><th class="r">Strategic</th></tr></thead><tbody></tbody></table></div>
+  <div class="tw"><table id="tiers"><thead><tr><th>Locations</th><th class="r">Pilot</th><th class="r">Portfolio</th><th class="r">Platform + AMP team</th><th class="r">Vendor network (40% join)</th><th class="r">Strategic</th></tr></thead><tbody></tbody></table></div>
   <p class="small" style="margin-top:8px">Monthly totals to AMP at list volume tiers. Opt-in assumes AMP funds the base for every location and 40% of practices add full service.</p>
 </section>
 
@@ -132,7 +132,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
       <li>Permission to name AMP and results in case studies</li>
       <li>Referrals and introductions (5–15% lifetime referral share available)</li></ul></div>
   </div>
-  <div class="note"><b>Guardrails.</b> Don't go below $3,500 for a single location outside a portfolio. Don't quote the opt-in scenario without knowing who holds the budget (question 2). Answer per-location price first, totals second. The guarantee and month-to-month terms apply to every scenario; minimum terms only buy the volume discount.</div>
+  <div class="note"><b>Guardrails.</b> Don't go below $3,500 for a single location outside a portfolio. Don't quote the vendor-network scenario without knowing who holds the budget (question 2). Rough IGNITE fit: Gold → vendor network, Platinum → Portfolio, Diamond JV → Strategic. Answer per-location price first, totals second. The guarantee and month-to-month terms apply to every scenario; minimum terms only buy the volume discount.</div>
 </section>
 
 <footer>
@@ -160,7 +160,7 @@ var S=[
   how:'$900 per location for platform, plus a $12,000/mo central retainer for PR, studies and training AMP\'s team.',
   bul:['$900 per location','+ $12,000/mo central retainer','AMP staff does local work'],
   calc:function(n){return n*900+12000}},
- {id:'optin',n:'Practice opt-in benefit',tag:'Member value',d:'AMP funds a base for every location; practices opt into full service at an AMP-member rate.',
+ {id:'optin',n:'Strategic Vendor Network',tag:'IGNITE Gold',d:'AMP funds a base for every location; practices (Gold especially) opt into full service at an AMP rate through the vendor network.',
   how:'AMP pays $600 per location (record, listings cleanup, tracking). Opted-in practices pay $2,900 more (total $3,500). Monthly shown is the full amount across AMP and practices.',
   bul:['$600 per location (AMP)','+ $2,900 per opted-in practice','Practice pays from its own budget'],
   calc:function(n,opt){return n*600+Math.round(n*opt)*2900}},
