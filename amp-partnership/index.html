@@ -459,6 +459,84 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
   .pc2-r .num{font-size:34px}
 }
 
+/* ===== portfolio chapter ===== */
+.pf1{display:grid;grid-template-columns:1.5fr 1fr;gap:28px;align-items:start;margin-top:18px}
+.pfb{display:grid;grid-template-columns:1fr 1fr;gap:5px 22px}
+.pfb .r{display:grid;grid-template-columns:150px 1fr 30px;gap:8px;align-items:center;font-size:12.5px}
+.pfb .r .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pfb .r .tr{height:12px;background:var(--soft);border-radius:4px;position:relative;overflow:hidden}
+.pfb .r .tr i{position:absolute;inset:0 auto 0 0;border-radius:4px}
+.pfb .r .v{font-family:var(--display);font-weight:700;text-align:right}
+.slide.on .pfb .tr i{transform-origin:left;animation:grow .8s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*30ms + 200ms)}
+.pfk{display:grid;gap:12px}
+.pk{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px}
+.pk .num{font-size:48px;line-height:1;color:var(--blue)}.pk b{font-family:var(--display);font-size:24px;color:var(--blue)}
+.pk.bad .num{color:var(--bad)}.pk p{font-size:14px;color:var(--ink2);margin-top:4px}
+.pf2{display:grid;grid-template-columns:1.1fr 1fr;gap:30px;align-items:center;align-content:center;margin-top:10px}
+.qcols{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:end;height:330px}
+.qc{display:flex;flex-direction:column;justify-content:flex-end;height:100%;text-align:center}
+.qc .col{border-radius:12px 12px 4px 4px;background:var(--line);position:relative;display:flex;align-items:flex-start;justify-content:center;padding-top:10px}
+.qc.hot .col{background:var(--bad)}.qc.hot .col .num{color:#fff}
+.qc .col .num{font-size:30px}
+.qc p{font-size:12.5px;color:var(--mute);margin-top:8px;line-height:1.3}.qc p b{color:var(--ink);display:block;font-size:14px}
+.slide.on .qc .col{transform-origin:bottom;animation:growy .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*120ms + 200ms)}
+@keyframes growy{from{transform:scaleY(0)}to{transform:none}}
+.w1{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:16px 18px}
+.w1 .it{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px}
+.w1 .it:last-child{border-bottom:0}.w1 .it b{font-weight:700}.w1 .it .s{color:var(--bad);font-family:var(--display);font-weight:700}
+.w1 .it .x{grid-column:1/-1;font-size:12px;color:var(--mute)}
+.pf3{display:grid;grid-template-columns:1.45fr 1fr;gap:28px;align-items:center;margin-top:16px}
+.dumb{display:grid;gap:12px}
+.db{display:grid;grid-template-columns:170px 1fr;gap:12px;align-items:center;font-size:13.5px}
+.db .nm b{display:block;font-size:14px}
+.db .ln{position:relative;height:30px}
+.db .ln .base{position:absolute;left:0;right:0;top:14px;height:2px;background:var(--line)}
+.db .ln .gap{position:absolute;top:13px;height:4px;background:linear-gradient(90deg,var(--bad),var(--good));border-radius:2px}
+.db .ln .pt{position:absolute;top:5px;width:20px;height:20px;border-radius:50%;transform:translateX(-50%);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--line)}
+.db .ln .pt.lo{background:var(--bad)}.db .ln .pt.hi{background:var(--good)}
+.db .ln .lb{position:absolute;top:-12px;font-size:11px;color:var(--mute);transform:translateX(-50%);white-space:nowrap}
+.db .ln .lb.hi{transform:translateX(-100%)}.db .ln .lb.lo{transform:translateX(-10%)}
+.slide.on .db .gap{transform-origin:left;animation:grow .9s both;animation-delay:calc(var(--i,0)*90ms + 300ms)}
+.cur .cmp{display:grid;grid-template-columns:1fr 70px 70px;gap:6px 10px;margin-top:10px;font-size:14px}
+.cur .cmp .h{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--mute);text-align:right}
+.cur .cmp .v{text-align:right;font-family:var(--display);font-weight:700}
+.cur .cmp .g1{color:var(--good)}.cur .cmp .b1{color:var(--bad)}
+.mk{margin-top:16px;gap:12px}.mk .card{padding:16px 18px}.mk h3{font-size:17px}.mk p{font-size:13.5px}
+.mk .card.hot{border-left:4px solid var(--coral)}
+.pf5{display:grid;grid-template-columns:1.3fr 1fr;gap:30px;align-items:start;margin-top:18px}
+.corr{display:grid;gap:12px}
+.cr{display:grid;grid-template-columns:200px 1fr 50px;gap:12px;align-items:center;font-size:14.5px}
+.cr .ax{position:relative;height:26px;background:var(--soft);border-radius:6px}
+.cr .ax::before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:2px;background:var(--line)}
+.cr .ax i{position:absolute;top:3px;bottom:3px;border-radius:4px}
+.cr .v{font-family:var(--display);font-weight:700;text-align:right}
+.slide.on .cr .ax i{animation:fadein .6s both;animation-delay:calc(var(--i,0)*100ms + 300ms)}
+.engs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:8px 0}
+.engs div{text-align:center}.engs .num{font-size:26px;display:block}.engs span.l{font-size:11.5px;color:var(--mute)}
+.pf6{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start;margin-top:16px}
+.div{display:grid;gap:8px}
+.dv{display:grid;grid-template-columns:130px 1fr 54px;gap:10px;align-items:center;font-size:14px}
+.dv .ax{position:relative;height:22px}
+.dv .ax::before{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:2px;background:var(--line)}
+.dv .ax i{position:absolute;top:2px;bottom:2px;border-radius:4px}
+.dv .v{font-family:var(--display);font-weight:700;text-align:right}
+.pf6 .card{padding:14px 16px}.pf6 .card p{font-size:14px}
+.waves{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:14px;margin-top:20px;align-items:stretch}
+.wv{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:6px}
+.wv.one{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.wv .wk{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+.wv.one .wk{color:#ff8a70}
+.wv .num{font-size:64px;line-height:1}.wv .wl{font-size:14.5px;opacity:.85}
+.wv .wv-m{font-family:var(--display);font-weight:700;font-size:22px;color:#7ee2b0}
+.wx{margin-top:auto;display:grid;gap:5px;font-size:12.5px;padding-top:10px;border-top:1px solid color-mix(in srgb,currentColor 18%,transparent)}
+.wx span{opacity:.85}
+@media (max-width:820px),(max-height:430px) and (max-width:960px){
+  .pf1,.pf2,.pf3,.pf5,.pf6,.waves,.pfb{grid-template-columns:1fr}
+  .qcols{height:240px;gap:8px}.qc .col .num{font-size:20px}.qc p{font-size:10.5px}
+  .db{grid-template-columns:1fr}.cr{grid-template-columns:1fr 1fr 40px;font-size:12.5px}.dv{grid-template-columns:100px 1fr 44px;font-size:12.5px}
+  .pfb .r{grid-template-columns:120px 1fr 28px}
+}
+
 </style>
 </head>
 <body>
@@ -587,10 +665,111 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
   <div class="foot"><span>6 local searches × ChatGPT, Gemini, Claude, Perplexity, Nov 20 2026. Each business counted once per answer. Spelling variants merged (for example "Lipology" and "Lip·ology").</span><span></span></div>
 </section>
 
-<section class="slide chapter" data-t="Chapter 3 · The pattern" data-ch="3">
+<section class="slide chapter" data-t="Chapter 3 · The whole portfolio" data-ch="3">
   <div class="ch-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
   <p class="ch-num">03</p>
   <p class="eyebrow">Chapter three</p>
+  <h2 class="ch-title">All 77 locations</h2>
+  <p class="ch-hook">Every AMP location, every market.<br><span class="hl"><span data-count="1155">1,155</span> AI and Google checks.</span></p>
+  <div class="foot"><span>Portfolio scan, November 20, 2026</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Portfolio scoreboard">
+  <p class="eyebrow">The portfolio scoreboard</p>
+  <h2 class="h2">Across 77 locations, AMP averages <span id="pf-avg">54</span>. <span class="g">A third score 80 or more; a third score under 40.</span></h2>
+  <div class="body pf1">
+    <div class="pfb" id="pf-brands"></div>
+    <div class="pfk">
+      <div class="pk ani"><span class="num" data-count="58">58</span><b>%</b><p>of AI answers name the AMP practice</p></div>
+      <div class="pk ani"><span class="num" id="pf-lead">25</span><p>locations score 80 or more</p></div>
+      <div class="pk ani bad"><span class="num" id="pf-low">25</span><p>score under 40, and <b id="pf-inv">6</b> were never named once</p></div>
+      <a class="btn ani" href="portfolio/" target="_blank" rel="noopener">Open the full 77-location report ↗</a>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Each location: 3 local searches on Google plus ChatGPT, Gemini, Claude and Perplexity (DataForSEO, Nov 20 2026). Brand score = average of its locations.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Invisible where demand is biggest">
+  <p class="eyebrow">The biggest connection in the data</p>
+  <h2 class="h2">AMP is least visible exactly where demand is biggest. <span class="g">The busiest quarter of markets holds 83% of the value and averages 21.</span></h2>
+  <div class="body pf2">
+    <div>
+      <p class="lab" style="margin-bottom:8px">Locations grouped by local search demand, average AI score</p>
+      <div class="qcols" id="pf-q"></div>
+    </div>
+    <div class="w1 ani">
+      <p class="lab">The top-demand locations AI skips</p>
+      <div id="pf-w1"></div>
+    </div>
+  </div>
+  <div class="foot"><span class="src">Demand: DataForSEO Google Ads volumes for each location's town and "near me" searches, split between AMP locations that share a city; value = searches × 2.3% × $527. AI score as on the scoreboard.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Same brand, different outcome">
+  <p class="eyebrow">Same brand, different outcome</p>
+  <h2 class="h2">Same name, same services, same owner. <span class="g">Scores up to 93 points apart. That's execution, and it's fixable.</span></h2>
+  <div class="body pf3">
+    <div id="pf-pairs" class="dumb"></div>
+    <div class="card cur ani">
+      <p class="k">Why: Cúrate Ooltewah vs Cúrate Knoxville</p>
+      <div class="cmp" id="pf-cur"></div>
+      <p class="small" style="margin-top:10px">Similar reviews. The difference is a complete Google listing that wins the map pack, and AI follows.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Best and weakest location within each AMP brand, AI score out of 100. Portfolio scan, Nov 20 2026.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Shared markets">
+  <p class="eyebrow">Shared markets</p>
+  <h2 class="h2">Where AMP brands share a market, <span class="g">they split the vote or hand it to one rival.</span></h2>
+  <div class="body grid g3 mk">
+    <div class="card ani hot"><p class="k">New York · 4 locations, 2 brands</p><h3>All four lose to Tribeca Medspa</h3><p>BeautyFix Flatiron <b>0</b>, Upper East Side <b>7</b>; Ever/Body Flatiron <b>13</b>, Greenwich Village <b>20</b>. The most valuable market in the portfolio, and AI names the same competitor at every one.</p></div>
+    <div class="card ani hot"><p class="k">West Hartford, CT</p><h3>AMP is its own top rival</h3><p>When AI skips Ever/Body Hartford (score <b>20</b>), the business it names most is <b>BeautyFix West Hartford</b>, another AMP brand, 11 times.</p></div>
+    <div class="card ani"><p class="k">Kennewick, WA</p><h3>Synergy wins, Nouveau is skipped</h3><p>Synergy scores <b>94</b>. Nouveau Day Spa, about 3 miles away, scores <b>47</b>, and the business AI names instead of Nouveau most often is Synergy.</p></div>
+    <div class="card ani"><p class="k">Cottonwood Heights, UT</p><h3>One building, two brands</h3><p>22 Spa MD (<b>93</b>) takes the Botox map pack; 22 Plastic Surgery (<b>60</b>) in the same building isn't in it. AI also credits surgeons by name, not the brand.</p></div>
+    <div class="card ani"><p class="k">Atlanta, GA</p><h3>Two AMP brands, one winner, not AMP</h3><p>SkynBar <b>7</b> and The AgeLess Center <b>13</b>, the two lowest brands in the portfolio. AI names Natural Body Spa + Med Spa instead of both.</p></div>
+    <div class="card ani" style="background:var(--blue-t);border-color:transparent"><p class="k" style="color:var(--blue)">What it means</p><h3>Plan AI market by market</h3><p>Give each AMP brand in a shared market its own lane (treatments, neighborhoods) and link them, so AI recommends AMP twice instead of choosing between them.</p></div>
+  </div>
+  <div class="foot"><span>Businesses AI named instead, counted across each location's 12 AI answers and 3 Google map packs. Portfolio scan, Nov 20 2026.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="What moves AI visibility">
+  <p class="eyebrow">What moves AI visibility</p>
+  <h2 class="h2">More reviews don't buy AI visibility. <span class="g">Presence and consistency do.</span></h2>
+  <div class="body pf5">
+    <div>
+      <p class="lab" style="margin-bottom:12px">How closely each factor tracks how often AI names a location (correlation, 77 locations)</p>
+      <div id="pf-corr" class="corr"></div>
+    </div>
+    <div class="grid" style="gap:12px">
+      <div class="card ani"><p class="k">Phone consistency</p><p class="num" style="font-size:44px;line-height:1.1"><span id="pf-ph1">61</span><small style="font-size:20px">%</small> <small style="font-size:16px;color:var(--mute)">vs</small> <span id="pf-ph2" style="color:var(--bad)">52</span><small style="font-size:20px;color:var(--bad)">%</small></p><p class="small">Share of AI answers naming the location when Google's phone matches weramp.com vs when it doesn't (59 of 77 don't).</p></div>
+      <div class="card ani"><p class="k">AI tools, portfolio-wide</p><div class="engs" id="pf-eng"></div><p class="small">Share of answers naming the AMP location. Claude and ChatGPT lag.</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Pearson correlation across 77 locations; reviews, photos and demand on a log scale. Correlation shows what moves together, not proof of cause.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Where demand is moving">
+  <p class="eyebrow">Product portfolio</p>
+  <h2 class="h2">Demand is moving to laser hair removal and microneedling. <span class="g">AMP's Google listings haven't followed.</span></h2>
+  <div class="body pf6">
+    <div>
+      <p class="lab" style="margin-bottom:10px">US search interest, last 3 months vs a year earlier</p>
+      <div id="pf-tr" class="div"></div>
+    </div>
+    <div class="grid" style="gap:12px">
+      <div class="card ani"><p class="k">Laser hair removal</p><p><b>+14%</b> demand, and patients' <b>#1 review topic</b> across AMP (<span id="pf-lhr">942</span> mentions). Yet only <b>12 of 77</b> locations list it with a price on Google, where AI reads it.</p></div>
+      <div class="card ani"><p class="k">Microneedling and Daxxify</p><p>Microneedling <b>+14%</b>; Daxxify <b>+63%</b> from a small base. Microneedling is priced at 14 locations; Daxxify isn't priced on any AMP Google listing.</p></div>
+      <div class="card ani"><p class="k">Cooling off</p><p>CoolSculpting <b>−18%</b>, semaglutide <b>−16%</b>, HydraFacial <b>−12%</b>. HydraFacial is still the second most-listed priced service (13 locations).</p></div>
+    </div>
+  </div>
+  <div class="foot"><span>Google Trends via DataForSEO (Nov 2026); review topics and priced services from each location's Google Business Profile.</span><span></span></div>
+</section>
+
+<section class="slide chapter" data-t="Chapter 4 · The pattern" data-ch="4">
+  <div class="ch-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="ch-num">04</p>
+  <p class="eyebrow">Chapter four</p>
   <h2 class="ch-title">The pattern</h2>
   <p class="ch-hook">Different markets, different scores.<br><span class="hl">The same weak spots at all four.</span></p>
   <div class="foot"><span>Why this is a portfolio problem</span><span></span></div>
@@ -605,7 +784,7 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
 
 <section class="slide" data-t="One practice, many identities">
   <p class="eyebrow">One practice, many identities</p>
-  <h2 class="h2">AI pieces together who you are from everywhere online. <span class="g">At all four practices, the pieces don't match.</span></h2>
+  <h2 class="h2">AI pieces together who you are from everywhere online. <span class="g">At all four practices the pieces don't match, and across all 77, 59 Google phone numbers differ from weramp.com.</span></h2>
   <div class="body grid g2 idg" id="idg"></div>
   <div class="foot"><span>From each practice's audit: Google listing, website and site code, directories, YouTube and AI answers (Nov 11–20, 2026).</span><span></span></div>
 </section>
@@ -630,12 +809,12 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
   <div class="foot"><span>DataForSEO backlink index and ranking history, Nov 2025 to Oct 2026. Broken-link figures: EsthetixMD Nov 12, Synergy Nov 20, 2026.</span><span></span></div>
 </section>
 
-<section class="slide chapter" data-t="Chapter 4 · The prize" data-ch="4">
+<section class="slide chapter" data-t="Chapter 5 · The prize" data-ch="5">
   <div class="ch-orbits" aria-hidden="true"><i></i><i></i><i></i></div>
-  <p class="ch-num">04</p>
-  <p class="eyebrow">Chapter four</p>
+  <p class="ch-num">05</p>
+  <p class="eyebrow">Chapter five</p>
   <h2 class="ch-title">The prize, and the path</h2>
-  <p class="ch-hook"><span class="hl">$<span data-count="31878">0</span> a month</span><br>from the local searches at just four practices.</p>
+  <p class="ch-hook"><span class="hl">$<span data-count="871137">871,137</span> a month</span><br>in local searches across all 77 locations.</p>
   <div class="foot"><span>What it's worth, and how we get there</span><span></span></div>
 </section>
 
@@ -664,6 +843,17 @@ kbd{font-family:inherit;border:1px solid var(--line);border-bottom-width:2px;bor
     </div>
   </div>
   <div class="foot"><span class="src">Searches × 2.3% conversion (Ruler Analytics) × average spend. Volumes: DataForSEO Google Ads search volume, Nov 20 2026; town searches at state level, "near me" at each practice's city level. Searches with no volume left out. Estimates, not a forecast.</span><span></span></div>
+</section>
+
+<section class="slide" data-t="Where to start: three waves">
+  <p class="eyebrow">Where to start</p>
+  <h2 class="h2">Three waves, picked by the data. <span class="g">The first one holds three quarters of the value.</span></h2>
+  <div class="body waves">
+    <div class="wv one ani"><p class="wk">Wave 1 · Win where demand is</p><p class="num" id="wv1n">16</p><p class="wl">locations in the busiest markets scoring under 40</p><p class="wv-m">$<span id="wv1w">659,987</span>/mo at stake</p><div id="wv1x" class="wx"></div></div>
+    <div class="wv ani"><p class="wk">Wave 2 · Copy the sister</p><p class="num" id="wv2n">21</p><p class="wl">more locations under 60, each with a strong location in its own brand to copy</p><div id="wv2x" class="wx"></div></div>
+    <div class="wv three ani"><p class="wk">Wave 3 · Defend the leaders</p><p class="num" id="wv3n">25</p><p class="wl">locations at 80+, kept ahead with weekly AI tracking</p><div id="wv3x" class="wx"></div></div>
+  </div>
+  <div class="foot"><span>From the portfolio scan. Wave 1: top quarter of locations by local search demand with AI score under 40.</span><span></span></div>
 </section>
 
 <section class="slide" data-t="How we fix it, at portfolio scale">
@@ -1039,6 +1229,40 @@ $('#st').innerHTML=S.map(function(s,i){var k='amp-s'+i,v=store(k)||'';return '<d
 document.querySelectorAll('.react').forEach(function(g){g.addEventListener('click',function(e){var b=e.target.closest('button');if(!b)return;var on=b.getAttribute('aria-pressed')!=='true';g.querySelectorAll('button').forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed',String(on));store(g.dataset.k,on?b.className:'')})});
 
 
+var PF={"kpi": {"avg": 54, "ai": 58, "inv": 6, "worth": 871137, "phone": 59, "n": 77, "leaders": 25, "low": 25, "reviews": 34775}, "brands": [["Glo Med Spa", 96, 2], ["Synergy MedAesthetics", 94, 2], ["Aesthetic Clinique", 93, 1], ["Blush Med Spa", 93, 5], ["Reflections Center for Cosmetic Medicine", 86, 2], ["Destination Aesthetics", 84, 6], ["Main Line Center for Laser Surgery", 80, 1], ["22", 76, 2], ["EsthetixMD", 73, 1], ["Living Young Center", 73, 4], ["Back to 30", 70, 4], ["Hello Smooth Med Spa", 67, 1], ["Illumé Med Spa", 50, 1], ["Reflections Medical by Dr. Michael Fiorillo", 50, 2], ["Nouveau Day Spa", 47, 1], ["Cúrate MedAesthetics", 44, 5], ["Avelure", 41, 12], ["Pūr Skin Clinic", 41, 3], ["BeautyFix MedSpa", 37, 4], ["H-MD Medical Spa", 36, 3], ["New Radiance Cosmetic Centers", 29, 4], ["Ever/Body", 22, 9], ["The AgeLess Center", 13, 1], ["SkynBar", 7, 1]], "quart": [21, 59, 72, 65], "qworth": [719016, 120848, 28969, 2304], "w1": [["BeautyFix MedSpa - Flatiron", 0, 85453, "Tribeca Medspa"], ["BeautyFix MedSpa - Upper East Side", 7, 85453, "Tribeca Medspa"], ["Ever / Body - Flatiron", 13, 85453, "Tribeca Medspa"], ["Ever/Body - Greenwich Village", 20, 85453, "Tribeca Medspa"], ["Ever / Body - Williamsburg", 0, 62908, "PBK Medspa"], ["Avelure - Waterford", 0, 61453, "LUXE Med Spa Aesthetics"], ["New Radiance Cosmetic Centers- Boca Raton", 6, 29090, "COSMETICA MED SPA"], ["Avelure - Indy", 13, 27393, "Ageless Aesthetics"], ["Avelure - Zona Rosa", 7, 23272, "AesthetiCare Medspa + Wellness"], ["Cúrate MedAesthetics - Nashville", 12, 22909, "61Five Health & Wellness"], ["H-MD Medical Spa - Tulsa", 13, 19515, "Bella Roma Medical Spa"], ["New Radiance Cosmetic Centers- Palm Beach Gardens", 27, 17333, "The Aesthetics Lounge and Spa Palm Beach Gardens"], ["Avelure - Grand Rapids", 20, 16727, "Grand Pearl Spa"], ["Living Young Center - St. Petersburg", 33, 14666, "Glow St. Pete Med Spa"], ["Cúrate MedAesthetics - Knoxville", 7, 12485, "Skin & Sculpt Medical Spa"], ["New Radiance Cosmetic Centers- Wellington", 33, 10424, "SmizePro Med Spa"]], "w1worth": 659987, "pairs": [["Cúrate MedAesthetics", "Ooltewah", 100, "Knoxville", 7, 976], ["Pūr Skin Clinic", "Edmonds", 93, "South Lake Union", 0, 22], ["BeautyFix MedSpa", "Westchester", 87, "Flatiron", 0, 836], ["Reflections Medical by Dr. Michael Fiorillo", "Pearl River", 93, "Englewood Cliffs", 6, 6], ["Avelure", "O'Fallon", 67, "Waterford", 0, 901], ["Living Young Center", "Odessa", 100, "St. Petersburg", 33, 244]], "corr": [["Google map pack presence", 0.57], ["Google rating", 0.34], ["Photos on the listing", 0.34], ["Number of reviews", -0.02], ["Local search demand", -0.37]], "phone": [66, 56], "eng": {"chat_gpt": 55, "gemini": 65, "claude": 53, "perplexity": 60}, "trends": [["botox", -3.5, 165000], ["lip filler", 7.2, 74000], ["morpheus8", -11.1, 49500], ["semaglutide", -15.9, 368000], ["laser hair removal", 14.2, 201000], ["hydrafacial", -12.1, 90500], ["microneedling", 14.0, 201000], ["coolsculpting", -17.8, 33100], ["sculptra", 9.7, 110000], ["daxxify", 62.5, 27100]], "topics": [["laser hair removal", 942], ["lip filler", 392], ["injector", 384], ["nurses", 280], ["cool sculpting", 174], ["laser treatment", 173], ["hydrafacial", 150], ["scheduling", 126]], "svc": [["Microneedling", 14], ["HydraFacial", 13], ["Dermal filler", 12], ["Laser hair removal", 12], ["Body contouring", 6], ["Botox / neurotoxin", 5], ["Weight loss (GLP-1)", 3], ["Chemical peel", 1], ["IV therapy", 1]]};
+PF.w2n=21;PF.w2worth=91879;PF.w2ex=[["Pūr Skin Clinic - South Lake Union", 0, "Pūr Skin Clinic - Edmonds", 93], ["Reflections Medical by Dr. Michael Fiorillo- Englewood Cliffs", 6, "Reflections Medical by Dr. Michael Fiorillo- Pearl River", 93], ["Pūr Skin Clinic - Kirkland", 31, "Pūr Skin Clinic - Edmonds", 93], ["Back to 30 - Highway 14", 40, "Back to 30 - Boiling Springs", 100]];PF.lead=[["Back to 30 - Boiling Springs", 100, "Tehila Aesthetics", 15, 12], ["Blush Med Spa - Avon", 87, "Radiance Medspa", 13, 11], ["Blush Med Spa - Enfield", 100, "Magnolia Medical Wellness", 13, 12]];PF.cur={"k": [7, 976, 13, 0, 1], "o": [100, 824, 141, 3, 12]};
+
+/* ---------- portfolio chapter (data from portfolio/data.json, Nov 20 2026) ---------- */
+(function(){
+ if(typeof PF==='undefined')return;
+ function el(id){return document.getElementById(id)}
+ function m(n){return '$'+Math.round(n).toLocaleString('en-US')}
+ function col(s){return s>=67?'var(--good)':s>=40?'var(--warn)':'var(--bad)'}
+ el('pf-avg').textContent=PF.kpi.avg;el('pf-lead').textContent=PF.kpi.leaders;el('pf-low').textContent=PF.kpi.low;el('pf-inv').textContent=PF.kpi.inv;
+ el('pf-brands').innerHTML=PF.brands.map(function(b,i){var nm=b[0].replace('Reflections Center for Cosmetic Medicine','Reflections Center').replace('Reflections Medical by Dr. Michael Fiorillo','Reflections Medical').replace('Main Line Center for Laser Surgery','Main Line Laser').replace('New Radiance Cosmetic Centers','New Radiance');
+   return '<div class="r"><span class="nm" title="'+esc(b[0])+'">'+esc(nm)+' <span class="small">·'+b[2]+'</span></span><span class="tr"><i style="width:'+b[1]+'%;background:'+col(b[1])+';--i:'+i+'"></i></span><span class="v">'+b[1]+'</span></div>'}).join('');
+ var lab=['Top 25% of demand','Next 25%','Next 25%','Lowest 25%'];
+ var mx=Math.max.apply(null,PF.quart)||1,tot=PF.qworth.reduce(function(a,b){return a+b},0);
+ el('pf-q').innerHTML=PF.quart.map(function(s,i){return '<div class="qc'+(i===0?' hot':'')+'"><div class="col" style="height:'+Math.max(14,s/100*250)+'px;--i:'+i+'"><span class="num">'+s+'</span></div><p><b>'+lab[i]+'</b>'+m(PF.qworth[i])+'/mo · '+Math.round(100*PF.qworth[i]/tot)+'% of value</p></div>'}).join('');
+ el('pf-w1').innerHTML=PF.w1.slice(0,6).map(function(w){return '<div class="it"><b>'+esc(w[0])+'</b><span class="s">'+w[1]+'</span><span class="x">'+m(w[2])+'/mo at stake · AI names '+esc(w[3])+' instead</span></div>'}).join('');
+ el('pf-pairs').innerHTML=PF.pairs.map(function(p,i){var nm=p[0].replace('Reflections Medical by Dr. Michael Fiorillo','Reflections Medical').replace('Cosmetic Centers','');
+   return '<div class="db ani"><span class="nm"><b>'+esc(nm)+'</b><span class="small">'+esc(p[1])+' vs '+esc(p[3])+'</span></span><div class="ln"><span class="base"></span><span class="gap" style="left:'+p[4]+'%;width:'+(p[2]-p[4])+'%;--i:'+i+'"></span><span class="pt lo" style="left:'+p[4]+'%"></span><span class="lb lo" style="left:'+p[4]+'%">'+esc(p[3])+' '+p[4]+'</span><span class="pt hi" style="left:'+p[2]+'%"></span><span class="lb hi" style="left:'+p[2]+'%">'+esc(p[1])+' '+p[2]+'</span></div></div>'}).join('');
+ var c=PF.cur;el('pf-cur').innerHTML='<span></span><span class="h">Ooltewah</span><span class="h">Knoxville</span>'+
+  [['AI score',0],['Google reviews',1],['Photos on Google',2],['Map pack (of 3)',3],['AI answers naming it (of 12)',4]].map(function(r){var a=c.o[r[1]],b=c.k[r[1]];return '<span>'+r[0]+'</span><span class="v '+(r[1]===1?'':'g1')+'">'+a.toLocaleString('en-US')+'</span><span class="v '+(r[1]===1?'':'b1')+'">'+b.toLocaleString('en-US')+'</span>'}).join('');
+ el('pf-corr').innerHTML=PF.corr.map(function(r,i){var v=r[1],w=Math.abs(v)*50;return '<div class="cr"><span>'+esc(r[0])+'</span><span class="ax"><i style="'+(v>=0?'left:50%':'left:'+(50-w)+'%')+';width:'+w+'%;background:'+(Math.abs(v)<.15?'var(--line)':v>=0?'var(--good)':'var(--bad)')+';--i:'+i+'"></i></span><span class="v">'+(v>=0?'+':'')+v.toFixed(2)+'</span></div>'}).join('')+'<p class="small" style="margin-top:6px">Left of the line: higher value, lower AI score. Grey: no real relationship. Demand is negative because the busiest markets are where AMP is least visible.</p>';
+ el('pf-ph1').textContent=PF.phone[0];el('pf-ph2').textContent=PF.phone[1];
+ el('pf-eng').innerHTML=[['chat_gpt','ChatGPT'],['gemini','Gemini'],['claude','Claude'],['perplexity','Perplexity']].map(function(e){return '<div><span class="num">'+PF.eng[e[0]]+'%</span><span class="l">'+e[1]+'</span></div>'}).join('');
+ var T=PF.trends.filter(function(t){return t[1]!=null}).sort(function(a,b){return b[1]-a[1]});var tm=Math.max.apply(null,T.map(function(t){return Math.abs(t[1])}))||1;
+ el('pf-tr').innerHTML=T.map(function(t,i){var v=t[1],w=Math.abs(v)/tm*50;return '<div class="dv"><span>'+esc(t[0])+'</span><span class="ax"><i style="'+(v>=0?'left:50%':'left:'+(50-w)+'%')+';width:'+w+'%;background:'+(v>=0?'var(--good)':'var(--bad)')+'"></i></span><span class="v" style="color:'+(v>=0?'var(--good)':'var(--bad)')+'">'+(v>=0?'+':'')+Math.round(v)+'%</span></div>'}).join('');
+ var lhr=(PF.topics||[]).filter(function(t){return t[0]==='laser hair removal'})[0];if(lhr)el('pf-lhr').textContent=lhr[1].toLocaleString('en-US');
+ el('wv1n').textContent=PF.w1.length;el('wv1w').textContent=Math.round(PF.w1worth).toLocaleString('en-US');
+ el('wv1x').innerHTML=PF.w1.slice(0,4).map(function(w){return '<span>'+esc(w[0])+' · '+w[1]+'</span>'}).join('')+(PF.w1.length>4?'<span>+'+(PF.w1.length-4)+' more</span>':'');
+ el('wv2n').textContent=PF.w2n;
+ el('wv2x').innerHTML=PF.w2ex.map(function(w){return '<span>'+esc(w[0].replace(' by Dr. Michael Fiorillo',''))+' '+w[1]+' → copy '+esc(w[2].replace(/^.* - |^.*- /,''))+' '+w[3]+'</span>'}).join('');
+ el('wv3n').textContent=PF.kpi.leaders;
+ el('wv3x').innerHTML=PF.lead.map(function(w){return '<span>'+esc(w[0])+' <b>'+w[1]+'</b> · closest rival '+esc(w[2])+'</span>'}).join('');
+})();
+
 /* ---------- story layer: new explainers ---------- */
 
 /* four practice cards beside the map */
@@ -1126,10 +1350,10 @@ function countUp(sl){sl.querySelectorAll('[data-count]').forEach(function(e){var
   function f(ts){if(!t0)t0=ts;var p=Math.min(1,(ts-t0)/d),v=to*(1-Math.pow(1-p,3));e.textContent=Math.round(v).toLocaleString('en-US');if(p<1)requestAnimationFrame(f)}
   e.textContent='0';setTimeout(function(){requestAnimationFrame(f)},350)})}
 /* chapter tags in footers */
-(function(){var ch=0,names={1:'The new front door',2:'Into the field',3:'The pattern',4:'The prize and the path'};
+(function(){var ch=0,names={1:'The new front door',2:'Into the field',3:'All 77 locations',4:'The pattern',5:'The prize and the path'};
   document.querySelectorAll('.slide').forEach(function(sl){if(sl.dataset.ch)ch=+sl.dataset.ch;if(sl.hasAttribute('data-back'))ch=0;
     var sp=sl.querySelector('.foot span:last-child');if(!sp||!ch||sl.classList.contains('chapter'))return;
-    sp.innerHTML='<span class="chtag"><b>'+ch+'</b>'+names[ch]+'<span class="chdots">'+[1,2,3,4].map(function(n){return '<i'+(n<=ch?' class="on"':'')+'></i>'}).join('')+'</span></span>'})})();
+    sp.innerHTML='<span class="chtag"><b>'+ch+'</b>'+names[ch]+'<span class="chdots">'+[1,2,3,4,5].map(function(n){return '<i'+(n<=ch?' class="on"':'')+'></i>'}).join('')+'</span></span>'})})();
 document.querySelectorAll('[data-count]').forEach(function(e){e.textContent=(+e.dataset.count).toLocaleString('en-US')});
 
 /* ---------- deck engine ---------- */
