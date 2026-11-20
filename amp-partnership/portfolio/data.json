@@ -29,15 +29,15 @@
   "site_mm": 2,
   "unclaimed": 0,
   "no_desc": 1,
-  "worth": 871137,
-  "vol": 71870,
+  "worth": 1124460,
+  "vol": 92770,
   "invisible": 6,
   "lead": 25,
   "tie": 5,
   "trail": 47,
-  "trail_worth": 788230,
+  "trail_worth": 993253,
   "reach": 20,
-  "reach_worth": 207210,
+  "reach_worth": 263450,
   "review_adv": 61,
   "review_cmp": 70,
   "any_price": 34,
@@ -5136,10 +5136,10 @@
    "comp_rating": 4.92,
    "review_x": 1.2,
    "shared_with": 0,
-   "vol": 60,
+   "vol": 100,
    "vol_town": 60,
-   "vol_near": 0,
-   "worth": 727
+   "vol_near": 40,
+   "worth": 1212
   },
   {
    "slug": "blush-med-spa-east-longmeadow",
@@ -5313,10 +5313,10 @@
    "comp_rating": null,
    "review_x": null,
    "shared_with": 0,
-   "vol": 20,
+   "vol": 60,
    "vol_town": 20,
-   "vol_near": 0,
-   "worth": 242
+   "vol_near": 40,
+   "worth": 727
   },
   {
    "slug": "blush-med-spa-enfield",
@@ -5548,10 +5548,10 @@
    "comp_rating": 4.82,
    "review_x": 8.3,
    "shared_with": 0,
-   "vol": 30,
+   "vol": 100,
    "vol_town": 30,
-   "vol_near": 0,
-   "worth": 364
+   "vol_near": 70,
+   "worth": 1212
   },
   {
    "slug": "blush-med-spa-glastonbury",
@@ -5781,10 +5781,10 @@
    "comp_rating": 4.96,
    "review_x": 1.3,
    "shared_with": 0,
-   "vol": 190,
+   "vol": 340,
    "vol_town": 190,
-   "vol_near": 0,
-   "worth": 2303
+   "vol_near": 150,
+   "worth": 4121
   },
   {
    "slug": "blush-med-spa-orange",
@@ -5960,10 +5960,10 @@
    "comp_rating": null,
    "review_x": null,
    "shared_with": 0,
-   "vol": 40,
+   "vol": 80,
    "vol_town": 40,
-   "vol_near": 0,
-   "worth": 485
+   "vol_near": 40,
+   "worth": 970
   },
   {
    "slug": "crate-medaesthetics-chattanooga",
@@ -6182,10 +6182,10 @@
    "comp_rating": 4.96,
    "review_x": 5.6,
    "shared_with": 0,
-   "vol": 750,
+   "vol": 1150,
    "vol_town": 750,
-   "vol_near": 0,
-   "worth": 9091
+   "vol_near": 400,
+   "worth": 13939
   },
   {
    "slug": "crate-medaesthetics-knoxville",
@@ -6386,10 +6386,10 @@
    "comp_rating": 4.78,
    "review_x": 2.0,
    "shared_with": 0,
-   "vol": 1030,
+   "vol": 1930,
    "vol_town": 1030,
-   "vol_near": 0,
-   "worth": 12485
+   "vol_near": 900,
+   "worth": 23394
   },
   {
    "slug": "crate-medaesthetics-murfreesboro",
@@ -6590,10 +6590,10 @@
    "comp_rating": 4.92,
    "review_x": 0.5,
    "shared_with": 0,
-   "vol": 600,
+   "vol": 820,
    "vol_town": 600,
-   "vol_near": 0,
-   "worth": 7273
+   "vol_near": 220,
+   "worth": 9939
   },
   {
    "slug": "crate-medaesthetics-nashville",
@@ -6793,10 +6793,10 @@
    "comp_rating": 4.76,
    "review_x": 47.4,
    "shared_with": 0,
-   "vol": 1890,
+   "vol": 3160,
    "vol_town": 1890,
-   "vol_near": 0,
-   "worth": 22909
+   "vol_near": 1270,
+   "worth": 38302
   },
   {
    "slug": "crate-medaesthetics-ooltewah",
@@ -7018,10 +7018,10 @@
    "comp_rating": 4.96,
    "review_x": 16.5,
    "shared_with": 0,
-   "vol": 0,
+   "vol": 40,
    "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol_near": 40,
+   "worth": 485
   },
   {
    "slug": "destination-aesthetics-el-dorado-hills",
@@ -7221,10 +7221,10 @@
    "comp_rating": 4.42,
    "review_x": 1.6,
    "shared_with": 0,
-   "vol": 130,
+   "vol": 280,
    "vol_town": 130,
-   "vol_near": 0,
-   "worth": 1576
+   "vol_near": 150,
+   "worth": 3394
   },
   {
    "slug": "destination-aesthetics-elk-grove",
@@ -7424,10 +7424,10 @@
    "comp_rating": 4.74,
    "review_x": 10.5,
    "shared_with": 0,
-   "vol": 300,
+   "vol": 440,
    "vol_town": 300,
-   "vol_near": 0,
-   "worth": 3636
+   "vol_near": 140,
+   "worth": 5333
   },
   {
    "slug": "destination-aesthetics-folsom",
@@ -7630,10 +7630,10 @@
    "comp_rating": 4.42,
    "review_x": 1.9,
    "shared_with": 0,
-   "vol": 320,
+   "vol": 590,
    "vol_town": 320,
-   "vol_near": 0,
-   "worth": 3879
+   "vol_near": 270,
+   "worth": 7151
   },
   {
    "slug": "destination-aesthetics-napa",
@@ -7835,10 +7835,10 @@
    "comp_rating": 4.98,
    "review_x": 3.2,
    "shared_with": 0,
-   "vol": 280,
+   "vol": 380,
    "vol_town": 280,
-   "vol_near": 0,
-   "worth": 3394
+   "vol_near": 100,
+   "worth": 4606
   },
   {
    "slug": "destination-aesthetics-roseville",
@@ -8039,10 +8039,10 @@
    "comp_rating": 4.95,
    "review_x": 0.8,
    "shared_with": 0,
-   "vol": 700,
+   "vol": 1120,
    "vol_town": 700,
-   "vol_near": 0,
-   "worth": 8485
+   "vol_near": 420,
+   "worth": 13576
   },
   {
    "slug": "destination-aesthetics-sacramento",
@@ -8244,10 +8244,10 @@
    "comp_rating": 4.94,
    "review_x": 2.7,
    "shared_with": 0,
-   "vol": 2050,
+   "vol": 3140,
    "vol_town": 2050,
-   "vol_near": 0,
-   "worth": 24848
+   "vol_near": 1090,
+   "worth": 38060
   },
   {
    "slug": "esthetixmd",
@@ -8484,10 +8484,10 @@
    "comp_rating": 4.98,
    "review_x": 5.0,
    "shared_with": 0,
-   "vol": 330,
+   "vol": 620,
    "vol_town": 330,
-   "vol_near": 0,
-   "worth": 4000
+   "vol_near": 290,
+   "worth": 7515
   },
   {
    "slug": "ever-body-colleyville",
@@ -8661,10 +8661,10 @@
    "comp_rating": null,
    "review_x": null,
    "shared_with": 0,
-   "vol": 330,
+   "vol": 400,
    "vol_town": 330,
-   "vol_near": 0,
-   "worth": 4000
+   "vol_near": 70,
+   "worth": 4848
   },
   {
    "slug": "ever-body-flatiron",
@@ -9091,10 +9091,10 @@
    "comp_rating": 4.88,
    "review_x": 2.2,
    "shared_with": 0,
-   "vol": 80,
+   "vol": 280,
    "vol_town": 80,
-   "vol_near": 0,
-   "worth": 970
+   "vol_near": 200,
+   "worth": 3394
   },
   {
    "slug": "everbody-greenwich-village",
@@ -9724,10 +9724,10 @@
    "comp_rating": 4.78,
    "review_x": 1.1,
    "shared_with": 0,
-   "vol": 750,
+   "vol": 2180,
    "vol_town": 750,
-   "vol_near": 0,
-   "worth": 9091
+   "vol_near": 1430,
+   "worth": 26424
   },
   {
    "slug": "ever-body-north-haven",
@@ -9926,10 +9926,10 @@
    "comp_rating": 4.85,
    "review_x": 3.2,
    "shared_with": 0,
-   "vol": 30,
+   "vol": 70,
    "vol_town": 30,
-   "vol_near": 0,
-   "worth": 364
+   "vol_near": 40,
+   "worth": 848
   },
   {
    "slug": "ever-body-south-windsor",
@@ -10142,10 +10142,10 @@
    "comp_rating": 4.97,
    "review_x": 4.9,
    "shared_with": 0,
-   "vol": 0,
+   "vol": 40,
    "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol_near": 40,
+   "worth": 485
   },
   {
    "slug": "ever-body-williamsburg",
@@ -10606,10 +10606,10 @@
    "comp_rating": 5.0,
    "review_x": 3.9,
    "shared_with": 0,
-   "vol": 720,
+   "vol": 1020,
    "vol_town": 720,
-   "vol_near": 0,
-   "worth": 8727
+   "vol_near": 300,
+   "worth": 12363
   },
   {
    "slug": "glo-med-spa-winterville",
@@ -10804,10 +10804,10 @@
    "comp_rating": 4.67,
    "review_x": 4.8,
    "shared_with": 0,
-   "vol": 0,
+   "vol": 40,
    "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol_near": 40,
+   "worth": 485
   },
   {
    "slug": "h-md-medical-spa-gaillardia-oklahoma-city",
@@ -11033,10 +11033,10 @@
    "comp_rating": 4.96,
    "review_x": 6.4,
    "shared_with": 1,
-   "vol": 775,
+   "vol": 1330,
    "vol_town": 775,
-   "vol_near": 0,
-   "worth": 9394
+   "vol_near": 555,
+   "worth": 16121
   },
   {
    "slug": "h-md-medical-spa-okc-chisholm-creek",
@@ -11248,10 +11248,10 @@
    "comp_rating": 4.78,
    "review_x": 4.1,
    "shared_with": 1,
-   "vol": 775,
+   "vol": 1330,
    "vol_town": 775,
-   "vol_near": 0,
-   "worth": 9394
+   "vol_near": 555,
+   "worth": 16121
   },
   {
    "slug": "h-md-medical-spa-tulsa",
@@ -11462,10 +11462,10 @@
    "comp_rating": 4.98,
    "review_x": 10.8,
    "shared_with": 0,
-   "vol": 1610,
+   "vol": 2030,
    "vol_town": 1610,
-   "vol_near": 0,
-   "worth": 19515
+   "vol_near": 420,
+   "worth": 24606
   },
   {
    "slug": "hello-smooth-med-spa",
@@ -12935,10 +12935,10 @@
    "comp_rating": 4.87,
    "review_x": 0.7,
    "shared_with": 0,
-   "vol": 30,
+   "vol": 70,
    "vol_town": 30,
-   "vol_near": 0,
-   "worth": 364
+   "vol_near": 40,
+   "worth": 848
   },
   {
    "slug": "new-radiance-cosmetic-centers-boca-raton",
@@ -14055,10 +14055,10 @@
    "comp_rating": 4.3,
    "review_x": 1.6,
    "shared_with": 1,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 125,
+   "vol_town": 65,
+   "vol_near": 60,
+   "worth": 1515
   },
   {
    "slug": "pr-skin-clinic-edmonds",
@@ -14260,10 +14260,10 @@
    "comp_rating": 4.97,
    "review_x": 3.8,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 140,
+   "vol_town": 70,
+   "vol_near": 70,
+   "worth": 1697
   },
   {
    "slug": "pr-skin-clinic-kirkland",
@@ -14439,10 +14439,10 @@
    "comp_rating": null,
    "review_x": null,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 530,
+   "vol_town": 300,
+   "vol_near": 230,
+   "worth": 6424
   },
   {
    "slug": "pr-skin-clinic-south-lake-union",
@@ -14641,10 +14641,10 @@
    "comp_rating": 4.84,
    "review_x": 0.4,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 4400,
+   "vol_town": 2310,
+   "vol_near": 2090,
+   "worth": 53332
   },
   {
    "slug": "reflections-center-for-cosmetic-medicine-bridgewatermartinsville",
@@ -14836,10 +14836,10 @@
    "comp_rating": 4.93,
    "review_x": 2.7,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 100,
+   "vol_town": 20,
+   "vol_near": 80,
+   "worth": 1212
   },
   {
    "slug": "reflections-center-for-cosmetic-medicine-livingston",
@@ -15025,10 +15025,10 @@
    "comp_rating": 5.0,
    "review_x": 6.1,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 110,
+   "vol_town": 40,
+   "vol_near": 70,
+   "worth": 1333
   },
   {
    "slug": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
@@ -15197,10 +15197,10 @@
    "comp_rating": 4.3,
    "review_x": 0.0,
    "shared_with": 0,
-   "vol": 0,
+   "vol": 40,
    "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol_near": 40,
+   "worth": 485
   },
   {
    "slug": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
@@ -15597,10 +15597,10 @@
    "comp_rating": 4.9,
    "review_x": 0.8,
    "shared_with": 1,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 2810,
+   "vol_town": 1475,
+   "vol_near": 1335,
+   "worth": 34060
   },
   {
    "slug": "synergy-medaesthetics-med-spa-kennewick",
@@ -15816,10 +15816,10 @@
    "comp_rating": 4.94,
    "review_x": 1.4,
    "shared_with": 1,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 125,
+   "vol_town": 65,
+   "vol_near": 60,
+   "worth": 1515
   },
   {
    "slug": "synergy-medaesthetics-med-spa-yakima",
@@ -16008,10 +16008,10 @@
    "comp_rating": 4.97,
    "review_x": 6.5,
    "shared_with": 0,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 390,
+   "vol_town": 290,
+   "vol_near": 100,
+   "worth": 4727
   },
   {
    "slug": "the-ageless-center",
@@ -16218,10 +16218,10 @@
    "comp_rating": 4.9,
    "review_x": 3.8,
    "shared_with": 1,
-   "vol": 0,
-   "vol_town": 0,
-   "vol_near": 0,
-   "worth": 0
+   "vol": 2810,
+   "vol_town": 1475,
+   "vol_near": 1335,
+   "worth": 34060
   }
  ],
  "brands": [
@@ -16237,7 +16237,7 @@
    "rating": 4.95,
    "reviews": 1414,
    "phone_mm": 2,
-   "worth": 8727,
+   "worth": 12848,
    "domain": {
     "domain": "glomedspa.com",
     "keywords_total": 192,
@@ -16329,7 +16329,7 @@
    "rating": 4.9,
    "reviews": 470,
    "phone_mm": 2,
-   "worth": 0,
+   "worth": 6242,
    "domain": {
     "domain": "synergymedaesthetics.com",
     "keywords_total": 92,
@@ -16514,7 +16514,7 @@
    "rating": 4.88,
    "reviews": 1148,
    "phone_mm": 1,
-   "worth": 4121,
+   "worth": 8242,
    "domain": {
     "domain": "blushmedspact.com",
     "keywords_total": 159,
@@ -16606,7 +16606,7 @@
    "rating": 4.5,
    "reviews": 556,
    "phone_mm": 2,
-   "worth": 0,
+   "worth": 2545,
    "domain": {
     "domain": "reflectionscenter.com",
     "keywords_total": 3985,
@@ -16699,7 +16699,7 @@
    "rating": 4.85,
    "reviews": 1526,
    "phone_mm": 3,
-   "worth": 45818,
+   "worth": 72120,
    "domain": {
     "domain": "destinationaesthetics.com",
     "keywords_total": 546,
@@ -16791,7 +16791,7 @@
    "rating": 4.9,
    "reviews": 178,
    "phone_mm": 1,
-   "worth": 364,
+   "worth": 848,
    "domain": {
     "domain": "dermguy.com",
     "keywords_total": 308,
@@ -16975,7 +16975,7 @@
    "rating": 4.9,
    "reviews": 626,
    "phone_mm": 1,
-   "worth": 4000,
+   "worth": 7515,
    "domain": {
     "domain": "esthetixmd.com",
     "keywords_total": 230,
@@ -17436,7 +17436,7 @@
    "rating": 4.7,
    "reviews": 314,
    "phone_mm": 2,
-   "worth": 606,
+   "worth": 1091,
    "domain": {
     "domain": "drfiorillo.com",
     "keywords_total": null,
@@ -17530,7 +17530,7 @@
    "rating": 4.7,
    "reviews": 336,
    "phone_mm": 1,
-   "worth": 0,
+   "worth": 1515,
    "domain": {
     "domain": "nouveauspa.com",
     "keywords_total": 242,
@@ -17623,7 +17623,7 @@
    "rating": 4.88,
    "reviews": 3388,
    "phone_mm": 5,
-   "worth": 51758,
+   "worth": 86059,
    "domain": {
     "domain": "curatemedspa.com",
     "keywords_total": 176,
@@ -17811,7 +17811,7 @@
    "rating": 4.9,
    "reviews": 386,
    "phone_mm": 0,
-   "worth": 0,
+   "worth": 61453,
    "domain": {
     "domain": "purskinclinic.com",
     "keywords_total": 268,
@@ -17997,7 +17997,7 @@
    "rating": 4.57,
    "reviews": 2370,
    "phone_mm": 3,
-   "worth": 38303,
+   "worth": 56848,
    "domain": {
     "domain": "h-md.com",
     "keywords_total": 135,
@@ -18186,7 +18186,7 @@
    "rating": 4.66,
    "reviews": 4175,
    "phone_mm": 8,
-   "worth": 250966,
+   "worth": 272540,
    "domain": {
     "domain": "everbody.com",
     "keywords_total": 413,
@@ -18278,7 +18278,7 @@
    "rating": 4.5,
    "reviews": 498,
    "phone_mm": 1,
-   "worth": 0,
+   "worth": 34060,
    "domain": {
     "domain": "theagelesscenter.com",
     "keywords_total": 257,
@@ -18370,7 +18370,7 @@
    "rating": 5.0,
    "reviews": 289,
    "phone_mm": 1,
-   "worth": 0,
+   "worth": 34060,
    "domain": {
     "domain": "skynbaratlanta.com",
     "keywords_total": 157,
@@ -20059,10 +20059,10 @@
   {
    "k": "close",
    "tag": "One step from the top",
-   "loc": "Living Young Center - Palm Harbor",
-   "slug": "living-young-center-palm-harbor",
-   "big": "10 vs 11",
-   "text": "Living Young Center - Palm Harbor trails Olympia Aesthetics & Wellness by 1 mention across AI answers and Google's map pack. A handful of fixes moves it to first in its market."
+   "loc": "Destination Aesthetics - Napa",
+   "slug": "destination-aesthetics-napa",
+   "big": "11 vs 12",
+   "text": "Destination Aesthetics - Napa trails Nude Medical Aesthetics by 1 mention across AI answers and Google's map pack. A handful of fixes moves it to first in its market."
   },
   {
    "k": "champion",
@@ -20117,12 +20117,12 @@
   {
    "big": "25 of 77",
    "h": "Markets where AI already picks AMP first",
-   "p": "In 25 markets the AMP location is named more often than its closest local rival. The other 52 are the growth opportunity: they hold $816,472 of the $871,137 a month in local searches at stake."
+   "p": "In 25 markets the AMP location is named more often than its closest local rival. The other 52 are the growth opportunity: they hold $1,030,585 of the $1,124,460 a month in local searches at stake."
   },
   {
    "big": "20",
    "h": "Close races, ready to win",
-   "p": "20 locations trail their local leader by 3 mentions or fewer, worth $207,210 a month together: Ever/Body - Greenwich Village (vs Tribeca Medspa, 3–6), Avelure - Rochester (vs Q the Medical Spa at Lindsay House, 7–9), Living Young Center - St. Petersburg (vs Glow St. Pete Med Spa, 5–7)."
+   "p": "20 locations trail their local leader by 3 mentions or fewer, worth $263,450 a month together: Ever/Body - Greenwich Village (vs Tribeca Medspa, 3–6), The AgeLess Center (vs Natural Body Spa + Med Spa, 2–5), Avelure - Rochester (vs Q the Medical Spa at Lindsay House, 7–9)."
   },
   {
    "big": "61 of 70",
@@ -20130,9 +20130,9 @@
    "p": "In 61 of 70 markets, the AMP location has more Google reviews than the local competitors Google pairs it with. AI doesn't credit it yet: Cúrate MedAesthetics - Nashville has 1,281 reviews (47.4× local) and is named in 2 of 12 answers; BeautyFix MedSpa - Flatiron has 836 reviews (20.9× local) and is named in 0 of 12 answers; BeautyFix MedSpa - Upper East Side has 287 reviews (14.3× local) and is named in 1 of 12 answers."
   },
   {
-   "big": "66%",
+   "big": "56%",
    "h": "Where the growth is concentrated",
-   "p": "The 10 busiest markets hold 66% of the value: BeautyFix MedSpa - Flatiron ($85,453/mo, named 0× vs Tribeca Medspa 9×), BeautyFix MedSpa - Upper East Side ($85,453/mo, named 1× vs Tribeca Medspa 9×), Ever / Body - Flatiron ($85,453/mo, named 2× vs Tribeca Medspa 7×)."
+   "p": "The 10 busiest markets hold 56% of the value: BeautyFix MedSpa - Flatiron ($85,453/mo, named 0× vs Tribeca Medspa 9×), BeautyFix MedSpa - Upper East Side ($85,453/mo, named 1× vs Tribeca Medspa 9×), Ever / Body - Flatiron ($85,453/mo, named 2× vs Tribeca Medspa 7×)."
   },
   {
    "big": "34 of 77",

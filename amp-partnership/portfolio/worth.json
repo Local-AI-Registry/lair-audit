@@ -118,87 +118,92 @@
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   60,
+   100,
    "Blush Med Spa - Avon"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   20,
+   60,
    "Blush Med Spa - East Longmeadow"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   30,
+   100,
    "Blush Med Spa - Enfield"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   190,
+   340,
    "Blush Med Spa - Glastonbury"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   40,
+   80,
    "Blush Med Spa - Orange"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   750,
+   1150,
    "Cúrate MedAesthetics - Chattanooga"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   1030,
+   1930,
    "Cúrate MedAesthetics - Knoxville"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   600,
+   820,
    "Cúrate MedAesthetics - Murfreesboro"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   1890,
+   3160,
    "Cúrate MedAesthetics - Nashville"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   130,
-   "Destination Aesthetics - El Dorado Hills"
-  ],
-  [
-   "local med spa, Botox, lip filler and laser hair searches",
-   300,
-   "Destination Aesthetics - Elk Grove"
-  ],
-  [
-   "local med spa, Botox, lip filler and laser hair searches",
-   320,
-   "Destination Aesthetics - Folsom"
+   40,
+   "Cúrate MedAesthetics - Ooltewah"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
    280,
+   "Destination Aesthetics - El Dorado Hills"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   440,
+   "Destination Aesthetics - Elk Grove"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   590,
+   "Destination Aesthetics - Folsom"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   380,
    "Destination Aesthetics - Napa"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   700,
+   1120,
    "Destination Aesthetics - Roseville"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   2050,
+   3140,
    "Destination Aesthetics - Sacramento"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   330,
+   620,
    "EsthetixMD"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   330,
+   400,
    "Ever / Body - Colleyville"
   ],
   [
@@ -208,7 +213,7 @@
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   80,
+   280,
    "Ever / Body - Gaithersburg"
   ],
   [
@@ -223,13 +228,18 @@
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   750,
+   2180,
    "Ever / Body - Logan Circle"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   30,
+   70,
    "Ever / Body - North Haven"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   40,
+   "Ever / Body - South Windsor"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
@@ -238,22 +248,27 @@
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   720,
+   1020,
    "Glo Med Spa - Wilmington"
   ],
   [
+   "local med spa, Botox, lip filler and laser hair searches",
+   40,
+   "Glo Med Spa - Winterville"
+  ],
+  [
    "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
-   775,
+   1330,
    "H-MD Medical Spa - Gaillardia - Oklahoma City"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
-   775,
+   1330,
    "H-MD Medical Spa - OKC Chisholm Creek"
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   1610,
+   2030,
    "H-MD Medical Spa - Tulsa"
   ],
   [
@@ -288,7 +303,7 @@
   ],
   [
    "local med spa, Botox, lip filler and laser hair searches",
-   30,
+   70,
    "Main Line Center for Laser Surgery - Ardmore"
   ],
   [
@@ -312,9 +327,64 @@
    "New Radiance Cosmetic Centers- Wellington"
   ],
   [
+   "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
+   125,
+   "Nouveau Day Spa"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   140,
+   "Pūr Skin Clinic - Edmonds"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   530,
+   "Pūr Skin Clinic - Kirkland"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   4400,
+   "Pūr Skin Clinic - South Lake Union"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   100,
+   "Reflections Center for Cosmetic Medicine - Bridgewater/Martinsville"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   110,
+   "Reflections Center for Cosmetic Medicine - Livingston"
+  ],
+  [
+   "local plastic surgeon, Botox, lip filler and laser hair searches",
+   40,
+   "Reflections Medical by Dr. Michael Fiorillo- Englewood Cliffs"
+  ],
+  [
    "local plastic surgeon, Botox, lip filler and laser hair searches",
    50,
    "Reflections Medical by Dr. Michael Fiorillo- Pearl River"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
+   2810,
+   "SkynBar"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
+   125,
+   "Synergy MedAesthetics Med Spa - Kennewick"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches",
+   390,
+   "Synergy MedAesthetics Med Spa - Yakima"
+  ],
+  [
+   "local med spa, Botox, lip filler and laser hair searches (city split 2 ways)",
+   2810,
+   "The AgeLess Center"
   ]
  ],
  "price": {

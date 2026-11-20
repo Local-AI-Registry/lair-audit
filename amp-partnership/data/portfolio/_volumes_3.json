@@ -1,216 +1,216 @@
 {
-  "source": "DataForSEO",
-  "date": "2026-11-20",
-  "status": "failed_http_402",
-  "locations": [
-    {
-      "slug": "nouveau-day-spa",
-      "town": {
-        "med spa kennewick": null,
-        "botox kennewick": null,
-        "lip filler kennewick": null,
-        "laser hair removal kennewick": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Kennewick,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "pr-skin-clinic-edmonds",
-      "town": {
-        "med spa edmonds": null,
-        "botox edmonds": null,
-        "lip filler edmonds": null,
-        "laser hair removal edmonds": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Edmonds,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "pr-skin-clinic-kirkland",
-      "town": {
-        "med spa kirkland": null,
-        "botox kirkland": null,
-        "lip filler kirkland": null,
-        "laser hair removal kirkland": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Kirkland,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "pr-skin-clinic-south-lake-union",
-      "town": {
-        "med spa seattle": null,
-        "botox seattle": null,
-        "lip filler seattle": null,
-        "laser hair removal seattle": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Seattle,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "synergy-medaesthetics-med-spa-kennewick",
-      "town": {
-        "med spa kennewick": null,
-        "botox kennewick": null,
-        "lip filler kennewick": null,
-        "laser hair removal kennewick": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Kennewick,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "synergy-medaesthetics-med-spa-yakima",
-      "town": {
-        "med spa yakima": null,
-        "botox yakima": null,
-        "lip filler yakima": null,
-        "laser hair removal yakima": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Yakima,Washington,United States",
-      "town_location": "Washington,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "reflections-center-for-cosmetic-medicine-bridgewatermartinsville",
-      "town": {
-        "med spa martinsville": null,
-        "botox martinsville": null,
-        "lip filler martinsville": null,
-        "laser hair removal martinsville": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Bridgewater,New Jersey,United States",
-      "town_location": "New Jersey,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up. Martinsville,NJ is not a valid Google Ads location (only IL/IN/VA); nearest valid = Bridgewater,New Jersey,United States (code 1022049).",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "reflections-center-for-cosmetic-medicine-livingston",
-      "town": {
-        "med spa livingston": null,
-        "botox livingston": null,
-        "lip filler livingston": null,
-        "laser hair removal livingston": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Livingston,New Jersey,United States",
-      "town_location": "New Jersey,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
-      "town": {
-        "med spa englewood cliffs": null,
-        "botox englewood cliffs": null,
-        "lip filler englewood cliffs": null,
-        "laser hair removal englewood cliffs": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Englewood Cliffs,New Jersey,United States",
-      "town_location": "New Jersey,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "skynbar",
-      "town": {
-        "med spa atlanta": null,
-        "botox atlanta": null,
-        "lip filler atlanta": null,
-        "laser hair removal atlanta": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Atlanta,Georgia,United States",
-      "town_location": "Georgia,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    },
-    {
-      "slug": "the-ageless-center",
-      "town": {
-        "med spa atlanta": null,
-        "botox atlanta": null,
-        "lip filler atlanta": null,
-        "laser hair removal atlanta": null
-      },
-      "near_me": {
-        "med spa near me": null,
-        "botox near me": null,
-        "lip filler near me": null,
-        "laser hair removal near me": null
-      },
-      "near_me_location": "Atlanta,Georgia,United States",
-      "town_location": "Georgia,United States",
-      "notes": "NOT COLLECTED: DataForSEO kw_data_google_ads_search_volume returned HTTP 402 (Payment Required) on every call on 2026-11-20; values are null because the API was unavailable, NOT because volume is zero. Re-run after the DataForSEO balance is topped up.",
-      "status": "api_error_402"
-    }
-  ]
+ "source": "DataForSEO",
+ "date": "2026-11-20",
+ "status": "complete (402 gaps refilled 2026-11-20)",
+ "locations": [
+  {
+   "slug": "nouveau-day-spa",
+   "town": {
+    "med spa kennewick": 20,
+    "botox kennewick": 70,
+    "lip filler kennewick": null,
+    "laser hair removal kennewick": 40
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 40,
+    "lip filler near me": 40,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Kennewick,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Kennewick,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "pr-skin-clinic-edmonds",
+   "town": {
+    "med spa edmonds": 30,
+    "botox edmonds": 30,
+    "lip filler edmonds": null,
+    "laser hair removal edmonds": 10
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 30,
+    "lip filler near me": 10,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Edmonds,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Edmonds,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "pr-skin-clinic-kirkland",
+   "town": {
+    "med spa kirkland": 90,
+    "botox kirkland": 140,
+    "lip filler kirkland": null,
+    "laser hair removal kirkland": 70
+   },
+   "near_me": {
+    "med spa near me": 50,
+    "botox near me": 90,
+    "lip filler near me": 20,
+    "laser hair removal near me": 70
+   },
+   "near_me_location": "Kirkland,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Kirkland,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "pr-skin-clinic-south-lake-union",
+   "town": {
+    "med spa seattle": 320,
+    "botox seattle": 720,
+    "lip filler seattle": 390,
+    "laser hair removal seattle": 880
+   },
+   "near_me": {
+    "med spa near me": 390,
+    "botox near me": 720,
+    "lip filler near me": 260,
+    "laser hair removal near me": 720
+   },
+   "near_me_location": "Seattle,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Seattle,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "synergy-medaesthetics-med-spa-kennewick",
+   "town": {
+    "med spa kennewick": 20,
+    "botox kennewick": 70,
+    "lip filler kennewick": null,
+    "laser hair removal kennewick": 40
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 40,
+    "lip filler near me": 40,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Kennewick,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Kennewick,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "synergy-medaesthetics-med-spa-yakima",
+   "town": {
+    "med spa yakima": 30,
+    "botox yakima": 170,
+    "lip filler yakima": null,
+    "laser hair removal yakima": 90
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 30,
+    "lip filler near me": 40,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Yakima,Washington,United States",
+   "town_location": "Washington,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Yakima,Washington,United States, town at Washington,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "reflections-center-for-cosmetic-medicine-bridgewatermartinsville",
+   "town": {
+    "med spa martinsville": null,
+    "botox martinsville": 10,
+    "lip filler martinsville": null,
+    "laser hair removal martinsville": 10
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 30,
+    "lip filler near me": 10,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Bridgewater,New Jersey,United States",
+   "town_location": "New Jersey,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Bridgewater,New Jersey,United States, town at New Jersey,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "reflections-center-for-cosmetic-medicine-livingston",
+   "town": {
+    "med spa livingston": 10,
+    "botox livingston": null,
+    "lip filler livingston": 10,
+    "laser hair removal livingston": 20
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 20,
+    "lip filler near me": 10,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Livingston,New Jersey,United States",
+   "town_location": "New Jersey,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Livingston,New Jersey,United States, town at New Jersey,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+   "town": {
+    "med spa englewood cliffs": null,
+    "botox englewood cliffs": null,
+    "lip filler englewood cliffs": null,
+    "laser hair removal englewood cliffs": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Englewood Cliffs,New Jersey,United States",
+   "town_location": "New Jersey,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Englewood Cliffs,New Jersey,United States, town at New Jersey,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "skynbar",
+   "town": {
+    "med spa atlanta": 590,
+    "botox atlanta": 880,
+    "lip filler atlanta": 480,
+    "laser hair removal atlanta": 1000
+   },
+   "near_me": {
+    "med spa near me": 880,
+    "botox near me": 880,
+    "lip filler near me": 320,
+    "laser hair removal near me": 590
+   },
+   "near_me_location": "Atlanta,Georgia,United States",
+   "town_location": "Georgia,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Atlanta,Georgia,United States, town at Georgia,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "the-ageless-center",
+   "town": {
+    "med spa atlanta": 590,
+    "botox atlanta": 880,
+    "lip filler atlanta": 480,
+    "laser hair removal atlanta": 1000
+   },
+   "near_me": {
+    "med spa near me": 880,
+    "botox near me": 880,
+    "lip filler near me": 320,
+    "laser hair removal near me": 590
+   },
+   "near_me_location": "Atlanta,Georgia,United States",
+   "town_location": "Georgia,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Atlanta,Georgia,United States, town at Georgia,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  }
+ ]
 }

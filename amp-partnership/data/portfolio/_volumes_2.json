@@ -1,45 +1,176 @@
 {
-  "source": "DataForSEO kw_data_google_ads_search_volume (Google Ads), language en",
-  "date": "2026-11-20",
-  "status": "PARTIAL: town (state-level) volumes collected; all near-me (city-level) calls failed with HTTP 402 Payment Required (DataForSEO account out of credits). near_me values are null = NOT COLLECTED, not zero volume. Re-run near-me once credits are topped up.",
-  "locations": [
-    {"slug": "ever-body-colleyville", "town": {"med spa colleyville": 260, "botox colleyville": null, "lip filler colleyville": null, "laser hair removal colleyville": 70},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Colleyville,Texas,United States",
-     "notes": "Town @ Texas,United States. 'med spa colleyville' 12-mo avg 260 is inflated by a one-month Oct-2026 spike of 2400 (other months 30-90); 'laser hair removal colleyville' also spiked Oct (390 vs 20-50). Botox/lip filler: no volume returned. Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "ever-body-gaithersburg", "town": {"med spa gaithersburg": null, "botox gaithersburg": 40, "lip filler gaithersburg": null, "laser hair removal gaithersburg": 40},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Gaithersburg,Maryland,United States",
-     "notes": "Town @ Maryland,United States. Med spa/lip filler: no volume returned. Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "ever-body-logan-circle", "town": {"med spa washington": 20, "botox washington": 40, "lip filler washington": null, "laser hair removal washington": 90,
-       "med spa washington dc": 70, "botox washington dc": 260, "lip filler washington dc": 10, "laser hair removal washington dc": 260,
-       "med spa logan circle": null, "botox logan circle": null},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Washington,District of Columbia,United States",
-     "notes": "Town @ District of Columbia,United States. Added 'washington dc' variants (how DC is actually searched; much higher) and 'logan circle' neighborhood (no volume). Use either the 'washington' or the 'washington dc' set, not both summed, to avoid double counting. Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "glo-med-spa-wilmington", "town": {"med spa wilmington": null, "botox wilmington": 390, "lip filler wilmington": 10, "laser hair removal wilmington": 320},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Wilmington,North Carolina,United States",
-     "notes": "Town @ North Carolina,United States. 'med spa wilmington': no volume returned. Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "glo-med-spa-winterville", "town": {"med spa winterville": null, "botox winterville": null, "lip filler winterville": null, "laser hair removal winterville": null},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Winterville,North Carolina,United States (validity not checked; nearest likely Greenville,North Carolina)",
-     "notes": "Town @ North Carolina,United States: none of the 4 Winterville keywords returned volume. Near-me: NOT COLLECTED (HTTP 402); Winterville not yet validated as a Google Ads location."},
-    {"slug": "h-md-medical-spa-gaillardia-oklahoma-city", "town": {"med spa oklahoma city": 590, "botox oklahoma city": 480, "lip filler oklahoma city": null, "laser hair removal oklahoma city": 480},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Oklahoma City,Oklahoma,United States",
-     "notes": "Town @ Oklahoma,United States. Shares OKC data with h-md-medical-spa-okc-chisholm-creek (split, don't double count). Lip filler: no volume returned. Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "h-md-medical-spa-okc-chisholm-creek", "town": {"med spa oklahoma city": 590, "botox oklahoma city": 480, "lip filler oklahoma city": null, "laser hair removal oklahoma city": 480},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Oklahoma City,Oklahoma,United States",
-     "notes": "Town @ Oklahoma,United States. Same OKC data as h-md-medical-spa-gaillardia-oklahoma-city (shared market). Near-me: NOT COLLECTED (HTTP 402)."},
-    {"slug": "h-md-medical-spa-tulsa", "town": {"med spa tulsa": 480, "botox tulsa": 480, "lip filler tulsa": 260, "laser hair removal tulsa": 390},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Tulsa,Oklahoma,United States",
-     "notes": "Town @ Oklahoma,United States. Near-me: NOT COLLECTED (HTTP 402, retried once)."},
-    {"slug": "main-line-center-for-laser-surgery-ardmore", "town": {"med spa ardmore": null, "botox ardmore": 20, "lip filler ardmore": null, "laser hair removal ardmore": 10},
-     "near_me": {"med spa near me": null, "botox near me": null, "lip filler near me": null, "laser hair removal near me": null},
-     "near_me_location": "Ardmore,Pennsylvania,United States",
-     "notes": "Town @ Pennsylvania,United States. 'botox ardmore' avg 20 includes an Aug-2026 spike of 110. Med spa/lip filler: no volume returned. Near-me: NOT COLLECTED (HTTP 402)."}
-  ]
+ "source": "DataForSEO kw_data_google_ads_search_volume (Google Ads), language en",
+ "date": "2026-11-20",
+ "status": "complete (402 gaps refilled 2026-11-20)",
+ "locations": [
+  {
+   "slug": "ever-body-colleyville",
+   "town": {
+    "med spa colleyville": 260,
+    "botox colleyville": null,
+    "lip filler colleyville": null,
+    "laser hair removal colleyville": 70
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 20,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Colleyville,Texas,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Colleyville,Texas,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "ever-body-gaithersburg",
+   "town": {
+    "med spa gaithersburg": null,
+    "botox gaithersburg": 40,
+    "lip filler gaithersburg": null,
+    "laser hair removal gaithersburg": 40
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 50,
+    "lip filler near me": 30,
+    "laser hair removal near me": 50
+   },
+   "near_me_location": "Gaithersburg,Maryland,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Gaithersburg,Maryland,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "ever-body-logan-circle",
+   "town": {
+    "med spa washington": 20,
+    "botox washington": 40,
+    "lip filler washington": null,
+    "laser hair removal washington": 90,
+    "med spa washington dc": 70,
+    "botox washington dc": 260,
+    "lip filler washington dc": 10,
+    "laser hair removal washington dc": 260,
+    "med spa logan circle": null,
+    "botox logan circle": null
+   },
+   "near_me": {
+    "med spa near me": 260,
+    "botox near me": 480,
+    "lip filler near me": 210,
+    "laser hair removal near me": 480
+   },
+   "near_me_location": "Washington,District of Columbia,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Washington,District of Columbia,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "glo-med-spa-wilmington",
+   "town": {
+    "med spa wilmington": null,
+    "botox wilmington": 390,
+    "lip filler wilmington": 10,
+    "laser hair removal wilmington": 320
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 110,
+    "lip filler near me": 70,
+    "laser hair removal near me": 50
+   },
+   "near_me_location": "Wilmington,North Carolina,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Wilmington,North Carolina,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "glo-med-spa-winterville",
+   "town": {
+    "med spa winterville": null,
+    "botox winterville": null,
+    "lip filler winterville": null,
+    "laser hair removal winterville": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Winterville,North Carolina,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Winterville,North Carolina,United States, town at North Carolina,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "town_location": "North Carolina,United States",
+   "status": "complete"
+  },
+  {
+   "slug": "h-md-medical-spa-gaillardia-oklahoma-city",
+   "town": {
+    "med spa oklahoma city": 590,
+    "botox oklahoma city": 480,
+    "lip filler oklahoma city": null,
+    "laser hair removal oklahoma city": 480
+   },
+   "near_me": {
+    "med spa near me": 210,
+    "botox near me": 590,
+    "lip filler near me": 140,
+    "laser hair removal near me": 170
+   },
+   "near_me_location": "Oklahoma City,Oklahoma,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Oklahoma City,Oklahoma,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "h-md-medical-spa-okc-chisholm-creek",
+   "town": {
+    "med spa oklahoma city": 590,
+    "botox oklahoma city": 480,
+    "lip filler oklahoma city": null,
+    "laser hair removal oklahoma city": 480
+   },
+   "near_me": {
+    "med spa near me": 210,
+    "botox near me": 590,
+    "lip filler near me": 140,
+    "laser hair removal near me": 170
+   },
+   "near_me_location": "Oklahoma City,Oklahoma,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Oklahoma City,Oklahoma,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "h-md-medical-spa-tulsa",
+   "town": {
+    "med spa tulsa": 480,
+    "botox tulsa": 480,
+    "lip filler tulsa": 260,
+    "laser hair removal tulsa": 390
+   },
+   "near_me": {
+    "med spa near me": 140,
+    "botox near me": 140,
+    "lip filler near me": 70,
+    "laser hair removal near me": 70
+   },
+   "near_me_location": "Tulsa,Oklahoma,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Tulsa,Oklahoma,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  },
+  {
+   "slug": "main-line-center-for-laser-surgery-ardmore",
+   "town": {
+    "med spa ardmore": null,
+    "botox ardmore": 20,
+    "lip filler ardmore": null,
+    "laser hair removal ardmore": 10
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Ardmore,Pennsylvania,United States",
+   "notes": "Refilled 2026-11-20 after the DataForSEO balance was topped up (earlier calls returned HTTP 402): near-me at Ardmore,Pennsylvania,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026); null = no volume returned. Earlier collected values unchanged.",
+   "status": "complete"
+  }
+ ]
 }
