@@ -1,0 +1,15 @@
+{
+  "account": {"name": "Advanced MedAesthetic Partners", "short": "AMP", "source": "weramp.com/practices (Nov 20, 2026)"},
+  "title": "AMP Portfolio AI Report",
+  "prepared_for": "Mari Sallee and Ashton Graves, AMP",
+  "date": "November 20, 2026",
+  "locations_file": "amp-partnership/data/amp-locations-2026-11-20.json",
+  "raw_dir": "amp-partnership/data/portfolio",
+  "out": "amp-partnership/portfolio/index.html",
+  "vol_source": "DataForSEO, Google Ads search volume, town searches at state level and 'near me' at city level, November 20, 2026",
+  "audits": {
+    "esthetixmd": "/ai-audit/?b=esthetixmd-bend#score",
+    "hello-smooth-med-spa": "/ai-audit/?b=hello-smooth#score",
+    "illume-med-spa": "/ai-audit/?b=illume-med-spa#score"
+  }
+}

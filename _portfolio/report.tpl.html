@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light dark">
+<title>{{TITLE}}</title>
+<style>
+@font-face{font-family:'Hanken Grotesk';src:url(/home/assets/fonts/hanken.woff2) format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:'Bricolage Grotesque';src:url(/home/assets/fonts/bricolage.woff2) format('woff2');font-weight:200 800;font-display:swap}
+:root{--bg:#F3F5F9;--card:#fff;--paper:#fff;--ink:#0B1A2E;--ink2:#2B3A50;--mute:#6E7887;--line:#E2E5EB;--soft:#F5F7FA;--blue:#1F4FE0;--blue-t:#E7EDFC;--coral:#FF5A3C;--coral-t:#FFE9E3;--good:#0E8A5F;--good-t:#E3F3EC;--warn:#B5822A;--warn-t:#F8EFDC;--bad:#D7261B;--bad-t:#FDECEA;
+--display:'Bricolage Grotesque',system-ui,sans-serif;--body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060B14;--card:#0E1726;--paper:#0E1726;--ink:#EEF2F8;--ink2:#C7D0DD;--mute:#8D99AB;--line:#1F2B3D;--soft:#131E30;--blue:#6E93FF;--blue-t:#16244A;--coral:#FF7A5F;--coral-t:#3A1A14;--good:#3CC48D;--good-t:#0F2E22;--warn:#E0AE52;--warn-t:#33270F;--bad:#FF6B5E;--bad-t:#3A1513}}
+:root[data-theme="dark"]{--bg:#060B14;--card:#0E1726;--paper:#0E1726;--ink:#EEF2F8;--ink2:#C7D0DD;--mute:#8D99AB;--line:#1F2B3D;--soft:#131E30;--blue:#6E93FF;--blue-t:#16244A;--coral:#FF7A5F;--coral-t:#3A1A14;--good:#3CC48D;--good-t:#0F2E22;--warn:#E0AE52;--warn-t:#33270F;--bad:#FF6B5E;--bad-t:#3A1513}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased}
+h1,h2,h3{margin:0;font-weight:500;text-wrap:balance}p{margin:0;text-wrap:pretty}a{color:var(--blue)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+.num{font-family:var(--display);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.eyebrow{font-family:var(--display);font-weight:600;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.small{font-size:13px;color:var(--mute)}
+.lab{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px}
+.pill{display:inline-flex;align-items:center;font-size:12px;font-weight:700;padding:3px 10px;border-radius:99px}
+.p-good{background:var(--good-t);color:var(--good)}.p-warn{background:var(--warn-t);color:var(--warn)}.p-bad{background:var(--bad-t);color:var(--bad)}.p-blue{background:var(--blue-t);color:var(--blue)}
+/* nav */
+nav.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.top a{flex:none;text-decoration:none;color:var(--ink2);font-size:13.5px;font-weight:600;padding:6px 12px;border-radius:99px}
+nav.top a.on{background:var(--ink);color:var(--paper)}
+nav.top .brand{font-family:var(--display);font-weight:700;color:var(--ink);margin-right:8px}
+/* hero */
+header.hero{background:radial-gradient(120% 120% at 90% 0%,#2a4fd6 0%,#0d1d47 45%,#060b18 100%);color:#fff;padding:64px 0 56px;position:relative;overflow:hidden}
+header.hero .eyebrow{color:#ff8a70}
+header.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,6vw,72px);line-height:1;letter-spacing:-.03em;max-width:900px}
+header.hero .lede{font-size:clamp(17px,2vw,21px);color:rgba(255,255,255,.82);max-width:760px;margin-top:18px}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:34px}
+.kpi{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:16px 18px}
+.kpi .num{font-size:40px;line-height:1}.kpi p{font-size:13.5px;color:rgba(255,255,255,.75);margin-top:6px}
+.orb{position:absolute;right:-160px;top:-160px;width:620px;height:620px;border-radius:50%;border:1px solid rgba(255,255,255,.12)}
+.orb::after{content:"";position:absolute;inset:110px;border-radius:50%;border:1px solid rgba(255,138,112,.3)}
+/* sections */
+section.sec{padding:64px 0 8px;scroll-margin-top:60px}
+.sec h2{font-family:var(--display);font-weight:600;font-size:clamp(28px,3.6vw,42px);line-height:1.08;letter-spacing:-.02em;max-width:900px}
+.sec h2 .g{color:var(--mute)}
+.sec .sub{color:var(--ink2);font-size:17px;max-width:780px;margin-top:10px}
+.grid{display:grid;gap:14px}.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+/* spotlights */
+.spots{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.spot{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden}
+.spot::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--coral)}
+.spot.champion::before{background:var(--good)}
+.spot .tag{font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral)}
+.spot.champion .tag{color:var(--good)}
+.spot .loc{font-family:var(--display);font-size:19px;font-weight:600}
+.spot .big{font-family:var(--display);font-weight:700;font-size:28px;letter-spacing:-.02em;line-height:1.1}
+.spot p{font-size:14.5px;color:var(--ink2)}
+.spot a.go{font-size:13px;font-weight:700;text-decoration:none;margin-top:auto}
+/* quadrant */
+.quad{position:relative}
+.quad svg{width:100%;height:auto;display:block}
+.quad .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--paper);font-size:13px;padding:8px 10px;border-radius:10px;max-width:260px;opacity:0;transition:opacity .12s;z-index:5}
+.qlab{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;fill:var(--mute)}
+/* tables */
+.tw{overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:var(--card);margin-top:18px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);font-weight:700;white-space:nowrap;cursor:pointer;user-select:none;position:sticky;top:0;background:var(--card)}
+th.r,td.r{text-align:right}
+td{padding:10px 12px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;vertical-align:middle}
+tr.loc{cursor:pointer}tr.loc:hover td{background:var(--soft)}
+tr.det td{background:var(--soft);padding:18px}
+.bar{height:8px;border-radius:4px;background:var(--line);position:relative;min-width:80px}
+.bar i{position:absolute;inset:0 auto 0 0;border-radius:4px;background:var(--blue)}
+.dots{display:inline-flex;gap:3px}.dots i{width:10px;height:10px;border-radius:3px;background:var(--bad-t)}.dots i.y{background:var(--good)}.dots i.n{background:repeating-linear-gradient(45deg,var(--soft) 0 3px,var(--line) 3px 6px)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.filters select,.filters input{font:inherit;font-size:14px;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.det-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:18px}
+.det-grid h4{margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute)}
+.eg{display:grid;grid-template-columns:1fr repeat(4,22px) 54px;gap:4px;align-items:center;font-size:12.5px}
+.eg i{height:16px;border-radius:4px;background:var(--bad-t)}.eg i.y{background:var(--good)}.eg i.n{background:var(--line)}
+.eg .h{font-size:10px;color:var(--mute);text-align:center;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{font-size:12.5px;padding:3px 9px;border-radius:99px;background:var(--card);border:1px solid var(--line)}
+/* hbar charts */
+.hb{display:grid;gap:8px;margin-top:16px}
+.hb .r{display:grid;grid-template-columns:220px 1fr 90px;gap:12px;align-items:center;font-size:14px}
+.hb .r .nm{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hb .r .tr{height:20px;background:var(--soft);border-radius:6px;position:relative;overflow:hidden}
+.hb .r .tr i{position:absolute;inset:0 auto 0 0;background:var(--blue);border-radius:6px}
+.hb .r .v{text-align:right;font-family:var(--display);font-weight:700}
+/* hygiene */
+.hyg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:22px}
+.hyg .card .num{font-size:44px;color:var(--bad);line-height:1}
+.hyg .card.ok .num{color:var(--good)}
+/* recs */
+.recs{display:grid;gap:14px;margin-top:22px;counter-reset:r}
+.rec{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px 24px;display:grid;grid-template-columns:56px 1fr 220px;gap:18px;align-items:start}
+.rec::before{counter-increment:r;content:counter(r,decimal-leading-zero);font-family:var(--display);font-weight:800;font-size:34px;color:var(--blue);line-height:1}
+.rec h3{font-family:var(--display);font-size:21px;font-weight:600}
+.rec p{color:var(--ink2);margin-top:6px;font-size:15px}
+.rec .ex{margin-top:10px;font-size:14px;background:var(--soft);border-radius:12px;padding:10px 12px}
+.rec .ex b{color:var(--ink)}
+.rec .imp{border-left:1px solid var(--line);padding-left:16px}
+.rec .imp .num{font-size:26px;display:block}
+/* worth (house section) */
+.worth h2{font-family:var(--display);font-weight:600;font-size:clamp(28px,3.6vw,42px);letter-spacing:-.02em}
+.worth .sub{color:var(--ink2);font-size:17px;margin-top:10px}
+.worth{--mute:var(--mute);--good:var(--good)}
+table.demand{font-size:13.5px}
+/*{{WORTH_CSS}}*/
+footer{padding:60px 0 80px;color:var(--mute);font-size:13px}
+button.th{position:fixed;right:14px;bottom:14px;z-index:30;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;height:36px;padding:0 13px;cursor:pointer;font:inherit}
+@media (max-width:900px){.spots,.g3,.g4,.hyg{grid-template-columns:1fr 1fr}.det-grid{grid-template-columns:1fr}.rec{grid-template-columns:44px 1fr}.rec .imp{grid-column:2;border-left:0;padding-left:0}}
+@media (max-width:600px){.spots,.g2,.g3,.g4,.hyg,.kpis{grid-template-columns:1fr}.kpis{grid-template-columns:1fr 1fr}.hb .r{grid-template-columns:110px 1fr 64px;font-size:12.5px}.rec{grid-template-columns:1fr}.rec::before{font-size:26px}.rec .imp{grid-column:1}}
+@media print{nav.top,button.th{display:none}section.sec{break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<nav class="top"><div class="wrap" id="nav"></div></nav>
+<header class="hero"><div class="orb" aria-hidden="true"></div><div class="wrap" id="hero"></div></header>
+<main class="wrap" id="main"></main>
+<div class="wrap"><!--{{WORTH}}--></div>
+<div class="wrap" id="tail"></div>
+<footer><div class="wrap" id="foot"></div></footer>
+<button class="th" id="theme" aria-label="Switch light or dark">◐</button>
+<script>
+var D=/*{{DATA}}*/null;
+(function(){
+if(!D)return;
+var K=D.kpi,A=D.account,SHORT=A.short||A.name;
+function $(s,r){return (r||document).querySelector(s)}
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function fmt(n){return n==null?'–':Math.round(n).toLocaleString('en-US')}
+function money(n){return '$'+fmt(n)}
+function pctTxt(a,b){return b?Math.round(100*a/b)+'%':'–'}
+var EN=[['chat_gpt','GPT'],['gemini','Ge'],['claude','C'],['perplexity','P']],ENL={chat_gpt:'ChatGPT',gemini:'Gemini',claude:'Claude',perplexity:'Perplexity'};
+function scoreClass(s){return s>=67?'p-good':s>=40?'p-warn':'p-bad'}
+var L=D.locations.slice().sort(function(a,b){return (b.score||0)-(a.score||0)});
+var med=K.median_score;
+
+/* hero */
+$('#hero').innerHTML='<p class="eyebrow">Portfolio AI visibility report · '+esc(D.date||'')+'</p>'+
+ '<h1>'+esc(A.name)+':<br>how AI sees all '+K.locations+' locations</h1>'+
+ '<p class="lede">We asked ChatGPT, Gemini, Claude and Perplexity the questions patients ask, from every location\'s own market, and checked Google for the same searches. '+(D.prepared_for?'Prepared for '+esc(D.prepared_for)+'.':'')+'</p>'+
+ '<div class="kpis">'+
+ kpi(K.avg_score,'average AI score out of 100')+kpi(K.ai_rate+'%','of AI answers name the practice')+
+ kpi(K.invisible,'locations no AI tool named at all')+kpi(money(K.worth),'a month in local searches at stake')+
+ kpi(K.locations,'locations · '+K.brands+' brands · '+K.states+' states')+kpi(K.map_rate+'%','of Google searches show it in the map pack')+
+ kpi(fmt(K.reviews),'Google reviews · '+K.rating+'★ average')+kpi(K.phone_mm+' / '+K.phone_checked,'locations where Google and the parent site disagree on the phone')+
+ '</div>';
+function kpi(v,t){return '<div class="kpi"><span class="num">'+v+'</span><p>'+esc(t)+'</p></div>'}
+
+var S=[];function sec(id,nav,html){S.push([id,nav]);return '<section class="sec" id="'+id+'">'+html+'</section>'}
+var M='';
+
+/* 1 spotlights */
+M+=sec('examples','Real examples','<p class="eyebrow">Real examples from your portfolio</p><h2>What we found, <span class="g">location by location.</span></h2>'+
+ '<p class="sub">Each card is a specific practice and a specific finding from this scan. The rest of the report shows how often each pattern repeats across the portfolio.</p>'+
+ '<div class="spots">'+D.spotlights.map(function(s){return '<div class="spot '+(s.k==='champion'?'champion':'')+'"><span class="tag">'+esc(s.tag)+'</span><span class="loc">'+esc(s.loc)+'</span><span class="big">'+esc(s.big)+'</span><p>'+esc(s.text)+'</p>'+(s.slug?'<a class="go" href="#loc-'+esc(s.slug)+'" data-open="'+esc(s.slug)+'">See this location →</a>':'')+'</div>'}).join('')+'</div>');
+
+/* 2 quadrant */
+M+=sec('map','Where you stand','<p class="eyebrow">Where every location stands</p><h2>Google visibility and AI visibility <span class="g">are not the same thing.</span></h2>'+
+ '<p class="sub">Each dot is a location. Across: how often Google shows it in the map pack for our three searches. Up: how often the four AI tools named it. Dot size: Google reviews. Hover or tap a dot.</p>'+
+ '<div class="card quad" style="margin-top:20px"><svg id="qsvg" viewBox="0 0 900 520" role="img" aria-label="Scatter of locations by Google map presence and AI mentions"></svg><div class="tip" id="qtip"></div></div>');
+
+/* 3 brands */
+M+=sec('brands','Brands','<p class="eyebrow">Brand league table</p><h2>How each brand performs <span class="g">across its locations.</span></h2>'+
+ '<div class="tw"><table id="btab"><thead><tr><th>Brand</th><th class="r">Locations</th><th>AI score</th><th class="r">AI names it</th><th class="r">Map pack</th><th class="r">Rating</th><th class="r">Reviews</th><th class="r">Phone mismatches</th><th class="r">Searches worth / mo</th></tr></thead><tbody></tbody></table></div>');
+
+/* 4 locations */
+M+=sec('locations','Every location','<p class="eyebrow">Every location</p><h2>All '+K.locations+' locations, <span class="g">ranked. Tap a row for the detail.</span></h2>'+
+ '<div class="filters"><input id="fq" placeholder="Search location or city" aria-label="Search"><select id="fb" aria-label="Brand"><option value="">All brands</option></select><select id="fs" aria-label="State"><option value="">All states</option></select></div>'+
+ '<div class="tw"><table id="ltab"><thead><tr><th data-k="rank">#</th><th data-k="name">Location</th><th data-k="score">AI score</th><th>AI tools</th><th class="r" data-k="map_hits">Map pack</th><th class="r" data-k="rating">Rating</th><th class="r" data-k="reviews">Reviews</th><th>Phone</th><th data-k="rival">Named instead</th></tr></thead><tbody></tbody></table></div>');
+
+/* 5 rivals */
+M+=sec('rivals','Who wins instead','<p class="eyebrow">Who AI recommends instead</p><h2>The competitors <span class="g">AI names when it doesn\'t name you.</span></h2>'+
+ '<p class="sub">Counted across every AI answer and Google map pack in each location\'s market. These are the businesses taking the recommendation, market by market.</p><div class="hb" id="rivlist"></div>');
+
+/* 6 hygiene */
+var shared={};D.locations.forEach(function(l){var p=(l.src_phone||'').replace(/\D/g,'');if(p)(shared[p]=shared[p]||[]).push(l)});
+var sharedList=Object.keys(shared).filter(function(k){return shared[k].length>1}).map(function(k){return shared[k]});
+var sharedN=sharedList.reduce(function(a,v){return a+v.length},0);
+M+=sec('identity','Identity','<p class="eyebrow">Identity and data consistency</p><h2>AI trusts details that match everywhere. <span class="g">Here is where they don\'t.</span></h2>'+
+ '<p class="sub">Some phone differences are call-tracking numbers. They still split the identity AI sees unless the main number is the same everywhere and tracking numbers are set up as secondary numbers.</p>'+'<div class="hyg">'+hy(K.phone_mm,'locations where Google\'s phone differs from '+SHORT+'\'s own site')+hy(sharedN,'locations share a phone number with another location on '+SHORT+'\'s site')+
+ hy(K.pin_off,'location pins on '+SHORT+'\'s map are 2 km or more from Google\'s')+hy(K.site_mm,'Google listings link to a different website than '+SHORT+' lists')+
+ hy(K.no_desc,'Google listings have no business description')+hy(K.unclaimed,'Google listings are not claimed')+'</div>'+
+ '<div class="tw"><table><thead><tr><th>Location</th><th>Phone on Google</th><th>Phone on '+esc(SHORT)+' site</th><th class="r">Map pin gap</th></tr></thead><tbody>'+
+ D.locations.filter(function(l){return l.phone_ok===false||(l.pin_km||0)>=2}).map(function(l){return '<tr><td>'+esc(l.name)+'</td><td>'+esc(l.g_phone||'–')+'</td><td'+(l.phone_ok===false?' style="color:var(--bad);font-weight:700"':'')+'>'+esc(l.src_phone)+'</td><td class="r">'+(l.pin_km!=null?l.pin_km.toFixed(1)+' km':'–')+'</td></tr>'}).join('')+'</tbody></table></div>');
+function hy(n,t){return '<div class="card'+(n?'':' ok')+'"><span class="num">'+(n||0)+'</span><p>'+esc(t)+'</p></div>'}
+
+/* 7 services & trends */
+var T=D.trends||{},TT=(T.treatments||[]).slice();
+M+=sec('services','Services and demand','<p class="eyebrow">Services, prices and demand</p><h2>What patients search for, <span class="g">and what the portfolio puts in front of them.</span></h2>'+
+ '<div class="grid g2" style="margin-top:20px"><div class="card"><p class="lab">Treatments listed on Google, by number of locations</p><div class="hb" id="svc"></div><p class="small" style="margin-top:10px">From the services and prices on each Google listing. Price range shows the lowest and highest listed price.</p></div>'+
+ '<div class="card"><p class="lab">National search interest, relative to Botox</p><div class="hb" id="trend"></div><p class="small" style="margin-top:10px">Google Trends, last 12 months'+(T.notes&&T.notes.length?'. '+esc(T.notes[0]):'')+'.</p></div></div>'+
+ '<div class="card" style="margin-top:14px"><p class="lab">What reviewers talk about most (Google review topics, all locations)</p><div class="chips" style="margin-top:10px" id="topics"></div></div>');
+
+/* 8 web */
+M+=sec('web','Websites','<p class="eyebrow">Websites and content</p><h2>Each brand\'s website: <span class="g">reach, trend and broken links.</span></h2>'+
+ '<div class="tw"><table id="wtab"><thead><tr><th>Brand site</th><th class="r">Searches it ranks for</th><th class="r">In top 10</th><th>12-month traffic</th><th class="r">Sites linking in</th><th class="r">Broken inbound links</th><th class="r">YouTube videos</th></tr></thead><tbody></tbody></table></div>');
+
+$('#main').innerHTML=M;
+
+/* recommendations + method go after the worth section */
+$('#tail').innerHTML=sec('recs','Recommendations','<p class="eyebrow">Recommendations for '+esc(SHORT)+' leadership</p><h2>Where to act first, <span class="g">and why.</span></h2><div class="recs" id="reclist"></div>')+
+ sec('method','Method','<p class="eyebrow">How we measured</p><h2>Method and sources</h2><div class="card" style="margin-top:18px"><p style="color:var(--ink2)">For every location we ran three searches from its own market: "'+esc(L[0]?L[0].svc:'med spa')+' [city]", "botox [city]" and "best '+esc(L[0]?L[0].svc:'med spa')+' near me". Each was checked on live Google (map pack, organic top 10, AI Overview) and asked to ChatGPT, Gemini, Claude and Perplexity with web search on. The AI score is the share of those checks that named the location (unreadable AI Overviews are left out). Google listing data, prices and review topics come from Google Business Profile data. Website data: DataForSEO rankings, traffic estimates and backlink index. Trends: Google Trends via DataForSEO. Location list: '+esc(A.source||'')+'. All data collected '+esc(D.date||'')+' via DataForSEO.'+(K.missing.length?' Not scanned: '+K.missing.length+' locations.':'')+'</p></div>');
+var navs=S.concat([['worth','Worth']]);
+$('#nav').innerHTML='<span class="brand">'+esc(SHORT)+'</span>'+S.slice(0,8).map(function(s){return '<a href="#'+s[0]+'">'+esc(s[1])+'</a>'}).join('')+'<a href="#worth">Worth</a><a href="#recs">Recommendations</a>';
+
+/* quadrant */
+(function(){var W=900,H=520,p={l:60,r:20,t:20,b:50},sv=$('#qsvg'),tip=$('#qtip');
+ var maxR=Math.max.apply(null,L.map(function(l){return l.reviews||1}));
+ var h='';
+ h+='<rect x="'+p.l+'" y="'+p.t+'" width="'+(W-p.l-p.r)+'" height="'+(H-p.t-p.b)+'" fill="none" stroke="var(--line)"/>';
+ var mx=p.l+(W-p.l-p.r)/2,my=p.t+(H-p.t-p.b)/2;
+ h+='<line x1="'+mx+'" y1="'+p.t+'" x2="'+mx+'" y2="'+(H-p.b)+'" stroke="var(--line)" stroke-dasharray="4 4"/><line x1="'+p.l+'" y1="'+my+'" x2="'+(W-p.r)+'" y2="'+my+'" stroke="var(--line)" stroke-dasharray="4 4"/>';
+ h+='<text class="qlab" x="'+(W-p.r-10)+'" y="'+(p.t+20)+'" text-anchor="end">Leaders</text><text class="qlab" x="'+(p.l+10)+'" y="'+(p.t+20)+'">AI finds them, Google doesn\'t</text><text class="qlab" x="'+(W-p.r-10)+'" y="'+(H-p.b-10)+'" text-anchor="end">Google only: AI is skipping them</text><text class="qlab" x="'+(p.l+10)+'" y="'+(H-p.b-10)+'">Invisible</text>';
+ h+='<text x="'+((W)/2)+'" y="'+(H-12)+'" text-anchor="middle" font-size="13" fill="var(--mute)">Google map pack, share of 3 searches →</text><text transform="translate(18,'+(H/2)+') rotate(-90)" text-anchor="middle" font-size="13" fill="var(--mute)">AI tools naming it, share of answers →</text>';
+ L.forEach(function(l,i){var x=l.google_total?l.map_hits/l.google_total:0,y=l.llm_total?l.llm_named/l.llm_total:0;
+  var jx=((i*37)%11-5)*2.2,jy=((i*53)%11-5)*2.2;
+  var cx=p.l+x*(W-p.l-p.r)+jx,cy=H-p.b-y*(H-p.t-p.b)+jy,r=5+12*Math.sqrt((l.reviews||0)/maxR);
+  var col=l.score>=67?'var(--good)':l.score>=40?'var(--warn)':'var(--bad)';
+  h+='<circle cx="'+cx.toFixed(1)+'" cy="'+cy.toFixed(1)+'" r="'+r.toFixed(1)+'" fill="'+col+'" fill-opacity=".72" stroke="var(--card)" data-i="'+i+'" style="cursor:pointer"/>'});
+ sv.innerHTML=h;
+ function show(e){var c=e.target.closest('circle[data-i]');if(!c){tip.style.opacity=0;return}var l=L[+c.dataset.i],b=sv.getBoundingClientRect(),q=sv.parentNode.getBoundingClientRect();
+  tip.innerHTML='<b>'+esc(l.name)+'</b><br>AI score '+l.score+' · AI named it '+l.llm_named+'/'+l.llm_total+' · map pack '+l.map_hits+'/'+l.google_total+'<br>'+fmt(l.reviews)+' reviews'+(l.rivals[0]?'<br>Named instead: '+esc(l.rivals[0].name):'');
+  tip.style.left=Math.min(e.clientX-q.left+12,q.width-270)+'px';tip.style.top=(e.clientY-q.top+12)+'px';tip.style.opacity=1}
+ sv.addEventListener('mousemove',show);sv.addEventListener('click',function(e){var c=e.target.closest('circle[data-i]');if(c)openLoc(L[+c.dataset.i].slug)});sv.addEventListener('mouseleave',function(){tip.style.opacity=0});
+})();
+
+/* brands table */
+$('#btab tbody').innerHTML=D.brands.map(function(b){return '<tr><td><b>'+esc(b.brand)+'</b><div class="small">'+esc(b.states.join(', '))+'</div></td><td class="r">'+b.n+'</td><td><div style="display:flex;gap:8px;align-items:center"><span class="pill '+scoreClass(b.score)+'">'+b.score+'</span><div class="bar" style="flex:1"><i style="width:'+b.score+'%"></i></div></div></td><td class="r">'+(b.ai==null?'–':b.ai+'%')+'</td><td class="r">'+(b.map==null?'–':b.map+'%')+'</td><td class="r">'+(b.rating||'–')+'</td><td class="r">'+fmt(b.reviews)+'</td><td class="r"'+(b.phone_mm?' style="color:var(--bad);font-weight:700"':'')+'>'+b.phone_mm+'</td><td class="r">'+money(b.worth)+'</td></tr>'}).join('');
+
+/* locations table */
+var fb=$('#fb'),fs=$('#fs');
+D.brands.forEach(function(b){fb.insertAdjacentHTML('beforeend','<option>'+esc(b.brand)+'</option>')});
+D.states.forEach(function(s){fs.insertAdjacentHTML('beforeend','<option>'+esc(s.st)+'</option>')});
+var sortK='score',sortDir=-1;
+function engDots(l){return '<span class="dots">'+EN.map(function(e){var v=l.eng[e[0]];return '<i class="'+(!v[1]?'n':v[0]/v[1]>=.5?'y':'')+'" title="'+ENL[e[0]]+' '+v[0]+'/'+v[1]+'"></i>'}).join('')+'</span>'}
+function rowHTML(l,i){return '<tr class="loc" id="loc-'+esc(l.slug)+'" data-s="'+esc(l.slug)+'"><td class="small">'+(i+1)+'</td><td><b>'+esc(l.name)+'</b><div class="small">'+esc(l.city+', '+l.state)+'</div></td><td><div style="display:flex;gap:8px;align-items:center"><span class="pill '+scoreClass(l.score)+'">'+(l.score==null?'–':l.score)+'</span><div class="bar" style="flex:1"><i style="width:'+(l.score||0)+'%"></i></div></div></td><td>'+engDots(l)+' <span class="small">'+l.llm_named+'/'+l.llm_total+'</span></td><td class="r">'+l.map_hits+'/'+l.google_total+'</td><td class="r">'+(l.rating||'–')+'</td><td class="r">'+fmt(l.reviews)+'</td><td>'+(l.phone_ok===false?'<span class="pill p-bad">Differs</span>':l.phone_ok?'<span class="pill p-good">Match</span>':'<span class="small">–</span>')+'</td><td class="small">'+esc(l.rivals[0]?l.rivals[0].name:'')+'</td></tr>'}
+function detHTML(l){
+ var eg='<div class="eg"><span></span>'+EN.map(function(e){return '<span class="h">'+e[1]+'</span>'}).join('')+'<span class="h">Google</span>'+
+  l.searches.map(function(s){return '<span>'+esc(s.q||'')+'</span>'+EN.map(function(e){var v=s.e[e[0]];return '<i class="'+(v==null?'n':v?'y':'')+'"></i>'}).join('')+'<span class="small">'+(s.map?'Map #'+s.map:s.org?'#'+s.org:'Not top 10')+'</span>'}).join('')+'</div>';
+ var aud=D.audits[l.slug];
+ return '<tr class="det"><td colspan="9"><div class="det-grid"><div><h4>How AI and Google answered</h4>'+eg+(aud?'<p style="margin-top:10px"><a href="'+esc(aud)+'" target="_blank" rel="noopener">Open the full audit →</a></p>':'')+'</div>'+
+  '<div><h4>Named instead</h4><div class="chips">'+(l.rivals.length?l.rivals.map(function(r){return '<span class="chip">'+esc(r.name)+' · '+r.n+'</span>'}).join(''):'<span class="small">None</span>')+'</div>'+
+  '<h4 style="margin-top:14px">Google listing</h4><p class="small">'+esc(l.title||'Not found')+' · '+(l.photos||0)+' photos · '+(l.n_cats||0)+' categories'+(l.has_desc===false?' · no description':'')+'</p>'+
+  (l.phone_ok===false?'<p class="small" style="color:var(--bad)">Google: '+esc(l.g_phone)+' · Parent site: '+esc(l.src_phone)+'</p>':'')+'</div>'+
+  '<div><h4>Prices on Google</h4>'+(l.prices.length?'<div class="chips">'+l.prices.slice(0,6).map(function(p){return '<span class="chip">'+esc(p.t)+' · '+money(p.p)+'</span>'}).join('')+'</div>':'<p class="small">No prices listed</p>')+
+  '<h4 style="margin-top:14px">What reviewers mention</h4><div class="chips">'+(l.topics||[]).slice(0,6).map(function(t){return '<span class="chip">'+esc(t.t)+'</span>'}).join('')+'</div>'+
+  ((l.notes||[]).length?'<h4 style="margin-top:14px">From the scan</h4>'+l.notes.slice(0,3).map(function(n){return '<p class="small" style="margin-bottom:4px">'+esc(n)+'</p>'}).join(''):'')+
+  (l.vol?'<h4 style="margin-top:14px">Local searches</h4><p class="small">'+fmt(l.vol)+' a month · about '+money(l.worth)+' a month at stake</p>':'')+'</div></div></td></tr>'}
+var open=null;
+function renderL(){var q=($('#fq').value||'').toLowerCase(),b=fb.value,s=fs.value;
+ var rows=L.filter(function(l){return (!b||l.brand===b)&&(!s||l.state===s)&&(!q||(l.name+' '+l.city).toLowerCase().indexOf(q)>=0)});
+ rows.sort(function(a,c){var x=sortK==='rival'?(a.rivals[0]||{}).name||'':a[sortK],y=sortK==='rival'?(c.rivals[0]||{}).name||'':c[sortK];if(sortK==='name'||sortK==='rival')return sortDir*String(x).localeCompare(String(y));return sortDir*((x||0)-(y||0))});
+ $('#ltab tbody').innerHTML=rows.map(function(l,i){return rowHTML(l,i)+(open===l.slug?detHTML(l):'')}).join('')}
+$('#ltab tbody').addEventListener('click',function(e){var tr=e.target.closest('tr.loc');if(!tr)return;open=open===tr.dataset.s?null:tr.dataset.s;renderL()});
+$('#ltab thead').addEventListener('click',function(e){var th=e.target.closest('th[data-k]');if(!th)return;var k=th.dataset.k;if(k==='rank')k='score';sortDir=(sortK===k)?-sortDir:(k==='name'||k==='rival'?1:-1);sortK=k;renderL()});
+['#fq','#fb','#fs'].forEach(function(k){$(k).addEventListener('input',renderL)});
+function openLoc(slug){open=slug;$('#fq').value='';fb.value='';fs.value='';renderL();var el=document.getElementById('loc-'+slug);if(el)el.scrollIntoView({behavior:'smooth',block:'center'})}
+document.addEventListener('click',function(e){var a=e.target.closest('[data-open]');if(a){e.preventDefault();openLoc(a.dataset.open)}});
+renderL();
+
+/* rivals */
+var rmax=D.rivals.length?D.rivals[0].n:1;
+$('#rivlist').innerHTML=D.rivals.map(function(r){return '<div class="r"><span class="nm" title="'+esc(r.name)+'">'+esc(r.name)+'</span><span class="tr"><i style="width:'+(100*r.n/rmax)+'%;background:var(--coral)"></i></span><span class="v">'+r.n+' <span class="small">'+esc(r.where.slice(0,2).join(', '))+'</span></span></div>'}).join('')||'<p class="small">No competitor data.</p>';
+
+/* services */
+var smax=D.services.length?D.services[0].locations:1;
+$('#svc').innerHTML=D.services.map(function(s){return '<div class="r"><span class="nm">'+esc(s.s)+'</span><span class="tr"><i style="width:'+(100*s.locations/smax)+'%"></i></span><span class="v">'+s.locations+' <span class="small">'+money(s.min)+'–'+money(s.max)+'</span></span></div>'}).join('')||'<p class="small">No prices listed on Google.</p>';
+TT.sort(function(a,b){return (b.avg_interest_12m||0)-(a.avg_interest_12m||0)});
+var tmax=TT.length?(TT[0].avg_interest_12m||1):1;
+$('#trend').innerHTML=TT.map(function(t){var ch=t.change_pct;return '<div class="r"><span class="nm">'+esc(t.term)+'</span><span class="tr"><i style="width:'+(100*(t.avg_interest_12m||0)/tmax)+'%;background:var(--blue)"></i></span><span class="v">'+(t.avg_interest_12m==null?'–':Math.round(t.avg_interest_12m))+(ch!=null?' <span class="small" style="color:'+(ch>=0?'var(--good)':'var(--bad)')+'">'+(ch>=0?'+':'')+Math.round(ch)+'%</span>':'')+'</span></div>'}).join('')||'<p class="small">Trend data not available.</p>';
+$('#topics').innerHTML=(D.topics||[]).map(function(t){return '<span class="chip">'+esc(t[0])+' · '+t[1]+'</span>'}).join('');
+
+/* web */
+var yt={};((T.youtube)||[]).forEach(function(y){yt[y.brand]=y});
+function spark(h){if(!h||!h.length)return '<span class="small">–</span>';var v=h.map(function(x){return +x.etv||0}),mx=Math.max.apply(null,v)||1,w=90,hh=26;var pts=v.map(function(y,i){return (i*w/(v.length-1||1)).toFixed(1)+','+(hh-y/mx*hh).toFixed(1)}).join(' ');var up=v[v.length-1]>=v[0];return '<svg width="'+w+'" height="'+hh+'" viewBox="0 0 '+w+' '+hh+'"><polyline points="'+pts+'" fill="none" stroke="'+(up?'var(--good)':'var(--bad)')+'" stroke-width="2"/></svg> <span class="small">'+(v[0]?(up?'+':'')+Math.round(100*(v[v.length-1]-v[0])/v[0])+'%':'')+'</span>'}
+$('#wtab tbody').innerHTML=D.brands.map(function(b){var d=b.domain||{},y=yt[b.brand]||{};var hist=d.history||d.monthly||d.historical||null;return '<tr><td><b>'+esc(b.brand)+'</b><div class="small">'+esc(d.domain||'')+'</div></td><td class="r">'+fmt(d.keywords_total)+'</td><td class="r">'+fmt(d.top10)+'</td><td>'+spark(hist)+'</td><td class="r">'+fmt(d.referring_domains)+'</td><td class="r"'+((d.broken_backlinks||0)>100?' style="color:var(--bad);font-weight:700"':'')+'>'+fmt(d.broken_backlinks)+'</td><td class="r">'+(y.videos_about_brand_top20==null?'–':y.videos_about_brand_top20)+'</td></tr>'}).join('');
+
+/* recommendations, built from the data */
+var R=[];
+var bottom=L.filter(function(l){return l.score!=null}).slice(-5).reverse();
+var top=L.slice(0,3);
+var engRates=EN.map(function(e){var v=K.eng[e[0]];return [e[0],v[1]?v[0]/v[1]:0]}).sort(function(a,b){return a[1]-b[1]});
+var weakE=engRates[0];
+var close=L.filter(function(l){return l.score>=60&&l.rivals[0]&&l.rivals[0].n>=Math.max(4,0.7*l.llm_named)});
+R.push({h:'Fix identity data once, at the source',p:'AI cross-checks a practice\'s name, phone and address across Google, the parent site, directories and its own site. Conflicts make it hedge or skip the practice. Start with '+SHORT+'\'s own location list, then push one verified record per location everywhere.',
+ ex:K.phone_mm?'<b>'+K.phone_mm+' locations</b> show a different phone on Google than on '+SHORT+'\'s site'+(sharedList[0]?', and <b>'+sharedList[0][0].brand+'</b> lists '+esc(sharedList[0][0].src_phone)+' for '+sharedList[0].length+' locations':'')+'.':'',imp:[K.phone_mm+sharedN,'location records to correct']});
+R.push({h:'Lift the bottom of the portfolio first',p:'The fastest gains are where AI barely mentions a practice that patients already rate highly. Start with these, using the playbook from the top performers.',
+ ex:bottom.map(function(l){return '<b>'+esc(l.name)+'</b> scores '+l.score+(l.rivals[0]?' (AI names '+esc(l.rivals[0].name)+' instead)':'')}).join('; ')+'.',imp:[bottom.length,'locations in the first wave']});
+R.push({h:'Turn the leaders into the playbook',p:'Document what the top locations have in common (consistent details, review volume, local press, fresh pages) and roll it out brand by brand.',ex:top.map(function(l){return '<b>'+esc(l.name)+'</b> '+l.score}).join(' · '),imp:[top[0]?top[0].score:0,'top AI score in the portfolio']});
+if(close.length)R.push({h:'Defend leads that are closer than they look',p:'Some strong locations share AI answers with a rival named almost as often. Those leads can flip within months.',ex:close.slice(0,3).map(function(l){return '<b>'+esc(l.name)+'</b>: named '+l.llm_named+'×, '+esc(l.rivals[0].name)+' '+l.rivals[0].n+'×'}).join('; '),imp:[close.length,'leads at risk']});
+R.push({h:'Close the '+ENL[weakE[0]]+' gap',p:'Each AI tool reads different sources. '+ENL[weakE[0]]+' names '+SHORT+' locations least often, which usually means thin third-party coverage: news, guides and directories it trusts.',ex:'Portfolio-wide: '+EN.map(function(e){var v=K.eng[e[0]];return ENL[e[0]]+' '+pctTxt(v[0],v[1])}).join(' · '),imp:[Math.round(weakE[1]*100)+'%','of '+ENL[weakE[0]]+' answers name the practice']});
+var rising=TT.filter(function(t){return (t.change_pct||0)>0}).sort(function(a,b){return b.change_pct-a.change_pct});
+if(rising.length)R.push({h:'Lead with the treatments demand is moving to',p:'Search interest is rising fastest for these treatments. Make sure every location that offers them says so on Google and on its own page, with a price, so AI can recommend it for that exact question.',
+ ex:rising.slice(0,3).map(function(t){return '<b>'+esc(t.term)+'</b> '+(t.change_pct>=0?'+':'')+Math.round(t.change_pct)+'% year on year'}).join(' · '),imp:[rising.length,'treatments with rising demand']});
+var sp=D.services.filter(function(s){return s.max>=1.5*s.min})[0];
+if(sp)R.push({h:'Make pricing a portfolio decision',p:'AI tools quote listed prices directly to patients. Wide gaps for the same treatment across '+SHORT+' brands read as inconsistent and can undercut premium locations.',ex:'<b>'+esc(sp.s)+'</b> is listed from '+money(sp.min)+' to '+money(sp.max)+' across '+sp.locations+' locations.',imp:[money(sp.max-sp.min),'gap for the same treatment']});
+var noVid=((T.youtube)||[]).filter(function(y){return (y.videos_about_brand_top20||0)<=1}).map(function(y){return y.brand});
+if(noVid.length)R.push({h:'Give every brand a video presence',p:'YouTube is one of the sources AI reads and quotes. Short explainers per treatment, made once centrally and localized per brand, cover every location.',ex:'<b>'+noVid.length+' brands</b> have one video or none in YouTube\'s top 20 for their name: '+esc(noVid.slice(0,5).join(', '))+(noVid.length>5?'…':''),imp:[noVid.length,'brands with no video presence']});
+$('#reclist').innerHTML=R.map(function(r){return '<div class="rec"><div><h3>'+esc(r.h)+'</h3><p>'+esc(r.p)+'</p>'+(r.ex?'<div class="ex">'+r.ex+'</div>':'')+'</div><div class="imp"><span class="num">'+esc(r.imp[0])+'</span><span class="small">'+esc(r.imp[1])+'</span></div></div>'}).join('');
+
+$('#foot').innerHTML='Prepared by Local AI Registry for '+esc(A.name)+'. Data collected '+esc(D.date||'')+' via DataForSEO (Google results, Google Business Profile data, AI answers from ChatGPT, Gemini, Claude and Perplexity, Google Trends, rankings and backlinks). Revenue figures are estimates: searches × 2.3% conversion (Ruler Analytics) × '+money(D.price.value)+' '+esc(D.price.label)+' ('+esc(D.price.source)+').';
+
+/* nav highlight */
+var links=[].slice.call(document.querySelectorAll('nav.top a'));
+addEventListener('scroll',function(){var y=scrollY+120,cur=null;links.forEach(function(a){var t=document.querySelector(a.getAttribute('href'));if(t&&t.offsetTop<=y)cur=a});links.forEach(function(a){a.classList.toggle('on',a===cur)})},{passive:true});
+var r=document.documentElement;try{var t=localStorage.getItem('pf-theme');if(t)r.dataset.theme=t}catch(e){}
+$('#theme').onclick=function(){var d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);r.dataset.theme=d?'light':'dark';try{localStorage.setItem('pf-theme',r.dataset.theme)}catch(e){}};
+})();
+</script>
+</body>
+</html>
