@@ -20242,5 +20242,1221 @@
   "esthetixmd": "/ai-audit/?b=esthetixmd-bend#score",
   "hello-smooth-med-spa": "/ai-audit/?b=hello-smooth#score",
   "illume-med-spa": "/ai-audit/?b=illume-med-spa#score"
+ },
+ "sisters": {
+  "radius_km": 30,
+  "pairs": [
+   {
+    "a": "nouveau-day-spa",
+    "b": "synergy-medaesthetics-med-spa-kennewick",
+    "km": 5.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 7,
+     "ai_both": 5,
+     "map": 3,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 6,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-west-hartford",
+    "b": "ever-body-hartford",
+    "km": 3.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 1,
+     "ai_both": 1,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 6,
+     "ai_both": 3,
+     "map": 3,
+     "also": 1
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "ever-body-flatiron",
+    "km": 0.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 3,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "ever-body-flatiron",
+    "km": 4.2,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 2,
+     "ai_both": 1,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "skynbar",
+    "b": "the-ageless-center",
+    "km": 4.0,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 1,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-west-hartford",
+    "b": "blush-med-spa-avon",
+    "km": 10.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 1,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "22-plastics",
+    "b": "22-med-spa",
+    "km": 0.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-flatiron",
+    "b": "everbody-greenwich-village",
+    "km": 0.6,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "everbody-greenwich-village",
+    "km": 1.0,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "everbody-greenwich-village",
+    "b": "ever-body-williamsburg",
+    "km": 3.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-flatiron",
+    "b": "ever-body-williamsburg",
+    "km": 3.3,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "ever-body-williamsburg",
+    "km": 3.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "beautyfix-medspa-upper-east-side",
+    "km": 3.8,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "everbody-greenwich-village",
+    "km": 4.7,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "ever-body-williamsburg",
+    "km": 5.6,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "h-md-medical-spa-gaillardia-oklahoma-city",
+    "b": "h-md-medical-spa-okc-chisholm-creek",
+    "km": 6.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-el-dorado-hills",
+    "b": "destination-aesthetics-folsom",
+    "km": 7.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-east-longmeadow",
+    "b": "blush-med-spa-enfield",
+    "km": 9.2,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "pr-skin-clinic-kirkland",
+    "b": "pr-skin-clinic-south-lake-union",
+    "km": 10.7,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 11.3,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-glastonbury",
+    "b": "ever-body-south-windsor",
+    "km": 11.7,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-avon",
+    "b": "ever-body-hartford",
+    "km": 11.9,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-glastonbury",
+    "b": "ever-body-hartford",
+    "km": 12.1,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-west-hartford",
+    "b": "blush-med-spa-glastonbury",
+    "km": 13.2,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "avelure-creve-coeur",
+    "b": "avelure-sunset-hills",
+    "km": 13.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-orange",
+    "b": "ever-body-north-haven",
+    "km": 14.2,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 14.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "living-young-center-seminole",
+    "b": "living-young-center-st-petersburg",
+    "km": 14.6,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-flatiron",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 14.9,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "back-to-30-highway-14",
+    "b": "back-to-30-mcbee",
+    "km": 15.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "everbody-greenwich-village",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 15.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "back-to-30-highway-14",
+    "b": "back-to-30-simpsonville",
+    "km": 16.1,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-elk-grove",
+    "b": "destination-aesthetics-sacramento",
+    "km": 16.3,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-west-hartford",
+    "b": "ever-body-south-windsor",
+    "km": 16.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-williamsburg",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 16.9,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-hartford",
+    "b": "ever-body-south-windsor",
+    "km": 18.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-westchester",
+    "b": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "km": 18.2,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "living-young-center-odessa",
+    "b": "living-young-center-palm-harbor",
+    "km": 18.4,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "back-to-30-mcbee",
+    "b": "back-to-30-simpsonville",
+    "km": 19.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-folsom",
+    "b": "destination-aesthetics-roseville",
+    "km": 20.5,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "pr-skin-clinic-edmonds",
+    "b": "pr-skin-clinic-kirkland",
+    "km": 20.6,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "pr-skin-clinic-edmonds",
+    "b": "pr-skin-clinic-south-lake-union",
+    "km": 21.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-enfield",
+    "b": "ever-body-south-windsor",
+    "km": 21.1,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+    "b": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
+    "km": 21.2,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-avon",
+    "b": "blush-med-spa-glastonbury",
+    "km": 23.5,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "crate-medaesthetics-chattanooga",
+    "b": "crate-medaesthetics-ooltewah",
+    "km": 23.6,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "new-radiance-cosmetic-centers-palm-beach-gardens",
+    "b": "new-radiance-cosmetic-centers-wellington",
+    "km": 24.2,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "beautyfix-medspa-westchester",
+    "km": 25.1,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-avon",
+    "b": "ever-body-south-windsor",
+    "km": 25.7,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-westchester",
+    "b": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
+    "km": 26.0,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-flatiron",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 26.3,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "everbody-greenwich-village",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 26.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 26.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-folsom",
+    "b": "destination-aesthetics-sacramento",
+    "km": 26.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-gaithersburg",
+    "b": "ever-body-logan-circle",
+    "km": 27.1,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-roseville",
+    "b": "destination-aesthetics-sacramento",
+    "km": 27.3,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "living-young-center-palm-harbor",
+    "b": "living-young-center-seminole",
+    "km": 27.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "destination-aesthetics-el-dorado-hills",
+    "b": "destination-aesthetics-roseville",
+    "km": 28.3,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "blush-med-spa-east-longmeadow",
+    "b": "ever-body-south-windsor",
+    "km": 28.6,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-upper-east-side",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 28.7,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-flatiron",
+    "b": "beautyfix-medspa-westchester",
+    "km": 28.9,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "reflections-center-for-cosmetic-medicine-bridgewatermartinsville",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 29.0,
+    "same_brand": true,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "ever-body-williamsburg",
+    "b": "reflections-center-for-cosmetic-medicine-livingston",
+    "km": 29.1,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-westchester",
+    "b": "ever-body-flatiron",
+    "km": 29.4,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-west-hartford",
+    "b": "blush-med-spa-enfield",
+    "km": 29.5,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-westchester",
+    "b": "ever-body-williamsburg",
+    "km": 29.6,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   },
+   {
+    "a": "beautyfix-medspa-westchester",
+    "b": "everbody-greenwich-village",
+    "km": 29.8,
+    "same_brand": false,
+    "a_named_b": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    },
+    "b_named_a": {
+     "ai_instead": 0,
+     "ai_both": 0,
+     "map": 0,
+     "also": 0
+    }
+   }
+  ],
+  "near5": 11,
+  "near10": 19,
+  "near15": 33,
+  "cross10": 11,
+  "cross15": 17
  }
 }

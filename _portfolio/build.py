@@ -57,6 +57,67 @@ def money(n):
     return "$" + f"{round(n):,}"
 
 
+# ---------------------------------------------------------------- sister overlap
+def _km(a, b):
+    la1, lo1, la2, lo2 = map(math.radians, [a["lat"], a["lng"], b["lat"], b["lng"]])
+    return 6371 * 2 * math.asin(math.sqrt(math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2))
+
+
+def sister_overlap(L, raw_dir, radius=30):
+    """Where locations of the same account sit close together, and where AI or Google names one in the other's answers."""
+    import unicodedata
+    an = lambda x: norm(unicodedata.normalize("NFKD", x or "").encode("ascii", "ignore").decode())
+    geo = [l for l in L if l.get("lat") is not None and l.get("lng") is not None]
+    bkeys = {}
+    for l in geo:
+        ks = {an(l["brand"])} | {an(l.get("title") or "")[:max(len(an(l["brand"])), 6)]}
+        bkeys.setdefault(l["brand"], set()).update(k for k in ks if len(k) >= 4)
+    def brand_of(name):
+        n = an(name)
+        hit = [b for b, ks in bkeys.items() if any(k in n for k in ks)]
+        return max(hit, key=lambda b: max(len(k) for k in bkeys[b])) if hit else None
+    pairs = []
+    for i, a in enumerate(geo):
+        for b in geo[i + 1:]:
+            d = _km(a, b)
+            if d <= radius:
+                pairs.append({"a": a["slug"], "b": b["slug"], "km": round(d, 1), "same_brand": a["brand"] == b["brand"],
+                              "a_named_b": {"ai_instead": 0, "ai_both": 0, "map": 0, "also": 0},
+                              "b_named_a": {"ai_instead": 0, "ai_both": 0, "map": 0, "also": 0}})
+    by = {(p["a"], p["b"]): p for p in pairs}
+    S = {l["slug"]: l for l in geo}
+    for l in geo:
+        raw = load(os.path.join(raw_dir, l["slug"] + ".json")) or {}
+        near = {}
+        for p in pairs:
+            o = p["b"] if p["a"] == l["slug"] else p["a"] if p["b"] == l["slug"] else None
+            if o and not p["same_brand"]:
+                near.setdefault(S[o]["brand"], []).append((p, "a_named_b" if p["a"] == l["slug"] else "b_named_a"))
+        if not near:
+            continue
+        def credit(name, kind):
+            b = brand_of(name)
+            for p, side in near.get(b, [])[:1]:
+                p[side][kind] += 1
+        for q in raw.get("searches") or []:
+            for n in (q.get("google") or {}).get("map_pack") or []:
+                credit(n, "map")
+            for e, a in (q.get("llm") or {}).items():
+                a = a or {}
+                if a.get("named") is None:
+                    continue
+                seen = {brand_of(n) for n in a.get("others") or []} - {None, l["brand"]}
+                for b in seen:
+                    for p, side in near.get(b, [])[:1]:
+                        p[side]["ai_both" if a.get("named") in (1, True, "1") else "ai_instead"] += 1
+        for x in (raw.get("listing") or {}).get("also_search") or []:
+            credit(x.get("name") if isinstance(x, dict) else x, "also")
+    pairs.sort(key=lambda p: (-(sum(p["a_named_b"].values()) + sum(p["b_named_a"].values())), p["km"]))
+    within = lambda r, cross=False: sum(1 for a in geo if any(b is not a and (not cross or b["brand"] != a["brand"]) and _km(a, b) <= r for b in geo))
+    return {"radius_km": radius, "pairs": pairs, "near5": within(5), "near10": within(10), "near15": within(15),
+            "cross10": within(10, True), "cross15": within(15, True)}
+
+
 # ---------------------------------------------------------------- per location
 ENGINES = ["chat_gpt", "gemini", "claude", "perplexity"]
 ENGINE_LABEL = {"chat_gpt": "ChatGPT", "gemini": "Gemini", "claude": "Claude", "perplexity": "Perplexity"}
@@ -478,7 +539,7 @@ def main(cfg_path):
         "rivals": [{"name": n, "n": c, "where": sorted(set(riv_where[n]))[:6]} for n, c in riv.most_common(15)],
         "services": services, "topics": topics.most_common(12), "trends": trends,
         "spotlights": spotlights(L, acc.get("short") or acc.get("name")), "insights": ins, "products": pb_rows,
-        "audits": cfg.get("audits") or {},
+        "audits": cfg.get("audits") or {}, "sisters": sister_overlap(L, raw_dir),
     }
 
     # "What being AI's answer is worth" section via _template/worth.py (house rule)

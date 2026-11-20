@@ -52,3 +52,9 @@ AI ignores, a location that wins on Google Maps but not in AI, the top performer
 phones shared across locations, misplaced map pins, broken links on the group's site, price gaps for
 the same treatment, and locations where the AI tools disagree. Every card quotes the location, the
 numbers and the competitor named instead. Recommendations reuse the same examples.
+
+## Sister overlap (AMP vs AMP)
+`build.py` writes `sisters` into `data.json`: every pair of the account's locations within 30 km, and for each pair how often
+AI answers, Google map packs and "people also search for" in one location's searches named the other (`ai_instead` = named the
+sister and not the location itself). `deck_data.py` passes it to the deck as `PF.sispairs` / `PF.sis`, plus `PF.pts` for the
+opportunity scatter (reviews vs local median × head-to-head margin; search demand × AI share).

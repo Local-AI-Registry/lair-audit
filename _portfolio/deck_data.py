@@ -62,5 +62,13 @@ PF = {
     "waves": {"w1": [row(l) for l in q[:n] if l["h2h"] != "lead"], "w1worth": sum(l.get("worth", 0) for l in q[:n] if l["h2h"] != "lead"),
               "w2": [row(l) for l in w2], "w2worth": sum(l.get("worth", 0) for l in w2),
               "w3": [row(l) for l in sorted([l for l in L if l["h2h"] == "lead"], key=lambda x: x["margin"])][:4], "w3n": K["lead"]},
+    "pts": [[l["name"], l["brand"], l["city"], l["state"], l.get("review_x"), l["margin"], l["llm_named"], l["llm_total"], l.get("vol", 0), l.get("worth", 0), l["h2h"], l["reviews"], l["rival"], l["own_n"], l["rival_n"]] for l in L],
+    "quad": {"trusted_trailing": sum(1 for l in L if (l.get("review_x") or 0) > 1 and l["margin"] < 0),
+             "trusted_trailing_worth": sum(l.get("worth", 0) for l in L if (l.get("review_x") or 0) > 1 and l["margin"] < 0),
+             "trusted_leading": sum(1 for l in L if (l.get("review_x") or 0) > 1 and l["margin"] >= 0),
+             "with_rx": sum(1 for l in L if l.get("review_x")), "no_vol": sum(1 for l in L if not l.get("vol"))},
+    "sis": {k: v for k, v in (d.get("sisters") or {}).items() if k != "pairs"},
+    "sispairs": [[p["a"], p["b"], p["km"], p["same_brand"], p["a_named_b"], p["b_named_a"]] for p in (d.get("sisters") or {}).get("pairs", [])],
+    "slugs": {l["slug"]: [l["name"], l["brand"], l["city"], l["state"], l["h2h"], l["rival"], l["own_n"], l["rival_n"], l["llm_named"], l["llm_total"], l["reviews"]] for l in L},
 }
 print("var PF=" + json.dumps(PF, ensure_ascii=False) + ";")
