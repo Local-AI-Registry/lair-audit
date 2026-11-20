@@ -246,9 +246,10 @@ def spotlights(L, acc_short):
             s = service_of(p["t"])
             if s:
                 by_svc[s].append((p["p"], l["name"], p["t"]))
-    spreads = [(s, v) for s, v in by_svc.items() if len(v) >= 3 and max(x[0] for x in v) >= 1.5 * min(x[0] for x in v)]
+    COMPARABLE = ["HydraFacial", "Microneedling", "Chemical peel"]  # priced per session, not per unit or body area
+    spreads = [(s, by_svc[s]) for s in COMPARABLE if len(by_svc.get(s, [])) >= 3 and max(x[0] for x in by_svc[s]) >= 1.4 * min(x[0] for x in by_svc[s])]
     if spreads:
-        s, v = max(spreads, key=lambda x: len(x[1]))
+        s, v = spreads[0]
         lo, hi = min(v), max(v)
         out.append({"k": "price", "tag": "Same treatment, different price", "loc": s, "slug": None, "big": f"{money(lo[0])} to {money(hi[0])}",
                     "text": f"{s} is listed on Google from {money(lo[0])} at {lo[1]} to {money(hi[0])} at {hi[1]} ({len(v)} price listings across the portfolio). AI quotes these prices to patients."})
@@ -301,15 +302,24 @@ def main(cfg_path):
                                   "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report",
                                   "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"}
     worth_rows = []
+    # locations of the same account in the same city share that city's searches (no double counting)
+    share_near, share_town = Counter(), Counter()
     for l in L:
         v = vols.get(l["slug"]) or {}
-        town = sum(int(num(x) or 0) for x in (v.get("town") or {}).values())
-        near = sum(int(num(x) or 0) for x in (v.get("near_me") or {}).values())
+        share_near[(v.get("near_me_location") or f"{l['city']},{l['state']}").lower()] += 1
+        share_town[(l["city"].lower(), l["state"])] += 1
+    for l in L:
+        v = vols.get(l["slug"]) or {}
+        nk = (v.get("near_me_location") or f"{l['city']},{l['state']}").lower()
+        l["shared_with"] = max(share_near[nk], share_town[(l["city"].lower(), l["state"])]) - 1
+        town = sum(int(num(x) or 0) for x in (v.get("town") or {}).values()) / share_town[(l["city"].lower(), l["state"])]
+        near = sum(int(num(x) or 0) for x in (v.get("near_me") or {}).values()) / share_near[nk]
+        town, near = round(town), round(near)
         l["vol"] = town + near
         l["vol_town"], l["vol_near"] = town, near
         l["worth"] = round(l["vol"] * RATE * price["value"])
         if l["vol"]:
-            worth_rows.append([f"local {l['svc']}, Botox, lip filler and laser hair searches", l["vol"], l["name"]])
+            worth_rows.append([f"local {l['svc']}, Botox, lip filler and laser hair searches" + (f" (city split {l['shared_with'] + 1} ways)" if l["shared_with"] else ""), l["vol"], l["name"]])
 
     # brands
     brands = []
@@ -348,7 +358,7 @@ def main(cfg_path):
         seen = set()
         for p in l["prices"]:
             s = service_of(p["t"])
-            if s:
+            if s and not (s in ("Botox / neurotoxin", "Dermal filler") and p["p"] < 50):  # per-unit prices
                 price_by[s].append(p["p"])
                 if s not in seen:
                     cov[s] += 1; seen.add(s)
@@ -378,12 +388,45 @@ def main(cfg_path):
         "invisible": sum(1 for l in L if l["llm_total"] and l["llm_named"] == 0),
         "eng": eng_tot,
     }
+    # owner-level cuts of the data
+    def pearson(xs, ys):
+        pts = [(x, y) for x, y in zip(xs, ys) if x is not None and y is not None]
+        if len(pts) < 5:
+            return None
+        mx = sum(p[0] for p in pts) / len(pts); my = sum(p[1] for p in pts) / len(pts)
+        sx = math.sqrt(sum((p[0] - mx) ** 2 for p in pts)); sy = math.sqrt(sum((p[1] - my) ** 2 for p in pts))
+        return sum((p[0] - mx) * (p[1] - my) for p in pts) / (sx * sy) if sx and sy else None
+    ins = []
+    big = [b for b in brands if b["n"] >= 5]; small = [b for b in brands if b["n"] == 1]
+    if big and small:
+        bl = [l for l in L if l["brand"] in {b["brand"] for b in big}]; sl = [l for l in L if l["brand"] in {b["brand"] for b in small}]
+        bs = sorted(big, key=lambda x: -x["score"])
+        ins.append({"big": f"{bs[0]['score']} vs {bs[-1]['score']}", "h": "Execution matters more than size",
+                    "p": f"Among the {len(big)} largest brands ({len(bl)} locations), {bs[0]['brand']} averages an AI score of {bs[0]['score']} across {bs[0]['n']} locations while {bs[-1]['brand']} averages {bs[-1]['score']} across {bs[-1]['n']}. Big brands average {round(avg([l['score'] for l in bl]))} and single-location brands {round(avg([l['score'] for l in sl]))}, so scale alone isn't the advantage it should be. What {bs[0]['brand']} does can be copied across the portfolio."})
+    rv = pearson([math.log1p(l["reviews"]) for l in L], [l["llm_named"] / l["llm_total"] if l["llm_total"] else None for l in L])
+    if rv is not None:
+        hi = sorted([l for l in L if l["llm_total"]], key=lambda x: -x["reviews"])[:10]
+        ins.append({"big": f"{sum(1 for l in hi if l['llm_named'] / l['llm_total'] < 0.5)} of 10", "h": "Reviews alone don't buy AI visibility",
+                    "p": f"Of the 10 most-reviewed locations, {sum(1 for l in hi if l['llm_named'] / l['llm_total'] < 0.5)} are named in fewer than half of AI answers (correlation between review count and AI mentions: {rv:.2f}). AI weighs consistency, third-party coverage and fresh pages, not just stars."})
+    mv = pearson([l["map_hits"] / l["google_total"] if l["google_total"] else None for l in L], [l["llm_named"] / l["llm_total"] if l["llm_total"] else None for l in L])
+    gonly = [l for l in L if l["map_hits"] >= 2 and l["llm_total"] and l["llm_named"] / l["llm_total"] < 0.5]
+    ins.append({"big": f"{len(gonly)}", "h": "Google rank and AI rank are drifting apart",
+                "p": f"{len(gonly)} locations sit in Google's map pack for 2 or 3 of our searches but are named in under half of AI answers" + (f" (correlation between map-pack presence and AI mentions: {mv:.2f})" if mv is not None else "") + ". Local SEO alone is no longer enough."})
+    wsorted = sorted(L, key=lambda x: -x.get("worth", 0)); tw = sum(l.get("worth", 0) for l in L)
+    if tw:
+        t10 = sum(l.get("worth", 0) for l in wsorted[:10])
+        ins.append({"big": f"{round(100 * t10 / tw)}%", "h": "Where the money is",
+                    "p": f"The 10 locations with the most local search demand hold {round(100 * t10 / tw)}% of the revenue at stake: " + ", ".join(f"{l['name']} ({money(l['worth'])}/mo, AI score {l['score']})" for l in wsorted[:4]) + ". These are the first places to win in AI."})
+    inv = [l for l in L if l["llm_total"] and l["llm_named"] == 0]
+    if inv:
+        ins.append({"big": f"{len(inv)}", "h": "Locations no AI tool named, even once",
+                    "p": "No AI tool named these in any of 12 answers: " + "; ".join(f"{l['name']} ({l['reviews']:,} reviews" + (f", AI named {l['rivals'][0]['name']} instead" if l['rivals'] else "") + ")" for l in inv) + "."})
     data = {
         "account": acc, "prepared_for": cfg.get("prepared_for"), "date": cfg.get("date"), "price": price,
         "kpi": kpi, "locations": L, "brands": brands, "states": states,
         "rivals": [{"name": n, "n": c, "where": sorted(set(riv_where[n]))[:6]} for n, c in riv.most_common(15)],
         "services": services, "topics": topics.most_common(12), "trends": trends,
-        "spotlights": spotlights(L, acc.get("short") or acc.get("name")),
+        "spotlights": spotlights(L, acc.get("short") or acc.get("name")), "insights": ins,
         "audits": cfg.get("audits") or {},
     }
 
@@ -392,7 +435,7 @@ def main(cfg_path):
     if worth_rows:
         wj = {"client": acc.get("name"), "rows": worth_rows, "price": price,
               "vol_source": cfg.get("vol_source", "DataForSEO, Google Ads search volume; town searches at state level, 'near me' at city level"),
-              "left_out": "One row per location: the sum of its town searches (med spa, Botox, lip filler, laser hair removal + town) and the same four 'near me' searches in its city. Searches with no volume are left out."}
+              "left_out": "One row per location: the sum of its town searches (med spa, Botox, lip filler, laser hair removal + town) and the same four 'near me' searches in its city. Where several locations share a city, that city's searches are split evenly between them. Searches with no volume are left out."}
         wdir = os.path.dirname(rp(cfg["out"])); os.makedirs(wdir, exist_ok=True)
         wpath = os.path.join(wdir, "worth.json")
         with open(wpath, "w", encoding="utf-8") as f:

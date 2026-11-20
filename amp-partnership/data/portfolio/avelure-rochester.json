@@ -1,0 +1,904 @@
+{
+ "slug": "avelure-rochester",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Rochester",
+  "brand": "Avelure",
+  "address": "3240 Monroe Ave, Rochester, NY 14618",
+  "phone": "(585) 504-2883",
+  "site": "https://aveluremedspa.com",
+  "map_pin": "43.10506,-77.53971"
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Rochester",
+  "google_phone": "+1585-572-5890",
+  "phone_matches_amp": false,
+  "address": "3240 Monroe Ave, Rochester, NY 14618",
+  "distance_km": 0.0,
+  "site_url": "https://aveluremedspa.com/locations/rochester/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.5,
+  "reviews": 826,
+  "stars": {
+   "1": 76,
+   "2": 9,
+   "3": 13,
+   "4": 29,
+   "5": 699
+  },
+  "photos": 35,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-12 11:06:59 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 64
+   },
+   {
+    "t": "lip filler",
+    "n": 23
+   },
+   {
+    "t": "coolsculpting",
+    "n": 11
+   },
+   {
+    "t": "laser treatments",
+    "n": 10
+   },
+   {
+    "t": "efficient staff",
+    "n": 9
+   },
+   {
+    "t": "procedure explanation",
+    "n": 8
+   },
+   {
+    "t": "punctuality",
+    "n": 5
+   },
+   {
+    "t": "full body treatment",
+    "n": 2
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Pittsford Laser & Aesthetics LLC",
+    "rating": 5,
+    "reviews": 143
+   },
+   {
+    "name": "Monroe Medspa - Rochester",
+    "rating": 4.9,
+    "reviews": 567
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 4.9,
+    "reviews": 546
+   }
+  ],
+  "weekly_open_hours": 53,
+  "cid": "16734775308207258805",
+  "place_id": "ChIJb-44F0o10YkRtfyraXrdPeg",
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Rochester NY",
+   "prompt": "med spa Rochester NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Monroe Medspa - Rochester",
+     "Q the Medical Spa at Lindsay House",
+     "Ewa Medspa Aesthetics & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Bare Element Laser Salon",
+      "LUMMIER Med Spa",
+      "LUMAesthetics",
+      "Everything Aesthetics Med Spa",
+      "Vitalize Medical & Aesthetics",
+      "Sorella Medical Aesthetics",
+      "New Genesis"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Q the Medical Spa at Lindsay House",
+      "Monroe Medspa",
+      "DermaSpa at Dermatology Associates of Rochester",
+      "Envision Aesthetics",
+      "Tinytox Collab",
+      "UR Medicine Cosmetic & Aesthetic Services"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Monroe Medspa",
+      "DermaSpa at Dermatology Associates of Rochester",
+      "Ewa Medspa Aesthetics & Wellness",
+      "Q the Medical Spa at Lindsay House",
+      "LUMAesthetics",
+      "Lummiér Medi Spa",
+      "Vitalize Medical & Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Q the Medical Spa",
+      "Sorella Medical Aesthetics",
+      "ANEW Image MedSpa",
+      "Ravissant Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Rochester NY",
+   "prompt": "botox Rochester NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Monroe Medspa - Rochester",
+     "Tinytox Collab",
+     "Q the Medical Spa at Lindsay House"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "LUMAesthetics",
+      "Refresh Medical",
+      "Quatela Center for Plastic Surgery",
+      "Monroe MedSpa",
+      "Radiance by Ryan",
+      "Everything Aesthetics MedSpa",
+      "Ansbrow Aesthetics",
+      "Dermatology Associates of Rochester"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Q the Medical Spa",
+      "Monroe MedSpa",
+      "Tinytox Collab",
+      "Rejuvn8 Aesthetics",
+      "UR Medicine Botox Clinic",
+      "Rochester Regional Health Dermatology / Neurology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Dermatology Associates of Rochester",
+      "Quatela Center for Plastic Surgery",
+      "University of Rochester Plastic Surgery-Brighton",
+      "Q the Medical Spa at Lindsay House"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Helendale Dermatology and Medical Spa",
+      "Quatela Center for Plastic Surgery",
+      "Dermatology Associates of Rochester",
+      "Q the Medical Spa",
+      "Rejuvn8",
+      "Monroe MedSpa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Rochester, NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Monroe Medspa - Rochester",
+     "LUMAesthetics",
+     "Q the Medical Spa at Lindsay House"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "LUMAesthetics",
+      "LUMMIER MEDI SPA",
+      "Q the Medical Spa",
+      "Bare Element Laser Salon",
+      "Everything Aesthetics Medspa",
+      "Refresh Medical"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Q the Medical Spa at Lindsay House",
+      "DermaSpa at Dermatology Associates of Rochester",
+      "Monroe MedSpa",
+      "Envision Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Q the Medical Spa at Lindsay House",
+      "Dermatology Associates of Rochester",
+      "Monroe Medspa",
+      "Envision Oculofacial Plastic Surgery Center and Medical Spa",
+      "LUMAesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Q the Medical Spa at Lindsay House",
+      "Ewa Medspa Aesthetics & Wellness",
+      "Monroe MedSpa",
+      "Dermatology Associates of Rochester",
+      "EvenFlow Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Phone mismatch: Google listing phone is (585) 572-5890; AMP-listed (585) 504-2883. Claude's answer quoted (585) 504-2883 from aveluremedspa.com/locations/rochester/, so the website and GBP show different numbers (likely call-tracking split); third-party directories (tabflows, Perplexity) carry 572-5890.",
+  "Google listing lat/lng (43.105,-77.54) is rounded to 3 decimals; distance to AMP pin ~0.0 km.",
+  "Only one listing found (title 'Avelure', 15 km radius, claimed); no duplicates seen.",
+  "GBP has 12 services but none have prices; prices=[].",
+  "Only 3 people_also_search entries returned.",
+  "Rating 4.5 with 76 one-star reviews (9.2%) - lower than all local-pack competitors (4.9-5.0).",
+  "Birdeye lists different hours (Mon/Fri close 5pm) than Google (6pm).",
+  "Avelure not in any of the 3 Google local packs and no organic result for its own site in top 10; all organic URLs were google.com redirects, matched by breadcrumb/website_name.",
+  "AI Overview present but asynchronous with no text on all 3 searches (aio=unreadable).",
+  "S3 'best med spa near me' organic results polluted by medspaflorida.com directory pages.",
+  "ChatGPT S2/S3 cited aveluremedspa.com in search_results but did not name Avelure in the answer text (named=0).",
+  "Model substitution: gemini-2.5-flash rate limited (50301) twice; all 3 Gemini answers use gemini-3.6-flash.",
+  "SERP location_name 'Rochester,New York,United States' worked without error."
+ ]
+}

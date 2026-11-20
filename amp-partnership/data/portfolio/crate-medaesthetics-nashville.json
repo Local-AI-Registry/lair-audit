@@ -1,0 +1,920 @@
+{
+ "slug": "crate-medaesthetics-nashville",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Cúrate MedAesthetics - Nashville",
+  "brand": "Cúrate MedAesthetics",
+  "address": "96 White Bridge Pike #102, Nashville, TN 37205",
+  "phone": "(615) 823-5655",
+  "site": "https://curatemedspa.com",
+  "pin": [
+   36.12956,
+   -86.85325
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Curate MedAesthetics Nashville",
+  "google_phone": "+1615-544-3828",
+  "phone_matches_amp": false,
+  "address": "96 White Bridge Pike #102, Nashville, TN 37205",
+  "distance_km": 0.1,
+  "site_url": "https://curatemedspa.com/locations/nashville/?utm_source=google&utm_medium=organic&utm_campaign=gbp_nashville",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 1281,
+  "stars": {
+   "1": 106,
+   "2": 20,
+   "3": 16,
+   "4": 33,
+   "5": 1106
+  },
+  "photos": 17,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-23 04:23:58 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 124
+   },
+   {
+    "t": "scheduling",
+    "n": 45
+   },
+   {
+    "t": "smooth process",
+    "n": 35
+   },
+   {
+    "t": "lip filler",
+    "n": 30
+   },
+   {
+    "t": "laser treatment",
+    "n": 15
+   },
+   {
+    "t": "clean facility",
+    "n": 13
+   },
+   {
+    "t": "cool sculpting",
+    "n": 11
+   },
+   {
+    "t": "short wait time",
+    "n": 10
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "LaserAway Nashville Green Hills",
+    "rating": 4.9,
+    "reviews": 416
+   },
+   {
+    "name": "Bellevue Medispa",
+    "rating": 4.7,
+    "reviews": 27
+   },
+   {
+    "name": "Nashville Electrolysis",
+    "rating": 5,
+    "reviews": 23
+   },
+   {
+    "name": "Elan Skin & Laser Med Spa of Nashville",
+    "rating": 4.7,
+    "reviews": 210
+   },
+   {
+    "name": "Electrolysis Global Image",
+    "rating": 4.5,
+    "reviews": 19
+   }
+  ],
+  "weekly_open_hours": 45,
+  "cid": "4739523820659184945",
+  "place_id": "ChIJj9taL9RjZIgRMZXkxs0rxkE",
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Nashville TN",
+   "prompt": "med spa Nashville TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "not_named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Radianté Spa Nashville",
+      "SLK Clinic Nashville",
+      "Franklin Skin and Laser",
+      "Robbins Plastic Surgery MedSpa",
+      "Espe Aesthetics",
+      "Amálie Aesthetics",
+      "Ona Skincare East Nashville",
+      "Purifi IV & Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Elan Skin",
+      "OVME",
+      "Canvas Skin",
+      "Complexion Nashville",
+      "Ona Skincare",
+      "Toxxology",
+      "Hi, Finch"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "61Five Health & Wellness",
+      "ElaMar Nashville",
+      "Skin Pharm",
+      "Canvas Skin",
+      "Restore Hyper Wellness",
+      "NakedMD Med Spa Nashville",
+      "Next Health",
+      "Amaka Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "61Five Health & Wellness",
+      "Ona Skincare",
+      "Skin Pharm",
+      "Bellevue Medispa",
+      "SkinRN Aesthetics",
+      "Radianté Spa Nashville",
+      "ElaMar Nashville",
+      "Toxxology"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Nashville TN",
+   "prompt": "botox Nashville TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Aesthetics Club Nashville",
+     "NakedMD Med Spa Nashville",
+     "ElaMar Nashville"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "LaserAway Nashville - The Gulch",
+      "LeBlanc Health",
+      "Toxxology",
+      "Southern Plastic & Reconstructive Surgical Institute",
+      "SLK Clinic",
+      "Nease Cosmetic Surgery",
+      "Hi, Finch",
+      "Wang Vision Institute"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "SLK Clinic Nashville",
+      "61Five Health & Wellness",
+      "Nashville Plastic Surgery Institute",
+      "Refine Facial Plastic Surgery and Aesthetics",
+      "Cool Springs Plastic Surgery",
+      "Hourglass Aesthetics & Wellness",
+      "Smiley Aesthetics",
+      "ElaMar"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Vanderbilt Health Cosmetic Dermatology",
+      "Restoration Dermatology",
+      "Nashville Skin",
+      "Skin Solutions Dermatology",
+      "SLK Clinic",
+      "Cool Springs Plastic Surgery",
+      "Curcio Dermatology",
+      "Wang Vision Institute"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "61Five Health & Wellness",
+      "Skin Pharm",
+      "Canvas Skin",
+      "SLK Clinic",
+      "Sherman Aesthetic Center",
+      "Melrose Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Nashville, TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "NakedMD Med Spa Nashville",
+     "ElaMar Nashville",
+     "The Aesthetics Club Nashville"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "61Five Health & Wellness",
+      "ElaMar Nashville",
+      "Skin Pharm",
+      "Canvas Skin",
+      "Hi, Finch",
+      "Elan Skin & Laser Med Spa of Nashville",
+      "BEYOND",
+      "Ona Skincare Belle Meade"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Ona Skincare",
+      "Elevate Medical Spa",
+      "Hourglass Aesthetics & Wellness",
+      "61Five Health & Wellness",
+      "ElaMar Nashville",
+      "FACE FOUNDRIÉ - Nashville Gulch",
+      "NSI Wellness and Aesthetics",
+      "Revive Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "ElaMar Nashville",
+      "61Five Health & Wellness",
+      "Restoration Dermatology",
+      "Skin Pharm",
+      "Canvas Skin"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "ElaMar Nashville",
+      "61Five Health & Wellness",
+      "Restoration Dermatology",
+      "DeLozier Cosmetic Surgery Center",
+      "Toxxology",
+      "NSI Wellness"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 615-544-3828 differs from AMP-listed (615) 823-5655.",
+  "Listing found on first fuzzy title 'Curate MedAesthetics'/'Curate' (accent-less); exact 'Cúrate MedAesthetics' returned 0 results. Single listing, no duplicates seen; claimed.",
+  "Google lat/lng returned at 3-decimal precision (36.13,-86.853); distance to AMP pin is approximate.",
+  "No priced services on the listing (prices empty); 12 services listed.",
+  "Gemini S1: gemini-2.5-flash rate limited twice; used gemini-3.6-flash. Gemini S2/S3 succeeded on gemini-2.5-flash after one rate-limit retry.",
+  "S1 SERP had no local_pack; AI Overview text was a places list (NakedMD, NSI Wellness, ElaMar) without Curate. S2 AI Overview asynchronous (unreadable). S3 'near me' organic results were off-locale directory pages (Florida/Alabama).",
+  "Perplexity S1 named Cúrate MedAesthetics (cited curatemedspa.com/locations/nashville); Gemini S3 named Cúrate MedAesthetics.",
+  "Listing last_updated 2026-09-23; first_seen 2024-07-29."
+ ]
+}

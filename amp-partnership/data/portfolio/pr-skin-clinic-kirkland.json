@@ -1,0 +1,280 @@
+{
+ "slug": "pr-skin-clinic-kirkland",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Pūr Skin Clinic - Kirkland",
+  "brand": "Pūr Skin Clinic",
+  "address": "1002 Lake Street S, #102, Kirkland, WA 98033",
+  "phone": "(360) 299-5596",
+  "site": "https://purskinclinic.com",
+  "lat": 47.66726,
+  "lng": -122.20629
+ },
+ "listing": {
+  "found": true,
+  "title": "Pūr Skin Clinic - Kirkland",
+  "google_phone": "+1360-299-5596",
+  "phone_matches_amp": true,
+  "address": "1002 Lake St S Ste 102, Kirkland, WA 98033",
+  "distance_km": 0.1,
+  "site_url": "https://www.purskinclinic.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_kirkland",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 102,
+  "stars": {
+   "1": 1,
+   "2": 0,
+   "3": 1,
+   "4": 0,
+   "5": 100
+  },
+  "photos": 26,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 3,
+  "last_updated": "2026-10-22 21:31:08 +00:00",
+  "topics": [
+   {
+    "t": "laser",
+    "n": 9
+   },
+   {
+    "t": "professional team",
+    "n": 7
+   },
+   {
+    "t": "diamond glow",
+    "n": 6
+   },
+   {
+    "t": "attentive provider",
+    "n": 4
+   },
+   {
+    "t": "new location",
+    "n": 3
+   },
+   {
+    "t": "reception staff",
+    "n": 3
+   },
+   {
+    "t": "injector skills",
+    "n": 2
+   },
+   {
+    "t": "dermaplane",
+    "n": 2
+   }
+  ],
+  "services_count": 0,
+  "prices": [],
+  "also_search": [],
+  "weekly_open_hours": 49,
+  "cid": "14836025889778231307",
+  "place_id": "ChIJ0fGcr6YTkFQRC-i6LvEm5M0",
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Kirkland WA",
+   "prompt": "med spa Kirkland WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "not_named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "SKIM Medical Spa",
+      "Skintegrity MedSpa",
+      "LaserAway Kirkland",
+      "SkinSpirit Kirkland (Totem Lake)",
+      "Glow Medispa - Kirkland",
+      "Larrabee Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "SkinSpirit Kirkland (Totem Lake)",
+      "Lake Washington Medical Aesthetics",
+      "Skintegrity MedSpa",
+      "Ethereal Rejuvenation Clinic",
+      "Refine, MD Northwest",
+      "Liebertz Plastic Surgery at Yarrow Bay",
+      "Templum Aesthetics & Wellness",
+      "Northwest Face & Body"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Templum Aesthetics & Wellness",
+      "Lake Washington Medical Aesthetics",
+      "SKIM Medical Spa",
+      "Glow Medispa",
+      "SkinSpirit Kirkland",
+      "Skintegrity MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Glow Medispa",
+      "Skintegrity MedSpa",
+      "SkinSpirit Kirkland",
+      "Mountain Sun Medspa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Kirkland WA",
+   "prompt": "botox Kirkland WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "SkinSpirit Kirkland (Totem Lake)",
+     "Templum Aesthetics & Wellness",
+     "Lake Washington Medical Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "LaserAway Kirkland",
+      "Lake Washington Dermatology",
+      "Skintegrity MedSpa",
+      "Remington Plastic Surgery",
+      "Templum Aesthetics & Wellness",
+      "SKIM Medical Spa",
+      "Bellamedica Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "SkinSpirit Kirkland",
+      "Bellamedica Spa",
+      "Skin Surgery Center",
+      "Aleris Aesthetics",
+      "Remington Plastic Surgery",
+      "Glow Medispa",
+      "Newvue Dermatology And Aesthetics Wellness",
+      "Northwest Face and Body"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Skintegrity MedSpa",
+      "Lake Washington Dermatology",
+      "SkinSpirit Kirkland",
+      "Templum Aesthetics & Wellness",
+      "The Larrabee Center"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "LaserAway Kirkland",
+      "SkinSpirit Kirkland - Totem Lake",
+      "Templum Aesthetics and Wellness",
+      "Bellamedica",
+      "Northwest Face & Body",
+      "Remington Plastic Surgery"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Kirkland, WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "SkinSpirit Kirkland (Totem Lake)",
+     "Lévy Aesthetics Medical Spa, Salon & Spa at Bay Club",
+     "Lake Washington Medical Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Skintegrity MedSpa",
+      "SKIM Medical Spa",
+      "SkinSpirit Kirkland (Totem Lake)",
+      "LaserAway Kirkland",
+      "Vida Integrated Health",
+      "Bellamedica Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Glow Medispa",
+      "Radiance Skin and Laser",
+      "Templum Aesthetics & Wellness",
+      "SkinSpirit Kirkland (Totem Lake)",
+      "Refine, MD Northwest",
+      "Liebertz Plastic Surgery at Yarrow Bay",
+      "KOCO Medical Aesthetics",
+      "Northwest Face & Body"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Templum Aesthetics & Wellness",
+      "Lake Washington Medical Aesthetics",
+      "SKIM Medical Spa",
+      "Glow Medispa",
+      "SkinSpirit Kirkland"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Templum Aesthetics & Wellness",
+      "Glow Medispa - Kirkland",
+      "SkinSpirit Kirkland - Totem Lake",
+      "SKIM Medical Spa",
+      "Skintegrity MedSpa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Title search for 'Pūr Skin Clinic' and 'Pur Skin Clinic' (claimed and unclaimed, 15-40 km) returned 0 results; listing found via address filter '1002 Lake St' within 1 km of the AMP pin.",
+  "Google lat/lng are rounded to 3 decimals (47.667,-122.207), so distance_km is approximate.",
+  "popular_times not returned for this listing (null); no services/prices or people_also_search returned.",
+  "Review topic 'new location' (3 mentions) suggests a relatively recent move/opening at this address.",
+  "Backlink-sourced phones differ from GBP phone (e.g. 360-227-1178, 206-929-0631, 425-659-1035); GBP phone matches AMP.",
+  "S1 'med spa Kirkland WA' SERP had no local_pack; the AI overview contained place cards (Glow Medispa, Skintegrity MedSpa, SkinSpirit) without Pūr.",
+  "S2 local pack also had a 4th sponsored entry (Root Hair & Skin) excluded from map_pack.",
+  "All organic result URLs were google.com redirect links; none identified as purskinclinic.com or the Google listing.",
+  "S3 'best med spa near me' organic results were mostly irrelevant medspaflorida.com pages.",
+  "No model substitutions; all 12 LLM calls succeeded with Kirkland location for SERPs."
+ ]
+}

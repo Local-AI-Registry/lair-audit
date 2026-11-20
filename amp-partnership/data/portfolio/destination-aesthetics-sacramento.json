@@ -1,0 +1,301 @@
+{
+ "slug": "destination-aesthetics-sacramento",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Destination Aesthetics - Sacramento",
+  "brand": "Destination Aesthetics",
+  "address": "768 University Avenue, Sacramento, CA 95825",
+  "phone": "(916) 844-4913",
+  "site": "https://destinationaesthetics.com",
+  "pin": [
+   38.56542,
+   -121.41887
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Destination Aesthetics Medical Spa",
+  "google_phone": "+1916-844-4913",
+  "phone_matches_amp": true,
+  "address": "768 University Ave, Sacramento, CA 95825",
+  "distance_km": 0.1,
+  "site_url": "https://www.destinationaesthetics.com/contact/da-sacramento/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 409,
+  "stars": {
+   "1": 15,
+   "2": 3,
+   "3": 2,
+   "4": 6,
+   "5": 383
+  },
+  "photos": 63,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 16,
+  "last_updated": "2026-09-11 11:38:00 +00:00",
+  "topics": [
+   {
+    "t": "injector",
+    "n": 24
+   },
+   {
+    "t": "experienced staff",
+    "n": 10
+   },
+   {
+    "t": "co2 laser",
+    "n": 6
+   },
+   {
+    "t": "comfortable offices",
+    "n": 6
+   },
+   {
+    "t": "no bruising",
+    "n": 5
+   },
+   {
+    "t": "honest recommendations",
+    "n": 4
+   },
+   {
+    "t": "gentle injections",
+    "n": 2
+   },
+   {
+    "t": "calm demeanor",
+    "n": 2
+   }
+  ],
+  "services_count": 2,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Pretty Please Aesthetics",
+    "rating": 4.9,
+    "reviews": 205
+   },
+   {
+    "name": "Younger You Aesthetics",
+    "rating": 5,
+    "reviews": 95
+   },
+   {
+    "name": "Angell Medical Spa",
+    "rating": 4.8,
+    "reviews": 152
+   },
+   {
+    "name": "Sacramento Medical Spa",
+    "rating": 5,
+    "reviews": 9
+   },
+   {
+    "name": "The Lip Fairy Aesthetics",
+    "rating": 5,
+    "reviews": 239
+   }
+  ],
+  "weekly_open_hours": 42.5,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Sacramento CA",
+   "prompt": "med spa Sacramento CA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "One Med Spa",
+      "Tua Pelle Medical Spa",
+      "Angell Medical Spa",
+      "Arden Creek Laser & Aesthetics",
+      "Enlightened Beauty",
+      "LaserAway Arden Pavilions",
+      "Eleve Med Spa & Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "ONE Med Spa",
+      "Zen ReGen",
+      "Esthetics Center",
+      "Angell Medical Spa",
+      "RenewMD Wellness",
+      "Medspa of Sacramento",
+      "Ideal Plastic Surgery",
+      "NakedMD Med Spa Sacramento"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "NakedMD Med Spa",
+      "Eleve Med Spa & Aesthetics",
+      "Younger You Aesthetics Med Spa",
+      "Medspa of Sacramento",
+      "Sacramento Medical Spa",
+      "Laser & Skin Surgery Center of Northern California",
+      "Luxe Medspa & Laser Clinic"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Angell Medical Spa",
+      "NakedMD Med Spa",
+      "Eleve Med Spa",
+      "Arden Creek Laser and Aesthetics",
+      "ONE Med Spa",
+      "Aesthetic Envy"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Sacramento CA",
+   "prompt": "botox Sacramento CA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Angell Medical Spa",
+      "Glowing Grace Aesthetics",
+      "TG Aesthetics Medical Spa",
+      "AB House of Aesthetics",
+      "ZK Aesthetics",
+      "Vital Glow Medspa",
+      "LaserAway East Sacramento",
+      "Calkin & Boudreaux Dermatology Associates"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "NorCal Liposculpture",
+      "Revive Med Spa",
+      "Zen ReGen",
+      "Organic Skin Studio",
+      "Esthetics Center Sacramento",
+      "Aesthetic Envy",
+      "Medspa of Sacramento"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Center for Dermatology",
+      "Ideal Plastic Surgery",
+      "Plastic Surgery Center of Sacramento",
+      "California LASIK & Eye"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "LaserAway Sacramento",
+      "Pretty Please Aesthetics",
+      "NorCal Liposculpture",
+      "Arden Creek Laser & Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Sacramento, CA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "NakedMD Med Spa Sacramento",
+     "Esthetics Center Sacramento",
+     "R+H Aesthetic Medicine, West Sac"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Glowing Grace Aesthetics",
+      "One Med Spa",
+      "TG Aesthetics Medical Spa",
+      "AB House of Aesthetics",
+      "Restore Hyper Wellness",
+      "Natomas Laser & Aesthetics",
+      "Aesthetic Envy"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Ideal Plastic Surgery",
+      "Restore Hyper Wellness",
+      "Laser & Skin Surgery Center of Northern California",
+      "NakedMD Med Spa Sacramento",
+      "Dermatology Center of Northern California",
+      "R+H Aesthetic Medicine",
+      "Perceptions Aesthetic Spa",
+      "Sacramento Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Esthetics Center Sacramento",
+      "The Lip Fairy Aesthetics",
+      "Ideal Plastic Surgery",
+      "Angell Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "R+H Aesthetic Medicine",
+      "Angell Medical Spa",
+      "The Lip Fairy Aesthetics",
+      "Aesthetic Envy"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing found via title 'Destination Aesthetics' (is_claimed default true); single result, address/phone match AMP. Google lat/lng returned at 3-decimal precision (38.566,-121.419).",
+  "popular_times not returned by business_listings_search (stored as null).",
+  "services_count=2 (two Google service category groups, each a comma list of treatments); no priced services, prices=[].",
+  "attributes_count counts available_attributes entries (16).",
+  "Listing shows 409 reviews; S1 SERP AI Overview card shows 'Destination Aesthetics Medical Spa - Sacramento 4.8 (426)', so the listings DB snapshot (last_updated 2026-09-11) lags live Google.",
+  "S1: no local_pack item; the AI Overview is a list of local business cards that includes this location (3rd of 6) -> aio 'named'. Organic results were all directories/social; destinationaesthetics.com not in top 10.",
+  "S2: a Yelp organic result (#7) lists 768 University Ave with 'Luz Era' text - possibly another business at the same address or a Yelp mismatch; not counted as own result.",
+  "S3: 'best med spa near me' from Sacramento returned off-geo organic results (Florida, Fresno, Reno directories); AI Overview asynchronous with no text.",
+  "Weekly hours from Google: Mon-Thu 9:00-17:30, Fri 8:00-16:30 = 42.5 h; closed Sat/Sun. DA website (via Perplexity citation) states Mon-Thu 9:15-5, Fri 8:15-4, plus one Saturday per month - hours mismatch vs Google.",
+  "No model substitutions; all 12 LLM calls returned text."
+ ]
+}

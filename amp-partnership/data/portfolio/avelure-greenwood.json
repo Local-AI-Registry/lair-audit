@@ -1,0 +1,98 @@
+{
+  "slug": "avelure-greenwood",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Avelure - Greenwood",
+    "brand": "Avelure",
+    "address": "853 N Emerson Ave Suite C, Greenwood, IN 46143",
+    "phone": "(463) 300-4304",
+    "site": "https://aveluremedspa.com",
+    "pin": [39.62955, -86.08188]
+  },
+  "listing": {
+    "found": true,
+    "title": "Avelure Med Spa - Greenwood",
+    "google_phone": "+1463-300-6388",
+    "phone_matches_amp": false,
+    "address": "853 N Emerson Ave Ste C, Greenwood, IN 46143",
+    "distance_km": 0.1,
+    "site_url": "https://aveluremedspa.com/locations/in-greenwood/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_greenwood",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Laser hair removal service", "Skin care clinic"],
+    "rating": 4.6,
+    "reviews": 281,
+    "stars": {"1": 20, "2": 7, "3": 3, "4": 9, "5": 242},
+    "photos": 30,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 3,
+    "last_updated": "2026-10-23 08:33:07 +00:00",
+    "topics": [
+      {"t": "polite staff", "n": 13},
+      {"t": "lip filler", "n": 9},
+      {"t": "efficient staff", "n": 7},
+      {"t": "great technician", "n": 5},
+      {"t": "coolsculpting", "n": 4},
+      {"t": "answered questions", "n": 4},
+      {"t": "underarms laser hair removal", "n": 2},
+      {"t": "cheek filler", "n": 2}
+    ],
+    "services_count": null,
+    "prices": null,
+    "also_search": null,
+    "weekly_open_hours": 51,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa Greenwood IN",
+      "prompt": "med spa Greenwood IN",
+      "google": {"map_pos": null, "map_pack": ["Nexa Med Spa", "The SKN Lab", "Ageless Aesthetics"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 1, "others": ["Ageless Aesthetics", "Nexa Med Spa", "Franciscan Rejuvenate Medical Spa", "The SKN Lab", "Hamilton Facial Plastic Surgery"]},
+        "gemini": {"named": 0, "others": ["Ageless Aesthetics", "The SKN Lab", "Evexia Spa", "Nexa Med Spa", "Franciscan Health Medical Spa"]},
+        "perplexity": {"named": 1, "others": ["Nexa Med Spa", "Ageless Aesthetics", "Greenwood Clinic and Med Spa", "Balanced Beauty Medical Aesthetics", "Beauty and Balanced Aesthetics", "Franciscan Rejuvenate Medical Spa"]},
+        "claude": {"named": 1, "others": ["Franciscan Rejuvenate Medical Spa", "Nexa Med Spa", "The SKN Lab", "Greenwood Clinic and Med Spa"]}
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox Greenwood IN",
+      "prompt": "botox Greenwood IN",
+      "google": {"map_pos": null, "map_pack": ["The SKN Lab", "Ageless Aesthetics", "Enhanced Beauty by Jessica Lynn, RN"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 1, "others": ["Ageless Aesthetics", "Franciscan Rejuvenate Medical Spa", "Nexa Med Spa", "The SKN Lab", "Hamilton Facial Plastic Surgery"]},
+        "gemini": {"named": 1, "others": ["Hamilton Facial Plastic Surgery", "The SKN Lab", "Balanced Beauty Aesthetics", "Yoo Direct Health", "Love Your Look Medical Aesthetics", "Enhanced Beauty by Jessica Lynn"]},
+        "perplexity": {"named": 0, "others": ["Nexa Med Spa", "Hamilton Facial Plastic Surgery", "Franciscan Rejuvenate Medical Spa", "Ageless Aesthetics", "Dermatology Center of Indiana", "Beauty & Balanced Aesthetics"]},
+        "claude": {"named": 0, "others": ["Hamilton Facial Plastic Surgery", "Yoo Direct Health", "The SKN Lab", "Enhanced Beauty by Jessica Lynn", "Ageless Aesthetics", "Supro Direct"]}
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in Greenwood, IN",
+      "google": {"map_pos": null, "map_pack": ["The SKN Lab", "Ageless Aesthetics", "Pure Image Laser and Spa"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 1, "others": ["Ageless Aesthetics", "Franciscan Rejuvenate Medical Spa", "Skinz MD", "Nexa Med Spa", "The SKN Lab"]},
+        "gemini": {"named": 0, "others": ["Ageless Aesthetics", "The SKN Lab", "Skin Renew Day Spa & Laser Center", "Balanced Beauty Medical Aesthetics", "Evexia Spa", "Nexa Med Spa"]},
+        "perplexity": {"named": 1, "others": ["Ageless Aesthetics", "Balanced Beauty Medical Aesthetics", "Performance Clinic", "Nexa Med Spa"]},
+        "claude": {"named": 0, "others": ["Performance Clinic", "Bayberry Spa", "Ageless Aesthetics", "Indiana Medical Center", "The SKN Lab"]}
+      }
+    }
+  ],
+  "notes": [
+    "Phone mismatch: Google listing phone is (463) 300-6388; AMP-listed (463) 300-4304. Third-party citations (MapQuest, medspacompass) and Claude's S1 answer still show 300-4304; Perplexity/tabflows/Google show 300-6388.",
+    "MapQuest lists 'Ideal Image Greenwood' at the same address (853 N Emerson Ave Ste C) with phone 300-4304 - location appears to be a former Ideal Image rebranded to Avelure; legacy citations under the old name persist.",
+    "Google listing lat/lng returned at low precision (39.63,-86.082); distance to AMP pin ~0.05 km.",
+    "Google site link carries UTM params and points to aveluremedspa.com/locations/in-greenwood/.",
+    "Listing response did not include popular_times, services, prices or people_also_search; recorded as null.",
+    "Gemini gemini-2.5-flash rate limited twice (50301) for all 3 prompts; used gemini-3.6-flash instead.",
+    "All three Google SERPs had an asynchronous AI Overview with no text (aio=unreadable).",
+    "S2 organic: a medspacompass.com directory page for Avelure Med Spa ranked at organic rank_group 4 (third-party, not counted as own site).",
+    "S3 'best med spa near me' organic results were mostly out-of-market (Cincinnati, Rochester, St. Louis etc.); local pack was local.",
+    "Not in any local pack for the 3 queries despite 281 reviews; competitors The SKN Lab (597 reviews, 5.0) and Ageless Aesthetics (436, 5.0) dominate."
+  ]
+}

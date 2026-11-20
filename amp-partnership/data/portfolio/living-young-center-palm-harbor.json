@@ -1,0 +1,907 @@
+{
+ "slug": "living-young-center-palm-harbor",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Living Young Center - Palm Harbor",
+  "brand": "Living Young Center",
+  "address": "35196 U.S. Hwy 19 N, Palm Harbor, FL 34683",
+  "phone": "(727) 319-6884",
+  "website": "https://livingyoungcenter.com",
+  "lat": 28.09249,
+  "lng": -82.74121
+ },
+ "listing": {
+  "found": true,
+  "title": "LivingYoung Center for Health & Anti-Aging - Palm Harbor",
+  "google_phone": "+1727-295-2054",
+  "phone_matches_amp": false,
+  "address": "35196 US Hwy 19 N, Palm Harbor, FL 34683",
+  "distance_km": 0.1,
+  "site_url": "https://livingyoungcenter.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 578,
+  "stars": {
+   "1": 10,
+   "2": 2,
+   "3": 0,
+   "4": 4,
+   "5": 562
+  },
+  "photos": 40,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 18,
+  "last_updated": "2026-09-19 23:47:06 +00:00",
+  "topics": [
+   {
+    "t": "beautiful office",
+    "n": 32
+   },
+   {
+    "t": "knowledgeable doctor",
+    "n": 22
+   },
+   {
+    "t": "injector",
+    "n": 17
+   },
+   {
+    "t": "hormone therapy",
+    "n": 9
+   },
+   {
+    "t": "professional front desk staff",
+    "n": 8
+   },
+   {
+    "t": "genuine staff",
+    "n": 6
+   },
+   {
+    "t": "under eye filler",
+    "n": 4
+   },
+   {
+    "t": "vitamin injections",
+    "n": 3
+   }
+  ],
+  "services_count": 23,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Carissa Alinat, ARNP",
+    "rating": 5,
+    "reviews": 1
+   },
+   {
+    "name": "UDERMA MEDSPA & LASER",
+    "rating": 4.9,
+    "reviews": 351
+   },
+   {
+    "name": "Beauty Bar & Medspa - BioWell Lounge Palm Harbor",
+    "rating": 4.8,
+    "reviews": 50
+   },
+   {
+    "name": "Refresh - Aesthetics & Wellness",
+    "rating": 4.7,
+    "reviews": 994
+   },
+   {
+    "name": "Olympia Aesthetics & Wellness",
+    "rating": 5,
+    "reviews": 36
+   }
+  ],
+  "weekly_open_hours": 46,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 94
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 79
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 89
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 79
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 13
+      }
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Palm Harbor FL",
+   "prompt": "med spa Palm Harbor FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "UDERMA MEDSPA & LASER",
+     "NALA Med Spa",
+     "Beauty Bar & Medspa - BioWell Lounge Palm Harbor"
+    ],
+    "organic_pos": 1,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Ólea Aesthetics",
+      "Beauty Bar & Medspa",
+      "UDERMA Medspa & Laser",
+      "Refined Aesthetics RX",
+      "Timeless Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Refresh - Aesthetics & Wellness",
+      "NALA Med Spa",
+      "Uderma Medspa and Laser",
+      "Olympia Aesthetics & Wellness",
+      "Ólea Aesthetics & Wellness",
+      "Timeless Aesthetics",
+      "Eternal Beauty Lifestyle Clearwater Spa",
+      "Beauty Bar & Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "NALA Med Spa",
+      "Gameday Men's Health Palm Harbor",
+      "Rejuve Health Plus",
+      "Better Life Clinics",
+      "Timeless Aesthetics",
+      "UDERMA Medspa & Laser",
+      "Beneath the Surface Skincare MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Ólea Aesthetics & Wellness",
+      "Nala Med Spa",
+      "Beauty Bar & Med Spa Palm Harbor",
+      "Rejuve Health Plus",
+      "Aromatherapy Palm Harbor",
+      "Uderma Spa",
+      "Timeless Surgical Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Palm Harbor FL",
+   "prompt": "botox Palm Harbor FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "UDERMA MEDSPA & LASER",
+     "LivingYoung Center for Health & Anti-Aging - Palm Harbor",
+     "Refresh - Aesthetics & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "UDERMA Medspa & Laser",
+      "Refresh – Aesthetics & Wellness",
+      "Glam Blading and Beauty, LLC",
+      "The Little Spa",
+      "Better Life Clinics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Refresh – Aesthetics & Wellness",
+      "Olympia Aesthetics & Wellness",
+      "Refined Aesthetics RX",
+      "Timeless Aesthetics",
+      "Eternal Beauty Lifestyle Clearwater Spa",
+      "PHDermatology Palm Harbor",
+      "Moraitis Plastic Surgery",
+      "Suncoast Skin Solutions"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Bay Dermatology",
+      "Advanced Dermatology and Cosmetic Surgery",
+      "Refresh – Aesthetics & Wellness"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Ideal Image Palm Harbor Medical Spa",
+      "ProHealth Solutions",
+      "Palm Harbor Dentistry"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Palm Harbor, FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "UDERMA MEDSPA & LASER",
+     "LivingYoung Center for Health & Anti-Aging - Palm Harbor",
+     "Revive Medical Spa LLC."
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Ólea Aesthetics",
+      "UDERMA Medspa & Laser",
+      "Timeless Aesthetics",
+      "Beneath the Surface Skincare MedSpa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Refresh - Aesthetics & Wellness",
+      "Olympia Aesthetics & Wellness",
+      "NALA Med Spa",
+      "Rejuve Health Plus",
+      "Timeless Aesthetics",
+      "Uderma Medspa and Laser",
+      "Bay Dermatology",
+      "Advanced Dermatology and Cosmetic Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Cryogenix Rejuvenation & Recovery",
+      "Bay Dermatology",
+      "NALA Med Spa",
+      "Rejuve Health Plus"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Olympia Aesthetics & Wellness",
+      "Uderma Spa",
+      "Suncoast Skin Solutions",
+      "Moraitis Plastic Surgery"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing not returned by title search ('Living Young Center', 'Living Young', '...Palm Harbor', with and without is_claimed); found via address filter (35196) within 2 km of pin. Google title is 'LivingYoung Center for Health & Anti-Aging - Palm Harbor' (one-word 'LivingYoung').",
+  "Google phone (727) 295-2054 differs from AMP-listed (727) 319-6884; AMP number appears only as a backlinks contact and as a ?cp= tracking param on the site. Google menu link uses ?cp=7272335760 (a third number).",
+  "Shares the address 35196 US Hwy 19 N with a separate claimed listing 'Dr. Bart Rademaker' (Plastic surgeon, zip 34684, drrademaker.com).",
+  "Google services text references Odessa/Starkey Ranch and 'Ever/Body North Haven' (copy pasted from other locations/brands).",
+  "Hours mismatch: Google shows Sat 9-13 weekly and Thu close 17; website snippet says Thu to 6 PM and Saturday rotating/first Saturday.",
+  "S1 organic #1 is livingyoungcenter.com homepage (multi-location page), not a Palm Harbor-specific page; not in S1 local pack.",
+  "All three SERPs had asynchronous AI Overviews with no text (unreadable). S3 organic results were mostly non-local (other cities).",
+  "Review count in SERP local pack (600) higher than listing snapshot (578, last_updated 2026-09-19).",
+  "No model substitutions; all 12 LLM calls succeeded. Claude S1 named the brand only in an 'other options' line."
+ ]
+}

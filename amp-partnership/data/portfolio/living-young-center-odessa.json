@@ -1,0 +1,776 @@
+{
+ "slug": "living-young-center-odessa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Living Young Center - Odessa",
+  "brand": "Living Young Center",
+  "address": "2320 Gunn Highway, Suite 4, Odessa, FL 33556",
+  "phone": "(727) 319-6884",
+  "site": "https://livingyoungcenter.com",
+  "lat": 28.19226,
+  "lng": -82.59152
+ },
+ "listing": {
+  "found": true,
+  "title": "LivingYoung Center for Health & Anti-Aging - Odessa",
+  "cid": "496611041883984037",
+  "google_phone": "(727) 513-8341",
+  "phone_matches_amp": false,
+  "address": "2320 Gunn Hwy Suite 4, Odessa, FL 33556",
+  "distance_km": 0.1,
+  "site_url": "https://livingyoungcenter.com/?cp=7273196884",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 196,
+  "stars": {
+   "1": 1,
+   "2": 0,
+   "3": 0,
+   "4": 1,
+   "5": 194
+  },
+  "photos": 44,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 22,
+  "last_updated": "2026-09-29 16:48:31 +00:00",
+  "topics": [
+   {
+    "t": "welcoming staff",
+    "n": 46
+   },
+   {
+    "t": "new location",
+    "n": 19
+   },
+   {
+    "t": "injector",
+    "n": 17
+   },
+   {
+    "t": "natural look",
+    "n": 9
+   },
+   {
+    "t": "painless procedure",
+    "n": 4
+   },
+   {
+    "t": "face treatments",
+    "n": 3
+   },
+   {
+    "t": "gentle injector",
+    "n": 2
+   },
+   {
+    "t": "knowledgeable practitioner",
+    "n": 2
+   }
+  ],
+  "services_count": 23,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Skin NV Med Spa Odessa",
+    "rating": 5,
+    "reviews": 210
+   },
+   {
+    "name": "HydrateGlo Medspa and IV Hydration Lounge",
+    "rating": 5,
+    "reviews": 124
+   },
+   {
+    "name": "Fusion Medispa",
+    "rating": 4.9,
+    "reviews": 165
+   },
+   {
+    "name": "4EvaGlow Aesthetics",
+    "rating": 4.9,
+    "reviews": 43
+   },
+   {
+    "name": "MMCareFl - Beatific Health Location",
+    "rating": null,
+    "reviews": null
+   }
+  ],
+  "weekly_open_hours": 39,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Odessa FL",
+   "prompt": "med spa Odessa FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Skin NV Med Spa Odessa",
+     "LivingYoung Center for Health & Anti-Aging - Odessa",
+     "HydrateGlo Medspa and IV Hydration Lounge"
+    ],
+    "organic_pos": 6,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "Skin NV Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "Fusion Medispa",
+      "MeliOra",
+      "Venus Med Spa",
+      "Amani MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "Skin NV Med Spa",
+      "HydrateGlo Medspa and IV Hydration Lounge"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "HydrateGlo Medspa & IV Hydration Lounge"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Odessa FL",
+   "prompt": "botox Odessa FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Skin NV Med Spa Odessa",
+     "LivingYoung Center for Health & Anti-Aging - Odessa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "Skin NV",
+      "ReGenesis Wellness & Medspa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "MeliOra",
+      "Tampa Surgical Arts",
+      "Beauty Aesthetics",
+      "Bayside Center for Plastic and Reconstructive Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "Skin NV Starkey Ranch"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "HydrateGlo Medspa and IV Lounge",
+      "Skin NV Med Spa - Odessa",
+      "Fusion Medispa",
+      "Tampa Surgical Arts",
+      "Nu Image Medspa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Odessa, FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Skin NV Med Spa Odessa",
+     "LivingYoung Center for Health & Anti-Aging - Odessa",
+     "Aspire MedSpa & Beauty Bar"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "Skin NV Med Spa Odessa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "Fusion Medispa",
+      "MeliOra",
+      "Elegance by Dr. A"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Fusion Medispa",
+      "Skin NV Med Spa Odessa",
+      "HydrateGlo"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Skin NV Med Spa - Odessa",
+      "HydrateGlo Medspa & IV Hydration Lounge",
+      "Fusion Medispa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing title is 'LivingYoung' (no space); title searches for 'Living Young Center' returned nothing, listing found via address filter '2320 Gunn%'.",
+  "Google phone (727) 513-8341 differs from AMP-listed (727) 319-6884; 319-6884 appears as a backlink-sourced number and as cp= tracking param in the GBP website URL (likely call tracking). Yelp/MapQuest show 319-6884, YellowPages shows 513-8341 (NAP inconsistency).",
+  "No priced services on listing (23 services, none with price).",
+  "Listing place_topics show 'new location' (19 mentions).",
+  "Review count 196 in listing data (2026-09-29) vs 209 in live SERP local pack (2026-11-20).",
+  "All Google AI Overviews were asynchronous with no text (unreadable).",
+  "S3 Google organic results were non-local directory pages (Fort Myers, Troy AL, Rochester NY, Cincinnati, etc.).",
+  "Weekly hours 39 (Mon 8-15, Tue 11-19, Wed 8-16, Thu 11-19, Fri 8-16; closed Sat/Sun). Yelp lists Mon 9-5, differs from Google.",
+  "No model substitutions; all 12 LLM calls succeeded and all named the brand."
+ ]
+}

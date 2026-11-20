@@ -1,0 +1,306 @@
+{
+ "slug": "pr-skin-clinic-south-lake-union",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Pūr Skin Clinic - South Lake Union",
+  "brand": "Pūr Skin Clinic",
+  "address": "1105 Valley St, Seattle, WA 98109",
+  "phone": "(206) 493-4010",
+  "site": "https://purskinclinic.com",
+  "lat": 47.62553,
+  "lng": -122.33545
+ },
+ "listing": {
+  "found": true,
+  "title": "Pūr Skin Clinic - Seattle",
+  "google_phone": "+1206-493-4010",
+  "phone_matches_amp": true,
+  "address": "1105 Valley St, Seattle, WA 98109",
+  "distance_km": 0.1,
+  "site_url": "https://www.purskinclinic.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_seattle",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 22,
+  "stars": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 22
+  },
+  "photos": 4,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 7,
+  "last_updated": "2026-10-03 13:24:19 +00:00",
+  "topics": [
+   {
+    "t": "artistry",
+    "n": 3
+   },
+   {
+    "t": "botox",
+    "n": 3
+   },
+   {
+    "t": "laser treatment",
+    "n": 2
+   },
+   {
+    "t": "clinician",
+    "n": 2
+   },
+   {
+    "t": "front desk staff",
+    "n": 2
+   },
+   {
+    "t": "comfortable experience",
+    "n": 2
+   },
+   {
+    "t": "client care",
+    "n": 2
+   },
+   {
+    "t": "trustworthy",
+    "n": 2
+   }
+  ],
+  "services_count": null,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Purity Medical Spa",
+    "rating": 4.9,
+    "reviews": 62
+   },
+   {
+    "name": "Immanence Health: Aesthetics (Formerly Bella Fiore)",
+    "rating": 4.6,
+    "reviews": 25
+   },
+   {
+    "name": "The Perq Dermatology",
+    "rating": 5,
+    "reviews": 98
+   },
+   {
+    "name": "PRP In Seattle",
+    "rating": 5,
+    "reviews": 1
+   },
+   {
+    "name": "SkinSpirit Seattle - University Village",
+    "rating": 4.7,
+    "reviews": 309
+   }
+  ],
+  "weekly_open_hours": 40,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Seattle WA",
+   "prompt": "med spa Seattle WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Glow Medispa",
+     "Element MedSpa",
+     "Lux Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Sugar & Skin Spa",
+      "Amadi Aesthetics Med Spa",
+      "NuMe Aesthetics",
+      "Simplicity Med Spa",
+      "Skinlogic Med Spa",
+      "Blue Haven Medical Spa",
+      "Celeste Aesthetics / Tru•Allure Beauty & Skin Lounge",
+      "Glow Medispa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Glow Medispa",
+      "Blue Haven Medical Spa",
+      "Celsius Med Spa",
+      "Forever Young Aesthetics",
+      "Element MedSpa",
+      "Skinlogic Med Spa",
+      "Swedish Plastic & Aesthetic Surgery MedSpa",
+      "Modern Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Simplicity Med Spa",
+      "Skinlogic Med Spa",
+      "Maintenance Bar",
+      "Blix Clinical Aesthetics & Laser",
+      "Blue Haven Medical Spa Ballard",
+      "The Skin Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Blue Haven Medical Spa",
+      "Skinlogic Med Spa",
+      "Allure Esthetic",
+      "Celsius Med Spa",
+      "Maintenance Bar",
+      "Vitality Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Seattle WA",
+   "prompt": "botox Seattle WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Seattle Beauty",
+     "Allure Esthetic - Dr. Javad Sajan",
+     "Lux Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Element MedSpa",
+      "Advanced Dermatology and Laser Institute",
+      "Simplicity Med Spa",
+      "Skin Synthesis Clinic & Spa",
+      "Well Medical Arts",
+      "Blue Haven Medical Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Seattle Plastic Surgery",
+      "Naficy Plastic Surgery & Rejuvenation Center",
+      "Allure Esthetic",
+      "Advanced Dermatology and Laser Institute",
+      "Optum Plastic Surgery",
+      "Skinlogic Med Spa",
+      "Miller Dermatology + Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Dermatology of Seattle",
+      "Green Lake Oral + Facial Surgery",
+      "Larrabee Center for Plastic Surgery",
+      "Nadeau Plastic Surgery",
+      "Said Plastic Surgery",
+      "SkinSpirit University Village"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Seattle Plastic Surgery",
+      "SkinSpirit",
+      "Seattle Face & Skin",
+      "LaserAway Seattle",
+      "Advanced Dermatology and Laser Institute",
+      "Skinlogic Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Seattle, WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "not_named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Peaceful Coexistence Pllc",
+      "Sherman Aesthetics",
+      "Shahram Salemy Md Pllc",
+      "Skin Synthesis Clinic & Spa",
+      "Blue Haven Medical Spa",
+      "Celsius"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Seattle Beauty",
+      "Modern Dermatology",
+      "Lux Aesthetics",
+      "Forever Young Aesthetics",
+      "Intravene Mobile IV Therapy",
+      "Skin Synthesis Clinic & Spa",
+      "Glow Medispa",
+      "NuMe Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Modern Dermatology",
+      "Seattle Beauty",
+      "Lux Aesthetics",
+      "SkinSpirit Seattle-Green Lake",
+      "Allure Esthetic",
+      "Skin Synthesis Clinic & Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Glow Medispa",
+      "Skinlogic Med Spa",
+      "SkinSpirit",
+      "Blue Haven Medical Spa",
+      "Bellora Medical Aesthetics",
+      "Seattle Beauty"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing title searches ('Pūr Skin Clinic', 'Pur Skin Clinic', 'Pür Skin Clinic', with/without is_claimed) returned 0; found via address filter (1105 Valley%) and via 'Skin Clinic Seattle'. Google title is 'Pūr Skin Clinic - Seattle' (not 'South Lake Union').",
+  "Listing first_seen 2026-10-03 — very new GBP: only 22 reviews, 4 photos, no services/prices menu.",
+  "Open Mon-Fri 9-5 only (40 h/week); no weekend hours.",
+  "Google site link carries UTM (gbp_seattle) on www.purskinclinic.com — same domain as AMP.",
+  "popular_times not returned by the API (null).",
+  "S3 'best med spa near me' SERP had no local pack; AI overview listed Bellora Medical Aesthetics, Seattle Beauty, Lux Aesthetics. S1/S2 AI overviews were asynchronous (unreadable).",
+  "Not named in any of 12 LLM answers; Google lat/lng rounded to 3 decimals so distance is approximate."
+ ]
+}

@@ -1,0 +1,9 @@
+{"source":"DataForSEO (domain_rank_overview, historical_rank_overview, backlinks_summary), United States/en, retrieved 2026-11-20",
+"domains":[
+{"domain":"synergymedaesthetics.com","keywords_total":92,"top3":18,"top10":29,"etv":422.646,"is_new":47,"is_up":18,"is_down":19,
+"history":[{"month":"2025-12","etv":954.634,"keywords":383},{"month":"2026-01","etv":899.919,"keywords":423},{"month":"2026-02","etv":1566.36,"keywords":414},{"month":"2026-03","etv":1710.503,"keywords":390},{"month":"2026-04","etv":1696.395,"keywords":291},{"month":"2026-05","etv":1625.762,"keywords":254},{"month":"2026-06","etv":1748.757,"keywords":236},{"month":"2026-07","etv":1049.292,"keywords":204},{"month":"2026-08","etv":841.234,"keywords":182},{"month":"2026-09","etv":686.891,"keywords":168},{"month":"2026-10","etv":669.997,"keywords":99},{"month":"2026-11","etv":744.298,"keywords":94}],
+"referring_domains":185,"backlinks":570,"broken_backlinks":370,"broken_pages":129,"spam_score":14,"rank":174},
+{"domain":"theagelesscenter.com","keywords_total":257,"top3":9,"top10":54,"etv":791.245,"is_new":130,"is_up":58,"is_down":61,
+"history":[{"month":"2025-12","etv":556.759,"keywords":336},{"month":"2026-01","etv":662.602,"keywords":397},{"month":"2026-02","etv":685.732,"keywords":388},{"month":"2026-03","etv":353.696,"keywords":393},{"month":"2026-04","etv":978.769,"keywords":400},{"month":"2026-05","etv":991.013,"keywords":406},{"month":"2026-06","etv":1105.056,"keywords":410},{"month":"2026-07","etv":1031.893,"keywords":413},{"month":"2026-08","etv":1050.936,"keywords":417},{"month":"2026-09","etv":932.25,"keywords":421},{"month":"2026-10","etv":896.793,"keywords":296},{"month":"2026-11","etv":957.787,"keywords":284}],
+"referring_domains":140,"backlinks":413,"broken_backlinks":309,"broken_pages":31,"spam_score":16,"rank":173}
+]}

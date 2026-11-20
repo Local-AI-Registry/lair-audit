@@ -1,0 +1,551 @@
+{
+ "source": "DataForSEO kw_data_google_ads_search_volume",
+ "pulled": "2026-11-20",
+ "language_code": "en",
+ "locations": [
+  {
+   "slug": "22-plastics",
+   "town": {
+    "med spa cottonwood heights": 10,
+    "botox cottonwood heights": 10,
+    "lip filler cottonwood heights": null,
+    "laser hair removal cottonwood heights": 10
+   },
+   "near_me": {
+    "med spa near me": 40,
+    "botox near me": 50,
+    "lip filler near me": 20,
+    "laser hair removal near me": 40
+   },
+   "near_me_location": "Cottonwood Heights,Utah,United States",
+   "notes": "Town searches at Utah,United States; near-me at Cottonwood Heights,Utah,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "22-med-spa",
+   "town": {
+    "med spa cottonwood heights": 10,
+    "botox cottonwood heights": 10,
+    "lip filler cottonwood heights": null,
+    "laser hair removal cottonwood heights": 10
+   },
+   "near_me": {
+    "med spa near me": 40,
+    "botox near me": 50,
+    "lip filler near me": 20,
+    "laser hair removal near me": 40
+   },
+   "near_me_location": "Cottonwood Heights,Utah,United States",
+   "notes": "Town searches at Utah,United States; near-me at Cottonwood Heights,Utah,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "aesthetic-clinique",
+   "town": {
+    "med spa santa rosa beach": null,
+    "botox santa rosa beach": null,
+    "lip filler santa rosa beach": null,
+    "laser hair removal santa rosa beach": null
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 30,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Miramar Beach,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Miramar Beach,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Santa Rosa Beach,Florida is not a valid Google Ads location; near-me measured at nearest valid city Miramar Beach,Florida (~8 mi west). Santa Rosa Beach town searches all returned no volume."
+  },
+  {
+   "slug": "avelure-ocala",
+   "town": {
+    "med spa ocala": 140,
+    "botox ocala": 260,
+    "lip filler ocala": null,
+    "laser hair removal ocala": 170
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 260,
+    "lip filler near me": 170,
+    "laser hair removal near me": 140
+   },
+   "near_me_location": "Ocala,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Ocala,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Ocala near-me Oct 2026 spike (botox 1,600 vs ~140 baseline) lifts the 12-mo avg."
+  },
+  {
+   "slug": "avelure-waterford",
+   "town": {
+    "med spa orlando": 720,
+    "botox orlando": 880,
+    "lip filler orlando": 590,
+    "laser hair removal orlando": 880
+   },
+   "near_me": {
+    "med spa near me": 480,
+    "botox near me": 720,
+    "lip filler near me": 320,
+    "laser hair removal near me": 480
+   },
+   "near_me_location": "Orlando,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Orlando,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "hello-smooth-med-spa",
+   "town": {
+    "med spa st johns": null,
+    "botox st johns": 10,
+    "lip filler st johns": null,
+    "laser hair removal st johns": 10
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 90,
+    "lip filler near me": 30,
+    "laser hair removal near me": 40
+   },
+   "near_me_location": "Saint Johns,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Saint Johns,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. 'St. Johns,Florida' rejected; Google Ads location is 'Saint Johns,Florida,United States' (code 9197497). Town keywords written 'st johns'."
+  },
+  {
+   "slug": "living-young-center-odessa",
+   "town": {
+    "med spa odessa": null,
+    "botox odessa": 10,
+    "lip filler odessa": null,
+    "laser hair removal odessa": 20
+   },
+   "near_me": {
+    "med spa near me": 20,
+    "botox near me": 30,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Odessa,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Odessa,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "living-young-center-palm-harbor",
+   "town": {
+    "med spa palm harbor": 70,
+    "botox palm harbor": 90,
+    "lip filler palm harbor": null,
+    "laser hair removal palm harbor": 70
+   },
+   "near_me": {
+    "med spa near me": 40,
+    "botox near me": 50,
+    "lip filler near me": 20,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Palm Harbor,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Palm Harbor,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Oct 2026 spike on all Palm Harbor town keywords (e.g. botox 320 vs ~70 baseline)."
+  },
+  {
+   "slug": "living-young-center-seminole",
+   "town": {
+    "med spa seminole": null,
+    "botox seminole": null,
+    "lip filler seminole": null,
+    "laser hair removal seminole": null
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 50,
+    "lip filler near me": 30,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "Seminole,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Seminole,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "living-young-center-st-petersburg",
+   "town": {
+    "med spa st petersburg": 110,
+    "botox st petersburg": 170,
+    "lip filler st petersburg": null,
+    "laser hair removal st petersburg": 70
+   },
+   "near_me": {
+    "med spa near me": 260,
+    "botox near me": 320,
+    "lip filler near me": 140,
+    "laser hair removal near me": 140
+   },
+   "near_me_location": "St. Petersburg,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at St. Petersburg,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "new-radiance-cosmetic-centers-boca-raton",
+   "town": {
+    "med spa boca raton": 590,
+    "botox boca raton": 590,
+    "lip filler boca raton": 210,
+    "laser hair removal boca raton": 320
+   },
+   "near_me": {
+    "med spa near me": 210,
+    "botox near me": 260,
+    "lip filler near me": 110,
+    "laser hair removal near me": 110
+   },
+   "near_me_location": "Boca Raton,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Boca Raton,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "new-radiance-cosmetic-centers-palm-beach-gardens",
+   "town": {
+    "med spa palm beach gardens": 90,
+    "botox palm beach gardens": 140,
+    "lip filler palm beach gardens": null,
+    "laser hair removal palm beach gardens": 110
+   },
+   "near_me": {
+    "med spa near me": 880,
+    "botox near me": 110,
+    "lip filler near me": 30,
+    "laser hair removal near me": 70
+   },
+   "near_me_location": "Palm Beach Gardens,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Palm Beach Gardens,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Near-me 'med spa near me' avg 880 driven by May-Aug 2026 spikes (1,900-4,400); Oct 2026 = 480, baseline months 50-110. Treat with caution."
+  },
+  {
+   "slug": "new-radiance-cosmetic-centers-port-st-lucie",
+   "town": {
+    "med spa port st lucie": 70,
+    "botox port st lucie": 140,
+    "lip filler port st lucie": null,
+    "laser hair removal port st lucie": 170
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 140,
+    "lip filler near me": 110,
+    "laser hair removal near me": 90
+   },
+   "near_me_location": "Port St. Lucie,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Port St. Lucie,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "new-radiance-cosmetic-centers-wellington",
+   "town": {
+    "med spa wellington": 90,
+    "botox wellington": 210,
+    "lip filler wellington": 20,
+    "laser hair removal wellington": 70
+   },
+   "near_me": {
+    "med spa near me": 140,
+    "botox near me": 170,
+    "lip filler near me": 70,
+    "laser hair removal near me": 90
+   },
+   "near_me_location": "Wellington,Florida,United States",
+   "notes": "Town searches at Florida,United States; near-me at Wellington,Florida,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-buffalo",
+   "town": {
+    "med spa amherst": null,
+    "botox amherst": 10,
+    "lip filler amherst": null,
+    "laser hair removal amherst": 10
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 70,
+    "lip filler near me": 30,
+    "laser hair removal near me": 40
+   },
+   "near_me_location": "Amherst,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at Amherst,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-rochester",
+   "town": {
+    "med spa rochester": 210,
+    "botox rochester": 390,
+    "lip filler rochester": 210,
+    "laser hair removal rochester": 480
+   },
+   "near_me": {
+    "med spa near me": 50,
+    "botox near me": 110,
+    "lip filler near me": 70,
+    "laser hair removal near me": 90
+   },
+   "near_me_location": "Rochester,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at Rochester,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "beautyfix-medspa-flatiron",
+   "town": {
+    "med spa new york": 1300,
+    "botox new york": 2400,
+    "lip filler new york": 1600,
+    "laser hair removal new york": 3600
+   },
+   "near_me": {
+    "med spa near me": 5400,
+    "botox near me": 6600,
+    "lip filler near me": 1900,
+    "laser hair removal near me": 5400
+   },
+   "near_me_location": "New York,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at New York,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Shares NYC near-me call with other Manhattan locations; 'med spa new york'/'botox new york' etc. statewide volumes include generic NY-wide intent. NYC near-me Sep-Oct 2026 spike (med spa 14,800) inflates 12-mo avg."
+  },
+  {
+   "slug": "beautyfix-medspa-upper-east-side",
+   "town": {
+    "med spa new york": 1300,
+    "botox new york": 2400,
+    "lip filler new york": 1600,
+    "laser hair removal new york": 3600
+   },
+   "near_me": {
+    "med spa near me": 5400,
+    "botox near me": 6600,
+    "lip filler near me": 1900,
+    "laser hair removal near me": 5400
+   },
+   "near_me_location": "New York,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at New York,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Shares NYC near-me call; see flatiron note."
+  },
+  {
+   "slug": "beautyfix-medspa-westchester",
+   "town": {
+    "med spa larchmont": null,
+    "botox larchmont": 20,
+    "lip filler larchmont": null,
+    "laser hair removal larchmont": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Larchmont,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at Larchmont,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Larchmont near-me volumes are Google Ads minimum (10) floor."
+  },
+  {
+   "slug": "ever-body-flatiron",
+   "town": {
+    "med spa new york": 1300,
+    "botox new york": 2400,
+    "lip filler new york": 1600,
+    "laser hair removal new york": 3600
+   },
+   "near_me": {
+    "med spa near me": 5400,
+    "botox near me": 6600,
+    "lip filler near me": 1900,
+    "laser hair removal near me": 5400
+   },
+   "near_me_location": "New York,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at New York,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Shares NYC near-me call; see beautyfix-medspa-flatiron note."
+  },
+  {
+   "slug": "everbody-greenwich-village",
+   "town": {
+    "med spa new york": 1300,
+    "botox new york": 2400,
+    "lip filler new york": 1600,
+    "laser hair removal new york": 3600
+   },
+   "near_me": {
+    "med spa near me": 5400,
+    "botox near me": 6600,
+    "lip filler near me": 1900,
+    "laser hair removal near me": 5400
+   },
+   "near_me_location": "New York,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at New York,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Shares NYC near-me call; see beautyfix-medspa-flatiron note."
+  },
+  {
+   "slug": "ever-body-williamsburg",
+   "town": {
+    "med spa brooklyn": 320,
+    "botox brooklyn": null,
+    "lip filler brooklyn": 110,
+    "laser hair removal brooklyn": 590
+   },
+   "near_me": {
+    "med spa near me": 880,
+    "botox near me": 1600,
+    "lip filler near me": 390,
+    "laser hair removal near me": 1300
+   },
+   "near_me_location": "Brooklyn,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at Brooklyn,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Williamsburg is a Brooklyn neighborhood; town and near-me use Brooklyn."
+  },
+  {
+   "slug": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
+   "town": {
+    "med spa pearl river": null,
+    "botox pearl river": null,
+    "lip filler pearl river": null,
+    "laser hair removal pearl river": 10
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Pearl River,New York,United States",
+   "notes": "Town searches at New York,United States; near-me at Pearl River,New York,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-creve-coeur",
+   "town": {
+    "med spa creve coeur": 30,
+    "botox creve coeur": null,
+    "lip filler creve coeur": null,
+    "laser hair removal creve coeur": 10
+   },
+   "near_me": {
+    "med spa near me": 40,
+    "botox near me": 30,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Creve Coeur,Missouri,United States",
+   "notes": "Town searches at Missouri,United States; near-me at Creve Coeur,Missouri,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-ofallon",
+   "town": {
+    "med spa o'fallon": null,
+    "botox o'fallon": null,
+    "lip filler o'fallon": null,
+    "laser hair removal o'fallon": null
+   },
+   "near_me": {
+    "med spa near me": 110,
+    "botox near me": 110,
+    "lip filler near me": 70,
+    "laser hair removal near me": 50
+   },
+   "near_me_location": "O'Fallon,Missouri,United States",
+   "notes": "Town searches at Missouri,United States; near-me at O'Fallon,Missouri,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-sunset-hills",
+   "town": {
+    "med spa sunset hills": null,
+    "botox sunset hills": null,
+    "lip filler sunset hills": null,
+    "laser hair removal sunset hills": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Sunset Hills,Missouri,United States",
+   "notes": "Town searches at Missouri,United States; near-me at Sunset Hills,Missouri,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-zona-rosa",
+   "town": {
+    "med spa kansas city": 320,
+    "botox kansas city": 210,
+    "lip filler kansas city": 210,
+    "laser hair removal kansas city": 320
+   },
+   "near_me": {
+    "med spa near me": 320,
+    "botox near me": 260,
+    "lip filler near me": 110,
+    "laser hair removal near me": 170
+   },
+   "near_me_location": "Kansas City,Missouri,United States",
+   "notes": "Town searches at Missouri,United States; near-me at Kansas City,Missouri,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned. Zona Rosa is in Kansas City (Northland); town and near-me use Kansas City."
+  },
+  {
+   "slug": "illume-med-spa",
+   "town": {
+    "med spa lee's summit": 20,
+    "botox lee's summit": null,
+    "lip filler lee's summit": null,
+    "laser hair removal lee's summit": null
+   },
+   "near_me": {
+    "med spa near me": 110,
+    "botox near me": 50,
+    "lip filler near me": 20,
+    "laser hair removal near me": 30
+   },
+   "near_me_location": "Lee's Summit,Missouri,United States",
+   "notes": "Town searches at Missouri,United States; near-me at Lee's Summit,Missouri,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-grand-rapids",
+   "town": {
+    "med spa grand rapids": 170,
+    "botox grand rapids": 390,
+    "lip filler grand rapids": 170,
+    "laser hair removal grand rapids": 320
+   },
+   "near_me": {
+    "med spa near me": 50,
+    "botox near me": 140,
+    "lip filler near me": 70,
+    "laser hair removal near me": 70
+   },
+   "near_me_location": "Grand Rapids,Michigan,United States",
+   "notes": "Town searches at Michigan,United States; near-me at Grand Rapids,Michigan,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-novi",
+   "town": {
+    "med spa novi": null,
+    "botox novi": 140,
+    "lip filler novi": null,
+    "laser hair removal novi": 70
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 50,
+    "lip filler near me": 20,
+    "laser hair removal near me": 30
+   },
+   "near_me_location": "Novi,Michigan,United States",
+   "notes": "Town searches at Michigan,United States; near-me at Novi,Michigan,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-greenwood",
+   "town": {
+    "med spa greenwood": 40,
+    "botox greenwood": 70,
+    "lip filler greenwood": null,
+    "laser hair removal greenwood": 70
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 10,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Greenwood,Indiana,United States",
+   "notes": "Town searches at Indiana,United States; near-me at Greenwood,Indiana,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  },
+  {
+   "slug": "avelure-indy",
+   "town": {
+    "med spa indianapolis": 260,
+    "botox indianapolis": 320,
+    "lip filler indianapolis": 260,
+    "laser hair removal indianapolis": 390
+   },
+   "near_me": {
+    "med spa near me": 170,
+    "botox near me": 390,
+    "lip filler near me": 260,
+    "laser hair removal near me": 210
+   },
+   "near_me_location": "Indianapolis,Indiana,United States",
+   "notes": "Town searches at Indiana,United States; near-me at Indianapolis,Indiana,United States. Source: DataForSEO Google Ads search_volume, 12-mo avg (Nov 2025-Oct 2026), pulled 2026-11-20. null = no volume returned."
+  }
+ ]
+}

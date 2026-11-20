@@ -1,0 +1,952 @@
+{
+ "slug": "nouveau-day-spa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Nouveau Day Spa",
+  "brand": "Nouveau Day Spa",
+  "address": "8136 West Grandridge Boulevard, Kennewick, WA 99336",
+  "phone": "(509) 736-2321",
+  "site": "https://nouveauspa.com",
+  "lat": 46.22036,
+  "lng": -119.23057
+ },
+ "listing": {
+  "found": true,
+  "title": "Nouveau Day Spa",
+  "google_phone": "+1509-581-5339",
+  "phone_matches_amp": false,
+  "address": "8136 W Grandridge Blvd, Kennewick, WA 99336",
+  "distance_km": 0.1,
+  "site_url": "https://nouveauspa.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.7,
+  "reviews": 336,
+  "stars": {
+   "1": 16,
+   "2": 2,
+   "3": 7,
+   "4": 23,
+   "5": 288
+  },
+  "photos": 22,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-12 17:29:57 +00:00",
+  "topics": [
+   {
+    "t": "relaxing atmosphere",
+    "n": 25
+   },
+   {
+    "t": "pedicure",
+    "n": 23
+   },
+   {
+    "t": "hair styling",
+    "n": 15
+   },
+   {
+    "t": "couples massage",
+    "n": 5
+   },
+   {
+    "t": "day spa",
+    "n": 5
+   },
+   {
+    "t": "manicure",
+    "n": 4
+   },
+   {
+    "t": "deep tissue massage",
+    "n": 3
+   },
+   {
+    "t": "friendly welcome",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Nouveau Facial",
+    "category": "Facials",
+    "price_usd": 140
+   },
+   {
+    "title": "Women's Haircut",
+    "category": "Hair",
+    "price_usd": 90
+   },
+   {
+    "title": "Nouveau Massage (60 Min)",
+    "category": "Massage",
+    "price_usd": 110
+   },
+   {
+    "title": "Nouveau Massage (90 Min)",
+    "category": "Massage",
+    "price_usd": 150
+   },
+   {
+    "title": "Shellac Manicure",
+    "category": "Nails",
+    "price_usd": 70
+   },
+   {
+    "title": "Express Manicure",
+    "category": "Nails",
+    "price_usd": 45
+   },
+   {
+    "title": "Express Pedicure",
+    "category": "Nails",
+    "price_usd": 65
+   },
+   {
+    "title": "Spa Pedicure",
+    "category": "Nails",
+    "price_usd": 80
+   },
+   {
+    "title": "Brazilian Wax",
+    "category": "Waxing",
+    "price_usd": 115
+   },
+   {
+    "title": "Brow Wax & Shaping",
+    "category": "Waxing",
+    "price_usd": 30
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Vita Sana Day Spa",
+    "rating": 4.7,
+    "reviews": 217
+   },
+   {
+    "name": "nouveau spa",
+    "rating": 4,
+    "reviews": 1
+   },
+   {
+    "name": "À La Mode Spa & Salon TriCities",
+    "rating": 4.9,
+    "reviews": 210
+   },
+   {
+    "name": "Massage Envy",
+    "rating": 3.6,
+    "reviews": 145
+   }
+  ],
+  "weekly_open_hours": 57,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Kennewick WA",
+   "prompt": "med spa Kennewick WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Synergy MedAesthetics - Kennewick",
+     "Lip·ology MedSpa",
+     "Revel Medspa"
+    ],
+    "organic_pos": 2,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Synergy MedAesthetics",
+      "Revive Wellness",
+      "New U Women's Clinic & Aesthetics",
+      "Lipology MedSpa",
+      "Curve Appeal",
+      "Vita Sana Day Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Synergy MedAesthetics",
+      "Revive Wellness",
+      "Lip·ology MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Synergy MedAesthetics",
+      "Lip·ology MedSpa",
+      "Curve Appeal",
+      "New U Women's Clinic & Aesthetics",
+      "Revive Wellness",
+      "Indie Beauty & Wellness"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Synergy MedAesthetics",
+      "Curve Appeal",
+      "Lip·ology MedSpa",
+      "New U Women's Clinic & Aesthetics",
+      "Shape Cosmetic Surgery & MedSpa",
+      "Center For Excellence In Dermatology",
+      "Revitalize Health Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Kennewick WA",
+   "prompt": "botox Kennewick WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Synergy MedAesthetics - Kennewick",
+     "Lip·ology MedSpa",
+     "New U Women's Clinic & Aesthetics"
+    ],
+    "organic_pos": 2,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "RENU Wellness",
+      "Shape Cosmetic Surgery & MedSpa",
+      "Synergy MedAesthetics",
+      "New U Women's Clinic & Aesthetics",
+      "Tri-Cities Infusion and Wellness Clinic",
+      "Razo MedAesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Synergy MedAesthetics",
+      "Mid-Columbia Dental",
+      "Revive Wellness",
+      "Shape Cosmetic Surgery & MedSpa",
+      "Center for Excellence in Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Synergy MedAesthetics",
+      "Center for Excellence in Dermatology",
+      "Shahram Salemy, MD",
+      "Francis X. Fleming, MD"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Synergy MedAesthetics",
+      "New U Women's Clinic & Aesthetics",
+      "Mid-Columbia Dental",
+      "CARE Esthetics",
+      "Tri-Cities Infusion and Wellness Clinic",
+      "Revitalize Health Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Kennewick, WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Synergy MedAesthetics - Kennewick",
+     "Revel Medspa",
+     "Modern Medical Spa"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Tri Cities Infusion And Well Clinic",
+      "New U Women's Clinic & Aesthetics",
+      "Synergy MedAesthetics",
+      "Lipology MedSpa",
+      "Curve Appeal"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Synergy MedAesthetics",
+      "New U Women's Clinic & Aesthetics",
+      "Lip·ology MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Synergy MedAesthetics",
+      "Lipology MedSpa",
+      "The Muscle Spa",
+      "Revive Wellness"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Curve Appeal",
+      "New U Women's Clinic & Aesthetics",
+      "Revive Wellness",
+      "Synergy MedAesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone +1 509-581-5339 differs from AMP-listed (509) 736-2321; 509-736-2321 appears on nouveauspa.com and in backlink contact data, and directories (medspa.us, medicalspadirectories) show a third number 509-934-4673 - NAP inconsistency.",
+  "Google primary category is Medical spa, but description, services with prices and review topics are all day-spa/salon (massage, nails, hair, waxing); no injectable/laser services listed on the Google profile even though nouveauspa.com has an injectables-fillers page ranking #8 (S1) and #2 (S2).",
+  "Not in the local pack for any of the 3 searches; organic_pos 2 for S1 and S2 is nouveauspa.com (homepage for S1, /injectables-fillers for S2).",
+  "S1 AI overview was asynchronous with no text (unreadable).",
+  "S3 'best med spa near me' organic results are geographically off-target (Reno, Fresno, Oceanside etc.) despite Kennewick location_name; only the local pack is local.",
+  "'people also search' includes a separate 1-review listing titled 'nouveau spa' - possible duplicate/stray listing.",
+  "Google lat/lng returned with only 3 decimals (46.22,-119.231), so distance_km is approximate.",
+  "No model substitutions; all 12 LLM calls succeeded. Gemini and Claude describe Nouveau as specializing in massages, waxing, skin care and nails rather than injectables."
+ ]
+}

@@ -1,0 +1,305 @@
+{
+ "slug": "crate-medaesthetics-murfreesboro",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Cúrate MedAesthetics - Murfreesboro",
+  "brand": "Cúrate MedAesthetics",
+  "address": "149 Wendelwood Drive Suite B1, Murfreesboro, TN 37129",
+  "phone": "(423) 661-3244",
+  "site": "https://curatemedspa",
+  "pin": [
+   35.88072,
+   -86.38649
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Curate MedAesthetics - Murfreesboro",
+  "google_phone": "+1615-541-8004",
+  "phone_matches_amp": false,
+  "address": "149 Wendelwood Dr B1, Murfreesboro, TN 37129",
+  "distance_km": 0.1,
+  "site_url": "https://curatemedspa.com/locations/murfreesboro/?utm_source=google&utm_medium=organic&utm_campaign=gbp_murfreesboro",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa"
+  ],
+  "rating": 5,
+  "reviews": 60,
+  "stars": {
+   "1": 0,
+   "2": 1,
+   "3": 0,
+   "4": 0,
+   "5": 59
+  },
+  "photos": 13,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 7,
+  "last_updated": "2026-10-08 08:56:23 +00:00",
+  "topics": [
+   {
+    "t": "knowledgeable staff",
+    "n": 19
+   },
+   {
+    "t": "welcoming staff",
+    "n": 9
+   },
+   {
+    "t": "botox treatments",
+    "n": 5
+   },
+   {
+    "t": "beautiful space",
+    "n": 4
+   },
+   {
+    "t": "filler",
+    "n": 3
+   },
+   {
+    "t": "medspa",
+    "n": 3
+   },
+   {
+    "t": "clean space",
+    "n": 2
+   },
+   {
+    "t": "skilled staff",
+    "n": 2
+   }
+  ],
+  "services_count": 14,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Skin Perfect Aesthetic & Wellness",
+    "rating": 5,
+    "reviews": 100
+   },
+   {
+    "name": "Kattine Aesthetics",
+    "rating": 4.7,
+    "reviews": 133
+   },
+   {
+    "name": "Skin Space Aesthetics",
+    "rating": 5,
+    "reviews": 22
+   },
+   {
+    "name": "AWSkinCo+ | Murfreesboro",
+    "rating": 4.9,
+    "reviews": 261
+   },
+   {
+    "name": "PR Aesthetics",
+    "rating": 5,
+    "reviews": 118
+   }
+  ],
+  "weekly_open_hours": 36,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Murfreesboro TN",
+   "prompt": "med spa Murfreesboro TN",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Curate MedAesthetics - Murfreesboro",
+     "AWSkinCo+ | Murfreesboro",
+     "Ashley McFarland Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "AWSkinCo+",
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Aesthetics Collective MedSpa",
+      "PR Aesthetics",
+      "Regevity Face & Body",
+      "Juventas Medspa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Ashley McFarland Aesthetics",
+      "Jennifer Warner Aesthetics",
+      "Skin Perfect Aesthetics & Wellness",
+      "Juventas Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Aesthetics Collective MedSpa",
+      "Juventas Medspa",
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Regevity",
+      "Genesis Lifestyle Medicine"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Aesthetics Collective",
+      "Juventas Med Spa",
+      "AW Skin Co.",
+      "Genesis Lifestyle Medicine",
+      "Kattine Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Murfreesboro TN",
+   "prompt": "botox Murfreesboro TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Ashley McFarland Aesthetics",
+     "AWSkinCo+ | Murfreesboro",
+     "Bloom Wild Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "PR Aesthetics",
+      "AW Skin Co.",
+      "Jennifer Warner Aesthetics",
+      "Renew MedSpa",
+      "Juventas MedSpa",
+      "BBeautiful Injectables",
+      "Chambers Aesthetics",
+      "Skin Space Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Webb Aesthetic Medical Spa / Plastic Surgery",
+      "Aesthetics Collective MedSpa",
+      "Ashley McFarland Aesthetics",
+      "BBeautiful Injectables",
+      "Juventas Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "AWSkin Co+",
+      "Lindsay Keith, MD MedSpa",
+      "Reflect Wellness and Aesthetics",
+      "Divine Dental Center",
+      "Webb Aesthetic Plastic Surgery and MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Tarola Plastic Surgery",
+      "AWSkinCo+",
+      "Divine Dental Center",
+      "BBeautiful Injectables",
+      "Genesis Lifestyle Medicine",
+      "Juventas Med Spa",
+      "PR Aesthetics",
+      "Cain Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Murfreesboro, TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Ashley McFarland Aesthetics",
+     "AWSkinCo+ | Murfreesboro",
+     "Skin Perfect Aesthetic & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Reflect Wellness and Aesthetics",
+      "Slim Now TN",
+      "Jennifer Warner Aesthetics",
+      "AW Skin Co.",
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Aesthetics Collective MedSpa",
+      "Speakeasy Aesthetics",
+      "Regevity Face & Body"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Ashley McFarland Aesthetics",
+      "Jennifer Warner Aesthetics",
+      "Skin Perfect Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Reflect Wellness and Aesthetics",
+      "About Face Skincare",
+      "Aesthetics Collective MedSpa",
+      "Skin Perfect Aesthetic & Wellness",
+      "Webb Aesthetic Plastic Surgery & Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Ashley McFarland Aesthetics",
+      "Webb Aesthetic Plastic Surgery & Med Spa",
+      "Pure Glow Skin Refinery",
+      "UMedi Spa",
+      "Skin Perfect Aesthetics & Wellness",
+      "AWSkinCo+",
+      "Genesis Lifestyle Medicine",
+      "Aesthetics Collective"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "AMP-listed phone (423) 661-3244 is Curate's Ooltewah/Chattanooga number (per curatemedspa.com/services/botox); Google listing and the brand site use 615-541-8004 for Murfreesboro. AMP directory phone is wrong for this location.",
+  "AMP-listed site 'https://curatemedspa' is truncated (missing .com); Google links curatemedspa.com/locations/murfreesboro/, treated as matching domain.",
+  "Listing search with accented title 'Cúrate MedAesthetics' returned 0; unaccented 'Curate MedAesthetics' found it (claimed). Google title omits the accent.",
+  "Listing data shows 60 reviews (rating_distribution 59x5, 1x2); the live S1 local pack shows 64 reviews, so listing data is slightly stale (last_updated 2026-10-08).",
+  "No services have prices on the listing; popular_times not returned by the listing (null). Closed Sunday and Monday per timetable.",
+  "S1 organic: no own-site result; Facebook pages for Curate Murfreesboro rank at organic positions 4 and 6 (not counted as own site).",
+  "S3 'best med spa near me' organic results are largely off-location (Florida directories, Alabama Yelp pages).",
+  "All three AI Overviews were asynchronous with no text (unreadable).",
+  "Gemini gemini-2.5-flash rate limited (rate_limit_exceeded) on all 3 prompts and on retry; all Gemini answers used gemini-3.6-flash."
+ ]
+}

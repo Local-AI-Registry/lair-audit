@@ -1,0 +1,306 @@
+{
+ "slug": "destination-aesthetics-folsom",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Destination Aesthetics - Folsom",
+  "brand": "Destination Aesthetics",
+  "address": "1731 Creekside Drive, Folsom, CA 95630",
+  "phone": "(916) 844-4913",
+  "site": "https://destinationaesthetics.com",
+  "pin": [
+   38.67195,
+   -121.14069
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Destination Aesthetics Medical Spa",
+  "cid": "11667202264683378795",
+  "google_phone": "+1916-259-8692",
+  "phone_matches_amp": false,
+  "address": "1731 Creekside Dr, Folsom, CA 95630",
+  "distance_km": 0.0,
+  "site_url": "https://www.destinationaesthetics.com/contact/da-folsom/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 150,
+  "stars": {
+   "1": 4,
+   "2": 3,
+   "3": 1,
+   "4": 3,
+   "5": 139
+  },
+  "photos": 18,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-28 02:28:42 +00:00",
+  "topics": [
+   {
+    "t": "courteous staff",
+    "n": 16
+   },
+   {
+    "t": "esthetician",
+    "n": 6
+   },
+   {
+    "t": "hydrofacial",
+    "n": 5
+   },
+   {
+    "t": "no bruising",
+    "n": 4
+   },
+   {
+    "t": "diamond glow facial",
+    "n": 2
+   },
+   {
+    "t": "cosmetic upkeep",
+    "n": 2
+   },
+   {
+    "t": "procedure explanations",
+    "n": 2
+   },
+   {
+    "t": "punctuality",
+    "n": 2
+   }
+  ],
+  "services_count": 4,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "SER Aesthetics",
+    "rating": 4.9,
+    "reviews": 40
+   },
+   {
+    "name": "RenewMD Beauty and Wellness, a Medical Spa in Folsom",
+    "rating": 4.9,
+    "reviews": 77
+   },
+   {
+    "name": "Destination Aesthetics Beauty Suites",
+    "rating": 2.5,
+    "reviews": 2
+   },
+   {
+    "name": "Tanya Martin Skincare",
+    "rating": 5,
+    "reviews": 257
+   },
+   {
+    "name": "Bonita Aesthetics",
+    "rating": 4.8,
+    "reviews": 89
+   }
+  ],
+  "weekly_open_hours": 38.75,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Folsom CA",
+   "prompt": "med spa Folsom CA",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Seven Medical Aesthetics",
+     "RenewMD Beauty and Wellness, a Medical Spa in Folsom",
+     "Destination Aesthetics Medical Spa - Folsom"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Jeuvani Spa & Sculpting",
+      "Humminglow Aesthetics Lounge",
+      "SER Aesthetics",
+      "Seven Medical Aesthetics",
+      "RenewMD Beauty and Wellness",
+      "Bonita Aesthetics",
+      "Blended Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "RenewMD Medical Spa",
+      "SER Aesthetics",
+      "VIVA Aesthetics Wellness",
+      "Elan Wellness & Aesthetics",
+      "Marjan Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Bellasi Aesthetics",
+      "Humminglow Aesthetics Lounge",
+      "SER Aesthetics",
+      "RenewMD Beauty and Wellness",
+      "Jeuvani Spa & Sculpting",
+      "Restore Hyper Wellness",
+      "Aesthetic Envy",
+      "Plush Aesthetics Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Seven Medical Aesthetics",
+      "RenewMD Medical Spa",
+      "Aesthetic Envy",
+      "Cascade Medical Wellness & Aesthetics",
+      "LaserAway"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Folsom CA",
+   "prompt": "botox Folsom CA",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Seven Medical Aesthetics",
+     "Destination Aesthetics Medical Spa - Folsom",
+     "Cascade Medical Wellness & Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Humminglow Aesthetics Lounge",
+      "LaserAway Folsom",
+      "Seven Medical Aesthetics",
+      "Cascade Medical Wellness & Aesthetics",
+      "Jeuvani Spa & Sculpting",
+      "Blended Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "LaserAway Folsom",
+      "SER Aesthetics",
+      "Folsom Dermatology",
+      "Seven Medical Aesthetics",
+      "Almonte Center",
+      "Elan Wellness & Aesthetics",
+      "Marjan Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Bellasi Aesthetics",
+      "Seven Medical Aesthetics",
+      "Jeuvani Spa & Sculpting",
+      "LaserAway Folsom"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "LaserAway Folsom",
+      "Bellasi Aesthetics",
+      "Seven Medical Aesthetics",
+      "JB Medical Clinic-Folsom",
+      "Cascade Medical Wellness & Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Folsom, CA",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Esthetics Center El Dorado Hills",
+     "Seven Medical Aesthetics",
+     "Destination Aesthetics Medical Spa - Folsom"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "The Natural Result / Center for Aesthetic Artistry",
+      "Kaufman and Davis Plastic Surgery",
+      "Seven Medical Aesthetics",
+      "Humminglow Aesthetics Lounge",
+      "Jeuvani Spa & Sculpting"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Esthetics Center El Dorado Hills",
+      "Restore Hyper Wellness",
+      "Dignity Medical Aesthetics & Wellness",
+      "722 Head Spa Folsom",
+      "The Natural Result / Center for Aesthetic Artistry",
+      "Seven Medical Aesthetics",
+      "Refresh Day Spa",
+      "RenewMD Beauty and Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "RenewMD Beauty and Wellness",
+      "Restore Hyper Wellness",
+      "Dr. Drew Davis, MD - Plastic Surgery",
+      "Esthetics Center El Dorado Hills"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Natural Result / Center for Aesthetic Artistry",
+      "Concierge Medical Aesthetics",
+      "Cascade Medical Wellness & Aesthetics",
+      "RenewMD",
+      "LaserAway"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (916) 259-8692 does not match AMP-listed (916) 844-4913; 844-4913 is the brand's central number (shown on destinationaesthetics.com/location/folsom) and is also used on the El Dorado Hills listing and the adjacent 'Destination Aesthetics Beauty Suites' listing.",
+  "Second listing at same building: 'Destination Aesthetics Beauty Suites' (1731A Creekside Dr, cid 8538876046753106421, category Medical spa, 2.5 stars / 2 reviews, site dabeautysuites.com) - suite-rental business also categorized as Medical spa; risk of brand confusion/dilution.",
+  "No popular_times returned by business_listings_search for this listing (saved as null).",
+  "No priced services on the Google listing (services are 4 grouped text entries with no prices).",
+  "Google map pin listed as 38.672,-121.141 (3-decimal precision); distance to AMP pin ~0.03 km.",
+  "SERP live title shows 'Destination Aesthetics Medical Spa - Folsom' with 152 reviews (listings DB: 150).",
+  "S3 Google results are mostly out-of-market (Reno/Fresno/Carlsbad Yelp pages) despite Folsom location; AI overview was asynchronous (unreadable).",
+  "Organic URLs in SERP are google.com/goto redirects; no organic result identifiable as destinationaesthetics.com in top 10 for any search.",
+  "S2 chat_gpt named the brand only via a 'Destination Aesthetics - YouTube' link at the end, not as a listed provider; counted as named=1 per brand-name rule.",
+  "LLM answers cite 'voted #1 Best Medical Spa by Sacramento Magazine 5 years in a row' (from brand site); Claude S3 quoted Yelp 4.6 / 155 reviews; Birdeye shows 4.7 / 310 reviews.",
+  "No model substitutions; gemini-2.5-flash succeeded on all prompts."
+ ]
+}

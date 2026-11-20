@@ -1,0 +1,287 @@
+{
+ "slug": "ever-body-colleyville",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - Colleyville",
+  "brand": "Ever/Body",
+  "address": "4709 Colleyville Blvd, Suite 560, Colleyville, TX 76034",
+  "phone": "(817) 670-8854",
+  "site": "https://everbody.com",
+  "pin": [
+   32.8787,
+   -97.15633
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body - Colleyville",
+  "google_phone": "+1 817-910-6242",
+  "phone_matches_amp": false,
+  "address": "4709 Colleyville Blvd #560, Colleyville, TX 76034",
+  "distance_km": 0.0,
+  "site_url": "https://everbody.com/locations/colleyville/?utm_source=google&utm_medium=organic&utm_campaign=gbp_colleyville",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 53,
+  "stars": {
+   "1": 0,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 53
+  },
+  "photos": 11,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 3,
+  "last_updated": "2026-10-26 17:58:08 +00:00",
+  "topics": [
+   {
+    "t": "helpful team",
+    "n": 6
+   },
+   {
+    "t": "aesthetician",
+    "n": 5
+   },
+   {
+    "t": "treatment recommendations",
+    "n": 4
+   },
+   {
+    "t": "diamond glow",
+    "n": 3
+   },
+   {
+    "t": "injectors",
+    "n": 3
+   },
+   {
+    "t": "skincare education",
+    "n": 2
+   },
+   {
+    "t": "calming space",
+    "n": 2
+   },
+   {
+    "t": "latest treatments",
+    "n": 2
+   }
+  ],
+  "services_count": null,
+  "prices": [],
+  "also_search": [],
+  "weekly_open_hours": 38,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Colleyville TX",
+   "prompt": "med spa Colleyville TX",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Glow Medspa - Colleyville",
+     "InjectCo MedSpa Colleyville",
+     "DFW MEDICAL SPA"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Skinsation Medspa",
+      "Juvia Med Spa",
+      "Restore Hyper Wellness",
+      "Trinity Aesthetics & Laser",
+      "Elase Med Spa",
+      "Medrein Health",
+      "North Texas MedSpa",
+      "DFW Medical Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Skinsation Medspa",
+      "Elase Med Spa",
+      "Pickture Perfect Medspa",
+      "Bodenvy Coolsculpting & Weight Loss",
+      "Glow Medspa",
+      "Calista Skin & Laser Center",
+      "Make You Well Aesthetics",
+      "Revive Primary Care & Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "InjectCo MedSpa Colleyville",
+      "Elase Medical Spa",
+      "Calista Skin and Laser Center",
+      "DFW Medical Spa",
+      "North Texas MedSpa",
+      "Glo & Glam Colleyville",
+      "Glow Medspa",
+      "Juvia Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Glow Medspa",
+      "Elase Med Spa",
+      "Juvia Med Spa",
+      "Trinity Aesthetics & Laser MedSpa",
+      "Glo & Glam",
+      "InjectCo"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Colleyville TX",
+   "prompt": "botox Colleyville TX",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "InjectCo MedSpa Colleyville",
+     "Skinsation Medspa",
+     "Ever/Body - Colleyville"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Colleyville Dermatology",
+      "Pickture Perfect Medspa",
+      "InjectCo MedSpa",
+      "DFW Medical Spa",
+      "Beautopia Cosmetic and Regenerative Medicine",
+      "DFW Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Pickture Perfect Medspa",
+      "Calista Skin & Laser Center",
+      "DFW Medical Spa",
+      "Elase Med Spa",
+      "InjectCo MedSpa Colleyville",
+      "North Texas MedSpa",
+      "Colleyville Dermatology",
+      "Jesse Smith M.D."
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "InjectCo MedSpa",
+      "Skinsation Aesthetics",
+      "Juvia Med Spa",
+      "Pickture Perfect Medspa",
+      "Dr. Jesse Smith",
+      "Glo & Glam"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elase Med Spa",
+      "InjectCo MedSpa Colleyville",
+      "Glo & Glam MedSpa",
+      "Pickture Perfect Medspa",
+      "Calista Skin & Laser Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Colleyville, TX",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Skinsation Medspa",
+     "The MedSpa of DFW",
+     "the L.A.B. med spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Skinsation Medspa",
+      "Trinity Aesthetics & Laser",
+      "Juvia MedSpa",
+      "Calista Skin and Laser Center",
+      "DFW Medical Spa",
+      "Glow Medspa - Colleyville"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Skinsation Medspa",
+      "Pickture Perfect Medspa",
+      "Bodenvy Coolsculpting & Weight Loss",
+      "Glow Medspa - Colleyville",
+      "North Texas MedSpa",
+      "Calista Skin and Laser Center",
+      "Make You Well Aesthetics",
+      "Fortitude Health Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "InjectCo MedSpa Colleyville",
+      "Skinsation Medspa",
+      "Calista Skin and Laser Center",
+      "Glow Medspa",
+      "Elase Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Trinity Aesthetics & Laser",
+      "Glow Medspa - Colleyville",
+      "REFINE Medical Spa",
+      "Calista Skin and Laser Center",
+      "Fortitude Health Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (817) 910-6242 does not match AMP-listed (817) 670-8854.",
+  "Listing first_seen 2026-10-26 (new/recently indexed); 53 reviews all 5-star in listing, local pack showed 56.",
+  "Listing response had no popular_times, services, prices or people_also_search fields; stored null/empty.",
+  "Listing lat/lng given at 3 decimals (32.879,-97.156); distance to AMP pin ~0.05 km.",
+  "Open Tue-Sat only (38 h/week); closed Sun-Mon.",
+  "All three SERPs had asynchronous AI Overviews with no text (unreadable).",
+  "Claude (S2) named Ever/Body Colleyville but cited phone (917) 781-2352, matching neither Google nor AMP number.",
+  "No model substitutions; all 12 LLM calls succeeded on requested models; SERP location Colleyville,Texas,United States worked."
+ ]
+}

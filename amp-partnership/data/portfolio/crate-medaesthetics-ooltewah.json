@@ -1,0 +1,896 @@
+{
+ "slug": "crate-medaesthetics-ooltewah",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Cúrate MedAesthetics - Ooltewah",
+  "brand": "Cúrate MedAesthetics",
+  "address": "9447 Bradmore Ln, Ste. 201, Ooltewah, TN 37363",
+  "phone": "(423) 661-3244",
+  "site": "https://curatemedspa.com",
+  "pin": [
+   35.08335,
+   -85.05531
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Curate MedAesthetics - Ooltewah",
+  "google_phone": "+1423-396-0523",
+  "phone_matches_amp": false,
+  "address": "9447 Bradmore Ln Ste. 201, Ooltewah, TN 37363",
+  "distance_km": 0.0,
+  "site_url": "https://curatemedspa.com/locations/ooltewah/?utm_source=google&utm_medium=organic&utm_campaign=gbp_ooltewah",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 824,
+  "stars": {
+   "1": 4,
+   "2": 2,
+   "3": 0,
+   "4": 4,
+   "5": 814
+  },
+  "photos": 141,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 14,
+  "last_updated": "2026-09-11 22:46:57 +00:00",
+  "topics": [
+   {
+    "t": "hydrafacial",
+    "n": 31
+   },
+   {
+    "t": "thorough explanations",
+    "n": 22
+   },
+   {
+    "t": "lip filler",
+    "n": 15
+   },
+   {
+    "t": "personalized recommendations",
+    "n": 12
+   },
+   {
+    "t": "painless procedure",
+    "n": 12
+   },
+   {
+    "t": "injections",
+    "n": 12
+   },
+   {
+    "t": "injector",
+    "n": 11
+   },
+   {
+    "t": "skin treatments",
+    "n": 5
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 255
+   },
+   {
+    "title": "Dermaplane",
+    "category": "Medical Spa",
+    "price_usd": 100
+   },
+   {
+    "title": "HydraFacial Deluxe Treatment",
+    "category": "Medical Spa",
+    "price_usd": 279
+   },
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 450
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Sage Aesthetics And Wellbeing",
+    "rating": 5,
+    "reviews": 139
+   },
+   {
+    "name": "Key MedAesthetics",
+    "rating": 5,
+    "reviews": 14
+   },
+   {
+    "name": "Clear Beauty Medical Aesthetics - Med Spa",
+    "rating": 5,
+    "reviews": 47
+   },
+   {
+    "name": "Simply Beautiful MedAesthetics",
+    "rating": 5,
+    "reviews": 50
+   },
+   {
+    "name": "Revive Aesthetics - Chattanooga",
+    "rating": 4.8,
+    "reviews": 210
+   }
+  ],
+  "weekly_open_hours": 44,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Ooltewah TN",
+   "prompt": "med spa Ooltewah TN",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Curate MedAesthetics - Ooltewah",
+     "beauty Bar Med Spa at Southern Surgical Arts",
+     "Key MedAesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts",
+      "Sage Aesthetics and Wellbeing",
+      "Lavender Medi Spa",
+      "Clear Beauty Medical Aesthetics",
+      "Key MedAesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts",
+      "Clear Beauty Med Spa",
+      "Key Med Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Beauty Bar MedSpa at Southern Surgical Arts",
+      "Clear Beauty Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Clear Beauty Medical Aesthetics",
+      "Smiley Aesthetics Medical Spa",
+      "Key MedAesthetics",
+      "Southern Surgical Arts Beauty Bar"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Ooltewah TN",
+   "prompt": "botox Ooltewah TN",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Curate MedAesthetics - Ooltewah",
+     "beauty Bar Med Spa at Southern Surgical Arts",
+     "Key MedAesthetics"
+    ],
+    "organic_pos": 1,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts",
+      "Sage Aesthetics & Wellbeing",
+      "Smiley Aesthetics Medical Spa",
+      "CFR Aesthetics - Center for Facial Rejuvenation"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts",
+      "Clear Beauty Medical Aesthetics",
+      "Uderm - Dermatology & Mohs Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts Beauty Bar",
+      "Uderm",
+      "Sage Aesthetics & Wellbeing"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Sage Aesthetic & Well Being",
+      "Smiley Aesthetics Medical Spa",
+      "Uderm",
+      "Clear Beauty Medical Aesthetics",
+      "Southern Surgical Arts' Ooltewah Beauty Bar"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Ooltewah, TN",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Curate MedAesthetics - Ooltewah",
+     "beauty Bar Med Spa at Southern Surgical Arts",
+     "Sage Aesthetics & Rejuvenation"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Sage Aesthetics and Wellbeing",
+      "Clear Derm",
+      "Poplar Creek Spa",
+      "Clear Beauty Medical Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts (beauty Bar Med Spa)",
+      "Uderm - Dermatology & Mohs Surgery",
+      "Clear Beauty Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Beauty Bar Med Spa at Southern Surgical Arts",
+      "Clear Beauty Medical Aesthetics",
+      "Key Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "beauty Bar Med Spa at Southern Surgical Arts",
+      "Sage Aesthetic & Well Being"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (423) 396-0523 differs from AMP-listed (423) 661-3244; brand site, Yelp-era MapQuest and some AI answers (Perplexity, Claude S2) still cite 661-3244, while Claude S1 cites 396-0523 - NAP inconsistency.",
+  "Initial title search 'Cúrate MedAesthetics' (accented) returned 0; matched via 'Curate MedAesthetics Ooltewah' (claimed). Google title drops the accent: 'Curate MedAesthetics - Ooltewah'.",
+  "Listing review count 824 in business listings vs 842 in live SERP local pack (fresher).",
+  "GBP site URL is curatemedspa.com/locations/ooltewah/ with UTM tags; same registrable domain as AMP site.",
+  "All 3 SERPs: AI Overview present but asynchronous with no text (unreadable).",
+  "S1 and S3 organic top 10 contain only directories/aggregators; curatemedspa.com does not rank organically for those. S2 organic #1 is curatemedspa.com homepage; Facebook page also ranks #3.",
+  "Services: 10 listed; 6 have $0 'From' prices (consults/injectables), only 4 with prices >0.",
+  "Brand named in all 12 AI answers; no model substitutions needed.",
+  "S3 SERP for 'best med spa near me' organic results are largely off-geo (Florida, Atlanta, Alabama directories)."
+ ]
+}

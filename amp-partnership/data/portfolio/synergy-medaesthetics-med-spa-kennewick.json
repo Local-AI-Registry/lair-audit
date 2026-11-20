@@ -1,0 +1,800 @@
+{
+ "slug": "synergy-medaesthetics-med-spa-kennewick",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Synergy MedAesthetics Med Spa - Kennewick",
+  "brand": "Synergy MedAesthetics",
+  "address": "4504 West 26th Avenue, Ste 130, Kennewick, WA 99338",
+  "phone": "(509) 222-8022",
+  "website": "https://synergymedaesthetics.com",
+  "lat": 46.18642,
+  "lng": -119.18072
+ },
+ "listing": {
+  "found": true,
+  "title": "Synergy MedAesthetics - Kennewick",
+  "google_phone": "+1509-567-2564",
+  "phone_matches_amp": false,
+  "address": "4504 W 26th Ave Ste 130, Kennewick, WA 99338",
+  "distance_km": 0.1,
+  "site_url": "https://www.synergymedaesthetics.com/kennewick/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 204,
+  "stars": {
+   "1": 4,
+   "2": 0,
+   "3": 1,
+   "4": 1,
+   "5": 198
+  },
+  "photos": 44,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-10-08 09:34:02 +00:00",
+  "topics": [
+   {
+    "t": "front desk staff",
+    "n": 10
+   },
+   {
+    "t": "hydrafacial",
+    "n": 4
+   },
+   {
+    "t": "laser therapy",
+    "n": 2
+   },
+   {
+    "t": "coolsculpting",
+    "n": 2
+   },
+   {
+    "t": "expert aesthetic care",
+    "n": 2
+   },
+   {
+    "t": "gentle procedure",
+    "n": 2
+   },
+   {
+    "t": "attentive doctor",
+    "n": 2
+   },
+   {
+    "t": "seamless experience",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 260
+   },
+   {
+    "title": "HydraFacial",
+    "category": "Medical Spa",
+    "price_usd": 175
+   },
+   {
+    "title": "Microneedling Treatment",
+    "category": "Skin Rejuvenation",
+    "price_usd": 400
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Lip·ology MedSpa",
+    "rating": 4.9,
+    "reviews": 143
+   },
+   {
+    "name": "Modern Medical Spa",
+    "rating": 4.8,
+    "reviews": 291
+   },
+   {
+    "name": "Revel Medspa",
+    "rating": 5,
+    "reviews": 183
+   },
+   {
+    "name": "SKNN AESTHETICS",
+    "rating": 5,
+    "reviews": 115
+   },
+   {
+    "name": "Regenerate, LLC",
+    "rating": 5,
+    "reviews": 7
+   }
+  ],
+  "weekly_open_hours": 45,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 14
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Kennewick WA",
+   "prompt": "med spa Kennewick WA",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Synergy MedAesthetics - Kennewick",
+     "Lip·ology MedSpa",
+     "Revel Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Revive Wellness",
+      "New U Women's Clinic & Aesthetics",
+      "Lipology MedSpa",
+      "Curve Appeal",
+      "Vita Sana Day Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Curve Appeal",
+      "Revive Wellness",
+      "Lip·ology MedSpa",
+      "Nouveau Day Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Lip·ology MedSpa",
+      "New U Women's Clinic & Aesthetics",
+      "Curve Appeal",
+      "Nouveau Day Spa",
+      "Revive Wellness"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Nouveau Day Spa",
+      "Curve Appeal",
+      "Shape Cosmetic Surgery & MedSpa",
+      "Center For Excellence In Dermatology",
+      "Zest Medical Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Kennewick WA",
+   "prompt": "botox Kennewick WA",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Synergy MedAesthetics - Kennewick",
+     "Lip·ology MedSpa",
+     "New U Women's Clinic & Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "RENU Wellness",
+      "Shape Cosmetic Surgery & MedSpa",
+      "New U Women's Clinic & Aesthetics",
+      "Razo MedAesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Mid-Columbia Dental",
+      "Revive Wellness",
+      "Center for Excellence in Dermatology",
+      "Shape Cosmetic Surgery & MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Center for Excellence in Dermatology"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Mid-Columbia Dental",
+      "CARE Esthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Kennewick, WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Tri Cities Infusion And Well Clinic",
+      "New U Women's Clinic & Aesthetics",
+      "Lipology MedSpa",
+      "Curve Appeal"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Nouveau Day Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Lipology MedSpa",
+      "The Muscle Spa",
+      "Diamond Spa",
+      "Nouveau Day Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Curve Appeal, LLC",
+      "New U Women's Clinic & Aesthetics",
+      "Revive Wellness",
+      "Nouveau Day Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone is (509) 567-2564, not the AMP-listed (509) 222-8022; the website and Perplexity/Claude answers show (509) 222-8022, and directories (MapQuest, Fresha, medicalspadirectories) show (458) 246-4458 - three different numbers in circulation (likely call-tracking), NAP inconsistency.",
+  "Google listing links to https://www.synergymedaesthetics.com/kennewick/ while LLMs cite https://synergymedaesthetics.com/location/kennewick/ - possible redirect/outdated GBP URL.",
+  "Listing search returned 204 reviews; live SERP local pack showed 212 reviews (listing data last updated 2026-10-08).",
+  "Google work_time shows Mon-Fri 9-18 only (no Saturday); Claude answer cited website hours incl. Sat 9-3 and Wed 9-3 - hours mismatch between GBP and site.",
+  "Only 3 of 10 GBP services have a price > 0; injectables listed at $0.",
+  "S1 and S2: business holds #1 in local pack but its own site does not appear in top-10 organic (only CareCredit/Tripadvisor directory pages). S1 AI Overview was asynchronous (unreadable).",
+  "S3 'best med spa near me' had no local pack; AI Overview listed Synergy MedAesthetics - Kennewick first. Organic results were dominated by irrelevant medspaflorida.com pages.",
+  "SERP location_name 'Kennewick,Washington,United States' worked; no model substitutions needed (gemini-2.5-flash ran fine)."
+ ]
+}

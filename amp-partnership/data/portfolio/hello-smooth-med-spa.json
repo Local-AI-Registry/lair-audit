@@ -1,0 +1,347 @@
+{
+ "slug": "hello-smooth-med-spa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Hello Smooth Med Spa",
+  "brand": "Hello Smooth Med Spa",
+  "address": "155 Bartram Market Dr, Suite 125, St. Johns, FL 32259",
+  "phone": "(904) 342-2383",
+  "website": "https://www.hellosmooth.com",
+  "lat": 30.05752,
+  "lng": -81.66748
+ },
+ "listing": {
+  "found": true,
+  "title": "Hello Smooth Med Spa",
+  "google_phone": "+1904-342-2383",
+  "phone_matches_amp": true,
+  "address": "155 Bartram Market Dr Ste 125, St Johns, FL 32259",
+  "lat": 30.102,
+  "lng": -81.523,
+  "distance_km": 14.8,
+  "site_url": "http://hellosmooth.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Plastic surgery clinic",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 593,
+  "stars": {
+   "1": 10,
+   "2": 0,
+   "3": 4,
+   "4": 2,
+   "5": 577
+  },
+  "photos": 90,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 18,
+  "last_updated": "2026-09-11 13:38:44 +00:00",
+  "topics": [
+   {
+    "t": "underarms",
+    "n": 11
+   },
+   {
+    "t": "nurse practitioner",
+    "n": 7
+   },
+   {
+    "t": "tattoo removal",
+    "n": 6
+   },
+   {
+    "t": "underarm laser hair removal",
+    "n": 5
+   },
+   {
+    "t": "facial hair removal",
+    "n": 5
+   },
+   {
+    "t": "micro needling",
+    "n": 5
+   },
+   {
+    "t": "skin transformation",
+    "n": 3
+   },
+   {
+    "t": "short wait times",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "LHR - Full Legs (inc. feet & toes)",
+    "category": "Laser Treatments",
+    "price_usd": 599
+   },
+   {
+    "title": "LHR- Front of Neck",
+    "category": "Laser Treatments",
+    "price_usd": 229
+   },
+   {
+    "title": "LHR- Brazilian (inc. inner bum)",
+    "category": "Laser Treatments",
+    "price_usd": 449
+   },
+   {
+    "title": "LHR - Lower Face",
+    "category": "Laser Treatments",
+    "price_usd": 399
+   },
+   {
+    "title": "LHR- Upper Lip",
+    "category": "Laser Treatments",
+    "price_usd": 149
+   },
+   {
+    "title": "LHR - Chin",
+    "category": "Laser Treatments",
+    "price_usd": 149
+   },
+   {
+    "title": "LHR - Underarms",
+    "category": "Laser Treatments",
+    "price_usd": 229
+   },
+   {
+    "title": "SkinPen Microneedling - Full Face",
+    "category": "Microneedling",
+    "price_usd": 500
+   },
+   {
+    "title": "Dysport by unit",
+    "category": "Neurotoxin - Botox + Dysport",
+    "price_usd": 5
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Amason Aesthetics",
+    "rating": 5,
+    "reviews": 329
+   },
+   {
+    "name": "VIO Med Spa | Jacksonville",
+    "rating": 4.7,
+    "reviews": 137
+   },
+   {
+    "name": "BareSmooth",
+    "rating": 5,
+    "reviews": 2
+   },
+   {
+    "name": "Modern Aesthetic Centers - St. Johns",
+    "rating": 5,
+    "reviews": 418
+   }
+  ],
+  "weekly_open_hours": 42,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa St. Johns FL",
+   "prompt": "med spa St. Johns FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Modern Aesthetic Centers - St. Johns",
+     "Hello Smooth Med Spa",
+     "Effect Medspa & Lifestyle Practice"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "One MedSpa",
+      "Effect Med Spa",
+      "Amason Aesthetics",
+      "Radiant Skin & Laser",
+      "Modern Aesthetic Centers"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Effect Medspa & Lifestyle Practice",
+      "Amason Aesthetics",
+      "St Johns Wellness",
+      "Modern Aesthetic Centers",
+      "Coastal Cosmetic Center",
+      "Spa Me"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Effect Medspa & Lifestyle Practice",
+      "Amason Aesthetics",
+      "Modern Aesthetic Centers - St. Johns",
+      "New Beauty Company Aesthetics",
+      "BodyBrite St. Johns",
+      "Live Without Lines"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Modern Aesthetic Centers",
+      "Amason Aesthetics",
+      "Effect Med Spa",
+      "IMED SPA"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox St. Johns FL",
+   "prompt": "botox St. Johns FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Amason Aesthetics",
+     "Modern Aesthetic Centers - St. Johns",
+     "New Beauty Company Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "St. Johns Dental Office",
+      "St. Johns Wellness",
+      "IMED SPA",
+      "Amason Aesthetics",
+      "St. Johns Aesthetics & Wellness Center"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Modern Aesthetic Centers",
+      "Vitalize Dental",
+      "IMED SPA",
+      "Amason Aesthetics",
+      "Coastal Cosmetic Center",
+      "Relive Health St. Johns",
+      "St. Johns Aesthetics & Wellness Center",
+      "Effect Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Relive Health St. Johns",
+      "Effect MedSpa",
+      "New Beauty Company Aesthetics",
+      "Bartram Spa & Salon",
+      "4Ever Young St. Johns",
+      "Live Without Lines Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Effect Medspa & Lifestyle Practice",
+      "Pura Vida Body & Mind Spa",
+      "Amason Aesthetics",
+      "Modern Aesthetic Centers",
+      "Live Without Lines Med Spa",
+      "4Ever Young St. Johns",
+      "Vitalize Dental",
+      "One MedSpa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in St. Johns, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Palm Medspa + Wellness",
+     "St Pete Wellness Med Spa",
+     "Elite Medical Spa of Lakewood Ranch"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Effect MedSpa & Lifestyle Practice",
+      "Amason Aesthetics",
+      "One MedSpa",
+      "IMED SPA"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Effect Medspa & Lifestyle Practice",
+      "St Johns Wellness",
+      "Amason Aesthetics",
+      "Modern Aesthetic Centers",
+      "Coastal Cosmetic Center",
+      "4wellness Acute Health & Aesthetics",
+      "Spa Me"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Modern Aesthetic Centers - St. Johns",
+      "New Beauty Company Aesthetics",
+      "Amason Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Effect Medspa & Lifestyle Practice",
+      "St Johns Wellness",
+      "Aesthetix Plus Medical Spa",
+      "Amason Aesthetics",
+      "Modern Aesthetic Centers"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google lat/lng (30.102,-81.523, low precision) is 14.8 km from the AMP map pin (30.05752,-81.66748); addresses match exactly, so the AMP pin appears misplaced (likely west near Fruit Cove/Switzerland area) rather than the business having moved.",
+  "SERP location 'St. Johns,Florida,United States' returned Invalid Field (40501); all three Google searches were run with location_name 'Florida,United States'. S3 ('best med spa near me') therefore returned a statewide local pack (Orlando/St. Pete/Bradenton) and is not representative of St. Johns.",
+  "Organic results came back with google.com redirect URLs; organic_pos determined from titles/breadcrumbs - no hellosmooth.com or Hello Smooth result in top 10 organic for S1-S3.",
+  "AI Overview present but asynchronous (no text) for S1 and S2.",
+  "popular_times not returned by the listing API (null).",
+  "Listing review count 593 (business listings DB, last updated 2026-09-11) vs 614 in the live S1 local pack.",
+  "Listing additional categories include 'Plastic surgery clinic' but primary is Medical spa -> svc 'med spa'.",
+  "Services: 10 returned by API (may be truncated); 'Free Consultation - Botox/Dysport' at $0 excluded from prices.",
+  "Weekly hours include a 1-hour midday closure every day (13:00-14:00); closed Sunday.",
+  "ChatGPT S2 answer listed 'St. Johns Aesthetics & Wellness Center' (St. Augustine) with Hello Smooth's phone number (904) 342-2383 - an AI attribution error worth flagging.",
+  "Description self-describes as 'Jacksonville's leading spa'; site title 'Medical Spa Jacksonville FL'.",
+  "No model substitutions; all 12 LLM calls succeeded."
+ ]
+}

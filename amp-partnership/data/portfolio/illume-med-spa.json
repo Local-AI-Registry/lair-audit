@@ -1,0 +1,307 @@
+{
+ "slug": "illume-med-spa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Illumé Med Spa",
+  "brand": "Illumé Med Spa",
+  "address": "817 NE Anderson Ln, Lee's Summit, MO 64064",
+  "phone": "(816) 214-5260",
+  "site": "https://www.illumemedspa.com",
+  "lat": 38.93782,
+  "lng": -94.36696
+ },
+ "listing": {
+  "found": true,
+  "title": "Illume Medical Spa & Wellness Center",
+  "google_phone": "+1816-214-5260",
+  "phone_matches_amp": true,
+  "address": "817 NE Anderson Ln, Lee's Summit, MO 64064",
+  "distance_km": 7.3,
+  "site_url": "https://www.illumemedspa.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Facial spa",
+   "Laser hair removal service",
+   "Medical clinic",
+   "Skin care clinic",
+   "Weight loss service"
+  ],
+  "rating": 4.8,
+  "reviews": 98,
+  "stars": {
+   "1": 3,
+   "2": 1,
+   "3": 0,
+   "4": 3,
+   "5": 91
+  },
+  "photos": 12,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 14,
+  "last_updated": "2026-09-23 22:02:41 +00:00",
+  "topics": [
+   {
+    "t": "skin prep",
+    "n": 6
+   },
+   {
+    "t": "inviting atmosphere",
+    "n": 5
+   },
+   {
+    "t": "confidence boost",
+    "n": 5
+   },
+   {
+    "t": "eyelash lift",
+    "n": 2
+   },
+   {
+    "t": "waxing",
+    "n": 2
+   },
+   {
+    "t": "injectors",
+    "n": 2
+   },
+   {
+    "t": "skin healing",
+    "n": 2
+   },
+   {
+    "t": "esthetician",
+    "n": 2
+   }
+  ],
+  "services_count": 37,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Healthylooks Med Spa & Wellness",
+    "rating": 4.9,
+    "reviews": 315
+   },
+   {
+    "name": "Transformations Wellness Spa",
+    "rating": 5,
+    "reviews": 296
+   },
+   {
+    "name": "Aesthetic Luxe Spa",
+    "rating": 4.7,
+    "reviews": 119
+   },
+   {
+    "name": "Orchid Aesthetics & Wellness",
+    "rating": 5,
+    "reviews": 277
+   },
+   {
+    "name": "Pink Medspa & Primary Care",
+    "rating": 4.9,
+    "reviews": 473
+   }
+  ],
+  "weekly_open_hours": 32,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Lee's Summit MO",
+   "prompt": "med spa Lee's Summit MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "not_named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Enhanced Reflections Med Spa",
+      "Transformations Wellness Spa",
+      "Rise & Shine Skincare",
+      "Slimming Solutions Med Spa",
+      "Pink Medspa & Primary Care",
+      "Orchid Aesthetics & Wellness",
+      "Accurso Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "KC Injectables Med Spa",
+      "Skin Fit Medical Spa",
+      "Blue Sky Med Spa & Wellness Center",
+      "Lee's Summit Dermatology Associates MedSpa",
+      "Accurso Aesthetics",
+      "Advanced Aesthetic Center",
+      "Amy Chow, MD Rejuvenation Practice",
+      "Healthylooks Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Amy Chow, MD Rejuvenation Practice",
+      "KC Injectables Med Spa",
+      "Healthylooks Med Spa & Wellness",
+      "Enhanced Reflections Med Spa",
+      "Skin Fit Medical Spa",
+      "Advanced Aesthetic Center",
+      "Associated Plastic Surgeons Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "KC Injectables Med Spa",
+      "Accurso Aesthetics",
+      "Akira MedSpa",
+      "Amy Chow, MD Rejuvenation Practice",
+      "Skin Fit Medical Spa",
+      "Orchid Aesthetics & Wellness",
+      "Slimming Solutions Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Lee's Summit MO",
+   "prompt": "botox Lee's Summit MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "KC Injectables Med Spa",
+     "LIV Aesthetics + Wellness",
+     "Advanced Aesthetic Center"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Pink MedSpa & Primary Care",
+      "Enhanced Reflections Med Spa",
+      "Advanced Aesthetic Center",
+      "Slimming Solutions Med Spa",
+      "KC Injectables Med Spa",
+      "K.C. Dolls Medspa",
+      "Accurso Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "LIV Aesthetics & Wellness",
+      "KC Injectables Med Spa",
+      "Blue Sky Med Spa & Wellness Center",
+      "Enhanced Reflections",
+      "LaserAway Kansas City - Lee's Summit",
+      "Amy Chow, MD Rejuvenation Practice"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Advanced Aesthetic Center",
+      "Skin Fit Medical Spa",
+      "Honey B Aesthetics",
+      "Enhanced Reflections Medical Spa",
+      "K.C. Dolls Medspa",
+      "Associated Plastic Surgeons & Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Skin Fit Medical Spa",
+      "LIV Aesthetics & Wellness",
+      "Accurso Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Lee's Summit, MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Healthylooks Med Spa & Wellness",
+     "LIV Aesthetics + Wellness",
+     "Pink Medspa & Primary Care"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Slimming Solutions Med Spa",
+      "Rise & Shine Skincare",
+      "Accurso Aesthetics",
+      "Transformations Wellness Spa",
+      "Orchid Aesthetics & Wellness",
+      "Pink Medspa & Primary Care",
+      "Enhanced Reflections Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "KC Injectables Med Spa",
+      "Skin Fit Medical Spa",
+      "Amy Chow, MD Rejuvenation Practice",
+      "Transformations Wellness Spa",
+      "Pink Medspa & Primary Care",
+      "LIV Aesthetics & Wellness",
+      "Blue Sky Med Spa & Wellness Center",
+      "Slimming Solutions Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Amy Chow, MD Rejuvenation Practice",
+      "KC Injectables Med Spa",
+      "Pink Medspa & Primary Care",
+      "Healthylooks Med Spa & Wellness",
+      "Skin Fit Medical Spa",
+      "Enhanced Reflections Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "KC Injectables Med Spa",
+      "Amy Chow, MD Rejuvenation Practice",
+      "Skin Fit Medical Spa",
+      "Slimming Solutions Med Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing search returned nothing for 'Illumé Med Spa', 'Illume Med Spa', 'Illumé' (is_claimed false) or 'Illume Med Spa Lee's Summit'; found with title 'Illume' (is_claimed false). Google title is 'Illume Medical Spa & Wellness Center' (claimed=true).",
+  "Google listing lat/lng (39.003,-94.359) is returned at only 3-decimal precision and sits 7.3 km from the AMP map pin; the street address matches exactly, so the AMP pin or Google coords are imprecise rather than a different location.",
+  "popular_times not present in the listing response; saved as null.",
+  "No prices with price>0 in the listing services (37 services, none priced).",
+  "Google listing open only Tue-Fri (32 h/week); closed Sat-Mon.",
+  "Not in local pack or organic top 10 for any of the 3 searches. S1 had no local_pack; its AI Overview listed KC Injectables, LIV Aesthetics, Healthylooks (Illume not named). S2/S3 AI Overviews were asynchronous with no text.",
+  "S3 'best med spa near me' organic results were mostly out-of-market (Omaha, Tulsa, Cincinnati, Springfield MO) Yelp pages despite Lee's Summit location setting.",
+  "No model substitutions; all 12 LLM calls succeeded. LLM names 8/12."
+ ]
+}

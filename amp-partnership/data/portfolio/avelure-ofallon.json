@@ -1,0 +1,897 @@
+{
+ "slug": "avelure-ofallon",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - O'Fallon",
+  "brand": "Avelure",
+  "address": "3098 Winghaven Blvd, O'Fallon, MO 63368",
+  "phone": "(636) 561-5340",
+  "site": "https://aveluremedspa.com",
+  "pin": [
+   38.74963,
+   -90.74759
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - O'Fallon",
+  "google_phone": "+1636-500-2686",
+  "phone_matches_amp": false,
+  "address": "3098 Winghaven Blvd, O'Fallon, MO 63368",
+  "distance_km": 0.1,
+  "site_url": "https://aveluremedspa.com/locations/ofallon/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_ofallon",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 999,
+  "stars": {
+   "1": 44,
+   "2": 10,
+   "3": 6,
+   "4": 17,
+   "5": 922
+  },
+  "photos": 18,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-24 14:06:18 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 101
+   },
+   {
+    "t": "laser treatment",
+    "n": 24
+   },
+   {
+    "t": "thorough explanation",
+    "n": 24
+   },
+   {
+    "t": "underarms",
+    "n": 12
+   },
+   {
+    "t": "coolsculpting",
+    "n": 7
+   },
+   {
+    "t": "underarm hair removal",
+    "n": 4
+   },
+   {
+    "t": "informative nurse",
+    "n": 4
+   },
+   {
+    "t": "painless injections",
+    "n": 3
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Avelure Med Spa - Creve Coeur",
+    "rating": 4.6,
+    "reviews": 874
+   },
+   {
+    "name": "Beck Aesthetics + Wellness",
+    "rating": 5,
+    "reviews": 133
+   },
+   {
+    "name": "Estetica MedSpa",
+    "rating": 5,
+    "reviews": 356
+   },
+   {
+    "name": "Face & Body MedSpa | DaySpa | Salon",
+    "rating": 4.4,
+    "reviews": 251
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 5,
+    "reviews": 602
+   }
+  ],
+  "weekly_open_hours": 53,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 13
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 13
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 6
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa O'Fallon MO",
+   "prompt": "med spa O'Fallon MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Estetica MedSpa",
+     "Empire Aesthetics Medical Spa",
+     "Modern Med West | O'Fallon, MO | Winghaven"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Empire Aesthetics Medical Spa",
+      "Estetica MedSpa",
+      "Ultra Wellness Medical",
+      "AdoreU",
+      "Beck Aesthetics + Wellness",
+      "Synergi Facial Surgery"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Modern Med Aesthetics and Wellness",
+      "Estetica Medspa",
+      "Bello Med Spa",
+      "Drip City MedSpa",
+      "The Skin & Body Shop"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Empire Aesthetics Medical Spa",
+      "Estetica MedSpa",
+      "Face & Body MedSpa",
+      "Julian Reese Spa",
+      "Bare Beleza Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Drip City MedSpa",
+      "Bello Medical Spa",
+      "Empire Aesthetics Med Spa",
+      "Modern Med West"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox O'Fallon MO",
+   "prompt": "botox O'Fallon MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Empire Aesthetics Medical Spa",
+      "Concierge Wellness Center",
+      "Ultra Wellness Medical",
+      "Estetica MedSpa",
+      "Beck Aesthetics + Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Estetica Medspa",
+      "Modern Med West",
+      "Ultra Wellness Medical",
+      "Bello Med Spa",
+      "Missouri Dermatology Laser & Vein Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Forefront Dermatology",
+      "Energize Testosterone & Wellness Center",
+      "Estetica Medspa",
+      "Slightly Toxic Rx",
+      "Botox by Jenn",
+      "Bello Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Ideal Image O'Fallon",
+      "Missouri Dermatology Laser and Vein Center",
+      "Bello Med Spa",
+      "Energize Testosterone & Wellness Center",
+      "Best Care Dental",
+      "Genesis Med Spa",
+      "Gameday Men's Health"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in O'Fallon, MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Empire Aesthetics Medical Spa",
+     "Estetica MedSpa",
+     "Simply Bella Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Empire Aesthetics Medical Spa",
+      "Estetica MedSpa",
+      "AdoreU",
+      "Ultra Wellness Medical",
+      "Beck Aesthetics + Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Estetica Medspa",
+      "Modern Med (Modern Med West)",
+      "Bello Med Spa",
+      "The Skin & Body Shop"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Empire Aesthetics Medical Spa",
+      "Drip City Medspa",
+      "Slightly Toxic Rx",
+      "Face & Body MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Estetica MedSpa",
+      "Empire Aesthetics Med Spa",
+      "Plush MedSpa",
+      "Bello Medical Spa",
+      "Enchanted Injections"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 636-500-2686 does not match AMP-listed (636) 561-5340; the AMP number appears on aveluremedspa.com (Claude cited it from the location page).",
+  "Gemini gemini-2.5-flash rate limited (50301) twice; all 3 Gemini prompts run on gemini-3.6-flash instead. One 2.5-flash call returned Bad Gateway (outcome unknown).",
+  "Ideal Image O'Fallon is listed at the same address (3098 Winghaven Blvd, phone 636-542-8779) on MapQuest and idealimage.com; Claude named it for the botox prompt. Likely legacy/rebrand listing - possible duplicate/citation inconsistency.",
+  "Business absent from all three Google local packs and organic top 10 despite 999 reviews / 4.8 rating; S2 had no local pack.",
+  "Perplexity S2 cited Avelure's Birdeye page as a source but did not name it in the answer text (counted 0).",
+  "Google listing has no prices on services (prices empty). Google review count 999 vs Birdeye ~1,001."
+ ]
+}

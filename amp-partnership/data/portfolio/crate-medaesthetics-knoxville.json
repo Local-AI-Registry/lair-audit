@@ -1,0 +1,317 @@
+{
+ "slug": "crate-medaesthetics-knoxville",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Cúrate MedAesthetics - Knoxville",
+  "brand": "Cúrate MedAesthetics",
+  "address": "11439 Parkside Dr, Knoxville, TN 37934",
+  "phone": "(865) 235-1977",
+  "site": "https://curatemedspa.com",
+  "pin": [
+   35.90049,
+   -84.16402
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Curate MedAesthetics - Knoxville",
+  "google_phone": "+1865-777-5600",
+  "phone_matches_amp": false,
+  "address": "11439 Parkside Dr, Farragut, TN 37934",
+  "distance_km": 0.1,
+  "site_url": "https://curatemedspa.com/locations/knoxville/?utm_source=google&utm_medium=organic&utm_campaign=gbp_knoxville",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 976,
+  "stars": {
+   "1": 44,
+   "2": 3,
+   "3": 8,
+   "4": 13,
+   "5": 908
+  },
+  "photos": 13,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-11 18:34:04 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 76
+   },
+   {
+    "t": "nurses",
+    "n": 54
+   },
+   {
+    "t": "cool sculpting",
+    "n": 18
+   },
+   {
+    "t": "laser treatment",
+    "n": 8
+   },
+   {
+    "t": "no bruising",
+    "n": 7
+   },
+   {
+    "t": "no wait time",
+    "n": 5
+   },
+   {
+    "t": "informative nurse",
+    "n": 3
+   },
+   {
+    "t": "wrinkle relaxer",
+    "n": 3
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 4.9,
+    "reviews": 477
+   },
+   {
+    "name": "Regevity - Knoxville",
+    "rating": 4.5,
+    "reviews": 555
+   },
+   {
+    "name": "Confident Self Electrolysis & Laser",
+    "rating": 4.9,
+    "reviews": 152
+   },
+   {
+    "name": "Ageless Medical Spa",
+    "rating": 4.9,
+    "reviews": 151
+   },
+   {
+    "name": "The Face Place tm",
+    "rating": 4.8,
+    "reviews": 57
+   }
+  ],
+  "weekly_open_hours": 46,
+  "popular_times": null
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Knoxville TN",
+   "prompt": "med spa Knoxville TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Old City Medspa",
+     "Smiley Aesthetics Medical Spa – Botox & Weight Loss Clinic Knoxville",
+     "The Wellness Room"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Valencia MedSpa",
+      "Elite MedAesthetic",
+      "Ageless Medical Spa",
+      "RevitalyzeMD",
+      "Blazer Medical Aesthetics",
+      "Old City Medspa",
+      "Skin & Sculpt Medical Spa",
+      "KnoxGlow Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Beautique Medical Anti-Aging",
+      "Culture Aesthetics & Wellness",
+      "Pure Luxe Salon, Spa & Med Spa",
+      "Old City Med Spa",
+      "Create Medical Aesthetics",
+      "Total Hair & Body Medical"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Medi Spa at Choto",
+      "Skin & Sculpt Medical Spa",
+      "Smiley Aesthetics Medical Spa",
+      "Culture Aesthetics & Wellness",
+      "A Better You Med Spa",
+      "VIO Med Spa",
+      "Ageless Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Skin & Sculpt Medical Spa",
+      "Pure Luxe Spa",
+      "Elite MedAesthetic",
+      "Sarah Hitchcox Aesthetics",
+      "The Skin Studio",
+      "VIO Med Spa",
+      "Ageless Medical Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Knoxville TN",
+   "prompt": "botox Knoxville TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Smiley Aesthetics Medical Spa – Botox & Weight Loss Clinic Knoxville",
+     "Pretty Girl Aesthetics",
+     "Old City Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Southeastern Dermatology",
+      "University Aesthetic Plastic Surgery",
+      "ASTRA Aesthetics",
+      "Valencia MedSpa",
+      "Elite MedAesthetic",
+      "Smiley Aesthetics Medical Spa",
+      "Botox Knox Med Spa",
+      "Knoxville Center for Dermatology & Plastic Surgery"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "KnoxGlow Aesthetics",
+      "The Aesthetic Company",
+      "Knoxville Institute of Dermatology",
+      "Trillium Plastic Surgery",
+      "Valencia MedSpa",
+      "Arabella Medical Aesthetics",
+      "Skin & Sculpt Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Knoxville Center for Dermatology & Plastic Surgery",
+      "Southeastern Dermatology",
+      "Botox Knox Med Spa",
+      "KnoxGlow Aesthetics",
+      "Sarah Hitchcox Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Southeastern Dermatology",
+      "University Aesthetic Plastic Surgery",
+      "Gallaher Plastic Surgery & Spa MD",
+      "KnoxGlow Aesthetics",
+      "Skin & Sculpt Medical Spa",
+      "Smiley Aesthetics",
+      "Sarah Hitchcox Aesthetics",
+      "Jessica Ellam Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Knoxville, TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Smiley Aesthetics Medical Spa – Botox & Weight Loss Clinic Knoxville",
+     "Old City Medspa",
+     "The Wellness Room"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Meridiem DermSpa - Farragut",
+      "Ageless Medical Spa",
+      "Old City Medspa",
+      "The Skin Wellness Center",
+      "Valencia MedSpa",
+      "Elite MedAesthetic",
+      "KnoxGlow Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Valencia Medspa",
+      "Pure Luxe Med Spa",
+      "Sarah Hitchcox Aesthetics",
+      "Elite MedAesthetic",
+      "Skin & Sculpt Medical Spa",
+      "Ageless Medical Spa",
+      "Meridiem DermSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Southeastern Dermatology",
+      "Smiley Aesthetics Medical Spa",
+      "Jessica Ellam Medical Aesthetics",
+      "Skin & Sculpt Medical Spa",
+      "Sarah Hitchcox Aesthetics",
+      "Beautique Medical Anti-Aging"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Old City Medspa",
+      "Refine Dermatology",
+      "Ageless Medical Spa",
+      "Dolce Medical Spa",
+      "Skin & Sculpt Medical Spa",
+      "Beautique Medical Anti-Aging"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 865-777-5600 does not match AMP-listed (865) 235-1977.",
+  "Google lists city as Farragut (not Knoxville); same street address 11439 Parkside Dr, 37934. Listing title uses 'Curate' without accent; exact 'Cúrate MedAesthetics' title search returned 0, found via 'Curate'.",
+  "Gemini gemini-2.5-flash rate limited twice (50301); all 3 Gemini answers used gemini-3.6-flash.",
+  "No popular_times field returned in the listing; saved as null.",
+  "No service prices on listing (12 services, none priced).",
+  "All 3 SERPs had asynchronous AI Overviews with no text (aio=unreadable). Organic URLs are google redirect links; judged by breadcrumbs - curatemedspa.com not in top organic for any search.",
+  "S3 'best med spa near me' SERP returned mostly off-market results (medspaflorida.com, Haleyville AL Yelp).",
+  "Gemini S1 named 'Create Medical Aesthetics' (createmedspa.com) - a different business, not counted as Curate.",
+  "Perplexity S1 named Curate MedAesthetics at 11439 Parkside Dr, citing curatemedspa.com/locations/knoxville/."
+ ]
+}

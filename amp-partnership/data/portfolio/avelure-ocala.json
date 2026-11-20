@@ -1,0 +1,807 @@
+{
+ "slug": "avelure-ocala",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Ocala",
+  "brand": "Avelure",
+  "address": "4701 SW College Rd STE 102, Ocala, FL 34474",
+  "phone": "(352) 835-0860",
+  "site": "https://aveluremedspa.com",
+  "pin": [
+   29.13784,
+   -82.19959
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Ocala",
+  "google_phone": "+1352-773-3745",
+  "phone_matches_amp": false,
+  "address": "4701 SW College Rd Ste 102, Ocala, FL 34474",
+  "distance_km": 0.0,
+  "site_url": "https://aveluremedspa.com/locations/ocala/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_ocala",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 733,
+  "stars": {
+   "1": 58,
+   "2": 5,
+   "3": 10,
+   "4": 17,
+   "5": 643
+  },
+  "photos": 30,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-13 12:53:56 +00:00",
+  "topics": [
+   {
+    "t": "procedure explanation",
+    "n": 12
+   },
+   {
+    "t": "cool sculpting",
+    "n": 11
+   },
+   {
+    "t": "quick procedure",
+    "n": 8
+   },
+   {
+    "t": "zoom consultation",
+    "n": 6
+   },
+   {
+    "t": "nurse practitioner",
+    "n": 6
+   },
+   {
+    "t": "laser treatments",
+    "n": 6
+   },
+   {
+    "t": "flexible scheduling",
+    "n": 6
+   },
+   {
+    "t": "painless procedure",
+    "n": 5
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Nirvana Medical Spa",
+    "rating": 4.8,
+    "reviews": 103
+   },
+   {
+    "name": "Dermalase Medical Spa",
+    "rating": 4.8,
+    "reviews": 265
+   },
+   {
+    "name": "Advanced Aesthetics Med Spa",
+    "rating": 4.8,
+    "reviews": 150
+   },
+   {
+    "name": "Beyond Skin Ocala",
+    "rating": 5,
+    "reviews": 197
+   },
+   {
+    "name": "Electrolysis by Jenna & Mary",
+    "rating": 4.8,
+    "reviews": 33
+   }
+  ],
+  "weekly_open_hours": 41,
+  "popular_times": {
+   "popular_times_by_days": {
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Ocala FL",
+   "prompt": "med spa Ocala FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Pure Wellness Med Spa",
+     "Advanced Aesthetics Med Spa",
+     "Southern Charm Aesthetics and Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Well Labs+ Medspa",
+      "Aqua Med Spa",
+      "Pure Wellness Med Spa",
+      "Flawless On The Go",
+      "Lifestyle Solutions MedSpa",
+      "Glow and Grace Aesthetics",
+      "Advanced Aesthetics Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Fix Aesthetic Clinic",
+      "Advanced Aesthetics Med Spa",
+      "Innova Wellness Spa",
+      "Southern Charm Aesthetics & Wellness",
+      "Bello Midlevel Primary Care & MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Dermalase Medical Spa",
+      "Nirvana Medical Spa",
+      "Pure Wellness Med Spa",
+      "Advanced Aesthetics Med Spa",
+      "Aqua Med Spa",
+      "Well Labs+ Medspa",
+      "Lifestyle Solutions MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Pure Wellness Med Spa",
+      "Innova Wellness Spa",
+      "Nirvana Medical Spa",
+      "Dermalase Medical Spa",
+      "MidState Aesthetics",
+      "Flawless on the Go"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Ocala FL",
+   "prompt": "botox Ocala FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Southern Charm Aesthetics and Wellness",
+     "The Fix Aesthetic Clinic",
+     "Balanced Body Wellness and Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Lift Facial Aesthetics",
+      "Nirvana Medical Spa",
+      "Innova Wellness Spa",
+      "Regen & Restore",
+      "Advanced Aesthetics Med Spa",
+      "Dermalase Medical Spa",
+      "Chandra Wellness Center"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Goldfingers Aesthetics & Plastic Surgery",
+      "Advanced Aesthetics Med Spa",
+      "Well Labs+ Medspa / Arviv Medical Aesthetics",
+      "Lift Facial Aesthetics",
+      "The Fix Aesthetic Clinic"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Recharge Clinic",
+      "Carlyle Dermatology",
+      "Advanced Aesthetics Med Spa",
+      "Water's Edge Dermatology",
+      "Ocala Plastic Surgery & Dermatology",
+      "Arviv Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Innova Wellness Spa",
+      "Advanced Aesthetics Med Spa",
+      "Nirvana Medical Spa",
+      "Flawless On The Go",
+      "Pure Wellness Med Spa",
+      "Florida Comprehensive Dermatology"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Ocala, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Southern Charm Aesthetics and Wellness",
+     "Pure Wellness Med Spa",
+     "Balanced Body Wellness and Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "The Fix Aesthetic Clinic",
+      "Well Labs+ Medspa",
+      "Nirvana Medical Spa",
+      "Pure Wellness Med Spa",
+      "Glow and Grace Aesthetics",
+      "Flawless On The Go",
+      "Innova Wellness Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Advanced Aesthetics Med Spa",
+      "The Fix Aesthetic Clinic",
+      "MidState Aesthetics",
+      "Bello Midlevel Primary Care & Wellness Center",
+      "Innova Wellness Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Midstate Skin Institute - Deerwood office",
+      "Clark & Co Wellness Spa",
+      "Southern Charm Aesthetics and Wellness",
+      "Pure Wellness Med Spa",
+      "Balanced Body Wellness and Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Innova Wellness Spa",
+      "Dermalase Medical Spa",
+      "Lifestyle Solutions MedSpa",
+      "Nirvana Medical Spa",
+      "MidState Aesthetics",
+      "Flawless on the Go"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Phone mismatch: Google listing shows (352) 773-3745 while AMP and the Avelure location page list (352) 835-0860 (Perplexity S1 quoted 835-0860 from the site; third-party directories SkinDay/ClinicCompass carry 773-3745).",
+  "Single matching listing found (claimed); no duplicates. Google pin within ~0.0 km of AMP pin (Google lat/lng rounded to 29.138,-82.2).",
+  "Closed Sunday and Monday per Google hours (Tue-Sat only, 41 h/week).",
+  "Not in local pack for any of S1-S3; own site never ranked in organic top 10. For S2 'botox Ocala FL', third-party directory pages about this location ranked organic #2 (skinday.ca) and #5 (thecliniccompass.com) but these are not the business's own site/listing.",
+  "All three SERPs had asynchronous AI Overviews with no readable text (aio=unreadable).",
+  "S3 SERP for 'best med spa near me' with location_name Ocala returned mostly non-local organic results (Fort Myers, Troy AL, Cincinnati, etc.).",
+  "Gemini gemini-2.5-flash rate limited twice (rate_limit_exceeded); all 3 Gemini prompts run on gemini-3.6-flash instead.",
+  "No priced services on the Google listing (12 services, none with price).",
+  "Google SERP location_name 'Ocala,Florida,United States' worked; no fallback needed."
+ ]
+}

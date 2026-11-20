@@ -1,0 +1,457 @@
+{
+ "source": "DataForSEO kw_data_google_ads_search_volume",
+ "pulled": "2026-11-20",
+ "status": "partial: near-me collected for 4 of 23 cities; DataForSEO HTTP 402 blocked the rest",
+ "locations": [
+  {
+   "slug": "back-to-30-boiling-springs",
+   "town": {
+    "med spa boiling springs": null,
+    "botox boiling springs": 10,
+    "lip filler boiling springs": null,
+    "laser hair removal boiling springs": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 20,
+    "lip filler near me": 10,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Boiling Springs,South Carolina,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'South Carolina,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 9051614), pulled 2026-11-20."
+  },
+  {
+   "slug": "back-to-30-highway-14",
+   "town": {
+    "med spa greenville": 260,
+    "botox greenville": 390,
+    "lip filler greenville": 10,
+    "laser hair removal greenville": 320
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 110,
+    "lip filler near me": 50,
+    "laser hair removal near me": 50
+   },
+   "near_me_location": "Greenville,South Carolina,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'South Carolina,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 1025565), pulled 2026-11-20."
+  },
+  {
+   "slug": "back-to-30-mcbee",
+   "town": {
+    "med spa greenville": 260,
+    "botox greenville": 390,
+    "lip filler greenville": 10,
+    "laser hair removal greenville": 320
+   },
+   "near_me": {
+    "med spa near me": 70,
+    "botox near me": 110,
+    "lip filler near me": 50,
+    "laser hair removal near me": 50
+   },
+   "near_me_location": "Greenville,South Carolina,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'South Carolina,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 1025565), pulled 2026-11-20."
+  },
+  {
+   "slug": "back-to-30-simpsonville",
+   "town": {
+    "med spa simpsonville": null,
+    "botox simpsonville": null,
+    "lip filler simpsonville": null,
+    "laser hair removal simpsonville": null
+   },
+   "near_me": {
+    "med spa near me": 10,
+    "botox near me": 20,
+    "lip filler near me": 20,
+    "laser hair removal near me": 10
+   },
+   "near_me_location": "Simpsonville,South Carolina,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'South Carolina,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 1025658), pulled 2026-11-20."
+  },
+  {
+   "slug": "beautyfix-medspa-west-hartford",
+   "town": {
+    "med spa west hartford": 170,
+    "botox west hartford": 90,
+    "lip filler west hartford": null,
+    "laser hair removal west hartford": 90
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 30,
+    "lip filler near me": 20,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "West Hartford,Connecticut,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 1014873), pulled 2026-11-20."
+  },
+  {
+   "slug": "blush-med-spa-avon",
+   "town": {
+    "med spa avon": 20,
+    "botox avon": 30,
+    "lip filler avon": null,
+    "laser hair removal avon": 10
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "blush-med-spa-enfield",
+   "town": {
+    "med spa enfield": null,
+    "botox enfield": 10,
+    "lip filler enfield": 10,
+    "laser hair removal enfield": 10
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "blush-med-spa-glastonbury",
+   "town": {
+    "med spa glastonbury": 170,
+    "botox glastonbury": 20,
+    "lip filler glastonbury": null,
+    "laser hair removal glastonbury": null
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "blush-med-spa-orange",
+   "town": {
+    "med spa orange": 10,
+    "botox orange": 10,
+    "lip filler orange": 10,
+    "laser hair removal orange": 10
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. '<service> orange' at CT state level may include some Orange County CA / generic 'orange' intent; treat as upper bound. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "ever-body-hartford",
+   "town": {
+    "med spa west hartford": 170,
+    "botox west hartford": 90,
+    "lip filler west hartford": null,
+    "laser hair removal west hartford": 90
+   },
+   "near_me": {
+    "med spa near me": 30,
+    "botox near me": 30,
+    "lip filler near me": 20,
+    "laser hair removal near me": 20
+   },
+   "near_me_location": "West Hartford,Connecticut,United States",
+   "near_me_collected": true,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. Near-me volumes at city level (location_code 1014873), pulled 2026-11-20."
+  },
+  {
+   "slug": "ever-body-north-haven",
+   "town": {
+    "med spa north haven": null,
+    "botox north haven": null,
+    "lip filler north haven": null,
+    "laser hair removal north haven": 30
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "ever-body-south-windsor",
+   "town": {
+    "med spa south windsor": null,
+    "botox south windsor": null,
+    "lip filler south windsor": null,
+    "laser hair removal south windsor": null
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Connecticut,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "blush-med-spa-east-longmeadow",
+   "town": {
+    "med spa east longmeadow": 20,
+    "botox east longmeadow": null,
+    "lip filler east longmeadow": null,
+    "laser hair removal east longmeadow": null
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Massachusetts,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "crate-medaesthetics-chattanooga",
+   "town": {
+    "med spa chattanooga": 210,
+    "botox chattanooga": 320,
+    "lip filler chattanooga": 50,
+    "laser hair removal chattanooga": 170
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Tennessee,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "crate-medaesthetics-knoxville",
+   "town": {
+    "med spa knoxville": 110,
+    "botox knoxville": 480,
+    "lip filler knoxville": 50,
+    "laser hair removal knoxville": 390
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Tennessee,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "crate-medaesthetics-murfreesboro",
+   "town": {
+    "med spa murfreesboro": 110,
+    "botox murfreesboro": 320,
+    "lip filler murfreesboro": null,
+    "laser hair removal murfreesboro": 170
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Tennessee,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "crate-medaesthetics-nashville",
+   "town": {
+    "med spa nashville": 390,
+    "botox nashville": 590,
+    "lip filler nashville": 320,
+    "laser hair removal nashville": 590
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Tennessee,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "crate-medaesthetics-ooltewah",
+   "town": {
+    "med spa ooltewah": null,
+    "botox ooltewah": null,
+    "lip filler ooltewah": null,
+    "laser hair removal ooltewah": null
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Tennessee,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-el-dorado-hills",
+   "town": {
+    "med spa el dorado hills": 40,
+    "botox el dorado hills": 70,
+    "lip filler el dorado hills": null,
+    "laser hair removal el dorado hills": 20
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-elk-grove",
+   "town": {
+    "med spa elk grove": 70,
+    "botox elk grove": 140,
+    "lip filler elk grove": null,
+    "laser hair removal elk grove": 90
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-folsom",
+   "town": {
+    "med spa folsom": 30,
+    "botox folsom": 170,
+    "lip filler folsom": 30,
+    "laser hair removal folsom": 90
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-napa",
+   "town": {
+    "med spa napa": 70,
+    "botox napa": 140,
+    "lip filler napa": null,
+    "laser hair removal napa": 70
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-roseville",
+   "town": {
+    "med spa roseville": 140,
+    "botox roseville": 320,
+    "lip filler roseville": 70,
+    "laser hair removal roseville": 170
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "destination-aesthetics-sacramento",
+   "town": {
+    "med spa sacramento": 480,
+    "botox sacramento": 590,
+    "lip filler sacramento": 390,
+    "laser hair removal sacramento": 590
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'California,United States', pulled 2026-11-20; null = no volume returned. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  },
+  {
+   "slug": "esthetixmd",
+   "town": {
+    "med spa bend": 30,
+    "botox bend": 90,
+    "lip filler bend": null,
+    "laser hair removal bend": 210
+   },
+   "near_me": {
+    "med spa near me": null,
+    "botox near me": null,
+    "lip filler near me": null,
+    "laser hair removal near me": null
+   },
+   "near_me_location": null,
+   "near_me_collected": false,
+   "notes": "Town volumes: DataForSEO Google Ads search volume, location 'Oregon,United States', pulled 2026-11-20; null = no volume returned. '<service> bend' is ambiguous in name but scoped to Oregon state level. NEAR-ME NOT COLLECTED: DataForSEO returned HTTP 402 (Payment Required / account balance exhausted) for every city-level call after West Hartford; nulls here mean NOT MEASURED, not zero volume. Re-run once the DataForSEO balance is topped up."
+  }
+ ]
+}

@@ -1,0 +1,1041 @@
+{
+ "slug": "ever-body-flatiron",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - Flatiron",
+  "brand": "Ever/Body",
+  "address": "16 W. 17th St, New York, NY 10011",
+  "phone": "(646) 539-3690",
+  "site": "https://everbody.com",
+  "pin": "40.73828,-73.99335"
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body Flatiron",
+  "google_phone": "+1 646-777-4022",
+  "phone_matches_amp": false,
+  "address": "16 W 17th St, New York, NY 10011",
+  "distance_km": 0.0,
+  "site_url": "https://everbody.com/locations/flatiron/?utm_source=google&utm_medium=organic&utm_campaign=gbp_flatiron",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.7,
+  "reviews": 575,
+  "stars": {
+   "1": 30,
+   "2": 11,
+   "3": 5,
+   "4": 6,
+   "5": 523
+  },
+  "photos": 39,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-13 12:43:55 +00:00",
+  "topics": [
+   {
+    "t": "hydrafacial",
+    "n": 35
+   },
+   {
+    "t": "injections",
+    "n": 20
+   },
+   {
+    "t": "knowledgeable practitioner",
+    "n": 7
+   },
+   {
+    "t": "attentive listening",
+    "n": 7
+   },
+   {
+    "t": "nurse practitioner",
+    "n": 6
+   },
+   {
+    "t": "lip flip",
+    "n": 6
+   },
+   {
+    "t": "dermal filler",
+    "n": 4
+   },
+   {
+    "t": "no upsell",
+    "n": 4
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 130
+   },
+   {
+    "title": "LHR (Large Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 335
+   },
+   {
+    "title": "LHR (Small Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 175
+   },
+   {
+    "title": "HydraFacial Signature Treatment",
+    "category": "Medical Spa",
+    "price_usd": 245
+   },
+   {
+    "title": "HydraFacial Boost",
+    "category": "Medical Spa",
+    "price_usd": 295
+   },
+   {
+    "title": "HydraFacial Detox",
+    "category": "Medical Spa",
+    "price_usd": 345
+   },
+   {
+    "title": "Clear + Brilliant Facial",
+    "category": "Skin Rejuvenation",
+    "price_usd": 575
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Skin Spa New York - Flatiron / Chelsea",
+    "rating": 4.3,
+    "reviews": 253
+   },
+   {
+    "name": "IN•GLO Face and Body Sculpting",
+    "rating": 4.8,
+    "reviews": 73
+   },
+   {
+    "name": "BodiGenesys",
+    "rating": 5,
+    "reviews": 15
+   }
+  ],
+  "weekly_open_hours": 66,
+  "popular_times": {
+   "popular_times_by_days": {
+    "sunday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 9
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 9
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 19
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 19
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa New York NY",
+   "prompt": "med spa New York NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Tribeca Medspa",
+     "BeRejuved Medical Spa & Wellness Studio - NYC",
+     "SKINNEY Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Skin Deep NYC",
+      "Tribeca MedSpa",
+      "Spark Laser Center",
+      "La Réserve Tribeca",
+      "Smooth Synergy MedSpa",
+      "Midtown Medical Spa and Lasers of NYC",
+      "SkinTight MedSpa",
+      "Deep Blue Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Bel Angé MedSpa",
+      "IlaOnly Spa",
+      "IMD Beauty Spa",
+      "FABrx Studio",
+      "GoodSkin Clinics",
+      "Inside Beauty Spa",
+      "Skinney Medspa",
+      "Tribeca MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Lov MedSpa New York",
+      "Thérapie Clinic Flatiron",
+      "AestheticsMD by Jean Rhee",
+      "Infinity Laser Spa",
+      "Bared Monkey Laser Spa",
+      "SKINNEY Medspa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Tribeca MedSpa",
+      "SkinTight MedSpa",
+      "SoVous Med Spa",
+      "Smooth Synergy Medical Spa & Laser Center",
+      "La Réserve Aesthetics & Wellness",
+      "ZZ Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox New York NY",
+   "prompt": "botox New York NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Peachy West SoHo",
+     "JECT",
+     "Peachy Manhattan West"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Peachy Manhattan West",
+      "Wall Street Physicians",
+      "LM Medical NYC",
+      "Tribeca MedSpa",
+      "Manhattan Aesthetics",
+      "The Dermatology and Laser Group"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Mount Sinai",
+      "LaserAway Manhattan - Flatiron",
+      "Trifecta Med Spa",
+      "Skinly Aesthetics",
+      "Wall Street Dermatology",
+      "James Christian Cosmetics",
+      "Dr. Jessica Lattman",
+      "TitleMD"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Hudson Dermatology & Laser Surgery",
+      "Debra Jaliman, MD",
+      "Manhattan Dermatology",
+      "Shafer Clinic",
+      "Trifecta Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Peachy West SoHo",
+      "Spring Street Dermatology",
+      "SKINNEY Medspa",
+      "NYC Rejuvenation Clinic",
+      "James Christian Cosmetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in New York, NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Lov MedSpa New York",
+      "ZZ Med Spa",
+      "Peachy Manhattan West",
+      "Thérapie Clinic Flatiron",
+      "Trifecta Med Spa 57",
+      "La Réserve Aesthetics Med Spa + Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Rejuvenation MD NYC",
+      "Tribeca MedSpa",
+      "JECT",
+      "AIREM MedSpa",
+      "LovMedSpa New York",
+      "Perfect Med Spa",
+      "Eureka Body Care and Spa + Medspa",
+      "ZZ Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Laser & Skin Surgery Center of New York",
+      "Peachy",
+      "Thérapie Clinic Flatiron",
+      "Smooth Synergy Medical Spa & Laser Center",
+      "Skinney Medspa",
+      "Tribeca MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Tribeca MedSpa by AYA",
+      "Plump Cosmetics & Injectables",
+      "Skinova Medspa",
+      "KUR Skin Lab",
+      "Peachy Brooklyn Heights",
+      "SkinTight MedSpa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 646-777-4022 does not match AMP-listed (646) 539-3690.",
+  "Brand has multiple NYC listings near the pin: Ever/Body Greenwich Village (69 University Pl, 5.0/146) and Ever/Body Upper West Side (2159 Broadway) which Google marks closed_forever (3.7/50).",
+  "Listing returned 10 services (several $0 'From' prices excluded from prices).",
+  "All 3 SERPs: ai_overview asynchronous with no text (unreadable); no everbody.com organic result in top 10; S3 'best med spa near me' with city-level location returned no local pack and mostly out-of-market Yelp pages.",
+  "Gemini (S1) and Perplexity (S1) named Ever/Body as a brand (citing Observer luxury med spa list; Perplexity mentions Flatiron location). No model substitutions needed."
+ ]
+}

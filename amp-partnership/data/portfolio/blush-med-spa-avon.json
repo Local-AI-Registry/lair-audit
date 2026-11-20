@@ -1,0 +1,825 @@
+{
+ "slug": "blush-med-spa-avon",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Blush Med Spa - Avon",
+  "brand": "Blush Med Spa",
+  "address": "412 West Avon Road, Avon, CT 6001",
+  "phone": "(860) 606-6879",
+  "site": "https://blushmedspact.com",
+  "lat": 41.78903,
+  "lng": -72.86295
+ },
+ "listing": {
+  "found": true,
+  "title": "Blush Med Spa",
+  "google_phone": "+1860-606-6879",
+  "phone_matches_amp": true,
+  "address": "412 W Avon Rd, Avon, CT 06001",
+  "distance_km": 0.0,
+  "site_url": "http://blushmedspact.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 149,
+  "stars": {
+   "1": 5,
+   "2": 0,
+   "3": 1,
+   "4": 0,
+   "5": 143
+  },
+  "photos": 71,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-14 14:33:11 +00:00",
+  "topics": [
+   {
+    "t": "injector",
+    "n": 8
+   },
+   {
+    "t": "supportive staff",
+    "n": 6
+   },
+   {
+    "t": "spray tan",
+    "n": 5
+   },
+   {
+    "t": "salt facial",
+    "n": 4
+   },
+   {
+    "t": "thoughtful recommendations",
+    "n": 3
+   },
+   {
+    "t": "filler injections",
+    "n": 2
+   },
+   {
+    "t": "gentle procedures",
+    "n": 2
+   },
+   {
+    "t": "monthly membership",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 155
+   },
+   {
+    "title": "Airbrush Single Tan",
+    "category": "Medical Spa",
+    "price_usd": 45
+   },
+   {
+    "title": "HydraFacial",
+    "category": "Medical Spa",
+    "price_usd": 199
+   },
+   {
+    "title": "Salt Facial",
+    "category": "Medical Spa",
+    "price_usd": 199
+   },
+   {
+    "title": "Signature Facial",
+    "category": "Medical Spa",
+    "price_usd": 125
+   },
+   {
+    "title": "Celebrity Weight Loss Maintenance Appointment",
+    "category": "Wellness",
+    "price_usd": 166.58
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Inner Glow AestheticsMD",
+    "rating": 5,
+    "reviews": 255
+   },
+   {
+    "name": "Botanicals Day Spa",
+    "rating": 4.8,
+    "reviews": 36
+   },
+   {
+    "name": "CleanSkin Med Spa",
+    "rating": 5,
+    "reviews": 37
+   },
+   {
+    "name": "Radiance Medspa",
+    "rating": 4.8,
+    "reviews": 124
+   },
+   {
+    "name": "Fuse Medspa and Wellness",
+    "rating": 5,
+    "reviews": 207
+   }
+  ],
+  "weekly_open_hours": 37,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 94
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 15
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 15
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Avon CT",
+   "prompt": "med spa Avon CT",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Radiance Medspa",
+     "Fuse Medspa and Wellness",
+     "Blush Med Spa - Avon"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "CleanSkin Med Spa",
+      "Shihan Beauty Clinic & Skin Care",
+      "Samara MedSpa Avon",
+      "Fuse Medspa and Wellness",
+      "True Medical Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "Youthful Images Aesthetics & Med Spa",
+      "True Medical Aesthetics",
+      "Samara MedSpa",
+      "BellaDonna Medspa",
+      "Fuse Med Spa & Wellness",
+      "CleanSkin Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "True Medical Aesthetics",
+      "Samara MedSpa",
+      "Radiance MedSpa",
+      "Ethos Medical Aesthetics & Wellness"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "Inner Glow AestheticsMD",
+      "CleanSkin Med Spa",
+      "Fuse Medspa & Wellness",
+      "BellaDonna Medspa",
+      "True Medical Aesthetics",
+      "Samara MedSpa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Avon CT",
+   "prompt": "botox Avon CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Inner Glow AestheticsMD",
+     "Fuse Medspa and Wellness",
+     "True Medical Aesthetics PLLC"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "MD Renewal",
+      "True Medical Aesthetics",
+      "Inner Glow AestheticsMD",
+      "Samara MedSpa Avon"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "Inner Glow AestheticsMD",
+      "BellaDonna Medspa",
+      "True Medical Aesthetics",
+      "Samara MedSpa",
+      "MD Renewal",
+      "Youthful Images Total Aesthetic Center"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Stanislaw Facial Plastic Surgery Center",
+      "Radiance MedSpa",
+      "True Medical Aesthetics",
+      "Inner Glow AestheticsMD"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Radiance Medspa",
+      "Inner Glow Aesthetics",
+      "True Medical Aesthetics",
+      "BellaDonna Medspa",
+      "Samara MedSpa Avon/Simsbury"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Avon, CT",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Fuse Medspa and Wellness",
+     "Blush Med Spa - Avon",
+     "Inner Glow AestheticsMD"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "CleanSkin Med Spa",
+      "Samara MedSpa Avon",
+      "True Medical Aesthetics",
+      "Shihan Beauty Clinic & Skin Care",
+      "Fuse Medspa and Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Radiance Medspa",
+      "Samara Medspa",
+      "Youthful Images Aesthetics",
+      "True Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "True Medical Aesthetics",
+      "Samara MedSpa Avon/Simsbury",
+      "Radiance MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Fuse Medspa and Wellness",
+      "Samara MedSpa Avon",
+      "Inner Glow AestheticsMD",
+      "BellaDonna Medspa",
+      "Radiance Medspa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "gemini-2.5-flash returned rate_limit_exceeded (50301) twice; all three Gemini answers use gemini-3.6-flash.",
+  "Google listing title is 'Blush Med Spa' in business listings but shows as 'Blush Med Spa - Avon' in local packs (156 reviews in SERP vs 149 in listing data).",
+  "Listing closed Tuesday and Sunday; 37 open hours/week. Google lists 4 of 10 services with $0 'From' prices (Botox, lip filler, vitamin injection).",
+  "Contact_info shows several other phone numbers from backlinks (860-835-5495, 860-295-3964, 860-781-8544, 860-606-6878) - possible NAP inconsistency.",
+  "No organic ranking for blushmedspact.com in top 10 for any search; S2 organic #3 is a Yelp page for Blush Avon (not counted). All AI Overviews were asynchronous with no text.",
+  "S3 'best med spa near me' organic results are dominated by medspaflorida.com directory pages.",
+  "Claude S2 (botox) omitted Blush; it did name Blush in S1 and S3."
+ ]
+}

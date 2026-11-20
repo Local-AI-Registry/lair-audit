@@ -1,0 +1,75 @@
+{
+  "slug": "destination-aesthetics-roseville",
+  "run_date": "2026-11-20",
+  "amp": {"name": "Destination Aesthetics - Roseville", "brand": "Destination Aesthetics", "address": "10006 Foothills Boulevard, Roseville, CA 95747", "phone": "(916) 844-4913", "site": "https://destinationaesthetics.com", "pin": [38.79665, -121.31486]},
+  "listing": {
+    "found": true,
+    "title": "Destination Aesthetics Medical Spa",
+    "google_phone": "+1916-844-4913",
+    "phone_matches_amp": true,
+    "address": "10006 Foothills Blvd, Roseville, CA 95747",
+    "distance_km": 0.0,
+    "site_url": "https://www.destinationaesthetics.com/contact/da-roseville/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Skin care clinic"],
+    "rating": 4.9,
+    "reviews": 372,
+    "stars": {"1": 8, "2": 5, "3": 3, "4": 1, "5": 355},
+    "photos": 46,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 12,
+    "last_updated": "2026-09-11 10:43:51 +00:00",
+    "topics": [{"t": "injector", "n": 23}, {"t": "hydrafacial", "n": 10}, {"t": "knowledgeable team", "n": 8}, {"t": "diamond glow facial", "n": 6}, {"t": "no pressure sales", "n": 5}, {"t": "skin health", "n": 5}, {"t": "explanation of procedure", "n": 4}, {"t": "personalized suggestions", "n": 4}],
+    "services_count": 4,
+    "prices": [],
+    "also_search": [
+      {"name": "Esthetics by Dawn - Roseville HydraFacial & Jet Plasma", "rating": 5, "reviews": 77},
+      {"name": "Destination Aesthetics Beauty Suites", "rating": null, "reviews": null},
+      {"name": "R+H Aesthetic Medicine", "rating": 5, "reviews": 572},
+      {"name": "Dermaesthetics", "rating": 5, "reviews": 139},
+      {"name": "Modern Aesthetics & Wellness", "rating": 4.8, "reviews": 477}
+    ],
+    "weekly_open_hours": 42.5,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {"key": "S1", "q": "med spa Roseville CA", "prompt": "med spa Roseville CA",
+     "google": {"map_pos": null, "map_pack": [], "organic_pos": null, "aio": "none"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Viona Medical Spa", "Rising Phoenix Wellness & Aesthetics", "Élan Wellness and Aesthetics", "Lusso Medspa", "ID Skin Medical Aesthetics", "Elle May Aesthetics", "VIDA Aesthetics & Wellness"]},
+       "gemini": {"named": 1, "others": ["Laser Esthetica", "Revive Med Spa", "R+H Aesthetic Medicine", "Perceptions Aesthetic Spa", "Tighten It Spa", "Reform Aesthetics and Wellness", "Bodyvine Aesthetics", "Marie Shelley Laser and MedSpa"]},
+       "perplexity": {"named": 1, "others": ["Revive Med Spa", "SkinSpirit Roseville", "R+H Aesthetic Medicine", "Viona Medical Spa", "Verella Medspa", "Reform Aesthetics and Wellness", "Marie Shelley Laser & MedSpa"]},
+       "claude": {"named": 1, "others": ["R+H Aesthetic Medicine", "Revive Med Spa", "SkinSpirit Roseville", "Lior Luxe Studio", "Laser Esthetica", "Aesthetic Envy", "Sierra Gate Facial Aesthetics", "Marie Shelley Laser & Medspa"]}
+     }},
+    {"key": "S2", "q": "botox Roseville CA", "prompt": "botox Roseville CA",
+     "google": {"map_pos": null, "map_pack": ["Aesthetics by Vivi", "R+H Aesthetic Medicine", "SkinSpirit Roseville"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["VIDA Aesthetics & Wellness", "Revive Med Spa - Roseville", "Perceptions Aesthetic Spa", "Capitis Medical and Aesthetics", "West Oak Dermatology", "Better You Aesthetics", "Laser Esthetica"]},
+       "gemini": {"named": 1, "others": ["Aesthetic Envy", "Roseville Dermatology", "SkinSpirit Roseville", "Revive Med Spa", "Laser Esthetica", "Bodyvine Aesthetics", "Aesthetics, by Dr. Lee", "Modern Aesthetics & Wellness"]},
+       "perplexity": {"named": 0, "others": ["Roseville Dermatology", "Placer Dermatology", "SkinSpirit Roseville", "Berman Skin Institute", "Revive Med Spa", "Elle May Aesthetics"]},
+       "claude": {"named": 1, "others": ["SkinSpirit Roseville", "R+H Aesthetic Medicine", "Revive Med Spa", "LaserAway Roseville", "Aesthetics by Vivi", "Placer Dermatology"]}
+     }},
+    {"key": "S3", "q": "best med spa near me", "prompt": "best med spa in Roseville, CA",
+     "google": {"map_pos": null, "map_pack": ["R+H Aesthetic Medicine", "SkinSpirit Roseville", "La Bella Vita Medi Spa"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Sehatu Sleep Clinic", "VIDA Aesthetics & Wellness", "Rising Phoenix Wellness & Aesthetics", "Laser Esthetica", "Élan Wellness and Aesthetics", "Reform Aesthetics and Wellness", "Viona Medical Spa"]},
+       "gemini": {"named": 1, "others": ["Different Approach Wellness Center", "SkinSpirit Roseville", "Esthetics Center Rocklin", "R+H Aesthetic Medicine", "Aesthetics by Vivi", "Perceptions Aesthetic Spa", "Restore Hyper Wellness", "Revive Med Spa"]},
+       "perplexity": {"named": 0, "others": ["R+H Aesthetic Medicine", "SkinSpirit Roseville", "Restore Hyper Wellness", "La Rosa Aesthetics", "Different Approach Wellness Center", "Revive Med Spa"]},
+       "claude": {"named": 1, "others": ["R+H Aesthetic Medicine", "SkinSpirit Roseville", "Revive Med Spa", "La Bella Vita Medi Spa", "Perceptions Aesthetic Spa"]}
+     }}
+  ],
+  "notes": [
+    "Second claimed Google listing shares the same phone (916) 844-4913: 'Destination Aesthetics Beauty Suites' at 10006A Foothills Blvd (category Medical spa, 3 photos, no reviews, site dabeautysuites.com) - possible phone/category overlap with the main med spa listing.",
+    "Google listing hours (Mon-Thu 9-5:30, Fri 8-4:30, closed Sat) differ from destinationaesthetics.com/location/roseville (Mon-Thu 9:15-5, Fri 8:15-4, one Sat per month) per Perplexity's cited snippet; Apple Maps snippet also shows 9:15-5:00.",
+    "Business listings search returned no popular_times field; stored null.",
+    "No priced services on the Google listing (4 service groups, no prices).",
+    "S1 Google: no local pack and no AI overview returned; the business appeared at organic rank 2 only via an Apple Maps listing (not counted as own site/Google listing).",
+    "S2/S3 Google: AI overviews were asynchronous with no text (unreadable); business not in local pack for either.",
+    "S3 'best med spa near me' organic results were largely non-local (Florida, Reno, Fresno directories) despite Roseville location_name.",
+    "Claude cites Yelp at 4.7 (162 reviews); Gemini cites Birdeye 573 reviews and Sacramento Magazine '#1 Best Medical Spa five consecutive years'.",
+    "No model substitutions; all 12 LLM calls succeeded with the specified models."
+  ]
+}

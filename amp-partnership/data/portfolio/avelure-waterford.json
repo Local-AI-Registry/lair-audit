@@ -1,0 +1,96 @@
+{
+  "slug": "avelure-waterford",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Avelure - Waterford",
+    "brand": "Avelure",
+    "address": "626 N. Alafaya Trail, Suite 103, Orlando, FL 32828",
+    "phone": "(407) 367-0734",
+    "site": "https://aveluremedspa.com",
+    "pin": [28.5557, -81.20769]
+  },
+  "listing": {
+    "found": true,
+    "title": "Avelure Med Spa - Waterford",
+    "google_phone": "+1407-410-4168",
+    "phone_matches_amp": false,
+    "address": "626 N Alafaya Trail Suite #103, Orlando, FL 32828",
+    "distance_km": 0.0,
+    "site_url": "https://aveluremedspa.com/locations/waterford/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_waterford",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Laser hair removal service", "Skin care clinic"],
+    "rating": 4.8,
+    "reviews": 901,
+    "stars": {"1": 22, "2": 4, "3": 8, "4": 20, "5": 847},
+    "photos": 36,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 13,
+    "last_updated": "2026-09-16 09:54:26 +00:00",
+    "topics": [
+      {"t": "technicians", "n": 30},
+      {"t": "laser treatment", "n": 21},
+      {"t": "hair removal", "n": 19},
+      {"t": "clean facility", "n": 14},
+      {"t": "quick appointments", "n": 11},
+      {"t": "bikini area", "n": 7},
+      {"t": "nurse practitioners", "n": 4},
+      {"t": "numbing cream", "n": 4}
+    ],
+    "services_count": 12,
+    "prices": [],
+    "also_search": [
+      {"name": "LaserAway Orlando", "rating": 4.7, "reviews": 177},
+      {"name": "AKAAS LASER MEDSPA", "rating": 5, "reviews": 73},
+      {"name": "Laser Center Of Orlando", "rating": 4.9, "reviews": 201},
+      {"name": "The Palm Medspa + Wellness", "rating": 5, "reviews": 1074},
+      {"name": "Lumiere Medical & Wellness Spa", "rating": 2.8, "reviews": 20}
+    ],
+    "weekly_open_hours": 55,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1", "q": "med spa Orlando FL", "prompt": "med spa Orlando FL",
+      "google": {"map_pos": null, "map_pack": ["LUXE Med Spa Aesthetics", "The Palm Medspa + Wellness", "LightTouch Med Spa"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Boutiq Medical Clinic", "Facial Mania Med Spa", "Spa Blue Skin Care & Laser Center", "NUR Med Spa & Wellness", "VIO Med Spa SoDo", "Enhance Biomed", "Bloom Aesthetics", "Celine Med Spa"]},
+        "gemini": {"named": 0, "others": ["Nectar Aesthetics", "Windermere Medical Spa & Laser Institute", "Gentle Touch MediSpa", "Spa Blue", "Celine Med Spa", "The Palm Medspa + Wellness"]},
+        "perplexity": {"named": 0, "others": ["LUXE Med Spa Aesthetics", "Celine Med Spa Orlando", "Nona Med Spa", "LightTouch Med Spa", "New U Med Spa", "Definitive Beauty Med Spa & Wellness Clinic", "Serene Aesthetic Surgery and MedSpa"]},
+        "claude": {"named": 0, "others": ["Boutiq Medical Clinic", "Spa Blue Skin Care & Laser Center", "NUR Med Spa & Wellness", "Pure Envy MedSpa", "LightTouch Med Spa", "VIO Med Spa SoDo"]}
+      }
+    },
+    {
+      "key": "S2", "q": "botox Orlando FL", "prompt": "botox Orlando FL",
+      "google": {"map_pos": null, "map_pack": [], "organic_pos": null, "aio": "not_named"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Vanitas Medical Group", "Rejuvenate Wellness Center", "Sand Lake Dermatology Center", "Oppenheimer Plastic Surgery", "Aesthetic Enhancements Plastic Surgery & Laser Center", "Soma Plastic Surgery", "Golden Rose Wellness & Medical Spa", "Downtown Dermatology"]},
+        "gemini": {"named": 0, "others": ["Nectar Aesthetics", "Bloom Aesthetics", "New U Med Spa", "Luxe Med Spa Aesthetics", "Primera Med Spa", "Oppenheimer Plastic Surgery"]},
+        "perplexity": {"named": 0, "others": ["Serene Aesthetic Surgery and MedSpa", "Knight Dermatology", "SkinLocal Orlando", "Nectar Aesthetics", "Orlando Dermatology Center"]},
+        "claude": {"named": 0, "others": ["Sand Lake Dermatology Center", "Primera Plastic Surgery", "Oppenheimer Plastic Surgery", "Vado Plastic Surgery", "Nectar Aesthetics Med Spa", "The Vanity Room Med Spa"]}
+      }
+    },
+    {
+      "key": "S3", "q": "best med spa near me", "prompt": "best med spa in Orlando, FL",
+      "google": {"map_pos": null, "map_pack": ["LUXE Med Spa Aesthetics", "Look Lab Med Spa", "The Palm Medspa + Wellness"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Windermere Medical Spa & Laser Institute", "VIO Med Spa SoDo", "Spa Blue Skin Care & Laser Center", "Soluma Aesthetics Med Spa", "Celine Med Spa", "Bloom Aesthetics", "Facial Mania Med Spa"]},
+        "gemini": {"named": 0, "others": ["Nectar Aesthetics Med Spa", "Windermere Medical Spa & Laser Institute", "Gentle Touch MediSpa", "NUR Med Spa & Wellness", "Celine Med Spa"]},
+        "perplexity": {"named": 0, "others": ["The Palm Medspa + Wellness", "Evolving Aesthetics", "Bijoux Med Spa", "LUXE Med Spa Aesthetics", "LightTouch Med Spa"]},
+        "claude": {"named": 0, "others": ["Bijoux Med Spa", "The Palm Medspa + Wellness", "Evolving Aesthetics", "Trés Jolie Medical Spa", "LUXE Med Spa Aesthetics"]}
+      }
+    }
+  ],
+  "notes": [
+    "Google listing phone (407) 410-4168 does not match AMP-listed phone (407) 367-0734 (possibly a tracking/call-routing number).",
+    "Business listings result contained no popular_times field; stored as null.",
+    "No service prices listed on the Google profile (12 services, none priced).",
+    "Google lat/lng (28.556,-81.208) is about 45 m from the AMP pin; rounds to 0.0 km.",
+    "gemini-2.5-flash rate-limited (rate_limit_exceeded) twice; all 3 Gemini prompts used gemini-3.6-flash instead.",
+    "S1 and S3 AI Overviews were asynchronous with no text (unreadable). S2 had no local pack; its AI Overview was a local-places list that did not include Avelure.",
+    "Competitor The Palm Medspa + Wellness (12301 Lake Underhill Rd, 32828, same ZIP) appears in both map packs, Perplexity/Claude/Gemini answers, and Avelure's people-also-search list.",
+    "SERPs ran with location_name 'Orlando,Florida,United States' with no errors."
+  ]
+}

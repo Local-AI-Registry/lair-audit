@@ -1,0 +1,253 @@
+{
+  "slug": "blush-med-spa-east-longmeadow",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Blush Med Spa - East Longmeadow",
+    "brand": "Blush Med Spa",
+    "address": "70 Center Square, East Longmeadow, MA 1028",
+    "phone": "(413) 278-4009",
+    "site": "https://blushmedspact.com",
+    "pin": [
+      42.0656,
+      -72.51408
+    ]
+  },
+  "listing": {
+    "found": true,
+    "title": "Blush Med Spa",
+    "cid": "10959589666357141085",
+    "google_phone": "+1413-887-3466",
+    "phone_matches_amp": false,
+    "address": "70 Center Square, East Longmeadow, MA 01028",
+    "distance_km": 0.0,
+    "site_url": "http://blushmedspact.com/",
+    "site_matches_amp": true,
+    "category": "Health and beauty shop",
+    "categories": [
+      "Health and beauty shop"
+    ],
+    "rating": 4.9,
+    "reviews": 126,
+    "stars": {
+      "1": 1,
+      "2": 1,
+      "3": 0,
+      "4": 0,
+      "5": 124
+    },
+    "photos": 11,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 3,
+    "last_updated": "2026-10-23 15:48:04 +00:00",
+    "topics": [
+      {
+        "t": "knowledgeable staff",
+        "n": 39
+      },
+      {
+        "t": "comfortable atmosphere",
+        "n": 16
+      },
+      {
+        "t": "kind staff",
+        "n": 14
+      },
+      {
+        "t": "botox",
+        "n": 7
+      },
+      {
+        "t": "hydrafacial",
+        "n": 6
+      },
+      {
+        "t": "injector",
+        "n": 6
+      },
+      {
+        "t": "lip filler",
+        "n": 4
+      },
+      {
+        "t": "med spa",
+        "n": 4
+      }
+    ],
+    "services_count": 0,
+    "prices": [],
+    "also_search": [],
+    "weekly_open_hours": 48.0,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa East Longmeadow MA",
+      "prompt": "med spa East Longmeadow MA",
+      "google": {
+        "map_pos": 2,
+        "map_pack": [
+          "NidaMedspa",
+          "Blush Med Spa",
+          "Revive Health + Aesthetics"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "NidaMedspa",
+            "Revive Health + Aesthetics",
+            "Ascent Laser Aesthetics",
+            "Be Skinful"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Nida Medspa",
+            "Ascent Laser Aesthetics",
+            "Revive Health + Aesthetics",
+            "The Shot Shop Medical Rejuvenation"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "NidaMedspa",
+            "Ascent Laser Aesthetics",
+            "Revive Health + Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Nida Medspa",
+            "Revive Health & Aesthetics"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox East Longmeadow MA",
+      "prompt": "botox East Longmeadow MA",
+      "google": {
+        "map_pos": 2,
+        "map_pack": [
+          "Revive Health + Aesthetics",
+          "Blush Med Spa",
+          "NidaMedspa"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Maxillofacial & Implant Surgery of Western Mass",
+            "Revive Health + Aesthetics",
+            "NidaMedspa",
+            "Ascent Laser Aesthetics",
+            "Cali Medspa"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Revive Health + Aesthetics",
+            "Nida Medspa",
+            "Salve Health",
+            "Shot Shop Med Spa",
+            "Pioneer Valley Plastic Surgery"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Nida Medspa",
+            "Team Wellness (formerly Revive Health + Aesthetics)",
+            "Litscher Eye Center"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Ascent Laser Aesthetics",
+            "Optimal You Today",
+            "Maple Dental Associates"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in East Longmeadow, MA",
+      "google": {
+        "map_pos": 2,
+        "map_pack": [
+          "BonaVita Aesthetics Med Spa",
+          "Blush Med Spa",
+          "Be Skinful"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "NidaMedspa",
+            "Revive Health + Aesthetics",
+            "Ascent Laser Aesthetics",
+            "Be Skinful",
+            "Dermaluxe Skincare Studio"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Nida Medspa",
+            "Revive Health + Aesthetics",
+            "Ascent Laser Aesthetics",
+            "The Shot Shop Medical Rejuvenation",
+            "Spa on the Green"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "NidaMedspa",
+            "Revive Health + Aesthetics",
+            "Ascent Laser Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Nida Medspa",
+            "Revive Health + Aesthetics",
+            "Ascent Laser Aesthetics",
+            "Be Skinful"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing (business listings DB) shows phone +1 413-887-3466, not the AMP phone (413) 278-4009; however the live SERP local pack for this same CID shows (413) 278-4009, so the listings snapshot may be stale (last_updated 2026-10-23). Perplexity and Claude also cited a third number, (413) 288-3784.",
+    "Primary category is 'Health and beauty shop' (no Medical spa category) on the East Longmeadow listing; sibling Enfield CT listing is categorized 'Medical spa'. Listing has only 11 photos, no services/prices, no people_also_search, and no popular_times returned (popular_times saved as null).",
+    "Listing appears new: first_seen 2026-10-23; Claude cited a PR Newswire release on the East Longmeadow opening as Blush's fifth location and first in Massachusetts. SERP local pack shows 131 reviews vs 126 in the listings DB.",
+    "Site blushmedspact.com is shared across all Blush locations (CT-branded domain); it did not rank organically in any of the 3 SERPs. S2 organic #6 was an Instagram post from @blushmedspa (not counted as own site).",
+    "All three SERPs had an asynchronous AI Overview with no text (aio=unreadable). S3 'best med spa near me' organic results were irrelevant Florida directory pages.",
+    "Gemini gemini-2.5-flash was rate limited (50301) twice; all 3 Gemini answers used gemini-3.6-flash instead.",
+    "Business listing search also returned Blush Med Spa - Enfield (115 Elm St, Enfield CT, 4.9/491) which was not used.",
+    "Google listing distance from AMP pin computed with coarse Google coords (42.066,-72.514)."
+  ]
+}

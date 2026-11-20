@@ -1,0 +1,116 @@
+{
+  "slug": "everbody-greenwich-village",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Ever/Body - Greenwich Village",
+    "brand": "Ever/Body",
+    "address": "69 University Pl, New York, NY 10003",
+    "phone": "(929) 298-9992",
+    "site": "https://everbody.com",
+    "lat": 40.73299,
+    "lng": -73.99339
+  },
+  "listing": {
+    "found": true,
+    "title": "Ever/Body - Greenwich Village",
+    "cid": "15226603044685281810",
+    "google_phone": "+1 917-540-7581",
+    "phone_matches_amp": false,
+    "address": "69 University Pl, New York, NY 10003",
+    "distance_km": 0.0,
+    "site_url": "https://everbody.com/locations/greenwich-village/?utm_source=google&utm_medium=organic&utm_campaign=gbp_greenwich_village",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Laser hair removal service", "Skin care clinic"],
+    "rating": 5.0,
+    "reviews": 146,
+    "stars": {"1": 0, "2": 1, "3": 2, "4": 0, "5": 143},
+    "photos": 61,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 2,
+    "last_updated": "2026-10-26 18:14:07 +00:00",
+    "first_seen": "2026-10-26 18:14:07 +00:00",
+    "topics": [
+      {"t": "lasers", "n": 18},
+      {"t": "skin care advice", "n": 11},
+      {"t": "laser facial", "n": 8},
+      {"t": "knowledgeable team", "n": 7},
+      {"t": "injector", "n": 5},
+      {"t": "personalized approach", "n": 4},
+      {"t": "signature facial", "n": 2},
+      {"t": "facial balancing", "n": 2}
+    ],
+    "services_count": 0,
+    "prices": [],
+    "also_search": [],
+    "weekly_open_hours": 48,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa New York NY",
+      "prompt": "med spa New York NY",
+      "google": {
+        "map_pos": null,
+        "map_pack": ["Tribeca Medspa", "BeRejuved Medical Spa & Wellness Studio - NYC", "SKINNEY Medspa"],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Skin Deep NYC", "Tribeca MedSpa", "Spark Laser Center", "La Réserve", "Smooth Synergy MedSpa", "Midtown Medical Spa and Lasers of NYC", "SkinTight MedSpa", "Deep Blue Med Spa"]},
+        "gemini": {"named": 1, "others": ["Skin Spa New York", "Tribeca MedSpa", "Perfect Med Spa", "Inside Beauty Spa", "Deep Blue Med Spa", "Midtown Medical Spa and Lasers of NYC", "Manhattan Medspa", "Trifecta Med Spa"]},
+        "perplexity": {"named": 1, "others": ["AestheticsMD by Jean Rhee", "Thérapie Clinic Flatiron", "SKINNEY Medspa", "Infinity Laser Spa", "Bared Monkey Laser Spa", "Bel Angé MedSpa"]},
+        "claude": {"named": 0, "others": []}
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox New York NY",
+      "prompt": "botox New York NY",
+      "google": {
+        "map_pos": null,
+        "map_pack": ["Peachy West SoHo", "JECT", "Peachy FiDi"],
+        "organic_pos": null,
+        "aio": "none"
+      },
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Tribeca MedSpa", "LaserAway Manhattan - Morningside Heights", "NYC Rejuvenation Clinic", "Future Face & Body", "ROW 89 Aesthetics", "Genesys Laser Skin Clinic", "Peachy West SoHo", "LaserAway Manhattan - Meatpacking"]},
+        "gemini": {"named": 0, "others": ["Mount Sinai Dermatology", "LaserAway Manhattan - Flatiron", "James Christian Cosmetics", "Dr. Jessica Lattman", "Wall Street Dermatology", "Trifecta Med Spa", "TitleMD", "Skinly Aesthetics"]},
+        "perplexity": {"named": 0, "others": ["Hudson Dermatology & Laser Surgery", "Debra Jaliman, MD", "Manhattan Dermatology", "Shafer Clinic", "Trifecta Med Spa"]},
+        "claude": {"named": 0, "others": ["Peachy West SoHo", "Spring Street Dermatology", "SKINNEY Medspa", "NYC Rejuvenation Clinic", "James Christian Cosmetics", "SkinLab by Tribeca MedSpa"]}
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in New York, NY",
+      "google": {
+        "map_pos": null,
+        "map_pack": ["JECT", "Peachy West SoHo", "Tribeca Medspa"],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Lov MedSpa New York", "ZZ Med Spa", "Peachy Manhattan West", "Thérapie Clinic Flatiron", "Trifecta Med Spa 57", "La Réserve Aesthetics Med Spa + Wellness"]},
+        "gemini": {"named": 1, "others": ["Tribeca MedSpa", "Rejuvenation MD NYC", "Skinney Medspa", "Bel Angé MedSpa", "LovMedSpa New York", "Laser & Skin Surgery Center of New York", "ZZ Med Spa", "Peachy West SoHo"]},
+        "perplexity": {"named": 0, "others": ["Laser & Skin Surgery Center of New York", "Peachy Manhattan West", "Thérapie Clinic Flatiron", "Smooth Synergy Medical Spa & Laser Center", "Renew Day Spa 2"]},
+        "claude": {"named": 0, "others": ["Tribeca MedSpa by AYA", "Plump Cosmetics & Injectables", "KUR Skin Lab", "Skinova Medspa", "Peachy Brooklyn Heights"]}
+      }
+    }
+  ],
+  "notes": [
+    "Google listing phone (917) 540-7581 does not match AMP-listed (929) 298-9992.",
+    "Listing is new: first_seen and last_updated both 2026-10-26; only 2 attributes; no services/prices, no people_also_search, no popular_times returned (popular_times saved as null).",
+    "Hours: Tue-Fri 9-19, Sat 10-18; closed Sun and Mon (48 h/week), while sister Flatiron listing is open 7 days.",
+    "Brand listing search also returned 'Ever/Body Upper West Side' (2159 Broadway) marked closed_forever, 3.7 stars/50 reviews, still on Google - brand hygiene issue.",
+    "Ever/Body brand absent from all 3 Google local packs and top-10 organic for the 3 searches.",
+    "Gemini S1/S3 and Perplexity S1 named 'Ever/Body' as a brand (citing Observer luxury med spa list), listing Flatiron/SoHo/UES/Williamsburg - not Greenwich Village specifically.",
+    "Claude S1 (med spa New York NY) answered with a clarifying question and ran no web search; scored named=0 with no others.",
+    "S3 SERP 'best med spa near me' organic results were dominated by medspaflorida.com directory pages (irrelevant to NYC).",
+    "AI overviews for S1 and S3 were asynchronous with no text; S2 had none.",
+    "No model substitutions; location_name 'New York,New York,United States' worked."
+  ]
+}

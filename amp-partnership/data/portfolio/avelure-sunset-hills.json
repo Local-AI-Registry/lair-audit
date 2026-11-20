@@ -1,0 +1,788 @@
+{
+ "slug": "avelure-sunset-hills",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Sunset Hills",
+  "brand": "Avelure",
+  "address": "3828 S Lindbergh Blvd Suite 101, Sunset Hills, MO 63127",
+  "phone": "(314) 849-3000",
+  "site": "https://aveluremedspa.com",
+  "pin": [
+   38.54916,
+   -90.40489
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Sunset Hills",
+  "google_phone": "+1636-542-8557",
+  "phone_matches_amp": false,
+  "address": "3828 S Lindbergh Blvd Ste 101, Sappington, MO 63127",
+  "distance_km": 0.0,
+  "site_url": "https://aveluremedspa.com/locations/sunset-hills/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_sunset_hills",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.7,
+  "reviews": 1078,
+  "stars": {
+   "1": 44,
+   "2": 19,
+   "3": 10,
+   "4": 17,
+   "5": 988
+  },
+  "photos": 24,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-12 16:36:45 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 119
+   },
+   {
+    "t": "scheduling",
+    "n": 25
+   },
+   {
+    "t": "laser treatment",
+    "n": 15
+   },
+   {
+    "t": "bikini area",
+    "n": 10
+   },
+   {
+    "t": "explaining procedures",
+    "n": 10
+   },
+   {
+    "t": "cool sculpting",
+    "n": 6
+   },
+   {
+    "t": "ultherapy",
+    "n": 6
+   },
+   {
+    "t": "quick visit",
+    "n": 5
+   }
+  ],
+  "services_count": 14,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Laser Lounge STL",
+    "rating": 4.9,
+    "reviews": 157
+   },
+   {
+    "name": "INFINITY Laser Hair Removal",
+    "rating": 4.8,
+    "reviews": 105
+   },
+   {
+    "name": "Metro Medspa",
+    "rating": 4.9,
+    "reviews": 1421
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 4.9,
+    "reviews": 557
+   },
+   {
+    "name": "STL Electrology by Bello Med Spa",
+    "rating": 4.9,
+    "reviews": 79
+   }
+  ],
+  "weekly_open_hours": 46,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 89
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 92
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 96
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 39
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Sunset Hills MO",
+   "prompt": "med spa Sunset Hills MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "EOS Medical Spa",
+      "Divine, A Boutique Medspa",
+      "Renew You by Diana"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "EOS Medical Spa",
+      "Divine, A Boutique Medspa",
+      "Skin & Body Bar",
+      "The Only Facial",
+      "LIVE Hydration Spa",
+      "Modern Med",
+      "Metro Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Divine, A Boutique Medspa",
+      "Skin & Body Bar",
+      "Modern Med",
+      "Metro MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "EOS Medical Spa",
+      "Divine, A Boutique Medspa",
+      "LIVE Hydration Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Sunset Hills MO",
+   "prompt": "botox Sunset Hills MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Divine, A Boutique Medspa",
+     "Modern Med | STL Med Spa | Aesthetics & Wellness",
+     "EOS Medical Spa"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Divine, A Boutique Medspa",
+      "EOS Medical Spa",
+      "Renew You by Diana"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Divine, A Boutique Medspa",
+      "EOS Medical Spa",
+      "Skin & Body Bar",
+      "Renew You by Diana",
+      "Meramec Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Divine, A Boutique Medspa",
+      "Meramec Dermatology",
+      "Metro MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Ideal Image",
+      "Divine Medspa",
+      "Eos Medical Spa",
+      "Skin & Body Bar"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Sunset Hills, MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Modern Med | STL Med Spa | Aesthetics & Wellness",
+     "Metro Medspa",
+     "Look Lab Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "EOS Medical Spa",
+      "Divine, A Boutique Medspa",
+      "Renew You by Diana"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "DIVINE (A Boutique Medspa)",
+      "EOS Medical Spa",
+      "Skin & Body Bar",
+      "The Only Facial",
+      "Ideal Image (Sunset Hills)",
+      "Modern Med"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Divine, A Boutique Medspa",
+      "Skin & Body Bar",
+      "Metro MedSpa",
+      "Meramec Dermatology"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Metro Medspa",
+      "EOS Medical Spa",
+      "Divine, A Boutique Medspa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone is (636) 542-8557, not the AMP-listed (314) 849-3000; aveluremedspa.com home page shows both numbers for Sunset Hills, and Perplexity/Claude answers cite 314-849-3000 (NAP inconsistency).",
+  "Google address city is 'Sappington, MO' rather than Sunset Hills (same street address/suite, 63127).",
+  "Listing has no Saturday hours on Google (Mon-Fri only, 46 h/week) while Claude's answer citing aveluremedspa.com says Sat 9am-4pm - possible hours mismatch.",
+  "Location is the former Ideal Image Sunset Hills (MapQuest/Claude/Gemini still reference 'Ideal Image' at 3828 S Lindbergh Ste 101, 636-542-8557). Claude S2 and Gemini S3 named 'Ideal Image' at this address, not the Avelure brand - scored named=0 per brand-name rule.",
+  "Not in Google local pack for any of the 3 searches; no organic ranking for own site/listing in top 10. S1 SERP had no local pack (organic dominated by Divine pages via google.com redirect URLs).",
+  "S3 AI Overview was asynchronous with no text (unreadable).",
+  "gemini-2.5-flash was rate limited twice (rate_limit_exceeded) for all 3 prompts; substituted gemini-3.6-flash.",
+  "Google services list has no prices; prices=[].",
+  "Avelure Creve Coeur listing also returned (separate AMP location), not a duplicate."
+ ]
+}

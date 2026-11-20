@@ -1,0 +1,297 @@
+{
+  "slug": "ever-body-gaithersburg",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Ever / Body - Gaithersburg",
+    "brand": "Ever/Body",
+    "address": "122 Crown Park Ave, Gaithersburg, MD 20878",
+    "phone": "(240) 261-7944",
+    "site": "https://everbody.com",
+    "lat": 39.11489,
+    "lng": -77.206
+  },
+  "listing": {
+    "found": true,
+    "title": "Ideal Image Gaithersburg",
+    "google_phone": "+1 240-885-6334",
+    "phone_matches_amp": false,
+    "address": "122 Crown Park Ave, Gaithersburg, MD 20878",
+    "distance_km": 0.0,
+    "site_url": "https://everbody.com/locations/gaithersburg/?utm_source=google&utm_medium=organic&utm_campaign=gbp_eb_gaithersburg",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": [
+      "Medical spa",
+      "Laser hair removal service"
+    ],
+    "rating": 4.5,
+    "reviews": 512,
+    "stars": {
+      "1": 54,
+      "2": 9,
+      "3": 2,
+      "4": 18,
+      "5": 429
+    },
+    "photos": 23,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 17,
+    "last_updated": "2026-09-22 03:29:54 +00:00",
+    "topics": [
+      {
+        "t": "front desk staff",
+        "n": 29
+      },
+      {
+        "t": "laser treatment",
+        "n": 14
+      },
+      {
+        "t": "cool sculpting",
+        "n": 11
+      },
+      {
+        "t": "clean facility",
+        "n": 10
+      },
+      {
+        "t": "fast procedure",
+        "n": 6
+      },
+      {
+        "t": "thorough staff",
+        "n": 5
+      },
+      {
+        "t": "painless procedure",
+        "n": 4
+      },
+      {
+        "t": "knowledgeable employees",
+        "n": 3
+      }
+    ],
+    "services_count": 12,
+    "prices": [],
+    "also_search": [
+      {
+        "name": "Milan Laser Hair Removal",
+        "rating": 4.9,
+        "reviews": 280
+      },
+      {
+        "name": "Medrevive",
+        "rating": 4.8,
+        "reviews": 230
+      },
+      {
+        "name": "SkinSpirit Gaithersburg",
+        "rating": 4.9,
+        "reviews": 211
+      },
+      {
+        "name": "gaithersburg laser aesthetics",
+        "rating": null,
+        "reviews": null
+      },
+      {
+        "name": "Cosmedici Laser - Montgomery Village",
+        "rating": 4.9,
+        "reviews": 122
+      }
+    ],
+    "weekly_open_hours": 60,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa Gaithersburg MD",
+      "prompt": "med spa Gaithersburg MD",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "Medrevive",
+          "SkinSpirit Gaithersburg",
+          "MycroAesthetics"
+        ],
+        "organic_pos": null,
+        "aio": "none"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "MedRevive MedSpa",
+            "Bloom Med-Aesthetics Studio",
+            "Addo Aesthetics",
+            "MycroAesthetics",
+            "SkinSpirit Gaithersburg",
+            "Daisi Permanent Makeup & Skincare Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 0,
+          "others": [
+            "SkinSpirit Gaithersburg",
+            "MedRevive MedSpa",
+            "MycroAesthetics",
+            "Soha Skincare & Wellness"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "SkinSpirit Gaithersburg",
+            "Relive Health",
+            "AmryGlow, LLC",
+            "MycroAesthetics",
+            "Medrevive",
+            "Addo Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "Medrevive",
+            "SkinSpirit - Gaithersburg",
+            "Relive Health",
+            "Bloom Med-Aesthetics Studio",
+            "Soha Skincare & Wellness"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox Gaithersburg MD",
+      "prompt": "botox Gaithersburg MD",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "SkinSpirit Gaithersburg",
+          "MycroAesthetics",
+          "Medrevive"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "MycroAesthetics",
+            "Bloom Med-Aesthetics Studio",
+            "Addo Aesthetics",
+            "SkinSpirit Gaithersburg",
+            "Center for Cosmetic and Clinical Dermatology",
+            "Medrevive"
+          ]
+        },
+        "gemini": {
+          "named": 0,
+          "others": [
+            "MycroAesthetics",
+            "SkinSpirit Gaithersburg",
+            "Bloom Med-Aesthetics Studio",
+            "MedRevive MedSpa",
+            "Goals Aesthetics & Plastic Surgery",
+            "Omega Dental Group, LLC",
+            "Center for Cosmetic and Clinical Dermatology"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "SkinSpirit Gaithersburg",
+            "Relive Health Gaithersburg",
+            "Center for Cosmetic and Clinical Dermatology",
+            "Bloom Med-Aesthetics Studio"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "SkinSpirit - Gaithersburg",
+            "Bloom Med-Aesthetics Studio",
+            "MycroAesthetics",
+            "Medrevive Medspa",
+            "Center for Cosmetic and Clinical Dermatology",
+            "Goals Aesthetics & Plastic Surgery"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in Gaithersburg, MD",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "Butterfly Medical Spa",
+          "SkinSpirit Gaithersburg",
+          "Medrevive"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "MycroAesthetics",
+            "MedRevive MedSpa",
+            "Bloom Med-Aesthetics Studio",
+            "Addo Aesthetics",
+            "SkinSpirit Gaithersburg"
+          ]
+        },
+        "gemini": {
+          "named": 0,
+          "others": [
+            "Soha Skincare & Wellness",
+            "MedRevive MedSpa",
+            "SkinSpirit Gaithersburg",
+            "MycroAesthetics",
+            "Estar MedSpa & Innovative Health Center",
+            "Bloom Med-Aesthetics Studio",
+            "Tea Spa - Gaithersburg"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "MycroAesthetics",
+            "SkinSpirit Gaithersburg",
+            "Bloom Med-Aesthetics Studio",
+            "Medrevive",
+            "Relive Health"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "SkinSpirit - Gaithersburg",
+            "Medrevive Medspa",
+            "Butterfly Medical Spa",
+            "Laser Lisse - Kathleen Farrell, MD"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing at 122 Crown Park Ave is still titled 'Ideal Image Gaithersburg' (legacy brand), although its description says 'Ever/Body Gaithersburg' and it links to everbody.com/locations/gaithersburg. Rebrand not reflected in the GBP name.",
+    "Title searches for 'Ever/Body' / 'Ever/Body Gaithersburg' did not return it; found via address filter (Crown Park Ave) within 1 km of the AMP pin.",
+    "Google phone (240) 885-6334 does not match AMP-listed (240) 261-7944; MapQuest (cited by Perplexity) lists a third number, (240) 388-9696.",
+    "The two AI 'named' hits (Perplexity S2, ChatGPT S3) both name it as 'Ideal Image Gaithersburg', not Ever/Body; counted as named because it is this location (same address/listing).",
+    "'Ever/Body Cabin John' (Potomac, 7725 Tuckerman Ln) appeared in the brand search and is marked closed_forever on Google; unrelated 'Ever Body, Inc.' personal trainer in Rockville also shares the name.",
+    "Not in the local pack for any of the 3 searches and no everbody.com organic result in top 10. S3 'best med spa near me' organic results were off-target (medspaflorida.com directory pages).",
+    "popular_times not returned by the listings API for this business (saved as null). No service prices on the listing (prices empty).",
+    "ChatGPT S1 search results cited nobsmedspareviews 'ever-body-bethesda-row-gaithersburg-md' and shopdowntowncrown.com 'ideal-image-med-spa', but the answer text did not name the business.",
+    "No model substitutions; SERP location Gaithersburg,Maryland,United States worked."
+  ]
+}

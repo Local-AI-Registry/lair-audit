@@ -1,0 +1,814 @@
+{
+ "slug": "avelure-zona-rosa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Zona Rosa",
+  "brand": "Avelure",
+  "address": "8534 NW Prairie View Rd, Kansas City, MO 64153",
+  "phone": "(816) 303-0193",
+  "site": "https://aveluremedspa.com",
+  "pin": "39.24961,-94.66108"
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Zona Rosa",
+  "google_phone": "+1 816-549-5181",
+  "phone_matches_amp": false,
+  "address": "8534 NW Prairie View Rd, Kansas City, MO 64153",
+  "latitude": 39.25,
+  "longitude": -94.662,
+  "distance_km": 0.1,
+  "site_url": "https://aveluremedspa.com/locations/zona-rosa/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_zona_rosa",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 681,
+  "stars": {
+   "1": 55,
+   "2": 17,
+   "3": 5,
+   "4": 16,
+   "5": 588
+  },
+  "photos": 16,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-26 04:10:06 +00:00",
+  "topics": [
+   {
+    "t": "nurses",
+    "n": 61
+   },
+   {
+    "t": "laser hair removal",
+    "n": 52
+   },
+   {
+    "t": "lip filler",
+    "n": 16
+   },
+   {
+    "t": "cool sculpting",
+    "n": 10
+   },
+   {
+    "t": "laser treatment",
+    "n": 9
+   },
+   {
+    "t": "pain management",
+    "n": 6
+   },
+   {
+    "t": "wrinkle relaxer",
+    "n": 2
+   },
+   {
+    "t": "injectors",
+    "n": 2
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Regevity - Kansas City",
+    "rating": 4.6,
+    "reviews": 186
+   },
+   {
+    "name": "aNu Aesthetics & Optimal Wellness",
+    "rating": 4.8,
+    "reviews": 493
+   },
+   {
+    "name": "Rajeunir Medical Spa",
+    "rating": 4.3,
+    "reviews": 95
+   },
+   {
+    "name": "Covet Injection Studio LLC",
+    "rating": 5,
+    "reviews": 126
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 5,
+    "reviews": 828
+   }
+  ],
+  "weekly_open_hours": 38.5,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 79
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      }
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Kansas City MO",
+   "prompt": "med spa Kansas City MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "AesthetiCare Medspa + Wellness",
+     "ReVive RX Med Spa",
+     "Horizon Med Spa and Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Fiore Wellness Center & Spa",
+      "Plaza Aesthetics & Wellness Medspa",
+      "Healthylooks Medspa",
+      "The Grove Spa",
+      "Horizon Med Spa and Wellness",
+      "Eden Aesthetics & Wellness",
+      "Rajeunir Medical Spa",
+      "Bare Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "AesthetiCare MedSpa",
+      "Hollyday Med Spa + Aesthetics",
+      "aNu Aesthetics & Optimal Wellness",
+      "Plaza Aesthetics & Wellness",
+      "Rajeunir Medical Spa",
+      "KC Injectables Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "ReVive RX Med Spa",
+      "Horizon Med Spa & Wellness",
+      "Bare Med Spa",
+      "Hollyday Med Spa + Aesthetics",
+      "Healthylooks Med Spa & Wellness",
+      "AesthetiCare MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "AesthetiCare Medspa",
+      "Plaza Aesthetics & Wellness",
+      "816 Aesthetic Med Spa",
+      "Hollyday Med Spa",
+      "Horizon Med Spa & Wellness"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Kansas City MO",
+   "prompt": "botox Kansas City MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Refine KC Aesthetics",
+     "Face KC Medical Spa",
+     "ReVive RX Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "KC Med Spa Group",
+      "Koehn Dentistry & Aesthetics",
+      "Khan Eyelid & Facial Plastic Surgery",
+      "Singhal Plastic Surgery",
+      "Rajeunir Medical Spa",
+      "Face KC Medical Spa",
+      "Healthylooks Med Spa & Wellness - Northland",
+      "House Nico - Botox Bar"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Associated Plastic Surgeons",
+      "Monarch Plastic Surgery & Skin Care",
+      "AesthetiCare Medspa",
+      "KC Injectables Med Spa",
+      "The Glam Room",
+      "Eden Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "ReVive RX Med Spa",
+      "Face KC Medical Spa",
+      "AesthetiCare Medspa + Wellness",
+      "Horizon Med Spa and Wellness",
+      "Georgous Aesthetic Bar",
+      "816 Aesthetic Med Spa",
+      "Hollyday Med Spa + Aesthetics",
+      "Monarch Plastic Surgery"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "AesthetiCare",
+      "KC Injectables Med Spa",
+      "Vargas Face and Skin Center",
+      "Hollyday Med Spa + Aesthetics",
+      "Eden Aesthetics & Wellness",
+      "Monarch Plastic Surgery"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Kansas City, MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "AesthetiCare Medspa + Wellness",
+     "Refine KC Aesthetics",
+     "ReVive RX Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Joseph R. Barnthouse, MD",
+      "LUX Wellness KC",
+      "Kc Modern Wellness LLC",
+      "Georgous Aesthetic Bar",
+      "Horizon Med Spa and Wellness",
+      "ReVive RX Med Spa",
+      "Healthylooks Medspa",
+      "KC Med Spa Group"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "AesthetiCare MedSpa",
+      "aNu Aesthetics & Optimal Wellness",
+      "Hollyday Med Spa",
+      "Plaza Aesthetics & Wellness",
+      "KMC MedSpa",
+      "Rajeunir Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "ReVive RX Med Spa",
+      "Georgous Aesthetic Bar",
+      "Horizon Med Spa and Wellness",
+      "Eden Aesthetics & Wellness",
+      "AesthetiCare Medspa + Wellness",
+      "Face KC Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "ReVive RX Med Spa",
+      "Plaza Aesthetics & Wellness",
+      "Aestheti Care",
+      "Horizon Med Spa and Wellness",
+      "Hollyday Med Spa + Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 816-549-5181 does not match AMP-listed (816) 303-0193.",
+  "Google hours list no Thursday (closed Thu and Sun); weekly open hours 38.5.",
+  "Only one listing returned for 'Avelure' within 15 km (no duplicates). Google lat/lng rounded to 39.25,-94.662.",
+  "No service prices on the Google listing (prices empty).",
+  "gemini-2.5-flash rate limited twice (rate_limit_exceeded) for all 3 prompts; used gemini-3.6-flash.",
+  "Avelure absent from Google local packs and organic top 10 on all 3 searches; S1/S3 AI Overviews asynchronous with no text; S2 had no AI Overview.",
+  "S3 'best med spa near me' SERP with Kansas City location returned mostly out-of-market Yelp pages (Omaha, Tulsa, Cincinnati, etc.).",
+  "Perplexity named 'Avelure Med Spa - Zona Rosa' for S1. ChatGPT S1 cited aveluremedspa.com/locations/zona-rosa in search results but did not name it in the answer.",
+  "Listing first_seen 2024-08-04; claimed; 681 reviews but 55 one-star (8.1%)."
+ ]
+}

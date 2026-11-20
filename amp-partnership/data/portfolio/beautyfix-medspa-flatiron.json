@@ -1,0 +1,96 @@
+{
+  "slug": "beautyfix-medspa-flatiron",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "BeautyFix MedSpa - Flatiron",
+    "brand": "BeautyFix MedSpa",
+    "address": "18 W 23rd St, 2nd Floor, New York, NY 10010",
+    "phone": "(212) 366-4787",
+    "site": "https://www.beautyfixmedspa.com/pages/location-flatiron",
+    "pin": [40.74169, -73.99048]
+  },
+  "listing": {
+    "found": true,
+    "title": "BeautyFix Medspa Flatiron",
+    "google_phone": "+1212-366-4787",
+    "phone_matches_amp": true,
+    "address": "18 W 23rd St 2nd floor, New York, NY 10010",
+    "distance_km": 0.1,
+    "site_url": "http://www.beautyfixmedspa.com/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Beauty salon", "Esthetics service", "Facial spa", "Health and beauty shop", "Health spa", "Laser hair removal service", "Skin care clinic", "Spa", "Wellness center"],
+    "rating": 4.6,
+    "reviews": 836,
+    "stars": {"1": 60, "2": 15, "3": 5, "4": 13, "5": 743},
+    "photos": 38,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 19,
+    "last_updated": "2026-09-13 05:52:34 +00:00",
+    "topics": [{"t": "injector", "n": 72}, {"t": "lip filler", "n": 47}, {"t": "cheek filler", "n": 14}, {"t": "nose filler", "n": 13}, {"t": "no bruising", "n": 13}, {"t": "under eye filler", "n": 7}, {"t": "micro needling", "n": 7}, {"t": "thread lift", "n": 3}],
+    "services_count": 10,
+    "prices": [
+      {"title": "CelluliteFix- Venus", "category": "Body Contouring", "price_usd": 300},
+      {"title": "CheekFix- Filler", "category": "Dermal Filler", "price_usd": 799},
+      {"title": "FaceFix- Filler", "category": "Dermal Filler", "price_usd": 799},
+      {"title": "LipFix- Filler", "category": "Dermal Filler", "price_usd": 699},
+      {"title": "Existing Patient Tox", "category": "Neurotoxin", "price_usd": 300},
+      {"title": "New Patient Tox", "category": "Neurotoxin", "price_usd": 229},
+      {"title": "Wrinkle Fix Unlimited Membership", "category": "Neurotoxin", "price_usd": 159},
+      {"title": "FaceFix- Sculptra", "category": "Skin Longevity", "price_usd": 799},
+      {"title": "SkinFix- Microneedling", "category": "SkinFixes", "price_usd": 300}
+    ],
+    "also_search": [
+      {"name": "BeautyFix Training Center", "rating": 5, "reviews": 8},
+      {"name": "BEAUTY MIX", "rating": 4.9, "reviews": 40},
+      {"name": "Luxury MedSpa", "rating": 2.7, "reviews": 32},
+      {"name": "Fayced Aesthetics NYC", "rating": 5, "reviews": 463}
+    ],
+    "weekly_open_hours": 52,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1", "q": "med spa New York NY", "prompt": "med spa New York NY",
+      "google": {"map_pos": null, "map_pack": ["Tribeca Medspa", "BeRejuved Medical Spa & Wellness Studio - NYC", "SKINNEY Medspa"], "organic_pos": null, "aio": "none"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Skin Deep NYC", "Tribeca MedSpa", "Spark Laser Center", "La Réserve Tribeca", "Smooth Synergy MedSpa", "Midtown Medical Spa and Lasers of NYC", "SkinTight MedSpa", "Deep Blue Med Spa"]},
+        "gemini": {"named": 0, "others": ["Tribeca MedSpa", "Ever/Body", "Ject", "Skinney Medspa", "Midtown Medical Spa and Lasers of NYC", "Smooth Synergy Medical Spa", "PFRANKMD", "SkinTight MedSpa"]},
+        "perplexity": {"named": 0, "others": ["AestheticsMD by Jean Rhee", "Thérapie Clinic Flatiron", "SKINNEY Medspa", "Infinity Laser Spa", "Bared Monkey Laser Spa", "Ever/Body", "Bel Angé MedSpa"]},
+        "claude": {"named": 0, "others": ["Tribeca MedSpa", "SkinTight MedSpa", "SoVous Med Spa", "Smooth Synergy Medical Spa & Laser Center", "ZZ Med Spa", "La Réserve", "IN·GLO"]}
+      }
+    },
+    {
+      "key": "S2", "q": "botox New York NY", "prompt": "botox New York NY",
+      "google": {"map_pos": null, "map_pack": ["Peachy West SoHo", "JECT", "Peachy Manhattan West"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Tribeca MedSpa", "LaserAway Manhattan - Morningside Heights", "NYC Rejuvenation Clinic", "Future Face & Body", "ROW 89 Aesthetics", "Genesys Laser Skin Clinic", "DermaStar Skin & Laser", "Peachy West SoHo"]},
+        "gemini": {"named": 0, "others": ["Dr. Andrew Jacono", "Dr. Alan Matarasso", "Mount Sinai Department of Dermatology", "Wall Street Dermatology", "Trifecta Med Spa", "Tribeca MedSpa", "Spring Street Dermatology"]},
+        "perplexity": {"named": 0, "others": ["Hudson Dermatology & Laser Surgery", "Dr. Debra Jaliman", "Manhattan Dermatology", "Shafer Clinic", "Trifecta Med Spa", "Laser & Skin Surgery Center of New York"]},
+        "claude": {"named": 0, "others": ["Spring Street Dermatology", "SKINNEY Medspa", "Peachy West SoHo", "NYC Rejuvenation Clinic"]}
+      }
+    },
+    {
+      "key": "S3", "q": "best med spa near me", "prompt": "best med spa in New York, NY",
+      "google": {"map_pos": null, "map_pack": ["JECT", "Peachy West SoHo", "Tribeca Medspa"], "organic_pos": null, "aio": "unreadable"},
+      "llm": {
+        "chat_gpt": {"named": 0, "others": ["Lov MedSpa New York", "Peachy Manhattan West", "Thérapie Clinic Flatiron", "ZZ Day Spa", "Infinity Laser Spa", "Bared Monkey Laser Spa"]},
+        "gemini": {"named": 0, "others": ["Tribeca MedSpa", "PFRANKMD", "Ever/Body", "JECT", "Skinney Medspa", "Smooth Synergy", "New York Dermatology Group (NYDG)"]},
+        "perplexity": {"named": 0, "others": ["Laser & Skin Surgery Center of New York", "Peachy West SoHo", "Thérapie Clinic Flatiron", "Smooth Synergy Medical Spa & Laser Center", "Skinney Medspa", "Tribeca MedSpa"]},
+        "claude": {"named": 0, "others": ["Tribeca MedSpa by AYA", "Plump Cosmetics & Injectables", "KUR Skin Lab", "Skinova Medspa", "Peachy Brooklyn Heights", "Peachy FiDi"]}
+      }
+    }
+  ],
+  "notes": [
+    "Google listing matched by address; claimed, phone matches AMP. Google site link is the brand homepage (beautyfixmedspa.com), not the Flatiron location page.",
+    "Listing search returned no popular_times field; saved as null.",
+    "Sibling listing 'BeautyFix Medspa Dyckman' (4746 Broadway, NY 10040) shares the same phone and is marked closed_forever on Google.",
+    "Services: 10 listed; 'Office Consultation' at $0 excluded from prices.",
+    "Gemini gemini-2.5-flash rate limited twice (rate_limit_exceeded) on all 3 prompts; substituted gemini-3.6-flash.",
+    "S1 SERP had no ai_overview; S2/S3 ai_overview was asynchronous with no text.",
+    "S3 'best med spa near me' organic results were mostly out-of-market Yelp pages (Rochester, Lewes DE, Cincinnati, etc.) despite New York location; local pack was NYC.",
+    "BeautyFix not named by any LLM in 12 answers and absent from all Google map packs and organic top 10."
+  ]
+}

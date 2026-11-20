@@ -1,0 +1,24 @@
+{
+  "source": "DataForSEO (domain_rank_overview, historical_rank_overview, backlinks_summary), United States / en",
+  "collected": "2026-11-20",
+  "domains": [
+    {"domain":"blushmedspact.com","keywords_total":159,"top3":28,"top10":39,"etv":1450.818,"is_new":53,"is_up":40,"is_down":51,
+     "history":[{"month":"2025-12","etv":1166.501,"keywords":513},{"month":"2026-01","etv":1085.087,"keywords":541},{"month":"2026-02","etv":1259.789,"keywords":526},{"month":"2026-03","etv":1230.927,"keywords":492},{"month":"2026-04","etv":1059.484,"keywords":335},{"month":"2026-05","etv":1098.195,"keywords":284},{"month":"2026-06","etv":1210.104,"keywords":263},{"month":"2026-07","etv":1205.142,"keywords":251},{"month":"2026-08","etv":972.688,"keywords":225},{"month":"2026-09","etv":1428.978,"keywords":236},{"month":"2026-10","etv":1671.311,"keywords":177},{"month":"2026-11","etv":1481.751,"keywords":166}],
+     "referring_domains":136,"backlinks":563,"broken_backlinks":4,"broken_pages":12,"spam_score":10,"rank":166},
+    {"domain":"curatemedspa.com","keywords_total":176,"top3":19,"top10":31,"etv":1133.885,"is_new":86,"is_up":37,"is_down":45,
+     "history":[{"month":"2025-12","etv":664.764,"keywords":239},{"month":"2026-01","etv":1212.947,"keywords":513},{"month":"2026-02","etv":1708.849,"keywords":624},{"month":"2026-03","etv":1425.81,"keywords":606},{"month":"2026-04","etv":1194.902,"keywords":432},{"month":"2026-05","etv":1113.309,"keywords":299},{"month":"2026-06","etv":1380.146,"keywords":225},{"month":"2026-07","etv":1373.314,"keywords":171},{"month":"2026-08","etv":918.601,"keywords":188},{"month":"2026-09","etv":1018.954,"keywords":234},{"month":"2026-10","etv":1115.182,"keywords":184},{"month":"2026-11","etv":1118.179,"keywords":175}],
+     "referring_domains":140,"backlinks":474,"broken_backlinks":196,"broken_pages":25,"spam_score":13,"rank":187},
+    {"domain":"curatemedspa","note":"Not a valid domain (no TLD); duplicate of curatemedspa.com. No separate lookup made - use curatemedspa.com row.","duplicate_of":"curatemedspa.com",
+     "keywords_total":null,"top3":null,"top10":null,"etv":null,"is_new":null,"is_up":null,"is_down":null,"history":null,
+     "referring_domains":null,"backlinks":null,"broken_backlinks":null,"broken_pages":null,"spam_score":null,"rank":null},
+    {"domain":"destinationaesthetics.com","keywords_total":546,"top3":42,"top10":82,"etv":1162.827,"is_new":268,"is_up":105,"is_down":135,
+     "history":[{"month":"2025-12","etv":6520.695,"keywords":1686},{"month":"2026-01","etv":8346.928,"keywords":1641},{"month":"2026-02","etv":8357.424,"keywords":1547},{"month":"2026-03","etv":5280.471,"keywords":828},{"month":"2026-04","etv":2923.941,"keywords":506},{"month":"2026-05","etv":3252.554,"keywords":696},{"month":"2026-06","etv":3466.472,"keywords":773},{"month":"2026-07","etv":3288.019,"keywords":870},{"month":"2026-08","etv":3178.635,"keywords":965},{"month":"2026-09","etv":2995.289,"keywords":925},{"month":"2026-10","etv":2866.083,"keywords":626},{"month":"2026-11","etv":3194.076,"keywords":589}],
+     "referring_domains":484,"backlinks":2912,"broken_backlinks":6,"broken_pages":14,"spam_score":13,"rank":252},
+    {"domain":"esthetixmd.com","keywords_total":230,"top3":20,"top10":43,"etv":912.725,"is_new":105,"is_up":50,"is_down":57,
+     "history":[{"month":"2025-12","etv":3155.2,"keywords":1262},{"month":"2026-01","etv":3049.787,"keywords":1256},{"month":"2026-02","etv":2916.803,"keywords":1167},{"month":"2026-03","etv":3098.404,"keywords":1113},{"month":"2026-04","etv":1914.244,"keywords":673},{"month":"2026-05","etv":1817.445,"keywords":538},{"month":"2026-06","etv":1457.639,"keywords":488},{"month":"2026-07","etv":1425.8,"keywords":452},{"month":"2026-08","etv":1548.477,"keywords":448},{"month":"2026-09","etv":1213.44,"keywords":426},{"month":"2026-10","etv":1175.232,"keywords":265},{"month":"2026-11","etv":1238.182,"keywords":249}],
+     "referring_domains":273,"backlinks":671,"broken_backlinks":569,"broken_pages":46,"spam_score":18,"rank":154},
+    {"domain":"everbody.com","keywords_total":413,"top3":36,"top10":48,"etv":2746.123,"is_new":193,"is_up":80,"is_down":115,
+     "history":[{"month":"2025-12","etv":6488.841,"keywords":3887},{"month":"2026-01","etv":16548.196,"keywords":3867},{"month":"2026-02","etv":8134.195,"keywords":2213},{"month":"2026-03","etv":7622.793,"keywords":1918},{"month":"2026-04","etv":5646.53,"keywords":1333},{"month":"2026-05","etv":4946.033,"keywords":1022},{"month":"2026-06","etv":4568.354,"keywords":877},{"month":"2026-07","etv":4092.174,"keywords":729},{"month":"2026-08","etv":3572.45,"keywords":729},{"month":"2026-09","etv":3576.929,"keywords":671},{"month":"2026-10","etv":3230.392,"keywords":482},{"month":"2026-11","etv":3311.182,"keywords":466}],
+     "referring_domains":661,"backlinks":2002,"broken_backlinks":65,"broken_pages":37,"spam_score":12,"rank":250}
+  ]
+}

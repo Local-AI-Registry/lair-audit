@@ -1,0 +1,941 @@
+{
+  "slug": "living-young-center-st-petersburg",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Living Young Center - St. Petersburg",
+    "brand": "Living Young Center",
+    "address": "5156 Central Avenue, St. Petersburg, FL 33707",
+    "phone": "(727) 319-6884",
+    "website": "https://livingyoungcenter.com",
+    "lat": 27.77065,
+    "lng": -82.70373,
+    "source": "weramp.com"
+  },
+  "listing": {
+    "found": true,
+    "title": "LivingYoung Center for Health & Anti-Aging - St. Petersburg",
+    "google_phone": "+1727-677-9617",
+    "phone_matches_amp": false,
+    "address": "5156 Central Ave, St. Petersburg, FL 33710",
+    "distance_km": 0.0,
+    "site_url": "https://livingyoungcenter.com/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": [
+      "Medical spa",
+      "Laser hair removal service",
+      "Skin care clinic"
+    ],
+    "rating": 5,
+    "reviews": 244,
+    "stars": {
+      "1": 2,
+      "2": 0,
+      "3": 0,
+      "4": 1,
+      "5": 241
+    },
+    "photos": 15,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 15,
+    "last_updated": "2026-09-27 18:29:51 +00:00",
+    "topics": [
+      {
+        "t": "injector",
+        "n": 16
+      },
+      {
+        "t": "helpful front desk staff",
+        "n": 5
+      },
+      {
+        "t": "new location",
+        "n": 5
+      },
+      {
+        "t": "skilled staff",
+        "n": 5
+      },
+      {
+        "t": "thorough explanations",
+        "n": 3
+      },
+      {
+        "t": "gentle esthetician",
+        "n": 2
+      },
+      {
+        "t": "comfortable rooms",
+        "n": 2
+      },
+      {
+        "t": "clean center",
+        "n": 2
+      }
+    ],
+    "services_count": 20,
+    "prices": [
+      {
+        "title": "IV therapy",
+        "category": "Medical Spa",
+        "price_usd": 60
+      },
+      {
+        "title": "WRINKLE RELAXERS",
+        "category": "Medical Spa",
+        "price_usd": 11
+      }
+    ],
+    "also_search": [
+      {
+        "name": "Optimal Wellness St. Pete",
+        "rating": 5,
+        "reviews": 145
+      },
+      {
+        "name": "A Rejuvenated HealthCare",
+        "rating": 4.7,
+        "reviews": 232
+      },
+      {
+        "name": "St. Petersburg Center for Performance and Weight Loss",
+        "rating": 5,
+        "reviews": 2
+      },
+      {
+        "name": "Living Waters Hydration & Wellness",
+        "rating": 5,
+        "reviews": 36
+      },
+      {
+        "name": "DripIV Therapy and Hydration",
+        "rating": 5,
+        "reviews": 199
+      }
+    ],
+    "weekly_open_hours": 55,
+    "cid": "13945395282908786389",
+    "place_id": "ChIJKRKRPyrjwogR1a4vuh__h8E",
+    "popular_times": {
+      "popular_times_by_days": {
+        "monday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            }
+          },
+          {
+            "time": {
+              "hour": 10
+            }
+          },
+          {
+            "time": {
+              "hour": 11
+            }
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 29
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 41
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 70
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 52
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "tuesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            },
+            "popular_index": 82
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 76
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 52
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 70
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 88
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 76
+          },
+          {
+            "time": {
+              "hour": 16
+            }
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "wednesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            }
+          },
+          {
+            "time": {
+              "hour": 10
+            }
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 82
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 94
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 94
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 64
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 64
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 70
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "thursday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 70
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 41
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 23
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 17
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 17
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 17
+          },
+          {
+            "time": {
+              "hour": 16
+            }
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "friday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            },
+            "popular_index": 35
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 82
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 88
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 76
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 16
+            }
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "saturday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 52
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 52
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 35
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 29
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 29
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 47
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 64
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 76
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 58
+          },
+          {
+            "time": {
+              "hour": 19
+            },
+            "popular_index": 41
+          },
+          {
+            "time": {
+              "hour": 20
+            },
+            "popular_index": 35
+          },
+          {
+            "time": {
+              "hour": 21
+            },
+            "popular_index": 29
+          },
+          {
+            "time": {
+              "hour": 22
+            },
+            "popular_index": 41
+          },
+          {
+            "time": {
+              "hour": 23
+            },
+            "popular_index": 35
+          },
+          {
+            "popular_index": 41
+          }
+        ]
+      }
+    }
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa St. Petersburg FL",
+      "prompt": "med spa St. Petersburg FL",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "St Pete Wellness Med Spa",
+          "Glow St. Pete Med Spa",
+          "Coco Med Spa"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "Euphoria Aesthetics & Laser",
+            "Sunshine City Med Spa",
+            "Modern Medical Spa",
+            "DayGlo Med-Spa",
+            "Optimal Wellness St. Pete",
+            "Facial Mania Med Spa",
+            "Wall Dermatology",
+            "iConcierge Med Spa"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Sunshine City Med Spa",
+            "Elase Med Spa",
+            "St. Pete Wellness Med Spa",
+            "Glow St. Pete Medspa",
+            "Facial Mania Med Spa",
+            "Moxy Medical Spa"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "St. Pete Wellness Med Spa",
+            "Elase Medical Spa",
+            "Coco Med Spa",
+            "St. Pete Aesthetics",
+            "Facial Mania Med Spa",
+            "Glamorize Med Spa",
+            "The Garden Medical Spa",
+            "Gayoso Plastic Surgery Med Spa"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Moxy Medical Spa",
+            "ZO Skin Centre",
+            "Fresh Vitality Medical Spa",
+            "St. Pete Wellness Med Spa",
+            "DayGlo Med-Spa",
+            "Coco Med Spa",
+            "Modern Medical Aesthetics",
+            "Glow St. Pete Medspa"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox St. Petersburg FL",
+      "prompt": "botox St. Petersburg FL",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "St Pete Wellness Med Spa",
+          "Glow St. Pete Med Spa",
+          "Coco Med Spa"
+        ],
+        "organic_pos": null,
+        "aio": "none"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "LaserAway St. Petersburg",
+            "Wall Dermatology",
+            "Modern Medical Aesthetics",
+            "UDERMA Medspa & Laser",
+            "Elase",
+            "Sunshine Wellness & Aesthetics",
+            "St. Pete Wellness Med Spa"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Hermann Aesthetics & Wellness",
+            "Dermaclinique",
+            "Goldfingers Aesthetics & Plastic Surgery",
+            "Billington Plastic Surgery",
+            "St. Pete Wellness Med Spa",
+            "Facial Mania Med Spa",
+            "St. Pete Aesthetics"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "St. Pete Wellness Med Spa",
+            "Elase",
+            "Advanced Dermatology",
+            "Kevin Caceres, MD",
+            "Fresh Vitality Med Spa"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "Elase",
+            "LaserAway St. Petersburg",
+            "Goldfingers Aesthetics",
+            "Anthony Aesthetics",
+            "Indulgence Medical Day Spa",
+            "Modern Medical Aesthetics",
+            "Sunshine City Med Spa",
+            "St. Pete Wellness Med Spa"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in St. Petersburg, FL",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "St Pete Wellness Med Spa",
+          "Glow St. Pete Med Spa",
+          "Coco Med Spa"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "Euphoria Aesthetics & Laser",
+            "Coco Med Spa",
+            "The Garden Med Spa",
+            "Sunshine City Med Spa",
+            "Optimal Wellness St. Pete",
+            "Belladri",
+            "Glow St. Pete Med Spa",
+            "Facial Mania Med Spa"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Sunshine City Med Spa",
+            "St. Pete Wellness Med Spa",
+            "Elase Medical Spa",
+            "Coco Med Spa",
+            "St. Pete Aesthetics",
+            "Optimal Wellness St. Pete",
+            "Euphoria Aesthetics & Laser MedSpa",
+            "Indulgence Medical Day Spa"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "St. Pete Wellness & MedSpa",
+            "Glow St. Pete Med Spa",
+            "Arts of Attraction",
+            "Moxy Medical Spa",
+            "LJ Aesthetics Medicine"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "Moxy Medical Spa",
+            "St. Pete Wellness & MedSpa",
+            "ZO Skin Centre",
+            "Fresh Vitality Medical Spa & Center for Health",
+            "DayGlo Med-Spa"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing not returned by title search ('Living Young Center', 'Living Young', '+ St. Petersburg', claimed and unclaimed); found via address filter '5156 Central' within 1 km of the pin. Google title is 'LivingYoung Center for Health & Anti-Aging - St. Petersburg' (one word 'LivingYoung').",
+    "Phone mismatch: Google primary phone +1 727-677-9617 vs AMP-listed (727) 319-6884; AMP number appears only as a backlinks-sourced contact. Also seen: 727-351-6212, 727-785-0375. Menu link carries a call-tracking param cp=7272335810.",
+    "ZIP mismatch: Google and the brand's own site say 33710; AMP lists 33707.",
+    "Saturday hours in Google timetable are 9:00 to 1:00 (close hour 1). Counted literally as 16h, giving weekly_open_hours 55; if it means 1 PM the total is 43. Sunday closed.",
+    "Listing first_seen equals last_updated (2026-09-27); 'new location' is a review topic (n=5), so this may be a relocated or new site.",
+    "Only 2 of 20 Google services have a price: IV therapy from $60, wrinkle relaxers from $11 (likely per unit).",
+    "SERP location 'St. Petersburg,Florida,United States' accepted. AI Overview present but asynchronous (no text) for S1 and S3; none for S2. Brand absent from the local pack and the top-10 organic results in all three searches.",
+    "LLM: Gemini named the brand in 3/3 prompts (citing livingyoungcenter.com/tampa-bay-med-spa/best-med-spa-in-st-pete/), Perplexity 1/3 (S2), Claude 1/3 (S1), ChatGPT 0/3. In Claude S3 and Perplexity S3 the brand's page was among the sources but the brand was not named in the answer. No model substitutions were needed."
+  ]
+}

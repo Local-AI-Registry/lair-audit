@@ -1,0 +1,126 @@
+{
+  "source": "DataForSEO (dataforseo_labs domain_rank_overview + historical_rank_overview, United States/en; backlinks_summary)",
+  "collected": "2026-11-20",
+  "domains": [
+    {
+      "domain": "22plasticsurgery.com",
+      "keywords_total": 489, "top3": 7, "top10": 46, "etv": 561.112,
+      "is_new": 191, "is_up": 144, "is_down": 135,
+      "history": [
+        {"month":"2025-12","etv":1019.857,"keywords":865},
+        {"month":"2026-01","etv":2543.457,"keywords":1274},
+        {"month":"2026-02","etv":1554.937,"keywords":1094},
+        {"month":"2026-03","etv":1260.637,"keywords":962},
+        {"month":"2026-04","etv":763.953,"keywords":856},
+        {"month":"2026-05","etv":695.576,"keywords":824},
+        {"month":"2026-06","etv":687.98,"keywords":793},
+        {"month":"2026-07","etv":611.329,"keywords":706},
+        {"month":"2026-08","etv":636.381,"keywords":753},
+        {"month":"2026-09","etv":514.092,"keywords":756},
+        {"month":"2026-10","etv":473.645,"keywords":541},
+        {"month":"2026-11","etv":533.506,"keywords":522}
+      ],
+      "referring_domains": 169, "backlinks": 462, "broken_backlinks": 168, "broken_pages": 160, "spam_score": 17, "rank": 203
+    },
+    {
+      "domain": "22spamd.com",
+      "keywords_total": 75, "top3": 5, "top10": 12, "etv": 223.942,
+      "is_new": 37, "is_up": 22, "is_down": 14,
+      "history": [
+        {"month":"2025-12","etv":804.669,"keywords":659},
+        {"month":"2026-01","etv":57.065,"keywords":114},
+        {"month":"2026-02","etv":26.435,"keywords":34},
+        {"month":"2026-03","etv":8.856,"keywords":13},
+        {"month":"2026-04","etv":116.928,"keywords":36},
+        {"month":"2026-05","etv":203.748,"keywords":81},
+        {"month":"2026-06","etv":270.403,"keywords":93},
+        {"month":"2026-07","etv":256.826,"keywords":120},
+        {"month":"2026-08","etv":304.504,"keywords":139},
+        {"month":"2026-09","etv":276.908,"keywords":136},
+        {"month":"2026-10","etv":254.526,"keywords":81},
+        {"month":"2026-11","etv":306.277,"keywords":80}
+      ],
+      "referring_domains": 329, "backlinks": 472, "broken_backlinks": 452, "broken_pages": 27, "spam_score": 39, "rank": 161
+    },
+    {
+      "domain": "theclinique.com",
+      "keywords_total": 557, "top3": 15, "top10": 90, "etv": 1606.973,
+      "is_new": 274, "is_up": 102, "is_down": 154,
+      "history": [
+        {"month":"2025-12","etv":185.026,"keywords":1286},
+        {"month":"2026-01","etv":160.273,"keywords":1288},
+        {"month":"2026-02","etv":154.77,"keywords":1194},
+        {"month":"2026-03","etv":256.063,"keywords":1127},
+        {"month":"2026-04","etv":298.156,"keywords":988},
+        {"month":"2026-05","etv":199.844,"keywords":894},
+        {"month":"2026-06","etv":192.888,"keywords":933},
+        {"month":"2026-07","etv":503.207,"keywords":859},
+        {"month":"2026-08","etv":561.661,"keywords":853},
+        {"month":"2026-09","etv":594.114,"keywords":874},
+        {"month":"2026-10","etv":803.112,"keywords":617},
+        {"month":"2026-11","etv":826.111,"keywords":590}
+      ],
+      "referring_domains": 280, "backlinks": 566, "broken_backlinks": 502, "broken_pages": 139, "spam_score": 24, "rank": 162
+    },
+    {
+      "domain": "aveluremedspa.com",
+      "keywords_total": 164, "top3": 15, "top10": 43, "etv": 604.941,
+      "is_new": 102, "is_up": 26, "is_down": 28,
+      "history": [
+        {"month":"2025-12","etv":231.471,"keywords":12},
+        {"month":"2026-01","etv":521.787,"keywords":276},
+        {"month":"2026-02","etv":878.672,"keywords":439},
+        {"month":"2026-03","etv":1164.832,"keywords":505},
+        {"month":"2026-04","etv":906.013,"keywords":495},
+        {"month":"2026-05","etv":815.392,"keywords":396},
+        {"month":"2026-06","etv":1263.128,"keywords":320},
+        {"month":"2026-07","etv":1048.219,"keywords":262},
+        {"month":"2026-08","etv":327.921,"keywords":229},
+        {"month":"2026-09","etv":452.269,"keywords":229},
+        {"month":"2026-10","etv":491.254,"keywords":174},
+        {"month":"2026-11","etv":582.645,"keywords":166}
+      ],
+      "referring_domains": 103, "backlinks": 650, "broken_backlinks": 17, "broken_pages": 12, "spam_score": 7, "rank": 177
+    },
+    {
+      "domain": "backto30.com",
+      "keywords_total": 153, "top3": 12, "top10": 26, "etv": 669.583,
+      "is_new": 95, "is_up": 27, "is_down": 20,
+      "history": [
+        {"month":"2025-12","etv":1180.393,"keywords":207},
+        {"month":"2026-01","etv":1103.112,"keywords":229},
+        {"month":"2026-02","etv":1140.838,"keywords":229},
+        {"month":"2026-03","etv":1121.765,"keywords":207},
+        {"month":"2026-04","etv":1059.743,"keywords":152},
+        {"month":"2026-05","etv":1036.04,"keywords":115},
+        {"month":"2026-06","etv":1046.571,"keywords":111},
+        {"month":"2026-07","etv":1017.881,"keywords":118},
+        {"month":"2026-08","etv":1133.264,"keywords":135},
+        {"month":"2026-09","etv":935.961,"keywords":172},
+        {"month":"2026-10","etv":668.579,"keywords":163},
+        {"month":"2026-11","etv":705.19,"keywords":158}
+      ],
+      "referring_domains": 218, "backlinks": 637, "broken_backlinks": 2, "broken_pages": 14, "spam_score": 14, "rank": 191
+    },
+    {
+      "domain": "beautyfixmedspa.com",
+      "keywords_total": 1712, "top3": 82, "top10": 163, "etv": 2659.035,
+      "is_new": 964, "is_up": 377, "is_down": 319,
+      "history": [
+        {"month":"2025-12","etv":4519.086,"keywords":2409},
+        {"month":"2026-01","etv":4522.454,"keywords":2456},
+        {"month":"2026-02","etv":4071.532,"keywords":2339},
+        {"month":"2026-03","etv":4631.719,"keywords":2302},
+        {"month":"2026-04","etv":4979.715,"keywords":2354},
+        {"month":"2026-05","etv":4775.849,"keywords":2580},
+        {"month":"2026-06","etv":5725.199,"keywords":2661},
+        {"month":"2026-07","etv":5142.825,"keywords":2761},
+        {"month":"2026-08","etv":4408.274,"keywords":3193},
+        {"month":"2026-09","etv":3331.23,"keywords":3209},
+        {"month":"2026-10","etv":2875.97,"keywords":2015},
+        {"month":"2026-11","etv":2983.449,"keywords":1890}
+      ],
+      "referring_domains": 712, "backlinks": 2954, "broken_backlinks": 92, "broken_pages": 58, "spam_score": 18, "rank": 233
+    }
+  ]
+}

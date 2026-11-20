@@ -1,0 +1,785 @@
+{
+ "slug": "synergy-medaesthetics-med-spa-yakima",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Synergy MedAesthetics Med Spa - Yakima",
+  "brand": "Synergy MedAesthetics",
+  "address": "921 Seattle Slew Run, Ste B, Yakima, WA 98908",
+  "phone": "(509) 504-3477",
+  "website": "https://synergymedaesthetics.com",
+  "lat": 46.61388,
+  "lng": -120.56263
+ },
+ "listing": {
+  "found": true,
+  "title": "Synergy MedAesthetics - Yakima",
+  "google_phone": "+1509-584-5306",
+  "phone_matches_amp": false,
+  "address": "921 Seattle Slew Run Ste B, Yakima, WA 98908",
+  "distance_km": 0.0,
+  "site_url": "https://www.synergymedaesthetics.com/yakima/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 266,
+  "stars": {
+   "1": 2,
+   "2": 1,
+   "3": 2,
+   "4": 4,
+   "5": 257
+  },
+  "photos": 11,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-11 15:58:55 +00:00",
+  "topics": [
+   {
+    "t": "skilled staff",
+    "n": 12
+   },
+   {
+    "t": "thorough explanations",
+    "n": 6
+   },
+   {
+    "t": "diamond glow facial",
+    "n": 5
+   },
+   {
+    "t": "honest advice",
+    "n": 3
+   },
+   {
+    "t": "procedure explanation",
+    "n": 3
+   },
+   {
+    "t": "customized treatment",
+    "n": 2
+   },
+   {
+    "t": "beauty enhancement",
+    "n": 2
+   },
+   {
+    "t": "encouraging staff",
+    "n": 2
+   }
+  ],
+  "services_count": 25,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Rejuvenation Medical Aesthetics",
+    "rating": 5,
+    "reviews": 41
+   },
+   {
+    "name": "Soma Aesthetics",
+    "rating": 4.9,
+    "reviews": 131
+   },
+   {
+    "name": "Radiance Medical Aesthetics",
+    "rating": 5,
+    "reviews": 6
+   }
+  ],
+  "weekly_open_hours": 45,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 90
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 90
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Yakima WA",
+   "prompt": "med spa Yakima WA",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Synergy MedAesthetics - Yakima",
+     "Soma Aesthetics",
+     "Rejuvenation Medical Aesthetics"
+    ],
+    "organic_pos": 1,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Fiamo Wellness And Aesthetics",
+      "Soma Aesthetics",
+      "Brio Wellness",
+      "Verduzco Medical Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Soma Aesthetics",
+      "Skin Unfiltered Cosmetic Dermatology & Spa",
+      "Rejuvenation Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Soma Aesthetics",
+      "Integrative Dermatology",
+      "Brio Wellness Yakima",
+      "Fiamo Wellness and Aesthetics",
+      "New U Women's Clinic & Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Fiamo Aesthetics",
+      "Sole Therapy Medical Day Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Yakima WA",
+   "prompt": "botox Yakima WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Radiance Medical Aesthetics",
+      "Serenity Day Spa",
+      "Soma Aesthetics",
+      "Central Washington Dermatology & Cosmetics",
+      "Knight Dermatology and Wellness",
+      "Brio Wellness Yakima",
+      "Ummelina Yakima Valley Spa Retreat"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Knight Dermatology and Wellness",
+      "Integrative Dermatology",
+      "Yakima Healthy Smiles (Dr. Ryan Kezele DDS)",
+      "Skin Unfiltered Medical Aesthetics",
+      "Brio Wellness Yakima",
+      "Lakeside Dentistry",
+      "Rejuvenation Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Soma Aesthetics",
+      "Roy E. Gond, MD",
+      "Valley Dermatology Associates",
+      "Fiamo Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Central Washington Dermatology & Cosmetics",
+      "Integrative Dermatology",
+      "New U Women's Clinic & Aesthetics",
+      "Lakeside Dentistry",
+      "Ryan Kezele DDS"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Yakima, WA",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Synergy MedAesthetics - Yakima",
+     "Soma Aesthetics",
+     "Skin Unfiltered Medical Aesthetics"
+    ],
+    "organic_pos": 2,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Soma Aesthetics",
+      "Brio Wellness",
+      "Fiamo Aesthetics",
+      "Verduzco Medical Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Skin Unfiltered Medical Aesthetics",
+      "Soma Aesthetics",
+      "New U Women's Clinic & Aesthetics",
+      "Knight Dermatology and Wellness",
+      "A La Mode Spa",
+      "Integrative Dermatology",
+      "Yakima Spa Space",
+      "Kalon Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Soma Aesthetics",
+      "Yakima Spa Space",
+      "Rejuvenation Medical Aesthetics",
+      "Skin Unfiltered Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "New U Women's Clinic & Aesthetics",
+      "Kalon Medical Aesthetics",
+      "Soma Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (509) 584-5306 differs from AMP-listed (509) 504-3477; the AMP number appears on synergymedaesthetics.com, the brand Instagram and in Perplexity answers, while Google/ClinicCompass/TabFlows show 584-5306 (likely a call-tracking or location line). Claude Haiku cited yet other numbers (458-248-0796 / 458-248-0797).",
+  "Listing review count 266 in business listings data vs 284 in live SERP local pack (listing last_updated 2026-09-11).",
+  "No priced services on listing (prices empty); 25 services listed, all without prices.",
+  "Google AI Overview present but asynchronous (no text) on all three searches -> unreadable.",
+  "S2 'botox Yakima WA' showed no local pack; Synergy absent from top organic results.",
+  "Google site URL is www.synergymedaesthetics.com/yakima/; Google organic result points to /location/yakima/.",
+  "Named 12/12 in LLM answers. Serp location_name 'Yakima,Washington,United States' worked; no model substitutions."
+ ]
+}

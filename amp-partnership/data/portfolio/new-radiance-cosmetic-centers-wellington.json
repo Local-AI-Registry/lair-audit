@@ -1,0 +1,933 @@
+{
+ "slug": "new-radiance-cosmetic-centers-wellington",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "New Radiance Cosmetic Centers- Wellington",
+  "brand": "New Radiance Cosmetic Centers",
+  "address": "2465 South State Road 7, Suite 500, Wellington, FL 33414",
+  "phone": "(561) 323-4267",
+  "website": "https://newradiancenow.com",
+  "lat": 26.64479,
+  "lng": -80.20478
+ },
+ "listing": {
+  "found": true,
+  "title": "New Radiance Cosmetic Centers - Wellington",
+  "google_phone": "+1561-678-5693",
+  "phone_matches_amp": false,
+  "address": "The Plaza at Wellington Green, 2465 S State Rd 7 Ste 500, Wellington, FL 33414",
+  "distance_km": 0.0,
+  "site_url": "https://newradiancenow.com/locations/wellington/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 371,
+  "stars": {
+   "1": 13,
+   "2": 4,
+   "3": 1,
+   "4": 6,
+   "5": 347
+  },
+  "photos": 41,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 16,
+  "last_updated": "2026-09-25 03:38:23 +00:00",
+  "topics": [
+   {
+    "t": "cool sculpting",
+    "n": 16
+   },
+   {
+    "t": "injector",
+    "n": 10
+   },
+   {
+    "t": "thorough explanation",
+    "n": 5
+   },
+   {
+    "t": "explanation of procedure",
+    "n": 4
+   },
+   {
+    "t": "painless treatment",
+    "n": 4
+   },
+   {
+    "t": "ultherapy",
+    "n": 3
+   },
+   {
+    "t": "face lift",
+    "n": 2
+   },
+   {
+    "t": "numbing cream",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Hyperdilute Radiesse (+) One Syringe",
+    "category": "Injectables",
+    "price_usd": 750
+   },
+   {
+    "title": "LHR (Large Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 300
+   },
+   {
+    "title": "LHR (Small Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 100
+   }
+  ],
+  "also_search": [
+   {
+    "name": "AlluraMD Aesthetics + Wellness | Wellington",
+    "rating": 5,
+    "reviews": 135
+   },
+   {
+    "name": "Wellington Rejuvenation Center",
+    "rating": 5,
+    "reviews": 407
+   },
+   {
+    "name": "SP Aesthetics",
+    "rating": 4.9,
+    "reviews": 273
+   },
+   {
+    "name": "Dermapure Medical Aesthetics",
+    "rating": 4.9,
+    "reviews": 45
+   },
+   {
+    "name": "Relive Wellington",
+    "rating": 4.9,
+    "reviews": 454
+   }
+  ],
+  "weekly_open_hours": 49,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 83
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 24
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 83
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 91
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 32
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 24
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Wellington FL",
+   "prompt": "med spa Wellington FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "ProMD Health Wellington",
+     "SmizePro Med Spa",
+     "AlluraMD Aesthetics + Wellness | Wellington"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Healthy Enhancements",
+      "SmizePro Med Spa",
+      "LA Medical & Aesthetics",
+      "ProMD Health Wellington",
+      "Palm Beach Cosmetic Medicine",
+      "SP Aesthetics",
+      "Precision Medical Specialists",
+      "Dream Aesthetic Rejuvenation"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Palm Beach Anti Aging and Regenerative Medicine",
+      "LA Medical & Aesthetics",
+      "AlluraMD Aesthetics + Wellness",
+      "SmizePro Med Spa",
+      "Let's Face It MD",
+      "SP Aesthetics",
+      "Wellington Rejuvenation Center"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "LA Medical & Aesthetics",
+      "Biolift Med Spa Wellington",
+      "Rejuvia",
+      "BIOMEDEX and Wellness",
+      "Millan Medspa & Wellness",
+      "4Ever Young Anti-Aging Solutions",
+      "Optimal Image Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "SmizePro MedSpa",
+      "Palm Beach Anti Aging and Regenerative Medicine",
+      "Palm Beach Cosmetic Medicine",
+      "Biolift Med Spa",
+      "ProMD Health"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Wellington FL",
+   "prompt": "botox Wellington FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Wellington Rejuvenation Center",
+     "New Radiance Cosmetic Centers - Wellington",
+     "SP Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Aurelia Med Spa",
+      "4Ever Young Med Spa & Wellness Center",
+      "Bella MedSpa & Wellness Clinique",
+      "Cosmetic Skin & Laser Center",
+      "SP Aesthetics",
+      "Refresh - Aesthetics & Wellness",
+      "Relive Wellington",
+      "Biomedex and Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Cosmetic Skin & Laser Center",
+      "Healthy Enhancements",
+      "Relive Wellington",
+      "SP Aesthetics",
+      "Dermatology Center of Wellington",
+      "Aurelia Med Spa",
+      "Majestic Aesthetics",
+      "AlluraMD Aesthetics + Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Cosmetic Skin & Laser Center",
+      "Palm Beach Anti Aging",
+      "Allura Aesthetics",
+      "4Ever Young Wellington",
+      "ProMD Health"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "AlluraMD Aesthetics + Wellness",
+      "Dermatology Center of Wellington",
+      "City Dental of Wellington",
+      "4Ever Young Anti-Aging Solutions",
+      "Relive Health",
+      "ProMD Health Wellington",
+      "Beyond Concierge Healthcare"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Wellington, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Wellington Rejuvenation Center",
+     "Beverly Hills Wellness Center & Med Spa",
+     "SmizePro Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Healthy Enhancements",
+      "SmizePro Med Spa",
+      "LA Medical & Aesthetics",
+      "ProMD Health Wellington",
+      "Biolift Med Spa Wellington",
+      "SP Aesthetics",
+      "AlluraMD Aesthetics + Wellness",
+      "Palm Beach Center for Aesthetic Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Palm Beach Anti Aging and Regenerative Medicine",
+      "AlluraMD Aesthetics + Wellness",
+      "BIOMEDEX AND WELLNESS",
+      "SmizePro Med Spa",
+      "Salt The Spa",
+      "LA Medical & Aesthetics",
+      "Healthy Enhancements",
+      "Refresh - Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "4Ever Young Anti Aging Solutions",
+      "Millan Medspa & Wellness",
+      "Beyond Concierge Healthcare",
+      "Biolift Med Spa Wellington",
+      "LA Medical & Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "AlluraMD - Wellington",
+      "BIOMEDEX AND WELLNESS",
+      "SmizePro Med Spa",
+      "SP Aesthetics",
+      "Relive Wellington"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (561) 678-5693 differs from AMP-listed (561) 323-4267; the AMP number appears on a Yelp 'Lip Fillers in Wellington' listing (S2 organic #1) tied to address 2655 S State Rd 7, and Claude cited yet another number (561-776-5597) - NAP inconsistency across sources.",
+  "Google lat/lng returned at 3-decimal precision (26.645,-80.205); distance to AMP pin ~0.03 km.",
+  "Only one Google listing found for brand near pin; no duplicates. Listing is claimed and open.",
+  "All organic SERP URLs were Google redirect links; no newradiancenow.com result identified in organic top 10 on any search (organic_pos null based on breadcrumbs/titles).",
+  "AI Overview present but asynchronous (no text) on all 3 searches.",
+  "Search 'botox Wellington FL' local pack review count 376 vs listing endpoint 371 (timing difference).",
+  "Service prices on Google mostly $0 consult/booking placeholders; only 3 priced items.",
+  "Wellington location_name worked for SERP; no model substitutions needed."
+ ]
+}

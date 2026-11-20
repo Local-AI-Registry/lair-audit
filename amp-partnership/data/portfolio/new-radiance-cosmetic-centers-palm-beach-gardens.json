@@ -1,0 +1,935 @@
+{
+  "slug": "new-radiance-cosmetic-centers-palm-beach-gardens",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "New Radiance Cosmetic Centers- Palm Beach Gardens",
+    "brand": "New Radiance Cosmetic Centers",
+    "address": "3901 Design Center Drive, Suite 100, Palm Beach Gardens, FL 33410",
+    "phone": "(561) 776-0116",
+    "website": "https://newradiancenow.com",
+    "lat": 26.84041,
+    "lng": -80.09773
+  },
+  "listing": {
+    "found": true,
+    "title": "New Radiance Cosmetic Centers - Palm Beach Gardens",
+    "google_phone": "+1561-468-5859",
+    "phone_matches_amp": false,
+    "address": "3901 Design Center Dr Ste 100, Palm Beach Gardens, FL 33410",
+    "distance_km": 0.1,
+    "site_url": "https://newradiancenow.com/locations/palm-beach-gardens/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": [
+      "Medical spa",
+      "Laser hair removal service",
+      "Skin care clinic"
+    ],
+    "rating": 4.7,
+    "reviews": 626,
+    "stars": {
+      "1": 33,
+      "2": 9,
+      "3": 4,
+      "4": 16,
+      "5": 564
+    },
+    "photos": 68,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 15,
+    "last_updated": "2026-09-12 18:20:57 +00:00",
+    "topics": [
+      {
+        "t": "lipo",
+        "n": 17
+      },
+      {
+        "t": "ultherapy",
+        "n": 13
+      },
+      {
+        "t": "sculptra",
+        "n": 11
+      },
+      {
+        "t": "clean office",
+        "n": 9
+      },
+      {
+        "t": "natural looking results",
+        "n": 7
+      },
+      {
+        "t": "smart lipo",
+        "n": 3
+      },
+      {
+        "t": "cool sculpting",
+        "n": 3
+      },
+      {
+        "t": "semaglutide",
+        "n": 2
+      }
+    ],
+    "services_count": 10,
+    "prices": [
+      {
+        "title": "Emsculpt Neo",
+        "category": "Body Contouring",
+        "price_usd": 550
+      },
+      {
+        "title": "Emsculpt Treatment",
+        "category": "Body Contouring",
+        "price_usd": 475
+      },
+      {
+        "title": "HydraFacial Signature Treatment",
+        "category": "Medical Spa",
+        "price_usd": 199
+      }
+    ],
+    "also_search": [
+      {
+        "name": "23 Aesthetics",
+        "rating": 5,
+        "reviews": 510
+      },
+      {
+        "name": "Radiance Age Management Hormone Therapy in Palm Beach",
+        "rating": null,
+        "reviews": null
+      },
+      {
+        "name": "Laser Skin & Wellness - Palm Beach Gardens",
+        "rating": 4.9,
+        "reviews": 650
+      },
+      {
+        "name": "Tranquil Radiance Spa",
+        "rating": 5,
+        "reviews": 307
+      },
+      {
+        "name": "Anew You Cosmedical",
+        "rating": 5,
+        "reviews": 5
+      }
+    ],
+    "weekly_open_hours": 48,
+    "popular_times": {
+      "popular_times_by_days": {
+        "monday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 16
+            }
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "tuesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            }
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 72
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 72
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 61
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "wednesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 88
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 61
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 61
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 72
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 72
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "thursday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            }
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 22
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 22
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 16
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 22
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "friday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 83
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 83
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 83
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "saturday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 83
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 88
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ]
+      }
+    }
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa Palm Beach Gardens FL",
+      "prompt": "med spa Palm Beach Gardens FL",
+      "google": {
+        "map_pos": 3,
+        "map_pack": [
+          "The Aesthetics Lounge and Spa Palm Beach Gardens",
+          "VIO Med Spa | Palm Beach Gardens",
+          "New Radiance Cosmetic Centers - Palm Beach Gardens"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "La Vie Spa",
+            "VIO Med Spa",
+            "Hass Plastic Surgery & MedSpa",
+            "MC Wellness & Spa",
+            "Aurelia Med Spa",
+            "Vitality Aesthetics",
+            "Serenity Med Spa",
+            "The Aesthetics Lounge and Spa Palm Beach Gardens"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "The Aesthetics Lounge and Spa Palm Beach Gardens",
+            "Nouveau Health & Wellness",
+            "Laser Skin & Wellness",
+            "AlluraMD Aesthetics + Wellness",
+            "Opulence Medical Spa",
+            "ReSpa Palm Beach",
+            "La Vie Spa Gardens",
+            "Vitality Sciences Med Spa"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "VIO Med Spa",
+            "Laser Skin & Wellness",
+            "Palm Lux Aesthetics",
+            "MC Wellness & Spa",
+            "Ciao Bella MedSpa",
+            "Tranquil Radiance Spa",
+            "The Lane Spa"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "Estetica Institute of the Palm Beaches",
+            "Selah Aesthetics",
+            "The Aesthetics Lounge and Spa",
+            "The Lane Spa",
+            "VIO Med Spa",
+            "Nouveau Health & Wellness",
+            "Hamilton Aesthetics",
+            "Aesthetics by Kallee"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox Palm Beach Gardens FL",
+      "prompt": "botox Palm Beach Gardens FL",
+      "google": {
+        "map_pos": 3,
+        "map_pack": [
+          "The Aesthetics Lounge and Spa Palm Beach Gardens",
+          "23 Aesthetics",
+          "New Radiance Cosmetic Centers - Palm Beach Gardens"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "Crafted Aesthetics",
+            "LaserAway Palm Beach",
+            "Apex Aesthetics & Wellness",
+            "Aurelia Med Spa",
+            "Opulence Medical Spa",
+            "Profiles Facial Aesthetics",
+            "Hass Plastic Surgery & MedSpa"
+          ]
+        },
+        "gemini": {
+          "named": 0,
+          "others": [
+            "Majestic Aesthetics",
+            "Aurelia Med Spa",
+            "MC Wellness & Spa",
+            "Apex Aesthetics & Wellness",
+            "Gardens Dentistry",
+            "Selah Aesthetics",
+            "Aesthetics by Kallee",
+            "The Aesthetics Lounge and Spa Palm Beach Gardens"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "Lickstein Plastic Surgery",
+            "Gardens Dermatology",
+            "The Aesthetic Atelier",
+            "VIO Med Spa",
+            "Dr. Michael Connor (eyeliddocs)",
+            "23 Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "LaserAway Palm Beach",
+            "Thomas Pane, MD Plastic Surgery",
+            "ThinWorks",
+            "Aesthetics by Kallee",
+            "Crafted Aesthetics",
+            "Lickstein Plastic Surgery"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in Palm Beach Gardens, FL",
+      "google": {
+        "map_pos": null,
+        "map_pack": [
+          "The Aesthetics Lounge and Spa Palm Beach Gardens",
+          "Laser Skin & Wellness - Palm Beach Gardens",
+          "23 Aesthetics"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 0,
+          "others": [
+            "Gardens Dermatology & Cosmetic Surgery Center",
+            "The Lane Spa",
+            "VIO Med Spa",
+            "MC Wellness & Spa",
+            "Aurelia Med Spa",
+            "Serenity Med Spa",
+            "Vitality Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 0,
+          "others": [
+            "The Aesthetics Lounge and Spa Palm Beach Gardens",
+            "Restore Hyper Wellness",
+            "Nouveau Health & Wellness",
+            "Laser Skin and Wellness",
+            "Hass Plastic Surgery and MedSpa",
+            "The Lane Spa",
+            "Aurelia Med Spa"
+          ]
+        },
+        "perplexity": {
+          "named": 0,
+          "others": [
+            "The Aesthetics Lounge and Spa Palm Beach Gardens",
+            "Cima Health",
+            "Laser Skin & Wellness",
+            "23 Aesthetics",
+            "MC Wellness & Spa",
+            "ReSpa Palm Beach"
+          ]
+        },
+        "claude": {
+          "named": 0,
+          "others": [
+            "The Aesthetics Lounge & Spa",
+            "Nouveau Health & Wellness",
+            "ReSpa Palm Beach",
+            "VIO Med Spa",
+            "Opulence Medical Spa"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing phone (561) 468-5859 does not match AMP-listed phone (561) 776-0116 (likely call-tracking number on GBP).",
+    "Google listing found with claimed filter; single match at exact address, 0.1 km from AMP pin; site link is newradiancenow.com/locations/palm-beach-gardens/.",
+    "Listing services list returned 10 items; only 3 carry prices > $0 (Emsculpt Neo $550, Emsculpt $475, HydraFacial $199); injectables listed at $0.",
+    "Review count 626 in listing vs 634 shown in live SERP local pack (listing data last updated 2026-09-12).",
+    "S1 SERP first attempt returned API error 40101 (Internal SE Server Error); retry with same location succeeded.",
+    "All three SERPs had asynchronous AI Overviews with no text (aio=unreadable). Organic result URLs were google.com redirects; no organic result in top 10 was newradiancenow.com by breadcrumb/title.",
+    "Perplexity S3 cited a yellowpages 'New Radiance Med Spa' page as a source but did not name the business in answer text (named=0). Claude S3 search results included newradiancenow.com but answer text did not name it.",
+    "Claude S1 also named Youthful Balance Medical Center (truncated at 8 others).",
+    "No model substitutions needed; gemini-2.5-flash succeeded for all 3 prompts."
+  ]
+}

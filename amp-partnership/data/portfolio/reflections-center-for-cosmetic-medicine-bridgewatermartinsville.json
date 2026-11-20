@@ -1,0 +1,841 @@
+{
+ "slug": "reflections-center-for-cosmetic-medicine-bridgewatermartinsville",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Reflections Center for Cosmetic Medicine - Bridgewater/Martinsville",
+  "brand": "Reflections Center for Cosmetic Medicine",
+  "address": "1924 Washington Valley Road, Martinsville, NJ 8836",
+  "phone": "(732) 356-1666",
+  "site": "https://reflectionscenter.com",
+  "lat": 40.60151,
+  "lng": -74.56414
+ },
+ "listing": {
+  "found": true,
+  "title": "Reflections Center for Cosmetic Medicine",
+  "google_phone": "+1732-627-4278",
+  "phone_matches_amp": false,
+  "address": "1924 Washington Valley Rd, Martinsville, NJ 08836",
+  "distance_km": 0.1,
+  "site_url": "https://www.reflectionscenter.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.4,
+  "reviews": 277,
+  "stars": {
+   "1": 31,
+   "2": 8,
+   "3": 3,
+   "4": 7,
+   "5": 228
+  },
+  "photos": 27,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-14 13:13:05 +00:00",
+  "topics": [
+   {
+    "t": "fraxel laser",
+    "n": 5
+   },
+   {
+    "t": "bedside manner",
+    "n": 5
+   },
+   {
+    "t": "honest advice",
+    "n": 5
+   },
+   {
+    "t": "tattoo removal",
+    "n": 4
+   },
+   {
+    "t": "acne treatment",
+    "n": 4
+   },
+   {
+    "t": "detailed treatment explanation",
+    "n": 3
+   },
+   {
+    "t": "compassionate doctor",
+    "n": 3
+   },
+   {
+    "t": "guidance on procedures",
+    "n": 3
+   }
+  ],
+  "services_count": 87,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Medical Laser & Skin Rejuvenation Center",
+    "rating": 4.8,
+    "reviews": 104
+   },
+   {
+    "name": "Sirens Med Spa",
+    "rating": 5,
+    "reviews": 102
+   },
+   {
+    "name": "Refresh MedSpa",
+    "rating": 5,
+    "reviews": 82
+   }
+  ],
+  "weekly_open_hours": 50.5,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Martinsville NJ",
+   "prompt": "med spa Martinsville NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": 1,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "True Heal Wellness",
+      "VIV Life Lounge",
+      "Relive Health",
+      "Aqua Zen IV Lounge",
+      "Revital Retreat",
+      "Restore Hyper Wellness",
+      "Envy IV Infusions"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Ethos Aesthetics + Wellness",
+      "Enriched Aesthetics",
+      "Novalee Skin and Body Spa",
+      "A New Day Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Sirens Med Spa",
+      "Evolve Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Trisara Medspa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Martinsville NJ",
+   "prompt": "botox Martinsville NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": 3,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Aesthetic Center of New Jersey"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": []
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Shadi Zandieh, MD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Shadi Zandieh MD",
+      "Associates in Plastic Surgery"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Martinsville, NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Ethos Aesthetics + Wellness",
+     "ACE Aesthetics",
+     "Sirens Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": []
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Evolve Med Spa Bridgewater",
+      "Shadi Zandieh MD"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": []
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elite Aesthetics Med Spa",
+      "Refresh MedSpa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (732) 627-4278 differs from AMP-listed (732) 356-1666; AMP number appears on reflectionscenter.com location page, Yelp and Nextdoor (likely call-tracking split, NAP inconsistency).",
+  "Listing found with is_claimed filter; Google lat/lng returned at 3 decimals (40.601,-74.564), ~0.1 km from AMP pin.",
+  "Business listings API shows 277 reviews; SERP knowledge panel/google_reviews shows 294 reviews (4.4) for same CID.",
+  "S1/S2: no local pack returned; knowledge panel for this location shows on both. S1 organic #1 is reflectionscenter.com homepage (title says 'Reflections Center Livingston'); S2 organic #3 is a reflectionscenter.com patient-story page.",
+  "AI Overviews present on all three SERPs but asynchronous (no text) -> unreadable.",
+  "S3 near-me SERP organic results are generic out-of-market Yelp/directory pages; local pack is competitors.",
+  "Google services list has 87 items but no prices; website lists Botox at $17/unit (per Perplexity citation), not in listing.",
+  "Brand also appears as 'Reflections Center for Skin & Body' on Sofwave/Nextdoor/YellowPages; a separate monthly-promos page uses phone (732) 307-3849.",
+  "ChatGPT S1 'others' are mostly IV-therapy lounges, not aesthetic med spas.",
+  "No model substitutions; all 12 LLM calls succeeded."
+ ]
+}

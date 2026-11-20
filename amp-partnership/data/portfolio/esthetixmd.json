@@ -1,0 +1,952 @@
+{
+ "slug": "esthetixmd",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "EsthetixMD",
+  "brand": "EsthetixMD",
+  "address": "115 SW Allen Road, Bend, OR 97702",
+  "phone": "(541) 330-5551",
+  "site": "https://esthetixmd.com",
+  "pin": [
+   44.04969,
+   -121.32425
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "EsthetixMD Spa & Laser Center",
+  "google_phone": "+1 541-208-5251",
+  "phone_matches_amp": false,
+  "address": "115 SW Allen Rd, Bend, OR 97702",
+  "distance_km": 0.0,
+  "site_url": "https://www.esthetixmd.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 626,
+  "stars": {
+   "1": 7,
+   "2": 5,
+   "3": 4,
+   "4": 13,
+   "5": 597
+  },
+  "photos": 69,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 16,
+  "last_updated": "2026-10-08 08:59:41 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 18
+   },
+   {
+    "t": "lip filler",
+    "n": 13
+   },
+   {
+    "t": "knowledgeable technicians",
+    "n": 9
+   },
+   {
+    "t": "friendly doctor",
+    "n": 7
+   },
+   {
+    "t": "discounts",
+    "n": 7
+   },
+   {
+    "t": "fraxel",
+    "n": 6
+   },
+   {
+    "t": "injector",
+    "n": 6
+   },
+   {
+    "t": "diamond glow facial",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "CoolTone Treatment",
+    "category": "Body Contouring",
+    "price_usd": 660
+   },
+   {
+    "title": "Emsculpt Neo",
+    "category": "Body Contouring",
+    "price_usd": 1000
+   },
+   {
+    "title": "LHR (Bikini Line)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 200
+   },
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 250
+   },
+   {
+    "title": "LHR (Chin)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 85
+   },
+   {
+    "title": "LHR (Underarms)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 175
+   },
+   {
+    "title": "DiamondGlow Treatment",
+    "category": "Medical Spa",
+    "price_usd": 195
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Elite Medi Spa",
+    "rating": 5,
+    "reviews": 539
+   },
+   {
+    "name": "Bend Aesthetics and Wellness",
+    "rating": 4.9,
+    "reviews": 61
+   },
+   {
+    "name": "Central Oregon Aesthetics",
+    "rating": 5,
+    "reviews": 97
+   },
+   {
+    "name": "The Lounge Aesthetics + Wellness",
+    "rating": 5,
+    "reviews": 126
+   },
+   {
+    "name": "Salt Medical Aesthetics",
+    "rating": 5,
+    "reviews": 339
+   }
+  ],
+  "weekly_open_hours": 57,
+  "popular_times": {
+   "popular_times_by_days": {
+    "sunday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 90
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 90
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Bend OR",
+   "prompt": "med spa Bend OR",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Elite Medi Spa",
+     "EsthetixMD Spa & Laser Center",
+     "Bloom Aesthetics"
+    ],
+    "organic_pos": 4,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Salt Medical Aesthetics",
+      "Elite Medi Spa",
+      "Synergy Health and Wellness",
+      "Dr. B MedSpa",
+      "Bloom Aesthetics",
+      "The Lounge Aesthetics + Wellness",
+      "Radiant Day Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Juniper Dermatology",
+      "Elite Medi Spa",
+      "Deschutes Dermatology Center",
+      "Salt Medical Aesthetics",
+      "Bloom Aesthetics",
+      "Central Oregon Aesthetics",
+      "Dr. B MedSpa",
+      "Renew Esthetics and Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Elite Medi Spa",
+      "Ageless Health Medicine",
+      "Dr. B Medspa",
+      "Bend Aesthetics & Wellness",
+      "Juniper Dermatology",
+      "Deschutes Dermatology Center"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elite Medi Spa",
+      "Bloom Aesthetics",
+      "Salt Medical Aesthetics",
+      "Ageless Health Medicine",
+      "Ravvivare Health and Wellness"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Bend OR",
+   "prompt": "botox Bend OR",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Lounge Aesthetics + Wellness",
+     "Elite Medi Spa",
+     "Bloom Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Salt Aesthetics",
+      "Peters Dermatology Center",
+      "Juniper Dermatology",
+      "W Aesthetics & Wellness",
+      "Central Oregon Aesthetics",
+      "Dr. B MedSpa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Deschutes Dermatology",
+      "Salt Medical Aesthetics",
+      "Snow Dermatology",
+      "Juniper Dermatology",
+      "The Lounge Aesthetics + Wellness",
+      "Skin by Lovely",
+      "Renew Esthetics and Med Spa",
+      "BodiSculpting Specialists"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Juniper Dermatology",
+      "Peters Dermatology Center",
+      "Elite Medi Spa",
+      "Deschutes Dermatology",
+      "Skin by Lovely",
+      "Salt Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Juniper Dermatology",
+      "Deschutes Dermatology",
+      "Dr. B MedSpa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Bend, OR",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Elite Medi Spa",
+     "Salt Medical Aesthetics",
+     "The Lounge Aesthetics + Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Bend Dermatology Clinic - East Bend- Mohs & DermaSpa",
+      "Juniper Dermatology",
+      "Synergy Health and Wellness",
+      "Salt Medical Aesthetics",
+      "Bloom Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Elite Medi Spa",
+      "Juniper Dermatology",
+      "Deschutes Dermatology Center",
+      "Salt Medical Aesthetics",
+      "Central Oregon Aesthetics",
+      "Bend Aesthetics & Wellness",
+      "Dr. B Medspa",
+      "BodiSculpting Specialists"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Elite Medi Spa",
+      "Juniper Dermatology",
+      "Ageless Health Medicine",
+      "Salt Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elite Medi Spa",
+      "Central Oregon Aesthetics",
+      "Bend Aesthetics and Wellness"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (541) 208-5251 differs from AMP-listed (541) 330-5551; AMP number appears only as a backlink-sourced SMS contact. Website shows a third number (541) 508-7907 (per Perplexity/Claude citations of esthetixmd.com).",
+  "Google listing title 'EsthetixMD Spa & Laser Center'; description says formerly 'Exhale Spa and Laser Center'.",
+  "Google lat/lng returned rounded (44.05,-121.324); distance to AMP pin ~0.03 km.",
+  "services_count reflects the 10 services returned by the API (may be truncated); 3 injectable services listed at $0 excluded from prices.",
+  "No Saturday hours in Google timetable; open Sunday 9-16.",
+  "All three SERPs had asynchronous AI Overviews with no readable text.",
+  "S1 organic_pos 4 is esthetixmd.com 'Resources' page; S3 'near me' organic results are irrelevant out-of-market directory pages.",
+  "SERP rating for listing showed 630 reviews vs 626 in listing data.",
+  "No model substitutions needed; Bend,Oregon,United States location_name worked."
+ ]
+}

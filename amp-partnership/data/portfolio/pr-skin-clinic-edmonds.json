@@ -1,0 +1,890 @@
+{
+ "slug": "pr-skin-clinic-edmonds",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Pūr Skin Clinic - Edmonds",
+  "brand": "Pūr Skin Clinic",
+  "address": "307 Bell Street, #103, Edmonds, WA 98020",
+  "phone": "(425) 967-3877",
+  "website": "https://purskinclinic.com",
+  "lat": 47.81249,
+  "lng": -122.37832
+ },
+ "listing": {
+  "found": true,
+  "title": "Pūr Skin Clinic - Edmonds",
+  "google_phone": "+1425-967-3877",
+  "phone_matches_amp": true,
+  "address": "307 Bell St #103, Edmonds, WA 98020",
+  "distance_km": 0.1,
+  "site_url": "https://www.purskinclinic.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp_edmonds",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 262,
+  "stars": {
+   "1": 10,
+   "2": 4,
+   "3": 0,
+   "4": 4,
+   "5": 244
+  },
+  "photos": 35,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-12 18:44:52 +00:00",
+  "topics": [
+   {
+    "t": "injectables",
+    "n": 12
+   },
+   {
+    "t": "professional team",
+    "n": 8
+   },
+   {
+    "t": "laser treatments",
+    "n": 6
+   },
+   {
+    "t": "clean space",
+    "n": 4
+   },
+   {
+    "t": "pur skin clinic",
+    "n": 3
+   },
+   {
+    "t": "no bruising",
+    "n": 3
+   },
+   {
+    "t": "relaxing space",
+    "n": 3
+   },
+   {
+    "t": "face restoration",
+    "n": 2
+   }
+  ],
+  "services_count": 32,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Edmonds Skin Care",
+    "rating": null,
+    "reviews": null
+   },
+   {
+    "name": "NEXT OV SKIN",
+    "rating": 5,
+    "reviews": 53
+   },
+   {
+    "name": "Pure Skin Care",
+    "rating": null,
+    "reviews": null
+   },
+   {
+    "name": "212 Med Spa",
+    "rating": 5,
+    "reviews": 69
+   },
+   {
+    "name": "TORRES Aesthetics",
+    "rating": 4.9,
+    "reviews": 152
+   }
+  ],
+  "weekly_open_hours": 54,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 90
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 22
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Edmonds WA",
+   "prompt": "med spa Edmonds WA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "IntimMedSpa",
+      "Edmonds Wellness Clinic",
+      "212 Med Spa",
+      "Next OV Skin",
+      "TORRÈS Aesthetics & Health"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Elysium Medical Arts Center",
+      "212 Med Spa",
+      "TORRÈS Aesthetics & Health",
+      "Frontier Dermatology (Edmonds Aesthetics)"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "212 Med Spa",
+      "TORRES Aesthetics & Health",
+      "Edmonds Aesthetics / Frontier Dermatology",
+      "IntimMed Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "212 Med Spa",
+      "Next Ov Skin",
+      "Elysium Medical Arts Center",
+      "TORRÈS Aesthetics & Health"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Edmonds WA",
+   "prompt": "botox Edmonds WA",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "TORRES Aesthetics & Health",
+     "Pūr Skin Clinic - Edmonds",
+     "NEXT OV SKIN"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "TORRES Aesthetics & Health",
+      "IntimMedSpa",
+      "Next OV Skin",
+      "Edmonds Wellness Clinic",
+      "Sage Med Clinic",
+      "Radiant Rejuvenation & Cosmetic Surgery",
+      "Puget Sound Medical Associates"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Puget Sound Medical Associates",
+      "Elysium Medical Arts Center",
+      "Frontier Dermatology",
+      "Sage Med Clinic",
+      "Edmonds 100"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Edmonds Wellness Clinic",
+      "Next OV Skin",
+      "Frontier Dermatology"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "TORRÈS Aesthetics",
+      "Frontier Dermatology",
+      "Next Ov Skin",
+      "George Delaney MD",
+      "Puget Sound Medical Associates"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Edmonds, WA",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "212 Med Spa",
+     "VADARA Med Spa - Mill Creek",
+     "Pūr Skin Clinic - Edmonds"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "IntimMedSpa",
+      "212 Med Spa",
+      "Next OV Skin",
+      "TORRÈS Aesthetics & Health",
+      "Skin Nirvana-Luxury Skincare Studio"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Elysium Medical Arts Center",
+      "TORRÈS Aesthetics & Health"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "TORRES Aesthetics & Health",
+      "212 Med Spa",
+      "Frontier Dermatology—Edmonds Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elysium Medical Arts Center",
+      "TORRÈS Aesthetics",
+      "212 Med Spa",
+      "Frontier Dermatology"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing search by exact title ('Pūr Skin Clinic', 'Pur Skin Clinic', 'Pūr Skin Clinic Edmonds') returned 0 results; found via title 'Skin Clinic' within 3 km of the AMP pin (claimed listing, cid 11218565193242916732).",
+  "Listing coordinates are rounded to 3 decimals (47.812,-122.378); distance to AMP pin ~0.06 km.",
+  "Google site URL is www.purskinclinic.com with gbp_edmonds UTM tags; same registrable domain as AMP site.",
+  "No prices on Google services (32 services, none priced).",
+  "Business listing shows 262 reviews (rating_distribution); live SERP local pack shows 267 reviews.",
+  "S1 'med spa Edmonds WA': no local pack returned; knowledge graph shown for competitor 212 Med Spa (5.0, 73 reviews). Organic results all directory pages (wrapped google.com/goto URLs); purskinclinic.com not in top 10 for any search.",
+  "All three SERPs have asynchronous AI Overviews with no readable text.",
+  "S3 'best med spa near me' organic results are irrelevant medspaflorida.com pages; local pack includes VADARA Med Spa - Mill Creek.",
+  "Brand named in all 12 LLM answers; LLMs (Gemini, Claude) describe it as a Kirkland & Edmonds brand. Claude S3 cited Yelp: 4.6 stars/100 reviews.",
+  "No model substitutions needed; SERP location 'Edmonds,Washington,United States' worked."
+ ]
+}

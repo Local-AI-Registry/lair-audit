@@ -1,0 +1,910 @@
+{
+ "slug": "avelure-creve-coeur",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Creve Coeur",
+  "brand": "Avelure",
+  "address": "10413 Olive Blvd, Creve Coeur, MO 63141",
+  "phone": "(314) 872-3553",
+  "site": "https://aveluremedspa.com",
+  "pin": [
+   38.67448,
+   -90.40992
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Creve Coeur",
+  "cid": "5259254090139985673",
+  "place_id": "ChIJH1Jljx8z34cRCWdQ8rqf_Eg",
+  "google_phone": "+1314-549-5813",
+  "phone_matches_amp": false,
+  "address": "10413 Olive Blvd, Creve Coeur, MO 63141",
+  "distance_km": 0.1,
+  "site_url": "https://aveluremedspa.com/locations/creve-coeur/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_creve_coeur",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 874,
+  "stars": {
+   "1": 69,
+   "2": 16,
+   "3": 14,
+   "4": 27,
+   "5": 748
+  },
+  "photos": 30,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-14 20:04:53 +00:00",
+  "first_seen": "2024-07-16 00:47:46 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 82
+   },
+   {
+    "t": "nurses",
+    "n": 62
+   },
+   {
+    "t": "laser treatments",
+    "n": 16
+   },
+   {
+    "t": "comfortable process",
+    "n": 16
+   },
+   {
+    "t": "coolsculpting",
+    "n": 12
+   },
+   {
+    "t": "shaving",
+    "n": 8
+   },
+   {
+    "t": "ultherapy",
+    "n": 7
+   },
+   {
+    "t": "informative nurse",
+    "n": 4
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "INFINITY Laser Hair Removal",
+    "rating": 4.8,
+    "reviews": 105
+   },
+   {
+    "name": "Eternity Med Spa",
+    "rating": 4.7,
+    "reviews": 135
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 4.9,
+    "reviews": 557
+   },
+   {
+    "name": "Beautiful Body Medspa",
+    "rating": 4.9,
+    "reviews": 188
+   }
+  ],
+  "weekly_open_hours": 53,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Creve Coeur MO",
+   "prompt": "med spa Creve Coeur MO",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Beauty and Wellness on Olive",
+     "Osiris Medical Spa",
+     "Avelure Med Spa - Creve Coeur"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Beautiful Body Medspa",
+      "Osiris Medical Spa",
+      "Elemental Esthetics",
+      "BioBalance Skin",
+      "ALEA Aesthetics",
+      "4Ever Young STL MedSpa",
+      "Blesseli Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Eternity Med Spa",
+      "Elemental Esthetics",
+      "Osiris Medical Spa",
+      "4Ever Young STL MedSpa",
+      "Beauty and Wellness on Olive"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "4Ever Young STL MedSpa",
+      "Ladue Medical Spa",
+      "Eternity Med Spa",
+      "Beauty & Wellness on Olive"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "4Ever Young STL MedSpa",
+      "Eternity Med Spa",
+      "Elemental Esthetics",
+      "Ladue Medical Spa",
+      "ALEA Health & Wellness",
+      "Ridenour Plastic Surgery",
+      "Beauty and Wellness on Olive",
+      "The Derm Bar STL"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Creve Coeur MO",
+   "prompt": "botox Creve Coeur MO",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Beauty and Wellness on Olive",
+     "Beautiful Body Medspa",
+     "Avelure Med Spa - Creve Coeur"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Osiris Medical Spa",
+      "ALEA Aesthetics",
+      "Eternity Med Spa",
+      "4Ever Young STL MedSpa",
+      "Precision Med Spa & Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Eternity Med Spa",
+      "Osiris Medical Spa",
+      "BioBalance Skin",
+      "4Ever Young STL MedSpa",
+      "Ladue Medical Spa & Wellness Center",
+      "Schweiger Dermatology Group",
+      "Premier Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Beauty & Wellness on Olive",
+      "Osiris Medical Spa",
+      "4Ever Young STL MedSpa",
+      "VitalSkin Dermatology",
+      "BJC Facial Plastic Surgery Center"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "4Ever Young STL MedSpa",
+      "Beauty and Wellness on Olive",
+      "Aurora Medical Spa",
+      "Elemental Wellness and Longevity",
+      "Nayak Plastic Surgery",
+      "Eternity Med Spa",
+      "Washington University Facial Plastic Surgery Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Creve Coeur, MO",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Look Lab Med Spa",
+     "The Shine Spa",
+     "Aurora Medical Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Osiris Medical Spa",
+      "Beautiful Body Medspa",
+      "BioBalance Skin",
+      "Elemental Esthetics",
+      "ALEA Aesthetics",
+      "4Ever Young STL MedSpa",
+      "Blesseli Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Osiris Medical Spa",
+      "Eternity Medical Spa",
+      "Elemental Esthetics",
+      "4Ever Young STL MedSpa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Osiris Medical Spa",
+      "Awaken Face + Body Wellness",
+      "Padda Institute",
+      "Beauty and Wellness on Olive"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "4Ever Young STL MedSpa",
+      "Judith Gurley Plastic Surgery & Medical Spa",
+      "Avani Derm Spa",
+      "Elemental Wellness and Longevity",
+      "Eternity Med Spa",
+      "Osiris Medical Spa",
+      "ALEA Health & Wellness"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (314) 549-5813 differs from AMP-listed (314) 872-3553; the AMP number appears on aveluremedspa.com/locations/creve-coeur (per Perplexity search snippet and Claude answer), so the GBP likely uses a tracking number. thecliniccompass.com also shows (314) 549-5813.",
+  "Listing search for 'Avelure' in 15 km returned 2 claimed listings: this one and Avelure Med Spa - Sunset Hills (3828 S Lindbergh Blvd, Sappington; 4.7/1078). No duplicate for Creve Coeur.",
+  "Listing data shows 874 reviews (last_updated 2026-09-14); live local pack shows 4.6/880 reviews.",
+  "No services carry prices on the GBP; prices = [].",
+  "gemini-2.5-flash rate limited twice (50301 rate_limit_exceeded); all 3 Gemini calls used gemini-3.6-flash.",
+  "All 3 SERPs had an asynchronous AI Overview with no text (aio=unreadable). Organic results return google.com redirect URLs; judged by breadcrumb/website_name, aveluremedspa.com does not appear in the top organic results for any search.",
+  "Perplexity S2 cited a MapQuest page for 'Ideal Image Creve Coeur' at the same address 10413 Olive Blvd (legacy brand name still indexed), but did not name Avelure in its answer.",
+  "S3 'best med spa near me' local pack is St. Louis/Clayton/Des Peres businesses; Avelure absent. Organic results for S3 are mostly out-of-market (Cincinnati, Rochester, Decatur, Tulsa)."
+ ]
+}

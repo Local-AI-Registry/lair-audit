@@ -1,0 +1,482 @@
+{
+ "source": "DataForSEO (domain_rank_overview, historical_rank_overview, backlinks_summary; United States, en)",
+ "date": "2026-11-20",
+ "domains": [
+  {
+   "domain": "newradiancenow.com",
+   "keywords_total": 733,
+   "pos_1": 17,
+   "top3": 51,
+   "top10": 162,
+   "etv": 704.044,
+   "is_new": 438,
+   "is_up": 111,
+   "is_down": 150,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 1428.825,
+     "keywords": 1484
+    },
+    {
+     "month": "2026-01",
+     "etv": 1223.885,
+     "keywords": 1553
+    },
+    {
+     "month": "2026-02",
+     "etv": 934.726,
+     "keywords": 1424
+    },
+    {
+     "month": "2026-03",
+     "etv": 1070.438,
+     "keywords": 1256
+    },
+    {
+     "month": "2026-04",
+     "etv": 1307.428,
+     "keywords": 990
+    },
+    {
+     "month": "2026-05",
+     "etv": 1186.47,
+     "keywords": 924
+    },
+    {
+     "month": "2026-06",
+     "etv": 1213.396,
+     "keywords": 862
+    },
+    {
+     "month": "2026-07",
+     "etv": 1207.152,
+     "keywords": 855
+    },
+    {
+     "month": "2026-08",
+     "etv": 1238.467,
+     "keywords": 912
+    },
+    {
+     "month": "2026-09",
+     "etv": 1240.149,
+     "keywords": 960
+    },
+    {
+     "month": "2026-10",
+     "etv": 1052.865,
+     "keywords": 808
+    },
+    {
+     "month": "2026-11",
+     "etv": 1073.639,
+     "keywords": 780
+    }
+   ],
+   "referring_domains": 429,
+   "backlinks": 1087,
+   "broken_backlinks": 682,
+   "broken_pages": 318,
+   "spam_score": 31,
+   "rank": 186
+  },
+  {
+   "domain": "nouveauspa.com",
+   "keywords_total": 242,
+   "pos_1": 26,
+   "top3": 37,
+   "top10": 65,
+   "etv": 790.885,
+   "is_new": 124,
+   "is_up": 48,
+   "is_down": 38,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 1786.476,
+     "keywords": 839
+    },
+    {
+     "month": "2026-01",
+     "etv": 1518.57,
+     "keywords": 741
+    },
+    {
+     "month": "2026-02",
+     "etv": 1128.247,
+     "keywords": 681
+    },
+    {
+     "month": "2026-03",
+     "etv": 1097.934,
+     "keywords": 574
+    },
+    {
+     "month": "2026-04",
+     "etv": 1148.576,
+     "keywords": 468
+    },
+    {
+     "month": "2026-05",
+     "etv": 946.959,
+     "keywords": 432
+    },
+    {
+     "month": "2026-06",
+     "etv": 1324.38,
+     "keywords": 439
+    },
+    {
+     "month": "2026-07",
+     "etv": 1103.381,
+     "keywords": 433
+    },
+    {
+     "month": "2026-08",
+     "etv": 1120.11,
+     "keywords": 426
+    },
+    {
+     "month": "2026-09",
+     "etv": 1132.644,
+     "keywords": 378
+    },
+    {
+     "month": "2026-10",
+     "etv": 951.565,
+     "keywords": 282
+    },
+    {
+     "month": "2026-11",
+     "etv": 868.477,
+     "keywords": 271
+    }
+   ],
+   "referring_domains": 135,
+   "backlinks": 252,
+   "broken_backlinks": 210,
+   "broken_pages": 17,
+   "spam_score": 23,
+   "rank": 127
+  },
+  {
+   "domain": "purskinclinic.com",
+   "keywords_total": 268,
+   "pos_1": 16,
+   "top3": 26,
+   "top10": 67,
+   "etv": 412.499,
+   "is_new": 95,
+   "is_up": 79,
+   "is_down": 68,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 849.891,
+     "keywords": 951
+    },
+    {
+     "month": "2026-01",
+     "etv": 1041.363,
+     "keywords": 905
+    },
+    {
+     "month": "2026-02",
+     "etv": 849.083,
+     "keywords": 818
+    },
+    {
+     "month": "2026-03",
+     "etv": 606.39,
+     "keywords": 682
+    },
+    {
+     "month": "2026-04",
+     "etv": 591.021,
+     "keywords": 505
+    },
+    {
+     "month": "2026-05",
+     "etv": 598.929,
+     "keywords": 442
+    },
+    {
+     "month": "2026-06",
+     "etv": 706.981,
+     "keywords": 410
+    },
+    {
+     "month": "2026-07",
+     "etv": 499.687,
+     "keywords": 365
+    },
+    {
+     "month": "2026-08",
+     "etv": 465.693,
+     "keywords": 361
+    },
+    {
+     "month": "2026-09",
+     "etv": 502.691,
+     "keywords": 376
+    },
+    {
+     "month": "2026-10",
+     "etv": 969.769,
+     "keywords": 295
+    },
+    {
+     "month": "2026-11",
+     "etv": 528.14,
+     "keywords": 290
+    }
+   ],
+   "referring_domains": 210,
+   "backlinks": 541,
+   "broken_backlinks": 28,
+   "broken_pages": 31,
+   "spam_score": 13,
+   "rank": 177
+  },
+  {
+   "domain": "reflectionscenter.com",
+   "keywords_total": 3985,
+   "pos_1": 147,
+   "top3": 406,
+   "top10": 1181,
+   "etv": 4512.599,
+   "is_new": 1663,
+   "is_up": 953,
+   "is_down": 1107,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 5869.557,
+     "keywords": 11056
+    },
+    {
+     "month": "2026-01",
+     "etv": 6664.024,
+     "keywords": 11365
+    },
+    {
+     "month": "2026-02",
+     "etv": 7033.896,
+     "keywords": 10820
+    },
+    {
+     "month": "2026-03",
+     "etv": 7362.343,
+     "keywords": 10329
+    },
+    {
+     "month": "2026-04",
+     "etv": 7245.242,
+     "keywords": 7964
+    },
+    {
+     "month": "2026-05",
+     "etv": 6824.497,
+     "keywords": 6916
+    },
+    {
+     "month": "2026-06",
+     "etv": 8499.787,
+     "keywords": 6683
+    },
+    {
+     "month": "2026-07",
+     "etv": 8092.504,
+     "keywords": 6023
+    },
+    {
+     "month": "2026-08",
+     "etv": 10772.706,
+     "keywords": 5780
+    },
+    {
+     "month": "2026-09",
+     "etv": 11081.301,
+     "keywords": 5803
+    },
+    {
+     "month": "2026-10",
+     "etv": 9039.684,
+     "keywords": 4501
+    },
+    {
+     "month": "2026-11",
+     "etv": 9800.662,
+     "keywords": 4277
+    }
+   ],
+   "referring_domains": 1171,
+   "backlinks": 3510,
+   "broken_backlinks": 1220,
+   "broken_pages": 947,
+   "spam_score": 19,
+   "rank": 245
+  },
+  {
+   "domain": "drfiorillo.com",
+   "keywords_total": null,
+   "pos_1": null,
+   "top3": null,
+   "top10": null,
+   "etv": null,
+   "is_new": null,
+   "is_up": null,
+   "is_down": null,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 455.282,
+     "keywords": 356
+    },
+    {
+     "month": "2026-01",
+     "etv": 506.793,
+     "keywords": 343
+    },
+    {
+     "month": "2026-02",
+     "etv": 501.382,
+     "keywords": 347
+    },
+    {
+     "month": "2026-03",
+     "etv": 403.848,
+     "keywords": 235
+    },
+    {
+     "month": "2026-04",
+     "etv": 130.209,
+     "keywords": 121
+    },
+    {
+     "month": "2026-05",
+     "etv": 110.754,
+     "keywords": 73
+    },
+    {
+     "month": "2026-06",
+     "etv": 26.703,
+     "keywords": 28
+    },
+    {
+     "month": "2026-07",
+     "etv": 5.135,
+     "keywords": 5
+    },
+    {
+     "month": "2026-08",
+     "etv": 2.14,
+     "keywords": 4
+    },
+    {
+     "month": "2026-09",
+     "etv": 1.991,
+     "keywords": 4
+    },
+    {
+     "month": "2026-10",
+     "etv": null,
+     "keywords": null
+    },
+    {
+     "month": "2026-11",
+     "etv": null,
+     "keywords": null
+    }
+   ],
+   "referring_domains": 402,
+   "backlinks": 1279,
+   "broken_backlinks": 883,
+   "broken_pages": 162,
+   "spam_score": 28,
+   "rank": 188,
+   "note": "domain_rank_overview empty for drfiorillo.com and www.drfiorillo.com; history shows organic visibility collapsed from 356 keywords (2025-12) to 4 (2026-09) and none in 2026-10/11. Backlinks: all 162 crawled pages broken."
+  },
+  {
+   "domain": "skynbaratlanta.com",
+   "keywords_total": 157,
+   "pos_1": 5,
+   "top3": 7,
+   "top10": 18,
+   "etv": 232.12,
+   "is_new": 73,
+   "is_up": 50,
+   "is_down": 28,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 390.724,
+     "keywords": 265
+    },
+    {
+     "month": "2026-01",
+     "etv": 341.202,
+     "keywords": 247
+    },
+    {
+     "month": "2026-02",
+     "etv": 280.997,
+     "keywords": 228
+    },
+    {
+     "month": "2026-03",
+     "etv": 268.909,
+     "keywords": 202
+    },
+    {
+     "month": "2026-04",
+     "etv": 223.824,
+     "keywords": 247
+    },
+    {
+     "month": "2026-05",
+     "etv": 216.292,
+     "keywords": 270
+    },
+    {
+     "month": "2026-06",
+     "etv": 262.09,
+     "keywords": 285
+    },
+    {
+     "month": "2026-07",
+     "etv": 249.268,
+     "keywords": 289
+    },
+    {
+     "month": "2026-08",
+     "etv": 221.902,
+     "keywords": 283
+    },
+    {
+     "month": "2026-09",
+     "etv": 220.927,
+     "keywords": 258
+    },
+    {
+     "month": "2026-10",
+     "etv": 235.965,
+     "keywords": 184
+    },
+    {
+     "month": "2026-11",
+     "etv": 243.192,
+     "keywords": 172
+    }
+   ],
+   "referring_domains": 137,
+   "backlinks": 640,
+   "broken_backlinks": null,
+   "broken_pages": 5,
+   "spam_score": 9,
+   "rank": 174,
+   "note": "broken_backlinks not returned by backlinks_summary"
+  }
+ ]
+}

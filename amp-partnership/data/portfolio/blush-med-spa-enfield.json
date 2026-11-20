@@ -1,0 +1,907 @@
+{
+ "slug": "blush-med-spa-enfield",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Blush Med Spa - Enfield",
+  "brand": "Blush Med Spa",
+  "address": "115 Elm Street, Ste 205, Enfield, CT 6082",
+  "phone": "(860) 835-5495",
+  "site": "https://blushmedspact.com",
+  "pin": [
+   41.99932,
+   -72.58076
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Blush Med Spa - Enfield",
+  "google_phone": "+1860-835-5495",
+  "phone_matches_amp": true,
+  "address": "115 Elm St Ste 205, Enfield, CT 06082",
+  "distance_km": 0.0,
+  "site_url": "http://blushmedspact.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 491,
+  "stars": {
+   "1": 16,
+   "2": 1,
+   "3": 2,
+   "4": 2,
+   "5": 470
+  },
+  "photos": 453,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-26 18:03:23 +00:00",
+  "topics": [
+   {
+    "t": "lashes",
+    "n": 17
+   },
+   {
+    "t": "talented staff",
+    "n": 14
+   },
+   {
+    "t": "injector",
+    "n": 9
+   },
+   {
+    "t": "honest feedback",
+    "n": 7
+   },
+   {
+    "t": "painless procedure",
+    "n": 7
+   },
+   {
+    "t": "blush med spa",
+    "n": 4
+   },
+   {
+    "t": "lip flip",
+    "n": 4
+   },
+   {
+    "t": "cheek filler",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 155
+   },
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 160
+   },
+   {
+    "title": "LHR (Underarms)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 140
+   },
+   {
+    "title": "HydraFacial",
+    "category": "Medical Spa",
+    "price_usd": 199
+   },
+   {
+    "title": "Lash Lift and Tint",
+    "category": "Medical Spa",
+    "price_usd": 105
+   },
+   {
+    "title": "Celebrity Weight Loss Maintenance Appointment",
+    "category": "Wellness",
+    "price_usd": 166.58
+   }
+  ],
+  "also_search": [
+   {
+    "name": "BonaVita Aesthetics Med Spa",
+    "rating": 5,
+    "reviews": 442
+   },
+   {
+    "name": "Haven Skin Spa - Enfield Facials",
+    "rating": 5,
+    "reviews": 14
+   },
+   {
+    "name": "Magnolia Medical Wellness",
+    "rating": 5,
+    "reviews": 111
+   },
+   {
+    "name": "GBS Threading and Skin Care",
+    "rating": 4.1,
+    "reviews": 59
+   },
+   {
+    "name": "The Skin Spa Enfield",
+    "rating": 5,
+    "reviews": 16
+   }
+  ],
+  "weekly_open_hours": 45,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 91
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 91
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 83
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 83
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 83
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Enfield CT",
+   "prompt": "med spa Enfield CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Enfield",
+     "BonaVita Aesthetics Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "BonaVita Aesthetics Med Spa",
+      "Magnolia Medical Wellness",
+      "The Shot Shop"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Shot Shop Med Spa",
+      "BonaVita Aesthetics",
+      "Magnolia Medical Wellness",
+      "The Skin Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "BonaVita Aesthetics Med Spa",
+      "The Shot Shop Medical Rejuvenation Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Shot Shop Med Spa",
+      "Magnolia Medical Wellness"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Enfield CT",
+   "prompt": "botox Enfield CT",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "BonaVita Aesthetics Med Spa",
+     "Blush Med Spa - Enfield",
+     "Magnolia Medical Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Magnolia Medical Wellness",
+      "The Shot Shop",
+      "BonaVita Aesthetics Med Spa",
+      "SA Aesthetics",
+      "Enfield Dermatology"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Magnolia Medical Wellness",
+      "Starling Aesthetics",
+      "Integrated Dermatology of Enfield & Simsbury",
+      "Bonavita Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The Shot Shop",
+      "Magnolia Medical Wellness",
+      "BonaVita Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Aum Aesthetics Medical Spa",
+      "BonaVita Medical Aesthetics",
+      "Magnolia Medical Aesthetics",
+      "The Shot Shop"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Enfield, CT",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "BonaVita Aesthetics Med Spa",
+     "Blush Med Spa - Enfield",
+     "Magnolia Medical Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Magnolia Medical Wellness",
+      "BonaVita Aesthetics Med Spa",
+      "The Shot Shop",
+      "Touch of Essence Skin Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Shot Shop Med Spa",
+      "Bonavita Aesthetics",
+      "Magnolia Medical Wellness",
+      "The Skin Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "BonaVita Aesthetics Med Spa",
+      "Magnolia Medical Wellness",
+      "The Shot Shop"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Aum Aesthetics Medical Spa",
+      "BonaVita Medical Aesthetics",
+      "Magnolia Medical Wellness",
+      "Touch of Essence Skin Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing matches AMP address, phone and domain exactly; claimed.",
+  "A second Blush Med Spa listing (East Longmeadow, MA, 70 Center Square, category 'Health and beauty shop', 126 reviews) also returned in the search; it lists blushmedspact.com and has 860-835-5495 among backlink phones. Not this location.",
+  "SERP local pack shows 4.8 / 508 reviews vs business listings DB 4.9 / 491 (DB last_updated 2026-09-26).",
+  "All organic SERP result URLs were google.com redirect links; no organic result identifiable as blushmedspact.com or this listing in top 10, so organic_pos null.",
+  "Google AI Overview present but asynchronous with no text on all 3 searches (unreadable).",
+  "S3 'best med spa near me' organic results were nationwide Yelp lists (Lewes DE, Virginia Beach etc.); local pack was Enfield.",
+  "Gemini gemini-2.5-flash rate limited twice (50301) on all 3 prompts; used gemini-3.6-flash instead.",
+  "Many third-party directories (MapQuest, chamberofcommerce) list a different phone (860) 698-1989 for this address; Yelp shows 3.4 stars (18 reviews) on one Blush Enfield page per Perplexity sources.",
+  "Only 6 of 10 Google services have a price > 0; injectables (Botox, filler) show $0 'From' price."
+ ]
+}

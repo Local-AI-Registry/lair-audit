@@ -1,0 +1,473 @@
+{
+ "source": "DataForSEO (Labs domain_rank_overview, historical_rank_overview US/en; Backlinks summary), 2026-11-20",
+ "domains": [
+  {
+   "domain": "glomedspa.com",
+   "keywords_total": 192,
+   "top3": 21,
+   "top10": 39,
+   "etv": 991.455,
+   "is_new": 66,
+   "is_up": 46,
+   "is_down": 63,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 1615.126,
+     "keywords": 826
+    },
+    {
+     "month": "2026-01",
+     "etv": 1277.67,
+     "keywords": 700
+    },
+    {
+     "month": "2026-02",
+     "etv": 1066.246,
+     "keywords": 610
+    },
+    {
+     "month": "2026-03",
+     "etv": 1058.081,
+     "keywords": 577
+    },
+    {
+     "month": "2026-04",
+     "etv": 1273.048,
+     "keywords": 467
+    },
+    {
+     "month": "2026-05",
+     "etv": 1178.165,
+     "keywords": 443
+    },
+    {
+     "month": "2026-06",
+     "etv": 986.569,
+     "keywords": 439
+    },
+    {
+     "month": "2026-07",
+     "etv": 957.252,
+     "keywords": 430
+    },
+    {
+     "month": "2026-08",
+     "etv": 1609.162,
+     "keywords": 440
+    },
+    {
+     "month": "2026-09",
+     "etv": 1671.09,
+     "keywords": 392
+    },
+    {
+     "month": "2026-10",
+     "etv": 1457.049,
+     "keywords": 232
+    },
+    {
+     "month": "2026-11",
+     "etv": 1612.039,
+     "keywords": 222
+    }
+   ],
+   "referring_domains": 154,
+   "backlinks": 442,
+   "broken_backlinks": 64,
+   "broken_pages": 69,
+   "spam_score": 24,
+   "rank": 175
+  },
+  {
+   "domain": "h-md.com",
+   "keywords_total": 135,
+   "top3": 17,
+   "top10": 34,
+   "etv": 673.375,
+   "is_new": 92,
+   "is_up": 16,
+   "is_down": 21,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 447.581,
+     "keywords": 693
+    },
+    {
+     "month": "2026-01",
+     "etv": 722.54,
+     "keywords": 823
+    },
+    {
+     "month": "2026-02",
+     "etv": 818.299,
+     "keywords": 850
+    },
+    {
+     "month": "2026-03",
+     "etv": 740.045,
+     "keywords": 609
+    },
+    {
+     "month": "2026-04",
+     "etv": 177.252,
+     "keywords": 185
+    },
+    {
+     "month": "2026-05",
+     "etv": 162.257,
+     "keywords": 137
+    },
+    {
+     "month": "2026-06",
+     "etv": 959.368,
+     "keywords": 121
+    },
+    {
+     "month": "2026-07",
+     "etv": 979.994,
+     "keywords": 119
+    },
+    {
+     "month": "2026-08",
+     "etv": 1097.148,
+     "keywords": 143
+    },
+    {
+     "month": "2026-09",
+     "etv": 1001.416,
+     "keywords": 160
+    },
+    {
+     "month": "2026-10",
+     "etv": 968.581,
+     "keywords": 145
+    },
+    {
+     "month": "2026-11",
+     "etv": 1004.907,
+     "keywords": 146
+    }
+   ],
+   "referring_domains": 195,
+   "backlinks": 1827,
+   "broken_backlinks": 1572,
+   "broken_pages": 94,
+   "spam_score": 3,
+   "rank": 275
+  },
+  {
+   "domain": "hellosmooth.com",
+   "keywords_total": 477,
+   "top3": 22,
+   "top10": 68,
+   "etv": 938.368,
+   "is_new": 241,
+   "is_up": 99,
+   "is_down": 114,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 651.796,
+     "keywords": 902
+    },
+    {
+     "month": "2026-01",
+     "etv": 601.921,
+     "keywords": 997
+    },
+    {
+     "month": "2026-02",
+     "etv": 718.909,
+     "keywords": 994
+    },
+    {
+     "month": "2026-03",
+     "etv": 781.679,
+     "keywords": 955
+    },
+    {
+     "month": "2026-04",
+     "etv": 2873.565,
+     "keywords": 801
+    },
+    {
+     "month": "2026-05",
+     "etv": 2888.11,
+     "keywords": 789
+    },
+    {
+     "month": "2026-06",
+     "etv": 2752.634,
+     "keywords": 744
+    },
+    {
+     "month": "2026-07",
+     "etv": 2644.352,
+     "keywords": 707
+    },
+    {
+     "month": "2026-08",
+     "etv": 2132.347,
+     "keywords": 673
+    },
+    {
+     "month": "2026-09",
+     "etv": 1955.422,
+     "keywords": 708
+    },
+    {
+     "month": "2026-10",
+     "etv": 1852.59,
+     "keywords": 557
+    },
+    {
+     "month": "2026-11",
+     "etv": 2017.415,
+     "keywords": 534
+    }
+   ],
+   "referring_domains": 266,
+   "backlinks": 446,
+   "broken_backlinks": 4,
+   "broken_pages": 4,
+   "spam_score": 27,
+   "rank": 170
+  },
+  {
+   "domain": "illumemedspa.com",
+   "keywords_total": 215,
+   "top3": 4,
+   "top10": 16,
+   "etv": 439.64,
+   "is_new": 88,
+   "is_up": 81,
+   "is_down": 40,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 1228.998,
+     "keywords": 621
+    },
+    {
+     "month": "2026-01",
+     "etv": 1648.814,
+     "keywords": 566
+    },
+    {
+     "month": "2026-02",
+     "etv": 1231.905,
+     "keywords": 551
+    },
+    {
+     "month": "2026-03",
+     "etv": 819.675,
+     "keywords": 568
+    },
+    {
+     "month": "2026-04",
+     "etv": 463.479,
+     "keywords": 501
+    },
+    {
+     "month": "2026-05",
+     "etv": 513.732,
+     "keywords": 484
+    },
+    {
+     "month": "2026-06",
+     "etv": 964.54,
+     "keywords": 488
+    },
+    {
+     "month": "2026-07",
+     "etv": 865.963,
+     "keywords": 467
+    },
+    {
+     "month": "2026-08",
+     "etv": 702.774,
+     "keywords": 452
+    },
+    {
+     "month": "2026-09",
+     "etv": 567.034,
+     "keywords": 392
+    },
+    {
+     "month": "2026-10",
+     "etv": 445.95,
+     "keywords": 246
+    },
+    {
+     "month": "2026-11",
+     "etv": 485.016,
+     "keywords": 231
+    }
+   ],
+   "referring_domains": 122,
+   "backlinks": 227,
+   "broken_backlinks": null,
+   "broken_pages": 12,
+   "spam_score": 23,
+   "rank": 134
+  },
+  {
+   "domain": "livingyoungcenter.com",
+   "keywords_total": 480,
+   "top3": 21,
+   "top10": 79,
+   "etv": 1426.805,
+   "is_new": 250,
+   "is_up": 106,
+   "is_down": 101,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 2675.428,
+     "keywords": 1383
+    },
+    {
+     "month": "2026-01",
+     "etv": 2365.272,
+     "keywords": 1277
+    },
+    {
+     "month": "2026-02",
+     "etv": 1849.258,
+     "keywords": 967
+    },
+    {
+     "month": "2026-03",
+     "etv": 2046.331,
+     "keywords": 1074
+    },
+    {
+     "month": "2026-04",
+     "etv": 3164.263,
+     "keywords": 853
+    },
+    {
+     "month": "2026-05",
+     "etv": 3086.904,
+     "keywords": 700
+    },
+    {
+     "month": "2026-06",
+     "etv": 2017.481,
+     "keywords": 665
+    },
+    {
+     "month": "2026-07",
+     "etv": 1708.891,
+     "keywords": 635
+    },
+    {
+     "month": "2026-08",
+     "etv": 1522.342,
+     "keywords": 679
+    },
+    {
+     "month": "2026-09",
+     "etv": 1528.991,
+     "keywords": 738
+    },
+    {
+     "month": "2026-10",
+     "etv": 1504.844,
+     "keywords": 555
+    },
+    {
+     "month": "2026-11",
+     "etv": 1532.431,
+     "keywords": 530
+    }
+   ],
+   "referring_domains": 328,
+   "backlinks": 889,
+   "broken_backlinks": 635,
+   "broken_pages": 58,
+   "spam_score": 28,
+   "rank": 211
+  },
+  {
+   "domain": "dermguy.com",
+   "keywords_total": 308,
+   "top3": 18,
+   "top10": 71,
+   "etv": 1373.448,
+   "is_new": 98,
+   "is_up": 99,
+   "is_down": 89,
+   "history": [
+    {
+     "month": "2025-12",
+     "etv": 1679.918,
+     "keywords": 1243
+    },
+    {
+     "month": "2026-01",
+     "etv": 1840.562,
+     "keywords": 1217
+    },
+    {
+     "month": "2026-02",
+     "etv": 1892.499,
+     "keywords": 1127
+    },
+    {
+     "month": "2026-03",
+     "etv": 1863.453,
+     "keywords": 1036
+    },
+    {
+     "month": "2026-04",
+     "etv": 1609.836,
+     "keywords": 788
+    },
+    {
+     "month": "2026-05",
+     "etv": 1355.926,
+     "keywords": 685
+    },
+    {
+     "month": "2026-06",
+     "etv": 1692.365,
+     "keywords": 656
+    },
+    {
+     "month": "2026-07",
+     "etv": 1302.071,
+     "keywords": 635
+    },
+    {
+     "month": "2026-08",
+     "etv": 1227.538,
+     "keywords": 601
+    },
+    {
+     "month": "2026-09",
+     "etv": 1276.262,
+     "keywords": 556
+    },
+    {
+     "month": "2026-10",
+     "etv": 763.444,
+     "keywords": 364
+    },
+    {
+     "month": "2026-11",
+     "etv": 794.305,
+     "keywords": 340
+    }
+   ],
+   "referring_domains": 237,
+   "backlinks": 655,
+   "broken_backlinks": 16,
+   "broken_pages": 8,
+   "spam_score": 25,
+   "rank": 183
+  }
+ ]
+}

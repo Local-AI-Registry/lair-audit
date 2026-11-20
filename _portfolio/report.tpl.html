@@ -14,6 +14,7 @@
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#060B14;--card:#0E1726;--paper:#0E1726;--ink:#EEF2F8;--ink2:#C7D0DD;--mute:#8D99AB;--line:#1F2B3D;--soft:#131E30;--blue:#6E93FF;--blue-t:#16244A;--coral:#FF7A5F;--coral-t:#3A1A14;--good:#3CC48D;--good-t:#0F2E22;--warn:#E0AE52;--warn-t:#33270F;--bad:#FF6B5E;--bad-t:#3A1513}}
 :root[data-theme="dark"]{--bg:#060B14;--card:#0E1726;--paper:#0E1726;--ink:#EEF2F8;--ink2:#C7D0DD;--mute:#8D99AB;--line:#1F2B3D;--soft:#131E30;--blue:#6E93FF;--blue-t:#16244A;--coral:#FF7A5F;--coral-t:#3A1A14;--good:#3CC48D;--good-t:#0F2E22;--warn:#E0AE52;--warn-t:#33270F;--bad:#FF6B5E;--bad-t:#3A1513}
 *{box-sizing:border-box}
+html,body{overflow-x:hidden}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.5;-webkit-font-smoothing:antialiased}
 h1,h2,h3{margin:0;font-weight:500;text-wrap:balance}p{margin:0;text-wrap:pretty}a{color:var(--blue)}
 .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
@@ -107,6 +108,11 @@ tr.det td{background:var(--soft);padding:18px}
 .worth .sub{color:var(--ink2);font-size:17px;margin-top:10px}
 .worth{--mute:var(--mute);--good:var(--good)}
 table.demand{font-size:13.5px}
+.ins{display:grid;gap:12px;margin-top:22px}
+.insc{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:start}
+.insc .num{font-size:44px;line-height:1;color:var(--blue)}
+.insc h3{font-family:var(--display);font-size:20px;font-weight:600}.insc p{color:var(--ink2);margin-top:4px;font-size:15px}
+@media (max-width:600px){.insc{grid-template-columns:1fr;gap:6px}}
 /*{{WORTH_CSS}}*/
 footer{padding:60px 0 80px;color:var(--mute);font-size:13px}
 button.th{position:fixed;right:14px;bottom:14px;z-index:30;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;height:36px;padding:0 13px;cursor:pointer;font:inherit}
@@ -158,6 +164,9 @@ M+=sec('examples','Real examples','<p class="eyebrow">Real examples from your po
  '<p class="sub">Each card is a specific practice and a specific finding from this scan. The rest of the report shows how often each pattern repeats across the portfolio.</p>'+
  '<div class="spots">'+D.spotlights.map(function(s){return '<div class="spot '+(s.k==='champion'?'champion':'')+'"><span class="tag">'+esc(s.tag)+'</span><span class="loc">'+esc(s.loc)+'</span><span class="big">'+esc(s.big)+'</span><p>'+esc(s.text)+'</p>'+(s.slug?'<a class="go" href="#loc-'+esc(s.slug)+'" data-open="'+esc(s.slug)+'">See this location →</a>':'')+'</div>'}).join('')+'</div>');
 
+/* 1b owner insights */
+if((D.insights||[]).length)M+=sec('insights','Insights','<p class="eyebrow">What the data says about the business</p><h2>Five things an owner <span class="g">should know.</span></h2>'+
+ '<div class="ins">'+D.insights.map(function(x){return '<div class="card insc"><span class="num">'+esc(x.big)+'</span><div><h3>'+esc(x.h)+'</h3><p>'+esc(x.p)+'</p></div></div>'}).join('')+'</div>');
 /* 2 quadrant */
 M+=sec('map','Where you stand','<p class="eyebrow">Where every location stands</p><h2>Google visibility and AI visibility <span class="g">are not the same thing.</span></h2>'+
  '<p class="sub">Each dot is a location. Across: how often Google shows it in the map pack for our three searches. Up: how often the four AI tools named it. Dot size: Google reviews. Hover or tap a dot.</p>'+
@@ -191,7 +200,7 @@ function hy(n,t){return '<div class="card'+(n?'':' ok')+'"><span class="num">'+(
 /* 7 services & trends */
 var T=D.trends||{},TT=(T.treatments||[]).slice();
 M+=sec('services','Services and demand','<p class="eyebrow">Services, prices and demand</p><h2>What patients search for, <span class="g">and what the portfolio puts in front of them.</span></h2>'+
- '<div class="grid g2" style="margin-top:20px"><div class="card"><p class="lab">Treatments listed on Google, by number of locations</p><div class="hb" id="svc"></div><p class="small" style="margin-top:10px">From the services and prices on each Google listing. Price range shows the lowest and highest listed price.</p></div>'+
+ '<div class="grid g2" style="margin-top:20px"><div class="card"><p class="lab">Treatments listed on Google, by number of locations</p><div class="hb" id="svc"></div><p class="small" style="margin-top:10px">From the services and prices on each Google listing. Ranges mix packages and treatment areas; per-unit injectable prices are left out.</p></div>'+
  '<div class="card"><p class="lab">National search interest, relative to Botox</p><div class="hb" id="trend"></div><p class="small" style="margin-top:10px">Google Trends, last 12 months'+(T.notes&&T.notes.length?'. '+esc(T.notes[0]):'')+'.</p></div></div>'+
  '<div class="card" style="margin-top:14px"><p class="lab">What reviewers talk about most (Google review topics, all locations)</p><div class="chips" style="margin-top:10px" id="topics"></div></div>');
 

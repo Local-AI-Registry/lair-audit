@@ -1,0 +1,80 @@
+{
+  "slug": "beautyfix-medspa-westchester",
+  "run_date": "2026-11-20",
+  "amp": {"name": "BeautyFix MedSpa - Westchester", "brand": "BeautyFix MedSpa", "address": "1885 Palmer Ave, Larchmont, NY 10538", "phone": "(212) 366-4787", "site": "https://www.beautyfixmedspa.com/pages/contact-us", "pin": [40.93367, -73.75839]},
+  "listing": {
+    "found": true,
+    "title": "BeautyFix Medspa Westchester",
+    "google_phone": "+1212-366-4787",
+    "phone_matches_amp": true,
+    "address": "1885 Palmer Ave, Larchmont, NY 10538",
+    "distance_km": 0.0,
+    "site_url": "http://www.beautyfixmedspa.com/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Plastic surgeon", "Spa"],
+    "rating": 4.8,
+    "reviews": 160,
+    "stars": {"1": 8, "2": 0, "3": 1, "4": 2, "5": 149},
+    "photos": 13,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 16,
+    "last_updated": "2026-09-17 07:32:49 +00:00",
+    "topics": [{"t": "welcoming atmosphere", "n": 17}, {"t": "injector", "n": 8}, {"t": "painless", "n": 4}, {"t": "quick procedure", "n": 3}, {"t": "refreshed look", "n": 3}, {"t": "honest staff", "n": 3}, {"t": "knowledgeable nurse", "n": 2}, {"t": "needle skills", "n": 2}],
+    "services_count": 10,
+    "prices": [
+      {"title": "CheekFix- Filler", "category": "Dermal Filler", "price_usd": 799},
+      {"title": "ChinFix- Filler", "category": "Dermal Filler", "price_usd": 799},
+      {"title": "FaceFix- Filler", "category": "Dermal Filler", "price_usd": 799},
+      {"title": "LipFix- Filler", "category": "Dermal Filler", "price_usd": 699},
+      {"title": "Existing Patient Tox", "category": "Neurotoxin", "price_usd": 300},
+      {"title": "LipFix- LipFlip", "category": "Neurotoxin", "price_usd": 199},
+      {"title": "New Patient Tox", "category": "Neurotoxin", "price_usd": 229},
+      {"title": "Wrinkle Fix Unlimited Membership", "category": "Neurotoxin", "price_usd": 159},
+      {"title": "SkinFix- Microneedling", "category": "SkinFixes", "price_usd": 300}
+    ],
+    "also_search": [
+      {"name": "TOUCHD MEDICAL SPA", "rating": 4.9, "reviews": 138},
+      {"name": "Radiesse Treatment Medspa", "rating": 5, "reviews": 4},
+      {"name": "Defining Beauty", "rating": 4.9, "reviews": 35},
+      {"name": "StudioMD", "rating": 4.7, "reviews": 14}
+    ],
+    "weekly_open_hours": 36,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {"key": "S1", "q": "med spa Larchmont NY", "prompt": "med spa Larchmont NY",
+     "google": {"map_pos": null, "map_pack": [], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["StudioMD", "Fountain Med Spa"]},
+       "gemini": {"named": 1, "others": ["StudioMD", "Pearl Skin Care", "Lumiere Laser Med Spa", "Top Aesthetics Laser / MedSpa"]},
+       "perplexity": {"named": 1, "others": ["Larchmont Dermatology", "Pearl Skin Care", "Her Secret Medspa"]},
+       "claude": {"named": 1, "others": ["Pearl Skin Care", "Larchmont Dermatology", "StudioMD", "Addison Street Spa"]}}},
+    {"key": "S2", "q": "botox Larchmont NY", "prompt": "botox Larchmont NY",
+     "google": {"map_pos": 1, "map_pack": ["BeautyFix Medspa Westchester", "Larchmont Dermatology", "StudioMD"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["StudioMD", "Larchmont Aesthetics", "Larchmont Dermatology"]},
+       "gemini": {"named": 1, "others": ["Larchmont Dermatology", "StudioMD", "Larchmont Aesthetics"]},
+       "perplexity": {"named": 1, "others": ["Larchmont Dermatology", "StudioMD"]},
+       "claude": {"named": 0, "others": ["StudioMD", "Larchmont Dermatology", "Dr. Marc Epstein MD"]}}},
+    {"key": "S3", "q": "best med spa near me", "prompt": "best med spa in Larchmont, NY",
+     "google": {"map_pos": 2, "map_pack": ["Sedora Medical Aesthetics - White Plains MedSpa", "BeautyFix Medspa Westchester", "Her Secret Medspa"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Addison Street Spa", "Fountain Med Spa"]},
+       "gemini": {"named": 1, "others": ["StudioMD", "Pearl Skin Care", "Larchmont Sanctuary Spa", "Lumiere Laser Med Spa"]},
+       "perplexity": {"named": 1, "others": ["Yevo Semaglutide & Weight Loss"]},
+       "claude": {"named": 1, "others": ["Addison Street Spa", "Pearl Skin Care", "Larchmont Dermatology"]}}}
+  ],
+  "notes": [
+    "Listing search returned no popular_times field; saved as null.",
+    "Google timetable lists Tue-Fri 10-19 only (36 h/wk); Yelp/LLM sources also cite Sat 10-5 and Yelp shows Wed closed, so hours look inconsistent across directories.",
+    "Directory listings (MapQuest, Yelp, bizarchive) show (855) 366-4787 while Google shows (212) 366-4787; LLMs quote both numbers.",
+    "S1 'med spa Larchmont NY': no local pack; Google shows BeautyFix's knowledge panel (4.8, 161 reviews) instead. All organic results were directories; own site not in top 10.",
+    "Google AI Overview was asynchronous with no text on all 3 searches.",
+    "gemini-2.5-flash was rate limited twice (rate_limit_exceeded); all 3 Gemini answers use gemini-3.6-flash.",
+    "Listing review count 160; live SERP shows 161.",
+    "Some LLM 'others' names may not be aesthetic businesses or may be outside Larchmont (e.g. Fountain Med Spa at the same address per spaweek, Lumiere Laser in Fairfield County)."
+  ]
+}

@@ -1,0 +1,819 @@
+{
+ "slug": "back-to-30-mcbee",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Back to 30 - McBee",
+  "brand": "Back to 30",
+  "address": "500 E McBee Avenue, Ste 107, Greenville, SC 29601",
+  "phone": "(864) 372-3341",
+  "site": "https://backto30.com",
+  "map_pin": [
+   34.8477,
+   -82.39423
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Back to 30 - McBee",
+  "google_phone": "+1864-514-4167",
+  "phone_matches_amp": false,
+  "address": "500 E McBee Ave. Ste 107, Greenville, SC 29601",
+  "distance_km": 0.0,
+  "site_url": "https://www.backto30.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 273,
+  "stars": {
+   "1": 8,
+   "2": 6,
+   "3": 1,
+   "4": 2,
+   "5": 256
+  },
+  "photos": 68,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 17,
+  "last_updated": "2026-09-14 13:15:50 +00:00",
+  "topics": [
+   {
+    "t": "front desk staff",
+    "n": 12
+   },
+   {
+    "t": "skin care",
+    "n": 8
+   },
+   {
+    "t": "injecting",
+    "n": 7
+   },
+   {
+    "t": "fillers",
+    "n": 5
+   },
+   {
+    "t": "clean office",
+    "n": 4
+   },
+   {
+    "t": "skilled technicians",
+    "n": 3
+   },
+   {
+    "t": "dermaplane",
+    "n": 2
+   },
+   {
+    "t": "informative consultation",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Emsculpt Treatment",
+    "category": "Body Contouring",
+    "price_usd": 450
+   },
+   {
+    "title": "DiamondGlow Treatment",
+    "category": "Medical Spa",
+    "price_usd": 300
+   },
+   {
+    "title": "Dermaplane",
+    "category": "Medical Spa",
+    "price_usd": 79
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Augusta Road Aesthetics",
+    "rating": 5,
+    "reviews": 525
+   },
+   {
+    "name": "The Aesthetic Collective",
+    "rating": 5,
+    "reviews": 140
+   },
+   {
+    "name": "Chic MD - The Skin Bar",
+    "rating": 5,
+    "reviews": 85
+   }
+  ],
+  "weekly_open_hours": 42,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 79
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 94
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Greenville SC",
+   "prompt": "med spa Greenville SC",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Augusta Road Aesthetics",
+     "Back to 30 - McBee",
+     "Chic MD - The Skin Bar"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Elase Med Spa",
+      "Studio M Aesthetics",
+      "Arvé Aesthetics",
+      "Push Med",
+      "RevitaLux Medical Spa",
+      "Southside Medical and Laser Center"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "The Med Spa on Augusta",
+      "Augusta Road Aesthetics",
+      "Spa North",
+      "Skin Theory Aesthetic Medicine",
+      "Arvé Aesthetics",
+      "Aura Aesthetics & Wellness",
+      "The Skin Bar Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "OptimalSelf MD",
+      "Augusta Road Aesthetics",
+      "Vitalwave Laser Healing & MedSpa",
+      "Alma Rose",
+      "Spa North GVL",
+      "Elase Med Spa",
+      "Greenville Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Elase Med Spa",
+      "Alma Rose",
+      "The Med Spa on Augusta",
+      "Believe Image",
+      "Push Med",
+      "Bare N Beautiful",
+      "Magnolia Medical Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Greenville SC",
+   "prompt": "botox Greenville SC",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Augusta Road Aesthetics",
+     "Back to 30 - McBee",
+     "Bliss Beauty Aesthetics & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Piedmont Plastic Surgery",
+      "Greenville Facial Plastic Surgery",
+      "LeJeune Aesthetic Centers",
+      "Brio Aesthetics",
+      "Bare N Beautiful",
+      "Aura Aesthetics & Wellness",
+      "Advanced Cosmetic Surgery"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Augusta Road Aesthetics",
+      "The Med Spa on Augusta",
+      "Brio Aesthetics",
+      "Arvé Aesthetics",
+      "OptimalSelf MD"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Advanced Cosmetic Surgery",
+      "Allure Medical",
+      "Augusta Road Aesthetics",
+      "Elase Med Spa",
+      "Holland Eye Center",
+      "Upstate Plastic Surgery"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Advanced Cosmetic Surgery",
+      "Bliss Beauty Aesthetics & Wellness",
+      "Greenville Facial Plastic Surgery",
+      "Millstone Aesthetics",
+      "Augusta Road Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Greenville, SC",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Augusta Road Aesthetics",
+     "Bliss Beauty Aesthetics & Wellness",
+     "Back to 30 - McBee"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Advanced Derm And Cosmetic Surgery",
+      "Adcs Clinics, LLC",
+      "Woodhouse Spa",
+      "OptimalSelf MD",
+      "Augusta Road Aesthetics",
+      "Sauna House Greenville",
+      "Elase Med Spa",
+      "Arvé Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Spa North",
+      "The Med Spa on Augusta",
+      "Augusta Road Aesthetics",
+      "Arvé Aesthetics",
+      "Aura Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "OptimalSelf MD",
+      "Augusta Road Aesthetics",
+      "The Aesthetic Collective",
+      "Magnolia Medical Aesthetics",
+      "Vitalwave Laser Healing & MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "OptimalSelf MD",
+      "Bliss Beauty Aesthetics & Wellness",
+      "Magnolia Medical Aesthetics",
+      "Augusta Road Aesthetics",
+      "Alchemy West"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (864) 514-4167 differs from AMP-listed (864) 372-3341; Claude answers cite (864) 372-3341 from backto30.com/greenville-mcbee, so the site and GBP disagree.",
+  "Sister listing 'Back to 30 - Greenville' (3101 SC-14 Ste 1, 29615; 4.8/411; phone +1864-475-9444) shares the same description and backto30.com URL.",
+  "S1 organic: Yelp shows a 'BACK TO 30 - CLOSED' page for old address 2 Maple Tree Ct, Ste A, Greenville 29615; stale citation risk. Press Advantage 2020 article ranks #4 organic; not the brand's own site, so organic_pos null.",
+  "backto30.com does not rank in organic top 10 for any of S1-S3; S3 organic results are out-of-market (Cincinnati, Atlanta, Troy AL etc.).",
+  "All three SERPs have an asynchronous AI Overview with no text (aio=unreadable).",
+  "SERP map pack review count shows 279 vs listings API 273 (fresher SERP data).",
+  "gemini-2.5-flash rate limited twice (rate_limit_exceeded) for all 3 prompts; used gemini-3.6-flash instead.",
+  "Listing services: only 10 returned by API; 7 have $0 (consult/injectable placeholders), so prices list holds 3 items.",
+  "Brand-level naming: ChatGPT S2, Gemini S2/S3 named 'Back to 30' (brand/multi-location), counted as named."
+ ]
+}

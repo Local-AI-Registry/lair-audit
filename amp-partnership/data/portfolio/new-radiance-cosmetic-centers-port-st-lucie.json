@@ -1,0 +1,918 @@
+{
+ "slug": "new-radiance-cosmetic-centers-port-st-lucie",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "New Radiance Cosmetic Centers- Port St. Lucie",
+  "brand": "New Radiance Cosmetic Centers",
+  "address": "318 NW Bethany Drive, Port St. Lucie, FL 34986",
+  "phone": "(772) 301-1047",
+  "website": "https://newradiancenow.com",
+  "lat": 27.31905,
+  "lng": -80.3884
+ },
+ "listing": {
+  "found": true,
+  "title": "New Radiance Cosmetic Centers - Port St. Lucie",
+  "google_phone": "+1772-266-5795",
+  "phone_matches_amp": false,
+  "address": "318 NW Bethany Dr, Port St. Lucie, FL 34986",
+  "distance_km": 0.0,
+  "site_url": "https://newradiancenow.com/locations/port-st-lucie/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 545,
+  "stars": {
+   "1": 23,
+   "2": 2,
+   "3": 6,
+   "4": 11,
+   "5": 503
+  },
+  "photos": 69,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 16,
+  "last_updated": "2026-09-12 18:20:57 +00:00",
+  "topics": [
+   {
+    "t": "injector",
+    "n": 14
+   },
+   {
+    "t": "nurse practitioner",
+    "n": 9
+   },
+   {
+    "t": "clean office",
+    "n": 9
+   },
+   {
+    "t": "expert staff",
+    "n": 8
+   },
+   {
+    "t": "cosmetic center",
+    "n": 6
+   },
+   {
+    "t": "dermal fillers",
+    "n": 3
+   },
+   {
+    "t": "lip treatment",
+    "n": 2
+   },
+   {
+    "t": "cheek fillers",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Hyperdilute Radiesse (+) One Syringe",
+    "category": "Injectables",
+    "price_usd": 750
+   },
+   {
+    "title": "LHR (Medium Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 185
+   },
+   {
+    "title": "HydraFacial Signature Treatment",
+    "category": "Medical Spa",
+    "price_usd": 199
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Refresh - Aesthetics & Wellness",
+    "rating": 4.9,
+    "reviews": 731
+   },
+   {
+    "name": "PSL Laser and Aesthetics",
+    "rating": 5,
+    "reviews": 22
+   },
+   {
+    "name": "USA Aesthetics",
+    "rating": 4.9,
+    "reviews": 112
+   },
+   {
+    "name": "CoolSculpting Center of Excellence - Port St Lucie West Specialty",
+    "rating": 5,
+    "reviews": 1
+   },
+   {
+    "name": "Relive Tradition",
+    "rating": 4.9,
+    "reviews": 250
+   }
+  ],
+  "weekly_open_hours": 46,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Port St. Lucie FL",
+   "prompt": "med spa Port St. Lucie FL",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Port St. Lucie Medical Wellness",
+     "Refresh - Aesthetics & Wellness",
+     "New Radiance Cosmetic Centers - Port St. Lucie"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Lee Plastic Surgery & Medical Spa",
+      "Luxe Wellness Med Spa",
+      "USA Aesthetics",
+      "Sejour Medical Aesthetics",
+      "Vinyard Institute of Plastic Surgery (VIPS) Med Spa",
+      "Refresh - Aesthetics & Wellness",
+      "Port St. Lucie Medical Wellness",
+      "SkinRise Wellness & MedSpa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Vinyard Institute of Plastic Surgery (VIPS Medspa)",
+      "SkinRise Wellness & MedSpa",
+      "Refresh Aesthetics & Wellness",
+      "Neurostrive Hydration & Med Spa",
+      "Port St. Lucie Medical Wellness",
+      "Sejour Medical Aesthetics",
+      "Luxe Wellness Med Spa",
+      "Soleil Med Spa + Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Port St. Lucie Medical Wellness",
+      "Luxe Wellness Med Spa",
+      "Soleil Med Spa + Wellness",
+      "Lee Plastic Surgery & Medical Spa",
+      "Nouveau Med.SPA",
+      "SkinRise Wellness & MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Blissful Contour Med Spa",
+      "SkinRise Med Spa",
+      "USA Aesthetics",
+      "Luxe Wellness Med Spa",
+      "Soleil Med Spa & Wellness",
+      "Sejour Medical Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Port St. Lucie FL",
+   "prompt": "botox Port St. Lucie FL",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Port St. Lucie Medical Wellness",
+     "Refresh - Aesthetics & Wellness",
+     "New Radiance Cosmetic Centers - Port St. Lucie"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Luxe Wellness Med Spa",
+      "USA Aesthetics",
+      "Lee Plastic Surgery & Medical Spa",
+      "Sejour Medical Aesthetics",
+      "Soleil Spa & Wellness",
+      "Florida Vision Institute"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "USA Aesthetics",
+      "Soleil Med Spa",
+      "Refresh - Aesthetics & Wellness",
+      "Vinyard Institute of Plastic Surgery (VIPS Medspa)",
+      "Aspire Aesthetics",
+      "Florida Vision Institute",
+      "Romagosa Dermatology Group",
+      "Cynthia Rogers, MD Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Relive Health - Tradition",
+      "PSL Health",
+      "Refresh Aesthetics & Wellness",
+      "Port St. Lucie Medical Wellness",
+      "Sejour Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "USA Aesthetics",
+      "USA Dental",
+      "Lickstein Plastic Surgery",
+      "Romagosa Dermatology Group"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Port St. Lucie, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": 5,
+    "aio": "named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Luxe Wellness Med Spa",
+      "Sejour Medical Aesthetics",
+      "Vinyard Institute of Plastic Surgery",
+      "USA Aesthetics",
+      "Refresh - Aesthetics & Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Refresh - Aesthetics & Wellness",
+      "Vinyard Institute of Plastic Surgery (VIPS Medspa)",
+      "Port St. Lucie Medical Wellness",
+      "Sejour Medical Aesthetics",
+      "Water's Edge Dermatology",
+      "Lee Plastic Surgery & Medical Spa",
+      "Aspire Aesthetics",
+      "Luxe Wellness Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Refresh - Aesthetics & Wellness",
+      "Port St. Lucie Medical Wellness",
+      "Bienestar Medical Center & Medical Spa",
+      "Lee Plastic Surgery & Medical Spa",
+      "SkinRise Wellness & MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Club Med Spa by L'Occitane",
+      "Oasis Med Spa",
+      "Port St. Lucie Medical Wellness",
+      "Lee Plastic Surgery & Medical Spa",
+      "USA Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (772) 266-5795 differs from AMP-listed (772) 301-1047 (likely tracking vs main line); site is the location page on newradiancenow.com.",
+  "Google lat/lng returned rounded (27.319,-80.388); distance to AMP pin ~0.04 km.",
+  "S1/S2: AI Overview asynchronous with no text (unreadable). S3 'best med spa near me' had no local_pack; AI Overview was a places list naming the business 3rd (after PSL Medical Wellness and Refresh), so map_pos null and map_pack empty.",
+  "S3 organic_pos 5 = newradiancenow.com Port St. Lucie location page.",
+  "Gemini named the brand in all 3 prompts; Claude only in S1; ChatGPT and Perplexity in none. Perplexity named none on S1 even though citing ClinicCompass page mentioning New Radiance.",
+  "Most Google services list price 'From $0.00'; only 3 priced services >0. Business description mentions Smart Liposuction (surgical) but primary category is Medical spa.",
+  "No model substitutions; SERP location_name Port St. Lucie,Florida,United States worked."
+ ]
+}

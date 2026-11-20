@@ -1,0 +1,848 @@
+{
+  "slug": "glo-med-spa-winterville",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Glo Med Spa - Winterville",
+    "brand": "Glo Med Spa",
+    "address": "2025 Flower Dr, Unit 4, Winterville, NC 28590",
+    "phone": "(252) 216-4639",
+    "website": "https://glomedspa.com",
+    "lat": 35.54646,
+    "lng": -77.40255
+  },
+  "listing": {
+    "found": true,
+    "title": "Glo MedSpa - Winterville",
+    "google_phone": "+1252-599-5357",
+    "phone_matches_amp": false,
+    "address": "2025 Flower Dr Unit 4, Winterville, NC 28590",
+    "distance_km": 0.1,
+    "site_url": "https://glomedspa.com/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": [
+      "Medical spa",
+      "Laser hair removal service",
+      "Skin care clinic"
+    ],
+    "rating": 5,
+    "reviews": 182,
+    "stars": {
+      "1": 0,
+      "2": 1,
+      "3": 0,
+      "4": 2,
+      "5": 179
+    },
+    "photos": 32,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 13,
+    "last_updated": "2026-09-14 18:19:56 +00:00",
+    "topics": [
+      {
+        "t": "knowledgeable aesthetician",
+        "n": 4
+      },
+      {
+        "t": "custom facial",
+        "n": 3
+      },
+      {
+        "t": "lip flip",
+        "n": 3
+      },
+      {
+        "t": "explained process",
+        "n": 3
+      },
+      {
+        "t": "blackhead removal",
+        "n": 2
+      },
+      {
+        "t": "brow shaping",
+        "n": 2
+      },
+      {
+        "t": "facial consultation",
+        "n": 2
+      },
+      {
+        "t": "lash lift",
+        "n": 2
+      }
+    ],
+    "services_count": null,
+    "prices": [],
+    "also_search": [
+      {
+        "name": "Vogue Lashes & Spa - Greenville",
+        "rating": 4.5,
+        "reviews": 2
+      },
+      {
+        "name": "Refresh Mobile Medspa",
+        "rating": null,
+        "reviews": null
+      },
+      {
+        "name": "Alive Wellness & Aesthetics",
+        "rating": 4.8,
+        "reviews": 38
+      },
+      {
+        "name": "Salt Beauty and Wellness",
+        "rating": 4.7,
+        "reviews": 143
+      }
+    ],
+    "weekly_open_hours": 52.0,
+    "cid": "6966078861640474816",
+    "place_id": "ChIJNZpzuQPDrokRwCBwGdF7rGA",
+    "popular_times": {
+      "popular_times_by_days": {
+        "monday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 61
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "tuesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 27
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 11
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 11
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 16
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "wednesday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 100
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 94
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "thursday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 16
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 66
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 77
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 17
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 18
+            },
+            "popular_index": 50
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "friday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 44
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 15
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 16
+            },
+            "popular_index": 55
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ],
+        "saturday": [
+          {
+            "time": {
+              "hour": 6
+            }
+          },
+          {
+            "time": {
+              "hour": 7
+            }
+          },
+          {
+            "time": {
+              "hour": 8
+            }
+          },
+          {
+            "time": {
+              "hour": 9
+            },
+            "popular_index": 27
+          },
+          {
+            "time": {
+              "hour": 10
+            },
+            "popular_index": 27
+          },
+          {
+            "time": {
+              "hour": 11
+            },
+            "popular_index": 38
+          },
+          {
+            "time": {
+              "hour": 12
+            },
+            "popular_index": 33
+          },
+          {
+            "time": {
+              "hour": 13
+            },
+            "popular_index": 27
+          },
+          {
+            "time": {
+              "hour": 14
+            },
+            "popular_index": 27
+          },
+          {
+            "time": {
+              "hour": 15
+            }
+          },
+          {
+            "time": {
+              "hour": 16
+            }
+          },
+          {
+            "time": {
+              "hour": 17
+            }
+          },
+          {
+            "time": {
+              "hour": 18
+            }
+          },
+          {
+            "time": {
+              "hour": 19
+            }
+          },
+          {
+            "time": {
+              "hour": 20
+            }
+          },
+          {
+            "time": {
+              "hour": 21
+            }
+          },
+          {
+            "time": {
+              "hour": 22
+            }
+          },
+          {
+            "time": {
+              "hour": 23
+            }
+          }
+        ]
+      }
+    }
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa Winterville NC",
+      "prompt": "med spa Winterville NC",
+      "google": {
+        "map_pos": null,
+        "map_pack": [],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox Winterville NC",
+      "prompt": "botox Winterville NC",
+      "google": {
+        "map_pos": 1,
+        "map_pack": [
+          "Glo MedSpa - Winterville",
+          "Alive Wellness & Aesthetics",
+          "Lux Injections and IV Wellness PLLC"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics",
+            "Eastern Dermatology and Pathology",
+            "Refresh Mobile Medspa",
+            "Magnolia Place Med Assoc of Gre"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in Winterville, NC",
+      "google": {
+        "map_pos": 1,
+        "map_pack": [
+          "Glo MedSpa - Winterville",
+          "Beaute par co",
+          "Beauty Bar Medispa"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics",
+            "Beauty Bar Medispa"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Alive Wellness & Aesthetics"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing not returned when searching title 'Glo Med Spa' / 'Glo Med Spa Winterville' (Google title is 'Glo MedSpa - Winterville', no space); found via title 'Glo' within 30 km.",
+    "Phone mismatch: Google listing phone (252) 599-5357 vs AMP-listed (252) 216-4639. AMP number matches the Greenville-Pitt Chamber listing and is what ChatGPT/Perplexity/Claude repeat; MapQuest shows yet another number (252) 216-4613. NAP inconsistency across directories.",
+    "Listing returned no services or price data (services_count null, prices empty).",
+    "S1 'med spa Winterville NC': no local pack; a knowledge panel for Glo MedSpa - Winterville (188 reviews, 5.0) appeared instead, but the organic results were dominated by the Wilmington Glo MedSpa location (MapQuest, Facebook, Demandforce, Instagram), not Winterville.",
+    "Listing API shows 182 reviews (data last updated 2026-09-14); live SERP shows 188 reviews.",
+    "glomedspa.com homepage title is 'Best Med Spa in Wilmington, NC' - shared brand site with Wilmington; Winterville has its own page /winterville-nc/. Google listing links to the homepage, not the location page.",
+    "S3 SERP 'best med spa near me' organic results were irrelevant (medspaflorida.com, Charleston); all three AI overviews were asynchronous with no readable text.",
+    "No model substitutions; all 12 LLM calls succeeded and all named Glo MedSpa."
+  ]
+}

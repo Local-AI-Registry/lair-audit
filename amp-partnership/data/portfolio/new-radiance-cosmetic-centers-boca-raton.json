@@ -1,0 +1,821 @@
+{
+ "slug": "new-radiance-cosmetic-centers-boca-raton",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "New Radiance Cosmetic Centers- Boca Raton",
+  "brand": "New Radiance Cosmetic Centers",
+  "address": "1865 NW 2nd Ave, Suite 102, Boca Raton, FL 33432",
+  "phone": "(561) 576-2245",
+  "site": "https://newradiancenow.com",
+  "lat": 26.36682,
+  "lng": -80.09058
+ },
+ "listing": {
+  "found": true,
+  "title": "New Radiance Cosmetic Centers - Boca Raton",
+  "google_phone": "+1561-960-3402",
+  "phone_matches_amp": false,
+  "address": "1865 NW 2nd Ave Ste 102, Boca Raton, FL 33432",
+  "distance_km": 0.0,
+  "site_url": "https://newradiancenow.com/locations/boca-raton/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 202,
+  "stars": {
+   "1": 9,
+   "2": 1,
+   "3": 0,
+   "4": 5,
+   "5": 187
+  },
+  "photos": 22,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-20 20:40:04 +00:00",
+  "topics": [
+   {
+    "t": "coolsculpting",
+    "n": 6
+   },
+   {
+    "t": "clean facility",
+    "n": 6
+   },
+   {
+    "t": "weight loss",
+    "n": 4
+   },
+   {
+    "t": "genuine care",
+    "n": 4
+   },
+   {
+    "t": "hydrafacial",
+    "n": 4
+   },
+   {
+    "t": "esthetician",
+    "n": 3
+   },
+   {
+    "t": "rewards program",
+    "n": 2
+   },
+   {
+    "t": "bedside manner",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Emsculpt Neo",
+    "category": "Body Contouring",
+    "price_usd": 550
+   },
+   {
+    "title": "Hyperdilute Radiesse (+) One Syringe",
+    "category": "Injectables",
+    "price_usd": 750
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Cosmetica",
+    "rating": 4.8,
+    "reviews": 1336
+   },
+   {
+    "name": "azure med spa boca",
+    "rating": 5,
+    "reviews": 26
+   },
+   {
+    "name": "Injection Perfection Medical Spa",
+    "rating": 5,
+    "reviews": 198
+   },
+   {
+    "name": "Allure Aesthetics",
+    "rating": 5,
+    "reviews": 275
+   },
+   {
+    "name": "Beauty Medica",
+    "rating": 4.2,
+    "reviews": 5
+   }
+  ],
+  "weekly_open_hours": 40,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 20
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 86
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Boca Raton FL",
+   "prompt": "med spa Boca Raton FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "COSMETICA MED SPA",
+     "Icon MD Medical Spa + Laser Center Boca Raton",
+     "4Ever Young Med Spa & Wellness Center - Boca Raton"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Eden Med Spa",
+      "Cosmetica Med Spa",
+      "AuraMed Aesthetics",
+      "GlowU Med Spa",
+      "Facial Mania Med Spa",
+      "Jiva Med Spa",
+      "LAVI Med Spa",
+      "ZenTox Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Pearl Med Spa",
+      "glowU Med Spa",
+      "Better Me Med Spa",
+      "Peace Love Med Aesthetic Rejuvenation",
+      "Sanctuary Medical Aesthetic Center",
+      "Glamor Medical",
+      "Asoka MedSpa",
+      "Lasers Medical Aesthetic Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Boca Laser & Medical Spa",
+      "Better Me Med Spa",
+      "Glow U Med Spa",
+      "Lavi Med Spa",
+      "Jiva Med Spa",
+      "Infinite Serenity Med Spa",
+      "InjectRX Wellness"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Sanctuary Medical Aesthetic Center",
+      "Glamor Medical",
+      "Peace Love Med Spa",
+      "AuraMed Aesthetics",
+      "LAVI Med Spa",
+      "All About Aesthetics",
+      "Pearl Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Boca Raton FL",
+   "prompt": "botox Boca Raton FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": 4,
+    "aio": "not_named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Boca Botox & Dermal Fillers with Donna Ennis, ARNP",
+      "Rendon Aesthetics Medical Spa",
+      "Skin Place Institute",
+      "Boca Medical Aesthetics",
+      "Peace Love Med Aesthetic Balancing",
+      "Hamptons Medical Associates",
+      "Pearl Med Spa",
+      "Cosmetica Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Rendon Center for Dermatology & Aesthetic Medicine",
+      "Cosmetica Med Spa",
+      "Bella Derma Boca Spa",
+      "Pearl Med Spa",
+      "IconMD Med Spa",
+      "Dermatology of Boca",
+      "Personal Physician Care",
+      "Lumiere Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Dermatology of Boca",
+      "Rendon Center for Dermatology",
+      "Boca Raton Plastic Surgery Center (Dr. Cristina Keusch)",
+      "Brazelia MedSpa",
+      "4Ever Young Boca Raton",
+      "Boca Laser & Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Rendon Center for Dermatology",
+      "Prestige Aesthetics Clinic",
+      "Boca Medical Aesthetics",
+      "Dermatology of Boca",
+      "Icon MD Medical Spa + Laser Center",
+      "Sol Luna Aesthetics",
+      "Boca Botox"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Boca Raton, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Eden Med Spa",
+      "FLAUNT. MED SPA",
+      "ZenTox Aesthetics",
+      "Cosmetica Med Spa",
+      "AuraMed Aesthetics",
+      "Ora Wellness and Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Peace Love Med Aesthetic Rejuvenation",
+      "4Ever Young Anti-Aging Solutions",
+      "Better Me Med Spa",
+      "Glamor Medical",
+      "Sanctuary Medical Aesthetic Center",
+      "glowU Med Spa",
+      "FLAUNT. MED SPA",
+      "AlluraMD Aesthetics + Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Peace Love Med Aesthetic Rejuvenation",
+      "4Ever Young Med Spa & Wellness Center",
+      "Dharma Nutrition Clinic",
+      "Boca Laser & Medical Spa",
+      "BeautySmart Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "glowU Med Spa",
+      "Peace Love Med Aesthetic Rejuvenation",
+      "Sanctuary Medical Aesthetic Center",
+      "4Ever Young Med Spa & Wellness Center",
+      "Icon MD Medical Spa + Laser Center"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone +1 561-960-3402 does not match AMP-listed (561) 576-2245.",
+  "Google website is a location page on newradiancenow.com (same domain as AMP site).",
+  "S1 local pack had a 4th sponsored entry (LAVI Med Spa, paid) excluded from map_pack.",
+  "S2 had no local pack; AI overview present listing local med spas (Peace Love Med, 4Ever Young, Cosmetica, Icon MD, Injection Perfection, ZenTox) without New Radiance. newradiancenow.com dermal-fillers page ranked organic #4 (titled 'New Radiance Med Spa').",
+  "S3 had no local pack and no AI overview.",
+  "New Radiance was not named in any of the 12 LLM answers.",
+  "Several Google services listed at $0 (consults, Botox, GLP-1 wellness); only 2 priced services recorded. Not open Saturday/Sunday per Google hours (Mon-Fri 10-18).",
+  "Listing last updated 2026-09-20; first seen 2024-07-26."
+ ]
+}

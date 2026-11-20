@@ -1,0 +1,923 @@
+{
+ "slug": "the-ageless-center",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "The AgeLess Center",
+  "brand": "The AgeLess Center",
+  "address": "2770 Lenox Road NE, Atlanta, GA 30324",
+  "phone": "(404) 233-5255",
+  "site": "https://theagelesscenter.com",
+  "lat": 33.83078,
+  "lng": -84.35669
+ },
+ "listing": {
+  "found": true,
+  "title": "The Ageless Center",
+  "google_phone": "+1404-737-3617",
+  "phone_matches_amp": false,
+  "address": "2770 Lenox Rd NE Ste B-5, Atlanta, GA 30324",
+  "distance_km": 0.1,
+  "site_url": "https://www.theagelesscenter.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.5,
+  "reviews": 498,
+  "stars": {
+   "1": 39,
+   "2": 12,
+   "3": 7,
+   "4": 19,
+   "5": 421
+  },
+  "photos": 6,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-11 12:06:22 +00:00",
+  "topics": [
+   {
+    "t": "fillers",
+    "n": 34
+   },
+   {
+    "t": "injector",
+    "n": 19
+   },
+   {
+    "t": "new ownership",
+    "n": 13
+   },
+   {
+    "t": "lip filler",
+    "n": 10
+   },
+   {
+    "t": "no bruising",
+    "n": 9
+   },
+   {
+    "t": "wait time",
+    "n": 4
+   },
+   {
+    "t": "under eye filler",
+    "n": 3
+   },
+   {
+    "t": "gentle injector",
+    "n": 2
+   }
+  ],
+  "services_count": 6,
+  "prices": [
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 325
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Be Flawless",
+    "rating": 4.9,
+    "reviews": 50
+   },
+   {
+    "name": "VanityMD Luxury Aesthetics Medspa",
+    "rating": 5,
+    "reviews": 116
+   },
+   {
+    "name": "LUX Med Spa",
+    "rating": 4.8,
+    "reviews": 194
+   },
+   {
+    "name": "Truffles Aesthetics",
+    "rating": 4.9,
+    "reviews": 132
+   },
+   {
+    "name": "Ecobel Med Spa",
+    "rating": 4.9,
+    "reviews": 435
+   }
+  ],
+  "weekly_open_hours": 44,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 26
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Atlanta GA",
+   "prompt": "med spa Atlanta GA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The House of Wellness Med Spa",
+     "Radiance Medspa Atlanta",
+     "Charette Cosmetics Medical Spa - Atlanta"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Royal Bliss Med Spa",
+      "Natural Body Spa + Med Spa",
+      "Dynamic 3 Med Spa",
+      "SKM MedSpa",
+      "NYAH Med Spa",
+      "OVME Atlanta - Buckhead"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "ELLEMES Medical Spa",
+      "Charette Cosmetics",
+      "Natural Body Spa + Med Spa",
+      "Conqr Aesthetics & Wellness",
+      "A Bless Beauty Medspa",
+      "Truffles Aesthetics",
+      "VIO Med Spa Dunwoody"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "BLUE Med Center & Spa",
+      "Natural Body Spa + Med Spa",
+      "Vinings Med Spa",
+      "Dynamic 3 Med Spa",
+      "Vento Med Spa",
+      "Olansky Dermatology & Aesthetics",
+      "Flawless Skin Boutique Med Spa",
+      "VIO Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "Atlanta Face & Body Med Spa",
+      "A Bless Beauty Medspa",
+      "Inspire Wellness & Aesthetics",
+      "NYAH Med Spa",
+      "VIO Med Spa Dunwoody",
+      "Ecobel Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Atlanta GA",
+   "prompt": "botox Atlanta GA",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "The Ageless Center",
+     "Atlanta Medical Aesthetics",
+     "dermani MEDSPA® Buckhead"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Buckhead Facial Plastic Surgery",
+      "Spa Sydell Integrative Aesthetics",
+      "Zubowicz Aesthetics",
+      "OVME Atlanta - Buckhead",
+      "AYA Medical Spa Buckhead",
+      "dermani MEDSPA® Buckhead",
+      "SLM Medspa",
+      "Atlanta MediSpa & Surgery Center - Buckhead"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Dermatology Center of Atlanta",
+      "Radiance Plastic Surgery & Aesthetic Medicine",
+      "Natural Body Spa + Med Spa",
+      "Ellemes Medical Spa",
+      "Hagopian Plastic Surgery",
+      "ME Plastic Surgery",
+      "Marisa Lawrence Plastic Surgery",
+      "SkinCeuticals SkinLab Atlanta"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Atlanta Face & Body",
+      "The K Spa",
+      "Blue Divine",
+      "Nip & Tuck Plastic Surgery",
+      "Medical Dermatology Specialists",
+      "Atlanta Dermatologic Surgery"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Dermatology Center of Atlanta",
+      "Skin Pharm",
+      "Natural Body Spa + Med Spa",
+      "LaserAway Atlanta - Buckhead",
+      "DermClinicMD",
+      "Nip & Tuck Plastic Surgery"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Atlanta, GA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+     "Skin Social Medical Spa",
+     "Charette Cosmetics Medical Spa - Atlanta"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "MetroDerm & Center for Plastic Surgery - Sandy Springs",
+      "Charette Cosmetics Medical Spa - Atlanta",
+      "Dermatology Consultants, P.C.",
+      "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+      "Balanced Aesthetics + Wellness",
+      "SkinSpirit - Buckhead",
+      "ELLEMES Medical Spa",
+      "AYA Medical Spa - Buckhead"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+      "ELLEMES Medical Spa",
+      "Charette Cosmetics Medical Spa",
+      "Balanced Aesthetics + Wellness",
+      "Conqr Aesthetics & Wellness",
+      "Skin Pharm",
+      "Derm Clinic M.D.",
+      "CULT Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+      "Skin Social Medical Spa",
+      "Balanced Aesthetics + Wellness",
+      "CULT Aesthetics",
+      "Derm Clinic M.D.",
+      "Ecobel Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "ELLEMES Medical Spa",
+      "Atlanta Medical Aesthetics",
+      "Radiance Medspa",
+      "AYA Medical Spa",
+      "GENEVA Med"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 404-737-3617 does not match AMP-listed (404) 233-5255; AMP number appears only as a backlinks-sourced contact on the listing (also 470-226-3315).",
+  "Google lists site as www.theagelesscenter.com (same registrable domain as AMP site).",
+  "Listing place_topics include 'new ownership' (13 mentions), consistent with acquisition.",
+  "Only 1 of 6 Google services has a price >0 (Microneedling $325); others show $0.",
+  "Only 6 photos on listing; last_updated 2026-09-11.",
+  "SERP rating snapshot shows 4.6/506 reviews vs listing data 4.5/498 (data refresh lag).",
+  "All three SERPs had asynchronous AI Overviews with no text (aio=unreadable).",
+  "Gemini S2 named The Ageless Center citing theagelesscenter.com/atlanta-botox-special/; no other LLM named it.",
+  "No model substitutions; serp location 'Atlanta,Georgia,United States' worked."
+ ]
+}

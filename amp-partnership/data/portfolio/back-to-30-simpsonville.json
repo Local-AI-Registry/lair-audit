@@ -1,0 +1,794 @@
+{
+ "slug": "back-to-30-simpsonville",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Back to 30 - Simpsonville",
+  "brand": "Back to 30",
+  "address": "684 Fairview Road, Ste A, Simpsonville, SC 29680",
+  "phone": "(864) 372-3345",
+  "site": "https://backto30.com",
+  "pin": [
+   34.7078,
+   -82.25816
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Back to 30 - Simpsonville",
+  "google_phone": "+1864-651-7255",
+  "phone_matches_amp": false,
+  "address": "684 Fairview Rd Ste A, Simpsonville, SC 29680",
+  "distance_km": 0.0,
+  "site_url": "https://www.backto30.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 244,
+  "stars": {
+   "1": 4,
+   "2": 0,
+   "3": 1,
+   "4": 3,
+   "5": 236
+  },
+  "photos": 35,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 17,
+  "last_updated": "2026-09-14 18:08:52 +00:00",
+  "topics": [
+   {
+    "t": "injector",
+    "n": 12
+   },
+   {
+    "t": "lip filler",
+    "n": 8
+   },
+   {
+    "t": "painless procedure",
+    "n": 6
+   },
+   {
+    "t": "clean facility",
+    "n": 5
+   },
+   {
+    "t": "no pressure sales",
+    "n": 4
+   },
+   {
+    "t": "explaining procedures",
+    "n": 4
+   },
+   {
+    "t": "painless injections",
+    "n": 3
+   },
+   {
+    "t": "coupons and savings",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Emsculpt Treatment",
+    "category": "Body Contouring",
+    "price_usd": 450
+   },
+   {
+    "title": "Dermaplane",
+    "category": "Medical Spa",
+    "price_usd": 79
+   },
+   {
+    "title": "DiamondGlow Treatment",
+    "category": "Medical Spa",
+    "price_usd": 300
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Esthetics by Lindsey M.",
+    "rating": 5,
+    "reviews": 28
+   },
+   {
+    "name": "Body By Bijoor",
+    "rating": 4.3,
+    "reviews": 11
+   },
+   {
+    "name": "Bella Vita Spa, LLC",
+    "rating": 4.8,
+    "reviews": 18
+   },
+   {
+    "name": "Velvet Veil Aesthetics",
+    "rating": 5,
+    "reviews": 36
+   },
+   {
+    "name": "Clemson Eye Aesthetics- Simpsonville",
+    "rating": 4.9,
+    "reviews": 346
+   }
+  ],
+  "weekly_open_hours": 40,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      }
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 12
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Simpsonville SC",
+   "prompt": "med spa Simpsonville SC",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Bijou Head Spa and Nails",
+      "Clemson Eye Aesthetics- Simpsonville",
+      "Elite Health LLC",
+      "Oakview Medical Associates"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Bella Vita Spa",
+      "Anacorita Skin Care and Wellness",
+      "Clemson Eye Aesthetics",
+      "OptimalSelf MD",
+      "Greer Aesthetics MD"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Omega Laser & Skin Care",
+      "Carolina Vein Care and Aesthetics",
+      "Aruwe Day Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Bella Vita Spa",
+      "Oakview Medical Associates"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Simpsonville SC",
+   "prompt": "botox Simpsonville SC",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "named"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Clemson Eye Aesthetics",
+      "SkinGlow MD",
+      "Oakview Medical Associates",
+      "Skin Care by Anacorita",
+      "Elite Health LLC",
+      "Body By Bijoor",
+      "Carolina Vein Care and Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Oakview Medical Associates",
+      "Clemson Eye Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Clemson Eye Simpsonville",
+      "John Humeniuk, MD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Bella Vita Spa",
+      "Magnolia Medical Aesthetics",
+      "Advanced Cosmetic Surgery",
+      "Galen Healthcare & Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Simpsonville, SC",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Back to 30 - Simpsonville",
+     "Bliss Beauty Aesthetics & Wellness",
+     "Augusta Road Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Oakview Medical Associates",
+      "SkinGlow MD",
+      "Carolina Vein Care and Aesthetics",
+      "Elite Health LLC",
+      "M Studio Wellness Spa",
+      "Clemson Eye Aesthetics- Simpsonville"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "SkinGlow MD",
+      "Velvet Veil Aesthetics",
+      "Bella Vita Spa",
+      "OptimalSelf MD"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Oakview Medical Associates",
+      "Omega Laser & Skin Care",
+      "SkinGlow MD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Bella Vita Spa",
+      "OptimalSelf MD"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Phone mismatch: Google listing phone is (864) 651-7255; AMP lists (864) 372-3345. backto30.com/simpsonville, YellowPages and MapQuest show 372-3345; another YellowPages entry shows 651-7255; Claude cited (864) 372-3003 (number on backto30.com/services/botox). Inconsistent NAP across web.",
+  "Review count differs: business listings data shows 244 reviews (4.9); live SERPs on 2026-11-20 show 251. Claude S3 answer cited stale '4.8 from 216 reviews'.",
+  "Google lists Saturday/Sunday as closed; Claude S2 cited site hours 'Mon 12-5 (one Monday/month), Sat by appointment (quarterly)'.",
+  "S1 and S2: no local_pack item; S1 AI overview was a places list with Back to 30 - Simpsonville first; S2 AI overview names Back to 30 and a knowledge panel for the listing appeared. No organic result pointed to backto30.com in top 10 for any search (organic URLs are google redirect links; Back to 30 appears only via Facebook/RealSelf/PressAdvantage pages in S2).",
+  "S3 'best med spa near me' organic results were off-geo (Cincinnati, Atlanta, Myrtle Beach, Troy AL, Virginia Beach); local pack was local and ranked Back to 30 #1. AI overview asynchronous (unreadable).",
+  "Gemini gemini-2.5-flash rate limited twice (rate_limit_exceeded) for all three prompts; used gemini-3.6-flash instead.",
+  "Only 3 of 10 Google services have price > 0; injectables/consults listed at $0.",
+  "Google listing last updated 2026-09-14."
+ ]
+}

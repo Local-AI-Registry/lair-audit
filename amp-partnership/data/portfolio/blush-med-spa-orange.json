@@ -1,0 +1,854 @@
+{
+ "slug": "blush-med-spa-orange",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Blush Med Spa - Orange",
+  "brand": "Blush Med Spa",
+  "address": "33 Old Tavern Rd, Ste B, Orange, CT 6477",
+  "phone": "(860) 222-0638",
+  "site": "https://blushmedspact.com",
+  "lat": 41.26832,
+  "lng": -73.00213
+ },
+ "listing": {
+  "found": true,
+  "title": "Blush Med Spa - Orange",
+  "google_phone": "+1860-222-0638",
+  "phone_matches_amp": true,
+  "address": "33 Old Tavern Rd Ste B, Orange, CT 06477",
+  "distance_km": 0.0,
+  "site_url": "http://www.blushmedspact.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 107,
+  "stars": {
+   "1": 3,
+   "2": 0,
+   "3": 0,
+   "4": 1,
+   "5": 103
+  },
+  "photos": 18,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-16 14:03:39 +00:00",
+  "topics": [
+   {
+    "t": "injections",
+    "n": 7
+   },
+   {
+    "t": "lip filler",
+    "n": 5
+   },
+   {
+    "t": "peaceful experience",
+    "n": 4
+   },
+   {
+    "t": "personalized experience",
+    "n": 4
+   },
+   {
+    "t": "custom facial",
+    "n": 3
+   },
+   {
+    "t": "gorgeous new space",
+    "n": 3
+   },
+   {
+    "t": "zo products",
+    "n": 3
+   },
+   {
+    "t": "gentle injector",
+    "n": 2
+   }
+  ],
+  "services_count": 9,
+  "prices": [],
+  "also_search": [],
+  "weekly_open_hours": 45,
+  "cid": "16659050897418802565",
+  "place_id": "ChIJh_2HgqB16IkRhdXMG4fWMOc",
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 14
+     },
+     {
+      "time": {
+       "hour": 12
+      }
+     },
+     {
+      "time": {
+       "hour": 13
+      }
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 7
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 14
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Orange CT",
+   "prompt": "med spa Orange CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Orange",
+     "The RadianceMD"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Mao Facial Plastic Surgery",
+      "Pompa Suites",
+      "Bspaworld",
+      "Sanas Beauty Esthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Inner Glow AestheticsMD",
+      "Glam Spa",
+      "Milford Med Spa",
+      "Hand & Stone Massage and Facial Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The Radiance MD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "LeanSpa",
+      "New England NeuroRegenerative Center",
+      "Milford Med Spa",
+      "The Bella Medical Spa",
+      "Subtly Refined",
+      "Glow Coast Medical Spa",
+      "Anti-Aging Centers of Connecticut"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Orange CT",
+   "prompt": "botox Orange CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Orange",
+     "The RadianceMD"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "The RadianceMD",
+      "Restifo Plastic Surgery",
+      "Simply Natural by Jacquie LLC",
+      "Mao Facial Plastic Surgery"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Mao Facial Plastic Surgery",
+      "Inner Glow AestheticsMD",
+      "Simply Natural by Jacquie",
+      "Dermatology Physicians of Connecticut"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The RadianceMD",
+      "Mao Facial Plastic Surgery",
+      "PACT Dermatology - Orange"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Mao Facial Plastic Surgery",
+      "Restifo Plastic Surgery",
+      "Dermatology Physicians of Connecticut"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Orange, CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Orange",
+     "Milford Med Spa",
+     "The Aesthetics Loft"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Mao Facial Plastic Surgery",
+      "Pompa Suites",
+      "Bspaworld"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Mao Facial Plastic Surgery",
+      "Glam Spa",
+      "Milford Med Spa",
+      "Physicians Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The RadianceMD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Radiance MD",
+      "Milford Med Spa",
+      "Glow Coast Medical Spa",
+      "Milan Laser Hair Removal"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Single Google listing found, claimed, address/phone/site all match AMP data; Google pin rounded to 41.268,-73.002.",
+  "Listing returned no prices and no people-also-search entries; prices=[] and also_search=[].",
+  "Listings DB shows 107 reviews (last_updated 2026-09-16); live SERP local pack shows 4.9 with 110 reviews.",
+  "Google organic results are returned as google.com redirect URLs; judged by breadcrumb/website_name - blushmedspact.com not in top organic for any search (S2 has an alle.com listing citing Blush's address at rank 6, not counted).",
+  "AI Overview present but asynchronous (no text) on all 3 searches.",
+  "S3 SERP organic results dominated by irrelevant medspaflorida.com directory pages.",
+  "gemini-2.5-flash rate limited (rate_limit_exceeded) twice; used gemini-3.6-flash for all 3 Gemini prompts.",
+  "Gemini 3.6 answers list wrong phone for Blush Orange: (860) 333-6639; Claude S1 answer cites Yelp phone (203) 244-8245 - both differ from the Google/AMP number (860) 222-0638.",
+  "Claude S1 cites AMSA/PR Newswire: Blush Orange opened May 2025 as an AMP-backed new location.",
+  "Backlink contact_info includes extra phones (860-835-5495, 860-781-8544, 860-606-6879) and emails incl. info@blushmedspct.com (typo domain)."
+ ]
+}

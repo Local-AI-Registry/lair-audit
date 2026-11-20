@@ -1,0 +1,68 @@
+{
+  "slug": "destination-aesthetics-elk-grove",
+  "run_date": "2026-11-20",
+  "amp": {"name": "Destination Aesthetics - Elk Grove", "brand": "Destination Aesthetics", "address": "9299 Laguna Springs Drive, Ste #110, Elk Grove, CA 95758", "phone": "(916) 844-4913", "site": "https://destinationaesthetics.com", "pin": [38.42015, -121.39575]},
+  "listing": {
+    "found": true,
+    "title": "Destination Aesthetics Medical Spa",
+    "google_phone": "+1916-259-8415",
+    "phone_matches_amp": false,
+    "address": "9299 Laguna Springs Dr Ste 110 Suite #110, Elk Grove, CA 95758",
+    "distance_km": 0.0,
+    "site_url": "https://www.destinationaesthetics.com/contact/da-elk-grove/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Skin care clinic"],
+    "rating": 4.8,
+    "reviews": 326,
+    "stars": {"1": 11, "2": 0, "3": 2, "4": 10, "5": 303},
+    "photos": 24,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 12,
+    "last_updated": "2026-09-12 05:28:02 +00:00",
+    "topics": [{"t": "nurse injector", "n": 10}, {"t": "aesthetician", "n": 5}, {"t": "diamond glow facial", "n": 3}, {"t": "chin filler", "n": 3}, {"t": "explanation of process", "n": 3}, {"t": "chemical peel", "n": 2}, {"t": "experienced nurse", "n": 2}, {"t": "honest opinion", "n": 2}],
+    "services_count": 4,
+    "prices": [],
+    "also_search": [{"name": "Skin Therapy", "rating": 5, "reviews": 46}, {"name": "Urban Medical Aesthetics Beauty Bar (Laser Medspa)", "rating": 4.9, "reviews": 31}, {"name": "Just Aesthetics MD", "rating": 4.5, "reviews": 8}, {"name": "Elevate Laser Spa", "rating": 5, "reviews": 4}, {"name": "Smile Maker Spa & Skincare", "rating": 4.3, "reviews": 79}],
+    "weekly_open_hours": 39.17,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {"key": "S1", "q": "med spa Elk Grove CA", "prompt": "med spa Elk Grove CA",
+     "google": {"map_pos": 1, "map_pack": ["Destination Aesthetics Medical Spa - Elk Grove", "Urban Medical Aesthetics Beauty Bar (Laser Medspa)", "K-Method MedSpa"], "organic_pos": null, "aio": "none"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["K-Method MedSpa", "CynSational Aesthetics", "K3 Health & Wellness", "Elevate Laser Spa", "LaserAway", "Just Aesthetics MD"]},
+       "gemini": {"named": 1, "others": ["K3 Health & Wellness", "Pacific Skin Institute", "Total Sculpting", "LaserAway Elk Grove", "K-Method MedSpa", "At Your Best Wellness & Aesthetics", "CynSational Aesthetics", "Urban Medical Aesthetics Beauty Bar"]},
+       "perplexity": {"named": 1, "others": ["K3 Health & Wellness", "At Your Best Wellness & Aesthetics", "Just Aesthetics MD", "Urban Medical Aesthetics Beauty Bar", "Modern NewSkin", "Calvine Medical Aesthetics"]},
+       "claude": {"named": 1, "others": ["Camden Aesthetics", "Medspa of Sacramento", "Just Aesthetics MD", "Urban Medical Aesthetics Beauty Bar", "Elevate Laser Spa", "SkinHub MD", "Organic Skin Studio", "Angell Medical Spa"]}
+     }},
+    {"key": "S2", "q": "botox Elk Grove CA", "prompt": "botox Elk Grove CA",
+     "google": {"map_pos": 1, "map_pack": ["Destination Aesthetics Medical Spa - Elk Grove", "Urban Medical Aesthetics Beauty Bar (Laser Medspa)", "K-Method MedSpa"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["K-Method MedSpa", "CynSational Aesthetics", "LaserAway Elk Grove", "James Mark Salon - Just Aesthetics MD", "At Your Best Wellness & Aesthetics", "K3 Health & Wellness"]},
+       "gemini": {"named": 0, "others": ["LaserAway Elk Grove", "Just Aesthetics MD", "CynSational Aesthetics", "Medspa of Sacramento", "Rejuvenation Aesthetics & Medicine", "Pacific Skin Institute", "Total Sculpting", "K3 Health & Wellness"]},
+       "perplexity": {"named": 1, "others": ["LaserAway Elk Grove", "K3 Health & Wellness", "K-Method MedSpa", "CynSational Aesthetics", "At Your Best Wellness & Aesthetics"]},
+       "claude": {"named": 1, "others": ["LaserAway Elk Grove", "Just Aesthetics MD", "James Mark Salon", "Precision M.D.", "Camden Dental Care"]}
+     }},
+    {"key": "S3", "q": "best med spa near me", "prompt": "best med spa in Elk Grove, CA",
+     "google": {"map_pos": 1, "map_pack": ["Destination Aesthetics Medical Spa - Elk Grove", "Urban Medical Aesthetics Beauty Bar (Laser Medspa)", "K3 Health & Wellness"], "organic_pos": 2, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["K-Method MedSpa", "CynSational Aesthetics", "James Mark Salon - Just Aesthetics MD", "K3 Health & Wellness", "Elevate Laser Spa"]},
+       "gemini": {"named": 1, "others": ["K3 Health & Wellness", "Total Sculpting", "Allure Med Spa", "Just Aesthetics MD", "Pacific Skin Institute", "At Your Best Wellness & Aesthetics", "Urban Medical Aesthetics Beauty Bar"]},
+       "perplexity": {"named": 1, "others": ["K3 Health & Wellness", "Pacific Skin Institute", "Total Sculpting", "K-Method MedSpa"]},
+       "claude": {"named": 1, "others": ["K3 Health & Wellness", "Just Aesthetics MD", "At Your Best Wellness & Aesthetics", "CynSational Aesthetics"]}
+     }}
+  ],
+  "notes": [
+    "Google listing phone (916) 259-8415 does not match AMP-listed (916) 844-4913; the brand website and Yelp use 844-4913, while Google, Explore Elk Grove, YellowPages and promptloop use 259-8415 (possible call-tracking number; inconsistent NAP).",
+    "Google listing website points to /contact/da-elk-grove/ rather than the /location/elk-grove/ page that ranks organically.",
+    "Hours conflict: Google shows Mon-Thu 9:20-5:10, Fri 8:20-4:10, Sat closed; website says Mon-Thu 9:15-5, Fri 8:15-4, plus one Saturday per month.",
+    "Business listings search returned 326 reviews (last_updated 2026-09-12); the live SERP local pack shows 341 reviews.",
+    "popular_times was not returned by business_listings_search; stored as null.",
+    "No priced services on the Google listing (4 service groups, none with prices).",
+    "S1 and S2 organic: brand only appears via third-party pages (exploreelkgrove.com directory, Instagram), not destinationaesthetics.com, so organic_pos is null. One S2 Instagram result showing the brand's text and phone is labeled 'umabeautybar' (a competitor) in the SERP.",
+    "SERP location_name 'Elk Grove,California,United States' worked; no model substitutions; all 12 LLM calls succeeded."
+  ]
+}

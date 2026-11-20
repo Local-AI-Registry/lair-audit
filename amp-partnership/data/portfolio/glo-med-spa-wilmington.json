@@ -1,0 +1,926 @@
+{
+ "slug": "glo-med-spa-wilmington",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Glo Med Spa - Wilmington",
+  "brand": "Glo Med Spa",
+  "address": "1613 Military Cutoff Road, Ste 110, Wilmington, NC 28403",
+  "phone": "(910) 256-2690",
+  "site": "https://glomedspa.com",
+  "lat": 34.22102,
+  "lng": -77.83125
+ },
+ "listing": {
+  "found": true,
+  "title": "Glo Medspa - Wilmington",
+  "google_phone": "+1910-941-8342",
+  "phone_matches_amp": false,
+  "address": "1613 Military Cutoff Rd Ste 110, Wilmington, NC 28403",
+  "distance_km": 0.0,
+  "site_url": "https://glomedspa.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 1232,
+  "stars": {
+   "1": 20,
+   "2": 6,
+   "3": 8,
+   "4": 19,
+   "5": 1179
+  },
+  "photos": 343,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-11 19:40:23 +00:00",
+  "topics": [
+   {
+    "t": "hydrafacial",
+    "n": 32
+   },
+   {
+    "t": "injectables",
+    "n": 14
+   },
+   {
+    "t": "relaxing facial",
+    "n": 10
+   },
+   {
+    "t": "laser treatment",
+    "n": 5
+   },
+   {
+    "t": "skin treatments",
+    "n": 5
+   },
+   {
+    "t": "dermafacial",
+    "n": 3
+   },
+   {
+    "t": "microblading",
+    "n": 3
+   },
+   {
+    "t": "skin transformation",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "HydraFacial Signature Treatment",
+    "category": "Medical Spa",
+    "price_usd": 215
+   },
+   {
+    "title": "Glo & Go Hydrafacial",
+    "category": "Medical Spa",
+    "price_usd": 195
+   },
+   {
+    "title": "Hydrafacial (with Dermaplane)",
+    "category": "Medical Spa",
+    "price_usd": 245
+   },
+   {
+    "title": "Custom Facial",
+    "category": "Medical Spa",
+    "price_usd": 150
+   },
+   {
+    "title": "HydraFacial Deluxe Treatment",
+    "category": "Medical Spa",
+    "price_usd": 275
+   }
+  ],
+  "also_search": [
+   {
+    "name": "SALT - A Well Labs+ Medspa",
+    "rating": 5,
+    "reviews": 280
+   },
+   {
+    "name": "Head To Toe Med Spa",
+    "rating": 5,
+    "reviews": 453
+   },
+   {
+    "name": "Self Skin Studio",
+    "rating": 5,
+    "reviews": 320
+   },
+   {
+    "name": "The Spa at Laser Hair Removal and Skin Clinic, Inc.",
+    "rating": 5,
+    "reviews": 16
+   },
+   {
+    "name": "BOUQ Skin",
+    "rating": 5,
+    "reviews": 400
+   }
+  ],
+  "weekly_open_hours": 51,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 94
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 91
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 77
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 97
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 74
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Wilmington NC",
+   "prompt": "med spa Wilmington NC",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Glo Medspa - Wilmington",
+     "Head To Toe Med Spa",
+     "SALT - A Well Labs+ Medspa"
+    ],
+    "organic_pos": 2,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "HD Medical & Aesthetics",
+      "SALT - A Well Labs+ Medspa",
+      "Head To Toe Med Spa",
+      "Wilmington Plastic Surgery & Med Spa",
+      "United Medical and Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "United Medical and Aesthetics",
+      "SALT - A Well Labs+ Medspa",
+      "Blue Medical Aesthetics",
+      "Self Skin Studio"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Head To Toe Med Spa",
+      "Wilmington Plastic Surgery & Med Spa",
+      "Beach Medical Aesthetics",
+      "SALT - A Well Labs+ Medspa",
+      "Reverse Aesthetics Medspa & Wellness",
+      "Pure Cosmetics of Wilmington"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Wilmington Plastic Surgery and Med Spa",
+      "Self Skin Studio",
+      "United Medical and Aesthetics",
+      "Wave Aesthetics",
+      "HD Medical & Aesthetics",
+      "Head to Toe Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Wilmington NC",
+   "prompt": "botox Wilmington NC",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Glo Medspa - Wilmington",
+     "Head To Toe Med Spa",
+     "Beach Medical Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Wilmington Plastic Surgery & Med Spa",
+      "Redefined Aesthetics",
+      "Seaside Aesthetics",
+      "Head To Toe Med Spa",
+      "House of Aesthetics Med Spa",
+      "Blue Medical Aesthetics",
+      "ReNew You Medical Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Wilmington Dermatology Center",
+      "House of Aesthetics",
+      "Wave Aesthetics",
+      "SALT - A Well Labs+ Medspa",
+      "Blue Medical Aesthetics",
+      "Head to Toe Med Spa",
+      "United Medical & Aesthetics",
+      "Self Skin Studio"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Wilmington Health Cosmetic Dermatology",
+      "Rising Tide Wellness",
+      "Amelia Aesthetics",
+      "Wilmington Plastic Surgery"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Wilmington Dermatology Center",
+      "Wilmington Plastic Surgery and Med Spa",
+      "Wave Aesthetics",
+      "House of Aesthetics",
+      "Self Skin Studio"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Wilmington, NC",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Glo Medspa - Wilmington",
+     "Head To Toe Med Spa",
+     "SALT - A Well Labs+ Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Head To Toe Med Spa",
+      "Self Skin Studio",
+      "SALT - A Well Labs+ Medspa",
+      "HD Medical & Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Beach Medical Aesthetics",
+      "Head To Toe Med Spa",
+      "Self Skin Studio",
+      "United Medical and Aesthetics",
+      "HD Medical & Aesthetics",
+      "Blue Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Head To Toe Med Spa",
+      "Self Skin Studio",
+      "Salt Aesthetics",
+      "Beach Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Self Skin Studio",
+      "Head To Toe Med Spa",
+      "Beach Medical Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (910) 941-8342 differs from AMP-listed (910) 256-2690; website, Facebook and Perplexity/Claude answers still show 256-2690 (likely call-tracking number on GBP, but NAP inconsistent).",
+  "First listings search with title 'Glo Med Spa' returned 0 results; found with title 'Glo Medspa' (Google spells it 'Medspa').",
+  "Listing reports 1,232 reviews; live SERP local pack shows ~1,300 (rounded).",
+  "S1 and S2 had asynchronous AI Overview with no text (unreadable); S3 had no AI Overview.",
+  "S1 organic_pos 2 is glomedspa.com/peptide-therapy (not homepage); a Glo Medspa Facebook post also ranked organic #5.",
+  "S3 'best med spa near me' organic results were mostly out-of-market Yelp pages (Myrtle Beach, Virginia Beach, etc.) despite Wilmington location.",
+  "Services list: 10 returned, consult/injectable items priced $0 excluded from prices.",
+  "No model substitutions; all 12 LLM calls succeeded."
+ ]
+}

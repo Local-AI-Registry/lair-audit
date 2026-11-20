@@ -1,0 +1,66 @@
+{
+  "slug": "avelure-grand-rapids",
+  "run_date": "2026-11-20",
+  "amp": {"name": "Avelure - Grand Rapids", "brand": "Avelure", "address": "3659 28th St SE, Grand Rapids, MI 49512", "phone": "(616) 330-2661", "site": "https://aveluremedspa.com", "pin": [42.91436, -85.57726]},
+  "listing": {
+    "found": true,
+    "title": "Avelure Med Spa - Grand Rapids",
+    "google_phone": "+1 616-300-2687",
+    "phone_matches_amp": false,
+    "address": "3659 28th St SE, Grand Rapids, MI 49512",
+    "distance_km": 0.0,
+    "site_url": "https://aveluremedspa.com/locations/mi-grand-rapids/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_grand_rapids",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Laser hair removal service", "Skin care clinic"],
+    "rating": 4.4,
+    "reviews": 825,
+    "stars": {"1": 88, "2": 21, "3": 15, "4": 28, "5": 673},
+    "photos": 27,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 13,
+    "last_updated": "2026-09-12 14:19:09 +00:00",
+    "topics": [{"t": "nurses", "n": 63}, {"t": "hair removal", "n": 15}, {"t": "cool sculpting", "n": 11}, {"t": "laser treatment", "n": 7}, {"t": "quick treatment", "n": 6}, {"t": "facial hair removal", "n": 5}, {"t": "quick appointments", "n": 5}, {"t": "lip injections", "n": 4}],
+    "services_count": 11,
+    "prices": [],
+    "also_search": [{"name": "Milan Laser Hair Removal", "rating": 4.9, "reviews": 735}, {"name": "Coolsculpting in Grand Rapids", "rating": 5, "reviews": 2}, {"name": "Alloura Med Spa - Grand Rapids", "rating": 4.6, "reviews": 130}, {"name": "Comprehensive Care Elctrlys", "rating": 4.8, "reviews": 24}, {"name": "Grand Pearl Spa", "rating": 5, "reviews": 1448}],
+    "weekly_open_hours": 38,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {"key": "S1", "q": "med spa Grand Rapids MI", "prompt": "med spa Grand Rapids MI",
+     "google": {"map_pos": null, "map_pack": ["Grand Pearl Spa", "360 Wellness Med Spa", "Elevé Wellness & Aesthetics"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Renewal Skin Spa", "SpaMedica GR", "C.V. Medi Spa", "NYA Med Spa", "Grand Pearl Spa", "Symmetry Med Spa by Bengtson Center", "360 Wellness Med Spa"]},
+       "gemini": {"named": 0, "others": ["Grand Pearl Spa", "SkinCeuticals SkinLab by Plastic Surgery Associates", "Urban You Medical Aesthetics & Wellness", "Bengtson Center for Aesthetics & Plastic Surgery", "Advanced Plastic Surgery (APS) Medical Spa", "Renewal Skin Spa", "360 Wellness Med Spa", "SpaMedica GR"]},
+       "perplexity": {"named": 1, "others": ["Grand Pearl Spa", "360 Wellness Med Spa", "Symmetry Med Spa by Bengtson Center", "Alloura Med Spa", "REMEDY Hair Restoration & Medical Spa", "SkinCeuticals SkinLab by Plastic Surgery Associates", "N.Y.A. Med Spa"]},
+       "claude": {"named": 1, "others": ["Symmetry Med Spa & Laser Center", "Urban You Medical Aesthetics & Wellness", "360 Wellness Med Spa", "CV Medi Spa", "NYA Med Spa"]}}},
+    {"key": "S2", "q": "botox Grand Rapids MI", "prompt": "botox Grand Rapids MI",
+     "google": {"map_pos": null, "map_pack": ["Grand Pearl Spa", "SkinCeuticals SkinLab by Plastic Surgery Associates", "Bengtson Center for Aesthetics & Plastic Surgery"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["CV Medi Spa", "Welltopix Med Spa", "Simply The Best Aesthetics & Training Center", "Bengtson Center for Aesthetics & Plastic Surgery", "Remedy+ Hair Restoration & Medical Spa", "SpaMedica GR", "Doll Face Aesthetics Grand Rapids", "Utopia SkinLabs"]},
+       "gemini": {"named": 0, "others": ["The Bengtson Center for Aesthetics & Plastic Surgery", "Grand Pearl Spa", "Cosmetic Skin & Laser Center", "Renewal Skin Spa", "Refine Aesthetics", "SkinCeuticals SkinLab by Plastic Surgery Associates"]},
+       "perplexity": {"named": 0, "others": ["Cosmetic Skin & Laser Center", "The Bengtson Center", "SkinCeuticals SkinLab", "Derm Institute of West Michigan", "Eleve Wellness & Aesthetics"]},
+       "claude": {"named": 0, "others": ["Bengtson Center for Aesthetics and Plastic Surgery", "Dr. Steven Ringler", "Dermatology Specialists of Grand Rapids", "Remedy+ Hair Restoration and Medical Spa", "Urban You Medical Aesthetics & Wellness", "The Derm Institute of West Michigan"]}}},
+    {"key": "S3", "q": "best med spa near me", "prompt": "best med spa in Grand Rapids, MI",
+     "google": {"map_pos": null, "map_pack": ["Grand Pearl Spa", "Elevé Wellness & Aesthetics", "Urban You Medical Aesthetics and Wellness"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["Dr. Dennis Hammond", "Plastic & Reconstructive Eye Surgery", "Plastic Surgery Associates", "Renewal Skin Spa", "Symmetry Med Spa by Bengtson Center", "Simply The Best Aesthetics & Training Center", "Centre for Pure Skin", "360º Wellness Med Spa"]},
+       "gemini": {"named": 0, "others": ["Grand Pearl Spa", "Bengtson Center for Aesthetics & Plastic Surgery", "Urban You Medical Aesthetics & Wellness", "SkinCeuticals SkinLab", "Renewal Skin Spa"]},
+       "perplexity": {"named": 0, "others": ["Grand Pearl Spa", "Symmetry Med Spa by Bengtson Center", "360 Wellness Med Spa", "Bengtson Center for Aesthetics & Plastic Surgery"]},
+       "claude": {"named": 0, "others": ["Grand Pearl Spa", "SkinCeuticals SkinLab by Plastic Surgery Associates", "Renewal Skin Spa", "The Bengtson Center for Aesthetics and Plastic Surgery", "Urban You Med Spa"]}}}
+  ],
+  "notes": [
+    "Google phone (616) 300-2687 differs from AMP-listed (616) 330-2661; Claude S1 answer quoted the AMP number (616) 330-2661.",
+    "Google listing site points to aveluremedspa.com/locations/mi-grand-rapids/ with GBP UTM tags.",
+    "Business listing returned no popular_times; saved as null.",
+    "No prices on any of the 11 Google services.",
+    "Listing closed Sunday and Monday (Tue-Sat only, 38 h/week).",
+    "All three SERPs had an asynchronous AI Overview with no readable text.",
+    "Avelure appeared in no map pack and no organic top 10 for S1-S3.",
+    "gemini-2.5-flash hit a rate limit twice on all three prompts; used gemini-3.6-flash for all Gemini answers.",
+    "Serp location_name 'Grand Rapids,Michigan,United States' worked; S3 is a 'near me' query run from that location."
+  ]
+}

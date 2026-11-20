@@ -1,0 +1,928 @@
+{
+ "slug": "ever-body-hartford",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - Hartford",
+  "brand": "Ever/Body",
+  "address": "1245 New Britain Ave, West Hartford, CT 6110",
+  "phone": "(860) 308-1305",
+  "website": "https://everbody.com",
+  "lat": 41.73132,
+  "lng": -72.74277
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body Hartford",
+  "google_phone": "+1860-609-6280",
+  "phone_matches_amp": false,
+  "address": "1245 New Britain Ave, West Hartford, CT 06110",
+  "distance_km": 0.0,
+  "site_url": "https://everbody.com/locations/hartford/?utm_source=google&utm_medium=organic&utm_campaign=gbp_hartford",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.5,
+  "reviews": 882,
+  "stars": {
+   "1": 77,
+   "2": 14,
+   "3": 17,
+   "4": 24,
+   "5": 750
+  },
+  "photos": 25,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-12 18:46:18 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 93
+   },
+   {
+    "t": "thorough staff",
+    "n": 13
+   },
+   {
+    "t": "scheduling appointments",
+    "n": 12
+   },
+   {
+    "t": "laser treatment",
+    "n": 10
+   },
+   {
+    "t": "clean location",
+    "n": 5
+   },
+   {
+    "t": "coolsculpting",
+    "n": 4
+   },
+   {
+    "t": "rescheduling appointments",
+    "n": 4
+   },
+   {
+    "t": "numbing cream",
+    "n": 4
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "DiamondGlow Facial",
+    "category": "Medical Spa",
+    "price_usd": 275
+   },
+   {
+    "title": "Chemical Peel Treatment",
+    "category": "Skin Rejuvenation",
+    "price_usd": 225
+   },
+   {
+    "title": "SkinPen (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 495
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Greenwich Medical Spa at West Hartford",
+    "rating": 5,
+    "reviews": 253
+   },
+   {
+    "name": "Mia's Medical Spa",
+    "rating": 4.7,
+    "reviews": 125
+   },
+   {
+    "name": "BareSkin Laser",
+    "rating": 4.9,
+    "reviews": 57
+   },
+   {
+    "name": "ElectraBeauty",
+    "rating": 5,
+    "reviews": 15
+   },
+   {
+    "name": "BeautyFix West Hartford",
+    "rating": 4.8,
+    "reviews": 218
+   }
+  ],
+  "weekly_open_hours": 49,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 91
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 69
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 73
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa West Hartford CT",
+   "prompt": "med spa West Hartford CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Greenwich Medical Spa at West Hartford",
+     "BeautyFix West Hartford",
+     "Bella Republic Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Bravo MedSpa",
+      "A Touch Of Bliss Organic Spa",
+      "FemCare MedSpa",
+      "Mia's Medical Spa",
+      "Lume Skincare",
+      "Greenwich Medical Spa at West Hartford"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "BeautyFix West Hartford",
+      "Greenwich Medical Spa at West Hartford",
+      "Connecticut Medical Aesthetics",
+      "La Bella Medical Aesthetics",
+      "Inner Glow AestheticsMD",
+      "Bravo MedSpa",
+      "Ideal Image West Hartford",
+      "Magnolia Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Greenwich Medical Spa",
+      "Bella Republic Medspa",
+      "FemCare MedSpa",
+      "Mia's Medical Spa",
+      "BeautyFix West Hartford",
+      "Restore Hyper Wellness",
+      "The MedSpa at the Delamar Hotel"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Bella Republic Med Spa",
+      "Ignite Med Spa & Wellness",
+      "BeautyFix West Hartford",
+      "Bravo MedSpa",
+      "Radiant Beauty and Health",
+      "FemCare MedSpa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox West Hartford CT",
+   "prompt": "botox West Hartford CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "BeautyFix West Hartford",
+     "Greenwich Medical Spa at West Hartford",
+     "Bella Republic Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Bravo MedSpa",
+      "Refreshed Medical Aesthetics",
+      "Bella Republic MedSpa",
+      "Mia's Medical Spa",
+      "FemCare MedSpa",
+      "BareSkin Laser"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "BeautyFix West Hartford",
+      "Bravo MedSpa",
+      "Ideal Image West Hartford",
+      "La Bella Medical Aesthetics",
+      "Refreshed Medical Aesthetics",
+      "Hartford Dermatology/Blue Back Sq",
+      "Ample Urgent & Primary Care"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Hartford Hospital Procedure Clinic",
+      "FemCare MedSpa",
+      "BeautyFix West Hartford"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Greenwich Medical Spa",
+      "Ample Urgent Primary Care & Aesthetics",
+      "Gameday Men's Health",
+      "Bravo MedSpa",
+      "Bella Republic Med Spa",
+      "Refreshed Medical Aesthetics",
+      "BeautyFix West Hartford"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in West Hartford, CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Greenwich Medical Spa at West Hartford",
+     "Bella Republic Medspa",
+     "BeautyFix West Hartford"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Bravo MedSpa",
+      "A Touch Of Bliss Organic Spa",
+      "FemCare MedSpa",
+      "Mia's Medical Spa",
+      "Lume Skincare",
+      "thebborganics",
+      "Greenwich Medical Spa at West Hartford",
+      "Bella Republic Medspa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa at West Hartford",
+      "Bravo MedSpa",
+      "BeautyFix West Hartford",
+      "Magnolia Med Spa",
+      "Ample Urgent & Primary Care",
+      "Youthful Images"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Greenwich Medical Spa at West Hartford",
+      "BeautyFix West Hartford",
+      "Face It Med Spa",
+      "FemCare MedSpa",
+      "Bella Republic Medspa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Greenwich Medical Spa at West Hartford",
+      "BeautyFix",
+      "BareSkin",
+      "Bella Republic Med Spa",
+      "Roya Medspa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (860) 609-6280 differs from AMP-listed (860) 308-1305.",
+  "Google listing links to everbody.com/locations/hartford with GBP UTM tags; menu link also on everbody.com.",
+  "Google listing title is 'Ever/Body Hartford' though the business is in West Hartford (zip 06110); AMP zip listed as 6110 (leading zero dropped).",
+  "Not in the local pack for any of the 3 searches; no organic result for everbody.com in top 10. AI Overview asynchronous (no text) on all 3.",
+  "S3 'best med spa near me' organic results dominated by medspaflorida.com directory pages (off-location).",
+  "Named by Gemini (S2, S3) and Perplexity (S2, as EVER/BODY Medical) only, sourced via Birdeye and Alle pages; never named by ChatGPT or Claude.",
+  "Google listing last updated 2026-09-12; 77 one-star reviews (8.7%) despite 4.5 average.",
+  "No model substitutions; SERP location_name West Hartford,Connecticut,United States worked."
+ ]
+}

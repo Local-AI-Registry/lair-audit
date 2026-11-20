@@ -1,0 +1,907 @@
+{
+ "slug": "avelure-indy",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Avelure - Indy",
+  "brand": "Avelure",
+  "address": "8487 Union Chapel Rd Suite 620, Indianapolis, IN 46240",
+  "phone": "(317) 713-0595",
+  "site": "https://aveluremedspa.com",
+  "pin": [
+   39.90876,
+   -86.10726
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Avelure Med Spa - Indy",
+  "google_phone": "+1317-597-6355",
+  "phone_matches_amp": false,
+  "address": "8487 Union Chapel Rd Ste 620, Indianapolis, IN 46240",
+  "distance_km": 0.0,
+  "site_url": "https://aveluremedspa.com/locations/in-indy/?utm_source=google&utm_medium=organic&utm_campaign=gbp_avelure_indy",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.5,
+  "reviews": 912,
+  "stars": {
+   "1": 83,
+   "2": 15,
+   "3": 20,
+   "4": 22,
+   "5": 772
+  },
+  "photos": 28,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-13 21:56:42 +00:00",
+  "topics": [
+   {
+    "t": "laser hair removal",
+    "n": 80
+   },
+   {
+    "t": "cool sculpting",
+    "n": 13
+   },
+   {
+    "t": "procedure explanation",
+    "n": 10
+   },
+   {
+    "t": "laser treatment",
+    "n": 9
+   },
+   {
+    "t": "ultherapy",
+    "n": 4
+   },
+   {
+    "t": "quick appointment",
+    "n": 4
+   },
+   {
+    "t": "virtual consultation",
+    "n": 3
+   },
+   {
+    "t": "abdomen treatment",
+    "n": 2
+   }
+  ],
+  "services_count": 12,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Indy Laser",
+    "rating": 4.7,
+    "reviews": 177
+   },
+   {
+    "name": "iLaz Laser Hair Removal",
+    "rating": 4.7,
+    "reviews": 18
+   },
+   {
+    "name": "Milan Laser Hair Removal",
+    "rating": 4.9,
+    "reviews": 695
+   },
+   {
+    "name": "LaserAway Indianapolis",
+    "rating": 4.9,
+    "reviews": 276
+   },
+   {
+    "name": "Regevity - Indianapolis",
+    "rating": 4.5,
+    "reviews": 485
+   }
+  ],
+  "weekly_open_hours": 52,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Indianapolis IN",
+   "prompt": "med spa Indianapolis IN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Fundamentals Med Spa",
+     "Lyfe MedSpa",
+     "MD Wellness Center and Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Mint Aesthetics & Skin",
+      "Fundamentals Med Spa",
+      "Lyfe MedSpa",
+      "Embolden MedSpa",
+      "Genesis Lifestyle Medicine"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Üesthetics",
+      "Kanvas Medical Aesthetics",
+      "Elysian Medspa & Rejuvenation",
+      "SomaVie Wellness Center & Med Spa",
+      "Embolden Med Spa",
+      "SimplySkin MedSpa & Wellness",
+      "Ageless Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "SomaVie Wellness Center & Med Spa",
+      "Fundamentals Med Spa",
+      "MD Wellness Center and Med Spa",
+      "Laser Focus - Medical Spa",
+      "Spa 170 West Downtown",
+      "Skin Renew Day Spa & Laser Center",
+      "SHarper Surgery Spa + Salt Lounge"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": []
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Indianapolis IN",
+   "prompt": "botox Indianapolis IN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Üesthetics",
+     "Ageless Aesthetics",
+     "Lyfe MedSpa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Bliss Medical Spa",
+      "Dreamland Health and Wellness",
+      "LaserAway Indianapolis - Bottleworks",
+      "Spencer Wellness Centre",
+      "The SKN Lab",
+      "Üesthetics Indy",
+      "LYFE MEDSPA",
+      "Dermatology Associates, PC"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Üesthetics",
+      "Laser Focus Medical Spa",
+      "Embolden MedSpa",
+      "LYFE MedSpa",
+      "Carmel Cosmetic & Plastic Surgeons",
+      "SHarper Plastic Surgery",
+      "SimplySkin Med Spa",
+      "Ageless Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Starsiak Aesthetics",
+      "Dermatology Associates, PC",
+      "SHarper Plastic Surgery",
+      "Laser and Skin Surgery Center of Indiana",
+      "Ageless Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Dr. Chernoff",
+      "Laser and Skin Surgery Center of Indiana",
+      "LYFE MEDSPA",
+      "Ageless Aesthetics",
+      "Starsiak Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Indianapolis, IN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Lyfe MedSpa",
+     "The SKN Lab",
+     "Fundamentals Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "MD Wellness Center and Med Spa",
+      "Lyfe Aesthetics & MedSpa",
+      "Ageless Aesthetics",
+      "Bliss Medical Spa",
+      "VIO Med Spa",
+      "Solid Wellness and Aesthetics"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Ageless Aesthetics",
+      "Üesthetics Med Spa",
+      "Embolden Med Spa",
+      "Elysian Medspa & Rejuvenation",
+      "Wise Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "MD Wellness Center and Med Spa",
+      "The Dermatology Center of Indiana",
+      "Lyfe Aesthetics & MedSpa",
+      "Regevity",
+      "Ageless Aesthetics",
+      "Fundamentals Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "MD Wellness Center and Med Spa",
+      "Revive RX",
+      "Kurr Aesthetics and Med Spa",
+      "The Dermatology Center of Indiana",
+      "Laser and Skin Surgery Center of Indiana",
+      "Ageless Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (317) 597-6355 does not match AMP-listed (317) 713-0595.",
+  "Google listing website points to aveluremedspa.com/locations/in-indy/ (same domain as AMP).",
+  "Listing has no priced services; prices empty. Laser hair removal dominates review topics (80 mentions).",
+  "gemini-2.5-flash rate limited twice (rate_limit_exceeded); all 3 Gemini prompts used gemini-3.6-flash.",
+  "Claude S1 answered with clarifying questions only and named no businesses (named=0, others=[]).",
+  "All three Google SERPs had asynchronous AI Overviews with no text (aio=unreadable); Avelure absent from all local packs and top-10 organic.",
+  "S3 'best med spa near me' SERP with location Indianapolis returned mostly irrelevant medspaflorida.com organic results."
+ ]
+}

@@ -1,0 +1,227 @@
+{
+ "slug": "reflections-medical-by-dr-michael-fiorillo-pearl-river",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Reflections Medical by Dr. Michael Fiorillo- Pearl River",
+  "brand": "Reflections Medical by Dr. Michael Fiorillo",
+  "address": "150 S Pearl Street, Pearl River, NY 10965",
+  "phone": "(945) 208 9441",
+  "site": "https://drfiorillo.com",
+  "lat": 41.05371,
+  "lng": -74.02448
+ },
+ "listing": {
+  "found": true,
+  "title": "Reflections Medical",
+  "google_phone": "+1945-800-4337",
+  "phone_matches_amp": false,
+  "address": "150 S Pearl St, Pearl River, NY 10965",
+  "distance_km": 0.1,
+  "site_url": "https://www.reflections-medical.com/",
+  "site_matches_amp": false,
+  "category": "Plastic surgeon",
+  "categories": [
+   "Plastic surgeon"
+  ],
+  "rating": 4.9,
+  "reviews": 308,
+  "stars": {
+   "1": 7,
+   "2": 0,
+   "3": 0,
+   "4": 2,
+   "5": 299
+  },
+  "photos": 18,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 10,
+  "last_updated": "2026-09-28 04:03:11 +00:00",
+  "topics": null,
+  "services_count": null,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "My Mommy Makeover",
+    "rating": 5,
+    "reviews": 2
+   },
+   {
+    "name": "CoolSculpting By Dr. Fiorillo",
+    "rating": null,
+    "reviews": null
+   },
+   {
+    "name": "TriPollar New York",
+    "rating": null,
+    "reviews": null
+   },
+   {
+    "name": "Rockland Plastic Surgical Associates",
+    "rating": null,
+    "reviews": null
+   },
+   {
+    "name": "Dr. Justin Buro, MD",
+    "rating": 5,
+    "reviews": 10
+   }
+  ],
+  "weekly_open_hours": 40,
+  "popular_times": null
+ },
+ "svc": "plastic surgeon",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "plastic surgeon Pearl River NY",
+   "prompt": "plastic surgeon Pearl River NY",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Michael Ingargiola, MD",
+     "Reflections Medical - Pearl River",
+     "Dr. Michael Fiorillo"
+    ],
+    "organic_pos": 1,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Rockland Plastic Surgery, LLP",
+      "Dr. Helen Perakis, MD"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Dr. Leland Deane",
+      "Dr. Frank J. Ferraro",
+      "Dr. Harry T. Haramis",
+      "Dr. John Williams",
+      "Dr. David Smith",
+      "Dr. James Martinez",
+      "Dr. Robert D. Jablonski"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Robert Jablonski, MD",
+      "Bianca J. Molina, MD"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": []
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Pearl River NY",
+   "prompt": "botox Pearl River NY",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Reflections Medical - Pearl River",
+     "Michael Ingargiola, MD",
+     "VELARA Aesthetic & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "One Skin Medical Aesthetics",
+      "Above: A Social Wellness Club",
+      "Uscape Rejuvenation LLC",
+      "Laser Hair Associates of Rockland",
+      "Peaceful Remedy"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Essence Skin Spa",
+      "Above: A Social Wellness Club",
+      "Moya Beauty & Wellness",
+      "VELARA Aesthetic & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "One Skin Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "One Skin Medical Aesthetics",
+      "Ness Botox Bar"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best plastic surgeon near me",
+   "prompt": "best plastic surgeon in Pearl River, NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Michael Ingargiola, MD",
+     "Affordable Plastic Surgery",
+     "Parker Center for Plastic Surgery: Paul M Parker MD"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Dr. Robert D. Jablonski, MD"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Dr. John Williams",
+      "Dr. David Smith",
+      "Dr. James Martinez",
+      "Dr. Leland Deane",
+      "Dr. Harry T. Haramis"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Dr. Robert D. Jablonski Jr.",
+      "Dr. Joseph Capella"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": []
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone +1 945-800-4337 does not match AMP-listed (945) 208 9441 (likely a tracking number); LLMs/website cite (845) 623-6141 and (845) 203-3242.",
+  "Google listing site is reflections-medical.com, not AMP-listed drfiorillo.com (Claude cited drfiorillo.com pages, so the old domain still resolves/is indexed).",
+  "Listing returned no place_topics, services, prices or popular_times; topics/services_count null, popular_times null.",
+  "Duplicate/competing Google listings at the same address 150 S Pearl St: 'Michael Ingargiola, MD' (302 reviews, (845) 813-2741) outranks the practice listing in S1 and S3 map packs; 'Dr. Michael Fiorillo' (1 review) also in S1 pack. Ingargiola and Buro are Reflections Medical surgeons, so they were not counted as 'others'.",
+  "Gemini (S1) says Dr. Michael A. Fiorillo is now retired (source birdeye); the website now leads with Drs. Ingargiola and Buro. Yelp shows a 'MICHAEL A FIORILLO, MD - REFLECTIONS MEDICAL' page marked CLOSED; legacy name 'Advanced Plastic Surgery & Medspa' still on MapQuest/Perplexity citations.",
+  "ChatGPT S3 and Perplexity S3 named 'Dr. Michael A. Fiorillo' (the brand namesake) rather than 'Reflections Medical'; counted as named=1. Claude S1/S3 named both Reflections Medical and Dr. Fiorillo.",
+  "S1 organic_pos 1 is reflections-medical.com (Google-listing site), not the AMP-listed drfiorillo.com.",
+  "Google listing title is 'Reflections Medical' (SERP shows 'Reflections Medical - Pearl River'); reviews 308 in listings API vs 318 in live SERP.",
+  "SERP location 'Pearl River,New York,United States' worked; no model substitutions."
+ ]
+}

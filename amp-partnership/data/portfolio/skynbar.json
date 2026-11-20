@@ -1,0 +1,843 @@
+{
+ "slug": "skynbar",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "SkynBar",
+  "brand": "SkynBar",
+  "address": "3872 Roswell Rd NE, Suite D4, Atlanta, GA 30342",
+  "phone": "(404) 963-2623",
+  "site": "https://skynbaratlanta.com",
+  "lat": 33.86087,
+  "lng": -84.38098
+ },
+ "listing": {
+  "found": true,
+  "title": "SkynBar",
+  "google_phone": "+1 404-531-2201",
+  "phone_matches_amp": false,
+  "address": "3872 Roswell Rd NE Ste D4, Atlanta, GA 30342",
+  "distance_km": 0.1,
+  "site_url": "https://skynbaratlanta.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 289,
+  "stars": {
+   "1": 2,
+   "2": 0,
+   "3": 0,
+   "4": 1,
+   "5": 286
+  },
+  "photos": 19,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-20 09:37:51 +00:00",
+  "topics": [
+   {
+    "t": "custom facial",
+    "n": 12
+   },
+   {
+    "t": "customized treatments",
+    "n": 10
+   },
+   {
+    "t": "red light therapy",
+    "n": 9
+   },
+   {
+    "t": "skin care education",
+    "n": 9
+   },
+   {
+    "t": "esthetician",
+    "n": 8
+   },
+   {
+    "t": "peels",
+    "n": 3
+   },
+   {
+    "t": "skin evaluation",
+    "n": 2
+   },
+   {
+    "t": "relaxing facial",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Glass Skin Facial",
+    "category": "Medical Spa",
+    "price_usd": 250
+   },
+   {
+    "title": "HydraFacial Signature Treatment",
+    "category": "Medical Spa",
+    "price_usd": 225
+   },
+   {
+    "title": "Custom Facial",
+    "category": "Medical Spa",
+    "price_usd": 200
+   },
+   {
+    "title": "HydraFacial Deluxe Treatment",
+    "category": "Medical Spa",
+    "price_usd": 275
+   },
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 350
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Artisan Beauté - Buckhead",
+    "rating": 4.9,
+    "reviews": 441
+   },
+   {
+    "name": "SLM Medspa",
+    "rating": 4.9,
+    "reviews": 104
+   },
+   {
+    "name": "Blue Divine Aesthetics",
+    "rating": 4.7,
+    "reviews": 344
+   },
+   {
+    "name": "Skin Social Medical Spa",
+    "rating": 5,
+    "reviews": 715
+   },
+   {
+    "name": "Skin Suite MedSpa",
+    "rating": 5,
+    "reviews": 56
+   }
+  ],
+  "weekly_open_hours": 35,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 32
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 32
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 32
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Atlanta GA",
+   "prompt": "med spa Atlanta GA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The House of Wellness Med Spa",
+     "Radiance Medspa Atlanta",
+     "Charette Cosmetics Medical Spa - Atlanta"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Royal Bliss Med Spa",
+      "Natural Body Spa + Med Spa",
+      "Dynamic 3 Med Spa",
+      "SKM MedSpa",
+      "NYAH Med Spa",
+      "OVME Atlanta - Buckhead"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "Balanced Aesthetics + Wellness",
+      "Skin Pharm",
+      "Derm Clinic M.D.",
+      "CULT Aesthetics",
+      "ELLEMES Medical Spa",
+      "Ecobel Med Spa",
+      "Natural Body Spa + Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "BLUE Med Center & Spa",
+      "Natural Body Spa + Med Spa",
+      "Vinings Med Spa",
+      "Dynamic 3 Med Spa",
+      "Olansky Dermatology & Aesthetics",
+      "Flawless Skin Boutique Med Spa",
+      "VIO Med Spa",
+      "Skin Vegan Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Atlanta Medical Aesthetics",
+      "WIFH",
+      "SkinSpirit - Buckhead",
+      "AYA Medical Spa",
+      "4Ever Young Med Spa & Wellness Center",
+      "Springs Rejuvenation",
+      "Radiance Medspa",
+      "Vianka Aesthetic Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Atlanta GA",
+   "prompt": "botox Atlanta GA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+     "Charette Cosmetics Medical Spa - Atlanta",
+     "SkinCeuticals SkinLab Atlanta"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Doseffect Aesthetics",
+      "Derm Clinic MD",
+      "OVME Atlanta - Buckhead",
+      "AYA Medical Spa Buckhead",
+      "Buckhead Facial Plastic Surgery",
+      "Hagopian Plastic Surgery",
+      "Babcock Dermatology",
+      "CULT Aesthetics Atlanta"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Radiance Plastic Surgery & Aesthetic Medicine",
+      "Dermatology Center of Atlanta",
+      "Buckhead Facial Plastic Surgery",
+      "Ellemes Medical Spa",
+      "Premier Image Cosmetic & Laser Surgery",
+      "Natural Body Spa + Med Spa",
+      "Charette Cosmetics",
+      "Baucom & Mina Derm Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "The K Spa",
+      "Blue Divine",
+      "Medical Dermatology Specialists",
+      "Atlanta Face & Body",
+      "Nip & Tuck Plastic Surgery",
+      "The Maloney Center"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "dermani MEDSPA",
+      "Dermatology Center of Atlanta",
+      "Skin Pharm",
+      "Natural Body Spa + Med Spa",
+      "Oculus Plastic Surgery",
+      "The Ageless Center",
+      "Atlanta Skin and Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Atlanta, GA",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "4Ever Young Med Spa & Wellness Center - Atlanta Midtown",
+     "Skin Social Medical Spa",
+     "Charette Cosmetics Medical Spa - Atlanta"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "MetroDerm & Center for Plastic Surgery",
+      "Charette Cosmetics Medical Spa",
+      "Dermatology Consultants, P.C.",
+      "Natural Body Spa + Med Spa",
+      "Royal Bliss Med Spa",
+      "Ecobel Med Spa",
+      "SKM MedSpa",
+      "SkinCeuticals SkinLab Atlanta"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Charette Cosmetics",
+      "ELLEMES Medical Spa",
+      "Blue Divine Aesthetics",
+      "Conqr Aesthetics & Wellness",
+      "LUX Med Spa",
+      "Natural Body Spa + Med Spa",
+      "Bella Medspa",
+      "4Ever Young Med Spa & Wellness Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "Skin Social Medical Spa",
+      "Balanced Aesthetics + Wellness",
+      "CULT Aesthetics",
+      "ECOBEL Med Spa",
+      "Derm Clinic M.D."
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "ELLEMES Medical Spa",
+      "Radiance Medspa",
+      "Atlanta Medical Aesthetics",
+      "WIFH",
+      "AYA Medical Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone +1 404-531-2201 does not match AMP-listed (404) 963-2623; the AMP number appears only in DataForSEO contact_info sourced from backlinks.",
+  "Hours are Mon-Fri 10-5 only (35 h/week); closed weekends.",
+  "Only 5 of 10 listed services show a price > 0; injectables/consults list $0 ('From $0.00'). services_count reflects services returned (10), may be truncated.",
+  "All three SERPs had asynchronous AI Overviews with no readable text (aio=unreadable).",
+  "SkynBar not in local pack or organic top 10 for any of the 3 searches.",
+  "Only LLM mention: Gemini S3 lists SkynBar in a secondary 'other highly-rated' list (sourced from thecliniccompass.com).",
+  "SERP location_name 'Atlanta,Georgia,United States' worked; no model substitutions.",
+  "Last listing update 2026-09-20; first_seen 2024-07-25."
+ ]
+}

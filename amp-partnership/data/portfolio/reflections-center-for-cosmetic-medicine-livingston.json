@@ -1,0 +1,920 @@
+{
+ "slug": "reflections-center-for-cosmetic-medicine-livingston",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Reflections Center for Cosmetic Medicine - Livingston",
+  "brand": "Reflections Center for Cosmetic Medicine",
+  "address": "299 E Northfield Road, Livingston, NJ 7039",
+  "phone": "(973) 740-2444",
+  "site": "https://reflectionscenter.com",
+  "lat": 40.77149,
+  "lng": -74.30253
+ },
+ "listing": {
+  "found": true,
+  "title": "Reflections Center for Cosmetic Medicine",
+  "google_phone": "+1973-264-0402",
+  "phone_matches_amp": false,
+  "address": "299 E Northfield Rd, Livingston, NJ 07039",
+  "distance_km": 0.1,
+  "site_url": "https://www.reflectionscenter.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 279,
+  "stars": {
+   "1": 20,
+   "2": 2,
+   "3": 3,
+   "4": 8,
+   "5": 246
+  },
+  "photos": 16,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-12 17:37:17 +00:00",
+  "topics": [
+   {
+    "t": "lasers",
+    "n": 25
+   },
+   {
+    "t": "knowledgeable doctor",
+    "n": 10
+   },
+   {
+    "t": "acne scars",
+    "n": 8
+   },
+   {
+    "t": "tattoo removal",
+    "n": 8
+   },
+   {
+    "t": "caring doctor",
+    "n": 8
+   },
+   {
+    "t": "rosacea treatment",
+    "n": 3
+   },
+   {
+    "t": "honest doctor",
+    "n": 3
+   },
+   {
+    "t": "fraxel laser",
+    "n": 2
+   }
+  ],
+  "services_count": 96,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Esthetika Med Spa",
+    "rating": 5,
+    "reviews": 46
+   },
+   {
+    "name": "European Skin Therapeutics",
+    "rating": null,
+    "reviews": null
+   }
+  ],
+  "weekly_open_hours": 41,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 85
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 32
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 67
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 39
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 14
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 14
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 10
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 10
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 10
+     },
+     {
+      "time": {
+       "hour": 19
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 20
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 21
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 22
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 23
+      },
+      "popular_index": 7
+     },
+     {
+      "popular_index": 7
+     },
+     {
+      "time": {
+       "hour": 1
+      },
+      "popular_index": 10
+     },
+     {
+      "time": {
+       "hour": 2
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 3
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 4
+      },
+      "popular_index": 17
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Livingston NJ",
+   "prompt": "med spa Livingston NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "LH Med Spa",
+     "4Ever Young Med Spa & Wellness Center - Livingston",
+     "Aevua Med Spa Livingston, NJ"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "LH Med Spa",
+      "Aevua Med Spa",
+      "Line Eraser MD Medical Spa",
+      "Natural Image Skin Center",
+      "4Ever Young Med Spa & Wellness Center"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "LH Med Spa & Wellness",
+      "Line Eraser MD",
+      "Esthetika Med Spa",
+      "4Ever Young Med Spa & Wellness Center",
+      "FACE Aesthetic Artistry"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "Line Eraser MD Medical Spa",
+      "Euphoric Medspa",
+      "Aevua"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "LH Med Spa & Wellness",
+      "Euphoric Medspa",
+      "4Ever Young Med Spa & Wellness Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Livingston NJ",
+   "prompt": "botox Livingston NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Line Eraser MD Medical Spa, Livingston, NJ",
+     "4Ever Young Med Spa & Wellness Center - Livingston",
+     "LH Med Spa"
+    ],
+    "organic_pos": 2,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "LH Med Spa",
+      "4Ever Young Med Spa & Wellness Center",
+      "Line Eraser MD Medical Spa",
+      "Aevua Med Spa",
+      "Liquivida Wellness Center"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Line Eraser MD",
+      "LH Medspa and Wellness",
+      "European Medical Spa (Aurora DeJuliis MD)",
+      "Euphoric Medspa",
+      "Schweiger Dermatology Group",
+      "Livingston Dermatology Associates",
+      "Alan Liftin MD Dermatology",
+      "Center for Eye & Facial Plastic Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Schweiger Dermatology Group",
+      "Dolce Aesthetics",
+      "Liquivida Livingston",
+      "Bleu Mirage Aesthetics",
+      "4Ever Young"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Center for Eye and Facial Plastic Surgery",
+      "Aurora DeJuliis MD European Medical Spa",
+      "LH Medspa",
+      "Line Eraser MD",
+      "AgeWell MD",
+      "Dentistry With A Smile",
+      "Miller Center for Dental Excellence"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Livingston, NJ",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "4Ever Young Med Spa & Wellness Center - Livingston",
+     "LH Med Spa",
+     "Ethos Aesthetics + Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Jeremiah Redstone MD PC",
+      "East Coast Advanced Plastic Surgery",
+      "Eric M. Joseph, MD",
+      "ASB Medical Solutions Livingston",
+      "Line Eraser MD Medical Spa",
+      "LH Med Spa",
+      "Aevua Med Spa",
+      "Natural Image Skin Center"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "LH Med Spa & Wellness",
+      "Line Eraser MD",
+      "Euphoric Medspa",
+      "FACE Aesthetic Artistry",
+      "True Bliss Medical"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Line Eraser MD Medical Spa",
+      "Esthetika Med Spa",
+      "Berlin Beauty Medical Aesthetics",
+      "4Ever Young Med Spa & Wellness Center"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "LH Med Spa & Wellness",
+      "Euphoric Medspa",
+      "Line Eraser MD Medical Spa",
+      "Berlin Beauty Medical Aesthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Phone mismatch: Google listing phone is (973) 264-0402; AMP-listed (973) 740-2444 appears only as a backlink-sourced contact and on the reflectionscenter.com Livingston page. Perplexity answers cited (732) 356-1666 (site-wide/Bridgewater number) for Livingston.",
+  "Saturday hours in Google work_time returned as open 9:00, close 5:00 (likely 5 PM but ambiguous); weekly_open_hours=41 counts Mon-Fri only (Mon 8, Tue 8, Wed 9, Thu 9, Fri 7).",
+  "Saturday popular_times shows late-night/overnight indices (20:00-04:00), which looks like data noise.",
+  "Not in the Google local pack for any of the 3 searches; ranks organic #2 for 'botox Livingston NJ' (reflectionscenter.com Livingston page).",
+  "All three SERPs had asynchronous AI Overviews with no readable text.",
+  "S3 'best med spa near me' organic results were geographically irrelevant (Rochester NY, Lewes DE, Chula Vista CA etc.) even with Livingston location; local pack was local.",
+  "Claude S2 named the business as 'Reflections Center for Skin & Body' (brand name match counted).",
+  "Google listing has 96 services but no prices; last_updated 2026-09-12; only 16 photos.",
+  "No model substitutions; location_name 'Livingston,New Jersey,United States' worked."
+ ]
+}

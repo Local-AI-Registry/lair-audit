@@ -1,0 +1,76 @@
+{
+  "slug": "reflections-medical-by-dr-michael-fiorillo-englewood-cliffs",
+  "run_date": "2026-11-20",
+  "amp": {"name": "Reflections Medical by Dr. Michael Fiorillo- Englewood Cliffs", "brand": "Reflections Medical by Dr. Michael Fiorillo", "address": "140 Sylvan Avenue, Englewood Cliffs, NJ 7632", "phone": "(201) 597-5989", "website": "https://drfiorillo.com", "lat": 40.86985, "lng": -73.9577},
+  "listing": {
+    "found": true,
+    "title": "Reflections Medical",
+    "google_phone": "+1201-730-4246",
+    "phone_matches_amp": false,
+    "address": "140 Sylvan Ave Ste 212, Englewood Cliffs, NJ 07632, United States",
+    "distance_km": 0.0,
+    "site_url": "https://www.reflections-medical.com/",
+    "site_matches_amp": false,
+    "category": "Plastic surgeon",
+    "categories": ["Plastic surgeon"],
+    "rating": 4.5,
+    "reviews": 6,
+    "stars": {"1": 0, "2": 1, "3": 0, "4": 0, "5": 5},
+    "photos": 5,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 8,
+    "last_updated": "2026-09-13 20:02:50 +00:00",
+    "topics": null,
+    "services_count": null,
+    "prices": [],
+    "also_search": [
+      {"name": "Farkas Plastic Surgery and Medical Spa", "rating": 4.9, "reviews": 195},
+      {"name": "Rosenfeld Plastic Surgery", "rating": 3.3, "reviews": 28},
+      {"name": "Dr. Boris Mordkovich, MD - Plastic Surgeon", "rating": 4.2, "reviews": 5},
+      {"name": "Monica Tadros, MD, FACS", "rating": 4.8, "reviews": 247},
+      {"name": "CoolSculpting By Dr. Fiorillo", "rating": null, "reviews": null}
+    ],
+    "weekly_open_hours": 12,
+    "popular_times": null
+  },
+  "svc": "plastic surgeon",
+  "searches": [
+    {"key": "S1", "q": "plastic surgeon Englewood Cliffs NJ", "prompt": "plastic surgeon Englewood Cliffs NJ",
+     "google": {"map_pos": null, "map_pack": ["Northern Center for Plastic Surgery: Aaron Capuano, MD FACS & Associates", "Farkas Plastic Surgery and Medical Spa", "Altman Aesthetic Center: Dr. R G. Altman, MD"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Dr. R. Gil Altman, M.D.", "Farkas Plastic Surgery and Medical Spa", "Northern Center for Plastic Surgery (Dr. Aaron Capuano)", "Dr. Baldev Sandhu, M.D."]},
+       "gemini": {"named": 0, "others": ["Farkas Plastic Surgery (Dr. Jordan P. Farkas)", "Northern Center for Plastic Surgery", "Doctors Plastic Surgery (DPS) New Jersey", "Dr. Kevin Tehrani", "Dr. Leland Deane", "Dr. David Parizh", "Dr. Haramis"]},
+       "perplexity": {"named": 0, "others": ["Jordan P. Farkas, MD", "Aaron M. Capuano, MD (Northern Center for Plastic Surgery)", "Steve R. Fallek, MD", "Boris Mordkovich, MD"]},
+       "claude": {"named": 0, "others": ["Dr. Aaron Capuano, MD", "Dr. Jordan Farkas, MD", "Dr. Steve Fallek, MD", "Dr. Boris Mordkovich", "Altman Aesthetic Center"]}
+     }},
+    {"key": "S2", "q": "botox Englewood Cliffs NJ", "prompt": "botox Englewood Cliffs NJ",
+     "google": {"map_pos": null, "map_pack": [], "organic_pos": null, "aio": "not_named"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["Altman Aesthetic Center", "Lumina Aesthetics Med Spa", "Farkas Plastic Surgery and Medical Spa", "Schweiger Dermatology Group", "MediGlow Office", "Energy Zone Wellness Center"]},
+       "gemini": {"named": 0, "others": ["Scherl Dermatology", "Schweiger Dermatology Group", "Dr. Jeffrey A. Rapaport, MD", "SK Dermatology", "Lumina Aesthetics Med Spa", "House of Ness", "Altman Aesthetic Center", "Farkas Plastic Surgery"]},
+       "perplexity": {"named": 0, "others": ["Schweiger Dermatology Group (formerly Scherl Dermatology)", "Farkas Plastic Surgery & Med Spa", "Nusbaum Medical Centers"]},
+       "claude": {"named": 0, "others": ["Schweiger Dermatology Group", "Scherl Dermatology", "Cross Hudson Plastic Surgery", "Altman Aesthetic Center", "House of Ness", "Lumina Med Spa"]}
+     }},
+    {"key": "S3", "q": "best plastic surgeon near me", "prompt": "best plastic surgeon in Englewood Cliffs, NJ",
+     "google": {"map_pos": null, "map_pack": ["Northern Center for Plastic Surgery: Aaron Capuano, MD FACS & Associates", "Altman Aesthetic Center: Dr. R G. Altman, MD", "Parker Center for Plastic Surgery: Paul M Parker MD"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["Farkas Plastic Surgery and Medical Spa", "Northern Center for Plastic Surgery (Aaron Capuano)", "Dr. R. Gil Altman, M.D.", "Dr. Basil Nwaoz, M.D.", "Dr. Steve R. Fallek, M.D."]},
+       "gemini": {"named": 0, "others": ["Dr. Jordan P. Farkas", "Dr. Leland Deane", "Dr. David Parizh", "Dr. Kevin Tehrani", "Dr. Steve R. Fallek", "Dr. Aaron Capuano", "Dr. Ross Ratner (Doctors Plastic Surgery)", "Dr. Troy Callahan"]},
+       "perplexity": {"named": 0, "others": ["Jordan P. Farkas, MD", "Steve R. Fallek, MD", "Aaron M. Capuano, MD", "R. Gil Altman, MD", "Brad M. Gandolfi, MD"]},
+       "claude": {"named": 0, "others": ["Dr. Jordan P. Farkas", "Dr. R Gil Altman", "Dr. Basil Nwaoz", "Cross Hudson Plastic Surgery", "Parakh Plastic Surgery", "Dr. Steve Fallek"]}
+     }}
+  ],
+  "notes": [
+    "Google listing title is 'Reflections Medical' at 140 Sylvan Ave Ste 212 (matches AMP address; pin ~0.03 km away).",
+    "Phone mismatch: Google shows (201) 730-4246 vs AMP-listed (201) 597-5989.",
+    "Website mismatch: Google links reflections-medical.com, AMP lists drfiorillo.com.",
+    "Very thin listing: only 6 reviews, 5 photos, 12 open hours/week (Mon/Wed mornings, Thu afternoon); no place_topics, services or prices returned.",
+    "Listing description references both Englewood Cliffs and Pearl River, NY locations.",
+    "Separate Google entity 'CoolSculpting By Dr. Fiorillo' appears in people-also-search (possible duplicate/brand-split listing).",
+    "popular_times not present in the listing response; saved as null.",
+    "S1 ChatGPT named 'Dr. Michael A. Fiorillo' (the surgeon in the brand name), counted as named=1; it did not say 'Reflections Medical'.",
+    "Business not in any map pack or organic top 10 for S1-S3; S1/S3 AI Overviews were asynchronous (unreadable); S2 AI Overview listed Altman and Lumina, not this business.",
+    "SERP location_name 'Englewood Cliffs,New Jersey,United States' worked; no model substitutions."
+  ]
+}

@@ -1,0 +1,816 @@
+{
+ "slug": "crate-medaesthetics-chattanooga",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Cúrate MedAesthetics - Chattanooga",
+  "brand": "Cúrate MedAesthetics",
+  "address": "700 Broad Street, Ste 110, Chattanooga, TN 37408",
+  "phone": "(423) 661-3244",
+  "site": "https://curatemedspa.com",
+  "pin": [
+   35.04745,
+   -85.31059
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Curate MedAesthetics - Chattanooga",
+  "google_phone": "+1 423-407-2497",
+  "phone_matches_amp": false,
+  "address": "1700 Broad St Ste 110, Chattanooga, TN 37408",
+  "distance_km": 1.3,
+  "site_url": "https://curatemedspa.com/locations/chattanooga/?utm_source=google&utm_medium=organic&utm_campaign=gbp_chattanooga",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 247,
+  "stars": {
+   "1": 1,
+   "2": 0,
+   "3": 0,
+   "4": 0,
+   "5": 246
+  },
+  "photos": 31,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 14,
+  "last_updated": "2026-09-13 13:10:05 +00:00",
+  "topics": [
+   {
+    "t": "knowledgeable team",
+    "n": 11
+   },
+   {
+    "t": "friendly injector",
+    "n": 6
+   },
+   {
+    "t": "downtown location",
+    "n": 5
+   },
+   {
+    "t": "tailored treatments",
+    "n": 4
+   },
+   {
+    "t": "chemical peel",
+    "n": 3
+   },
+   {
+    "t": "aesthetic treatments",
+    "n": 3
+   },
+   {
+    "t": "lip flip",
+    "n": 3
+   },
+   {
+    "t": "elevated experience",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 255
+   },
+   {
+    "title": "LHR (Underarms)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 130
+   },
+   {
+    "title": "Dermaplane",
+    "category": "Medical Spa",
+    "price_usd": 100
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Simply Beautiful MedAesthetics",
+    "rating": 5,
+    "reviews": 50
+   },
+   {
+    "name": "MedSpa of Chattanooga",
+    "rating": 4.9,
+    "reviews": 30
+   },
+   {
+    "name": "Center MedSpa",
+    "rating": 4.9,
+    "reviews": 421
+   },
+   {
+    "name": "Medical Aesthetics of Chattanooga",
+    "rating": 5,
+    "reviews": 25
+   },
+   {
+    "name": "The Aesthetic Room",
+    "rating": 5,
+    "reviews": 44
+   }
+  ],
+  "weekly_open_hours": 36,
+  "cid": "18336712395804648192",
+  "popular_times": {
+   "popular_times_by_days": {
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Chattanooga TN",
+   "prompt": "med spa Chattanooga TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Center MedSpa",
+     "Alchemy MedSpa + Wellness Center",
+     "Larimar Medspa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Flawless Aesthetics Med Spa",
+      "Larimar Medspa",
+      "Center MedSpa",
+      "SLK Aesthetic Medicine",
+      "EURO Med Spa",
+      "DiStefano Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Southern Surgical Arts (Beauty Bar)",
+      "Larimar Medspa",
+      "Center Medspa",
+      "Premier Medical Aesthetics",
+      "Thrive Wellness Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Center MedSpa",
+      "Larimar Medspa",
+      "EURO Med Spa",
+      "3 Leaf Med Spa",
+      "SLK Clinic Chattanooga"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Larimar Medspa",
+      "Euro Med Spa",
+      "Lavender Medi Spa",
+      "SkinMED Aesthetics + Wellness",
+      "Premier Medical Aesthetics",
+      "Alchemy Medspa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Chattanooga TN",
+   "prompt": "botox Chattanooga TN",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "CFR Aesthetics",
+      "Larimar Medspa",
+      "Flawless Aesthetics Med Spa",
+      "Nease Cosmetic Surgery",
+      "Uderm",
+      "SLK Clinic Chattanooga",
+      "LA Med Spa",
+      "Pomerance Eye Center"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Four Bridges Dermatology & Cosmetics",
+      "Southern Surgical Arts",
+      "CFR Aesthetics",
+      "Larimar Medspa",
+      "Revive Aesthetics",
+      "Premier Medical Aesthetics",
+      "Alchemy Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Four Bridges Dermatology & Cosmetics",
+      "SLK Clinic",
+      "Uderm",
+      "Southern Surgical Arts / Beauty Bar",
+      "CFR Aesthetics",
+      "Agape Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "CFR Aesthetics",
+      "SLK Clinic",
+      "USA Aesthetics Wellness",
+      "MDRN MUSE Dental Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Chattanooga, TN",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Larimar Medspa",
+     "Alchemy MedSpa + Wellness Center",
+     "Curate MedAesthetics - Chattanooga"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Associates In Plastic Surgery",
+      "Precision Eye Consultants",
+      "Larimar Medspa",
+      "Flawless Aesthetics",
+      "SLK Aesthetic Medicine"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Southern Surgical Arts (Beauty Bar)",
+      "Center Medspa",
+      "Larimar Medspa",
+      "Premier Medical Aesthetics",
+      "Thrive Wellness & Aesthetics",
+      "DiStefano Med Spa & Wellness Center"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Monarch Beauty Aesthetics",
+      "Four Bridges Dermatology and Cosmetics",
+      "Center MedSpa",
+      "Alchemy MedSpa + Wellness Center",
+      "3 Leaf Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Larimar Medspa",
+      "Center MedSpa",
+      "Four Bridges Dermatology and Cosmetics",
+      "Revive Aesthetics - Chattanooga"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "AMP address '700 Broad Street' appears to be a typo: Google listing, curatemedspa.com and LLM answers all give 1700 Broad St Ste 110; Google pin is ~1.3 km from AMP pin.",
+  "Listing search with accented title 'Cúrate MedAesthetics' returned 0 results; unaccented 'Curate MedAesthetics' found it (claimed).",
+  "Google listing phone is +1 423-407-2497 (likely call-tracking), not the AMP phone (423) 661-3244; however the local-pack entry in S3 SERP displayed (423) 661-3244, and Claude's answer cited 423.661.3244.",
+  "Google site link is curatemedspa.com/locations/chattanooga/ with GBP UTM tags (matches AMP domain).",
+  "All 10 GBP services; 7 are $0 'From' placeholders (injectables/consults); only 3 have real prices.",
+  "No ai_overview text readable: all 3 SERPs had asynchronous_ai_overview with no content.",
+  "Organic results were all google.com redirect URLs; no curatemedspa.com result identified in top 10 for any search (organic_pos null).",
+  "gemini-2.5-flash rate limited twice (rate_limit_exceeded); all 3 Gemini answers use gemini-3.6-flash.",
+  "Perplexity S3 and Claude S3 named 'Curate MedAesthetics - Ooltewah' (sister location, 804 reviews) rather than Chattanooga; counted as named per brand rule. Claude S2 also linked to Ooltewah botox page but gave the Chattanooga address.",
+  "ChatGPT S1 cited curatemedspa.com/locations/chattanooga in search_results but did not name the business in its answer (named=0).",
+  "Listing first_seen equals last_updated (2026-09-13) in DataForSEO; rating distribution shows 246 five-star and one 1-star."
+ ]
+}

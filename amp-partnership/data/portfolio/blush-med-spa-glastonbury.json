@@ -1,0 +1,927 @@
+{
+ "slug": "blush-med-spa-glastonbury",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Blush Med Spa - Glastonbury",
+  "brand": "Blush Med Spa",
+  "address": "100 Sycamore Street, Ste 1, Glastonbury, CT 6033",
+  "phone": "(860) 781-8544",
+  "site": "https://blushmedspact.com",
+  "pin": [
+   41.71072,
+   -72.5997
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Blush Med Spa",
+  "google_phone": "+1860-781-8544",
+  "phone_matches_amp": true,
+  "address": "100 Sycamore St Suite 1, top floor, Glastonbury, CT 06033",
+  "distance_km": 0.0,
+  "site_url": "http://blushmedspact.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 275,
+  "stars": {
+   "1": 13,
+   "2": 2,
+   "3": 0,
+   "4": 1,
+   "5": 259
+  },
+  "photos": 228,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 11,
+  "last_updated": "2026-09-27 04:15:58 +00:00",
+  "topics": [
+   {
+    "t": "lip filler",
+    "n": 30
+   },
+   {
+    "t": "talented staff",
+    "n": 15
+   },
+   {
+    "t": "injector",
+    "n": 13
+   },
+   {
+    "t": "no pressure sales",
+    "n": 4
+   },
+   {
+    "t": "under eye filler",
+    "n": 3
+   },
+   {
+    "t": "lash extensions",
+    "n": 3
+   },
+   {
+    "t": "3 point filler",
+    "n": 2
+   },
+   {
+    "t": "talented injectors",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 155
+   },
+   {
+    "title": "LHR (Brazilian - Female)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 160
+   },
+   {
+    "title": "LHR (Underarms)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 140
+   },
+   {
+    "title": "HydraFacial",
+    "category": "Medical Spa",
+    "price_usd": 199
+   },
+   {
+    "title": "Signature Facial",
+    "category": "Medical Spa",
+    "price_usd": 125
+   },
+   {
+    "title": "Celebrity Weight Loss Maintenance Appointment",
+    "category": "Wellness",
+    "price_usd": 166.58
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Greenwich Medical Spa at Glastonbury",
+    "rating": 4.9,
+    "reviews": 281
+   },
+   {
+    "name": "Infinity MedSpa of Glastonbury",
+    "rating": 4.9,
+    "reviews": 62
+   },
+   {
+    "name": "Liquid Aesthetics",
+    "rating": 5,
+    "reviews": 212
+   },
+   {
+    "name": "C'est La vie Day Spa",
+    "rating": 5,
+    "reviews": 253
+   },
+   {
+    "name": "Kalon Medical Spa",
+    "rating": 5,
+    "reviews": 103
+   }
+  ],
+  "weekly_open_hours": 47.5,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 95
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 38
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 61
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Glastonbury CT",
+   "prompt": "med spa Glastonbury CT",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "Greenwich Medical Spa at Glastonbury",
+     "Blush Med Spa - Glastonbury",
+     "Infinity MedSpa of Glastonbury"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Kalon Medical Spa",
+      "Samara MedSpa Glastonbury",
+      "Infinity MedSpa of Glastonbury",
+      "Greenwich Medical Spa at Glastonbury"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Infinity MedSpa of Glastonbury",
+      "Veda Medspa",
+      "Kalon Medical Spa",
+      "Samara MedSpa",
+      "Touch of Glamour"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Samara MedSpa Glastonbury",
+      "Touch of Glamour Med Spa",
+      "Dr. Beam's Cosmetic Surgery Center and MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Samara Medspa",
+      "Veda Medspa",
+      "Infinity MedSpa of Glastonbury",
+      "Kalon Medical Spa",
+      "Liquid Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Glastonbury CT",
+   "prompt": "botox Glastonbury CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Glastonbury",
+     "Liquid Aesthetics",
+     "Greenwich Medical Spa at Glastonbury"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Kalon Medical Spa",
+      "Liquid Aesthetics",
+      "DeSorbo Health & Wellness",
+      "Infinity MedSpa of Glastonbury",
+      "Karter Advanced Facial Plastic Surgery",
+      "Greenwich Medical Spa at Glastonbury"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Kalon Medical Spa",
+      "Infinity MedSpa of Glastonbury",
+      "Dr. Harold E. Beam, MD",
+      "Dermatology Associates of Glastonbury",
+      "Banki Dermatology & Cosmetic Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "DeSorbo Health & Wellness",
+      "Harold Beam, MD",
+      "Greenwich Medical Spa",
+      "Touch of Glamour Med Spa",
+      "Liquid Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Liquid Aesthetics",
+      "Touch of Glamour Med Spa",
+      "Harold E. Beam, M.D.",
+      "Infinity MedSpa of Glastonbury",
+      "Greenwich Medical Spa",
+      "DeSorbo Health and Wellness",
+      "C'est La Vie Day Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Glastonbury, CT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "Blush Med Spa - Glastonbury",
+     "Greenwich Medical Spa at Glastonbury",
+     "Liquid Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Kalon Medical Spa",
+      "Infinity MedSpa of Glastonbury",
+      "Samara MedSpa Glastonbury",
+      "Greenwich Medical Spa at Glastonbury"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Infinity MedSpa",
+      "Kalon Medical Spa",
+      "Veda Medspa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Greenwich Medical Spa",
+      "Samara MedSpa",
+      "C'est La Vie Day Spa",
+      "Liquid Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "C'est La Vie Day Spa",
+      "Greenwich Medical Spa - Glastonbury",
+      "Veda Medspa",
+      "Samara Medspa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Gemini gemini-2.5-flash returned rate_limit_exceeded (50301) twice; all 3 Gemini answers use gemini-3.6-flash.",
+  "Google AI Overview present on all 3 SERPs but asynchronous with no text (aio=unreadable).",
+  "blushmedspact.com did not appear in organic top 10 for any of the 3 searches; S3 'best med spa near me' organic results were all irrelevant medspaflorida.com pages.",
+  "Listings DB title is 'Blush Med Spa' (275 reviews, last updated 2026-09-27); live local pack shows 'Blush Med Spa - Glastonbury' with 285 reviews.",
+  "Listing contact_info shows extra backlink phones (860-835-5495, 860-295-3964, 860-606-6878); MapQuest lists (860) 430-4387 and Perplexity S1 repeated that wrong phone. Google business phone matches AMP.",
+  "Description says 'Best of Hartford 2020-2022' and lists HydraFacial, lasers, PCA peels, neuromodulators, fillers, memberships, B12; many booking services show $0 'From' prices.",
+  "Weekly open hours: Mon 9-17, Tue 9-18:30, Wed 9-18, Thu 9-17, Fri 9-17, Sat 9-14, Sun closed = 47.5h."
+ ]
+}

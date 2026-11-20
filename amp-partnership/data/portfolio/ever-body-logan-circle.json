@@ -1,0 +1,958 @@
+{
+ "slug": "ever-body-logan-circle",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - Logan Circle",
+  "brand": "Ever/Body",
+  "address": "1618 14th St NW, Washington, DC 20009",
+  "phone": "(917) 746-5167",
+  "website": "https://everbody.com",
+  "lat": 38.91198,
+  "lng": -77.03227
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body Logan Circle",
+  "google_phone": "+1917-722-4669",
+  "phone_matches_amp": false,
+  "address": "1618 14th St NW, Washington, DC 20009",
+  "distance_km": 0.0,
+  "site_url": "http://everbody.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.7,
+  "reviews": 246,
+  "stars": {
+   "1": 12,
+   "2": 9,
+   "3": 1,
+   "4": 4,
+   "5": 220
+  },
+  "photos": 20,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-11 22:50:47 +00:00",
+  "topics": [
+   {
+    "t": "filler",
+    "n": 19
+   },
+   {
+    "t": "hydrafacial",
+    "n": 12
+   },
+   {
+    "t": "honest staff",
+    "n": 7
+   },
+   {
+    "t": "aesthetician",
+    "n": 6
+   },
+   {
+    "t": "lip flip",
+    "n": 5
+   },
+   {
+    "t": "explanation of process",
+    "n": 5
+   },
+   {
+    "t": "bedside manner",
+    "n": 5
+   },
+   {
+    "t": "facial balancing",
+    "n": 4
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 130
+   },
+   {
+    "title": "LHR (Medium Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 255
+   },
+   {
+    "title": "LHR (Large Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 335
+   },
+   {
+    "title": "LHR (Small Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 175
+   },
+   {
+    "title": "LHR (Extra Small Area) (Upper Lip, Chin, Breastbone, Fingers, Toes)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 135
+   },
+   {
+    "title": "HydraFacial Boost",
+    "category": "Medical Spa",
+    "price_usd": 295
+   }
+  ],
+  "also_search": [
+   {
+    "name": "AnewSkin MedSpa",
+    "rating": 4.6,
+    "reviews": 68
+   },
+   {
+    "name": "GLO30 Shaw DC",
+    "rating": 4.8,
+    "reviews": 219
+   },
+   {
+    "name": "Glowbar Logan Circle",
+    "rating": 4.8,
+    "reviews": 208
+   },
+   {
+    "name": "Javan Wellness U Street",
+    "rating": 5,
+    "reviews": 226
+   },
+   {
+    "name": "Georgetown Allure Medical Spa",
+    "rating": 4.7,
+    "reviews": 523
+   }
+  ],
+  "weekly_open_hours": 58,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 11
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 17
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 94
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Washington DC",
+   "prompt": "med spa Washington DC",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Georgetown Allure Med Spa",
+     "Vitalify MedSpa",
+     "It's A Secret Med Spa - Washington DC"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Arta Medical Spa",
+      "S+P MedSpa",
+      "Hela Medical Spa",
+      "AYA Wellness & Medspa",
+      "Element Wellness & Aesthetics",
+      "ProMD Health Washington DC"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Vitalify MedSpa",
+      "Arta Medical Spa",
+      "Belmont Plastic Surgery Medical Spa",
+      "S+P MedSpa",
+      "Hela Medical Spa",
+      "OVME Dupont Circle",
+      "It's A Secret Med Spa",
+      "FoxHall Dermatology"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Arta Medical Spa",
+      "Georgetown Allure Medical Spa",
+      "S+P MedSpa",
+      "Bella MedSpa Institute",
+      "Custom Beauty Med Studio",
+      "GLO30 District Wharf",
+      "AnewSkin MedSpa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "OVME Washington DC",
+      "S+P MedSpa",
+      "It's a Secret Med Spa",
+      "Hela Medical Spa",
+      "Arta Medical Spa",
+      "Vitalify MedSpa",
+      "Blue Sky Laser & Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Washington DC",
+   "prompt": "botox Washington DC",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "DC Derm Docs",
+     "Ritual by Tracy Holzman NP-C",
+     "Georgetown Allure Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "none"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Radiance MedSpa DC",
+      "MI Skin Dermatology Center",
+      "Arta Medical Spa",
+      "FoxHall Dermatology",
+      "LaserAway Washington DC - Cathedral Heights",
+      "Cultura Dermatology & Plastic Surgery",
+      "Peel Haus",
+      "Metroderm DC"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "MI Skin Dermatology Center",
+      "Congressional Plastic Surgery",
+      "DC Derm Docs",
+      "West End Plastic Surgery",
+      "Cultura Dermatology & Plastic Surgery",
+      "Foxhall Dermatology",
+      "LaserAway (Cathedral Heights)",
+      "OVME Dupont Circle"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "DC Derm Docs",
+      "MI Skin Dermatology & Laser Center",
+      "West End Plastic Surgery",
+      "Plastic Surgery Institute of Washington"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "MI Skin Dermatology & Laser Center",
+      "Foxhall Dermatology",
+      "Congressional Plastic Surgery",
+      "The Naderi Center",
+      "AnewSkin Medical Spa",
+      "OVME Dupont Circle",
+      "LaserAway Washington DC - The Yards"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Washington, DC",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Georgetown Allure Med Spa",
+     "Vitalify MedSpa",
+     "Ritual by Tracy Holzman NP-C"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Arta Medical Spa",
+      "S+P MedSpa",
+      "SkinSpirit Georgetown",
+      "Element Wellness & Aesthetics",
+      "The GW Medical Faculty Associates",
+      "Georgetown Allure Medical Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Vitalify MedSpa",
+      "S+P MedSpa",
+      "SkinSpirit Georgetown",
+      "Capital Blossom Day Spa",
+      "Peachy Navy Yard",
+      "OVME Dupont Circle",
+      "Ritual by Tracy Holzman NP-C",
+      "Arta Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "FoxHall Dermatology",
+      "Ritual by Tracy Holzman NP-C",
+      "Vitalify MedSpa",
+      "Arta Medical Spa",
+      "Unwind Wellness - Navy Yard"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Javan Wellness",
+      "Georgetown Allure Medical Spa",
+      "NM Aesthetics | Wellness",
+      "Ritual by Tracy Holzman NP-C",
+      "Peachy Navy Yard",
+      "Honey Skincare Studio",
+      "Unwind Wellness - Georgetown"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (917) 722-4669 does not match AMP-listed (917) 746-5167.",
+  "Google listing site is http://everbody.com/ (homepage, no location page or UTM), unlike the Arlington listing which links to a location page.",
+  "Listing search also returned Ever/Body Arlington (2700 Clarendon Blvd, Arlington VA) marked closed_forever, still claimed, 4.9/163 reviews.",
+  "Ever/Body not in any local pack or organic top 10 for S1-S3; all organic URLs were google.com redirects so matching used breadcrumb domains.",
+  "S1 and S3 AI Overview asynchronous with no text (unreadable); S2 had no AI Overview.",
+  "S3 Google results for 'best med spa near me' returned out-of-area organic results (Yelp pages for Lewes DE, Virginia Beach, Cincinnati, etc.) though local pack was DC.",
+  "Perplexity S3 cited a Birdeye page for Ever/Body Logan Circle as a source but did not name the business in its answer text (named=0).",
+  "No LLM answer named Ever/Body in any of 12 calls; no model substitutions needed; serp location_name Washington,District of Columbia,United States worked.",
+  "Google services list 10 items; 5 priced at $0 (consult, Botox new/existing, lip filler) and excluded from prices."
+ ]
+}

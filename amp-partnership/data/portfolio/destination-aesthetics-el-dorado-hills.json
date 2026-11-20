@@ -1,0 +1,287 @@
+{
+  "slug": "destination-aesthetics-el-dorado-hills",
+  "run_date": "2026-11-20",
+  "amp": {
+    "name": "Destination Aesthetics - El Dorado Hills",
+    "brand": "Destination Aesthetics",
+    "address": "1162 Suncast Lane, Unit 1, El Dorado Hills, CA 95762",
+    "phone": "(916) 844-4913",
+    "site": "https://destinationaesthetics.com",
+    "pin": [
+      38.63507,
+      -121.06295
+    ]
+  },
+  "listing": {
+    "found": true,
+    "title": "Destination Aesthetics Medical Spa",
+    "cid": "9038054704814962707",
+    "google_phone": "+1916-844-4913",
+    "phone_matches_amp": true,
+    "address": "1162 Suncast Ln Unit 1, El Dorado Hills, CA 95762",
+    "distance_km": 0.0,
+    "site_url": "https://www.destinationaesthetics.com/contact/da-el-dorado-hills/",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": [
+      "Medical spa",
+      "Skin care clinic"
+    ],
+    "rating": 4.9,
+    "reviews": 124,
+    "stars": {
+      "1": 4,
+      "2": 0,
+      "3": 0,
+      "4": 2,
+      "5": 118
+    },
+    "photos": 52,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 16,
+    "last_updated": "2026-09-26 07:58:10 +00:00",
+    "topics": [
+      {
+        "t": "injector",
+        "n": 7
+      },
+      {
+        "t": "lip filler",
+        "n": 6
+      },
+      {
+        "t": "answers questions",
+        "n": 6
+      },
+      {
+        "t": "gentle touch",
+        "n": 4
+      },
+      {
+        "t": "full lips",
+        "n": 2
+      },
+      {
+        "t": "esthetics",
+        "n": 2
+      },
+      {
+        "t": "no pressure",
+        "n": 2
+      },
+      {
+        "t": "honest staff",
+        "n": 2
+      }
+    ],
+    "services_count": null,
+    "prices": [],
+    "also_search": [
+      {
+        "name": "Dignity Medical Aesthetics & Wellness",
+        "rating": 4.9,
+        "reviews": 319
+      },
+      {
+        "name": "Esthetics Center El Dorado Hills",
+        "rating": 4.9,
+        "reviews": 1350
+      },
+      {
+        "name": "The MD Aesthetics",
+        "rating": 4.9,
+        "reviews": 41
+      },
+      {
+        "name": "Destination Aesthetics Beauty Suites",
+        "rating": 2.5,
+        "reviews": 2
+      },
+      {
+        "name": "Hermosa Heights Aesthetics & Wellness",
+        "rating": 4.9,
+        "reviews": 78
+      }
+    ],
+    "weekly_open_hours": 38.75,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {
+      "key": "S1",
+      "q": "med spa El Dorado Hills CA",
+      "prompt": "med spa El Dorado Hills CA",
+      "google": {
+        "map_pos": 3,
+        "map_pack": [
+          "The MD Aesthetics",
+          "Dignity Medical Aesthetics & Wellness",
+          "Destination Aesthetics Medical Spa - El Dorado Hills"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Dignity Medical Aesthetics & Wellness",
+            "The MD Aesthetics",
+            "Northern California Wellness",
+            "Esthetics Center El Dorado Hills",
+            "Culture Aesthetics and Salon"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Northern California Wellness",
+            "Inspired Aesthetic Medicine",
+            "Youthful Skin & Body",
+            "Dignity Medical Aesthetics & Wellness",
+            "The MD Aesthetics",
+            "The Esthetics Center",
+            "Seven Medical Aesthetics"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Youthful Skin and Body"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Esthetics Center",
+            "Northern California Wellness",
+            "The MD Aesthetics",
+            "Youthful Skin & Body"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S2",
+      "q": "botox El Dorado Hills CA",
+      "prompt": "botox El Dorado Hills CA",
+      "google": {
+        "map_pos": 3,
+        "map_pack": [
+          "Esthetics Center El Dorado Hills",
+          "Dignity Medical Aesthetics & Wellness",
+          "Destination Aesthetics Medical Spa - El Dorado Hills"
+        ],
+        "organic_pos": null,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Esthetics Center El Dorado Hills",
+            "Dignity Medical Aesthetics & Wellness",
+            "Inspired Aesthetic Medicine",
+            "Defining Beauty Permanent Cosmetics",
+            "The MD Aesthetics"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Inspired Aesthetic Medicine",
+            "El Dorado Hills Aesthetic Center (Esthetics Center)",
+            "Dignity Medical Aesthetics",
+            "Dr. Almonte Facial Plastic Surgery",
+            "Northern California Wellness",
+            "Culture Aesthetics & Salon",
+            "Seven Medical Aesthetics"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Esthetics Center",
+            "Dignity Medical Aesthetics & Wellness",
+            "Inspired Aesthetic Medicine",
+            "Excel Medicine"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Esthetics Center",
+            "Dignity Medical Aesthetics & Wellness",
+            "Inspired Aesthetic Medicine",
+            "The MD Aesthetics",
+            "Culture Aesthetics"
+          ]
+        }
+      }
+    },
+    {
+      "key": "S3",
+      "q": "best med spa near me",
+      "prompt": "best med spa in El Dorado Hills, CA",
+      "google": {
+        "map_pos": 3,
+        "map_pack": [
+          "Esthetics Center El Dorado Hills",
+          "Dignity Medical Aesthetics & Wellness",
+          "Destination Aesthetics Medical Spa - El Dorado Hills"
+        ],
+        "organic_pos": 2,
+        "aio": "unreadable"
+      },
+      "llm": {
+        "chat_gpt": {
+          "named": 1,
+          "others": [
+            "Esthetics Center El Dorado Hills",
+            "Dignity Medical Aesthetics & Wellness",
+            "Northern California Wellness",
+            "Culture Aesthetics and Salon",
+            "Inspired Aesthetic Medicine"
+          ]
+        },
+        "gemini": {
+          "named": 1,
+          "others": [
+            "Youthful Skin & Body",
+            "Northern California Wellness",
+            "The Esthetics Center",
+            "The MD Aesthetics"
+          ]
+        },
+        "perplexity": {
+          "named": 1,
+          "others": [
+            "Esthetics Center El Dorado Hills",
+            "Dignity Medical Aesthetics & Wellness",
+            "The MD Aesthetics"
+          ]
+        },
+        "claude": {
+          "named": 1,
+          "others": [
+            "Esthetics Center El Dorado Hills",
+            "Northern California Wellness",
+            "The MD Aesthetics"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": [
+    "Google listing matched by address (cid 9038054704814962707); local-pack title is 'Destination Aesthetics Medical Spa - El Dorado Hills' with 130 reviews vs 124 in listings API (data lag).",
+    "AMP-listed phone (916) 844-4913 is also the Google phone of 'Destination Aesthetics Beauty Suites' in Folsom (cid 8538876046753106421, 2.5 stars/2 reviews) - shared phone across listings; Beauty Suites also appears in this listing's 'people also search'.",
+    "Listings API returned no popular_times for this listing (saved as null) and no services/prices fields.",
+    "Google site link points to brand domain www.destinationaesthetics.com (location contact page); same registrable domain as AMP site.",
+    "first_seen 2026-09-26 equals last_updated - listing record appears recently re-indexed though local pack says 3+ years in business.",
+    "All three SERPs: AI overview present but asynchronous with no text (unreadable). S1/S2 organic results are third-party directories (Yelp, auravenu, Fresha, Apple Maps, birdeye, Facebook) referencing the location, not own site.",
+    "Gemini web-search answers reference brand 'Destination Aesthetics' generically in S1/S2; counted as named per brand rule. No model substitutions needed.",
+    "Weekly hours: Mon-Thu 9:15-17:00, Fri 8:15-16:00 = 38.75 h; website mentions one Saturday per month not in Google hours."
+  ]
+}

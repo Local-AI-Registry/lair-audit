@@ -1,0 +1,856 @@
+{
+ "slug": "ever-body-williamsburg",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - Williamsburg",
+  "brand": "Ever/Body",
+  "address": "200 Kent Ave, Brooklyn, NY 11249",
+  "phone": "(917) 781-2352",
+  "site": "https://everbody.com",
+  "lat": 40.71783,
+  "lng": -73.96457
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body Williamsburg",
+  "google_phone": "+1917-781-2352",
+  "phone_matches_amp": true,
+  "address": "200 Kent Ave, Brooklyn, NY 11249",
+  "distance_km": 0.1,
+  "site_url": "http://everbody.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.6,
+  "reviews": 245,
+  "stars": {
+   "1": 19,
+   "2": 4,
+   "3": 3,
+   "4": 1,
+   "5": 218
+  },
+  "photos": 25,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 12,
+  "last_updated": "2026-09-25 20:37:05 +00:00",
+  "topics": [
+   {
+    "t": "hydrafacial",
+    "n": 16
+   },
+   {
+    "t": "product selection",
+    "n": 12
+   },
+   {
+    "t": "extractions",
+    "n": 8
+   },
+   {
+    "t": "friendly team",
+    "n": 8
+   },
+   {
+    "t": "clean skin",
+    "n": 5
+   },
+   {
+    "t": "lip flip",
+    "n": 4
+   },
+   {
+    "t": "thorough team",
+    "n": 2
+   },
+   {
+    "t": "gentle technique",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Emsculpt Neo (Abdomen)",
+    "category": "Body Contouring",
+    "price_usd": 1165
+   },
+   {
+    "title": "Lip Flip",
+    "category": "Injectables",
+    "price_usd": 130
+   },
+   {
+    "title": "LHR (Large Area)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 335
+   },
+   {
+    "title": "HydraFacial Boost",
+    "category": "Medical Spa",
+    "price_usd": 295
+   },
+   {
+    "title": "IPL",
+    "category": "Skin Rejuvenation",
+    "price_usd": 450
+   },
+   {
+    "title": "Clear + Brilliant Facial",
+    "category": "Skin Rejuvenation",
+    "price_usd": 575
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Peachy Williamsburg",
+    "rating": 4.9,
+    "reviews": 1015
+   },
+   {
+    "name": "Purely Natural Medical Spa",
+    "rating": 4.9,
+    "reviews": 226
+   },
+   {
+    "name": "N4 Esthetic Clinic",
+    "rating": 4.8,
+    "reviews": 106
+   },
+   {
+    "name": "Endless Youth Med Spa",
+    "rating": 4.7,
+    "reviews": 13
+   },
+   {
+    "name": "Williamsburg Beauty Spa",
+    "rating": 4.8,
+    "reviews": 185
+   }
+  ],
+  "weekly_open_hours": 46,
+  "popular_times": {
+   "popular_times_by_days": {
+    "sunday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 18
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Brooklyn NY",
+   "prompt": "med spa Brooklyn NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "L'Elite MediSpa and Wellness BK",
+     "Luxe Wellness and Aesthetics NYC",
+     "Khrom Medspa & Wellness"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "PBK Medspa",
+      "Lov MedSpa Brooklyn",
+      "Radiant Medspa",
+      "Vast Medspa",
+      "SYLK MEDSPA",
+      "Metodica Med Spa",
+      "UPKEEP Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "LovMedSpa Brooklyn",
+      "Purely Natural Medical Spa",
+      "Juno Aesthetics",
+      "Dolce Aesthetics NY",
+      "PBK Medspa",
+      "The Med Spa",
+      "UPKEEP Med Spa",
+      "Peachy Williamsburg"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Satori Laser",
+      "LaserAway Brooklyn Heights",
+      "KHROM Medspa & Wellness",
+      "UPKEEP Med Spa",
+      "Park Slope Laser Aesthetic Center",
+      "Glow By Phoebe",
+      "IC Med SPA",
+      "Metodica Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Brooklyn Medical Spa (New York Aesthetics)",
+      "ModMD",
+      "The Med Spa",
+      "Lola Aesthetics Wellness & MediSpa",
+      "LovMedSpa Brooklyn",
+      "IC Med Spa",
+      "Unique Clinique Aesthetics"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Brooklyn NY",
+   "prompt": "botox Brooklyn NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Lola Aesthetics & Medi Spa",
+     "Luxe Wellness and Aesthetics NYC",
+     "L'Elite MediSpa and Wellness BK"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Metodica Med Spa",
+      "Lov MedSpa Brooklyn",
+      "PBK Medspa",
+      "LaserAway Brooklyn - Williamsburg",
+      "Jana HealthCare",
+      "Aestheticus",
+      "Brooklyn Aesthetics",
+      "Bay Ridge Beauty"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "New York Laser Vision",
+      "East Coast Dermatology",
+      "StudioMD Brooklyn",
+      "LaserAway Brooklyn - Park Slope",
+      "Irina Gressel, MD",
+      "LovMedSpa Brooklyn",
+      "Park Slope Laser Aesthetic Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Kalon Dermatology",
+      "RENATA Facial Cosmetic Surgery",
+      "Skin Glow Dermatology",
+      "UPKEEP",
+      "Metropolitan Dental Arts"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "LaserAway",
+      "Kalon Dermatology",
+      "Heights Dermatology and Laser",
+      "Park Slope Dermatology & Medi Spa",
+      "Skin Glow Dermatology",
+      "Park Slope Laser Aesthetic Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Brooklyn, NY",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Lola Aesthetics & Medi Spa",
+     "Luxe Wellness and Aesthetics NYC",
+     "L'Elite MediSpa and Wellness BK"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "SYLK MEDSPA",
+      "PBK Medspa",
+      "Lov MedSpa Brooklyn",
+      "Majestic Spa & Body Sculpting Boutique",
+      "IC Med SPA Brooklyn",
+      "La Vita Skincare & Laser"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "LovMedSpa Brooklyn",
+      "SINY Dermatology & Cosmetic Surgery",
+      "Next Level Aesthetics",
+      "Peachy Williamsburg",
+      "Peachy Brooklyn Heights",
+      "Purely Natural Medical Spa",
+      "Juno Aesthetics",
+      "Luxe Wellness and Aesthetics NYC"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "SINY Dermatology & Cosmetic Surgery",
+      "Next Level Aesthetics",
+      "Lola Aesthetics & Medi Spa",
+      "PBK Medspa",
+      "La Vita Skincare & Laser",
+      "Lov MedSpa Brooklyn"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "LovMedSpa Brooklyn",
+      "Purely Natural Medical Spa",
+      "Peachy Brooklyn Heights",
+      "PBK MedSpa",
+      "Lumena Aesthetics",
+      "Cintron Skincare",
+      "Naked Perfection Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing found only with title 'Ever/Body Williamsburg' and is_claimed=false filter at 3km radius; first search ('Ever/Body', 15km, claimed) returned Upper West Side, Greenwich Village and Flatiron listings instead.",
+  "AMP phone (917) 781-2352 is also the phone on the Ever/Body Upper West Side listing (2159 Broadway), which Google marks closed_forever; shared brand phone number across listings.",
+  "Google listing timetable has no Wednesday or Thursday hours (only Sun/Mon/Tue/Fri/Sat); weekly_open_hours=46 may understate if data is incomplete.",
+  "Google site link is http://everbody.com/ (homepage, no location page, no https, no UTM) unlike Flatiron/Greenwich Village listings which link to /locations/ pages.",
+  "services_count reflects the 10 services returned by the API (may be truncated); several injectables priced $0 ('From $0.00') were excluded from prices.",
+  "Coordinates from Google are rounded to 3 decimals (40.718,-73.964); distance to AMP pin ~0.05 km.",
+  "All 3 SERPs: ai_overview asynchronous with no text (unreadable); Ever/Body not in local pack or top organic results. S3 'best med spa near me' organic results were non-local (Rochester, Lewes DE, Cincinnati, etc.) despite Brooklyn location.",
+  "No LLM answer named Ever/Body. Perplexity S3 cited an Observer list of NYC luxury med spas whose snippet includes 'Ever/Body', but the answer text did not name it. Competitor LaserAway Brooklyn-Williamsburg (89 N 4th St) named by ChatGPT and Claude for botox.",
+  "All models used as specified (no substitutions); serp location 'Brooklyn,New York,United States' worked."
+ ]
+}

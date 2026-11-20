@@ -1,0 +1,794 @@
+{
+ "slug": "ever-body-north-haven",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Ever / Body - North Haven",
+  "brand": "Ever/Body",
+  "address": "360 Universal Dr N, North Haven, CT 6473",
+  "phone": "(203) 361-9073",
+  "website": "https://everbody.com",
+  "lat": 41.35269,
+  "lng": -72.87406
+ },
+ "listing": {
+  "found": true,
+  "title": "Ever/Body North Haven",
+  "google_phone": "+1203-802-6879",
+  "phone_matches_amp": false,
+  "address": "360 Universal Dr N, North Haven, CT 06473",
+  "distance_km": 0.0,
+  "site_url": "https://everbody.com/locations/north-haven/?utm_source=google&utm_medium=organic&utm_campaign=gbp_north_haven",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.4,
+  "reviews": 763,
+  "stars": {
+   "1": 94,
+   "2": 18,
+   "3": 19,
+   "4": 18,
+   "5": 614
+  },
+  "photos": 19,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 13,
+  "last_updated": "2026-09-30 09:40:29 +00:00",
+  "topics": [
+   {
+    "t": "clean facility",
+    "n": 13
+   },
+   {
+    "t": "lip filler",
+    "n": 12
+   },
+   {
+    "t": "laser treatment",
+    "n": 11
+   },
+   {
+    "t": "bikini area",
+    "n": 9
+   },
+   {
+    "t": "procedure explanation",
+    "n": 9
+   },
+   {
+    "t": "cool sculpting",
+    "n": 8
+   },
+   {
+    "t": "chin hair removal",
+    "n": 2
+   },
+   {
+    "t": "underarm hair removal",
+    "n": 2
+   }
+  ],
+  "services_count": 17,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "Ever/Body Hartford",
+    "rating": 4.5,
+    "reviews": 888
+   },
+   {
+    "name": "Anti-Aging Centers of Connecticut",
+    "rating": 4.8,
+    "reviews": 240
+   },
+   {
+    "name": "LaserMEDICA Dermacenters USA",
+    "rating": 4.6,
+    "reviews": 18
+   },
+   {
+    "name": "Park Avenue Esthetics",
+    "rating": 5,
+    "reviews": 270
+   },
+   {
+    "name": "Emira Aesthetics",
+    "rating": 5,
+    "reviews": 75
+   }
+  ],
+  "weekly_open_hours": 43,
+  "popular_times": {
+   "popular_times_by_days": {
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 87
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa North Haven CT",
+   "prompt": "med spa North Haven CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Beauty Spot MedSpa",
+     "Charli Blake's Med Spa",
+     "Elysian Aesthetics Center"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Transcend Medical Aesthetics",
+      "Elysian Aesthetics Center",
+      "The Beauty Spot MedSpa",
+      "Charli Blake's Med Spa",
+      "Ideal Image North Haven",
+      "LaserMEDICA Dermacenters USA"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Transcend Medical Aesthetics",
+      "The Beauty Spot Medspa",
+      "Charli Blake's Med Spa",
+      "Elysian Aesthetics Center"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Charli Blake's Med Spa",
+      "The Beauty Spot MedSpa",
+      "Transcend Medical Aesthetics",
+      "Elysian Aesthetics Center"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "The Beauty Spot MedSpa",
+      "Charli Blake's Med Spa",
+      "Transcend Medical Aesthetics",
+      "Muscle Therapy Wellness Lounge"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox North Haven CT",
+   "prompt": "botox North Haven CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Beauty Spot MedSpa",
+     "Elysian Aesthetics Center",
+     "Charli Blake's Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Elysian Aesthetics Center",
+      "Transcend Medical Aesthetics",
+      "Ideal Image North Haven",
+      "Charli Blake's Med Spa",
+      "The Beauty Spot MedSpa",
+      "LaserMEDICA Dermacenters USA",
+      "Cranial Mantra Health and Beauty"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "The Beauty Spot Medspa",
+      "Transcend Medical Aesthetics",
+      "Charli Blake's Med Spa",
+      "Elysian Aesthetics Center",
+      "LaserMEDICA (CareMEDICA)"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The Beauty Spot MedSpa",
+      "Charli Blake's Med Spa",
+      "Nova Dentistry",
+      "Elysian Aesthetics Center"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Ideal Image North Haven",
+      "Transcend Medical Aesthetics",
+      "The Beauty Spot Medspa",
+      "Charli Blake's Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in North Haven, CT",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Glow Medical Aesthetics",
+     "The Beauty Spot MedSpa",
+     "Bel Lavi Medical Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Transcend Medical Aesthetics",
+      "Elysian Aesthetics Center",
+      "The Beauty Spot MedSpa",
+      "Charli Blake's Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Transcend Medical Aesthetics",
+      "Charli Blake's Med Spa",
+      "The Beauty Spot Medspa",
+      "Elysian Aesthetics Center",
+      "LaserMEDICA",
+      "Clarity Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The Beauty Spot MedSpa",
+      "Muscle Therapy Wellness Lounge",
+      "Charli Blake's Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Muscle Therapy Wellness Lounge",
+      "Charli Blake's Med Spa",
+      "Elysian Aesthetics Center",
+      "The Beauty Spot MedSpa",
+      "Transcend Medical Aesthetics",
+      "Park Avenue Esthetics"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Phone mismatch: Google listing phone (203) 802-6879 vs AMP/everbody.com phone (203) 361-9073. Perplexity and Claude answers quoted 361-9073 (from everbody.com); Perplexity S1 quoted 802-6879 (from directories).",
+  "everbody.com/locations/north-haven/ snippet (crawled 2026-11-10, via Perplexity search results) shows 'Visit Us - Opening Soon', yet the Google listing is live with 763 reviews.",
+  "Google listing first_seen 2026-09-30, but has 763 reviews; directory/Yelp results show Ideal Image North Haven at the same address (360 Universal Drive North) as recently as 2025, suggesting this listing is a rebranded Ideal Image location. Ideal Image North Haven is still named separately by ChatGPT and Claude.",
+  "Ever/Body not in the local pack or organic top 10 for any of the 3 Google searches; all AI Overviews were asynchronous with no readable text.",
+  "No priced services on the Google listing (17 services, none with price). Closed Sunday and Monday.",
+  "Google listing distance to AMP pin about 0.03 km (Google lat/lng given only to 3 decimals).",
+  "No model substitutions; all 12 LLM calls succeeded."
+ ]
+}

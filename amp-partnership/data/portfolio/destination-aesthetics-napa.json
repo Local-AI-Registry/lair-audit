@@ -1,0 +1,77 @@
+{
+  "slug": "destination-aesthetics-napa",
+  "run_date": "2026-11-20",
+  "amp": {"name": "Destination Aesthetics - Napa", "brand": "Destination Aesthetics", "address": "1834 First Street, Napa, CA 94559", "phone": "(707) 702-3223", "site": "https://destinationaesthetics.com", "lat": 38.29776, "lng": -122.29406},
+  "listing": {
+    "found": true,
+    "title": "Destination Aesthetics Medical Spa - Napa",
+    "cid": "16003459061637733491",
+    "google_phone": "+1707-908-8592",
+    "phone_matches_amp": false,
+    "address": "1834 1st St, Napa, CA 94559",
+    "distance_km": 0.0,
+    "site_url": "https://www.destinationaesthetics.com/location/napa/?utm_source=google&utm_medium=organic&utm_campaign=gbp_da_napa",
+    "site_matches_amp": true,
+    "category": "Medical spa",
+    "categories": ["Medical spa", "Facial spa", "Skin care clinic", "Wellness center"],
+    "rating": 4.9,
+    "reviews": 145,
+    "stars": {"1": 4, "2": 1, "3": 1, "4": 0, "5": 139},
+    "photos": 20,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 11,
+    "last_updated": "2026-09-11 22:56:50 +00:00",
+    "topics": [{"t": "friendly team", "n": 7}, {"t": "injecting", "n": 6}, {"t": "esthetician", "n": 4}, {"t": "gentle touch", "n": 4}, {"t": "comfortable during procedure", "n": 3}, {"t": "educated staff", "n": 3}, {"t": "brow care", "n": 2}, {"t": "unrushed appointments", "n": 2}],
+    "services_count": 40,
+    "prices": [],
+    "also_search": [
+      {"name": "My Life Med Aesthetics, Inc", "rating": 5, "reviews": 3},
+      {"name": "Nude Medical Aesthetics", "rating": 5, "reviews": 111},
+      {"name": "Rella Aesthetics", "rating": 4.9, "reviews": 112},
+      {"name": "MedSpa at Napa Solano Plastic Surgery", "rating": 5, "reviews": 5},
+      {"name": "Napa Aesthetics, A Nursing Corporation by Lorie Janes, RN Medical Director-Dr.Robert Gray", "rating": 5, "reviews": 45}
+    ],
+    "weekly_open_hours": 44.0,
+    "popular_times": null
+  },
+  "svc": "med spa",
+  "searches": [
+    {"key": "S1", "q": "med spa Napa CA", "prompt": "med spa Napa CA",
+     "google": {"map_pos": 2, "map_pack": ["Nude Medical Aesthetics", "Destination Aesthetics Medical Spa - Napa", "Rella Aesthetics"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Paradigm Medical Aesthetics", "AMP Skin + Wellness", "Root Cause Wellness & Aesthetics", "Nude Medical Aesthetics", "Balanced Skin and Acne Clinic"]},
+       "gemini": {"named": 1, "others": ["SkinLab Napa Valley", "B12 LOVE | Napa", "Nude Medical Aesthetics", "My Life Med Aesthetics & Age Management Medicine", "Napa Solano Plastic Surgery MedSpa", "The Spa at Napa River Inn", "Paradigm Medical Aesthetics"]},
+       "perplexity": {"named": 1, "others": ["Napa Solano MediSpa", "MedSpa at Napa Solano Plastic Surgery", "My Life Med Aesthetics"]},
+       "claude": {"named": 0, "others": ["Paradigm Medical Aesthetics", "Lift Aesthetics", "Nude Medical Aesthetics", "Rella Aesthetics", "My Life Med Aesthetics", "Napa Solano MediSpa"]}
+     }},
+    {"key": "S2", "q": "botox Napa CA", "prompt": "botox Napa CA",
+     "google": {"map_pos": 1, "map_pack": ["Destination Aesthetics Medical Spa - Napa", "Rella Aesthetics", "Nude Medical Aesthetics"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["Nude Medical Aesthetics", "Rella Aesthetics", "Greenhaus Day Spa", "Monarch Skin Studio", "Paradigm Medical Aesthetics", "Solano Dermatology Associates"]},
+       "gemini": {"named": 0, "others": ["SkinCeuticals SkinLab Napa Valley, by Duncan Dermatology", "Napa Solano Plastic Surgery", "Rella Aesthetics", "NV Regenerative Aesthetics", "Valley Dermatology and Wellness", "Wine Country Dermatology", "Erica R. Aronson, MD", "My Life Med Aesthetics & Age Management Medicine"]},
+       "perplexity": {"named": 1, "others": ["Nude Medical Aesthetics", "Rella Aesthetics Napa", "Solano Dermatology Associates", "Monarch Skin Studio"]},
+       "claude": {"named": 0, "others": []}
+     }},
+    {"key": "S3", "q": "best med spa near me", "prompt": "best med spa in Napa, CA",
+     "google": {"map_pos": 2, "map_pack": ["Nude Medical Aesthetics", "Destination Aesthetics Medical Spa - Napa", "Rella Aesthetics"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Nude Medical Aesthetics", "Root Cause Wellness & Aesthetics", "AMP Skin + Wellness", "Balanced Skin and Acne Clinic", "Swor Yim Inc A Medical Corporation"]},
+       "gemini": {"named": 1, "others": ["SkinLab Napa Valley", "B12 LOVE | Napa", "Nude Medical Aesthetics", "Rella Aesthetics", "Lift Aesthetics - Napa", "Napa Solano MediSpa, INC.", "My Life Med Aesthetics INC."]},
+       "perplexity": {"named": 1, "others": ["SkinLab Napa Valley", "Nude Medical Aesthetics", "Rella Aesthetics"]},
+       "claude": {"named": 1, "others": ["Rella Aesthetics", "Napa Aesthetics, A Nursing Corporation", "Paradigm Medical Aesthetics", "Nude Medical Aesthetics", "My Life Med Aesthetics", "Napa Solano MediSpa"]}
+     }}
+  ],
+  "notes": [
+    "Phone mismatch: Google listing phone (707) 908-8592 vs AMP-listed (707) 702-3223. DA Napa location page (per Perplexity search snippet) lists (916) 844-4913 and (707) 908-8965 for texts; neither matches AMP's number.",
+    "Location was formerly Lift Aesthetics (rebranded to Destination Aesthetics); Google listing description and service descriptions still reference Lift Aesthetics.",
+    "Claude S1 named the business only by its former name 'Lift Aesthetics', not the Destination Aesthetics brand, so recorded named=0. Gemini S3 listed both 'Destination Aesthetics Medical Spa - Napa' and 'Lift Aesthetics - Napa' as separate businesses (legacy-name split in AI answers).",
+    "Claude S2 (botox Napa CA) returned a clarifying question with no businesses and did not use web search; recorded named=0 since text exists.",
+    "Review count differs: business listings API shows 145 reviews (last_updated 2026-09-11) while live SERP local pack shows 158.",
+    "popular_times not present in the business_listings_search response; stored as null.",
+    "No prices on Google services (40 services, none priced).",
+    "organic_pos null for all searches: no organic result was the business's own site or Google listing; S2 organic #5 was a Fresha page titled with the business name (third-party, not counted).",
+    "All three SERPs had an asynchronous AI Overview with no text (aio=unreadable). S3 'best med spa near me' organic results were mostly non-local (Reno, Fresno, Morgan Hill) even with Napa location set.",
+    "No model substitutions needed; Napa,California,United States location accepted."
+  ]
+}

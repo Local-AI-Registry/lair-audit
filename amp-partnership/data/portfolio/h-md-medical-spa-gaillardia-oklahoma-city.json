@@ -1,0 +1,947 @@
+{
+ "slug": "h-md-medical-spa-gaillardia-oklahoma-city",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "H-MD Medical Spa - Gaillardia - Oklahoma City",
+  "brand": "H-MD Medical Spa",
+  "address": "5101 W Memorial Road, Oklahoma City, OK 73142",
+  "phone": "(405) 463-5700",
+  "website": "https://h-md.com",
+  "lat": 35.61064,
+  "lng": -97.6103
+ },
+ "listing": {
+  "found": true,
+  "title": "H-MD Medical Spa - Gaillardia",
+  "google_phone": "+1405-345-9406",
+  "phone_matches_amp": false,
+  "address": "5101 W Memorial Rd, Oklahoma City, OK 73142",
+  "distance_km": 0.0,
+  "site_url": "https://h-md.com/our-locations/okc?utm_source=google&utm_medium=organic&utm_campaign=gbp_gaillardia",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.8,
+  "reviews": 932,
+  "stars": {
+   "1": 28,
+   "2": 5,
+   "3": 3,
+   "4": 11,
+   "5": 885
+  },
+  "photos": 56,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 18,
+  "last_updated": "2026-09-11 09:12:07 +00:00",
+  "topics": [
+   {
+    "t": "lip filler",
+    "n": 83
+   },
+   {
+    "t": "injector",
+    "n": 30
+   },
+   {
+    "t": "lip flip",
+    "n": 9
+   },
+   {
+    "t": "gentle injections",
+    "n": 8
+   },
+   {
+    "t": "no bruising",
+    "n": 8
+   },
+   {
+    "t": "treatment plan",
+    "n": 7
+   },
+   {
+    "t": "chin filler",
+    "n": 5
+   },
+   {
+    "t": "uneven lips",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Consult (General)",
+    "category": "Consultation",
+    "price_usd": 50
+   },
+   {
+    "title": "Dermaplane",
+    "category": "Medical Spa",
+    "price_usd": 65
+   },
+   {
+    "title": "DiamondGlow Treatment",
+    "category": "Medical Spa",
+    "price_usd": 225
+   },
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 399
+   },
+   {
+    "title": "Ultra Laser",
+    "category": "Skin Rejuvenation",
+    "price_usd": 525
+   }
+  ],
+  "also_search": [
+   {
+    "name": "RefineU Med Spa",
+    "rating": 5,
+    "reviews": 145
+   },
+   {
+    "name": "Renew Wellness & Aesthetics",
+    "rating": 4.9,
+    "reviews": 206
+   },
+   {
+    "name": "Bella Luce Med Spa",
+    "rating": 4.9,
+    "reviews": 118
+   },
+   {
+    "name": "Radiance Medical Aesthetics Of Oklahoma",
+    "rating": 5,
+    "reviews": 491
+   },
+   {
+    "name": "Lara Clinic",
+    "rating": 5,
+    "reviews": 141
+   }
+  ],
+  "weekly_open_hours": 50.0,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 27
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 39
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 39
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 72
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 66
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 63
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 84
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 96
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 93
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 36
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 42
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 54
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 39
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 57
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 33
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Oklahoma City OK",
+   "prompt": "med spa Oklahoma City OK",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "Upscale Wellness & MedSpa",
+     "Wheeler Med Spa",
+     "The Treatment Room"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Revive Aesthetics Medical Spa",
+      "Elysian Wellness & Aesthetics",
+      "Belle Âme Med Spa",
+      "Masters Plastic Surgery",
+      "The Medspa @50th",
+      "Wheeler Med Spa",
+      "Advanced Aesthetics",
+      "Sculpted Medical Spas"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Radiance Medical Aesthetics of Oklahoma",
+      "LOU LOU Med Spa",
+      "Aesthetic Center of Excellence (ACE)",
+      "Renew Wellness and Aesthetics",
+      "Mariposa Aesthetics & Laser Center",
+      "Sculpted Med Spas OKC",
+      "Longevity Health and Wellness",
+      "Premier Plastic Surgery & Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Wheeler Med Spa",
+      "Exquisite Med Spa",
+      "Belle Âme Med Spa",
+      "RefineU Med Spa",
+      "Omni Lux Med Spa",
+      "True Blue Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Advanced Aesthetics",
+      "The Treatment Room",
+      "Renew Wellness & Aesthetics",
+      "Bliss Medical Spa",
+      "The Medspa @50th",
+      "Wheeler Med Spa",
+      "ReVerse Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Oklahoma City OK",
+   "prompt": "botox Oklahoma City OK",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Treatment Room",
+     "Wheeler Med Spa",
+     "Belle Rose Aesthetics"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Masters Plastic Surgery",
+      "Premier Plastic Surgery & Aesthetics",
+      "Beauty Now Mobile Medspa",
+      "Revive Aesthetics Medical Spa",
+      "Beaut Medical Spa",
+      "Longevity OKC",
+      "Bella Luce Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "LaserAway Oklahoma City",
+      "West Medical Aesthetics",
+      "The Treatment Room",
+      "Highwater Aesthetics",
+      "Mills Obstetrics & Gynecology",
+      "Injectable Aesthetics",
+      "Aesthetic Center"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Renew Wellness & Aesthetics",
+      "Bajaj Plastic Surgery",
+      "Advanced Aesthetics",
+      "Cosmetic Surgery Affiliates",
+      "The Treatment Room",
+      "Belle Rose Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "LaserAway Oklahoma City",
+      "Wheeler Med Spa",
+      "Lakeside Aesthetics OKC",
+      "Lowe Plastic Surgery",
+      "Advanced Aesthetics",
+      "Upscale Wellness"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Oklahoma City, OK",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Treatment Room",
+     "Wheeler Med Spa",
+     "Upscale Wellness & MedSpa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Purity Day Spa",
+      "The Treatment Room",
+      "Restore Hyper Wellness",
+      "Longevity OKC",
+      "Radiance Medical Aesthetics of Oklahoma",
+      "LOU LOU Med Spa",
+      "Wheeler Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Treatment Room",
+      "Radiance Medical Aesthetics Of Oklahoma",
+      "LOU LOU Med Spa",
+      "Upscale Wellness & MedSpa",
+      "Restore Hyper Wellness",
+      "Mariposa Aesthetics & Laser Center",
+      "Belle Âme Med Spa",
+      "Sculpted Med Spas OKC"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "The Treatment Room",
+      "Wheeler Med Spa",
+      "Longevity OKC",
+      "Revive Aesthetics Medical Spa",
+      "RefineU Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "The Treatment Room",
+      "LOU LOU Med Spa",
+      "Belle Âme Med Spa",
+      "Radian Medical Spa",
+      "Radiance Medical Aesthetics of Oklahoma",
+      "Zen Aesthetics and Wellness"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google phone (405) 345-9406 does not match AMP-listed (405) 463-5700.",
+  "Second H-MD listing in same search: H-MD Medical Spa - Chisholm Creek (13230 Pawnee Dr #201, OKC 73114, 4.4/650, phone 405-442-9760) - sister location, not this one.",
+  "Google site link is location page h-md.com/our-locations/okc with UTM tags (same domain as AMP).",
+  "S1 organic #2 is a City Lifestyle article titled 'H-MD Medical Spa | Oklahoma City, OK' (third-party, not counted as own site); S1 related searches include 'H-MD Medical Spa Tulsa'.",
+  "All three SERPs had asynchronous AI Overviews with no text (unreadable).",
+  "S3 'best med spa near me' organic results are mostly off-market (medspaflorida.com, Tulsa Yelp, Garland TX).",
+  "Perplexity S1 named 'H-MD Medical Spa – Gaillardia' specifically; ChatGPT S2 named H-MD with Gaillardia and Chisholm Creek locations; Gemini S3 cited Gaillardia 4.8/944 reviews.",
+  "Claude haiku-4-5 named H-MD in none of the 3 prompts. No model substitutions; SERP location_name Oklahoma City worked."
+ ]
+}

@@ -1,0 +1,934 @@
+{
+ "slug": "h-md-medical-spa-tulsa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "H-MD Medical Spa - Tulsa",
+  "brand": "H-MD Medical Spa",
+  "address": "6050 S Yale Ave Suite 101, Tulsa, OK 74135",
+  "phone": "(918) 615-9605",
+  "website": "https://h-md.com",
+  "lat": 36.07583,
+  "lng": -95.92325
+ },
+ "listing": {
+  "found": true,
+  "title": "H-MD Medical Spa - Tulsa",
+  "google_phone": "+1 918-727-8921",
+  "phone_matches_amp": false,
+  "address": "6050 S Yale Ave Ste 101, Tulsa, OK 74135",
+  "distance_km": 0.0,
+  "site_url": "https://h-md.com/our-locations/tulsa?utm_source=google&utm_medium=organic&utm_campaign=gbp_tulsa",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.5,
+  "reviews": 788,
+  "stars": {
+   "1": 80,
+   "2": 15,
+   "3": 10,
+   "4": 18,
+   "5": 665
+  },
+  "photos": 22,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 14,
+  "last_updated": "2026-09-21 15:23:50 +00:00",
+  "topics": [
+   {
+    "t": "scheduling",
+    "n": 15
+   },
+   {
+    "t": "lip filler",
+    "n": 12
+   },
+   {
+    "t": "hair removal",
+    "n": 10
+   },
+   {
+    "t": "procedure explanation",
+    "n": 9
+   },
+   {
+    "t": "laser treatments",
+    "n": 8
+   },
+   {
+    "t": "quick appointments",
+    "n": 7
+   },
+   {
+    "t": "wait time",
+    "n": 6
+   },
+   {
+    "t": "cool sculpting",
+    "n": 5
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "DiamondGlow Treatment",
+    "category": "Medical Spa",
+    "price_usd": 225
+   },
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 399
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Tulsa Hills Cosmetic and Laser Skin Center",
+    "rating": 4.9,
+    "reviews": 73
+   },
+   {
+    "name": "Bella Roma Medical Spa",
+    "rating": 5,
+    "reviews": 736
+   },
+   {
+    "name": "Luminate Clinic",
+    "rating": 5,
+    "reviews": 538
+   },
+   {
+    "name": "Image Electrology Studio",
+    "rating": 5,
+    "reviews": 10
+   },
+   {
+    "name": "Advanced Clinic Tulsa",
+    "rating": 5,
+    "reviews": 1
+   }
+  ],
+  "weekly_open_hours": 52.0,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 80
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 15
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 15
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 60
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 45
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 30
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 50
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Tulsa OK",
+   "prompt": "med spa Tulsa OK",
+   "google": {
+    "map_pos": null,
+    "organic_pos": null,
+    "aio": "unreadable",
+    "map_pack": [
+     "Glow Medical Aesthetics",
+     "Bella Roma Medical Spa",
+     "Blank Med Spa Midtown"
+    ]
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Emerge Medical & Well Spa",
+      "Ageless Spa Center",
+      "Firm Medical Spa",
+      "HE & Med Spa",
+      "Venus Aesthetics & Wellness",
+      "Cleanse Medical Spa",
+      "Fig Medical Spa",
+      "Blank Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 0,
+     "others": [
+      "Bella Roma Med Spa",
+      "Prime Medical Spa",
+      "Inspire Wellness Clinic",
+      "BA Med Spa",
+      "FIG Med Spa",
+      "TOPS Med Spa",
+      "Tulsa Hills Cosmetic and Laser Skin Center",
+      "Emerge Medical & Well Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Inspire Med Spa",
+      "Blank Med Spa",
+      "Thrive Medical Spa",
+      "Bella Roma Medical Spa",
+      "Skin Care Institute",
+      "Virtue Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Emerge Medical & Well Spa",
+      "Glow Medical Aesthetics",
+      "Firm Medical Spa",
+      "Prime Medical Spa",
+      "Inspire Wellness Clinic",
+      "Results Medical Aesthetics & Wellness",
+      "Hobbs Salon + Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Tulsa OK",
+   "prompt": "botox Tulsa OK",
+   "google": {
+    "map_pos": null,
+    "organic_pos": null,
+    "aio": "unreadable",
+    "map_pack": [
+     "Inject Aesthetics and Wellness",
+     "Glow Medical Aesthetics",
+     "Bella Roma Medical Spa"
+    ]
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Highwater Aesthetics & Confidence Co.",
+      "Firm Medical Spa",
+      "Prime Medical Spa",
+      "Glow Medical Aesthetics",
+      "Blank Med Spa (South)",
+      "Bella Roma Med Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Bella Roma Med Spa",
+      "Southside Dermatology and Skin Cancer Surgery",
+      "Skin Care Institute",
+      "Prime Medical Spa",
+      "Tulsa Hills Cosmetic and Laser Skin Center",
+      "Whitlock Cosmetic Center",
+      "Glow Medical Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Southside Dermatology and Skin Cancer Surgery",
+      "Midtown Dermatology",
+      "Inspire Wellness Clinic",
+      "South Tulsa Plastic Surgery",
+      "Results Medical Aesthetics"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "TOPS Medical Spa",
+      "Glow Medical Aesthetics",
+      "Results Medical Aesthetics & Wellness",
+      "ORR Med Spa",
+      "Southside Dermatology and Skin Cancer Surgery",
+      "Tulsa Hills Cosmetic and Laser Skin Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Tulsa, OK",
+   "google": {
+    "map_pos": null,
+    "organic_pos": null,
+    "aio": "unreadable",
+    "map_pack": [
+     "Bella Roma Medical Spa",
+     "Glow Medical Aesthetics",
+     "Revitalize Medical Spa"
+    ]
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Emerge Medical & Well Spa",
+      "HE & Med Spa",
+      "Ageless Spa Center",
+      "Venus Aesthetics & Wellness",
+      "Prime Medical Spa",
+      "Thrive Medical Spa",
+      "Cleanse Medical Spa",
+      "Awe Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "BA Med Spa & Weight Loss Center",
+      "Skin Care Institute",
+      "Bella Roma Medical Spa",
+      "Prime Medical Spa",
+      "Emerge Medical & Well Spa",
+      "TOPS Med Spa",
+      "Whitlock Cosmetic Center of Oklahoma",
+      "Luminate Clinic"
+     ]
+    },
+    "perplexity": {
+     "named": 0,
+     "others": [
+      "Skin Care Institute",
+      "Bella Roma Medical Spa",
+      "Luminate Clinic",
+      "Blank Med Spa",
+      "Thrive Med Spa"
+     ]
+    },
+    "claude": {
+     "named": 0,
+     "others": [
+      "Emerge Medical & Well Spa",
+      "Glow Medical Aesthetics",
+      "Prime Medical Spa",
+      "BA Med Spa",
+      "Virtue Med Spa",
+      "Results Medical Aesthetics & Wellness",
+      "Blank Med Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Google listing phone (918) 727-8921 does not match AMP-listed (918) 615-9605.",
+  "Google listing site is h-md.com/our-locations/tulsa with GBP UTM tags; domain matches AMP.",
+  "Google lat/lng returned at 3-decimal precision (36.076,-95.923); distance to AMP pin ~0.03 km, rounds to 0.0.",
+  "Business not in local pack or organic top 10 for any of the 3 Tulsa searches; all three AI Overviews were asynchronous with no readable text.",
+  "Only 2 of 10 Google services show a price > 0 (others $0 consult/placeholder pricing).",
+  "Gemini named H-MD for S2 (botox) and S3 (best med spa); Perplexity S3 cited a ClinicCompass H-MD page as a source but did not name it in the answer text (counted 0).",
+  "SERP location 'Tulsa,Oklahoma,United States' worked; no model substitutions needed.",
+  "Listing last_updated 2026-09-21; 1-star reviews are 80 of 788 (10.2%)."
+ ]
+}

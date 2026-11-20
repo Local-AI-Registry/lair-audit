@@ -1,0 +1,878 @@
+{
+ "slug": "living-young-center-seminole",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Living Young Center - Seminole",
+  "brand": "Living Young Center",
+  "address": "8686 131st. Street N, Seminole, FL 33776",
+  "phone": "(727) 319-6884",
+  "site": "https://livingyoungcenter.com",
+  "lat": 27.85157,
+  "lng": -82.82031
+ },
+ "listing": {
+  "found": true,
+  "title": "LivingYoung Center for Health & Anti-Aging - Seminole",
+  "google_phone": "+1727-513-4959",
+  "phone_matches_amp": false,
+  "address": "8686 131st St N, Seminole, FL 33776",
+  "distance_km": 0.1,
+  "site_url": "https://livingyoungcenter.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 588,
+  "stars": {
+   "1": 10,
+   "2": 1,
+   "3": 1,
+   "4": 5,
+   "5": 571
+  },
+  "photos": 30,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 14,
+  "last_updated": "2026-09-13 09:32:48 +00:00",
+  "topics": [
+   {
+    "t": "weight loss program",
+    "n": 40
+   },
+   {
+    "t": "fillers",
+    "n": 24
+   },
+   {
+    "t": "monthly specials",
+    "n": 9
+   },
+   {
+    "t": "vitamin injections",
+    "n": 5
+   },
+   {
+    "t": "face treatment",
+    "n": 4
+   },
+   {
+    "t": "semaglutide injections",
+    "n": 2
+   },
+   {
+    "t": "wrinkle treatment",
+    "n": 2
+   },
+   {
+    "t": "hormone therapy",
+    "n": 2
+   }
+  ],
+  "services_count": 16,
+  "prices": [],
+  "also_search": [
+   {
+    "name": "A Place For Wellness",
+    "rating": 4.8,
+    "reviews": 36
+   },
+   {
+    "name": "Largo Clinic & Med Spa",
+    "rating": 4.3,
+    "reviews": 157
+   },
+   {
+    "name": "NU YU Laser and MedSpa",
+    "rating": 4.9,
+    "reviews": 131
+   },
+   {
+    "name": "The Garden Medical Spa, Wellness & Massage",
+    "rating": 4.9,
+    "reviews": 463
+   }
+  ],
+  "weekly_open_hours": 43.0,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 96
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 21
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 56
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 53
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      }
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 59
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 71
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 78
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 81
+     },
+     {
+      "time": {
+       "hour": 18
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 43
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 46
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 40
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 15
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 25
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 28
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 13
+      }
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Seminole FL",
+   "prompt": "med spa Seminole FL",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "Elemence Med Spa (Formely Dr. K's Med Spa)",
+     "NU YU Laser and MedSpa",
+     "LivingYoung Center for Health & Anti-Aging - Seminole"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Allure Medical Spa Seminole",
+      "NU YU Laser and MedSpa",
+      "Dolce Vita Med Spa",
+      "Dr. K's Med Spa",
+      "Restore Hyper Wellness",
+      "Beach Wellness Center",
+      "UDERMA Medspa & Laser"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Skin Lab",
+      "NU YU Laser and MedSpa",
+      "Restore Hyper Wellness",
+      "BellaVida Aesthetics & Wellness",
+      "Lueur Aesthetics"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Allure Med Spa",
+      "Dolce Vita Med Spa",
+      "The Skin Lab",
+      "Suncoast Skin Solutions"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Dolce Vita Med Spa",
+      "Golden Glow Medical Spa",
+      "DayGlo Med-Spa",
+      "Largo Clinic & Med Spa",
+      "Radiance Medspa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Seminole FL",
+   "prompt": "botox Seminole FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "UDERMA Medspa & Laser",
+      "NuYu Med Spa",
+      "SKN BY LILY",
+      "Allure Medical Spa Seminole",
+      "Better Bites by Busch Dentistry"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "NU YU Laser and MedSpa",
+      "Suncoast Skin Solutions",
+      "Meira Dermatology",
+      "Better Bites by Busch Dentistry",
+      "Sandra Baindurashvili",
+      "Bay Dermatology and Cosmetic Surgery"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Suncoast Skin Solutions"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "NU YU Laser and MedSpa",
+      "Enduring Beauty",
+      "Suncoast Skin Solutions",
+      "Armstrong Dermatology & Skin Cancer Center"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Seminole, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Garden Medical Spa, Wellness & Massage",
+     "Glow St. Pete Med Spa",
+     "St Pete Wellness Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "NuYu Laser and MedSpa",
+      "Allure Medical Spa Seminole",
+      "Restore Hyper Wellness",
+      "Elemence Med Spa",
+      "Sally Donna Day Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "The Skin Lab",
+      "NU YU Laser and MedSpa",
+      "Restore Hyper Wellness",
+      "BellaVida Aesthetics & Wellness",
+      "Dolce Vita Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Dolce Vita Med Spa",
+      "The Skin Lab",
+      "Suncoast Skin Solutions",
+      "Royal Nova Beauty and Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Adam & Eve Day Spa",
+      "Restore Hyper Wellness",
+      "Golden Glow Medical Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Title search ('Living Young Center', 'Living Young', 'Living Young Center Seminole', claimed and unclaimed) returned 0 results; listing found via address filter '%8686%' within 2 km. Google title is 'LivingYoung Center for Health & Anti-Aging - Seminole' (brand written as one word 'LivingYoung').",
+  "Phone mismatch: Google listing phone +1 727-513-4959 vs AMP-listed (727) 319-6884. AMP number appears in listing contact_info only via backlinks (also used on CareCredit, Fresha, MapQuest, Alle-sourced answers); Google local_business_links menu URL uses tracking ?cp=7273141394.",
+  "Google listing lat/lng returned at 3-decimal precision (27.852,-82.82); distance to AMP pin ~0.1 km.",
+  "No prices on listing (services list has 16 items, none priced).",
+  "Saturday open 9-13 on Google; website says Saturday 'Rotating' / '1st & 3rd Saturday of the month'.",
+  "S1 local pack showed 583 reviews vs 588 in business listing data (data freshness difference). Claude cites 527 reviews from a third-party directory (stale).",
+  "S2 (botox Seminole FL): no local pack; brand's Instagram post (@livingyoungcenter) ranked organic #3 and CareCredit 'Living Young - Seminole' listing #5; neither is own site/Google listing so organic_pos=null.",
+  "All three SERPs had asynchronous AI Overviews with no text (aio=unreadable).",
+  "Named in all 12 LLM answers (4 models x 3 prompts). No model substitutions needed.",
+  "SERP location_name 'Seminole,Florida,United States' worked; note Google sometimes mixed in Seminole County (Oviedo/Lake Mary) results.",
+  "Listing first_seen equals last_updated (2026-09-13)."
+ ]
+}
