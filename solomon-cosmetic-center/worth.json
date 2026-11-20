@@ -1,0 +1,39 @@
+{
+ "client": "Solomon Cosmetic Center",
+ "rows": [
+  ["breast augmentation tampa", 590, ""],
+  ["cosmetic surgeon tampa", 320, ""],
+  ["liposuction tampa", 260, ""],
+  ["plastic surgeon tampa", 260, ""],
+  ["mommy makeover tampa", 140, ""],
+  ["bbl tampa", 110, ""],
+  ["breast lift tampa", 110, ""],
+  ["plastic surgeon clearwater", 70, ""],
+  ["gynecomastia surgery tampa", 40, ""],
+  ["gynecomastia surgery florida", 20, ""],
+  ["gynecomastia tampa", 10, ""],
+  ["male breast reduction tampa", 10, ""],
+  ["breast augmentation clearwater", 10, ""],
+  ["tummy tuck clearwater", 10, ""],
+  ["liposuction clearwater", 10, ""],
+  ["breast augmentation near me", 30, "Tampa"],
+  ["liposuction near me", 30, "Tampa"],
+  ["gynecomastia surgery near me", 10, "Tampa"],
+  ["mommy makeover near me", 10, "Tampa"],
+  ["bbl near me", 10, "Tampa"],
+  ["male breast reduction near me", 10, "Tampa"],
+  ["gynecomastia surgery near me", 10, "Clearwater"],
+  ["breast augmentation near me", 10, "Clearwater"],
+  ["liposuction near me", 10, "Clearwater"],
+  ["mommy makeover near me", 10, "Clearwater"],
+  ["bbl near me", 10, "Clearwater"]
+ ],
+ "price": {
+  "value": 5000,
+  "label": "low end of a surgical case at Solomon Cosmetic Center, as Dr. Solomon gave it on our call ($5,000 to $8,000 typical; over $10,000 for a facelift or tummy tuck)",
+  "source": "Dr. George Solomon, call with Local AI Registry, November 20, 2026",
+  "url": ""
+ },
+ "vol_source": "DataForSEO, Google Ads search volume for Florida (searches naming Tampa, Clearwater or Florida) and for Tampa and Clearwater (near me searches), November 20, 2026",
+ "left_out": "Counted separately below, not here: Botox and med spa searches (330 a month in your audit), because an injectable visit averages about $1,000, not $5,000. Searches with no measurable volume are not listed, including “tummy tuck tampa”, “facelift tampa”, “gynecomastia clearwater”, “facelift clearwater”, “bbl clearwater” and “plastic surgeon near me”."
+}
