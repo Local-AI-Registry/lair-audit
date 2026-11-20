@@ -311,8 +311,7 @@ input[type=range]{width:100%;accent-color:var(--blue);height:28px}
 .cstats{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
 .cstats div{background:var(--paper);border-radius:12px;padding:12px}
 .cstats b{font:800 22px var(--loud);display:block;color:var(--ink)}.cstats span{font-size:13px;color:#2A3547;line-height:1.4;display:block}
-.cases.one{grid-template-columns:1fr}.cases.one .case{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:center;padding:28px}
-@media (max-width:860px){.cases{grid-template-columns:1fr}.cases.one .case{display:block}}
+@media (max-width:860px){.cases{grid-template-columns:1fr}}
 @media (max-width:560px){.hwsvg{display:none}.hwlist{display:grid;grid-template-columns:1fr;gap:8px}.hwli{display:flex;align-items:center;gap:10px;background:var(--paper);border-radius:10px;padding:10px 12px;font:700 14px var(--loud)}.hwli i{font-style:normal;color:var(--gold7);font-size:12px}.hwli::after{content:"✓";margin-left:auto;color:var(--blue)}.hwhubm{background:var(--ink);color:#fff;border-radius:14px;padding:16px;text-align:center;font:600 18px var(--serif);margin-bottom:6px}.hwhubm small{display:block;font:700 11px var(--loud);letter-spacing:.16em;color:#D8BC86;margin-bottom:4px}}
 /* rag (from Fresh) */
 .pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:40px}
@@ -929,21 +928,23 @@ footer a{color:var(--blue)}
 <p class="hwcap">If one source says something different, AI trusts the practice less. Keeping all 11 in sync is the job, every month.</p>
 </div>
 
-<h3 class="subh">A measured result in aesthetics</h3>
-<div class="cases one">
+<h3 class="subh">Results we've measured in aesthetics</h3>
+<div class="cases">
 <div class="case reveal">
-<div class="cl">
 <div class="ctop"><b>LUXURGERY</b><span>Plastic surgery · New York, NY</span></div>
 <div class="cbig"><div><em>AI visibility score</em><strong>34 <i>→</i> 71</strong></div></div>
-<p>Visits from Google grew from about 1,000 to about 3,450 a month in a year, while the year before stayed under 1,000. AI visibility score more than doubled.</p>
-<p class="csrc">Semrush organic traffic; AI score from the Local AI Registry</p>
+<svg viewBox="0 0 320 120" class="cchart" aria-label="Monthly visits from Google, last 12 months versus the year before"><g id="lxg"></g></svg>
+<p class="cleg"><span class="nw"><span class="l1"></span>Visits from Google, last 12 months</span> <span class="nw"><span class="l2"></span>Same months, year before</span></p>
+<p>The year before, visits from Google slid from about 1,500 to about 830 a month. Over the last year they grew from about 1,000 to about 3,450, and the AI visibility score more than doubled.</p>
+<p class="csrc">Semrush organic traffic, US; AI score from the Local AI Registry</p>
 </div>
-<div class="cr">
-<svg viewBox="0 0 320 120" class="cchart" aria-label="Monthly organic visits over 12 months, this year versus the year before">
-<g id="lxg"></g>
-</svg>
-<p class="cleg"><span class="nw"><span class="l1"></span>Monthly visits from Google, last 12 months</span> <span class="nw"><span class="l2"></span>Same months, year before</span></p>
-</div>
+<div class="case reveal">
+<div class="ctop"><b>Define Clinic</b><span>Dr Benji Dhillon · London and Beaconsfield, UK</span></div>
+<div class="cbig"><div><em>Monthly visits from Google</em><strong>1,710 <i>→</i> 6,701</strong></div></div>
+<svg viewBox="0 0 320 120" class="cchart" aria-label="Monthly visits from Google, last 12 months versus the year before"><g id="dfg"></g></svg>
+<p class="cleg"><span class="nw"><span class="l1"></span>Visits from Google, last 12 months</span> <span class="nw"><span class="l2"></span>Same months, year before</span></p>
+<p>We started in April, when visits had been stuck near 2,000 a month for over a year. After the site rebuild in August, October reached 6,701, nearly four times the starting point.</p>
+<p class="csrc">Semrush organic traffic, UK</p>
 </div>
 </div>
 </div></section>
@@ -1101,11 +1102,11 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
    h+='<path d="'+d+' L'+X(10)+' '+B+' L'+X(0)+' '+B+'Z" fill="#FF5A3C" opacity=".07"/>';
    h+='<path class="tline" d="'+d+'" stroke="#FF5A3C"/>';
    h+='<circle cx="'+X(10)+'" cy="'+Y(v[10])+'" r="6" fill="#FF5A3C" stroke="#fff" stroke-width="2"/>';
-   h+='<text x="'+(X(10)+12)+'" y="'+(Y(v[10])+5)+'" style="font:800 15px Bricolage Grotesque;fill:#FF5A3C">'+v[10].toLocaleString('en-US')+'</text>';
-   h+='<text x="'+X(0)+'" y="'+(Y(v[0])-14)+'" text-anchor="middle" style="font:700 13px Bricolage Grotesque;fill:#0B1A2E">'+v[0].toLocaleString('en-US')+'</text>';
+   h+='<text x="'+(X(10)+12)+'" y="'+(Y(v[10])+5)+'" style="font:800 15px var(--loud);fill:#FF5A3C">'+v[10].toLocaleString('en-US')+'</text>';
+   h+='<text x="'+X(0)+'" y="'+(Y(v[0])-14)+'" text-anchor="middle" style="font:700 13px var(--loud);fill:#0B1A2E">'+v[0].toLocaleString('en-US')+'</text>';
    var gx=X(10),gy=Y(v[10]),ex=Rr-10,ey=Y(v[0]*1.02);
    h+='<path class="tgoal" d="M'+gx+' '+gy+' C'+(gx+50)+' '+gy+' '+(ex-50)+' '+(ey+10)+' '+ex+' '+ey+'"/>';
-   h+='<g class="tgoalt"><circle cx="'+ex+'" cy="'+ey+'" r="6" fill="#1F4FE0"/><text x="'+ex+'" y="'+(ey-14)+'" text-anchor="end" style="font:700 13px Bricolage Grotesque;fill:#1F4FE0">As one network</text></g>';
+   h+='<g class="tgoalt"><circle cx="'+ex+'" cy="'+ey+'" r="6" fill="#1F4FE0"/><text x="'+ex+'" y="'+(ey-14)+'" text-anchor="end" style="font:700 13px var(--loud);fill:#1F4FE0">As one network</text></g>';
    sv.innerHTML=h;
    if(tc.classList.contains('in')){var p=sv.querySelector('.tline');p.style.transition='none';p.style.strokeDashoffset=2000;p.getBoundingClientRect();p.style.transition='';p.style.strokeDashoffset=0}
   }
@@ -1138,10 +1139,16 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
   });
   lg.innerHTML=h;ng.innerHTML=n;
   document.getElementById('hwlist').innerHTML='<div class="hwhubm"><small>THE RECORD</small>One set of facts per practice</div>'+S.map(function(s,i){return '<div class="hwli"><i>'+(i<9?'0':'')+(i+1)+'</i>'+s+'</div>'}).join('');
-  var m=[1002,1286,1391,1374,1767,1953,2357,2634,3353,3275,3311,3451],p=[640,690,655,720,760,740,810,870,850,910,960,980],mx=3600;
-  function line(v,c){return '<path class="lxl" stroke="'+c+'" d="'+v.map(function(y,i){return (i?'L':'M')+(10+i*27.3).toFixed(1)+' '+(108-y/mx*96).toFixed(1)}).join(' ')+'"/>'}
-  var g=document.getElementById('lxg');
-  g.innerHTML='<line x1="10" x2="310" y1="108" y2="108" stroke="#E6DED2"/>'+line(p,'#C9C2B1')+line(m,'#1F4FE0')+'<circle cx="310.3" cy="'+(108-3451/mx*96).toFixed(1)+'" r="4.5" fill="#1F4FE0"/><text x="304" y="'+(108-3451/mx*96+18).toFixed(1)+'" text-anchor="end" style="font:800 12px Bricolage Grotesque;fill:#1F4FE0">3,451</text><text x="14" y="'+(108-1002/mx*96-8).toFixed(1)+'" style="font:700 11px Bricolage Grotesque;fill:#5D6878">1,002</text>';
+  function chart(id,m,p,mx,si,lab0){
+   function X(i){return 10+i*27.3}function Y(v){return 108-v/mx*96}
+   function line(v,c){return '<path class="lxl" stroke="'+c+'" d="'+v.map(function(y,i){return (i?'L':'M')+X(i).toFixed(1)+' '+Y(y).toFixed(1)}).join(' ')+'"/>'}
+   var e=m[m.length-1],h='<line x1="10" x2="310" y1="108" y2="108" stroke="#E6DED2"/>'+line(p,'#C9C2B1')+line(m,'#1F4FE0');
+   if(lab0)h+='<line x1="'+X(si).toFixed(1)+'" x2="'+X(si).toFixed(1)+'" y1="12" y2="108" stroke="#B9975B" stroke-dasharray="3 3"/><text x="'+(X(si)+4).toFixed(1)+'" y="18" style="font:700 10px var(--loud);fill:#8E7140">'+lab0+'</text>';
+   h+='<circle cx="'+X(si).toFixed(1)+'" cy="'+Y(m[si]).toFixed(1)+'" r="3.5" fill="#1F4FE0"/><text x="'+(X(si)+4).toFixed(1)+'" y="'+(Y(m[si])+16).toFixed(1)+'" style="font:700 11px var(--loud);fill:#5D6878">'+m[si].toLocaleString('en-US')+'</text>';
+   h+='<circle cx="'+X(11).toFixed(1)+'" cy="'+Y(e).toFixed(1)+'" r="4.5" fill="#1F4FE0"/><text x="304" y="'+(Y(e)+18).toFixed(1)+'" text-anchor="end" style="font:800 12px var(--loud);fill:#1F4FE0">'+e.toLocaleString('en-US')+'</text>';
+   document.getElementById(id).innerHTML=h}
+  chart('lxg',[1002,1286,1391,1374,1767,1953,2357,2634,3353,3275,3311,3451],[1532,1461,1419,1458,1027,1082,1052,1304,860,861,995,830],3600,0,'');
+  chart('dfg',[2374,2366,2128,1920,2416,1710,1292,3694,2414,8473,12793,6701],[2407,1712,1901,1851,1882,1921,1898,1906,1868,2370,2587,2397],13200,5,'We start');
  })();
  // calculator v2 (EBITDA + platform value)
  (function(){
