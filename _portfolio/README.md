@@ -31,7 +31,7 @@ First used for AMP: `amp-partnership/portfolio/` (77 locations, 22 brands).
    account, prepared_for, date, locations_file, raw_dir, out, and `audits` (links to any full audits).
    `price` is optional (defaults to the American Med Spa Association $527 average visit).
 4. **Build.** `python3 _portfolio/build.py <account>/portfolio.config.json`
-   It also writes `<account>/worth.json` and inlines the "What being AI's answer is worth" section
+   It also writes `worth.json` next to the report and inlines the "What being AI's answer is worth" section
    from `_template/worth.py` (house rule for every audit).
 5. **Check** the page in a browser (desktop and phone), read the real-example cards, then publish.
 

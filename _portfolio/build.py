@@ -393,7 +393,8 @@ def main(cfg_path):
         wj = {"client": acc.get("name"), "rows": worth_rows, "price": price,
               "vol_source": cfg.get("vol_source", "DataForSEO, Google Ads search volume; town searches at state level, 'near me' at city level"),
               "left_out": "One row per location: the sum of its town searches (med spa, Botox, lip filler, laser hair removal + town) and the same four 'near me' searches in its city. Searches with no volume are left out."}
-        wpath = os.path.join(base, "worth.json")
+        wdir = os.path.dirname(rp(cfg["out"])); os.makedirs(wdir, exist_ok=True)
+        wpath = os.path.join(wdir, "worth.json")
         with open(wpath, "w", encoding="utf-8") as f:
             json.dump(wj, f, indent=1, ensure_ascii=False)
         worth_html = subprocess.run([sys.executable, os.path.join(ROOT, "_template", "worth.py"), wpath], capture_output=True, text=True).stdout
