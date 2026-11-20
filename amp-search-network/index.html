@@ -1112,7 +1112,7 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
  if(!window.THREE){stage.classList.add('nogl');return}
  var R;try{R=new THREE.WebGLRenderer({canvas:canvas,antialias:true,alpha:true})}catch(e){stage.classList.add('nogl');return}
  R.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
- var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(28,1,.1,200);
+ var scene=new THREE.Scene(),cam=new THREE.PerspectiveCamera(28,1,2,120);
  scene.add(new THREE.AmbientLight(0xffffff,.75));var dl=new THREE.DirectionalLight(0xffffff,.55);dl.position.set(-4,10,6);scene.add(dl);
  var root=new THREE.Group();scene.add(root);
  function W(x,y){return new THREE.Vector3((x-480)/60,0,(y-300)/60)}
@@ -1129,17 +1129,17 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
   var k=p.own===0?'none':p.h,v=W(p.x,p.y),share=(p.ln||0)/(p.lt||12);
   var h=Math.max(.05,share*1.5);
   var b=new THREE.Mesh(new THREE.CylinderGeometry(.075,.075,1,14),new THREE.MeshLambertMaterial({color:COL[k]}));
-  b.position.set(v.x,h/2,v.z);b.scale.y=h;b.userData={h:h,cur:0};b.scale.y=.001;root.add(b);bars.push(b);
+  b.position.set(v.x,h/2,v.z);b.renderOrder=7;b.scale.y=h;b.userData={h:h,cur:0};b.scale.y=.001;root.add(b);bars.push(b);
   var r=.05+Math.sqrt(p.w)/520;
   var dg=new THREE.Mesh(new THREE.CircleGeometry(r,48),new THREE.MeshBasicMaterial({color:0x1F4FE0,transparent:true,opacity:0,depthWrite:false}));
-  dg.rotation.x=-Math.PI/2;dg.position.set(v.x,.012,v.z);root.add(dg);
+  dg.rotation.x=-Math.PI/2;dg.position.set(v.x,.012,v.z);dg.material.depthTest=false;dg.renderOrder=2;root.add(dg);
   var rg=new THREE.Mesh(new THREE.RingGeometry(r-.02,r,48),new THREE.MeshBasicMaterial({color:0x1F4FE0,transparent:true,opacity:0,depthWrite:false}));
-  rg.rotation.x=-Math.PI/2;rg.position.set(v.x,.014,v.z);root.add(rg);discs.push([dg,rg]);
+  rg.rotation.x=-Math.PI/2;rg.position.set(v.x,.014,v.z);rg.material.depthTest=false;rg.renderOrder=3;root.add(rg);discs.push([dg,rg]);
  });
  GAPS.forEach(function(g){var v=W(g.x,g.y),r=.08+Math.sqrt(g.w)/520;
-  var dg=new THREE.Mesh(new THREE.CircleGeometry(r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));dg.rotation.x=-Math.PI/2;dg.position.set(v.x,.02,v.z);root.add(dg);
-  var rg=new THREE.Mesh(new THREE.RingGeometry(r-.03,r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));rg.rotation.x=-Math.PI/2;rg.position.set(v.x,.022,v.z);root.add(rg);
-  var pu=new THREE.Mesh(new THREE.RingGeometry(r-.02,r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));pu.rotation.x=-Math.PI/2;pu.position.set(v.x,.024,v.z);root.add(pu);
+  var dg=new THREE.Mesh(new THREE.CircleGeometry(r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));dg.rotation.x=-Math.PI/2;dg.position.set(v.x,.02,v.z);dg.material.depthTest=false;dg.renderOrder=4;root.add(dg);
+  var rg=new THREE.Mesh(new THREE.RingGeometry(r-.03,r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));rg.rotation.x=-Math.PI/2;rg.position.set(v.x,.022,v.z);rg.material.depthTest=false;rg.renderOrder=5;root.add(rg);
+  var pu=new THREE.Mesh(new THREE.RingGeometry(r-.02,r,48),new THREE.MeshBasicMaterial({color:0xFF5A3C,transparent:true,opacity:0,depthWrite:false}));pu.rotation.x=-Math.PI/2;pu.position.set(v.x,.024,v.z);pu.material.depthTest=false;pu.renderOrder=6;root.add(pu);
   gapM.push([dg,rg,pu,r]);
   var show=stage.clientWidth<600?['Los Angeles','Houston','Chicago','Miami']:['Los Angeles','Houston','Chicago','Miami','Phoenix','Charlotte','Boston'];if(show.indexOf(g.city)<0)return;var el=document.createElement('div');el.className='glab';el.innerHTML=g.city+'<small>$'+Math.round(g.w/1000)+'k/mo</small>';stage.appendChild(el);labs.push([el,new THREE.Vector3(v.x,.05,v.z)]);
  });
