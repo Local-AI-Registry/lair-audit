@@ -1,0 +1,17 @@
+{
+  "client": "AMP (EsthetixMD, Hello Smooth, Illumé, Synergy MedAesthetics)",
+  "rows": [
+    ["med spa bend oregon", 90, "EsthetixMD"], ["botox bend oregon", 210, "EsthetixMD"], ["lip filler bend oregon", 90, "EsthetixMD"], ["laser hair removal bend oregon", 210, "EsthetixMD"],
+    ["med spa near me", 20, "Bend · EsthetixMD"], ["botox near me", 210, "Bend · EsthetixMD"], ["lip filler near me", 30, "Bend · EsthetixMD"], ["laser hair removal near me", 30, "Bend · EsthetixMD"], ["hydrafacial near me", 20, "Bend · EsthetixMD"], ["coolsculpting near me", 10, "Bend · EsthetixMD"], ["microneedling near me", 30, "Bend · EsthetixMD"], ["filler near me", 10, "Bend · EsthetixMD"],
+    ["laser hair removal st johns", 10, "Hello Smooth"], ["botox st johns", 10, "Hello Smooth"],
+    ["med spa near me", 70, "Saint Johns · Hello Smooth"], ["botox near me", 90, "Saint Johns · Hello Smooth"], ["lip filler near me", 30, "Saint Johns · Hello Smooth"], ["laser hair removal near me", 40, "Saint Johns · Hello Smooth"], ["hydrafacial near me", 20, "Saint Johns · Hello Smooth"], ["microneedling near me", 40, "Saint Johns · Hello Smooth"],
+    ["med spa lees summit", 140, "Illumé"], ["botox lees summit", 110, "Illumé"], ["laser hair removal lees summit", 50, "Illumé"], ["med spa lee's summit", 20, "Illumé"], ["iv therapy lees summit", 30, "Illumé"],
+    ["med spa near me", 110, "Lee's Summit · Illumé"], ["botox near me", 50, "Lee's Summit · Illumé"], ["lip filler near me", 20, "Lee's Summit · Illumé"], ["laser hair removal near me", 30, "Lee's Summit · Illumé"], ["hydrafacial near me", 10, "Lee's Summit · Illumé"], ["coolsculpting near me", 10, "Lee's Summit · Illumé"], ["microneedling near me", 20, "Lee's Summit · Illumé"], ["filler near me", 10, "Lee's Summit · Illumé"],
+    ["botox yakima", 170, "Synergy"], ["laser hair removal yakima", 90, "Synergy"], ["botox kennewick", 70, "Synergy"], ["botox tri cities", 70, "Synergy"], ["laser hair removal kennewick", 40, "Synergy"], ["med spa yakima", 30, "Synergy"], ["med spa kennewick", 20, "Synergy"],
+    ["med spa near me", 20, "Kennewick · Synergy"], ["botox near me", 40, "Kennewick · Synergy"], ["lip filler near me", 40, "Kennewick · Synergy"], ["laser hair removal near me", 20, "Kennewick · Synergy"], ["hydrafacial near me", 10, "Kennewick · Synergy"], ["coolsculpting near me", 10, "Kennewick · Synergy"],
+    ["med spa near me", 10, "Yakima · Synergy"], ["botox near me", 30, "Yakima · Synergy"], ["lip filler near me", 40, "Yakima · Synergy"], ["laser hair removal near me", 20, "Yakima · Synergy"], ["hydrafacial near me", 10, "Yakima · Synergy"], ["coolsculpting near me", 10, "Yakima · Synergy"]
+  ],
+  "price": {"value": 527, "label": "average spend per US med spa visit", "source": "American Med Spa Association, 2024 Medical Spa State of the Industry report", "url": "https://www.americanmedspa.org/news/2024-medical-spa-state-of-the-industry-executive-report-recap/"},
+  "vol_source": "DataForSEO, Google Ads search volume: town searches at state level (Oregon, Florida, Missouri, Washington), 'near me' searches at each practice's city level, November 20, 2026",
+  "left_out": "Left out: searches with no measurable volume (most long 'best ... in bend oregon' phrasings, most St Johns town searches), 'facial'/'facials' searches (day spas inflate them), 'medical spa near me' and 'lee's summit med spa' (Google reports the same volume as 'med spa near me' and 'med spa lees summit', so they would double count), and brand searches."
+}

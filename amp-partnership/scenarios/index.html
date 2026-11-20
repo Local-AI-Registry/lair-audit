@@ -75,9 +75,9 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
     <div class="card"><p class="k">Break-even per location</p><p class="num big"><span id="be">6.6</span> <span class="small">new patients/mo</span></p><p class="small">At the floor price ÷ $527 average spend per visit (American Med Spa Association, 2024). One visit only; repeat visits not counted.</p></div>
   </div>
   <div class="grid g3" style="margin-top:16px">
-    <div class="card"><p class="k">Measured value, 3 practices</p><p class="num big good">$17,212<span class="small">/mo</span></p><p class="small">1,420 tracked searches × 2.3% × $527. Only the 5–6 core searches per practice, so a floor.</p></div>
-    <div class="card"><p class="k">Per practice average</p><p class="num big good">$5,737<span class="small">/mo</span></p><p class="small">EsthetixMD $10,424 · Illumé $3,879 · Hello Smooth $2,909.</p></div>
-    <div class="card"><p class="k">What to say</p><p style="color:var(--ink2);margin-top:6px">"Just the handful of searches we checked pays for the work at most practices. The full keyword lists are 5 to 10 times bigger."</p></div>
+    <div class="card"><p class="k">Measured value, 4 practices</p><p class="num big good">$31,878<span class="small">/mo</span></p><p class="small">2,630 local searches × 2.3% × $527 (DataForSEO, Nov 20 2026). Town-named and city "near me" searches only, so a floor.</p></div>
+    <div class="card"><p class="k">Per practice average</p><p class="num big good">$7,970<span class="small">/mo</span></p><p class="small">EsthetixMD $11,636 · Synergy $9,091 (2 sites) · Illumé $7,394 · Hello Smooth $3,758.</p></div>
+    <div class="card"><p class="k">What to say</p><p style="color:var(--ink2);margin-top:6px">"Just the local searches we measured cover the $3,500 floor at all four practices, before counting repeat visits."</p></div>
   </div>
 </section>
 
@@ -89,7 +89,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
 
 <section>
   <h2>Calculator</h2>
-  <p class="sub">Monthly cost to AMP for the selected scenario, next to the value the audit math suggests. Value uses the three-practice average per location, as an illustration only.</p>
+  <p class="sub">Monthly cost to AMP for the selected scenario, next to the value the audit math suggests. Value uses the four-practice average per location, as an illustration only.</p>
   <div class="calc">
     <div class="card">
       <p class="k" id="c-name">Scenario</p>
@@ -136,7 +136,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
 </section>
 
 <footer>
-  Internal working document for the AMP meeting, November 20, 2026. Prices are proposals for discussion, not quotes. Value math: searches × 2.3% (Ruler Analytics) × $527 (American Med Spa Association, 2024). Search volumes from the Nov 11–12, 2026 audit scans.
+  Internal working document for the AMP meeting, November 20, 2026. Prices are proposals for discussion, not quotes. Value math: searches × 2.3% (Ruler Analytics) × $527 (American Med Spa Association, 2024). Search volumes: DataForSEO Google Ads, Nov 20 2026 (see amp-partnership/worth.json).
 </footer>
 </div>
 
@@ -144,7 +144,7 @@ button.t{position:fixed;right:14px;top:14px;border:1px solid var(--line);backgro
 (function(){
 function $(s){return document.querySelector(s)}
 function money(n){return '$'+Math.round(n).toLocaleString('en-US')}
-var RATE=0.023, AVG_SEARCHES=1420/3;
+var RATE=0.023, AVG_SEARCHES=2630/4;
 /* per-location volume tiers for full service */
 function tier(n){return n>=51?2500:n>=26?2750:n>=11?3000:3500}
 var S=[
@@ -184,7 +184,7 @@ function run(){
   $('#o-be').textContent=(pl/price).toFixed(1);
   var v=n*AVG_SEARCHES*RATE*price;
   $('#o-v').textContent=money(v)+'/mo';
-  $('#o-r').textContent='Locations × 473 tracked searches (three-practice average) × 2.3% × '+money(price)+'. About '+(v/m).toFixed(1)+'× the monthly cost. Illustration: real volumes differ by market.';
+  $('#o-r').textContent='Locations × 658 local searches (four-practice average) × 2.3% × '+money(price)+'. About '+(v/m).toFixed(1)+'× the monthly cost. Illustration: real volumes differ by market.';
   $('#be').textContent=(3500/price).toFixed(1);
 }
 ['#c-loc','#c-price','#c-opt'].forEach(function(k){$(k).addEventListener('input',run)});
