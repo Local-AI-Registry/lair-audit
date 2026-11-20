@@ -1,0 +1,908 @@
+{
+ "slug": "22-med-spa",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "22 - Med Spa",
+  "brand": "22",
+  "address": "6686 Highland Drive, Ste #100, Cottonwood Heights, UT 84121",
+  "phone": "(801) 806-0222",
+  "site": "https://22spamd.com",
+  "pin": [
+   40.62971,
+   -111.83464
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "22 Spa MD",
+  "google_phone": "+1801-609-3130",
+  "phone_matches_amp": false,
+  "address": "6686 Highland Dr Ste 100, Cottonwood Heights, UT 84121",
+  "distance_km": 0.0,
+  "site_url": "https://22spamd.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 4.9,
+  "reviews": 299,
+  "stars": {
+   "1": 8,
+   "2": 2,
+   "3": 2,
+   "4": 2,
+   "5": 285
+  },
+  "photos": 38,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 15,
+  "last_updated": "2026-09-11 06:34:53 +00:00",
+  "topics": [
+   {
+    "t": "skin care",
+    "n": 21
+   },
+   {
+    "t": "injector",
+    "n": 17
+   },
+   {
+    "t": "diamond glow facial",
+    "n": 9
+   },
+   {
+    "t": "esthetician",
+    "n": 4
+   },
+   {
+    "t": "hormone therapy",
+    "n": 3
+   },
+   {
+    "t": "laser treatment",
+    "n": 3
+   },
+   {
+    "t": "numbing cream",
+    "n": 3
+   },
+   {
+    "t": "treatment plan",
+    "n": 3
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "Brow Tint",
+    "category": "Medical Spa",
+    "price_usd": 25
+   },
+   {
+    "title": "Wax (Brows)",
+    "category": "Medical Spa",
+    "price_usd": 30
+   },
+   {
+    "title": "Microneedling (Face)",
+    "category": "Skin Rejuvenation",
+    "price_usd": 385
+   }
+  ],
+  "also_search": [
+   {
+    "name": "22 Plastic Surgery",
+    "rating": 5,
+    "reviews": 283
+   },
+   {
+    "name": "Form Derm Med Spa",
+    "rating": 4.9,
+    "reviews": 243
+   },
+   {
+    "name": "Inspire Medical Spa",
+    "rating": 5,
+    "reviews": 233
+   },
+   {
+    "name": "Akin Aesthetics and Wellness",
+    "rating": 5,
+    "reviews": 162
+   },
+   {
+    "name": "Vue Medical Spa",
+    "rating": 5,
+    "reviews": 22
+   }
+  ],
+  "weekly_open_hours": 48,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 68
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 34
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 62
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 51
+     },
+     {
+      "time": {
+       "hour": 17
+      },
+      "popular_index": 44
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 65
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 75
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 55
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 48
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 37
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 24
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "saturday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      }
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 13
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 24
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 24
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 31
+     },
+     {
+      "time": {
+       "hour": 14
+      }
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Cottonwood Heights UT",
+   "prompt": "med spa Cottonwood Heights UT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "22 Spa MD",
+     "Vita Luxe Spa",
+     "Esthetics by Emi Med Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Nouvelle Aesthetics & Wellness",
+      "4Ever Young Med Spa & Wellness Center",
+      "Form Derm Med Spa",
+      "Esthetics by Emi",
+      "Willow Bend Medical"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Form Derm Spa (Ward Institute)",
+      "Nouvelle Aesthetics & Wellness",
+      "Willow Bend Medical Spa",
+      "4Ever Young Anti-Aging & Medical Spa",
+      "Vincent Surgical Arts & Med Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Esthetics by Emi",
+      "4Ever Young Med Spa & Wellness Center",
+      "Willow Bend Medical",
+      "Elite ReGen Center",
+      "Form Derm Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Willow Bend Medical Spa",
+      "Esthetics by Emi Med Spa",
+      "Vincent Surgical Arts & Medspa",
+      "4Ever Young Anti-Aging and Med Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Cottonwood Heights UT",
+   "prompt": "botox Cottonwood Heights UT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "22 Spa MD",
+     "4Ever Young Med Spa & Wellness Center - Cottonwood Heights",
+     "Vita Luxe Spa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Willow Bend Medical Spa",
+      "Renewal Aesthetics and Sexual Wellness",
+      "4Ever Young Med Spa & Wellness Center",
+      "Nouvelle Aesthetics & Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Vincent Surgical Arts & Medspa",
+      "4Ever Young Anti-Aging Clinic & Med Spa",
+      "Nouvelle Aesthetics & Wellness",
+      "Esthetics by Emi Med Spa",
+      "Willow Bend Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "4Ever Young Anti-Aging",
+      "Vita Luxe Spa",
+      "Nouvelle Aesthetics and Wellness",
+      "GameDay Men's Health"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Vincent Surgical Arts & Medspa",
+      "22 Plastic Surgery (John L. Clayton, MD)",
+      "Esthetics By Emi Med Spa",
+      "Gameday Men's Health",
+      "Nouvelle Aesthetic and Wellness"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Cottonwood Heights, UT",
+   "google": {
+    "map_pos": 1,
+    "map_pack": [
+     "22 Spa MD",
+     "Beauty Lab + Laser Med Spa | Murray",
+     "The Glow Up MedSpa"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 0,
+     "others": [
+      "Willow Bend Medical",
+      "Esthetics by Emi",
+      "4Ever Young Med Spa & Wellness Center",
+      "Form Derm Med Spa",
+      "Nouvelle Aesthetics & Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Esthetics by Emi Med Spa",
+      "Willow Bend Medical",
+      "Nouvelle Aesthetics & Wellness",
+      "Uniquely You Aesthetics & Wellness",
+      "Gem Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "4Ever Young Med Spa",
+      "Esthetics by Emi"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "4Ever Young Med Spa & Wellness Center",
+      "Esthetics by Emi Med Spa",
+      "Willow Bend Medical"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "Listing search by AMP name '22 Med Spa' returned 0; found by Google name '22 Spa MD' (cid 13972613141447233805), claimed, address matches AMP.",
+  "Phone mismatch: Google shows (801) 609-3130 vs AMP-listed (801) 806-0222. 22spamd.com homepage (per Perplexity search snippet) shows (385) 430-0758; directories show other numbers ((385) 390-3493, (385) 243-0585) - likely call-tracking numbers, NAP inconsistent.",
+  "AMP phone (801) 806-0222 appears on the CareCredit listing for 22 Spa MD (S1 organic #4).",
+  "Google lat/lng only given to 3 decimals (40.63,-111.835); distance to AMP pin ~0.04 km.",
+  "Sister practice '22 Plastic Surgery' (same building, 6686 Highland Dr) appears in people_also_search; Claude S2 answer named 22 Plastic Surgery separately (counted under others, not as 22 Spa MD).",
+  "Only 3 of 10 Google services have a price >0; injectables listed at $0 'From' price.",
+  "AI Overview present but asynchronous (no text) on all three SERPs.",
+  "No organic result for 22spamd.com in the top 10 for any search; 22 Spa MD appears organically only via CareCredit (S1 #4) and top-rated.online mention (S2 #2).",
+  "S3 'best med spa near me' organic results are mostly off-locale (Florida/Fresno directories) despite Cottonwood Heights location.",
+  "gemini-2.5-flash rate limited (50301) twice; substituted gemini-3.6-flash for all 3 Gemini prompts.",
+  "Gemini 3.6 responses returned no search_results array; named judged from answer text."
+ ]
+}

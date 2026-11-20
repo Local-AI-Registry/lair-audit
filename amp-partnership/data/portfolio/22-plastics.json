@@ -1,0 +1,73 @@
+{
+  "slug": "22-plastics",
+  "run_date": "2026-11-20",
+  "amp": {"name": "22 - Plastics", "brand": "22", "address": "6686 Highland Drive, Ste #200, Cottonwood Heights, UT 84121", "phone": "(801) 937-9650", "site": "https://22plasticsurgery.com", "pin": [40.62971, -111.83464]},
+  "listing": {
+    "found": true,
+    "title": "22 Plastic Surgery",
+    "google_phone": "+1801-937-9650",
+    "phone_matches_amp": true,
+    "address": "6686 Highland Dr Ste #200, Cottonwood Heights, UT 84121",
+    "distance_km": 0.0,
+    "site_url": "https://22plasticsurgery.com/",
+    "site_matches_amp": true,
+    "category": "Plastic surgeon",
+    "categories": ["Plastic surgeon"],
+    "rating": 5,
+    "reviews": 284,
+    "stars": {"1": 1, "2": 3, "3": 0, "4": 1, "5": 279},
+    "photos": 42,
+    "claimed": true,
+    "has_description": true,
+    "attributes_count": 12,
+    "last_updated": "2026-09-23 07:49:22 +00:00",
+    "topics": null,
+    "services_count": null,
+    "prices": [],
+    "also_search": [
+      {"name": "Intermountain Health Intermountain Plastic Surgery Center", "rating": 4.8, "reviews": 122},
+      {"name": "22 Spa MD", "rating": 4.8, "reviews": 291},
+      {"name": "Saltz Plastic Surgery & Saltz Spa Vitoria", "rating": 4.9, "reviews": 291},
+      {"name": "Utah Cosmetic Surgery", "rating": 4.7, "reviews": 328},
+      {"name": "Utah Eyelid and Facial Plastic Surgery", "rating": 5, "reviews": 283}
+    ],
+    "weekly_open_hours": 40,
+    "popular_times": null
+  },
+  "svc": "plastic surgeon",
+  "searches": [
+    {"key": "S1", "q": "plastic surgeon Cottonwood Heights UT", "prompt": "plastic surgeon Cottonwood Heights UT",
+     "google": {"map_pos": null, "map_pack": [], "organic_pos": 4, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Vincent Surgical Arts and Medspa", "SLC Plastic Surgery LLC", "Dr. Neal Moores, MD"]},
+       "gemini": {"named": 1, "others": ["Angela Keen, MD (Utah Aesthetic Surgery)", "Vincent Surgical Arts & Medspa", "Dr. Richard Fryer, MD", "The Rose Clinic"]},
+       "perplexity": {"named": 1, "others": []},
+       "claude": {"named": 1, "others": []}
+     }},
+    {"key": "S2", "q": "botox Cottonwood Heights UT", "prompt": "botox Cottonwood Heights UT",
+     "google": {"map_pos": null, "map_pack": ["22 Spa MD", "4Ever Young Med Spa & Wellness Center - Cottonwood Heights", "Vita Luxe Spa"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 0, "others": ["Willow Bend Medical Spa", "22 Spa MD", "Renewal Aesthetics and Sexual Wellness", "Nouvelle Aesthetics & Wellness", "Esthetics by Emi", "Vincent Surgical Arts & Medspa", "4Ever Young Med Spa & Wellness Center"]},
+       "gemini": {"named": 0, "others": ["22 Spa MD", "4Ever Young Anti-Aging Clinic & Med Spa", "Esthetics by Emi Med Spa", "Nouvelle Aesthetics & Wellness", "John L. Clayton, MD", "Vincent Surgical Arts"]},
+       "perplexity": {"named": 0, "others": ["4Ever Young Anti-Aging", "22 Spa MD", "Vita Luxe Spa", "Nouvelle Aesthetics and Wellness", "GameDay Men's Health"]},
+       "claude": {"named": 1, "others": ["Vincent Surgical Arts & Medspa", "Esthetics By Emi Med Spa", "Gameday Men's Health", "22 Spa MD", "Nouvelle Aesthetic and Wellness"]}
+     }},
+    {"key": "S3", "q": "best plastic surgeon near me", "prompt": "best plastic surgeon in Cottonwood Heights, UT",
+     "google": {"map_pos": 1, "map_pack": ["22 Plastic Surgery", "Angela Keen, MD PLLC", "Utah Facial Plastics - Draper"], "organic_pos": null, "aio": "unreadable"},
+     "llm": {
+       "chat_gpt": {"named": 1, "others": ["Vincent Surgical Arts"]},
+       "gemini": {"named": 1, "others": ["Dr. Angela Keen, MD (Utah Aesthetic Surgery)", "Vincent Surgical Arts & Medspa", "Dr. Richard Fryer, MD", "The Rose Clinic", "University of Utah Plastic Surgery"]},
+       "perplexity": {"named": 0, "others": ["Vincent Surgical Arts", "Dr. Richard Fryer (Premier Plastic Surgery Group)"]},
+       "claude": {"named": 0, "others": ["Vincent Surgical Arts"]}
+     }}
+  ],
+  "notes": [
+    "Single claimed Google listing matched; phone, address and domain all match AMP. Google lat/lng returned rounded (40.63,-111.835), ~0.04 km from AMP pin.",
+    "place_topics, services, prices and popular_times were not returned by business_listings_search; stored as null/empty.",
+    "Gemini gemini-2.5-flash rate-limited twice (50301) on all 3 prompts; gemini-3.6-flash used instead for all Gemini answers.",
+    "All three SERPs had asynchronous AI Overviews with no readable text (aio=unreadable). S1 had no local pack; organic_pos 4 is a 22plasticsurgery.com doctor page (Dr. John Clayton).",
+    "Sister AMP brand 22 Spa MD (Ste 100, same building, separate listing, phone (801) 609-3130 in local pack) holds #1 map spot for 'botox Cottonwood Heights UT'; 22 Plastic Surgery not in that pack. 22 Spa MD mentions not counted as named for 22 Plastic Surgery.",
+    "S2 Gemini and S3 Perplexity/Claude named this practice's surgeons (John L. Clayton, Brian Reuben, Neal Moores, Katherine Vandenberg) but not the '22 Plastic Surgery' brand; scored named=0. Surgeons also have personal sites (johnlclaytonmd.com) splitting brand signal.",
+    "Google contact_info lists extra backlink-sourced phones (801-806-0222, 1-800-985-3059) and an unrelated CMS email."
+  ]
+}

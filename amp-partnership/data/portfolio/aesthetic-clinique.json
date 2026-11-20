@@ -1,0 +1,804 @@
+{
+ "slug": "aesthetic-clinique",
+ "run_date": "2026-11-20",
+ "amp": {
+  "name": "Aesthetic Clinique",
+  "brand": "Aesthetic Clinique",
+  "address": "2050 West County Highway 30A, Ste 114, Santa Rosa Beach, FL 32459",
+  "phone": "(850) 343-4194",
+  "site": "https://theclinique.com",
+  "pin": [
+   30.34141,
+   -86.2
+  ]
+ },
+ "listing": {
+  "found": true,
+  "title": "Aesthetic Clinique",
+  "google_phone": "+1850-343-4194",
+  "phone_matches_amp": true,
+  "address": "2050 W County Hwy 30A Ste 114, Santa Rosa Beach, FL 32459",
+  "distance_km": 0.0,
+  "site_url": "https://theclinique.com/",
+  "site_matches_amp": true,
+  "category": "Medical spa",
+  "categories": [
+   "Medical spa",
+   "Laser hair removal service",
+   "Skin care clinic"
+  ],
+  "rating": 5,
+  "reviews": 300,
+  "stars": {
+   "1": 2,
+   "2": 1,
+   "3": 0,
+   "4": 2,
+   "5": 295
+  },
+  "photos": 323,
+  "claimed": true,
+  "has_description": true,
+  "attributes_count": 16,
+  "last_updated": "2026-09-23 22:26:59 +00:00",
+  "topics": [
+   {
+    "t": "lip filler",
+    "n": 16
+   },
+   {
+    "t": "amazing staff",
+    "n": 15
+   },
+   {
+    "t": "injectables",
+    "n": 7
+   },
+   {
+    "t": "free consultation",
+    "n": 4
+   },
+   {
+    "t": "injector",
+    "n": 4
+   },
+   {
+    "t": "bedside manner",
+    "n": 3
+   },
+   {
+    "t": "brow lamination and tint",
+    "n": 2
+   },
+   {
+    "t": "acne scar removal",
+    "n": 2
+   }
+  ],
+  "services_count": 10,
+  "prices": [
+   {
+    "title": "LHR (Lip & Chin)",
+    "category": "Laser Hair Reduction",
+    "price_usd": 125
+   },
+   {
+    "title": "Hydrafacial (Deluxe with DP)",
+    "category": "Medical Spa",
+    "price_usd": 250
+   },
+   {
+    "title": "Signature Facial",
+    "category": "Medical Spa",
+    "price_usd": 145
+   }
+  ],
+  "also_search": [
+   {
+    "name": "Evolve Aesthetics and Wellness 30A",
+    "rating": 4.9,
+    "reviews": 58
+   },
+   {
+    "name": "Aqua Medical Spa - Santa Rosa Beach",
+    "rating": 5,
+    "reviews": 126
+   },
+   {
+    "name": "GLOW Medspa & Wellness",
+    "rating": 5,
+    "reviews": 501
+   },
+   {
+    "name": "Aesthetic Artistry Med Spa 30a",
+    "rating": 5,
+    "reviews": 9
+   },
+   {
+    "name": "Sonosthetics",
+    "rating": 5,
+    "reviews": 5
+   }
+  ],
+  "weekly_open_hours": 39,
+  "popular_times": {
+   "popular_times_by_days": {
+    "monday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 70
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "tuesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 100
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "wednesday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 64
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 35
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "thursday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      }
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 23
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 41
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 52
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 15
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 16
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ],
+    "friday": [
+     {
+      "time": {
+       "hour": 6
+      }
+     },
+     {
+      "time": {
+       "hour": 7
+      }
+     },
+     {
+      "time": {
+       "hour": 8
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 9
+      },
+      "popular_index": 29
+     },
+     {
+      "time": {
+       "hour": 10
+      },
+      "popular_index": 47
+     },
+     {
+      "time": {
+       "hour": 11
+      },
+      "popular_index": 82
+     },
+     {
+      "time": {
+       "hour": 12
+      },
+      "popular_index": 88
+     },
+     {
+      "time": {
+       "hour": 13
+      },
+      "popular_index": 76
+     },
+     {
+      "time": {
+       "hour": 14
+      },
+      "popular_index": 58
+     },
+     {
+      "time": {
+       "hour": 15
+      }
+     },
+     {
+      "time": {
+       "hour": 16
+      }
+     },
+     {
+      "time": {
+       "hour": 17
+      }
+     },
+     {
+      "time": {
+       "hour": 18
+      }
+     },
+     {
+      "time": {
+       "hour": 19
+      }
+     },
+     {
+      "time": {
+       "hour": 20
+      }
+     },
+     {
+      "time": {
+       "hour": 21
+      }
+     },
+     {
+      "time": {
+       "hour": 22
+      }
+     },
+     {
+      "time": {
+       "hour": 23
+      }
+     }
+    ]
+   }
+  }
+ },
+ "svc": "med spa",
+ "searches": [
+  {
+   "key": "S1",
+   "q": "med spa Santa Rosa Beach FL",
+   "prompt": "med spa Santa Rosa Beach FL",
+   "google": {
+    "map_pos": 3,
+    "map_pack": [
+     "GLOW Medspa & Wellness",
+     "Aqua Medical Spa - Santa Rosa Beach",
+     "Aesthetic Clinique"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Glow Med Spa",
+      "Aqua Medical Spa",
+      "Evolve Aesthetics and Wellness 30A",
+      "Re'vi Aesthetics + Wellness"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "GLOW Med Spa of 30A",
+      "Aqua Medical Spa",
+      "30A Medical Spa",
+      "Re'vi Aesthetics + Wellness",
+      "Evolve Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "GLOW Med Spa of 30A",
+      "Evolve Aesthetics and Wellness 30A",
+      "Aesthetic Artistry Med Spa 30A",
+      "30A Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "GLOW Med Spa of 30A",
+      "The Aesthetic Collective"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S2",
+   "q": "botox Santa Rosa Beach FL",
+   "prompt": "botox Santa Rosa Beach FL",
+   "google": {
+    "map_pos": 2,
+    "map_pack": [
+     "GLOW Medspa & Wellness",
+     "Aesthetic Clinique",
+     "Aqua Medical Spa - Santa Rosa Beach"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "GLOW Medspa & Wellness",
+      "Cook Family Dentistry",
+      "GANO Medical",
+      "Santa Rosa Smiles",
+      "Evolve Aesthetics & Wellness 30A"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "Aqua Medical Spa",
+      "Glow Med Spa of 30A",
+      "The Aesthetic Collective",
+      "Blush Beauty Lounge",
+      "Evolve Aesthetics & Wellness"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Cook Family Dentistry",
+      "Aqua Medical Spa",
+      "Evolve Aesthetics & Wellness 30A",
+      "Destin Botox / Destin Medical Spa"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "The Aesthetic Collective",
+      "GANO Medical",
+      "GLOW Med Spa of 30A",
+      "Cook Family Dentistry",
+      "Santa Rosa Smiles",
+      "Blush Beauty Lounge",
+      "Destin Medical Spa"
+     ]
+    }
+   }
+  },
+  {
+   "key": "S3",
+   "q": "best med spa near me",
+   "prompt": "best med spa in Santa Rosa Beach, FL",
+   "google": {
+    "map_pos": null,
+    "map_pack": [
+     "The Palm Medspa + Wellness",
+     "St Pete Wellness Med Spa",
+     "Elite Medical Spa of Lakewood Ranch"
+    ],
+    "organic_pos": null,
+    "aio": "unreadable"
+   },
+   "llm": {
+    "chat_gpt": {
+     "named": 1,
+     "others": [
+      "Evolve Aesthetics and Wellness 30A",
+      "GLOW Medspa & Wellness",
+      "Aqua Medical Spa"
+     ]
+    },
+    "gemini": {
+     "named": 1,
+     "others": [
+      "GLOW Med Spa of 30A",
+      "30A Medical Spa",
+      "Evolve Aesthetics & Wellness",
+      "Aqua Medical Spa"
+     ]
+    },
+    "perplexity": {
+     "named": 1,
+     "others": [
+      "Evolve Aesthetics and Wellness 30A",
+      "Aqua Medical Spa",
+      "GLOW Med Spa of 30A",
+      "Aesthetic Artistry Med Spa 30A"
+     ]
+    },
+    "claude": {
+     "named": 1,
+     "others": [
+      "Evolve Aesthetics and Wellness 30A",
+      "GLOW Med Spa of 30A",
+      "Destin Medical Spa"
+     ]
+    }
+   }
+  }
+ ],
+ "notes": [
+  "SERP location_name 'Santa Rosa Beach,Florida,United States' rejected (Invalid Field 40501); all 3 Google searches run with 'Florida,United States'. S3 'near me' therefore resolved state-wide (Orlando/St Pete/Bradenton pack), not local.",
+  "Gemini gemini-2.5-flash rate limited twice (50301) on all 3 prompts; substituted gemini-3.6-flash.",
+  "Google listing phone matches AMP (850) 343-4194, but theclinique.com homepage (per Perplexity search snippet) shows (850) 203-0817; backlink data also carries (850) 622-1214 - NAP inconsistency.",
+  "theclinique.com/face/injectables/botox/ snippet (Perplexity source) shows '220 Lyon St. Grand Rapids, MI 49503' - apparent template/footer leftover on the site.",
+  "Gemini (S2) gave wrong address '2050 E County Hwy 30A'; Perplexity S1 cited the (850) 203-0817 number.",
+  "Listing API reports 300 reviews; live local pack shows 320 reviews (listing last_updated 2026-09-23).",
+  "S1 organic #5 is a MapQuest page 'Aesthetic Clinique-Steven' (third-party, not counted as organic_pos); own site theclinique.com not in top 10 organic for any search.",
+  "AI Overview present but asynchronous (no text) on all 3 searches.",
+  "Named by all 4 LLMs on all 3 prompts (12/12); Claude S2 only in a trailing 'additional options' line.",
+  "No Sat/Sun hours; most prices on Google listing are $0 placeholders (7 of 10 services)."
+ ]
+}
