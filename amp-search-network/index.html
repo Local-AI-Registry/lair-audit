@@ -263,6 +263,24 @@ input[type=range]{width:100%;accent-color:var(--blue);height:28px}
 .umb svg{height:40px;margin:2px 0}
 .upar{background:var(--ink);color:#fff;border-radius:99px;padding:9px 12px;text-align:center;font:700 13.5px/1.2 var(--loud);opacity:0;transition:opacity .6s;transition-delay:var(--d)}
 .umb.in .upar{opacity:1}
+/* calc v2 */
+.calc2{margin-top:36px;background:var(--white);border:1px solid var(--line);border-radius:22px;padding:28px}
+.c2grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:36px}
+.c2grp{margin-bottom:22px}.c2grp h3{font-size:16px;margin-bottom:12px;color:var(--gold7)}
+.c2f{margin-bottom:16px}
+.c2f label{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:15px;color:#2A3547}
+.c2f label b{font:800 17px/1 var(--loud);color:var(--ink);white-space:nowrap}
+.c2f input{width:100%;accent-color:var(--blue);margin:8px 0 2px}
+.c2f small{display:block;font-size:12.5px;color:var(--muted);line-height:1.4}
+.c2reset{font:700 13px/1 var(--loud);background:var(--paper);border:1px solid var(--line);color:var(--ink);padding:10px 14px;border-radius:99px;cursor:pointer}
+.c2out{display:flex;flex-direction:column;gap:10px}
+.c2o{display:flex;justify-content:space-between;align-items:baseline;gap:12px;border-bottom:1px solid var(--line);padding:10px 0}
+.c2o span{font-size:15px;color:#2A3547}.c2o b{font:800 22px/1 var(--loud);white-space:nowrap}
+.c2o.hi{background:var(--tint);border:0;border-radius:14px;padding:16px}.c2o.hi b{color:var(--blue);font-size:28px}
+.c2o.big{background:var(--ink);border:0;border-radius:16px;padding:20px;flex-direction:column;align-items:flex-start;gap:8px}
+.c2o.big span{color:#C9D2E3}.c2o.big b{color:#fff;font-size:clamp(34px,4.4vw,46px)}.c2o.big em{font-style:normal;font-size:13px;color:#D8BC86}
+.c2flow svg{width:100%;height:auto;display:block;margin-top:6px}
+@media (max-width:860px){.c2grid{grid-template-columns:1fr}.calc2{padding:16px}}
 /* rag (from Fresh) */
 .pipe{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:14px;margin-top:40px}
 .pipe .pstep{grid-column:span 2}
@@ -745,30 +763,47 @@ footer a{color:var(--blue)}
 <!-- CALCULATOR -->
 <section class="band" id="calc"><div class="wrap">
 <span class="label">What's on the table</span>
-<h2 class="wide">What being AI's answer <span class="nw">is worth to AMP.</span></h2>
-<p class="intro">We pulled real monthly search volumes for every market: local searches for med spa, Botox, lip filler and laser hair removal, plus the same "near me" searches in each city. That's 92,770 searches a month across your 77 markets. Move the sliders to see what winning more of them is worth.</p>
-<div class="calc reveal">
-<div class="calcgrid">
-<div>
-<div class="now"><span class="big" id="nowv">$93,875</span><p>a month: the value of the 25 markets where AI already picks you first (7,745 searches a month)</p></div>
-<label class="fld"><span class="fl">Share of the other 52 markets you win: <b id="pv">25%</b></span>
-<input id="pct" type="range" min="0" max="100" step="5" value="25">
-<span class="chips" id="chips"><button data-p="10" aria-pressed="false">10%</button><button data-p="25" aria-pressed="true">25%</button><button data-p="50" aria-pressed="false">50%</button><button data-p="100" aria-pressed="false">All 52</button></span></label>
-<label class="fld"><span class="fl">Average spend per patient visit: <b id="prv">$527</b></span>
-<input id="price" type="range" min="200" max="1500" step="1" value="527"></label>
-<p class="fine">Starts at $527, the average spend per US med spa visit (American Med Spa Association, 2024 report). Conversion is 2.3%, the average across industries (Ruler Analytics). Nothing here is a forecast or a promise. It's the math on real search volumes.</p>
+<h2 class="wide">What AI search adds to AMP's profit <span class="nw">and platform value.</span></h2>
+<p class="intro">AMP is valued on profit, so this calculator ends where your board does: added EBITDA, and what that EBITDA is worth at your platform multiple. Every number below is an assumption you can change. The starting values come from our audit and from industry sources, listed under each input.</p>
+
+<div class="calc2 reveal">
+<div class="c2grid">
+<div class="c2in">
+<div class="c2grp">
+<h3>1. The demand</h3>
+<div class="c2f" data-k="vol" data-min="0" data-max="120000" data-step="25" data-v="85025" data-fmt="int"><label><span>Monthly local searches in markets where AMP isn't AI's first pick yet</span><b></b></label><input type="range"><small>Our audit, DataForSEO, Nov 20, 2026: 85,025 of the 92,770 searches across your 77 markets</small></div>
+<div class="c2f" data-k="share" data-min="0" data-max="100" data-step="1" data-v="25" data-fmt="pct"><label><span>Share of those searches you win once AI names you</span><b></b></label><input type="range"><small>Your call. 25% is roughly the 20 close races alone</small></div>
+<div class="c2f" data-k="conv" data-min="0.5" data-max="10" data-step="0.1" data-v="2.3" data-fmt="pct1"><label><span>Searches that become a booked new patient</span><b></b></label><input type="range"><small>Ruler Analytics cross-industry average: 2.3%</small></div>
 </div>
-<div>
-<div class="outs">
-<div class="out"><span>Searches a month in the markets you'd win</span><b id="o1">21,256</b></div>
-<div class="out"><span>New patients a month</span><b id="o2">489</b></div>
-<div class="out"><span>Added revenue a year</span><b id="o3">$3.1M</b></div>
-<div class="out big"><span>Added revenue a month</span><b id="o4">$257,646</b></div>
+<div class="c2grp">
+<h3>2. What a new patient is worth</h3>
+<div class="c2f" data-k="ticket" data-min="150" data-max="1500" data-step="1" data-v="527" data-fmt="usd"><label><span>Average spend per visit</span><b></b></label><input type="range"><small>AmSpa 2024: $527 per med spa visit</small></div>
+<div class="c2f" data-k="visits" data-min="1" data-max="8" data-step="0.5" data-v="2" data-fmt="x"><label><span>Visits per new patient in their first year</span><b></b></label><input type="range"><small>Starting at 2. Use your own retention data</small></div>
 </div>
-<div class="pot" aria-hidden="true">
-<svg viewBox="0 0 400 70"><rect x="0" y="22" width="400" height="26" rx="13" fill="#ECE6D6"/><rect id="barNow" x="0" y="22" width="33" height="26" rx="13" fill="#0B1A2E"/><rect id="barAdd" x="33" y="22" width="80" height="26" fill="#1F4FE0"/><text x="0" y="14" font-family="Hanken Grotesk" font-size="11" fill="#5D6878">Today</text><text id="lblAdd" x="40" y="14" font-family="Hanken Grotesk" font-size="11" fill="#1F4FE0">+ won</text><text x="400" y="64" text-anchor="end" font-family="Hanken Grotesk" font-size="11" fill="#5D6878">Every market: <tspan id="allv">$1,124,460</tspan>/mo</text></svg>
+<div class="c2grp">
+<h3>3. What it's worth to AMP</h3>
+<div class="c2f" data-k="margin" data-min="5" data-max="70" data-step="1" data-v="30" data-fmt="pct"><label><span>Profit margin on the added revenue</span><b></b></label><input type="range"><small>Med spa profit margins average roughly 20% to 25%. Enter your own margin on added visits</small></div>
+<div class="c2f" data-k="mult" data-min="3" data-max="16" data-step="0.5" data-v="9" data-fmt="xm"><label><span>Platform EBITDA multiple</span><b></b></label><input type="range"><small>Platforms above $20M revenue traded at 7x to 12x EBITDA (AmSpa, 2025)</small></div>
 </div>
-<div class="formula">searches × 2.3% conversion × average spend</div>
+<button type="button" class="c2reset" id="c2reset">Reset to starting values</button>
+</div>
+
+<div class="c2out">
+<div class="c2o"><span>New patients a month</span><b id="r1">0</b></div>
+<div class="c2o"><span>Added revenue a year</span><b id="r2">$0</b></div>
+<div class="c2o"><span>Per location, on average</span><b id="r3">$0</b></div>
+<div class="c2o hi"><span>Added EBITDA a year</span><b id="r4">$0</b></div>
+<div class="c2o big"><span>Added platform value</span><b id="r5">$0</b><em>Added EBITDA × your platform multiple</em></div>
+<div class="c2flow" aria-hidden="true">
+<svg viewBox="0 0 360 150"><g font-family="Hanken Grotesk, sans-serif" font-size="11" fill="#5D6878">
+<rect x="0" y="10" width="100" height="40" rx="10" fill="#F9F6F4"/><text x="50" y="35" text-anchor="middle">Searches won</text>
+<rect x="130" y="10" width="100" height="40" rx="10" fill="#F9F6F4"/><text x="180" y="35" text-anchor="middle">New patients</text>
+<rect x="260" y="10" width="100" height="40" rx="10" fill="#F9F6F4"/><text x="310" y="35" text-anchor="middle">Revenue</text>
+<rect x="130" y="95" width="100" height="40" rx="10" fill="#E7EDFC"/><text x="180" y="120" text-anchor="middle" fill="#1F4FE0" font-weight="700">EBITDA</text>
+<rect x="260" y="95" width="100" height="40" rx="10" fill="#041E42"/><text x="310" y="120" text-anchor="middle" fill="#fff" font-weight="700">Platform value</text>
+</g><g stroke="#B9975B" stroke-width="2" fill="none"><path class="beam" d="M100 30 H130"/><path class="beam" d="M230 30 H260"/><path class="beam" d="M310 50 V70 H180 V95"/><path class="beam" d="M230 115 H260"/></g></svg>
+</div>
+<p class="fine">This is math on your inputs, not a forecast or a promise. It counts year-one value only and leaves out referrals, memberships and the network effect on new practices you add.</p>
 </div>
 </div>
 </div>
@@ -894,7 +929,7 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
 (function(){
 
  // no orphans: glue the last two words of every text block
- [].forEach.call(document.querySelectorAll('h1,h2,h3,p,li,.one,.stat p,.fact p'),function(el){
+ [].forEach.call(document.querySelectorAll('h1,h2,h3,p,li,.one,.stat p,.fact p,small,.c2f label span,.ubc span,.umb p'),function(el){
   var w=document.createTreeWalker(el,NodeFilter.SHOW_TEXT,null),last=null,n;
   while(n=w.nextNode()){if(/\S/.test(n.nodeValue))last=n}
   if(last){last.nodeValue=last.nodeValue.replace(/\s+(\S+\s*)$/,'\u00a0$1')}
@@ -1012,29 +1047,25 @@ var MAPB="M143,400L143,400L145,401L147,400L147,400L148,399L148,397L148,394L147,3
 
  // underneath replay
  (function(){var ub=document.getElementById('ub'),b=document.getElementById('ubreplay');if(!ub||!b)return;b.addEventListener('click',function(){ub.classList.remove('in');void ub.offsetWidth;setTimeout(function(){ub.classList.add('in')},60)})})();
- // calculator
- var NOW_S=7745,REST_S=85025,ALL_S=92770,CONV=.023;
- var pct=document.getElementById('pct'),price=document.getElementById('price'),chips=[].slice.call(document.querySelectorAll('#chips button'));
- function m(n){return '$'+Math.round(n).toLocaleString('en-US')}
- function short(n){return n>=1e6?'$'+(n/1e6).toFixed(1)+'M':m(n)}
- function calc(){
-  var p=+pct.value/100,pr=+price.value,s=REST_S*p,pt=s*CONV,rev=pt*pr,now=NOW_S*CONV*pr,all=ALL_S*CONV*pr;
-  document.getElementById('pv').textContent=(+pct.value===100?'all 52 (100%)':pct.value+'%');
-  document.getElementById('prv').textContent=m(pr);
-  document.getElementById('nowv').textContent=m(now);
-  document.getElementById('o1').textContent=Math.round(s).toLocaleString('en-US');
-  document.getElementById('o2').textContent=Math.round(pt).toLocaleString('en-US');
-  document.getElementById('o3').textContent=short(rev*12);
-  document.getElementById('o4').textContent=m(rev);
-  document.getElementById('allv').textContent=m(all);
-  var wn=400*NOW_S/ALL_S,wa=400*s/ALL_S;
-  document.getElementById('barNow').setAttribute('width',Math.max(wn,26));
-  var ba=document.getElementById('barAdd');ba.setAttribute('x',wn);ba.setAttribute('width',wa);
-  var la=document.getElementById('lblAdd');la.setAttribute('x',Math.min(wn+wa/2,340));la.textContent=wa>0?'+ '+m(rev)+'/mo':'';
-  chips.forEach(function(c){c.setAttribute('aria-pressed',c.dataset.p==pct.value?'true':'false')});
- }
- chips.forEach(function(c){c.addEventListener('click',function(e){e.preventDefault();pct.value=c.dataset.p;calc()})});
- pct.addEventListener('input',calc);price.addEventListener('input',calc);calc();
+ // calculator v2 (EBITDA + platform value)
+ (function(){
+  var F=[].slice.call(document.querySelectorAll('.c2f')),V={};
+  function fmt(k,v){switch(k){case 'int':return Math.round(v).toLocaleString('en-US');case 'pct':return Math.round(v)+'%';case 'pct1':return (+v).toFixed(1)+'%';case 'usd':return '$'+Math.round(v).toLocaleString('en-US');case 'x':return (+v)+(v==1?' visit':' visits');case 'xm':return (+v)+'x'}return v}
+  function m(n){var a=Math.abs(n);if(a>=1e6)return '$'+(n/1e6).toFixed(a>=1e7?1:2)+'M';return '$'+Math.round(n).toLocaleString('en-US')}
+  F.forEach(function(f){var i=f.querySelector('input');i.min=f.dataset.min;i.max=f.dataset.max;i.step=f.dataset.step;i.value=f.dataset.v;
+   i.addEventListener('input',run)});
+  function run(){
+   F.forEach(function(f){var i=f.querySelector('input');V[f.dataset.k]=+i.value;f.querySelector('b').textContent=fmt(f.dataset.fmt,+i.value)});
+   var pts=V.vol*(V.share/100)*(V.conv/100),rev=pts*12*V.ticket*V.visits,eb=rev*V.margin/100,pv=eb*V.mult;
+   document.getElementById('r1').textContent=Math.round(pts).toLocaleString('en-US');
+   document.getElementById('r2').textContent=m(rev);
+   document.getElementById('r3').textContent=m(rev/77)+' a year';
+   document.getElementById('r4').textContent=m(eb);
+   document.getElementById('r5').textContent=m(pv);
+  }
+  document.getElementById('c2reset').addEventListener('click',function(){F.forEach(function(f){f.querySelector('input').value=f.dataset.v});run()});
+  run();
+ })();
 })();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
