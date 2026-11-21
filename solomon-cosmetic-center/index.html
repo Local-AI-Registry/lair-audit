@@ -393,6 +393,29 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
 .worth .w-tbl .w-r{color:#1F7A53;font-weight:600}
 .worth .tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #E4DCCB;border-radius:6px}
 .av img{width:52px;height:52px;border-radius:50%;object-fit:cover;display:block}
+
+/* Closing-strength additions */
+.realistic{background:#fff;border:1px solid #E4DCCB;border-radius:6px;padding:22px 24px;margin-bottom:18px}
+.realistic .rq{border:1px solid #E4DCCB;border-radius:4px;padding:10px 16px;margin:4px 0;text-align:center}
+.realistic .rq b{display:block;font-family:Cormorant,Georgia,serif;font-size:30px;font-weight:500;color:#0B1A2E;line-height:1.1}
+.realistic .rq span{font-size:12px;color:#6B7A92}
+.realistic .rq.win{background:#0B1A2E;border-color:#0B1A2E}.realistic .rq.win b{color:#C9B37E}.realistic .rq.win span{color:#C9D2E3}
+.realistic .op{color:#C9B37E;font-size:20px;padding:0 10px}
+.draft{background:#fff;border:1px solid #E4DCCB;border-radius:8px;overflow:hidden;height:100%;box-shadow:0 18px 40px rgba(11,26,46,.08)}
+.draft .bar3{background:#F4F1EA;padding:9px 12px;font-size:12px;color:#6B7A92;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.draft .bar3 i{display:inline-block;width:9px;height:9px;border-radius:50%;background:#D9D3C4;margin-right:5px;vertical-align:middle}
+.draft .bar3 span{margin-left:6px}
+.draft .pg{padding:22px 24px}
+.draft.pr{background:#0B1A2E;border-color:#0B1A2E;color:#C9D2E3}.draft.pr .dh{color:#fff}.draft.pr .small{color:#9FB0CC}.draft.pr .small b{color:#fff}
+.dtag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#8C7A4E;border:1px solid #C9B37E;border-radius:999px;padding:4px 10px;margin-bottom:12px}
+.draft.pr .dtag{color:#C9B37E}
+.dh{font-family:Cormorant,Georgia,serif;font-size:27px;font-weight:600;line-height:1.15;color:#0B1A2E;margin:0 0 12px}
+.short{background:#EEF5F0;border-left:3px solid #1F7A53;padding:12px 14px;font-size:15px;color:#0B1A2E;border-radius:0 4px 4px 0}
+.short b{display:block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#1F7A53;margin-bottom:4px}
+.faq{list-style:none;padding:0;margin:14px 0 0}
+.faq li{padding:10px 0 10px 24px;border-bottom:1px solid #F0ECE2;font-size:15px;color:#0B1A2E;position:relative}
+.faq li:before{content:"+";position:absolute;left:2px;top:9px;color:#C9B37E;font-weight:700}
+.wire{font-size:11px;letter-spacing:2px;color:#C9B37E;margin:0 0 8px}
 </style>
 </head>
 <body>
@@ -547,6 +570,15 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
     document.querySelectorAll('.w-tbl tr[data-v]').forEach(function(r){var c=+r.dataset.v*R;t+=c*p;r.querySelector('.w-p').textContent=f(p);r.querySelector('.w-r').textContent=f(c*p)});
     document.getElementById('w-total').textContent=f(t)})})();
   </script>
+<div class="wrap"><div class="realistic rv">
+  <span class="eyebrow" style="margin-bottom:8px">A careful way to read it</span>
+  <div class="flex wrapf aic">
+    <div class="rq"><b>1 in 10</b><span>of these patients</span></div><span class="op">&rarr;</span>
+    <div class="rq"><b>~5</b><span>more surgeries a month</span></div><span class="op">&rarr;</span>
+    <div class="rq win"><b>$24,380</b><span>a month at your $5,000 low end</span></div>
+  </div>
+  <p class="small" style="margin:12px 0 0">The $243,800 above is the whole market, not a promise. If AI sends you just 1 in 10 of the 49 people a month who book from these searches, that's about 5 more cases. One of them pays for the plan.</p>
+</div></div>
 <div class="wrap" style="padding-bottom:64px"><div class="bnote rv" style="background:#fff">
   <p>Med spa, counted separately: 330 searches &times; 2.3% &times; your $1,000 average visit = about $7,590 a month.</p>
   <span class="small">Botox and med spa searches from your audit (botox near me 140, botox clearwater 70, med spa near me 70, med spa clearwater 40, lip filler clearwater 10). You said a med spa visit averages about $1,000, and Tox Club members come back 3&ndash;4 times a year. Today AI sends all of these to Aria, Skinology and Golden Glow.</span>
@@ -580,7 +612,7 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
     <div class="contrast rv">
       <div class="flex wrapf aic jsb">
         <div style="max-width:720px">
-          <span class="eyebrow">What ChatGPT says instead &middot; Nov 20, 2026</span>
+          <span class="eyebrow">AI is underselling you &middot; ChatGPT, Nov 20, 2026</span>
           <div class="q">Important caveat &hellip; I'd ask specifically about credentials.</div>
           <p class="small" style="color:#9FB0CC;margin:0">Asked for the best liposuction surgeon in Clearwater, ChatGPT listed you 4th of 4. It found one old directory profile and nothing about your service, fellowship, MSc or publication. The audit found 0 news stories about you online.</p>
         </div>
@@ -714,7 +746,7 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
     </div>
 
     <div class="finding rv">
-      <div class="flex fhead"><span class="fnum">3</span><div><h3>AI can't see your record, so it hedges.</h3><p class="sub">The one time it names you for surgery, it tells patients to ask about your credentials.</p></div></div>
+      <div class="flex fhead"><span class="fnum">3</span><div><h3>AI is underselling your record.</h3><p class="sub">The one time it names you for surgery, it tells patients to ask about your credentials.</p></div></div>
       <div class="fsplit">
         <div><ul class="board">
           <li><span class="who">What ChatGPT found<small>An older AACS profile listing the American Board of Laser Surgery</small></span><span class="res meh">Partial</span></li>
@@ -868,6 +900,36 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
   </div>
 </section>
 
+<!-- ================= MONTH ONE PREVIEW ================= -->
+<section id="preview">
+  <div class="wrap">
+    <div class="rv"><span class="chapter">A preview of month one</span><h2>Your story, <em>told the way AI repeats it.</em></h2>
+      <p class="lead">Two drafts we'd start with. Nothing goes live until you approve every word.</p></div>
+    <div class="row" style="margin-top:22px">
+      <div class="col c7 rv d1"><div class="draft">
+        <div class="bar3"><i></i><i></i><i></i><span>cosmeticsurgeonoftampa.com/gynecomastia-surgery-florida</span></div>
+        <div class="pg">
+          <span class="dtag">Draft answer page</span>
+          <h3 class="dh">Gynecomastia surgery in Tampa and Clearwater, Florida</h3>
+          <div class="short"><b>The short answer</b>Dr. George Solomon, a cosmetic surgeon in Tampa and Clearwater with over 25 years in cosmetic procedures, treats gynecomastia with liposuction to remove the fat under the chest, and for some men also removes the gland under the nipple. He specializes in minimal-downtime procedures done under local anesthesia or IV sedation.</div>
+          <ul class="faq"><li>Is gynecomastia surgery done under local anesthesia?</li><li>How long is recovery, and when can I go back to the gym?</li><li>What does gynecomastia surgery cost in Florida?</li><li>Why do men travel to Tampa Bay for it?</li></ul>
+          <p class="small" style="margin:12px 0 0">Answers written with you from your consults. Includes surgeon markup naming you, your training and both offices, so AI can quote it.</p>
+        </div>
+      </div></div>
+      <div class="col c5 rv d2"><div class="draft pr">
+        <div class="pg">
+          <span class="dtag">Draft press release, January</span>
+          <p class="wire">TAMPA, Fla. &mdash; FOR IMMEDIATE RELEASE</p>
+          <h3 class="dh">Tampa Bay cosmetic surgeon with 24 years of military service launches Tox Club membership</h3>
+          <p style="font-size:15px">Solomon Cosmetic Center in Tampa and Clearwater opens its Botox membership to the public for the new year.</p>
+          <p class="small" style="margin:0 0 10px"><b>Or lead with surgery:</b> &ldquo;Former Air Force flight surgeon brings minimal-downtime gynecomastia surgery to Tampa Bay.&rdquo;</p>
+          <p class="small" style="margin:0">Sent on newswires picked up by sites like Yahoo Finance, Bing and Apple News.</p>
+        </div>
+      </div></div>
+    </div>
+  </div>
+</section>
+
 <!-- ================= TODAY VS WITH US + PROOF ================= -->
 <section class="paper">
   <div class="wrap">
@@ -947,7 +1009,7 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
     </div>
     <div class="rv center" style="margin-top:34px">
       <div class="same flex wrapf aic" style="-webkit-justify-content:center;justify-content:center"><div class="t"><b>$5,000</b><span>a month</span></div><span class="op">=</span><div class="t win"><b>1</b><span>surgical case at your low end</span></div></div>
-      <p class="small">You do 4&ndash;5 surgeries a week. One more a month pays for the plan.</p>
+      <p class="small">You do 4&ndash;5 surgeries a week. One more a month pays for the plan. If AI sends you 1 in 10 of the patients searching, that&rsquo;s about 5 more a month, around $24,380.</p>
     </div>
   </div>
 </section>
@@ -960,7 +1022,8 @@ footer details{border-color:rgba(201,179,126,.2)}footer details>summary{color:#C
       <div class="b rv d1">
         <span class="chapter">Next step</span>
         <h2>Two small things, <em>then we start.</em></h2>
-        <p style="color:#C9B37E;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:0 0 14px">This offer is valid through November 30, 2026</p>
+        <p style="color:#C9B37E;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin:0 0 8px">This offer is valid through November 30, 2026</p>
+        <p style="color:#C9D2E3;font-size:15px;margin:0 0 16px"><b style="color:#fff">Why the date:</b> we take on one practice like yours per area, and starting by November 30 lets your first press release, launching Tox Club, go out in January. <b style="color:#fff">The low-risk part:</b> it's month to month, so judge it on day 90, when the guarantee is due, the same way you're judging Tox Club at year-end.</p>
         <ol style="color:#E8ECF3;padding-left:20px;margin:0 0 18px;font-size:16px">
           <li style="margin-bottom:8px">Have your team fix the Tampa website link today.</li>
           <li style="margin-bottom:8px">Email Bridgette the list of your current vendors and what each does. No names needed. She'll mark any overlap.</li>
