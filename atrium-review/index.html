@@ -53,6 +53,24 @@ ul.rc b{font:700 13px "Bricolage Grotesque";margin-right:8px} ul.rc span{font-si
 footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
 @media (min-width:720px){.startgrid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}}
 /* motion */
+.bandin2{opacity:0} .in .bandin2{animation:bandin 1s .9s forwards}
+.bandin{opacity:0} .in .bandin{animation:bandin2 1s .9s forwards} @keyframes bandin2{to{opacity:.12}}
+
+
+.prompts{list-style:none;padding:0;margin:14px 0;display:grid;gap:8px}
+.prompts li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);border-radius:12px;padding:12px 14px}
+.prompts li.miss{border-left-color:#B9AF9A}
+.pq{font:600 15px/1.35 "Bricolage Grotesque"} .pr{display:flex;gap:10px;align-items:baseline;margin-top:4px;font-size:13.5px;color:var(--muted)}
+.pr b{font:800 14px "Bricolage Grotesque";color:var(--blue);white-space:nowrap} .miss .pr b{color:#6E6553}
+.rcpt{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;margin:16px 0;box-shadow:0 2px 0 #EEE9DE}
+.rh{font:700 12px "Bricolage Grotesque";letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:8px}
+.rh .dot{width:8px;height:8px;border-radius:50%;background:#10A37F}
+.rq{margin:10px 0;background:#F4F1EA;border-radius:12px;padding:8px 12px;font-size:14.5px;display:inline-block}
+.rcpt p{font-size:15px} .ri{font-size:14.5px;padding:8px 0;border-top:1px solid #EEE9DE} .ri.muted{color:var(--muted)}
+
+.callout{background:#E3EAFC;border-radius:14px;padding:16px 18px;margin:14px 0} .callout p{margin:0;font-size:16px}
+.rf{font-size:12.5px;color:var(--muted);border-top:1px solid #EEE9DE;padding-top:8px}
+
 .fcn{background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue);border-radius:14px;padding:16px;margin:12px 0} .fcn b{display:block;font:800 30px/1.1 "Bricolage Grotesque";color:var(--blue)} .fcn span{font-size:14.5px;color:#273246}
 ul.fl li{display:block}
 .bandin{opacity:0} .in .bandin{animation:bandin 1s .9s forwards} @keyframes bandin{to{opacity:.18}}
@@ -101,16 +119,16 @@ ul.fl li{display:block}
 <h2>Before we arrived, your site lost half its Google traffic</h2>
 <p>In March the site was rebuilt and its page addresses changed. Google kept looking for the old pages, found nothing, and stopped sending visitors. By the time we started in July, the damage was done.</p>
 <div class="card obs"><svg viewBox="0 0 340 200" class="fig" role="img" aria-label="Monthly Google clicks fell by half after the March rebuild">
-<rect x="262.6" y="34" width="73.4" height="136" fill="#E3EAFC" rx="4"/>
-<path d="M8.0,170 L8.0,40.5 L31.1,64.4 L54.3,61.7 L77.4,65.2 L100.6,75.1 L123.7,83.8 L146.9,93.6 L170.0,96.0 L193.1,123.5 L216.3,121.6 L239.4,123.8 L262.6,118.5 L285.7,119.7 L308.9,122.4 L332.0,119.5 L332.0,170 Z" fill="#0B1A2E" opacity=".06"/>
-<polyline class="draw" pathLength="1" points="8.0,40.5 31.1,64.4 54.3,61.7 77.4,65.2 100.6,75.1 123.7,83.8 146.9,93.6 170.0,96.0 193.1,123.5 216.3,121.6 239.4,123.8 262.6,118.5 285.7,119.7 308.9,122.4 332.0,119.5" fill="none" stroke="#0B1A2E" stroke-width="2.5" stroke-linejoin="round"/>
-<line x1="181.6" x2="181.6" y1="28" y2="170" stroke="#D93A1F" stroke-width="1.5" stroke-dasharray="3 3"/>
-<text x="177.6" y="22" text-anchor="end" class="t red">March rebuild</text>
-<text x="267.6" y="48" class="t blue">We start</text>
-<text x="54.3" y="53.7" text-anchor="middle" class="t">~9,000/mo</text>
-<text x="227.9" y="111.6" text-anchor="middle" class="t">~4,400/mo</text>
-<text x="8" y="192" class="s">Aug 2025</text><text x="332" y="192" text-anchor="end" class="s">Oct 2026</text>
-</svg><div class="cap">Monthly Google clicks, from Google Search Console. November is left off because the month isn't finished.</div></div>
+<circle cx="332.0" cy="118.5" r="6" fill="#1F4FE0"/>
+<path d="M8.0,170 L8.0,40.5 L37.5,64.4 L66.9,61.7 L96.4,65.2 L125.8,75.1 L155.3,83.8 L184.7,93.6 L214.2,96.0 L243.6,123.5 L273.1,121.6 L302.5,123.8 L332.0,118.5 L332.0,170 Z" fill="#0B1A2E" opacity=".06"/>
+<polyline class="draw" pathLength="1" points="8.0,40.5 37.5,64.4 66.9,61.7 96.4,65.2 125.8,75.1 155.3,83.8 184.7,93.6 214.2,96.0 243.6,123.5 273.1,121.6 302.5,123.8 332.0,118.5" fill="none" stroke="#0B1A2E" stroke-width="2.5" stroke-linejoin="round"/>
+<line x1="228.9" x2="228.9" y1="28" y2="170" stroke="#D93A1F" stroke-width="1.5" stroke-dasharray="3 3"/>
+<text x="224.9" y="22" text-anchor="end" class="t red">March rebuild</text>
+<text x="328.0" y="140.5" text-anchor="end" class="t blue">We start, July</text>
+<text x="66.9" y="53.7" text-anchor="middle" class="t">~9,000/mo</text>
+<text x="287.8" y="111.6" text-anchor="middle" class="t">~4,400/mo</text>
+<text x="8" y="192" class="s">Aug 2025</text><text x="332" y="192" text-anchor="end" class="s">Jul 2026</text>
+</svg><div class="cap">Monthly Google clicks before we started, from Google Search Console.</div></div>
 <div class="card"><svg viewBox="0 0 340 210" class="fig ex" role="img" aria-label="Google follows an old address to a dead page; a redirect points it to the new page">
 <rect x="10" y="78" width="70" height="54" rx="10" fill="#fff" stroke="#DDD6C7"/>
 <text x="45" y="102" text-anchor="middle" class="t">Google</text><text x="45" y="118" text-anchor="middle" class="s">looking for</text><text x="45" y="128" text-anchor="middle" class="s">your page</text>
@@ -220,6 +238,36 @@ ul.fl li{display:block}
 </section>
 
 <section class="chap">
+<div class="eyebrow">The new front door</div>
+<h2>AI is already recommending Atrium</h2>
+<p>More shoppers now ask ChatGPT, Google's AI and Perplexity where to go. That's the channel we were built for, and it's where Atrium has grown the fastest.</p>
+
+<div class="up obs"><div class="n">403 → 794</div><div class="h">Times AI answers cite atriumstore.com</div><svg viewBox="0 0 300 150" class="fig" role="img"><path class="bandin" d="M26.0,122 L26.0,81.4 L88.0,74.1 L150.0,64.2 L212.0,63.6 L274.0,42.0 L274.0,122 Z" fill="#1F4FE0"/><polyline class="draw" pathLength="1" points="26.0,81.4 88.0,74.1 150.0,64.2 212.0,63.6 274.0,42.0" fill="none" stroke="#1F4FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle class="pop" style="--d:0.00s" cx="26.0" cy="81.4" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.00s" x="26.0" y="71.4" text-anchor="middle">403</text><text x="26.0" y="142" text-anchor="middle" class="s">Jul 15</text><circle class="pop" style="--d:0.25s" cx="88.0" cy="74.1" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.25s" x="88.0" y="64.1" text-anchor="middle">475</text><text x="88.0" y="142" text-anchor="middle" class="s">Aug 15</text><circle class="pop" style="--d:0.50s" cx="150.0" cy="64.2" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.50s" x="150.0" y="54.2" text-anchor="middle">574</text><text x="150.0" y="142" text-anchor="middle" class="s">Sep 15</text><circle class="pop" style="--d:0.75s" cx="212.0" cy="63.6" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.75s" x="212.0" y="53.6" text-anchor="middle">580</text><text x="212.0" y="142" text-anchor="middle" class="s">Oct 15</text><circle class="pop" style="--d:1.00s" cx="274.0" cy="42.0" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:1.00s" x="274.0" y="32.0" text-anchor="middle">794</text><text x="274.0" y="142" text-anchor="middle" class="s">Nov 24</text></svg><div class="l">Citations across ChatGPT, Google AI Overviews, AI Mode, Perplexity, Gemini and Copilot. Nearly doubled since July.</div></div>
+<div class="up obs"><div class="n">93 → 176</div><div class="h">Google searches where Atrium appears in the AI Overview</div><svg viewBox="0 0 300 140" class="fig" role="img">
+<rect x="70" y="66.6" width="60" height="45.4" rx="5" fill="#8A93A3"/>
+<rect class="rise" x="170" y="26" width="60" height="86" rx="5" fill="#1F4FE0" style="transform-origin:0 112px"/>
+<text x="100" y="58.6" text-anchor="middle" class="t">93</text>
+<text class="pop t" style="--d:.6s" x="200" y="18" text-anchor="middle">176</text>
+<text x="100" y="130" text-anchor="middle" class="s">July</text><text x="200" y="130" text-anchor="middle" class="s">October</text></svg><div class="l">The AI summary at the top of Google results.</div></div>
+<div class="up obs"><div class="n">138 → 381</div><div class="h">Searches where Atrium ranks on page 1 of Google</div><svg viewBox="0 0 300 150" class="fig" role="img"><path class="bandin" d="M26.0,122 L26.0,93.0 L108.7,80.0 L191.3,50.4 L274.0,42.0 L274.0,122 Z" fill="#1F4FE0"/><polyline class="draw" pathLength="1" points="26.0,93.0 108.7,80.0 191.3,50.4 274.0,42.0" fill="none" stroke="#1F4FE0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><circle class="pop" style="--d:0.00s" cx="26.0" cy="93.0" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.00s" x="26.0" y="83.0" text-anchor="middle">138</text><text x="26.0" y="142" text-anchor="middle" class="s">Jul</text><circle class="pop" style="--d:0.25s" cx="108.7" cy="80.0" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.25s" x="108.7" y="70.0" text-anchor="middle">200</text><text x="108.7" y="142" text-anchor="middle" class="s">Aug</text><circle class="pop" style="--d:0.50s" cx="191.3" cy="50.4" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.50s" x="191.3" y="40.4" text-anchor="middle">341</text><text x="191.3" y="142" text-anchor="middle" class="s">Sep</text><circle class="pop" style="--d:0.75s" cx="274.0" cy="42.0" r="4.5" fill="#1F4FE0"/><text class="pop t" style="--d:0.75s" x="274.0" y="32.0" text-anchor="middle">381</text><text x="274.0" y="142" text-anchor="middle" class="s">Oct</text></svg><div class="l">Up 2.8x from July to October.</div></div>
+<div class="cap">Sources: Ahrefs AI citations, Nov 24, 2026. Semrush and DataForSEO ranking history, US Google, Jul to Oct 2026.</div>
+
+<h3 style="margin-top:30px">We asked ChatGPT 7 real shopper questions today</h3>
+<p>Atrium came up in 4 of 7, and was the first pick in all 3 questions about its own neighborhoods.</p>
+<ul class="prompts"><li class="win"><div class="pq">“best dispensary in Woodland Hills CA”</div><div class="pr"><b>#1</b><span>Named first: “I&#x27;d put ATRIUM and The Vault at the top of your list.”</span></div></li><li class="win"><div class="pq">“dispensary near Topanga mall open now”</div><div class="pr"><b>#1</b><span>Named first, then: “Try Atrium first.”</span></div></li><li class="win"><div class="pq">“best dispensary in Valley Village or North Hollywood”</div><div class="pr"><b>#1</b><span>Named first: “Atrium in Valley Village … two of the strongest choices.”</span></div></li><li class="win"><div class="pq">“best dispensary in the San Fernando Valley”</div><div class="pr"><b>#3</b><span>Named #3 of 5 across the whole Valley</span></div></li><li class="miss"><div class="pq">“weed delivery Sherman Oaks”</div><div class="pr"><b>Not named</b><span>ChatGPT picked services that post delivery fees and minimums</span></div></li><li class="miss"><div class="pq">“dispensary near Studio City with good deals”</div><div class="pr"><b>Not named</b><span>ChatGPT picked stores that post their daily deals</span></div></li><li class="miss"><div class="pq">“best dispensary in Canoga Park or Tarzana”</div><div class="pr"><b>Not named</b><span>Outside Atrium&#x27;s two neighborhoods</span></div></li></ul>
+<div class="rcpt">
+<div class="rh"><span class="dot"></span>ChatGPT answer · captured Nov 24, 2026</div>
+<div class="rq">best dispensary in Woodland Hills CA</div>
+<p>Based on current reviews, ratings, selection, and reputation, <b>I'd put ATRIUM and The Vault at the top of your list in Woodland Hills, CA.</b></p>
+<div class="ri"><b>1. ATRIUM</b> (Best overall pick)<br>5441 Topanga Canyon Blvd · Same-day delivery available</div>
+<div class="ri muted">2. The Vault · 3. Elevate · 4. Nature's Story · 5. The Plant</div>
+<div class="rf">Sources ChatGPT cited include Weedmaps, WeedDispos and other directories</div>
+</div>
+<div class="callout"><p>The 3 misses point to the same fix. ChatGPT recommends stores that publish their delivery fees, minimums and deals. Those are the exact details we've asked your team for since August 6.</p></div>
+<div class="cap">ChatGPT answers captured Nov 24, 2026 through DataForSEO, US, with web search on.</div>
+</section>
+
+<section class="chap">
 <div class="chapno">03</div>
 <div class="eyebrow">But</div>
 <h2>Our hands are tied</h2>
@@ -267,7 +315,7 @@ ul.fl li{display:block}
 <div class="eyebrow">The forecast</div>
 <h2>What happens when the ceiling comes off</h2>
 <p>If the redirects go in and the 10 waiting pages go live, here's where we project your monthly Google clicks by spring.</p>
-<div class="card obs"><svg viewBox="0 0 340 250" class="fig" role="img" aria-label="Forecast of monthly Google clicks if the plan is implemented"><line x1="40" x2="326" y1="216.0" y2="216.0" stroke="#EEE9DE"/><text x="34" y="220.0" text-anchor="end" class="s">0k</text><line x1="40" x2="326" y1="171.0" y2="171.0" stroke="#EEE9DE"/><text x="34" y="175.0" text-anchor="end" class="s">2.5k</text><line x1="40" x2="326" y1="126.0" y2="126.0" stroke="#EEE9DE"/><text x="34" y="130.0" text-anchor="end" class="s">5k</text><line x1="40" x2="326" y1="81.0" y2="81.0" stroke="#EEE9DE"/><text x="34" y="85.0" text-anchor="end" class="s">7.5k</text><line x1="40" x2="326" y1="36.0" y2="36.0" stroke="#EEE9DE"/><text x="34" y="40.0" text-anchor="end" class="s">10k</text><line x1="40" x2="326" y1="54.0" y2="54.0" stroke="#8A93A3" stroke-dasharray="4 4"/><text x="44" y="48.0" class="s">Before the March rebuild: ~9,000 a month</text><rect x="118.0" y="36" width="208.0" height="180" fill="#E3EAFC" opacity=".5"/><text x="322.0" y="208.0" text-anchor="end" class="t blue">Forecast</text><polygon class="bandin" points="118.0,129.1 144.0,129.6 170.0,118.8 196.0,101.0 222.0,85.7 248.0,77.4 274.0,77.4 300.0,77.4 326.0,77.4 326.0,103.0 300.0,103.0 274.0,103.0 248.0,103.0 222.0,107.1 196.0,114.5 170.0,123.7 144.0,129.6 118.0,129.1" fill="#1F4FE0" opacity=".18"/><polyline class="draw" pathLength="1" points="118.0,129.1 144.0,129.6 170.0,121.2 196.0,107.7 222.0,96.4 248.0,90.2 274.0,90.2 300.0,90.2 326.0,90.2" fill="none" stroke="#1F4FE0" stroke-width="3" stroke-linecap="round"/><polyline points="118.0,129.1 326.0,129.6" fill="none" stroke="#D93A1F" stroke-width="2" stroke-dasharray="5 4"/><text x="326.0" y="145.6" text-anchor="end" class="s" style="fill:#D93A1F">If nothing changes</text><polyline points="40.0,127.3 66.0,129.5 92.0,134.1 118.0,129.1" fill="none" stroke="#0B1A2E" stroke-width="3"/><circle cx="40.0" cy="127.3" r="3.5" fill="#0B1A2E"/><circle cx="66.0" cy="129.5" r="3.5" fill="#0B1A2E"/><circle cx="92.0" cy="134.1" r="3.5" fill="#0B1A2E"/><circle cx="118.0" cy="129.1" r="3.5" fill="#0B1A2E"/><text class="pop t blue" style="--d:1s" x="326.0" y="67.4" text-anchor="end">6.3k to 7.7k</text><text x="40.0" y="236" text-anchor="middle" class="s">Jul</text><text x="66.0" y="236" text-anchor="middle" class="s">Aug</text><text x="92.0" y="236" text-anchor="middle" class="s">Sep</text><text x="118.0" y="236" text-anchor="middle" class="s">Oct</text><text x="144.0" y="236" text-anchor="middle" class="s">Nov</text><text x="170.0" y="236" text-anchor="middle" class="s">Dec</text><text x="196.0" y="236" text-anchor="middle" class="s">Jan</text><text x="222.0" y="236" text-anchor="middle" class="s">Feb</text><text x="248.0" y="236" text-anchor="middle" class="s">Mar</text><text x="274.0" y="236" text-anchor="middle" class="s">Apr</text><text x="300.0" y="236" text-anchor="middle" class="s">May</text><text x="326.0" y="236" text-anchor="middle" class="s">Jun</text><text x="40.0" y="248" class="s">2026</text><text x="196.0" y="248" class="s">2027</text></svg><div class="cap">Monthly Google clicks. Jul to Oct are actual numbers from Google Search Console. Dec onward is a projection, not a promise.</div></div>
+<div class="card obs"><svg viewBox="0 0 340 240" class="fig" role="img" aria-label="Forecast of monthly Google clicks once the plan is in place"><line x1="40" x2="326" y1="206.0" y2="206.0" stroke="#EEE9DE"/><text x="34" y="210.0" text-anchor="end" class="s">0k</text><line x1="40" x2="326" y1="163.5" y2="163.5" stroke="#EEE9DE"/><text x="34" y="167.5" text-anchor="end" class="s">2.5k</text><line x1="40" x2="326" y1="121.0" y2="121.0" stroke="#EEE9DE"/><text x="34" y="125.0" text-anchor="end" class="s">5k</text><line x1="40" x2="326" y1="78.5" y2="78.5" stroke="#EEE9DE"/><text x="34" y="82.5" text-anchor="end" class="s">7.5k</text><line x1="40" x2="326" y1="36.0" y2="36.0" stroke="#EEE9DE"/><text x="34" y="40.0" text-anchor="end" class="s">10k</text><line x1="40" x2="326" y1="53.0" y2="53.0" stroke="#8A93A3" stroke-dasharray="4 4"/><text x="44" y="47.0" class="s">Before the March rebuild: ~9,000 a month</text><polygon class="bandin2" points="40.0,124.4 80.9,114.2 121.7,97.4 162.6,82.9 203.4,75.1 244.3,75.1 285.1,75.1 326.0,75.1 326.0,99.2 285.1,99.2 244.3,99.2 203.4,99.2 162.6,103.2 121.7,110.2 80.9,118.8 40.0,124.4" fill="#1F4FE0" opacity=".18"/><polyline class="draw" pathLength="1" points="40.0,124.4 80.9,116.5 121.7,103.8 162.6,93.0 203.4,87.2 244.3,87.2 285.1,87.2 326.0,87.2" fill="none" stroke="#1F4FE0" stroke-width="3.5" stroke-linecap="round"/><polyline points="40.0,124.4 326.0,124.4" fill="none" stroke="#D93A1F" stroke-width="2" stroke-dasharray="5 4"/><text x="326.0" y="140.4" text-anchor="end" class="s" style="fill:#D93A1F">Without access</text><circle cx="40.0" cy="124.4" r="5" fill="#0B1A2E"/><text class="pop t blue" style="--d:1s" x="326.0" y="65.1" text-anchor="end">6.3k to 7.7k a month</text><text x="40.0" y="226" text-anchor="middle" class="s">Today</text><text x="80.9" y="226" text-anchor="middle" class="s">Dec</text><text x="121.7" y="226" text-anchor="middle" class="s">Jan</text><text x="162.6" y="226" text-anchor="middle" class="s">Feb</text><text x="203.4" y="226" text-anchor="middle" class="s">Mar</text><text x="244.3" y="226" text-anchor="middle" class="s">Apr</text><text x="285.1" y="226" text-anchor="middle" class="s">May</text><text x="326.0" y="226" text-anchor="middle" class="s">Jun</text><text x="121.7" y="238" text-anchor="middle" class="s">2027</text></svg><div class="cap">Monthly Google clicks. Starts from today's level, about 4,800 a month. A projection, not a promise.</div></div>
 <div class="fcn"><b>6,300 to 7,700</b><span>projected Google clicks a month by March 2027, up from about 4,800 today</span></div>
 <details><summary>How we built this forecast</summary><ul class="ls fl">
 <li><span>Starting point: about 4,800 clicks a month, your Jul to Oct average</span></li>
