@@ -1609,22 +1609,23 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
   const x=mob?50:P[0],y=mob?57+((seq%3)-1)*2:P[1];el.style.left=x+'%';el.style.top=y+'%';el.innerHTML='<i>✓</i><span>'+X(txt)+'</span>';
   el.addEventListener('animationend',()=>{if(el.parentNode)el.parentNode.removeChild(el)});const f=$$('feed');[...f.children].forEach(c=>c.classList.add('out'));f.appendChild(el)}
  /* questions for the owner while the scan runs: one at a time, each with its step, all skippable */
- const askOn=!!TEAM&&(LV||!SCANNED.has(SLUG));let qShown=null,qForce=null;const QH=[];
+ const askOn=!!TEAM; /* any unanswered questions stay available to a signed-in rep, also once the audit is done (side panel) */let qShown=null,qForce=null;const QH=[];
  /* the next question: one the rep went back to, else the first not yet answered (who they lose to waits for the competitors) */
- function qNext(done){if(!askOn)return null;if(LV&&!LV.svc&&!LV.done&&!done&&Date.now()-LV.t0<20000)return null; /* live: wait (up to 20s) for the business type, so the wording fits */if(qForce){const f=QDEF.find(d=>d.id===qForce);if(f)return f}return QDEF.find(d=>!QDONE.has(d.id)&&(d.id!=='rival'||rivalOpts().length)&&(d.id!=='grow'||!LV||LV.services||LV.done||done))||null}
+ function qNext(done){if(!askOn)return null;if(LV&&!LV.svc&&!LV.done&&!done&&Date.now()-LV.t0<20000)return null; /* live: wait (up to 20s) for the business type, so the wording fits */if(qForce){const f=QDEF.find(d=>d.id===qForce);if(f)return f}if(qCur&&!QDONE.has(qCur)){const c=QDEF.find(d=>d.id===qCur);if(c)return c}return QDEF.find(d=>!QDONE.has(d.id)&&(d.id!=='rival'||rivalOpts().length)&&(d.id!=='grow'||!LV||LV.services||LV.done||done))||null}
  function rivalOpts(){const L=LV||LIVE;const c=L&&L.comps?L.comps.map(x=>x.n):WHO.slice(1);return c.filter(Boolean).slice(0,4)}
- let qHold=false;
+ let qHold=false,qCur=null;const QDRAFT={};
  /* save (or skip), show it on the card for a moment, then the next question */
  function qAnswer(id,val,card,label){if(qHold)return;ANS.skipped=(ANS.skipped||[]).filter(x=>x!==id);if(val===undefined){delete ANS[id];ANS.skipped.push(id)}else{ANS[id]=val;
    addFinding(id==='rival'?'Noted: '+(val||'someone not on the list'):id==='grow'?'Noted: '+val.join(', '):id==='spend'?'Noted: $'+fmt(val)+(qretail()?' an order':' a visit'):'Noted: '+(label||val))}
-  QDONE.add(id);QH.push(id);if(qForce===id)qForce=null;ansSave();applyAns();
+  QDONE.add(id);QH.push(id);if(qForce===id)qForce=null;if(qCur===id)qCur=null;ansSave();applyAns();
   if(!card){qShown=null;drawQ(k>=PH.length);return}
   qHold=true;card.classList.add(val===undefined?'skipped':'sent');card.querySelectorAll('button,input').forEach(x=>{x.disabled=true});
   const f=card.querySelector('.qf');if(f)f.innerHTML='<span class="qdone" role="status">'+(val===undefined?'<i>↷</i> '+(label||'Skipped'):'<i>✓</i> Saved'+(label?': '+X(label):''))+'</span>';
   setTimeout(()=>{qHold=false;qShown=null;drawQ(k>=PH.length)},RM?250:650)}
  function qBack(){const id=QH.pop();if(!id||qHold)return;QDONE.delete(id);ANS.skipped=(ANS.skipped||[]).filter(x=>x!==id);qForce=id;qShown=null;drawQ(k>=PH.length)}
  function drawQ(done){if(qHold)return;const d=qNext(done),slot=mob||done?$$('qpanel'):$$('qmap'),other=slot===$$('qmap')?$$('qpanel'):$$('qmap');
-  if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m')+QH.length:null;if(key===qShown)return;qShown=key;if(!slot)return;
+  if(other&&other.firstChild)other.textContent='';const key=d?d.id+(mob||done?'p':'m')+QH.length:null;if(key&&key===qShown&&slot&&slot.querySelector('.qcard[data-q]'))return;
+  const oc=document.querySelector('.qcard[data-q]:not(.sent):not(.skipped)');if(oc)['q-num','q-txt','q-other'].forEach(id=>{const e=oc.querySelector('#'+id);if(e&&e.value)QDRAFT[oc.dataset.q+id]=e.value});qShown=key;if(!slot)return;
   if(!d){slot.textContent='';return}
   const n=QDEF.indexOf(d)+1,prev=ANS[d.id],opts=d.kind==='pick'?rivalOpts():d.kind==='multi'?svcOpts():d.kind==='chips'||d.kind==='say'?d.opts():null,on=v=>' aria-pressed="'+(v?'true':'false')+'"';
   let inp='',alt='';
@@ -1635,8 +1636,8 @@ function vScan(){let LV=LIVE&&!D?LIVE:null;
   else if(d.kind==='say'){inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o)+' data-s="'+X(o)+'">'+X(o)+'</button>').join('')+'</div>';alt='Not sure'}
   else{inp='<div class="qopts">'+opts.map(o=>'<button type="button" class="qo"'+on(prev===o[1])+' data-n="'+o[1]+'">'+o[0]+'</button>').join('')+'</div>';alt='Not sure'}
   const save=d.kind==='multi'||d.kind==='money';
-  slot.innerHTML='<div class="qcard" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+(d.kind==='multi'?svcFrom():'')+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
-  const card=slot.firstChild;let oPick=d.kind==='pick'&&(prev===''||!!(prev&&!opts.includes(prev))),sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
+  qCur=d.id;slot.innerHTML='<div class="qcard" data-q="'+d.id+'" role="group" aria-label="Question '+n+' of '+QDEF.length+'"><div class="qk"><span class="qctx"><i></i>'+(done?'Before you see your results':d.ctx)+'</span><span>'+n+' of '+QDEF.length+' · optional</span></div><div class="qt">'+qText(d)+'</div>'+inp+'<div class="qw">'+(d.kind==='multi'?svcFrom():'')+d.why+'</div><div class="qf">'+(QH.length?'<button type="button" class="qback">← Back</button>':'')+'<span class="qfr"><button type="button" class="qskip" data-alt="'+alt+'">'+alt+'</button><button type="button" class="qskip">Skip</button></span>'+(save?'<span class="qsel"></span><button type="button" class="qgo" disabled>Save →</button>':'')+'</div></div>';
+  const card=slot.firstChild;['q-num','q-txt','q-other'].forEach(id=>{const e=card.querySelector('#'+id),v=QDRAFT[d.id+id];if(e&&v&&!e.value){e.value=v;if(id==='q-other'){const r=card.querySelector('.qrow2');if(r)r.hidden=false}}});let oPick=d.kind==='pick'&&(prev===''||!!(prev&&!opts.includes(prev))),sel=d.kind==='multi'&&Array.isArray(prev)?prev.filter(x=>(opts||[]).includes(x)):d.kind==='pick'&&prev?[prev]:[];
   const typed=()=>((card.querySelector('#q-txt')||{}).value||'').split(/[,;]+/).map(x=>x.trim()).filter(Boolean);
   const ready=()=>{const g=card.querySelector('.qf .qgo')||card.querySelector('.qrow2 .qgo');if(!g)return;
    g.disabled=d.kind==='money'?!(parseInt((card.querySelector('#q-num')||{}).value||'',10)>0):d.kind==='pick'?!(sel.length||oPick):!(sel.length||typed().length);
