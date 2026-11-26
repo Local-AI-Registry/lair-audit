@@ -673,6 +673,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 .deposit .amt{font-family:Cormorant,Georgia,serif;font-size:56px;line-height:1;font-weight:600;color:#0B1A2E}
 .deposit ol{margin:12px 0 0;padding-left:20px;font-size:16px}
 .deposit li{margin-bottom:6px}
+.deposit .amt s.was{font-size:30px;color:#8A93A3;font-weight:400;margin-right:6px}
 .about{font-size:15px;color:#3E4A5E}
 .about b{color:#0B1A2E}
 
@@ -705,10 +706,12 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 .bhad.ba2 .aft img{-webkit-filter:saturate(1.25) brightness(1.08);filter:saturate(1.25) brightness(1.08)}
 .bhad.ba2 .aft{border-left:3px solid #fff}
 .tagb{position:absolute;top:12px;left:12px;background:rgba(11,26,46,.85);color:#fff;font-size:13px;font-weight:700;border-radius:999px;padding:5px 11px;letter-spacing:.3px}
-.aft .tagb{left:auto;right:12px;background:#1F7A53}
+.tagb.tagr{left:auto;right:12px;background:#1F7A53}
+.bhad.ba2 .bascene{position:absolute;left:0;top:0;width:100%;height:100%;display:block}
 .docpip{position:absolute;left:50%;top:52px;-webkit-transform:translateX(-50%);transform:translateX(-50%);display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;background:#fff;border-radius:999px;padding:4px 12px 4px 4px;font-size:12px;font-weight:700;color:#0B1A2E;box-shadow:0 8px 20px rgba(0,0,0,.25);white-space:nowrap}
 .docpip img{width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:50% 20%;margin-right:7px}
 .bhad.ba2 .ovl{padding:10px 8px}
+.bhad.ba2 .docpip{top:auto;bottom:96px}
 .bhad.ba2 .ba b{font-size:28px}
 .bhad.ba2 .arr{font-size:16px;padding:0 2px}
 /* Calculator controls */
@@ -791,7 +794,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 <body>
 <a class="skip" href="#plan">Skip to the plan</a>
 
-<div class="promo"><b>SAVE $500</b>Pay your $5,000 deposit by <span class="dl-date">Wed, Dec 2</span> and take $500 off your first&nbsp;month.</div>
+<div class="promo"><b>SAVE $500</b>Pay your deposit by <span class="dl-date">Wed, Dec 2</span> and it's $4,500 instead of&nbsp;$5,000.</div>
 <header class="bar">
   <div class="wrap">
     <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#B5A47E"/></svg>Local AI Registry<span class="x">&times;</span><img src="img/logo-color.png" alt="Institute for Human Optimization" width="98" height="30"></span>
@@ -808,8 +811,8 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <div class="brandline"><img src="img/logo-white.png" alt="Institute for Human Optimization" width="150" height="52"><span>Prepared for Dr. Anil Bajnath<br>and the IFHO team</span></div>
       <h1>One brand. More patients. <em>Less work.</em></h1>
       <p class="lead">We bring the Institute, Longevity Gyms and the Biological Audit under one name, rebuild your site, and get you named by AI. Ads are optional, for when you want patients&nbsp;sooner.</p>
-      <div class="ctas"><a class="btn gold" href="#next" data-deposit>Secure with a $5,000 deposit <span class="chev">&rsaquo;</span></a><a class="btn outline" href="#plan">See the plan <span class="chev">&darr;</span></a></div>
-      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> $500 off if you start by Dec 2</span></div>
+      <div class="ctas"><a class="btn gold" href="#next" data-deposit>Secure with a <span class="dep-price">$4,500</span> deposit <span class="chev">&rsaquo;</span></a><a class="btn outline" href="#plan">See the plan <span class="chev">&darr;</span></a></div>
+      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> $500 off the deposit by Dec 2</span></div>
     </div>
     <div class="pics rv d2">
       <div class="chartcard">
@@ -1146,9 +1149,115 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <div class="fb" aria-label="Example of a Black Hat ad: Dr. Bajnath with a before-and-after result">
           <div class="top"><span class="av"><img src="img/logo-mark.png" alt="" width="38" height="38"></span><span class="nm">Institute for Human Optimization<small>Sponsored</small></span></div>
           <div class="copy">We measured how fast this patient was aging. Then we measured again 90 days later. Here's what&nbsp;changed.</div>
-          <div class="media bhad ba2" role="img" aria-label="Illustrative before and after: the same patient tired before, energized 90 days later">
-            <div class="half bef"><img src="img/vo2.jpg" alt="" width="800" height="671"><span class="tagb">Before</span></div>
-            <div class="half aft"><img src="img/vo2.jpg" alt="" width="800" height="671"><span class="tagb">After 90 days</span></div>
+          <div class="media bhad ba2" role="img" aria-label="Illustrative before and after: the same man exhausted at his desk, then out running and healthy 90 days later">
+            <div class="half bef"><svg class="bascene" viewBox="28 40 214 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="skyA1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CC4E8"/><stop offset="1" stop-color="#F6DDB0"/></linearGradient>
+    <radialGradient id="lampB1" cx=".3" cy=".55" r=".7"><stop offset="0" stop-color="#5A6577"/><stop offset="1" stop-color="#1E2631"/></radialGradient>
+  </defs>
+  <!-- BEFORE: late night at the desk -->
+  <rect x="0" y="0" width="300" height="320" fill="url(#lampB1)"/>
+  <rect x="196" y="52" width="70" height="52" rx="4" fill="#161D27" stroke="#3A4556" stroke-width="3"/>
+  <circle cx="246" cy="66" r="3" fill="#C9CED6" opacity=".7"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 214 C56 168 74 142 108 139 C142 142 158 168 156 214 Z" fill="#6B7280" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M100 136 h16 v10 h-16z" fill="#AFA698"/>
+    <circle cx="106" cy="114" r="25" fill="#B5AC9E" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M82 108 C82 88 98 84 108 85 C122 86 132 94 131 108 C126 98 116 95 106 96 C96 97 88 101 82 108Z" fill="#4B4F57" stroke="#232A35" stroke-width="3"/>
+    <path d="M82 108 c1 -6 3 -10 6 -13" stroke="#B9BEC6" stroke-width="3" fill="none"/>
+    <path d="M93 118 q5 3 10 0 M111 118 q5 3 10 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M93 124 q5 3 10 0 M111 124 q5 3 10 0" stroke="#8D8375" stroke-width="2.5" fill="none"/>
+    <path d="M98 134 q8 -4 16 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M146 156 L170 206 L128 104" stroke="#6B7280" stroke-width="15" fill="none"/>
+    <circle cx="126" cy="101" r="9" fill="#B5AC9E" stroke="#232A35" stroke-width="3"/>
+    <rect x="14" y="206" width="272" height="14" rx="3" fill="#4A3F36" stroke="#232A35" stroke-width="3"/>
+    <rect x="14" y="220" width="272" height="100" fill="#3A322B"/>
+    <path d="M190 206 l8 -46 h70 l-8 46z" fill="#2B3442" stroke="#232A35" stroke-width="3"/>
+    <path d="M200 166 h60 l-6 34 h-60z" fill="#7F93AB" opacity=".55"/>
+    <path d="M30 206 v-24 h22 v24z" fill="#D6D2CA" stroke="#232A35" stroke-width="3"/>
+    <path d="M52 188 c9 0 9 12 0 12" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M62 206 v-14 h20 v14z" fill="#C9C3B8" stroke="#232A35" stroke-width="3"/>
+  </g>
+  <!-- AFTER: morning run -->
+  <rect x="300" y="0" width="300" height="320" fill="url(#skyA1)"/>
+  <circle cx="546" cy="70" r="24" fill="#FFD27A"/>
+  <path d="M300 236 C380 206 470 214 600 196 V320 H300Z" fill="#7FB37A"/>
+  <path d="M300 262 C400 240 500 252 600 238 V320 H300Z" fill="#5E9A5E"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M436 192 L418 224 L392 236" stroke="#232A35" stroke-width="19" fill="none"/>
+    <path d="M436 192 L418 224 L392 236" stroke="#D9A57C" stroke-width="13" fill="none"/>
+    <path d="M454 192 L482 214 L474 250" stroke="#232A35" stroke-width="19" fill="none"/>
+    <path d="M454 192 L482 214 L474 250" stroke="#D9A57C" stroke-width="13" fill="none"/>
+    <path d="M384 232 l14 6 l-4 8 l-16 -6z M466 246 h20 v9 h-22z" fill="#F7F3EC" stroke="#232A35" stroke-width="3"/>
+    <path d="M428 176 h40 l6 26 h-50z" fill="#0F1A2A" stroke="#232A35" stroke-width="3"/>
+    <path d="M436 132 l-20 28 l-14 -10" stroke="#232A35" stroke-width="15" fill="none"/>
+    <path d="M436 132 l-20 28 l-14 -10" stroke="#D9A57C" stroke-width="9" fill="none"/>
+    <path d="M424 180 C420 150 428 126 446 124 C466 126 474 150 470 180 Z" fill="#2F6FD8" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M460 134 l20 22 l14 -18" stroke="#232A35" stroke-width="15" fill="none"/>
+    <path d="M460 134 l20 22 l14 -18" stroke="#D9A57C" stroke-width="9" fill="none"/>
+    <path d="M440 112 h14 v14 h-14z" fill="#CF9A70"/>
+    <circle cx="448" cy="96" r="24" fill="#D9A57C" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M424 92 C424 72 440 68 450 69 C464 70 474 78 473 92 C468 82 458 79 448 80 C438 81 430 85 424 92Z" fill="#4B4F57" stroke="#232A35" stroke-width="3"/>
+    <path d="M425 92 c1 -6 3 -10 6 -13" stroke="#B9BEC6" stroke-width="3" fill="none"/>
+    <circle cx="442" cy="98" r="2.6" fill="#232A35"/><circle cx="459" cy="98" r="2.6" fill="#232A35"/>
+    <path d="M440 108 q9 8 18 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M434 104 q3 2 6 0 M457 104 q3 2 6 0" stroke="#E58E78" stroke-width="3" fill="none" opacity=".6"/>
+  </g>
+</svg></div><div class="half aft"><svg class="bascene" viewBox="342 40 214 280" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  <defs>
+    <linearGradient id="skyA2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#9CC4E8"/><stop offset="1" stop-color="#F6DDB0"/></linearGradient>
+    <radialGradient id="lampB2" cx=".3" cy=".55" r=".7"><stop offset="0" stop-color="#5A6577"/><stop offset="1" stop-color="#1E2631"/></radialGradient>
+  </defs>
+  <!-- BEFORE: late night at the desk -->
+  <rect x="0" y="0" width="300" height="320" fill="url(#lampB2)"/>
+  <rect x="196" y="52" width="70" height="52" rx="4" fill="#161D27" stroke="#3A4556" stroke-width="3"/>
+  <circle cx="246" cy="66" r="3" fill="#C9CED6" opacity=".7"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M58 214 C56 168 74 142 108 139 C142 142 158 168 156 214 Z" fill="#6B7280" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M100 136 h16 v10 h-16z" fill="#AFA698"/>
+    <circle cx="106" cy="114" r="25" fill="#B5AC9E" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M82 108 C82 88 98 84 108 85 C122 86 132 94 131 108 C126 98 116 95 106 96 C96 97 88 101 82 108Z" fill="#4B4F57" stroke="#232A35" stroke-width="3"/>
+    <path d="M82 108 c1 -6 3 -10 6 -13" stroke="#B9BEC6" stroke-width="3" fill="none"/>
+    <path d="M93 118 q5 3 10 0 M111 118 q5 3 10 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M93 124 q5 3 10 0 M111 124 q5 3 10 0" stroke="#8D8375" stroke-width="2.5" fill="none"/>
+    <path d="M98 134 q8 -4 16 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M146 156 L170 206 L128 104" stroke="#6B7280" stroke-width="15" fill="none"/>
+    <circle cx="126" cy="101" r="9" fill="#B5AC9E" stroke="#232A35" stroke-width="3"/>
+    <rect x="14" y="206" width="272" height="14" rx="3" fill="#4A3F36" stroke="#232A35" stroke-width="3"/>
+    <rect x="14" y="220" width="272" height="100" fill="#3A322B"/>
+    <path d="M190 206 l8 -46 h70 l-8 46z" fill="#2B3442" stroke="#232A35" stroke-width="3"/>
+    <path d="M200 166 h60 l-6 34 h-60z" fill="#7F93AB" opacity=".55"/>
+    <path d="M30 206 v-24 h22 v24z" fill="#D6D2CA" stroke="#232A35" stroke-width="3"/>
+    <path d="M52 188 c9 0 9 12 0 12" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M62 206 v-14 h20 v14z" fill="#C9C3B8" stroke="#232A35" stroke-width="3"/>
+  </g>
+  <!-- AFTER: morning run -->
+  <rect x="300" y="0" width="300" height="320" fill="url(#skyA2)"/>
+  <circle cx="546" cy="70" r="24" fill="#FFD27A"/>
+  <path d="M300 236 C380 206 470 214 600 196 V320 H300Z" fill="#7FB37A"/>
+  <path d="M300 262 C400 240 500 252 600 238 V320 H300Z" fill="#5E9A5E"/>
+  <g stroke-linecap="round" stroke-linejoin="round">
+    <path d="M436 192 L418 224 L392 236" stroke="#232A35" stroke-width="19" fill="none"/>
+    <path d="M436 192 L418 224 L392 236" stroke="#D9A57C" stroke-width="13" fill="none"/>
+    <path d="M454 192 L482 214 L474 250" stroke="#232A35" stroke-width="19" fill="none"/>
+    <path d="M454 192 L482 214 L474 250" stroke="#D9A57C" stroke-width="13" fill="none"/>
+    <path d="M384 232 l14 6 l-4 8 l-16 -6z M466 246 h20 v9 h-22z" fill="#F7F3EC" stroke="#232A35" stroke-width="3"/>
+    <path d="M428 176 h40 l6 26 h-50z" fill="#0F1A2A" stroke="#232A35" stroke-width="3"/>
+    <path d="M436 132 l-20 28 l-14 -10" stroke="#232A35" stroke-width="15" fill="none"/>
+    <path d="M436 132 l-20 28 l-14 -10" stroke="#D9A57C" stroke-width="9" fill="none"/>
+    <path d="M424 180 C420 150 428 126 446 124 C466 126 474 150 470 180 Z" fill="#2F6FD8" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M460 134 l20 22 l14 -18" stroke="#232A35" stroke-width="15" fill="none"/>
+    <path d="M460 134 l20 22 l14 -18" stroke="#D9A57C" stroke-width="9" fill="none"/>
+    <path d="M440 112 h14 v14 h-14z" fill="#CF9A70"/>
+    <circle cx="448" cy="96" r="24" fill="#D9A57C" stroke="#232A35" stroke-width="3.5"/>
+    <path d="M424 92 C424 72 440 68 450 69 C464 70 474 78 473 92 C468 82 458 79 448 80 C438 81 430 85 424 92Z" fill="#4B4F57" stroke="#232A35" stroke-width="3"/>
+    <path d="M425 92 c1 -6 3 -10 6 -13" stroke="#B9BEC6" stroke-width="3" fill="none"/>
+    <circle cx="442" cy="98" r="2.6" fill="#232A35"/><circle cx="459" cy="98" r="2.6" fill="#232A35"/>
+    <path d="M440 108 q9 8 18 0" stroke="#232A35" stroke-width="3" fill="none"/>
+    <path d="M434 104 q3 2 6 0 M457 104 q3 2 6 0" stroke="#E58E78" stroke-width="3" fill="none" opacity=".6"/>
+  </g>
+</svg></div>
+            <span class="tagb">Before</span><span class="tagb tagr">After 90 days</span>
             <span class="docpip"><img src="img/dr-tpe.jpg" alt="" width="900" height="900">Dr. Bajnath explains</span>
             <div class="ovl"><div class="ba"><small>Bio age</small><b>52</b></div><span class="arr">&rarr;</span><div class="ba after"><small>Bio age</small><b>46</b></div><div class="ba"><small>VO&#8322; max</small><b>31</b></div><span class="arr">&rarr;</span><div class="ba after"><small>VO&#8322; max</small><b>38</b></div></div>
           </div>
@@ -1156,7 +1265,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
           <div class="stats"><span>Illustrative mock-up</span><span>Real cases only, with written consent</span></div>
         </div>
         <ul class="why2">
-          <li><span class="ic good">&#10003;</span>A real doctor and a real before-and-after result</li>
+          <li><span class="ic good">&#10003;</span>Shows the change patients want: tired to&nbsp;thriving</li>
           <li><span class="ic good">&#10003;</span>Sparks curiosity, not bargain hunting</li>
           <li><span class="ic good">&#10003;</span>Sells the high-value services patients can't picture on their&nbsp;own</li>
         </ul>
@@ -1323,8 +1432,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       </div></div>
     </div>
     <div class="row" style="margin-top:6px">
-      <div class="col c6 rv d1"><div class="bonus"><span class="gift" aria-hidden="true"><svg viewBox="0 0 44 44"><rect x="11" y="19" width="22" height="15" rx="2" fill="none" stroke="#D9CBA8" stroke-width="2.2"/><path d="M9 15h26v4H9zM22 15v19" stroke="#D9CBA8" stroke-width="2.2" fill="none"/><path d="M22 15c-3-6-9-5-8-1s8 1 8 1zM22 15c3-6 9-5 8-1s-8 1-8 1z" fill="none" stroke="#D9CBA8" stroke-width="2"/></svg></span><span>New unified website<small>All your brands, one AI-readable home</small></span><b><s>$15,000</s>Free</b></div></div>
-      <div class="col c6 rv d2"><div class="bonus"><span class="gift" aria-hidden="true"><svg viewBox="0 0 44 44"><rect x="11" y="19" width="22" height="15" rx="2" fill="none" stroke="#D9CBA8" stroke-width="2.2"/><path d="M9 15h26v4H9zM22 15v19" stroke="#D9CBA8" stroke-width="2.2" fill="none"/><path d="M22 15c-3-6-9-5-8-1s8 1 8 1zM22 15c3-6 9-5 8-1s-8 1-8 1z" fill="none" stroke="#D9CBA8" stroke-width="2"/></svg></span><span>10 consulting hours with Bridgette<small>When you're ready to scout a location in South Florida</small></span><b><s>$8,000</s>Free</b></div></div>
+      <div class="col rv d1" style="width:100%"><div class="bonus"><span class="gift" aria-hidden="true"><svg viewBox="0 0 44 44"><rect x="11" y="19" width="22" height="15" rx="2" fill="none" stroke="#D9CBA8" stroke-width="2.2"/><path d="M9 15h26v4H9zM22 15v19" stroke="#D9CBA8" stroke-width="2.2" fill="none"/><path d="M22 15c-3-6-9-5-8-1s8 1 8 1zM22 15c3-6 9-5 8-1s-8 1-8 1z" fill="none" stroke="#D9CBA8" stroke-width="2"/></svg></span><span>New unified website<small>All your brands, one AI-readable home</small></span><b><s>$15,000</s>Free</b></div></div>
     </div>
   </div>
 </section>
@@ -1349,7 +1457,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <span class="label">2 &middot; South Florida</span>
         <h3 style="font-family:Cormorant,Georgia,serif;font-size:30px;font-weight:600;line-height:1.1">A location in South&nbsp;Florida</h3>
         <p style="font-size:16px">You asked whether you're in the right market, and you're licensed in nearly all 50 states. South Florida has more demand, and more competition. Bridgette worked in that market for 14&nbsp;years.</p>
-        <p style="font-size:16px;margin:0"><b>Included free:</b> 10 consulting hours with Bridgette when you're ready to scout, and the same Blueprint can launch a second&nbsp;location.</p>
+        <p style="font-size:16px;margin:0"><b>When you're ready:</b> the same Blueprint can launch a second location, and we'll scope it in its own&nbsp;proposal.</p>
       </div></div></div>
     </div>
     <div class="ask rv">
@@ -1375,10 +1483,10 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <div class="pic"><img class="kb" src="img/dr-portrait.jpg" alt="Dr. Anil Bajnath" width="534" height="800" loading="lazy"></div>
       <div class="txt">
         <span class="label">Secure your spot</span>
-        <h2>A $5,000 deposit <em>starts everything.</em></h2>
+        <h2>One deposit <em>starts everything.</em></h2>
         <div class="deposit">
-          <div class="early"><b>Save $500.</b> Pay by <span class="dl-date">Wednesday, December 2</span> and take $500 off your first month. <span class="dl-left" id="dlLeft"></span></div>
-          <div class="amt">$5,000</div>
+          <div class="early"><b>Save $500.</b> Pay by <span class="dl-date">Wednesday, December 2</span> and your deposit is $4,500 instead of $5,000. <span class="dl-left" id="dlLeft"></span></div>
+          <div class="amt"><s class="was" id="depWas">$5,000</s> <span class="dep-price">$4,500</span></div>
           <p style="margin:4px 0 0;font-size:16px">Secures this package and goes toward your first month of Local AI&nbsp;Services.</p>
           <ol>
             <li>Pay the deposit through a secure payment link.</li>
@@ -1387,7 +1495,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
           </ol>
         </div>
         <div class="deadline"><b>Timing:</b> the new site should be live before Town &amp; Country and Forbes publish. Starting now makes that&nbsp;window.</div>
-        <a class="btn gold" href="mailto:bridgette@localairegistry.com?subject=IFHO%20%245%2C000%20deposit" data-deposit>Pay the $5,000 deposit <span class="chev">&rsaquo;</span></a>
+        <a class="btn gold" href="mailto:bridgette@localairegistry.com?subject=IFHO%20deposit" data-deposit>Pay the <span class="dep-price">$4,500</span> deposit <span class="chev">&rsaquo;</span></a>
         <a class="btn light" href="tel:+15614360607">Questions? Call Bridgette</a>
         <div class="sign"><img src="img/team-bridgette-debrino.jpg" alt="Bridgette DeBrino" width="64" height="64"><div><b>Bridgette DeBrino</b><span>VP Marketing and Sales &middot; (561) 436-0607<br>bridgette@localairegistry.com</span></div></div>
       </div>
@@ -1409,7 +1517,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   </div>
 </footer>
 
-<div class="sticky" id="sticky"><span class="who"><img src="img/team-bridgette-debrino.jpg" alt="" width="36" height="36">Secure your spot<br>$5,000 deposit</span><a class="btn small" href="#next">Secure <span class="chev">&rsaquo;</span></a></div>
+<div class="sticky" id="sticky"><span class="who"><img src="img/team-bridgette-debrino.jpg" alt="" width="36" height="36">Secure your spot<br><span class="dep-price">$4,500</span> deposit</span><a class="btn small" href="#next">Secure <span class="chev">&rsaquo;</span></a></div>
 
 <script>
 /* ES5 only. The page is complete without JS; this adds motion and interactivity. */
@@ -1540,7 +1648,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   (function(){
     var end=Date.UTC(2026,11,3,4,59,59), ms=end-(+new Date()), left=Math.floor(ms/86400000), el=$('dlLeft');
     if(!el) return;
-    if(ms<0) el.innerHTML='Offer ended.'; else if(left>1) el.innerHTML=left+' days left.'; else if(left===1) el.innerHTML='1 day left.'; else el.innerHTML='Last day.';
+    if(ms<0){ el.innerHTML='Offer ended.'; var dp=d.querySelectorAll('.dep-price'); for(var q=0;q<dp.length;q++) dp[q].innerHTML='$5,000'; var wv=$('depWas'); if(wv) wv.style.display='none'; } else if(left>1) el.innerHTML=left+' days left.'; else if(left===1) el.innerHTML='1 day left.'; else el.innerHTML='Last day.';
   })();
 
   /* ---------- Custom proposal request ---------- */
