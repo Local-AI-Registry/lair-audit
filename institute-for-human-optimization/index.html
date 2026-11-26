@@ -261,6 +261,7 @@ details .in-d{padding:0 16px 16px;font-size:16px}
 .constel.today .n3{-webkit-transform:translate(-110px,60px);transform:translate(-110px,60px)}
 .constel.today .n4{-webkit-transform:translate(95px,55px);transform:translate(95px,55px)}
 .constel .cap{position:absolute;left:18px;bottom:16px;right:18px;color:#CECBB8;font-size:15px}
+@media (max-width:600px){.constel .cap{position:static;padding:0 18px 18px;margin:0}}
 .sitelist{list-style:none;padding:0;margin:14px 0 0}
 .sitelist li{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;padding:11px 0;border-bottom:1px solid #ECE6D9;font-size:16px;color:#0B1A2E}
 .sitelist li .who{-webkit-flex:1;flex:1}
@@ -692,12 +693,105 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   .adcalc{padding:46px}
   .roix{font-size:84px}
 }
+
+/* ===================== V3 ADDITIONS ===================== */
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+[hidden]{display:none!important}
+/* Before/after ad image */
+.bhad.ba2{display:-webkit-box;display:-webkit-flex;display:flex;height:320px}
+.bhad.ba2 .half{width:50%;position:relative;overflow:hidden}
+.bhad.ba2 .half img{width:100%;height:100%;object-fit:cover;object-position:52% 30%}
+.bhad.ba2 .bef img{-webkit-filter:grayscale(1) brightness(.62) contrast(.9);filter:grayscale(1) brightness(.62) contrast(.9)}
+.bhad.ba2 .aft img{-webkit-filter:saturate(1.25) brightness(1.08);filter:saturate(1.25) brightness(1.08)}
+.bhad.ba2 .aft{border-left:3px solid #fff}
+.tagb{position:absolute;top:12px;left:12px;background:rgba(11,26,46,.85);color:#fff;font-size:13px;font-weight:700;border-radius:999px;padding:5px 11px;letter-spacing:.3px}
+.aft .tagb{left:auto;right:12px;background:#1F7A53}
+.docpip{position:absolute;left:50%;top:52px;-webkit-transform:translateX(-50%);transform:translateX(-50%);display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;background:#fff;border-radius:999px;padding:4px 12px 4px 4px;font-size:12px;font-weight:700;color:#0B1A2E;box-shadow:0 8px 20px rgba(0,0,0,.25);white-space:nowrap}
+.docpip img{width:28px;height:28px;border-radius:50%;object-fit:cover;object-position:50% 20%;margin-right:7px}
+.bhad.ba2 .ovl{padding:10px 8px}
+.bhad.ba2 .ba b{font-size:28px}
+.bhad.ba2 .arr{font-size:16px;padding:0 2px}
+/* Calculator controls */
+.seg3{display:-webkit-box;display:-webkit-flex;display:flex;margin:8px -4px 0}
+.seg3 button{-webkit-box-flex:1;-webkit-flex:1;flex:1;margin:0 4px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.18);border-radius:16px;padding:10px 6px;color:#fff;font:inherit;cursor:pointer;min-height:58px;text-align:center;line-height:1.25}
+.seg3 button b{display:block;font-size:15px}
+.seg3 button small{display:block;font-size:12px;color:#9FAEC6;margin-top:2px}
+.seg3 button.on{background:#D9CBA8;border-color:#D9CBA8;color:#0B1A2E}
+.seg3 button.on small{color:#4A4535}
+.svcpick{display:-webkit-box;display:-webkit-flex;display:flex;margin:8px -4px 0}
+.svcpick button{-webkit-box-flex:1;-webkit-flex:1;flex:1;margin:0 4px;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.18);border-radius:16px;padding:12px 10px;color:#fff;font:inherit;cursor:pointer;min-height:60px;text-align:left;line-height:1.25}
+.svcpick button b{display:block;font-size:16px}
+.svcpick button small{display:block;font-size:13px;color:#9FAEC6;margin-top:2px}
+.svcpick button.on{background:#1F4FE0;border-color:#1F4FE0}
+.svcpick button.on small{color:#DCE5FF}
+.svcpick.dk3{max-width:620px;margin:12px -4px 4px}
+.tierrow{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin:10px 0 2px}
+.tierrow button{background:transparent;border:1px solid rgba(255,255,255,.25);color:#fff;border-radius:999px;padding:8px 14px;margin:4px 6px 4px 0;font:inherit;font-size:14px;cursor:pointer;min-height:40px}
+.tierrow button.on{background:#D9CBA8;border-color:#D9CBA8;color:#0B1A2E;font-weight:700}
+/* Blueprint */
+.bph{font-family:Cormorant,Georgia,serif;font-size:40px;font-weight:600;line-height:1.05}
+.bpgrid{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;align-items:center;margin:0 -9px}
+.bpwheel{width:100%;padding:9px}
+.bpcard{width:100%;margin:9px}
+.fw{display:none;width:100%;height:auto}
+.fw .nd{cursor:pointer}
+.fw .nd .c,.fw .nd .hl,.fw .nd .n,.fw .nd .t{-webkit-transition:all .3s;transition:all .3s}
+.fw .nd:hover .c{stroke-width:4}
+.fw .nd.on .c{fill:#1F4FE0}
+.fw .nd.on .n{fill:#fff}
+.fw .nd.on .hl{opacity:.16}
+.fw .nd.on .t{fill:#0B1A2E;font-weight:800}
+.fw .flow{-webkit-animation:dash 30s linear infinite;animation:dash 30s linear infinite}
+@-webkit-keyframes dash{to{stroke-dashoffset:-300}}
+@keyframes dash{to{stroke-dashoffset:-300}}
+.chips11{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin:0 -4px}
+.chips11 button{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;width:calc(50% - 8px);margin:4px;background:#fff;border:1.5px solid #ECE6D9;border-radius:14px;padding:9px 10px;font:inherit;font-size:15px;color:#0B1A2E;cursor:pointer;min-height:48px;text-align:left}
+.chips11 button b{display:inline-block;width:30px;height:30px;border-radius:50%;border:2px solid #1F4FE0;color:#1F4FE0;text-align:center;line-height:26px;font-size:12px;margin-right:8px;-webkit-flex:none;flex:none}
+.chips11 button.on{border-color:#1F4FE0;background:#EEF2FE}
+.chips11 button.on b{background:#1F4FE0;color:#fff}
+.bpt{font-family:Cormorant,Georgia,serif;font-size:34px;font-weight:600;line-height:1.05;margin-bottom:10px}
+.svcl{padding-left:20px;margin:0 0 12px;font-size:17px}
+.svcl li{margin-bottom:6px}
+.diff{background:#F7F3EC;border-radius:12px;padding:10px 12px;font-size:15px;color:#0B1A2E}
+.bpnav{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:flex-end;justify-content:flex-end;margin-top:12px;font-size:14px;color:#556070}
+.bpnav .tb{width:44px;height:44px;border-radius:50%;border:1.5px solid #D9D2C2;background:#fff;font-size:18px;cursor:pointer;margin:0 8px;color:#0B1A2E}
+.phases{list-style:none;padding:0;margin:22px 0 0;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;counter-reset:ph}
+.phases li{width:100%;background:#fff;border:1px solid #ECE6D9;border-radius:16px;padding:12px 14px;margin:0 0 8px;font-size:15px;color:#3E4A5E;line-height:1.35}
+.phases li span{display:block;font-family:Montserrat,Arial,sans-serif;font-size:11px;letter-spacing:2px;text-transform:uppercase;color:#8A8570}
+.phases li b{display:block;color:#0B1A2E;font-size:17px}
+/* Early bird */
+.early{background:#0F1A2A;color:#E3E7EF;border-radius:14px;padding:12px 14px;font-size:16px;margin-bottom:12px;line-height:1.4}
+.early b{color:#D9CBA8}
+.dl-left{display:inline-block;background:#D9CBA8;color:#0B1A2E;border-radius:999px;padding:1px 9px;font-size:13px;font-weight:700;margin-left:4px}
+.dl-left:empty{display:none}
+.promo b{background:#B5A47E;color:#0B1A2E}
+/* Ask form */
+.ask{background:#0F1A2A;border-radius:28px;padding:26px;margin-top:22px;color:#C9D2E3;display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;-webkit-align-items:center;align-items:center}
+.ask h3{color:#fff}
+.ask h3 em{color:#D9CBA8}
+.askL,.askF{width:100%}
+.askF{margin-top:16px}
+.topics{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:10px}
+.topics label{display:-webkit-box;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:8px 14px;margin:4px 6px 4px 0;font-size:15px;color:#fff;cursor:pointer;min-height:44px}
+.topics input{margin:0 8px 0 0;width:18px;height:18px;accent-color:#D9CBA8}
+.askF textarea{width:100%;border-radius:16px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.95);padding:12px 14px;font:inherit;font-size:16px;color:#0B1A2E;margin-bottom:12px;resize:vertical}
+.ask .note{color:#9FAEC6}
+@media (min-width:880px){
+  .fw{display:block}
+  .chips11{display:none}
+  .bpwheel{width:58%}
+  .bpcard{width:calc(42% - 18px)}
+  .phases li{width:calc(20% - 8px);margin-right:8px}
+  .ask{padding:40px}
+  .askL{width:42%;padding-right:30px}
+  .askF{width:58%;margin-top:0}
+}
 </style>
 </head>
 <body>
 <a class="skip" href="#plan">Skip to the plan</a>
 
-<div class="promo"><b>$5,000</b>Secure this package with a deposit, applied to your first&nbsp;month.</div>
+<div class="promo"><b>SAVE $500</b>Pay your $5,000 deposit by <span class="dl-date">Wed, Dec 2</span> and take $500 off your first&nbsp;month.</div>
 <header class="bar">
   <div class="wrap">
     <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#B5A47E"/></svg>Local AI Registry<span class="x">&times;</span><img src="img/logo-color.png" alt="Institute for Human Optimization" width="98" height="30"></span>
@@ -715,7 +809,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <h1>One brand. More patients. <em>Less work.</em></h1>
       <p class="lead">We bring the Institute, Longevity Gyms and the Biological Audit under one name, rebuild your site, and get you named by AI. Ads are optional, for when you want patients&nbsp;sooner.</p>
       <div class="ctas"><a class="btn gold" href="#next" data-deposit>Secure with a $5,000 deposit <span class="chev">&rsaquo;</span></a><a class="btn outline" href="#plan">See the plan <span class="chev">&darr;</span></a></div>
-      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> No commission on your sales</span></div>
+      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> $500 off if you start by Dec 2</span></div>
     </div>
     <div class="pics rv d2">
       <div class="chartcard">
@@ -735,7 +829,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
           <g class="pop s4"><rect x="404" y="222" width="212" height="40" rx="20" fill="#2A2716" stroke="#E3B45C" stroke-width="1.5"/><text x="510" y="249" text-anchor="middle" font-family="Hanken Grotesk,Arial" font-size="20" font-weight="700" fill="#E3B45C">then levels down</text></g>
           <g class="pop s5"><rect x="336" y="96" width="196" height="40" rx="20" fill="#6E9BFF"/><text x="434" y="123" text-anchor="middle" font-family="Hanken Grotesk,Arial" font-size="20" font-weight="700" fill="#0B1A2E">Local AI: climbs</text></g>
         </svg>
-        <div class="legend"><span><i style="background:#E3B45C"></i>Black Hat ads (optional)</span><span><i style="background:#6E9BFF"></i>Local AI visibility (core)</span><span><i style="background:repeating-linear-gradient(90deg,#fff 0 6px,transparent 6px 10px);opacity:.7"></i>Together</span></div>
+        <div class="legend"><span><i style="background:#E3B45C"></i>Black Hat ads (add-on)</span><span><i style="background:#6E9BFF"></i>Local AI Services</span><span><i style="background:repeating-linear-gradient(90deg,#fff 0 6px,transparent 6px 10px);opacity:.7"></i>Together</span></div>
         <p class="note">Illustrative shape, not a forecast. Paid ads respond fast and fade as audiences tire; visibility in AI and search builds slowly and compounds. Your numbers are in the calculators&nbsp;below.</p>
       </div>
     </div>
@@ -800,7 +894,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <div class="fix"><b>FIX</b>A site and Google profile that turn the searches below into booked&nbsp;consults.</div></div></div>
       <div class="col c2 c4 rv d2"><div class="card"><div class="ph"><img src="img/tpe-machine.jpg" alt="" width="900" height="900" loading="lazy" style="object-position:50% 40%"></div>
         <div class="q">"I need to recoup my&nbsp;investment."</div>
-        <div class="fix"><b>FIX</b>TPE gets its own page and its own AI answers. One patient covers 2.6 months of the&nbsp;core.</div></div></div>
+        <div class="fix"><b>FIX</b>TPE gets its own page and its own AI answers. One patient covers 2.6 months of Local AI&nbsp;Services.</div></div></div>
       <div class="col c2 c4 rv d3"><div class="card"><div class="ph"><img src="img/dr-door.jpg" alt="" width="1100" height="618" loading="lazy"></div>
         <div class="q">"I don't want to work nonstop&nbsp;anymore."</div>
         <div class="fix"><b>FIX</b>One team runs your site, Google profile, press and content. You approve, we do the&nbsp;rest.</div></div></div>
@@ -820,13 +914,9 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <span class="label">What being AI's answer is worth</span>
       <h2>Being the answer could add</h2>
       <div class="money" aria-live="polite"><span id="rev">$178,434</span> <small>/ month</small></div>
-      <p>in new-patient revenue, if you win the 40 Maryland and DC searches for what you already offer. Tap a service to use its&nbsp;price.</p>
-      <div class="lanes" role="group" aria-label="Value of one new patient">
-        <button type="button" data-p="600" class="on"><img src="img/dr-consult.jpg" alt=""><span>First visit<small>$600</small></span></button>
-        <button type="button" data-p="2500"><img src="img/anatomy.jpg" alt=""><span>Audit, entry<small>$2,500</small></span></button>
-        <button type="button" data-p="6250"><img src="img/brain.jpg" alt=""><span>Audit, average<small>$6,250</small></span></button>
-        <button type="button" data-p="26000"><img src="img/blood.jpg" alt=""><span>TPE course<small>$26,000</small></span></button>
-      </div>
+      <p>in new-patient revenue, if you win the 40 Maryland and DC searches for what you already offer. Pick a service to use its&nbsp;price.</p>
+      <div class="svcpick dk3" data-target="worth" role="group" aria-label="Value of one new patient"><button type="button" data-s="visit" class="on"><b>First visit</b><small>$600</small></button><button type="button" data-s="audit"><b>Biological Audit</b><small>Pick a tier</small></button><button type="button" data-s="tpe"><b>TPE course</b><small>$26,000</small></button></div>
+      <div class="tierrow" data-for="worth" role="group" aria-label="Audit tier" hidden><button type="button" data-v="2500" class="on">$2,500</button><button type="button" data-v="5000">$5,000</button><button type="button" data-v="7500">$7,500</button><button type="button" data-v="10000">$10,000</button></div>
       <div class="eq" aria-label="How we calculate it">
         <div class="t"><b>12,930</b><span>searches a month</span></div><div class="op" aria-hidden="true">&times;</div>
         <div class="t"><b>2.3%</b><span>become patients</span></div><div class="op" aria-hidden="true">=</div>
@@ -870,7 +960,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
           <div class="col c2 stat"><div class="big" data-count="50">50</div><p>Google searches a month in Maryland for "therapeutic plasma exchange" or "TPE&nbsp;therapy."</p></div>
           <div class="col c2 stat"><div class="big" data-count="3">3</div><p>Other places ChatGPT lists for TPE first: Johns Hopkins, Lifespan Edge, Red&nbsp;Cross.</p></div>
         </div>
-        <p style="font-size:16px;margin-top:6px">TPE is won by being the answer AI gives, as one Bajnath practice, not two. That's what Part 1&nbsp;does.</p>
+        <p style="font-size:16px;margin-top:6px">TPE is won by being the answer AI gives, as one Bajnath practice, not two. That's what Local AI Services&nbsp;do.</p>
         <p class="note" style="margin:0">DataForSEO search volume and live ChatGPT answer, Nov 25,&nbsp;2026.</p>
       </div></div></div>
     </div>
@@ -881,7 +971,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 <section class="ivory" id="plan">
   <div class="wrap">
     <div class="center head rv">
-      <span class="partno">PART 1 &middot; THE CORE</span>
+      <span class="partno">LOCAL AI SERVICES</span>
       <h2>We fix what you <em>already know is broken.</em></h2>
       <p class="lead">One brand, one new site, one team. Less for you to manage, more patients finding&nbsp;you.</p>
     </div>
@@ -900,6 +990,32 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <h3>Built for a six-figure&nbsp;month</h3><p>Every review, article and press hit builds one name, so growth compounds instead of splitting four&nbsp;ways.</p><span class="tag">Compounds month after month</span></div></div>
     </div>
 
+
+    <div class="bp rv" id="blueprint">
+      <div class="center head" style="margin:56px 0 18px">
+        <span class="label">How we do it</span>
+        <h3 class="bph">One Blueprint. <em>Eleven checks.</em></h3>
+        <p class="lead">One team runs all 11 checks from one verified Blueprint of your practice. Tap a check to see what we&nbsp;do.</p>
+      </div>
+      <div class="bpgrid">
+        <div class="bpwheel"><svg class="fw" viewBox="0 0 760 620" role="group" aria-label="The 11 checks around your Blueprint"><defs><marker id="arh" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#405D7B"/></marker></defs><circle cx="380" cy="310" r="208" fill="none" stroke="#CECBB8" stroke-width="2.5" stroke-dasharray="6 9" class="flow"/><line class="sp" data-i="0" x1="380" y1="310" x2="380.0" y2="102.0" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="1" x1="380" y1="310" x2="492.5" y2="135.0" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="2" x1="380" y1="310" x2="569.2" y2="223.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="3" x1="380" y1="310" x2="585.9" y2="339.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="4" x1="380" y1="310" x2="537.2" y2="446.2" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="5" x1="380" y1="310" x2="438.6" y2="509.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="6" x1="380" y1="310" x2="321.4" y2="509.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="7" x1="380" y1="310" x2="222.8" y2="446.2" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="8" x1="380" y1="310" x2="174.1" y2="339.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="9" x1="380" y1="310" x2="190.8" y2="223.6" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><line class="sp" data-i="10" x1="380" y1="310" x2="267.5" y2="135.0" stroke="rgba(11,26,46,.10)" stroke-width="1.5"/><path d="M421.3 106.1 A208 208 0 0 1 455.4 116.2" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M525.0 160.8 A208 208 0 0 1 548.3 187.7" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M582.6 262.9 A208 208 0 0 1 587.7 298.1" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M575.9 379.9 A208 208 0 0 1 561.1 412.3" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M507.0 474.7 A208 208 0 0 1 477.1 494.0" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M397.8 517.2 A208 208 0 0 1 362.2 517.2" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M282.9 494.0 A208 208 0 0 1 253.0 474.7" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M198.9 412.3 A208 208 0 0 1 184.1 379.9" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M172.3 298.1 A208 208 0 0 1 177.4 262.9" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M211.7 187.7 A208 208 0 0 1 235.0 160.8" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><path d="M304.6 116.2 A208 208 0 0 1 338.7 106.1" fill="none" stroke="#405D7B" stroke-opacity=".35" stroke-width="2" marker-end="url(#arh)"/><circle class="halo" cx="380" cy="310" r="88" fill="#1F4FE0" opacity=".12"/><circle cx="380" cy="310" r="70" fill="#0F1A2A"/><circle cx="380" cy="310" r="62" fill="none" stroke="#D9CBA8" stroke-width="1.2"/><text x="380" y="306" text-anchor="middle" font-size="18" font-weight="700" fill="#fff" font-family="Hanken Grotesk,Arial">Your Blueprint</text><text x="380" y="330" text-anchor="middle" font-size="14" font-weight="600" fill="#D9CBA8" font-family="Hanken Grotesk,Arial">one source of truth</text><g class="nd" data-i="0" tabindex="0" role="button" aria-label="01 Directories"><circle class="hl" cx="380.0" cy="102.0" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="380.0" cy="102.0" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="380.0" y="107.5" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">01</text><text class="t" x="380.0" y="64.0" text-anchor="middle" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Directories</text></g><g class="nd" data-i="1" tabindex="0" role="button" aria-label="02 PR"><circle class="hl" cx="492.5" cy="135.0" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="492.5" cy="135.0" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="492.5" y="140.5" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">02</text><text class="t" x="520.6" y="104.0" text-anchor="start" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">PR</text></g><g class="nd" data-i="2" tabindex="0" role="button" aria-label="03 Video"><circle class="hl" cx="569.2" cy="223.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="569.2" cy="223.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="569.2" y="229.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">03</text><text class="t" x="616.5" y="211.3" text-anchor="start" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Video</text></g><g class="nd" data-i="3" tabindex="0" role="button" aria-label="04 SEO"><circle class="hl" cx="585.9" cy="339.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="585.9" cy="339.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="585.9" y="345.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">04</text><text class="t" x="637.4" y="351.9" text-anchor="start" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">SEO</text></g><g class="nd" data-i="4" tabindex="0" role="button" aria-label="05 Website"><circle class="hl" cx="537.2" cy="446.2" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="537.2" cy="446.2" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="537.2" y="451.7" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">05</text><text class="t" x="576.5" y="481.0" text-anchor="start" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Website</text></g><g class="nd" data-i="5" tabindex="0" role="button" aria-label="06 Reputation"><circle class="hl" cx="438.6" cy="509.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="438.6" cy="509.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="438.6" y="515.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">06</text><text class="t" x="453.3" y="557.8" text-anchor="start" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Reputation</text></g><g class="nd" data-i="6" tabindex="0" role="button" aria-label="07 Google profile"><circle class="hl" cx="321.4" cy="509.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="321.4" cy="509.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="321.4" y="515.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">07</text><text class="t" x="306.7" y="557.8" text-anchor="end" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Google profile</text></g><g class="nd" data-i="7" tabindex="0" role="button" aria-label="08 Photos"><circle class="hl" cx="222.8" cy="446.2" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="222.8" cy="446.2" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="222.8" y="451.7" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">08</text><text class="t" x="183.5" y="481.0" text-anchor="end" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Photos</text></g><g class="nd" data-i="8" tabindex="0" role="button" aria-label="09 Articles"><circle class="hl" cx="174.1" cy="339.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="174.1" cy="339.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="174.1" y="345.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">09</text><text class="t" x="122.6" y="351.9" text-anchor="end" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Articles</text></g><g class="nd" data-i="9" tabindex="0" role="button" aria-label="10 Best-of guides"><circle class="hl" cx="190.8" cy="223.6" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="190.8" cy="223.6" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="190.8" y="229.1" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">10</text><text class="t" x="143.5" y="211.3" text-anchor="end" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">Best-of guides</text></g><g class="nd" data-i="10" tabindex="0" role="button" aria-label="11 AI monitoring"><circle class="hl" cx="267.5" cy="135.0" r="38" fill="#1F4FE0" opacity="0"/><circle class="c" cx="267.5" cy="135.0" r="26" fill="#fff" stroke="#1F4FE0" stroke-width="3"/><text class="n" x="267.5" y="140.5" text-anchor="middle" font-size="16" font-weight="800" fill="#1F4FE0" font-family="Hanken Grotesk,Arial">11</text><text class="t" x="239.4" y="104.0" text-anchor="end" font-size="18" font-weight="600" fill="#2C3A4F" font-family="Hanken Grotesk,Arial">AI monitoring</text></g></svg><div class="chips11" role="group" aria-label="The 11 checks"><button type="button" class="nd" data-i="0"><b>01</b><span>Directories</span></button><button type="button" class="nd" data-i="1"><b>02</b><span>PR</span></button><button type="button" class="nd" data-i="2"><b>03</b><span>Video</span></button><button type="button" class="nd" data-i="3"><b>04</b><span>SEO</span></button><button type="button" class="nd" data-i="4"><b>05</b><span>Website</span></button><button type="button" class="nd" data-i="5"><b>06</b><span>Reputation</span></button><button type="button" class="nd" data-i="6"><b>07</b><span>Google profile</span></button><button type="button" class="nd" data-i="7"><b>08</b><span>Photos</span></button><button type="button" class="nd" data-i="8"><b>09</b><span>Articles</span></button><button type="button" class="nd" data-i="9"><b>10</b><span>Best-of guides</span></button><button type="button" class="nd" data-i="10"><b>11</b><span>AI monitoring</span></button></div></div>
+        <div class="bpcard card" aria-live="polite">
+          <span class="label" id="bpK">What we do &middot; check 01</span>
+          <h3 class="bpt" id="bpT">Directory listings</h3>
+          <ul class="svcl" id="bpL"><li>Hand submissions to the directories AI reads</li><li>Data networks that feed hundreds of sites</li><li>Duplicate and wrong listings cleaned up</li></ul>
+          <div class="diff" id="bpD"><b>Why it's different:</b> One Blueprint means every directory says the same thing.</div>
+          <div class="foryou" id="bpY"><b>For IFHO:</b> one name and address for the Institute and Longevity Gyms, everywhere.</div>
+          <div class="bpnav"><button type="button" class="tb" id="bpPrev" aria-label="Previous check">&larr;</button><span id="bpN">1 / 11</span><button type="button" class="tb" id="bpNext" aria-label="Next check">&rarr;</button></div>
+        </div>
+      </div>
+      <ol class="phases">
+        <li><span>Month 1</span><b>Foundation</b>Blueprint, AI tracking, Google profile, listings, website care</li>
+        <li><span>Month 3</span><b>Clean-up</b>Keyword fixes, topical map, photos geotagged</li>
+        <li><span>Month 4</span><b>Content</b>News articles, internal links, best-of guides</li>
+        <li><span>Month 6</span><b>Authority</b>Answer pages, press releases, vetted links</li>
+        <li><span>Month 8</span><b>Reach</b>Explainer videos, competitor content gaps</li>
+      </ol>
+    </div>
     <div class="split" style="margin-top:40px">
       <div class="a rv">
         <span class="label">See it</span>
@@ -963,7 +1079,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <div class="col c7 rv d1">
         <div class="pair">
           <div class="l">
-            <span class="label">The core, Local AI Registry</span>
+            <span class="label">Local AI Services</span>
             <div class="big">$5,000<small> / month</small></div>
             <span class="perday">About $167 a day</span>
             <ul>
@@ -979,7 +1095,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
             <span class="label" style="color:#1F7A53">What one patient returns</span>
             <div class="big">$13,200</div>
             <p style="font-size:16px;margin:0">profit from one 4-session TPE&nbsp;course</p>
-            <p class="equals">One TPE patient covers <b>2.6 months</b> of the&nbsp;core.</p>
+            <p class="equals">One TPE patient covers <b>2.6 months</b> of Local AI&nbsp;Services.</p>
             <p style="font-size:16px;margin:0">Or one Biological Audit at your average tier, $6,250, covers more than a&nbsp;month.</p>
             <p class="note" style="margin:12px 0 0">Your numbers from our call: $6,500 a session, 4-session minimum, about $3,200 cost a&nbsp;session.</p>
           </div>
@@ -1002,9 +1118,9 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 <section id="ads">
   <div class="wrap">
     <div class="center head rv">
-      <span class="partno">PART 2 &middot; OPTIONAL</span>
+      <span class="partno">ADD-ON SERVICES &middot; PAID ADS</span>
       <h2>Want patients sooner? <em>Add Black Hat ads.</em></h2>
-      <p class="lead">The core builds your name for years. Black Hat ads bring patients in the first weeks, while the core catches&nbsp;up.</p>
+      <p class="lead">Local AI Services build your name for years. Black Hat ads bring patients in the first weeks, while that work catches&nbsp;up.</p>
     </div>
 
     <div class="adwrap">
@@ -1030,13 +1146,14 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <div class="fb" aria-label="Example of a Black Hat ad: Dr. Bajnath with a before-and-after result">
           <div class="top"><span class="av"><img src="img/logo-mark.png" alt="" width="38" height="38"></span><span class="nm">Institute for Human Optimization<small>Sponsored</small></span></div>
           <div class="copy">We measured how fast this patient was aging. Then we measured again 90 days later. Here's what&nbsp;changed.</div>
-          <div class="media bhad">
-            <img src="img/dr-tpe.jpg" alt="" width="900" height="900">
-            <span class="hook">Dr. Bajnath explains, 60 sec</span>
-            <div class="ovl"><div class="ba"><small>Before</small><b>52</b><small>Bio age</small></div><span class="arr">&rarr;</span><div class="ba after"><small>After 90 days</small><b>46</b><small>Bio age</small></div></div>
+          <div class="media bhad ba2" role="img" aria-label="Illustrative before and after: the same patient tired before, energized 90 days later">
+            <div class="half bef"><img src="img/vo2.jpg" alt="" width="800" height="671"><span class="tagb">Before</span></div>
+            <div class="half aft"><img src="img/vo2.jpg" alt="" width="800" height="671"><span class="tagb">After 90 days</span></div>
+            <span class="docpip"><img src="img/dr-tpe.jpg" alt="" width="900" height="900">Dr. Bajnath explains</span>
+            <div class="ovl"><div class="ba"><small>Bio age</small><b>52</b></div><span class="arr">&rarr;</span><div class="ba after"><small>Bio age</small><b>46</b></div><div class="ba"><small>VO&#8322; max</small><b>31</b></div><span class="arr">&rarr;</span><div class="ba after"><small>VO&#8322; max</small><b>38</b></div></div>
           </div>
           <div class="cta"><span>ifho.org<b>See the full case</b></span><i>Learn more</i></div>
-          <div class="stats"><span>Illustrative example</span><span>Real cases only, with consent</span></div>
+          <div class="stats"><span>Illustrative mock-up</span><span>Real cases only, with written consent</span></div>
         </div>
         <ul class="why2">
           <li><span class="ic good">&#10003;</span>A real doctor and a real before-and-after result</li>
@@ -1046,7 +1163,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       </div>
     </div>
 
-    <div class="compliance rv"><b>Built to pass ad review.</b> "Black Hat" is our name for proof-first ads that lead with a result instead of a discount. Meta's ad rules limit before-and-after imagery for health and anti-aging claims, so each ad is built for its policies: the measured result and the doctor's story run in the ad, and full before-and-after cases live on your site after the click. Every ad goes through Meta's review before it&nbsp;runs.</div>
+    <div class="compliance rv"><b>What "Black Hat" means here:</b> our name for proof-first ads. They lead with a real patient result and your own explanation instead of a discount. Every before-and-after comes from a real case, shared with the patient's written&nbsp;consent.</div>
 
     <div class="center rv" style="margin:56px 0 22px">
       <span class="label">How the money works</span>
@@ -1055,7 +1172,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
     <div class="split3">
       <div class="col rv d1"><div class="mcard"><span class="label">Ads management</span><div class="amt">$5,000<small> / mo</small></div><p>We script, design, launch and tune the campaigns: one for TPE, one for the Biological&nbsp;Audit.</p></div></div>
       <div class="col rv d2"><div class="mcard"><span class="label">Your ad budget</span><div class="amt">You set it<small></small></div><p>Paid straight to Meta on your own card, never through us. We suggest starting at $5,000 a&nbsp;month.</p></div></div>
-      <div class="col rv d3"><div class="mcard ret"><span class="label" style="color:#1F7A53">Starting estimate</span><div class="amt">~$26,000<small> / mo</small></div><p>In new revenue at the calculator's starting numbers below. Change them to your&nbsp;own.</p></div></div>
+      <div class="col rv d3"><div class="mcard ret"><span class="label" style="color:#1F7A53">Starting estimate</span><div class="amt">~$20,800<small> / mo</small></div><p>In new revenue at the calculator's starting numbers below: $5,000 budget, average close rate, $5,000&nbsp;Audit.</p></div></div>
     </div>
 
     <div class="adcalc rv" style="margin-top:22px">
@@ -1065,10 +1182,13 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <div class="row" style="margin-top:6px">
         <div class="col c6">
           <div class="ctrl"><label for="aBud">Monthly ad budget <output id="aBudV">$5,000</output></label><input type="range" id="aBud" min="2500" max="15000" step="500" value="5000"><small>Paid to Meta. Management is a flat $5,000 on top.</small></div>
-          <div class="ctrl"><label for="aCpl">Cost per lead <output id="aCplV">$60</output></label><input type="range" id="aCpl" min="25" max="150" step="5" value="60"><small>Health and Fitness averages about $53 on Facebook (WordStream 2025). We start higher to stay&nbsp;conservative.</small></div>
-          <div class="ctrl"><label for="aCls">Leads who become patients <output id="aClsV">5%</output></label><input type="range" id="aCls" min="1" max="20" step="1" value="5"><small>Your team's close rate. 5 in 100 is a careful&nbsp;start.</small></div>
-          <div class="ctrl" style="margin-bottom:0"><label>Value of one new patient</label>
-            <div class="vchips" role="group" aria-label="Value of one new patient"><button type="button" data-v="600">First visit $600</button><button type="button" data-v="6250" class="on">Audit avg $6,250</button><button type="button" data-v="26000">TPE course $26,000</button></div>
+          <div class="ctrl"><label>Cost per lead <output>$60</output></label><small>Set at $60. Health and Fitness averages about $53 a lead on Facebook (WordStream 2025), so we start a little higher to stay&nbsp;conservative.</small></div>
+          <div class="ctrl"><label>How well leads turn into patients</label>
+            <div class="seg3" role="group" aria-label="Lead to patient rate"><button type="button" data-c="2.5"><b>Not good</b><small>2.5 in 100</small></button><button type="button" data-c="5" class="on"><b>Average</b><small>5 in 100</small></button><button type="button" data-c="10"><b>Really good</b><small>10 in 100</small></button></div>
+          </div>
+          <div class="ctrl" style="margin-bottom:0"><label>What the ads sell</label>
+            <div class="svcpick" data-target="ad" role="group" aria-label="Service the ads promote"><button type="button" data-s="audit" class="on"><b>Biological Audit</b><small>Pick a tier</small></button><button type="button" data-s="tpe"><b>TPE course</b><small>4 sessions, $26,000</small></button></div>
+            <div class="tierrow" data-for="ad" role="group" aria-label="Audit tier"><button type="button" data-v="2500">$2,500</button><button type="button" data-v="5000" class="on">$5,000</button><button type="button" data-v="7500">$7,500</button><button type="button" data-v="10000">$10,000</button></div>
           </div>
         </div>
         <div class="col c6">
@@ -1078,10 +1198,10 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
             <div class="row2"><span>Total monthly spend</span><b id="oCost">$10,000</b></div>
             <div class="vsbars" aria-hidden="true">
               <div class="vrow">Spend each month<div class="trk"><span class="fl" id="bSpend" style="width:38%;background:#56677F"><b id="bSpendV">$10,000</b></span></div></div>
-              <div class="vrow">New revenue each month<div class="trk"><span class="fl" id="bRev" style="width:100%;background:#2E9E6E"><b id="bRevV">$26,042</b></span></div></div>
+              <div class="vrow">New revenue each month<div class="trk"><span class="fl" id="bRev" style="width:100%;background:#2E9E6E"><b id="bRevV">$20,833</b></span></div></div>
             </div>
-            <div style="margin-top:12px"><span style="color:#C9D2E3;font-size:15px">Return on every dollar</span><div class="roix" id="oRoi">2.6&times;</div></div>
-            <p class="note" style="margin:8px 0 0" id="o90">Over 90 days: about $78,125 in new revenue on $30,000 spent.</p>
+            <div style="margin-top:12px"><span style="color:#C9D2E3;font-size:15px">Return on every dollar</span><div class="roix" id="oRoi">2.1&times;</div></div>
+            <p class="note" style="margin:8px 0 0" id="o90">Over 90 days: about $62,500 in new revenue on $30,000 spent.</p>
           </div>
         </div>
       </div>
@@ -1099,7 +1219,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <span class="label">Black Hat with us</span>
         <h3>Flat management. No commission.</h3>
         <p style="font-size:16px">We write, film-direct, launch and tune the ads. Your ad budget goes straight to Meta. Grow from one TPE course a month to ten, and our fee doesn't&nbsp;change.</p>
-        <p class="note" style="margin:0">And the core keeps building your name underneath.</p>
+        <p class="note" style="margin:0">And Local AI Services keep building your name underneath.</p>
       </div></div>
     </div>
   </div>
@@ -1171,7 +1291,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
           <text x="75" y="98" text-anchor="middle" font-size="10" font-weight="700" letter-spacing="2.5" fill="#D9CBA8" font-family="Hanken Grotesk,Arial">DAYS</text>
         </svg>
         <h3>Our 90-day guarantee</h3>
-        <p style="font-size:16px">If you aren't named in AI answers for your target services within 90 days, <b>we stop billing for the core and keep working</b> until you&nbsp;are.</p>
+        <p style="font-size:16px">If you aren't named in AI answers for your target services within 90 days, <b>we stop billing for Local AI Services and keep working</b> until you&nbsp;are.</p>
         <p class="note">Requires website access and drafts approved within 3 business days. Ad results depend on your team answering and booking leads&nbsp;quickly.</p>
       </div></div>
     </div>
@@ -1183,23 +1303,23 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   <div class="wrap">
     <div class="center head rv">
       <span class="label">Your investment</span>
-      <h2>Start with the core. <em>Add ads when ready.</em></h2>
+      <h2>Start with Local AI Services. <em>Add ads when ready.</em></h2>
       <p class="lead">Each piece sits next to what it&nbsp;returns.</p>
     </div>
     <div class="row">
-      <div class="col c6 rv d1"><div class="stepcard core"><span class="badge">STEP 1 &middot; THE CORE</span>
-        <h3 style="margin-top:6px">Local AI Registry</h3>
+      <div class="col c6 rv d1"><div class="stepcard core"><span class="badge">LOCAL AI SERVICES</span>
+        <h3 style="margin-top:6px">Your monthly plan</h3>
         <div class="amt">$5,000<small> / month</small></div>
         <span class="perday">About $167 a day</span>
         <p style="font-size:16px;margin:12px 0 0">One brand, the new site, named by AI, reviews, press and video, one monthly&nbsp;report.</p>
         <div class="roi"><b>Returns:</b> one TPE patient ($13,200 profit) covers 2.6 months. Searches you can win: 12,930 a&nbsp;month.</div>
       </div></div>
-      <div class="col c6 rv d2"><div class="stepcard"><span class="badge opt">STEP 2 &middot; OPTIONAL</span>
+      <div class="col c6 rv d2"><div class="stepcard"><span class="badge opt">ADD-ON SERVICES &middot; PAID ADS</span>
         <h3 style="margin-top:6px">Black Hat ads</h3>
         <div class="amt">$5,000<small> / month + your ad budget</small></div>
         <span class="perday">Budget paid straight to Meta, you set it</span>
         <p style="font-size:16px;margin:12px 0 0">Two proof-first campaigns, TPE and the Biological Audit, built and tuned by&nbsp;us.</p>
-        <div class="roi"><b>Returns:</b> about $26,000 a month at the calculator's starting numbers, 2.6&times; what you&nbsp;spend.</div>
+        <div class="roi"><b>Returns:</b> about $20,800 a month at the calculator's starting numbers, 2.1&times; what you&nbsp;spend.</div>
       </div></div>
     </div>
     <div class="row" style="margin-top:6px">
@@ -1209,8 +1329,47 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   </div>
 </section>
 
+
+<!-- =========================== FUTURE CONVERSATIONS =========================== -->
+<section class="ivory" id="future">
+  <div class="wrap">
+    <div class="center head rv">
+      <span class="label">For future conversations</span>
+      <h2>Two more ideas <em>from our calls.</em></h2>
+      <p class="lead">Not part of this package. Brief notes from our calls on Nov 24 and 25, so nothing gets&nbsp;lost.</p>
+    </div>
+    <div class="row">
+      <div class="col c6 rv d1"><div class="card imgcard"><div class="ph"><img src="img/anatomy.jpg" alt="" width="700" height="1050" loading="lazy" style="object-position:50% 25%"></div><div class="bd">
+        <span class="label">1 &middot; AI clinical platform</span>
+        <h3 style="font-family:Cormorant,Georgia,serif;font-size:30px;font-weight:600;line-height:1.1">An AI clone for clinical lab&nbsp;data</h3>
+        <p style="font-size:16px">You're building Aviomica: one multi-omic test kit feeding an AI "digital twin" that turns lab, genomic and microbiome results into an evidence-based protocol. The aim is a clinical decision support tool for the American Board of Precision&nbsp;Medicine.</p>
+        <p style="font-size:16px;margin:0"><b>Where we left it:</b> send Steve a detailed spec of the core dashboard and he'll give you a firm&nbsp;quote.</p>
+      </div></div></div>
+      <div class="col c6 rv d2"><div class="card imgcard"><div class="ph"><img src="img/dr-abopm.jpg" alt="" width="600" height="600" loading="lazy" style="object-position:50% 35%"></div><div class="bd">
+        <span class="label">2 &middot; South Florida</span>
+        <h3 style="font-family:Cormorant,Georgia,serif;font-size:30px;font-weight:600;line-height:1.1">A location in South&nbsp;Florida</h3>
+        <p style="font-size:16px">You asked whether you're in the right market, and you're licensed in nearly all 50 states. South Florida has more demand, and more competition. Bridgette worked in that market for 14&nbsp;years.</p>
+        <p style="font-size:16px;margin:0"><b>Included free:</b> 10 consulting hours with Bridgette when you're ready to scout, and the same Blueprint can launch a second&nbsp;location.</p>
+      </div></div></div>
+    </div>
+    <div class="ask rv">
+      <div class="askL">
+        <h3 style="font-family:Cormorant,Georgia,serif;font-size:34px;font-weight:600;line-height:1.08;margin-bottom:8px">Tell us what you need. <em>We'll send a custom&nbsp;proposal.</em></h3>
+        <p style="font-size:16px;margin:0">Pick a topic, add a line or two, and it goes straight to&nbsp;Bridgette.</p>
+      </div>
+      <form class="askF" id="askF">
+        <div class="topics" role="group" aria-label="Topics"><label><input type="checkbox" value="AI clinical platform" checked> AI clinical platform</label><label><input type="checkbox" value="South Florida location"> South Florida location</label><label><input type="checkbox" value="Something else"> Something else</label></div>
+        <label for="askT" class="sr">What do you need?</label>
+        <textarea id="askT" rows="4" placeholder="What would you like a proposal for?"></textarea>
+        <button type="submit" class="btn">Send to Bridgette <span class="chev">&rsaquo;</span></button>
+        <p class="note" style="margin:8px 0 0">Opens an email to bridgette@localairegistry.com with your note filled&nbsp;in.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
 <!-- =========================== CTA: DEPOSIT =========================== -->
-<section id="next" class="ivory">
+<section id="next">
   <div class="wrap">
     <div class="cta rv">
       <div class="pic"><img class="kb" src="img/dr-portrait.jpg" alt="Dr. Anil Bajnath" width="534" height="800" loading="lazy"></div>
@@ -1218,8 +1377,9 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <span class="label">Secure your spot</span>
         <h2>A $5,000 deposit <em>starts everything.</em></h2>
         <div class="deposit">
+          <div class="early"><b>Save $500.</b> Pay by <span class="dl-date">Wednesday, December 2</span> and take $500 off your first month. <span class="dl-left" id="dlLeft"></span></div>
           <div class="amt">$5,000</div>
-          <p style="margin:4px 0 0;font-size:16px">Secures this package and goes toward your first month of the&nbsp;core.</p>
+          <p style="margin:4px 0 0;font-size:16px">Secures this package and goes toward your first month of Local AI&nbsp;Services.</p>
           <ol>
             <li>Pay the deposit through a secure payment link.</li>
             <li>Kickoff call that week: brand map and Google&nbsp;profile.</li>
@@ -1306,10 +1466,18 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
     var to=totalFor(p); tween(revEl,cur,to,700,money); cur=to;
     $('pv').innerHTML=money(p); $('pr2').innerHTML=money(p);
   }
-  var slider=$('price'), lanes=d.querySelectorAll('.lanes button');
-  function markLane(p){ var hit=null; for(var i=0;i<lanes.length;i++){ if(+lanes[i].getAttribute('data-p')===p) hit=lanes[i]; } setOn(lanes,hit); }
-  slider.oninput=slider.onchange=function(){ var p=+slider.value; render(p); markLane(p); };
-  for(var l=0;l<lanes.length;l++){ lanes[l].onclick=function(){ var p=+this.getAttribute('data-p'); slider.value=p; render(p); setOn(lanes,this); }; }
+  var slider=$('price');
+  /* Service pickers (shared by both calculators) */
+  function picker(target,onval){
+    var box=d.querySelector('.svcpick[data-target="'+target+'"]'), row=d.querySelector('.tierrow[data-for="'+target+'"]');
+    var sb=box.querySelectorAll('button'), tb=row.querySelectorAll('button'), FIX={visit:600,tpe:26000};
+    function tierVal(){ for(var i=0;i<tb.length;i++){ if(hasC(tb[i],'on')) return +tb[i].getAttribute('data-v'); } return 2500; }
+    for(var i=0;i<sb.length;i++){ sb[i].onclick=function(){ setOn(sb,this); var k=this.getAttribute('data-s'); if(k==='audit'){ row.hidden=false; onval(tierVal()); } else { row.hidden=true; onval(FIX[k]); } }; }
+    for(var j=0;j<tb.length;j++){ tb[j].onclick=function(){ setOn(tb,this); onval(+this.getAttribute('data-v')); }; }
+    return {clear:function(){ setOn(sb,null); row.hidden=true; }};
+  }
+  var wp=picker('worth',function(v){ slider.value=v; render(v); });
+  slider.oninput=slider.onchange=function(){ render(+slider.value); wp.clear(); };
   render(600);
 
   /* ---------- One brand toggle ---------- */
@@ -1327,11 +1495,10 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   }
 
   /* ---------- Black Hat ads ROI calculator ---------- */
-  var MGMT=5000, aBud=$('aBud'), aCpl=$('aCpl'), aCls=$('aCls'), vBtns=d.querySelectorAll('.vchips button'), val=6250, prevRev=26042, prevRoi=2.6;
+  var MGMT=5000, CPL=60, aBud=$('aBud'), segs=d.querySelectorAll('.seg3 button'), cls=0.05, val=5000, prevRev=20833, prevRoi=2.1;
   function adCalc(){
-    var bud=+aBud.value, cpl=+aCpl.value, cls=+aCls.value/100;
-    var leads=bud/cpl, pts=leads*cls, rev=pts*val, cost=bud+MGMT, roi=rev/cost, top=Math.max(rev,cost);
-    $('aBudV').innerHTML=money(bud); $('aCplV').innerHTML=money(cpl); $('aClsV').innerHTML=Math.round(cls*100)+'%';
+    var bud=+aBud.value, leads=bud/CPL, pts=leads*cls, rev=pts*val, cost=bud+MGMT, roi=rev/cost, top=Math.max(rev,cost);
+    $('aBudV').innerHTML=money(bud);
     $('oLeads').innerHTML=Math.round(leads); $('oPts').innerHTML=pts.toFixed(1); $('oCost').innerHTML=money(cost);
     $('bSpend').style.width=(cost/top*100)+'%'; $('bRev').style.width=(rev/top*100)+'%';
     $('bSpendV').innerHTML=money(cost);
@@ -1339,9 +1506,51 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
     tween($('oRoi'),prevRoi,roi,600,function(n){ return n.toFixed(1)+'&times;'; }); prevRoi=roi;
     $('o90').innerHTML='Over 90 days: about '+money(rev*3)+' in new revenue on '+money(cost*3)+' spent.';
   }
-  aBud.oninput=aBud.onchange=adCalc; aCpl.oninput=aCpl.onchange=adCalc; aCls.oninput=aCls.onchange=adCalc;
-  for(var v=0;v<vBtns.length;v++){ vBtns[v].onclick=function(){ val=+this.getAttribute('data-v'); setOn(vBtns,this); adCalc(); }; }
+  aBud.oninput=aBud.onchange=adCalc;
+  for(var g=0;g<segs.length;g++){ segs[g].onclick=function(){ cls=+this.getAttribute('data-c')/100; setOn(segs,this); adCalc(); }; }
+  picker('ad',function(v){ val=v; adCalc(); });
   adCalc();
+
+
+  /* ---------- Blueprint wheel ---------- */
+  var BP={"K": ["Directory listings", "Press releases", "Video", "SEO", "Website care", "Reputation", "Google profile", "Photo codifying", "Independent articles", "Best-of guides", "AI monitoring"], "L": [["Hand submissions to the directories AI reads", "Data networks that feed hundreds of sites", "Duplicate and wrong listings cleaned up"], ["Press releases built from your Blueprint", "Pitches to local news, magazines and podcasts"], ["Short explainer videos on YouTube", "Made from your Blueprint, news and services"], ["A topical map of every search your patients make", "Schema code so AI reads your services and hours", "Articles, trusted links and service pages"], ["A site that loads fast on phones", "Updates, security, backups and uptime every month"], ["Every review answered in your voice", "A review request after every visit"], ["Profile optimized from your Blueprint", "Weekly posts and review replies"], ["Every photo renamed to say who, what and where", "Your Blueprint written into each file and geotag", "Alt text on every image"], ["A feature article on an independent editorial site", "Vetted links to your own pages"], ["Placement in independent best-of guides", "Kept current as guides update"], ["Monthly report with screenshot proof of every AI answer", "Wrong facts found and fixed"]], "D": ["One Blueprint means every directory says the same thing.", "Most SEO agencies don't do PR at all.", "AI uses YouTube as a source.", "Same SEO basics as an agency, fed by one verified Blueprint.", "Fixed once, then watched every month.", "Protects the asset that already works.", "Kept current every week, not set up once.", "Almost no agency does this.", "Real editorial sites, not paid \"news\" placements.", "AI often quotes these guides directly.", "You see exactly what each AI says, every month."], "Y": ["one name and address for the Institute and Longevity Gyms, everywhere.", "your Town & Country and Forbes features, made readable to AI.", "\"Is plasma exchange right for me?\" in your own voice.", "pages for functional medicine, hormone therapy, TPE and the Biological Audit.", "your four sites rebuilt as one fast home.", "grow past 3 Google reviews with a request after every visit.", "change \"Medical clinic\" to your real specialties.", "your clinic and equipment photos labeled so AI knows what and where.", "a feature on your precision-medicine approach.", "placement in Maryland longevity and functional-medicine guides.", "see every month what ChatGPT says about IFHO."]};
+  var bpSel=0, nds=d.querySelectorAll('.bp .nd'), sps=d.querySelectorAll('.bp .sp');
+  function esc2(x){ return String(x).replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+  function bp(i){
+    bpSel=(i+11)%11;
+    $('bpK').innerHTML='What we do &middot; check '+(bpSel<9?'0':'')+(bpSel+1);
+    $('bpT').innerHTML=esc2(BP.K[bpSel]);
+    var h=''; for(var k=0;k<BP.L[bpSel].length;k++) h+='<li>'+esc2(BP.L[bpSel][k])+'</li>';
+    $('bpL').innerHTML=h;
+    $('bpD').innerHTML='<b>Why it\'s different:</b> '+esc2(BP.D[bpSel]);
+    $('bpY').innerHTML='<b>For IFHO:</b> '+esc2(BP.Y[bpSel]);
+    $('bpN').innerHTML=(bpSel+1)+' / 11';
+    for(var n=0;n<nds.length;n++){ nds[n].setAttribute('class',+nds[n].getAttribute('data-i')===bpSel?'nd on':'nd'); }
+    for(var q2=0;q2<sps.length;q2++){ var on2=+sps[q2].getAttribute('data-i')===bpSel; sps[q2].setAttribute('stroke',on2?'#1F4FE0':'rgba(11,26,46,.10)'); sps[q2].setAttribute('stroke-width',on2?'3':'1.5'); sps[q2].setAttribute('stroke-dasharray',on2?'2 6':''); }
+  }
+  for(var n2=0;n2<nds.length;n2++){
+    nds[n2].onclick=function(){ bp(+this.getAttribute('data-i')); bpAuto=false; };
+    nds[n2].onkeydown=function(e){ if(e.keyCode===13||e.keyCode===32){ e.preventDefault(); bp(+this.getAttribute('data-i')); bpAuto=false; } };
+  }
+  $('bpPrev').onclick=function(){ bp(bpSel-1); bpAuto=false; }; $('bpNext').onclick=function(){ bp(bpSel+1); bpAuto=false; };
+  var bpAuto=!reduce; bp(0);
+  setInterval(function(){ if(bpAuto && d.visibilityState!=='hidden'){ var r=$('blueprint').getBoundingClientRect(); if(r.top<w.innerHeight && r.bottom>0) bp(bpSel+1); } },4500);
+
+  /* ---------- Early-bird deadline ---------- */
+  (function(){
+    var end=Date.UTC(2026,11,3,4,59,59), ms=end-(+new Date()), left=Math.floor(ms/86400000), el=$('dlLeft');
+    if(!el) return;
+    if(ms<0) el.innerHTML='Offer ended.'; else if(left>1) el.innerHTML=left+' days left.'; else if(left===1) el.innerHTML='1 day left.'; else el.innerHTML='Last day.';
+  })();
+
+  /* ---------- Custom proposal request ---------- */
+  $('askF').onsubmit=function(e){
+    e.preventDefault();
+    var boxes=this.querySelectorAll('input[type=checkbox]'), t=[];
+    for(var i=0;i<boxes.length;i++){ if(boxes[i].checked) t.push(boxes[i].value); }
+    var body='Topics: '+(t.join(', ')||'Not sure yet')+'\n\n'+$('askT').value+'\n\nFrom the IFHO proposal page.';
+    w.location.href='mailto:bridgette@localairegistry.com?subject='+encodeURIComponent('IFHO: custom proposal request')+'&body='+encodeURIComponent(body);
+  };
 
   /* ---------- Sticky mobile CTA ---------- */
   var st=$('sticky'), nx=$('next');
