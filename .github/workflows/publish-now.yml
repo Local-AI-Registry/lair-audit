@@ -1,12 +1,15 @@
 name: Publish now
 
 # On-demand site publish, outside the "Publish on every push" queue.
+# Also runs every 20 minutes so pages from Bridgette or Claude go live on their own.
 # Use it when a push didn't publish (pushes from outside collaborators and from
 # Claude sessions don't start Pages builds, and stuck re-runs can block the
 # other workflow's queue). Actions tab > Publish now > Run workflow.
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '*/20 * * * *'
 
 permissions:
   contents: read
