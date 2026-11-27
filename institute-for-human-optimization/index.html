@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
+<script>(function(){var ok=false;try{ok=sessionStorage.getItem('ifhoUnlocked')==='1';}catch(e){} if(!ok) document.documentElement.className+=' locked';})();</script>
 <meta name="color-scheme" content="light only">
 <title>Institute for Human Optimization: 90-day growth proposal | Local AI Registry</title>
 <meta name="description" content="For Dr. Anil Bajnath and the IFHO team: one brand, a rebuilt site and AI visibility, plus optional Black Hat ads, with the expected return on each.">
@@ -791,12 +792,39 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   .askL{width:42%;padding-right:30px}
   .askF{width:58%;margin-top:0}
 }
+
+/* Password gate */
+#gate{display:none}
+.locked body{overflow:hidden}
+.locked body>*{visibility:hidden}
+.locked #gate{visibility:visible;display:-webkit-box;display:-webkit-flex;display:flex;position:fixed;left:0;top:0;right:0;bottom:0;z-index:9999;background:#0F1A2A url(img/hero-dna.jpg) center/cover;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding:20px}
+#gate .gcard{background:#F7F3EC;border-radius:22px;max-width:420px;width:100%;padding:34px 28px;text-align:center;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+#gate img{height:44px;width:auto;margin-bottom:18px}
+#gate h1{font-family:Cormorant,Georgia,serif;font-weight:600;font-size:34px;line-height:1.1;margin:0 0 8px;color:#0F1A2A}
+#gate p{font-size:16px;color:#405D7B;margin:0 0 20px}
+#gate input{width:100%;box-sizing:border-box;font-size:18px;padding:14px 16px;border:2px solid #CECBB8;border-radius:12px;background:#fff;color:#0F1A2A;margin-bottom:12px}
+#gate input:focus{outline:none;border-color:#1F4FE0}
+#gate button{width:100%;font-size:17px;font-weight:700;padding:15px;border:0;border-radius:12px;background:#1F4FE0;color:#fff;cursor:pointer}
+#gate .gerr{color:#C2361A;font-size:15px;min-height:20px;margin:10px 0 0}
+#gate small{display:block;margin-top:16px;color:#556070;font-size:14px}
 </style>
 </head>
 <body>
+<div id="gate" role="dialog" aria-modal="true" aria-labelledby="gateH">
+  <form class="gcard" id="gateF" autocomplete="off">
+    <img src="img/logo-color.png" alt="Institute for Human Optimization" width="220" height="44">
+    <h1 id="gateH">Your private proposal</h1>
+    <p>Prepared for Dr. Anil Bajnath and the IFHO team. Enter the password from our&nbsp;email.</p>
+    <label class="sr" for="gatePw">Password</label>
+    <input id="gatePw" type="password" placeholder="Password" autocapitalize="off" autocorrect="off" spellcheck="false">
+    <button type="submit">Open the proposal</button>
+    <div class="gerr" id="gateErr" aria-live="polite"></div>
+    <small>Questions? Bridgette, (561) 436-0607</small>
+  </form>
+</div>
 <a class="skip" href="#plan">Skip to the plan</a>
 
-<div class="promo"><b>SAVE $500</b>Pay your deposit by <span class="dl-date">Wed, Dec 2</span> and it's $4,500 instead of&nbsp;$5,000.</div>
+<div class="promo"><b>SAVE $500</b>Pay your deposit by <span class="dl-date">Thu, Dec 4</span> and it's $4,500 instead of&nbsp;$5,000.</div>
 <header class="bar">
   <div class="wrap">
     <span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 22 21h-6.2L12 13.6 8.2 21H2z" fill="#1F4FE0"/><path d="M12 2l2.7 5.1H9.3z" fill="#B5A47E"/></svg>Local AI Registry<span class="x">&times;</span><img src="img/logo-color.png" alt="Institute for Human Optimization" width="98" height="30"></span>
@@ -814,7 +842,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
       <h1>One brand. More patients. <em>Less work.</em></h1>
       <p class="lead">We bring the Institute, Longevity Gyms and the Biological Audit under one name, rebuild your site, and get you named by AI. Ads are optional, for when you want patients&nbsp;sooner.</p>
       <div class="ctas"><a class="btn gold" href="#next" data-deposit>Secure with a <span class="dep-price">$4,500</span> deposit <span class="chev">&rsaquo;</span></a><a class="btn outline" href="#plan">See the plan <span class="chev">&darr;</span></a></div>
-      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> $500 off the deposit by Dec 2</span></div>
+      <div class="trust"><span><b>&#10003;</b> Named in AI in 90 days, guaranteed</span><span><b>&#10003;</b> Website rebuild included</span><span><b>&#10003;</b> $500 off the deposit by Dec 4</span></div>
     </div>
     <div class="pics rv d2">
       <div class="chartcard">
@@ -1381,7 +1409,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
         <span class="label">Secure your spot</span>
         <h2>One deposit <em>starts everything.</em></h2>
         <div class="deposit">
-          <div class="early"><b>Save $500.</b> Pay by <span class="dl-date">Wednesday, December 2</span> and your deposit is $4,500 instead of $5,000. <span class="dl-left" id="dlLeft"></span></div>
+          <div class="early"><b>Save $500.</b> Pay by <span class="dl-date">Thursday, December 4</span> and your deposit is $4,500 instead of $5,000. <span class="dl-left" id="dlLeft"></span></div>
           <div class="amt"><s class="was" id="depWas">$5,000</s> <span class="dep-price">$4,500</span></div>
           <p style="margin:4px 0 0;font-size:16px">Secures this package and goes toward your first month of Local AI&nbsp;Services.</p>
           <ol>
@@ -1422,6 +1450,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
      deposit buttons open an email to Bridgette, who sends the link. */
   var DEPOSIT_URL='';
 
+
   var d=document, root=d.documentElement, w=window;
   root.className+=' js';
   var reduce=!!(w.matchMedia && w.matchMedia('(prefers-reduced-motion: reduce)').matches);
@@ -1431,6 +1460,21 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
   function money(n){ n=Math.round(n); var neg=n<0; n=Math.abs(n); var s=String(n), out=''; while(s.length>3){ out=','+s.slice(-3)+out; s=s.slice(0,-3);} return (neg?'-':'')+'$'+s+out; }
   function hasC(el,c){ return (' '+el.className+' ').indexOf(' '+c+' ')>-1; }
   function setOn(list,el){ for(var i=0;i<list.length;i++){ list[i].className=list[i].className.replace(/\s*\bon\b/g,''); } if(el) el.className+=' on'; }
+
+  /* Tracker: logs opens and password entries to the LAIR Google Sheet */
+  var TRACK_URL='';
+  var SLUG='institute-for-human-optimization';
+  var team=false; try{ if(/[?&]team=1/.test(location.search)) localStorage.setItem('lairTeam','1'); team=localStorage.getItem('lairTeam')==='1'; }catch(e){}
+  function track(ev){ if(!TRACK_URL||team) return; var i=new Image(); i.src=TRACK_URL+'?p='+encodeURIComponent(SLUG)+'&e='+ev+'&t='+(+new Date()); }
+  track('open');
+  /* Password gate (a light lock, not real security) */
+  var PW='abc123';
+  var gf=$('gateF');
+  if(gf){ gf.onsubmit=function(ev){ if(ev&&ev.preventDefault) ev.preventDefault(); var v=($('gatePw').value||'').replace(/^\s+|\s+$/g,'').toLowerCase();
+      if(v===PW){ track('unlock'); try{sessionStorage.setItem('ifhoUnlocked','1');}catch(e){} d.documentElement.className=d.documentElement.className.replace(/\s*locked/g,''); window.scrollTo(0,0); }
+      else { track('wrong'); $('gateErr').innerHTML='That password didn\'t match. Check our email and try again.'; }
+      return false; };
+    if(/locked/.test(d.documentElement.className)){ try{$('gatePw').focus();}catch(e){} } }
 
   if(DEPOSIT_URL){ var dl=d.querySelectorAll('[data-deposit]'); for(var z=0;z<dl.length;z++){ dl[z].href=DEPOSIT_URL; } }
 
@@ -1542,7 +1586,7 @@ footer{padding:30px 0 100px;font-size:14px;color:#556070}
 
   /* ---------- Early-bird deadline ---------- */
   (function(){
-    var end=Date.UTC(2026,11,3,4,59,59), ms=end-(+new Date()), left=Math.floor(ms/86400000), el=$('dlLeft');
+    var end=Date.UTC(2026,11,5,4,59,59), ms=end-(+new Date()), left=Math.floor(ms/86400000), el=$('dlLeft');
     if(!el) return;
     if(ms<0){ el.innerHTML='Offer ended.'; var dp=d.querySelectorAll('.dep-price'); for(var q=0;q<dp.length;q++) dp[q].innerHTML='$5,000'; var wv=$('depWas'); if(wv) wv.style.display='none'; } else if(left>1) el.innerHTML=left+' days left.'; else if(left===1) el.innerHTML='1 day left.'; else el.innerHTML='Last day.';
   })();
